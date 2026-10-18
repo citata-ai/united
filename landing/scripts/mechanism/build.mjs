@@ -11,6 +11,7 @@
  * The loop, left to right: your site -> the citata workshop (Indexed, Found,
  * Mentioned) -> AI engines -> buyers ride back to your site and go in.
  */
+import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -82,7 +83,7 @@ const BIN = 26;
 const BIN_Z0 = 74;
 const BIN_Z1 = 94;
 const GANTRY_Y = -76;
-const BEAM_Z = 98;
+const BEAM_Z = 94; // same top as the citata frame (FRAME_TOP)
 
 // Front: counter dial by the door, the gear train and the bell.
 const DIAL = [-262, 18];
@@ -223,35 +224,53 @@ function house() {
     count();
   }
   out.push(
-    `<g transform="${front(HOUSE.x + 9, HOUSE_H - 6)}"><rect x="0" y="0" width="50" height="11" rx="0.8" class="iso-line" data-tone="mid"/>${rivets(50, 11)}<text x="25" y="7.2" class="ce-sign" text-anchor="middle">YOUR SITE</text></g>`,
+    `<g transform="${front(HOUSE.x + 9, HOUSE_H - 6)}"><rect x="0" y="0" width="50" height="11" rx="0.8" class="iso-line" data-tone="mid"/>${rivets(50, 11)}<text x="25" y="7.2" class="ce-sign" text-anchor="middle">YOUR BUSINESS</text></g>`,
   );
   count();
-  // Right (+x) face: page outlet up top, the door below, a window between.
+  // Right (+x) face: the website screen up top (pages leave from it), the door below.
   const sx = HOUSE.x + HOUSE.w;
   const side = (y, z) => k.sideMatrix([sx, y], z, P, "right");
+  // Door opening: a dark recess the sliding leaf covers.
   out.push(
-    `<g transform="${side(DOOR_Y - 7, 32)}"><rect x="0" y="0" width="14" height="28" rx="0.6" class="iso-line" data-tone="hi"/><rect x="2.2" y="2.6" width="9.6" height="10" class="iso-line" data-tone="lo"/><rect x="2.2" y="14.6" width="9.6" height="10" class="iso-line" data-tone="lo"/><circle cx="2.6" cy="15" r="0.8" class="ce-rivet"/></g>`,
+    `<g transform="${side(DOOR_Y + 7, 32)}"><rect x="0" y="0" width="14" height="28" class="ce-recess"/></g>`,
   );
+  // Door frame and a track rail above it for the sliding leaf.
   out.push(
-    `<g transform="${side(HOUSE.y + 6, 30)}"><rect x="0" y="0" width="14" height="16" rx="0.6" class="iso-line" data-tone="mid"/><path class="iso-line" data-tone="lo" d="M7 0V16M0 8H14"/></g>`,
+    S(k.slabOf({ x: sx, y: DOOR_Y - 22, w: 2, d: 30, r: 0.4 }, 33, 2, P, 2, 0.3), { tone: "mid" }),
   );
   count(2);
-  // Awning over the door and a step.
+  return out.join("");
+}
+
+/** The website screen on the site's right face, above the belt. */
+const SCREEN = { y0: M.BELT_Y - 17, y1: M.BELT_Y + 17, z0: M.BELT_TOP + 3, z1: M.BELT_TOP + 29 };
+function screen() {
+  const sx = HOUSE.x + HOUSE.w;
+  const out = [];
+  const bezel = { x: sx, y: SCREEN.y0, w: 3, d: SCREEN.y1 - SCREEN.y0, r: 0.8 };
+  out.push(S(k.slabOf(bezel, SCREEN.z0, SCREEN.z1 - SCREEN.z0, P, 2, 0.4), { tone: "mid" }));
+  const w = SCREEN.y1 - SCREEN.y0 - 3;
+  const h = SCREEN.z1 - SCREEN.z0 - 3;
+  const m = k.sideMatrix([sx + 3, SCREEN.y1 - 1.5], SCREEN.z1 - 1.5, P, "right");
   out.push(
-    S(k.slabOf({ x: sx, y: DOOR_Y - 9, w: 6, d: 18, r: 0.6 }, 34, 2, P, 2, 0.3), { tone: "mid" }),
+    `<g transform="${m}"><rect x="0" y="0" width="${w}" height="${h}" class="ce-screen"/><path class="ce-screen-rule" d="M0 4H${w}"/><circle cx="2" cy="2" r="0.7" class="ce-dot-min"/><circle cx="4.2" cy="2" r="0.7" class="ce-rivet"/><circle cx="6.4" cy="2" r="0.7" class="ce-rivet"/><rect x="9" y="1.2" width="${w - 11}" height="1.6" rx="0.8" class="ce-screen-bar"/><rect x="2" y="6.5" width="${w * 0.55}" height="2.4" rx="0.4" class="ce-screen-head"/><path class="ce-screen-text" d="M2 11.5H${w * 0.55}M2 13.8H${w * 0.5}M2 16.1H${w * 0.55}M2 18.4H${w * 0.42}"/><rect x="${w * 0.62}" y="6.5" width="${w * 0.33}" height="12.4" rx="0.4" class="ce-screen-img"/><path class="ce-screen-text" d="M${w * 0.66} 16.5L${w * 0.74} 12L${w * 0.8} 15L${w * 0.86} 11L${w * 0.92} 16.5"/></g>`,
   );
-  count();
-  // Outlet: a hood on the right face where pages come out onto the belt.
-  const hood = { x: sx, y: M.BELT_Y - 8, w: 8, d: 16, r: 1 };
-  out.push(S(k.slabOf(hood, M.BELT_TOP + 9, 4, P, 2, 0.4), { tone: "mid" }));
+  // Stand under the screen, onto the belt frame.
   out.push(
-    S(k.slabOf({ x: sx, y: M.BELT_Y - 8, w: 2.4, d: 16, r: 0.4 }, M.BELT_TOP - 3, 12, P, 2), {
+    S(k.slabOf({ x: sx, y: M.BELT_Y - 2, w: 3, d: 4, r: 0.4 }, M.BELT_TOP + 1, 2, P, 2), {
       tone: "mid",
       crease: "none",
     }),
   );
-  count(2);
+  count(3);
   return out.join("");
+}
+
+/** The sliding door leaf, drawn closed; live code slides it along -y. */
+function doorLeaf() {
+  const sx = HOUSE.x + HOUSE.w + 0.6;
+  const m = k.sideMatrix([sx, DOOR_Y + 7], 32, P, "right");
+  return `<g transform="${m}"><rect x="0" y="0" width="14" height="28" rx="0.4" class="ce-door"/><rect x="2.2" y="2.6" width="9.6" height="10" class="iso-line" data-tone="lo"/><rect x="2.2" y="14.6" width="9.6" height="10" class="iso-line" data-tone="lo"/><path class="iso-line" data-tone="mid" d="M11.6 13V17"/></g>`;
 }
 
 // ---------------------------------------------------------------------------
@@ -484,7 +503,7 @@ function cleatsAt(t) {
 function backCleatsAt(t) {
   let d = "";
   const shift = (((-M.RETURN_SPEED * t) % M.CUP) + M.CUP) % M.CUP;
-  for (let x = M.RETURN_FROM + 8 + shift; x < M.RETURN_TO - 8; x += M.CUP) {
+  for (let x = M.DOOR_X + shift; x < M.RETURN_TO - 8; x += M.CUP) {
     d += k.lineOnTop([x, M.RETURN_Y - 5], [x, M.RETURN_Y + 5], M.RETURN_TOP, P);
   }
   return d;
@@ -546,50 +565,17 @@ const upperBelt = () =>
     part: "cleats",
   });
 
-/** The lower (return) belt plus the queue rail that runs on to the door. */
-function lowerBelt() {
-  const out = [
-    belt({
-      y: M.RETURN_Y,
-      top: M.RETURN_TOP,
-      from: M.RETURN_FROM,
-      to: M.RETURN_TO,
-      legs: [],
-      cleats: backCleatsAt,
-      part: "backcleats",
-    }),
-  ];
-  const x0 = HOUSE.x + HOUSE.w;
-  const x1 = M.RETURN_FROM;
-  const body = { x: x0, y: M.RETURN_Y - 7, w: x1 - x0, d: 14, r: 1.5 };
-  out.push(S(k.slabOf(body, 0, M.RETURN_TOP, P, 3, 0.4), { tone: "mid" }), count());
-  for (const y of [M.RETURN_Y - 7, M.RETURN_Y + 5]) {
-    out.push(
-      S(k.slabOf({ x: x0, y, w: x1 - x0, d: 2, r: 0.6 }, M.RETURN_TOP, 2.4, P, 2), {
-        tone: "mid",
-        crease: "none",
-      }),
-    );
-    count();
-  }
-  const ticks = k.topTicks(
-    M.DOOR_X + M.SLOT / 2,
-    x1 - 2,
-    M.SLOT,
-    1,
-    M.RETURN_Y + 5,
-    M.RETURN_TOP + 2.4,
-    [1.4, 1.4],
-    P,
-  );
-  out.push(L(ticks.major, { tone: "lo" }));
-  return out.join("");
-}
-
-function gate() {
-  const plan = { x: HOUSE.x + HOUSE.w, y: DOOR_Y - 7, w: 1.6, d: 14, r: 0.4 };
-  return S(k.slabOf(plan, M.RETURN_TOP + 0.5, 10, P, 2, 0.3), { tone: "hi" });
-}
+/** The lower (return) belt: one level belt from the right end to the door. */
+const lowerBelt = () =>
+  belt({
+    y: M.RETURN_Y,
+    top: M.RETURN_TOP,
+    from: HOUSE.x + HOUSE.w,
+    to: M.RETURN_TO,
+    legs: [],
+    cleats: backCleatsAt,
+    part: "backcleats",
+  });
 
 // ---------------------------------------------------------------------------
 // AI engines
@@ -619,15 +605,16 @@ function gantry() {
   }
   const beam = { x: x0 - 4, y: GANTRY_Y - 4, w: x1 - x0 + 8, d: 8, r: 1 };
   out.push(
-    S(k.slabOf(beam, BEAM_Z, 7, P, 3, 0.5), {
+    S(k.slabOf(beam, BEAM_Z, FRAME_TOP - BEAM_Z, P, 3, 0.6), {
       tone: "mid",
-      inner: L(k.sideSeam(beam, BEAM_Z + 3.5, P, 3), { tone: "faint" }),
+      inner: L(k.sideSeam(beam, FRAME_TOP - 3, P, 3), { tone: "faint" }),
     }),
     count(),
   );
-  const m = k.sideMatrix([(x0 + x1) / 2 - 24, beam.y + beam.d], BEAM_Z + 6, P, "left");
+  const pw = 78;
+  const m = k.sideMatrix([(x0 + x1) / 2 - pw / 2, beam.y + beam.d], FRAME_TOP - 4, P, "left");
   out.push(
-    `<g transform="${m}"><text x="24" y="3.6" class="ce-sign" text-anchor="middle">AI ENGINES</text></g>`,
+    `<g transform="${m}"><rect x="0" y="0" width="${pw}" height="15" rx="1" class="ce-nameplate"/>${rivets(pw, 15, 2)}<text x="${pw / 2}" y="10.4" class="ce-plate-big" text-anchor="middle">AI ENGINES</text></g>`,
   );
   return out.join("");
 }
@@ -686,8 +673,8 @@ function receivers() {
 /** The spout on each receiver's front: out over the belt, then down. */
 function spouts() {
   return M.ENGINE_X.map((x) => {
-    const y0 = M.BELT_Y + BIN / 2;
-    const z = BIN_Z0 + 4;
+    const z = M.SPOUT_Z + 7;
+    const y0 = M.BELT_Y + 7.4;
     const run = G.frameAlong([x, y0, z], [0, 1, 0]);
     const len = M.RETURN_Y - y0;
     const drop = G.frameAlong([x, M.RETURN_Y, z], [0, 0, -1]);
@@ -985,7 +972,7 @@ const ballPool = Array.from(
   () => `<use data-part="ball" href="#ce-ball" opacity="0"/>`,
 ).join("");
 count(2);
-const DOLLAR_AT = at([HOUSE.x + HOUSE.w / 2, HOUSE.y + HOUSE.d / 2, HOUSE_H + 24]);
+const DOLLAR_AT = at([HOUSE.x + HOUSE.w + 12, DOOR_Y + 6, 34]);
 const dollars = Array.from(
   { length: 4 },
   () =>
@@ -995,7 +982,7 @@ const dollars = Array.from(
 /** Hotspots in story order: world points on key parts, with the step we do there. */
 const SPOTS = [
   {
-    p: [HOUSE.x + HOUSE.w / 2, HOUSE.y + HOUSE.d / 2, HOUSE_H + 9],
+    p: [HOUSE.x + HOUSE.w + 3, M.BELT_Y, M.BELT_TOP + 22],
     title: "Your site",
     text: "We start with your website: its pages, your listings and the facts about you.",
   },
@@ -1084,6 +1071,8 @@ const svg = k.figureSvg({
     lensPost(),
     horn(),
     house(),
+    `<g data-part="door">${doorLeaf()}</g>`,
+    screen(),
     upperBelt(),
     receivers(),
     `<defs><g id="ce-page">${page()}</g><g id="ce-ball">${ball()}</g></defs>`,
@@ -1093,7 +1082,6 @@ const svg = k.figureSvg({
     hornWaves(),
     spouts(),
     lowerBelt(),
-    `<g data-part="gate">${gate()}</g>`,
     ballPool,
     dropTubes(),
     drive(),
@@ -1123,6 +1111,16 @@ const CSS = `
 .ce .iso-plate-corner[data-corner="fig"],.ce .iso-plate-corner[data-corner="title"]{color:#c1410b}
 .ce .iso-legend{color:var(--anatomy-text);font-size:14px}
 .ce .ce-logo{fill:#1c1712}
+.ce .ce-recess{fill:#5c5145}
+.ce .ce-door{fill:#fbf7ee;stroke:#1c1712;stroke-width:.5}
+.ce .ce-screen{fill:#fffdf8;stroke:#1c1712;stroke-width:.5}
+.ce .ce-screen-rule{stroke:#d3c5aa;stroke-width:.4;fill:none}
+.ce .ce-screen-bar{fill:#ece3d2}
+.ce .ce-screen-head{fill:#1c1712}
+.ce .ce-screen-text{stroke:#ad9c7e;stroke-width:.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ce .ce-screen-img{fill:#f1e6d6;stroke:#d3c5aa;stroke-width:.4}
+.ce .ce-dot-min{fill:#c1410b}
+.ce .ce-plate-big{font-family:"Cal Sans",ui-sans-serif,system-ui,sans-serif;font-weight:600;font-size:8.4px;letter-spacing:.08em;fill:#1c1712}
 .ce .ce-logo-plate{fill:#fffdf8;stroke:var(--anatomy-mid);stroke-width:.5}
 .ce .ce-rivet{fill:var(--anatomy-mid);stroke:none}
 .ce .ce-hit{fill:transparent;stroke:none;cursor:pointer;pointer-events:all}
@@ -1164,7 +1162,7 @@ const plate = k
       { mark: "lit", label: "A buyer sent by an AI engine" },
     ],
     caption,
-    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure"></div>`,
+    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure?v=__FIGURE_V__"></div>`,
   })
   .replace(
     "</figcaption>",
@@ -1257,7 +1255,7 @@ function init(root) {
   const waves = [...svg.querySelectorAll('[data-part="wave"]')];
   const dollars = [...svg.querySelectorAll('[data-part="dollar"]')].map((el) => ({ el, born: -9 }));
   const hits = [...svg.querySelectorAll(".ce-hit")];
-  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), backcleats: q("backcleats"), gate: q("gate") };
+  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), backcleats: q("backcleats"), door: q("door") };
   const readout = root.querySelector("[data-readout]");
   const still = matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -1334,7 +1332,8 @@ function init(root) {
       }
     }
     balls = balls.filter((b) => !b.done);
-    gate += ((balls.some((b) => b.enter >= 0) ? 1 : 0) - gate) * ease(dt, 0.08);
+    const opening = balls.some((b) => b.enter >= 0) || (queue[0] && clock >= nextRelease - 0.25);
+    gate += ((opening ? 1 : 0) - gate) * ease(dt, 0.1);
     needle += (delivered / 40 - needle) * ease(dt, 0.25);
     const near = pages.some((p) => {
       const s = pageAt(p.cup, p.engine, clock);
@@ -1385,7 +1384,7 @@ function init(root) {
       parts.anchor.innerHTML = anchorAt(0.13 * Math.sin(e * TEETH));
       trainDrawn = e;
     }
-    parts.gate.setAttribute("transform", translateAlong(P, [0, 0, 10 * gate]));
+    parts.door.setAttribute("transform", translateAlong(P, [0, -13 * gate, 0]));
     const rang = clock - ring;
     const strike = rang >= 0 && rang < 1.4 ? Math.exp(-rang * 3) * Math.abs(Math.sin(rang * 14)) : 0;
     parts.hammer.innerHTML = hammerAt(Math.min(1, strike * 1.4));
@@ -1510,7 +1509,14 @@ const script =
   LIVE;
 const wrapped = `/* citata.ai citation engine. Built by scripts/mechanism/build.mjs; do not edit.\n   Kit: anatomy (MIT), vendor/anatomy. */\n(() => {\n${script}\n})();\n`;
 
-writeFileSync(join(ROOT, "src/components/mechanism/figure.generated.html"), markup + "\n");
+/** Content hash in the URL: the edge and browsers cache /mechanism/* for a day. */
+const hash = (text) => createHash("sha256").update(text).digest("hex").slice(0, 10);
+const version = { figure: hash(figureMarkup), live: hash(wrapped) };
+writeFileSync(
+  join(ROOT, "src/components/mechanism/figure.generated.html"),
+  markup.replace("__FIGURE_V__", version.figure) + "\n",
+);
+writeFileSync(join(ROOT, "src/components/mechanism/version.json"), JSON.stringify(version) + "\n");
 writeFileSync(join(ROOT, "public/mechanism/figure.html"), figureMarkup + "\n");
 writeFileSync(join(ROOT, "public/mechanism/live.js"), wrapped);
 if (process.argv.includes("--page")) {
