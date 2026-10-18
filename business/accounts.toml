@@ -24,8 +24,8 @@ note = "Chicago + NW/N suburbs, ~150 doors, 20+ years. Owner Ran Fridman is also
     "how much does property management cost in Chicago",
   ]
   blockers = [
-    "fp-landing rebuild not deployed: needs Cloudflare zone, lead endpoint, DNS switch",
-    "take GSC + AI baseline before the switch",
+    "fp-landing rebuild live since 2026-10-16; check that the lead form endpoint is set",
+    "AI baseline taken 2026-10-16 (same day as the switch); GSC access still missing",
   ]
 
 [[account]]
