@@ -10,7 +10,7 @@ export const faq = [
   },
   {
     q: "How is GEO different from SEO?",
-    a: "SEO gets your page into the Google results. GEO gets your company named inside the AI answer. GEO needs SEO first: 76% of AI Overview citations come from pages in the Google top 10 (Ahrefs). Then it adds exact answers, mentions on other sites and clean structured data.",
+    a: "SEO gets your page into the Google results. GEO gets your company named inside the AI answer. GEO needs SEO first: 38% of pages cited in Google AI Overviews also rank in the top 10 (Ahrefs, March 2026). The rest come from related searches that AI runs on the same topic. Then it adds exact answers, mentions on other sites and clean structured data.",
   },
   {
     q: "Which sources do AI assistants use to pick a property manager?",
