@@ -17,3 +17,5 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | B9 | 5 | 1 | 1 | 1 | 0 | Qwoted expert profile live (no public anchor). Tracxn submitted (#1121718). Alignable reCAPTCHA. Owler, Agency Spotter back to todo (address, location now known). Help batch H1 started (8 rows, owner assists). |
 | 2026-10-18 | B10 | 5 | 0 | 0 | 5 | 0 | Re-run with phone: Clutch, GoodFirms, DesignRush need the phone shown publicly (owner decision). Sortlist: phone tied to another agency. |
 | 2026-10-18 | B11 | 5 | 0 | 3 | 2 | 0 | Clutch, The Manifest, G2 submitted (in review). GoodFirms hidden form error. DesignRush needs 3 clients + 3 photos. |
+| 2026-10-18 | B12 | 5 | 1 | 2 | 2 | 0 | Trustpilot live (nofollow). Startup Ranking, Owler submitted. D&B: number exists, CAPTCHA to mail it. Upwork needs founder photo, birth date, home address. |
+| 2026-10-18 | B13 | 6 | 3 | 0 | 2 | 1 | Hashnode @citata live (nofollow). Source of Sources, Help a B2B Writer joined (no link). PodMatch paid only. Bluesky needs DOB. Agency Spotter state picker. |
