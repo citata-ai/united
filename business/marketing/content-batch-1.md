@@ -22,7 +22,7 @@ Each page answers the prompts in `tools/ai-visibility/prompts.toml` listed for i
 
 Voice and language:
 - Read `brand/VOICE.md` first. ASD-STE100: short sentences (mean 11–14 words, max 25), active voice, one idea per sentence, simple words. No banned words. No hype, no fear.
-- "You" is the reader, a property management company owner or marketing lead with 50 to 500 doors. "We" is citata.ai. "I" is Tao (founder), only for our own tests.
+- "You" is the reader, a property management company owner or marketing lead with 50 to 500 doors. "We" is Citata.ai. No "I" and no personal name: bylines and "checked by" lines say Citata.ai.
 
 Structure (GEO, from the Ahrefs AEO guide and the claude-seo / marketingskills skills):
 - Answer first. The `answer` field in the frontmatter answers the main question in 2–4 sentences. The first sentence of each H2 section answers that section's question.

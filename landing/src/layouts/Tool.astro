@@ -41,7 +41,7 @@ const app = {
   inLanguage: "en",
   datePublished: p.published,
   dateModified: p.updated,
-  author: { "@id": "https://citata.ai/about#founder" },
+  author: { "@id": "https://citata.ai/#org" },
   publisher: { "@id": "https://citata.ai/#org" },
 };
 const faqSchema = {
@@ -79,7 +79,7 @@ const breadcrumbs = {
         <h1 class="mt-4 max-w-4xl text-[34px] leading-[1.05] sm:text-[52px]">{p.headline}</h1>
         <p class="mt-4 max-w-3xl text-[19px] text-muted sm:text-[21px]">{p.dek}</p>
         <p class="meta mt-5">
-          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Published
+          By <a rel="author" class="link normal-case" href="/about">Citata.ai</a> · Published
           <time datetime={p.published}>{p.published}</time> · Updated
           <time datetime={p.updated}>{p.updated}</time>
         </p>
@@ -142,7 +142,7 @@ const breadcrumbs = {
         </ol>
         <p class="mt-4 max-w-3xl text-[13px] text-muted">
           How we made this tool: AI agents wrote the code and the first draft from the sources above.
-          Unit tests check the math against the source examples, and Taras Kornichuk checks the page
+          Unit tests check the math against the source examples, and Citata.ai checks the page
           before we publish it. This page is general information, not legal, tax or financial advice.
         </p>
       </section>
