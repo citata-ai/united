@@ -48,6 +48,7 @@ const engines = [
                 class="pt-link link"
                 data-base={e.url}
                 href={e.url + encodeURIComponent(t.replace("{city}", city))}
+                aria-label={`Ask ${e.name}: ${t.replace("{city}", city)} (opens in a new tab)`}
                 target="_blank"
                 rel="noopener"
               >
@@ -81,6 +82,7 @@ const engines = [
         if (q) q.textContent = `“${text}”`;
         for (const a of row.querySelectorAll<HTMLAnchorElement>(".pt-link")) {
           a.href = (a.dataset.base ?? "") + encodeURIComponent(text);
+          a.setAttribute("aria-label", `Ask ${a.textContent?.replace("↗", "").trim()}: ${text} (opens in a new tab)`);
         }
         row.dataset.text = text;
       });

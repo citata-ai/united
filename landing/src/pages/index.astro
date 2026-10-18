@@ -41,8 +41,8 @@ const facts = [
 
 const stages = [
   { n: "01", name: "Indexed", text: "AI crawlers can read every landlord page.", bg: "bg-cobalt/12", chip: "bg-cobalt text-page" },
-  { n: "02", name: "Found", text: "Your pages answer what landlords ask.", bg: "bg-mint/35", chip: "bg-mint" },
-  { n: "03", name: "Mentioned", text: "AI names you, with a link, in your city.", bg: "bg-coral/15", chip: "bg-coral" },
+  { n: "02", name: "Found", text: "Your pages answer what landlords ask.", bg: "bg-mint/35", chip: "bg-mint text-ink" },
+  { n: "03", name: "Mentioned", text: "AI names you, with a link, in your city.", bg: "bg-coral/15", chip: "bg-coral text-ink" },
 ];
 
 const steps = [
@@ -138,7 +138,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
     </div>
     <img
       src="/img/hero-v9-1280.webp"
-      srcset="/img/hero-v9-640.webp 640w, /img/hero-v9-960.webp 960w, /img/hero-v9-1280.webp 1280w, /img/hero-v9-1920.webp 1920w, /img/hero-v9-2560.webp 2560w, /img/hero-v9-3840.webp 3840w"
+      srcset="/img/hero-v9-640.webp 640w, /img/hero-v9-960.webp 960w, /img/hero-v9-1280.webp 1280w, /img/hero-v9-1440.webp 1440w, /img/hero-v9-1600.webp 1600w, /img/hero-v9-1920.webp 1920w, /img/hero-v9-2560.webp 2560w, /img/hero-v9-3840.webp 3840w"
       sizes="100vw"
       alt="An engraved ancient town being built, with pop accents: a temple frieze painted in cobalt, coral and yellow, striped awnings, mint doors, flower pots and pennants on the crane; tiled houses and scaffolding on the left, a large temple with cypress trees on the right, and a man in an orange toga with a big key walking toward us from a temple with a glowing door."
       width="3840"
@@ -162,7 +162,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
         <div>
           <h2 id="why-h" class="text-[36px] leading-[1.05] sm:text-[44px]">Landlords stopped searching. They ask AI.</h2>
           <figure class="img-frame mt-8">
-            <img src="/img/problem-v1-720.webp" srcset="/img/problem-v1-640.webp 640w, /img/problem-v1-960.webp 960w, /img/problem-v1-1280.webp 1280w, /img/problem-v1-1920.webp 1920w" sizes="(min-width: 1024px) 45vw, calc(100vw - 40px)" alt="A pop engraving under a cyan sky: a landlord in an orange toga waits on the steps of a quiet villa by an empty letterbox, while far away people line up at a small oracle temple." width="1280" height="714" loading="lazy" />
+            <img src="/img/problem-v1-720.webp" srcset="/img/problem-v1-640.webp 640w, /img/problem-v1-960.webp 960w, /img/problem-v1-1280.webp 1280w, /img/problem-v1-1920.webp 1920w" sizes="(min-width: 1280px) 560px, (min-width: 1024px) 44vw, calc(100vw - 40px)" alt="A pop engraving under a cyan sky: a landlord in an orange toga waits on the steps of a quiet villa by an empty letterbox, while far away people line up at a small oracle temple." width="1280" height="714" loading="lazy" />
           </figure>
         </div>
         <ul class="grid gap-4">
@@ -172,7 +172,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
                 <p class="min-w-[3.2ch] text-[52px] leading-none font-semibold sm:text-[60px]">{f.n}</p>
                 <div>
                   <p class="text-[17px] leading-snug">{f.text}</p>
-                  <a class="meta mt-2 inline-block text-ink/75 underline underline-offset-2 hover:text-ink" href={f.href}>{f.src}</a>
+                  <a class="meta mt-2 inline-block text-ink underline underline-offset-2" href={f.href}>{f.src}</a>
                 </div>
               </li>
             ))
@@ -218,7 +218,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           </ol>
         </div>
         <figure class="img-frame">
-          <img src="/img/monday-report-v3-720.webp" srcset="/img/monday-report-v3-640.webp 640w, /img/monday-report-v3-720.webp 720w, /img/monday-report-v3-960.webp 960w, /img/monday-report-v3-1280.webp 1280w, /img/monday-report-v3-1920.webp 1920w" sizes="(min-width: 1024px) 50vw, calc(100vw - 40px)" alt="A pop engraving of a Roman market under a coral sky: a herald in an orange toga holds up a scroll with a rising blue bar chart, a bronze bell hangs beside him, and townspeople look up." width="1280" height="714" loading="lazy" />
+          <img src="/img/monday-report-v3-720.webp" srcset="/img/monday-report-v3-640.webp 640w, /img/monday-report-v3-720.webp 720w, /img/monday-report-v3-960.webp 960w, /img/monday-report-v3-1280.webp 1280w, /img/monday-report-v3-1920.webp 1920w" sizes="(min-width: 1280px) 620px, (min-width: 1024px) 48vw, calc(100vw - 40px)" alt="A pop engraving of a Roman market under a coral sky: a herald in an orange toga holds up a scroll with a rising blue bar chart, a bronze bell hangs beside him, and townspeople look up." width="1280" height="714" loading="lazy" />
         </figure>
       </div>
     </div>
