@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import PlatformRibbon from "../components/PlatformRibbon.astro";
 import Mechanism from "../components/Mechanism.astro";
 import Stamps from "../components/Stamps.astro";
+import AuditCta from "../components/AuditCta.astro";
 import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
 import { faq } from "../data/faq.ts";
@@ -351,17 +352,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
       </div>
     </section>
 
-    <!-- CTA -->
-    <section aria-labelledby="cta" class="grid items-center gap-10 overflow-hidden rounded-lg bg-lilac/30 p-6 sm:p-10 md:grid-cols-[1fr_1.1fr]">
-      <div>
-        <h2 id="cta" class="text-[36px] leading-[1.05] sm:text-[44px]">Does ChatGPT name you in your city?</h2>
-        <p class="mt-4 text-[17px] text-muted">Free audit: 20 landlord questions, 4 AI engines, your top 5 fixes.</p>
-        <a class="btn-primary mt-6 !px-5 !py-3 !text-[15px]" href={auditHref}>Get the free audit</a>
-      </div>
-      <figure class="img-frame">
-        <img src="/img/cta-v1-720.webp" srcset="/img/cta-v1-640.webp 640w, /img/cta-v1-960.webp 960w, /img/cta-v1-1280.webp 1280w, /img/cta-v1-1920.webp 1920w" sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" alt="A pop engraving under a lilac sky: a man in an orange toga with a big key knocks on a mint-green door, a sealed letter in his hand and a cat on the step." width="1280" height="714" loading="lazy" />
-      </figure>
-    </section>
+    <AuditCta />
   </div>
   </main>
 </Base>

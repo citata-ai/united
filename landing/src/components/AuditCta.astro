@@ -1,0 +1,27 @@
+---
+// The free-audit call to action at the end of each page: lilac panel + the "knock on the door" image.
+import { auditHref } from "../data/site.ts";
+interface Props {
+  title?: string;
+}
+const { title = "Does ChatGPT name you in your city?" } = Astro.props;
+---
+
+<section aria-labelledby="cta" class="mt-14 grid items-center gap-10 overflow-hidden rounded-lg bg-lilac/30 p-6 sm:p-10 md:grid-cols-[1fr_1.1fr]">
+  <div>
+    <h2 id="cta" class="text-[36px] leading-[1.05] sm:text-[44px]">{title}</h2>
+    <p class="mt-4 text-[17px] text-muted">Free audit: 20 landlord questions, 4 AI engines, your top 5 fixes.</p>
+    <a class="btn-primary mt-6 !px-5 !py-3 !text-[15px]" href={auditHref}>Get the free audit</a>
+  </div>
+  <figure class="img-frame">
+    <img
+      src="/img/cta-v1-720.webp"
+      srcset="/img/cta-v1-640.webp 640w, /img/cta-v1-960.webp 960w, /img/cta-v1-1280.webp 1280w, /img/cta-v1-1920.webp 1920w"
+      sizes="(min-width: 768px) 50vw, calc(100vw - 40px)"
+      alt="A pop engraving under a lilac sky: a man in an orange toga with a big key knocks on a mint-green door, a sealed letter in his hand and a cat on the step."
+      width="1280"
+      height="714"
+      loading="lazy"
+    />
+  </figure>
+</section>

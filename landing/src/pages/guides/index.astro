@@ -1,4 +1,5 @@
 ---
+import AuditCta from "../../components/AuditCta.astro";
 import Base from "../../layouts/Base.astro";
 import type { GuideFrontmatter } from "../../layouts/Guide.astro";
 import { coverSrcset, guideCovers } from "../../data/guide-covers.ts";
@@ -20,7 +21,7 @@ const guides = Object.values(
 
 <Base title={title} description={description} image="/og/guide-owners-ai.jpg">
   <main class="wrap">
-    <section class="border-b border-rule py-12 md:py-16">
+    <section class="mt-8 rounded-lg bg-sky/20 p-6 sm:p-12">
       <p class="meta"><span class="text-minium">Guides</span> · AI search for property managers</p>
       <h1 class="mt-4 max-w-3xl text-[38px] leading-[1.04] sm:text-[52px]">How landlords find a property manager now</h1>
       <p class="mt-5 max-w-[66ch] text-[19px] text-muted">
@@ -46,7 +47,7 @@ const guides = Object.values(
                 </figure>
               )}
               <p class="meta mt-4">
-                <span class="text-minium">Guide</span> · {g.updated}
+                <span class={`rounded-full px-2 py-0.5 text-ink ${["bg-coral","bg-sun","bg-sky","bg-lilac","bg-mint"][i % 5]}`}>Guide</span> · {g.updated}
               </p>
               <h2 class="mt-2 text-[22px] leading-tight group-hover:text-minium">{g.headline}</h2>
               <p class="mt-2 text-[15px] text-muted">{g.dek}</p>
@@ -55,5 +56,6 @@ const guides = Object.values(
         ))
       }
     </ul>
+    <AuditCta />
   </main>
 </Base>

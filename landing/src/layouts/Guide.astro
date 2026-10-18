@@ -1,9 +1,9 @@
 ---
+import AuditCta from "../components/AuditCta.astro";
 // Layout for Markdown guides in src/pages/guides/*.md.
 // GEO rules (docs/geo-loop.md): answer first, one idea per section, every number has a source,
 // visible date and author, Article + FAQPage JSON-LD. Voice: brand/VOICE.md.
 import Base from "./Base.astro";
-import { auditHref } from "../data/site.ts";
 import { coverSrcset, guideCovers } from "../data/guide-covers.ts";
 
 export interface GuideFrontmatter {
@@ -90,7 +90,7 @@ const breadcrumbs = {
   </Fragment>
   <main class="wrap">
     <article class="mx-auto max-w-[1080px] pt-12 pb-6">
-      <header class="border-b border-rule pb-8">
+      <header class="rounded-lg bg-sun/25 p-6 sm:p-10">
         <p class="meta">
           <a href="/guides" class="text-minium">Guides</a> · for property management companies
         </p>
@@ -142,7 +142,7 @@ const breadcrumbs = {
         </nav>
 
         <div class="min-w-0">
-          <details class="mb-6 rounded border border-rule bg-page p-4 lg:hidden">
+          <details class="mb-6 rounded-md bg-sky/20 p-4 lg:hidden">
             <summary class="meta cursor-pointer text-ink">Contents</summary>
             <ol class="mt-3 space-y-2 text-[15px]">
               {toc.map((t) => (
@@ -155,7 +155,7 @@ const breadcrumbs = {
             </ol>
           </details>
 
-          <aside id="short-answer" aria-label="Short answer" class="scroll-mt-28 rounded border border-rule-strong bg-sunken p-6">
+          <aside id="short-answer" aria-label="Short answer" class="scroll-mt-28 rounded-md bg-mint/35 p-6">
             <p class="meta text-minium">Short answer</p>
             <p class="mt-2 text-[18px]">{fm.answer}</p>
           </aside>
@@ -167,13 +167,15 @@ const breadcrumbs = {
           {
             fm.faq?.length ? (
               <section aria-labelledby="faq-h" class="mt-14 border-t border-rule pt-10">
-                <h2 id="faq-h" class="scroll-mt-28 text-[28px] leading-tight">Questions</h2>
-                {fm.faq.map((f) => (
-                  <div class="mt-6">
-                    <h3 class="text-[19px] font-medium">{f.q}</h3>
-                    <p class="mt-2 text-[16px] text-muted">{f.a}</p>
-                  </div>
-                ))}
+                <h2 id="faq-h" class="scroll-mt-28 text-[32px] leading-tight">Questions</h2>
+                <div class="mt-6 border-t border-rule">
+                  {fm.faq.map((f, i) => (
+                    <details class="faq-item" name="guidefaq" open={i === 0}>
+                      <summary>{f.q}</summary>
+                      <p class="pb-6 text-[16px] text-muted">{f.a}</p>
+                    </details>
+                  ))}
+                </div>
               </section>
             ) : null
           }
@@ -198,18 +200,7 @@ const breadcrumbs = {
       </div>
     </article>
 
-    <section aria-labelledby="cta" class="mt-10 grid items-center gap-8 border-t border-rule pt-12 md:grid-cols-[1.2fr_1fr]">
-      <h2 id="cta" class="text-[30px] leading-[1.05] sm:text-[38px]">
-        Does AI name your company? <span class="text-minium">Find out for free.</span>
-      </h2>
-      <div>
-        <p class="text-muted">
-          Send your site and the cities you serve. We ask 4 AI engines 20 questions your landlords ask and
-          send your top 5 fixes.
-        </p>
-        <a class="btn-primary mt-5" href={auditHref}>Email grow@citata.ai</a>
-      </div>
-    </section>
+    <AuditCta title="Does AI name your company? Find out for free." />
   </main>
 </Base>
 

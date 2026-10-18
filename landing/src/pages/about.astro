@@ -1,6 +1,6 @@
 ---
+import AuditCta from "../components/AuditCta.astro";
 import Base from "../layouts/Base.astro";
-import { auditHref } from "../data/site.ts";
 
 // Facts: business/marketing/listing-kit.md (company facts, founder line),
 // business/strategy.md (§4 dog food accounts, §7 related parties). Do not add a fact that is not there.
@@ -37,7 +37,7 @@ const person = {
     <script type="application/ld+json" is:inline set:html={JSON.stringify(person)} />
   </Fragment>
   <main class="wrap">
-    <section class="border-b border-rule py-12 md:py-16">
+    <section class="mt-8 rounded-lg bg-mint/35 p-6 sm:p-12">
       <p class="meta"><span class="text-minium">About</span> · Citata.ai</p>
       <h1 class="mt-4 max-w-3xl text-[38px] leading-[1.04] sm:text-[52px] sm:leading-[1.02]">
         A small GEO agency for property management companies
@@ -48,7 +48,7 @@ const person = {
       </p>
     </section>
 
-    <section aria-labelledby="who" class="grid gap-10 border-b border-rule py-14 md:grid-cols-[1.2fr_1fr]">
+    <section aria-labelledby="who" class="grid gap-10 py-14 md:grid-cols-[1.2fr_1fr]">
       <div class="prose-c">
         <h2 id="who">Who does the work</h2>
         <p>
@@ -86,7 +86,7 @@ const person = {
           study, and he is the CEO of MyRemotely, our partner. Each case study says so at the top.
         </p>
       </div>
-      <aside class="self-start rounded border border-rule bg-page p-6">
+      <aside class="self-start rounded-md bg-sun/30 p-6">
         <p class="meta text-minium">Company facts</p>
         <table class="mt-4 w-full text-[15px]">
           <tbody>
@@ -106,17 +106,6 @@ const person = {
       </aside>
     </section>
 
-    <section aria-labelledby="cta" class="grid items-center gap-8 pt-14 md:grid-cols-[1.2fr_1fr]">
-      <h2 id="cta" class="text-[32px] leading-[1.05] sm:text-[40px]">
-        Want to know what AI says about your company?
-      </h2>
-      <div>
-        <p class="text-muted">
-          Email us your site and the cities you serve. We send a free one-page report with your top 5
-          fixes.
-        </p>
-        <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
-      </div>
-    </section>
+    <AuditCta title="Want to know what AI says about your company?" />
   </main>
 </Base>
