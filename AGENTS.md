@@ -58,7 +58,7 @@ Run from the repo root.
 
 - **Live: the landing only.** Worker `citata-landing` on Cloudflare account `1494c6f692bcb718f1c942d6801e83fe` ("1st Account") serves `https://citata.ai`. `www.citata.ai` answers 301 to the apex. First deploy 2026-10-18.
 - How: wrangler, not Alchemy (interim). Config `landing/wrangler.jsonc`, script `landing/worker.js` (www redirect, then static assets). Run from `landing/`: `bun run build && npx wrangler@4 deploy`. Wrangler uses the operator's OAuth login on the Mac.
-- **Stage:** `npx wrangler@4 deploy --env stage` (from `landing/`) deploys Worker `citata-landing-stage` to https://citata-landing-stage.frostrepair.workers.dev. No custom domain. Every response has `X-Robots-Tag: noindex, nofollow`. Deploy to stage first, check it, then deploy prod.
+- **Stage:** push to branch `stage` → GitHub Actions + Alchemy deploy Worker `citata-landing-stage` to https://stage.citata.ai. Every response has `X-Robots-Tag: noindex, nofollow`. Check stage, then merge `stage` into `main` (only on the owner's "publish"). The old wrangler commands are a manual fallback only.
 - Smoke check after each deploy: `curl -I https://citata.ai/`, `/property-management`, `/case-studies/fridman-properties` give 200; `https://www.citata.ai/` gives 301.
 - `citata-web` and `citata-api` are not deployed. Do not run `alchemy deploy` or `mise run deploy`: the Stack deploys all three Workers, and no Cloudflare token exists yet.
 - Do not touch Worker `tao-email`, `mail.citata.ai`, or the zone's MX, SPF, DKIM and DMARC records. Email depends on them.
