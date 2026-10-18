@@ -1164,7 +1164,7 @@ const plate = k
       { mark: "lit", label: "A buyer sent by an AI engine" },
     ],
     caption,
-    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure.html"></div>`,
+    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure"></div>`,
   })
   .replace(
     "</figcaption>",
