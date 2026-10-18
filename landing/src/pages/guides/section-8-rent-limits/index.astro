@@ -1,9 +1,9 @@
 ---
 // Hub for experiment H01-E1: HUD FY2027 Fair Market Rents for the 50 largest metro FMR areas.
 // Every number comes from src/data/fmr-fy2027.json (tools/section8/build.py).
-import Guide from "../../layouts/Guide.astro";
-import Section8Cta from "../../components/Section8Cta.astro";
-import { datasetSchema, fmr, metroPath, metros, pct, published, src, updated, usd } from "../../data/section8.ts";
+import Guide from "../../../layouts/Guide.astro";
+import Section8Cta from "../../../components/Section8Cta.astro";
+import { datasetSchema, fmr, metroPath, metros, pct, published, src, updated, usd } from "../../../data/section8.ts";
 
 const two = (i: number) => (m: (typeof metros)[number]) => m.fmr2027[i] ?? 0;
 type M = (typeof metros)[number];
@@ -53,15 +53,14 @@ const headings = [
 const dataset = datasetSchema({
   name: "HUD Fair Market Rents FY2027, 50 largest US metro areas, 0–4 bedrooms",
   description: "HUD FY2027 and FY2026 Fair Market Rents for the 50 most populous HUD metro FMR areas, 0 to 4 bedrooms, with the change in percent.",
-  url: "https://citata.ai/section-8",
+  url: "https://citata.ai/guides/section-8-rent-limits",
 });
 ---
 
 <Guide
   frontmatter={fm}
-  url="/section-8"
+  url="/guides/section-8-rent-limits"
   headings={headings}
-  section={{ name: "Section 8 rent limits", href: "/section-8", note: "HUD FY2027 data for landlords" }}
   about={["Section 8 Housing Choice Voucher program", "Fair Market Rent"]}
   schemas={[dataset]}
   method={`How we made this page: a script read every number from HUD's FY2027 and FY2026 FMR files (fetched ${fmr.fetched}). We check sample pages against the HUD files by hand. This page is not legal advice.`}

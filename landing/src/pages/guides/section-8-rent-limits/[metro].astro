@@ -1,10 +1,10 @@
 ---
-// One page per HUD metro FMR area: /section-8/<slug>-fair-market-rent-2027.
+// One page per HUD metro FMR area: /guides/section-8-rent-limits/<slug>-fair-market-rent-2027.
 // Experiment H01-E1. Every number comes from src/data/fmr-fy2027.json (HUD files, tools/section8/build.py).
 // Rules: answer first, ASD-STE100, sources, no legal advice, Fair Housing (no text about who should rent where).
 import type { GetStaticPaths } from "astro";
-import Guide from "../../layouts/Guide.astro";
-import Section8Cta from "../../components/Section8Cta.astro";
+import Guide from "../../../layouts/Guide.astro";
+import Section8Cta from "../../../components/Section8Cta.astro";
 import {
   basicRange,
   bedrooms,
@@ -21,7 +21,7 @@ import {
   updated,
   usd,
   type Metro,
-} from "../../data/section8.ts";
+} from "../../../data/section8.ts";
 
 export const getStaticPaths = (() =>
   metros.map((m) => ({ params: { metro: `${m.slug}-fair-market-rent-2027` }, props: { m } }))) satisfies GetStaticPaths;
@@ -96,7 +96,7 @@ const dataset = datasetSchema({
   frontmatter={fm}
   url={path}
   headings={headings}
-  section={{ name: "Section 8 rent limits", href: "/section-8", note: "HUD FY2027 data for landlords" }}
+  section={{ name: "Section 8 rent limits", href: "/guides/section-8-rent-limits", note: "HUD FY2027 data for landlords" }}
   about={["Section 8 Housing Choice Voucher program", "Fair Market Rent", m.hudName]}
   schemas={[dataset]}
   method={`How we made this page: a script read every number from HUD's FY2027 and FY2026 FMR files (fetched ${fmr.fetched}). We check sample pages against the HUD files by hand. This page is not legal advice.`}
@@ -211,7 +211,7 @@ const dataset = datasetSchema({
     }
   </ul>
   <p>
-    See <a href="/section-8">all 50 metros</a> in one table, or read our <a href="/guides">guides for property managers</a>.
+    See <a href="/guides/section-8-rent-limits">all 50 metros</a> in one table, or read our <a href="/guides">guides for property managers</a>.
   </p>
 
   <Section8Cta slot="cta" />
