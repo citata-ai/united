@@ -1149,7 +1149,7 @@ const CSS = `
 `;
 
 const caption =
-  "We start with your site. Inside the citata frame, each page passes 3 stations: Indexed, Found, Mentioned. AI engines then name your site, and buyers come back to it. One checked change a day turns the wheels. Every 7th buyer, the bell rings: your Monday report. Tap a dot to read each step.";
+  "We start with your site. Inside the Citata frame, each page passes 3 stations: Indexed, Found, Mentioned. AI engines then name your site, and buyers come back to it. One checked change a day turns the wheels. Every 7th buyer, the bell rings: your Monday report. Tap a dot to read each step.";
 
 const plate = k
   .plateHtml({
