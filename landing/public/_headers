@@ -1,0 +1,11 @@
+# Cloudflare Workers static assets: cache rules. Hashed and versioned files are immutable.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/img/*
+  Cache-Control: public, max-age=2592000
+/og/*
+  Cache-Control: public, max-age=2592000
+/mechanism/*
+  Cache-Control: public, max-age=86400
