@@ -1,0 +1,464 @@
+# Public evidence audit by Citata.ai. Unknown is not zero.
+title = "Goodjuju Client Delivery Audit"
+author = "Citata.ai"
+seen = "2026-10-19"
+competitor = "Goodjuju Marketing"
+role = "direct"
+client_count = 11
+confirmed = 11
+likely = 0
+weak = 0
+window_start = "2026-04-01"
+window_end = "2026-09-30"
+h03_source = "origin/stage:business/marketing/ai-visibility/cities-2026-10/2026-10-19/cities.csv"
+method = "Public primary pages, named reviews, direct HTML/XML, public reader HTML, and search snapshots. No forms, accounts, payments, or contact."
+limits = "Confirmed means named work at some point. It does not prove current contract, current authorship, or 50-500 doors. Size gaps and mixed suppliers remain explicit. All expected effects are hypotheses."
+listing_rule = "The 6 checks are Expertise, iPropertyManagement, Yelp, Thumbtack, BBB, and NARPM. A missing search result means unknown, not absent. Directory creation by Goodjuju is unproved."
+schema_rule = "Types come from sampled home JSON-LD only. No sitewide validation. Unknown raw HTML is not an empty schema set."
+h03_rule = "Match company identity and exact city first. Name matches and cited domains are separate. No new ChatGPT-style answer was obtained for missing cities."
+
+[[client]]
+name = "Excellence Property Management"
+domain = "epmmanager.com"
+city = "San Jose"
+state = "CA"
+evidence_url = "https://gogoodjuju.com/review-case-study-excellence-property-management-growth/"
+confidence = "confirmed"
+pages = 36
+page_types = ["owner FAQ", "tenant FAQ", "full-service management", "tenant placement", "9 nearby-city pages", "rental search", "blog"]
+blog_posts_6mo = 0
+schema = ["LocalBusiness", "PostalAddress", "WebSite", "SearchAction", "EntryPoint"]
+llms_txt = "200. Plain text summary with service-area links."
+robots_ai_rules = "General public access allowed. PetalBot blocked. No named OpenAI, Anthropic, or Google-Extended rule."
+listings = ["https://ipropertymanagement.com/companies/san-jose-ca"]
+named_in_h03 = "no"
+notes = "Mike Busch names a site rebuild, local SEO, reviews, and weekly video reports. Case claims 100-120 to 260 doors and 0 to 15-20 monthly website leads. These are client claims. Home contains a Goodjuju reference. Wix hosts the site. The RSS names Jivko Stefanov on 3 older posts."
+scope = "Residential owner service. 260 doors in the case. Current count unknown."
+pages_method = "36 unique URLs across all 4 child sitemaps. Includes 6 property detail URLs and 1 blog category. Child counts overlap."
+blog_method = "All 7 RSS posts date from 2022-11 through 2023-01. No post in 2026-04-01 through 2026-09-30."
+blog_months = [0, 0, 0, 0, 0, 0]
+gbp_signal = "100+ Google reviews in the case. Current total unknown."
+tools = ["free rental consultation/assessment", "Buildium portal link"]
+pricing = "No fee page in the checked page sitemap. A directory publishes fees, which need a client check."
+section8 = "No dedicated Section 8 URL in the checked sitemap."
+h03_detail = "0 of 3 San Jose answers name this firm. No epmmanager.com source domain in those rows."
+audit_urls = ["https://www.epmmanager.com/", "https://www.epmmanager.com/sitemap.xml", "https://www.epmmanager.com/blog-feed.xml", "https://www.epmmanager.com/robots.txt", "https://www.epmmanager.com/llms.txt"]
+
+[[client]]
+name = "Beacon Property Management"
+domain = "beaconpropertymanagement.com"
+city = "Littleton"
+state = "CO"
+evidence_url = "https://gogoodjuju.com/case-study-beacon-property-management/"
+confidence = "confirmed"
+pages = "132 content URLs, plus uncounted category URLs"
+page_types = ["owner FAQ", "tenant FAQ", "9 distinct local areas linked", "rental search", "blog"]
+blog_posts_6mo = 55
+schema = ["Organization", "RealEstateAgent", "Service", "Offer", "OfferCatalog", "WebPage", "WebSite", "PostalAddress", "GeoCoordinates"]
+llms_txt = "404 on direct fetch."
+robots_ai_rules = "WordPress admin, search, and store paths blocked. No named AI-agent rule."
+listings = ["https://www.bbb.org/us/co/littleton/profile/property-management/beacon-property-management-llc-1296-90013828", "https://ipropertymanagement.com/companies/denver-co"]
+named_in_h03 = "unknown"
+notes = "Kerri Ziegler names website, local SEO, and review work. Case claims about 1 to 20 calls monthly and 2 to 60 reviews. Current footer names Upward Engine. Do not assign current content or schema to Goodjuju."
+scope = "Residential owner service. Door count unknown. Size fit remains provisional."
+pages_method = "111 post URLs plus 21 page URLs from direct child sitemaps. Category sitemap not counted. Includes store utility pages."
+blog_method = "Public WordPress API returns X-WP-Total 55 for April-September. Dates show apparent publication, not verified first publication."
+blog_months = [1, 1, 2, 20, 16, 15]
+gbp_signal = "Home widget shows 152 Google reviews. iPropertyManagement shows 155. Snapshots differ."
+tools = ["owner quotation form", "AppFolio portals", "Trustindex reviews"]
+pricing = "No fee page in the checked page sitemap. Quote on request."
+section8 = "No dedicated Section 8 page found in the checked inventory."
+h03_detail = "Littleton is outside H03. Secondary check: no match in Denver or Aurora, 0 of 6 answers. Oakland Beacon is a different firm."
+audit_urls = ["https://beaconpropertymanagement.com/", "https://beaconpropertymanagement.com/sitemap-post-type-post.xml", "https://beaconpropertymanagement.com/sitemap-post-type-page.xml", "https://beaconpropertymanagement.com/wp-json/wp/v2/posts?after=2026-04-01T00%3A00%3A00&before=2026-10-01T00%3A00%3A00&per_page=100&_fields=date,link", "https://beaconpropertymanagement.com/contact/"]
+
+[[client]]
+name = "Hallmark Property Management"
+domain = "hallmarkok.com"
+city = "Oklahoma City"
+state = "OK"
+evidence_url = "https://gogoodjuju.com/case-study-hallmark-property-management/"
+confidence = "confirmed"
+pages = 90
+page_types = ["residential services", "6 service detail pages", "HOA", "small multifamily", "commercial", "owner resources", "FAQ", "9 suburb pages", "pricing", "guarantees", "rental search", "blog"]
+blog_posts_6mo = "unknown. At least 2 dated May posts checked."
+schema = ["Organization", "WebSite", "WebPage", "BreadcrumbList", "SearchAction", "EntryPoint", "ListItem", "ReadAction"]
+llms_txt = "Reader returns a branded page-not-found page, not an LLM text file."
+robots_ai_rules = "Unknown. Direct fetch 403. Reader returned an empty document."
+listings = ["https://www.bbb.org/us/ok/moore/profile/industrial-property-management/hallmark-property-management-0995-90036209", "https://ipropertymanagement.com/companies/oklahoma-city-ok"]
+named_in_h03 = "no"
+notes = "Goodjuju case and current footer name the work. Brayden compares 3 signed owners from website leads in 1 month with 3 from a directory over 4-5 months. This is a client account, not a controlled test."
+scope = "Residential owner service plus HOA. Case gives 404 doors. Office is in Moore and market is Oklahoma City."
+pages_method = "90 unique URLs in the reader-rendered sitemap. Direct fetch 403. Includes sample and thank-you pages."
+blog_method = "Two inspected posts show 2026-05-27. October archive shows 6 posts dated October 2-16. Full six-month count unknown."
+gbp_signal = "Home review widget shows 88 Google reviews. Not a live GBP export."
+tools = ["free rental analysis", "AppFolio", "Property Meld", "Trustindex"]
+pricing = "Dedicated /pricing/ page."
+section8 = "No dedicated Section 8 URL in the reader sitemap."
+h03_detail = "0 of 3 Oklahoma City answers name Hallmark. No hallmarkok.com source domain in those rows."
+audit_urls = ["https://hallmarkok.com/", "https://hallmarkok.com/sitemap.xml", "https://hallmarkok.com/pricing/", "https://hallmarkok.com/blog/", "https://hallmarkok.com/move-in-and-move-out-guide-for-landlords-protect-your-property-and-your-deposit/", "https://hallmarkok.com/marketing-your-rental-property-to-fill-vacancies-fast/", "https://hallmarkok.com/llms.txt"]
+
+[[client]]
+name = "OZ Realty"
+domain = "ozrealty.house"
+city = "Toledo"
+state = "OH"
+evidence_url = "https://gogoodjuju.com/case-study-oz-realty-management/"
+confidence = "confirmed"
+pages = "unknown. Sitemap fetch blocked."
+page_types = ["service detail pages", "pricing", "premium package", "owner portal", "FAQ", "area hub", "video library", "downloads", "rental search", "blog"]
+blog_posts_6mo = "unknown. At least 12 April-September posts visible."
+schema = ["unknown. Raw home HTML unavailable."]
+llms_txt = "Reader returns a branded 404 page."
+robots_ai_rules = "Unknown. Direct fetch 403. Reader returned an empty document."
+listings = ["https://www.bbb.org/us/oh/toledo/profile/property-management/oz-realty-toledo-property-management-0422-211003975", "https://propertymanagement.com/property-manager/oz-realty-toledo-property-management-toledo-oh", "https://www.managemyproperty.com/companies/oz-realty-7044"]
+named_in_h03 = "unknown"
+notes = "Engelo Rumora names website, SEO, reviews, and content work. Current footer credits Goodjuju. The case claims sustained top Google ranks. We did not repeat that rank test. Blog excerpts expose draft instructions on several September posts."
+scope = "Residential owner service. Directory FAQ says 400+ units. Same listing summary says 297+. Current size remains uncertain."
+pages_method = "Direct sitemap 403. Reader returned an empty document. Search fetch could not read the sitemap."
+blog_method = "Visible latest archive: July 2, August 6, September 4. These 12 are a lower bound. Featured 2025 posts are excluded."
+gbp_signal = "Home claims 300+ Google reviews. No live count verified."
+tools = ["free rental analysis", "AppFolio", "Property Meld", "video testimonials", "downloadable resources"]
+pricing = "Dedicated pricing and Diamond Package pages."
+section8 = "Unknown. No dedicated page found in the sampled navigation."
+h03_detail = "Toledo is outside H03. No new model answer obtained. Search results are not an AI-answer substitute."
+audit_urls = ["https://ozrealty.house/", "https://ozrealty.house/blog/", "https://ozrealty.house/sitemap.xml", "https://ozrealty.house/llms.txt"]
+
+[[client]]
+name = "Iron Horse Property Management"
+domain = "ironhorsepropertymanagement.com"
+city = "Athens"
+state = "GA"
+evidence_url = "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/"
+confidence = "confirmed"
+pages = 134
+page_types = ["owner FAQ", "guarantees", "pricing", "nearby-city pages", "rental search", "resident resources", "education videos", "troubleshooting videos", "agent referrals", "blog"]
+blog_posts_6mo = "unknown. At least 8 April-September posts checked."
+schema = ["Organization", "Service", "Offer", "OfferCatalog", "WebSite", "WebPage", "BreadcrumbList", "GeoCoordinates", "PostalAddress", "ContactPoint"]
+llms_txt = "Unknown. Direct 403 and reader 429."
+robots_ai_rules = "Unknown. Direct 403 and reader 429."
+listings = ["https://ipropertymanagement.com/companies/athens-ga", "https://www.narpm.org/docs/members/magazine/2022/June_2022_lo-res.pdf"]
+named_in_h03 = "unknown"
+notes = "Justin Woodall names the rebuild and SEO work. Current footer credits Goodjuju. Case versions give 400+ and 450+ doors from 114. Do not merge these snapshots into a precise current count."
+scope = "Residential owner service. About 450+ doors in the reader case. Upper bound and current count unknown."
+pages_method = "134 unique URLs in the reader-rendered sitemap. Direct fetch 403."
+blog_method = "May 26: 3 guides. July: 2 guides. August: 1 guide. September: 2 more distinct screening guides. Lower bound 8. Full archive count unknown."
+gbp_signal = "Home widget shows 125 Google reviews. Not a live GBP export."
+tools = ["free rental analysis", "AppFolio", "Trustindex", "owner education videos"]
+pricing = "Dedicated /pricing/ page. Directory also lists fee details."
+section8 = "No dedicated Section 8 URL in the reader sitemap."
+h03_detail = "Athens is outside H03. No new model answer obtained."
+audit_urls = ["https://ironhorsepropertymanagement.com/", "https://ironhorsepropertymanagement.com/sitemap.xml", "https://ironhorsepropertymanagement.com/blog/", "https://ironhorsepropertymanagement.com/pricing/", "https://ironhorsepropertymanagement.com/tenant-screening-for-rental-property-owners-what-you-need-to-know/"]
+
+[[client]]
+name = "PropertySourced Property Management"
+domain = "propertysourcedrentals.com"
+city = "Manteca"
+state = "CA"
+evidence_url = "https://gogoodjuju.com/review-case-study-propertysourced-growth/"
+confidence = "confirmed"
+pages = "unknown. Sitemap fetch blocked."
+page_types = ["Manteca city page", "Lathrop city page", "Tracy city page", "owner FAQ", "owner make-ready checklist", "tenant FAQ", "rental search", "blog"]
+blog_posts_6mo = "unknown. Search archive snapshot is stale."
+schema = ["unknown. Raw home HTML unavailable."]
+llms_txt = "Unknown. Direct 403 and reader 429."
+robots_ai_rules = "Reader shows standard WordPress admin block and public access. Direct fetch 403."
+listings = ["https://propertymanagement.com/property-manager/propertysourced-property-management-manteca-ca", "https://reviews.birdeye.com/propertysourced-property-management-164793413955788"]
+named_in_h03 = "unknown"
+notes = "Paul Lopez names a new website, local SEO, GBP, and reviews. Current footer credits Goodjuju. Case heading says 400+ doors. Its interview says 350+. Keep both source versions. Audit the rental domain, not the separate brokerage site."
+scope = "Residential owner service. Started near 50 doors. Case now says 350+ in the interview and 400+ in the heading."
+pages_method = "Direct sitemap 403. Reader returned an empty document. Search fetch could not read it."
+blog_method = "Search-fetched /blog/ snapshot lists late 2025 posts and 12 archive pages. It cannot prove zero 2026 posts."
+gbp_signal = "Birdeye reports 179 Google reviews. PropertyManagement.com reports 157. Different snapshots, not a measured change."
+tools = ["free rental analysis", "owner/tenant role selector", "AppFolio", "Property Meld", "owner make-ready checklist"]
+pricing = "No price page in the sampled navigation. Complete inventory unknown."
+section8 = "Unknown. No dedicated page found in sampled navigation."
+h03_detail = "Manteca is outside H03. No new model answer obtained."
+audit_urls = ["https://propertysourcedrentals.com/", "https://propertysourcedrentals.com/about/", "https://propertysourcedrentals.com/blog/", "https://propertysourcedrentals.com/sitemap.xml", "https://propertysourcedrentals.com/robots.txt"]
+
+[[client]]
+name = "Traverse Property Management"
+domain = "traversepm.com"
+city = "Fort Worth"
+state = "TX"
+evidence_url = "https://gogoodjuju.com/case-study-traverse-pm/"
+confidence = "confirmed"
+pages = "unknown. Sitemap fetch blocked."
+page_types = ["owner resources", "owner FAQ", "tenant resources", "pricing", "service detail pages", "nearby-city pages", "guarantees", "rental search", "blog"]
+blog_posts_6mo = "unknown. At least 6 April-September posts visible."
+schema = ["unknown. Raw home HTML unavailable."]
+llms_txt = "Unknown. Direct 403 and reader 429."
+robots_ai_rules = "Unknown. Direct 403 and reader 429."
+listings = ["https://www.bbb.org/us/tx/benbrook/profile/property-management/traverse-property-management-0825-1000231706", "https://www.secondnature.com/property-management/traverse"]
+named_in_h03 = "yes"
+notes = "Jon Beaman names local SEO, reviews, and lead reports. Case claims 3-7 to 20+ monthly owner leads and a 38% close rate. Current home credits Goodjuju. An older testimonials page credits PMW. Do not infer one supplier owns all historical work."
+scope = "Residential owner service. Home says it limits service to 250 doors. This is a stated cap, not a current count."
+pages_method = "Direct sitemap 403. Reader 429. Search fetch could not read the sitemap."
+blog_method = "Visible /blog/ has 4 posts dated 2026-08-10 and 2 dated 2026-06-18. Lower bound, not full archive."
+gbp_signal = "Case says 123 reviews at 4.9. The live home contains Google review excerpts. Current total unknown."
+tools = ["rent-versus-sell calculator", "ROI calculator", "vacancy-loss calculator", "free rental analysis", "Rentvine", "Trustindex"]
+pricing = "Dedicated pricing link on current home. Older blog header lacks it, so versions differ."
+section8 = "Unknown. No dedicated page found in sampled navigation."
+h03_detail = "Gemini names Traverse first in Fort Worth. ChatGPT and Claude do not. 1 of 3 answers. traversepm.com is not in source_domains for those rows."
+audit_urls = ["https://traversepm.com/", "https://traversepm.com/blog/", "https://traversepm.com/sitemap.xml", "https://www.traversepm.com/testimonials"]
+
+[[client]]
+name = "PMI Equitas"
+domain = "bothellpropertymanagementinc.com"
+city = "Bothell"
+state = "WA"
+evidence_url = "https://gogoodjuju.com/case-study-pmi-equitas/"
+confidence = "confirmed"
+pages = 129
+page_types = ["owner resources", "9 service-area pages", "marketing", "screening", "rent collection", "maintenance", "accounting", "eviction", "guarantees", "rental analysis", "blog"]
+blog_posts_6mo = 15
+schema = ["none found in home JSON-LD scan"]
+llms_txt = "404 on direct fetch."
+robots_ai_rules = "Blocks campaign/thank-you paths. Public site remains open. No named AI-agent rule."
+listings = ["https://www.bbb.org/us/wa/bothell/profile/property-management/pmi-equitas-1296-1000179627", "https://www.allpropertymanagement.com/property-management/companies/42721/pmi-equitas/", "https://www.narpm.org/docs/members/magazine/2023/JULY_2023_final.pdf"]
+named_in_h03 = "unknown"
+notes = "David Bennett names Goodjuju content, links, review work, and monthly video reports. Current footer credits PMW. The case proves SEO work. It does not prove Goodjuju built the platform or wrote all current posts."
+scope = "Local residential owner service within a national franchise. Local door count unknown. Size fit remains provisional."
+pages_method = "129 unique direct sitemap URLs. Includes 92 blog detail URLs and campaign utility pages."
+blog_method = "Fetched all 92 sitemap blog pages. Each has a visible publication date. April-September total 15. October adds 1."
+blog_months = [1, 4, 1, 1, 4, 4]
+gbp_signal = "Case describes a review program. Current review total unknown."
+tools = ["free rental analysis", "Rentvine portals", "owner guarantees"]
+pricing = "No dedicated fee page found in the checked sitemap."
+section8 = "No dedicated Section 8 URL found in the checked sitemap."
+h03_detail = "Bothell is outside H03. Do not treat Seattle as an exact city match."
+audit_urls = ["https://www.bothellpropertymanagementinc.com/", "https://www.bothellpropertymanagementinc.com/sitemap.xml", "https://www.bothellpropertymanagementinc.com/blog", "https://www.bothellpropertymanagementinc.com/robots.txt", "https://www.bothellpropertymanagementinc.com/llms.txt"]
+
+[[client]]
+name = "Best Property Management of TN and GA"
+domain = "bpmofchatt.com"
+city = "Chattanooga"
+state = "TN"
+evidence_url = "https://gogoodjuju.com/case-study-bpm-chattanooga/"
+confidence = "confirmed"
+pages = "unknown. Sitemap fetch blocked."
+page_types = ["owner resources", "tenant resources", "18 city links across TN and GA", "rental search", "referral page", "blog"]
+blog_posts_6mo = "unknown. October index cannot measure April-September."
+schema = ["unknown. Raw home HTML unavailable."]
+llms_txt = "Reader returns a branded page-not-found page."
+robots_ai_rules = "Unknown. Direct 403 and reader 429."
+listings = ["https://www.bbb.org/us/tn/chattanooga/profile/property-management/best-property-management-of-chattanooga-llc-0483-40125336", "https://www.yelp.com/biz/best-property-management-of-chattanooga-chattanooga"]
+named_in_h03 = "unknown"
+notes = "Goodjuju calls this BPM Chattanooga. Chanda Strickland matches the current company about page. Current footer names Goodjuju. Case describes a website, SEO, reviews, and 3-5 new owners monthly. That number is a client claim."
+scope = "Residential owner service plus small multifamily and commercial. Door count unknown. Size fit remains provisional."
+pages_method = "Direct sitemap 403. Reader 429. Search fetch could not read the sitemap."
+blog_method = "Visible archive has 6 posts dated 2026-10-02 through 2026-10-14. October is outside the six completed months."
+gbp_signal = "Home shows named testimonials and a Google map. Current review total unknown."
+tools = ["free rental analysis", "owner/tenant role selector", "AppFolio"]
+pricing = "No fee page in sampled navigation. Current cost guide appears in October blog."
+section8 = "Unknown. No dedicated page found in sampled navigation."
+h03_detail = "Chattanooga is outside H03. No new model answer obtained."
+audit_urls = ["https://bpmofchatt.com/", "https://bpmofchatt.com/about/", "https://bpmofchatt.com/blog/", "https://bpmofchatt.com/llms.txt"]
+
+[[client]]
+name = "Five Seasons Property Management"
+domain = "burlingtonproperty.management"
+city = "Burlington"
+state = "VT"
+evidence_url = "https://clutch.co/profile/goodjuju-marketing"
+confidence = "confirmed"
+pages = 45
+page_types = ["owner resources", "owner FAQ", "tenant FAQ", "Burlington management", "rental search", "mid-term rentals", "vacation rentals", "landscaping", "blog"]
+blog_posts_6mo = 0
+schema = ["none found in home JSON-LD scan"]
+llms_txt = "404 on direct fetch."
+robots_ai_rules = "robots.txt returns 404. No published AI rule observed."
+listings = ["https://www.bbb.org/us/vt/burlington/profile/commercial-property-management/five-seasons-property-management-0021-513030", "https://propertymanagement.com/property-manager/five-seasons-property-management-burlington-vt", "https://www.allpropertymanagement.com/property-management/companies/46382/five-seasons-property-management/"]
+named_in_h03 = "unknown"
+notes = "Clutch names Seth Golding, Burlington, and an SEO project from August 2018. The 2019 interview proves historical work. It describes offsite content and link work on agency-owned domains. Current engagement and current site authorship remain unknown."
+scope = "Residential owner service, including student rentals. Directory reports 209+ units. It also offers vacation and mid-term rentals."
+pages_method = "45 unique direct sitemap URLs. Includes 28 blog detail URLs."
+blog_method = "Fetched all 28 sitemap blog posts. Visible dates end 2019-07-04. No April-September 2026 dates."
+blog_months = [0, 0, 0, 0, 0, 0]
+gbp_signal = "Birdeye search result shows 196 reviews. Google-only total not verified."
+tools = ["Buildium portals", "owner resources"]
+pricing = "No fee page or calculator found in the checked sitemap."
+section8 = "No dedicated Section 8 URL found in the checked sitemap."
+h03_detail = "Burlington is outside H03. No new model answer obtained."
+audit_urls = ["https://www.burlingtonproperty.management/", "https://www.burlingtonproperty.management/about", "https://www.burlingtonproperty.management/sitemap.xml", "https://www.burlingtonproperty.management/blog", "https://www.burlingtonproperty.management/robots.txt", "https://www.burlingtonproperty.management/llms.txt"]
+
+[[client]]
+name = "Valiant Realty & Management"
+domain = "valiantrealtypm.com"
+city = "Jacksonville"
+state = "FL"
+evidence_url = "https://www.featuredcustomers.com/vendor/goodjuju"
+confidence = "confirmed"
+pages = 69
+page_types = ["owner resources", "owner FAQ", "local management pages", "service detail pages", "pricing link", "guarantees", "rental search", "investor pages"]
+blog_posts_6mo = "unknown. Blog index has no visible posts."
+schema = ["none found in home JSON-LD scan"]
+llms_txt = "404 on direct fetch."
+robots_ai_rules = "Blocks campaign and thank-you paths. No named AI-agent rule."
+listings = ["https://www.bbb.org/us/fl/jacksonville/profile/property-management/valiant-realty-management-llc-0403-235978196/"]
+named_in_h03 = "yes"
+notes = "FeaturedCustomers names Charles Tripp and Valiant in a Goodjuju SEO review. Current site says residential management is its main work. PMW owns the current footer credit. This confirms historical Goodjuju SEO work, not current website authorship."
+scope = "Single-family and small multifamily owner service. Local door count unknown. Size fit remains provisional."
+pages_method = "69 unique direct sitemap URLs. No blog detail URL. Includes investor and real-estate pages."
+blog_method = "The /blog endpoint returns 200 with no visible post cards or dates. That is not proof of no unlinked posts."
+gbp_signal = "Current Google review total unknown."
+tools = ["owner portal", "Tenant Turner reference", "Abodea reference", "fee PDF"]
+pricing = "Home links /pricing. An older /files/price-sheet.pdf is indexed. Current fee terms not checked."
+section8 = "No dedicated Section 8 URL found in the checked sitemap."
+h03_detail = "Named by ChatGPT and Claude, not Gemini, for Jacksonville. 2 of 3 answers. valiantrealtypm.com is not in those source_domains."
+audit_urls = ["https://www.valiantrealtypm.com/", "https://www.valiantrealtypm.com/sitemap.xml", "https://www.valiantrealtypm.com/blog", "https://www.valiantrealtypm.com/robots.txt", "https://www.valiantrealtypm.com/llms.txt", "https://www.valiantrealtypm.com/files/price-sheet.pdf"]
+
+[[pattern]]
+id = "P1"
+title = "Owner path plus local pages"
+finding = "Management service, local pages, owner FAQ, rental analysis, and separate renter links repeat across current sites."
+clients = ["Excellence Property Management", "Hallmark Property Management", "Iron Horse Property Management", "PropertySourced Property Management", "Traverse Property Management", "Best Property Management of TN and GA"]
+attribution = "Cases and current footer credits support a Goodjuju delivery pattern. Shared page order suggests a reusable framework, not a proved identical template."
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/", "https://gogoodjuju.com/review-case-study-propertysourced-growth/", "https://gogoodjuju.com/case-study-traverse-pm/", "https://gogoodjuju.com/case-study-bpm-chattanooga/"]
+
+[[pattern]]
+id = "P2"
+title = "Local SEO plus review requests"
+finding = "Goodjuju cases combine local search work with steady review requests and GBP work. Sites show Google review proof beside owner offers."
+clients = ["Excellence Property Management", "Beacon Property Management", "PropertySourced Property Management", "Traverse Property Management", "Best Property Management of TN and GA"]
+attribution = "Named client accounts support the service bundle. Current review counts vary by source. No isolated review-only effect measured."
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://gogoodjuju.com/case-study-beacon-property-management/", "https://gogoodjuju.com/review-case-study-propertysourced-growth/", "https://gogoodjuju.com/case-study-traverse-pm/", "https://gogoodjuju.com/case-study-bpm-chattanooga/"]
+
+[[pattern]]
+id = "P3"
+title = "Landlord question clusters"
+finding = "Lease, screening, rent collection, maintenance, and eviction guides repeat with local details. Some clients publish several posts on one date."
+clients = ["Hallmark Property Management", "Iron Horse Property Management", "Traverse Property Management", "PMI Equitas", "OZ Realty"]
+attribution = "Similar titles and batch dates support a shared content plan. They do not prove shared authors or automated text."
+evidence_urls = ["https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/", "https://gogoodjuju.com/case-study-traverse-pm/", "https://gogoodjuju.com/case-study-pmi-equitas/", "https://gogoodjuju.com/case-study-oz-realty-management/"]
+
+[[pattern]]
+id = "P4"
+title = "Mixed platforms and suppliers"
+finding = "Wix, WordPress/Elementor, and PMW sites appear in one client set. Portal links include AppFolio, Buildium, and Rentvine."
+clients = ["Excellence Property Management", "Hallmark Property Management", "Iron Horse Property Management", "PMI Equitas", "Valiant Realty & Management", "Beacon Property Management"]
+attribution = "Goodjuju SEO can sit on another supplier platform. Beacon now credits Upward Engine. Current work cannot all be assigned to Goodjuju."
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/", "https://gogoodjuju.com/case-study-pmi-equitas/", "https://www.featuredcustomers.com/vendor/goodjuju", "https://gogoodjuju.com/case-study-beacon-property-management/"]
+
+[[pattern]]
+id = "P5"
+title = "Useful tools and proof"
+finding = "Traverse links 3 owner calculators. Iron Horse and Hallmark link prices and guarantees. Free rental analysis repeats on several sites."
+clients = ["Traverse Property Management", "Iron Horse Property Management", "Hallmark Property Management", "PropertySourced Property Management"]
+attribution = "Observed page sets. Calculator use, lead rate, and Goodjuju ownership of each tool were not tested."
+evidence_urls = ["https://gogoodjuju.com/case-study-traverse-pm/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/", "https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-propertysourced-growth/"]
+
+[[pattern]]
+id = "P6"
+title = "No common AI-file package proved"
+finding = "Excellence has a readable llms.txt but no H03 name match. Valiant has no llms.txt and has 2 H03 matches. Other technical checks include blocked fetches."
+clients = ["Excellence Property Management", "Valiant Realty & Management", "Traverse Property Management", "PMI Equitas"]
+attribution = "Small sample, correlation only. No claim that a file causes or prevents an AI answer."
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://www.featuredcustomers.com/vendor/goodjuju", "https://gogoodjuju.com/case-study-traverse-pm/", "https://gogoodjuju.com/case-study-pmi-equitas/"]
+
+[[pattern]]
+id = "P7"
+title = "Short reports tied to owner growth"
+finding = "Cases describe video reports, work logs, review counts, leads, and signed owners. Hallmark compares lead sources by owners signed."
+clients = ["Excellence Property Management", "Hallmark Property Management", "PMI Equitas", "Five Seasons Property Management"]
+attribution = "Client accounts show the reporting offer. Independent revenue attribution remains unverified."
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/case-study-pmi-equitas/", "https://clutch.co/profile/goodjuju-marketing"]
+
+[[copy]]
+rank = 1
+move = "Track owner leads through signed doors"
+action = "Add source, city, qualified-owner status, call outcome, and signed-door fields. Report exact-city AI names and cited domains separately."
+expected_effect = "Higher confidence in which work earns owner leads."
+effect_status = "hypothesis"
+clients = ["Hallmark Property Management", "Traverse Property Management"]
+evidence_urls = ["https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/case-study-traverse-pm/"]
+measure = "Qualified owner leads, signed owners, and signed doors by source. Repeat the same 3-engine city prompts."
+
+[[copy]]
+rank = 2
+move = "Build one owner path per real service area"
+action = "For each client, connect a city page to service details, an owner FAQ, reviews, and rental analysis. Use citata.ai service pages the same way."
+expected_effect = "More relevant owner searches and more qualified inquiries."
+effect_status = "hypothesis"
+clients = ["Excellence Property Management", "PropertySourced Property Management", "Iron Horse Property Management"]
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://gogoodjuju.com/review-case-study-propertysourced-growth/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/"]
+measure = "Qualified owner inquiries per city page. Verify the firm actually serves each place."
+
+[[copy]]
+rank = 3
+move = "Pair GBP work with review requests"
+action = "Check GBP facts. Ask all eligible owners and tenants for honest reviews at clear service points. Show dated review sources on pages."
+expected_effect = "More local trust and more qualified calls."
+effect_status = "hypothesis"
+clients = ["Beacon Property Management", "Traverse Property Management", "PropertySourced Property Management"]
+evidence_urls = ["https://gogoodjuju.com/case-study-beacon-property-management/", "https://gogoodjuju.com/case-study-traverse-pm/", "https://gogoodjuju.com/review-case-study-propertysourced-growth/"]
+measure = "New reviews, review source, map calls, and owner lead quality. Do not gate requests by sentiment."
+
+[[copy]]
+rank = 4
+move = "Ship 3 owner decision tools"
+action = "Build rent-versus-sell, vacancy-loss, and rental-return tools with clear inputs and assumptions. Link them from client city pages. Add an agency value tool to citata.ai."
+expected_effect = "More useful visits, links, and owner inquiries."
+effect_status = "hypothesis"
+clients = ["Traverse Property Management"]
+evidence_urls = ["https://gogoodjuju.com/case-study-traverse-pm/"]
+measure = "Tool completions and qualified owner inquiries. Test the math and mobile flow."
+
+[[copy]]
+rank = 5
+move = "Publish local question clusters"
+action = "Start with screening, leases, rent collection, maintenance, and eviction. Add city facts and primary source links. Give each page one clear answer."
+expected_effect = "Broader useful search coverage and more answer-ready text."
+effect_status = "hypothesis"
+clients = ["Hallmark Property Management", "Iron Horse Property Management", "Traverse Property Management"]
+evidence_urls = ["https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/", "https://gogoodjuju.com/case-study-traverse-pm/"]
+measure = "Indexed pages, qualified visits, and exact-city AI names. Use a human check for legal claims."
+
+[[copy]]
+rank = 6
+move = "Show fees and owner protections"
+action = "Publish fee terms, exclusions, service scope, and guarantees that the client can honor. Publish citata.ai scope and price terms too."
+expected_effect = "Better owner fit and fewer price-only sales calls."
+effect_status = "hypothesis"
+clients = ["Hallmark Property Management", "Iron Horse Property Management", "OZ Realty"]
+evidence_urls = ["https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/", "https://gogoodjuju.com/case-study-oz-realty-management/"]
+measure = "Qualified inquiry rate, sales time, and lead objections."
+
+[[copy]]
+rank = 7
+move = "Publish named proof with dates"
+action = "Use a named client, city, baseline, period, lead definition, source, and limits. Ask consent before citata.ai publishes its own case."
+expected_effect = "More trust in the offer and clearer evidence for AI answers."
+effect_status = "hypothesis"
+clients = ["Excellence Property Management", "Hallmark Property Management", "PropertySourced Property Management"]
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-propertysourced-growth/"]
+measure = "Case-assisted qualified leads. Keep door counts and review counts tied to one dated source."
+
+[[copy]]
+rank = 8
+move = "Fix public listing facts"
+action = "Check name, phone, address, service area, and URL across the 6 requested directories. Track found, missing, and unknown separately."
+expected_effect = "Clearer business identity across sources used in AI answers."
+effect_status = "hypothesis"
+clients = ["Valiant Realty & Management", "Traverse Property Management", "Hallmark Property Management"]
+evidence_urls = ["https://www.featuredcustomers.com/vendor/goodjuju", "https://gogoodjuju.com/case-study-traverse-pm/", "https://gogoodjuju.com/case-study-hallmark-property-management/"]
+measure = "Confirmed profile accuracy and source-domain changes. Directory ownership is not proof Goodjuju created it."
+
+[[copy]]
+rank = 9
+move = "Test crawl access and truthful schema"
+action = "Check status, canonical, sitemap, robots, and visible page facts. Add valid Organization, LocalBusiness, Service, and Article data only where it fits."
+expected_effect = "Fewer crawl faults and clearer business facts."
+effect_status = "hypothesis"
+clients = ["Excellence Property Management", "Hallmark Property Management", "Iron Horse Property Management", "Valiant Realty & Management"]
+evidence_urls = ["https://gogoodjuju.com/review-case-study-excellence-property-management-growth/", "https://gogoodjuju.com/case-study-hallmark-property-management/", "https://gogoodjuju.com/review-case-study-iron-horse-pm-growth/", "https://www.featuredcustomers.com/vendor/goodjuju"]
+measure = "Successful public fetches and schema checks. Test llms.txt as a small option, not a promised citation fix."
+
+[[copy]]
+rank = 10
+move = "Send a short video and change log"
+action = "Show one work log, lead sources, review changes, AI names, and next steps. Use the same report for citata.ai clients."
+expected_effect = "Better client trust and faster decisions."
+effect_status = "hypothesis"
+clients = ["PMI Equitas", "Five Seasons Property Management", "Excellence Property Management"]
+evidence_urls = ["https://gogoodjuju.com/case-study-pmi-equitas/", "https://clutch.co/profile/goodjuju-marketing", "https://gogoodjuju.com/review-case-study-excellence-property-management-growth/"]
+measure = "Report delivery, client questions, retention, and agreed next actions."
