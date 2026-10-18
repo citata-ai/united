@@ -33,7 +33,11 @@ Analytics Engine columns:
 | `double1` | 1 (count)                                                    |
 | `double2` | HTTP status                                                  |
 
-Query (needs a Cloudflare API token with Account Analytics Read):
+Weekly report: `python3 tools/ai-visibility/traffic.py --days 7`. Token: Cloudflare account token `citata-ai-traffic-read` (Account Analytics Read only, expires 2027-10-18), in the macOS Keychain as service `citata/CF_ANALYTICS_TOKEN`. Move it to Infisical project `citata` when agents can write there.
+
+Watch for fake bots: anyone can send a GPTBot or ClaudeBot user agent. Scanners do this to probe `/.env`. The report counts only HTTP 200 rows. Our own GEO audits (`geo audit`) also send bot user agents; ignore the days we run them.
+
+Raw query:
 
 ```sh
 curl -s "https://api.cloudflare.com/client/v4/accounts/1494c6f692bcb718f1c942d6801e83fe/analytics_engine/sql" \
