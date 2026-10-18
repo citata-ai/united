@@ -1,6 +1,6 @@
 ---
 version: alpha
-name: citata — Aetas Aurea
+name: Citata — Aetas Aurea
 description: >
   Visual identity for citata.ai. A new Renaissance: AI brings our clients and
   humanity into a new golden age of productivity, prosperity and spiritual
@@ -176,7 +176,7 @@ components:
     padding: 24px
 ---
 
-# citata — Aetas Aurea
+# Citata — Aetas Aurea
 
 ## Overview
 
@@ -193,7 +193,12 @@ components:
 | Landing pages, blog, case studies, social | Full Renaissance: serif type, parchment, art, drop caps, marginalia | Astro 7 + Tailwind 4 (`/landing`) |
 | Web app (`app.citata.ai`) | Quiet tool: sans UI type, the MyRemotely web-app components, Renaissance only in color, headings and empty states | Foldkit + `@foldkit/ui` (`/frontend`) |
 
-**Brand mark.** The *manicule* ☞ — the pointing hand that Renaissance readers drew in margins to mark a passage worth citing. It means "this was cited". Use it as logo glyph, list bullet, and "cited" status icon. Wordmark: `citata` in Cormorant Garamond 500, lowercase, ink; the manicule sits before it in rubric red.
+**Logo.**
+- **Icon:** two curly quote pairs, `“` top-left and `”` bottom-right on a square. Cut in **Fraunces Black** (SOFT 100, WONK 1). Fraunces has soft ball terminals with a mid-century feel (Cooper / Windsor). The quotes say "cited".
+- **Wordmark:** `Citata` with a capital C, in Fraunces 600 (SOFT 100), ink. A rubric `“` sits high before the C and a rubric `”` sits low after the last a, so the quotes "hold" the name.
+- **Favicon / app icon:** the icon in parchment on lapis, 22% corner radius.
+- **Domain** stays lowercase in text: `citata.ai`.
+- **Manicule ☞** (the pointing hand that Renaissance readers drew in margins to mark a passage worth citing) is now a secondary glyph: list bullets and the "cited" status icon. It is not the logo.
 
 ## Colors
 
@@ -217,6 +222,7 @@ The palette comes from real Renaissance pigments and materials.
 
 | Role | Face | Why |
 |---|---|---|
+| Logo only | **Fraunces** 600 / 900, SOFT 100 | Mid-century ball-terminal quotes; never in body text |
 | Display, headlines | **Cormorant Garamond** 500–600 | Garamond's 16th-century forms, cut for large sizes |
 | Long text | **EB Garamond** 400 | True Garamond for reading; has small caps and old-style figures |
 | Marginal notes, captions | **IM Fell English** italic | Real 17th-century Fell types; our "hand" (like Every's Palmer script) |
