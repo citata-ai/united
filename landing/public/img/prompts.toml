@@ -56,3 +56,12 @@ prompt = "Wide cinematic landscape for a website hero. A vast valley of ancient 
 file = "footer-art"
 style = "F · Footer engraving, deep ink #1C1712 with minium accents; option B of 2 (A: lapis ink, had a plate frame). Cropped top 31%, sides 3%; paper lifted to white so it blends with the page."
 prompt = "Wide panoramic copperplate engraving for a website footer. A harbor town seen from across calm water: classical stone houses with tiled roofs, a few American two-flat brick rental buildings and small apartment blocks, a Greek temple on the hill above the town, soft hills, small boats, a tree at the left edge. Town and water in the lower half; upper half empty parchment sky with soft engraved clouds."
+
+# 2026-10-18, style E · two-tone engraving (brand/IMAGES.md), processed with brand/engrave.sh.
+[[image]]
+file = "hero-v4"
+prompt = "Wide panoramic landscape for a website hero: an ancient Greek city being built on a wide plain. A new temple with columns in wooden scaffolding, a wooden treadwheel crane lifts a stone block, stone houses with tiled roofs and cypress trees, a straight stone road leads from the foreground to the temple; on the road, small, a man in a toga carrying a big key. Grass and stones in the foreground."
+
+[[image]]
+file = "footer-v4"
+prompt = "Wide panoramic landscape for a website footer: an ancient Greco-Roman harbor town seen from across calm water, stone houses with tiled roofs, an arched aqueduct, a temple on the hill, cypress trees, stone quays, ancient wooden boats with square sails; an olive tree at the left edge; reeds and stones on the near shore."

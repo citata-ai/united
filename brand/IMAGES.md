@@ -19,7 +19,27 @@ What makes them work:
 | Subject | One old thing and one modern thing in one calm, centered scene (a CRT computer in the Acropolis) | Statue holds a modern prop |
 | Mood | Calm, editorial, a little strange | Pop, playful |
 
-## 2. Main style: P · Press collage
+## 2. Hero and footer: E · Two-tone engraving (since 2026-10-18)
+
+The owner chose this style for the hero and the footer after the halftone versions looked low-quality when upscaled. References: a two-tone engraved footer (ink sky, cream land) and an engraved postage stamp.
+
+- Crisp line engraving, two colors only: minium ink `#C1410B` on parchment `#F5EFE3`. No gray, no halftone dots.
+- The top of the image is a flat sky in ink color. On the page the text sits on a plain block of the same color, and the image starts below it. Text never sits on the art.
+
+**Style block E** (generate in black and white; the script recolors it):
+
+```text
+Style: fine line engraving illustration like a banknote or a vintage postage stamp engraving, crisp black ink lines, cross-hatching and stipple on clean white paper, high detail, sharp and clean, only pure black and pure white, no gray wash, no color. The upper 50 percent of the image is a perfectly flat, solid, pure black sky with no stars, no clouds, no texture and no gradient; the skyline meets the black sky with a clean edge. No text, no letters, no numbers, no logos, no watermark, no frame, no border.
+```
+
+**Process:** `ESRGAN_DIR=… brand/engrave.sh <in.png> <name-vN> <crop_top_fraction>` upscales ×4 (Real-ESRGAN), crops part of the sky, maps black → minium and white → parchment exactly, and writes WebP 640–3840 + OG. Reject images with a frame or border.
+
+| Image | Scene |
+|---|---|
+| `hero-v4` | An ancient Greek city being built: a temple in scaffolding, a treadwheel crane, stone houses, cypress trees; a stone road leads a man in a toga with a big key to the temple. Crop 0.22. |
+| `footer-v4` | An ancient Greco-Roman harbor town across calm water: tiled roofs, an aqueduct, a temple on the hill, square-sail boats, an olive tree at the left. Crop 0.32. |
+
+## 3. Covers: P · Press collage
 
 Use P for post covers, guide covers, the hero, OG images and social cards. Styles A, B and C in `DESIGN.md` stay for special cases (A for older images, B for small figures, C for diagrams).
 
@@ -50,7 +70,7 @@ After you generate it: crop the empty top and the plate edges, lift the paper to
 
 **Hero layout.** The hero image is full-bleed. Ask for "the upper half and the center are open sky for a headline" and put the small focal point (a lit doorway, a statue) low in the middle. The text sits in the sky in parchment color.
 
-## 3. Prompt template
+## 4. Prompt template
 
 ```text
 [SCENE: one old thing + one modern thing + a property-management detail], [COMPOSITION: centered, low horizon, where the eye goes].
@@ -66,7 +86,7 @@ Subject rules for our niche:
 - People only as statues. No photo-real faces.
 - No screens with UI, no brand logos, no text. Put words in HTML, never in the image.
 
-## 4. Process
+## 5. Process
 
 1. Write the prompt from the template. One concept per image.
 2. Generate with omp (rotates the logged-in Antigravity accounts; see `DESIGN.md` → Tools):
@@ -85,7 +105,7 @@ Subject rules for our niche:
 6. Add an entry to `landing/public/img/prompts.toml`: file, prompt, model, date.
 7. No visible "made with AI" label on the site (owner decision, 2026-10-18). Do not remove SynthID or C2PA marks.
 
-## 5. Approved prompts
+## 6. Approved prompts
 
 | Image | Prompt (scene part; add block P) | Field |
 |---|---|---|

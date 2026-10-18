@@ -137,31 +137,22 @@ const article = {
 const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
-<Base title={title} description={description} image="/og/hero-v3.jpg" modified="2026-10-18">
+<Base title={title} description={description} image="/og/hero-v4.jpg" modified="2026-10-18">
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
   </Fragment>
   <main>
-  <!-- Hero as an art print: full-bleed image (style P, brand/IMAGES.md), text in the empty sky. -->
-  <section class="hero-art relative isolate overflow-hidden bg-minium text-parchment">
-    <img
-      src="/img/hero-v3-1280.webp"
-      srcset="/img/hero-v3-640.webp 640w, /img/hero-v3-960.webp 960w, /img/hero-v3-1280.webp 1280w, /img/hero-v3-1920.webp 1920w, /img/hero-v3-2560.webp 2560w, /img/hero-v3-3840.webp 3840w"
-      sizes="100vw"
-      alt="A new ancient city rises under an orange sky: colonnades in scaffolding with wooden cranes, and a stone road that leads a landlord with a big key to a temple with a warm light."
-      width="3840"
-      height="2143"
-      fetchpriority="high"
-      class="absolute inset-0 -z-10 size-full object-cover object-bottom"
-    />
-    <div class="wrap flex min-h-[640px] flex-col items-center pt-12 pb-[390px] text-center sm:min-h-[min(88vh,860px)] sm:pb-[min(40vw,420px)] md:pt-20">
+  <!-- Hero as an engraved print (style E, brand/IMAGES.md): text on solid minium, the engraving below.
+       The image sky is the same minium, so the two join with no line and never overlap. -->
+  <section class="bg-minium text-parchment">
+    <div class="wrap flex flex-col items-center pt-14 pb-6 text-center md:pt-20">
       <p class="meta text-parchment/90"><span class="text-parchment">GEO + AEO</span> · for property management companies</p>
-      <h1 class="hero-title mt-5 max-w-4xl text-[44px] leading-[1.02] sm:text-[64px] lg:text-[76px]">
+      <h1 class="mt-5 max-w-4xl text-[44px] leading-[1.02] sm:text-[64px] lg:text-[76px]">
         Get named when landlords ask AI for a property manager
       </h1>
-      <p class="hero-title mt-6 max-w-2xl text-[18px] leading-normal text-parchment/95 sm:text-[20px]">
+      <p class="mt-6 max-w-2xl text-[18px] leading-normal text-parchment/95 sm:text-[20px]">
         Fewer landlord leads from Google? Landlords now ask ChatGPT or Gemini who to hire. Citata.ai
         gets your company named and linked in that answer. We do the work.
       </p>
@@ -171,6 +162,16 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
       </div>
       <p class="mt-4 text-sm text-parchment/90">Free: 20 landlord questions on 4 AI engines, and your top 5 fixes.</p>
     </div>
+    <img
+      src="/img/hero-v4-1280.webp"
+      srcset="/img/hero-v4-640.webp 640w, /img/hero-v4-960.webp 960w, /img/hero-v4-1280.webp 1280w, /img/hero-v4-1920.webp 1920w, /img/hero-v4-2560.webp 2560w, /img/hero-v4-3840.webp 3840w"
+      sizes="100vw"
+      alt="An engraved ancient city being built: a temple in scaffolding, a wooden crane, stone houses, and a road that leads a man with a big key to the temple."
+      width="3840"
+      height="1672"
+      fetchpriority="high"
+      class="block h-auto w-full"
+    />
   </section>
 
   <div class="wrap">

@@ -170,19 +170,10 @@ const nav = [
 
     <slot />
 
-    <!-- Footer as an art print, same style as the hero (brand/IMAGES.md): text sits in the orange sky. -->
-    <footer class="relative isolate mt-16 overflow-hidden bg-minium text-parchment">
-      <img
-        src="/img/footer-v3-1280.webp"
-        srcset="/img/footer-v3-640.webp 640w, /img/footer-v3-960.webp 960w, /img/footer-v3-1280.webp 1280w, /img/footer-v3-1920.webp 1920w, /img/footer-v3-2560.webp 2560w, /img/footer-v3-3840.webp 3840w"
-        sizes="100vw"
-        alt="An ancient harbor town under an orange sky: stone houses with tiled roofs, an aqueduct, a temple on the hill, sailing boats and an olive tree."
-        width="3840"
-        height="2143"
-        loading="lazy"
-        class="absolute inset-0 -z-10 size-full object-cover object-bottom"
-      />
-      <div class="wrap grid gap-10 pt-14 pb-[min(52vw,520px)] text-[14px] md:grid-cols-[1.4fr_1fr_1fr_1fr] md:pb-[min(34vw,560px)]">
+    <!-- Footer as an engraved print, same style as the hero (brand/IMAGES.md, style E): text on solid
+         minium, the engraving below it. The image sky is the same minium, so text never overlaps the art. -->
+    <footer class="mt-16 bg-minium text-parchment">
+      <div class="wrap grid gap-10 pt-14 pb-10 text-[14px] md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <a href="/" aria-label="Citata.ai home">
             <img src="/wordmark-on-minium.svg" alt="Citata" width="215" height="56" class="block h-10 w-auto" loading="lazy" />
@@ -212,6 +203,16 @@ const nav = [
           ))
         }
       </div>
+      <img
+        src="/img/footer-v4-1280.webp"
+        srcset="/img/footer-v4-640.webp 640w, /img/footer-v4-960.webp 960w, /img/footer-v4-1280.webp 1280w, /img/footer-v4-1920.webp 1920w, /img/footer-v4-2560.webp 2560w, /img/footer-v4-3840.webp 3840w"
+        sizes="100vw"
+        alt="An engraved ancient harbor town: stone houses with tiled roofs, an aqueduct, a temple on the hill and sailing boats."
+        width="3840"
+        height="1457"
+        loading="lazy"
+        class="block h-auto w-full"
+      />
     </footer>
   </body>
 </html>
