@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import PromptTester from "../components/PromptTester.astro";
 import { auditHref } from "../data/site.ts";
 
 // Facts: business/strategy.md §5 (market facts) and §6 (Section 8 angle).
@@ -8,13 +9,7 @@ const title = "Owner questions, renter questions and Section 8 in AI search — 
 const description =
   "Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai works to get your company named and linked in that answer.";
 
-const ownerPrompts = [
-  "best property management company in <city>",
-  "property manager in <city> that handles Section 8 tenants",
-  "how does Section 8 work for landlords in <city>",
-  "how much does property management cost in <city>",
-  "property management company <suburb>",
-];
+const faqLd = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is GEO different from SEO?", "acceptedAnswer": {"@type": "Answer", "text": "SEO works to rank your pages in search results. GEO (getting cited by AI answers) works to get your company named and linked inside the answer that ChatGPT, Gemini, Claude or Perplexity writes. Most of the work overlaps: clear pages, exact answers, a fast site, correct listings."}}, {"@type": "Question", "name": "Can you promise that ChatGPT will recommend us?", "acceptedAnswer": {"@type": "Answer", "text": "No. AI answers change by engine, day and account. We do not promise rankings or citations. We track the same questions every week and report what happened, with numbers."}}, {"@type": "Question", "name": "How long until we see a result?", "acceptedAnswer": {"@type": "Answer", "text": "We report every Monday from week 1. In our plan for Fridman Properties, we check the first result at 90 days. We do not have a result to show yet, so we do not claim one."}}, {"@type": "Question", "name": "Do you write the pages with AI?", "acceptedAnswer": {"@type": "Answer", "text": "Agents write drafts. A person checks every page before it goes live, for facts, for Fair Housing rules and for your voice. We do not publish bulk AI text."}}, {"@type": "Question", "name": "Do you work with Section 8 content?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with care. We write owner guides about how the voucher program works. A lawyer or the client checks the legal parts first. We do not give legal advice."}}, {"@type": "Question", "name": "What do you need from us?", "acceptedAnswer": {"@type": "Answer", "text": "One sentence with your goal, access to your site or its code, and Google Search Console. A short call is optional."}}]};
 
 const work = [
   {
@@ -45,6 +40,7 @@ const work = [
 ---
 
 <Base title={title} description={description}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <main class="wrap">
     <section class="grid items-center gap-10 border-b border-rule py-12 md:grid-cols-[1.25fr_1fr] md:py-16">
       <div>
@@ -58,13 +54,13 @@ const work = [
           who to hire.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a class="btn-lapis" href={auditHref}>Get a free AI visibility audit</a>
-          <a class="btn-ink" href="/case-studies/fridman-properties">See the Fridman case study</a>
+          <a class="btn-primary" href={auditHref}>Get a free AI visibility audit</a>
+          <a class="btn-secondary" href="/case-studies/fridman-properties">See the Fridman case study</a>
         </div>
       </div>
       <figure class="img-frame">
         <img
-          src="/img/property-management.jpg"
+          src="/img/property-management-960.webp" srcset="/img/property-management-640.webp 640w, /img/property-management-960.webp 960w, /img/property-management-1280.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw"
           alt="A marble Roman apartment block with one lit window, and a statue that holds a big key."
           width="1280"
           height="714"
@@ -80,13 +76,9 @@ const work = [
         We track questions like these every week, on ChatGPT, Gemini, Claude and Perplexity. For each
         one we record if the answer names you, and if it links to your site.
       </p>
-      <ul class="mt-8 grid gap-3 md:grid-cols-2">
-        {
-          ownerPrompts.map((p) => (
-            <li class="rounded border border-rule bg-page px-5 py-4 font-mono text-[13px]">“{p}”</li>
-          ))
-        }
-      </ul>
+      <div class="mt-8 max-w-3xl">
+        <PromptTester />
+      </div>
     </section>
 
     <section aria-labelledby="split" class="border-b border-rule py-14">
@@ -131,8 +123,12 @@ const work = [
             </p>
           </div>
         </div>
-        <aside class="self-start rounded border border-rule-strong bg-sunken p-6 text-[15px]">
-          <p class="meta text-ochre">Check the law first</p>
+        <div class="self-start">
+        <figure class="img-frame">
+          <img src="/img/section8-960.webp" srcset="/img/section8-640.webp 640w, /img/section8-960.webp 960w, /img/section8-1280.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw" alt="A marble statue holds a brass key and a scroll in front of a brick two-flat house." width="1280" height="714" loading="lazy" />
+        </figure>
+        <aside class="mt-6 rounded border border-rule-strong bg-sunken p-6 text-[15px]">
+          <p class="meta text-gold-ink">Check the law first</p>
           <p class="mt-3">
             Illinois lists source of income as a protected class in housing, and this includes housing
             vouchers (Illinois Human Rights Act, as amended from January 1, 2023). Chicago and Cook
@@ -144,6 +140,7 @@ const work = [
             guidance. All copy we write follows Fair Housing rules.
           </p>
         </aside>
+        </div>
       </div>
     </section>
 
@@ -168,18 +165,67 @@ const work = [
       </p>
     </section>
 
-    <section aria-labelledby="proof" class="my-14 rounded-md bg-ink p-6 text-parchment sm:p-10">
-      <p class="label text-[#A89B88]">Our first case study</p>
+    <section aria-labelledby="faq" class="border-b border-rule py-14">
+      <p class="label">Questions</p>
+      <h2 id="faq" class="text-[32px] leading-tight">Questions we get from property managers</h2>
+      <div class="mt-6 max-w-3xl border-b border-rule">
+        <details class="group border-t border-rule py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] font-medium">
+            How is GEO different from SEO?
+            <span aria-hidden="true" class="text-minium transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 max-w-[66ch] text-[15px] text-muted">SEO works to rank your pages in search results. GEO (getting cited by AI answers) works to get your company named and linked inside the answer that ChatGPT, Gemini, Claude or Perplexity writes. Most of the work overlaps: clear pages, exact answers, a fast site, correct listings.</p>
+        </details>
+        <details class="group border-t border-rule py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] font-medium">
+            Can you promise that ChatGPT will recommend us?
+            <span aria-hidden="true" class="text-minium transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 max-w-[66ch] text-[15px] text-muted">No. AI answers change by engine, day and account. We do not promise rankings or citations. We track the same questions every week and report what happened, with numbers.</p>
+        </details>
+        <details class="group border-t border-rule py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] font-medium">
+            How long until we see a result?
+            <span aria-hidden="true" class="text-minium transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 max-w-[66ch] text-[15px] text-muted">We report every Monday from week 1. In our plan for Fridman Properties, we check the first result at 90 days. We do not have a result to show yet, so we do not claim one.</p>
+        </details>
+        <details class="group border-t border-rule py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] font-medium">
+            Do you write the pages with AI?
+            <span aria-hidden="true" class="text-minium transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 max-w-[66ch] text-[15px] text-muted">Agents write drafts. A person checks every page before it goes live, for facts, for Fair Housing rules and for your voice. We do not publish bulk AI text.</p>
+        </details>
+        <details class="group border-t border-rule py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] font-medium">
+            Do you work with Section 8 content?
+            <span aria-hidden="true" class="text-minium transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 max-w-[66ch] text-[15px] text-muted">Yes, with care. We write owner guides about how the voucher program works. A lawyer or the client checks the legal parts first. We do not give legal advice.</p>
+        </details>
+        <details class="group border-t border-rule py-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] font-medium">
+            What do you need from us?
+            <span aria-hidden="true" class="text-minium transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 max-w-[66ch] text-[15px] text-muted">One sentence with your goal, access to your site or its code, and Google Search Console. A short call is optional.</p>
+        </details>
+      </div>
+    </section>
+
+    <section aria-labelledby="proof" class="my-14 rounded-md border border-rule bg-page p-6 sm:p-10">
+      <p class="label">Our first case study</p>
       <h2 id="proof" class="max-w-3xl text-[32px] leading-tight">
         Fridman Properties, Chicago: the site, the baseline and the plan, before any result
       </h2>
-      <p class="mt-4 max-w-[66ch] text-[#A89B88]">
+      <p class="mt-4 max-w-[66ch] text-muted">
         AI named the company in 8 of 132 owner answers, and in 0 of 6 for Section 8. We publish the results at 90 days. Related party: the owner of
         Fridman Properties is also the CEO of MyRemotely, a partner of ours.
       </p>
       <a
         href="/case-studies/fridman-properties"
-        class="mt-6 inline-block text-[#F08A4B] underline underline-offset-2">Read the case study →</a
+        class="mt-6 inline-block text-minium underline underline-offset-2">Read the case study →</a
       >
     </section>
 
@@ -192,7 +238,7 @@ const work = [
           Send your site and the cities you serve. We run 20 owner questions on 4 AI engines and send
           your top 5 fixes. Free, and no call needed.
         </p>
-        <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
+        <a class="btn-primary mt-5" href={auditHref}>Email grow@citata.ai</a>
       </div>
     </section>
   </main>

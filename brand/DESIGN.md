@@ -22,12 +22,12 @@ colors:
   on-secondary: "#F5EFE3"
   gold: "#B8892B"              # gold leaf: ornament only, never small text
   gold-ink: "#7A5A14"          # gold that passes contrast for text
-  minium: "#C2410C"            # red lead (minium): logo quotes, drop caps, citations
+  minium: "#C1410B"            # red lead (minium): logo quotes, drop caps, citations
   verdigris: "#2F6B5C"         # success
   ochre: "#9A6A00"             # warning
   pop-cyan: "#2FA7E0"           # image palette only
   pop-yellow: "#F2C230"         # image palette only
-  error: "#C2410C"
+  error: "#C1410B"
   on-error: "#FBF7EE"
   # Dark theme: "Studiolo" (a scholar's study by candlelight)
   dark-background: "#14110E"
@@ -184,7 +184,7 @@ components:
 
 # Citata — Aetas Aurea
 
-Status: design direction settled 2026-10-18. Reference page: `/brand/sample/blog.html`.
+Status: design direction settled 2026-10-18. Accent (minium) set to `#C1410B` on 2026-10-18. Reference page: `/brand/sample/blog.html`.
 
 ## Overview
 
@@ -215,15 +215,16 @@ The palette comes from Renaissance pigments and materials.
 
 - **Parchment** `#F5EFE3` (background) and **Fresh page** `#FBF7EE` (surface). Warm, never pure white.
 - **Iron-gall ink** `#1C1712` (on-surface). Text, rules, the dark column band. Never pure black.
-- **Minium** `#C2410C`. Red lead, a deep orange pigment; the word "miniature" comes from it. Logo, kickers, label dots, author avatars, links, errors. Dark theme: `#F08A4B`.
-- **Lapis lazuli** `#1E3A7B` (primary). The most costly pigment of the time. Only for the one main action on a screen (button).
+- **Minium** `#C1410B`. Red lead, a deep orange pigment; the word "miniature" comes from it. Logo, kickers, label dots, author avatars, links, errors. Dark theme: `#F08A4B`.
+- **Lapis lazuli** `#1E3A7B`. Image palette only (backgrounds of AI images). Not for buttons or UI since 2026-10-18.
 - **Gold leaf** `#B8892B`. Ornament only. For gold text use **gold-ink** `#7A5A14`.
 - **Verdigris** `#2F6B5C`. Success, "cited" state in the app.
 
 **Dark theme "Studiolo".** `#14110E` background, `#EDE4D3` ink, lapis `#8EA8E6`, gold `#D4A84B`, minium `#F08A4B`. Tokens use the `dark-` prefix.
 
 **Rules.**
-- One lapis action per view. Other actions use ink or ghost buttons.
+- Buttons use minium only: primary = filled minium (`#C1410B`, hover `#9E350A`, parchment text), secondary = minium outline. No lapis or ink buttons (owner decision, 2026-10-18).
+- Selected tabs and toggles: minium fill. Proof bands: light (`surface` + hairline), not dark ink.
 - Minium is the accent of the page: kickers, dots, links. Keep it small; images bring the big color.
 - Status colors in the app: verdigris = cited, ochre = mentioned without link, minium = not found.
 
@@ -257,7 +258,7 @@ Two families, both OFL, both already in the MyRemotely web-app. Files: `/brand/f
 8. **Subscribe**: big headline left ("Get cited. **Every Monday**, in your inbox."), email field right.
 9. **Footer**: hairline, motto left, links right.
 
-**Grid.** Max width 1280px, side padding 32px, gutter 28px. Sections divided by 1px `outline` hairlines, 56px vertical space.
+**Grid.** Max width 1280px (1440px from 1536px screens), side padding 32px (40px wide), gutter 28px. Sections divided by 1px `outline` hairlines, 56px vertical space.
 
 **Section label.** Paper Mono uppercase with a small 8px minium square before it.
 
@@ -304,7 +305,7 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 | `--primary` | `#1E3A7B` | `#8EA8E6` |
 | `--border` | `#D9CDB6` | `#3A332A` |
 | `--ring` | `#1E3A7B` at 55% | `#8EA8E6` at 60% |
-| `--destructive` | `#C2410C` | `#F08A4B` |
+| `--destructive` | `#C1410B` | `#F08A4B` |
 | `--radius` | `0.25rem` | `0.25rem` |
 | `--font-sans`, `--font-heading` | Cal Sans | Cal Sans |
 | `--font-mono` | Paper Mono | Paper Mono |
@@ -326,7 +327,7 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 
 **Don't**
 - Don't use pure white `#FFFFFF` or pure black `#000000`.
-- Don't use more than one lapis button per view.
+- Don't use lapis or ink for buttons. One filled minium button per view; others are outlines.
 - Don't use serif or script faces for live text; serif is only in the outlined logo.
 - Don't track Cal Sans tight or fake its italic.
 - Don't render text inside generated images; set text in HTML.
@@ -357,8 +358,8 @@ Aspect ratio [RATIO]. No text, no letters, no logos, no watermark, no frame.
 
 **Style blocks**
 
-- **A · Neoclassical pop**: `neoclassical pop art collage: classical marble sculpture or Greek architecture printed as coarse black halftone, cut out and placed on a flat bold background color, risograph texture, slight misregistration, two to three flat spot colors from: minium orange #C2410C, lapis blue #1E3A7B, sky cyan #2FA7E0, sun yellow #F2C230, parchment #F5EFE3, deep ink #1C1712; graphic, witty, clean composition with lots of negative space`
-- **B · Engraving**: `16th-century copperplate engraving in the manner of Albrecht Dürer, fine black ink cross-hatching on cream parchment #F5EFE3, high contrast, single accent of minium orange #C2410C, clean empty space around the subject`
+- **A · Neoclassical pop**: `neoclassical pop art collage: classical marble sculpture or Greek architecture printed as coarse black halftone, cut out and placed on a flat bold background color, risograph texture, slight misregistration, two to three flat spot colors from: minium orange #C1410B, lapis blue #1E3A7B, sky cyan #2FA7E0, sun yellow #F2C230, parchment #F5EFE3, deep ink #1C1712; graphic, witty, clean composition with lots of negative space`
+- **B · Engraving**: `16th-century copperplate engraving in the manner of Albrecht Dürer, fine black ink cross-hatching on cream parchment #F5EFE3, high contrast, single accent of minium orange #C1410B, clean empty space around the subject`
 - **C · Codex**: `page from Leonardo da Vinci's notebook, sepia iron-gall ink sketch on aged paper, geometric construction lines, compass arcs, light wash shading, studious and precise`
 
 ### Sample prompts
@@ -391,6 +392,9 @@ Aspect ratio [RATIO]. No text, no letters, no logos, no watermark, no frame.
 
 ### Tools
 
+- **omp (oh-my-pi), headless** — what we used on 2026-10-18. Its `generate_image` tool calls `google-antigravity/gemini-3-pro-image` and rotates the logged-in accounts. Turn it on with a config overlay, one empty temp dir per image:
+  `printf 'generate_image:\n  enabled: true\n' > /tmp/omp-img.yml && omp -p --no-session --config /tmp/omp-img.yml --auto-approve --max-time 8m --model gemini-3-flash "Use the generate_image tool once to create: <prompt>. Save the image into <dir> as <name>.png."`
+  Fallback: `agy -p "Use the image-generator subagent ..."` (one account; its quota runs out fast).
 - **Gemini (Nano Banana / Imagen)** — default. Generate through the Gemini API or AI Studio where we can; test once whether that output has the visible sparkle mark.
 - Fix text, faces and hands by hand or with an edit pass. Never ship an image with garbled letters.
 - Keep a `prompts.toml` next to each image set: prompt, model, date, seed if any.

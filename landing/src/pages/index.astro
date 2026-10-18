@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
-import BaselineCard from "../components/BaselineCard.astro";
+import PlatformRibbon from "../components/PlatformRibbon.astro";
+import Mechanism from "../components/Mechanism.astro";
+import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
 import { faq } from "../data/faq.ts";
 
@@ -134,14 +136,15 @@ const article = {
 const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
-<Base title={title} description={description} modified="2026-10-18">
+<Base title={title} description={description} image="/og/hero.jpg" modified="2026-10-18">
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
   </Fragment>
-  <main class="wrap">
-    <section class="grid items-center gap-10 border-b border-rule py-12 md:grid-cols-[1.25fr_1fr] md:py-16">
+  <main>
+  <div class="wrap">
+    <section class="grid items-center gap-10 py-12 md:grid-cols-[1.15fr_1fr] md:py-16">
       <div>
         <p class="meta"><span class="text-minium">GEO + AEO</span> · for property management companies</p>
         <h1 class="mt-4 text-[40px] leading-[1.04] sm:text-[56px] sm:leading-[1.02]">
@@ -149,21 +152,49 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
         </h1>
         <p class="mt-5 max-w-xl text-[19px] leading-normal text-muted">
           Fewer owner leads from Google? More rental owners now ask ChatGPT or Gemini who to hire.
-          citata.ai gets your property management company named and linked in that answer. We track
-          your owners’ questions, ship one checked change a day, and report every Monday.
+          citata.ai gets your property management company named and linked in that answer. We do the
+          work.
         </p>
+        <ul class="mt-6 grid max-w-xl gap-3 text-[15px] sm:grid-cols-3">
+          <li class="border-t border-rule pt-3">
+            <span class="meta text-minium">01 Track</span>
+            <span class="mt-1 block text-muted">The questions your buyers ask AI</span>
+          </li>
+          <li class="border-t border-rule pt-3">
+            <span class="meta text-minium">02 Fix</span>
+            <span class="mt-1 block text-muted">One checked change to your site a day</span>
+          </li>
+          <li class="border-t border-rule pt-3">
+            <span class="meta text-minium">03 Report</span>
+            <span class="mt-1 block text-muted">Who named you, every Monday</span>
+          </li>
+        </ul>
         <div class="mt-8 flex flex-wrap items-center gap-3">
-          <a class="btn-lapis" href={auditHref}>Get a free AI visibility audit</a>
-          <a class="btn-ink" href="/case-studies/fridman-properties">Read our Chicago case study</a>
+          <a class="btn-primary" href={auditHref}>Get a free AI visibility audit</a>
+          <a class="btn-secondary" href="#engine">See how it works</a>
         </div>
         <p class="mt-4 text-sm text-muted">
           The audit is free: 20 owner questions on 4 AI engines, and your top 5 fixes.
         </p>
       </div>
-      <div>
-        <BaselineCard />
-        <p class="meta mt-3">Our first client, before any GEO work. <a class="link normal-case" href="/case-studies/fridman-properties">Read why</a></p>
-      </div>
+      <figure class="img-frame">
+        <img
+          src="/img/hero-960.webp" srcset="/img/hero-640.webp 640w, /img/hero-960.webp 960w, /img/hero-1280.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw"
+          alt="A marble hand points at one open book on a shelf. A chat bubble sits above the book."
+          width="1280"
+          height="714"
+          fetchpriority="high"
+        />
+      </figure>
+    </section>
+  </div>
+
+  <PlatformRibbon />
+
+  <div class="wrap">
+    <section aria-labelledby="engine" class="border-b border-rule py-14">
+      <p class="label" id="engine">How the work flows</p>
+      <Mechanism />
     </section>
 
     <section aria-labelledby="why" class="border-b border-rule py-14">
@@ -219,7 +250,8 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           ))
         }
       </ol>
-      <ol class="mt-12 grid gap-x-10 gap-y-6 md:grid-cols-2">
+      <div class="mt-12 grid items-center gap-10 md:grid-cols-[1.3fr_1fr]">
+      <ol class="grid gap-y-6">
         {
           steps.map((s, i) => (
             <li class="flex gap-4">
@@ -232,20 +264,27 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           ))
         }
       </ol>
+        <figure class="img-frame">
+          <img src="/img/monday-report-960.webp" srcset="/img/monday-report-640.webp 640w, /img/monday-report-960.webp 960w, /img/monday-report-1280.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw" alt="A marble bust reads a newspaper with a small bar chart. A brass bell stands beside it." width="1280" height="714" loading="lazy" />
+        </figure>
+      </div>
     </section>
 
-    <section aria-labelledby="proof" class="my-14 rounded-md bg-ink p-6 text-parchment sm:p-10">
-      <div class="max-w-3xl">
+    <section aria-labelledby="proof" class="my-14 rounded-md border border-rule bg-page p-6 sm:p-10">
+      <div class="grid items-center gap-8 md:grid-cols-[1fr_1.1fr]">
+        <a href="/case-studies/fridman-properties" class="img-frame block">
+          <img src="/img/fridman-case-960.webp" srcset="/img/fridman-case-640.webp 640w, /img/fridman-case-960.webp 960w, /img/fridman-case-1280.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw" alt="A marble statue looks at a phone with a map pin, in front of a brownstone and a column." width="1280" height="714" loading="lazy" />
+        </a>
         <div>
-          <p class="label text-[#A89B88]" id="proof">Case study · in progress</p>
+          <p class="label" id="proof">Case study · in progress</p>
           <h2 class="text-[32px] leading-tight">Fridman Properties: the baseline before the work</h2>
-          <p class="mt-4 text-[#A89B88]">
+          <p class="mt-4 text-muted">
             We moved a Chicago manager’s 90-page site to a fast static stack and kept every URL, word and
             SEO tag. Then we asked 3 AI engines 24 owner questions. Outside its own name, AI named the
             company in 8 of 132 answers. We publish the plan and the baseline now, and the results at 90
             days. Related party: the owner is also the CEO of MyRemotely, a partner of ours.
           </p>
-          <a href="/case-studies/fridman-properties" class="mt-6 inline-block text-[#F08A4B] underline underline-offset-2">
+          <a href="/case-studies/fridman-properties" class="mt-6 inline-block text-minium underline underline-offset-2">
             Read the case study →
           </a>
         </div>
@@ -277,22 +316,35 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 
     <section id="pricing" aria-labelledby="pricing-h" class="border-b border-rule py-14">
       <p class="label">Pricing</p>
-      <h2 id="pricing-h" class="text-[32px] leading-tight">One clear plan. Month to month.</h2>
+      <h2 id="pricing-h" class="text-[32px] leading-tight">Clear prices, in public.</h2>
       <p class="mt-3 max-w-[66ch] text-muted">
         These are our first prices. We will check them with our first 3 paying clients and may change
         them. You can stop any month.
       </p>
-      <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div role="radiogroup" aria-label="Billing" class="billing mt-6 inline-flex rounded border border-rule p-0.5 text-[13px]">
+        <button type="button" role="radio" aria-checked="true" data-bill="month" class="bill-opt cursor-pointer rounded-sm px-3 py-1">Month to month</button>
+        <button type="button" role="radio" aria-checked="false" data-bill="year" class="bill-opt cursor-pointer rounded-sm px-3 py-1">12 months</button>
+      </div>
+      <ul class="pricing-list mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {
           offers.filter((o) => o.slug !== "impact").map((o) => (
-            <li class={`flex flex-col rounded border bg-page p-6 ${o.slug === "growth" ? "border-lapis" : "border-rule"}`}>
+            <li class={`flex flex-col rounded border bg-page p-6 ${o.slug === "growth" ? "border-minium" : "border-rule"}`}>
               <h3 class="text-xl font-medium">{o.name}</h3>
               <p class="mt-3">
-                <span class="text-[32px] font-semibold">{usd(o.price_usd_month)}</span>
+                <span
+                  class="price text-[32px] font-semibold"
+                  data-month={usd(o.price_usd_month)}
+                  data-year={usd(("annual_price_usd_month" in o ? o.annual_price_usd_month : undefined) ?? o.price_usd_month)}
+                >
+                  {usd(o.price_usd_month)}
+                </span>
                 {o.price_usd_month > 0 && <span class="text-muted">/mo</span>}
               </p>
               {"annual_price_usd_month" in o && o.annual_price_usd_month !== undefined && (
-                <p class="meta mt-1">{usd(o.annual_price_usd_month)}/mo on 12 months</p>
+                <p class="meta mt-1">
+                  <span class="note-month">{usd(o.annual_price_usd_month)}/mo on 12 months</span>
+                  <span class="note-year hidden">Save {usd((o.price_usd_month - o.annual_price_usd_month) * 12)} a year</span>
+                </p>
               )}
               <ul class="mt-4 flex-1 space-y-1.5 text-[15px] text-muted">
                 {o.scope.map((s) => (
@@ -306,7 +358,19 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           ))
         }
       </ul>
-      <a class="btn-lapis mt-8" href={auditHref}>Start with the free audit</a>
+      <a class="btn-primary mt-8" href={auditHref}>Start with the free audit</a>
+    </section>
+
+    <section aria-labelledby="try" class="grid gap-10 border-b border-rule py-14 md:grid-cols-[1fr_1.3fr]">
+      <div>
+        <p class="label">Test it yourself</p>
+        <h2 id="try" class="text-[32px] leading-tight">Ask AI what your buyers ask</h2>
+        <p class="mt-3 max-w-[48ch] text-muted">
+          Type your city. Open each question in an engine and read the answer. If your company is not in
+          it, the buyer may never hear your name. This is the first step of our audit.
+        </p>
+      </div>
+      <PromptTester />
     </section>
 
     <section id="faq" aria-labelledby="faq-h" class="border-b border-rule py-14">
@@ -338,8 +402,33 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           check your index, and send a one-page report with your top 5 fixes. If we cannot help, we will
           say so.
         </p>
-        <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
+        <a class="btn-primary mt-5" href={auditHref}>Email grow@citata.ai</a>
       </div>
     </section>
+  </div>
   </main>
 </Base>
+
+<script>
+  const group = document.querySelector<HTMLElement>(".billing");
+  group?.addEventListener("click", (event) => {
+    const opt = (event.target as HTMLElement).closest<HTMLButtonElement>(".bill-opt");
+    if (!opt) return;
+    const bill = opt.dataset.bill === "year" ? "year" : "month";
+    for (const o of group.querySelectorAll(".bill-opt")) {
+      o.setAttribute("aria-checked", String(o === opt));
+    }
+    for (const p of document.querySelectorAll<HTMLElement>(".pricing-list .price")) {
+      p.textContent = p.dataset[bill] ?? "";
+    }
+    for (const n of document.querySelectorAll(".note-month")) n.classList.toggle("hidden", bill === "year");
+    for (const n of document.querySelectorAll(".note-year")) n.classList.toggle("hidden", bill === "month");
+  });
+</script>
+
+<style>
+  .bill-opt[aria-checked="true"] {
+    background: var(--color-minium);
+    color: var(--color-page);
+  }
+</style>

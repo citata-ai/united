@@ -2,3 +2,21 @@ prompt = "A Roman apartment block (insula) of marble with many windows, one wind
 model = "Antigravity image-generator subagent (Gemini image)"
 date = "2026-10-18"
 files = ["property-management.jpg", "../og/property-management.jpg"]
+
+# 2026-10-18, omp (oh-my-pi) generate_image tool, provider google-antigravity, model gemini-3-pro-image.
+# Style block A · Neoclassical pop (brand/DESIGN.md), accent #C1410B.
+[[image]]
+file = "hero.jpg"
+prompt = "A classical marble hand with a pointing index finger aimed at one open yellow book on a shelf of many books; a small parchment chat bubble above the chosen book. Flat minium orange #C1410B background; no blue at all."  # v2 2026-10-18, owner: no blue
+
+[[image]]
+file = "fridman-case.jpg"
+prompt = "A Chicago brownstone two-flat facade with a classical Corinthian column in front, a marble bust looking at a phone that shows a map pin. Flat minium orange background, lapis halftone accents."
+
+[[image]]
+file = "section8.jpg"
+prompt = "A marble classical statue holding a big brass key and a rolled scroll, standing in front of a small brick two-flat house. Flat sun yellow background."
+
+[[image]]
+file = "monday-report.jpg"
+prompt = "A marble bust of a Roman scholar reading a folded newspaper that shows a small simple bar chart drawing (no text), a small brass bell beside it. Flat sky cyan background."

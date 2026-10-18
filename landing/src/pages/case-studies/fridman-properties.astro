@@ -25,14 +25,14 @@ const jsonLd = {
 const status = [
   { label: "Site rebuild", value: "Live since 2026-10-16", tone: "text-verdigris" },
   { label: "AI baseline", value: "Taken 2026-10-16", tone: "text-verdigris" },
-  { label: "GEO changes", value: "Planned, not started", tone: "text-ochre" },
+  { label: "GEO changes", value: "Planned, not started", tone: "text-gold-ink" },
   { label: "Results", value: `Due ${resultsDue}`, tone: "text-muted" },
 ];
 
 const cats = ["Perf", "A11y", "Best", "SEO"];
 ---
 
-<Base title={title} description={description} type="article">
+<Base title={title} description={description} type="article" image="/og/fridman-case.jpg">
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <main class="wrap">
     <article class="pt-12">
@@ -53,9 +53,12 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
           Tao, founder, citata.ai
         </div>
       </header>
+      <figure class="img-frame mt-8 max-w-4xl">
+        <img src="/img/fridman-case-960.webp" srcset="/img/fridman-case-640.webp 640w, /img/fridman-case-960.webp 960w, /img/fridman-case-1280.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw" alt="A marble statue looks at a phone with a map pin, in front of a brownstone and a column." width="1280" height="714" fetchpriority="high" />
+      </figure>
 
       <aside class="mt-8 max-w-3xl rounded border border-rule-strong bg-sunken p-5 text-[15px]">
-        <p class="meta text-ochre">Related party</p>
+        <p class="meta text-gold-ink">Related party</p>
         <p class="mt-2">
           Ran Fridman owns Fridman Properties. He is also the CEO of MyRemotely, a partner of ours, and
           Fridman Properties is MyRemotely’s first client. We do not hide this. It is why this is our
@@ -186,7 +189,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
                   <tr>
                     <td class="font-mono text-[13px] break-all">{r.path}</td>
                     {r.scores.map((s) => (
-                      <td class={s < 100 ? "text-ochre" : ""}>{s}</td>
+                      <td class={s < 100 ? "text-gold-ink" : ""}>{s}</td>
                     ))}
                     <td>{r.lcp}</td>
                   </tr>
@@ -273,7 +276,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
           </p>
 
           <aside class="my-8 rounded border border-rule-strong bg-sunken p-5 text-[15px]">
-            <p class="meta text-ochre">Note on Section 8 and the law</p>
+            <p class="meta text-gold-ink">Note on Section 8 and the law</p>
             <p class="mt-2">
               Illinois lists source of income, including housing vouchers, as a protected class in
               housing (Illinois Human Rights Act, as amended from January 1, 2023). This is not legal
@@ -288,7 +291,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
             questions on 4 engines for free and send your top 5 fixes.
           </p>
           <p>
-            <a class="btn-lapis no-underline" href={auditHref}>Get a free AI visibility audit</a>
+            <a class="btn-primary no-underline" href={auditHref}>Get a free AI visibility audit</a>
           </p>
           <p class="text-[15px] text-muted">
             Thank you to the Fridman Properties team for the access to their site and data. — Tao, founder, citata.ai

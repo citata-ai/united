@@ -76,5 +76,5 @@ Rentvine finance, vacancy, churn, owner and client names, Google Ads spend. They
 
 ## Open items
 
-- Client consent for the page: confirm with Ran Fridman before wide sharing.
+- Client consent: given by Fridman Properties, 2026-10-18 (relayed by Tao).
 - The Section 8 FAQ answer may not match Illinois law since 2023. Flagged for the client's legal review. Not legal advice.

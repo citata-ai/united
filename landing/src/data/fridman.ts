@@ -12,6 +12,15 @@ export const baseline = {
     { name: "Claude", answers: 48, named: 11, linked: 6 },
     { name: "Gemini", answers: 48, named: 5, linked: 5 },
   ],
+  /** By prompt group, non-brand plus brand: report.md "By prompt group". */
+  groups: [
+    { name: "South Side", answers: 42, named: 0 },
+    { name: "Chicago", answers: 18, named: 0 },
+    { name: "NW Indiana", answers: 18, named: 0 },
+    { name: "NW suburbs", answers: 18, named: 6 },
+    { name: "Niche (Section 8, fees…)", answers: 36, named: 2 },
+    { name: "Brand name", answers: 12, named: 12 },
+  ],
   nonBrandAnswers: 132,
   nonBrandNamed: 8,
   section8Answers: 6,

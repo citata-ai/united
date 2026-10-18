@@ -3,7 +3,15 @@ import effect from "@mpsuesser/oxlint-plugin-effect";
 import foldkit from "@foldkit/oxlint-plugin";
 
 export default defineConfig({
-  ignorePatterns: ["**/dist/**", "**/.astro/**", "**/.alchemy/**", "patches/**"],
+  ignorePatterns: [
+    "**/dist/**",
+    "**/.astro/**",
+    "**/.alchemy/**",
+    "patches/**",
+    // Vendored anatomy kit and the generated citation engine (landing/scripts/mechanism).
+    "landing/vendor/**",
+    "landing/public/mechanism/**",
+  ],
   jsPlugins: [...effect.configs.recommended.jsPlugins, ...foldkit.configs.recommended.jsPlugins],
   rules: {
     "effect/avoid-non-null-assertion": "error",

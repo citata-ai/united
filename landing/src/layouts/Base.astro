@@ -114,10 +114,10 @@ const nav = [
     <slot name="head" />
   </head>
   <body class="font-sans text-base leading-normal antialiased">
-    <div class="wrap">
-      <header class="flex items-center justify-between gap-6 border-b border-rule py-4">
+    <div class="sticky top-0 z-50 border-b border-rule bg-parchment/90 backdrop-blur supports-[backdrop-filter]:bg-parchment/80">
+      <header class="wrap flex items-center justify-between gap-6 py-3">
         <a href="/" aria-label="citata.ai home">
-          <img src="/wordmark.svg" alt="Citata" width="112" height="40" class="block h-9 w-auto" />
+          <img src="/wordmark.svg" alt="Citata" width="157" height="56" class="block h-12 w-auto sm:h-14" />
         </a>
         <nav aria-label="Main" class="hidden md:block">
           <ul class="flex gap-7 text-[15px] text-muted">
@@ -132,7 +132,7 @@ const nav = [
             }
           </ul>
         </nav>
-        <a class="btn-lapis" href={auditHref}>Free AI audit</a>
+        <a class="btn-primary" href={auditHref}>Free AI audit</a>
       </header>
     </div>
 

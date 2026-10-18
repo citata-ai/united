@@ -1,6 +1,7 @@
 /**
  * citata-landing: serve the static site; send www.citata.ai to citata.ai (301);
  * record AI traffic (AI crawlers and AI referrals) to Analytics Engine and logs.
+ * On *.workers.dev (stage) add a noindex header and do not record traffic.
  * Interim wrangler deploy; see wrangler.jsonc.
  */
 import { classify, isTracked } from "./ai-traffic.js";
@@ -21,6 +22,12 @@ export default {
     const response = wantsMarkdown(request, url)
       ? await markdown(request, url, env)
       : await env.ASSETS.fetch(request);
+    if (url.hostname.endsWith(".workers.dev")) {
+      // Stage and preview hosts: keep them out of search indexes.
+      const staged = new Response(response.body, response);
+      staged.headers.set("X-Robots-Tag", "noindex, nofollow");
+      return staged;
+    }
     if (isTracked(url.pathname)) record(request, url, response.status, env);
     return response;
   },

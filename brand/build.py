@@ -8,7 +8,7 @@ import uharfbuzz as hb
 
 fontdir, out = sys.argv[1], sys.argv[2]
 os.makedirs(out, exist_ok=True)
-ORANGE = "#C2410C"; ORANGE_DARK = "#F08A4B"; INK = "#1C1712"; PARCH = "#F5EFE3"
+ORANGE = "#C1410B"; ORANGE_DARK = "#F08A4B"; INK = "#1C1712"; PARCH = "#F5EFE3"
 
 fr = instantiateVariableFont(TTFont(f"{fontdir}/Fraunces.ttf"), {"wght":600,"SOFT":100,"WONK":0,"opsz":144})
 fr_path = f"{fontdir}/Fraunces-600.ttf"; fr.save(fr_path)
