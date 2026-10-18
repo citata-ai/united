@@ -106,18 +106,19 @@
 @media (max-width:560px){.iso-plate{padding:48px 12px 70px}.iso-plate-corner[data-corner="hint"]{bottom:18px}}
 @media (prefers-reduced-motion:reduce){.iso-line[data-flow],.iso-dots circle[data-pulse]{animation:none}}
 
-.iso.ce[data-theme="light"]{--anatomy-page:#f5efe3;--anatomy-card:#f5efe3;--anatomy-text:#5c5145;--anatomy-strong:#1c1712;--anatomy-muted:#5c5145;
---anatomy-paper:#fbf7ee;--anatomy-face:#fffdf8;--anatomy-top:#fbf6ec;
---anatomy-shade-0:#d2c4a8;--anatomy-shade-1:#ddd1b9;--anatomy-shade-2:#e8dfcc;--anatomy-shade-3:#f1eadb;
+.iso.ce[data-theme="light"]{--ce-field:#f2c230;--anatomy-page:#f2c230;--anatomy-card:#f2c230;--anatomy-text:#1c1712;--anatomy-strong:#1c1712;--anatomy-muted:#3a2f25;
+--anatomy-paper:#fbf7ee;--anatomy-face:#fbf7ee;--anatomy-top:#fbf7ee;
+--anatomy-shade-0:url(#ce-h0);--anatomy-shade-1:url(#ce-h1);--anatomy-shade-2:url(#ce-h2);--anatomy-shade-3:url(#ce-h3);
 --anatomy-lit-top:#e8743f;--anatomy-lit-shade:#c1410b;
---anatomy-hi:#1c1712;--anatomy-mid:#7a6b58;--anatomy-lo:#ad9c7e;--anatomy-faint:#d3c5aa;--anatomy-lit:#8f2f07;
---anatomy-halo:#7a6a50;--anatomy-halo-opacity:.26;--anatomy-dot:#3a2f25;
---anatomy-mono:"Paper Mono",ui-monospace,monospace;--anatomy-weight:.6px}
+--anatomy-hi:#1c1712;--anatomy-mid:#1c1712;--anatomy-lo:#3a2f25;--anatomy-faint:#7a6b58;--anatomy-lit:#5a1d04;
+--anatomy-halo:#1c1712;--anatomy-halo-opacity:0;--anatomy-dot:#1c1712;
+--anatomy-mono:"Paper Mono",ui-monospace,monospace;--anatomy-weight:.75px}
+.ce .iso-solid[data-seamless]>.iso-shade{stroke:none!important}
 .ce .iso-figure{margin:0}
-.ce .iso-plate{background:transparent;box-shadow:none;border-radius:0;padding:34px 0 40px;--anatomy-paper:#fbf7ee}
-.ce .iso-plate-corners{inset:0}
+.ce .iso-plate{background:var(--ce-field);box-shadow:none;border-radius:6px;padding:48px 28px 32px;--anatomy-paper:#fbf7ee}
+.ce .iso-plate-corners{inset:18px 28px}
 .ce .iso-plate-corner{font-size:11px}
-.ce .iso-plate-corner[data-corner="fig"],.ce .iso-plate-corner[data-corner="title"]{color:#c1410b}
+.ce .iso-plate-corner{color:#1c1712}
 .ce .iso-legend{color:var(--anatomy-text);font-size:14px}
 .ce .ce-logo{fill:#1c1712}
 .ce .ce-recess{fill:#5c5145}
@@ -154,5 +155,5 @@
 .ce .ce-tip strong{display:block;font-weight:600;color:#c1410b;margin-bottom:2px}
 .ce .ce-tip[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.ce .ce-spot::before{animation:none}}
-@media (max-width:560px){.ce .iso-plate{padding:28px 0 52px}.ce .iso-plate-corner{font-size:10px}.ce .iso-plate-corner[data-corner="hint"]{display:none}.ce .iso-plate-corner[data-corner="readout"]{left:0;right:auto;white-space:normal;line-height:1.3}.ce .ce-spot{width:24px;height:24px;margin:-12px 0 0 -12px}.ce .ce-spot span{inset:7px}.ce .ce-spot span::after{inset:2.5px}.ce .ce-spot::before{inset:4px}}
-</style><figure class="iso-figure"><div class="iso-plate"><div class="iso-plate-corners" aria-hidden="true"><span class="iso-plate-corner" data-corner="fig">Fig 1</span><span class="iso-plate-corner" data-corner="title">The citation engine</span><span class="iso-plate-corner" data-corner="hint">Hover an engine to send it a page</span><span class="iso-plate-corner" data-corner="readout" data-readout>Starting the engine</span></div><div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure?v=b37db6d2b1"></div></div><figcaption class="iso-legend"><span class="iso-keys"><span class="iso-key"><svg class="iso-swatch" data-mark="flat" viewBox="0 0 16 10" aria-hidden="true"><path d="M2 6.5 8 3.5 14 6.5 8 9.5Z"/></svg>A page of your site</span><span class="iso-key"><svg class="iso-swatch" data-mark="lit" viewBox="0 0 16 10" aria-hidden="true"><path d="M2 4.5 8 1.5 14 4.5 14 6 8 9 2 6Z"/><path class="iso-swatch-crease" d="M2 4.5 8 7.5 14 4.5"/></svg>A buyer sent by an AI engine</span></span><span class="iso-caption">We start with your site. Inside the citata frame, each page passes 3 stations: Indexed, Found, Mentioned. AI engines then name your site, and buyers come back to it. One checked change a day turns the wheels. Every 7th buyer, the bell rings: your Monday report. Tap a dot to read each step.</span><span class="ce-small">An illustration of the process, not client data. Logos belong to their owners.</span></figcaption></figure></div>
+@media (max-width:560px){.ce .iso-plate{padding:40px 12px 52px}.ce .iso-plate-corners{inset:14px 12px}.ce .iso-plate-corner{font-size:10px}.ce .iso-plate-corner[data-corner="hint"]{display:none}.ce .iso-plate-corner[data-corner="readout"]{left:0;right:auto;white-space:normal;line-height:1.3}.ce .ce-spot{width:24px;height:24px;margin:-12px 0 0 -12px}.ce .ce-spot span{inset:7px}.ce .ce-spot span::after{inset:2.5px}.ce .ce-spot::before{inset:4px}}
+</style><figure class="iso-figure"><div class="iso-plate"><div class="iso-plate-corners" aria-hidden="true"><span class="iso-plate-corner" data-corner="fig">Fig 1</span><span class="iso-plate-corner" data-corner="title">The citation engine</span><span class="iso-plate-corner" data-corner="hint">Hover an engine to send it a page</span><span class="iso-plate-corner" data-corner="readout" data-readout>Starting the engine</span></div><div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure?v=8211afa234"></div></div><figcaption class="iso-legend"><span class="iso-keys"><span class="iso-key"><svg class="iso-swatch" data-mark="flat" viewBox="0 0 16 10" aria-hidden="true"><path d="M2 6.5 8 3.5 14 6.5 8 9.5Z"/></svg>A page of your site</span><span class="iso-key"><svg class="iso-swatch" data-mark="lit" viewBox="0 0 16 10" aria-hidden="true"><path d="M2 4.5 8 1.5 14 4.5 14 6 8 9 2 6Z"/><path class="iso-swatch-crease" d="M2 4.5 8 7.5 14 4.5"/></svg>A buyer sent by an AI engine</span></span><span class="iso-caption">We start with your site. Inside the Citata frame, each page passes 3 stations: Indexed, Found, Mentioned. AI engines then name your site, and buyers come back to it. One checked change a day turns the wheels. Every 7th buyer, the bell rings: your Monday report. Tap a dot to read each step.</span><span class="ce-small">An illustration of the process, not client data. Logos belong to their owners.</span></figcaption></figure></div>
