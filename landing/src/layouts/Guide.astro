@@ -22,10 +22,12 @@ export interface GuideFrontmatter {
   image?: string;
 }
 
-const { frontmatter, url, headings = [] } = Astro.props as {
+const { frontmatter, url, headings = [], schema = [] } = Astro.props as {
   frontmatter: GuideFrontmatter;
   url?: string;
   headings?: { depth: number; slug: string; text: string }[];
+  /** Extra JSON-LD objects (for example a Dataset on a research page). */
+  schema?: object[];
 };
 const fm = frontmatter;
 const slug = (url ?? Astro.url.pathname).replace(/\.html$/, "").split("/").filter(Boolean).pop() ?? "";
@@ -87,6 +89,7 @@ const breadcrumbs = {
     <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
     {faqSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />}
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbs)} />
+    {schema.map((s) => <script type="application/ld+json" is:inline set:html={JSON.stringify(s)} />)}
   </Fragment>
   <main class="wrap">
     <article class="mx-auto max-w-[1080px] pt-12 pb-6">

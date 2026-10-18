@@ -6,7 +6,9 @@ live web search) through the fleet CLIProxyAPI, then records mentions, rank,
 cited domains and the companies the AI recommends instead.
 
 Usage:
-  python3 tools/ai-visibility/run.py [--runs 1] [--only id1,id2] [--engines chatgpt,gemini,claude]
+  python3 tools/ai-visibility/run.py [--runs 1] [--only id1,id2] [--engines chatgpt,gemini,claude] [--prompts file.toml]
+
+--prompts picks another prompt file (default: prompts.toml next to this script).
 
 Env:
   CLIPROXY_URL   default http://100.111.1.1:8317
@@ -178,8 +180,9 @@ def main():
     ap.add_argument("--only", default="")
     ap.add_argument("--engines", default=",".join(ENGINES))
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--prompts", default=os.path.join(HERE, "prompts.toml"))
     a = ap.parse_args()
-    cfg = tomllib.load(open(os.path.join(HERE, "prompts.toml"), "rb"))
+    cfg = tomllib.load(open(a.prompts, "rb"))
     CFG.update(cfg)
     prompts = [p for p in cfg["prompt"] if not a.only or p["id"] in a.only.split(",")]
     brand_re = re.compile("|".join(re.escape(b) for b in cfg["brand"]), re.I)

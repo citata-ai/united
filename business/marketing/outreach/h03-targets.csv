@@ -1,0 +1,31 @@
+site,contact_page_url,angle,status
+propmodo.com,https://propmodo.com/contact-propmodo/,"Original data: who ChatGPT, Gemini and Claude name as the best property manager in the 50 largest US cities",todo
+rentalhousingjournal.com,https://rentalhousingjournal.com/contact-us/,"News for landlords: AI now answers 'best property manager in my city'; here is what 150 answers cite",todo
+narpm.org,https://www.narpm.org/contact/,"Member value: which listing and review sites AI cites when owners look for a manager",todo
+biggerpockets.com,https://www.biggerpockets.com/contact-us,"Investor angle: what AI tells an investor who asks for a manager in 50 cities",todo
+buildium.com (blog),https://www.buildium.com/contact-us/,"Data for their PM marketing posts: AI sources by city, CSV free to reuse with a link",todo
+appfolio.com (blog),https://www.appfolio.com/resources/contact,"Data for their PM growth content: national brands vs local firms in AI answers",todo
+rentvine.com (blog),https://www.rentvine.com/blog,"Data for their PM marketing posts: where a small manager must be listed to show up in AI answers (no contact page found; use blog or support)",todo
+doorloop.com (blog),https://www.doorloop.com/contact,"Stat source for their property management marketing guides: 150 AI answers, 50 cities",todo
+turbotenant.com (blog),https://www.turbotenant.com/contact/,"Landlord education: how to check a manager that AI recommends (the sources AI uses)",todo
+rentecdirect.com (blog),https://www.rentecdirect.com/contact,"Landlord education: AI picks property managers from review sites; data by city",todo
+avail.com,https://www.avail.com/contact,"DIY landlord angle: what AI says when you ask for a manager, and which sources it uses",todo
+rentredi.com,https://rentredi.com/about-us,"Landlord blog stat: share of AI answers that link a manager's own site",todo
+mashvisor.com (blog),https://www.mashvisor.com/contact-us,"Investor market posts: per-city AI picks for property managers in 50 markets",todo
+inman.com,https://www.inman.com/contact/,"Real estate tech angle: AI answers now shape how owners find property managers",todo
+housingwire.com,https://www.housingwire.com/contact/,"Single-family rental angle: national operators vs local firms in AI answers",todo
+multifamilydive.com,https://www.multifamilydive.com/contact/,"Data note: which large operators AI names as 'best property management company' in 50 cities",todo
+aagla.org,https://members.aagla.org/aagla-team,"Local data for Los Angeles and Long Beach members: who AI names and which sources it cites",todo
+rhawa.org,https://www.rhawa.org/contact-us,"Local data for Seattle members: who AI names and which sources it cites",todo
+multifamilynw.org,https://www.multifamilynw.org/contact-us,"Local data for Portland members: who AI names and which sources it cites",todo
+haaonline.org,https://www.haaonline.org/contact-us,"Local data for Houston members: who AI names and which sources it cites",todo
+austinaptassoc.com,https://www.austinaptassoc.com/contact-us,"Local data for Austin members: who AI names and which sources it cites",todo
+aamdhq.org,https://www.aamdhq.org/contact-us,"Local data for Denver and Aurora members: who AI names and which sources it cites",todo
+azmultihousing.org,https://www.azmultihousing.org/contact-us,"Local data for Phoenix, Mesa and Tucson members: who AI names and which sources it cites",todo
+searchengineland.com,https://searchengineland.com/contact,"Local AI search study: 150 answers, 3 engines, which local directories get cited",todo
+searchenginejournal.com,https://www.searchenginejournal.com/contact/,"Contributor or news angle: local service AI answers use directories more than business sites",todo
+brightlocal.com (blog),https://www.brightlocal.com/contact-us/,"Local AI citation data for one trade across 50 cities; fits their local search research",todo
+whitespark.ca (blog),https://whitespark.ca/contact/,"Citation sources AI uses for local service businesses (property management, 50 cities)",todo
+nearmedia.co,https://www.nearmedia.co/contact/,"Local search analysts: engine differences in local recommendations, open CSV",todo
+growth-memo.com,https://www.growth-memo.com/,"GEO newsletter: a small open dataset on how AI picks local providers and cites sources",todo
+seofomo.co,https://seofomo.co/,"SEO and GEO newsletter link: original local AI visibility data with a free CSV",todo
