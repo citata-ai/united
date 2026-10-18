@@ -98,3 +98,30 @@ period = "Q1-2027"
   text = "Impact pilot with a B Corp, NGO or charity started"
   target = 1
   due = "2027-03-31"
+
+[[objective]]
+id = "CTT-O6"
+title = "1,000 visitors a month from AI platforms to citata.ai"
+life_goal = "Prosperity"
+period = "2026-10-19..2026-11-18"
+  [[objective.kr]]
+  text = "AI referral sessions (chatgpt, perplexity, gemini, claude, copilot) in the 30 days to 2026-11-18; Worker ai-traffic + Ahrefs Web Analytics"
+  target = 1000
+  unit = "sessions"
+  due = "2026-11-18"
+  status = "hypothesis"
+  [[objective.kr]]
+  text = "AI bot page fetches per week (proof that AI reads our pages); baseline 93 in the 7 days to 2026-10-19, mostly / and robots.txt"
+  target = 1000
+  unit = "fetches/week"
+  due = "2026-11-18"
+  [[objective.kr]]
+  text = "Pages live that answer a landlord or property manager question with data, a tool or a comparison"
+  target = 80
+  unit = "pages"
+  due = "2026-11-18"
+  [[objective.kr]]
+  text = "Google organic clicks in GSC, same 30 days (support metric)"
+  target = 500
+  due = "2026-11-18"
+  status = "hypothesis"

@@ -6,7 +6,7 @@ import * as Effect from "effect/Effect";
 import * as FileSystem from "effect/FileSystem";
 import * as Schema from "effect/Schema";
 import { parse } from "smol-toml";
-import { AccountsFile, GoalsFile, OffersFile } from "./files.ts";
+import { AccountsFile, GoalsFile, HypothesesFile, OffersFile } from "./files.ts";
 import type { Project } from "./model.ts";
 
 /** A business file that cannot be read, parsed as TOML, or decoded. */
@@ -40,6 +40,10 @@ const decodeFile =
 export const decodeAccounts = decodeFile("accounts.toml", Schema.decodeUnknownEffect(AccountsFile));
 export const decodeOffers = decodeFile("offers.toml", Schema.decodeUnknownEffect(OffersFile));
 export const decodeGoals = decodeFile("goals.toml", Schema.decodeUnknownEffect(GoalsFile));
+export const decodeHypotheses = decodeFile(
+  "hypotheses.toml",
+  Schema.decodeUnknownEffect(HypothesesFile),
+);
 
 /** Every Project in accounts.toml, with the `account` slug of its parent. */
 export const projectsOf = (accounts: AccountsFile): ReadonlyArray<Project> =>
@@ -57,9 +61,10 @@ export interface Business {
   readonly projects: ReadonlyArray<Project>;
   readonly offers: OffersFile;
   readonly goals: GoalsFile;
+  readonly hypotheses: HypothesesFile;
 }
 
-/** Read and decode accounts.toml, offers.toml and goals.toml from `dir`. */
+/** Read and decode accounts.toml, offers.toml, goals.toml and hypotheses.toml from `dir`. */
 export const loadBusiness = Effect.fn("Business.load")(function* (dir: string) {
   const fs = yield* FileSystem.FileSystem;
   const read = (file: string) =>
@@ -69,5 +74,6 @@ export const loadBusiness = Effect.fn("Business.load")(function* (dir: string) {
   const accounts = yield* Effect.flatMap(read("accounts.toml"), decodeAccounts);
   const offers = yield* Effect.flatMap(read("offers.toml"), decodeOffers);
   const goals = yield* Effect.flatMap(read("goals.toml"), decodeGoals);
-  return { accounts, projects: projectsOf(accounts), offers, goals } satisfies Business;
+  const hypotheses = yield* Effect.flatMap(read("hypotheses.toml"), decodeHypotheses);
+  return { accounts, projects: projectsOf(accounts), offers, goals, hypotheses } satisfies Business;
 });
