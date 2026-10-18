@@ -15,6 +15,7 @@ Workers copy text from this file into directory and profile forms. Do not invent
 | Legal entity     | WarmDevs OÜ (trade name citata.ai)                           |
 | Country          | Estonia (company); team works remote                         |
 | Founded          | 2026                                                         |
+| Annual revenue   | Pre-revenue (2026-10). Pick the lowest band, e.g. "Less than $1M" or "$0". |
 | Team size        | 1–10 (use "1" or "2–10" if the form needs a band)            |
 | Founder          | Taras Kornichuk ("Tao"), founder                             |
 | Business type    | Agency / service (GEO and SEO), B2B                          |
