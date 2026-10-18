@@ -18,7 +18,7 @@ Workers copy text from this file into directory and profile forms. Do not invent
 | Legal address    | Sepapaja tn 6, Lasnamäe linnaosa, 15551 Tallinn, Harju maakond, Estonia |
 | Country          | Estonia (company); team works remote                         |
 | Founder country  | Ukraine (residence)                                          |
-| Founded          | 2026 (citata.ai brand); WarmDevs OÜ registered 2023 |
+| Founded          | 2026 (citata.ai brand); WarmDevs OÜ registered 2023-08-01 (use this when a full date is required) |
 | Annual revenue   | Pre-revenue (2026-10). Pick the lowest band, e.g. "Less than $1M" or "$0". |
 | Team size        | 1–10 (use "1" or "2–10" if the form needs a band)            |
 | Founder          | Taras Kornichuk ("Tao"), founder                             |
