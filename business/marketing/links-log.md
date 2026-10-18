@@ -10,3 +10,4 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | B2 | 5 | 2 | 0 | 2 | 1 | Dealroom and Startup Estonia live (no nofollow). Crunchbase, F6S: Google popup failed. Wellfound skipped (hiring only). B4 started. |
 | 2026-10-18 | B3 | 4 | 0 | 0 | 1 | 2 | G2 blocked on phone. Capterra, TrustRadius skipped (software only). Trustpilot back to todo: retry with revenue band. B5 started. |
 | 2026-10-18 | B5 | 4 | 0 | 0 | 3 | 0 | X: face check. Facebook, LinkedIn: need founder login. YouTube retry (wrong Google account). B6 retry batch started. |
+| 2026-10-18 | B4 | 4 | 2 | 0 | 0 | 1 | Medium @citataai, Substack @citata live (nofollow). BetaList skipped (paid only). Indie Hackers retry in B7. B7 started. |
