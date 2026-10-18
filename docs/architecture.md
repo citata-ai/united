@@ -75,8 +75,8 @@ Self-hosted Infisical, `https://env.myremotely.ai`, TAO org `acab4c1a-58e6-4689-
 
 | Item                | Value                                                  |
 |---------------------|--------------------------------------------------------|
-| Project             | `citata` (new, like `Energon`)                         |
-| Environments        | `dev`, `prod`                                          |
+| Project             | `citata`, id `62010fdb-0173-4156-b434-6f5dd884f359`    |
+| Environments        | `dev`, `staging`, `prod`                               |
 | Day-1 secrets       | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`        |
 | Agents read with    | `SPARK_INFISICAL_PROJECT_ID=<citata> spark run -- …`   |
 | CI reads with       | Infisical machine identity (OIDC), not repo secrets    |
@@ -84,16 +84,28 @@ Self-hosted Infisical, `https://env.myremotely.ai`, TAO org `acab4c1a-58e6-4689-
 
 Rules: no `.env` files in git. Never print values. The operator creates the project, the identity and the Cloudflare token through Approver.app (Touch ID). An agent cannot do this.
 
-## 6. Place in TAO
+## 6. Email: agentic inbox
+
+Base: upstream `cloudflare/agentic-inbox` (Apache-2.0). Do not use the fork `dot-do/agentic-inbox`: it has `emails.do` config and a ledger that copies all mail to `agents@do.industries`.
+
+- One deploy serves many mailboxes on many domains. Each mailbox is one Durable Object.
+- Inbound: Email Routing on the `citata.ai` zone sends to the Worker. Outbound: Cloudflare Email Service (`send_email` binding).
+- The agent writes drafts with Workers AI. A human must confirm each send.
+- First mailbox: `grow@citata.ai`. Set `EMAIL_ADDRESSES` to the allowlist.
+- Put Cloudflare Access in front of the UI. Without per-mailbox ACLs, every Access user can read every mailbox.
+
+Cost at about 1k mails/month and 1–3 mailboxes: about $5–8/month. The $5 Workers Paid base is the main part. The base is shared with all other citata Workers.
+
+## 7. Place in TAO
 
 citata.ai is one venture of TAO (Thriving Agentic Organization). To register it:
 
 1. Allspark: `/80-entities/citata-ai.md` and `/30-projects/citata-ai/index.md`.
 2. Optimus registry: entry in `registry/projects.toml`.
-3. Todoer: prefix `CIT`.
+3. Todoer: prefix `CIT`, first task CIT-2.
 4. Goals: the venture OKRs live as code in `business/goals/` and link up to the TAO life goals.
 
-## 7. Open decisions
+## 8. Open decisions
 
 - Data store for the API: D1 or Durable Objects.
 - `app.citata.ai` or one host with paths.
