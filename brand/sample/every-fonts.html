@@ -12,6 +12,11 @@
 <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
 <style>
+/* web-app fonts (OFL), copied from my-remotely/web-app src/styles/fonts */
+@font-face{font-family:"Cal Sans";src:url(../fonts/CalSansVF.woff2) format("woff2");font-weight:100 900}
+html.cal h1,html.cal h2{letter-spacing:0;font-weight:500}
+html.cal h1 em{font-style:normal}
+@font-face{font-family:"Paper Mono";src:url(../fonts/PaperMono-Regular.woff2) format("woff2");font-weight:400}
 /* Local test only: Every's licensed Klim fonts, loaded from /tmp. Never ship these. */
 @font-face{font-family:"Founders Grotesk";src:url(file:///tmp/every-fonts/founders-grotesk-regular.woff2) format("woff2");font-weight:400}
 @font-face{font-family:"Founders Grotesk";src:url(file:///tmp/every-fonts/founders-grotesk-medium.woff2) format("woff2");font-weight:500 700}
@@ -135,17 +140,19 @@ footer img{height:56px}
 <b>Font set</b><br>
 <label><input type="radio" name="f" value="Signifier" checked> A · Signifier + Switzer (every.to, paid)</label><br>
 <label><input type="radio" name="f" value="'Source Serif 4'"> B · Source Serif 4 + Switzer (free)</label><br>
-<label><input type="radio" name="f" value="Newsreader"> C · Newsreader + Switzer (free)</label>
+<label><input type="radio" name="f" value="Newsreader"> C · Newsreader + Switzer (free)</label><br>
+<label><input type="radio" name="f" value="'Cal Sans'" data-ui="'Cal Sans'"> D · Cal Sans (web-app, free)</label>
 <hr style="border:0;border-top:1px solid var(--rule);margin:8px 0">
 <b>Menu / button font</b><br>
 <label><input type="radio" name="u" value="Switzer" checked> Switzer (every.to UI, free)</label><br>
 <label><input type="radio" name="u" value="'Founders Grotesk'"> Founders Grotesk (every.to, paid)</label><br>
 <label><input type="radio" name="u" value="Geist"> Geist (free)</label><br>
+<label><input type="radio" name="u" value="'Cal Sans'"> Cal Sans (web-app, free)</label><br>
 <label><input type="radio" name="u" value="serif"> Same serif as text (every.to buttons)</label>
 </div>
 <script>
 const r=document.documentElement.style;
-document.querySelectorAll('#sw input[name=f]').forEach(i=>i.onchange=()=>{r.setProperty('--serif',i.value+',Georgia,serif');if(document.querySelector('#sw input[name=u]:checked').value==='serif')r.setProperty('--sans','var(--serif)')});
+document.querySelectorAll('#sw input[name=f]').forEach(i=>i.onchange=()=>{r.setProperty('--serif',i.value+',Georgia,serif');document.documentElement.classList.toggle('cal',!!i.dataset.ui);if(i.dataset.ui){r.setProperty('--sans',i.dataset.ui+',system-ui,sans-serif');document.querySelector('#sw input[name=u][value="\'Cal Sans\'"]').checked=true}if(document.querySelector('#sw input[name=u]:checked').value==='serif')r.setProperty('--sans','var(--serif)')});
 document.querySelectorAll('#sw input[name=u]').forEach(i=>i.onchange=()=>r.setProperty('--sans',i.value==='serif'?'var(--serif)':i.value+',system-ui,sans-serif'));
 </script>
 </body>
