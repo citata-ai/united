@@ -22,12 +22,12 @@ colors:
   on-secondary: "#F5EFE3"
   gold: "#B8892B"              # gold leaf: ornament only, never small text
   gold-ink: "#7A5A14"          # gold that passes contrast for text
-  minium: "#C2410C"            # red lead (minium): logo quotes, drop caps, citations
+  minium: "#C1410B"            # red lead (minium): logo quotes, drop caps, citations
   verdigris: "#2F6B5C"         # success
   ochre: "#9A6A00"             # warning
   pop-cyan: "#2FA7E0"           # image palette only
   pop-yellow: "#F2C230"         # image palette only
-  error: "#C2410C"
+  error: "#C1410B"
   on-error: "#FBF7EE"
   # Dark theme: "Studiolo" (a scholar's study by candlelight)
   dark-background: "#14110E"
@@ -184,7 +184,7 @@ components:
 
 # Citata — Aetas Aurea
 
-Status: design direction settled 2026-10-18. Reference page: `/brand/sample/blog.html`.
+Status: design direction settled 2026-10-18. Accent (minium) set to `#C1410B` on 2026-10-18. Reference page: `/brand/sample/blog.html`.
 
 ## Overview
 
@@ -215,7 +215,7 @@ The palette comes from Renaissance pigments and materials.
 
 - **Parchment** `#F5EFE3` (background) and **Fresh page** `#FBF7EE` (surface). Warm, never pure white.
 - **Iron-gall ink** `#1C1712` (on-surface). Text, rules, the dark column band. Never pure black.
-- **Minium** `#C2410C`. Red lead, a deep orange pigment; the word "miniature" comes from it. Logo, kickers, label dots, author avatars, links, errors. Dark theme: `#F08A4B`.
+- **Minium** `#C1410B`. Red lead, a deep orange pigment; the word "miniature" comes from it. Logo, kickers, label dots, author avatars, links, errors. Dark theme: `#F08A4B`.
 - **Lapis lazuli** `#1E3A7B` (primary). The most costly pigment of the time. Only for the one main action on a screen (button).
 - **Gold leaf** `#B8892B`. Ornament only. For gold text use **gold-ink** `#7A5A14`.
 - **Verdigris** `#2F6B5C`. Success, "cited" state in the app.
@@ -304,7 +304,7 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 | `--primary` | `#1E3A7B` | `#8EA8E6` |
 | `--border` | `#D9CDB6` | `#3A332A` |
 | `--ring` | `#1E3A7B` at 55% | `#8EA8E6` at 60% |
-| `--destructive` | `#C2410C` | `#F08A4B` |
+| `--destructive` | `#C1410B` | `#F08A4B` |
 | `--radius` | `0.25rem` | `0.25rem` |
 | `--font-sans`, `--font-heading` | Cal Sans | Cal Sans |
 | `--font-mono` | Paper Mono | Paper Mono |
@@ -357,8 +357,8 @@ Aspect ratio [RATIO]. No text, no letters, no logos, no watermark, no frame.
 
 **Style blocks**
 
-- **A · Neoclassical pop**: `neoclassical pop art collage: classical marble sculpture or Greek architecture printed as coarse black halftone, cut out and placed on a flat bold background color, risograph texture, slight misregistration, two to three flat spot colors from: minium orange #C2410C, lapis blue #1E3A7B, sky cyan #2FA7E0, sun yellow #F2C230, parchment #F5EFE3, deep ink #1C1712; graphic, witty, clean composition with lots of negative space`
-- **B · Engraving**: `16th-century copperplate engraving in the manner of Albrecht Dürer, fine black ink cross-hatching on cream parchment #F5EFE3, high contrast, single accent of minium orange #C2410C, clean empty space around the subject`
+- **A · Neoclassical pop**: `neoclassical pop art collage: classical marble sculpture or Greek architecture printed as coarse black halftone, cut out and placed on a flat bold background color, risograph texture, slight misregistration, two to three flat spot colors from: minium orange #C1410B, lapis blue #1E3A7B, sky cyan #2FA7E0, sun yellow #F2C230, parchment #F5EFE3, deep ink #1C1712; graphic, witty, clean composition with lots of negative space`
+- **B · Engraving**: `16th-century copperplate engraving in the manner of Albrecht Dürer, fine black ink cross-hatching on cream parchment #F5EFE3, high contrast, single accent of minium orange #C1410B, clean empty space around the subject`
 - **C · Codex**: `page from Leonardo da Vinci's notebook, sepia iron-gall ink sketch on aged paper, geometric construction lines, compass arcs, light wash shading, studious and precise`
 
 ### Sample prompts
