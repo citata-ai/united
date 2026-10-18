@@ -18,6 +18,16 @@ import * as M from "./model.mjs";
 
 const { depthOf } = k;
 
+const WORDMARK = (() => {
+  const svg = readFileSync(new URL("../../public/wordmark.svg", import.meta.url), "utf8");
+  const [x, y, w, h] = svg
+    .match(/viewBox="([^"]+)"/)[1]
+    .split(/\s+/)
+    .map(Number);
+  const paths = svg.match(/<path[^>]*\/>/g).join("");
+  return { x, y, w, h, paths };
+})();
+
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const strip = (path) => readFileSync(path, "utf8").replace(/^export /gm, "");
@@ -39,7 +49,14 @@ const BIN_Z1 = 94;
 const GANTRY_Y = -36;
 const BEAM_Z = 96;
 
-const CABINET = { x: -34, y: -66, w: 44, d: 32, r: 1.5 };
+// The citata section: a plinth and a frame around the three stations.
+const SB = 5; // plinth height
+const PLINTH = { x: -46, y: -72, w: 182, d: 82, r: 2 };
+const FRAME_X = [-42, 130];
+const FRAME_Y = [-67, 5];
+const FRAME_TOP = 112;
+
+const CABINET = { x: -24, y: -64, w: 44, d: 30, r: 1.5 };
 const CABINET_H = 58;
 const STAMP = [M.STATIONS[0].x, M.RAIL_Y];
 const STAMP_REST = 58; // plunger foot height at rest
@@ -54,12 +71,12 @@ const REST = 1.55; // lens swing at rest: parked toward the back
 const HORN = { x: M.STATIONS[2].x, y: -50 };
 const HORN_Z = 66;
 
-const HOUSE = { x: 158, y: -44, w: 56, d: 60, r: 1 };
+const HOUSE = { x: 150, y: -70, w: 56, d: 50, r: 1 };
 const HOUSE_H = 60;
 
-const DIAL = [132, 42];
+const DIAL = [216, 0];
 const DIAL_Z = 22;
-const DIAL_R = 15;
+const DIAL_R = 12;
 const DIAL_TOP = DIAL_Z + 6;
 
 // Gear train: great wheel -> pinion -> escape wheel. Centre distance = rA + rB + TOOTH.
@@ -91,6 +108,7 @@ const P = k.fitProjection(
     ...k.boxCorners(BENCH, -BENCH_H - FOOT_H, 0),
     [M.HOPPER_X[0] - BIN / 2, M.RAIL_Y, BEAM_Z + 6],
     [HOUSE.x + HOUSE.w, HOUSE.y, HOUSE_H + 14],
+    [FRAME_X[1], FRAME_Y[0], FRAME_TOP + 2],
   ],
   WIDTH,
   HEIGHT,
@@ -147,22 +165,6 @@ function bench() {
       size: 0.45,
     }),
   );
-  // Maker's plate, the one engraved label.
-  const plate = { x: -222, y: BENCH.y + BENCH.d - 22, w: 52, d: 14, r: 1.2 };
-  out.push(S(k.slabOf(plate, 0, 0.8, P, 3, 0.3), { tone: "mid" }), count());
-  out.push(
-    D(
-      k.corners(plate, 2.4).map(([x, y]) => at([x, y, 0.8])),
-      { size: 0.45 },
-    ),
-  );
-  out.push(
-    k.faceTextSvg(
-      k.topMatrix([plate.x + plate.w / 2, plate.y + 9.4], 0.8, P, "x"),
-      "CITATA · No 1",
-      { size: 4.2, tone: "mid", anchor: "middle" },
-    ),
-  );
   return out.join("");
 }
 
@@ -210,9 +212,9 @@ function gantry() {
 }
 
 function cabinet() {
-  const out = [`<path class="iso-halo" d="${k.haloOf(CABINET, 0, CABINET_H, P)}"/>`];
-  out.push(S(k.slabOf(k.insetPlan(CABINET, -1.5), 0, 4, P, 3, 0.4), { tone: "lo" }));
-  out.push(S(k.slabOf(CABINET, 4, CABINET_H - 4, P, 3, 0.6), { tone: "mid" }));
+  const out = [];
+  out.push(S(k.slabOf(k.insetPlan(CABINET, -1.5), SB, 4, P, 3, 0.4), { tone: "lo" }));
+  out.push(S(k.slabOf(CABINET, SB + 4, CABINET_H - SB - 4, P, 3, 0.6), { tone: "mid" }));
   out.push(S(k.slabOf(k.insetPlan(CABINET, -1.2), CABINET_H, 2.5, P, 3, 0.5), { tone: "mid" }));
   count(3);
   // Six drawers on the front (+y) face: frame, label holder, pull.
@@ -221,7 +223,7 @@ function cabinet() {
   for (let row = 0; row < 3; row++) {
     for (let col = 0; col < 2; col++) {
       const x = CABINET.x + 3 + col * 19.5;
-      const z = CABINET_H - 5 - row * 17;
+      const z = CABINET_H - 5 - row * 16;
       const m = k.sideMatrix([x, face], z, P, "left");
       drawers.push(
         `<g transform="${m}"><rect x="0" y="0" width="18" height="14" rx="0.6" class="iso-line" data-tone="mid"/><rect x="5.5" y="2.6" width="7" height="3.6" class="iso-line" data-tone="lo"/><circle cx="9" cy="9.6" r="1.2" class="iso-line" data-tone="mid"/></g>`,
@@ -258,8 +260,10 @@ function stamp() {
 function lensPost() {
   const out = [];
   const [x, y] = LENS_POST;
-  out.push(S(k.cylinder(x, y, 7, 0, 3, P, 28, 0.4), { tone: "lo" }));
-  out.push(S(k.cylinder(x, y, 2.6, 3, LENS_Z - 3, P, 20), { tone: "mid", crease: "none" }));
+  out.push(S(k.cylinder(x, y, 7, SB, 3, P, 28, 0.4), { tone: "lo" }));
+  out.push(
+    S(k.cylinder(x, y, 2.6, SB + 3, LENS_Z - SB - 3, P, 20), { tone: "mid", crease: "none" }),
+  );
   out.push(L([20, 36, 50].map((z) => k.sideArc(x, y, 2.6, z, P, 12)).join(""), { tone: "faint" }));
   out.push(S(k.cylinder(x, y, 4.2, LENS_Z - 6, 5, P, 24, 0.4), { tone: "mid" }));
   out.push(L(k.knurl(x, y, 4.2, LENS_Z - 6, LENS_Z - 1, 20, P), { tone: "lo" }));
@@ -295,9 +299,12 @@ function lensAt(a) {
 
 function horn() {
   const out = [];
-  out.push(S(k.cylinder(HORN.x, HORN.y, 8, 0, 3, P, 28, 0.4), { tone: "lo" }));
+  out.push(S(k.cylinder(HORN.x, HORN.y, 8, SB, 3, P, 28, 0.4), { tone: "lo" }));
   out.push(
-    S(k.cylinder(HORN.x, HORN.y, 2.4, 3, HORN_Z - 13, P, 20), { tone: "mid", crease: "none" }),
+    S(k.cylinder(HORN.x, HORN.y, 2.4, SB + 3, HORN_Z - SB - 13, P, 20), {
+      tone: "mid",
+      crease: "none",
+    }),
   );
   out.push(S(k.cylinder(HORN.x, HORN.y, 4, HORN_Z - 12, 3, P, 24), { tone: "mid" }));
   count(3);
@@ -349,21 +356,12 @@ function hornWaves() {
 function rail() {
   const out = [];
   const y0 = M.RAIL_Y - 7;
-  const legs = [-206, -144, -78, -20, 30, 80, 136];
+  const legs = [-222, -160, -100, -56, -20, 30, 80, 128];
   for (const x of legs) {
-    out.push(S(k.cylinder(x, M.RAIL_Y, 5, 0, 2, P, 20, 0.3), { tone: "lo" }));
-    out.push(
-      S(
-        k.slabOf(
-          { x: x - 1.6, y: M.RAIL_Y - 1.6, w: 3.2, d: 3.2, r: 0.6 },
-          2,
-          M.RAIL_TOP - 9,
-          P,
-          2,
-        ),
-        { tone: "mid", crease: "none" },
-      ),
-    );
+    const z0 = x > PLINTH.x && x < PLINTH.x + PLINTH.w ? SB : 0;
+    out.push(S(k.cylinder(x, M.RAIL_Y, 5, z0, 2, P, 20, 0.3), { tone: "lo" }));
+    const post = { x: x - 1.6, y: M.RAIL_Y - 1.6, w: 3.2, d: 3.2, r: 0.6 };
+    out.push(S(k.slabOf(post, z0 + 2, M.RAIL_TOP - 9 - z0, P, 2), { tone: "mid", crease: "none" }));
     count(2);
   }
   const body = { x: M.RAIL_FROM, y: y0, w: M.RAIL_TO - M.RAIL_FROM, d: 14, r: 2 };
@@ -388,20 +386,171 @@ function rail() {
     ),
     count(),
   );
+  // Where the belt meets the back lip: the cleats end on this crease.
+  out.push(
+    L(k.lineOnTop([M.RAIL_FROM, M.RAIL_Y - 5], [M.RAIL_TO, M.RAIL_Y - 5], M.RAIL_TOP, P), {
+      tone: "faint",
+    }),
+  );
+  out.push(`<path data-part="cleats" class="iso-line" data-tone="mid" d="${cleatsAt(0)}"/>`);
   for (const y of [y0, y0 + 12]) {
     const lip = { x: M.RAIL_FROM, y, w: body.w, d: 2, r: 0.6 };
     out.push(S(k.slabOf(lip, M.RAIL_TOP - 2, 3.4, P, 2), { tone: "mid", crease: "none" }));
     count();
   }
-  out.push(
-    `<path data-part="belt" class="iso-line" data-tone="lo" data-flow="" data-free="both" d="${k.lineOnTop([M.RAIL_FROM + 4, M.RAIL_Y], [M.RAIL_TO - 4, M.RAIL_Y], M.RAIL_TOP, P)}"/>`,
-  );
   // End pulleys.
   for (const x of [M.RAIL_FROM + 1, M.RAIL_TO - 1]) {
     const F = G.frameAlong([x, y0 - 0.5, M.RAIL_TOP - 3], [0, 1, 0]);
     out.push(S(G.disc(0, 15, 4.2, F, P), { tone: "mid" }), count());
   }
   return out.join("");
+}
+
+/** Cleats (cups) across the belt; they move with it. Also built live. */
+function cleatsAt(t) {
+  let d = "";
+  const shift = (((M.SPEED * t) % M.CUP) + M.CUP) % M.CUP;
+  for (let x = M.RAIL_FROM + 8 + shift; x < M.RAIL_TO - 8; x += M.CUP) {
+    d += k.lineOnTop([x, M.RAIL_Y - 5], [x, M.RAIL_Y + 5], M.RAIL_TOP, P);
+  }
+  return d;
+}
+
+/** The citata plinth under the stations, with a station plate under each one. */
+function plinth() {
+  const out = [`<path class="iso-halo" d="${k.haloOf(PLINTH, 0, SB, P)}"/>`];
+  out.push(S(k.slabOf(PLINTH, 0, SB, P, 3, 0.8), { tone: "lo", crease: "mid" }), count());
+  out.push(L(k.planOutline(k.insetPlan(PLINTH, 4), SB, P, 3), { tone: "mid" }));
+  out.push(
+    D(
+      k.corners(PLINTH, 2.2).map(([a, b]) => at([a, b, SB])),
+      { size: 0.5, tone: "hi" },
+    ),
+  );
+  const face = PLINTH.y + PLINTH.d;
+  for (const st of M.STATIONS) {
+    const w = 30;
+    const m = k.sideMatrix([st.x - w / 2, face], SB - 0.6, P, "left");
+    out.push(
+      `<g transform="${m}"><rect x="0" y="0" width="${w}" height="3.8" rx="0.4" class="ce-plate"/><text x="${w / 2}" y="2.8" class="ce-plate-text" text-anchor="middle">${st.name.toUpperCase()}</text></g>`,
+    );
+    count();
+  }
+  return out.join("");
+}
+
+/** The citata frame: back pair of posts, side beams, and a back beam with the name plate. */
+function frameBack() {
+  const out = [];
+  for (const x of FRAME_X) {
+    out.push(post(x, FRAME_Y[0]));
+  }
+  for (const x of FRAME_X) {
+    const beam = { x: x - 3.5, y: FRAME_Y[0] - 3.5, w: 7, d: FRAME_Y[1] - FRAME_Y[0] + 7, r: 1 };
+    out.push(S(k.slabOf(beam, FRAME_TOP - 8, 6, P, 3, 0.4), { tone: "mid" }), count());
+  }
+  const beam = {
+    x: FRAME_X[0] - 3.5,
+    y: FRAME_Y[0] - 3.5,
+    w: FRAME_X[1] - FRAME_X[0] + 7,
+    d: 7,
+    r: 1,
+  };
+  out.push(
+    S(k.slabOf(beam, FRAME_TOP - 22, 22, P, 3, 0.6), {
+      tone: "mid",
+      inner: L(k.sideSeam(beam, FRAME_TOP - 3, P, 3), { tone: "faint" }),
+    }),
+    count(),
+  );
+  // Name plate with the citata wordmark on the beam's front face.
+  const cx = (FRAME_X[0] + FRAME_X[1]) / 2;
+  const pw = 74;
+  const m = k.sideMatrix([cx - pw / 2, beam.y + beam.d], FRAME_TOP - 4, P, "left");
+  const scale = 56 / WORDMARK.w;
+  out.push(
+    `<g transform="${m}"><rect x="0" y="0" width="${pw}" height="15" rx="1" class="ce-nameplate"/><circle cx="2" cy="2" r="0.6" class="ce-rivet"/><circle cx="${pw - 2}" cy="2" r="0.6" class="ce-rivet"/><circle cx="2" cy="13" r="0.6" class="ce-rivet"/><circle cx="${pw - 2}" cy="13" r="0.6" class="ce-rivet"/><g transform="translate(${(pw - 56) / 2} ${7.5 - (WORDMARK.h * scale) / 2}) scale(${scale.toFixed(4)}) translate(${-WORDMARK.x} ${-WORDMARK.y})">${WORDMARK.paths}</g></g>`,
+  );
+  count();
+  return out.join("");
+}
+
+function frameFront() {
+  return FRAME_X.map((x) => post(x, FRAME_Y[1])).join("");
+}
+
+function post(x, y) {
+  const out = [];
+  out.push(
+    S(k.slabOf({ x: x - 5, y: y - 5, w: 10, d: 10, r: 1 }, SB, 3, P, 3, 0.4), { tone: "mid" }),
+  );
+  out.push(
+    S(
+      k.slabOf(
+        { x: x - 3, y: y - 3, w: 6, d: 6, r: 0.8 },
+        SB + 3,
+        FRAME_TOP - 8 - SB - 3,
+        P,
+        3,
+        0.4,
+      ),
+      {
+        tone: "mid",
+      },
+    ),
+  );
+  out.push(D([at([x, y, SB + 3])], { size: 0.45 }));
+  count(2);
+  return out.join("");
+}
+
+/** Glass drop tube at the belt end, down to the queue rail. Front glass only. */
+function tube() {
+  const [x, y] = [M.TUBE_X, M.RAIL_Y];
+  const r = 5.4;
+  const z0 = M.QUEUE_Z + 2;
+  const z1 = M.RAIL_TOP + 2;
+  const F = up(x, y, z0);
+  return [
+    L(G.arcOf(F, 0, r, P) + G.arcOf(F, z1 - z0, r, P), { tone: "mid" }),
+    L(k.ring(x, y, r, z1, P, 32), { tone: "faint" }),
+    S(G.ringBand(z1 - z0 - 2, z1 - z0, r, r + 1.4, F, P), { tone: "mid" }),
+    S(G.ringBand(0, 2, r, r + 1.4, F, P), { tone: "mid" }),
+    `<path class="iso-line" data-tone="lo" d="${G.silhouetteOf(
+      [
+        [0, r],
+        [z1 - z0, r],
+      ],
+      F,
+      P,
+    )}"/>`,
+  ].join("");
+}
+
+/** Queue rail from the tube foot to the house door, and the door gate. */
+function queueRail() {
+  const out = [];
+  const x0 = M.TUBE_X - 8;
+  const x1 = M.DOOR_X + 8;
+  const body = { x: x0, y: M.RAIL_Y - 7, w: x1 - x0, d: 14, r: 1.5 };
+  out.push(S(k.slabOf(body, 0, M.QUEUE_Z, P, 3, 0.4), { tone: "mid" }), count());
+  for (const y of [M.RAIL_Y - 7, M.RAIL_Y + 5]) {
+    out.push(
+      S(k.slabOf({ x: x0, y, w: x1 - x0, d: 2, r: 0.6 }, M.QUEUE_Z, 2.4, P, 2), {
+        tone: "mid",
+        crease: "none",
+      }),
+    );
+    count();
+  }
+  const ticks = k.topTicks(x0 + 6, x1 - 4, M.SLOT, 1, M.RAIL_Y + 5, M.QUEUE_Z + 2.4, [1.2, 1.6], P);
+  out.push(L(ticks.major, { tone: "lo" }));
+  return out.join("");
+}
+
+function gate() {
+  const plan = { x: M.DOOR_X - 6, y: M.RAIL_Y - 7.5, w: 12, d: 1.6, r: 0.4 };
+  return S(k.slabOf(plan, M.QUEUE_Z + 0.5, 9, P, 2, 0.3), { tone: "hi" });
 }
 
 function hoppers() {
@@ -471,8 +620,19 @@ function hitOf(i) {
   return `<path class="ce-hit" data-engine="${i}" d="M${pts.map(([a, b]) => `${a.toFixed(1)} ${b.toFixed(1)}`).join("L")}Z"><title>${LOGOS[i].label}</title></path>`;
 }
 
+/** The capsule, coloured inline: it is drawn through <use>, which page CSS cannot reach. */
 function capsule() {
-  return S(G.sphereOf([0, 0, 0], M.CAPSULE_R, P), { tone: "hi", lit: true });
+  const ink = {
+    "iso-fill": "fill:#c1410b;stroke:#8f2f07;stroke-width:.6",
+    "iso-shade": "fill:#c1410b;stroke:#c1410b;stroke-width:.4",
+    "iso-top": "fill:#e8743f;stroke:#e8743f;stroke-width:.4",
+    "iso-edge": "fill:none;stroke:#8f2f07;stroke-width:.6",
+    "iso-crease": "fill:none;stroke:#8f2f07;stroke-width:.4",
+  };
+  return S(G.sphereOf([0, 0, 0], M.CAPSULE_R, P), { tone: "hi", lit: true }).replace(
+    /class="(iso-[a-z]+)"/g,
+    (all, name) => (ink[name] ? `${all} style="${ink[name]}"` : all),
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -685,7 +845,7 @@ function house() {
     count();
   }
   out.push(
-    `<g transform="${m(HOUSE.x + 9, HOUSE_H - 6)}"><rect x="0" y="0" width="38" height="10" rx="0.8" class="iso-line" data-tone="mid"/><path class="iso-line" data-tone="lo" data-free="both" d="M6 3.6H32M10 6.6H28"/></g>`,
+    `<g transform="${m(HOUSE.x + 7, HOUSE_H - 6)}"><rect x="0" y="0" width="42" height="10" rx="0.8" class="iso-line" data-tone="mid"/><text x="21" y="6.6" class="ce-sign" text-anchor="middle">YOUR BUSINESS</text></g>`,
   );
   count(2);
   // Side (+x) face: windows down the side.
@@ -744,41 +904,99 @@ function needleAt(turn) {
 // ---------------------------------------------------------------------------
 // Assemble
 // ---------------------------------------------------------------------------
-const POOL = 6;
+const POOL = 16;
 const capsules = Array.from(
   { length: POOL },
-  () => `<g data-part="capsule" opacity="0">${capsule()}</g>`,
+  () => `<use data-part="capsule" href="#ce-capsule" opacity="0"/>`,
 ).join("");
 count();
+const DOLLAR_AT = at([M.DOOR_X, HOUSE.y + HOUSE.d / 2, HOUSE_H + 22]);
+const dollars = Array.from(
+  { length: 4 },
+  () =>
+    `<text data-part="dollar" class="ce-dollar" x="${DOLLAR_AT[0].toFixed(1)}" y="${DOLLAR_AT[1].toFixed(1)}" text-anchor="middle" opacity="0">$</text>`,
+).join("");
+
+/** Hotspots: world points on key parts, with the step we do there. */
+const SPOTS = [
+  {
+    p: [M.HOPPER_X[2], M.RAIL_Y, BIN_Z1 + 10],
+    title: "AI engines",
+    text: "Buyers ask AI. We track the questions your buyers ask on ChatGPT, Gemini, Claude, Perplexity and Google, every week.",
+  },
+  {
+    p: [CABINET.x + CABINET.w - 6, CABINET.y + 8, CABINET_H + 3],
+    title: "Indexed",
+    text: "We make sure search engines and AI crawlers can read every page: sitemaps, crawl errors, speed.",
+  },
+  {
+    p: [LENS_POST[0], LENS_POST[1], LENS_Z + 10],
+    title: "Found",
+    text: "We write exact answers to those questions on your site, and fix weak pages.",
+  },
+  {
+    p: [HORN.x, HORN.y + 30, HORN_Z + 8],
+    title: "Mentioned",
+    text: "We fix your listings and profiles so AI engines name you, with a link.",
+  },
+  {
+    p: [ESCAPE[0], ESCAPE[1], GEAR_Z + 10],
+    title: "One checked change a day",
+    text: "Agents draft it. A person checks it before it ships.",
+  },
+  {
+    p: [BELL[0], BELL[1], BELL_Z + 20],
+    title: "Monday report",
+    text: "Which engines named you, for which questions, and what we changed.",
+  },
+  {
+    p: [M.DOOR_X, HOUSE.y + HOUSE.d / 2, HOUSE_H + 12],
+    title: "Your business",
+    text: "More buyers find you. We report citations and leads, not promises.",
+  },
+];
+const spotsHtml = SPOTS.map((spot, i) => {
+  const [sx, sy] = at(spot.p);
+  return `<button type="button" class="ce-spot" data-spot="${i}" style="left:${((sx / WIDTH) * 100).toFixed(2)}%;top:${((sy / HEIGHT) * 100).toFixed(2)}%" aria-label="${spot.title}: ${spot.text}" aria-expanded="false"><span aria-hidden="true"></span></button>`;
+}).join("");
+const tipHtml = `<div class="ce-tip" role="tooltip" hidden><strong></strong><span></span></div>`;
 
 const svg = k.figureSvg({
   width: WIDTH,
   height: HEIGHT,
   label:
-    "A brass citation engine on a bench. Five hoppers, one for each AI engine (ChatGPT, Gemini, Claude, Perplexity, Google AI Overviews), drop buyer questions as small balls onto a conveyor. Each ball stops at three stations: a card-index cabinet stamps it (Indexed), a lens swings over it (Found), and a horn speaks (Mentioned). Then it rolls into a small house, your site, and a counter dial moves. A flywheel and an escape wheel drive the belt; the wheel moves one tooth for each question, and a bell rings every seventh turn.",
+    "A brass citation engine on a bench. On the left, five hoppers, one for each AI engine (ChatGPT, Gemini, Claude, Perplexity, Google AI Overviews), drop buyer questions as small balls onto a moving belt. In the middle, inside a frame with the citata name plate, each ball passes three stations: a card-index cabinet stamps it (Indexed), a lens swings over it (Found), and a horn speaks (Mentioned). On the right, the balls drop down a glass tube, wait in a line at the door of a small house, your business, and go in one by one. A dollar sign rises each time, and a counter dial moves. A gear train drives the belt, and a bell rings for every seventh ball: the Monday report.",
   body: [
     bench(),
     gantry(),
+    plinth(),
+    frameBack(),
     cabinet(),
     lensPost(),
     horn(),
+    house(),
+    queueRail(),
+    `<g data-part="gate">${gate()}</g>`,
     rail(),
     hoppers(),
+    `<defs><g id="ce-capsule">${capsule()}</g></defs>`,
     capsules,
+    tube(),
     `<g data-part="stamp">${stamp()}</g>`,
     `<g data-part="lens">${lensAt(REST)}</g>`,
     hornWaves(),
+    frameFront(),
     drive(),
     bell(),
     `<g data-part="bell">${bellDome()}</g>`,
     `<g data-part="hammer">${hammerAt(0)}</g>`,
-    house(),
     dial(),
     `<path data-part="needle" class="iso-line" data-tone="hi" data-free="start" d="${needleAt(0)}" style="stroke-width:1.1"/>`,
+    dollars,
     M.HOPPER_X.map((_, i) => hitOf(i)).join(""),
   ],
 });
-count(6); // moving groups: lens, hammer, bell, needle, anchor, belt
+count(8); // moving groups: lens, hammer, bell, needle, anchor, cleats, gate, dollars
 
 const CSS = `
 .ce{--anatomy-page:#f5efe3;--anatomy-card:#fbf7ee;--anatomy-text:#5c5145;--anatomy-strong:#1c1712;--anatomy-muted:#8a7d6c;
@@ -800,27 +1018,44 @@ const CSS = `
 .ce .ce-rivet{fill:var(--anatomy-mid);stroke:none}
 .ce .ce-hit{fill:transparent;stroke:none;cursor:pointer;pointer-events:all}
 .ce .ce-hit:hover,.ce .ce-hit[data-on]{fill:#c1410b;fill-opacity:.06}
-.ce .iso-stage{outline:none;touch-action:manipulation}
-.ce .iso-stage:focus-visible{box-shadow:0 0 0 2px #1e3a7b;border-radius:4px}
+.ce .iso-stage{position:relative;outline:none;touch-action:manipulation}
+.ce .ce-plate{fill:var(--anatomy-top);stroke:var(--anatomy-mid);stroke-width:.25}
+.ce .ce-plate-text{font-family:var(--anatomy-mono);font-size:2.3px;letter-spacing:.12em;fill:var(--anatomy-hi)}
+.ce .ce-nameplate{fill:#fbf7ee;stroke:#c1410b;stroke-width:.5}
+.ce .ce-sign{font-family:var(--anatomy-mono);font-size:3.6px;letter-spacing:.1em;fill:var(--anatomy-hi)}
+.ce .ce-dollar{font-family:"Cal Sans",ui-sans-serif,system-ui,sans-serif;font-weight:600;font-size:22px;fill:#2f6b5c;pointer-events:none}
+.ce .ce-spot{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer;z-index:2}
+.ce .ce-spot span{position:absolute;inset:7px;border-radius:50%;background:#fbf7ee;border:1.5px solid #c1410b}
+.ce .ce-spot span::after{content:"";position:absolute;inset:3.5px;border-radius:50%;background:#c1410b}
+.ce .ce-spot::before{content:"";position:absolute;inset:2px;border-radius:50%;border:1.5px solid #c1410b;opacity:.55;animation:ce-pulse 2s ease-in-out infinite}
+.ce .ce-spot:focus-visible{outline:2px solid #c1410b;outline-offset:2px}
+.ce .ce-spot[aria-expanded="true"]::before{opacity:1;animation:none}
+@keyframes ce-pulse{0%,100%{transform:scale(.7);opacity:.7}50%{transform:scale(1.15);opacity:.15}}
+.ce .ce-tip{position:absolute;z-index:3;box-sizing:border-box;max-width:260px;padding:10px 12px;background:#fbf7ee;border:1px solid #d9cdb6;border-radius:4px;box-shadow:0 8px 24px rgb(28 23 18 / .12);font:14px/1.45 "Cal Sans",ui-sans-serif,system-ui,sans-serif;color:#1c1712}
+.ce .ce-tip strong{display:block;font-weight:600;color:#c1410b;margin-bottom:2px}
+.ce .ce-tip[hidden]{display:none}
+@media (prefers-reduced-motion:reduce){.ce .ce-spot::before{animation:none}}
+@media (max-width:560px){.ce .ce-spot{width:20px;height:20px;margin:-10px 0 0 -10px}.ce .ce-spot span{inset:5px}.ce .ce-spot span::after{inset:2.5px}.ce .iso-plate-corner[data-corner="hint"]{display:none}}
+.ce .iso-stage:focus-visible{box-shadow:0 0 0 2px #c1410b;border-radius:4px}
 .ce .ce-small{display:block;margin-top:2px;font-size:12px;color:var(--anatomy-muted)}
 @media (max-width:560px){.ce .iso-plate{padding:44px 10px 76px}.ce .iso-plate-corner{font-size:10px}.ce .iso-plate-corner[data-corner="hint"]{bottom:22px}.ce .iso-plate-corner[data-corner="readout"]{left:0;right:auto;white-space:normal;line-height:1.3}}
 `;
 
 const caption =
-  "Buyers ask AI engines. Each question passes 3 stations: Indexed, Found, Mentioned. One checked change a day turns the wheel. Every 7th turn, the bell rings: your Monday report.";
+  "Buyers ask AI engines. Inside the citata frame, each question passes 3 stations: Indexed, Found, Mentioned. Then buyers line up at your door and come in one by one. One checked change a day turns the wheels. Every 7th buyer, the bell rings: your Monday report. Tap a dot to read each step.";
 
 const plate = k
   .plateHtml({
     fig: "Fig 1",
     title: "The citation engine",
     hint: "Hover or tap an engine",
-    readout: "Waiting for a question",
+    readout: "Starting the engine",
     keys: [
-      { mark: "lit", label: "A buyer question on its way to your site" },
-      { mark: "raised", label: "Stations: Indexed, Found, Mentioned" },
+      { mark: "lit", label: "A buyer question" },
+      { mark: "raised", label: "AI engines → citata → your business" },
     ],
     caption,
-    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to drop a question from an engine.">${svg}</div>`,
+    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to drop a question from an engine.">${svg}${spotsHtml}${tipHtml}</div>`,
   })
   .replace(
     "</figcaption>",
@@ -834,17 +1069,20 @@ const markup = `<div class="iso ce" data-theme="light"><style>${k.ISO_CSS}${CSS}
 // ---------------------------------------------------------------------------
 const LIVE = `
 const P = ${JSON.stringify(P)};
+const WIDTH = ${WIDTH}, HEIGHT = ${HEIGHT};
 const ENGINES = ${JSON.stringify(LOGOS.map((l) => l.label))};
+const SPOTS = ${JSON.stringify(SPOTS.map(({ title, text }) => ({ title, text })))};
 const REST = ${REST}, LENS_POST = ${JSON.stringify(LENS_POST)}, LENS_ARM = ${LENS_ARM}, LENS_R = ${LENS_R}, LENS_Z = ${LENS_Z};
 const FLY = ${JSON.stringify(FLY)}, FLY_R = ${FLY_R}, FLY_TEETH = ${FLY_TEETH}, TOOTH = ${TOOTH}, GEAR_H = ${GEAR_H};
 const IDLER = ${JSON.stringify(IDLER)}, IDLER_R = ${IDLER_R}, IDLER_TEETH = ${IDLER_TEETH}, ESCAPE = ${JSON.stringify(ESCAPE)}, ESCAPE_R = ${ESCAPE_R}, TEETH = ${TEETH}, GEAR_Z = ${GEAR_Z};
 const ANCHOR = ${JSON.stringify(ANCHOR)}, BELL = ${JSON.stringify(BELL)}, BELL_Z = ${BELL_Z};
-const DIAL = ${JSON.stringify(DIAL)}, DIAL_R = ${DIAL_R}, DIAL_TOP = ${DIAL_TOP};
+const DIAL = ${JSON.stringify(DIAL)}, DIAL_R = ${DIAL_R}, DIAL_TOP = ${DIAL_TOP}, STAMP_DOWN = ${STAMP_DOWN};
 const at = (p) => iso(p, P);
 ${lensAt.toString().replace(/M\./g, "")}
-${gearSvg.toString().replace(/depthOf\(/g, "depthOf(")}
+${gearSvg.toString()}
 ${trainAt.toString()}
 ${anchorAt.toString()}
+${cleatsAt.toString().replace(/M\./g, "")}
 ${needleAt.toString().replace(/k\./g, "")}
 function hammerAt(swing) {
   const [x, y] = BELL;
@@ -855,6 +1093,7 @@ function hammerAt(swing) {
     dotsSvg([at(pivot)], { size: 0.9, tone: "mid" });
 }
 const k = { solidSvg, extrude, cylinder, lineSvg, ring, lineOnTop, dotsSvg };
+const ease = (dt, s) => 1 - Math.exp(-dt / s);
 
 for (const root of document.querySelectorAll(".ce")) {
   const stage = root.querySelector(".iso-stage");
@@ -862,95 +1101,137 @@ for (const root of document.querySelectorAll(".ce")) {
   const q = (name) => svg.querySelector('[data-part="' + name + '"]');
   const pool = [...svg.querySelectorAll('[data-part="capsule"]')];
   const waves = [...svg.querySelectorAll('[data-part="wave"]')];
+  const dollars = [...svg.querySelectorAll('[data-part="dollar"]')].map((el) => ({ el, born: -9 }));
   const hits = [...svg.querySelectorAll(".ce-hit")];
-  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), belt: q("belt") };
+  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), gate: q("gate") };
   const readout = root.querySelector("[data-readout]");
   const still = matchMedia("(prefers-reduced-motion: reduce)");
-  let live = [];
-  let clock = 0, last = 0, frame = 0, visible = false, nextSpawn = 0.6, lastSpawn = -9, tour = 0;
-  let turns = 0, toothAt = 0, toothTo = 0, delivered = 0, needle = 0, ring = -9, swing = REST, lensDrawn = REST;
-  let lastText = "", trainDrawn = 0;
 
+  // State: every number comes from the model (capsuleAt, cups, slots).
+  let balls = [];          // { el, index, cup, land, queued, qx, enter }
+  const taken = new Set(); // cups that carry a ball
+  let queue = [];          // balls waiting at the door, front first
+  let clock = 0, last = 0, frame = 0, visible = false;
+  let nextSpawn = 0.2, lastDrop = -9, tour = 0, nextRelease = 0, delivered = 0, ring = -99;
+  let needle = 0, swing = REST, lensDrawn = 99, gate = 0, trainAt0 = -1, hornPass = -99, lastEngine = -1;
+  let lastText = "";
   const say = (text) => { if (text !== lastText) { readout.textContent = text; lastText = text; } };
 
   function spawn(index) {
-    if (clock - lastSpawn < 0.9) return;
-    lastSpawn = clock;
-    const free = pool.find((el) => !live.some((c) => c.el === el));
+    const free = pool.find((el) => !balls.some((b) => b.el === el));
     if (!free) return;
-    turns += 1;
-    toothTo += 1;
-    if (turns % TURNS_PER_REPORT === 0) ring = clock;
-    live.push({ el: free, index, born: clock, turn: ((turns - 1) % TURNS_PER_REPORT) + 1, counted: false });
+    const { cup, land } = nextCup(index, clock + DROP, taken);
+    taken.add(cup);
+    balls.push({ el: free, index, cup, land, queued: false, qx: TUBE_X, enter: -1 });
+    lastEngine = index;
+  }
+
+  function update(dt) {
+    clock += dt;
+    if (clock >= nextSpawn) { spawn(tour % ENGINES.length); tour += 1; nextSpawn = clock + SPAWN_EVERY; }
+    for (const b of balls) {
+      if (b.queued || b.enter >= 0) continue;
+      const s = capsuleAt(b.index, b.cup, b.land, clock);
+      if (s.phase === "tube" || s.phase === "queue") taken.delete(b.cup);
+      if (s.phase === "queue") { b.queued = true; queue.push(b); }
+      const passT = cupTime(b.cup, STATIONS[2].x);
+      if (passT <= clock && passT > hornPass && clock >= b.land) hornPass = passT;
+    }
+    // Queue: each ball rolls to its slot; the front one waits at the door.
+    queue.forEach((b, i) => {
+      const target = DOOR_X - Math.min(i, SLOTS - 1) * SLOT;
+      b.qx += (target - b.qx) * ease(dt, 0.16);
+    });
+    const front = queue[0];
+    if (front && Math.abs(front.qx - DOOR_X) < 0.6 && clock >= nextRelease) {
+      queue.shift();
+      front.enter = clock;
+      nextRelease = clock + (queue.length >= 3 ? 0.8 : queue.length >= 2 ? 1.1 : 1.6);
+    }
+    for (const b of balls) {
+      if (b.enter >= 0 && clock - b.enter >= 0.45) {
+        b.done = true;
+        delivered += 1;
+        if (delivered % TURNS_PER_REPORT === 0) ring = clock;
+        const slot = dollars.reduce((o, d) => (d.born < o.born ? d : o), dollars[0]);
+        slot.born = clock;
+      }
+    }
+    balls = balls.filter((b) => !b.done);
+    const opening = balls.some((b) => b.enter >= 0);
+    gate += ((opening ? 1 : 0) - gate) * ease(dt, 0.08);
+    needle += (delivered / 40 - needle) * ease(dt, 0.25);
+    const near = balls.some((b) => {
+      if (b.queued || b.enter >= 0 || clock < b.land) return false;
+      const x = cupX(b.cup, clock);
+      return x > STATIONS[1].x - 24 && x < STATIONS[1].x + 10;
+    });
+    swing += ((near ? 0 : REST) - swing) * ease(dt, 0.14);
   }
 
   function draw() {
-    const states = [];
-    for (const c of live) {
-      const s = capsuleAt(c.index, clock - c.born);
-      states.push(s);
-      if (s.done) {
-        if (!c.counted) { c.counted = true; delivered += 1; }
-        c.el.setAttribute("opacity", "0");
-        continue;
+    let stampLoad = 0;
+    for (const b of balls) {
+      let p, alpha = 1;
+      if (b.enter >= 0) {
+        const u = Math.min(1, (clock - b.enter) / 0.45);
+        p = [DOOR_X, RAIL_Y - 9 * u, QUEUE_CZ];
+        alpha = 1 - u * u;
+      } else if (b.queued) {
+        p = [b.qx, RAIL_Y, QUEUE_CZ];
+      } else {
+        if (clock < b.land - DROP) { b.el.setAttribute("opacity", "0"); continue; }
+        const s = capsuleAt(b.index, b.cup, b.land, clock);
+        p = s.p;
+        if (s.phase === "belt") stampLoad = Math.max(stampLoad, bump(p[0], STATIONS[0].x, 9));
       }
-      c.el.setAttribute("opacity", "1");
-      c.el.setAttribute("transform", translateAlong(P, s.p));
+      b.el.setAttribute("opacity", alpha.toFixed(3));
+      b.el.setAttribute("transform", translateAlong(P, p));
     }
-    live = live.filter((c) => !c.counted);
-    // Stamp: drops onto a capsule that waits at Indexed.
-    const stampLoad = stationLoad(states, 0);
-    parts.stamp.setAttribute("transform", translateAlong(P, [0, 0, -${STAMP_DOWN} * stampLoad]));
-    // Lens: swings over the rail while a capsule nears or waits at Found.
-    const near = states.some((s) => (s.stage === 1) && (s.at >= 0 || s.p[0] > STATIONS[1].x - 30));
-    const want = near ? 0 : REST;
-    swing += (want - swing) * (1 - Math.exp(-dtNow / 0.22));
+    for (const el of pool) if (!balls.some((b) => b.el === el)) el.setAttribute("opacity", "0");
+    parts.cleats.setAttribute("d", cleatsAt(clock));
+    parts.stamp.setAttribute("transform", translateAlong(P, [0, 0, -STAMP_DOWN * stampLoad]));
     if (Math.abs(swing - lensDrawn) > 0.004) { parts.lens.innerHTML = lensAt(swing); lensDrawn = swing; }
-    // Horn: three rings fade out from the mouth while a capsule waits at Mentioned.
-    const hornLoad = stationLoad(states, 2);
+    const since = clock - hornPass;
     waves.forEach((w, i) => {
-      const phase = (clock * 1.6 + i / 3) % 1;
-      w.setAttribute("opacity", (hornLoad * (1 - phase) * 0.9).toFixed(3));
+      const u = since - i * 0.12;
+      w.setAttribute("opacity", (u < 0 || u > 0.7 ? 0 : (1 - u / 0.7) * 0.95).toFixed(3));
     });
-    // Drive: the flywheel turns, the escape wheel steps one tooth per question.
-    toothAt += (toothTo - toothAt) * (1 - Math.exp(-dtNow / 0.12));
-    const tooth = (Math.PI * 2) / TEETH;
-    if (Math.abs(toothAt - trainDrawn) > 0.002) {
-      parts.train.innerHTML = trainAt(toothAt * tooth);
-      const side = Math.floor(toothTo) % 2 ? 1 : -1;
-      parts.anchor.innerHTML = anchorAt(side * 0.12 - side * 0.24 * Math.max(0, Math.min(1, toothTo - toothAt)));
-      trainDrawn = toothAt;
+    // Gear train: turns smoothly all the time; the anchor ticks with the escape wheel.
+    const e = clock * 0.55;
+    if (Math.abs(e - trainAt0) > 0.02) {
+      parts.train.innerHTML = trainAt(e);
+      parts.anchor.innerHTML = anchorAt(0.13 * Math.sin(e * TEETH));
+      trainAt0 = e;
     }
-    // Bell: the seventh turn rings it.
-    const since = clock - ring;
-    const strike = since >= 0 && since < 1.4 ? Math.exp(-since * 3) * Math.abs(Math.sin(since * 14)) : 0;
+    parts.gate.setAttribute("transform", translateAlong(P, [0, 0, 8 * gate]));
+    const rang = clock - ring;
+    const strike = rang >= 0 && rang < 1.4 ? Math.exp(-rang * 3) * Math.abs(Math.sin(rang * 14)) : 0;
     parts.hammer.innerHTML = hammerAt(Math.min(1, strike * 1.4));
-    parts.bell.setAttribute("transform", translateAlong(P, [strike * 0.6 * Math.sin(since * 40), 0, 0]));
-    // Counter dial: one step per question that reaches the house.
-    needle += (delivered / 40 - needle) * (1 - Math.exp(-dtNow / 0.3));
+    parts.bell.setAttribute("transform", translateAlong(P, [strike * 0.6 * Math.sin(rang * 40), 0, 0]));
     parts.needle.setAttribute("d", needleAt(needle));
-    // Readout: the newest question and where it is.
-    const newest = live[live.length - 1];
-    if (since >= 0 && since < 2.2) say("Turn 7 of 7 · bell: Monday report");
-    else if (newest) {
-      const s = capsuleAt(newest.index, clock - newest.born);
-      const where = s.stage < 0 ? "asked" : s.stage >= 3 ? "to your site" : STATIONS[s.stage].name + (s.at >= 0 ? "" : " next");
-      say(ENGINES[newest.index] + " question · " + where + " · turn " + newest.turn + " of 7");
+    for (const d of dollars) {
+      const u = (clock - d.born) / 0.85;
+      if (u < 0 || u > 1) { d.el.setAttribute("opacity", "0"); continue; }
+      d.el.setAttribute("opacity", (u < 0.15 ? u / 0.15 : 1 - (u - 0.15) / 0.85).toFixed(3));
+      d.el.setAttribute("transform", "translate(0 " + (-16 * u).toFixed(2) + ")");
     }
+    const inside = balls.filter((b) => !b.queued && b.enter < 0 && clock >= b.land - DROP).length;
+    if (rang >= 0 && rang < 2) say("7th buyer in · bell: Monday report");
+    else if (lastEngine >= 0) say(ENGINES[lastEngine] + " asked · " + inside + " in the engine · " + queue.length + " at your door");
   }
 
-  let dtNow = 1 / 60;
   function tick(now) {
-    dtNow = last ? Math.min((now - last) / 1000, 1 / 20) : 1 / 60;
+    const dt = last ? Math.min((now - last) / 1000, 1 / 20) : 1 / 60;
     last = now;
-    clock += dtNow;
-    if (clock >= nextSpawn) { spawn(tour % ENGINES.length); tour += 1; nextSpawn = clock + SPAWN_EVERY; }
+    update(dt);
     draw();
     frame = visible ? requestAnimationFrame(tick) : 0;
   }
   const run = () => { if (!frame && visible && !still.matches) { last = 0; frame = requestAnimationFrame(tick); } };
   const drop = (index) => {
-    if (still.matches) return;
+    if (still.matches || clock - lastDrop < 0.3) return;
+    lastDrop = clock;
     spawn(index);
     nextSpawn = clock + SPAWN_EVERY;
     run();
@@ -962,22 +1243,58 @@ for (const root of document.querySelectorAll(".ce")) {
   }
   stage.addEventListener("keydown", (event) => {
     const n = Number(event.key);
-    if (n >= 1 && n <= ENGINES.length) { event.preventDefault(); drop(n - 1); }
+    if (event.target === stage && n >= 1 && n <= ENGINES.length) { event.preventDefault(); drop(n - 1); }
   });
+
+  // Hotspots: a tooltip card that stays inside the figure.
+  const tip = stage.querySelector(".ce-tip");
+  const spots = [...stage.querySelectorAll(".ce-spot")];
+  let pinned = null;
+  const hide = () => {
+    tip.hidden = true;
+    for (const s of spots) s.setAttribute("aria-expanded", "false");
+    pinned = null;
+  };
+  const show = (spot, pin) => {
+    const data = SPOTS[Number(spot.dataset.spot)];
+    tip.querySelector("strong").textContent = data.title;
+    tip.querySelector("span").textContent = data.text;
+    tip.hidden = false;
+    for (const s of spots) s.setAttribute("aria-expanded", String(s === spot));
+    const box = stage.getBoundingClientRect();
+    const dot = spot.getBoundingClientRect();
+    const w = Math.min(260, box.width - 16);
+    tip.style.width = w + "px";
+    const cx = dot.left + dot.width / 2 - box.left;
+    const cy = dot.top + dot.height / 2 - box.top;
+    tip.style.left = Math.max(8, Math.min(box.width - w - 8, cx - w / 2)) + "px";
+    const h = tip.offsetHeight;
+    tip.style.top = (cy + 16 + h > box.height ? Math.max(4, cy - 16 - h) : cy + 16) + "px";
+    if (pin) pinned = spot;
+  };
+  for (const spot of spots) {
+    spot.addEventListener("pointerenter", () => { if (!pinned) show(spot, false); });
+    spot.addEventListener("pointerleave", () => { if (!pinned) hide(); });
+    spot.addEventListener("blur", () => { if (pinned === spot) hide(); });
+    spot.addEventListener("focus", () => show(spot, true));
+    spot.addEventListener("click", (event) => { event.stopPropagation(); show(spot, true); });
+  }
+  root.addEventListener("keydown", (event) => { if (event.key === "Escape") { hide(); } });
+  document.addEventListener("pointerdown", (event) => {
+    if (!tip.hidden && !event.target.closest(".ce-spot") && !event.target.closest(".ce-tip")) hide();
+  });
+
   new IntersectionObserver((entries) => {
     visible = entries[entries.length - 1].isIntersecting;
     if (visible) run();
   }, { rootMargin: "80px 0px" }).observe(stage);
   if (still.matches) {
-    // One still frame: a question waits under the lens, the lens over it.
-    live.push({ el: pool[0], index: 1, born: -9, turn: 3, counted: false });
-    clock = 0;
-    const u = DROP + routeOf(1).slice(0, 3).reduce((t, leg) => t + leg.time, 0) + 0.3;
-    live[0].born = -u;
+    // One still frame: run the model for a while, then draw once.
+    for (let i = 0; i < 420; i++) update(1 / 30);
     swing = 0;
     draw();
-    say("Gemini question · Found · turn 3 of 7");
-    svg.querySelectorAll("[data-flow]").forEach((el) => el.removeAttribute("data-flow"));
+  } else {
+    draw();
   }
 }
 `;

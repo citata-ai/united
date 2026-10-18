@@ -682,102 +682,99 @@ const ISO_CSS = `
  * page moves every part from the same numbers.
  *
  * World units are about 1 px; x runs along the bench, y toward the viewer, z up.
+ * Flow: AI engine hoppers (input) -> belt through the citata frame, past three
+ * stations (Indexed, Found, Mentioned) -> drop tube -> queue -> your business.
  */
 
 /** Hopper x positions, one per AI engine (same order as LOGOS). */
-const HOPPER_X = [-196, -162, -128, -94, -60];
-/** The conveyor runs along this line. */
+const HOPPER_X = [-210, -176, -142, -108, -74];
+/** The belt runs along this line. */
 const RAIL_Y = -12;
 const RAIL_TOP = 44;
-const RAIL_FROM = -218;
-const RAIL_TO = 152;
+const RAIL_FROM = -232;
+const RAIL_TO = 148;
 /** A capsule (one buyer question) is a ball of this radius. */
 const CAPSULE_R = 4;
 /** The hopper mouth, where a capsule leaves the funnel. */
 const MOUTH_Z = 58;
-/** The three stations: the stages of the service. */
+/** The three stations inside the citata frame: the stages of the service. */
 const STATIONS = [
-  { name: "Indexed", x: -10, dwell: 0.7 },
-  { name: "Found", x: 46, dwell: 0.8 },
-  { name: "Mentioned", x: 106, dwell: 0.8 },
+  { name: "Indexed", x: -2 },
+  { name: "Found", x: 50 },
+  { name: "Mentioned", x: 104 },
 ];
-/** Where the capsule enters the house (your site). */
-const HOUSE_X = 168;
-const SPEED = 62;
-const DROP = 0.45;
-/** One spawn is one turn of the escapement: one checked change a day. */
+/** Belt speed and the spacing of the cups (cleats) that carry the capsules. */
+const SPEED = 46;
+const CUP = 26;
+/** Fall time from a hopper mouth into a cup. */
+const DROP = 0.42;
+/** At the end of the belt a capsule falls down a glass tube to the queue rail. */
+const TUBE_X = 142;
+const QUEUE_Z = 6;
+const TUBE_T = 0.5;
+/** The queue runs along the front of the house to its door. */
+const DOOR_X = 178;
+const SLOT = 9;
+const SLOTS = 5;
+/** Every 7th capsule that enters rings the bell: the Monday report. */
 const TURNS_PER_REPORT = 7;
-/** Idle spawn interval, seconds. */
-const SPAWN_EVERY = 3.6;
+/** Idle cadence: a new question about every second. */
+const SPAWN_EVERY = 0.95;
 
-const centreZ = RAIL_TOP + CAPSULE_R;
+const BELT_Z = RAIL_TOP + CAPSULE_R;
+const QUEUE_CZ = QUEUE_Z + CAPSULE_R;
 
-/** The route of a capsule from hopper `index` as legs: move or dwell. */
-function routeOf(index) {
-  const legs = [];
-  let x = HOPPER_X[index];
-  for (const [i, station] of STATIONS.entries()) {
-    legs.push({ kind: "move", from: x, to: station.x, time: (station.x - x) / SPEED, stage: i });
-    legs.push({ kind: "dwell", at: station.x, time: station.dwell, stage: i });
-    x = station.x;
-  }
-  legs.push({ kind: "move", from: x, to: HOUSE_X, time: (HOUSE_X - x) / SPEED, stage: 3 });
-  return legs;
-}
+/** The x of cup `n` at time `t`. */
+const cupX = (n, t) => n * CUP + SPEED * t;
 
-/** Total life of a capsule from hopper `index`, seconds. */
-function lifeOf(index) {
-  return DROP + routeOf(index).reduce((sum, leg) => sum + leg.time, 0);
+/** The time cup `n` passes x. */
+const cupTime = (n, x) => (x - n * CUP) / SPEED;
+
+/**
+ * The first free cup that reaches hopper `index` no earlier than `soonest`,
+ * given the set of taken cups. Returns { cup, land }.
+ */
+function nextCup(index, soonest, taken) {
+  const x = HOPPER_X[index];
+  let cup = Math.floor((x - SPEED * soonest) / CUP);
+  while (taken.has(cup)) cup -= 1;
+  return { cup, land: cupTime(cup, x) };
 }
 
 /**
- * Where a capsule from hopper `index` is `u` seconds after it left the
- * mouth. `stage` is -1 while it falls, 0..2 at or toward a station, 3 on the
- * way into the house; `at` is 0..1 progress of a dwell (or -1 when moving);
- * `done` is true once it is inside the house.
+ * Where a capsule is at time `t`. It rides `cup`, landing under hopper
+ * `index` at `land`. phase: "fall" | "belt" | "tube" | "queue".
+ * In the queue phase `p` is the tube foot; the live code moves it on.
  */
-function capsuleAt(index, u) {
+function capsuleAt(index, cup, land, t) {
   const x0 = HOPPER_X[index];
-  if (u < DROP) {
-    const share = (u / DROP) ** 2;
-    return {
-      p: [x0, RAIL_Y, MOUTH_Z - (MOUTH_Z - centreZ) * share],
-      stage: -1,
-      at: -1,
-      done: false,
-    };
+  if (t < land) {
+    const share = Math.max(0, 1 - (land - t) / DROP) ** 2;
+    return { p: [x0, RAIL_Y, MOUTH_Z - (MOUTH_Z - BELT_Z) * share], phase: "fall" };
   }
-  let t = u - DROP;
-  for (const leg of routeOf(index)) {
-    if (t <= leg.time) {
-      if (leg.kind === "dwell")
-        return { p: [leg.at, RAIL_Y, centreZ], stage: leg.stage, at: t / leg.time, done: false };
-      const x = leg.from + (leg.to - leg.from) * (t / leg.time);
-      return { p: [x, RAIL_Y, centreZ], stage: leg.stage, at: -1, done: false };
-    }
-    t -= leg.time;
-  }
-  return { p: [HOUSE_X, RAIL_Y, centreZ], stage: 3, at: -1, done: true };
+  const x = cupX(cup, t);
+  if (x < TUBE_X) return { p: [x, RAIL_Y, BELT_Z], phase: "belt" };
+  const u = (t - cupTime(cup, TUBE_X)) / TUBE_T;
+  if (u < 1) return { p: [TUBE_X, RAIL_Y, BELT_Z - (BELT_Z - QUEUE_CZ) * u * u], phase: "tube" };
+  return { p: [TUBE_X, RAIL_Y, QUEUE_CZ], phase: "queue" };
 }
 
-/** How busy a station is, 0..1, given the capsule states: a smooth bump over a dwell. */
-function stationLoad(states, stage) {
-  let load = 0;
-  for (const s of states) {
-    if (s.stage !== stage || s.at < 0) continue;
-    load = Math.max(load, Math.sin(Math.PI * Math.min(1, Math.max(0, s.at))));
-  }
-  return load;
+/** A smooth 0..1..0 bump for a capsule within `reach` of x = `at`. */
+function bump(x, at, reach) {
+  const d = Math.abs(x - at) / reach;
+  return d >= 1 ? 0 : Math.cos((d * Math.PI) / 2) ** 2;
 }
 
 
-const P = {"origin":[382.28948700059624,248.09101481998204],"scale":1.2194242234863832,"azimuth":58,"elevation":30};
+const P = {"origin":[382.2725283876627,250.68554683014486],"scale":1.2103917444190226,"azimuth":58,"elevation":30};
+const WIDTH = 760, HEIGHT = 430;
 const ENGINES = ["ChatGPT","Gemini","Claude","Perplexity","Google AI Overviews"];
-const REST = 1.55, LENS_POST = [68,-40], LENS_ARM = 35.60898762952971, LENS_R = 7.5, LENS_Z = 64;
+const SPOTS = [{"title":"AI engines","text":"Buyers ask AI. We track the questions your buyers ask on ChatGPT, Gemini, Claude, Perplexity and Google, every week."},{"title":"Indexed","text":"We make sure search engines and AI crawlers can read every page: sitemaps, crawl errors, speed."},{"title":"Found","text":"We write exact answers to those questions on your site, and fix weak pages."},{"title":"Mentioned","text":"We fix your listings and profiles so AI engines name you, with a link."},{"title":"One checked change a day","text":"Agents draft it. A person checks it before it ships."},{"title":"Monday report","text":"Which engines named you, for which questions, and what we changed."},{"title":"Your business","text":"More buyers find you. We report citations and leads, not promises."}];
+const REST = 1.55, LENS_POST = [72,-40], LENS_ARM = 35.60898762952971, LENS_R = 7.5, LENS_Z = 64;
 const FLY = [-160,32], FLY_R = 30, FLY_TEETH = 60, TOOTH = 2.6, GEAR_H = 4;
 const IDLER = [-120.56367822100759,41.65072663294166], IDLER_R = 8, IDLER_TEETH = 16, ESCAPE = [-98.23707891373766,34.00331116282277], ESCAPE_R = 13, TEETH = 15, GEAR_Z = 20;
 const ANCHOR = [-98.23707891373766,60.00331116282277], BELL = [-36,40], BELL_Z = 30;
-const DIAL = [132,42], DIAL_R = 15, DIAL_TOP = 28;
+const DIAL = [216,0], DIAL_R = 12, DIAL_TOP = 28, STAMP_DOWN = 4;
 const at = (p) => iso(p, P);
 function lensAt(a) {
   const [px, py] = LENS_POST;
@@ -886,6 +883,14 @@ function anchorAt(rock) {
     k.solidSvg(k.cylinder(ax, ay, 2.6, z, 2.6, P, 16, 0.3), { tone: "mid" }),
   ].join("");
 }
+function cleatsAt(t) {
+  let d = "";
+  const shift = (((SPEED * t) % CUP) + CUP) % CUP;
+  for (let x = RAIL_FROM + 8 + shift; x < RAIL_TO - 8; x += CUP) {
+    d += k.lineOnTop([x, RAIL_Y - 5], [x, RAIL_Y + 5], RAIL_TOP, P);
+  }
+  return d;
+}
 function needleAt(turn) {
   const a = turn * Math.PI * 2;
   const [x, y] = DIAL;
@@ -905,6 +910,7 @@ function hammerAt(swing) {
     dotsSvg([at(pivot)], { size: 0.9, tone: "mid" });
 }
 const k = { solidSvg, extrude, cylinder, lineSvg, ring, lineOnTop, dotsSvg };
+const ease = (dt, s) => 1 - Math.exp(-dt / s);
 
 for (const root of document.querySelectorAll(".ce")) {
   const stage = root.querySelector(".iso-stage");
@@ -912,95 +918,137 @@ for (const root of document.querySelectorAll(".ce")) {
   const q = (name) => svg.querySelector('[data-part="' + name + '"]');
   const pool = [...svg.querySelectorAll('[data-part="capsule"]')];
   const waves = [...svg.querySelectorAll('[data-part="wave"]')];
+  const dollars = [...svg.querySelectorAll('[data-part="dollar"]')].map((el) => ({ el, born: -9 }));
   const hits = [...svg.querySelectorAll(".ce-hit")];
-  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), belt: q("belt") };
+  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), gate: q("gate") };
   const readout = root.querySelector("[data-readout]");
   const still = matchMedia("(prefers-reduced-motion: reduce)");
-  let live = [];
-  let clock = 0, last = 0, frame = 0, visible = false, nextSpawn = 0.6, lastSpawn = -9, tour = 0;
-  let turns = 0, toothAt = 0, toothTo = 0, delivered = 0, needle = 0, ring = -9, swing = REST, lensDrawn = REST;
-  let lastText = "", trainDrawn = 0;
 
+  // State: every number comes from the model (capsuleAt, cups, slots).
+  let balls = [];          // { el, index, cup, land, queued, qx, enter }
+  const taken = new Set(); // cups that carry a ball
+  let queue = [];          // balls waiting at the door, front first
+  let clock = 0, last = 0, frame = 0, visible = false;
+  let nextSpawn = 0.2, lastDrop = -9, tour = 0, nextRelease = 0, delivered = 0, ring = -99;
+  let needle = 0, swing = REST, lensDrawn = 99, gate = 0, trainAt0 = -1, hornPass = -99, lastEngine = -1;
+  let lastText = "";
   const say = (text) => { if (text !== lastText) { readout.textContent = text; lastText = text; } };
 
   function spawn(index) {
-    if (clock - lastSpawn < 0.9) return;
-    lastSpawn = clock;
-    const free = pool.find((el) => !live.some((c) => c.el === el));
+    const free = pool.find((el) => !balls.some((b) => b.el === el));
     if (!free) return;
-    turns += 1;
-    toothTo += 1;
-    if (turns % TURNS_PER_REPORT === 0) ring = clock;
-    live.push({ el: free, index, born: clock, turn: ((turns - 1) % TURNS_PER_REPORT) + 1, counted: false });
+    const { cup, land } = nextCup(index, clock + DROP, taken);
+    taken.add(cup);
+    balls.push({ el: free, index, cup, land, queued: false, qx: TUBE_X, enter: -1 });
+    lastEngine = index;
+  }
+
+  function update(dt) {
+    clock += dt;
+    if (clock >= nextSpawn) { spawn(tour % ENGINES.length); tour += 1; nextSpawn = clock + SPAWN_EVERY; }
+    for (const b of balls) {
+      if (b.queued || b.enter >= 0) continue;
+      const s = capsuleAt(b.index, b.cup, b.land, clock);
+      if (s.phase === "tube" || s.phase === "queue") taken.delete(b.cup);
+      if (s.phase === "queue") { b.queued = true; queue.push(b); }
+      const passT = cupTime(b.cup, STATIONS[2].x);
+      if (passT <= clock && passT > hornPass && clock >= b.land) hornPass = passT;
+    }
+    // Queue: each ball rolls to its slot; the front one waits at the door.
+    queue.forEach((b, i) => {
+      const target = DOOR_X - Math.min(i, SLOTS - 1) * SLOT;
+      b.qx += (target - b.qx) * ease(dt, 0.16);
+    });
+    const front = queue[0];
+    if (front && Math.abs(front.qx - DOOR_X) < 0.6 && clock >= nextRelease) {
+      queue.shift();
+      front.enter = clock;
+      nextRelease = clock + (queue.length >= 3 ? 0.8 : queue.length >= 2 ? 1.1 : 1.6);
+    }
+    for (const b of balls) {
+      if (b.enter >= 0 && clock - b.enter >= 0.45) {
+        b.done = true;
+        delivered += 1;
+        if (delivered % TURNS_PER_REPORT === 0) ring = clock;
+        const slot = dollars.reduce((o, d) => (d.born < o.born ? d : o), dollars[0]);
+        slot.born = clock;
+      }
+    }
+    balls = balls.filter((b) => !b.done);
+    const opening = balls.some((b) => b.enter >= 0);
+    gate += ((opening ? 1 : 0) - gate) * ease(dt, 0.08);
+    needle += (delivered / 40 - needle) * ease(dt, 0.25);
+    const near = balls.some((b) => {
+      if (b.queued || b.enter >= 0 || clock < b.land) return false;
+      const x = cupX(b.cup, clock);
+      return x > STATIONS[1].x - 24 && x < STATIONS[1].x + 10;
+    });
+    swing += ((near ? 0 : REST) - swing) * ease(dt, 0.14);
   }
 
   function draw() {
-    const states = [];
-    for (const c of live) {
-      const s = capsuleAt(c.index, clock - c.born);
-      states.push(s);
-      if (s.done) {
-        if (!c.counted) { c.counted = true; delivered += 1; }
-        c.el.setAttribute("opacity", "0");
-        continue;
+    let stampLoad = 0;
+    for (const b of balls) {
+      let p, alpha = 1;
+      if (b.enter >= 0) {
+        const u = Math.min(1, (clock - b.enter) / 0.45);
+        p = [DOOR_X, RAIL_Y - 9 * u, QUEUE_CZ];
+        alpha = 1 - u * u;
+      } else if (b.queued) {
+        p = [b.qx, RAIL_Y, QUEUE_CZ];
+      } else {
+        if (clock < b.land - DROP) { b.el.setAttribute("opacity", "0"); continue; }
+        const s = capsuleAt(b.index, b.cup, b.land, clock);
+        p = s.p;
+        if (s.phase === "belt") stampLoad = Math.max(stampLoad, bump(p[0], STATIONS[0].x, 9));
       }
-      c.el.setAttribute("opacity", "1");
-      c.el.setAttribute("transform", translateAlong(P, s.p));
+      b.el.setAttribute("opacity", alpha.toFixed(3));
+      b.el.setAttribute("transform", translateAlong(P, p));
     }
-    live = live.filter((c) => !c.counted);
-    // Stamp: drops onto a capsule that waits at Indexed.
-    const stampLoad = stationLoad(states, 0);
-    parts.stamp.setAttribute("transform", translateAlong(P, [0, 0, -4 * stampLoad]));
-    // Lens: swings over the rail while a capsule nears or waits at Found.
-    const near = states.some((s) => (s.stage === 1) && (s.at >= 0 || s.p[0] > STATIONS[1].x - 30));
-    const want = near ? 0 : REST;
-    swing += (want - swing) * (1 - Math.exp(-dtNow / 0.22));
+    for (const el of pool) if (!balls.some((b) => b.el === el)) el.setAttribute("opacity", "0");
+    parts.cleats.setAttribute("d", cleatsAt(clock));
+    parts.stamp.setAttribute("transform", translateAlong(P, [0, 0, -STAMP_DOWN * stampLoad]));
     if (Math.abs(swing - lensDrawn) > 0.004) { parts.lens.innerHTML = lensAt(swing); lensDrawn = swing; }
-    // Horn: three rings fade out from the mouth while a capsule waits at Mentioned.
-    const hornLoad = stationLoad(states, 2);
+    const since = clock - hornPass;
     waves.forEach((w, i) => {
-      const phase = (clock * 1.6 + i / 3) % 1;
-      w.setAttribute("opacity", (hornLoad * (1 - phase) * 0.9).toFixed(3));
+      const u = since - i * 0.12;
+      w.setAttribute("opacity", (u < 0 || u > 0.7 ? 0 : (1 - u / 0.7) * 0.95).toFixed(3));
     });
-    // Drive: the flywheel turns, the escape wheel steps one tooth per question.
-    toothAt += (toothTo - toothAt) * (1 - Math.exp(-dtNow / 0.12));
-    const tooth = (Math.PI * 2) / TEETH;
-    if (Math.abs(toothAt - trainDrawn) > 0.002) {
-      parts.train.innerHTML = trainAt(toothAt * tooth);
-      const side = Math.floor(toothTo) % 2 ? 1 : -1;
-      parts.anchor.innerHTML = anchorAt(side * 0.12 - side * 0.24 * Math.max(0, Math.min(1, toothTo - toothAt)));
-      trainDrawn = toothAt;
+    // Gear train: turns smoothly all the time; the anchor ticks with the escape wheel.
+    const e = clock * 0.55;
+    if (Math.abs(e - trainAt0) > 0.02) {
+      parts.train.innerHTML = trainAt(e);
+      parts.anchor.innerHTML = anchorAt(0.13 * Math.sin(e * TEETH));
+      trainAt0 = e;
     }
-    // Bell: the seventh turn rings it.
-    const since = clock - ring;
-    const strike = since >= 0 && since < 1.4 ? Math.exp(-since * 3) * Math.abs(Math.sin(since * 14)) : 0;
+    parts.gate.setAttribute("transform", translateAlong(P, [0, 0, 8 * gate]));
+    const rang = clock - ring;
+    const strike = rang >= 0 && rang < 1.4 ? Math.exp(-rang * 3) * Math.abs(Math.sin(rang * 14)) : 0;
     parts.hammer.innerHTML = hammerAt(Math.min(1, strike * 1.4));
-    parts.bell.setAttribute("transform", translateAlong(P, [strike * 0.6 * Math.sin(since * 40), 0, 0]));
-    // Counter dial: one step per question that reaches the house.
-    needle += (delivered / 40 - needle) * (1 - Math.exp(-dtNow / 0.3));
+    parts.bell.setAttribute("transform", translateAlong(P, [strike * 0.6 * Math.sin(rang * 40), 0, 0]));
     parts.needle.setAttribute("d", needleAt(needle));
-    // Readout: the newest question and where it is.
-    const newest = live[live.length - 1];
-    if (since >= 0 && since < 2.2) say("Turn 7 of 7 · bell: Monday report");
-    else if (newest) {
-      const s = capsuleAt(newest.index, clock - newest.born);
-      const where = s.stage < 0 ? "asked" : s.stage >= 3 ? "to your site" : STATIONS[s.stage].name + (s.at >= 0 ? "" : " next");
-      say(ENGINES[newest.index] + " question · " + where + " · turn " + newest.turn + " of 7");
+    for (const d of dollars) {
+      const u = (clock - d.born) / 0.85;
+      if (u < 0 || u > 1) { d.el.setAttribute("opacity", "0"); continue; }
+      d.el.setAttribute("opacity", (u < 0.15 ? u / 0.15 : 1 - (u - 0.15) / 0.85).toFixed(3));
+      d.el.setAttribute("transform", "translate(0 " + (-16 * u).toFixed(2) + ")");
     }
+    const inside = balls.filter((b) => !b.queued && b.enter < 0 && clock >= b.land - DROP).length;
+    if (rang >= 0 && rang < 2) say("7th buyer in · bell: Monday report");
+    else if (lastEngine >= 0) say(ENGINES[lastEngine] + " asked · " + inside + " in the engine · " + queue.length + " at your door");
   }
 
-  let dtNow = 1 / 60;
   function tick(now) {
-    dtNow = last ? Math.min((now - last) / 1000, 1 / 20) : 1 / 60;
+    const dt = last ? Math.min((now - last) / 1000, 1 / 20) : 1 / 60;
     last = now;
-    clock += dtNow;
-    if (clock >= nextSpawn) { spawn(tour % ENGINES.length); tour += 1; nextSpawn = clock + SPAWN_EVERY; }
+    update(dt);
     draw();
     frame = visible ? requestAnimationFrame(tick) : 0;
   }
   const run = () => { if (!frame && visible && !still.matches) { last = 0; frame = requestAnimationFrame(tick); } };
   const drop = (index) => {
-    if (still.matches) return;
+    if (still.matches || clock - lastDrop < 0.3) return;
+    lastDrop = clock;
     spawn(index);
     nextSpawn = clock + SPAWN_EVERY;
     run();
@@ -1012,22 +1060,58 @@ for (const root of document.querySelectorAll(".ce")) {
   }
   stage.addEventListener("keydown", (event) => {
     const n = Number(event.key);
-    if (n >= 1 && n <= ENGINES.length) { event.preventDefault(); drop(n - 1); }
+    if (event.target === stage && n >= 1 && n <= ENGINES.length) { event.preventDefault(); drop(n - 1); }
   });
+
+  // Hotspots: a tooltip card that stays inside the figure.
+  const tip = stage.querySelector(".ce-tip");
+  const spots = [...stage.querySelectorAll(".ce-spot")];
+  let pinned = null;
+  const hide = () => {
+    tip.hidden = true;
+    for (const s of spots) s.setAttribute("aria-expanded", "false");
+    pinned = null;
+  };
+  const show = (spot, pin) => {
+    const data = SPOTS[Number(spot.dataset.spot)];
+    tip.querySelector("strong").textContent = data.title;
+    tip.querySelector("span").textContent = data.text;
+    tip.hidden = false;
+    for (const s of spots) s.setAttribute("aria-expanded", String(s === spot));
+    const box = stage.getBoundingClientRect();
+    const dot = spot.getBoundingClientRect();
+    const w = Math.min(260, box.width - 16);
+    tip.style.width = w + "px";
+    const cx = dot.left + dot.width / 2 - box.left;
+    const cy = dot.top + dot.height / 2 - box.top;
+    tip.style.left = Math.max(8, Math.min(box.width - w - 8, cx - w / 2)) + "px";
+    const h = tip.offsetHeight;
+    tip.style.top = (cy + 16 + h > box.height ? Math.max(4, cy - 16 - h) : cy + 16) + "px";
+    if (pin) pinned = spot;
+  };
+  for (const spot of spots) {
+    spot.addEventListener("pointerenter", () => { if (!pinned) show(spot, false); });
+    spot.addEventListener("pointerleave", () => { if (!pinned) hide(); });
+    spot.addEventListener("blur", () => { if (pinned === spot) hide(); });
+    spot.addEventListener("focus", () => show(spot, true));
+    spot.addEventListener("click", (event) => { event.stopPropagation(); show(spot, true); });
+  }
+  root.addEventListener("keydown", (event) => { if (event.key === "Escape") { hide(); } });
+  document.addEventListener("pointerdown", (event) => {
+    if (!tip.hidden && !event.target.closest(".ce-spot") && !event.target.closest(".ce-tip")) hide();
+  });
+
   new IntersectionObserver((entries) => {
     visible = entries[entries.length - 1].isIntersecting;
     if (visible) run();
   }, { rootMargin: "80px 0px" }).observe(stage);
   if (still.matches) {
-    // One still frame: a question waits under the lens, the lens over it.
-    live.push({ el: pool[0], index: 1, born: -9, turn: 3, counted: false });
-    clock = 0;
-    const u = DROP + routeOf(1).slice(0, 3).reduce((t, leg) => t + leg.time, 0) + 0.3;
-    live[0].born = -u;
+    // One still frame: run the model for a while, then draw once.
+    for (let i = 0; i < 420; i++) update(1 / 30);
     swing = 0;
     draw();
-    say("Gemini question · Found · turn 3 of 7");
-    svg.querySelectorAll("[data-flow]").forEach((el) => el.removeAttribute("data-flow"));
+  } else {
+    draw();
   }
 }
 
