@@ -82,7 +82,7 @@ Subject rules for our niche:
 3. Look at the image. Reject it for: letters or fake text, extra fingers, a cartoon object, a white sticker edge, more than one color field. Generate again with the fix in the prompt.
 4. Convert to WebP at 640, 720, 960 and 1280 px wide, and a 1200×630 JPG for OG. Put them in `landing/public/img/` and `landing/public/og/`.
 5. Add an entry to `landing/public/img/prompts.toml`: file, prompt, model, date.
-6. Caption or credits say "Images made with AI". Do not remove SynthID or C2PA marks.
+6. No visible "made with AI" label on the site (owner decision, 2026-10-18). Do not remove SynthID or C2PA marks.
 
 ## 5. Approved prompts
 

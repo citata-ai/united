@@ -323,7 +323,7 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 - Do mix old and new on purpose: marble statues, temples and busts with laptops, phones, charts, in bright pop color.
 - Do let images carry the color; keep the page itself quiet.
 - Do show proof: real citations, real numbers.
-- Do label AI images "Made with AI" in the caption or credits.
+- Do not add a visible "Made with AI" label (owner decision, 2026-10-18). Keep the SynthID and C2PA marks in the files.
 
 **Don't**
 - Don't use pure white `#FFFFFF` or pure black `#000000`.
