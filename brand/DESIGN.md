@@ -216,14 +216,15 @@ The palette comes from Renaissance pigments and materials.
 - **Parchment** `#F5EFE3` (background) and **Fresh page** `#FBF7EE` (surface). Warm, never pure white.
 - **Iron-gall ink** `#1C1712` (on-surface). Text, rules, the dark column band. Never pure black.
 - **Minium** `#C1410B`. Red lead, a deep orange pigment; the word "miniature" comes from it. Logo, kickers, label dots, author avatars, links, errors. Dark theme: `#F08A4B`.
-- **Lapis lazuli** `#1E3A7B` (primary). The most costly pigment of the time. Only for the one main action on a screen (button).
+- **Lapis lazuli** `#1E3A7B`. Image palette only (backgrounds of AI images). Not for buttons or UI since 2026-10-18.
 - **Gold leaf** `#B8892B`. Ornament only. For gold text use **gold-ink** `#7A5A14`.
 - **Verdigris** `#2F6B5C`. Success, "cited" state in the app.
 
 **Dark theme "Studiolo".** `#14110E` background, `#EDE4D3` ink, lapis `#8EA8E6`, gold `#D4A84B`, minium `#F08A4B`. Tokens use the `dark-` prefix.
 
 **Rules.**
-- One lapis action per view. Other actions use ink or ghost buttons.
+- Buttons use minium only: primary = filled minium (`#C1410B`, hover `#9E350A`, parchment text), secondary = minium outline. No lapis or ink buttons (owner decision, 2026-10-18).
+- Selected tabs and toggles: minium fill. Proof bands: light (`surface` + hairline), not dark ink.
 - Minium is the accent of the page: kickers, dots, links. Keep it small; images bring the big color.
 - Status colors in the app: verdigris = cited, ochre = mentioned without link, minium = not found.
 
@@ -326,7 +327,7 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 
 **Don't**
 - Don't use pure white `#FFFFFF` or pure black `#000000`.
-- Don't use more than one lapis button per view.
+- Don't use lapis or ink for buttons. One filled minium button per view; others are outlines.
 - Don't use serif or script faces for live text; serif is only in the outlined logo.
 - Don't track Cal Sans tight or fake its italic.
 - Don't render text inside generated images; set text in HTML.

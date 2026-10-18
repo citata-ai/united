@@ -28,6 +28,7 @@
   --color-gold: #b8892b;
   --color-gold-ink: #7a5a14;
   --color-minium: #c1410b;
+  --color-minium-hover: #9e350a;
   --color-verdigris: #2f6b5c;
   --color-ochre: #9a6a00;
 }
@@ -59,11 +60,12 @@
   .meta {
     @apply font-mono text-[11px] tracking-[0.06em] text-muted uppercase;
   }
-  .btn-lapis {
-    @apply inline-block rounded bg-lapis px-4 py-2.5 text-sm font-medium text-page hover:bg-lapis-hover;
+  /* One accent: minium. Primary = filled, secondary = outline. No lapis or ink buttons. */
+  .btn-primary {
+    @apply inline-block rounded border border-minium bg-minium px-4 py-2.5 text-sm font-medium text-page transition-colors hover:border-minium-hover hover:bg-minium-hover;
   }
-  .btn-ink {
-    @apply inline-block rounded bg-ink px-4 py-2.5 text-sm font-medium text-parchment hover:bg-muted;
+  .btn-secondary {
+    @apply inline-block rounded border border-minium px-4 py-2.5 text-sm font-medium text-minium transition-colors hover:bg-minium hover:text-page;
   }
   .link {
     @apply text-minium underline decoration-1 underline-offset-2 hover:decoration-2;
@@ -92,7 +94,7 @@
   .prose-c li {
     @apply my-1.5;
   }
-  .prose-c a:not(.btn-lapis) {
+  .prose-c a:not(.btn-primary) {
     @apply text-minium underline underline-offset-2;
   }
   .prose-c strong {

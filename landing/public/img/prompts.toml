@@ -7,7 +7,7 @@ files = ["property-management.jpg", "../og/property-management.jpg"]
 # Style block A · Neoclassical pop (brand/DESIGN.md), accent #C1410B.
 [[image]]
 file = "hero.jpg"
-prompt = "A classical marble hand with a pointing index finger aimed at one open book on a shelf of many; a small chat bubble above the chosen book. Flat lapis blue background, yellow book."
+prompt = "A classical marble hand with a pointing index finger aimed at one open yellow book on a shelf of many books; a small parchment chat bubble above the chosen book. Flat minium orange #C1410B background; no blue at all."  # v2 2026-10-18, owner: no blue
 
 [[image]]
 file = "fridman-case.jpg"
