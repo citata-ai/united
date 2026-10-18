@@ -1,0 +1,162 @@
+---
+// Hub for experiment H01-E1: HUD FY2027 Fair Market Rents for the 50 largest metro FMR areas.
+// Every number comes from src/data/fmr-fy2027.json (tools/section8/build.py).
+import Guide from "../../layouts/Guide.astro";
+import Section8Cta from "../../components/Section8Cta.astro";
+import { datasetSchema, fmr, metroPath, metros, pct, published, src, updated, usd } from "../../data/section8.ts";
+
+const two = (i: number) => (m: (typeof metros)[number]) => m.fmr2027[i] ?? 0;
+type M = (typeof metros)[number];
+const chg = (m: M) => m.changePct[2] ?? 0;
+// The metro that wins a comparison; reduce with no seed keeps the type M (metros is not empty).
+const best = (wins: (a: M, b: M) => boolean) => metros.reduce((x, y) => (wins(y, x) ? y : x));
+const high = best((a, b) => two(2)(a) > two(2)(b));
+const low = best((a, b) => two(2)(a) < two(2)(b));
+const up = best((a, b) => chg(a) > chg(b));
+const down = best((a, b) => chg(a) < chg(b));
+const rose = metros.filter((m) => (m.changePct[2] ?? 0) > 0).length;
+
+const fm = {
+  title: "Section 8 Rent Limits 2027 by Metro (HUD Fair Market Rents) — Citata.ai",
+  description: `HUD FY2027 Fair Market Rents for the 50 largest US metro areas, 0–4 bedrooms, with the change from FY2026. In effect from October 1, 2026.`,
+  headline: "Section 8 Rent Limits 2027 by Metro",
+  dek: "HUD FY2027 Fair Market Rents for the 50 largest US metro areas, with the change from 2026.",
+  published,
+  updated,
+  answer: `HUD's FY2027 Fair Market Rents (FMRs) are in effect from October 1, 2026. Of the 50 largest metro FMR areas, ${high.short} has the highest 2-bedroom FMR (${usd(two(2)(high))}) and ${low.short} the lowest (${usd(two(2)(low))}). The 2-bedroom FMR went up in ${rose} of the 50 areas: most in ${up.short} (${pct(up.changePct[2] ?? 0)}), and it fell most in ${down.short} (${pct(down.changePct[2] ?? 0)}).`,
+  faq: [
+    {
+      q: "What is the Section 8 rent limit for 2027?",
+      a: "There is no single national limit. HUD publishes a Fair Market Rent (FMR) for each metro area and unit size, and each housing authority sets its payment standard from it. Without HUD approval, the payment standard can be 90% to 110% of the FMR (24 CFR 982.503).",
+    },
+    {
+      q: "When do the FY2027 Fair Market Rents start?",
+      a: `The FY2027 FMRs are in effect from October 1, 2026. HUD published them in the Federal Register on September 1, 2026 (${fmr.notice.citation}, Docket ${fmr.notice.docket}).`,
+    },
+    {
+      q: "Which metro has the highest Fair Market Rent in 2027?",
+      a: `Of the 50 largest metro FMR areas, ${high.short} has the highest FY2027 2-bedroom FMR: ${usd(two(2)(high))} a month (HUD).`,
+    },
+    {
+      q: "How did you pick the 50 metros?",
+      a: "We ranked HUD metro FMR areas by population, using the pop2024 column in HUD's FY2027 county-level file. HUD splits some large metros, such as New York and Los Angeles, into more than one FMR area.",
+    },
+  ],
+  sources: [src.fy2027, src.fy2026, src.dataset, src.notice, src.cfr503],
+};
+
+const headings = [
+  { depth: 2, slug: "table", text: "FY2027 Fair Market Rents, 50 metros" },
+  { depth: 2, slug: "how-to-read", text: "How to read this table" },
+];
+
+const dataset = datasetSchema({
+  name: "HUD Fair Market Rents FY2027, 50 largest US metro areas, 0–4 bedrooms",
+  description: "HUD FY2027 and FY2026 Fair Market Rents for the 50 most populous HUD metro FMR areas, 0 to 4 bedrooms, with the change in percent.",
+  url: "https://citata.ai/section-8",
+});
+---
+
+<Guide
+  frontmatter={fm}
+  url="/section-8"
+  headings={headings}
+  section={{ name: "Section 8 rent limits", href: "/section-8", note: "HUD FY2027 data for landlords" }}
+  about={["Section 8 Housing Choice Voucher program", "Fair Market Rent"]}
+  schemas={[dataset]}
+  method={`How we made this page: a script read every number from HUD's FY2027 and FY2026 FMR files (fetched ${fmr.fetched}). We check sample pages against the HUD files by hand. This page is not legal advice.`}
+>
+  <h2 id="table">FY2027 Fair Market Rents, 50 metros</h2>
+  <p>Monthly FMR in dollars by unit size. Select a column title to sort. Select a metro for its full page.</p>
+  <table id="fmr-hub">
+    <thead>
+      <tr>
+        <th><button type="button" data-sort="0" data-type="text">Metro</button></th>
+        <th><button type="button" data-sort="1" data-type="text">State</button></th>
+        <th><button type="button" data-sort="2">Studio</button></th>
+        <th><button type="button" data-sort="3">1 BR</button></th>
+        <th><button type="button" data-sort="4">2 BR</button></th>
+        <th><button type="button" data-sort="5">3 BR</button></th>
+        <th><button type="button" data-sort="6">4 BR</button></th>
+        <th><button type="button" data-sort="7">2 BR vs 2026</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        metros.map((m) => (
+          <tr>
+            <td data-v={m.short}><a href={metroPath(m)}>{m.short}</a></td>
+            <td data-v={m.states.join("-")}>{m.states.join("-")}</td>
+            {m.fmr2027.map((v) => (
+              <td data-v={v}>{usd(v)}</td>
+            ))}
+            <td data-v={m.changePct[2]}>{pct(m.changePct[2] ?? 0)}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p>
+    Source: <a href={fmr.fy2027Url}>HUD FY2027 FMRs</a> and <a href={fmr.fy2026Url}>HUD revised FY2026 FMRs</a>. Rows
+    are in order of population (HUD pop2024).
+  </p>
+
+  <h2 id="how-to-read">How to read this table</h2>
+  <p>
+    The Fair Market Rent is HUD's estimate of the 40th percentile gross rent (rent plus utilities) for recent movers in
+    standard units (HUD). The FMR is not the rent limit for one unit. The housing authority sets a payment standard from
+    the FMR, and that limits the voucher subsidy.
+  </p>
+  <ul>
+    <li><strong>Payment standard.</strong> Without HUD approval, a PHA can set it at 90% to 110% of the FMR (24 CFR 982.503).</li>
+    <li><strong>Small Area FMRs.</strong> In some metro areas, HUD requires PHAs to use FMRs by ZIP code. Check your housing authority.</li>
+    <li><strong>Reevaluations.</strong> Where a PHA asked HUD to reevaluate its FMRs, the FY2026 FMRs can stay in effect for some time.</li>
+  </ul>
+  <p>
+    Read our <a href="/guides">guides for property managers</a>. This page is not legal advice. Check your housing
+    authority.
+  </p>
+
+  <Section8Cta slot="cta" />
+</Guide>
+
+<style is:global>
+  #fmr-hub button {
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    cursor: pointer;
+  }
+  #fmr-hub button[aria-sort="ascending"]::after {
+    content: " ↑";
+  }
+  #fmr-hub button[aria-sort="descending"]::after {
+    content: " ↓";
+  }
+</style>
+
+<script is:inline>
+  // Sort the hub table by a column. No library: one listener, numbers or text.
+  (() => {
+    const table = document.getElementById("fmr-hub");
+    if (!table) return;
+    const body = table.tBodies[0];
+    table.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-sort]");
+      if (!btn) return;
+      const col = Number(btn.dataset.sort);
+      const text = btn.dataset.type === "text";
+      // First click: text A to Z, numbers high to low. Next click flips it.
+      const cur = btn.getAttribute("aria-sort");
+      const asc = cur ? cur === "descending" : text;
+      const sign = asc ? 1 : -1;
+      for (const b of table.querySelectorAll("button[data-sort]")) b.removeAttribute("aria-sort");
+      btn.setAttribute("aria-sort", asc ? "ascending" : "descending");
+      const val = (tr) => tr.cells[col].dataset.v;
+      const rows = [...body.rows].sort((a, b) =>
+        text ? sign * val(a).localeCompare(val(b)) : sign * (Number(val(a)) - Number(val(b))),
+      );
+      body.append(...rows);
+    });
+  })();
+</script>
