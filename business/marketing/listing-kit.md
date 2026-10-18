@@ -136,4 +136,4 @@ Display name: `citata.ai`. Bio (160 chars max): use the short description above.
 
 ## Site status
 
-On 2026-10-18 https://citata.ai does not answer yet. Still create profiles. Put `https://citata.ai` in website fields. Add "site not live" to `notes` so we return later to check the link.
+https://citata.ai answers since 2026-10-18 (HTTP 200). Put `https://citata.ai` in all website fields.
