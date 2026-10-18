@@ -45,7 +45,7 @@ Rules:
 
 Each run: G3 → Cloudflare credentials from Infisical → `bun run deploy --stage <stage> --yes` → smoke test.
 
-**Credentials.** No Cloudflare secret lives in GitHub. The job gets a GitHub OIDC token; Infisical (`https://env.myremotely.ai`, project `citata`, env `prod`, path `/ci`) trusts it through machine identity `citata-github-deploy` (OIDC auth, subject `repo:citata-ai/united:environment:stage` or `…:prod`). It returns `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Repo variable `INFISICAL_IDENTITY_ID` holds the identity id (not a secret).
+**Credentials.** No Cloudflare secret lives in GitHub. The job gets a GitHub OIDC token; Infisical (`https://env.myremotely.ai`, project `citata`, env `prod`, path `/`) trusts it through machine identity `citata-github-deploy` (id `8dc48f81-57d6-44f6-91b7-14825cac419a`, org role No Access, project role Viewer; OIDC auth, subject `repo:citata-ai/united:environment:*`, token TTL 10 min). It returns `CLOUDFLARE_API_TOKEN` (Cloudflare account token `citata-alchemy-deploy`: Workers template + Secrets Store Write; on citata.ai: Zone Read, DNS, SSL and Certificates, Dynamic URL Redirects) and `CLOUDFLARE_ACCOUNT_ID`. Repo variable `INFISICAL_IDENTITY_ID` holds the identity id (not a secret).
 
 **GitHub environments.** `stage` accepts only branch `stage`; `prod` accepts only `main`. So a work branch can never get the credentials.
 

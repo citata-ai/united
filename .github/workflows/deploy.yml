@@ -2,7 +2,7 @@
 #   push to `stage` -> Alchemy stage "stage" -> https://stage.citata.ai (noindex)
 #   push to `main`  -> Alchemy stage "prod"  -> https://citata.ai
 # Branch flow (AGENTS.md "Deploy"): work branch -> stage -> main, main only after the owner says publish.
-# Cloudflare credentials come from Infisical (env.myremotely.ai, project citata) through GitHub OIDC:
+# Cloudflare credentials come from Infisical (env.myremotely.ai, project citata, env prod, path /) through GitHub OIDC:
 # no Cloudflare secret is stored in GitHub. Setup: docs/gates.md "Deploy".
 name: deploy
 
@@ -50,14 +50,15 @@ jobs:
           identity-id: ${{ vars.INFISICAL_IDENTITY_ID }}
           project-id: 62010fdb-0173-4156-b434-6f5dd884f359 # Infisical project "citata"
           env-slug: prod
-          secret-path: /ci
+          secret-path: /
           export-type: env
 
       - name: Alchemy deploy (landing only)
         env:
           CI: "true"
           CITATA_DEPLOY: landing
-        run: bun run deploy --stage "$STAGE" --yes --no-input
+        # --adopt: take over the Workers that wrangler made before (citata-landing, citata-landing-stage).
+        run: bun run deploy --stage "$STAGE" --yes --no-input --adopt
 
       - name: Smoke test
         run: |
