@@ -12,3 +12,4 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | B5 | 4 | 0 | 0 | 3 | 0 | X: face check. Facebook, LinkedIn: need founder login. YouTube retry (wrong Google account). B6 retry batch started. |
 | 2026-10-18 | B4 | 4 | 2 | 0 | 0 | 1 | Medium @citataai, Substack @citata live (nofollow). BetaList skipped (paid only). Indie Hackers retry in B7. B7 started. |
 | 2026-10-18 | B6 | 4 | 0 | 0 | 4 | 0 | Retries: Crunchbase (social link), F6S (CAPTCHA), Trustpilot (phone), YouTube (account switch) all need a person. Google popups fail via CDP: briefs now use email signup. L056 blocked (needs LinkedIn). B8 started. |
+| 2026-10-18 | B7 | 5 | 0 | 0 | 5 | 0 | Quora profile made (no link anchor). Reddit, BiggerPockets, Upwork, Indie Hackers stuck in onboarding. L036 D&B blocked (registry code, address). B9 started. |
