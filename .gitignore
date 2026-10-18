@@ -14,3 +14,4 @@ dist/
 .claude/
 .agents/
 skills-lock.json
+landing/scripts/mechanism/preview.html

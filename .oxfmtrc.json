@@ -8,6 +8,10 @@
     "bun.lock",
     "**/dist/**",
     "**/.astro/**",
-    "brand/**"
+    "brand/**",
+    "landing/vendor/**",
+    "landing/public/mechanism/**",
+    "landing/src/components/mechanism/**",
+    "landing/scripts/mechanism/preview.html"
   ]
 }
