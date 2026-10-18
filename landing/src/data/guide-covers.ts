@@ -1,24 +1,24 @@
-/** Cover image per guide (style P, brand/IMAGES.md). Key: the guide slug. Prompts: public/img/prompts.toml. */
+/** Cover image per guide (style N, brand/IMAGES.md). Key: the guide slug. Prompts: public/img/prompts.toml. */
 export const guideCovers: Record<string, { img: string; alt: string }> = {
   "why-owner-leads-are-dropping": {
-    img: "guide-leads",
-    alt: "A Roman landlord statue sits on temple steps with a silent rotary phone; an empty letterbox stands beside him.",
+    img: "guide-leads-v2",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga sits on temple steps with a silent rotary phone; an empty letterbox stands beside him.",
   },
   "how-owners-choose-a-property-manager-with-ai": {
-    img: "guide-owners-ai",
-    alt: "An old computer on a stone altar between columns, like an oracle; a statue holds a small model house.",
+    img: "guide-owners-ai-v2",
+    alt: "A pop engraving under a yellow sky: an old computer smokes on a stone altar like an oracle; a homeowner in an orange toga holds a small model house.",
   },
   "geo-agencies-for-property-management": {
-    img: "guide-agencies",
-    alt: "Five Roman busts on pedestals in a row, with a brass balance scale in front of them.",
+    img: "guide-agencies-v2",
+    alt: "A pop engraving under a cyan sky: Roman busts on pedestals in a row and a brass balance scale; a man in an orange toga judges them.",
   },
   "track-ai-traffic-property-management": {
-    img: "guide-track",
-    alt: "A statue looks through a brass telescope at paper planes that fly toward a temple; a tally counter rests nearby.",
+    img: "guide-track-v2",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga looks through a brass telescope at colorful paper planes; a tally counter rests nearby.",
   },
   "ai-search-checklist-property-management-website": {
-    img: "guide-checklist",
-    alt: "An architect statue with a blueprint and a plumb line in front of a temple in scaffolding; an old computer on a workbench.",
+    img: "guide-checklist-v2",
+    alt: "A pop engraving under a coral sky: an architect in an orange toga with a blueprint and a plumb line before a temple in scaffolding; an old computer on a workbench.",
   },
 };
 

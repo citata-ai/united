@@ -164,3 +164,9 @@ file = "img/hero-v9-*.webp"
 prompt = "Edit of hero-v8: much finer engraving detail; paint the temple like a Greek painted temple (frieze and pediment in cobalt, coral, sun yellow, meander band); brighter awnings and flowers; mint doors; white sky kept"
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-18"
+
+[[image]]
+file = "img/{guide-leads,guide-owners-ai,guide-agencies,guide-track,guide-checklist,property-management,section8}-v2-*.webp"
+prompt = "Style N (brand/IMAGES.md) with monday-report-v3 as style reference; scenes as in the table in IMAGES.md section 2b-N; one flat pop sky per image"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"

@@ -44,6 +44,9 @@ Style: a vintage postage-stamp line engraving printed in three inks on clean whi
 | `footer-v8` (current) | footer-v7 made vivid (owner, 2026-10-18): saturated colors, striped pink-yellow awning, mint shutters, pink flowers; radiant gold halos with engraved rays; a strong golden glow with rays from the cave. Sky stays white. |
 | `footer-v7` (old) | Easter egg made open (owner, 2026-10-18): "no room at the inn". Evening street in Bethlehem: an innkeeper with a lantern turns travelers away; Joseph with a staff leads a donkey with Mary; both have thin engraved halos; they head to a lit cave stable with a manger and an ox. Message for landlords and realtors: Joseph knows the stress of searching, refusals and finding a place. Upper 55 % empty sky. |
 | `monday-report-v3` | Style N (below). Market square: a herald in an orange toga on a rostrum holds up a scroll with a rising cobalt bar chart; bronze bell; yellow awnings; lion fountain. Coral sky `#FF6B5B`. |
+| `guide-*-v2` (5 covers) | Style N, same scenes as the old style-P covers; skies coral (leads, checklist), yellow (owners-ai), cyan (agencies), lilac (track). |
+| `property-management-v2` | Style N. A Roman insula with colorful shutters, one lit window with a laptop; landlord in orange toga with a key. Yellow sky. |
+| `section8-v2` | Style N. A red-brick Chicago two-flat with a column; a family waves from the porch; landlord in orange toga offers a key. Cyan sky. |
 | `fridman-case-v3` | Style N. Brownstone two-flats in pink, coral and lilac; a man in an orange toga with a phone and a map pin. Sun-yellow sky `#F2C230`. |
 | `hero-v6`, `footer-v6` (old) | Vignette hero with a faded bottom; hill-town footer with Joseph as a carpenter. |
 
