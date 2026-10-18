@@ -10,7 +10,7 @@ The name reads as "cite / citation" in English. That is the product: get cited.
 
 ## 2. Model business: FirstIndex
 
-We start as a clone of [FirstIndex](https://firstindex.co) (Josh Pigford, Ordinary Systems LLC). Then we change it from market feedback and our goals. Details: `competitors.toml`.
+We start as a clone of [FirstIndex](https://firstindex.co) (Josh Pigford, Ordinary Systems LLC). Then we change it from market feedback and our goals. Details: `competitors.toml`. Its `[rule]` decides who is a direct competitor.
 
 What we copy:
 - Done-for-you GEO + SEO. Three stages: Indexed → Found → Mentioned.
@@ -50,7 +50,7 @@ All three are related to Tao or Ran Fridman. Say so in each case study. Details:
 - **Rental search is won on listings, not brand sites.** Peek (8,442 communities): listing sites are 72% of AI citations for renters; manager home pages are below 0.3%. Google Maps leads at 35% (SOCi).
   - So for renter queries we work on listings (GoSection8, Zillow, Apartments.com) and Google Business Profile.
   - For owner queries ("property manager Chicago", "manager that takes Section 8") the client's own site can win. Owners are who Fridman sells to.
-- **No one publishes a GEO case study for Section 8 or affordable housing.** The niche is open. The closest proof is multifamily (Teramok, Resident360) and proptech SaaS (SmartRent via Single Grain, REsimpli via DerivateX).
+- **No one publishes a GEO case study for Section 8 or affordable housing.** The niche is open. The closest proof is multifamily and developer work (Teramok, Resident360: non-competitors, other buyers) and proptech SaaS (SmartRent via Single Grain, REsimpli via DerivateX).
 - **Price band.** GEO agencies charge $2,000–$25,000/mo. FirstIndex sits at the bottom with $2,000.
 
 ## 6. Section 8 angle (Fridman)
