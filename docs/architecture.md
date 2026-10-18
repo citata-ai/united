@@ -102,7 +102,7 @@ citata.ai is one venture of TAO (Thriving Agentic Organization). To register it:
 
 1. Allspark: `/80-entities/citata-ai.md` and `/30-projects/citata-ai/index.md`.
 2. Optimus registry: entry in `registry/projects.toml`.
-3. Todoer: prefix `CIT`, first task CIT-2.
+3. Todoer: prefix `CTT`, first task CTT-3.
 4. Goals: the venture OKRs live as code in `business/goals/` and link up to the TAO life goals.
 
 ## 8. Open decisions

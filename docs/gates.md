@@ -36,7 +36,7 @@ Rules:
 
 ## Deploy (not yet)
 
-TODO(CIT-2 follow-up): add `.github/workflows/deploy.yml` when the Cloudflare token exists.
+TODO(CTT-3 follow-up): add `.github/workflows/deploy.yml` when the Cloudflare token exists.
 
 - Operator creates `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in Infisical project `citata` (Approver.app).
 - CI reads them through an Infisical machine identity (OIDC), not repo secrets.

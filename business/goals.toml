@@ -2,7 +2,7 @@
 # Period Q4 = 2026-10-18 .. 2026-12-31. Q1 = 2027-01-01 .. 2027-03-31.
 
 [[objective]]
-id = "CIT-O1"
+id = "CTT-O1"
 title = "Delivery system works end to end"
 life_goal = "Agentic org"
 period = "Q4-2026"
@@ -24,7 +24,7 @@ period = "Q4-2026"
   due = "2026-12-31"
 
 [[objective]]
-id = "CIT-O2"
+id = "CTT-O2"
 title = "First case study with real numbers: Fridman Properties"
 life_goal = "Prosperity"
 period = "Q4-2026..Q1-2027"
@@ -46,7 +46,7 @@ period = "Q4-2026..Q1-2027"
   due = "2027-02-15"
 
 [[objective]]
-id = "CIT-O3"
+id = "CTT-O3"
 title = "citata.ai gets cited for its own verticals"
 life_goal = "Prosperity"
 period = "Q1-2027"
@@ -63,7 +63,7 @@ period = "Q1-2027"
   due = "2027-03-31"
 
 [[objective]]
-id = "CIT-O4"
+id = "CTT-O4"
 title = "MyRemotely gets leads from AI"
 life_goal = "Prosperity"
 period = "Q4-2026..Q1-2027"
@@ -77,7 +77,7 @@ period = "Q4-2026..Q1-2027"
   status = "hypothesis"
 
 [[objective]]
-id = "CIT-O5"
+id = "CTT-O5"
 title = "Revenue and impact"
 life_goal = "Prosperity; Family/Ukraine/Planet"
 period = "Q1-2027"

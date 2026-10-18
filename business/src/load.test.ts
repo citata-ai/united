@@ -31,11 +31,11 @@ it.effect("decodes accounts.toml, offers.toml and goals.toml", () =>
       "impact",
     ]);
     expect(business.goals.objective.map((o) => o.id)).toEqual([
-      "CIT-O1",
-      "CIT-O2",
-      "CIT-O3",
-      "CIT-O4",
-      "CIT-O5",
+      "CTT-O1",
+      "CTT-O2",
+      "CTT-O3",
+      "CTT-O4",
+      "CTT-O5",
     ]);
   }).pipe(Effect.provide(NodeFileSystem.layer)),
 );

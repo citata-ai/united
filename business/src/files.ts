@@ -52,7 +52,7 @@ export type KeyResult = typeof KeyResult.Type;
 
 /** An `[[objective]]` table in goals.toml, linked to a TAO life goal. */
 export const Objective = Schema.Struct({
-  id: Schema.String.check(Schema.isPattern(/^CIT-O\d+$/, { message: "id must be CIT-O<n>" })),
+  id: Schema.String.check(Schema.isPattern(/^CTT-O\d+$/, { message: "id must be CTT-O<n>" })),
   title: Schema.String,
   life_goal: Schema.String,
   period: Schema.String,
