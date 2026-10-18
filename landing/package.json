@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview --port 4321",
     "check": "astro check",
-    "typecheck": "astro check"
+    "typecheck": "astro check",
+    "mechanism": "node scripts/mechanism/build.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "4.3.3",

@@ -1,0 +1,8 @@
+---
+// The citation engine (Fig 1). Built by scripts/mechanism/build.mjs with the
+// anatomy kit (MIT, vendor/anatomy). Run `bun run mechanism` after a change there.
+import figure from "./mechanism/figure.generated.html?raw";
+---
+
+<div class="mechanism" set:html={figure} />
+<script is:inline src="/mechanism/live.js" defer></script>

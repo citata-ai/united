@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import BaselineCard from "../components/BaselineCard.astro";
+import Mechanism from "../components/Mechanism.astro";
 import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
 
@@ -112,6 +113,11 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
         <BaselineCard />
         <p class="meta mt-3">Our first client, before any GEO work. <a class="link normal-case" href="/case-studies/fridman-properties">Read why</a></p>
       </div>
+    </section>
+
+    <section aria-labelledby="engine" class="border-b border-rule py-14">
+      <p class="label" id="engine">How the work flows</p>
+      <Mechanism />
     </section>
 
     <section aria-labelledby="why" class="border-b border-rule py-14">
