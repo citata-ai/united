@@ -1,0 +1,138 @@
+---
+// Layout for Markdown guides in src/pages/guides/*.md.
+// GEO rules (docs/geo-loop.md): answer first, one idea per section, every number has a source,
+// visible date and author, Article + FAQPage JSON-LD. Voice: brand/VOICE.md.
+import Base from "./Base.astro";
+import { auditHref } from "../data/site.ts";
+
+export interface GuideFrontmatter {
+  title: string;
+  description: string;
+  /** H1 on the page. Title Case, 4–10 words. */
+  headline: string;
+  /** One sentence under the H1. */
+  dek: string;
+  published: string;
+  updated: string;
+  /** "Short answer": 2–4 sentences that answer the page question. */
+  answer: string;
+  faq?: { q: string; a: string }[];
+  sources?: { label: string; url: string }[];
+  image?: string;
+}
+
+const { frontmatter, url } = Astro.props as { frontmatter: GuideFrontmatter; url?: string };
+const fm = frontmatter;
+const pageUrl = new URL(url ?? Astro.url.pathname.replace(/\.html$/, ""), Astro.site).toString();
+
+const article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: fm.headline,
+  description: fm.description,
+  author: {
+    "@type": "Person",
+    "@id": "https://citata.ai/about#founder",
+    name: "Taras Kornichuk",
+    jobTitle: "Founder",
+    url: "https://citata.ai/about",
+  },
+  publisher: { "@id": "https://citata.ai/#org" },
+  datePublished: fm.published,
+  dateModified: fm.updated,
+  mainEntityOfPage: pageUrl,
+  about: ["Generative engine optimization", "Property management"],
+};
+const faqSchema = fm.faq?.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: fm.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+    }
+  : null;
+const breadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "citata.ai", item: "https://citata.ai/" },
+    { "@type": "ListItem", position: 2, name: "Guides", item: "https://citata.ai/guides" },
+    { "@type": "ListItem", position: 3, name: fm.headline, item: pageUrl },
+  ],
+};
+---
+
+<Base title={fm.title} description={fm.description} type="article" modified={fm.updated} image={fm.image}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
+    {faqSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />}
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbs)} />
+  </Fragment>
+  <main class="wrap">
+    <article class="pt-12 pb-6">
+      <header class="max-w-3xl border-b border-rule pb-8">
+        <p class="meta">
+          <a href="/guides" class="text-minium">Guides</a> · for property management companies
+        </p>
+        <h1 class="mt-4 text-[36px] leading-[1.05] sm:text-[48px]">{fm.headline}</h1>
+        <p class="mt-4 text-[19px] text-muted">{fm.dek}</p>
+        <p class="meta mt-5">
+          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Updated
+          <time datetime={fm.updated}>{fm.updated}</time>
+        </p>
+      </header>
+
+      <aside aria-label="Short answer" class="mt-8 max-w-3xl rounded border border-rule-strong bg-sunken p-6">
+        <p class="meta text-minium">Short answer</p>
+        <p class="mt-2 text-[17px]">{fm.answer}</p>
+      </aside>
+
+      <div class="prose-c mt-4">
+        <slot />
+      </div>
+
+      {
+        fm.faq?.length ? (
+          <section aria-labelledby="faq-h" class="mt-14 max-w-3xl border-t border-rule pt-10">
+            <h2 id="faq-h" class="text-[28px] leading-tight">Questions</h2>
+            {fm.faq.map((f) => (
+              <div class="mt-6">
+                <h3 class="text-[19px] font-medium">{f.q}</h3>
+                <p class="mt-2 text-[16px] text-muted">{f.a}</p>
+              </div>
+            ))}
+          </section>
+        ) : null
+      }
+
+      {
+        fm.sources?.length ? (
+          <section aria-labelledby="src-h" class="mt-12 max-w-3xl">
+            <h2 id="src-h" class="meta">Sources</h2>
+            <ol class="mt-3 list-decimal space-y-1 pl-5 text-[14px] text-muted">
+              {fm.sources.map((s) => (
+                <li>
+                  <a class="link" href={s.url}>
+                    {s.label}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ) : null
+      }
+    </article>
+
+    <section aria-labelledby="cta" class="mt-10 grid items-center gap-8 border-t border-rule pt-12 md:grid-cols-[1.2fr_1fr]">
+      <h2 id="cta" class="text-[30px] leading-[1.05] sm:text-[38px]">
+        Does AI name your company? <span class="text-minium">Find out for free.</span>
+      </h2>
+      <div>
+        <p class="text-muted">
+          Send your site and the cities you serve. We ask 4 AI engines 20 questions your owners ask and
+          send your top 5 fixes.
+        </p>
+        <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
+      </div>
+    </section>
+  </main>
+</Base>
