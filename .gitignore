@@ -15,3 +15,5 @@ dist/
 .agents/
 skills-lock.json
 landing/scripts/mechanism/preview.html
+
+.venv*/
