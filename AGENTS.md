@@ -66,3 +66,8 @@ Run from the repo root.
 
 - Keep `effect`, `alchemy`, Foldkit, Vite and `@effect/platform-*` pinned to exact versions. Beta releases break between minor versions.
 - Patch dependencies only with `mise run patch` and `mise run patch:commit`. Record each patch in `patches/README.md`.
+
+## Voice and email
+
+- Before you write any text that leaves this repo (email, site, post, case study), read [`VOICE.md`](VOICE.md).
+- Before you write an email or newsletter, also read [`business/NEWSLETTER.md`](business/NEWSLETTER.md). It holds the email types and their structure.

@@ -12,7 +12,9 @@ rename = "open: keep WarmDevs now, decide umbrella name (e.g. TAO) later"
 [payments]
 processor = "Stripe"
 mode = "recurring subscriptions per Account (model.toml Subscription)"
-stripe_account = "unknown: does WarmDevs OÜ have a live Stripe account?"
+stripe_account = "acct_1NaIJJIEMAEiAI97 (WarmDevs OÜ, live)"
+key = "restricted key citata-billing (one-off payments + subscriptions) in Infisical citata/prod as STRIPE_RESTRICTED_KEY"
+risk = "two unused full secret keys from 2023 (…tbaV, 'dima main 1' …ic4W): roll or delete"
 currency = "USD"
 
 [costs_monthly_usd]
