@@ -4,8 +4,8 @@ name: Citata — Aetas Aurea
 description: >
   Visual identity for citata.ai. A new Renaissance: AI brings our clients and
   humanity into a new golden age of productivity, prosperity and spiritual
-  growth. Parchment, iron-gall ink, lapis and gold leaf on the landing pages;
-  the MyRemotely web-app component set, in the same palette, for the app.
+  growth. Editorial layout after every.to, Cal Sans type from the MyRemotely
+  web-app, parchment and minium-orange palette, neoclassical pop images.
 colors:
   # Light theme: "Vellum"
   background: "#F5EFE3"        # parchment
@@ -25,6 +25,8 @@ colors:
   minium: "#C2410C"            # red lead (minium): logo quotes, drop caps, citations
   verdigris: "#2F6B5C"         # success
   ochre: "#9A6A00"             # warning
+  pop-cyan: "#2FA7E0"           # image palette only
+  pop-yellow: "#F2C230"         # image palette only
   error: "#C2410C"
   on-error: "#FBF7EE"
   # Dark theme: "Studiolo" (a scholar's study by candlelight)
@@ -40,65 +42,61 @@ colors:
   dark-minium: "#F08A4B"
 typography:
   display-xl:
-    fontFamily: Cormorant Garamond
-    fontSize: 80px
-    fontWeight: "500"
-    lineHeight: 1.02
-    letterSpacing: -0.02em
-  display-lg:
-    fontFamily: Cormorant Garamond
+    fontFamily: Cal Sans
     fontSize: 56px
-    fontWeight: "500"
+    fontWeight: "600"
+    lineHeight: 1.02
+  display-lg:
+    fontFamily: Cal Sans
+    fontSize: 44px
+    fontWeight: "600"
     lineHeight: 1.05
-    letterSpacing: -0.015em
   headline-lg:
-    fontFamily: Cormorant Garamond
-    fontSize: 40px
+    fontFamily: Cal Sans
+    fontSize: 32px
     fontWeight: "600"
     lineHeight: 1.1
   headline-md:
-    fontFamily: EB Garamond
-    fontSize: 28px
+    fontFamily: Cal Sans
+    fontSize: 24px
+    fontWeight: "500"
+    lineHeight: 1.2
+  title:
+    fontFamily: Cal Sans
+    fontSize: 20px
     fontWeight: "500"
     lineHeight: 1.2
   body-lg:
-    fontFamily: EB Garamond
-    fontSize: 21px
+    fontFamily: Cal Sans
+    fontSize: 19px
     fontWeight: "400"
-    lineHeight: 1.55
+    lineHeight: 1.5
   body-md:
-    fontFamily: EB Garamond
-    fontSize: 18px
-    fontWeight: "400"
-    lineHeight: 1.55
-  marginalia:
-    fontFamily: IM Fell English
+    fontFamily: Cal Sans
     fontSize: 16px
     fontWeight: "400"
-    lineHeight: 1.4
-    fontFeature: '"liga", "dlig"'
-  smallcaps:
-    fontFamily: EB Garamond
-    fontSize: 14px
-    fontWeight: "500"
-    lineHeight: 1.3
-    letterSpacing: 0.12em
-    fontFeature: '"smcp", "c2sc"'
+    lineHeight: 1.5
+  dek:
+    fontFamily: Cal Sans
+    fontSize: 15px
+    fontWeight: "400"
+    lineHeight: 1.45
   ui-md:
-    fontFamily: Inter
+    fontFamily: Cal Sans
     fontSize: 14px
     fontWeight: "400"
     lineHeight: 20px
   ui-label:
-    fontFamily: Inter
-    fontSize: 13px
+    fontFamily: Cal Sans
+    fontSize: 14px
     fontWeight: "500"
     lineHeight: 18px
-  ui-heading:
-    fontFamily: EB Garamond
-    fontSize: 22px
-    fontWeight: "600"
-    lineHeight: 28px
+  label-mono:
+    fontFamily: Paper Mono
+    fontSize: 11px
+    fontWeight: "400"
+    lineHeight: 16px
+    letterSpacing: 0.06em
   mono:
     fontFamily: Paper Mono
     fontSize: 13px
@@ -163,12 +161,20 @@ components:
     textColor: "{colors.on-error}"
     typography: "{typography.ui-label}"
     rounded: "{rounded.full}"
-  drop-cap:
+  post-card:
+    backgroundColor: "{colors.background}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.title}"
+    rounded: "{rounded.sm}"
+  post-kicker:
     textColor: "{colors.minium}"
-    typography: "{typography.display-lg}"
-  marginal-note:
-    textColor: "{colors.gold-ink}"
-    typography: "{typography.marginalia}"
+    typography: "{typography.label-mono}"
+  column-band:
+    backgroundColor: "{colors.secondary}"
+    textColor: "{colors.on-secondary}"
+    typography: "{typography.headline-lg}"
+    rounded: "{rounded.md}"
+    padding: 40px
   quote:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.on-surface}"
@@ -178,89 +184,98 @@ components:
 
 # Citata — Aetas Aurea
 
+Status: design direction settled 2026-10-18. Reference page: `/brand/sample/blog.html`.
+
 ## Overview
 
-**Idea.** *Citata* is Latin: "things cited". Our product is to make AI assistants cite our clients. Our story is bigger: AI starts a new golden age (*aetas aurea*) of productivity, prosperity and spiritual growth. The Renaissance is the model. Old knowledge came back, printing spread it, and people grew.
+**Idea.** *Citata* is Latin: "things cited". Our product makes AI assistants cite our clients. Our story is bigger: AI starts a new golden age (*aetas aurea*) of productivity, prosperity and spiritual growth. The Renaissance is the model. Old knowledge came back, printing spread it, and people grew.
 
-**Motto.** *Aetas aurea redit* — "the golden age returns" (after Virgil, *Eclogue IV*; Lorenzo de' Medici used *Le temps revient*).
+**Motto.** *Aetas aurea redit* — "the golden age returns" (after Virgil, *Eclogue IV*).
 
-**Feel.** A scholar's manuscript that is also a modern product. Calm, warm, exact. Never kitsch, never "fantasy game". Think every.to "neoclassical pop" mixed with a printed Aldine book of 1500.
+**Feel.** A modern editorial publication, like every.to: calm, clear, exact. The Renaissance lives in the **images** (marble, temples, statues in bright pop color) and the **palette** (parchment, minium, lapis, gold). The type is clean and modern. The clash of old art and new type is the message.
 
-**Two surfaces, one family.**
+**One look for all surfaces.**
 
-| Surface | Look | Built with |
-|---|---|---|
-| Landing pages, blog, case studies, social | Full Renaissance: serif type, parchment, art, drop caps, marginalia | Astro 7 + Tailwind 4 (`/landing`) |
-| Web app (`app.citata.ai`) | Quiet tool: sans UI type, the MyRemotely web-app components, Renaissance only in color, headings and empty states | Foldkit + `@foldkit/ui` (`/frontend`) |
+| Surface | Built with |
+|---|---|
+| Landing, blog, case studies, newsletter, social | Astro 7 + Tailwind 4 (`/landing`) |
+| Web app (`app.citata.ai`) | Foldkit + `@foldkit/ui`, web-app components (`/frontend`) |
+
+Both use the same fonts (Cal Sans, Paper Mono) and the same tokens. The app has less art and more density.
 
 **Logo.**
 - **Icon:** two curly quote pairs, `“` top-left and `”` bottom-right, parchment on a minium-orange square (22% corner radius). Quotes are cut from **DM Serif Display**: round ball terminals with a mid-century feel. The quotes say "cited". Never crop them; keep 7% padding (favicon) or 12% (icon).
-- **Wordmark:** `Citata` with a capital C, in **Fraunces 600** (SOFT 100, opsz 144), ink. A minium DM Serif `“` sits high before the C and a minium `”` sits low after the last a, so the quotes "hold" the name.
+- **Wordmark:** `Citata` with a capital C, in **Fraunces 600** (SOFT 100, opsz 144), ink. A minium `“` sits high before the C and a minium `”` sits low after the last a, so the quotes "hold" the name.
 - **Files:** `/brand/` — `icon.svg`, `icon-dark.svg`, `favicon.svg` (bigger quotes for 16–32 px), `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `icon-512.png`, `wordmark.svg`, `wordmark-dark.svg`. All text is outlined to paths. Rebuild: `uv run --with fonttools --with uharfbuzz python -I brand/build.py <font-dir> brand` (fonts: `DMSerifDisplay.ttf`, `Fraunces.ttf` variable, from google/fonts).
 - **Domain** stays lowercase in text: `citata.ai`.
-- **Manicule ☞** (the pointing hand that Renaissance readers drew in margins to mark a passage worth citing) is now a secondary glyph: list bullets and the "cited" status icon. It is not the logo.
 
 ## Colors
 
-The palette comes from real Renaissance pigments and materials.
+The palette comes from Renaissance pigments and materials.
 
 - **Parchment** `#F5EFE3` (background) and **Fresh page** `#FBF7EE` (surface). Warm, never pure white.
-- **Iron-gall ink** `#1C1712` (on-surface). Text, rules, ink buttons. Never pure black.
-- **Lapis lazuli** `#1E3A7B` (primary). The most costly pigment of the time; painters kept it for the Virgin's robe. We keep it for the one main action on a screen.
-- **Gold leaf** `#B8892B` (gold). Ornament only: rules, frames, the halo behind a hero image, large display words. It fails contrast for small text. For gold text use **gold-ink** `#7A5A14`.
-- **Minium** `#C2410C` (minium). Red lead, a deep orange pigment. Scribes painted initials with it; the word "miniature" comes from it. We use it for the logo, drop caps, citation marks and errors. Dark theme: `#F08A4B`.
+- **Iron-gall ink** `#1C1712` (on-surface). Text, rules, the dark column band. Never pure black.
+- **Minium** `#C2410C`. Red lead, a deep orange pigment; the word "miniature" comes from it. Logo, kickers, label dots, author avatars, links, errors. Dark theme: `#F08A4B`.
+- **Lapis lazuli** `#1E3A7B` (primary). The most costly pigment of the time. Only for the one main action on a screen (button).
+- **Gold leaf** `#B8892B`. Ornament only. For gold text use **gold-ink** `#7A5A14`.
 - **Verdigris** `#2F6B5C`. Success, "cited" state in the app.
 
-**Dark theme "Studiolo".** Candlelit study: `#14110E` background, `#EDE4D3` ink, softer lapis `#8EA8E6`, warmer gold `#D4A84B`. Tokens use the `dark-` prefix.
+**Dark theme "Studiolo".** `#14110E` background, `#EDE4D3` ink, lapis `#8EA8E6`, gold `#D4A84B`, minium `#F08A4B`. Tokens use the `dark-` prefix.
 
 **Rules.**
-- One lapis action per view. Second actions use ink or ghost buttons.
-- Gold covers at most ~5% of a page. More gold looks cheap.
+- One lapis action per view. Other actions use ink or ghost buttons.
+- Minium is the accent of the page: kickers, dots, links. Keep it small; images bring the big color.
 - Status colors in the app: verdigris = cited, ochre = mentioned without link, minium = not found.
 
 ## Typography
 
-| Role | Face | Why |
-|---|---|---|
-| Logo wordmark | **Fraunces** 600, SOFT 100 | Soft, warm, mid-century; logo only |
-| Logo quotes, big quote marks | **DM Serif Display** | Round ball-terminal quotes |
-| Display, headlines | **Cormorant Garamond** 500–600 | Garamond's 16th-century forms, cut for large sizes |
-| Long text | **EB Garamond** 400 | True Garamond for reading; has small caps and old-style figures |
-| Marginal notes, captions | **IM Fell English** italic | Real 17th-century Fell types; our "hand" (like Every's Palmer script) |
-| App UI | **Inter** 400–500 | Clear at 13–14px in dense tools |
-| Code, data | **Paper Mono** (from the web-app, OFL) | Same mono as MyRemotely |
+Two families, both OFL, both already in the MyRemotely web-app. Files: `/brand/fonts/CalSansVF.woff2`, `/brand/fonts/PaperMono-Regular.woff2`. Self-host; no font CDN at runtime.
 
-All faces are open source (OFL). Self-host the `woff2` files; do not call Google Fonts at runtime.
+| Role | Face | Use |
+|---|---|---|
+| Everything readable | **Cal Sans** 400–600 | Headlines, titles, body, nav, buttons |
+| Labels, meta | **Paper Mono** 400, uppercase, 0.06–0.08em tracking | Kickers, dates, section labels, code, data |
+| Logo only | Fraunces + DM Serif Display (outlined in SVG) | Never as live text |
 
 **Rules.**
-- Use old-style figures (`onum`) in prose, lining tabular figures (`lnum`, `tnum`) in tables and the app.
-- Section labels: small caps with 0.12em tracking and a Roman numeral, e.g. `I · THE PROBLEM`.
-- Long text measure: 60–70 characters (`spacing.measure`).
-- First paragraph of an article starts with a 3-line minium drop cap.
-- Pull quotes are real citations: quote, then `— Source` in small caps.
+- Headlines: Cal Sans 600, letter-spacing 0. Do not track Cal Sans tight; letters collide.
+- Cal Sans has no italic. Do not fake one; use minium color for emphasis instead.
+- Meta line under an image: `KICKER · DATE` in Paper Mono, kicker in minium.
+- Body measure 60–70 characters.
 
 ## Layout
 
-**Landing.** A book page, not a dashboard.
-- 12-column grid, max width 1200px, gutter 24px. Text column 7 columns; marginalia column 3 columns at its right.
-- Generous space between sections (`spacing.2xl`, 96px). Each section opens with a gold hairline rule and a Roman-numeral label.
-- Hero: big Cormorant headline left, one framed artwork right (or full width, 16:9). One lapis button.
-- Case studies read like a folio: number, title, the citation proof (screenshot of the AI answer that cites the client), then the story.
+**Landing and blog** follow the every.to editorial structure (see `/brand/sample/blog.html`):
 
-**App.** Use the web-app layout: left nav, top bar, content at 8px rhythm (`spacing.sm`), max density. No marginalia, no drop caps.
+1. **Nav**: wordmark left, sections center (Ideas, Case studies, Training, Tools, Pricing), one lapis button right. Hairline below.
+2. **Hero**: featured post at 1.6fr (16:9 image, kicker, 56px headline, dek, author) + "Top stories" column at 1fr with 2 cards.
+3. **Recent essays**: 4-column card grid, no dek.
+4. **Column band**: ink-colored block, column name in 40px, short line on the right, 3 cards inside.
+5. **Built by Citata**: 3 product cards (icon tile + title + one line): AI Visibility Audit, Citation Tracker, Monday Report.
+6. **Topic sections**: 4-column grid (Training) or list rows with a 240px image left (Writing).
+7. **Podcast / case studies**: 2 wide cards, image left.
+8. **Subscribe**: big headline left ("Get cited. **Every Monday**, in your inbox."), email field right.
+9. **Footer**: hairline, motto left, links right.
+
+**Grid.** Max width 1280px, side padding 32px, gutter 28px. Sections divided by 1px `outline` hairlines, 56px vertical space.
+
+**Section label.** Paper Mono uppercase with a small 8px minium square before it.
+
+**App.** The web-app layout: left nav, top bar, content at 8px rhythm. Same fonts.
 
 ## Elevation & Depth
 
-Paper does not float. No drop shadows on the landing.
-- Depth comes from tone: `surface-sunken` below, `surface` above, `background` between.
-- Separate with 1px hairlines in `outline`; frame artwork with a 1px gold rule inset 6px (a "passe-partout").
-- App: popovers, menus and dialogs may use one soft shadow `0 8px 24px rgb(28 23 18 / 0.12)`, as the web-app does. Nothing else.
+Flat. Depth comes from images and the dark column band, not shadows.
+- Separate with 1px `outline` hairlines.
+- Cards have no border on the landing; image + text is the card. Product cards use `surface` + hairline.
+- Image hover: scale 1.03 inside its frame, 0.4s.
+- App: popovers, menus and dialogs may use one soft shadow `0 8px 24px rgb(28 23 18 / 0.12)`.
 
 ## Shapes
 
-- Landing: square or `rounded.xs` (2px) corners. Arches (`border-radius: 50% 50% 0 0 / 30% 30% 0 0`) frame portrait art like a Renaissance niche — at most one per page.
-- App: `rounded.sm` (4px) on controls, `rounded.md` (8px) on dialogs and cards, `rounded.full` on badges and avatars. This is tighter than the web-app's 10px on purpose.
-- Lines: 1px hairlines. Ornament: simple fleurons (❦ ❧) and the manicule ☞, never heavy baroque scrolls.
+- Images: 16:9, `rounded.sm` (4px).
+- Buttons, inputs: `rounded.sm`. Column band: 6–8px. Avatars and badges: `rounded.full`.
+- Product icon tiles: the logo icon shape (22% radius).
 
 ## Components
 
@@ -291,44 +306,44 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 | `--ring` | `#1E3A7B` at 55% | `#8EA8E6` at 60% |
 | `--destructive` | `#C2410C` | `#F08A4B` |
 | `--radius` | `0.25rem` | `0.25rem` |
+| `--font-sans`, `--font-heading` | Cal Sans | Cal Sans |
+| `--font-mono` | Paper Mono | Paper Mono |
 
-**Brand components (landing).**
-- **Drop cap**: first letter, Cormorant, 3 lines tall, minium.
-- **Marginal note**: IM Fell italic, gold-ink, in the right column, with a small ☞.
-- **Citation card**: a framed quote of what ChatGPT / Gemini / Claude said about the client, the engine named in small caps, our client's name in minium. This is the proof object of the brand.
-- **Folio label**: `II · FOUND` — small caps, Roman numeral, gold rule above.
-- **Framed artwork**: image + 1px gold inset rule + IM Fell caption with "Made with AI" credit.
-
-**App empty states** may show one small engraving (see Imagery) and one line of copy. That is the only art inside the app.
+**Editorial components (landing).**
+- **Post card**: 16:9 image → meta line (`KICKER · DATE`, Paper Mono) → title (Cal Sans 20px) → optional dek (15px, muted) → author row (24px minium avatar with initials + name).
+- **Featured post**: same parts, headline 56px, dek 19px.
+- **Column band**: ink background, parchment text, minium kickers.
+- **Product card**: icon tile 64px + title 22px + one line.
+- **Citation card**: what ChatGPT / Gemini / Claude said about the client, engine and date in Paper Mono, client name in minium. The proof object of the brand.
 
 ## Do's and Don'ts
 
 **Do**
-- Do mix old and new on purpose: a marble bust with a laptop glow, a fresco of people with phones. The clash is the message.
-- Do keep the app plain. The brand lives in color and type there.
-- Do show proof: real citations, real numbers, in citation cards.
+- Do mix old and new on purpose: marble statues, temples and busts with laptops, phones, charts, in bright pop color.
+- Do let images carry the color; keep the page itself quiet.
+- Do show proof: real citations, real numbers.
 - Do label AI images "Made with AI" in the caption or credits.
-- Do check contrast: gold on parchment is decoration only.
 
 **Don't**
 - Don't use pure white `#FFFFFF` or pure black `#000000`.
 - Don't use more than one lapis button per view.
-- Don't use blackletter / Gothic type, fake torn paper, or "Ye Olde" copy.
-- Don't put drop caps, marginalia or arches in the app.
+- Don't use serif or script faces for live text; serif is only in the outlined logo.
+- Don't track Cal Sans tight or fake its italic.
 - Don't render text inside generated images; set text in HTML.
+- Don't ship third-party images. Every's covers in `/brand/sample/blog.html` are a local test only.
 - Don't remove SynthID or C2PA marks from AI images (see Imagery → Rules).
 
 ## Imagery
 
-Three art styles. Pick one per piece; don't mix inside one image.
+Main style: **neoclassical pop** (the every.to cover style). Classical subjects — marble statues, busts, Greek temples, Renaissance figures — printed with halftone dots and flat, bright color, mixed with one modern object.
 
 | Style | Use | Look |
 |---|---|---|
-| **A · Fresco** | Hero images, case-study covers, OG images | Raphael / Botticelli painting, warm light, gold leaf details, one modern object |
-| **B · Engraving** | Blog figures, icons, app empty states, social | Dürer-style copperplate: black ink cross-hatching on parchment, minium orange as the only color |
-| **C · Codex** | Diagrams that explain (GEO stages, how AI cites) | Leonardo notebook: sepia ink sketch, geometric construction lines, on aged paper |
+| **A · Neoclassical pop** | Post covers, hero, OG, social | Halftone statue or temple, flat bright background, one modern object |
+| **B · Engraving** | Blog figures, app empty states, icons | Copperplate cross-hatching, ink on parchment, minium as the only color |
+| **C · Codex** | Diagrams that explain (GEO stages, how AI cites) | Leonardo notebook: sepia ink sketch, construction lines |
 
-**Sizes.** Hero 16:9 (2400×1350), OG 1.91:1 (1200×630), square 1:1 (1080) for social, portrait 4:5 for case-study covers, wide 16:5 for section banners.
+**Sizes.** Covers and hero 16:9 (2880×1620), OG 1.91:1 (1200×630), social 1:1 (1080).
 
 ### Prompt template
 
@@ -337,59 +352,57 @@ Fill the slots. Keep the style block word for word so every image looks like one
 ```text
 [SUBJECT], [MODERN ELEMENT], [COMPOSITION].
 Style: [STYLE BLOCK].
-Palette: parchment cream #F5EFE3, iron-gall ink #1C1712, lapis blue #1E3A7B,
-gold leaf #B8892B, minium orange #C2410C. Muted, warm, no neon.
 Aspect ratio [RATIO]. No text, no letters, no logos, no watermark, no frame.
 ```
 
 **Style blocks**
 
-- **A · Fresco**: `Italian High Renaissance fresco in the manner of Raphael and Botticelli, tempera on plaster, soft sfumato light, gold leaf halos and details, subtle craquelure, calm dignified figures, museum quality`
-- **B · Engraving**: `16th-century copperplate engraving in the manner of Albrecht Dürer, fine black ink cross-hatching on cream parchment, high contrast, single accent of vermilion red, clean white space around the subject`
+- **A · Neoclassical pop**: `neoclassical pop art collage: classical marble sculpture or Greek architecture printed as coarse black halftone, cut out and placed on a flat bold background color, risograph texture, slight misregistration, two to three flat spot colors from: minium orange #C2410C, lapis blue #1E3A7B, sky cyan #2FA7E0, sun yellow #F2C230, parchment #F5EFE3, deep ink #1C1712; graphic, witty, clean composition with lots of negative space`
+- **B · Engraving**: `16th-century copperplate engraving in the manner of Albrecht Dürer, fine black ink cross-hatching on cream parchment #F5EFE3, high contrast, single accent of minium orange #C2410C, clean empty space around the subject`
 - **C · Codex**: `page from Leonardo da Vinci's notebook, sepia iron-gall ink sketch on aged paper, geometric construction lines, compass arcs, light wash shading, studious and precise`
 
 ### Sample prompts
 
 1. **Hero — "The golden age returns" (A)**
-   `A Renaissance studio of scholars and merchants gathered around a glowing glass tablet that casts warm gold light on their faces; a lapis-blue drape; an open ledger and an armillary sphere on the table; composition after Raphael's School of Athens, wide arches behind. Style: A · Fresco. Aspect ratio 16:9.`
+   `A marble bust of a Renaissance scholar wearing modern wireless earbuds, gazing at a glowing laptop; behind him a sun of halftone dots rising over a Greek temple. Flat minium orange background. Style: A · Neoclassical pop. Aspect ratio 16:9.`
 
-2. **The idea of citation (B)**
-   `A large hand with a pointing index finger (a manicule) emerging from a cloud, pointing at one open book among many on a shelf; small rays of light around the chosen book. Style: B · Engraving. Aspect ratio 1:1.`
+2. **Get cited (A)**
+   `A classical marble hand with a pointing index finger aimed at one open book on a shelf of many; a small chat bubble above the chosen book. Flat lapis blue background, yellow book. Style: A · Neoclassical pop. Aspect ratio 16:9.`
 
-3. **Three stages: Indexed → Found → Mentioned (C)**
-   `Three connected circles drawn with a compass, a small sketch of a library index card in the first, a magnifying lens in the second, a speaking mouth with a laurel in the third, construction lines linking them left to right. Style: C · Codex. Aspect ratio 16:5.`
+3. **Vibe Check column (A)**
+   `Two marble discus throwers in a race, one holding a smartphone; lane lines drawn in flat cyan; halftone sky. Style: A · Neoclassical pop. Aspect ratio 16:9.`
 
-4. **Prosperity (A)**
-   `Allegory of Abundance: a calm woman in a lapis robe holding a cornucopia that spills gold coins and small glowing data points onto a Florentine market table; merchants in the background. Style: A · Fresco. Aspect ratio 4:5.`
+4. **Property management vertical (A)**
+   `A Roman apartment block (insula) of marble with many windows, one window lit in yellow with a laptop inside; a classical statue holding a big brass key in front. Flat sky cyan background. Style: A · Neoclassical pop. Aspect ratio 16:9.`
 
-5. **Spiritual growth (A)**
-   `A figure in quiet meditation under a laurel tree at dawn, a soft golden halo, a closed laptop resting on the grass beside them, Tuscan hills behind. Style: A · Fresco. Aspect ratio 16:9.`
+5. **Prosperity (A)**
+   `Statue of Abundance holding a cornucopia that spills gold coins and small bar charts; flat sun yellow background, minium shadows. Style: A · Neoclassical pop. Aspect ratio 1:1.`
 
-6. **Property management vertical (B)**
-   `A Renaissance palazzo facade with many windows, a key and a small glowing smartphone in the foreground on a stone ledge. Style: B · Engraving. Aspect ratio 4:5.`
+6. **Three stages: Indexed → Found → Mentioned (C)**
+   `Three connected circles drawn with a compass, a library index card in the first, a magnifying lens in the second, a speaking mouth with a laurel in the third, construction lines linking them left to right. Style: C · Codex. Aspect ratio 16:9.`
 
-7. **Social / quote card background (C)**
-   `Study of a marble bust of a philosopher in three-quarter view, with geometric proportion lines and a small sketched chat bubble near the mouth. Style: C · Codex. Aspect ratio 1:1.`
-
-8. **App empty state "No citations yet" (B)**
+7. **App empty state "No citations yet" (B)**
    `A single small empty scroll on a wooden lectern, a quill resting beside it, lots of empty space. Style: B · Engraving. Aspect ratio 1:1.`
 
-**Negative list** (add when the model accepts it): `text, letters, captions, signatures, logos, watermark, modern UI screenshots, plastic 3D render, neon, cyberpunk, fantasy armor, extra fingers, distorted faces`.
+8. **Case study cover (A)**
+   `A Chicago brownstone facade with a classical Corinthian column in front, a marble bust looking at a phone that shows a map pin. Flat minium orange background, lapis halftone. Style: A · Neoclassical pop. Aspect ratio 16:9.`
+
+**Negative list** (add when the model accepts it): `text, letters, captions, signatures, logos, watermark, UI screenshots, plastic 3D render, photorealistic people, gradient mesh, neon glow, extra fingers, distorted faces`.
 
 ### Tools
 
-- **Gemini (Nano Banana / Imagen)** — default. Generate through the Gemini API or AI Studio with the team account where we can; test once whether that output has the visible sparkle mark.
+- **Gemini (Nano Banana / Imagen)** — default. Generate through the Gemini API or AI Studio where we can; test once whether that output has the visible sparkle mark.
 - Fix text, faces and hands by hand or with an edit pass. Never ship an image with garbled letters.
-- Keep a `prompts.toml` next to each image set: prompt, model, date, seed if any. Then we can make more of the same family.
+- Keep a `prompts.toml` next to each image set: prompt, model, date, seed if any.
 
 ### Rules for AI images
 
 - **Visible Gemini sparkle.** Avoid it at the source: AI Ultra plan, the "Media watermark" setting where Gemini offers it, or the API. If an image still has it, the open-source tools (`journey-ad/gemini-watermark-remover`, `allenk/GeminiWatermarkTool`, MIT) remove it locally. Check Google's terms first.
 - **Invisible SynthID and C2PA.** Keep them. Do not try to remove them. From 2 Aug 2026 the EU AI Act (Art. 50) asks for machine-readable marks on AI content. Removal can breach Google's terms too.
-- **Disclose.** Caption or credit: "Made with AI". Our brand says AI brings the golden age, so we show it with pride, not hide it.
-- **AI detectors** (Hive, Sightengine, AI or Not, …) are not reliable on new models. Do not tune images to pass them. Google's own check (ask Gemini "is this AI-made?") reads SynthID and says yes for our images, as it should.
-- **Realistic people.** No photo-real fake people or fake "customers". Painted and engraved styles only.
+- **Disclose.** Caption or credit: "Made with AI". Our brand says AI brings the golden age, so we show it with pride.
+- **AI detectors** (Hive, Sightengine, AI or Not, …) are not reliable on new models. Do not tune images to pass them.
+- **Realistic people.** No photo-real fake people or fake "customers". Statues, engravings and halftone only.
 
 ## Voice
 
-Plain, warm, exact (ASD-STE100 for docs). One Latin phrase per page at most, always with its English meaning next to it. Good: *Aetas aurea redit* — the golden age returns. Bad: Latin in buttons or errors.
+See `/VOICE.md`. Plain, warm, exact. One Latin phrase per page at most, always with its English meaning next to it. Good: *Aetas aurea redit* — the golden age returns. Bad: Latin in buttons or errors.
