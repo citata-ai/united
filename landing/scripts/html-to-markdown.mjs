@@ -49,7 +49,7 @@ export function htmlToMarkdown(html, base) {
   const lines = s
     .split("\n")
     .map((l) => l.replace(/[ \t]+/g, " ").trim())
-    .map((l) => l.replace(/\*\*\s+/g, "**").replace(/\s+\*\*(?=[.,;:]|$)/g, "**"));
+    .map((l) => l.replace(/\*\*\s*(.+?)\s*\*\*/g, "**$1**"));
   // Markdown tables need a separator row after the header row.
   const out = [];
   for (let i = 0; i < lines.length; i++) {
