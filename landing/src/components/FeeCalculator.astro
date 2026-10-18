@@ -1,0 +1,181 @@
+---
+// Property management fee calculator: a small vanilla island. The math lives in
+// src/lib/calculators.ts (tested). The first render comes from the build, so the page shows
+// full results without JavaScript; the script only updates them. No data leaves the page.
+import { computeFees, feeComparisons, feeExample as ex, usd } from "../lib/calculators.ts";
+
+const r = computeFees(ex);
+const notes = feeComparisons(ex);
+const field =
+  "mt-1 block h-10 w-full rounded border border-rule-strong bg-parchment px-3 text-[15px] outline-none focus:border-minium";
+const rows = [
+  { key: "management", label: "Management fee", value: r.management },
+  { key: "leasing", label: "Leasing fees", value: r.leasing },
+  { key: "renewals", label: "Renewal fees", value: r.renewals },
+  { key: "vacancy", label: "Vacancy fees", value: r.vacancy },
+];
+---
+
+<form class="fee-calc rounded-md border border-rule bg-page p-5 sm:p-6" data-model={ex.model} novalidate>
+  <div class="grid gap-x-6 gap-y-4 sm:grid-cols-2">
+    <label>
+      <span class="meta">Monthly rent per unit ($)</span>
+      <input name="rent" type="number" inputmode="decimal" min="0" step="any" value={ex.rent} class={field} />
+    </label>
+    <label>
+      <span class="meta">Number of units (doors)</span>
+      <input name="units" type="number" inputmode="numeric" min="1" step="1" value={ex.units} class={field} />
+    </label>
+
+    <fieldset class="sm:col-span-2">
+      <legend class="meta">Management fee model</legend>
+      <div class="mt-2 inline-flex rounded-full border border-rule-strong bg-parchment p-1 text-[14px]">
+        <label class="cursor-pointer rounded-full px-4 py-1.5 has-[:checked]:bg-minium has-[:checked]:text-page has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-minium">
+          <input class="sr-only" type="radio" name="model" value="percent" checked={ex.model === "percent"} />
+          Percent of rent
+        </label>
+        <label class="cursor-pointer rounded-full px-4 py-1.5 has-[:checked]:bg-minium has-[:checked]:text-page has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-minium">
+          <input class="sr-only" type="radio" name="model" value="flat" checked={ex.model === "flat"} />
+          Flat per door
+        </label>
+      </div>
+    </fieldset>
+
+    <label data-for="percent">
+      <span class="meta">Management fee (% of rent collected)</span>
+      <input name="percent" type="number" inputmode="decimal" min="0" step="any" value={ex.percent} class={field} />
+    </label>
+    <label data-for="flat">
+      <span class="meta">Flat fee ($ per door per month)</span>
+      <input name="flat" type="number" inputmode="decimal" min="0" step="any" value={ex.flat} class={field} />
+    </label>
+
+    <label>
+      <span class="meta">Leasing fee (% of one month's rent)</span>
+      <input name="leasingPercent" type="number" inputmode="decimal" min="0" step="any" value={ex.leasingPercent} class={field} />
+    </label>
+    <label>
+      <span class="meta">New tenants placed per year</span>
+      <input name="newLeasesPerYear" type="number" inputmode="numeric" min="0" step="1" value={ex.newLeasesPerYear} class={field} />
+    </label>
+    <label>
+      <span class="meta">Lease renewal fee ($ each)</span>
+      <input name="renewalFee" type="number" inputmode="decimal" min="0" step="any" value={ex.renewalFee} class={field} />
+    </label>
+    <label>
+      <span class="meta">Lease renewals per year</span>
+      <input name="renewalsPerYear" type="number" inputmode="numeric" min="0" step="1" value={ex.renewalsPerYear} class={field} />
+    </label>
+    <label>
+      <span class="meta">Vacant months per year (all units)</span>
+      <input name="vacantMonthsPerYear" type="number" inputmode="decimal" min="0" step="any" value={ex.vacantMonthsPerYear} class={field} />
+    </label>
+    <label>
+      <span class="meta">Vacancy fee ($ per vacant unit per month)</span>
+      <input name="vacancyFee" type="number" inputmode="decimal" min="0" step="any" value={ex.vacancyFee} class={field} />
+    </label>
+  </div>
+
+  <div class="mt-6">
+    <div class="grid gap-3 sm:grid-cols-3" aria-live="polite">
+      <div class="rounded-md bg-coral/30 p-4">
+        <p class="meta text-ink">Monthly cost</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="totalMonth">{usd(r.totalMonth)}</p>
+        <p class="text-[13px] text-muted"><span data-out="perDoorMonth">{usd(r.perDoorMonth)}</span> per door</p>
+      </div>
+      <div class="rounded-md bg-sun/35 p-4">
+        <p class="meta text-ink">Yearly cost</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="totalYear">{usd(r.totalYear)}</p>
+        <p class="text-[13px] text-muted">all fees, all units</p>
+      </div>
+      <div class="rounded-md bg-mint/40 p-4">
+        <p class="meta text-ink">Effective rate</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold"><span data-out="effectivePercent">{r.effectivePercent}</span>%</p>
+        <p class="text-[13px] text-muted">of <span data-out="collectedRent">{usd(r.collectedRent)}</span> rent collected</p>
+      </div>
+    </div>
+
+    <table class="mt-5 w-full border-collapse text-[15px]">
+      <caption class="meta pb-2 text-left">Yearly fees by type</caption>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr class="border-b border-rule">
+              <th scope="row" class="py-2 pr-4 text-left font-normal">{row.label}</th>
+              <td class="py-2 text-right tabular-nums" data-out={row.key}>{usd(row.value)}</td>
+            </tr>
+          ))
+        }
+        <tr>
+          <th scope="row" class="py-2 pr-4 text-left font-medium">Total</th>
+          <td class="py-2 text-right font-medium tabular-nums" data-out="totalYear">{usd(r.totalYear)}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="meta mt-5 text-ink">Compared with typical US fees</p>
+    <ul class="fc-notes mt-2 list-disc space-y-1.5 pl-5 text-[15px]">
+      {notes.map((n) => <li>{n}</li>)}
+    </ul>
+  </div>
+  <p class="mt-4 text-[12px] text-muted">
+    The percent fee applies to rent collected. A flat fee applies to every door, every month. Your
+    numbers stay in your browser.
+  </p>
+</form>
+
+<script>
+  import { computeFees, feeComparisons, usd, type FeeInput } from "../lib/calculators.ts";
+
+  for (const form of document.querySelectorAll<HTMLFormElement>(".fee-calc")) {
+    const num = (name: string): number => {
+      const el = form.elements.namedItem(name);
+      return el instanceof HTMLInputElement && el.value !== "" ? Number(el.value) : 0;
+    };
+    const set = (key: string, text: string) => {
+      for (const el of form.querySelectorAll(`[data-out="${key}"]`)) el.textContent = text;
+    };
+    const notes = form.querySelector(".fc-notes");
+    const update = () => {
+      const checked = form.querySelector<HTMLInputElement>('input[name="model"]:checked');
+      const model: FeeInput["model"] = checked?.value === "flat" ? "flat" : "percent";
+      for (const el of form.querySelectorAll<HTMLElement>("[data-for]")) {
+        el.hidden = el.dataset.for !== model;
+      }
+      const input: FeeInput = {
+        rent: num("rent"),
+        units: num("units"),
+        model,
+        percent: num("percent"),
+        flat: num("flat"),
+        leasingPercent: num("leasingPercent"),
+        newLeasesPerYear: num("newLeasesPerYear"),
+        renewalFee: num("renewalFee"),
+        renewalsPerYear: num("renewalsPerYear"),
+        vacantMonthsPerYear: num("vacantMonthsPerYear"),
+        vacancyFee: num("vacancyFee"),
+      };
+      const r = computeFees(input);
+      set("totalMonth", usd(r.totalMonth));
+      set("perDoorMonth", usd(r.perDoorMonth));
+      set("totalYear", usd(r.totalYear));
+      set("effectivePercent", String(r.effectivePercent));
+      set("collectedRent", usd(r.collectedRent));
+      set("management", usd(r.management));
+      set("leasing", usd(r.leasing));
+      set("renewals", usd(r.renewals));
+      set("vacancy", usd(r.vacancy));
+      notes?.replaceChildren(
+        ...feeComparisons(input).map((text) => {
+          const li = document.createElement("li");
+          li.textContent = text;
+          return li;
+        }),
+      );
+    };
+    form.addEventListener("input", update);
+    form.addEventListener("change", update);
+    form.addEventListener("submit", (e) => e.preventDefault());
+    update();
+  }
+</script>

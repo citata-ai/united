@@ -21,6 +21,15 @@ describe("htmlToMarkdown", () => {
     ).toBe("Text");
   });
 
+  it("drops interactive forms (tool pages keep their answer in plain HTML)", () => {
+    expect(
+      htmlToMarkdown(
+        '<main><form><label>Rent <input value="1"></label></form><p>Answer</p></main>',
+        "",
+      ),
+    ).toBe("Answer");
+  });
+
   it("decodes entities", () => {
     expect(decodeEntities("A &amp; B &#8212; &quot;c&quot; &#x27;d&#x27;")).toBe(
       "A & B — \"c\" 'd'",

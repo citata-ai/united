@@ -1,0 +1,297 @@
+---
+// H03-E1: original data page. Numbers come from summary.json of the 2026-10-19 run
+// (tools/ai-visibility/cities_analyze.py), copied to src/data/ai-pm-index-2026.json.
+// Voice: brand/VOICE.md. Report counts only; no company is named in a negative way.
+import Guide, { type GuideFrontmatter } from "../../layouts/Guide.astro";
+import data from "../../data/ai-pm-index-2026.json";
+
+const o = data.overall;
+const e = data.by_engine;
+const pct = (n: number, d: number) => Math.round((100 * n) / d);
+const N = o.answers;
+const date = o.dates[0];
+const csvUrl = "/data/ai-property-manager-index-2026.csv";
+const pageUrl = "https://citata.ai/research/ai-property-manager-index-2026";
+const dom = (name: string) => data.top_domains.find((d) => d.domain === name)?.answers ?? 0;
+const expertise = dom("expertise.com");
+const yelp = dom("yelp.com");
+const ipm = dom("ipropertymanagement.com");
+const rpm = data.top_national[0];
+const engineName: Record<string, string> = { chatgpt: "ChatGPT", gemini: "Gemini", claude: "Claude" };
+const engineOrder = ["chatgpt", "gemini", "claude"] as const;
+const typeLabel: Record<string, string> = {
+  directory: "Directories, review, list and social sites",
+  company: "Property management company sites",
+  data: "Company data sites",
+  forum: "Forums (Reddit, BiggerPockets)",
+  media: "Local news and city blogs",
+  reference: "Reference (Wikipedia, national press)",
+  association: "Trade associations (NARPM)",
+  other: "Other",
+};
+const types = Object.entries(o.source_type_answers as Record<string, number>).sort((a, b) => b[1] - a[1]);
+
+const fm: GuideFrontmatter = {
+  title: "AI Property Manager Index 2026: Who AI Names in 50 Cities — Citata.ai",
+  description: `We asked ChatGPT, Gemini and Claude for the best property manager in the 50 largest US cities. ${N} answers: who they name and which sources they cite.`,
+  headline: "AI Property Manager Index 2026",
+  dek: `Who ChatGPT, Gemini and Claude name as the best property manager in 50 US cities, and the sources they use.`,
+  published: date,
+  updated: date,
+  answer: `We asked ChatGPT, Gemini and Claude "What is the best property management company in <city>?" for the 50 largest US cities (${N} answers, ${date}). The engines named ${o.distinct_companies} different companies, and ${Math.round(o.pct_names_local)}% of all names were local firms. ${pct(o.answers_with_listing_site, N)}% of answers used a directory or review site as a source; Expertise.com was a source in ${expertise} of ${N} answers. Gemini linked a property manager's own site in ${pct(e.gemini.answers_with_company_site, 50)}% of answers, ChatGPT in ${pct(e.chatgpt.answers_with_company_site, 50)}%.`,
+  faq: [
+    {
+      q: "Which property management company does ChatGPT recommend?",
+      a: `It depends on the city. In our ${date} test, ChatGPT named ${e.chatgpt.avg_companies} companies per answer on average, and ${Math.round(e.chatgpt.pct_names_local)}% of them were local firms. The full list for each of the 50 cities is in the table and the free CSV on this page.`,
+    },
+    {
+      q: "Where does AI get its property manager recommendations?",
+      a: `Mostly from directories and review sites. Expertise.com was a source in ${expertise} of ${N} answers, Yelp in ${yelp} and iPropertyManagement.com in ${ipm}. Gemini also used company sites and Reddit; ChatGPT used directories in ${pct(e.chatgpt.answers_with_listing_site, 50)}% of its answers.`,
+    },
+    {
+      q: "How can a property management company get recommended by AI?",
+      a: "Be on the sources the engines read for your city: Expertise.com, Yelp, iPropertyManagement.com, BBB, Birdeye and the local best-of lists. Keep your own site clear about the city, the services and the fees, because Gemini and Claude link company sites often. No one can promise a place in an AI answer.",
+    },
+    {
+      q: "Are these AI recommendations stable?",
+      a: "No. We ran each question once, and AI answers change between runs, days and accounts. Use this data to see patterns across 50 cities, not as a fixed ranking of any one company.",
+    },
+  ],
+  sources: [
+    { label: `Citata.ai: AI Property Manager Index data, ${N} answers, ${date} (CSV, our data)`, url: `https://citata.ai${csvUrl}` },
+    {
+      label: "Wikipedia: List of United States cities by population (US Census Bureau estimates, July 1, 2025)",
+      url: "https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population",
+    },
+    { label: "Citata.ai: How owners choose a property manager with AI", url: "https://citata.ai/guides/how-owners-choose-a-property-manager-with-ai" },
+  ],
+};
+
+const headings = [
+  { depth: 2, slug: "numbers", text: "Headline numbers" },
+  { depth: 2, slug: "method", text: "How we ran the test" },
+  { depth: 2, slug: "companies", text: "Which companies AI names" },
+  { depth: 2, slug: "sources", text: "Which sources AI uses" },
+  { depth: 2, slug: "engines", text: "ChatGPT vs Gemini vs Claude" },
+  { depth: 2, slug: "cities", text: "Results for each city" },
+  { depth: 2, slug: "what-to-do", text: "What this means for property managers" },
+  { depth: 2, slug: "data", text: "Download the data" },
+];
+
+const dataset = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  name: "AI Property Manager Index 2026",
+  description: `${N} answers from ChatGPT, Gemini and Claude (with web search) to "What is the best property management company in <City, ST>? Give names." for the 50 most populous US cities, with the companies named and the source domains.`,
+  url: pageUrl,
+  sameAs: `https://citata.ai${csvUrl}`,
+  creator: { "@id": "https://citata.ai/#org" },
+  publisher: { "@id": "https://citata.ai/#org" },
+  datePublished: date,
+  dateModified: date,
+  temporalCoverage: date,
+  spatialCoverage: { "@type": "Place", name: "United States" },
+  license: "https://creativecommons.org/licenses/by/4.0/",
+  isAccessibleForFree: true,
+  keywords: ["property management", "AI search", "GEO", "ChatGPT", "Gemini", "Claude", "local search", "citations"],
+  measurementTechnique: "One prompt per city, one run per engine, through each engine's API with web search on. A second model listed the company names in each answer.",
+  variableMeasured: ["companies named", "national or multi-state brands named", "source domains", "links to company sites"],
+  distribution: [{ "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csvUrl}` }],
+};
+
+// Chart data: top cited domains (one series, one color, direct labels).
+const bars = data.top_domains.slice(0, 15);
+const barMax = N;
+const rowH = 26;
+const labelW = 190;
+const chartW = 640;
+const plotW = chartW - labelW - 60;
+
+const metrics = [
+  { key: "avg_companies", label: "Companies named per answer", unit: "" },
+  { key: "pct_names_local", label: "Names that are local firms", unit: "%" },
+  { key: "pct_with_listing_site", label: "Answers with a directory or review site", unit: "%" },
+  { key: "pct_with_company_site", label: "Answers that link a company site", unit: "%" },
+  { key: "pct_with_forum", label: "Answers with Reddit or BiggerPockets", unit: "%" },
+  { key: "avg_sources", label: "Source domains per answer", unit: "" },
+] as const;
+const fmt = (v: number, unit: string) => (unit === "%" ? `${Math.round(v)}%` : v.toFixed(1));
+---
+
+<Guide frontmatter={fm} url="/research/ai-property-manager-index-2026" headings={headings} schema={[dataset]}>
+  <p>
+    This is a new format for us: a small study with open data. Tell us what you think at
+    <a href="mailto:grow@citata.ai">grow@citata.ai</a>.
+  </p>
+  <p>
+    Disclosure: citata.ai sells GEO services (GEO: work that gets a company named in AI answers) to property
+    management companies. None of our clients was named in this data. We report counts only. A count is not a
+    rating of any company.
+  </p>
+
+  <h2 id="numbers">Headline numbers</h2>
+  <p>We asked 3 AI engines one question for each of the 50 largest US cities. Here is what {N} answers show (our data, {date}).</p>
+  <div class="not-prose my-6 grid gap-3 sm:grid-cols-2">
+    <div class="rounded-md bg-sun/30 p-5">
+      <p class="text-[34px] leading-none">{o.distinct_companies}</p>
+      <p class="mt-2 text-[15px] text-muted">different companies named in {N} answers. {Math.round(o.pct_names_local)}% of all names were local firms.</p>
+    </div>
+    <div class="rounded-md bg-mint/40 p-5">
+      <p class="text-[34px] leading-none">{pct(o.answers_with_listing_site, N)}%</p>
+      <p class="mt-2 text-[15px] text-muted">of answers used a directory or review site as a source. Expertise.com: {expertise} of {N}.</p>
+    </div>
+    <div class="rounded-md bg-sky/25 p-5">
+      <p class="text-[34px] leading-none">{pct(o.answers_with_company_site, N)}%</p>
+      <p class="mt-2 text-[15px] text-muted">
+        of answers linked a property manager's own site. Gemini: {pct(e.gemini.answers_with_company_site, 50)}%. ChatGPT: {pct(e.chatgpt.answers_with_company_site, 50)}%.
+      </p>
+    </div>
+    <div class="rounded-md bg-lilac/30 p-5">
+      <p class="text-[34px] leading-none">{pct(o.answers_with_national, N)}%</p>
+      <p class="mt-2 text-[15px] text-muted">of answers named at least one national or multi-state brand. {rpm.name} came up most: {rpm.answers} answers, {rpm.cities} cities.</p>
+    </div>
+    <div class="rounded-md bg-coral/25 p-5 sm:col-span-2">
+      <p class="text-[34px] leading-none">{o.cities_with_full_agreement} of 50</p>
+      <p class="mt-2 text-[15px] text-muted">cities had at least one company that all 3 engines named. In the other {50 - o.cities_with_full_agreement} cities, the engines did not agree on any name.</p>
+    </div>
+  </div>
+
+  <h2 id="method">How we ran the test</h2>
+  <p>We sent the same prompt to each engine on {date}, one run per city and engine:</p>
+  <p><strong>"What is the best property management company in &lt;City, ST&gt;? Give names."</strong></p>
+  <ul>
+    <li><strong>Cities.</strong> The 50 most populous US cities, from US Census Bureau estimates for July 1, 2025 (New York, NY to Aurora, CO).</li>
+    <li>
+      <strong>Engines.</strong> ChatGPT ({e.chatgpt.model} with web search), Gemini ({e.gemini.model} with Google Search grounding) and Claude
+      ({e.claude.model} with web search). We used each vendor's API, not the consumer apps.
+    </li>
+    <li><strong>Answers.</strong> {N} sent, {N - o.answers_failed} received, {o.answers_failed} failed.</li>
+    <li><strong>Company names.</strong> A second model (Claude Haiku) listed the companies in each answer. We merged offices of one brand (for example franchise offices).</li>
+    <li>
+      <strong>National or multi-state brand.</strong> A fixed list of 39 brands that work in several states, such as Real Property Management, HomeRiver Group, Evernest,
+      PMI, Keyrenter, Mynd, Ziprent and Greystar. All other names count as local firms.
+    </li>
+    <li>
+      <strong>Sources.</strong> The domains each engine attached to its answer. For Claude, this list includes every search result that Claude read, not only the links in the text.
+    </li>
+  </ul>
+  <p>
+    Limits: AI answers change between runs, days and users. One run per city shows a pattern, not a fixed rank. The consumer apps can give other answers than the API. The
+    brand list and the source types are our own choice; the CSV lets you check each row.
+  </p>
+
+  <h2 id="companies">Which companies AI names</h2>
+  <p>
+    AI engines name many local firms, and a few national brands in many cities. The 3 engines named {o.distinct_companies} different companies; {o.distinct_local_companies}
+    of them were local firms. National or multi-state brands came up in {o.cities_with_national} of 50 cities.
+  </p>
+  <p>Brands that the engines named in the most answers (our data, {date}):</p>
+  <table>
+    <thead><tr><th>Brand</th><th>Answers (of {N})</th><th>Cities (of 50)</th></tr></thead>
+    <tbody>
+      {data.top_national.map((c) => <tr><td>{c.name}</td><td>{c.answers}</td><td>{c.cities}</td></tr>)}
+    </tbody>
+  </table>
+  <p>
+    Local firms rarely appear in more than one city, so each one has at most 3 answers here. The city table below shows the local firms that the engines named most.
+  </p>
+
+  <h2 id="sources">Which sources AI uses</h2>
+  <p>
+    Directories and review sites are the main sources for this question. Expertise.com was a source in {expertise} of {N} answers. Yelp and iPropertyManagement.com
+    were each a source in {yelp} answers.
+  </p>
+  <figure class="not-prose my-6">
+    <svg viewBox={`0 0 ${chartW} ${bars.length * rowH + 10}`} role="img" aria-labelledby="dom-t dom-d" class="w-full" style="max-width: 720px">
+      <title id="dom-t">Top 15 source domains</title>
+      <desc id="dom-d">Number of answers, out of {N}, that used each domain as a source.</desc>
+      {
+        bars.map((b, i) => {
+          const w = Math.max(2, (plotW * b.answers) / barMax);
+          const y = i * rowH + 4;
+          return (
+            <g>
+              <title>{`${b.domain}: ${b.answers} of ${N} answers`}</title>
+              <text x={labelW - 8} y={y + 15} text-anchor="end" font-size="13" fill="#1c1712">{b.domain}</text>
+              <rect x={labelW} y={y + 3} width={w} height={rowH - 10} rx="4" fill="#c1410b" />
+              <text x={labelW + w + 6} y={y + 15} font-size="13" fill="#5c5145">{b.answers}</text>
+            </g>
+          );
+        })
+      }
+      <line x1={labelW} x2={labelW} y1="0" y2={bars.length * rowH + 6} stroke="#b8a88c" stroke-width="1" />
+    </svg>
+    <figcaption class="mt-2 text-[14px] text-muted">Answers (of {N}) that used each domain as a source. Our data, {date}.</figcaption>
+  </figure>
+  <p>The same sources by type. One answer can have several types.</p>
+  <table>
+    <thead><tr><th>Source type</th><th>Answers (of {N})</th></tr></thead>
+    <tbody>{types.map(([t, n]) => <tr><td>{typeLabel[t] ?? t}</td><td>{n}</td></tr>)}</tbody>
+  </table>
+  <p>
+    Directories and review sites that the engines used most: {data.top_listing_domains.slice(0, 10).map((d) => `${d.domain} (${d.answers})`).join(", ")}.
+  </p>
+
+  <h2 id="engines">ChatGPT vs Gemini vs Claude</h2>
+  <p>
+    The 3 engines answer the same question in different ways. Claude names the most companies and reads the most sources. Gemini links company sites and Reddit most.
+    ChatGPT gives short lists from directories: {e.chatgpt.answers_with_listing_site} of its 50 answers used one, and {e.chatgpt.answers_with_company_site} linked a company site.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Measure (50 answers each)</th>{engineOrder.map((k) => <th>{engineName[k]}</th>)}</tr>
+    </thead>
+    <tbody>
+      {metrics.map((m) => <tr><td>{m.label}</td>{engineOrder.map((k) => <td>{fmt(e[k][m.key], m.unit)}</td>)}</tr>)}
+    </tbody>
+  </table>
+  <p>Top sources for each engine:</p>
+  <ul>
+    {engineOrder.map((k) => <li><strong>{engineName[k]}.</strong> {e[k].top_domains.slice(0, 5).map((d) => `${d.domain} (${d.answers})`).join(", ")}.</li>)}
+  </ul>
+
+  <h2 id="cities">Results for each city</h2>
+  <p>
+    Each city has 3 answers, one per engine. The number after a name shows how many of the 3 answers named it. "Brand" marks a national or multi-state brand.
+  </p>
+  <table>
+    <thead>
+      <tr><th>#</th><th>City</th><th>Companies named most (answers of 3)</th><th>Main sources</th></tr>
+    </thead>
+    <tbody>
+      {
+        data.cities.map((c) => (
+          <tr>
+            <td>{c.rank}</td>
+            <td>{c.city}, {c.state}</td>
+            <td>{c.top_companies.map((t) => `${t.name} (${t.answers})${t.national ? " brand" : ""}`).join("; ")}</td>
+            <td>{c.top_domains.slice(0, 4).join(", ")}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+
+  <h2 id="what-to-do">What this means for property managers</h2>
+  <p>AI engines build the "best property manager" answer from a small set of sources. Be on those sources for your city.</p>
+  <ol>
+    <li><strong>Check your Expertise.com page.</strong> Expertise.com was a source in {expertise} of {N} answers, more than any other site. See if your city list names you, and what the list needs.</li>
+    <li><strong>Get reviews on Yelp, BBB and Birdeye.</strong> Yelp was a source in {yelp} answers, Birdeye in {dom("reviews.birdeye.com")} and BBB in {dom("bbb.org")}.</li>
+    <li><strong>Claim your iPropertyManagement.com and PropertyManagement.com profiles.</strong> iPropertyManagement.com was a source in {ipm} answers, most of them from Claude.</li>
+    <li><strong>Find the local best-of lists.</strong> ThreeBestRated, Bestinhood, Trustanalytica and city blogs show up in the city rows above. Check the lists for your city.</li>
+    <li><strong>Make your own site answer the question.</strong> Gemini linked a company site in {pct(e.gemini.answers_with_company_site, 50)}% of answers. Say the city, the property types, the fees and the reviews in plain text.</li>
+    <li><strong>Help in local Reddit threads.</strong> Reddit was a source in {dom("reddit.com")} answers, all of them from Gemini. Answer owner questions with facts, not ads.</li>
+  </ol>
+  <p>
+    Want to know if AI names your company in your city? Read <a href="/guides/how-owners-choose-a-property-manager-with-ai">how owners choose a property manager with AI</a>,
+    or ask us for a free AI visibility audit on <a href="/property-management">our property management page</a>.
+  </p>
+
+  <h2 id="data">Download the data</h2>
+  <p>
+    <a href={csvUrl} download>Download the CSV</a> ({N} rows, one per answer). Columns: date, city, state, population rank, engine, model, companies in order, brands named,
+    source domains, and two flags (links a company site, links a directory or review site).
+  </p>
+  <p>License: CC BY 4.0. You may use and share the data. Please link to this page.</p>
+  <p>Tao (Taras Kornichuk), founder, citata.ai.</p>
+</Guide>

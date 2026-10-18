@@ -22,10 +22,29 @@ export interface GuideFrontmatter {
   image?: string;
 }
 
-const { frontmatter, url, headings = [] } = Astro.props as {
+const {
+  frontmatter,
+  url,
+  headings = [],
+  section = { name: "Guides", href: "/guides", note: "for property management companies" },
+  about = ["Generative engine optimization", "Property management"],
+  schemas = [],
+  schema = [],
+  method = "How we made this guide: AI agents drafted it from our own tests and the sources listed at the end. Taras Kornichuk checked every claim and edited the text.",
+} = Astro.props as {
   frontmatter: GuideFrontmatter;
   url?: string;
   headings?: { depth: number; slug: string; text: string }[];
+  /** Breadcrumb parent and the label in the header. Data pages (Section 8) set their own. */
+  section?: { name: string; href: string; note: string };
+  /** schema.org Article "about". */
+  about?: string[];
+  /** Extra JSON-LD blocks, e.g. a Dataset. */
+  schemas?: object[];
+  /** Same as `schemas` (research page). */
+  schema?: object[];
+  /** The "how we made this page" line under the header. */
+  method?: string;
 };
 const fm = frontmatter;
 const slug = (url ?? Astro.url.pathname).replace(/\.html$/, "").split("/").filter(Boolean).pop() ?? "";
@@ -56,7 +75,7 @@ const article = {
   datePublished: fm.published,
   dateModified: fm.updated,
   mainEntityOfPage: pageUrl,
-  about: ["Generative engine optimization", "Property management"],
+  about,
 };
 const faqSchema = fm.faq?.length
   ? {
@@ -70,7 +89,7 @@ const breadcrumbs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Citata.ai", item: "https://citata.ai/" },
-    { "@type": "ListItem", position: 2, name: "Guides", item: "https://citata.ai/guides" },
+    { "@type": "ListItem", position: 2, name: section.name, item: new URL(section.href, Astro.site).toString() },
     { "@type": "ListItem", position: 3, name: fm.headline, item: pageUrl },
   ],
 };
@@ -87,23 +106,22 @@ const breadcrumbs = {
     <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
     {faqSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />}
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbs)} />
+    {[...schema, ...schemas].map((s) => <script type="application/ld+json" is:inline set:html={JSON.stringify(s)} />)}
   </Fragment>
   <main class="wrap">
     <article class="mx-auto max-w-[1080px] pt-12 pb-6">
       <header class="rounded-lg bg-sun/25 p-6 sm:p-10">
         <p class="meta">
-          <a href="/guides" class="text-minium underline underline-offset-2">Guides</a> · for property management companies
+          <a href={section.href} class="text-minium underline underline-offset-2">{section.name}</a> · {section.note}
         </p>
         <h1 class="mt-4 max-w-4xl text-[36px] leading-[1.05] sm:text-[52px]">{fm.headline}</h1>
         <p class="mt-4 max-w-3xl text-[19px] text-muted sm:text-[21px]">{fm.dek}</p>
         <p class="meta mt-5">
-          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Updated
+          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Published
+          <time datetime={fm.published}>{fm.published}</time> · Updated
           <time datetime={fm.updated}>{fm.updated}</time>
         </p>
-        <p class="mt-2 max-w-3xl text-[13px] text-muted">
-          How we made this guide: AI agents drafted it from our own tests and the sources listed at the
-          end. Taras Kornichuk checked every claim and edited the text.
-        </p>
+        <p class="mt-2 max-w-3xl text-[13px] text-muted">{method}</p>
       </header>
 
       {
@@ -200,7 +218,7 @@ const breadcrumbs = {
       </div>
     </article>
 
-    <AuditCta title="Does AI name your company? Find out for free." />
+    {Astro.slots.has("cta") ? <slot name="cta" /> : <AuditCta title="Does AI name your company? Find out for free." />}
   </main>
 </Base>
 
