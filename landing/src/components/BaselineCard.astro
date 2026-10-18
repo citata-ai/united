@@ -1,0 +1,43 @@
+---
+// Citation card (brand/DESIGN.md): real baseline for fridmanproperties.com.
+// Source: fp-landing docs/marketing/research/ai-visibility/2026-10-16/report.md
+// (24 prompts x 3 engines x 2 runs = 144 answers).
+import { baseline } from "../data/fridman.ts";
+---
+
+<figure class="rounded border border-rule bg-page p-6">
+  <figcaption class="meta flex justify-between gap-4">
+    <span><span class="text-minium">Baseline</span> · {baseline.date}</span>
+    <span>{baseline.answers} AI answers</span>
+  </figcaption>
+  <p class="mt-4 text-[15px] text-muted">
+    Owner questions about Chicago-area property managers. Does the answer name
+    <span class="text-minium">Fridman Properties</span>?
+  </p>
+  <table class="mt-4 w-full text-[15px]">
+    <thead>
+      <tr class="meta text-left">
+        <th class="pb-2 font-normal">Engine</th>
+        <th class="pb-2 text-right font-normal">Named</th>
+        <th class="pb-2 text-right font-normal">Linked</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        baseline.engines.map((e) => (
+          <tr class="border-t border-rule">
+            <td class="py-2">{e.name}</td>
+            <td class="py-2 text-right font-mono text-[13px]">
+              {e.named} / {e.answers}
+            </td>
+            <td class="py-2 text-right font-mono text-[13px]">{e.linked}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p class="mt-4 text-[13px] text-muted">
+    Without the 2 brand questions: named in {baseline.nonBrandNamed} of {baseline.nonBrandAnswers}.
+    Section 8 question: {baseline.section8Named} of {baseline.section8Answers}.
+  </p>
+</figure>

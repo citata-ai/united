@@ -1,0 +1,11 @@
+# citata.ai
+
+> citata.ai is a GEO agency (GEO: getting cited by AI answers). We make AI assistants such as ChatGPT, Gemini, Claude and Perplexity name and link our clients when buyers ask them for a recommendation. Process: Indexed, Found, Mentioned. One human-checked change a day. A report every Monday.
+
+Contact: grow@citata.ai. Free AI visibility audit: 20 prompts on 4 engines, index check, top 5 fixes.
+
+## Pages
+
+- [Home](https://citata.ai/): what we do, how it works, prices (Starter $750/mo, Growth $2,000/mo or $1,500/mo on 12 months; first prices, may change).
+- [Property management](https://citata.ai/property-management): GEO for US property management companies with 50 to 500 doors. Owner questions vs renter questions. Section 8.
+- [Case study: Fridman Properties](https://citata.ai/case-studies/fridman-properties): Chicago-area property manager. Site moved 2026-10-15/16, AI baseline 2026-10-16 (named in 8 of 132 non-brand owner answers). Results due 2027-01-14. Related party: owner Ran Fridman is CEO of MyRemotely, a citata.ai partner.

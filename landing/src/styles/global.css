@@ -1,8 +1,117 @@
 @import "tailwindcss";
 
+/* Tokens from brand/DESIGN.md ("Aetas Aurea", light theme "Vellum"). */
+@font-face {
+  font-family: "Cal Sans";
+  src: url("/fonts/CalSansVF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paper Mono";
+  src: url("/fonts/PaperMono-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --color-ink: oklch(0.21 0.02 260);
-  --color-muted: oklch(0.5 0.02 260);
-  --color-accent: oklch(0.55 0.17 255);
+  --font-sans: "Cal Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Paper Mono", ui-monospace, monospace;
+  --color-parchment: #f5efe3;
+  --color-page: #fbf7ee;
+  --color-sunken: #ece3d2;
+  --color-ink: #1c1712;
+  --color-muted: #5c5145;
+  --color-rule: #d9cdb6;
+  --color-rule-strong: #b8a88c;
+  --color-lapis: #1e3a7b;
+  --color-lapis-hover: #162c5e;
+  --color-gold: #b8892b;
+  --color-gold-ink: #7a5a14;
+  --color-minium: #c2410c;
+  --color-verdigris: #2f6b5c;
+  --color-ochre: #9a6a00;
+}
+
+@layer base {
+  html {
+    background: var(--color-parchment);
+    color: var(--color-ink);
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto max-w-[1280px] px-5 sm:px-8;
+  }
+  .label {
+    @apply mb-4 flex items-center gap-2.5 font-mono text-xs tracking-[0.08em] text-muted uppercase;
+  }
+  .label::before {
+    content: "";
+    @apply size-2 rounded-[2px] bg-minium;
+  }
+  .meta {
+    @apply font-mono text-[11px] tracking-[0.06em] text-muted uppercase;
+  }
+  .btn-lapis {
+    @apply inline-block rounded bg-lapis px-4 py-2.5 text-sm font-medium text-page hover:bg-lapis-hover;
+  }
+  .btn-ink {
+    @apply inline-block rounded bg-ink px-4 py-2.5 text-sm font-medium text-parchment hover:bg-muted;
+  }
+  .link {
+    @apply text-minium underline decoration-1 underline-offset-2 hover:decoration-2;
+  }
+  .prose-c {
+    @apply max-w-[66ch] text-[17px] leading-[1.6];
+  }
+  .prose-c p,
+  .prose-c ul,
+  .prose-c ol,
+  .prose-c table {
+    @apply my-4;
+  }
+  .prose-c h2 {
+    @apply mt-12 mb-3 text-[28px] leading-tight;
+  }
+  .prose-c h3 {
+    @apply mt-8 mb-2 text-xl font-medium;
+  }
+  .prose-c ul {
+    @apply list-disc pl-6;
+  }
+  .prose-c ol {
+    @apply list-decimal pl-6;
+  }
+  .prose-c li {
+    @apply my-1.5;
+  }
+  .prose-c a:not(.btn-lapis) {
+    @apply text-minium underline underline-offset-2;
+  }
+  .prose-c strong {
+    @apply font-medium;
+  }
+  .prose-c table {
+    @apply w-full border-collapse text-[15px];
+  }
+  .prose-c th,
+  .prose-c td {
+    @apply border-b border-rule py-2 pr-4 text-left align-top;
+  }
+  .prose-c th {
+    @apply font-mono text-[11px] font-normal tracking-[0.06em] text-muted uppercase;
+  }
+  .img-frame {
+    @apply aspect-video overflow-hidden rounded bg-sunken;
+  }
+  .img-frame img {
+    @apply size-full object-cover;
+  }
 }

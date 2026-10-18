@@ -1,0 +1,4 @@
+prompt = "A Roman apartment block (insula) of marble with many windows, one window lit in yellow with a laptop inside; a classical statue holding a big brass key in front. Flat sky cyan background. Style: A · Neoclassical pop (brand/DESIGN.md). Aspect ratio 16:9."
+model = "Antigravity image-generator subagent (Gemini image)"
+date = "2026-10-18"
+files = ["property-management.jpg", "../og/property-management.jpg"]

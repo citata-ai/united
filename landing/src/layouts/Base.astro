@@ -1,12 +1,24 @@
 ---
 import "../styles/global.css";
+import { auditHref } from "../data/site.ts";
 
 interface Props {
   title: string;
   description: string;
+  /** Root-relative image path for og:image. */
+  image?: string;
+  type?: "website" | "article";
 }
-const { title, description } = Astro.props;
+const { title, description, image = "/og/property-management.jpg", type = "website" } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site);
+
+const nav = [
+  { href: "/#how", label: "How it works" },
+  { href: "/property-management", label: "Property management" },
+  { href: "/case-studies/fridman-properties", label: "Case study" },
+  { href: "/#pricing", label: "Pricing" },
+];
 ---
 
 <!doctype html>
@@ -18,12 +30,66 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" href="/fonts/CalSansVF.woff2" as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#F5EFE3" />
+    <meta property="og:site_name" content="citata.ai" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <slot name="head" />
   </head>
-  <body class="bg-white font-sans text-ink antialiased">
+  <body class="font-sans text-base leading-normal antialiased">
+    <div class="wrap">
+      <header class="flex items-center justify-between gap-6 border-b border-rule py-4">
+        <a href="/" aria-label="citata.ai home">
+          <img src="/wordmark.svg" alt="Citata" width="112" height="40" class="block h-9 w-auto" />
+        </a>
+        <nav aria-label="Main" class="hidden md:block">
+          <ul class="flex gap-7 text-[15px] text-muted">
+            {
+              nav.map((n) => (
+                <li>
+                  <a href={n.href} class="hover:text-ink">
+                    {n.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+        <a class="btn-lapis" href={auditHref}>Free AI audit</a>
+      </header>
+    </div>
+
     <slot />
+
+    <div class="wrap">
+      <footer
+        class="mt-14 flex flex-col gap-6 border-t border-rule pt-8 pb-14 text-[13px] text-muted sm:flex-row sm:justify-between"
+      >
+        <p>
+          <span class="text-ink"><em class="not-italic text-minium">Aetas aurea redit</em></span> — the
+          golden age returns.<br />© {new Date().getFullYear()} citata.ai. Images made with AI.
+        </p>
+        <ul class="flex flex-wrap gap-x-6 gap-y-2">
+          {
+            nav.map((n) => (
+              <li>
+                <a href={n.href} class="hover:text-ink">
+                  {n.label}
+                </a>
+              </li>
+            ))
+          }
+          <li><a href="mailto:grow@citata.ai" class="hover:text-ink">grow@citata.ai</a></li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

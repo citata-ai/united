@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "audit",
+    "name": "Free AI visibility audit",
+    "price_usd_month": 0,
+    "scope": ["20 prompts x 4 engines", "index and crawl check", "top 5 fixes", "one-page report"]
+  },
+  {
+    "slug": "starter",
+    "name": "Starter",
+    "price_usd_month": 750,
+    "scope": [
+      "50 prompts tracked weekly",
+      "4 articles / month",
+      "20 page fixes / month",
+      "listings and Google Business Profile",
+      "Monday report"
+    ]
+  },
+  {
+    "slug": "growth",
+    "name": "Growth",
+    "price_usd_month": 2000,
+    "annual_price_usd_month": 1500,
+    "scope": [
+      "150 prompts tracked weekly",
+      "up to 12 articles / month",
+      "50+ page fixes / month",
+      "vs and alternatives pages",
+      "1 free tool / quarter",
+      "wrong-answer fixes",
+      "Monday report"
+    ]
+  },
+  {
+    "slug": "impact",
+    "name": "Impact (B Corps, NGOs, charities)",
+    "price_usd_month": 0,
+    "scope": ["Starter scope", "pro bono or at cost", "max 2 at a time"]
+  }
+]
