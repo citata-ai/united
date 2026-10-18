@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Citata.ai — visual style sheet (v2, neo-Renaissance pop)</title>
+<!-- Open this file from the repo (brand/sample/style.html). Fonts and images load from ../fonts and ../art/current. -->
+<style>
+@font-face{font-family:"Cal Sans";src:url(../fonts/CalSansVF.woff2) format("woff2");font-weight:400 700}
+@font-face{font-family:"Paper Mono";src:url(../fonts/PaperMono-Regular.woff2) format("woff2")}
+:root{--parchment:#f5efe3;--page:#fbf7ee;--ink:#1c1712;--muted:#5c5145;--rule:#d9cdb6;--minium:#c1410b;
+--coral:#ff6b5b;--sun:#f2c230;--sky:#2fa7e0;--mint:#8fe2c5;--lilac:#b79cff;--cobalt:#1f57ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--parchment);color:var(--ink);font:16px/1.5 "Cal Sans",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:40px 28px 80px}
+h1{font-size:52px;line-height:1.02;margin:12px 0 8px}
+h2{font-size:36px;line-height:1.05;margin:0 0 20px}
+h3{font-size:22px;margin:0 0 6px}
+.meta{font:12px "Paper Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+section{padding:48px 0;border-top:1px solid var(--rule)}
+.chapter{display:flex;align-items:center;gap:12px;margin-bottom:14px;font:12px "Paper Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.chapter b{display:inline-grid;place-items:center;min-width:34px;height:34px;padding:0 8px;border-radius:999px;background:var(--chip,var(--sun));color:var(--ink);font-weight:500}
+.grid{display:grid;gap:14px}
+.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}.c6{grid-template-columns:repeat(6,1fr)}
+@media(max-width:800px){.c3,.c4,.c6{grid-template-columns:1fr 1fr}h1{font-size:38px}}
+.sw{border-radius:8px;overflow:hidden;border:1px solid var(--rule);background:var(--page)}
+.sw i{display:block;height:84px}
+.sw p{margin:0;padding:10px 12px;font-size:14px}.sw span{display:block;font:11px "Paper Mono",monospace;color:var(--muted)}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;border-radius:6px;padding:22px}
+.stat b{font-size:52px;line-height:1}
+.panel{border-radius:8px;padding:28px}
+.card{border-radius:6px;padding:22px}
+.chip{display:inline-block;border-radius:999px;padding:2px 10px;font:12px "Paper Mono",monospace}
+.btn{display:inline-block;border-radius:4px;padding:12px 20px;font-weight:500;text-decoration:none}
+.btn-p{background:var(--minium);color:var(--page)}.btn-s{border:1px solid var(--ink);color:var(--ink)}
+details{border-bottom:1px solid var(--rule)}
+summary{display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;padding:18px 0;font-size:19px;font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";display:grid;place-items:center;width:32px;height:32px;border-radius:999px;border:1px solid var(--rule);background:var(--page);font-size:20px;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg);background:var(--sun);border-color:var(--sun)}
+.stamp{width:200px;transform:rotate(-1.4deg);filter:drop-shadow(0 8px 14px rgb(28 23 18/.12))}
+.stamp div{--g:14px;--r:4.2px;padding:10px;background:#fbf7ee;-webkit-mask:radial-gradient(circle,#0000 var(--r),#000 calc(var(--r) + .5px)) calc(var(--g)/-2) calc(var(--g)/-2)/var(--g) var(--g) round,linear-gradient(#000 0 0) content-box;mask:radial-gradient(circle,#0000 var(--r),#000 calc(var(--r) + .5px)) calc(var(--g)/-2) calc(var(--g)/-2)/var(--g) var(--g) round,linear-gradient(#000 0 0) content-box}
+.stamp img{display:block;width:100%}
+figure{margin:0}figure img{width:100%;display:block;border-radius:6px}
+figcaption{margin-top:6px;font-size:13px;color:var(--muted)}
+.do li{margin:4px 0}
+</style>
+</head>
+<body><div class="wrap">
+
+<p class="meta">Citata.ai · visual style sheet · v2 · 2026-10-18</p>
+<h1>Neo-Renaissance pop</h1>
+<p style="max-width:62ch;color:var(--muted);font-size:19px">Parchment page, ink type, minium buttons, pop color blocks, engraved ancient towns. Rules: <code>brand/DESIGN.md</code> · images: <code>brand/IMAGES.md</code> · files: <code>brand/art/current/</code>.</p>
+
+<section>
+  <p class="chapter" style="--chip:var(--coral)"><b>01</b>Colors</p>
+  <h2>Base</h2>
+  <div class="grid c6">
+    <div class="sw"><i style="background:#f5efe3"></i><p>Parchment<span>#F5EFE3 · page</span></p></div>
+    <div class="sw"><i style="background:#fbf7ee"></i><p>Fresh page<span>#FBF7EE · cards</span></p></div>
+    <div class="sw"><i style="background:#1c1712"></i><p>Ink<span>#1C1712 · text</span></p></div>
+    <div class="sw"><i style="background:#5c5145"></i><p>Faded ink<span>#5C5145 · muted</span></p></div>
+    <div class="sw"><i style="background:#d9cdb6"></i><p>Rule<span>#D9CDB6 · hairline</span></p></div>
+    <div class="sw"><i style="background:#c1410b"></i><p>Minium<span>#C1410B · buttons, links</span></p></div>
+  </div>
+  <h2 style="margin-top:28px">Pop accents</h2>
+  <div class="grid c6">
+    <div class="sw"><i style="background:var(--coral)"></i><p>Coral<span>#FF6B5B</span></p></div>
+    <div class="sw"><i style="background:var(--sun)"></i><p>Sun<span>#F2C230</span></p></div>
+    <div class="sw"><i style="background:var(--sky)"></i><p>Sky<span>#2FA7E0</span></p></div>
+    <div class="sw"><i style="background:var(--mint)"></i><p>Mint<span>#8FE2C5</span></p></div>
+    <div class="sw"><i style="background:var(--lilac)"></i><p>Lilac<span>#B79CFF</span></p></div>
+    <div class="sw"><i style="background:var(--cobalt)"></i><p>Cobalt<span>#1F57FF</span></p></div>
+  </div>
+  <p style="color:var(--muted)">Full color for small loud things (stat cards, chips). Tints <code>/15–/35</code> for panels and cards. Ink text on all of them.</p>
+</section>
+
+<section>
+  <p class="chapter" style="--chip:var(--sky)"><b>02</b>Type</p>
+  <p class="meta" style="color:var(--minium)">GEO + AEO · for property management companies</p>
+  <h1 style="max-width:16ch">Get named when landlords ask AI</h1>
+  <p style="font-size:19px;color:var(--muted);max-width:60ch">Cal Sans 400–600 for everything readable. Paper Mono uppercase for labels and meta. No italic, no tight tracking.</p>
+  <p><a class="btn btn-p" href="#">Get a free AI visibility audit</a> &nbsp; <a class="btn btn-s" href="#">See how it works</a></p>
+</section>
+
+<section>
+  <p class="chapter" style="--chip:var(--mint)"><b>03</b>Components</p>
+  <h2>Chapter chips</h2>
+  <div class="grid c4" style="margin-bottom:28px">
+    <p class="chapter" style="--chip:var(--coral)"><b>01</b>The problem</p>
+    <p class="chapter" style="--chip:var(--sky)"><b>02</b>How it works</p>
+    <p class="chapter" style="--chip:var(--mint)"><b>03</b>Try it now</p>
+    <p class="chapter" style="--chip:var(--sun)"><b>04</b>Case study</p>
+  </div>
+  <h2>Stat cards</h2>
+  <div class="grid" style="max-width:640px;margin-bottom:28px">
+    <div class="stat" style="background:var(--coral)"><b>−46%</b><span>Google searches for property management, Chicago area</span></div>
+    <div class="stat" style="background:var(--sun)"><b>5</b><span>managers named in a typical AI answer</span></div>
+    <div class="stat" style="background:var(--sky)"><b>12.1%</b><span>of signups from AI, on 0.5% of visits</span></div>
+  </div>
+  <h2>Cards and panels</h2>
+  <div class="grid c3" style="margin-bottom:14px">
+    <div class="card" style="background:rgb(31 87 255/.12)"><span class="chip" style="background:var(--cobalt);color:#fbf7ee">01</span><h3 style="margin-top:10px">Indexed</h3><span style="color:var(--muted)">AI crawlers read every page.</span></div>
+    <div class="card" style="background:rgb(143 226 197/.35)"><span class="chip" style="background:var(--mint)">02</span><h3 style="margin-top:10px">Found</h3><span style="color:var(--muted)">Pages answer what landlords ask.</span></div>
+    <div class="card" style="background:rgb(255 107 91/.15)"><span class="chip" style="background:var(--coral)">03</span><h3 style="margin-top:10px">Mentioned</h3><span style="color:var(--muted)">AI names you, with a link.</span></div>
+  </div>
+  <div class="panel" style="background:rgb(242 194 48/.25);margin-bottom:28px"><p class="chapter" style="--chip:var(--sun)"><b>04</b>Case study panel</p><h3>Sun /25 panel, 8px corners</h3></div>
+  <h2>Stamps</h2>
+  <div style="display:flex;gap:28px;flex-wrap:wrap;margin-bottom:28px">
+    <div class="stamp"><div><img src="../art/current/stamp-track-v2.webp" alt="Track stamp"></div></div>
+    <div class="stamp" style="transform:rotate(1deg)"><div><img src="../art/current/stamp-fix-v2.webp" alt="Fix stamp"></div></div>
+    <div class="stamp"><div><img src="../art/current/stamp-report-v2.webp" alt="Report stamp"></div></div>
+  </div>
+  <h2>FAQ accordion</h2>
+  <div style="max-width:720px;border-top:1px solid var(--rule)">
+    <details name="demo" open><summary>What is GEO for a property management company?</summary><p style="color:var(--muted);padding-bottom:18px">The work that gets AI assistants to name your company.</p></details>
+    <details name="demo"><summary>How is GEO different from SEO?</summary><p style="color:var(--muted);padding-bottom:18px">SEO ranks pages; GEO gets you named inside the answer.</p></details>
+  </div>
+</section>
+
+<section>
+  <p class="chapter" style="--chip:var(--sun)"><b>04</b>Images</p>
+  <h2>T · Hero and footer</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;margin-bottom:28px">
+    <figure><img src="../art/current/hero-v9.webp" alt="Hero"><figcaption>hero-v9 — three-ink engraving, white sky for the headline, pop accents, painted temple</figcaption></figure>
+    <figure><img src="../art/current/footer-v8.webp" alt="Footer"><figcaption>footer-v8 — "no room at the inn", radiant halos, golden cave</figcaption></figure>
+  </div>
+  <h2>N · Content images (flat pop sky)</h2>
+  <div class="grid c4">
+    <figure><img src="../art/current/problem-v1.webp" alt=""><figcaption>problem · sky</figcaption></figure>
+    <figure><img src="../art/current/monday-report-v3.webp" alt=""><figcaption>report · coral</figcaption></figure>
+    <figure><img src="../art/current/fridman-case-v3.webp" alt=""><figcaption>case · sun</figcaption></figure>
+    <figure><img src="../art/current/cta-v1.webp" alt=""><figcaption>cta · lilac</figcaption></figure>
+    <figure><img src="../art/current/guide-leads-v2.webp" alt=""><figcaption>guide leads · coral</figcaption></figure>
+    <figure><img src="../art/current/guide-owners-ai-v2.webp" alt=""><figcaption>guide owners · sun</figcaption></figure>
+    <figure><img src="../art/current/guide-agencies-v2.webp" alt=""><figcaption>guide agencies · sky</figcaption></figure>
+    <figure><img src="../art/current/guide-track-v2.webp" alt=""><figcaption>guide track · lilac</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <p class="chapter" style="--chip:var(--lilac)"><b>05</b>Do and don't</p>
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <div class="card" style="background:rgb(143 226 197/.35)"><h3>Do</h3><ul class="do">
+      <li>Give each section its own pop color block</li><li>Say a thing once; prefer a number, card or image</li>
+      <li>One filled minium button per view</li><li>The man in the orange toga in every scene</li><li>Keep SynthID and C2PA marks</li></ul></div>
+    <div class="card" style="background:rgb(255 107 91/.15)"><h3>Don't</h3><ul class="do">
+      <li>Pure white or pure black</li><li>Parchment text on a pop color</li><li>Text inside images</li>
+      <li>Cut the art under the text, or put text on the art</li><li>A visible "made with AI" label</li></ul></div>
+  </div>
+</section>
+
+</div></body></html>

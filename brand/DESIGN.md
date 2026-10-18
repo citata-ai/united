@@ -5,7 +5,8 @@ description: >
   Visual identity for citata.ai. A new Renaissance: AI brings our clients and
   humanity into a new golden age of productivity, prosperity and spiritual
   growth. Editorial layout after every.to, Cal Sans type from the MyRemotely
-  web-app, parchment and minium-orange palette, neoclassical pop images.
+  web-app, parchment and minium-orange palette with pop accents, neo-Renaissance
+  engraved images.
 colors:
   # Light theme: "Vellum"
   background: "#F5EFE3"        # parchment
@@ -25,8 +26,13 @@ colors:
   minium: "#C1410B"            # red lead (minium): logo quotes, drop caps, citations
   verdigris: "#2F6B5C"         # success
   ochre: "#9A6A00"             # warning
-  pop-cyan: "#2FA7E0"           # image palette only
-  pop-yellow: "#F2C230"         # image palette only
+  # Pop accents (since 2026-10-18): section panels, stat cards, chips, images
+  coral: "#FF6B5B"
+  sun: "#F2C230"
+  sky: "#2FA7E0"
+  mint: "#8FE2C5"
+  lilac: "#B79CFF"
+  cobalt: "#1F57FF"
   error: "#C1410B"
   on-error: "#FBF7EE"
   # Dark theme: "Studiolo" (a scholar's study by candlelight)
@@ -184,7 +190,7 @@ components:
 
 # Citata — Aetas Aurea
 
-Status: design direction settled 2026-10-18. Accent (minium) set to `#C1410B` on 2026-10-18. Reference page: `/brand/sample/blog.html`.
+Status: v2, 2026-10-18 — "neo-Renaissance pop" (owner: fresh, playful, vivid, like every.to). Visual style sheet: [`sample/style.html`](sample/style.html). Live reference: the home page on stage. Images: [`IMAGES.md`](IMAGES.md), current files in [`art/current/`](art/current/).
 
 ## Overview
 
@@ -192,7 +198,7 @@ Status: design direction settled 2026-10-18. Accent (minium) set to `#C1410B` on
 
 **Motto.** *Aetas aurea redit* — "the golden age returns" (after Virgil, *Eclogue IV*).
 
-**Feel.** A modern editorial publication, like every.to: calm, clear, exact. The Renaissance lives in the **images** (marble, temples, statues in bright pop color) and the **palette** (parchment, minium, lapis, gold). The type is clean and modern. The clash of old art and new type is the message.
+**Feel.** A modern editorial site, like every.to: clear and exact, but fresh and playful. The Renaissance lives in the **images** (engraved ancient towns, togas, temples, in bright pop color) and in the **parchment** page. Pop color blocks (coral, sun, sky, mint, lilac) give each section its own color. The type is clean and modern. The clash of old art and new type is the message.
 
 **One look for all surfaces.**
 
@@ -222,10 +228,16 @@ The palette comes from Renaissance pigments and materials.
 
 **Dark theme "Studiolo".** `#14110E` background, `#EDE4D3` ink, lapis `#8EA8E6`, gold `#D4A84B`, minium `#F08A4B`. Tokens use the `dark-` prefix.
 
+**Pop accents (since 2026-10-18).** Coral `#FF6B5B`, sun `#F2C230`, sky `#2FA7E0`, mint `#8FE2C5`, lilac `#B79CFF`, cobalt `#1F57FF`. Tailwind: `bg-coral`, `bg-sun/25` and so on.
+- **Full color** for small, loud things: stat cards (ink text on coral, sun, sky), chapter chips, guide chips, the open FAQ button.
+- **Tints** for big areas: page header panels and case-study panel `/20–/30`, cards `/15–/35`. One color per block; neighbors differ.
+- Per page: home uses all; property management = sun header; case study = coral; about = mint; guides = sky; guide pages = sun header, mint short answer; the final call to action = lilac on every page.
+- Ink text on all of them. Never parchment text on a pop color.
+
 **Rules.**
 - Buttons use minium only: primary = filled minium (`#C1410B`, hover `#9E350A`, parchment text), secondary = minium outline. No lapis or ink buttons (owner decision, 2026-10-18).
 - Selected tabs and toggles: minium fill. Proof bands: light (`surface` + hairline), not dark ink.
-- Minium is the accent of the page: kickers, dots, links. Keep it small; images bring the big color.
+- Minium is the accent for buttons and links. Pop colors carry the blocks; images carry the rest.
 - Status colors in the app: verdigris = cited, ochre = mentioned without link, minium = not found.
 
 ## Typography
@@ -246,27 +258,29 @@ Two families, both OFL, both already in the MyRemotely web-app. Files: `/brand/f
 
 ## Layout
 
-**Landing and blog** follow the every.to editorial structure (see `/brand/sample/blog.html`):
+**Home page** (since 2026-10-18), top to bottom:
 
-1. **Nav**: wordmark left, sections center (Ideas, Case studies, Training, Tools, Pricing), one lapis button right. Hairline below.
-2. **Hero**: featured post at 1.6fr (16:9 image, kicker, 56px headline, dek, author) + "Top stories" column at 1fr with 2 cards.
-3. **Recent essays**: 4-column card grid, no dek.
-4. **Column band**: ink-colored block, column name in 40px, short line on the right, 3 cards inside.
-5. **Built by Citata**: 3 product cards (icon tile + title + one line): AI Visibility Audit, Citation Tracker, Monday Report.
-6. **Topic sections**: 4-column grid (Training) or list rows with a 240px image left (Writing).
-7. **Podcast / case studies**: 2 wide cards, image left.
-8. **Subscribe**: big headline left ("Get cited. **Every Monday**, in your inbox."), email field right.
-9. **Footer**: hairline, motto left, links right.
+1. **Nav**: wordmark left, 7 links (from 768 px), one minium button right. Sticky, hairline below. The bar stays still between pages (cross-document view transition).
+2. **Hero**: full-width engraving (style T) with the headline and 2 buttons in its empty sky (≥1280 px); below that, text first, image after.
+3. **AI platform ribbon**: "Where your buyers ask AI", slow logo loop.
+4. **Stamps**: 01 Track, 02 Fix, 03 Report as 3 engraved postage stamps (style S); a swipe row on phones.
+5. **Chapters 01–07**, each with a chapter chip: 01 The problem (image + 3 stat cards), 02 How it works (tinted band: 3 stage cards, the animated figure, "Your first month" steps + image), 03 Try it now (prompt tester), 04 Case study (sun panel, 3 numbers), 05 Who it is for, 06 Pricing (tinted band), 07 Questions (accordion).
+6. **Final call to action** (`AuditCta`): lilac panel + image, on every page.
+7. **Footer art** (style T, "no room at the inn"): links, © with ☀ before the motto, "Ask AI about Citata.ai" row, all in the image's empty sky.
+
+**Other pages**: a colored header panel (rounded, tinted), then chapters with chips, tinted cards, accordions, and the same final call to action and footer.
+
+**Text**: say a thing once. Prefer a number, an image or a card over a paragraph.
 
 **Grid.** Max width 1280px (1440px from 1536px screens), side padding 32px (40px wide), gutter 28px. Sections divided by 1px `outline` hairlines, 56px vertical space.
 
-**Section label.** Paper Mono uppercase with a small 8px minium square before it.
+**Chapter chip.** A 34px round chip in a pop color with the number (`01`), then the name in Paper Mono uppercase (`.chapter`, `--chip` sets the color). Colors rotate coral, sky, mint, sun, lilac. The old 8px minium square label (`.label`) is for small labels only.
 
 **App.** The web-app layout: left nav, top bar, content at 8px rhythm. Same fonts.
 
 ## Elevation & Depth
 
-Flat. Depth comes from images and the dark column band, not shadows.
+Flat. Depth comes from images and pop color blocks, not shadows. One exception: the postage stamps have a soft paper shadow and a slight tilt.
 - Separate with 1px `outline` hairlines.
 - Cards have no border on the landing; image + text is the card. Product cards use `surface` + hairline.
 - Image hover: scale 1.03 inside its frame, 0.4s.
@@ -275,7 +289,8 @@ Flat. Depth comes from images and the dark column band, not shadows.
 ## Shapes
 
 - Images: 16:9, `rounded.sm` (4px).
-- Buttons, inputs: `rounded.sm`. Column band: 6–8px. Avatars and badges: `rounded.full`.
+- Buttons, inputs: `rounded.sm`. Cards `rounded-md` (6px), panels `rounded-lg` (8px). Chips, avatars, badges, pill toggles: `rounded.full`.
+- Stamps: perforated edge (CSS mask), guilloche rings over the paper.
 - Product icon tiles: the logo icon shape (22% radius).
 
 ## Components
@@ -310,7 +325,16 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 | `--font-sans`, `--font-heading` | Cal Sans | Cal Sans |
 | `--font-mono` | Paper Mono | Paper Mono |
 
-**Editorial components (landing).**
+**Landing components (since 2026-10-18).**
+- **Chapter chip** `.chapter` — see Layout.
+- **Stat card**: big number (52–60px) + one line + source link, on a full pop color.
+- **Stamp** (`Stamps.astro`): engraving in one ink, title + number in HTML, vertical side text, CSS perforation, guilloche rings, postmark "MON 09:00" on the last one.
+- **FAQ accordion** `.faq-item`: native `<details name>` (one open at a time), "+" turns to "×" on a sun circle, smooth open. Text stays in the HTML and the FAQPage schema.
+- **AuditCta** (`AuditCta.astro`): lilac panel, headline, one line, minium button, the "knock" image.
+- **Citation engine figure** (`scripts/mechanism/build.mjs`): isometric, each group its own pop tint — client site cobalt, Citata frame orange, AI engines mint, gears lilac, bench sun. No corner labels.
+- **Ask AI row** (footer): 5 round engine icons; each opens the engine with a ready question about Citata.ai, the current page and `llms.txt`.
+
+**Editorial components (blog, later).**
 - **Post card**: 16:9 image → meta line (`KICKER · DATE`, Paper Mono) → title (Cal Sans 20px) → optional dek (15px, muted) → author row (24px minium avatar with initials + name).
 - **Featured post**: same parts, headline 56px, dek 19px.
 - **Column band**: ink background, parchment text, minium kickers.
@@ -321,7 +345,7 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 
 **Do**
 - Do mix old and new on purpose: marble statues, temples and busts with laptops, phones, charts, in bright pop color.
-- Do let images carry the color; keep the page itself quiet.
+- Do give each section its own pop color block; keep text short inside it.
 - Do show proof: real citations, real numbers.
 - Do not add a visible "Made with AI" label (owner decision, 2026-10-18). Keep the SynthID and C2PA marks in the files.
 
@@ -336,7 +360,7 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 
 ## Imagery
 
-**Since 2026-10-18 the main style for covers is P · Press collage. Read [`IMAGES.md`](IMAGES.md) first:** it holds the style block, the prompts and the process. The text below stays for styles A, B and C.
+**Current styles (2026-10-18), read [`IMAGES.md`](IMAGES.md) first:** T · three-ink stamp engraving with pop accents (hero, footer), S · one-ink engraved stamp (steps), N · neo-Renaissance pop (all images inside pages: flat pop sky, engraved lines, the man in the orange toga). Current files: [`art/current/`](art/current/). Styles A, B, C and P below are old.
 
 Older main style: **neoclassical pop** (our first take on the every.to cover style). Classical subjects — marble statues, busts, Greek temples, Renaissance figures — printed with halftone dots and flat, bright color, mixed with one modern object.
 

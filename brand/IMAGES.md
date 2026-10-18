@@ -1,6 +1,6 @@
 # IMAGES.md — AI-generated images for citata.ai
 
-Status: v1, 2026-10-18. Owner: Tao. Parent: [`DESIGN.md`](DESIGN.md) → Imagery.
+Status: v2, 2026-10-18 (current: T hero/footer, S stamps, N content images; E and P are old). Owner: Tao. Parent: [`DESIGN.md`](DESIGN.md) → Imagery.
 
 All current site images, one file each: [`art/current/`](art/current/).
 
@@ -107,9 +107,9 @@ Style: fine line engraving illustration like a vintage postage stamp or banknote
 
 The animated figure (`landing/scripts/mechanism/build.mjs`) keeps its own flat isometric look (v5). An engraving theme on a yellow plate was tried on 2026-10-18 and rolled back by the owner.
 
-## 3. Covers: P · Press collage
+## 3. Old: P · Press collage (guide covers until 2026-10-18; now style N)
 
-Use P for post covers, guide covers, the hero, OG images and social cards. Styles A, B and C in `DESIGN.md` stay for special cases (A for older images, B for small figures, C for diagrams).
+Old. New covers use style N (section 2b-N). Styles A, B and C in `DESIGN.md` stay for special cases (A for older images, B for small figures, C for diagrams).
 
 **Style block P** (copy exactly):
 
