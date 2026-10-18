@@ -34,7 +34,7 @@ baseline = 0
 target = 150
 due = "2026-11-18"
 kill_if = "Fewer than 15 AI sessions to the tools 21 days after publish."
-ice = { impact = 7, confidence = 5, ease = 6 }
+ice = { impact = 7, confidence = 6, ease = 6 }
 status = "running"
 
 [[hypothesis]]
@@ -97,7 +97,7 @@ id = "H07"
 objective = "CTT-O3"
 lever = "refresh"
 statement = "If we refresh each guide every 14 days (new data point, new FAQ, visible updated date, change note), then our non-brand AI mention share goes from 0% to 10% by 2026-11-18."
-because = "AI engines favor recent pages. Our 5 guides are 1 day old, so a refresh habit keeps them in the fresh set."
+because = "AI engines favor recent pages. Our 5 guides are 1 day old, so a refresh habit keeps them in the fresh set. ClearLead updated 40 blog URLs in 2026-08 alone (teardown 2026-10-19): the leader refreshes in bulk."
 metric = "ai_mention_share"
 baseline = 0
 target = 10
@@ -161,8 +161,8 @@ status = "running"
 id = "H01-E1"
 hypothesis = "H01"
 start = "2026-10-19"
-actions = ["Pull HUD FY2027 FMR data for the top 50 metros", "Build one page per metro plus a hub page", "Ship to stage; publish after owner check"]
-urls = []
+actions = ["Pull HUD FY2027 FMR data for the top 50 FMR areas (HUD 2024 population rank)", "Build one page per metro plus a hub page (staged 2026-10-19, 51 pages; 30 values cross-checked vs HUD rows)", "Ship to stage; publish after owner check"]
+urls = ["https://citata.ai/section-8", "https://citata.ai/section-8/chicago-fair-market-rent-2027", "https://citata.ai/section-8/houston-fair-market-rent-2027"]
 status = "running"
 
 [[experiment]]
@@ -170,15 +170,16 @@ id = "H02-E1"
 hypothesis = "H02"
 start = "2026-10-19"
 actions = ["Build the property management fee calculator", "Build the Section 8 rent and tenant share calculator", "Ship to stage; publish after owner check"]
-urls = []
+urls = ["https://citata.ai/tools", "https://citata.ai/tools/property-management-fee-calculator", "https://citata.ai/tools/section-8-rent-calculator"]
 status = "running"
 
 [[experiment]]
 id = "H03-E1"
 hypothesis = "H03"
 start = "2026-10-19"
-actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines", "Write the research page with method and data download", "Pitch 30 sites"]
-urls = []
+actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines (done 2026-10-19, 150/150 answers)", "Write the research page with method and data download (staged)", "Pitch 30 sites (list: business/marketing/outreach/h03-targets.csv; waits for Tao)"]
+urls = ["https://citata.ai/research/ai-property-manager-index-2026", "https://citata.ai/data/ai-property-manager-index-2026.csv"]
+learned = "Run 1: 88% of answers used a directory or review site (Expertise.com 93/150, Yelp 50, iPropertyManagement 50). Gemini linked a company site in 96% of answers, ChatGPT in 30%. For client work: listings on Expertise.com and iPropertyManagement come first."
 status = "running"
 
 [[experiment]]

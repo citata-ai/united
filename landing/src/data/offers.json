@@ -11,10 +11,12 @@
     "price_usd_month": 750,
     "scope": [
       "50 prompts tracked weekly",
+      "week 1: listings and facts fixed (Google Business Profile, Yelp, Expertise.com, iPropertyManagement, BBB)",
+      "owner page for each city you serve, with fee table and rental analysis",
+      "review requests and Google Business Profile",
       "4 articles / month",
       "20 page fixes / month",
-      "listings and Google Business Profile",
-      "Monday report"
+      "Monday report: AI answers, owner leads, signed doors"
     ]
   },
   {
@@ -24,12 +26,13 @@
     "annual_price_usd_month": 1500,
     "scope": [
       "150 prompts tracked weekly",
+      "everything in Starter",
+      "owner tools: rent vs sell, vacancy loss, rental ROI",
       "up to 12 articles / month",
       "50+ page fixes / month",
       "vs and alternatives pages",
-      "1 free tool / quarter",
       "wrong-answer fixes",
-      "Monday report"
+      "Monday report: AI answers, owner leads, signed doors"
     ]
   },
   {

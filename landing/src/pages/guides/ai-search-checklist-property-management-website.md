@@ -5,7 +5,7 @@ description: "What a property management website needs so ChatGPT, Gemini and AI
 headline: "The AI Search Checklist for Property Management Websites"
 dek: "Twelve checks for a 50 to 500 door manager, tested first on our own site."
 published: "2026-10-18"
-updated: "2026-10-18"
+updated: "2026-10-19"
 answer: "A property management website needs three things to get cited in AI answers. First, crawlers must reach the pages, and the indexes must hold them. Second, schema and consistent business data must say clearly who you are and where you work. Third, landlord pages must give exact answers on fees, contract terms, screening and each city you serve."
 faq:
   - q: "Does a property management website need an llms.txt file?"
@@ -146,10 +146,10 @@ Our view: add one if you have an hour. List your company, area, services, fees p
 
 AI quotes pages that answer a landlord's question with exact facts. Landlords ask about fees, contract terms, tenant screening and Section 8. Each needs its own page or section:
 
-1. **Fees.** Management percent, leasing fee, renewal fee, vacancy fee. Use a table.
+1. **Fees.** Management percent, leasing fee, renewal fee, vacancy fee. Use a table. See what a landlord pays in a year with our free [property management fee calculator](/tools/property-management-fee-calculator).
 2. **Contract terms.** Length, how to cancel, cancel fee.
 3. **Screening.** Your criteria, the same for every applicant, in line with Fair Housing law.
-4. **Section 8.** Your process for inspections, rent approval and payments with the housing authority.
+4. **Section 8.** Your process for inspections, rent approval and payments with the housing authority. Our [Section 8 rent calculator](/tools/section-8-rent-calculator) shows the HUD math for tenant share and HAP.
 5. **City pages.** One page per city with facts that differ: rent ranges, local rules, the neighborhoods you serve.
 
 The Chicago example shows the gap. On the Fridman Properties site, two city pages (Palatine and Skokie) were 96% identical (our data, 2026-10). The site had one FAQ answer about Section 8. AI named Fridman in 0 of 6 Section 8 answers (our data, 2026-10-16). Disclosure: the owner of Fridman Properties is CEO of MyRemotely, our partner. Read the [Fridman Properties case study](/case-studies/fridman-properties).

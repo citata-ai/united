@@ -1,7 +1,21 @@
 # Model business and agencies with published proof. Claims are vendor claims. Fetched 2026-10-17..18.
+# Every [[agency]] has a `role`. Apply [rule] before you call a company a competitor (Tao, 2026-10-19).
+
+[rule]
+direct = "Sells SEO, GEO/AEO or marketing to US property management companies (residential, single-family and small multifamily, 50-500 doors) to win landlord/owner leads."
+not_direct = [
+  "Serves real estate agents, brokers or teams (buyer and seller leads)",
+  "Serves developers: presale, new construction, lease-up",
+  "Serves large multifamily operators for renter leads (apartment marketing, occupancy)",
+  "Sells software only (PMS, proptech SaaS), not a done-for-you service",
+  "General GEO/SEO agency with no property management offer",
+]
+roles = { direct = "same buyer, same job: track and copy", model = "business model we clone (FirstIndex)", adjacent = "different buyer; use only as proof or tactic reference", "non-competitor" = "different niche; do not track as a competitor, do not benchmark against it" }
+check = "Read the home page and the pricing/clients page. If most offers or case studies target agents, developers or renter lease-up, the role is non-competitor even when one page says 'property management'."
 
 [model]
 name = "FirstIndex"
+role = "model"
 url = "https://firstindex.co"
 owner = "Josh Pigford (Baremetrics, Maybe Finance), Ordinary Systems LLC"
 icp = "SaaS companies"
@@ -17,18 +31,24 @@ gaps = ["no named case studies", "one audience", "one price", "no guarantee"]
 [[agency]]
 name = "Teramok"
 url = "https://www.teramok.us/ai-seo-for-property-management"
-vertical = "property management / developers"
+role = "non-competitor"
+why = "Real estate agents and developers (presale, lease-up). One PM page does not make it a direct competitor (Tao, 2026-10-19)."
+vertical = "real estate agents / developers"
 claim = "112 AI-assistant sessions in 90 days (Miami developer)"
 price = "$8,000-25,000/mo"
 
 [[agency]]
 name = "Resident360"
+role = "non-competitor"
+why = "Multifamily renter lease-up, not owner leads for property managers."
 url = "https://www.resident360.com/apartment-seo-multifamily"
 vertical = "multifamily"
 claim = "Mystic Cove 100% occupancy in 30 days (mostly ads; AI part not measured)"
 
 [[agency]]
 name = "DerivateX"
+role = "adjacent"
+why = "B2B SaaS GEO agency; REsimpli is a real estate investor CRM."
 url = "https://derivatex.agency/blog/geo-agency-citations-to-revenue/"
 vertical = "B2B SaaS, incl. REsimpli (real estate CRM)"
 claim = "Gumlet ~20% of inbound revenue from AI; REsimpli most-cited RE CRM in ChatGPT in 90 days"
@@ -36,18 +56,24 @@ price = "$5,000 / $8,000 / $12,000 per month"
 
 [[agency]]
 name = "Single Grain"
+role = "adjacent"
+why = "General agency; proof is proptech SaaS (SmartRent)."
 url = "https://www.singlegrain.com/search-everywhere-optimization/real-geo-optimization-case-studies/"
 vertical = "proptech (SmartRent)"
 claim = "SmartRent ~10 SQLs/month from LLMs"
 
 [[agency]]
 name = "First Page Sage"
+role = "adjacent"
+why = "General agency; anonymized real estate proof."
 url = "https://firstpagesage.com/"
 vertical = "real estate and others"
 claim = "AI recommendation share 11% -> 60%+ over 31 queries in 12 months (anonymized)"
 
 [[agency]]
 name = "Position Digital"
+role = "adjacent"
+why = "MarTech GEO agency."
 url = "https://www.position.digital/"
 vertical = "MarTech"
 claim = "+221% AI citations"
@@ -55,9 +81,35 @@ price = "from $2,000/mo"
 
 [[agency]]
 name = "Stratabeat"
+role = "adjacent"
+why = "SaaS GEO agency."
 url = "https://stratabeat.com/best-geo-agency/"
 vertical = "SaaS (WellSaid)"
 claim = "+209% ChatGPT mentions in 90 days"
+
+[[agency]]
+name = "ClearLead Digital"
+url = "https://www.clearleaddigital.com/property-management-seo-services"
+role = "direct"
+vertical = "property management (owner leads)"
+claim = "Most cited domain in our baseline (22 answers). Teardown 2026-10-19."
+price = "$1,199 / $1,699 / $2,299 per month"
+
+[[agency]]
+name = "Goodjuju Marketing"
+url = "https://gogoodjuju.com/"
+role = "direct"
+vertical = "property management (owner leads)"
+claim = "13 baseline answers. Teardown 2026-10-19."
+price = "$1,185 / $2,292 / $4,460 / $7,930 per month"
+
+[[agency]]
+name = "Property Manager Websites"
+url = "https://www.propertymanagerwebsites.com/"
+role = "direct"
+vertical = "property management (websites, SEO, AI visibility)"
+claim = "11 baseline answers. Teardown 2026-10-19 (replaces Teramok)."
+price = "AI visibility reporting from $99/mo (guide check 2026-10-18)"
 
 [gap]
 note = "No published GEO case study for Section 8, affordable housing, NGOs or B Corps. Open niche."

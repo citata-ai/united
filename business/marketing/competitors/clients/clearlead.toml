@@ -1,0 +1,367 @@
+title = "ClearLead Client Delivery Audit"
+author = "Citata.ai"
+seen = "2026-10-19"
+competitor = "ClearLead Digital"
+scope = "US residential property managers seeking owner leads; exact 50–500 door fit remains unknown for most firms."
+blog_window = "2026-04-01 through 2026-09-30; 6 complete months, to match round 1. Rolling six-month checks use 2026-04-19 through 2026-10-19."
+h03_source = "git show origin/stage:business/marketing/ai-visibility/cities-2026-10/2026-10-19/cities.csv"
+confidence_rule = "Confirmed: named case or named work review. Likely: client footer/code evidence. Weak: logo-only relationship lead; service scope unknown."
+limits = "6 confirmed, 2 likely, 2 weak candidates. Weak entries do not prove a current paid engagement. No fresh AI answer test was run for cities outside H03. Search results are not substitute AI answers. No accounts, forms, payment or contact. No branch change or commit."
+
+[[client]]
+name = "Allegiant Management Group"
+domain = "amgrents.com"
+city = "Kissimmee"
+state = "FL"
+evidence_url = "https://www.clearleaddigital.com/clients-and-case-studies"
+confidence = "confirmed"
+relationship_evidence = "Named long-term SEO client; local, technical, on-page, off-page and content work. Website credits PMW, not ClearLead."
+pages = "308 sitemap URLs"
+page_types = ["owner resources", "city pages", "residential services", "multifamily", "vacant home care", "pricing", "blog", "rentals", "team"]
+blog_posts_6mo = "7 apparent posts; 1.17/month. Rolling six months: 7. Blog index reaches January after April–September entries."
+schema = ["No valid JSON-LD block parsed on home; 1 invalid block. Type text appears in that block and comments."]
+llms_txt = "HTTP 404"
+robots_ai_rules = "Public pages allowed; no separate AI-wide block found. PMW workflow paths blocked."
+tools = ["mortgage", "rent versus sell", "vacancy", "ROI", "free rental market analysis"]
+section_8 = "Dedicated Section 8 guide in blog."
+gbp_signals = "Home claims 190 five-star Google reviews. Birdeye shows 228 total, including 225 Google; these are different measures."
+listings = ["Expertise.com", "BBB", "NARPM", "propertymanagement.com"]
+listing_evidence_urls = ["https://www.expertise.com/business/property-management/florida/orlando", "https://www.bbb.org/us/fl/kissimmee/profile/property-management/allegiant-management-group-0733-90196630", "https://www.narpm.org/indexed/13designationawards-pdf/", "https://propertymanagement.com/property-manager/allegiant-management-group-kissimmee-fl", "https://reviews.birdeye.com/allegiant-management-group-164513046342578"]
+named_in_h03 = "unknown: Kissimmee is not in H03; Orlando is also absent."
+notes = "ClearLead co-founder has a public AMG work link. Treat this as related-party proof, not a wholly independent case. Door count unknown. Sitemap includes old and test paths; count does not equal indexed pages."
+audit_urls = ["https://amgrents.com/", "https://amgrents.com/sitemap.xml", "https://amgrents.com/robots.txt", "https://amgrents.com/llms.txt"]
+
+[[client]]
+name = "Hendricks Property Management"
+domain = "sarents.com"
+city = "San Antonio"
+state = "TX"
+evidence_url = "https://www.clearleaddigital.com/clients-and-case-studies"
+confidence = "confirmed"
+relationship_evidence = "Named long-term SEO client. ClearLead co-founder also works at Hendricks."
+pages = "228 sitemap URLs"
+page_types = ["owner management", "city/area pages", "pricing", "guarantees", "service detail pages", "owner FAQ", "news", "team", "rentals"]
+blog_posts_6mo = "16 apparent posts; 2.67/month. October adds 3. Rolling six months: 18."
+schema = ["WebSite; 1 other JSON-LD block fails JSON parsing. Organization and local type text cannot be treated as valid markup."]
+llms_txt = "plain text, HTTP 200"
+robots_ai_rules = "Squarespace groups GPTBot, ClaudeBot and Google-Extended with *. Public pages remain allowed; config, search, account, API and query variants blocked."
+tools = ["ROI", "vacancy cost", "rent versus sell", "free rental analysis"]
+section_8 = "No dedicated Section 8 URL found in sitemap."
+gbp_signals = "Visible review cards; independent current Google total unknown."
+listings = ["BBB", "NARPM"]
+listing_evidence_urls = ["https://www.bbb.org/us/tx/san-antonio/profile/property-management/hendricks-property-management-llc-0825-29682", "https://www.narpmbrokerowner.org/speakers/"]
+named_in_h03 = "yes: Claude only, rank 4; 1 of 3 San Antonio answers. sarents.com is not in those cited-domain sets."
+notes = "Related-party case. News index plus next 2 pages establishes the date range. Door count unknown. Local market reports and named staff support trust; no cause is proved."
+audit_urls = ["https://sarents.com/", "https://sarents.com/sitemap.xml", "https://sarents.com/robots.txt", "https://sarents.com/llms.txt"]
+
+[[client]]
+name = "Osto Property Management"
+domain = "ostopm.com"
+city = "Indian Harbour Beach"
+state = "FL"
+evidence_url = "https://www.clearleaddigital.com/clients-and-case-studies"
+confidence = "confirmed"
+relationship_evidence = "Named long-term SEO client; listed as Satellite Beach by ClearLead. Current client site gives Indian Harbour Beach office. PMW footer."
+pages = "87 sitemap URLs"
+page_types = ["owner resources", "owner FAQ", "service details", "pricing", "guarantees", "Space Coast and Palm Beach pages", "blog", "rentals"]
+blog_posts_6mo = "1 apparent post; 0.17/month. Rolling six months: 1. September 14 is newest; next post is February 5."
+schema = ["No JSON-LD block found on home."]
+llms_txt = "HTTP 404"
+robots_ai_rules = "Public pages allowed; no separate AI-wide block found. PMW workflow paths blocked."
+tools = ["ROI", "rent versus sell", "vacancy loss"]
+section_8 = "No dedicated Section 8 URL found in sitemap."
+gbp_signals = "Current Google count unknown."
+listings = ["iPropertyManagement"]
+listing_evidence_urls = ["https://ipropertymanagement.com/companies/melbourne-fl"]
+named_in_h03 = "unknown: Indian Harbour Beach, Satellite Beach and Melbourne are absent from H03."
+notes = "Author uses PM credentials. Local topics cover deeds, screening and choosing a manager. Door count unknown; residential service fit is clear."
+audit_urls = ["https://ostopm.com/", "https://ostopm.com/sitemap.xml", "https://ostopm.com/robots.txt", "https://ostopm.com/llms.txt"]
+
+[[client]]
+name = "Nest Finders Property Management"
+domain = "nestfinders.com"
+city = "Jacksonville"
+state = "FL"
+evidence_url = "https://www.clearleaddigital.com/clients-and-case-studies"
+confidence = "confirmed"
+relationship_evidence = "Named long-term SEO client. Client footer credits PMW for the website."
+pages = "217 sitemap URLs"
+page_types = ["owner pages", "owner FAQ", "city and neighborhood pages", "service details", "pricing", "guarantees", "blog", "rentals", "testimonials"]
+blog_posts_6mo = "12 apparent posts; 2.00/month. Rolling six months: 11. Index page 2 reaches March."
+schema = ["RealEstateAgent", "LocalBusiness", "Organization", "WebSite", "VideoObject", "AggregateRating", "Brand"]
+llms_txt = "plain text, HTTP 200"
+robots_ai_rules = "Public pages allowed; no separate AI-wide block found. PMW workflow paths blocked."
+tools = ["mortgage", "ROI", "vacancy loss", "rent versus sell link", "free rental analysis"]
+section_8 = "Dedicated Jacksonville Section 8 guide."
+gbp_signals = "Home includes rating markup; independent current Google count unknown."
+listings = ["iPropertyManagement"]
+listing_evidence_urls = ["https://ipropertymanagement.com/companies/jacksonville-fl"]
+named_in_h03 = "yes: first in all 3 Jacksonville answers. Cited site domain is propertymanagerjacksonville.com, not nestfinders.com. Domain identity and redirect ownership were not checked."
+notes = "All 3 answers cite Expertise.com; ChatGPT cites only Expertise.com. This supports a directory test, not attribution to a specific client-site feature. Door count unknown. Sitemap includes old, test and success paths."
+audit_urls = ["https://nestfinders.com/", "https://nestfinders.com/sitemap.xml", "https://nestfinders.com/robots.txt", "https://nestfinders.com/llms.txt"]
+
+[[client]]
+name = "Out Fast Property Management"
+domain = "outfastpropertymanagement.com"
+city = "Tampa"
+state = "FL"
+evidence_url = "https://clutch.co/profile/clearlead-digital"
+confidence = "confirmed"
+relationship_evidence = "Named broker review describes website, SEO and marketing work since March 2026. Live footer says SEO by ClearLead Digital."
+pages = "100 sitemap URLs (58 posts, 38 pages, 4 categories)"
+page_types = ["owner pages", "city pages", "pricing", "blog", "rental analysis", "owner resources", "rentals", "team", "case stories"]
+blog_posts_6mo = "15 apparent posts; 2.50/month, using earliest datePublished per URL. One more has conflicting 2025/2026 dates. Rolling six months: 14."
+schema = ["Organization", "Person", "WebPage", "FAQPage", "AggregateRating", "Review"]
+llms_txt = "plain text, HTTP 200"
+robots_ai_rules = "Public pages allowed under *. wp-admin and search query blocked. No separate AI rule."
+tools = ["free rental analysis"]
+section_8 = "Tampa landlord Section 8 guide and Section 8 investing post."
+gbp_signals = "Home contains rating/review markup; independent current Google total unknown."
+listings = ["BBB"]
+listing_evidence_urls = ["https://www.bbb.org/us/fl/tampa/profile/property-management/out-fast-property-management-llc-0653-90339476"]
+named_in_h03 = "yes: ChatGPT rank 4; 1 of 3 Tampa answers. No outfastpropertymanagement.com citation in city source sets."
+notes = "Clutch review claims AI leads and signed agreements; counts and attribution are not published. WordPress/Elementor and All in One SEO are visible. ClearLead-hosted form embed exists; no form used. Door count unknown; site serves single-family and small apartment buildings."
+audit_urls = ["https://outfastpropertymanagement.com/", "https://outfastpropertymanagement.com/sitemap.xml", "https://outfastpropertymanagement.com/robots.txt", "https://outfastpropertymanagement.com/llms.txt"]
+
+[[client]]
+name = "Smart Move Property Management"
+domain = "smartmovepm.com"
+city = "Boise"
+state = "ID"
+evidence_url = "https://www.clearleaddigital.com/"
+confidence = "confirmed"
+relationship_evidence = "Home names Jennifer and Andrea of Smart Move PM in work reviews. Client footer names ClearLead website work; ClearLead review-widget code also appears."
+pages = "65 sitemap URLs"
+page_types = ["owner services", "pricing", "guarantees", "staff profiles", "city pages", "blog", "rentals", "testimonials"]
+blog_posts_6mo = "8 apparent posts; 1.33/month. October adds 2. Rolling six months: 10."
+schema = ["LocalBusiness", "Organization", "WebSite", "Service", "FAQPage", "AggregateRating", "Person", "OfferCatalog"]
+llms_txt = "plain text, HTTP 200"
+robots_ai_rules = "Squarespace groups GPTBot, ClaudeBot and Google-Extended with *. Public pages remain allowed; config, search, account, API and query variants blocked."
+tools = ["rent versus sell", "ROI", "vacancy loss", "management fee", "free rental analysis"]
+section_8 = "No dedicated Section 8 URL found in sitemap."
+gbp_signals = "Home claims 200+ five-star reviews; not an independently read GBP count."
+listings = ["iPropertyManagement", "NARPM designation links", "propertymanagement.com"]
+listing_evidence_urls = ["https://ipropertymanagement.com/companies/boise-id", "https://propertymanagement.com/property-manager/smart-move-property-management-boise-id"]
+named_in_h03 = "unknown: Boise is not in H03."
+notes = "Use smartmovepm.com, not the unrelated smartmovepropertymanagement.com. iPropertyManagement reports 175+ rentals, which fits the target but may be stale. Squarespace site. August 30 has 2 different posts; count both URLs."
+audit_urls = ["https://smartmovepm.com/", "https://smartmovepm.com/sitemap.xml", "https://smartmovepm.com/robots.txt", "https://smartmovepm.com/llms.txt"]
+
+[[client]]
+name = "Red Roof Rentals & Real Estate"
+domain = "redroofrentals.com"
+city = "Tacoma"
+state = "WA"
+evidence_url = "https://www.clearleaddigital.com/"
+confidence = "weak"
+relationship_evidence = "ClearLead displays client logo in its trusted-company strip. No named project scope found. Live website credits PMW."
+pages = "143 sitemap URLs"
+page_types = ["owner pages", "city pages", "service details", "pricing", "guarantees", "blog", "residential and multifamily", "commercial", "real estate"]
+blog_posts_6mo = "0 apparent posts in April–September or the rolling six months. Newest blog index date: January 19, 2026."
+schema = ["No JSON-LD block found on home."]
+llms_txt = "HTTP 404"
+robots_ai_rules = "Public pages allowed; no separate AI-wide block found. PMW workflow paths blocked."
+tools = ["mortgage", "complimentary rental analysis"]
+section_8 = "Owner FAQ addresses Section 8; not a dedicated service page."
+gbp_signals = "Current Google count unknown."
+listings = ["NARPM badge on client blog; membership not independently checked"]
+listing_evidence_urls = []
+named_in_h03 = "unknown: Tacoma is not in H03."
+notes = "Logo-only lead; treat as an unverified ClearLead client until named scope is found. PM services are central despite real estate and commercial pages. /our-team exposes Jane Smith/John Doe sample bios; /about has actual staff. Do not copy placeholder pages. Door count unknown."
+audit_urls = ["https://redroofrentals.com/", "https://redroofrentals.com/sitemap.xml", "https://redroofrentals.com/robots.txt", "https://redroofrentals.com/llms.txt"]
+
+[[client]]
+name = "Oak Street Property Management"
+domain = "oakstpm.com"
+city = "Miami"
+state = "FL"
+evidence_url = "https://oakstpm.com/"
+confidence = "likely"
+relationship_evidence = "Live footer credits ClearLead for property management websites. ClearLead home also displays its logo. Footer evidence uses likely per brief."
+pages = "unknown"
+page_types = ["owner service sections", "service-area section", "FAQ", "contact", "rental listings", "owner and tenant portals"]
+blog_posts_6mo = "unknown: no blog linked in fetched live page; sitemap path returns home HTML."
+schema = ["RealEstateAgent", "Person", "PostalAddress"]
+llms_txt = "HTML home page, HTTP 200; not an LLM file"
+robots_ai_rules = "HTTP 200 returns home HTML. No usable robots rules found."
+tools = ["No calculator found on fetched home."]
+section_8 = "No Section 8 page found in home links."
+gbp_signals = "Current Google count unknown."
+listings = ["BBB"]
+listing_evidence_urls = ["https://www.bbb.org/us/fl/miami/profile/property-management/oak-street-property-management-llc-0633-92034577"]
+named_in_h03 = "no: absent in all 3 Miami answers."
+notes = "Live home claims 200+ doors. Sitemap, robots and llms paths all return home HTML, not usable files. Search retains older pricing-page text; do not assume it is current. ClearLead form host is present. No form used. One-page home has AppFolio listing links."
+audit_urls = ["https://oakstpm.com/", "https://oakstpm.com/sitemap.xml", "https://oakstpm.com/robots.txt", "https://oakstpm.com/llms.txt"]
+
+[[client]]
+name = "Home Rentals Depot"
+domain = "homerentalsdepot.com"
+city = "St. Cloud"
+state = "FL"
+evidence_url = "https://www.clearleaddigital.com/"
+confidence = "weak"
+relationship_evidence = "ClearLead displays logo in trusted-company strip. No named service scope found. Site credits PMW. NARPM names ClearLead co-founder as its business-development director."
+pages = "31 sitemap URLs"
+page_types = ["owner pages", "owner FAQ", "service details", "city pages", "rentals", "team", "testimonials"]
+blog_posts_6mo = "unknown: no blog URLs in sitemap; /blog returns 404."
+schema = ["No JSON-LD block found on home."]
+llms_txt = "HTTP 404"
+robots_ai_rules = "Public pages allowed; no separate AI-wide block found. PMW workflow paths blocked."
+tools = ["rent versus sell", "ROI", "vacancy"]
+section_8 = "No dedicated Section 8 URL found in sitemap."
+gbp_signals = "Current Google count unknown."
+listings = ["NARPM speaker affiliation"]
+listing_evidence_urls = ["https://www.narpmbrokerowner.org/speakers/"]
+named_in_h03 = "unknown: St. Cloud and Orlando are not in H03."
+notes = "Related-party logo lead, not verified paid client scope. Home says residential management is its focus. Home links /pricing but sitemap omits it; page availability not checked. Rentvine owner portal. Door count unknown."
+audit_urls = ["https://homerentalsdepot.com/", "https://homerentalsdepot.com/sitemap.xml", "https://homerentalsdepot.com/robots.txt", "https://homerentalsdepot.com/llms.txt"]
+
+[[client]]
+name = "Ironclad Property Management"
+domain = "ironcladpm.com"
+city = "Middlefield"
+state = "CT"
+evidence_url = "https://ironcladpm.com/"
+confidence = "likely"
+relationship_evidence = "ClearLead SEO link and clearlead-reviews.lacy-568.workers.dev/widget.js appear in home code. ClearLead home shows Iron Clad logo. Code/footer evidence uses likely per brief."
+pages = "246 sitemap URLs"
+page_types = ["owner university", "owner FAQ", "city pages", "pricing", "guarantees", "services", "blog/post", "rentals", "newsletters"]
+blog_posts_6mo = "unknown: sitemap includes /post/ articles, but date crawl did not finish; /post and /owner-university returned 403."
+schema = ["LocalBusiness", "Organization", "Service", "FAQPage", "Review", "AggregateRating", "Person", "OfferCatalog"]
+llms_txt = "plain text, HTTP 200"
+robots_ai_rules = "Wildcard blocks /blog/, /b/, /*/b/, post category/author and tmp. No separate AI rule. /post/ detail URLs are not in that block."
+tools = ["cap rate", "free rental analysis"]
+section_8 = "Dedicated /post/what-is-section-8 and source-of-income owner FAQ."
+gbp_signals = "Home shows Google Reviews 4.6 (500+); site claim, not independent GBP check."
+listings = ["NARPM", "propertymanagement.com", "AllPropertyManagement"]
+listing_evidence_urls = ["https://www.narpm.org/find/property-managers?a=managers_by_zip&page=0&pgno=59&resultsperpage=30&submitted=true&xradius=22&xzipcode=23323", "https://propertymanagement.com/property-manager/ironclad-property-management-middlefield-ct", "https://www.allpropertymanagement.com/property-management/companies/30062/ironclad-property-management"]
+named_in_h03 = "unknown: Middlefield and nearby served Connecticut cities are absent from H03."
+notes = "GoHighLevel/LeadConnector asset hosts. Peter Lohmann directory reports 220 doors; secondary estimate, not current audited count. Do not confuse ironcladpm.com with ironclad-pm.com or ironcladmgt.com."
+audit_urls = ["https://ironcladpm.com/", "https://ironcladpm.com/sitemap.xml", "https://ironcladpm.com/robots.txt", "https://ironcladpm.com/llms.txt"]
+
+[[pattern]]
+name = "Owner-first page set"
+finding = "Owner services, fee/pricing links, FAQs and rental analysis recur across the sample. Resident portals remain separate."
+clients = "Allegiant; Hendricks; Osto; Nest Finders; Smart Move; Ironclad"
+limit = "Observed site pattern; ClearLead authorship is not proved for every page."
+
+[[pattern]]
+name = "City and neighborhood pages"
+finding = "Local service URLs recur on Allegiant, Nest Finders, Out Fast, Smart Move, Red Roof and Ironclad."
+clients = "Allegiant; Nest Finders; Out Fast; Smart Move; Red Roof; Ironclad"
+limit = "H03 names Nest Finders and Out Fast; their site domains are not directly cited under the audited domains."
+
+[[pattern]]
+name = "Owner decision tools"
+finding = "ROI, vacancy and rent-versus-sell calculators recur, often beside free rental analysis."
+clients = "Allegiant; Hendricks; Osto; Nest Finders; Smart Move; Home Rentals Depot"
+limit = "PMW credits on many sites make this a market pattern, not a unique ClearLead invention."
+
+[[pattern]]
+name = "Local facts and owner questions"
+finding = "Law, screening, fees, rent setting and local market posts recur. Cadence differs sharply."
+clients = "Hendricks; Allegiant; Osto; Nest Finders; Out Fast; Smart Move"
+limit = "No single weekly blog rate fits the sample. Dates are public site claims, not proof of original publication."
+
+[[pattern]]
+name = "Platform-independent SEO work"
+finding = "Confirmed cases retain PMW sites; other sites use Squarespace, WordPress or LeadConnector."
+clients = "Allegiant; Osto; Nest Finders; Hendricks; Out Fast; Smart Move; Ironclad"
+limit = "The offer can improve an existing site. A site rebuild is not shown as a necessary condition."
+
+[[pattern]]
+name = "Direct ClearLead conversion and review code"
+finding = "Same review-worker host appears on Smart Move and Ironclad. ClearLead-hosted forms appear on Out Fast and Oak Street."
+clients = "Smart Move; Ironclad; Out Fast; Oak Street"
+limit = "Shared code supports a delivery pattern. It does not prove a standard CRM package or review-generation results."
+
+[[pattern]]
+name = "Uneven AI files and schema"
+finding = "5 sites serve plain llms.txt. Oak Street serves HTML at machine-file paths. Some home schema blocks fail JSON parsing."
+clients = "Hendricks; Nest Finders; Out Fast; Smart Move; Ironclad; Oak Street; Allegiant"
+limit = "All 3 H03-named firms have llms.txt, but 2 untested firms do too. This cannot establish an AI benefit."
+
+[[pattern]]
+name = "Directories beside AI names"
+finding = "H03 answers that name clients cite directories. Nest Finders is first in every Jacksonville answer."
+clients = "Nest Finders; Hendricks; Out Fast"
+limit = "Small sample, correlation only. No pre-work control or assignment of a cited directory to each name is available."
+
+[[copy]]
+rank = 1
+move = "Build one owner decision page per core market"
+action = "State service area, property types, fee model, proof, FAQs and next step. Link service details and rental analysis."
+client_evidence = "Nest Finders; Hendricks; Out Fast"
+expected_effect = "Hypothesis: More qualified owner inquiries"
+measure = "Owner inquiries and signed doors per landing page"
+
+[[copy]]
+rank = 2
+move = "Check and fix public directory facts"
+action = "Match name, address, phone, site and service scope on Expertise.com, iPropertyManagement, BBB and NARPM where eligible. Keep source links."
+client_evidence = "Nest Finders; Hendricks; Out Fast; Allegiant"
+expected_effect = "Hypothesis: More correct AI names and fewer entity errors"
+measure = "Repeat the same city prompts; track named firm and cited URL separately"
+
+[[copy]]
+rank = 3
+move = "Add useful city and neighborhood pages"
+action = "Use local service facts, fees, staff proof and cases. Avoid pages that only swap city names."
+client_evidence = "Nest Finders; Out Fast; Allegiant; Smart Move"
+expected_effect = "Hypothesis: Broader owner search reach"
+measure = "Qualified owner leads by service city and page"
+
+[[copy]]
+rank = 4
+move = "Make fees and guarantees easy to compare"
+action = "Publish fee components, exclusions, example totals and written guarantee terms. Use an honest price range on citata.ai too."
+client_evidence = "Allegiant; Hendricks; Osto; Nest Finders; Out Fast; Smart Move"
+expected_effect = "Hypothesis: Better fit before the first call"
+measure = "Owner-call quality and call-to-agreement rate"
+
+[[copy]]
+rank = 5
+move = "Link a decision tool to rental analysis"
+action = "Start with one vacancy-cost or rent-versus-sell tool. Show assumptions and results before optional contact. Use a worked ROI tool for citata.ai buyers."
+client_evidence = "Hendricks; Osto; Nest Finders; Smart Move; Home Rentals Depot"
+expected_effect = "Hypothesis: More owner inquiries with clear intent"
+measure = "Tool completion, analysis requests and signed doors"
+
+[[copy]]
+rank = 6
+move = "Publish local owner answers with named review"
+action = "Start with fees, screening, repair duties, rent setting and local market facts. Test a small schedule before raising volume."
+client_evidence = "Hendricks; Out Fast; Osto; Allegiant"
+expected_effect = "Hypothesis: More useful search entries and answers"
+measure = "Owner queries, assisted inquiries and pages named in AI sources"
+
+[[copy]]
+rank = 7
+move = "Make reviews visible and source-linked"
+action = "Show review dates, rating source and a current total. Ask real clients for reviews as part of normal delivery. Never invent or gate reviews."
+client_evidence = "Smart Move; Ironclad; Allegiant"
+expected_effect = "Hypothesis: More trust and stronger public proof"
+measure = "Verified review growth, owner conversion and complaint trend"
+
+[[copy]]
+rank = 8
+move = "Add a narrow Section 8 owner guide"
+action = "Use local housing-authority sources, payment steps, inspections and owner duties. Obtain local expert review. Add a cited citata.ai service example."
+client_evidence = "Out Fast; Allegiant; Nest Finders; Ironclad; Red Roof"
+expected_effect = "Hypothesis: Better fit for underserved owner queries"
+measure = "Section 8 owner leads and repeated niche AI prompt results"
+
+[[copy]]
+rank = 9
+move = "Ship valid machine-readable facts"
+action = "Parse JSON-LD, align it with visible facts, check robots and serve plain llms.txt. Test for soft 404s. Do this on citata.ai too."
+client_evidence = "Nest Finders; Smart Move; Ironclad; Oak Street; Allegiant; Hendricks"
+expected_effect = "Hypothesis: Fewer crawl and entity errors; AI impact unproved"
+measure = "Valid files, crawl checks and before/after fixed-query results"
+
+[[copy]]
+rank = 10
+move = "Report from AI answer to signed door"
+action = "Keep prompt, engine, full answer, source URL, owner lead and signed agreement as separate fields. Offer work on the existing CMS."
+client_evidence = "Out Fast Clutch review; Nest Finders H03; PMW client credits"
+expected_effect = "Hypothesis: Clearer ROI and fewer false success claims"
+measure = "Qualified AI-assisted leads and signed doors, with attribution limits"

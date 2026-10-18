@@ -12,6 +12,7 @@
     "landing/vendor/**",
     "landing/public/mechanism/**",
     "landing/src/components/mechanism/**",
-    "landing/scripts/mechanism/preview.html"
+    "landing/scripts/mechanism/preview.html",
+    "landing/src/data/fmr-fy2027.json"
   ]
 }

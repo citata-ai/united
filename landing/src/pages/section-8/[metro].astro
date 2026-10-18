@@ -1,0 +1,218 @@
+---
+// One page per HUD metro FMR area: /section-8/<slug>-fair-market-rent-2027.
+// Experiment H01-E1. Every number comes from src/data/fmr-fy2027.json (HUD files, tools/section8/build.py).
+// Rules: answer first, ASD-STE100, sources, no legal advice, Fair Housing (no text about who should rent where).
+import type { GetStaticPaths } from "astro";
+import Guide from "../../layouts/Guide.astro";
+import Section8Cta from "../../components/Section8Cta.astro";
+import {
+  basicRange,
+  bedrooms,
+  bySlug,
+  changeWords,
+  datasetSchema,
+  delta,
+  fmr,
+  metroPath,
+  metros,
+  pct,
+  published,
+  src,
+  updated,
+  usd,
+  type Metro,
+} from "../../data/section8.ts";
+
+export const getStaticPaths = (() =>
+  metros.map((m) => ({ params: { metro: `${m.slug}-fair-market-rent-2027` }, props: { m } }))) satisfies GetStaticPaths;
+
+const { m } = Astro.props as { m: Metro };
+const [s0, s1, s2, s3, s4] = m.fmr2027 as [number, number, number, number, number];
+const two26 = m.fmr2026[2] ?? 0;
+const ch = m.changePct;
+const [lo2, hi2] = basicRange(s2);
+const nearby = m.nearby.map(bySlug).filter((x): x is Metro => Boolean(x));
+const path = metroPath(m);
+const pageUrl = `https://citata.ai${path}`;
+const counties = m.counties.join("; ");
+const twoChange = changeWords(s2, two26, ch[2] ?? 0);
+
+const fm = {
+  title: `${m.short} Section 8 Rent Limits 2027 (Fair Market Rent) — Citata.ai`,
+  description: `HUD FY2027 Fair Market Rent for ${m.short}: ${usd(s2)} for a 2-bedroom (${pct(ch[2] ?? 0)} vs FY2026). Table for 0–4 bedrooms, payment standards, landlord steps.`,
+  headline: `${m.short} Section 8 Rent Limits 2027 (Fair Market Rent)`,
+  dek: `HUD FY2027 Fair Market Rents for the ${m.hudName}, in effect from October 1, 2026.`,
+  published,
+  updated,
+  answer: `The HUD Fair Market Rent (FMR) for a 2-bedroom unit in the ${m.hudName} is ${usd(s2)} a month for FY2027. That is ${twoChange} the FY2026 FMR of ${usd(two26)}. The FY2027 FMRs are in effect from October 1, 2026. Your housing authority sets the Section 8 payment standard. Without HUD approval, it can be 90% to 110% of the FMR: about ${usd(lo2)} to ${usd(hi2)} for a 2-bedroom.`,
+  faq: [
+    {
+      q: `How much does Section 8 pay for a 2-bedroom in ${m.short} in 2027?`,
+      a: `The FY2027 Fair Market Rent for a 2-bedroom in the ${m.hudName} is ${usd(s2)} (HUD). The housing authority sets the payment standard, which can be 90% to 110% of the FMR without HUD approval: about ${usd(lo2)} to ${usd(hi2)}. Check your housing authority for the exact amount.`,
+    },
+    {
+      q: `What is the 2027 Fair Market Rent in ${m.short} for 1, 3 and 4 bedrooms?`,
+      a: `HUD's FY2027 FMRs for the ${m.hudName} are ${usd(s0)} for a studio, ${usd(s1)} for 1 bedroom, ${usd(s3)} for 3 bedrooms and ${usd(s4)} for 4 bedrooms.`,
+    },
+    {
+      q: "When do the 2027 Fair Market Rents take effect?",
+      a: `The FY2027 FMRs are in effect from October 1, 2026 (Federal Register ${fmr.notice.citation}, Docket ${fmr.notice.docket}, published September 1, 2026). In an area where a housing authority asked HUD for a reevaluation, the FY2026 FMRs can stay in effect for some time.`,
+    },
+    {
+      q: "Is the Fair Market Rent the most a landlord can charge a voucher tenant?",
+      a: "No. The FMR is the base for the payment standard, which limits the subsidy, not the rent. The housing authority must find the rent reasonable, and at the first lease the family share can be at most 40% of its monthly adjusted income. Check your housing authority for the rules in your area.",
+    },
+  ],
+  sources: [
+    src.fy2027,
+    src.fy2026,
+    src.dataset,
+    src.notice,
+    src.cfr503,
+    src.cfr305,
+    src.cfr507,
+    ...(m.pha.url ? [{ label: `${m.pha.name}: payment standards`, url: m.pha.url }] : []),
+  ],
+};
+
+const headings = [
+  { depth: 2, slug: "fmr-table", text: "FY2027 Fair Market Rents by bedrooms" },
+  { depth: 2, slug: "changes", text: "What changed from 2026" },
+  { depth: 2, slug: "payment-standard", text: "Payment standard vs FMR" },
+  { depth: 2, slug: "landlord-steps", text: "Steps for landlords" },
+  { depth: 2, slug: "area", text: "Counties in this FMR area" },
+  { depth: 2, slug: "nearby", text: "Nearby metros" },
+];
+
+const dataset = datasetSchema({
+  name: `${m.short} Fair Market Rents FY2027 (HUD), 0–4 bedrooms`,
+  description: `HUD FY2027 and FY2026 Fair Market Rents for the ${m.hudName} (HUD area code ${m.hudAreaCode}), 0 to 4 bedrooms, with the change in percent.`,
+  url: pageUrl,
+  place: m.hudName,
+});
+---
+
+<Guide
+  frontmatter={fm}
+  url={path}
+  headings={headings}
+  section={{ name: "Section 8 rent limits", href: "/section-8", note: "HUD FY2027 data for landlords" }}
+  about={["Section 8 Housing Choice Voucher program", "Fair Market Rent", m.hudName]}
+  schemas={[dataset]}
+  method={`How we made this page: a script read every number from HUD's FY2027 and FY2026 FMR files (fetched ${fmr.fetched}). We check sample pages against the HUD files by hand. This page is not legal advice.`}
+>
+  <h2 id="fmr-table">FY2027 Fair Market Rents by bedrooms</h2>
+  <p>
+    HUD sets one Fair Market Rent for each unit size in the {m.hudName}. The FMR is a gross rent: shelter rent plus
+    utilities (HUD). HUD area code: {m.hudAreaCode}.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Unit size</th><th>FY2027 FMR</th><th>FY2026 FMR</th><th>Change</th><th>Change, %</th></tr>
+    </thead>
+    <tbody>
+      {
+        bedrooms.map((b, i) => (
+          <tr>
+            <td>{b}</td>
+            <td>{usd(m.fmr2027[i] ?? 0)}</td>
+            <td>{usd(m.fmr2026[i] ?? 0)}</td>
+            <td>{delta((m.fmr2027[i] ?? 0) - (m.fmr2026[i] ?? 0))}</td>
+            <td>{pct(ch[i] ?? 0)}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p>
+    Source: <a href={fmr.fy2027Url}>HUD FY2027 FMRs</a> and <a href={fmr.fy2026Url}>HUD revised FY2026 FMRs</a> (in
+    effect from May 21, 2026, until FY2027 started).
+  </p>
+
+  <h2 id="changes">What changed from 2026</h2>
+  <p>
+    The 2-bedroom FMR in {m.short} is {twoChange} in FY2026. By unit size, the change is {pct(ch[0] ?? 0)} for a studio,
+    {pct(ch[1] ?? 0)} for 1 bedroom, {pct(ch[2] ?? 0)} for 2, {pct(ch[3] ?? 0)} for 3 and {pct(ch[4] ?? 0)} for 4 bedrooms.
+  </p>
+
+  <h2 id="payment-standard">Payment standard vs FMR</h2>
+  <p>
+    The payment standard is the amount the housing authority uses to calculate the voucher subsidy. Each public
+    housing agency (PHA) can set its payment standard at 90% to 110% of the FMR without HUD approval (24 CFR 982.503).
+    A PHA must update its payment standards within 3 months of a new FMR if they are outside that range.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Unit size</th><th>FY2027 FMR</th><th>90% of FMR</th><th>110% of FMR</th></tr>
+    </thead>
+    <tbody>
+      {
+        bedrooms.map((b, i) => {
+          const [lo, hi] = basicRange(m.fmr2027[i] ?? 0);
+          return (
+            <tr>
+              <td>{b}</td>
+              <td>{usd(m.fmr2027[i] ?? 0)}</td>
+              <td>{usd(lo)}</td>
+              <td>{usd(hi)}</td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+  {
+    m.pha.name ? (
+      <p>
+        One large housing authority in this area: {m.pha.name}. Other PHAs in the same FMR area can set different payment
+        standards.{" "}
+        {m.pha.url ? (
+          <>
+            See the <a href={m.pha.url}>{m.pha.name} payment standards</a>.
+          </>
+        ) : (
+          "Check your housing authority for its current payment standards."
+        )}
+      </p>
+    ) : (
+      <p>Several PHAs work in this FMR area. Check your housing authority for its current payment standards.</p>
+    )
+  }
+  <p>
+    In some metro areas, HUD requires PHAs to use Small Area FMRs (by ZIP code). There, the payment standard depends on
+    the ZIP code of the unit. Check your housing authority.
+  </p>
+
+  <h2 id="landlord-steps">Steps for landlords</h2>
+  <p>Steps for a landlord to rent a unit to a Housing Choice Voucher (Section 8) tenant in {m.short}:</p>
+  <ol>
+    <li><strong>Get the payment standard.</strong> Ask the housing authority for the payment standard for your unit size and ZIP code.</li>
+    <li><strong>Pass the inspection.</strong> The PHA inspects the unit before it approves the tenancy. The unit must meet HUD housing quality standards (24 CFR 982.305).</li>
+    <li><strong>Show that the rent is reasonable.</strong> The PHA compares your rent with similar units that do not get assistance. It cannot approve the lease before it finds the rent reasonable (24 CFR 982.507).</li>
+    <li><strong>Sign the HAP contract.</strong> The housing assistance payments (HAP) contract is between you and the PHA. The PHA pays its part of the rent to you. The tenant pays the rest.</li>
+    <li><strong>Know the 40% limit.</strong> At the first lease, if the gross rent is more than the payment standard, the family share can be at most 40% of its monthly adjusted income (24 CFR 982.305).</li>
+  </ol>
+  <p>Rules and forms differ by housing authority. This page is not legal advice. Check your housing authority.</p>
+
+  <h2 id="area">Counties in this FMR area</h2>
+  <p>
+    The {m.hudName} includes {m.byTown ? "all or part of " : ""}these {m.counties.length === 1 ? "county" : "counties"}: {counties}.
+    HUD lists each county{m.byTown ? " and town" : ""} in the <a href={fmr.fy2027Url}>FY2027 file</a>.
+  </p>
+
+  <h2 id="nearby">Nearby metros</h2>
+  <ul>
+    {
+      nearby.map((n) => (
+        <li>
+          <a href={metroPath(n)}>{n.short} Section 8 rent limits 2027</a>: 2-bedroom FMR {usd(n.fmr2027[2] ?? 0)}
+        </li>
+      ))
+    }
+  </ul>
+  <p>
+    See <a href="/section-8">all 50 metros</a> in one table, or read our <a href="/guides">guides for property managers</a>.
+  </p>
+
+  <Section8Cta slot="cta" />
+</Guide>

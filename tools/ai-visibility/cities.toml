@@ -1,0 +1,410 @@
+# H03-E1: "best property management company in <city>" for the 50 most populous US cities.
+# City list: US Census Bureau July 1, 2025 estimates (Wikipedia "List of United States cities by population", read 2026-10-19).
+# Run: python3 tools/ai-visibility/run.py --prompts tools/ai-visibility/cities.toml --runs 1
+# Keep ids stable. Add prompts; do not edit old ones.
+
+brand = ["citata.ai", "citata", "Citata"]
+our_domain = "citata.ai"
+# What the extractor lists from each answer.
+entity = "property management companies"
+out_dir = "business/marketing/ai-visibility/cities-2026-10"
+
+[[prompt]]
+id = "city-new-york-ny"
+group = "city"
+rank = 1
+city = "New York"
+state = "NY"
+text = "What is the best property management company in New York, NY? Give names."
+
+[[prompt]]
+id = "city-los-angeles-ca"
+group = "city"
+rank = 2
+city = "Los Angeles"
+state = "CA"
+text = "What is the best property management company in Los Angeles, CA? Give names."
+
+[[prompt]]
+id = "city-chicago-il"
+group = "city"
+rank = 3
+city = "Chicago"
+state = "IL"
+text = "What is the best property management company in Chicago, IL? Give names."
+
+[[prompt]]
+id = "city-houston-tx"
+group = "city"
+rank = 4
+city = "Houston"
+state = "TX"
+text = "What is the best property management company in Houston, TX? Give names."
+
+[[prompt]]
+id = "city-phoenix-az"
+group = "city"
+rank = 5
+city = "Phoenix"
+state = "AZ"
+text = "What is the best property management company in Phoenix, AZ? Give names."
+
+[[prompt]]
+id = "city-philadelphia-pa"
+group = "city"
+rank = 6
+city = "Philadelphia"
+state = "PA"
+text = "What is the best property management company in Philadelphia, PA? Give names."
+
+[[prompt]]
+id = "city-san-antonio-tx"
+group = "city"
+rank = 7
+city = "San Antonio"
+state = "TX"
+text = "What is the best property management company in San Antonio, TX? Give names."
+
+[[prompt]]
+id = "city-san-diego-ca"
+group = "city"
+rank = 8
+city = "San Diego"
+state = "CA"
+text = "What is the best property management company in San Diego, CA? Give names."
+
+[[prompt]]
+id = "city-dallas-tx"
+group = "city"
+rank = 9
+city = "Dallas"
+state = "TX"
+text = "What is the best property management company in Dallas, TX? Give names."
+
+[[prompt]]
+id = "city-fort-worth-tx"
+group = "city"
+rank = 10
+city = "Fort Worth"
+state = "TX"
+text = "What is the best property management company in Fort Worth, TX? Give names."
+
+[[prompt]]
+id = "city-jacksonville-fl"
+group = "city"
+rank = 11
+city = "Jacksonville"
+state = "FL"
+text = "What is the best property management company in Jacksonville, FL? Give names."
+
+[[prompt]]
+id = "city-austin-tx"
+group = "city"
+rank = 12
+city = "Austin"
+state = "TX"
+text = "What is the best property management company in Austin, TX? Give names."
+
+[[prompt]]
+id = "city-san-jose-ca"
+group = "city"
+rank = 13
+city = "San Jose"
+state = "CA"
+text = "What is the best property management company in San Jose, CA? Give names."
+
+[[prompt]]
+id = "city-charlotte-nc"
+group = "city"
+rank = 14
+city = "Charlotte"
+state = "NC"
+text = "What is the best property management company in Charlotte, NC? Give names."
+
+[[prompt]]
+id = "city-columbus-oh"
+group = "city"
+rank = 15
+city = "Columbus"
+state = "OH"
+text = "What is the best property management company in Columbus, OH? Give names."
+
+[[prompt]]
+id = "city-indianapolis-in"
+group = "city"
+rank = 16
+city = "Indianapolis"
+state = "IN"
+text = "What is the best property management company in Indianapolis, IN? Give names."
+
+[[prompt]]
+id = "city-san-francisco-ca"
+group = "city"
+rank = 17
+city = "San Francisco"
+state = "CA"
+text = "What is the best property management company in San Francisco, CA? Give names."
+
+[[prompt]]
+id = "city-seattle-wa"
+group = "city"
+rank = 18
+city = "Seattle"
+state = "WA"
+text = "What is the best property management company in Seattle, WA? Give names."
+
+[[prompt]]
+id = "city-denver-co"
+group = "city"
+rank = 19
+city = "Denver"
+state = "CO"
+text = "What is the best property management company in Denver, CO? Give names."
+
+[[prompt]]
+id = "city-nashville-tn"
+group = "city"
+rank = 20
+city = "Nashville"
+state = "TN"
+text = "What is the best property management company in Nashville, TN? Give names."
+
+[[prompt]]
+id = "city-oklahoma-city-ok"
+group = "city"
+rank = 21
+city = "Oklahoma City"
+state = "OK"
+text = "What is the best property management company in Oklahoma City, OK? Give names."
+
+[[prompt]]
+id = "city-washington-dc"
+group = "city"
+rank = 22
+city = "Washington"
+state = "DC"
+text = "What is the best property management company in Washington, DC? Give names."
+
+[[prompt]]
+id = "city-el-paso-tx"
+group = "city"
+rank = 23
+city = "El Paso"
+state = "TX"
+text = "What is the best property management company in El Paso, TX? Give names."
+
+[[prompt]]
+id = "city-las-vegas-nv"
+group = "city"
+rank = 24
+city = "Las Vegas"
+state = "NV"
+text = "What is the best property management company in Las Vegas, NV? Give names."
+
+[[prompt]]
+id = "city-boston-ma"
+group = "city"
+rank = 25
+city = "Boston"
+state = "MA"
+text = "What is the best property management company in Boston, MA? Give names."
+
+[[prompt]]
+id = "city-detroit-mi"
+group = "city"
+rank = 26
+city = "Detroit"
+state = "MI"
+text = "What is the best property management company in Detroit, MI? Give names."
+
+[[prompt]]
+id = "city-louisville-ky"
+group = "city"
+rank = 27
+city = "Louisville"
+state = "KY"
+text = "What is the best property management company in Louisville, KY? Give names."
+
+[[prompt]]
+id = "city-portland-or"
+group = "city"
+rank = 28
+city = "Portland"
+state = "OR"
+text = "What is the best property management company in Portland, OR? Give names."
+
+[[prompt]]
+id = "city-memphis-tn"
+group = "city"
+rank = 29
+city = "Memphis"
+state = "TN"
+text = "What is the best property management company in Memphis, TN? Give names."
+
+[[prompt]]
+id = "city-baltimore-md"
+group = "city"
+rank = 30
+city = "Baltimore"
+state = "MD"
+text = "What is the best property management company in Baltimore, MD? Give names."
+
+[[prompt]]
+id = "city-milwaukee-wi"
+group = "city"
+rank = 31
+city = "Milwaukee"
+state = "WI"
+text = "What is the best property management company in Milwaukee, WI? Give names."
+
+[[prompt]]
+id = "city-albuquerque-nm"
+group = "city"
+rank = 32
+city = "Albuquerque"
+state = "NM"
+text = "What is the best property management company in Albuquerque, NM? Give names."
+
+[[prompt]]
+id = "city-fresno-ca"
+group = "city"
+rank = 33
+city = "Fresno"
+state = "CA"
+text = "What is the best property management company in Fresno, CA? Give names."
+
+[[prompt]]
+id = "city-tucson-az"
+group = "city"
+rank = 34
+city = "Tucson"
+state = "AZ"
+text = "What is the best property management company in Tucson, AZ? Give names."
+
+[[prompt]]
+id = "city-sacramento-ca"
+group = "city"
+rank = 35
+city = "Sacramento"
+state = "CA"
+text = "What is the best property management company in Sacramento, CA? Give names."
+
+[[prompt]]
+id = "city-atlanta-ga"
+group = "city"
+rank = 36
+city = "Atlanta"
+state = "GA"
+text = "What is the best property management company in Atlanta, GA? Give names."
+
+[[prompt]]
+id = "city-kansas-city-mo"
+group = "city"
+rank = 37
+city = "Kansas City"
+state = "MO"
+text = "What is the best property management company in Kansas City, MO? Give names."
+
+[[prompt]]
+id = "city-mesa-az"
+group = "city"
+rank = 38
+city = "Mesa"
+state = "AZ"
+text = "What is the best property management company in Mesa, AZ? Give names."
+
+[[prompt]]
+id = "city-raleigh-nc"
+group = "city"
+rank = 39
+city = "Raleigh"
+state = "NC"
+text = "What is the best property management company in Raleigh, NC? Give names."
+
+[[prompt]]
+id = "city-colorado-springs-co"
+group = "city"
+rank = 40
+city = "Colorado Springs"
+state = "CO"
+text = "What is the best property management company in Colorado Springs, CO? Give names."
+
+[[prompt]]
+id = "city-miami-fl"
+group = "city"
+rank = 41
+city = "Miami"
+state = "FL"
+text = "What is the best property management company in Miami, FL? Give names."
+
+[[prompt]]
+id = "city-omaha-ne"
+group = "city"
+rank = 42
+city = "Omaha"
+state = "NE"
+text = "What is the best property management company in Omaha, NE? Give names."
+
+[[prompt]]
+id = "city-virginia-beach-va"
+group = "city"
+rank = 43
+city = "Virginia Beach"
+state = "VA"
+text = "What is the best property management company in Virginia Beach, VA? Give names."
+
+[[prompt]]
+id = "city-long-beach-ca"
+group = "city"
+rank = 44
+city = "Long Beach"
+state = "CA"
+text = "What is the best property management company in Long Beach, CA? Give names."
+
+[[prompt]]
+id = "city-oakland-ca"
+group = "city"
+rank = 45
+city = "Oakland"
+state = "CA"
+text = "What is the best property management company in Oakland, CA? Give names."
+
+[[prompt]]
+id = "city-minneapolis-mn"
+group = "city"
+rank = 46
+city = "Minneapolis"
+state = "MN"
+text = "What is the best property management company in Minneapolis, MN? Give names."
+
+[[prompt]]
+id = "city-bakersfield-ca"
+group = "city"
+rank = 47
+city = "Bakersfield"
+state = "CA"
+text = "What is the best property management company in Bakersfield, CA? Give names."
+
+[[prompt]]
+id = "city-tulsa-ok"
+group = "city"
+rank = 48
+city = "Tulsa"
+state = "OK"
+text = "What is the best property management company in Tulsa, OK? Give names."
+
+[[prompt]]
+id = "city-tampa-fl"
+group = "city"
+rank = 49
+city = "Tampa"
+state = "FL"
+text = "What is the best property management company in Tampa, FL? Give names."
+
+[[prompt]]
+id = "city-aurora-co"
+group = "city"
+rank = 50
+city = "Aurora"
+state = "CO"
+text = "What is the best property management company in Aurora, CO? Give names."

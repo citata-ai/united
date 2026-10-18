@@ -54,7 +54,7 @@ Run from the repo root.
 
 ## Deploy
 
-**Branches (since 2026-10-18).** `main` = prod (citata.ai). `stage` = everything approved for the next release, deployed to the stage Worker. Flow: work branch → merge into `stage` (`--no-ff`) → deploy stage, check → on the owner's explicit "publish", merge `stage` into `main` → deploy prod. Do not merge work branches straight into `main`. No PRs. Pushes to `stage` and `main` deploy by GitHub Actions (`.github/workflows/deploy.yml`, Alchemy): stage → https://stage.citata.ai, main → https://citata.ai. See `docs/gates.md` "Deploy".
+**Branches (since 2026-10-18).** `main` = prod (citata.ai). `stage` = everything approved for the next release, deployed to the stage Worker. Flow: work branch → merge into `stage` (`--no-ff`) → deploy stage, check → on the owner's explicit "publish", merge `stage` into `main` → deploy prod. Do not merge work branches straight into `main`. No PRs. Exception (Tao, 2026-10-19): the growth runs in `docs/growth-loop.md` may merge `stage` into `main` without asking, under its "Publish rule". Pushes to `stage` and `main` deploy by GitHub Actions (`.github/workflows/deploy.yml`, Alchemy): stage → https://stage.citata.ai, main → https://citata.ai. See `docs/gates.md` "Deploy".
 
 - **Live: the landing only.** Worker `citata-landing` on Cloudflare account `1494c6f692bcb718f1c942d6801e83fe` ("1st Account") serves `https://citata.ai`. `www.citata.ai` answers 301 to the apex. First deploy 2026-10-18.
 - How: wrangler, not Alchemy (interim). Config `landing/wrangler.jsonc`, script `landing/worker.js` (www redirect, then static assets). Run from `landing/`: `bun run build && npx wrangler@4 deploy`. Wrangler uses the operator's OAuth login on the Mac.

@@ -18,7 +18,7 @@ Scheduled agents run this file. Each run is a fresh session with no memory. This
 2. `business/hypotheses.toml`: the bets. Priority = impact × confidence × ease.
 3. `business/marketing/backlog.toml`: content and link ideas, ranked.
 4. The last `measure` report in `business/marketing/reports/`.
-5. The latest competitor teardown in `business/marketing/competitors/`.
+5. The latest competitor teardown in `business/marketing/competitors/` and `competitors/clients/playbook.md`.
 
 ## tick: one change a day
 
@@ -33,11 +33,13 @@ Scheduled agents run this file. Each run is a fresh session with no memory. This
    - `docs/geo-loop.md` change log: one row.
    - `backlog.toml`: set the item `status = "staged"`.
 8. Add the page to the publish queue: `business/marketing/publish-queue.md` (URL, hypothesis, one-line summary).
-9. Publish (merge `stage` into `main`) only under the publish rule below.
+9. Publish to prod under the publish rule below.
 
 ## Publish rule
 
-Prod needs the owner's "publish" (AGENTS.md). The `measure` run lists the queue in the Monday report and asks for one "publish" for the whole batch. When Tao has said "publish" for the queue in the current thread, merge `stage` into `main`, push, and run the smoke check from AGENTS.md. CI pings IndexNow for changed pages.
+Since 2026-10-19 Tao allows the growth runs to publish to prod as often as needed. After the stage check (step 6 of `tick` gives 200 and the page looks right), merge `stage` into `main` with `--no-ff`, push, and run the smoke check from AGENTS.md. CI deploys https://citata.ai and pings IndexNow for changed pages. Log the URLs as live in `publish-queue.md` and set the backlog item to `live`.
+
+Do not publish when: a check fails, a number has no source, the page names a client or a person in a new way, or the change touches prices, legal text or the email setup. Those go to "Asks for Tao".
 
 ## measure: Monday numbers
 
@@ -46,17 +48,18 @@ Prod needs the owner's "publish" (AGENTS.md). The `measure` run lists the queue 
 3. Search: GSC clicks and impressions, Bing Webmaster indexed count and Copilot citations, if the agent can read them. If not, say so in the report.
 4. For each hypothesis: compare the metric to `target` and `kill_if`. Set `status` (`running`, `validated`, `invalidated`, `parked`) and fill `result` and `learned` in the experiments. Do not claim a result that the data does not show.
 5. Re-score ICE from the data. Propose at most 2 new hypotheses (next free `H<nn>`) when a bet dies.
-6. Write `business/marketing/reports/<YYYY-Www>.md`: CTT-O6 progress (sessions so far vs pace needed), table per hypothesis, changes shipped, publish queue, asks for Tao.
+6. Write `business/marketing/reports/<YYYY-Www>.md`: CTT-O6 progress (sessions so far vs pace needed), table per hypothesis, changes shipped and published, asks for Tao.
 7. Commit and merge to `stage` as in `tick`.
 
 ## scout: Thursday ideas
 
-1. For each competitor in the latest teardown TOML: fetch the sitemap, list URLs new since the last scout, and note their topics.
+1. Competitors are only the `role = "direct"` rows in `business/competitors.toml`. Apply its `[rule]` to any new name; agents, brokers, developers, lease-up and multifamily renter marketers are `non-competitor`. For each direct competitor: fetch the sitemap, list URLs new since the last scout, and note their topics.
 2. Read the last visibility report: prompts where AI cites others and not us, and the domains it cites.
 3. Search for new landlord and property manager questions (Reddit r/landlord, r/PropertyManagement, r/Section8; BiggerPockets forums; Google "People also ask"; AnswerThePublic free view).
 4. Add at most 10 ideas to `backlog.toml`, each tied to a hypothesis, with `demand` evidence and a score. Drop ideas that copy a competitor page without new data.
-5. Add up to 10 outreach targets for H03 and H10 to `business/marketing/outreach/`. Do not send pitches: Tao sends them or approves a template once.
-6. Commit to a branch and merge to `stage` (data only, no deploy risk).
+5. First Thursday of a month: re-check the client lists in `business/marketing/competitors/clients/` (new clients, new page types). Update `playbook.md` when a move shows up at 2 or more competitors.
+6. Add up to 10 outreach targets for H03 and H10 to `business/marketing/outreach/`. Do not send pitches: Tao sends them or approves a template once.
+7. Commit to a branch and merge to `stage` (data only, no deploy risk).
 
 ## Rules for every run
 

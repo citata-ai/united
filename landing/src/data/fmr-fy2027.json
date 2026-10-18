@@ -1,0 +1,2603 @@
+{
+  "dataset": "HUD Fair Market Rents FY2027 vs FY2026, top 50 metro FMR areas by population",
+  "fetched": "2026-10-19",
+  "phaChecked": "2026-10-19",
+  "sourcePage": "https://www.huduser.gov/portal/datasets/fmr.html",
+  "fy2027Url": "https://www.huduser.gov/portal/datasets/fmr/fmr2027/FY27_FMRs.xlsx",
+  "fy2026Url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY26_FMRs_revised.xlsx",
+  "notice": {
+    "docket": "FR-6553-N-03",
+    "citation": "91 FR 56156",
+    "published": "2026-09-01",
+    "effective": "2026-10-01",
+    "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room"
+  },
+  "rankBy": "Sum of the pop2024 column in HUD's FY2027 county-level FMR file",
+  "metros": [
+    {
+      "rank": 1,
+      "slug": "new-york",
+      "short": "New York",
+      "hudName": "New York, NY HUD Metro FMR Area",
+      "hudAreaCode": "METRO35620MM5600",
+      "state": "NY",
+      "states": [
+        "NY"
+      ],
+      "pop2024": 9923511,
+      "counties": [
+        "Kings County, NY",
+        "Queens County, NY",
+        "New York County, NY",
+        "Bronx County, NY",
+        "Westchester County, NY",
+        "Richmond County, NY",
+        "Rockland County, NY",
+        "Putnam County, NY"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2593,
+        2729,
+        2971,
+        3760,
+        4121
+      ],
+      "fmr2026": [
+        2529,
+        2655,
+        2910,
+        3644,
+        3959
+      ],
+      "changePct": [
+        2.5,
+        2.8,
+        2.1,
+        3.2,
+        4.1
+      ],
+      "pha": {
+        "name": "New York City Housing Authority (NYCHA)",
+        "url": "https://www.nyc.gov/site/nycha/section-8/voucher-payment-standards-utility-allowance-schedules.page"
+      },
+      "nearby": [
+        "newark",
+        "bergen-passaic",
+        "nassau-suffolk"
+      ]
+    },
+    {
+      "rank": 2,
+      "slug": "los-angeles",
+      "short": "Los Angeles",
+      "hudName": "Los Angeles-Long Beach-Glendale, CA HUD Metro FMR Area",
+      "hudAreaCode": "METRO31080MM4480",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 9808667,
+      "counties": [
+        "Los Angeles County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2151,
+        2402,
+        2964,
+        3760,
+        4208
+      ],
+      "fmr2026": [
+        2079,
+        2328,
+        2903,
+        3681,
+        4098
+      ],
+      "changePct": [
+        3.5,
+        3.2,
+        2.1,
+        2.1,
+        2.7
+      ],
+      "pha": {
+        "name": "Housing Authority of the City of Los Angeles (HACLA)",
+        "url": "https://www.hacla.org/en/about-section-8/payment-standards"
+      },
+      "nearby": [
+        "orange-county-ca",
+        "riverside-san-bernardino",
+        "san-diego"
+      ]
+    },
+    {
+      "rank": 3,
+      "slug": "chicago",
+      "short": "Chicago",
+      "hudName": "Chicago-Joliet-Naperville, IL HUD Metro FMR Area",
+      "hudAreaCode": "METRO16980M16980",
+      "state": "IL",
+      "states": [
+        "IL"
+      ],
+      "pop2024": 8357645,
+      "counties": [
+        "Cook County, IL",
+        "DuPage County, IL",
+        "Lake County, IL",
+        "Will County, IL",
+        "Kane County, IL",
+        "McHenry County, IL"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1678,
+        1780,
+        2011,
+        2586,
+        2954
+      ],
+      "fmr2026": [
+        1480,
+        1581,
+        1781,
+        2294,
+        2653
+      ],
+      "changePct": [
+        13.4,
+        12.6,
+        12.9,
+        12.7,
+        11.3
+      ],
+      "pha": {
+        "name": "Chicago Housing Authority (CHA)",
+        "url": ""
+      },
+      "nearby": [
+        "milwaukee",
+        "indianapolis",
+        "detroit"
+      ]
+    },
+    {
+      "rank": 4,
+      "slug": "houston",
+      "short": "Houston",
+      "hudName": "Houston-The Woodlands-Sugar Land, TX HUD Metro FMR Area",
+      "hudAreaCode": "METRO26420M26420",
+      "state": "TX",
+      "states": [
+        "TX"
+      ],
+      "pop2024": 6991922,
+      "counties": [
+        "Harris County, TX",
+        "Fort Bend County, TX",
+        "Montgomery County, TX",
+        "Galveston County, TX",
+        "Liberty County, TX",
+        "Waller County, TX",
+        "Chambers County, TX"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1233,
+        1261,
+        1497,
+        2017,
+        2502
+      ],
+      "fmr2026": [
+        1280,
+        1323,
+        1573,
+        2116,
+        2639
+      ],
+      "changePct": [
+        -3.7,
+        -4.7,
+        -4.8,
+        -4.7,
+        -5.2
+      ],
+      "pha": {
+        "name": "Houston Housing Authority (Alliance Houston)",
+        "url": "https://www.alliancehtx.org/landlords"
+      },
+      "nearby": [
+        "austin",
+        "san-antonio",
+        "dallas"
+      ]
+    },
+    {
+      "rank": 5,
+      "slug": "philadelphia",
+      "short": "Philadelphia",
+      "hudName": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD MSA",
+      "hudAreaCode": "METRO37980M37980",
+      "state": "PA",
+      "states": [
+        "PA",
+        "NJ",
+        "DE",
+        "MD"
+      ],
+      "pop2024": 6272014,
+      "counties": [
+        "Philadelphia County, PA",
+        "Montgomery County, PA",
+        "Bucks County, PA",
+        "Delaware County, PA",
+        "New Castle County, DE",
+        "Chester County, PA",
+        "Camden County, NJ",
+        "Burlington County, NJ",
+        "Gloucester County, NJ",
+        "Cecil County, MD",
+        "Salem County, NJ"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1438,
+        1558,
+        1860,
+        2216,
+        2445
+      ],
+      "fmr2026": [
+        1397,
+        1520,
+        1810,
+        2170,
+        2423
+      ],
+      "changePct": [
+        2.9,
+        2.5,
+        2.8,
+        2.1,
+        0.9
+      ],
+      "pha": {
+        "name": "Philadelphia Housing Authority (PHA)",
+        "url": "https://www.pha.phila.gov/housing/housing-choice-voucher/payment-standards/"
+      },
+      "nearby": [
+        "newark",
+        "new-york",
+        "bergen-passaic"
+      ]
+    },
+    {
+      "rank": 6,
+      "slug": "washington-dc",
+      "short": "Washington, DC",
+      "hudName": "Washington-Arlington-Alexandria, DC-VA-MD HUD Metro FMR Area",
+      "hudAreaCode": "METRO47900M47900",
+      "state": "DC",
+      "states": [
+        "DC",
+        "VA",
+        "MD"
+      ],
+      "pop2024": 6155762,
+      "counties": [
+        "Fairfax County, VA",
+        "Montgomery County, MD",
+        "Prince George's County, MD",
+        "District of Columbia, DC",
+        "Prince William County, VA",
+        "Loudoun County, VA",
+        "Frederick County, MD",
+        "Arlington County, VA",
+        "Charles County, MD",
+        "Stafford County, VA",
+        "Alexandria city, VA",
+        "Spotsylvania County, VA",
+        "Fauquier County, VA",
+        "Manassas city, VA",
+        "Fredericksburg city, VA",
+        "Fairfax city, VA",
+        "Manassas Park city, VA",
+        "Clarke County, VA",
+        "Falls Church city, VA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2111,
+        2204,
+        2438,
+        3107,
+        3658
+      ],
+      "fmr2026": [
+        1953,
+        2015,
+        2246,
+        2835,
+        3332
+      ],
+      "changePct": [
+        8.1,
+        9.4,
+        8.5,
+        9.6,
+        9.8
+      ],
+      "pha": {
+        "name": "DC Housing Authority (DCHA)",
+        "url": "https://www.dchousing.org/wordpress/vouchers/payment-standard/"
+      },
+      "nearby": [
+        "baltimore",
+        "philadelphia",
+        "virginia-beach-norfolk"
+      ]
+    },
+    {
+      "rank": 7,
+      "slug": "atlanta",
+      "short": "Atlanta",
+      "hudName": "Atlanta-Sandy Springs-Roswell, GA HUD Metro FMR Area",
+      "hudAreaCode": "METRO12060M12060",
+      "state": "GA",
+      "states": [
+        "GA"
+      ],
+      "pop2024": 6122084,
+      "counties": [
+        "Fulton County, GA",
+        "Gwinnett County, GA",
+        "Cobb County, GA",
+        "DeKalb County, GA",
+        "Clayton County, GA",
+        "Cherokee County, GA",
+        "Forsyth County, GA",
+        "Henry County, GA",
+        "Paulding County, GA",
+        "Coweta County, GA",
+        "Douglas County, GA",
+        "Carroll County, GA",
+        "Fayette County, GA",
+        "Newton County, GA",
+        "Bartow County, GA",
+        "Walton County, GA",
+        "Rockdale County, GA",
+        "Barrow County, GA",
+        "Spalding County, GA",
+        "Pickens County, GA",
+        "Dawson County, GA",
+        "Pike County, GA",
+        "Jasper County, GA",
+        "Heard County, GA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1554,
+        1619,
+        1762,
+        2099,
+        2493
+      ],
+      "fmr2026": [
+        1585,
+        1660,
+        1820,
+        2182,
+        2605
+      ],
+      "changePct": [
+        -2.0,
+        -2.5,
+        -3.2,
+        -3.8,
+        -4.3
+      ],
+      "pha": {
+        "name": "Atlanta Housing",
+        "url": ""
+      },
+      "nearby": [
+        "nashville",
+        "charlotte",
+        "jacksonville"
+      ]
+    },
+    {
+      "rank": 8,
+      "slug": "dallas",
+      "short": "Dallas",
+      "hudName": "Dallas, TX HUD Metro FMR Area",
+      "hudAreaCode": "METRO19100M19100",
+      "state": "TX",
+      "states": [
+        "TX"
+      ],
+      "pop2024": 5382430,
+      "counties": [
+        "Dallas County, TX",
+        "Collin County, TX",
+        "Denton County, TX",
+        "Ellis County, TX",
+        "Kaufman County, TX",
+        "Rockwall County, TX",
+        "Hunt County, TX"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1491,
+        1536,
+        1807,
+        2275,
+        2892
+      ],
+      "fmr2026": [
+        1582,
+        1648,
+        1931,
+        2431,
+        3091
+      ],
+      "changePct": [
+        -5.8,
+        -6.8,
+        -6.4,
+        -6.4,
+        -6.4
+      ],
+      "pha": {
+        "name": "DHA Housing Solutions for North Texas",
+        "url": "https://dhantx.com/resources/payment-standards-housing-choice-voucher-program/"
+      },
+      "nearby": [
+        "fort-worth",
+        "austin",
+        "oklahoma-city"
+      ]
+    },
+    {
+      "rank": 9,
+      "slug": "phoenix",
+      "short": "Phoenix",
+      "hudName": "Phoenix-Mesa-Chandler, AZ MSA",
+      "hudAreaCode": "METRO38060M38060",
+      "state": "AZ",
+      "states": [
+        "AZ"
+      ],
+      "pop2024": 5028754,
+      "counties": [
+        "Maricopa County, AZ",
+        "Pinal County, AZ"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1390,
+        1493,
+        1734,
+        2287,
+        2537
+      ],
+      "fmr2026": [
+        1457,
+        1583,
+        1839,
+        2452,
+        2720
+      ],
+      "changePct": [
+        -4.6,
+        -5.7,
+        -5.7,
+        -6.7,
+        -6.7
+      ],
+      "pha": {
+        "name": "City of Phoenix Housing Department",
+        "url": ""
+      },
+      "nearby": [
+        "las-vegas",
+        "san-diego",
+        "riverside-san-bernardino"
+      ]
+    },
+    {
+      "rank": 10,
+      "slug": "riverside-san-bernardino",
+      "short": "Riverside-San Bernardino",
+      "hudName": "Riverside-San Bernardino-Ontario, CA MSA",
+      "hudAreaCode": "METRO40140M40140",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 4675704,
+      "counties": [
+        "Riverside County, CA",
+        "San Bernardino County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1605,
+        1705,
+        2103,
+        2771,
+        3336
+      ],
+      "fmr2026": [
+        1692,
+        1777,
+        2201,
+        2912,
+        3514
+      ],
+      "changePct": [
+        -5.1,
+        -4.1,
+        -4.5,
+        -4.8,
+        -5.1
+      ],
+      "pha": {
+        "name": "Housing Authority of the County of Riverside",
+        "url": ""
+      },
+      "nearby": [
+        "orange-county-ca",
+        "los-angeles",
+        "san-diego"
+      ]
+    },
+    {
+      "rank": 11,
+      "slug": "detroit",
+      "short": "Detroit",
+      "hudName": "Detroit-Warren-Livonia, MI HUD Metro FMR Area",
+      "hudAreaCode": "METRO19820M19820",
+      "state": "MI",
+      "states": [
+        "MI"
+      ],
+      "pop2024": 4180995,
+      "counties": [
+        "Wayne County, MI",
+        "Oakland County, MI",
+        "Macomb County, MI",
+        "St. Clair County, MI",
+        "Lapeer County, MI"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1047,
+        1167,
+        1459,
+        1777,
+        1929
+      ],
+      "fmr2026": [
+        1009,
+        1122,
+        1411,
+        1724,
+        1868
+      ],
+      "changePct": [
+        3.8,
+        4.0,
+        3.4,
+        3.1,
+        3.3
+      ],
+      "pha": {
+        "name": "Detroit Housing Commission",
+        "url": "https://www.dhcmi.org/sites/default/files/department-resources/rental-assistance/forms-and-resources/2026PaymentStandard.pdf"
+      },
+      "nearby": [
+        "cleveland",
+        "columbus-oh",
+        "pittsburgh"
+      ]
+    },
+    {
+      "rank": 12,
+      "slug": "minneapolis-st-paul",
+      "short": "Minneapolis-St. Paul",
+      "hudName": "Minneapolis-St. Paul-Bloomington, MN-WI HUD Metro FMR Area",
+      "hudAreaCode": "METRO33460M33460",
+      "state": "MN",
+      "states": [
+        "MN",
+        "WI"
+      ],
+      "pop2024": 3657430,
+      "counties": [
+        "Hennepin County, MN",
+        "Ramsey County, MN",
+        "Dakota County, MN",
+        "Anoka County, MN",
+        "Washington County, MN",
+        "Scott County, MN",
+        "Wright County, MN",
+        "Carver County, MN",
+        "Sherburne County, MN",
+        "St. Croix County, WI",
+        "Chisago County, MN",
+        "Isanti County, MN",
+        "Pierce County, WI"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1265,
+        1427,
+        1734,
+        2264,
+        2538
+      ],
+      "fmr2026": [
+        1242,
+        1405,
+        1709,
+        2262,
+        2531
+      ],
+      "changePct": [
+        1.9,
+        1.6,
+        1.5,
+        0.1,
+        0.3
+      ],
+      "pha": {
+        "name": "Minneapolis Public Housing Authority (MPHA)",
+        "url": "https://mphaonline.org/wp-content/uploads/2025/11/2026-Payment-Standards-and-Utility-Chart.pdf"
+      },
+      "nearby": [
+        "milwaukee",
+        "chicago",
+        "kansas-city"
+      ]
+    },
+    {
+      "rank": 13,
+      "slug": "boston",
+      "short": "Boston",
+      "hudName": "Boston-Cambridge-Quincy, MA-NH HUD Metro FMR Area",
+      "hudAreaCode": "METRO14460MM1120",
+      "state": "MA",
+      "states": [
+        "MA",
+        "NH"
+      ],
+      "pop2024": 3605178,
+      "counties": [
+        "Middlesex County, MA",
+        "Suffolk County, MA",
+        "Norfolk County, MA",
+        "Essex County, MA",
+        "Plymouth County, MA",
+        "Rockingham County, NH"
+      ],
+      "byTown": true,
+      "fmr2027": [
+        2440,
+        2518,
+        3008,
+        3584,
+        3953
+      ],
+      "fmr2026": [
+        2359,
+        2476,
+        2941,
+        3526,
+        3894
+      ],
+      "changePct": [
+        3.4,
+        1.7,
+        2.3,
+        1.6,
+        1.5
+      ],
+      "pha": {
+        "name": "Boston Housing Authority (BHA)",
+        "url": "https://www.bostonhousing.org/en/Section-8-Leased-Housing/Finding-An-Apartment/Payment-Standards.aspx"
+      },
+      "nearby": [
+        "nassau-suffolk",
+        "bergen-passaic",
+        "new-york"
+      ]
+    },
+    {
+      "rank": 14,
+      "slug": "tampa",
+      "short": "Tampa",
+      "hudName": "Tampa-St. Petersburg-Clearwater, FL MSA",
+      "hudAreaCode": "METRO45300M45300",
+      "state": "FL",
+      "states": [
+        "FL"
+      ],
+      "pop2024": 3304691,
+      "counties": [
+        "Hillsborough County, FL",
+        "Pinellas County, FL",
+        "Pasco County, FL",
+        "Hernando County, FL"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1597,
+        1648,
+        1917,
+        2448,
+        2977
+      ],
+      "fmr2026": [
+        1593,
+        1696,
+        1977,
+        2527,
+        3077
+      ],
+      "changePct": [
+        0.3,
+        -2.8,
+        -3.0,
+        -3.1,
+        -3.2
+      ],
+      "pha": {
+        "name": "Tampa Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "orlando",
+        "west-palm-beach",
+        "jacksonville"
+      ]
+    },
+    {
+      "rank": 15,
+      "slug": "san-diego",
+      "short": "San Diego",
+      "hudName": "San Diego-Chula Vista-Carlsbad, CA MSA",
+      "hudAreaCode": "METRO41740M41740",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 3288774,
+      "counties": [
+        "San Diego County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2192,
+        2335,
+        2823,
+        3743,
+        4526
+      ],
+      "fmr2026": [
+        2288,
+        2459,
+        3001,
+        3998,
+        4845
+      ],
+      "changePct": [
+        -4.2,
+        -5.0,
+        -5.9,
+        -6.4,
+        -6.6
+      ],
+      "pha": {
+        "name": "San Diego Housing Commission (SDHC)",
+        "url": "https://sdhc.org/housing-opportunities/choice-communities-initiative/"
+      },
+      "nearby": [
+        "orange-county-ca",
+        "riverside-san-bernardino",
+        "los-angeles"
+      ]
+    },
+    {
+      "rank": 16,
+      "slug": "orange-county-ca",
+      "short": "Orange County, CA",
+      "hudName": "Santa Ana-Anaheim-Irvine, CA HUD Metro FMR Area",
+      "hudAreaCode": "METRO31080MM5945",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 3165820,
+      "counties": [
+        "Orange County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2580,
+        2610,
+        3057,
+        4153,
+        4964
+      ],
+      "fmr2026": [
+        2682,
+        2746,
+        3236,
+        4393,
+        5246
+      ],
+      "changePct": [
+        -3.8,
+        -5.0,
+        -5.5,
+        -5.5,
+        -5.4
+      ],
+      "pha": {
+        "name": "Orange County Housing Authority (OCHA)",
+        "url": "https://housingauthority.oc.gov/sites/ocha/files/2025-10/2025-2026%20Payment%20Standard%20Public.pdf"
+      },
+      "nearby": [
+        "los-angeles",
+        "riverside-san-bernardino",
+        "san-diego"
+      ]
+    },
+    {
+      "rank": 17,
+      "slug": "seattle",
+      "short": "Seattle",
+      "hudName": "Seattle-Bellevue, WA HUD Metro FMR Area",
+      "hudAreaCode": "METRO42660MM7600",
+      "state": "WA",
+      "states": [
+        "WA"
+      ],
+      "pop2024": 3131601,
+      "counties": [
+        "King County, WA",
+        "Snohomish County, WA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2091,
+        2180,
+        2549,
+        3324,
+        3954
+      ],
+      "fmr2026": [
+        2074,
+        2146,
+        2501,
+        3272,
+        3847
+      ],
+      "changePct": [
+        0.8,
+        1.6,
+        1.9,
+        1.6,
+        2.8
+      ],
+      "pha": {
+        "name": "Seattle Housing Authority (SHA)",
+        "url": "https://www.seattlehousing.org/housing/housing-choice-vouchers/renting-voucher/voucher-payment-standards"
+      },
+      "nearby": [
+        "portland-or",
+        "sacramento",
+        "oakland"
+      ]
+    },
+    {
+      "rank": 18,
+      "slug": "denver",
+      "short": "Denver",
+      "hudName": "Denver-Aurora-Centennial, CO MSA",
+      "hudAreaCode": "METRO19740M19740",
+      "state": "CO",
+      "states": [
+        "CO"
+      ],
+      "pop2024": 3002721,
+      "counties": [
+        "Denver County, CO",
+        "Arapahoe County, CO",
+        "Jefferson County, CO",
+        "Adams County, CO",
+        "Douglas County, CO",
+        "Broomfield County, CO",
+        "Elbert County, CO",
+        "Park County, CO",
+        "Clear Creek County, CO",
+        "Gilpin County, CO"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1751,
+        1831,
+        2169,
+        2846,
+        3183
+      ],
+      "fmr2026": [
+        1643,
+        1754,
+        2089,
+        2734,
+        3049
+      ],
+      "changePct": [
+        6.6,
+        4.4,
+        3.8,
+        4.1,
+        4.4
+      ],
+      "pha": {
+        "name": "Denver Housing Authority (DHA)",
+        "url": "https://www.denverhousing.org/housing-choice-vouchers-section8/"
+      },
+      "nearby": [
+        "oklahoma-city",
+        "kansas-city",
+        "phoenix"
+      ]
+    },
+    {
+      "rank": 19,
+      "slug": "nassau-suffolk",
+      "short": "Nassau-Suffolk (Long Island)",
+      "hudName": "Nassau-Suffolk, NY HUD Metro FMR Area",
+      "hudAreaCode": "METRO35620MM5380",
+      "state": "NY",
+      "states": [
+        "NY"
+      ],
+      "pop2024": 2919737,
+      "counties": [
+        "Suffolk County, NY",
+        "Nassau County, NY"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1964,
+        2285,
+        2689,
+        3458,
+        3671
+      ],
+      "fmr2026": [
+        1992,
+        2379,
+        2747,
+        3563,
+        3768
+      ],
+      "changePct": [
+        -1.4,
+        -4.0,
+        -2.1,
+        -2.9,
+        -2.6
+      ],
+      "pha": {
+        "name": "Nassau County Office of Housing and Community Development",
+        "url": ""
+      },
+      "nearby": [
+        "new-york",
+        "newark",
+        "bergen-passaic"
+      ]
+    },
+    {
+      "rank": 20,
+      "slug": "baltimore",
+      "short": "Baltimore",
+      "hudName": "Baltimore-Columbia-Towson, MD MSA",
+      "hudAreaCode": "METRO12580M12580",
+      "state": "MD",
+      "states": [
+        "MD"
+      ],
+      "pop2024": 2849436,
+      "counties": [
+        "Baltimore County, MD",
+        "Anne Arundel County, MD",
+        "Baltimore city, MD",
+        "Howard County, MD",
+        "Harford County, MD",
+        "Carroll County, MD",
+        "Queen Anne's County, MD"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1523,
+        1625,
+        2006,
+        2509,
+        2789
+      ],
+      "fmr2026": [
+        1362,
+        1511,
+        1857,
+        2358,
+        2611
+      ],
+      "changePct": [
+        11.8,
+        7.5,
+        8.0,
+        6.4,
+        6.8
+      ],
+      "pha": {
+        "name": "Housing Authority of Baltimore City (HABC)",
+        "url": ""
+      },
+      "nearby": [
+        "washington-dc",
+        "philadelphia",
+        "newark"
+      ]
+    },
+    {
+      "rank": 21,
+      "slug": "oakland",
+      "short": "Oakland",
+      "hudName": "Oakland-Fremont, CA HUD Metro FMR Area",
+      "hudAreaCode": "METRO41860MM5775",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 2814485,
+      "counties": [
+        "Alameda County, CA",
+        "Contra Costa County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2088,
+        2290,
+        2805,
+        3592,
+        4250
+      ],
+      "fmr2026": [
+        2142,
+        2385,
+        2912,
+        3724,
+        4413
+      ],
+      "changePct": [
+        -2.5,
+        -4.0,
+        -3.7,
+        -3.5,
+        -3.7
+      ],
+      "pha": {
+        "name": "Oakland Housing Authority (OHA)",
+        "url": "https://www.oakha.org/propertyowners/paymentstandards/"
+      },
+      "nearby": [
+        "san-francisco",
+        "san-jose",
+        "sacramento"
+      ]
+    },
+    {
+      "rank": 22,
+      "slug": "orlando",
+      "short": "Orlando",
+      "hudName": "Orlando-Kissimmee-Sanford, FL MSA",
+      "hudAreaCode": "METRO36740M36740",
+      "state": "FL",
+      "states": [
+        "FL"
+      ],
+      "pop2024": 2793746,
+      "counties": [
+        "Orange County, FL",
+        "Seminole County, FL",
+        "Osceola County, FL",
+        "Lake County, FL"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1658,
+        1726,
+        1959,
+        2445,
+        2856
+      ],
+      "fmr2026": [
+        1650,
+        1731,
+        1972,
+        2476,
+        2924
+      ],
+      "changePct": [
+        0.5,
+        -0.3,
+        -0.7,
+        -1.3,
+        -2.3
+      ],
+      "pha": {
+        "name": "Orlando Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "tampa",
+        "jacksonville",
+        "west-palm-beach"
+      ]
+    },
+    {
+      "rank": 23,
+      "slug": "st-louis",
+      "short": "St. Louis",
+      "hudName": "St. Louis, MO-IL HUD Metro FMR Area",
+      "hudAreaCode": "METRO41180M41180",
+      "state": "MO",
+      "states": [
+        "MO",
+        "IL"
+      ],
+      "pop2024": 2750711,
+      "counties": [
+        "St. Louis County, MO",
+        "St. Charles County, MO",
+        "St. Louis city, MO",
+        "Madison County, IL",
+        "St. Clair County, IL",
+        "Jefferson County, MO",
+        "Franklin County, MO",
+        "Lincoln County, MO",
+        "Warren County, MO",
+        "Clinton County, IL",
+        "Monroe County, IL",
+        "Jersey County, IL",
+        "Calhoun County, IL",
+        "Sullivan part, MO"
+      ],
+      "byTown": true,
+      "fmr2027": [
+        1064,
+        1104,
+        1349,
+        1731,
+        1997
+      ],
+      "fmr2026": [
+        955,
+        995,
+        1218,
+        1568,
+        1812
+      ],
+      "changePct": [
+        11.4,
+        11.0,
+        10.8,
+        10.4,
+        10.2
+      ],
+      "pha": {
+        "name": "St. Louis Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "indianapolis",
+        "kansas-city",
+        "nashville"
+      ]
+    },
+    {
+      "rank": 24,
+      "slug": "miami",
+      "short": "Miami",
+      "hudName": "Miami-Miami Beach-Kendall, FL HUD Metro FMR Area",
+      "hudAreaCode": "METRO33100MM5000",
+      "state": "FL",
+      "states": [
+        "FL"
+      ],
+      "pop2024": 2738356,
+      "counties": [
+        "Miami-Dade County, FL"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1953,
+        2121,
+        2564,
+        3277,
+        3749
+      ],
+      "fmr2026": [
+        1828,
+        1995,
+        2436,
+        3127,
+        3613
+      ],
+      "changePct": [
+        6.8,
+        6.3,
+        5.3,
+        4.8,
+        3.8
+      ],
+      "pha": {
+        "name": "Miami-Dade Public Housing and Community Development",
+        "url": ""
+      },
+      "nearby": [
+        "fort-lauderdale",
+        "west-palm-beach",
+        "orlando"
+      ]
+    },
+    {
+      "rank": 25,
+      "slug": "fort-worth",
+      "short": "Fort Worth",
+      "hudName": "Fort Worth-Arlington, TX HUD Metro FMR Area",
+      "hudAreaCode": "METRO19100MM2800",
+      "state": "TX",
+      "states": [
+        "TX"
+      ],
+      "pop2024": 2528155,
+      "counties": [
+        "Tarrant County, TX",
+        "Johnson County, TX",
+        "Parker County, TX"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1461,
+        1481,
+        1745,
+        2284,
+        2866
+      ],
+      "fmr2026": [
+        1427,
+        1473,
+        1723,
+        2273,
+        2815
+      ],
+      "changePct": [
+        2.4,
+        0.5,
+        1.3,
+        0.5,
+        1.8
+      ],
+      "pha": {
+        "name": "Fort Worth Housing Solutions",
+        "url": "https://fwhs.org/housing-programs/housing-choice-voucher/"
+      },
+      "nearby": [
+        "dallas",
+        "austin",
+        "oklahoma-city"
+      ]
+    },
+    {
+      "rank": 26,
+      "slug": "portland-or",
+      "short": "Portland, OR",
+      "hudName": "Portland-Vancouver-Hillsboro, OR-WA MSA",
+      "hudAreaCode": "METRO38900M38900",
+      "state": "OR",
+      "states": [
+        "OR",
+        "WA"
+      ],
+      "pop2024": 2520987,
+      "counties": [
+        "Multnomah County, OR",
+        "Washington County, OR",
+        "Clark County, WA",
+        "Clackamas County, OR",
+        "Yamhill County, OR",
+        "Columbia County, OR",
+        "Skamania County, WA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1527,
+        1633,
+        1878,
+        2550,
+        3069
+      ],
+      "fmr2026": [
+        1570,
+        1677,
+        1922,
+        2619,
+        3109
+      ],
+      "changePct": [
+        -2.7,
+        -2.6,
+        -2.3,
+        -2.6,
+        -1.3
+      ],
+      "pha": {
+        "name": "Home Forward",
+        "url": "https://www.homeforward.org/housing-choice-voucher/"
+      },
+      "nearby": [
+        "seattle",
+        "sacramento",
+        "oakland"
+      ]
+    },
+    {
+      "rank": 27,
+      "slug": "san-antonio",
+      "short": "San Antonio",
+      "hudName": "San Antonio-New Braunfels, TX HUD Metro FMR Area",
+      "hudAreaCode": "METRO41700M41700",
+      "state": "TX",
+      "states": [
+        "TX"
+      ],
+      "pop2024": 2509611,
+      "counties": [
+        "Bexar County, TX",
+        "Comal County, TX",
+        "Guadalupe County, TX",
+        "Wilson County, TX",
+        "Bandera County, TX"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1099,
+        1196,
+        1441,
+        1864,
+        2163
+      ],
+      "fmr2026": [
+        1077,
+        1177,
+        1426,
+        1830,
+        2132
+      ],
+      "changePct": [
+        2.0,
+        1.6,
+        1.1,
+        1.9,
+        1.5
+      ],
+      "pha": {
+        "name": "Opportunity Home San Antonio",
+        "url": "https://homesa.org/housing/find-a-home/vouchers/housing-assistance-payments/"
+      },
+      "nearby": [
+        "austin",
+        "houston",
+        "fort-worth"
+      ]
+    },
+    {
+      "rank": 28,
+      "slug": "austin",
+      "short": "Austin",
+      "hudName": "Austin-Round Rock-San Marcos, TX MSA",
+      "hudAreaCode": "METRO12420M12420",
+      "state": "TX",
+      "states": [
+        "TX"
+      ],
+      "pop2024": 2426592,
+      "counties": [
+        "Travis County, TX",
+        "Williamson County, TX",
+        "Hays County, TX",
+        "Bastrop County, TX",
+        "Caldwell County, TX"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1447,
+        1530,
+        1817,
+        2292,
+        2689
+      ],
+      "fmr2026": [
+        1474,
+        1562,
+        1852,
+        2347,
+        2760
+      ],
+      "changePct": [
+        -1.8,
+        -2.0,
+        -1.9,
+        -2.3,
+        -2.6
+      ],
+      "pha": {
+        "name": "Housing Authority of the City of Austin",
+        "url": "https://austinha.org/resources/voucher-clients/"
+      },
+      "nearby": [
+        "san-antonio",
+        "houston",
+        "fort-worth"
+      ]
+    },
+    {
+      "rank": 29,
+      "slug": "las-vegas",
+      "short": "Las Vegas",
+      "hudName": "Las Vegas-Henderson-North Las Vegas, NV MSA",
+      "hudAreaCode": "METRO29820M29820",
+      "state": "NV",
+      "states": [
+        "NV"
+      ],
+      "pop2024": 2329548,
+      "counties": [
+        "Clark County, NV"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1310,
+        1435,
+        1686,
+        2317,
+        2652
+      ],
+      "fmr2026": [
+        1333,
+        1478,
+        1735,
+        2413,
+        2764
+      ],
+      "changePct": [
+        -1.7,
+        -2.9,
+        -2.8,
+        -4.0,
+        -4.1
+      ],
+      "pha": {
+        "name": "Southern Nevada Regional Housing Authority",
+        "url": "https://cdn.prod.website-files.com/6578d5f8bf00aeb22afcf651/699f2ecc284378a77ffb616b_Payment%20Standards%20Memo%20Final.pdf"
+      },
+      "nearby": [
+        "riverside-san-bernardino",
+        "orange-county-ca",
+        "los-angeles"
+      ]
+    },
+    {
+      "rank": 30,
+      "slug": "pittsburgh",
+      "short": "Pittsburgh",
+      "hudName": "Pittsburgh, PA HUD Metro FMR Area",
+      "hudAreaCode": "METRO38300M38300",
+      "state": "PA",
+      "states": [
+        "PA"
+      ],
+      "pop2024": 2290294,
+      "counties": [
+        "Allegheny County, PA",
+        "Westmoreland County, PA",
+        "Washington County, PA",
+        "Butler County, PA",
+        "Beaver County, PA",
+        "Fayette County, PA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1075,
+        1146,
+        1389,
+        1773,
+        1925
+      ],
+      "fmr2026": [
+        1001,
+        1077,
+        1299,
+        1661,
+        1789
+      ],
+      "changePct": [
+        7.4,
+        6.4,
+        6.9,
+        6.7,
+        7.6
+      ],
+      "pha": {
+        "name": "Housing Authority of the City of Pittsburgh (HACP)",
+        "url": "https://hacp.org/doing-business/landlord-resources/"
+      },
+      "nearby": [
+        "cleveland",
+        "columbus-oh",
+        "washington-dc"
+      ]
+    },
+    {
+      "rank": 31,
+      "slug": "sacramento",
+      "short": "Sacramento",
+      "hudName": "Sacramento--Roseville--Arden-Arcade, CA HUD Metro FMR Area",
+      "hudAreaCode": "METRO40900M40900",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 2205824,
+      "counties": [
+        "Sacramento County, CA",
+        "Placer County, CA",
+        "El Dorado County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1742,
+        1793,
+        2201,
+        2887,
+        3329
+      ],
+      "fmr2026": [
+        1748,
+        1832,
+        2255,
+        3002,
+        3460
+      ],
+      "changePct": [
+        -0.3,
+        -2.1,
+        -2.4,
+        -3.8,
+        -3.8
+      ],
+      "pha": {
+        "name": "Sacramento Housing and Redevelopment Agency (SHRA)",
+        "url": "https://www.shra.org/housing-choice-voucher-program/"
+      },
+      "nearby": [
+        "oakland",
+        "san-francisco",
+        "san-jose"
+      ]
+    },
+    {
+      "rank": 32,
+      "slug": "kansas-city",
+      "short": "Kansas City",
+      "hudName": "Kansas City, MO-KS HUD Metro FMR Area",
+      "hudAreaCode": "METRO28140M28140",
+      "state": "MO",
+      "states": [
+        "MO",
+        "KS"
+      ],
+      "pop2024": 2201956,
+      "counties": [
+        "Jackson County, MO",
+        "Johnson County, KS",
+        "Clay County, MO",
+        "Wyandotte County, KS",
+        "Cass County, MO",
+        "Platte County, MO",
+        "Leavenworth County, KS",
+        "Miami County, KS",
+        "Lafayette County, MO",
+        "Ray County, MO",
+        "Clinton County, MO",
+        "Linn County, KS",
+        "Caldwell County, MO"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1257,
+        1366,
+        1546,
+        2020,
+        2419
+      ],
+      "fmr2026": [
+        1095,
+        1197,
+        1358,
+        1769,
+        2103
+      ],
+      "changePct": [
+        14.8,
+        14.1,
+        13.8,
+        14.2,
+        15.0
+      ],
+      "pha": {
+        "name": "Housing Authority of Kansas City, Missouri",
+        "url": ""
+      },
+      "nearby": [
+        "st-louis",
+        "oklahoma-city",
+        "minneapolis-st-paul"
+      ]
+    },
+    {
+      "rank": 33,
+      "slug": "cincinnati",
+      "short": "Cincinnati",
+      "hudName": "Cincinnati, OH-KY-IN HUD Metro FMR Area",
+      "hudAreaCode": "METRO17140M17140",
+      "state": "OH",
+      "states": [
+        "OH",
+        "KY",
+        "IN"
+      ],
+      "pop2024": 2178423,
+      "counties": [
+        "Hamilton County, OH",
+        "Butler County, OH",
+        "Warren County, OH",
+        "Clermont County, OH",
+        "Kenton County, KY",
+        "Boone County, KY",
+        "Campbell County, KY",
+        "Dearborn County, IN",
+        "Pendleton County, KY",
+        "Gallatin County, KY",
+        "Bracken County, KY",
+        "Ohio County, IN"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1052,
+        1128,
+        1442,
+        1897,
+        2141
+      ],
+      "fmr2026": [
+        958,
+        1051,
+        1353,
+        1785,
+        1976
+      ],
+      "changePct": [
+        9.8,
+        7.3,
+        6.6,
+        6.3,
+        8.4
+      ],
+      "pha": {
+        "name": "Cincinnati Metropolitan Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "indianapolis",
+        "columbus-oh",
+        "cleveland"
+      ]
+    },
+    {
+      "rank": 34,
+      "slug": "charlotte",
+      "short": "Charlotte",
+      "hudName": "Charlotte-Concord-Gastonia, NC-SC HUD Metro FMR Area",
+      "hudAreaCode": "METRO16740M16740",
+      "state": "NC",
+      "states": [
+        "NC",
+        "SC"
+      ],
+      "pop2024": 2170326,
+      "counties": [
+        "Mecklenburg County, NC",
+        "York County, SC",
+        "Union County, NC",
+        "Cabarrus County, NC",
+        "Gaston County, NC"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1574,
+        1640,
+        1785,
+        2179,
+        2773
+      ],
+      "fmr2026": [
+        1469,
+        1538,
+        1686,
+        2076,
+        2637
+      ],
+      "changePct": [
+        7.1,
+        6.6,
+        5.9,
+        5.0,
+        5.2
+      ],
+      "pha": {
+        "name": "INLIVIAN (Charlotte)",
+        "url": "https://www.inlivian.com/housing-choice-voucher/"
+      },
+      "nearby": [
+        "raleigh",
+        "atlanta",
+        "virginia-beach-norfolk"
+      ]
+    },
+    {
+      "rank": 35,
+      "slug": "newark",
+      "short": "Newark",
+      "hudName": "Newark, NJ HUD Metro FMR Area",
+      "hudAreaCode": "METRO35620MM5640",
+      "state": "NJ",
+      "states": [
+        "NJ"
+      ],
+      "pop2024": 2102627,
+      "counties": [
+        "Essex County, NJ",
+        "Union County, NJ",
+        "Morris County, NJ",
+        "Sussex County, NJ"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1637,
+        1850,
+        2233,
+        2785,
+        3188
+      ],
+      "fmr2026": [
+        1612,
+        1822,
+        2205,
+        2761,
+        3137
+      ],
+      "changePct": [
+        1.6,
+        1.5,
+        1.3,
+        0.9,
+        1.6
+      ],
+      "pha": {
+        "name": "Newark Housing Authority",
+        "url": "https://www.newarkha.org/Programs-Services/Housing-Choice-Voucher-Program-Section-8"
+      },
+      "nearby": [
+        "new-york",
+        "bergen-passaic",
+        "nassau-suffolk"
+      ]
+    },
+    {
+      "rank": 36,
+      "slug": "cleveland",
+      "short": "Cleveland",
+      "hudName": "Cleveland, OH HUD Metro FMR Area",
+      "hudAreaCode": "METRO17410N17460",
+      "state": "OH",
+      "states": [
+        "OH"
+      ],
+      "pop2024": 2074359,
+      "counties": [
+        "Cuyahoga County, OH",
+        "Lorain County, OH",
+        "Lake County, OH",
+        "Medina County, OH",
+        "Geauga County, OH"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        924,
+        1050,
+        1274,
+        1628,
+        1756
+      ],
+      "fmr2026": [
+        933,
+        1058,
+        1279,
+        1646,
+        1760
+      ],
+      "changePct": [
+        -1.0,
+        -0.8,
+        -0.4,
+        -1.1,
+        -0.2
+      ],
+      "pha": {
+        "name": "Cuyahoga Metropolitan Housing Authority (CMHA)",
+        "url": ""
+      },
+      "nearby": [
+        "detroit",
+        "pittsburgh",
+        "columbus-oh"
+      ]
+    },
+    {
+      "rank": 37,
+      "slug": "columbus-oh",
+      "short": "Columbus, OH",
+      "hudName": "Columbus, OH HUD Metro FMR Area",
+      "hudAreaCode": "METRO18140M18140",
+      "state": "OH",
+      "states": [
+        "OH"
+      ],
+      "pop2024": 2045130,
+      "counties": [
+        "Franklin County, OH",
+        "Delaware County, OH",
+        "Licking County, OH",
+        "Fairfield County, OH",
+        "Pickaway County, OH",
+        "Madison County, OH",
+        "Morrow County, OH"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1258,
+        1346,
+        1602,
+        1909,
+        2172
+      ],
+      "fmr2026": [
+        1111,
+        1194,
+        1430,
+        1715,
+        1927
+      ],
+      "changePct": [
+        13.2,
+        12.7,
+        12.0,
+        11.3,
+        12.7
+      ],
+      "pha": {
+        "name": "Columbus Metropolitan Housing Authority (CMHA)",
+        "url": "https://cmhanet.com/statement-regarding-housing-choice-voucher-payment-standard-adjustment/statement-regarding-housing-choice-voucher-payment-standard-adjustment"
+      },
+      "nearby": [
+        "cincinnati",
+        "cleveland",
+        "pittsburgh"
+      ]
+    },
+    {
+      "rank": 38,
+      "slug": "indianapolis",
+      "short": "Indianapolis",
+      "hudName": "Indianapolis-Carmel, IN HUD Metro FMR Area",
+      "hudAreaCode": "METRO26900M26900",
+      "state": "IN",
+      "states": [
+        "IN"
+      ],
+      "pop2024": 1982809,
+      "counties": [
+        "Marion County, IN",
+        "Hamilton County, IN",
+        "Hendricks County, IN",
+        "Johnson County, IN",
+        "Hancock County, IN",
+        "Boone County, IN",
+        "Morgan County, IN",
+        "Shelby County, IN",
+        "Brown County, IN"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1187,
+        1336,
+        1536,
+        1991,
+        2425
+      ],
+      "fmr2026": [
+        1118,
+        1267,
+        1473,
+        1907,
+        2338
+      ],
+      "changePct": [
+        6.2,
+        5.4,
+        4.3,
+        4.4,
+        3.7
+      ],
+      "pha": {
+        "name": "Indianapolis Housing Agency",
+        "url": ""
+      },
+      "nearby": [
+        "cincinnati",
+        "chicago",
+        "columbus-oh"
+      ]
+    },
+    {
+      "rank": 39,
+      "slug": "fort-lauderdale",
+      "short": "Fort Lauderdale",
+      "hudName": "Fort Lauderdale, FL HUD Metro FMR Area",
+      "hudAreaCode": "METRO33100MM2680",
+      "state": "FL",
+      "states": [
+        "FL"
+      ],
+      "pop2024": 1977129,
+      "counties": [
+        "Broward County, FL"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1759,
+        1902,
+        2321,
+        3172,
+        3662
+      ],
+      "fmr2026": [
+        1737,
+        1900,
+        2333,
+        3216,
+        3810
+      ],
+      "changePct": [
+        1.3,
+        0.1,
+        -0.5,
+        -1.4,
+        -3.9
+      ],
+      "pha": {
+        "name": "Housing Authority of the City of Fort Lauderdale",
+        "url": ""
+      },
+      "nearby": [
+        "miami",
+        "west-palm-beach",
+        "orlando"
+      ]
+    },
+    {
+      "rank": 40,
+      "slug": "san-jose",
+      "short": "San Jose",
+      "hudName": "San Jose-Sunnyvale-Santa Clara, CA HUD Metro FMR Area",
+      "hudAreaCode": "METRO41940M41940",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 1902047,
+      "counties": [
+        "Santa Clara County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2458,
+        2778,
+        3272,
+        4396,
+        4688
+      ],
+      "fmr2026": [
+        2621,
+        2982,
+        3483,
+        4602,
+        5010
+      ],
+      "changePct": [
+        -6.2,
+        -6.8,
+        -6.1,
+        -4.5,
+        -6.4
+      ],
+      "pha": {
+        "name": "Santa Clara County Housing Authority",
+        "url": "https://www.scchousingauthority.org/section-8/payment-standards/"
+      },
+      "nearby": [
+        "oakland",
+        "san-francisco",
+        "sacramento"
+      ]
+    },
+    {
+      "rank": 41,
+      "slug": "nashville",
+      "short": "Nashville",
+      "hudName": "Nashville-Davidson--Murfreesboro--Franklin, TN HUD Metro FMR Area",
+      "hudAreaCode": "METRO34980M34980",
+      "state": "TN",
+      "states": [
+        "TN"
+      ],
+      "pop2024": 1899740,
+      "counties": [
+        "Davidson County, TN",
+        "Rutherford County, TN",
+        "Williamson County, TN",
+        "Sumner County, TN",
+        "Wilson County, TN",
+        "Robertson County, TN",
+        "Dickson County, TN",
+        "Cheatham County, TN",
+        "Cannon County, TN",
+        "Trousdale County, TN"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1585,
+        1650,
+        1798,
+        2309,
+        2799
+      ],
+      "fmr2026": [
+        1507,
+        1578,
+        1730,
+        2211,
+        2696
+      ],
+      "changePct": [
+        5.2,
+        4.6,
+        3.9,
+        4.4,
+        3.8
+      ],
+      "pha": {
+        "name": "Metropolitan Development and Housing Agency (MDHA)",
+        "url": "https://www.nashville-mdha.org/rental-assistance-voucher-program/"
+      },
+      "nearby": [
+        "atlanta",
+        "cincinnati",
+        "indianapolis"
+      ]
+    },
+    {
+      "rank": 42,
+      "slug": "san-francisco",
+      "short": "San Francisco",
+      "hudName": "San Francisco, CA HUD Metro FMR Area",
+      "hudAreaCode": "METRO41860MM7360",
+      "state": "CA",
+      "states": [
+        "CA"
+      ],
+      "pop2024": 1830544,
+      "counties": [
+        "San Francisco County, CA",
+        "San Mateo County, CA",
+        "Marin County, CA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        2574,
+        3003,
+        3697,
+        4832,
+        5439
+      ],
+      "fmr2026": [
+        2485,
+        2977,
+        3604,
+        4604,
+        4772
+      ],
+      "changePct": [
+        3.6,
+        0.9,
+        2.6,
+        5.0,
+        14.0
+      ],
+      "pha": {
+        "name": "San Francisco Housing Authority",
+        "url": "https://sfha.org/resources-forms/payment-standards"
+      },
+      "nearby": [
+        "oakland",
+        "san-jose",
+        "sacramento"
+      ]
+    },
+    {
+      "rank": 43,
+      "slug": "virginia-beach-norfolk",
+      "short": "Virginia Beach-Norfolk",
+      "hudName": "Virginia Beach-Norfolk-Newport News, VA-NC HUD Metro FMR Area",
+      "hudAreaCode": "METRO47260M47260",
+      "state": "VA",
+      "states": [
+        "VA",
+        "NC"
+      ],
+      "pop2024": 1759383,
+      "counties": [
+        "Virginia Beach city, VA",
+        "Chesapeake city, VA",
+        "Norfolk city, VA",
+        "Newport News city, VA",
+        "Hampton city, VA",
+        "Suffolk city, VA",
+        "Portsmouth city, VA",
+        "James City County, VA",
+        "York County, VA",
+        "Isle of Wight County, VA",
+        "Gloucester County, VA",
+        "Currituck County, NC",
+        "Williamsburg city, VA",
+        "Poquoson city, VA",
+        "Mathews County, VA"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1470,
+        1488,
+        1667,
+        2298,
+        2710
+      ],
+      "fmr2026": [
+        1492,
+        1512,
+        1713,
+        2376,
+        2797
+      ],
+      "changePct": [
+        -1.5,
+        -1.6,
+        -2.7,
+        -3.3,
+        -3.1
+      ],
+      "pha": {
+        "name": "Norfolk Redevelopment and Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "washington-dc",
+        "raleigh",
+        "baltimore"
+      ]
+    },
+    {
+      "rank": 44,
+      "slug": "jacksonville",
+      "short": "Jacksonville",
+      "hudName": "Jacksonville, FL HUD Metro FMR Area",
+      "hudAreaCode": "METRO27260M27260",
+      "state": "FL",
+      "states": [
+        "FL"
+      ],
+      "pop2024": 1655530,
+      "counties": [
+        "Duval County, FL",
+        "St. Johns County, FL",
+        "Clay County, FL",
+        "Nassau County, FL"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1401,
+        1421,
+        1694,
+        2077,
+        2594
+      ],
+      "fmr2026": [
+        1355,
+        1382,
+        1658,
+        2043,
+        2561
+      ],
+      "changePct": [
+        3.4,
+        2.8,
+        2.2,
+        1.7,
+        1.3
+      ],
+      "pha": {
+        "name": "Jacksonville Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "orlando",
+        "tampa",
+        "west-palm-beach"
+      ]
+    },
+    {
+      "rank": 45,
+      "slug": "san-juan-pr",
+      "short": "San Juan, PR",
+      "hudName": "San Juan-Guaynabo, PR HUD Metro FMR Area",
+      "hudAreaCode": "METRO41980MM7440",
+      "state": "PR",
+      "states": [
+        "PR"
+      ],
+      "pop2024": 1616561,
+      "counties": [
+        "San Juan Municipio, PR",
+        "Bayam\u00f3n Municipio, PR",
+        "Carolina Municipio, PR",
+        "Guaynabo Municipio, PR",
+        "Toa Baja Municipio, PR",
+        "Trujillo Alto Municipio, PR",
+        "Toa Alta Municipio, PR",
+        "Vega Baja Municipio, PR",
+        "Humacao Municipio, PR",
+        "R\u00edo Grande Municipio, PR",
+        "Can\u00f3vanas Municipio, PR",
+        "Manat\u00ed Municipio, PR",
+        "Juncos Municipio, PR",
+        "Dorado Municipio, PR",
+        "Las Piedras Municipio, PR",
+        "Vega Alta Municipio, PR",
+        "Corozal Municipio, PR",
+        "Yabucoa Municipio, PR",
+        "Naranjito Municipio, PR",
+        "Morovis Municipio, PR",
+        "Aguas Buenas Municipio, PR",
+        "Naguabo Municipio, PR",
+        "Lo\u00edza Municipio, PR",
+        "Barceloneta Municipio, PR",
+        "Cata\u00f1o Municipio, PR",
+        "Comer\u00edo Municipio, PR",
+        "Florida Municipio, PR",
+        "Maunabo Municipio, PR"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        592,
+        604,
+        706,
+        920,
+        1117
+      ],
+      "fmr2026": [
+        559,
+        572,
+        663,
+        868,
+        1046
+      ],
+      "changePct": [
+        5.9,
+        5.6,
+        6.5,
+        6.0,
+        6.8
+      ],
+      "pha": {
+        "name": "",
+        "url": ""
+      },
+      "nearby": [
+        "miami",
+        "fort-lauderdale",
+        "west-palm-beach"
+      ]
+    },
+    {
+      "rank": 46,
+      "slug": "milwaukee",
+      "short": "Milwaukee",
+      "hudName": "Milwaukee-Waukesha, WI MSA",
+      "hudAreaCode": "METRO33340M33340",
+      "state": "WI",
+      "states": [
+        "WI"
+      ],
+      "pop2024": 1568938,
+      "counties": [
+        "Milwaukee County, WI",
+        "Waukesha County, WI",
+        "Washington County, WI",
+        "Ozaukee County, WI"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        985,
+        1060,
+        1263,
+        1553,
+        1664
+      ],
+      "fmr2026": [
+        1027,
+        1119,
+        1338,
+        1648,
+        1784
+      ],
+      "changePct": [
+        -4.1,
+        -5.3,
+        -5.6,
+        -5.8,
+        -6.7
+      ],
+      "pha": {
+        "name": "Housing Authority of the City of Milwaukee (HACM)",
+        "url": ""
+      },
+      "nearby": [
+        "chicago",
+        "indianapolis",
+        "detroit"
+      ]
+    },
+    {
+      "rank": 47,
+      "slug": "west-palm-beach",
+      "short": "West Palm Beach",
+      "hudName": "West Palm Beach-Boca Raton, FL HUD Metro FMR Area",
+      "hudAreaCode": "METRO33100MM8960",
+      "state": "FL",
+      "states": [
+        "FL"
+      ],
+      "pop2024": 1533806,
+      "counties": [
+        "Palm Beach County, FL"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1907,
+        2008,
+        2349,
+        3052,
+        3523
+      ],
+      "fmr2026": [
+        1788,
+        1901,
+        2254,
+        2920,
+        3388
+      ],
+      "changePct": [
+        6.7,
+        5.6,
+        4.2,
+        4.5,
+        4.0
+      ],
+      "pha": {
+        "name": "Palm Beach County Housing Authority",
+        "url": "https://www.pbchafl.org/people/residents/housing-choice-voucher/"
+      },
+      "nearby": [
+        "fort-lauderdale",
+        "miami",
+        "orlando"
+      ]
+    },
+    {
+      "rank": 48,
+      "slug": "raleigh",
+      "short": "Raleigh",
+      "hudName": "Raleigh-Cary, NC MSA",
+      "hudAreaCode": "METRO39580M39580",
+      "state": "NC",
+      "states": [
+        "NC"
+      ],
+      "pop2024": 1487302,
+      "counties": [
+        "Wake County, NC",
+        "Johnston County, NC",
+        "Franklin County, NC"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1489,
+        1552,
+        1689,
+        2103,
+        2823
+      ],
+      "fmr2026": [
+        1524,
+        1596,
+        1750,
+        2196,
+        2936
+      ],
+      "changePct": [
+        -2.3,
+        -2.8,
+        -3.5,
+        -4.2,
+        -3.8
+      ],
+      "pha": {
+        "name": "Raleigh Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "charlotte",
+        "virginia-beach-norfolk",
+        "washington-dc"
+      ]
+    },
+    {
+      "rank": 49,
+      "slug": "bergen-passaic",
+      "short": "Bergen-Passaic, NJ",
+      "hudName": "Bergen-Passaic, NJ HUD Metro FMR Area",
+      "hudAreaCode": "METRO35620MM0875",
+      "state": "NJ",
+      "states": [
+        "NJ"
+      ],
+      "pop2024": 1483328,
+      "counties": [
+        "Bergen County, NJ",
+        "Passaic County, NJ"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        1772,
+        1987,
+        2282,
+        2771,
+        3497
+      ],
+      "fmr2026": [
+        1778,
+        2024,
+        2324,
+        2835,
+        3618
+      ],
+      "changePct": [
+        -0.3,
+        -1.8,
+        -1.8,
+        -2.3,
+        -3.3
+      ],
+      "pha": {
+        "name": "Housing Authority of Bergen County",
+        "url": ""
+      },
+      "nearby": [
+        "newark",
+        "new-york",
+        "nassau-suffolk"
+      ]
+    },
+    {
+      "rank": 50,
+      "slug": "oklahoma-city",
+      "short": "Oklahoma City",
+      "hudName": "Oklahoma City, OK HUD Metro FMR Area",
+      "hudAreaCode": "METRO36420M36420",
+      "state": "OK",
+      "states": [
+        "OK"
+      ],
+      "pop2024": 1372442,
+      "counties": [
+        "Oklahoma County, OK",
+        "Cleveland County, OK",
+        "Canadian County, OK",
+        "Logan County, OK",
+        "McClain County, OK"
+      ],
+      "byTown": false,
+      "fmr2027": [
+        958,
+        1040,
+        1264,
+        1713,
+        1923
+      ],
+      "fmr2026": [
+        939,
+        1017,
+        1244,
+        1675,
+        1857
+      ],
+      "changePct": [
+        2.0,
+        2.3,
+        1.6,
+        2.3,
+        3.6
+      ],
+      "pha": {
+        "name": "Oklahoma City Housing Authority",
+        "url": ""
+      },
+      "nearby": [
+        "fort-worth",
+        "dallas",
+        "kansas-city"
+      ]
+    }
+  ]
+}

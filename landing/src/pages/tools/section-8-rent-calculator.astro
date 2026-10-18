@@ -1,0 +1,134 @@
+---
+// H02-E1 tool 2. Rules read on 2026-10-19: eCFR 24 CFR 5.628, 5.630, 982.505, 982.508, 982.515
+// (eCFR renderer API), HUD HCV Guidebook "Calculating Rent and HAP Payments" (November 2019,
+// sections 2.1–3.4) and "Payment Standards" (June 2025, sections 1 and 3.1).
+// Fair Housing: no text about who may rent; facts on the voucher math only. No legal advice.
+import VoucherCalculator from "../../components/VoucherCalculator.astro";
+import Tool from "../../layouts/Tool.astro";
+import { computeVoucher, fortyPercentText, usd, voucherExample as ex } from "../../lib/calculators.ts";
+import { toolsPublished } from "../../data/tools.ts";
+
+const r = computeVoucher(ex);
+const fail = computeVoucher({ ...ex, contractRent: 1900 });
+const ecfr = (s: string) => `https://www.ecfr.gov/current/title-24/section-${s}`;
+const sources = [
+  { label: "eCFR: 24 CFR 982.505, How to calculate housing assistance payment", url: ecfr("982.505") },
+  { label: "eCFR: 24 CFR 982.508, Maximum family share at initial occupancy", url: ecfr("982.508") },
+  { label: "eCFR: 24 CFR 5.628, Total tenant payment", url: ecfr("5.628") },
+  { label: "eCFR: 24 CFR 5.630, Minimum rent", url: ecfr("5.630") },
+  { label: "eCFR: 24 CFR 982.515, Family share: Family responsibility", url: ecfr("982.515") },
+  {
+    label:
+      "HUD HCV Guidebook: Calculating Rent and HAP Payments (November 2019), sections 2.1 TTP (p. 2–3), 2.2 Minimum Rent (p. 4), 2.4 Maximum Rent Burden (p. 6), 3.1 HAP (p. 7–8), 3.2 Family Share (p. 8), 3.4 Utility Reimbursement (p. 9)",
+    url: "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Calculating_Rent_and_HAP_Payments.pdf",
+  },
+  {
+    label:
+      "HUD HCV Guidebook: Payment Standards (June 2025), section 1 Chapter Overview (p. 3) and 3.1 Basic Range (p. 11)",
+    url: "https://www.hud.gov/sites/default/files/PIH/documents/HCV_Guidebook_Payment-Standards_June-2025_final.pdf",
+  },
+  {
+    label: "HUD: Housing Choice Voucher Program Guidebook, all chapters",
+    url: "https://www.hud.gov/helping-americans/housing-choice-vouchers-guidebook",
+  },
+];
+const faq = [
+  {
+    q: "How much does Section 8 pay a landlord?",
+    a: "The housing authority pays the housing assistance payment (HAP). The HAP is the payment standard or the gross rent, whichever is lower, minus the total tenant payment (24 CFR 982.505). The owner gets the HAP up to the contract rent. Any HAP above the contract rent goes to the family or the utility company as a utility reimbursement.",
+  },
+  {
+    q: "How much does a Section 8 tenant pay?",
+    a: "The tenant pays the total tenant payment (TTP): the highest of 30% of adjusted monthly income, 10% of gross monthly income, or the minimum rent (24 CFR 5.628). If the gross rent is above the payment standard, the tenant also pays the difference. The tenant pays the owner this amount minus the utility allowance.",
+  },
+  {
+    q: "What is the 40% rule in Section 8?",
+    a: "At the first assisted lease for a unit, the family share may not exceed 40% of adjusted monthly income when the gross rent is above the payment standard (24 CFR 982.508). The rule does not apply when the gross rent is at or below the payment standard. It also does not apply to changes after move-in, such as a rent increase (HUD HCV Guidebook).",
+  },
+  {
+    q: "What is a payment standard?",
+    a: "The payment standard is the maximum monthly assistance for a family, before the TTP is taken off (24 CFR 982.4, HUD Payment Standards chapter). A housing authority may set it between 90% and 110% of the HUD Fair Market Rent without HUD approval (the basic range). The family's payment standard is the lower of the voucher size and the unit size amount.",
+  },
+  {
+    q: "What is the minimum rent?",
+    a: "Each housing authority sets a minimum rent from $0 to $50 a month for the voucher program (24 CFR 5.630). A family with a financial hardship can ask for an exemption.",
+  },
+  {
+    q: "Why can my housing authority's numbers differ from this estimate?",
+    a: "The housing authority verifies income and deductions, checks that the rent is reasonable and uses its own utility allowance schedule. It can also apply welfare rent, prorated assistance or a hardship exemption. This tool leaves those out.",
+  },
+];
+---
+
+<Tool
+  title="Section 8 Rent Calculator: Tenant Share and HAP — Citata.ai"
+  description="Free Section 8 rent calculator: tenant share (TTP), housing authority payment (HAP) and the 40% check, from HUD rules 24 CFR 982.505 and 982.508."
+  headline="Section 8 Rent Calculator: Tenant Share and HAP"
+  dek="See how much the housing authority pays and how much the tenant pays, by HUD rules."
+  published={toolsPublished}
+  updated={toolsPublished}
+  answer="Under a Housing Choice Voucher (Section 8), the tenant pays the total tenant payment: the highest of 30% of adjusted monthly income, 10% of gross monthly income, or the housing authority's minimum rent of up to $50 (24 CFR 5.628). The housing authority pays the owner the payment standard or the gross rent, whichever is lower, minus that tenant payment (24 CFR 982.505). If the gross rent (rent plus utility allowance) is above the payment standard, the tenant also pays the difference. At the first lease, that tenant share may not exceed 40% of adjusted monthly income (24 CFR 982.508)."
+  note="Estimate only. Your housing authority sets the final numbers."
+  faq={faq}
+  sources={sources}
+  appName="Section 8 Rent Calculator"
+  appDescription="Estimates the tenant rent share, the housing assistance payment (HAP) and the 40% affordability check at first lease for a Housing Choice Voucher, from contract rent, utility allowance, tenant income and the local payment standard."
+>
+  <VoucherCalculator slot="tool" />
+
+  <Fragment slot="example">
+    <p>
+      A unit rents for {usd(ex.contractRent)} a month. The tenant pays the utilities, and the housing
+      authority's utility allowance is {usd(ex.utilityAllowance)}. The family's adjusted monthly
+      income is {usd(ex.adjustedMonthlyIncome)}, and its gross monthly income is
+      {usd(ex.grossMonthlyIncome ?? 0)}. The local payment standard for the unit is
+      {usd(ex.paymentStandard)}, and the minimum rent is {usd(ex.minimumRent)}. This is the first
+      assisted lease.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Step</th><th>How we get it</th><th>Per month</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1. Gross rent</td><td>{usd(ex.contractRent)} rent + {usd(ex.utilityAllowance)} utility allowance</td><td>{usd(r.grossRent)}</td></tr>
+        <tr><td>2. Total tenant payment (TTP)</td><td>Highest of 30% × {usd(ex.adjustedMonthlyIncome)} = {usd(r.thirtyPercentAdjusted)}, 10% × {usd(ex.grossMonthlyIncome ?? 0)} = {usd(r.tenPercentGross ?? 0)}, minimum rent {usd(ex.minimumRent)}</td><td>{usd(r.ttp)}</td></tr>
+        <tr><td>3. HAP (housing authority)</td><td>Lower of {usd(ex.paymentStandard)} and {usd(r.grossRent)}, minus {usd(r.ttp)}</td><td>{usd(r.hap)}</td></tr>
+        <tr><td>4. Family share</td><td>{usd(r.grossRent)} gross rent − {usd(r.hap)} HAP</td><td>{usd(r.familyShare)}</td></tr>
+        <tr><td>5. Tenant rent to owner</td><td>{usd(r.familyShare)} family share − {usd(ex.utilityAllowance)} utility allowance</td><td>{usd(r.tenantRentToOwner)}</td></tr>
+        <tr><td>6. 40% check</td><td>{usd(r.familyShare)} family share vs 40% × {usd(ex.adjustedMonthlyIncome)} = {usd(r.fortyPercentLimit)}</td><td>{r.fortyPercentOk ? "Passes" : "Fails"}</td></tr>
+      </tbody>
+    </table>
+    <p>
+      Result: the housing authority pays the owner {usd(r.hapToOwner)} a month. The tenant pays the
+      owner {usd(r.tenantRentToOwner)} and pays the utilities. The tenant share includes
+      {usd(r.overPaymentStandard)} because the gross rent is above the payment standard.
+      {fortyPercentText(r, ex.firstLease)}
+    </p>
+    <p>
+      Same family, rent {usd(1900)}: the gross rent is {usd(fail.grossRent)} and the HAP stays at
+      {usd(fail.hap)}, so the family share is {usd(fail.familyShare)}. That is more than
+      {usd(fail.fortyPercentLimit)}, so the unit fails the 40% check at first lease. The highest
+      gross rent that passes is {usd(fail.maxGrossRentFirstLease)}.
+    </p>
+  </Fragment>
+
+  <h2>How the Section 8 rent split works</h2>
+  <p>
+    The Section 8 rent split follows HUD rules for the Housing Choice Voucher program. The housing
+    authority computes it in 2 steps (HUD HCV Guidebook, Calculating Rent and HAP Payments):
+  </p>
+  <ol>
+    <li><strong>At voucher issue.</strong> The housing authority sets the family's TTP and its payment standard. The maximum subsidy is the payment standard minus the TTP.</li>
+    <li><strong>After the family picks a unit.</strong> The housing authority adds the utility allowance to the rent to get the gross rent. Then it computes the HAP, the family share and the 40% check.</li>
+  </ol>
+  <p>
+    Words used here: <strong>contract rent</strong> is the rent to owner on the lease.
+    The <strong>utility allowance</strong> is the housing authority's estimate of the utilities the
+    tenant pays. <strong>Adjusted income</strong> is income after the deductions HUD allows.
+  </p>
+  <p>
+    Manage voucher units for owners? Compare your fees with the
+    <a href="/tools/property-management-fee-calculator">property management fee calculator</a>, and read
+    <a href="/guides/ai-search-checklist-property-management-website">what a Section 8 landlord page needs for AI search</a>.
+  </p>
+</Tool>
