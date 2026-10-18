@@ -20,3 +20,29 @@ prompt = "A marble classical statue holding a big brass key and a rolled scroll,
 [[image]]
 file = "monday-report.jpg"
 prompt = "A marble bust of a Roman scholar reading a folded newspaper that shows a small simple bar chart drawing (no text), a small brass bell beside it. Flat sky cyan background."
+
+# 2026-10-18, omp generate_image, google-antigravity/gemini-3-pro-image. Style block P · Press collage (brand/IMAGES.md).
+[[image]]
+file = "guide-leads"
+field = "minium orange #C1410B"
+prompt = "A marble statue of a Roman landlord sits alone on the wide steps of a ruined temple, holding a silent old rotary telephone in his lap; an empty brass letterbox stands on a broken column beside him; a long row of suburban houses lies far away on the low horizon."
+
+[[image]]
+file = "guide-owners-ai"
+field = "sun yellow #F2C230"
+prompt = "An oracle scene: a vintage cathode-ray computer sits on a stone tripod altar between temple columns, thin smoke rising from it like the Oracle of Delphi; a marble statue of a homeowner stands before it holding a small model of a two-flat house in both hands."
+
+[[image]]
+file = "guide-agencies"
+field = "sky cyan #2FA7E0"
+prompt = "Five marble busts of different Roman men stand in a row on stone pedestals of different heights, like candidates in a contest, on a temple terrace; a large antique brass balance scale stands in front of them; a few suburban rooftops on the low horizon."
+
+[[image]]
+file = "guide-track"
+field = "minium orange #C1410B"
+prompt = "A marble statue of an ancient astronomer on a temple terrace looks through a big brass telescope at a flock of paper airplanes flying in toward the temple door from the horizon; a vintage mechanical tally counter rests on the stone balustrade."
+
+[[image]]
+file = "guide-checklist"
+field = "sun yellow #F2C230"
+prompt = "A temple under construction with wooden scaffolding; a marble statue of an architect stands in front holding an unrolled blueprint scroll and a brass plumb line; a vintage cathode-ray computer sits on a stonemason's workbench beside him; small houses on the low horizon."

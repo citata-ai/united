@@ -336,7 +336,9 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 
 ## Imagery
 
-Main style: **neoclassical pop** (the every.to cover style). Classical subjects — marble statues, busts, Greek temples, Renaissance figures — printed with halftone dots and flat, bright color, mixed with one modern object.
+**Since 2026-10-18 the main style for covers is P · Press collage. Read [`IMAGES.md`](IMAGES.md) first:** it holds the style block, the prompts and the process. The text below stays for styles A, B and C.
+
+Older main style: **neoclassical pop** (our first take on the every.to cover style). Classical subjects — marble statues, busts, Greek temples, Renaissance figures — printed with halftone dots and flat, bright color, mixed with one modern object.
 
 | Style | Use | Look |
 |---|---|---|

@@ -1,0 +1,89 @@
+# IMAGES.md — AI-generated images for citata.ai
+
+Status: v1, 2026-10-18. Owner: Tao. Parent: [`DESIGN.md`](DESIGN.md) → Imagery.
+
+This file holds the image style, the prompt blocks and the process. Use it for every cover, hero, OG and social image. Copy the style block word for word, so all images look like one family.
+
+## 1. Reference: every.to, October 2026
+
+We studied the covers on the every.to home page on 2026-10-18 ("Codex's Comeback Up Close", "Context Engineering", "How Codex Happened", "Compound Engineering").
+
+What makes them work:
+
+| Trait | every.to does | Our first images (v1) did |
+|---|---|---|
+| Texture | One black-and-white photo halftone for all things, also the modern object | Grey statue plus flat cartoon objects in color |
+| Scene | Full frame: ground, horizon, sky, buildings | One cut-out on an empty background |
+| Edges | No outline; parts meet like a photo montage | White sticker border around each cut-out |
+| Color | One flat, bright field (sky or background); the rest is greyscale. Sometimes a duotone: a statue printed in one ink on a field of another color | Many colors on the objects |
+| Subject | One old thing and one modern thing in one calm, centered scene (a CRT computer in the Acropolis) | Statue holds a modern prop |
+| Mood | Calm, editorial, a little strange | Pop, playful |
+
+## 2. Main style: P · Press collage
+
+Use P for post covers, guide covers, the hero, OG images and social cards. Styles A, B and C in `DESIGN.md` stay for special cases (A for older images, B for small figures, C for diagrams).
+
+**Style block P** (copy exactly):
+
+```text
+Style: black-and-white high-contrast photographic halftone collage like a 1960s newspaper print or stipple engraving, deep blacks and fine dot grain; every element, including the modern object, printed in the same grayscale halftone texture; full-bleed cinematic scene with a low horizon, no white cut-out borders, no cartoon or vector shapes; the sky is one flat saturated [FIELD] color field with a few white halftone clouds; calm, editorial, magazine cover feel.
+```
+
+**Field colors** (pick one per image; vary across a page):
+
+| Field | Hex | Use |
+|---|---|---|
+| Minium orange | `#C1410B` | Default. Hero and most covers. |
+| Sun yellow | `#F2C230` | Guides about money, leads, pricing |
+| Sky cyan | `#2FA7E0` | Guides about tools and measurement. Not for the hero (owner's rule, 2026-10-18: no blue on the hero). |
+| Parchment | `#F5EFE3` | Quiet covers; the halftone carries the image |
+
+**Duotone variant P2** (for a strong single subject, like a bust): `the subject printed as a single-ink halftone in lapis blue #1E3A7B on a flat minium orange #C1410B field, rough risograph misregistration` — replace the last two clauses of block P.
+
+## 3. Prompt template
+
+```text
+[SCENE: one old thing + one modern thing + a property-management detail], [COMPOSITION: centered, low horizon, where the eye goes].
+[STYLE BLOCK P with the FIELD color filled in]
+Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame.
+```
+
+Subject rules for our niche:
+
+- One classical figure or building: a Roman statue, a bust, a temple, columns, an aqueduct.
+- One modern object, old enough to be warm: a CRT computer, a rotary phone, a letterbox, a brass key, a desk lamp, a paper map.
+- One property-management detail: a row of houses on the horizon, a two-flat, a porch, a door with a number plate (no digits shown).
+- People only as statues. No photo-real faces.
+- No screens with UI, no brand logos, no text. Put words in HTML, never in the image.
+
+## 4. Process
+
+1. Write the prompt from the template. One concept per image.
+2. Generate with omp (rotates the logged-in Antigravity accounts; see `DESIGN.md` → Tools):
+
+   ```sh
+   printf 'generate_image:\n  enabled: true\n' > /tmp/omp-img.yml
+   mkdir -p /tmp/img-<slug> && omp -p --no-session --config /tmp/omp-img.yml --auto-approve \
+     --max-time 8m --model gemini-3-flash \
+     "Use the generate_image tool once to create: <prompt>. Save the image into /tmp/img-<slug> as <slug>.png. Reply only with the path."
+   ```
+
+   Up to 3 in parallel work. One image takes about 1–2 minutes.
+3. Look at the image. Reject it for: letters or fake text, extra fingers, a cartoon object, a white sticker edge, more than one color field. Generate again with the fix in the prompt.
+4. Convert to WebP at 640, 720, 960 and 1280 px wide, and a 1200×630 JPG for OG. Put them in `landing/public/img/` and `landing/public/og/`.
+5. Add an entry to `landing/public/img/prompts.toml`: file, prompt, model, date.
+6. Caption or credits say "Images made with AI". Do not remove SynthID or C2PA marks.
+
+## 5. Approved prompts
+
+| Image | Prompt (scene part; add block P) | Field |
+|---|---|---|
+| Style test, 2026-10-18 | A vintage cathode-ray desktop computer stands in the middle of a ruined Greek temple; a marble statue of a Roman landlord stands beside it holding a big old key; a small row of suburban houses on the horizon. | Minium |
+| Guide: owner leads drop | A marble statue of a Roman landlord sits alone on the wide steps of a ruined temple, holding a silent old rotary telephone in his lap; an empty brass letterbox stands on a broken column beside him; a long row of suburban houses lies far away on the low horizon. | Minium |
+| Guide: owners choose with AI | An oracle scene: a vintage cathode-ray computer sits on a stone tripod altar between temple columns, thin smoke rising from it like the Oracle of Delphi; a marble statue of a homeowner stands before it holding a small model of a two-flat house in both hands. | Sun yellow |
+| Guide: agencies compared | Five marble busts of different Roman men stand in a row on stone pedestals of different heights, like candidates in a contest, on a temple terrace; a large antique brass balance scale stands in front of them; a few suburban rooftops on the low horizon. | Sky cyan |
+| Guide: track AI traffic | A marble statue of an ancient astronomer on a temple terrace looks through a big brass telescope at a flock of paper airplanes flying in toward the temple door from the horizon; a vintage mechanical tally counter rests on the stone balustrade. | Minium |
+| Guide: AI search checklist | A temple under construction with wooden scaffolding; a marble statue of an architect stands in front holding an unrolled blueprint scroll and a brass plumb line; a vintage cathode-ray computer sits on a stonemason's workbench beside him; small houses on the low horizon. | Sun yellow |
+
+Small brass accents (letterbox, plumb line, scale) come through in color. We keep them: they are small and warm. If an image shows more color than that, generate again.
+
