@@ -1,5 +1,5 @@
 /**
- * Builds the citation engine figure (anatomy skill, engraving theme: ink hatch on a sun-yellow plate).
+ * Builds the citation engine figure (anatomy skill, light theme on parchment).
  *
  *   node scripts/mechanism/build.mjs          writes the two generated files
  *   node scripts/mechanism/build.mjs --page   also writes a standalone test page
@@ -1057,29 +1057,12 @@ if (process.argv.includes("--sizes")) {
     (trainAt(0).length / 1024).toFixed(1),
   );
 }
-/**
- * Engraving shade (brand/IMAGES.md style E): each shade step is a line hatch in ink on
- * parchment instead of a flat tint. Step 0 (darkest) is a cross-hatch.
- */
-const HATCH = [
-  { gap: 1.7, w: 0.42, cross: true },
-  { gap: 1.9, w: 0.4 },
-  { gap: 2.6, w: 0.34 },
-  { gap: 3.8, w: 0.28 },
-];
-const hatches = HATCH.map(({ gap, w, cross }, i) => {
-  const line = (a) =>
-    `<path d="M0 ${gap / 2}L${gap} ${gap / 2}" transform="rotate(${a} ${gap / 2} ${gap / 2})" style="stroke:#1c1712;stroke-width:${w};vector-effect:none;fill:none"/>`;
-  return `<pattern id="ce-h${i}" width="${gap}" height="${gap}" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="${gap}" height="${gap}" fill="#fbf7ee"/>${line(0)}${cross ? line(90) : ""}</pattern>`;
-}).join("");
-
 const svg = k.figureSvg({
   width: WIDTH,
   height: HEIGHT,
   label:
     "A brass machine on a bench that shows how citata works, as a loop. On the left is a small storefront: your site. It prints pages onto an upper belt. The pages pass through a frame with the citata name plate, where three stations act on each page: a card-index cabinet stamps it (Indexed), a lens swings over it (Found), and a horn speaks (Mentioned). On the right, five receivers, one for each AI engine (ChatGPT, Gemini, Claude, Perplexity, Google AI Overviews), take the pages in. Each receiver then sends a buyer, a small ball, down onto a lower belt that runs back to your site. The buyers wait in a line at the door and go in one by one. A dollar sign rises each time, and a counter dial moves. A gear train drives the belts, and a bell rings for every seventh buyer: the Monday report.",
   body: [
-    `<defs>${hatches}</defs>`,
     bench(),
     gantry(),
     plinth(),
@@ -1114,19 +1097,18 @@ const svg = k.figureSvg({
 count(9);
 
 const CSS = `
-.iso.ce[data-theme="light"]{--ce-field:#f2c230;--anatomy-page:#f2c230;--anatomy-card:#f2c230;--anatomy-text:#1c1712;--anatomy-strong:#1c1712;--anatomy-muted:#3a2f25;
---anatomy-paper:#fbf7ee;--anatomy-face:#fbf7ee;--anatomy-top:#fbf7ee;
---anatomy-shade-0:url(#ce-h0);--anatomy-shade-1:url(#ce-h1);--anatomy-shade-2:url(#ce-h2);--anatomy-shade-3:url(#ce-h3);
+.iso.ce[data-theme="light"]{--anatomy-page:#f5efe3;--anatomy-card:#f5efe3;--anatomy-text:#5c5145;--anatomy-strong:#1c1712;--anatomy-muted:#5c5145;
+--anatomy-paper:#fbf7ee;--anatomy-face:#fffdf8;--anatomy-top:#fbf6ec;
+--anatomy-shade-0:#d2c4a8;--anatomy-shade-1:#ddd1b9;--anatomy-shade-2:#e8dfcc;--anatomy-shade-3:#f1eadb;
 --anatomy-lit-top:#e8743f;--anatomy-lit-shade:#c1410b;
---anatomy-hi:#1c1712;--anatomy-mid:#1c1712;--anatomy-lo:#3a2f25;--anatomy-faint:#7a6b58;--anatomy-lit:#5a1d04;
---anatomy-halo:#1c1712;--anatomy-halo-opacity:0;--anatomy-dot:#1c1712;
---anatomy-mono:"Paper Mono",ui-monospace,monospace;--anatomy-weight:.75px}
-.ce .iso-solid[data-seamless]>.iso-shade{stroke:none!important}
+--anatomy-hi:#1c1712;--anatomy-mid:#7a6b58;--anatomy-lo:#ad9c7e;--anatomy-faint:#d3c5aa;--anatomy-lit:#8f2f07;
+--anatomy-halo:#7a6a50;--anatomy-halo-opacity:.26;--anatomy-dot:#3a2f25;
+--anatomy-mono:"Paper Mono",ui-monospace,monospace;--anatomy-weight:.6px}
 .ce .iso-figure{margin:0}
-.ce .iso-plate{background:var(--ce-field);box-shadow:none;border-radius:6px;padding:48px 28px 32px;--anatomy-paper:#fbf7ee}
-.ce .iso-plate-corners{inset:18px 28px}
+.ce .iso-plate{background:transparent;box-shadow:none;border-radius:0;padding:34px 0 40px;--anatomy-paper:#fbf7ee}
+.ce .iso-plate-corners{inset:0}
 .ce .iso-plate-corner{font-size:11px}
-.ce .iso-plate-corner{color:#1c1712}
+.ce .iso-plate-corner[data-corner="fig"],.ce .iso-plate-corner[data-corner="title"]{color:#c1410b}
 .ce .iso-legend{color:var(--anatomy-text);font-size:14px}
 .ce .ce-logo{fill:#1c1712}
 .ce .ce-recess{fill:#5c5145}
@@ -1163,11 +1145,11 @@ const CSS = `
 .ce .ce-tip strong{display:block;font-weight:600;color:#c1410b;margin-bottom:2px}
 .ce .ce-tip[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.ce .ce-spot::before{animation:none}}
-@media (max-width:560px){.ce .iso-plate{padding:40px 12px 52px}.ce .iso-plate-corners{inset:14px 12px}.ce .iso-plate-corner{font-size:10px}.ce .iso-plate-corner[data-corner="hint"]{display:none}.ce .iso-plate-corner[data-corner="readout"]{left:0;right:auto;white-space:normal;line-height:1.3}.ce .ce-spot{width:24px;height:24px;margin:-12px 0 0 -12px}.ce .ce-spot span{inset:7px}.ce .ce-spot span::after{inset:2.5px}.ce .ce-spot::before{inset:4px}}
+@media (max-width:560px){.ce .iso-plate{padding:28px 0 52px}.ce .iso-plate-corner{font-size:10px}.ce .iso-plate-corner[data-corner="hint"]{display:none}.ce .iso-plate-corner[data-corner="readout"]{left:0;right:auto;white-space:normal;line-height:1.3}.ce .ce-spot{width:24px;height:24px;margin:-12px 0 0 -12px}.ce .ce-spot span{inset:7px}.ce .ce-spot span::after{inset:2.5px}.ce .ce-spot::before{inset:4px}}
 `;
 
 const caption =
-  "We start with your site. Inside the Citata frame, each page passes 3 stations: Indexed, Found, Mentioned. AI engines then name your site, and buyers come back to it. One checked change a day turns the wheels. Every 7th buyer, the bell rings: your Monday report. Tap a dot to read each step.";
+  "We start with your site. Inside the citata frame, each page passes 3 stations: Indexed, Found, Mentioned. AI engines then name your site, and buyers come back to it. One checked change a day turns the wheels. Every 7th buyer, the bell rings: your Monday report. Tap a dot to read each step.";
 
 const plate = k
   .plateHtml({
