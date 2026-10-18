@@ -1,0 +1,199 @@
+---
+import Base from "../layouts/Base.astro";
+import { auditHref } from "../data/site.ts";
+
+// Facts: business/strategy.md §5 (market facts) and §6 (Section 8 angle).
+// Prompts: business/accounts.toml (fp-section8-ai prompts_seed), generalized to <city>.
+const title = "AI search visibility for property management companies — citata.ai";
+const description =
+  "Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai works to get your company named and linked in that answer.";
+
+const ownerPrompts = [
+  "best property management company in <city>",
+  "property manager in <city> that handles Section 8 tenants",
+  "how does Section 8 work for landlords in <city>",
+  "how much does property management cost in <city>",
+  "property management company <suburb>",
+];
+
+const work = [
+  {
+    head: "Owner FAQ with exact answers.",
+    text: "Fees, contracts, how you screen, how fast you fill a unit. AI engines quote short, exact answers. Vague pages get skipped.",
+  },
+  {
+    head: "One page per city you serve.",
+    text: "Owners ask by city. Each page says what you manage there and links to proof. No copy-paste pages.",
+  },
+  {
+    head: "Free calculators.",
+    text: "Management fee, rental income and voucher rent vs market rent. Owners use them and AI engines cite them.",
+  },
+  {
+    head: "A Section 8 owner guide.",
+    text: "Inspections, HAP payments (the housing authority's share of rent), your local housing authority's steps, rent limits.",
+  },
+  {
+    head: "Listings and Google Business Profile.",
+    text: "For renter questions, listing sites and maps win. We keep your listings and profile complete and correct.",
+  },
+  {
+    head: "Clean tags and a fast site.",
+    text: "Titles, canonical links, structured data and a short summary for AI on each page. Pages that load fast and read well.",
+  },
+];
+---
+
+<Base title={title} description={description}>
+  <main class="wrap">
+    <section class="grid items-center gap-10 border-b border-rule py-12 md:grid-cols-[1.25fr_1fr] md:py-16">
+      <div>
+        <p class="meta"><span class="text-minium">Vertical 01</span> · property management</p>
+        <h1 class="mt-4 text-[38px] leading-[1.04] sm:text-[52px] sm:leading-[1.02]">
+          Get named when owners ask AI for a property manager
+        </h1>
+        <p class="mt-5 max-w-xl text-[19px] text-muted">
+          For US property management companies with 50 to 500 doors: scattered single-family homes
+          and small multifamily. Your buyer is the rental owner. More owners now ask ChatGPT or Gemini
+          who to hire.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a class="btn-lapis" href={auditHref}>Get a free AI visibility audit</a>
+          <a class="btn-ink" href="/case-studies/fridman-properties">See the Fridman case study</a>
+        </div>
+      </div>
+      <figure class="img-frame">
+        <img
+          src="/img/property-management.jpg"
+          alt="A marble Roman apartment block with one lit window, and a statue that holds a big key."
+          width="1280"
+          height="714"
+          fetchpriority="high"
+        />
+      </figure>
+    </section>
+
+    <section aria-labelledby="ask" class="border-b border-rule py-14">
+      <p class="label">The questions</p>
+      <h2 id="ask" class="text-[32px] leading-tight">What your owners ask AI</h2>
+      <p class="mt-3 max-w-[66ch] text-muted">
+        We track questions like these every week, on ChatGPT, Gemini, Claude and Perplexity. For each
+        one we record if the answer names you, and if it links to your site.
+      </p>
+      <ul class="mt-8 grid gap-3 md:grid-cols-2">
+        {
+          ownerPrompts.map((p) => (
+            <li class="rounded border border-rule bg-page px-5 py-4 font-mono text-[13px]">“{p}”</li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section aria-labelledby="split" class="border-b border-rule py-14">
+      <p class="label">Owners vs renters</p>
+      <h2 id="split" class="text-[32px] leading-tight">Two buyers. Two different answers.</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="rounded border border-rule bg-page p-6">
+          <p class="meta text-verdigris">Owner questions</p>
+          <h3 class="mt-2 text-[22px]">Your own site can win</h3>
+          <p class="mt-3 text-[15px] text-muted">
+            “Best property manager in Chicago.” “Manager that takes Section 8.” Owners are who you
+            sell to. AI engines answer these with manager sites, reviews and guides. A clear, fast site
+            with exact answers has a real chance to be named.
+          </p>
+        </div>
+        <div class="rounded border border-rule bg-page p-6">
+          <p class="meta text-minium">Renter questions</p>
+          <h3 class="mt-2 text-[22px]">Listing sites win</h3>
+          <p class="mt-3 text-[15px] text-muted">
+            In a study of 8,442 communities, listing sites got 72% of AI citations for renters.
+            Property manager home pages got less than 0.3% (Peek). Google Maps leads at 35% (SOCi). So
+            for renters we work on your listings and your Google Business Profile, not your home page.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="s8" class="border-b border-rule py-14">
+      <div class="grid gap-10 md:grid-cols-[1fr_1fr]">
+        <div>
+          <p class="label">The Section 8 angle</p>
+          <h2 id="s8" class="text-[32px] leading-tight">An open question with few good answers</h2>
+          <div class="prose-c">
+            <p>
+              Many owners do not know how the Housing Choice Voucher program (Section 8) works. They
+              ask: who pays the rent, what the inspection checks, how long it takes. Few manager sites
+              answer this well.
+            </p>
+            <p>
+              We found no published GEO case study for Section 8 or affordable housing. So a manager
+              who explains it clearly has room to be the source that AI quotes.
+            </p>
+          </div>
+        </div>
+        <aside class="self-start rounded border border-rule-strong bg-sunken p-6 text-[15px]">
+          <p class="meta text-ochre">Check the law first</p>
+          <p class="mt-3">
+            Illinois lists source of income as a protected class in housing, and this includes housing
+            vouchers (Illinois Human Rights Act, as amended from January 1, 2023). Chicago and Cook
+            County have their own rules too.
+          </p>
+          <p class="mt-3 text-muted">
+            This is not legal advice. Laws change and differ by state and city. Verify the current law
+            with your attorney or the Illinois Department of Human Rights before you publish owner
+            guidance. All copy we write follows Fair Housing rules.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-labelledby="work" class="border-b border-rule py-14">
+      <p class="label">What we do</p>
+      <h2 id="work" class="text-[32px] leading-tight">The work, one checked change a day</h2>
+      <ol class="mt-8 grid gap-x-10 gap-y-6 md:grid-cols-2">
+        {
+          work.map((w, i) => (
+            <li class="flex gap-4">
+              <span class="meta mt-1 w-6 flex-none">{i + 1}.</span>
+              <p>
+                <strong class="font-medium">{w.head}</strong> <span class="text-muted">{w.text}</span>
+              </p>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="mt-8 max-w-[66ch] text-muted">
+        A person checks every page before it goes live. We do not publish bulk AI text. Every Monday
+        you get a short report: which engines named you, for which questions, and what we changed.
+      </p>
+    </section>
+
+    <section aria-labelledby="proof" class="my-14 rounded-md bg-ink p-6 text-parchment sm:p-10">
+      <p class="label text-[#A89B88]">Our first case study</p>
+      <h2 id="proof" class="max-w-3xl text-[32px] leading-tight">
+        Fridman Properties, Chicago: the site, the baseline and the plan, before any result
+      </h2>
+      <p class="mt-4 max-w-[66ch] text-[#A89B88]">
+        AI named the company in 8 of 132 owner answers, and in 0 of 6 for Section 8. We publish the results at 90 days. Related party: the owner of
+        Fridman Properties is also the CEO of MyRemotely, a partner of ours.
+      </p>
+      <a
+        href="/case-studies/fridman-properties"
+        class="mt-6 inline-block text-[#F08A4B] underline underline-offset-2">Read the case study →</a
+      >
+    </section>
+
+    <section aria-labelledby="cta" class="grid items-center gap-8 md:grid-cols-[1.2fr_1fr]">
+      <h2 id="cta" class="text-[36px] leading-[1.05] sm:text-[44px]">
+        Does AI name your company in your city? <span class="text-minium">Ask us.</span>
+      </h2>
+      <div>
+        <p class="text-muted">
+          Send your site and the cities you serve. We run 20 owner questions on 4 AI engines and send
+          your top 5 fixes. Free, and no call needed.
+        </p>
+        <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
+      </div>
+    </section>
+  </main>
+</Base>

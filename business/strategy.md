@@ -80,7 +80,7 @@ Sales and marketing systems wait. First we build delivery and learn how to make 
 ## 9. Risks
 
 - **Related parties.** All first accounts are ours or Ran's. Case studies need clear disclosure.
-- **fridmanproperties.com rebuild is not deployed yet** (`fp-landing`). The move itself changes traffic. Take the baseline before the switch, or the numbers mix two effects.
+- **fridmanproperties.com rebuild went live 2026-10-16** (`fp-landing`). The AI baseline was taken the same day. The move kept every URL and word, but it can still change traffic. Say so in each report. Source: `case-studies/fridman-properties.md`.
 - **Google "scaled content abuse".** AI content without human review can be penalised. Every page gets a human check.
 - **Open-source GEO trackers are under one year old.** Expect breaking changes.
 - **Small numbers.** AI referral traffic is ~1% of visits. Report citations and leads, not only clicks.

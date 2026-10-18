@@ -1,0 +1,321 @@
+---
+import Base from "../../layouts/Base.astro";
+import BaselineCard from "../../components/BaselineCard.astro";
+import { auditHref } from "../../data/site.ts";
+import { baseline, lighthouse } from "../../data/fridman.ts";
+
+// Every claim on this page has a source row in business/case-studies/fridman-properties.md.
+// Do not add a number here without a row there.
+const title = "Fridman Properties: our first GEO case study, before the results — citata.ai";
+const description =
+  "We moved a Chicago property manager's 90-page site in 2 days and kept every SEO tag. Then we asked AI 24 owner questions. Here is the baseline and the plan.";
+const published = "2026-10-18";
+const resultsDue = "2027-01-14";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Fridman Properties: our first GEO case study, before the results",
+  datePublished: published,
+  author: { "@type": "Person", name: "Tao" },
+  publisher: { "@type": "Organization", name: "citata.ai", url: "https://citata.ai" },
+  about: { "@type": "Organization", name: "Fridman Properties LLC", url: "https://www.fridmanproperties.com" },
+};
+
+const status = [
+  { label: "Site rebuild", value: "Live since 2026-10-16", tone: "text-verdigris" },
+  { label: "AI baseline", value: "Taken 2026-10-16", tone: "text-verdigris" },
+  { label: "GEO changes", value: "Planned, not started", tone: "text-ochre" },
+  { label: "Results", value: `Due ${resultsDue}`, tone: "text-muted" },
+];
+
+const cats = ["Perf", "A11y", "Best", "SEO"];
+---
+
+<Base title={title} description={description} type="article">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <main class="wrap">
+    <article class="pt-12">
+      <header class="max-w-3xl">
+        <p class="meta"><span class="text-minium">Case study · in progress</span> · October 18, 2026</p>
+        <h1 class="mt-4 text-[38px] leading-[1.04] sm:text-[52px] sm:leading-[1.02]">
+          Fridman Properties: Our First GEO Case Study, Before the Results
+        </h1>
+        <p class="mt-5 text-[19px] text-muted">
+          We moved a Chicago manager’s 90-page site in 2 days. AI named the company in 8 of 132 owner
+          answers.
+        </p>
+        <div class="mt-6 flex items-center gap-2 text-[13px] text-muted">
+          <span
+            class="inline-flex size-6 items-center justify-center rounded-full bg-minium text-[10px] text-page"
+            >T</span
+          >
+          Tao, founder, citata.ai
+        </div>
+      </header>
+
+      <aside class="mt-8 max-w-3xl rounded border border-rule-strong bg-sunken p-5 text-[15px]">
+        <p class="meta text-ochre">Related party</p>
+        <p class="mt-2">
+          Ran Fridman owns Fridman Properties. He is also the CEO of MyRemotely, a partner of ours, and
+          Fridman Properties is MyRemotely’s first client. We do not hide this. It is why this is our
+          first case study: we had access, and we could show all of the work.
+        </p>
+      </aside>
+
+      <ul class="mt-8 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
+        {
+          status.map((s) => (
+            <li class="border-t border-rule pt-3">
+              <p class="meta">{s.label}</p>
+              <p class={`mt-1 text-[15px] ${s.tone}`}>{s.value}</p>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="mt-4 grid gap-12 lg:grid-cols-[minmax(0,66ch)_1fr]">
+        <div class="prose-c">
+          <h2>TL;DR</h2>
+          <ul>
+            <li>
+              <strong>The client:</strong> Fridman Properties, a property manager in Arlington Heights,
+              IL, with 144 active units on 2026-10-16.
+            </li>
+            <li>
+              <strong>The problem:</strong> AI rarely named the company when owners asked for a
+              manager. Its site talked to the suburbs, but most of its units are on Chicago’s South
+              Side.
+            </li>
+            <li>
+              <strong>What we did:</strong> moved the site to a fast static stack with no change to
+              URLs, words or SEO tags, checked that with a script, and took an AI baseline.
+            </li>
+            <li>
+              <strong>Status:</strong> the new site is live. The GEO work starts now. We publish the
+              results on {resultsDue}, good or bad.
+            </li>
+          </ul>
+
+          <h2>Why we start with no results</h2>
+          <p>
+            Most GEO case studies show a chart that goes up. They rarely show the start, the method, or
+            the client’s name. We want to do it the other way. So I publish the baseline first, before
+            we change a single word. In 90 days you can check us against it.
+          </p>
+
+          <h2>The client</h2>
+          <p>
+            Fridman Properties LLC manages rental homes for owners. The office is in Arlington Heights,
+            a northwest suburb of Chicago. On 2026-10-16 it had 144 active units. Most of them are in
+            Chicago, on the South Side.
+          </p>
+          <p>
+            The buyer is the rental owner, not the renter. Our first target is the owner who lives far
+            from the rental and needs someone local. That owner is likely to ask ChatGPT or Gemini which
+            manager to hire.
+          </p>
+
+          <h2>What we found</h2>
+          <ol>
+            <li>
+              <strong>Search demand fell.</strong> Google still shows about 1,900 searches a month for
+              “property management chicago” (Keyword Planner, Chicago area, Oct 2025 to Sep 2026). But
+              7 generic property management terms fell 46% year over year in the Chicago area, and 43%
+              in the US. We think part of this moved to AI answers. That is a hypothesis, not a fact.
+            </li>
+            <li>
+              <strong>The site talked to the wrong area.</strong> It had 29 city pages, most for
+              northwest suburbs. Palatine and Skokie, for example, were 96% the same text with a new
+              city name. Most of the units are on the South Side, and no page on the site used the words
+              “South Side”.
+            </li>
+            <li>
+              <strong>Section 8 was one answer.</strong> The owner FAQ had one question about Section 8.
+              The answer may not match current Illinois law (see the note below). We flagged it for the
+              client’s legal review.
+            </li>
+            <li>
+              <strong>Little structured data.</strong> Only 17 of 89 pages had JSON-LD (labels that
+              machines read), all blog posts. No page said “this is a local business”.
+            </li>
+            <li>
+              <strong>A heavy template.</strong> The old site ran on a hosted template with jQuery,
+              Bootstrap scripts, an icon kit and reCAPTCHA on every page.
+            </li>
+          </ol>
+
+          <h2>What we did</h2>
+          <p>
+            The rule I set: change one thing at a time. If we change the design, the code and the words
+            at once, we can never say which change did what. So step one was a move, not a redesign.
+          </p>
+
+          <h3>1. Copy the old site, then rebuild it (October 15)</h3>
+          <p>
+            We saved a static copy of the old site: 93 HTML files. Then we rebuilt it on Astro 7, a
+            static site builder. The new site has 90 HTML pages (89 plus a 404 page) and 87 URLs in the
+            sitemap. Every URL, every word, every title, description and canonical link stayed the same.
+            We kept the 4 old 301 redirects. We dropped the old scripts.
+          </p>
+
+          <h3>2. Prove nothing changed</h3>
+          <p>
+            A parity script compares each old URL with the new one. It checks the title, description,
+            canonical link, robots tag, Open Graph tags, JSON-LD, the visible text word by word, and that
+            each internal link works. One difference fails the check. At launch it found 0 differences.
+          </p>
+
+          <h3>3. Set a speed bar of 100</h3>
+          <p>
+            A second script runs Google Lighthouse on mobile. It fails any page that scores under 100 in
+            any of the 4 categories. I ran it on the live site on {lighthouse.date}. Not every page meets
+            the bar yet:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Page</th>
+                {cats.map((c) => <th>{c}</th>)}
+                <th>LCP</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                lighthouse.rows.map((r) => (
+                  <tr>
+                    <td class="font-mono text-[13px] break-all">{r.path}</td>
+                    {r.scores.map((s) => (
+                      <td class={s < 100 ? "text-ochre" : ""}>{s}</td>
+                    ))}
+                    <td>{r.lcp}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+          <p class="text-[15px] text-muted">
+            5 pages, mobile preset, one run each. LCP: time until the largest element shows.
+          </p>
+
+          <h3>4. Keep the summaries for AI</h3>
+          <p>
+            The old site already had an <code class="font-mono text-[14px]">llm-summary</code> tag (a
+            short page summary meant for AI) on 51 pages. We did not write those. We kept all 51, and we
+            will check each one for facts.
+          </p>
+
+          <h3>5. Go live on Cloudflare (October 16)</h3>
+          <p>
+            The site now runs as static files on Cloudflare. There is no server to break.
+            fridmanproperties.com redirects to www.fridmanproperties.com.
+          </p>
+
+          <h3>6. Take the AI baseline (October 16)</h3>
+          <p>
+            We wrote {baseline.prompts} questions that owners ask, by area and by need. Examples: “Which
+            Chicago property management companies work with Section 8 tenants?” and “I live out of state
+            and bought a rental house in Chicago. Which property management company should I use?” We
+            asked each one twice on ChatGPT, Claude and Gemini: {baseline.answers} answers.
+          </p>
+          <p>
+            Outside the 2 questions with the company’s own name, AI named Fridman in 8 of 132 answers.
+            It named the company 0 times in 42 answers about the South Side, where most of its units
+            are. It named it 0 times for the Section 8 question. In the ChatGPT web app, logged out,
+            Fridman came first only for “no leasing fee and no long-term contract”.
+          </p>
+
+          <h2>What I got wrong</h2>
+          <p>
+            Our plan said: take the baseline before the switch. We took it on the same day the new site
+            went live. The words did not change, so I think the effect is small. But I cannot prove it.
+          </p>
+          <p>
+            We also have no Search Console or analytics numbers yet. Access is on our list. Until we have
+            it, this study reports AI answers only, not traffic or leads.
+          </p>
+
+          <h2>What comes next</h2>
+          <p>This is the plan. None of it is done yet.</p>
+          <ol>
+            <li>
+              <strong>Write a Section 8 owner guide.</strong> Inspections, HAP payments (the housing
+              authority’s share of rent), the Chicago Housing Authority steps, rent limits, and a voucher
+              rent vs market rent calculator. A lawyer checks it first. All copy follows Fair Housing
+              rules.
+            </li>
+            <li>
+              <strong>Rewrite 8 city pages first.</strong> Arlington Heights, Palatine, Schaumburg,
+              Buffalo Grove, Mount Prospect, Des Plaines, Evanston and Skokie. Each gets local rent data,
+              local rules and a short FAQ. Then add pages for South Side neighborhoods.
+            </li>
+            <li>
+              <strong>Add the missing labels.</strong> LocalBusiness and FAQPage structured data. Reviews
+              only from real data.
+            </li>
+            <li>
+              <strong>Answer first.</strong> A 2 to 3 sentence answer at the top of each key page, and an
+              <code class="font-mono text-[14px]">llms.txt</code> file.
+            </li>
+            <li>
+              <strong>Fix the listings.</strong> The same name, address and phone on Google, Bing, Yelp
+              and the “best property managers” lists that AI cites. Submit the site to Bing Webmaster
+              Tools, since ChatGPT search uses Bing in part.
+            </li>
+            <li>
+              <strong>Track every week.</strong> The same questions on the same engines, and a Monday
+              report.
+            </li>
+          </ol>
+          <p>
+            Our goal for 90 days: AI names Fridman in 5 of 30 tracked questions. It is a goal, not a
+            promise. AI answers change. On {resultsDue} I will publish what happened.
+          </p>
+
+          <aside class="my-8 rounded border border-rule-strong bg-sunken p-5 text-[15px]">
+            <p class="meta text-ochre">Note on Section 8 and the law</p>
+            <p class="mt-2">
+              Illinois lists source of income, including housing vouchers, as a protected class in
+              housing (Illinois Human Rights Act, as amended from January 1, 2023). This is not legal
+              advice. Verify the current law with an attorney or the Illinois Department of Human Rights.
+            </p>
+          </aside>
+
+          <h2>What you can do</h2>
+          <p>
+            If you run a property management company, ask ChatGPT the question your owners ask: “best
+            property manager in [your city]”. Does it name you? If you want the full picture, we run 20
+            questions on 4 engines for free and send your top 5 fixes.
+          </p>
+          <p>
+            <a class="btn-lapis no-underline" href={auditHref}>Get a free AI visibility audit</a>
+          </p>
+          <p class="text-[15px] text-muted">
+            Thank you to the Fridman Properties team for the access to their site and data. — Tao, founder, citata.ai
+          </p>
+        </div>
+
+        <aside class="lg:sticky lg:top-6 lg:self-start">
+          <BaselineCard />
+          <p class="meta mt-3">Models: gpt-6-luna, claude-sonnet-5-5, gemini-3-flash</p>
+          <div class="mt-8 rounded border border-rule bg-page p-6 text-[15px]">
+            <p class="meta">The site</p>
+            <ul class="mt-3 space-y-2">
+              <li><span class="font-medium">90</span> <span class="text-muted">HTML pages moved</span></li>
+              <li><span class="font-medium">0</span> <span class="text-muted">parity differences</span></li>
+              <li><span class="font-medium">4</span> <span class="text-muted">old redirects kept</span></li>
+              <li><span class="font-medium">2 days</span> <span class="text-muted">Oct 15 to Oct 16, 2026</span></li>
+            </ul>
+            <a class="link mt-4 inline-block" href="https://www.fridmanproperties.com" rel="noopener"
+              >fridmanproperties.com</a
+            >
+          </div>
+          <div class="mt-8 text-[15px]">
+            <p class="meta">More</p>
+            <a class="link" href="/property-management">GEO for property managers →</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+  </main>
+</Base>
