@@ -1,0 +1,23 @@
+// Interim deploy of the landing only, with wrangler (see AGENTS.md "Deploy").
+// Alchemy (alchemy.run.ts) takes over when the citata Cloudflare token exists.
+// Deploy: bun run build && npx wrangler@4 deploy (from landing/).
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "citata-landing",
+  "account_id": "1494c6f692bcb718f1c942d6801e83fe",
+  "compatibility_date": "2026-10-04",
+  "main": "worker.js",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // The script must see each request to redirect www to the apex.
+    "run_worker_first": true,
+  },
+  "routes": [
+    { "pattern": "citata.ai", "custom_domain": true },
+    { "pattern": "www.citata.ai", "custom_domain": true },
+  ],
+  "observability": { "enabled": true },
+}

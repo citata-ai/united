@@ -19,7 +19,7 @@ Read `docs/architecture.md` first.
 | `business/`      | Domain core. TOML/MD facts plus `src/` Effect Schema and loader. Pure.   |
 | `backend/`       | Effect API Worker `citata-api` (`GET /api/health`).                      |
 | `frontend/`      | Foldkit app on Website Worker `citata-web`. `/api/*` goes to the API.    |
-| `landing/`       | Astro 7 static site `citata-landing` (citata.ai).                        |
+| `landing/`       | Astro 7 static site `citata-landing` (citata.ai, live).                  |
 | `alchemy.run.ts` | One Alchemy Stack for all Cloudflare resources.                          |
 | `docs/gates.md`  | Gates G1, G2, G3 and CI.                                                 |
 
@@ -44,6 +44,7 @@ Run from the repo root.
 | G2 (pre-push hook)         | `mise run gate2`                          |
 | G3 (local CI mirror)       | `mise run gate3`                          |
 | Deploy prod                | `mise run deploy` (operator approval only) |
+| Deploy landing (interim)   | `cd landing && bun run build && npx wrangler@4 deploy` |
 
 ## Gates
 
@@ -53,8 +54,12 @@ Run from the repo root.
 
 ## Deploy
 
-- No deploy yet. No Cloudflare token exists. Do not run `alchemy deploy` or `mise run deploy`.
-- When the token exists, the operator puts it in Infisical project `citata`. Then CI deploys (see `docs/gates.md`).
+- **Live: the landing only.** Worker `citata-landing` on Cloudflare account `1494c6f692bcb718f1c942d6801e83fe` ("1st Account") serves `https://citata.ai`. `www.citata.ai` answers 301 to the apex. First deploy 2026-10-18.
+- How: wrangler, not Alchemy (interim). Config `landing/wrangler.jsonc`, script `landing/worker.js` (www redirect, then static assets). Run from `landing/`: `bun run build && npx wrangler@4 deploy`. Wrangler uses the operator's OAuth login on the Mac.
+- Smoke check after each deploy: `curl -I https://citata.ai/`, `/property-management`, `/case-studies/fridman-properties` give 200; `https://www.citata.ai/` gives 301.
+- `citata-web` and `citata-api` are not deployed. Do not run `alchemy deploy` or `mise run deploy`: the Stack deploys all three Workers, and no Cloudflare token exists yet.
+- Do not touch Worker `tao-email`, `mail.citata.ai`, or the zone's MX, SPF, DKIM and DMARC records. Email depends on them.
+- When the token exists, the operator puts it in Infisical project `citata`. Then CI deploys with Alchemy (see `docs/gates.md`). Before that, delete the wrangler Worker `citata-landing` (or let Alchemy adopt it) so the names do not clash.
 
 ## Business data
 
