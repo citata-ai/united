@@ -4,10 +4,24 @@ import Base from "../../layouts/Base.astro";
 import type { GuideFrontmatter } from "../../layouts/Guide.astro";
 import { coverSrcset, guideCovers } from "../../data/guide-covers.ts";
 import { tools } from "../../data/tools.ts";
+import { metroPath, metros, usd } from "../../data/section8.ts";
 
 const title = "Guides: AI search for property management companies — Citata.ai";
 const description =
-  "Short guides for property managers: why landlord leads drop, how landlords use AI to pick a manager, and how to get named in AI answers.";
+  "Guides for property managers and landlords: why landlord leads drop, how landlords use AI to pick a manager, Section 8 rent limits 2027 for 50 metros, free calculators and our AI research.";
+
+// Learning path: read in this order. A guide not in the list goes to the end, newest first.
+const order = [
+  "why-owner-leads-are-dropping",
+  "how-owners-choose-a-property-manager-with-ai",
+  "ai-search-checklist-property-management-website",
+  "track-ai-traffic-property-management",
+  "geo-agencies-for-property-management",
+];
+const rank = (href: string) => {
+  const i = order.indexOf(href.split("/").pop() ?? "");
+  return i === -1 ? order.length : i;
+};
 
 // build.format "file" gives URLs that end in ".html"; the live URLs do not.
 const guides = Object.values(
@@ -17,7 +31,8 @@ const guides = Object.values(
     const href = g.url.replace(/\.html$/, "");
     return { ...g.frontmatter, href, cover: guideCovers[href.split("/").pop() ?? ""] };
   })
-  .sort((a, b) => b.updated.localeCompare(a.updated));
+  .sort((a, b) => rank(a.href) - rank(b.href) || b.updated.localeCompare(a.updated));
+const s8 = [...metros].sort((a, b) => a.short.localeCompare(b.short));
 ---
 
 <Base title={title} description={description} image="/og/guide-owners-ai-v2.jpg">
@@ -26,20 +41,13 @@ const guides = Object.values(
       <p class="meta"><span class="text-minium">Guides</span> · AI search for property managers</p>
       <h1 class="mt-4 max-w-3xl text-[38px] leading-[1.04] sm:text-[52px]">How landlords find a property manager now</h1>
       <p class="mt-5 max-w-[66ch] text-[19px] text-muted">
-        Each guide answers one question that property managers ask us. Every number names its source.
+        Learn first, then act. Start with the 5 steps below, then use the Section 8 data, the calculators and our
+        research. Each guide answers one question that property managers ask us. Every number names its source.
       </p>
     </section>
-    <section aria-labelledby="research-h" class="mt-10 rounded-lg border border-rule bg-page p-6 sm:p-8">
-      <p class="meta"><span class="rounded-full bg-coral px-2 py-0.5 text-ink">Research</span> · our data, 2026-10</p>
-      <h2 id="research-h" class="mt-3 text-[26px] leading-tight">
-        <a href="/research/ai-property-manager-index-2026" class="hover:text-minium">AI Property Manager Index 2026</a>
-      </h2>
-      <p class="mt-2 max-w-[66ch] text-[16px] text-muted">
-        We asked ChatGPT, Gemini and Claude for the best property management company in the 50 largest US cities.
-        See who they name, which sources they cite, and get the CSV.
-      </p>
-    </section>
-    <ul class="grid gap-x-8 gap-y-12 py-12 sm:grid-cols-2 lg:grid-cols-3">
+    <h2 class="mt-12 text-[28px] leading-tight sm:text-[32px]">Start here: 5 steps</h2>
+    <p class="mt-2 max-w-[66ch] text-[16px] text-muted">Read them in order. Each one takes about 10 minutes.</p>
+    <ul class="grid gap-x-8 gap-y-12 pt-8 pb-12 sm:grid-cols-2 lg:grid-cols-3">
       {
         guides.map((g, i) => (
           <li>
@@ -58,7 +66,7 @@ const guides = Object.values(
                 </figure>
               )}
               <p class="meta mt-4">
-                <span class={`rounded-full px-2 py-0.5 text-ink ${["bg-coral","bg-sun","bg-sky","bg-lilac","bg-mint"][i % 5]}`}>Guide</span> · {g.updated}
+                <span class={`rounded-full px-2 py-0.5 text-ink ${["bg-coral","bg-sun","bg-sky","bg-lilac","bg-mint"][i % 5]}`}>{i < order.length ? `Step ${i + 1}` : "Guide"}</span> · {g.updated}
               </p>
               <h2 class="mt-2 text-[22px] leading-tight group-hover:text-minium">{g.headline}</h2>
               <p class="mt-2 text-[15px] text-muted">{g.dek}</p>
@@ -67,6 +75,29 @@ const guides = Object.values(
         ))
       }
     </ul>
+    <section aria-labelledby="s8-h" class="mb-12 rounded-lg bg-sun/25 p-6 sm:p-10">
+      <p class="meta"><span class="rounded-full bg-sun px-2 py-0.5 text-ink">Guide + data</span> · HUD FY2027, in effect from 2026-10-01</p>
+      <h2 id="s8-h" class="mt-3 text-[28px] leading-tight sm:text-[32px]">
+        <a href="/guides/section-8-rent-limits" class="hover:text-minium">Section 8 Rent Limits 2027 by Metro</a>
+      </h2>
+      <p class="mt-2 max-w-[66ch] text-[16px] text-muted">
+        HUD Fair Market Rents for the 50 largest US metro areas, 0 to 4 bedrooms, with the change from 2026. One page per
+        metro. Then estimate the tenant share and the housing authority payment with the
+        <a href="/tools/section-8-rent-calculator" class="link">Section 8 rent calculator</a>.
+      </p>
+      <ul class="mt-5 flex flex-wrap gap-2" aria-label="Section 8 rent limits by metro">
+        {
+          s8.map((m) => (
+            <li>
+              <a href={metroPath(m)} class="block rounded-full bg-page px-3 py-1 text-[14px] hover:text-minium">
+                {m.short} <span class="text-muted">{usd(m.fmr2027[2] ?? 0)}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-3 text-[13px] text-muted">2-bedroom FMR shown. Source: HUD.</p>
+    </section>
     <section aria-labelledby="tools-h" class="rounded-lg bg-mint/25 p-6 sm:p-10">
       <p class="meta"><span class="text-minium">Free tools</span> · calculators</p>
       <h2 id="tools-h" class="mt-3 text-[28px] leading-tight sm:text-[32px]">
@@ -84,6 +115,16 @@ const guides = Object.values(
           ))
         }
       </ul>
+    </section>
+    <section aria-labelledby="research-h" class="mt-12 rounded-lg border border-rule bg-page p-6 sm:p-8">
+      <p class="meta"><span class="rounded-full bg-coral px-2 py-0.5 text-ink">Research</span> · our data, 2026-10</p>
+      <h2 id="research-h" class="mt-3 text-[26px] leading-tight">
+        <a href="/research/ai-property-manager-index-2026" class="hover:text-minium">AI Property Manager Index 2026</a>
+      </h2>
+      <p class="mt-2 max-w-[66ch] text-[16px] text-muted">
+        We asked ChatGPT, Gemini and Claude for the best property management company in the 50 largest US cities.
+        See who they name, which sources they cite, and get the CSV.
+      </p>
     </section>
     <AuditCta />
   </main>

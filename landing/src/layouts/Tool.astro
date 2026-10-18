@@ -58,8 +58,9 @@ const breadcrumbs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Citata.ai", item: "https://citata.ai/" },
-    { "@type": "ListItem", position: 2, name: "Free tools", item: "https://citata.ai/tools" },
-    { "@type": "ListItem", position: 3, name: p.headline, item: pageUrl },
+    { "@type": "ListItem", position: 2, name: "Guides", item: "https://citata.ai/guides" },
+    { "@type": "ListItem", position: 3, name: "Free tools", item: "https://citata.ai/tools" },
+    { "@type": "ListItem", position: 4, name: p.headline, item: pageUrl },
   ],
 };
 ---
@@ -74,7 +75,7 @@ const breadcrumbs = {
     <article class="mx-auto max-w-[1080px] pt-12 pb-6">
       <header class="rounded-lg bg-sky/20 p-6 sm:p-10">
         <p class="meta">
-          <a href="/tools" class="text-minium underline underline-offset-2">Free tools</a> · for landlords and property managers
+          <a href="/guides" class="text-minium underline underline-offset-2">Guides</a> › <a href="/tools" class="text-minium underline underline-offset-2">Free tools</a> · for landlords and property managers
         </p>
         <h1 class="mt-4 max-w-4xl text-[34px] leading-[1.05] sm:text-[52px]">{p.headline}</h1>
         <p class="mt-4 max-w-3xl text-[19px] text-muted sm:text-[21px]">{p.dek}</p>

@@ -20,6 +20,11 @@ export default {
       url.hostname = "citata.ai";
       return Response.redirect(url.toString(), 301);
     }
+    const moved = movedPath(url.pathname);
+    if (moved) {
+      url.pathname = moved;
+      return Response.redirect(url.toString(), 301);
+    }
     const response = wantsMarkdown(request, url)
       ? await markdown(request, url, env)
       : await env.ASSETS.fetch(request);
@@ -36,6 +41,16 @@ export default {
     return secure(response, url.pathname, url.search);
   },
 };
+
+/**
+ * Old URLs that moved (2026-10-19: Section 8 pages went under /guides). Returns the new path or null.
+ * @param {string} path
+ */
+export function movedPath(path) {
+  const m = /^\/section-8(\/[^/]+)?(\.md|\.html)?\/?$/.exec(path);
+  if (!m) return null;
+  return `/guides/section-8-rent-limits${m[1] ?? ""}${m[2] === ".md" ? ".md" : ""}`;
+}
 
 /** Security headers on every response (HSTS, no framing, no MIME sniffing, strict referrer). */
 function secure(/** @type {Response} */ response, /** @type {string} */ path, search = "") {

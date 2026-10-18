@@ -84,13 +84,15 @@ const faqSchema = fm.faq?.length
       mainEntity: fm.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
     }
   : null;
+// Every guide page sits under /guides; a sub-guide (a Section 8 metro page) adds its parent guide.
+const crumbs = [{ name: "Guides", href: "/guides" }, ...(section.href === "/guides" ? [] : [section])];
 const breadcrumbs = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Citata.ai", item: "https://citata.ai/" },
-    { "@type": "ListItem", position: 2, name: section.name, item: new URL(section.href, Astro.site).toString() },
-    { "@type": "ListItem", position: 3, name: fm.headline, item: pageUrl },
+    ...crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 2, name: c.name, item: new URL(c.href, Astro.site).toString() })),
+    { "@type": "ListItem", position: crumbs.length + 2, name: fm.headline, item: pageUrl },
   ],
 };
 ---
@@ -112,7 +114,7 @@ const breadcrumbs = {
     <article class="mx-auto max-w-[1080px] pt-12 pb-6">
       <header class="rounded-lg bg-sun/25 p-6 sm:p-10">
         <p class="meta">
-          <a href={section.href} class="text-minium underline underline-offset-2">{section.name}</a> · {section.note}
+          {crumbs.map((c, i) => (<>{i > 0 && " › "}<a href={c.href} class="text-minium underline underline-offset-2">{c.name}</a></>))} · {section.note}
         </p>
         <h1 class="mt-4 max-w-4xl text-[36px] leading-[1.05] sm:text-[52px]">{fm.headline}</h1>
         <p class="mt-4 max-w-3xl text-[19px] text-muted sm:text-[21px]">{fm.dek}</p>
