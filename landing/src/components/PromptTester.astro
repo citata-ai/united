@@ -1,0 +1,99 @@
+---
+// "Test it yourself": the reader types a city and opens real owner questions
+// in AI engines. No data leaves the page; links open the engines directly.
+interface Props {
+  city?: string;
+}
+const { city = "Chicago" } = Astro.props;
+
+const templates = [
+  "best property management company in {city}",
+  "property manager in {city} that handles Section 8 tenants",
+  "how much does property management cost in {city}",
+  "I live out of state and own a rental in {city}. Which property manager should I hire?",
+];
+
+const engines = [
+  { name: "ChatGPT", url: "https://chatgpt.com/?q=" },
+  { name: "Claude", url: "https://claude.ai/new?q=" },
+  { name: "Perplexity", url: "https://www.perplexity.ai/search?q=" },
+  { name: "Google AI Mode", url: "https://www.google.com/search?udm=50&q=" },
+];
+---
+
+<div class="prompt-tester rounded border border-rule bg-page p-5 sm:p-6" data-templates={JSON.stringify(templates)}>
+  <div class="flex flex-col gap-3 sm:flex-row sm:items-end">
+    <label class="flex-1">
+      <span class="meta">Your city</span>
+      <input
+        type="text"
+        value={city}
+        maxlength="60"
+        autocomplete="address-level2"
+        class="pt-city mt-1 block h-10 w-full rounded border border-rule-strong bg-parchment px-3 text-[15px] outline-none focus:border-lapis"
+      />
+    </label>
+    <p class="text-[13px] text-muted sm:max-w-[16rem]">
+      Open a question in an engine. Does the answer name your company? Does it link to your site?
+    </p>
+  </div>
+  <ul class="pt-list mt-5 divide-y divide-rule border-y border-rule">
+    {
+      templates.map((t) => (
+        <li class="py-3">
+          <p class="pt-q font-mono text-[13px]">“{t.replace("{city}", city)}”</p>
+          <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[13px]">
+            {engines.map((e) => (
+              <a
+                class="pt-link link"
+                data-base={e.url}
+                href={e.url + encodeURIComponent(t.replace("{city}", city))}
+                target="_blank"
+                rel="noopener"
+              >
+                {e.name} ↗
+              </a>
+            ))}
+            <button type="button" class="pt-copy cursor-pointer text-muted hover:text-ink">
+              Copy
+            </button>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="mt-3 text-[12px] text-muted">
+    Answers change by engine, day and account. One check is a sample, not a measure. We run each
+    question many times.
+  </p>
+</div>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>(".prompt-tester")) {
+    const templates: Array<string> = JSON.parse(root.dataset.templates ?? "[]");
+    const input = root.querySelector<HTMLInputElement>(".pt-city");
+    const rows = root.querySelectorAll<HTMLLIElement>(".pt-list > li");
+    const update = () => {
+      const city = input?.value.trim() || "your city";
+      rows.forEach((row, i) => {
+        const text = (templates[i] ?? "").replace("{city}", city);
+        const q = row.querySelector(".pt-q");
+        if (q) q.textContent = `“${text}”`;
+        for (const a of row.querySelectorAll<HTMLAnchorElement>(".pt-link")) {
+          a.href = (a.dataset.base ?? "") + encodeURIComponent(text);
+        }
+        row.dataset.text = text;
+      });
+    };
+    input?.addEventListener("input", update);
+    update();
+    for (const button of root.querySelectorAll<HTMLButtonElement>(".pt-copy")) {
+      button.addEventListener("click", async () => {
+        const text = button.closest("li")?.dataset.text ?? "";
+        await navigator.clipboard.writeText(text);
+        button.textContent = "Copied";
+        setTimeout(() => (button.textContent = "Copy"), 1500);
+      });
+    }
+  }
+</script>

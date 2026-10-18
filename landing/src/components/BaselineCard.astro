@@ -3,9 +3,11 @@
 // Source: fp-landing docs/marketing/research/ai-visibility/2026-10-16/report.md
 // (24 prompts x 3 engines x 2 runs = 144 answers).
 import { baseline } from "../data/fridman.ts";
+
+const max = Math.max(...baseline.groups.map((g) => g.answers));
 ---
 
-<figure class="rounded border border-rule bg-page p-6">
+<figure class="baseline-card rounded border border-rule bg-page p-6">
   <figcaption class="meta flex justify-between gap-4">
     <span><span class="text-minium">Baseline</span> · {baseline.date}</span>
     <span>{baseline.answers} AI answers</span>
@@ -14,7 +16,15 @@ import { baseline } from "../data/fridman.ts";
     Owner questions about Chicago-area property managers. Does the answer name
     <span class="text-minium">Fridman Properties</span>?
   </p>
-  <table class="mt-4 w-full text-[15px]">
+  <div role="tablist" aria-label="Group answers by" class="mt-4 inline-flex rounded border border-rule p-0.5 text-[13px]">
+    <button role="tab" aria-selected="true" data-tab="engine" class="bc-tab cursor-pointer rounded-sm px-3 py-1">
+      By engine
+    </button>
+    <button role="tab" aria-selected="false" data-tab="area" class="bc-tab cursor-pointer rounded-sm px-3 py-1">
+      By area
+    </button>
+  </div>
+  <table data-panel="engine" class="bc-panel mt-4 w-full text-[15px]">
     <thead>
       <tr class="meta text-left">
         <th class="pb-2 font-normal">Engine</th>
@@ -36,8 +46,48 @@ import { baseline } from "../data/fridman.ts";
       }
     </tbody>
   </table>
+  <ul data-panel="area" class="bc-panel mt-4 hidden space-y-2.5 text-[14px]">
+    {
+      baseline.groups.map((g) => (
+        <li>
+          <div class="flex justify-between gap-3">
+            <span>{g.name}</span>
+            <span class="font-mono text-[13px]">
+              {g.named} / {g.answers}
+            </span>
+          </div>
+          <div class="mt-1 h-1.5 rounded-full bg-sunken" style={`width:${(g.answers / max) * 100}%`}>
+            <div
+              class="h-full rounded-full bg-minium"
+              style={`width:${(g.named / g.answers) * 100}%`}
+            />
+          </div>
+        </li>
+      ))
+    }
+  </ul>
   <p class="mt-4 text-[13px] text-muted">
     Without the 2 brand questions: named in {baseline.nonBrandNamed} of {baseline.nonBrandAnswers}.
     Section 8 question: {baseline.section8Named} of {baseline.section8Answers}.
   </p>
 </figure>
+
+<script>
+  for (const card of document.querySelectorAll<HTMLElement>(".baseline-card")) {
+    const tabs = card.querySelectorAll<HTMLButtonElement>(".bc-tab");
+    const select = (name: string) => {
+      for (const t of tabs) t.setAttribute("aria-selected", String(t.dataset.tab === name));
+      for (const p of card.querySelectorAll<HTMLElement>(".bc-panel")) {
+        p.classList.toggle("hidden", p.dataset.panel !== name);
+      }
+    };
+    for (const t of tabs) t.addEventListener("click", () => select(t.dataset.tab ?? "engine"));
+  }
+</script>
+
+<style>
+  .bc-tab[aria-selected="true"] {
+    background: var(--color-ink);
+    color: var(--color-parchment);
+  }
+</style>

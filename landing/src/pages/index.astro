@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import BaselineCard from "../components/BaselineCard.astro";
+import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
 
 // Copy sources: business/strategy.md (§1 one line, §2 process, §3 verticals, §5 facts),
@@ -181,22 +182,35 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 
     <section id="pricing" aria-labelledby="pricing-h" class="border-b border-rule pb-14">
       <p class="label">Pricing</p>
-      <h2 id="pricing-h" class="text-[32px] leading-tight">One clear plan. Month to month.</h2>
+      <h2 id="pricing-h" class="text-[32px] leading-tight">Clear prices, in public.</h2>
       <p class="mt-3 max-w-[66ch] text-muted">
         These are our first prices. We will check them with our first 3 paying clients and may change
         them. You can stop any month.
       </p>
-      <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div role="radiogroup" aria-label="Billing" class="billing mt-6 inline-flex rounded border border-rule p-0.5 text-[13px]">
+        <button type="button" role="radio" aria-checked="true" data-bill="month" class="bill-opt cursor-pointer rounded-sm px-3 py-1">Month to month</button>
+        <button type="button" role="radio" aria-checked="false" data-bill="year" class="bill-opt cursor-pointer rounded-sm px-3 py-1">12 months</button>
+      </div>
+      <ul class="pricing-list mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {
           offers.map((o) => (
             <li class={`flex flex-col rounded border bg-page p-6 ${o.slug === "growth" ? "border-lapis" : "border-rule"}`}>
               <h3 class="text-xl font-medium">{o.name}</h3>
               <p class="mt-3">
-                <span class="text-[32px] font-semibold">{usd(o.price_usd_month)}</span>
+                <span
+                  class="price text-[32px] font-semibold"
+                  data-month={usd(o.price_usd_month)}
+                  data-year={usd(("annual_price_usd_month" in o ? o.annual_price_usd_month : undefined) ?? o.price_usd_month)}
+                >
+                  {usd(o.price_usd_month)}
+                </span>
                 {o.price_usd_month > 0 && <span class="text-muted">/mo</span>}
               </p>
               {"annual_price_usd_month" in o && o.annual_price_usd_month !== undefined && (
-                <p class="meta mt-1">{usd(o.annual_price_usd_month)}/mo on 12 months</p>
+                <p class="meta mt-1">
+                  <span class="note-month">{usd(o.annual_price_usd_month)}/mo on 12 months</span>
+                  <span class="note-year hidden">Save {usd((o.price_usd_month - o.annual_price_usd_month) * 12)} a year</span>
+                </p>
               )}
               <ul class="mt-4 flex-1 space-y-1.5 text-[15px] text-muted">
                 {o.scope.map((s) => (
@@ -211,6 +225,18 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
         }
       </ul>
       <a class="btn-lapis mt-8" href={auditHref}>Start with the free audit</a>
+    </section>
+
+    <section aria-labelledby="try" class="grid gap-10 border-b border-rule py-14 md:grid-cols-[1fr_1.3fr]">
+      <div>
+        <p class="label">Test it yourself</p>
+        <h2 id="try" class="text-[32px] leading-tight">Ask AI what your buyers ask</h2>
+        <p class="mt-3 max-w-[48ch] text-muted">
+          Type your city. Open each question in an engine and read the answer. If your company is not in
+          it, the buyer may never hear your name. This is the first step of our audit.
+        </p>
+      </div>
+      <PromptTester />
     </section>
 
     <section aria-labelledby="who" class="border-b border-rule py-14">
@@ -253,3 +279,27 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
     </section>
   </main>
 </Base>
+
+<script>
+  const group = document.querySelector<HTMLElement>(".billing");
+  group?.addEventListener("click", (event) => {
+    const opt = (event.target as HTMLElement).closest<HTMLButtonElement>(".bill-opt");
+    if (!opt) return;
+    const bill = opt.dataset.bill === "year" ? "year" : "month";
+    for (const o of group.querySelectorAll(".bill-opt")) {
+      o.setAttribute("aria-checked", String(o === opt));
+    }
+    for (const p of document.querySelectorAll<HTMLElement>(".pricing-list .price")) {
+      p.textContent = p.dataset[bill] ?? "";
+    }
+    for (const n of document.querySelectorAll(".note-month")) n.classList.toggle("hidden", bill === "year");
+    for (const n of document.querySelectorAll(".note-year")) n.classList.toggle("hidden", bill === "month");
+  });
+</script>
+
+<style>
+  .bill-opt[aria-checked="true"] {
+    background: var(--color-ink);
+    color: var(--color-parchment);
+  }
+</style>
