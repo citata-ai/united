@@ -54,6 +54,8 @@ Run from the repo root.
 
 ## Deploy
 
+**Branches (since 2026-10-18).** `main` = prod (citata.ai). `stage` = everything approved for the next release, deployed to the stage Worker. Flow: work branch → merge into `stage` (`--no-ff`) → deploy stage, check → on the owner's explicit "publish", merge `stage` into `main` → deploy prod. Do not merge work branches straight into `main`. No PRs.
+
 - **Live: the landing only.** Worker `citata-landing` on Cloudflare account `1494c6f692bcb718f1c942d6801e83fe` ("1st Account") serves `https://citata.ai`. `www.citata.ai` answers 301 to the apex. First deploy 2026-10-18.
 - How: wrangler, not Alchemy (interim). Config `landing/wrangler.jsonc`, script `landing/worker.js` (www redirect, then static assets). Run from `landing/`: `bun run build && npx wrangler@4 deploy`. Wrangler uses the operator's OAuth login on the Mac.
 - **Stage:** `npx wrangler@4 deploy --env stage` (from `landing/`) deploys Worker `citata-landing-stage` to https://citata-landing-stage.frostrepair.workers.dev. No custom domain. Every response has `X-Robots-Tag: noindex, nofollow`. Deploy to stage first, check it, then deploy prod.
