@@ -1,0 +1,74 @@
+# Accounts and their Projects. Schema: model.toml.
+
+[[account]]
+slug = "fridman-properties"
+name = "Fridman Properties LLC"
+domain = "fridmanproperties.com"
+vertical = "property-management"
+relation = "dogfood"
+status = "active"
+allspark = "/80-entities/fridman-properties.md"
+note = "Chicago + NW/N suburbs, ~150 doors, 20+ years. Owner Ran Fridman is also MyRemotely CEO. Related party: disclose."
+
+  [[account.project]]
+  slug = "fp-section8-ai"
+  offer = "growth"
+  goal = "Fridman is named and linked in AI answers to Chicago owner questions about property management and Section 8; more owner leads."
+  status = "baseline"
+  case_study = true
+  prompts_seed = [
+    "best property management company in Chicago",
+    "property manager in Chicago that handles Section 8 tenants",
+    "how does Section 8 work for landlords in Chicago",
+    "property management company Schaumburg",
+    "how much does property management cost in Chicago",
+  ]
+  blockers = [
+    "fp-landing rebuild not deployed: needs Cloudflare zone, lead endpoint, DNS switch",
+    "take GSC + AI baseline before the switch",
+  ]
+
+[[account]]
+slug = "citata"
+name = "citata.ai"
+domain = "citata.ai"
+vertical = "self"
+relation = "dogfood"
+status = "active"
+allspark = "/80-entities/citata-ai.md"
+
+  [[account.project]]
+  slug = "citata-site"
+  offer = "growth"
+  goal = "citata.ai is cited for GEO queries in its verticals: property management, PMS software, impact organizations."
+  status = "baseline"
+  case_study = true
+  pages = ["/", "/property-management", "/pms-software", "/impact", "/case-studies/fridman-properties", "/audit"]
+  prompts_seed = [
+    "GEO agency for property management companies",
+    "how to get my property management company recommended by ChatGPT",
+    "AI search visibility for nonprofits",
+  ]
+
+[[account]]
+slug = "myremotely"
+name = "MyRemotely LLC"
+domain = "myremotely.ai"
+vertical = "pms-software"
+relation = "dogfood"
+status = "active"
+allspark = "/30-projects/myremotely/index.md"
+note = "Sells Remo, an AI leasing agent with self-guided tours and lock codes. Related party: disclose."
+
+  [[account.project]]
+  slug = "mr-ai-leads"
+  offer = "growth"
+  goal = "More demo requests from AI answers to property-manager queries about AI leasing and self-guided tours."
+  status = "baseline"
+  case_study = true
+  prompts_seed = [
+    "best AI leasing agent for property managers",
+    "self-guided tour software for scattered single-family rentals",
+    "ShowDigs alternatives",
+    "AI that answers Zillow rental inquiries",
+  ]

@@ -1,0 +1,49 @@
+# Domain model for citata.ai. Names here are the ubiquitous language.
+# The scaffold (CIT-2) turns each [entity.*] into an Effect Schema.
+
+[entity.Account]
+doc = "An organization we work with: a client, a partner, or ourselves."
+fields = { slug = "string", name = "string", domain = "string", vertical = "Vertical", relation = "client | dogfood | partner", status = "lead | active | paused | churned", allspark = "path to /80-entities/<slug>.md" }
+
+[entity.Project]
+doc = "One engagement for one Account. An Account has many Projects."
+fields = { slug = "string", account = "Account.slug", offer = "Offer.slug", goal = "string", started = "date", status = "baseline | active | paused | done", case_study = "bool" }
+
+[entity.Offer]
+doc = "A package we sell, with price and monthly scope."
+fields = { slug = "string", name = "string", price_usd_month = "number", scope = "string[]" }
+
+[entity.Prompt]
+doc = "A buyer question we track in AI engines for one Project."
+fields = { id = "string", project = "Project.slug", text = "string", intent = "owner | renter | buyer | brand", locale = "string" }
+
+[entity.Engine]
+doc = "An AI answer engine or search engine we measure."
+values = ["chatgpt", "gemini", "google-ai-overviews", "claude", "perplexity", "copilot", "google", "bing"]
+
+[entity.Observation]
+doc = "One run of one Prompt on one Engine at one time. Append-only."
+fields = { prompt = "Prompt.id", engine = "Engine", at = "datetime", mentioned = "bool", linked = "bool", position = "number?", cited_urls = "string[]", answer_hash = "string" }
+
+[entity.Change]
+doc = "One change we ship to a client site. 'One real change a day.'"
+fields = { project = "Project.slug", at = "date", kind = "article | page-fix | vs-page | tool | index-request | listing | schema", url = "string", checked_by = "person" }
+
+[entity.Report]
+doc = "Weekly report for one Project, sent on Monday."
+fields = { project = "Project.slug", week = "YYYY-Www", metrics = "Metric[]", changes = "Change[]" }
+
+[entity.Metric]
+doc = "A measured number with its source."
+values = ["gsc_clicks", "gsc_impressions", "ai_mention_share", "ai_link_share", "ai_referral_sessions", "leads", "indexed_pages"]
+
+[entity.CaseStudy]
+doc = "Published proof for one Project: baseline, changes, result, disclosure."
+fields = { project = "Project.slug", baseline_week = "YYYY-Www", result_week = "YYYY-Www", disclosure = "string", url = "string" }
+
+[entity.Subscription]
+doc = "Recurring payment from an Account for an Offer (Stripe)."
+fields = { account = "Account.slug", offer = "Offer.slug", stripe_id = "string", status = "trial | active | past_due | canceled" }
+
+[enum.Vertical]
+values = ["property-management", "pms-software", "impact-org", "saas", "self"]

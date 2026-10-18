@@ -1,0 +1,63 @@
+# Model business and agencies with published proof. Claims are vendor claims. Fetched 2026-10-17..18.
+
+[model]
+name = "FirstIndex"
+url = "https://firstindex.co"
+owner = "Josh Pigford (Baremetrics, Maybe Finance), Ordinary Systems LLC"
+icp = "SaaS companies"
+price = "$2,000/mo month to month; $1,500/mo on 12 months"
+anchor = "about $25,000/mo at an SEO agency"
+stages = ["Indexed", "Found", "Mentioned"]
+monthly_scope = ["up to 12 articles", "50+ page fixes", "index checks", "vs pages and free tools", "AI answer tracking and fixes", "weekly report"]
+process = ["one-sentence goal by email", "access: CMS or repo, GSC, Analytics", "one change a day, human check", "Monday report"]
+proof = "one unnamed chart: <1 to 164 clicks/day, 41 to 9.4K impressions/day by week 12"
+channels = ["founder X audience", "public SEO audit threads", "podcasts", "build in public"]
+gaps = ["no named case studies", "one audience", "one price", "no guarantee"]
+
+[[agency]]
+name = "Teramok"
+url = "https://www.teramok.us/ai-seo-for-property-management"
+vertical = "property management / developers"
+claim = "112 AI-assistant sessions in 90 days (Miami developer)"
+price = "$8,000-25,000/mo"
+
+[[agency]]
+name = "Resident360"
+url = "https://www.resident360.com/apartment-seo-multifamily"
+vertical = "multifamily"
+claim = "Mystic Cove 100% occupancy in 30 days (mostly ads; AI part not measured)"
+
+[[agency]]
+name = "DerivateX"
+url = "https://derivatex.agency/blog/geo-agency-citations-to-revenue/"
+vertical = "B2B SaaS, incl. REsimpli (real estate CRM)"
+claim = "Gumlet ~20% of inbound revenue from AI; REsimpli most-cited RE CRM in ChatGPT in 90 days"
+price = "$5,000 / $8,000 / $12,000 per month"
+
+[[agency]]
+name = "Single Grain"
+url = "https://www.singlegrain.com/search-everywhere-optimization/real-geo-optimization-case-studies/"
+vertical = "proptech (SmartRent)"
+claim = "SmartRent ~10 SQLs/month from LLMs"
+
+[[agency]]
+name = "First Page Sage"
+url = "https://firstpagesage.com/"
+vertical = "real estate and others"
+claim = "AI recommendation share 11% -> 60%+ over 31 queries in 12 months (anonymized)"
+
+[[agency]]
+name = "Position Digital"
+url = "https://www.position.digital/"
+vertical = "MarTech"
+claim = "+221% AI citations"
+price = "from $2,000/mo"
+
+[[agency]]
+name = "Stratabeat"
+url = "https://stratabeat.com/best-geo-agency/"
+vertical = "SaaS (WellSaid)"
+claim = "+209% ChatGPT mentions in 90 days"
+
+[gap]
+note = "No published GEO case study for Section 8, affordable housing, NGOs or B Corps. Open niche."

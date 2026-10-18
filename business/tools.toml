@@ -1,0 +1,80 @@
+# Delivery toolset. Open source and free first. Checked 2026-10-18.
+
+[[tool]]
+name = "Google Search Console + API"
+cost = "free"
+use = "clicks, impressions, index status, baseline"
+
+[[tool]]
+name = "Bing Webmaster Tools - AI Performance"
+cost = "free"
+use = "citations in Copilot and Bing AI; CSV export only, no API"
+
+[[tool]]
+name = "Cloudflare Web Analytics / GA4 AI channel"
+cost = "free"
+use = "AI referral sessions: chatgpt.com, gemini.google.com, perplexity.ai, claude.ai, copilot.microsoft.com"
+
+[[tool]]
+name = "Ahrefs Free (Webmaster Tools)"
+url = "https://ahrefs.com/webmaster-tools"
+cost = "free"
+use = "site audit, own backlinks and keywords, LLM traffic in Web Analytics"
+limit = "own verified sites only; no AI citation tracking; no trial of paid plans"
+
+[[tool]]
+name = "elmo"
+url = "https://github.com/elmohq/elmo"
+cost = "free (MIT) + API calls"
+use = "self-hosted AI mention and citation tracker"
+maturity = "467 stars, active"
+
+[[tool]]
+name = "geo-optimizer-skill"
+url = "https://github.com/Auriti-Labs/geo-optimizer-skill"
+cost = "free (MIT)"
+use = "GEO site audit + citation checks"
+
+[[tool]]
+name = "geo-seo-claude"
+url = "https://github.com/zubair-trabzada/geo-seo-claude"
+cost = "free (MIT)"
+use = "Claude Code skill: GEO audit and PDF report (lead-magnet audit)"
+
+[[tool]]
+name = "SEOnaut"
+url = "https://github.com/StJudeWasHere/seonaut"
+cost = "free (MIT)"
+use = "site crawler and auditor"
+
+[[tool]]
+name = "SerpBear"
+url = "https://github.com/towfiqi/serpbear"
+cost = "free (MIT) + SerpApi free 250/mo"
+use = "rank tracking"
+
+[[tool]]
+name = "Gemini API with Google Search grounding"
+cost = "5K grounded queries/mo free, then ~$14 per 1K"
+use = "cheap engine for prompt tracking"
+
+[[tool]]
+name = "DataForSEO (LLM Mentions, SERP, keywords)"
+cost = "pay as you go; verify minimum top-up"
+use = "AI mention data and SERP data from code"
+tier = "<=100"
+
+[[tool]]
+name = "Otterly Lite"
+cost = "$29/mo, free trial"
+use = "client-facing AI visibility dashboard; benchmark for our own tracker"
+tier = "<=100"
+
+[[tool]]
+name = "Profound trial"
+cost = "free 7 days"
+use = "one-time benchmark"
+
+[budget]
+now = "$0 tier + API calls (~$10-40 per 1K prompt runs)"
+next = "<= $100/mo: Otterly Lite + DataForSEO + direct API runs; Ahrefs Starter $29 only for link building"

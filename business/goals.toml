@@ -1,0 +1,100 @@
+# Objectives and key results. Links up to TAO life goals in Allspark /00-north-star/life-goals.md.
+# Period Q4 = 2026-10-18 .. 2026-12-31. Q1 = 2027-01-01 .. 2027-03-31.
+
+[[objective]]
+id = "CIT-O1"
+title = "Delivery system works end to end"
+life_goal = "Agentic org"
+period = "Q4-2026"
+  [[objective.kr]]
+  text = "Baseline (GSC + 4 AI engines) captured for all 3 accounts"
+  target = 3
+  due = "2026-11-01"
+  [[objective.kr]]
+  text = "Weekly prompt tracking runs without a person for 4 weeks in a row"
+  target = 4
+  due = "2026-12-15"
+  [[objective.kr]]
+  text = "Changes shipped and human-checked, all accounts together"
+  target = 60
+  due = "2026-12-31"
+  [[objective.kr]]
+  text = "Monday reports sent on time"
+  target = "100%"
+  due = "2026-12-31"
+
+[[objective]]
+id = "CIT-O2"
+title = "First case study with real numbers: Fridman Properties"
+life_goal = "Prosperity"
+period = "Q4-2026..Q1-2027"
+  [[objective.kr]]
+  text = "fridmanproperties.com rebuild live on Cloudflare, baseline taken before the switch"
+  due = "2026-11-15"
+  [[objective.kr]]
+  text = "Section 8 owner content pillar live: guide, FAQ, calculator, city pages"
+  target = 10
+  unit = "pages"
+  due = "2026-12-15"
+  [[objective.kr]]
+  text = "AI mention share on tracked owner prompts, from baseline"
+  target = "2x baseline"
+  due = "2027-01-31"
+  status = "hypothesis"
+  [[objective.kr]]
+  text = "Case study v1 published on citata.ai with disclosure"
+  due = "2027-02-15"
+
+[[objective]]
+id = "CIT-O3"
+title = "citata.ai gets cited for its own verticals"
+life_goal = "Prosperity"
+period = "Q1-2027"
+  [[objective.kr]]
+  text = "Site live with vertical pages: property management, PMS software, impact"
+  due = "2026-12-01"
+  [[objective.kr]]
+  text = "citata.ai named in ChatGPT or Gemini for at least 3 tracked vertical prompts"
+  target = 3
+  due = "2027-03-31"
+  [[objective.kr]]
+  text = "Free audits delivered"
+  target = 20
+  due = "2027-03-31"
+
+[[objective]]
+id = "CIT-O4"
+title = "MyRemotely gets leads from AI"
+life_goal = "Prosperity"
+period = "Q4-2026..Q1-2027"
+  [[objective.kr]]
+  text = "AI referral segment in GA4 or Cloudflare analytics live on myremotely.ai"
+  due = "2026-11-01"
+  [[objective.kr]]
+  text = "Demo requests that came from an AI engine"
+  target = 5
+  due = "2027-03-31"
+  status = "hypothesis"
+
+[[objective]]
+id = "CIT-O5"
+title = "Revenue and impact"
+life_goal = "Prosperity; Family/Ukraine/Planet"
+period = "Q1-2027"
+  [[objective.kr]]
+  text = "Stripe recurring billing live under the chosen legal entity"
+  due = "2026-12-31"
+  [[objective.kr]]
+  text = "First external paying account"
+  target = 1
+  due = "2027-02-28"
+  [[objective.kr]]
+  text = "MRR"
+  target = 2000
+  unit = "USD"
+  due = "2027-03-31"
+  status = "hypothesis"
+  [[objective.kr]]
+  text = "Impact pilot with a B Corp, NGO or charity started"
+  target = 1
+  due = "2027-03-31"

@@ -1,0 +1,22 @@
+# Money. Facts marked "unknown" must be filled by Tao.
+
+[entity]
+name = "WarmDevs OÜ"
+country = "Estonia"
+use = "bill citata.ai clients; same entity planned for MyRemotely MSA"
+registry_code = "unknown"
+bank = "unknown"
+trade_name = "citata.ai"
+rename = "open: keep WarmDevs now, decide umbrella name (e.g. TAO) later"
+
+[payments]
+processor = "Stripe"
+mode = "recurring subscriptions per Account (model.toml Subscription)"
+stripe_account = "unknown: does WarmDevs OÜ have a live Stripe account?"
+currency = "USD"
+
+[costs_monthly_usd]
+cloudflare_workers_paid = 5
+agentic_inbox_extra = "0-3"
+tracking_api_runs = "10-40"
+total_now = "15-50"
