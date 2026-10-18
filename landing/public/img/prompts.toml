@@ -104,3 +104,15 @@ file = "img/footer-v6-*.webp"
 prompt = "Footer scene from brand/IMAGES.md section 2 (footer-v6, St Joseph easter egg) + style block T"
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-18"
+
+[[image]]
+file = "img/hero-v7-*.webp"
+prompt = "Edit of option-4 hero (/tmp/img-opt/h4.png): keep colors, style, centered man with key; clean white sky; sea and boats replaced by paved plaza; no border"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/footer-v7-*.webp"
+prompt = "No room at the inn: innkeeper with lantern refuses; Joseph with staff leads a donkey with Mary, thin engraved halos; lit cave stable with manger and ox; olive tree left, cypresses right; upper 55% empty white sky; three-ink stamp engraving (style T)"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
