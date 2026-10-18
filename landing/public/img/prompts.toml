@@ -128,3 +128,15 @@ file = "img/fridman-case-v2-*.webp"
 prompt = "An ancient street like a Chicago street: brownstone two-flats with bay windows and stoops, a classical column; a man in an orange toga looks at a smartphone with a map pin. Style: match hero-v7."
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-18"
+
+[[image]]
+file = "img/monday-report-v3-*.webp"
+prompt = "Edit of monday-report-v2 into style N (brand/IMAGES.md): flat coral #FF6B5B sky, sun yellow awnings, cobalt clothes, mint cypresses, scroll keeps the rising cobalt bar chart, toga orange"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/fridman-case-v3-*.webp"
+prompt = "Edit of fridman-case-v2 into style N: flat sun yellow #F2C230 sky, brownstones in pink, coral and lilac, cobalt line work, mint trees, toga orange"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"

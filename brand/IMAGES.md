@@ -40,9 +40,17 @@ Style: a vintage postage-stamp line engraving printed in three inks on clean whi
 |---|---|
 | `hero-v7` (current) | Edit of the chosen option-4 picture: crane and scaffolding over tiled houses and an arcade (left), a large temple with cypresses (right), a small temple with a glowing door, the man in the orange toga with the key walking toward us in the exact center. Sky made clean, sea and boats replaced by a paved plaza to the bottom edge, no fade. White margins cropped so the scene runs edge to edge. |
 | `footer-v7` (current) | Easter egg made open (owner, 2026-10-18): "no room at the inn". Evening street in Bethlehem: an innkeeper with a lantern turns travelers away; Joseph with a staff leads a donkey with Mary; both have thin engraved halos; they head to a lit cave stable with a manger and an ox. Message for landlords and realtors: Joseph knows the stress of searching, refusals and finding a place. Upper 55 % empty sky. |
-| `monday-report-v2` | Close view of a market square: a herald in an orange toga on a stone rostrum holds up a scroll with a rising bar chart (no numbers); a bronze bell in a small bell gable; stalls, an arch, a lion fountain, townspeople. Not the hero layout. |
-| `fridman-case-v2` | A street of brownstone two-flats with bay windows and stoops, in the same engraving; a man in an orange toga on the sidewalk looks at a phone with a map pin. |
+| `monday-report-v3` | Style N (below). Market square: a herald in an orange toga on a rostrum holds up a scroll with a rising cobalt bar chart; bronze bell; yellow awnings; lion fountain. Coral sky `#FF6B5B`. |
+| `fridman-case-v3` | Style N. Brownstone two-flats in pink, coral and lilac; a man in an orange toga with a phone and a map pin. Sun-yellow sky `#F2C230`. |
 | `hero-v6`, `footer-v6` (old) | Vignette hero with a faded bottom; hill-town footer with Joseph as a carpenter. |
+
+## 2b-N. Content images: N · Neo-Renaissance pop (since 2026-10-18)
+
+For images inside the page (not hero or footer). The owner: "white sky does not make sense for those; make them like every.to, pop modern colors, combine the two styles: neo-Renaissance". Same engraved line work as style T, but:
+
+- The sky is one flat, saturated pop color with no gradient: coral `#FF6B5B`, sun yellow `#F2C230` or sky cyan `#2FA7E0`. Use a different sky color on neighboring images.
+- Buildings, people and objects in a fresh pop palette: pink, coral, lilac, mint, cobalt blue, cream. The hero man's orange toga stays.
+- Made as an edit of a style-T image: "edit it into a neo-Renaissance pop print, like the covers on every.to: keep the scene and line work; fill the sky with one flat pop color; boldly recolor in a modern pop palette; keep the toga orange".
 
 ## 2a. Old: E · Two-tone engraving (hero-v5, footer-v5)
 
