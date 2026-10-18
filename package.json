@@ -1,0 +1,52 @@
+{
+  "name": "citata",
+  "private": true,
+  "workspaces": [
+    "business",
+    "backend",
+    "frontend",
+    "landing"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "alchemy dev",
+    "deploy": "alchemy deploy",
+    "build": "bun run --filter @citata/frontend build && bun run --filter @citata/landing build",
+    "typecheck": "tsc --noEmit && bun run --filter '@citata/*' typecheck",
+    "lint": "oxlint .",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
+    "test:boundary": "vitest run business/src/boundary.test.ts",
+    "prepare": "effect-tsgo patch && husky"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261014.1",
+    "@effect/language-service": "0.87.4",
+    "@effect/tsgo": "0.52.0",
+    "@effect/vitest": "4.0.4",
+    "@foldkit/oxlint-plugin": "0.15.3",
+    "@mpsuesser/oxlint-plugin-effect": "0.6.0",
+    "@types/bun": "1.4.3",
+    "alchemy": "2.0.0-beta.83",
+    "effect": "4.0.4",
+    "husky": "9.1.7",
+    "oxfmt": "0.73.0",
+    "oxlint": "1.88.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.4"
+  },
+  "overrides": {
+    "@effect/platform-browser": "4.0.4",
+    "@effect/platform-bun": "4.0.4",
+    "@effect/platform-node": "4.0.4",
+    "@effect/platform-node-shared": "4.0.4",
+    "effect": "4.0.4",
+    "workerd": "1.20261014.1"
+  },
+  "patchedDependencies": {
+    "@foldkit/vite-plugin@0.27.1": "patches/@foldkit%2Fvite-plugin@0.27.1.patch",
+    "@foldkit/devtools-mcp@0.24.1": "patches/@foldkit%2Fdevtools-mcp@0.24.1.patch"
+  }
+}
