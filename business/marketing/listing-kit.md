@@ -13,15 +13,19 @@ Workers copy text from this file into directory and profile forms. Do not invent
 | Website          | https://citata.ai                                            |
 | Contact email    | grow@citata.ai                                               |
 | Legal entity     | WarmDevs OÜ (trade name citata.ai)                           |
+| Registry code    | 16788177 (Estonian Business Register)                        |
+| VAT number       | EE102647727 (since 2023-08-28)                               |
+| Legal address    | Sepapaja tn 6, Lasnamäe linnaosa, 15551 Tallinn, Harju maakond, Estonia |
 | Country          | Estonia (company); team works remote                         |
-| Founded          | 2026                                                         |
+| Founder country  | Ukraine (residence)                                          |
+| Founded          | 2026 (citata.ai brand); WarmDevs OÜ registered 2023 |
 | Annual revenue   | Pre-revenue (2026-10). Pick the lowest band, e.g. "Less than $1M" or "$0". |
 | Team size        | 1–10 (use "1" or "2–10" if the form needs a band)            |
 | Founder          | Taras Kornichuk ("Tao"), founder                             |
 | Business type    | Agency / service (GEO and SEO), B2B                          |
 | Languages        | English, Ukrainian                                           |
-| Street address   | None. Never invent one. Skip forms that require it.          |
-| Phone            | None. Stop at SMS or phone checks; mark `blocked`.           |
+| Street address   | Use the legal address above for company-address fields. It is a registered address, not an office: do not use it for Google Business Profile, Bing Places or other map listings. |
+| Phone            | Given to workers in the brief. Not stored in this public repo. If the site sends an SMS or calls with a code, stop and mark `blocked` ("needs SMS code"). |
 
 ## One-liner (60 characters max)
 
