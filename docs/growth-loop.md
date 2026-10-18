@@ -18,7 +18,7 @@ Scheduled agents run this file. Each run is a fresh session with no memory. This
 2. `business/hypotheses.toml`: the bets. Priority = impact × confidence × ease.
 3. `business/marketing/backlog.toml`: content and link ideas, ranked.
 4. The last `measure` report in `business/marketing/reports/`.
-5. The latest competitor teardown in `business/marketing/competitors/`.
+5. The latest competitor teardown in `business/marketing/competitors/` and `competitors/clients/playbook.md`.
 
 ## tick: one change a day
 
@@ -55,8 +55,9 @@ Prod needs the owner's "publish" (AGENTS.md). The `measure` run lists the queue 
 2. Read the last visibility report: prompts where AI cites others and not us, and the domains it cites.
 3. Search for new landlord and property manager questions (Reddit r/landlord, r/PropertyManagement, r/Section8; BiggerPockets forums; Google "People also ask"; AnswerThePublic free view).
 4. Add at most 10 ideas to `backlog.toml`, each tied to a hypothesis, with `demand` evidence and a score. Drop ideas that copy a competitor page without new data.
-5. Add up to 10 outreach targets for H03 and H10 to `business/marketing/outreach/`. Do not send pitches: Tao sends them or approves a template once.
-6. Commit to a branch and merge to `stage` (data only, no deploy risk).
+5. First Thursday of a month: re-check the client lists in `business/marketing/competitors/clients/` (new clients, new page types). Update `playbook.md` when a move shows up at 2 or more competitors.
+6. Add up to 10 outreach targets for H03 and H10 to `business/marketing/outreach/`. Do not send pitches: Tao sends them or approves a template once.
+7. Commit to a branch and merge to `stage` (data only, no deploy risk).
 
 ## Rules for every run
 

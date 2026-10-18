@@ -1,0 +1,575 @@
+title = "Property Manager Websites: client delivery audit"
+author = "Citata.ai"
+seen = "2026-10-19"
+competitor = "Property Manager Websites"
+competitor_url = "https://www.propertymanagerwebsites.com/"
+slug = "pmw"
+client_count = 10
+confirmed_count = 10
+likely_count = 0
+weak_count = 0
+blog_window_start = "2026-04-19"
+blog_window_end = "2026-10-19"
+h03_source = "origin/stage:business/marketing/ai-visibility/cities-2026-10/2026-10-19/cities.csv"
+h03_primary_city_named_clients = 6
+h03_primary_city_named_answers = 11
+h03_extra_city_named_answers = 1
+h03_primary_city_own_domain_cited_clients = 1
+method = "Purposeful sample from PMW portfolio; selected for city overlap and contrast, not random. Live home and portfolio pages returned 200. Fetch public HTML, sitemap, robots, llms and selected child pages; check blog index pages through the six-month cutoff. No forms, accounts, contact or paid tools."
+limits = "Current door range is unknown for seven firms. LREI and Thirdstone state more than 500 properties; an outside directory places Service Star above 500. All serve residential owners; retain those three as scale references, not proved 50–500-door buyers. Counts are sitemap URLs, not indexed pages. Static samples do not prove the full SEO retainer, content authorship, listing work, lead results or causation. H03 is one saved answer per engine/city, not a repeated trial. Rates and expected effects are hypotheses. No separate AI search was needed for the ten chosen service cities; Buffalo Grove visibility remains unknown."
+
+[[client]]
+name = "Howard Management Group"
+domain = "howardmanagementgroup.com"
+city = "Los Angeles"
+state = "CA"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/howard-management-group"
+confidence = "confirmed"
+pages = 53
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "guarantees"]
+blog_posts_6mo = 1
+schema = ["microdata: Answer", "microdata: LocalBusiness", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["Expertise: https://www.expertise.com/business/property-management/california/los-angeles", "BBB: https://www.bbb.org/us/ca/los-angeles/profile/property-management/howard-management-group-1216-13133319"]
+named_in_h03 = true
+notes = "Residential owner service, with condos, apartments and single-family homes. Current managed door count unknown. The robots sitemap points to howardmanagement.com while the fetched site and sitemap use howardmanagementgroup.com. Check host aliases before counting citations. No pricing page: /pricing returned 404."
+city_pages = 6
+blog_total_urls = 2
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-09" = 1 }
+h03_named_engines = ["claude"]
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the solstice"
+build = "SmartSite"
+sitemap_url = "https://www.howardmanagementgroup.com/sitemap.xml"
+robots_url = "https://www.howardmanagementgroup.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.howardmanagementgroup.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = false
+gbp_signals = "Live GBP count unknown. Birdeye reports 213 Google reviews and 214 total; this is an outside snapshot."
+gbp_source_url = "https://reviews.birdeye.com/howard-management-group-149483142800950"
+requested_listings_verified = ["Expertise", "BBB"]
+requested_listings_unknown = ["iPropertyManagement", "Yelp", "Thumbtack", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.howardmanagementgroup.com/los-angeles-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.howardmanagementgroup.com/", "https://www.howardmanagementgroup.com/sitemap.xml", "https://www.howardmanagementgroup.com/blog", "https://www.howardmanagementgroup.com/owner-faq", "https://www.howardmanagementgroup.com/owners", "https://www.howardmanagementgroup.com/roi-calculator", "https://www.howardmanagementgroup.com/los-angeles-property-management"]
+blog_sample_urls = ["https://www.howardmanagementgroup.com/blog/7-ways-a-property-manager-protects-your-la-investment"]
+
+[[client]]
+name = "Gemstone Solutions"
+domain = "gemstonesolutions.net"
+city = "Nashville"
+state = "TN"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/gemstone-solutions"
+confidence = "confirmed"
+pages = 59
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees", "guarantees"]
+blog_posts_6mo = 1
+schema = ["microdata: Answer", "microdata: LocalBusiness", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["Expertise: https://www.expertise.com/business/property-management/tennessee/nashville", "BBB category entry: https://www.bbb.org/us/tn/dickson/category/commercial-property-management"]
+named_in_h03 = true
+notes = "Nashville service market; office in Franklin. Residential and commercial owner service; managed door count unknown. Search still returns an older /reviews page with a ZING.work credit. The current home, portfolio page and page set support PMW as the current website vendor; no claim about all historical work."
+city_pages = 14
+blog_total_urls = 1
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-07" = 1 }
+h03_named_engines = ["claude"]
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the onyx"
+build = "SmartSite"
+sitemap_url = "https://www.gemstonesolutions.net/sitemap.xml"
+robots_url = "https://www.gemstonesolutions.net/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.gemstonesolutions.net/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = false
+gbp_signals = "Live GBP and review count unknown. The home page has client video testimonials."
+gbp_source_url = "https://www.gemstonesolutions.net/"
+requested_listings_verified = ["Expertise", "BBB"]
+requested_listings_unknown = ["iPropertyManagement", "Yelp", "Thumbtack", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.gemstonesolutions.net/nashville-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.gemstonesolutions.net/", "https://www.gemstonesolutions.net/sitemap.xml", "https://www.gemstonesolutions.net/blog", "https://www.gemstonesolutions.net/owner-faq", "https://www.gemstonesolutions.net/owners", "https://www.gemstonesolutions.net/roi-calculator", "https://www.gemstonesolutions.net/nashville-property-management", "https://www.gemstonesolutions.net/pricing"]
+blog_sample_urls = ["https://www.gemstonesolutions.net/blog/10-reasons-nashville-property-owners-choose-professional-property-management"]
+
+[[client]]
+name = "Lubin Property Management"
+domain = "lpmproperty.com"
+city = "Memphis"
+state = "TN"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/lubin-property-management"
+confidence = "confirmed"
+pages = 69
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees", "guarantees"]
+blog_posts_6mo = 8
+schema = ["JSON-LD: AggregateRating", "JSON-LD: City", "JSON-LD: GeoCoordinates", "JSON-LD: LocalBusiness", "JSON-LD: OpeningHoursSpecification", "JSON-LD: Organization", "JSON-LD: Person", "JSON-LD: Place", "JSON-LD: PostalAddress", "JSON-LD: Rating", "JSON-LD: RealEstateAgent", "JSON-LD: Review", "JSON-LD: Service", "microdata: Answer", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "200; plain Markdown fact map"
+listings = ["Expertise: https://www.expertise.com/business/property-management/tennessee/memphis", "BBB: https://www.bbb.org/us/tn/memphis/profile/property-management/lubin-property-management-llc-0543-44050656"]
+named_in_h03 = true
+notes = "Residential owner offer plus HOA, commercial, military and receivership work. The home claims 10,000+ tenants placed: this is not a current door count. Five of eight blog URLs show June dates clustered around a site update. JSON-LD and llms.txt are stronger here than in most of the sample."
+city_pages = 11
+blog_total_urls = 8
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-06" = 5, "2026-07" = 1, "2026-08" = 1, "2026-09" = 1 }
+h03_named_engines = ["chatgpt", "claude", "gemini"]
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the leisure"
+build = "SmartSite"
+sitemap_url = "https://www.lpmproperty.com/sitemap.xml"
+robots_url = "https://www.lpmproperty.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.lpmproperty.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = true
+gbp_signals = "Live GBP count unknown. Home JSON-LD states rating 4.0 and reviewCount 807; source and freshness are not checked."
+gbp_source_url = "https://www.lpmproperty.com/"
+requested_listings_verified = ["Expertise", "BBB"]
+requested_listings_unknown = ["iPropertyManagement", "Yelp", "Thumbtack", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.lpmproperty.com/memphis-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.lpmproperty.com/", "https://www.lpmproperty.com/sitemap.xml", "https://www.lpmproperty.com/blog", "https://www.lpmproperty.com/owner-faq", "https://www.lpmproperty.com/owners", "https://www.lpmproperty.com/roi-calculator", "https://www.lpmproperty.com/memphis-property-management", "https://www.lpmproperty.com/pricing"]
+blog_sample_urls = ["https://www.lpmproperty.com/blog/what-memphis-property-management-fees-include-and-what-typically-costs-extra", "https://www.lpmproperty.com/blog/what-happens-when-a-tenant-stops-paying-rent-in-memphis"]
+
+[[client]]
+name = "LREI Property Management"
+domain = "louisvillepropertymanagement.com"
+city = "Louisville"
+state = "KY"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/lrei-property-management"
+confidence = "confirmed"
+pages = 54
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees"]
+blog_posts_6mo = 9
+schema = ["microdata: Answer", "microdata: LocalBusiness", "microdata: Organization", "microdata: PostalAddress", "microdata: Question", "microdata: Review"]
+llms_txt = "404; not found"
+listings = ["BBB: https://www.bbb.org/us/ky/louisville/profile/rentals-by-owner/lrei-property-management-llc-0402-159152779", "Yelp, linked from client home: https://www.yelp.com/biz/lrei-property-management-louisville-3", "NARPM finder, generic link only: https://www.narpm.org/find/property-managers/"]
+named_in_h03 = true
+notes = "Home says more than 1,450 properties in two markets. Outside the 50–500-door target; use as an owner-service delivery reference only. LREI is the only client whose own domain is cited in its primary-city H03 answers. A generic NARPM finder link does not prove a named member record."
+city_pages = 9
+blog_total_urls = 11
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-07" = 6, "2026-08" = 1, "2026-09" = 2 }
+h03_named_engines = ["chatgpt", "claude", "gemini"]
+h03_own_domain_cited_engines = ["chatgpt"]
+other_h03_matches = "None found"
+template = "custom design"
+build = "custom build"
+sitemap_url = "https://www.louisvillepropertymanagement.com/sitemap.xml"
+robots_url = "https://www.louisvillepropertymanagement.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.louisvillepropertymanagement.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = false
+gbp_signals = "Live GBP count unknown. Home reports 4.7 and 300+ reviews; this is a client claim."
+gbp_source_url = "https://www.louisvillepropertymanagement.com/"
+requested_listings_verified = ["Yelp", "BBB"]
+requested_listings_unknown = ["Expertise", "iPropertyManagement", "Thumbtack", "NARPM"]
+section_8 = "No dedicated sitemap URL or mention in sampled owner FAQ; other pages not fully checked."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.louisvillepropertymanagement.com/louisville-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.louisvillepropertymanagement.com/", "https://www.louisvillepropertymanagement.com/sitemap.xml", "https://www.louisvillepropertymanagement.com/blog", "https://www.louisvillepropertymanagement.com/owner-faq", "https://www.louisvillepropertymanagement.com/owners", "https://www.louisvillepropertymanagement.com/roi-calculator", "https://www.louisvillepropertymanagement.com/louisville-property-management", "https://www.louisvillepropertymanagement.com/pricing"]
+blog_sample_urls = ["https://www.louisvillepropertymanagement.com/blog/louisville-real-estate-market-news", "https://www.louisvillepropertymanagement.com/blog/biggest-risks-of-being-a-pet-friendly-rental-property-in-louisville"]
+
+[[client]]
+name = "Service Star Realty"
+domain = "leaseaz.com"
+city = "Phoenix"
+state = "AZ"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/service-star-realty"
+confidence = "confirmed"
+pages = 324
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees", "guarantees"]
+blog_posts_6mo = 20
+schema = ["JSON-LD: City", "JSON-LD: GeoCoordinates", "JSON-LD: LocalBusiness", "JSON-LD: OpeningHoursSpecification", "JSON-LD: PostalAddress", "JSON-LD: RealEstateAgent", "microdata: Answer", "microdata: LocalBusiness", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["iPropertyManagement: https://ipropertymanagement.com/companies/phoenix-az", "Expertise, linked from client home: https://www.expertise.com/az/phoenix/property-management", "BBB, linked from client home: https://www.bbb.org/phoenix/business-reviews/property-management/service-star-realty-in-phoenix-az-1000029438/"]
+named_in_h03 = true
+notes = "Owner-led residential service. iPropertyManagement reports 800+ rentals; outside the 50–500-door target if current. This is an outside estimate. Named in two Phoenix H03 answers and one Mesa answer. The Mesa answer does not cite leaseaz.com. A large blog library does not prove steady new output."
+city_pages = 31
+blog_total_urls = 245
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-05" = 2, "2026-06" = 2, "2026-07" = 9, "2026-08" = 7 }
+h03_named_engines = ["chatgpt", "claude"]
+h03_own_domain_cited_engines = []
+other_h03_matches = "Mesa: gemini; name only, no own-domain citation"
+template = "the rise"
+build = "SmartSite"
+sitemap_url = "https://www.leaseaz.com/sitemap.xml"
+robots_url = "https://www.leaseaz.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.leaseaz.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = false
+gbp_signals = "Live GBP count unknown. Home claims over 1,200 Google reviews and a 4.6 rating, and links a Google place ID."
+gbp_source_url = "https://www.leaseaz.com/"
+requested_listings_verified = ["Expertise", "iPropertyManagement", "BBB"]
+requested_listings_unknown = ["Yelp", "Thumbtack", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.leaseaz.com/phoenix-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.leaseaz.com/", "https://www.leaseaz.com/sitemap.xml", "https://www.leaseaz.com/blog", "https://www.leaseaz.com/owner-faq", "https://www.leaseaz.com/owners", "https://www.leaseaz.com/roi-calculator", "https://www.leaseaz.com/phoenix-property-management", "https://www.leaseaz.com/pricing"]
+blog_sample_urls = ["https://www.leaseaz.com/blog/is-tucson-a-good-place-to-invest-in-rental-property-in-2026", "https://www.leaseaz.com/blog/buying-investment-property-phoenix"]
+
+[[client]]
+name = "Timberline Property Management"
+domain = "timberlinepm.com"
+city = "Colorado Springs"
+state = "CO"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management"
+confidence = "confirmed"
+pages = 46
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees", "guarantees"]
+blog_posts_6mo = 1
+schema = ["microdata: Answer", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["Expertise: https://www.expertise.com/business/property-management/colorado/colorado-springs", "BBB: https://www.bbb.org/us/co/colorado-springs/profile/real-estate/timberline-property-management-0785-87388445"]
+named_in_h03 = true
+notes = "Residential owner service; current door count unknown. One dated post, 13 city URLs and clear fee text. Sampled HTML has PostalAddress and Question/Answer microdata but no LocalBusiness type. No JSON-LD found in the sampled pages."
+city_pages = 13
+blog_total_urls = 1
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-06" = 1 }
+h03_named_engines = ["claude"]
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the leisure"
+build = "SmartSite"
+sitemap_url = "https://www.timberlinepm.com/sitemap.xml"
+robots_url = "https://www.timberlinepm.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.timberlinepm.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = false
+gbp_signals = "Live GBP count unknown. Expertise shows Google 4.6 from 56 reviews and Yelp 4.5 from 15; these are directory snapshots."
+gbp_source_url = "https://www.expertise.com/business/property-management/colorado/colorado-springs"
+requested_listings_verified = ["Expertise", "BBB"]
+requested_listings_unknown = ["iPropertyManagement", "Yelp", "Thumbtack", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.timberlinepm.com/colorado-springs-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.timberlinepm.com/", "https://www.timberlinepm.com/sitemap.xml", "https://www.timberlinepm.com/blog", "https://www.timberlinepm.com/owner-faq", "https://www.timberlinepm.com/owners", "https://www.timberlinepm.com/roi-calculator", "https://www.timberlinepm.com/colorado-springs-property-management", "https://www.timberlinepm.com/pricing"]
+blog_sample_urls = ["https://www.timberlinepm.com/blog/should-you-rent-out-your-colorado-springs-property-instead-of-selling"]
+
+[[client]]
+name = "Thirdstone Properties"
+domain = "thirdstoneproperties.com"
+city = "Jacksonville"
+state = "FL"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/thirdstone-properties"
+confidence = "confirmed"
+pages = 84
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees", "guarantees"]
+blog_posts_6mo = 3
+schema = ["microdata: Answer", "microdata: LocalBusiness", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["BBB: https://www.bbb.org/us/fl/jacksonville/profile/property-management/thirdstone-properties-0403-236025868"]
+named_in_h03 = false
+notes = "Home states 550+ properties under management. Slightly above the 50–500-door target; keep as a near-range owner-service reference. No PMW footer credit found in the home capture, but PMW names the work in its portfolio and the site loads Nesthub tools and a review widget."
+city_pages = 12
+blog_total_urls = 23
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-06" = 1, "2026-08" = 1, "2026-09" = 1 }
+h03_named_engines = []
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the ascent"
+build = "SmartSite"
+sitemap_url = "https://www.thirdstoneproperties.com/sitemap.xml"
+robots_url = "https://www.thirdstoneproperties.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.thirdstoneproperties.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = true
+gbp_signals = "Live GBP count unknown. Home claims 150+ five-star reviews without a checked GBP total."
+gbp_source_url = "https://www.thirdstoneproperties.com/"
+requested_listings_verified = ["BBB"]
+requested_listings_unknown = ["Expertise", "iPropertyManagement", "Yelp", "Thumbtack", "NARPM"]
+section_8 = "No dedicated sitemap URL or mention in sampled owner FAQ; other pages not fully checked."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.thirdstoneproperties.com/jacksonville-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.thirdstoneproperties.com/", "https://www.thirdstoneproperties.com/sitemap.xml", "https://www.thirdstoneproperties.com/blog", "https://www.thirdstoneproperties.com/owner-faq", "https://www.thirdstoneproperties.com/owners", "https://www.thirdstoneproperties.com/roi-calculator", "https://www.thirdstoneproperties.com/jacksonville-property-management", "https://www.thirdstoneproperties.com/pricing"]
+blog_sample_urls = ["https://www.thirdstoneproperties.com/blog/jacksonville-property-management-fees-in-2026-what-youre-really-paying-for", "https://www.thirdstoneproperties.com/blog/how-property-inspections-work-for-jacksonville-rental-homes"]
+
+[[client]]
+name = "Fridman Properties"
+domain = "fridmanproperties.com"
+city = "Chicago"
+state = "IL"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/fridman-properties"
+confidence = "confirmed"
+pages = 87
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees"]
+blog_posts_6mo = 17
+schema = ["microdata: Answer", "microdata: LocalBusiness", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["Thumbtack category entry: https://www.thumbtack.com/il/fernwood/property-management", "Hemlane operator profile: https://www.hemlane.com/agents/fridman-properties-good-landlords-good-tenants/", "Avail company page: https://www.avail.com/companies/fridmanproperties"]
+named_in_h03 = false
+notes = "PMW labels the market Buffalo Grove; the live home targets Chicago and gives an Arlington Heights office. Compare with Chicago H03 only; Buffalo Grove itself is not in H03 and its AI visibility is unknown. Sixteen posts share 2026-07-10; treat this as apparent dates, not a proved new-post burst. Current door count unknown."
+city_pages = 29
+blog_total_urls = 17
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-06" = 1, "2026-07" = 16 }
+h03_named_engines = []
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the onyx"
+build = "SmartSite"
+sitemap_url = "https://www.fridmanproperties.com/sitemap.xml"
+robots_url = "https://www.fridmanproperties.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.fridmanproperties.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = true
+gbp_signals = "Live GBP count unknown. Thumbtack category shows 4.6 from 10 reviews; these are Thumbtack reviews, not Google reviews."
+gbp_source_url = "https://www.thumbtack.com/il/fernwood/property-management"
+requested_listings_verified = ["Thumbtack"]
+requested_listings_unknown = ["Expertise", "iPropertyManagement", "Yelp", "BBB", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.fridmanproperties.com/chicago-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.fridmanproperties.com/", "https://www.fridmanproperties.com/sitemap.xml", "https://www.fridmanproperties.com/blog", "https://www.fridmanproperties.com/owner-faq", "https://www.fridmanproperties.com/owners", "https://www.fridmanproperties.com/roi-calculator", "https://www.fridmanproperties.com/chicago-property-management", "https://www.fridmanproperties.com/pricing"]
+blog_sample_urls = ["https://www.fridmanproperties.com/blog/maximizing-savings-simple-vs-compound-interest-explained", "https://www.fridmanproperties.com/blog/the-ultimate-guide-to-choosing-the-right-property-manager-for-your-rental-property"]
+
+[[client]]
+name = "KHC Property Management"
+domain = "khcpropertymanagement.com"
+city = "Charlotte"
+state = "NC"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/khc-property-management"
+confidence = "confirmed"
+pages = 57
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees", "guarantees"]
+blog_posts_6mo = 1
+schema = ["microdata: Answer", "microdata: LocalBusiness", "microdata: Organization", "microdata: Person", "microdata: PostalAddress", "microdata: Question", "microdata: Review", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["RateMyAgent: https://www.ratemyagent.com/real-estate-agency/khc-property-management-llc-b00u9u/leasing/overview", "Realtor.com rental with named manager: https://www.realtor.com/rentals/details/3418-Peligreni-St_Charlotte_NC_28208_M59072-88626"]
+named_in_h03 = false
+notes = "Residential owner and investor offer; door count unknown. Live home gives Charlotte contact details and external rental evidence names KHC. None of the six requested directory platforms was verified for this client; the two linked sources prove other listing presence."
+city_pages = 10
+blog_total_urls = 1
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-06" = 1 }
+h03_named_engines = []
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the leisure"
+build = "SmartSite"
+sitemap_url = "https://www.khcpropertymanagement.com/sitemap.xml"
+robots_url = "https://www.khcpropertymanagement.com/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.khcpropertymanagement.com/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = true
+gbp_signals = "Live GBP count unknown. RateMyAgent says no reviews on that platform; do not read this as no Google reviews."
+gbp_source_url = "https://www.ratemyagent.com/real-estate-agency/khc-property-management-llc-b00u9u/leasing/overview"
+requested_listings_verified = []
+requested_listings_unknown = ["Expertise", "iPropertyManagement", "Yelp", "Thumbtack", "BBB", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.khcpropertymanagement.com/charlotte-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.khcpropertymanagement.com/", "https://www.khcpropertymanagement.com/sitemap.xml", "https://www.khcpropertymanagement.com/blog", "https://www.khcpropertymanagement.com/owner-faq", "https://www.khcpropertymanagement.com/owners", "https://www.khcpropertymanagement.com/roi-calculator", "https://www.khcpropertymanagement.com/charlotte-property-management", "https://www.khcpropertymanagement.com/pricing"]
+blog_sample_urls = ["https://www.khcpropertymanagement.com/blog/10-reasons-to-hire-a-professional-property-manager"]
+
+[[client]]
+name = "Eclipse Real Estate Group"
+domain = "eclipsere.org"
+city = "Dallas"
+state = "TX"
+evidence_url = "https://www.propertymanagerwebsites.com/portfolio/eclipse-real-estate-group"
+confidence = "confirmed"
+pages = 51
+page_types = ["owner resources", "owner FAQ", "tenant resources", "tenant FAQ", "city/service-area pages", "marketing", "tenant screening", "rent collection", "maintenance", "accounting", "blog", "ROI calculator", "rent-versus-sell calculator", "vacancy-loss calculator", "rental-analysis offer", "rental listings", "pricing/fees", "guarantees"]
+blog_posts_6mo = 2
+schema = ["microdata: Answer", "microdata: FAQPage", "microdata: LocalBusiness", "microdata: PostalAddress", "microdata: Question", "microdata: service"]
+llms_txt = "404; not found"
+listings = ["Women's Council of Realtors operator profile: https://www.wcr.org/profile/krishna-upadhyaya/"]
+named_in_h03 = false
+notes = "Live brand is Eclipse Property Management; PMW portfolio uses Eclipse Real Estate Group. Residential owner work and live Dallas-area rental cards are present. Door count unknown. Exclude same-name BBB records in Columbus and agent records in Tucson: they are other firms. No named record on the six requested directories was verified."
+city_pages = 10
+blog_total_urls = 2
+blog_posts_6mo_basis = "Unique blog URLs with displayed dates from 2026-04-19 through 2026-10-19. Dates may mark updates or migration."
+blog_months = { "2026-07" = 1, "2026-09" = 1 }
+h03_named_engines = []
+h03_own_domain_cited_engines = []
+other_h03_matches = "None found"
+template = "the alex"
+build = "SmartSite"
+sitemap_url = "https://www.eclipsere.org/sitemap.xml"
+robots_url = "https://www.eclipsere.org/robots.txt"
+robots_ai_rules = "Wildcard allows public pages. Blocks /advanced-marketing-platform, /services-step-2, /success, /amp-success. No named AI-agent rules in fetched file."
+llms_url = "https://www.eclipsere.org/llms.txt"
+schema_scope = "Home, owner resources, owner FAQ, pricing if present, ROI, primary city page and sampled rental route. Static source only; no rich-result validation. Lowercase service is reported as found, not as a valid Service type."
+llm_summary_home = true
+gbp_signals = "Live GBP and review count unknown. The site has named service testimonials."
+gbp_source_url = "https://www.eclipsere.org/testimonials"
+requested_listings_verified = []
+requested_listings_unknown = ["Expertise", "iPropertyManagement", "Yelp", "Thumbtack", "BBB", "NARPM"]
+section_8 = "No dedicated sitemap URL. Mention in sampled owner FAQ."
+rental_analysis = "Offer visible; no form submitted and delivery not tested."
+rental_listings_url = "https://www.eclipsere.org/dallas-homes-for-rent"
+rental_listings_status = 200
+tools_test = "Three calculator URLs in sitemap/nav; ROI page returned 200. No inputs submitted; calculations not tested."
+audit_sources = ["https://www.eclipsere.org/", "https://www.eclipsere.org/sitemap.xml", "https://www.eclipsere.org/blog", "https://www.eclipsere.org/owner-faq", "https://www.eclipsere.org/owners", "https://www.eclipsere.org/roi-calculator", "https://www.eclipsere.org/dallas-property-management", "https://www.eclipsere.org/pricing"]
+blog_sample_urls = ["https://www.eclipsere.org/blog/dont-get-too-friendly", "https://www.eclipsere.org/blog/10-reasons-to-hire-a-professional-dallas-property-manager"]
+
+[[pattern]]
+name = "One owner page set on many named designs"
+observed = "10/10 have owner resources, owner FAQs, service pages, city URLs, rental analysis and three calculator URLs. Nine are SmartSites; LREI is a custom build. PMW names seven design choices in this sample."
+limit = "The same core appears in named and unnamed firms; no causal effect can be assigned."
+clients = ["Howard Management Group", "KHC Property Management", "LREI Property Management"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/khc-property-management", "https://www.propertymanagerwebsites.com/portfolio/lrei-property-management"]
+
+[[pattern]]
+name = "City pages carry local owner intent"
+observed = "Each sitemap has 6–31 URLs ending in -property-management after excluding multi-family and other service subtypes. These are URL counts; not a claim of unique text."
+limit = "Named firms span 6–31 such URLs; unnamed firms span 10–29. More city URLs alone do not explain mentions."
+clients = ["Timberline Property Management", "Service Star Realty", "Thirdstone Properties", "Fridman Properties"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/timberline-property-management", "https://www.propertymanagerwebsites.com/portfolio/service-star-realty", "https://www.propertymanagerwebsites.com/portfolio/thirdstone-properties", "https://www.propertymanagerwebsites.com/portfolio/fridman-properties"]
+
+[[pattern]]
+name = "Price and tools sit near the owner offer"
+observed = "9/10 have a checked pricing page. All 10 have ROI, rent-versus-sell and vacancy tool URLs; sampled ROI pages returned 200. All 10 show a rental-analysis offer."
+limit = "These features support owner decisions; this audit has no lead or conversion data."
+clients = ["Gemstone Solutions", "Lubin Property Management", "Timberline Property Management"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/gemstone-solutions", "https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management"]
+
+[[pattern]]
+name = "Service pages split common owner tasks"
+observed = "10/10 list marketing, screening, rent collection, maintenance and accounting; most also use /eviction. Owner and tenant paths stay separate."
+limit = "A repeatable site structure is clear. Monthly SEO work and who wrote each page remain unknown."
+clients = ["Howard Management Group", "Eclipse Real Estate Group", "Thirdstone Properties"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/eclipse-real-estate-group", "https://www.propertymanagerwebsites.com/portfolio/thirdstone-properties"]
+
+[[pattern]]
+name = "Review tools and outside profiles add proof"
+observed = "PMW tags reputation management for all 10 in its portfolio. Eight home captures reference a reviews.nesthub.com widget. At least one checked outside directory is present for each of the six H03-named firms."
+limit = "A directory record is evidence of presence, not proof PMW built it. A widget is not proof of review requests or review growth."
+clients = ["Howard Management Group", "Lubin Property Management", "LREI Property Management", "Service Star Realty", "Timberline Property Management", "Gemstone Solutions"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/lrei-property-management", "https://www.propertymanagerwebsites.com/portfolio/service-star-realty", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management", "https://www.propertymanagerwebsites.com/portfolio/gemstone-solutions"]
+
+[[pattern]]
+name = "Blog pace varies; many sites have one recent post"
+observed = "Four sites have one unique blog URL with a date in the six-month window. Service Star has 20; Fridman has 17 but 16 share one date. Lubin has eight and LREI nine."
+limit = "Howard, Gemstone and Timberline are named with one recent post each. Recent post count alone does not explain mentions. Dates may reflect updates or migration."
+clients = ["Howard Management Group", "Gemstone Solutions", "Timberline Property Management", "Service Star Realty", "Fridman Properties"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/gemstone-solutions", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management", "https://www.propertymanagerwebsites.com/portfolio/service-star-realty", "https://www.propertymanagerwebsites.com/portfolio/fridman-properties"]
+
+[[pattern]]
+name = "AI files and schema are not a uniform package"
+observed = "Only Lubin returns a plain llms.txt. Lubin and Service Star have parsed JSON-LD on sampled pages. Other sites mainly use microdata. All sampled owner FAQs have Question and Answer types; only Eclipse shows FAQPage there. Five home pages use llm-summary."
+limit = "Five of six H03-named firms lack llms.txt. The custom meta tag and the file have no measured citation effect here."
+clients = ["Lubin Property Management", "Eclipse Real Estate Group", "KHC Property Management", "Thirdstone Properties"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/eclipse-real-estate-group", "https://www.propertymanagerwebsites.com/portfolio/khc-property-management", "https://www.propertymanagerwebsites.com/portfolio/thirdstone-properties"]
+
+[[pattern]]
+name = "Section 8 is mostly a small FAQ answer"
+observed = "Eight owner FAQs mention Section 8 or vouchers. No dedicated Section 8 or voucher URL appeared in the 10 sitemaps. Lubin has a direct voucher question; Timberline has a local assistance-program answer."
+limit = "No claim of a full affordable-housing offer. No legal accuracy review was made. Do not reuse generic legal text as a city-specific answer."
+clients = ["Lubin Property Management", "Timberline Property Management", "Howard Management Group"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management", "https://www.propertymanagerwebsites.com/portfolio/howard-management-group"]
+
+[[copy]]
+rank = 1
+move = "Ship one complete owner decision page per real service city"
+action = "Include local service facts, who the firm serves, proof, linked fees and one rental-analysis next step. Use a small proven service area first; write a similar page for Citata.ai with the work, scope and evidence it can prove."
+expected_effect = "Hypothesis: better owner-fit traffic and more useful AI source text. Measure qualified owner leads and named/cited answers by city."
+clients = ["Howard Management Group", "Timberline Property Management", "Service Star Realty"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management", "https://www.propertymanagerwebsites.com/portfolio/service-star-realty"]
+
+[[copy]]
+rank = 2
+move = "Check and fix each client’s public entity records"
+action = "Match business name, phone, URL and service area across GBP, Expertise, iPropertyManagement, Yelp, BBB and NARPM when eligible. Log each named record and source. Give Citata.ai the same identity check on relevant agency directories."
+expected_effect = "Hypothesis: fewer identity gaps and more chances of a correct AI mention. H03 cites directory domains often; it does not map each source to one firm."
+clients = ["Howard Management Group", "Gemstone Solutions", "Lubin Property Management", "LREI Property Management", "Service Star Realty", "Timberline Property Management"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/gemstone-solutions", "https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/lrei-property-management", "https://www.propertymanagerwebsites.com/portfolio/service-star-realty", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management"]
+
+[[copy]]
+rank = 3
+move = "Publish the full owner fee table"
+action = "Show management, placement, renewal, vacant-property and add-on fees, plus worked examples and stated limits. Link fees from the local owner page. Publish a clear Citata.ai scope and price table when terms are set."
+expected_effect = "Hypothesis: more qualified calls and fewer price-only sales steps. Measure fee-page visits that become owner calls."
+clients = ["Gemstone Solutions", "LREI Property Management", "Timberline Property Management", "KHC Property Management"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/gemstone-solutions", "https://www.propertymanagerwebsites.com/portfolio/lrei-property-management", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management", "https://www.propertymanagerwebsites.com/portfolio/khc-property-management"]
+
+[[copy]]
+rank = 4
+move = "Make the rental-analysis offer useful before the call"
+action = "State what the owner gets, who checks it, the response time and limits. Add a property-address start only after the offer is clear. Track source to qualified owner lead; do not count every renter form as growth."
+expected_effect = "Hypothesis: more owner leads from existing visits. No form or lead flow was tested in this audit."
+clients = ["Thirdstone Properties", "Fridman Properties", "Eclipse Real Estate Group"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/thirdstone-properties", "https://www.propertymanagerwebsites.com/portfolio/fridman-properties", "https://www.propertymanagerwebsites.com/portfolio/eclipse-real-estate-group"]
+
+[[copy]]
+rank = 5
+move = "Build three open owner tools with stated inputs"
+action = "Add rent-versus-sell, vacancy-loss and ROI tools. Show assumptions, a plain result and the matching service link. Citata.ai can add an owner-lead value tool with its own stated inputs."
+expected_effect = "Hypothesis: more useful visits and stronger links from advice to a service decision. Measure tool use and qualified calls; test the calculations before launch."
+clients = ["Lubin Property Management", "Gemstone Solutions", "Timberline Property Management"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/gemstone-solutions", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management"]
+
+[[copy]]
+rank = 6
+move = "Link each owner task to a clear service page"
+action = "Cover marketing, screening, collection, maintenance and accounting with the client’s actual process and limits. Join each page to city, fee, FAQ and owner pages. Use the same structure for Citata.ai’s research, fixes, content and reporting work."
+expected_effect = "Hypothesis: better coverage of owner questions and easier crawl paths. Measure search entries, internal next steps and owner leads."
+clients = ["Howard Management Group", "Eclipse Real Estate Group", "KHC Property Management"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/eclipse-real-estate-group", "https://www.propertymanagerwebsites.com/portfolio/khc-property-management"]
+
+[[copy]]
+rank = 7
+move = "Put traceable owner proof beside the offer"
+action = "Use approved owner quotes, dated review-source links and named local results. State the review platform and date. Separate renter praise from owner outcomes; build Citata.ai case pages with the same source trail."
+expected_effect = "Hypothesis: stronger trust and better lead quality. A review widget alone does not prove an owner result."
+clients = ["LREI Property Management", "Service Star Realty", "Howard Management Group"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/lrei-property-management", "https://www.propertymanagerwebsites.com/portfolio/service-star-realty", "https://www.propertymanagerwebsites.com/portfolio/howard-management-group"]
+
+[[copy]]
+rank = 8
+move = "Answer local owner questions with checked facts"
+action = "Build FAQs on fees, repairs, notice steps and voucher handling. Ask the client to check local rules and its own policy. Link public local sources. Test a dedicated Section 8 owner page only where the client has that service."
+expected_effect = "Hypothesis: better long-tail owner matches, including underserved voucher questions. The sample shows an FAQ gap, not measured demand or a proven lift."
+clients = ["Lubin Property Management", "Timberline Property Management", "Eclipse Real Estate Group"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/timberline-property-management", "https://www.propertymanagerwebsites.com/portfolio/eclipse-real-estate-group"]
+
+[[copy]]
+rank = 9
+move = "Write a small set of original local owner articles"
+action = "Start with one expert-checked local article per month as a test, not a claimed market benchmark. Use current fee questions, inspection steps and local investment facts. Preserve first-published and updated dates; avoid bulk date resets."
+expected_effect = "Hypothesis: more useful local source material with less weak text. Compare owner leads and AI mentions before adding volume."
+clients = ["Lubin Property Management", "Thirdstone Properties", "Service Star Realty", "Fridman Properties"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/thirdstone-properties", "https://www.propertymanagerwebsites.com/portfolio/service-star-realty", "https://www.propertymanagerwebsites.com/portfolio/fridman-properties"]
+
+[[copy]]
+rank = 10
+move = "Sell measured fixes and a clear launch check"
+action = "Track brand mentions, own-domain citations and qualified owner leads as separate fields. Check names, addresses, aliases, robots, sitemap, valid schema and plain fact files. Use the same checks on Citata.ai. Treat llms.txt as a low-cost fact map after core work."
+expected_effect = "Hypothesis: fewer site defects and clearer proof of value. Do not claim a citation lift from llms.txt or llm-summary alone."
+clients = ["Lubin Property Management", "Howard Management Group", "LREI Property Management", "KHC Property Management"]
+evidence_urls = ["https://www.propertymanagerwebsites.com/portfolio/lubin-property-management", "https://www.propertymanagerwebsites.com/portfolio/howard-management-group", "https://www.propertymanagerwebsites.com/portfolio/lrei-property-management", "https://www.propertymanagerwebsites.com/portfolio/khc-property-management"]
