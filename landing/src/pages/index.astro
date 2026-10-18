@@ -1,63 +1,255 @@
 ---
 import Base from "../layouts/Base.astro";
+import BaselineCard from "../components/BaselineCard.astro";
+import { auditHref, offers } from "../data/site.ts";
 
-// One line and verticals: business/strategy.md, sections 1 and 3.
-const oneLine =
-  "citata.ai makes AI assistants name and link our clients when buyers ask them for a recommendation.";
+// Copy sources: business/strategy.md (§1 one line, §2 process, §3 verticals, §5 facts),
+// business/offers.toml (price ladder). Every number names its source.
+const title = "citata.ai — get named when buyers ask AI";
+const description =
+  "citata.ai makes AI assistants name and link our clients when buyers ask them for a recommendation. Free AI visibility audit.";
+
+const facts = [
+  {
+    n: "74.8%",
+    text: "of AI referral traffic comes from ChatGPT. Gemini is second at 11.6%.",
+    src: "SE Ranking, 2026",
+  },
+  {
+    n: "0.5% → 12.1%",
+    text: "AI sent 0.5% of visits to one site, but 12.1% of its signups.",
+    src: "Ahrefs",
+  },
+  {
+    n: "< 0.3%",
+    text: "of AI citations for renters go to property manager home pages. Listing sites get 72%.",
+    src: "Peek, 8,442 communities",
+  },
+];
+
+const stages = [
+  {
+    n: "01",
+    name: "Indexed",
+    text: "Search engines and AI crawlers can read every page. We fix crawl errors, sitemaps and slow pages.",
+  },
+  {
+    n: "02",
+    name: "Found",
+    text: "Your pages answer the exact questions buyers ask. We write those answers and fix weak pages.",
+  },
+  {
+    n: "03",
+    name: "Mentioned",
+    text: "ChatGPT, Gemini, Claude and Perplexity name your company, with a link. We track this each week.",
+  },
+];
+
+const steps = [
+  {
+    head: "Send one sentence.",
+    text: "Tell us your goal by email. Example: “Owners in Chicago find us when they ask AI for a manager.”",
+  },
+  {
+    head: "We take a baseline.",
+    text: "We ask 4 AI engines your buyers’ questions and record who they name. No baseline, no proof.",
+  },
+  {
+    head: "One checked change a day.",
+    text: "Agents draft a page fix, an answer or a listing update. A person checks each one before it ships.",
+  },
+  {
+    head: "A report every Monday.",
+    text: "Which engines named you, for which questions, and what we changed. Short, with numbers.",
+  },
+];
 
 const verticals = [
   {
     title: "Property management",
-    text: "Owners ask ChatGPT and Gemini which manager to hire. We work to get your company named in the answer, with a link.",
+    text: "Owners ask AI which manager to hire. We work to get your company named in that answer.",
+    href: "/property-management",
+    status: "Now",
   },
   {
     title: "PMS software",
-    text: "Property managers ask AI which software to buy. We work to get your product named in those answers.",
+    text: "Property managers ask AI which software to buy. We work to get your product named.",
+    status: "Q1 2027",
   },
   {
     title: "Impact organizations",
     text: "B Corps, NGOs and charities. Pro bono or at cost, so good work gets found.",
+    status: "Q1 2027",
   },
 ];
+
+const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
-<Base title="citata.ai — get cited by AI assistants" description={oneLine}>
-  <header class="mx-auto max-w-4xl px-6 pt-8">
-    <a href="/" class="text-lg font-semibold tracking-tight">citata<span class="text-accent">.ai</span></a>
-  </header>
-
-  <main class="mx-auto max-w-4xl px-6">
-    <section class="py-24">
-      <p class="font-mono text-sm uppercase tracking-widest text-muted">Get cited</p>
-      <h1 class="mt-4 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">{oneLine}</h1>
-      <p class="mt-6 max-w-2xl text-lg text-muted">
-        People ask AI for a recommendation before they search. We track the questions your buyers ask,
-        ship one real change a day, and report the result every Monday.
-      </p>
-      <a
-        href="mailto:grow@citata.ai?subject=Free%20AI%20visibility%20audit"
-        class="mt-10 inline-block rounded-lg bg-ink px-5 py-3 font-medium text-white hover:bg-accent"
-      >
-        Get a free AI visibility audit
-      </a>
+<Base title={title} description={description}>
+  <main class="wrap">
+    <section class="grid items-center gap-10 border-b border-rule py-12 md:grid-cols-[1.25fr_1fr] md:py-16">
+      <div>
+        <p class="meta"><span class="text-minium">GEO</span> · getting cited by AI answers</p>
+        <h1 class="mt-4 text-[40px] leading-[1.04] sm:text-[56px] sm:leading-[1.02]">
+          Get named when buyers ask AI
+        </h1>
+        <p class="mt-5 max-w-xl text-[19px] leading-normal text-muted">
+          citata.ai makes AI assistants name and link our clients when buyers ask them for a
+          recommendation. We track the questions your buyers ask, ship one checked change a day, and
+          report every Monday.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a class="btn-lapis" href={auditHref}>Get a free AI visibility audit</a>
+          <a class="btn-ink" href="/case-studies/fridman-properties">Read our first case study</a>
+        </div>
+        <p class="mt-4 text-sm text-muted">
+          The audit is free: 20 questions on 4 AI engines, and your top 5 fixes.
+        </p>
+      </div>
+      <div>
+        <BaselineCard />
+        <p class="meta mt-3">Our first client, before any GEO work. <a class="link normal-case" href="/case-studies/fridman-properties">Read why</a></p>
+      </div>
     </section>
 
-    <section aria-labelledby="verticals" class="border-t border-gray-200 py-16">
-      <h2 id="verticals" class="text-2xl font-semibold tracking-tight">Who we work with</h2>
-      <ul class="mt-8 grid gap-6 sm:grid-cols-3">
+    <section aria-labelledby="why" class="border-b border-rule py-14">
+      <p class="label" id="why">Why this matters</p>
+      <ul class="grid gap-8 md:grid-cols-3">
+        {
+          facts.map((f) => (
+            <li>
+              <p class="text-[40px] leading-none font-semibold">{f.n}</p>
+              <p class="mt-3 text-[17px]">{f.text}</p>
+              <p class="meta mt-2">Source: {f.src}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-8 max-w-[66ch] text-muted">
+        AI traffic is small, but it converts. And the AI answer often names a company before the
+        buyer sees any search result. If AI does not know you, the buyer may never hear your name.
+      </p>
+    </section>
+
+    <section id="how" aria-labelledby="how-h" class="border-b border-rule py-14">
+      <p class="label">How it works</p>
+      <h2 id="how-h" class="text-[32px] leading-tight">Indexed → Found → Mentioned</h2>
+      <ol class="mt-8 grid gap-6 md:grid-cols-3">
+        {
+          stages.map((s) => (
+            <li class="rounded border border-rule bg-page p-6">
+              <p class="meta text-minium">{s.n}</p>
+              <h3 class="mt-2 text-[22px]">{s.name}</h3>
+              <p class="mt-2 text-[15px] text-muted">{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+      <ol class="mt-12 grid gap-x-10 gap-y-6 md:grid-cols-2">
+        {
+          steps.map((s, i) => (
+            <li class="flex gap-4">
+              <span class="meta mt-1 w-6 flex-none">{i + 1}.</span>
+              <p>
+                <strong class="font-medium">{s.head}</strong>{" "}
+                <span class="text-muted">{s.text}</span>
+              </p>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section aria-labelledby="proof" class="my-14 rounded-md bg-ink p-6 text-parchment sm:p-10">
+      <div class="max-w-3xl">
+        <div>
+          <p class="label text-[#A89B88]" id="proof">Case study · in progress</p>
+          <h2 class="text-[32px] leading-tight">Fridman Properties: the baseline before the work</h2>
+          <p class="mt-4 text-[#A89B88]">
+            We moved a Chicago manager’s 90-page site to a fast static stack and kept every URL, word and
+            SEO tag. Then we asked 3 AI engines 24 owner questions. Outside its own name, AI named the
+            company in 8 of 132 answers. We publish the plan and the baseline now, and the results at 90
+            days.
+          </p>
+          <a href="/case-studies/fridman-properties" class="mt-6 inline-block text-[#F08A4B] underline underline-offset-2">
+            Read the case study →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" aria-labelledby="pricing-h" class="border-b border-rule pb-14">
+      <p class="label">Pricing</p>
+      <h2 id="pricing-h" class="text-[32px] leading-tight">One clear plan. Month to month.</h2>
+      <p class="mt-3 max-w-[66ch] text-muted">
+        These are our first prices. We will check them with our first 3 paying clients and may change
+        them. You can stop any month.
+      </p>
+      <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          offers.map((o) => (
+            <li class={`flex flex-col rounded border bg-page p-6 ${o.slug === "growth" ? "border-lapis" : "border-rule"}`}>
+              <h3 class="text-xl font-medium">{o.name}</h3>
+              <p class="mt-3">
+                <span class="text-[32px] font-semibold">{usd(o.price_usd_month)}</span>
+                {o.price_usd_month > 0 && <span class="text-muted">/mo</span>}
+              </p>
+              {"annual_price_usd_month" in o && o.annual_price_usd_month !== undefined && (
+                <p class="meta mt-1">{usd(o.annual_price_usd_month)}/mo on 12 months</p>
+              )}
+              <ul class="mt-4 flex-1 space-y-1.5 text-[15px] text-muted">
+                {o.scope.map((s) => (
+                  <li class="flex gap-2">
+                    <span class="text-minium">·</span>
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))
+        }
+      </ul>
+      <a class="btn-lapis mt-8" href={auditHref}>Start with the free audit</a>
+    </section>
+
+    <section aria-labelledby="who" class="border-b border-rule py-14">
+      <p class="label" id="who">Who we work with</p>
+      <ul class="grid gap-8 md:grid-cols-3">
         {
           verticals.map((v) => (
-            <li class="rounded-xl border border-gray-200 p-6">
-              <h3 class="font-semibold">{v.title}</h3>
-              <p class="mt-2 text-sm text-muted">{v.text}</p>
+            <li class="border-t border-rule pt-5">
+              <p class="meta">
+                <span class={v.status === "Now" ? "text-verdigris" : ""}>{v.status}</span>
+              </p>
+              <h3 class="mt-2 text-[22px]">
+                {v.href ? (
+                  <a href={v.href} class="hover:text-minium">
+                    {v.title} →
+                  </a>
+                ) : (
+                  v.title
+                )}
+              </h3>
+              <p class="mt-2 text-[15px] text-muted">{v.text}</p>
             </li>
           ))
         }
       </ul>
     </section>
-  </main>
 
-  <footer class="mx-auto max-w-4xl border-t border-gray-200 px-6 py-8 text-sm text-muted">
-    © {new Date().getFullYear()} citata.ai
-  </footer>
+    <section aria-labelledby="cta" class="grid items-center gap-8 pt-14 md:grid-cols-[1.2fr_1fr]">
+      <h2 id="cta" class="text-[36px] leading-[1.05] sm:text-[44px]">
+        Does ChatGPT know your company? <span class="text-minium">Find out for free.</span>
+      </h2>
+      <div>
+        <p class="text-muted">
+          Email us your site and your city. We ask 4 AI engines 20 questions your buyers ask, check
+          your index, and send a one-page report with your top 5 fixes. If we cannot help, we will say
+          so.
+        </p>
+        <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
+      </div>
+    </section>
+  </main>
 </Base>
