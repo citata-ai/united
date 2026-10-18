@@ -49,6 +49,12 @@ Technical score after the deploy: 58 → 72/100. Open items from the audit: page
 
 Score after the second deploy (2026-10-18): 96/100. Added: About page, WebSite / Article / Person schema, dates and author, Markdown copy of each page (`Accept: text/markdown`), `llms-full.txt`, `/.well-known/ai.txt`, `/ai/*.json`, RSS. The last 4 points need 3 knowledge-graph profiles in `sameAs` (LinkedIn, Crunchbase, Wikidata). The LINK BUILD thread owns them.
 
+## Search consoles (2026-10-18)
+
+- Google Search Console: Domain property `sc-domain:citata.ai`, owner `dread9ko@gmail.com`, verified by DNS TXT `google-site-verification=…` on the apex. Do not delete that record. Sitemap submitted.
+- Bing Webmaster Tools: `https://citata.ai/`, imported from GSC (same Google account). Sitemap submitted. Its AI Performance report shows Copilot citations: export the CSV weekly.
+- Ahrefs Webmaster Tools: project "Citata", verified, weekly Site Audit.
+
 ## Publish step (when new content is ready)
 
 IndexNow waits until the first content batch is live.
