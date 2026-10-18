@@ -1,0 +1,77 @@
+# Deploy the landing with Alchemy (alchemy.run.ts, CITATA_DEPLOY=landing).
+#   push to `stage` -> Alchemy stage "stage" -> https://stage.citata.ai (noindex)
+#   push to `main`  -> Alchemy stage "prod"  -> https://citata.ai
+# Branch flow (AGENTS.md "Deploy"): work branch -> stage -> main, main only after the owner says publish.
+# Cloudflare credentials come from Infisical (env.myremotely.ai, project citata, env prod, path /) through GitHub OIDC:
+# no Cloudflare secret is stored in GitHub. Setup: docs/gates.md "Deploy".
+name: deploy
+
+on:
+  push:
+    branches: [stage, main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref_name }}
+  cancel-in-progress: false # never stop a deploy half way
+
+permissions:
+  contents: read
+  id-token: write # GitHub OIDC token for the Infisical machine identity
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment: ${{ github.ref_name == 'main' && 'prod' || 'stage' }}
+    env:
+      STAGE: ${{ github.ref_name == 'main' && 'prod' || 'stage' }}
+      SITE: ${{ github.ref_name == 'main' && 'https://citata.ai' || 'https://stage.citata.ai' }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # gitleaks scans the full history
+
+      - uses: jdx/mise-action@v5
+        with:
+          install: true
+          cache: true
+
+      - name: G3 (same gate as CI)
+        run: mise run gate3
+
+      - name: Cloudflare credentials from Infisical (OIDC)
+        uses: Infisical/secrets-action@v1.0.18
+        with:
+          method: oidc
+          domain: https://env.myremotely.ai
+          # Machine identity "citata-github-deploy"; its OIDC rule trusts only
+          # repo:citata-ai/united:environment:stage|prod (GitHub environments, branch-locked).
+          identity-id: ${{ vars.INFISICAL_IDENTITY_ID }}
+          project-id: 62010fdb-0173-4156-b434-6f5dd884f359 # Infisical project "citata"
+          env-slug: prod
+          secret-path: /
+          export-type: env
+
+      - name: Alchemy deploy (landing only)
+        env:
+          CI: "true"
+          CITATA_DEPLOY: landing
+        # --adopt: take over the Workers that wrangler made before (citata-landing, citata-landing-stage).
+        run: bun run deploy --stage "$STAGE" --yes --no-input --adopt
+
+      - name: Smoke test
+        run: |
+          set -euo pipefail
+          for path in / /property-management /case-studies/fridman-properties /guides /about; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --retry 5 --retry-delay 5 --retry-all-errors "$SITE$path")
+            echo "$code $SITE$path"
+            test "$code" = 200
+          done
+          if [ "$STAGE" = prod ]; then
+            code=$(curl -s -o /dev/null -w '%{http_code}' https://www.citata.ai/)
+            echo "$code https://www.citata.ai/"
+            test "$code" = 301
+          else
+            curl -sI "$SITE/" | grep -i '^x-robots-tag: noindex'
+          fi

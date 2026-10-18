@@ -1,14 +1,15 @@
 /**
  * citata-landing: serve the static site; send www.citata.ai to citata.ai (301);
  * record AI traffic (AI crawlers and AI referrals) to Analytics Engine and logs.
- * On *.workers.dev (stage) add a noindex header and do not record traffic.
- * Interim wrangler deploy; see wrangler.jsonc.
+ * On stage (CITATA_STAGE != "prod", e.g. stage.citata.ai) and on *.workers.dev add a noindex
+ * header and do not record traffic. Deployed by Alchemy (alchemy.run.ts); wrangler.jsonc is the
+ * old interim path.
  */
 import { classify, isTracked } from "./ai-traffic.js";
 
 /**
  * @typedef {{ writeDataPoint(p: { blobs?: string[], doubles?: number[], indexes?: string[] }): void }} AnalyticsEngine
- * @typedef {{ ASSETS: { fetch: typeof fetch }, AI_TRAFFIC?: AnalyticsEngine }} Env
+ * @typedef {{ ASSETS: { fetch: typeof fetch }, AI_TRAFFIC?: AnalyticsEngine, CITATA_STAGE?: string }} Env
  */
 
 export default {
@@ -22,7 +23,10 @@ export default {
     const response = wantsMarkdown(request, url)
       ? await markdown(request, url, env)
       : await env.ASSETS.fetch(request);
-    if (url.hostname.endsWith(".workers.dev")) {
+    if (
+      url.hostname.endsWith(".workers.dev") ||
+      (env.CITATA_STAGE && env.CITATA_STAGE !== "prod")
+    ) {
       // Stage and preview hosts: keep them out of search indexes.
       const staged = secure(response, url.pathname, url.search);
       staged.headers.set("X-Robots-Tag", "noindex, nofollow");
