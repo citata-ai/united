@@ -12,9 +12,24 @@ interface Props {
   modified?: string;
 }
 const { title, description, image = "/og/property-management.jpg", type = "website", modified } = Astro.props;
+import { platforms } from "../data/platforms.ts";
+
+// "Ask AI about Citata.ai" (like propertymanagement.com): each engine opens with a ready question
+// about us, this page and llms.txt.
+const icon = (name: string) => platforms.find((p) => p.name === name)?.path ?? "";
 // build.format "file" makes Astro.url end in ".html"; the live URLs do not.
 const cleanPath = Astro.url.pathname.replace(/(index)?\.html$/, "").replace(/(.)\/$/, "$1");
 const canonical = new URL(cleanPath, Astro.site);
+const askPrompt = encodeURIComponent(
+  `Tell me about Citata.ai: what it does (GEO and AEO for US property management companies, so landlords find them in ChatGPT, Gemini, Claude and Perplexity), how it works and who it is for. Current page: ${canonical} More context: https://citata.ai/llms.txt`,
+);
+const askAI = [
+  { name: "ChatGPT", href: `https://chatgpt.com/?q=${askPrompt}` },
+  { name: "Claude", href: `https://claude.ai/new?q=${askPrompt}` },
+  { name: "Perplexity", href: `https://www.perplexity.ai/search?q=${askPrompt}` },
+  { name: "Google AI Overviews", label: "Google AI Mode", href: `https://www.google.com/search?udm=50&q=${askPrompt}` },
+  { name: "Grok", href: `https://grok.com/?q=${askPrompt}` },
+];
 // Markdown copy of the page for AI agents (scripts/markdown.mjs writes it at build).
 const markdownHref = cleanPath === "/" ? "/index.md" : `${cleanPath}.md`;
 const ogImage = new URL(image, Astro.site);
@@ -188,7 +203,7 @@ const nav = [
               <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-10 w-auto" loading="lazy" />
             </a>
             <p class="mt-3 font-mono text-[13px] text-muted">GEO for property management companies.</p>
-            <p class="mt-5 font-mono text-[12px] leading-relaxed text-muted">
+                        <p class="mt-5 font-mono text-[12px] leading-relaxed text-muted">
               © {new Date().getFullYear()} Citata.ai<br />WarmDevs OÜ, Tallinn<br /><em class="not-italic"><span aria-hidden="true">☀&#xFE0E;</span> Aetas aurea redit</em>
             </p>
           </div>
@@ -208,6 +223,27 @@ const nav = [
               </nav>
             ))
           }
+          <div class="col-span-2 flex flex-wrap items-center gap-3 lg:col-span-3 lg:col-start-2 lg:-mt-2">
+              <p class="font-mono text-[11px] tracking-[0.1em] text-muted uppercase">Ask AI about Citata.ai</p>
+              <ul class="flex gap-1.5">
+                {
+                  askAI.map((a) => (
+                    <li>
+                      <a
+                        href={a.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`Ask ${a.label ?? a.name}`}
+                        aria-label={`Ask ${a.label ?? a.name} about Citata.ai (opens in a new tab)`}
+                        class="grid size-9 place-items-center rounded-full border border-rule bg-page text-ink transition-colors hover:border-sun hover:bg-sun"
+                      >
+                        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" class="fill-current"><path d={icon(a.name)} /></svg>
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
         </div>
       </div>
       <img

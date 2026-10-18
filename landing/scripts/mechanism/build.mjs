@@ -1111,8 +1111,8 @@ const CSS = `
 .ce .ce-c-engines{--anatomy-paper:#dcf7ec;--anatomy-face:#dcf7ec;--anatomy-top:#ecfbf5;--anatomy-shade-0:#1fbf8a;--anatomy-shade-1:#57d2a8;--anatomy-shade-2:#8fe2c5;--anatomy-shade-3:#c0efdd}
 .ce .ce-c-drive{--anatomy-paper:#f1e6ff;--anatomy-face:#f1e6ff;--anatomy-top:#f8f2ff;--anatomy-shade-0:#9b6bff;--anatomy-shade-1:#b48fff;--anatomy-shade-2:#cdb3ff;--anatomy-shade-3:#e4d6ff}
 .ce .iso-figure{margin:0}
-.ce .iso-plate{background:transparent;box-shadow:none;border-radius:0;padding:34px 0 40px;--anatomy-paper:#fbf7ee}
-.ce .iso-plate-corners{inset:0}
+.ce .iso-plate{background:transparent;box-shadow:none;border-radius:0;padding:8px 0 28px;--anatomy-paper:#fbf7ee}
+.ce .iso-plate-corners{display:none}
 .ce .iso-plate-corner{font-size:11px}
 .ce .iso-plate-corner[data-corner="fig"],.ce .iso-plate-corner[data-corner="title"]{color:#c1410b}
 .ce .iso-legend{color:var(--anatomy-text);font-size:14px}
