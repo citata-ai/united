@@ -1,15 +1,23 @@
+# Round 2: Teramok remains a non-competitor; PMW is the third direct competitor.
 seen = "2026-10-19"
 period_start = "2026-04-01"
 period_end = "2026-09-30"
 icp = "US property management companies with 50-500 doors"
-status = "Research complete with unavailable Gemini scores and incomplete historical Goodjuju cadence"
-gemini_status = "blocked_auth_onboarding_quota"
-detector_caveat = "AI detectors and manual scores are unreliable. Manual scores are uncalibrated hypotheses."
+status = "Round 2 complete for 3 direct competitors; historical Goodjuju cadence remains incomplete"
+gemini_status = "agy_completed_18_direct_samples_synthid_unverified"
+detector_caveat = "All AI detectors and style scores are unreliable. Scores are uncalibrated hypotheses; they cannot prove authorship, source model, human design or factual truth."
 free_tool_status = "No paid tools or forms. Ahrefs shells loaded; no domain scores. Similarweb 202 empty; Semrush overview 404."
 checkout_branch_seen = "t3/growth-hypotheses"
-requested_branch = "stage"
+requested_branch = "t3/growth-hypotheses"
 branch_changed = false
 committed = false
+round1_requested_branch = "stage"
+round2_note = "Teramok stays a non-competitor tactic reference. Property Manager Websites replaces it as the third direct competitor. Apply business/competitors.toml [rule]."
+gemini_method = "agy --model gemini-3.8-flash-high -p <per-file prompt> --dangerously-skip-permissions --print-timeout 300s; cwd is the file folder"
+gemini_model_selected = "gemini-3.8-flash-high"
+gemini_checks_completed = 18
+gemini_browser_fallback_used = false
+synthid_status = "No real verifier; unverified for every item"
 
 [[competitor]]
 id = "clearlead"
@@ -31,8 +39,8 @@ keyword_clusters = ["property management SEO", "owner leads and marketing ROI", 
 link_tactics = ["NARPM affiliate and speaker pages", "BBB", "Clutch", "GoodFirms", "Vendoroo and PropertyManagement.com podcasts", "chamber membership claim"]
 geo_tactics = ["31 direct-answer pages", "FAQ blocks and JSON-LD", "self-recommendation pages", "calculators", "author credentials and sameAs"]
 smm = "LinkedIn active; public snapshot 316 followers. YouTube, Facebook, Instagram and X linked. Exact post rates unknown."
-ai_text_verdict = "Mixed style; authorship unproved. Gemini failed."
-ai_image_verdict = "3 blue graphic headers; no searched AI tags. Origin unknown; SynthID unverified."
+ai_text_verdict = "Gemini AI-help scores 45/90/80; uncalibrated hypotheses, authorship unproved."
+ai_image_verdict = "Gemini scores 5/5/3; design-like appearance is a hypothesis. No searched AI tags; SynthID unverified."
 monthly_price_usd = [1199, 1699, 2299]
 price_scope = "Monthly SEO; enterprise custom. Authority website add-on +300/mo in year 1, 12-month agreement."
 price_source = "https://www.clearleaddigital.com/seo-pricing"
@@ -45,32 +53,59 @@ markdown_copies = "No linked Markdown copies found across fetched links."
 [[competitor.text_sample]]
 url = "https://www.clearleaddigital.com/blog/ai-overviews-chatgpt-property-management"
 seen = "2026-10-19"
-gemini_score_status = "unavailable_auth_onboarding_quota"
-gemini_score_returned = false
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
 manual_score = 55
 manual_score_status = "hypothesis_uncalibrated"
 capture = "/tmp/citata-competitors/clearlead/text-1.txt"
-gemini_log = "/tmp/citata-competitors/clearlead/gemini-text-1.txt"
+gemini_log = "/tmp/citata-competitors/clearlead/agy-r2-text-1.txt.log"
+gemini_score = 45
+gemini_reasons = ["Operator bio and niche detail", "Even list structure", "Repeated polished marketing claims"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 2568
+secondary_sentence_mean_words = 20.2
+secondary_sentence_sd_words = 18.8
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "96f70703a69d722063631138b6856f18d7a33181b9a514e432b19aad5570b91c"
 
 [[competitor.text_sample]]
 url = "https://www.clearleaddigital.com/blog/2025-guide-top-seo-marketing-agencies"
 seen = "2026-10-19"
-gemini_score_status = "unavailable_auth_onboarding_quota"
-gemini_score_returned = false
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
 manual_score = 80
 manual_score_status = "hypothesis_uncalibrated"
 capture = "/tmp/citata-competitors/clearlead/text-2.txt"
-gemini_log = "/tmp/citata-competitors/clearlead/gemini-text-2.txt"
+gemini_log = "/tmp/citata-competitors/clearlead/agy-r2-text-2.txt.log"
+gemini_score = 90
+gemini_reasons = ["Repeated agency-entry pattern", "Mixed 2025/2026 copy", "Broad claims without test detail"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 5286
+secondary_sentence_mean_words = 16.2
+secondary_sentence_sd_words = 17.5
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "c503289a978d92197bef9b47bfe398401eace5a442ecb11404b14ec154aedf50"
 
 [[competitor.text_sample]]
 url = "https://www.clearleaddigital.com/blog/property-management-keywords"
 seen = "2026-10-19"
-gemini_score_status = "unavailable_auth_onboarding_quota"
-gemini_score_returned = false
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
 manual_score = 65
 manual_score_status = "hypothesis_uncalibrated"
 capture = "/tmp/citata-competitors/clearlead/text-3.txt"
-gemini_log = "/tmp/citata-competitors/clearlead/gemini-text-3.txt"
+gemini_log = "/tmp/citata-competitors/clearlead/agy-r2-text-3.txt.log"
+gemini_score = 80
+gemini_reasons = ["Repeated tables and tip blocks", "Common marketing transitions", "Repeated bio blocks"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 5958
+secondary_sentence_mean_words = 25.8
+secondary_sentence_sd_words = 32.2
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "452bc65f95cd3e07a0db7ae38cefe6293a3bfd37634f13a7f2e4b3c46724497d"
 
 [[competitor.image_sample]]
 id = "hero-1"
@@ -85,8 +120,16 @@ height = 784
 searched_ai_tags_found = false
 c2pa_cryptographic_validation = false
 synthid_status = "not_verified"
-gemini_status = "failed_auth_onboarding_quota"
-gemini_log = "/tmp/citata-competitors/clearlead/gemini-image-1.txt"
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/clearlead/images/agy-r2-hero-1.log"
+gemini_score = 5
+gemini_reasons = ["Clean type", "Precise logos", "Regular flat geometry"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "No Software tag"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
 
 [[competitor.image_sample]]
 id = "hero-2"
@@ -101,8 +144,16 @@ height = 908
 searched_ai_tags_found = false
 c2pa_cryptographic_validation = false
 synthid_status = "not_verified"
-gemini_status = "failed_auth_onboarding_quota"
-gemini_log = "/tmp/citata-competitors/clearlead/gemini-image-2.txt"
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/clearlead/images/agy-r2-hero-2.log"
+gemini_score = 5
+gemini_reasons = ["Clean type", "Precise icon geometry", "Repeated modular layout"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "No Software tag"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
 
 [[competitor.image_sample]]
 id = "hero-3"
@@ -117,8 +168,16 @@ height = 627
 searched_ai_tags_found = false
 c2pa_cryptographic_validation = false
 synthid_status = "not_verified"
-gemini_status = "failed_auth_onboarding_quota"
-gemini_log = "/tmp/citata-competitors/clearlead/gemini-image-3.txt"
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/clearlead/images/agy-r2-hero-3.log"
+gemini_score = 3
+gemini_reasons = ["Clean type", "Regular table and UI lines", "Common social-header layout"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "No Software tag"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
 
 [[competitor]]
 id = "goodjuju"
@@ -140,8 +199,8 @@ keyword_clusters = ["property management SEO and costs", "owner leads and benchm
 link_tactics = ["NARPM historical exhibitor list", "Clutch review", "Forbes contributor profile", "Fast Company contributor profile", "Entrepreneur articles and PR links", "guest podcasts", "PropertyManagementHelp owned education site", "Peter Lohmann newsletter"]
 geo_tactics = ["quick-answer blocks", "original lead-source research", "free benchmark tool", "named video cases", "author page and AI-draft disclosure", "in-guide vendor comparisons"]
 smm = "LinkedIn active; public snapshot 286 followers. In The Lab own podcast and guest appearances. Exact platform post rates unknown."
-ai_text_verdict = "AI-assisted research and drafts disclosed in all 3 samples; human edit claimed. Gemini failed."
-ai_image_verdict = "3 report/header assets; no searched AI tags. Older cached home image names suggest AI use elsewhere. SynthID unverified."
+ai_text_verdict = "Gemini AI-help scores 70/75/70; uncalibrated hypotheses, authorship unproved. AI-draft assistance is disclosed."
+ai_image_verdict = "Gemini scores 5/10/2; design-like appearance is a hypothesis. No searched AI tags; SynthID unverified."
 monthly_price_usd = [1185, 2292, 4460, 7930]
 price_scope = "Monthly SEO tiers Emerge, Takeover, Dominate and Empire; vendor pricing page."
 price_source = "https://gogoodjuju.com/pm-seo-pricing/"
@@ -154,32 +213,59 @@ markdown_copies = "No linked Markdown copies in 3 sampled HTML pages. Public rea
 [[competitor.text_sample]]
 url = "https://gogoodjuju.com/property-management-seo-costs/"
 seen = "2026-10-19"
-gemini_score_status = "unavailable_auth_onboarding_quota"
-gemini_score_returned = false
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
 manual_score = 50
 manual_score_status = "hypothesis_uncalibrated"
 capture = "/tmp/citata-competitors/goodjuju/text-1.txt"
-gemini_log = "/tmp/citata-competitors/goodjuju/gemini-text-1.txt"
+gemini_log = "/tmp/citata-competitors/goodjuju/agy-r2-text-1.txt.log"
+gemini_score = 70
+gemini_reasons = ["AI-draft disclosure", "Regular lists and FAQs", "Client detail and personal context"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 4034
+secondary_sentence_mean_words = 19.1
+secondary_sentence_sd_words = 12.3
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "f21fd9bd992d2d6a8e498c98f85b00c16e99e54bec211c354a69f4a58317fff7"
 
 [[competitor.text_sample]]
 url = "https://gogoodjuju.com/property-management-seo-plus-geo/"
 seen = "2026-10-19"
-gemini_score_status = "unavailable_auth_onboarding_quota"
-gemini_score_returned = false
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
 manual_score = 55
 manual_score_status = "hypothesis_uncalibrated"
 capture = "/tmp/citata-competitors/goodjuju/text-2.txt"
-gemini_log = "/tmp/citata-competitors/goodjuju/gemini-text-2.txt"
+gemini_log = "/tmp/citata-competitors/goodjuju/agy-r2-text-2.txt.log"
+gemini_score = 75
+gemini_reasons = ["AI-draft disclosure", "Repeated comparison blocks", "Specific study and founder detail"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 3553
+secondary_sentence_mean_words = 16.9
+secondary_sentence_sd_words = 10.1
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "f1a81441f85d227c22a423acb72389c3b997e7931c76b516575d710a22e9c63b"
 
 [[competitor.text_sample]]
 url = "https://gogoodjuju.com/google-helpful-content-update-property-management/"
 seen = "2026-10-19"
-gemini_score_status = "unavailable_auth_onboarding_quota"
-gemini_score_returned = false
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
 manual_score = 35
 manual_score_status = "hypothesis_uncalibrated"
 capture = "/tmp/citata-competitors/goodjuju/text-3.txt"
-gemini_log = "/tmp/citata-competitors/goodjuju/gemini-text-3.txt"
+gemini_log = "/tmp/citata-competitors/goodjuju/agy-r2-text-3.txt.log"
+gemini_score = 70
+gemini_reasons = ["AI-draft disclosure", "Quick-answer and FAQ pattern", "Personal edit and study details"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 2444
+secondary_sentence_mean_words = 17.1
+secondary_sentence_sd_words = 10.6
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "fd5d23f71090d40e9b6e8fbeb6e0d5ca2afa2e7010261380005f3d294d8219fc"
 
 [[competitor.image_sample]]
 id = "hero-1"
@@ -194,8 +280,16 @@ height = 787
 searched_ai_tags_found = false
 c2pa_cryptographic_validation = false
 synthid_status = "not_verified"
-gemini_status = "failed_auth_onboarding_quota"
-gemini_log = "/tmp/citata-competitors/goodjuju/gemini-image-1.txt"
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/goodjuju/images/agy-r2-hero-1.log"
+gemini_score = 5
+gemini_reasons = ["Clean type and table rules", "Internally consistent deltas", "Regular report layout"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "No Software tag"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
 
 [[competitor.image_sample]]
 id = "hero-2"
@@ -210,8 +304,16 @@ height = 982
 searched_ai_tags_found = false
 c2pa_cryptographic_validation = false
 synthid_status = "not_verified"
-gemini_status = "failed_auth_onboarding_quota"
-gemini_log = "/tmp/citata-competitors/goodjuju/gemini-image-2.txt"
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/goodjuju/images/agy-r2-hero-2.log"
+gemini_score = 10
+gemini_reasons = ["Clean type", "Precise logo", "Simple repeated shapes"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "No Software tag"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
 
 [[competitor.image_sample]]
 id = "hero-3"
@@ -226,8 +328,16 @@ height = 780
 searched_ai_tags_found = false
 c2pa_cryptographic_validation = false
 synthid_status = "not_verified"
-gemini_status = "failed_auth_onboarding_quota"
-gemini_log = "/tmp/citata-competitors/goodjuju/gemini-image-3.txt"
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/goodjuju/images/agy-r2-hero-3.log"
+gemini_score = 2
+gemini_reasons = ["Clean type", "Consistent brand template", "No obvious visual artifacts"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "No Software tag"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
 
 [[competitor]]
 id = "teramok"
@@ -240,7 +350,7 @@ pages = 178
 blog_urls = 55
 page_count_source = "https://www.teramok.us/sitemap.xml"
 count_basis = "Direct sitemap; all listed pages returned 200. Visible post dates override generic sitewide Article date 2026-01-09. No sitemap lastmod."
-posts_per_month = 7.0000
+posts_per_month = 7.0
 posts_per_month_status = "derived_apparent_publication_rate"
 posts_by_month_apr_to_sep = [1, 0, 5, 2, 21, 13]
 october_posts_observed = 0
@@ -342,6 +452,185 @@ synthid_status = "not_verified"
 gemini_status = "failed_auth_onboarding_quota"
 gemini_log = "/tmp/citata-competitors/teramok/gemini-image-3.txt"
 
+[[competitor]]
+id = "pmw"
+name = "Property Manager Websites"
+role = "direct"
+domain = "propertymanagerwebsites.com"
+seen = "2026-10-19"
+rule_pass = true
+rule_source = "business/competitors.toml [rule]"
+rule_basis = "Home sells owner leads; pricing sells managed marketing; small-PM cases fit 50-500 doors. Agent and multifamily pages are side offers. Not software only."
+rule_sources = ["https://www.propertymanagerwebsites.com/", "https://www.propertymanagerwebsites.com/pricing", "https://www.propertymanagerwebsites.com/property-management-websites", "https://www.propertymanagerwebsites.com/case-studies"]
+baseline_domain_answers = 11
+pages = 2311
+blog_urls = 326
+blog_index_urls = 1
+client_portfolio_detail_urls = 1863
+page_count_source = "https://www.propertymanagerwebsites.com/sitemap.xml"
+count_basis = "2311 unique sitemap URLs; 421 saved HTML captures parsed, all 326 blog detail pages included; no full portfolio crawl or index audit."
+posts_per_month = 9.666666666666666
+posts_per_month_status = "derived_apparent_publication_or_update_rate_not_verified_new_posts"
+posts_by_month_apr_to_sep = [8, 14, 13, 8, 8, 7]
+sitemap_blog_lastmod_by_month_apr_to_sep = [3, 263, 8, 7, 10, 11]
+october_posts_observed = 4
+october_sitemap_blog_lastmod = 6
+newest_post_date_observed = "2026-10-06"
+date_caveat = "All blog visible dates say Last updated. 289 blog datePublished fields match them; 37 lack datePublished. May lastmod bulk update is a hypothesis."
+stack = ["Nesthub reference in public README", "Bootstrap", "jQuery", "HubSpot", "Chili Piper"]
+keyword_clusters = ["PM websites and owner conversion", "owner leads and rental analysis", "SEO plus AIO and AI tools", "local and multi-location SEO", "PM software comparisons and operations"]
+link_tactics = ["PMW credits on 2 checked client home pages", "NARPM podcast guest", "NARPM magazine author", "parent Rentvine and owned portfolio"]
+link_sources = ["https://www.fortworthpropertymanagement.com/", "https://www.cedarparkpropertymanagement.com/", "https://narpm.podbean.com/e/the-truth-about-llms-ai-and-your-property-management-website/", "https://www.narpm.org/wp-content/uploads/2025/10/narpm-residential-resource-november-2025.pdf"]
+link_limits = "No measured DR or referring-domain total; 1863 portfolio detail URLs are not backlinks or confirmed current clients."
+geo_tactics = ["67 custom llm-summary meta tags in 421 captures", "plain llms.txt", "FAQ and definition blocks", "named author bios", "calculators and rental analysis", "internal service-tool-case links", "monthly AI visibility report"]
+geo_effect_status = "Observed tactics, no causal citation test"
+smm = "LinkedIn active; public snapshot 1013 followers. YouTube, Facebook, Instagram and X linked. Grow Report archive has 7 editions Feb-Aug 2026. Exact social cadence and email delivery unknown."
+smm_sources = ["https://www.linkedin.com/company/pmw", "https://www.propertymanagerwebsites.com/newsletters", "https://www.youtube.com/user/PMWsmart"]
+ai_text_verdict = "Gemini AI-help scores 85/70/80; uncalibrated hypotheses, authorship unproved."
+ai_image_verdict = "Gemini scores 5/5/5; design-like appearance is a hypothesis. No searched AI tags; SynthID unverified. Figma export tag in 2 files."
+monthly_price_usd = [145, 795, 1995]
+price_scope = "Grow/Premier/Elite monthly website and marketing support; Rentvine subscription required. Custom builds need quote. Not a pure SEO retainer."
+price_source = "https://www.propertymanagerwebsites.com/pricing"
+price_status = "vendor_claim"
+aio_reporting_monthly_usd = 99
+aio_extra_topic_usd = 25
+aio_scope = ["monthly visibility report", "2 competitor comparisons", "content and citation gaps", "30/60/90-day plan", "live strategy review"]
+aio_source = "https://www.propertymanagerwebsites.com/aio-reporting"
+aio_limits = "99 dollars buys reporting and advice; full fixes and owner-lead gains not promised. Some advanced plans include it."
+proof = "San Antonio 259 to 435 units in 4 months; Beaufort 136 in 32 months then 116 in 18 months; AMP 50 percent more leads. Vendor claims, mostly unnamed; no isolated AI-source lift."
+proof_math_caveat = "44/2.5 implies 17.6x, headline says 4x. (116/18)/(136/32) is 1.52x, not more than doubled. No causal controls."
+lead_magnets = ["free website and lead review", "owner-value ebook", "AI prompt guide", "calculators", "webinars"]
+schema_types_observed = ["BlogPosting", "ImageObject", "Organization", "Person", "WebPage", "VideoObject"]
+schema_capture_count = 421
+blogposting_capture_count = 306
+videoobject_capture_count = 38
+robots_observed = "HTTP 200. Wildcard blocks support/success/old-pricing paths. No separate named AI agent blocks on public pages."
+llms_observed = "HTTP 200 plain Markdown map; llms-full.txt 404."
+markdown_copies = "No linked .md or format=markdown copies in 421 captures."
+
+[[competitor.text_sample]]
+url = "https://www.propertymanagerwebsites.com/blog/property-management-ai-search-optimization"
+seen = "2026-10-19"
+capture = "/tmp/citata-competitors/pmw-round2/text-1.txt"
+gemini_score = 85
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
+gemini_log = "/tmp/citata-competitors/pmw-round2/agy-r2-text-1.txt.log"
+gemini_reasons = ["Symmetric SEO/AIO definitions", "Broad advice with no case metrics", "Repeated lists and bio blocks"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 1415
+secondary_sentence_mean_words = 15
+secondary_sentence_sd_words = 7.4
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "e7006e07c51d6deb7b38890922344932f9f98be64b5bcfb88f9e9f394e024ab4"
+
+[[competitor.text_sample]]
+url = "https://www.propertymanagerwebsites.com/blog/best-ai-tools-for-property-management-marketing-lead-generation"
+seen = "2026-10-19"
+capture = "/tmp/citata-competitors/pmw-round2/text-2.txt"
+gemini_score = 70
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
+gemini_log = "/tmp/citata-competitors/pmw-round2/agy-r2-text-2.txt.log"
+gemini_reasons = ["Repeated short marketing contrasts", "Shallow tool descriptions", "Brand-specific sales ending"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 931
+secondary_sentence_mean_words = 23.1
+secondary_sentence_sd_words = 14.0
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "52704894daac7b38b6e88139fe650c1105eb62fdd153ed8587ce350b31b21c34"
+
+[[competitor.text_sample]]
+url = "https://www.propertymanagerwebsites.com/blog/best-property-management-website-features-that-convert-owners"
+seen = "2026-10-19"
+capture = "/tmp/citata-competitors/pmw-round2/text-3.txt"
+gemini_score = 80
+gemini_score_status = "completed_agy_uncalibrated_hypothesis"
+gemini_score_returned = true
+gemini_log = "/tmp/citata-competitors/pmw-round2/agy-r2-text-3.txt.log"
+gemini_reasons = ["Repeated this-is-where transitions", "Fixed list and FAQ structure", "Brand names in a generic frame"]
+synthid_status = "not_verified"
+secondary_method = "stylometry"
+secondary_words = 1096
+secondary_sentence_mean_words = 14.8
+secondary_sentence_sd_words = 9.0
+secondary_limit = "Text shape cannot prove authorship. Tables and repeated bio blocks affect the count."
+sha256 = "4a6eea4dd4eddc55d82ff10f4c5b869a24de5eeac43eab8c404adceb23649ee3"
+
+[[competitor.image_sample]]
+id = "hero-1"
+page_url = "https://www.propertymanagerwebsites.com/blog/property-management-ai-search-optimization"
+source_url = "https://www.propertymanagerwebsites.com/images/blog/property-management-ai-search-optimization.webp"
+seen = "2026-10-19"
+local_path = "/tmp/citata-competitors/pmw-round2/images/hero-1"
+sha256 = "4c06357bc4517d753ce1e3a82043cf58979942cba384b69c8e7257b1124f0caa"
+format = "WEBP"
+width = 1200
+height = 600
+searched_ai_tags_found = false
+c2pa_cryptographic_validation = false
+synthid_status = "not_verified"
+gemini_score = 5
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/pmw-round2/images/agy-r2-hero-1.log"
+gemini_reasons = ["Photo-like workspace geometry", "Clean overlaid type", "Simple gradient layer"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "No Software tag"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
+
+[[competitor.image_sample]]
+id = "hero-2"
+page_url = "https://www.propertymanagerwebsites.com/blog/best-ai-tools-for-property-management-marketing-lead-generation"
+source_url = "https://www.propertymanagerwebsites.com/images/blog/PMW_BlogHeader_Template_03-Topic3.png"
+seen = "2026-10-19"
+local_path = "/tmp/citata-competitors/pmw-round2/images/hero-2"
+sha256 = "4deeeab529214b7dd4bd55b6d03c8daaeb11020be281cfaf6ea377d713c0e042"
+format = "PNG"
+width = 1200
+height = 600
+searched_ai_tags_found = false
+c2pa_cryptographic_validation = false
+synthid_status = "not_verified"
+gemini_score = 5
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/pmw-round2/images/agy-r2-hero-2.log"
+gemini_reasons = ["Figma export tag", "Clean type geometry", "Regular gradient layout"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "Figma"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
+
+[[competitor.image_sample]]
+id = "hero-3"
+page_url = "https://www.propertymanagerwebsites.com/blog/best-property-management-website-features-that-convert-owners"
+source_url = "https://www.propertymanagerwebsites.com/images/blog/Best property management website features that convert owners_1.png"
+seen = "2026-10-19"
+local_path = "/tmp/citata-competitors/pmw-round2/images/hero-3"
+sha256 = "58eabe8b209935484c107f8b0f4eb9979be283cfded3b50207055851f92522e0"
+format = "PNG"
+width = 1200
+height = 600
+searched_ai_tags_found = false
+c2pa_cryptographic_validation = false
+synthid_status = "not_verified"
+gemini_score = 5
+gemini_status = "completed_agy_visual_score_hypothesis"
+gemini_log = "/tmp/citata-competitors/pmw-round2/images/agy-r2-hero-3.log"
+gemini_reasons = ["Figma export tag", "Photo-like keyboard and reflections", "Separate type and gradient layers"]
+gemini_view_status = "Reviewer reports pixel inspection; file dimensions and visible details match sample"
+secondary_method = "python -I + Pillow info EXIF XMP IPTC and provenance byte scan"
+secondary_iptc_found = false
+secondary_exif_found = false
+secondary_software = "Figma"
+secondary_limit = "No tag does not mean no AI. C2PA signature and SynthID not verified."
+
 [[prompt_proposal]]
 id = "pm-geo-100-budget"
 text = "I manage 100 rental doors in the US and have $1,500 a month for marketing. Which agencies can help us get owner leads from AI answers?"
@@ -349,7 +638,7 @@ intent = "Provider shortlist within a fixed budget."
 
 [[prompt_proposal]]
 id = "pm-geo-300-compare"
-text = "Compare ClearLead Digital, Goodjuju Marketing, Teramok and citata.ai for a US property manager with 300 doors. Include prices, scope and proof."
+text = "Compare ClearLead Digital, Goodjuju Marketing, Property Manager Websites and citata.ai for a US property manager with 300 doors. Include prices, scope and proof."
 intent = "Named vendor comparison."
 
 [[prompt_proposal]]
@@ -392,3 +681,44 @@ id = "pm-geo-platform-limits"
 text = "Our property management website runs on a locked platform. Which agencies can improve AI visibility through listings, reviews and content without changing the platform?"
 intent = "Find help under platform limits."
 
+[[copy_priority]]
+rank = 1
+move = "Publish baseline study"
+
+[[copy_priority]]
+rank = 2
+move = "Publish direct-answer hub"
+
+[[copy_priority]]
+rank = 3
+move = "Price delivery scope and distinguish reports from fixes; PMW monitoring starts at 99/mo"
+
+[[copy_priority]]
+rank = 4
+move = "Publish Fridman owner-lead proof"
+
+[[copy_priority]]
+rank = 5
+move = "Link services, pricing, study, tools and cases"
+
+[[copy_priority]]
+rank = 6
+previous_rank = 7
+move = "Align visible facts, authors and schema; plain llms fact map, no untested custom tags"
+
+[[copy_priority]]
+rank = 7
+previous_rank = 6
+move = "Publish ungated audit worksheet before a large tool build"
+
+[[copy_priority]]
+rank = 8
+move = "Prepare accurate industry profiles"
+
+[[copy_priority]]
+rank = 9
+move = "Reuse study for founder post and guest-show brief"
+
+[[copy_priority]]
+rank = 10
+move = "Check crawl access and dates each week"
