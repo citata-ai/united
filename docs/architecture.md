@@ -86,7 +86,9 @@ Rules: no `.env` files in git. Never print values. The operator creates the proj
 
 ## 6. Email: agentic inbox
 
-Base: upstream `cloudflare/agentic-inbox` (Apache-2.0). Do not use the fork `dot-do/agentic-inbox`: it has `emails.do` config and a ledger that copies all mail to `agents@do.industries`.
+Live: Worker `tao-email` on the dread9ko account, https://tao-email.frostrepair.workers.dev (Cloudflare Access: account members). Code: `tao-io/agentic-inbox`, branch `tao-email`.
+
+Base: upstream `cloudflare/agentic-inbox` (Apache-2.0), used as is for now. A per-user access add-on can come later. Do not use the fork `dot-do/agentic-inbox`: it has `emails.do` config and a ledger that copies all mail to `agents@do.industries`.
 
 - One deploy serves many mailboxes on many domains. Each mailbox is one Durable Object.
 - Inbound: Email Routing on the `citata.ai` zone sends to the Worker. Outbound: Cloudflare Email Service (`send_email` binding).
