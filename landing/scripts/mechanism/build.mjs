@@ -1063,18 +1063,18 @@ const svg = k.figureSvg({
   label:
     "A brass machine on a bench that shows how citata works, as a loop. On the left is a small storefront: your site. It prints pages onto an upper belt. The pages pass through a frame with the citata name plate, where three stations act on each page: a card-index cabinet stamps it (Indexed), a lens swings over it (Found), and a horn speaks (Mentioned). On the right, five receivers, one for each AI engine (ChatGPT, Gemini, Claude, Perplexity, Google AI Overviews), take the pages in. Each receiver then sends a buyer, a small ball, down onto a lower belt that runs back to your site. The buyers wait in a line at the door and go in one by one. A dollar sign rises each time, and a counter dial moves. A gear train drives the belts, and a bell rings for every seventh buyer: the Monday report.",
   body: [
-    bench(),
-    gantry(),
-    plinth(),
-    frameBack(),
-    cabinet(),
-    lensPost(),
-    horn(),
-    house(),
-    `<g data-part="door">${doorLeaf()}</g>`,
-    screen(),
+    `<g class="ce-c ce-c-bench">${bench()}</g>`,
+    `<g class="ce-c ce-c-engines">${gantry()}</g>`,
+    `<g class="ce-c ce-c-citata">${plinth()}</g>`,
+    `<g class="ce-c ce-c-citata">${frameBack()}</g>`,
+    `<g class="ce-c ce-c-citata">${cabinet()}</g>`,
+    `<g class="ce-c ce-c-citata">${lensPost()}</g>`,
+    `<g class="ce-c ce-c-citata">${horn()}</g>`,
+    `<g class="ce-c ce-c-house">${house()}</g>`,
+    `<g class="ce-c ce-c-house"><g data-part="door">${doorLeaf()}</g></g>`,
+    `<g class="ce-c ce-c-house">${screen()}</g>`,
     upperBelt(),
-    receivers(),
+    `<g class="ce-c ce-c-engines">${receivers()}</g>`,
     `<defs><g id="ce-page">${page()}</g><g id="ce-ball">${ball()}</g></defs>`,
     pagePool,
     `<g data-part="stamp">${stamp()}</g>`,
@@ -1084,11 +1084,11 @@ const svg = k.figureSvg({
     lowerBelt(),
     ballPool,
     dropTubes(),
-    drive(),
-    bell(),
-    `<g data-part="bell">${bellDome()}</g>`,
+    `<g class="ce-c ce-c-drive">${drive()}</g>`,
+    `<g class="ce-c ce-c-drive">${bell()}</g>`,
+    `<g class="ce-c ce-c-drive"><g data-part="bell">${bellDome()}</g></g>`,
     `<g data-part="hammer">${hammerAt(0)}</g>`,
-    dial(),
+    `<g class="ce-c ce-c-drive">${dial()}</g>`,
     `<path data-part="needle" class="iso-line" data-tone="hi" data-free="start" d="${needleAt(0)}" style="stroke-width:1.1"/>`,
     dollars,
     M.ENGINE_X.map((_, i) => hitOf(i)).join(""),
@@ -1104,6 +1104,12 @@ const CSS = `
 --anatomy-hi:#1c1712;--anatomy-mid:#7a6b58;--anatomy-lo:#ad9c7e;--anatomy-faint:#d3c5aa;--anatomy-lit:#8f2f07;
 --anatomy-halo:#7a6a50;--anatomy-halo-opacity:.26;--anatomy-dot:#3a2f25;
 --anatomy-mono:"Paper Mono",ui-monospace,monospace;--anatomy-weight:.6px}
+/* Vivid parts (owner, 2026-10-18): each group gets its own pop tint; lines stay ink. */
+.ce .ce-c-bench{--anatomy-paper:#fff6d6;--anatomy-face:#fff6d6;--anatomy-top:#fffaea;--anatomy-shade-0:#f2c230;--anatomy-shade-1:#f7d462;--anatomy-shade-2:#fbe291;--anatomy-shade-3:#fdedbd}
+.ce .ce-c-house{--anatomy-paper:#ffe3dd;--anatomy-face:#ffe3dd;--anatomy-top:#fff0ec;--anatomy-shade-0:#ff6b5b;--anatomy-shade-1:#ff8c7e;--anatomy-shade-2:#ffaea3;--anatomy-shade-3:#ffccc4}
+.ce .ce-c-citata{--anatomy-paper:#e3ebff;--anatomy-face:#e3ebff;--anatomy-top:#f0f4ff;--anatomy-shade-0:#4f7bff;--anatomy-shade-1:#7a9bff;--anatomy-shade-2:#a6bcff;--anatomy-shade-3:#cdd9ff}
+.ce .ce-c-engines{--anatomy-paper:#dcf7ec;--anatomy-face:#dcf7ec;--anatomy-top:#ecfbf5;--anatomy-shade-0:#1fbf8a;--anatomy-shade-1:#57d2a8;--anatomy-shade-2:#8fe2c5;--anatomy-shade-3:#c0efdd}
+.ce .ce-c-drive{--anatomy-paper:#f1e6ff;--anatomy-face:#f1e6ff;--anatomy-top:#f8f2ff;--anatomy-shade-0:#9b6bff;--anatomy-shade-1:#b48fff;--anatomy-shade-2:#cdb3ff;--anatomy-shade-3:#e4d6ff}
 .ce .iso-figure{margin:0}
 .ce .iso-plate{background:transparent;box-shadow:none;border-radius:0;padding:34px 0 40px;--anatomy-paper:#fbf7ee}
 .ce .iso-plate-corners{inset:0}
@@ -1166,7 +1172,7 @@ const plate = k
   })
   .replace(
     "</figcaption>",
-    `<span class="ce-small">An illustration of the process, not client data. Logos belong to their owners.</span></figcaption>`,
+    `<span class="ce-small">An illustration of the process, not client data.</span></figcaption>`,
   );
 
 const markup = `<div class="iso ce" data-theme="light"><style>${k.ISO_CSS}${CSS}</style>${plate}</div>`;
