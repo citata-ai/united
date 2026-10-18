@@ -35,10 +35,27 @@ Rules:
 
 ## Change log
 
-| Date       | Change                                                                 | Live? |
+| Date       | Change                                                                 | Live since |
 |------------|------------------------------------------------------------------------|-------|
 | 2026-10-18 | Baseline run (point A), 20 prompts × 3 engines × 2 runs                 | —     |
-| 2026-10-18 | Organization JSON-LD with `sameAs` and Citate.ai disambiguation         | no    |
-| 2026-10-18 | Canonical and og:url without `.html` (was a 307 target)                  | no    |
-| 2026-10-18 | robots.txt names AI crawlers with `Allow: /`                            | no    |
-| 2026-10-18 | AI traffic tracking in the Worker; Ahrefs Web Analytics; audit email asks "how did you hear" | no |
+| 2026-10-18 | Organization JSON-LD with `sameAs` and Citate.ai disambiguation         | 2026-10-18 |
+| 2026-10-18 | Canonical and og:url without `.html` (was a 307 target)                  | 2026-10-18 |
+| 2026-10-18 | robots.txt names AI crawlers with `Allow: /`                            | 2026-10-18 |
+| 2026-10-18 | AI traffic tracking in the Worker; Ahrefs Web Analytics; audit email asks "how did you hear" | 2026-10-18 |
+| 2026-10-18 | Home page for property management companies only: FAQ (FAQPage), Service schema, fit / not fit, llms.txt | 2026-10-18 |
+| 2026-10-18 | Ahrefs project "Citata" verified; Site Audit weekly, Sundays 15:00 Kyiv | — |
+
+Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
+
+## Publish step (when new content is ready)
+
+IndexNow waits until the first content batch is live.
+
+1. Deploy the batch. Update `lastmod` in `landing/public/sitemap.xml`.
+2. Ping IndexNow (Bing, Yandex, Seznam, Naver, Yep). Google does not use it: use GSC.
+3. Test Cloudflare Crawler Hints once (free, now off). It sends IndexNow on a cache MISS. Cloudflare docs do not say if it works for a Worker with static assets. Test:
+   - Add the site to Bing Webmaster Tools.
+   - Turn on Crawler Hints: dashboard → citata.ai → Caching → Configuration.
+   - Deploy one changed page. After 24 hours, check Bing Webmaster → IndexNow for that URL.
+   - URL there: keep Crawler Hints, no script. No URL: turn it off and POST to `api.indexnow.org` from the deploy script.
+
