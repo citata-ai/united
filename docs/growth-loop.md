@@ -24,7 +24,7 @@ Scheduled agents run this file. Each run is a fresh session with no memory. This
 
 1. `git fetch origin`. Branch `t3/tick-<YYYY-MM-DD>` from `origin/stage`.
 2. Pick the top item in `backlog.toml` with `status = "idea"`: highest `score`, tie-break by the ICE priority of its hypothesis (skip hypotheses that are `invalidated` or `parked`). Items with `status = "building"` have an owner: skip them. Set your item to `building` in your first commit. If no item is left, make one from the kinds below. Kinds, in order of value now:
-3. Build it. Follow the page rules. Every number has a source you read in this run.
+3. Build it. Follow the page rules. Every page fits the Guides hub (Tao, 2026-10-19: educate first): a guide under `/guides/<slug>`, a sub-page of a guide (`/guides/<guide>/<sub>`, like the Section 8 metros), a tool under `/tools` or research under `/research`. Link it from `/guides` (`landing/src/pages/guides/index.astro`): the 5-step path, a guide block, tools or research. Breadcrumbs start with Guides. Every number has a source you read in this run.
 4. `mise run check`, `cd landing && bun run build`. Fix until green. Never `--no-verify`.
 5. Commit. Merge into `stage` with `--no-ff`. Push `stage`. CI deploys https://stage.citata.ai.
 6. Check the new URL on stage gives 200.
