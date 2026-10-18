@@ -20,3 +20,5 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | B12 | 5 | 1 | 2 | 2 | 0 | Trustpilot live (nofollow). Startup Ranking, Owler submitted. D&B: number exists, CAPTCHA to mail it. Upwork needs founder photo, birth date, home address. |
 | 2026-10-18 | B13 | 6 | 3 | 0 | 2 | 1 | Hashnode @citata live (nofollow). Source of Sources, Help a B2B Writer joined (no link). PodMatch paid only. Bluesky needs DOB. Agency Spotter state picker. |
 | 2026-10-18 | B14 | 5 | 0 | 0 | 5 | 0 | Pinterest needs DOB. HackerNoon profile (no link). Propmodo, RHJ need an article by a person. e-Residency marketplace needs founder decision + client references. |
+| 2026-10-18 | H1 | 8 | 1 | 0 | 7 | 0 | Help batch: X @citataai live (nofollow), Reddit u/citata-ai made. 6 assists timed out (dev.to, F6S, Indie Hackers, Crunchbase, YouTube) or need more (Alignable US phone). citata.ai now live. All P1/P2 rows done. |
+| 2026-10-18 | reposition | - | - | - | - | - | Kit v2 (US property management). GitHub bio updated. Added niche rows L101-L106. K1 (LinkedIn, Crunchbase) and R1 (6 live profiles) started. |

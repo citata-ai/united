@@ -4,11 +4,12 @@ import PlatformRibbon from "../components/PlatformRibbon.astro";
 import Mechanism from "../components/Mechanism.astro";
 import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
+import { faq } from "../data/faq.ts";
 
 // Copy sources: business/strategy.md (§1 one line, §2 process, §3 verticals, §5 facts),
 // business/offers.toml (price ladder), business/case-studies/fridman-properties.md (demand trend,
 // baseline). Every number names its source. Niche: US property management companies only.
-const title = "GEO for property management companies — citata.ai";
+const title = "citata.ai — GEO for property management companies";
 const description =
   "Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai gets your property management company named and linked in that answer.";
 
@@ -17,16 +18,19 @@ const facts = [
     n: "−46%",
     text: "Google searches for 7 generic property management terms, Chicago area, year over year. −43% in the US.",
     src: "Keyword Planner, 2025/26 vs 2024/25 (our data)",
+    href: "/case-studies/fridman-properties",
   },
   {
     n: "8 of 132",
     text: "owner answers named our first client, a Chicago manager with 20+ years. 0 of 6 for Section 8.",
     src: "our baseline, 144 AI answers, 2026-10-16",
+    href: "/case-studies/fridman-properties",
   },
   {
     n: "0.5% → 12.1%",
     text: "AI sent 0.5% of visits to one site, but 12.1% of its signups. AI traffic is small, but it buys.",
     src: "Ahrefs",
+    href: "https://ahrefs.com/blog/ai-search-traffic-conversions-ahrefs/",
   },
 ];
 
@@ -89,42 +93,6 @@ const fit = {
   ],
 };
 
-/** BLUF answers: the first sentence answers the question. Also sent as FAQPage JSON-LD. */
-const faq = [
-  {
-    q: "What is GEO for a property management company?",
-    a: "GEO (generative engine optimization) is the work that gets AI assistants to name your company. When an owner asks ChatGPT for a property manager in your city, the answer lists 3 to 5 companies. GEO works to put yours on that list, with a link.",
-  },
-  {
-    q: "Why do property management companies get fewer owner leads from Google?",
-    a: "Part of the search demand moved. Searches for 7 generic property management terms fell 46% in the Chicago area and 43% in the US in one year (Keyword Planner). We think part of this moved to AI answers. That is a hypothesis, and we test it each week.",
-  },
-  {
-    q: "How is GEO different from SEO?",
-    a: "SEO gets your page into the Google results. GEO gets your company named inside the AI answer. GEO needs SEO first: 76% of AI Overview citations come from pages in the Google top 10 (Ahrefs). Then it adds exact answers, mentions on other sites and clean structured data.",
-  },
-  {
-    q: "Which sources do AI assistants use to pick a property manager?",
-    a: "Manager sites, review sites and lists. For Chicago owner questions, the most cited sources were manager sites, Yelp, Expertise.com and Thumbtack (our baseline, 144 answers). For renter questions, listing sites get 72% of citations (Peek).",
-  },
-  {
-    q: "How long until AI names my company?",
-    a: "We do not promise a date. AI answers change from run to run. We track the same owner questions every week and report what changed. Our first case study publishes its 90-day results on 2027-01-14.",
-  },
-  {
-    q: "Do you work with Section 8 property managers?",
-    a: "Yes. Many owners do not know how the Housing Choice Voucher program works, and few manager sites explain it well. We found no published GEO case study for Section 8. A manager who answers it clearly has room to be the source that AI quotes.",
-  },
-  {
-    q: "How do I know if AI sends me owner leads?",
-    a: "We measure 3 things: visits from ChatGPT, Gemini, Claude and Perplexity, AI crawler visits to your pages, and a “how did you hear about us” question on your owner form. AI links do not always pass a referrer, so the visit count is low. The form answer fills that gap.",
-  },
-  {
-    q: "What does it cost?",
-    a: "The AI visibility audit is free. Starter is $750 a month. Growth is $2,000 a month, or $1,500 a month on 12 months. These are first prices, and you can stop any month.",
-  },
-];
-
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -152,13 +120,27 @@ const serviceSchema = {
   ],
 };
 
+const article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "GEO for property management companies",
+  description,
+  author: { "@type": "Person", "@id": "https://citata.ai/about#founder", name: "Taras Kornichuk", jobTitle: "Founder", url: "https://citata.ai/about" },
+  publisher: { "@id": "https://citata.ai/#org" },
+  datePublished: "2026-10-18",
+  dateModified: "2026-10-18",
+  mainEntityOfPage: "https://citata.ai/",
+  about: ["Generative engine optimization", "Property management"],
+};
+
 const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
-<Base title={title} description={description} image="/og/hero.jpg">
+<Base title={title} description={description} image="/og/hero.jpg" modified="2026-10-18">
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
   </Fragment>
   <main>
   <div class="wrap">
@@ -223,7 +205,9 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
             <li>
               <p class="text-[40px] leading-none font-semibold">{f.n}</p>
               <p class="mt-3 text-[17px]">{f.text}</p>
-              <p class="meta mt-2">Source: {f.src}</p>
+              <p class="meta mt-2">
+                Source: <a class="link normal-case" href={f.href}>{f.src}</a>
+              </p>
             </li>
           ))
         }
@@ -403,7 +387,8 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
         }
       </div>
       <p class="meta mt-10">
-        Written by Taras Kornichuk, founder of citata.ai. Updated <time datetime="2026-10-18">2026-10-18</time>.
+        Written by <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a>, founder of citata.ai.
+        Updated <time datetime="2026-10-18">2026-10-18</time>.
       </p>
     </section>
 

@@ -1,6 +1,6 @@
 # Listing kit
 
-Status: v1, 2026-10-18. Owner: Tao. Voice: [`brand/VOICE.md`](../../brand/VOICE.md).
+Status: v2, 2026-10-18 (repositioned for US property management). Owner: Tao. Voice: [`brand/VOICE.md`](../../brand/VOICE.md).
 
 Workers copy text from this file into directory and profile forms. Do not invent new facts. If a form asks for a fact that is not here, leave it empty or mark the row `blocked` with the question in `notes`.
 
@@ -22,93 +22,113 @@ Workers copy text from this file into directory and profile forms. Do not invent
 | Annual revenue   | Pre-revenue (2026-10). Pick the lowest band, e.g. "Less than $1M" or "$0". |
 | Team size        | 1–10 (use "1" or "2–10" if the form needs a band)            |
 | Founder          | Taras Kornichuk ("Tao"), founder                             |
-| Business type    | Agency / service (GEO and SEO), B2B                          |
+| Business type    | Agency / service (GEO and AEO for US property management), B2B |
 | Languages        | English, Ukrainian                                           |
 | Street address   | Use the legal address above for company-address fields. It is a registered address, not an office: do not use it for Google Business Profile, Bing Places or other map listings. |
 | Phone            | Given to workers in the brief. Not stored in this public repo. If the site sends an SMS or calls with a code, stop and mark `blocked` ("needs SMS code"). |
 
+## Position (2026-10-18)
+
+- **Audience 1:** US property management companies, 50 to 500 doors, single-family and small multifamily, that sell to rental owners. Section 8 managers too.
+- **Audience 2:** proptech and PMS software that sells to property managers.
+- **Not for:** large apartment communities that need renter leads, HOA management, other industries.
+- **Source of truth:** https://citata.ai (home meta description), https://citata.ai/llms.txt, https://citata.ai/about. If this kit and the site disagree, the site wins.
+- **Name:** always write `citata.ai` (lowercase, with the dot). Add the disambiguation sentence wherever a field allows 300+ characters.
+
+## Disambiguation sentence
+
+> citata.ai (with an a) is not Citate.ai, Citant.ai, Citala or Citeca.
+
 ## One-liner (60 characters max)
 
-- **Main (44):** `We get your business cited by AI assistants.`
-- **Alt (55):** `Get named and linked when buyers ask ChatGPT or Gemini.`
-- **Alt, short (28):** `GEO agency: get cited by AI.`
+- **Main (48):** `GEO and AEO for US property management companies`
+- **Alt (53):** `Get your property company named by ChatGPT and Gemini`
+- **Alt, short (42):** `AI search visibility for property managers`
+- **Proptech (59):** `GEO for property managers and the proptech that serves them`
 
 ## Short description (160 characters max)
 
-**Main (151):**
+**Main (149):**
 
-> citata.ai helps businesses get named and linked in AI answers from ChatGPT, Gemini, Claude and Perplexity. We track prompts weekly and fix pages daily.
+> Rental owners ask ChatGPT and Gemini which property manager to hire. citata.ai gets US property management companies named and linked in that answer.
 
-**Alt (136):**
+**Alt, with name check (126):**
 
-> GEO agency (getting cited by AI answers). We start with a free AI visibility audit: 20 prompts, 4 engines, top 5 fixes, one-page report.
+> GEO and AEO agency for US property managers and proptech. citata.ai (with an a) is not Citate.ai, Citant.ai, Citala or Citeca.
 
 ## Long description (750 characters max)
 
-> citata.ai is a GEO agency. GEO means getting cited by AI answers. When a buyer asks ChatGPT, Gemini, Claude or Perplexity for a recommendation, we want the answer to name and link our client.
+> Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai gets your property management company named and linked in that answer.
 >
-> We do the work for you. Each week we track the same prompts on 4 engines. Each day we make one real change: a page fix, an article, a comparison page or a listing. A person checks each change. You get a report every Monday.
+> We are a GEO and AEO agency (getting named in AI answers) for US property management companies with 50 to 500 doors. Our second audience is proptech and PMS software that sells to property managers.
 >
-> We start in property management, then PMS software and impact organizations. Our first case studies are our own sites and partners, and we say so.
+> Each week we track owner questions on 4 AI engines. Each day we make one change that a person checks: a page fix, an answer page or a listing. You get a report every Monday.
 >
-> Start with a free AI visibility audit: 20 prompts, 4 engines, an index check and your top 5 fixes.
+> Start with a free AI visibility audit: 20 owner questions, 4 engines, top 5 fixes.
+>
+> citata.ai (with an a) is not Citate.ai, Citant.ai, Citala or Citeca.
 
-(664 characters)
+(682 characters)
 
 ## Long description (2000 characters max)
 
-> citata.ai is a GEO agency. GEO means getting cited by AI answers. When a buyer asks ChatGPT, Gemini, Claude or Perplexity "who should I hire?", we want the answer to name and link our client.
+> Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai gets your property management company named and linked in that answer.
 >
-> Why it matters: AI sends a small share of visits, about 1% for most sites. But those visits convert well. Ahrefs reports 0.5% of its visits but 12.1% of its signups came from AI.
+> Why it matters: Google searches for 7 generic property management terms fell 46% in Chicago and 43% in the US, year over year (Google Keyword Planner). Owners still look for a manager. More of them ask an AI assistant.
+>
+> Who we serve: US property management companies with 50 to 500 doors, single-family homes and small multifamily, that sell to rental owners. Section 8 managers too. Our second audience is proptech and PMS software that sells to property managers. We are not a fit for large apartment communities that need renter leads, or for HOA management.
 >
 > How we work:
 >
 > 1. Indexed. We check that search engines and AI crawlers can read your site.
-> 2. Found. We map the questions your buyers ask and the pages that should answer them.
-> 3. Cited. We track the same prompts every week on 4 engines and make one real change every day: page fixes, articles, comparison pages, listings and fact checks. A person checks each change before it goes live.
+> 2. Found. We map the questions owners ask and the pages that must answer them.
+> 3. Mentioned. We track the same owner questions every week on ChatGPT, Gemini, Claude and Perplexity. Each day we make one change that a person checks: page fixes, answer pages, comparison pages and listings.
 >
-> You get a short report every Monday with the prompts, the answers and what changed.
+> You get a short report every Monday.
 >
-> Who we serve: property management companies first. Then PMS and proptech software, and B Corps, NGOs and charities. Impact organizations can get our Starter scope pro bono or at cost, max 2 at a time.
->
-> Proof: we test on our own sites first and publish named case studies with numbers. Our first accounts are related to the founder, and each case study says so.
+> Proof: our first case study is Fridman Properties, a Chicago-area property manager. Its AI baseline is from 2026-10-16. Results are due 2027-01-14. Related party: its owner is CEO of MyRemotely, a citata.ai partner.
 >
 > We do not promise rankings or citations. AI answers change. We report what happened.
 >
-> Start with a free AI visibility audit: 20 prompts on 4 engines, an index and crawl check, your top 5 fixes and a one-page report.
+> Start with a free AI visibility audit: 20 owner questions on 4 AI engines, an index check and your top 5 fixes.
+>
+> citata.ai (with an a) is run by WarmDevs OÜ, Estonia. Founder: Taras Kornichuk. It is not Citate.ai, Citant.ai, Citala or Citeca.
 
-(1,424 characters)
+(1681 characters)
 
 ## Categories and tags
 
-- **Primary category:** Generative Engine Optimization (GEO) / AI search optimization.
-- **Fallback categories (pick the closest the site offers):** SEO agency; Digital marketing agency; Content marketing; Marketing services; AI marketing tools.
-- **Industries served:** Real estate / property management; Software (SaaS, proptech); Non-profit.
-- **Tags:** `GEO`, `generative engine optimization`, `AI search`, `AI visibility`, `ChatGPT SEO`, `LLM SEO`, `AI citations`, `SEO`, `content marketing`, `property management marketing`.
+- **Primary category:** GEO / AI search optimization for property management.
+- **Fallback categories (pick the closest the site offers):** Real estate marketing; SEO agency; Search marketing; Digital marketing agency; Marketing services.
+- **Industries served:** Property management (US); Real estate; Proptech / PMS software.
+- **Tags:** `GEO`, `AEO`, `generative engine optimization`, `AI search`, `AI visibility`, `property management marketing`, `property management SEO`, `proptech marketing`, `owner leads`, `Section 8`, `ChatGPT SEO`.
+- **Do not use:** generic "SaaS", "software product", "for all businesses", "startups".
 
 ## Services
 
-| Service                      | One line                                                     |
-|------------------------------|--------------------------------------------------------------|
-| AI visibility audit          | 20 prompts x 4 engines, index check, top 5 fixes. Free.      |
-| AI answer tracking           | Same prompts every week on ChatGPT, Gemini, Claude, Perplexity. |
+| Service                      | One line                                                         |
+|------------------------------|------------------------------------------------------------------|
+| AI visibility audit          | 20 owner questions x 4 AI engines, index check, top 5 fixes. Free. |
+| Owner-question tracking      | The same owner questions every week on ChatGPT, Gemini, Claude, Perplexity. |
 | Page fixes                   | Technical and content fixes so AI and search can read and quote you. |
-| Content                      | Articles, "vs" pages and "alternatives" pages.               |
-| Listings                     | Directory and profile work where AI looks for sources.       |
-| Monday report                | Prompts, answers and changes, every week.                    |
+| Answer pages                 | Pages that answer owner questions: fees, Section 8, switching managers. |
+| Comparison pages             | "vs" and "alternatives" pages for property managers and proptech. |
+| Listings                     | Directory, review and Google Business Profile work where AI looks. |
+| Monday report                | Questions, answers and changes, every week.                      |
 
 ## Pricing note
 
-Prices are hypotheses until 3 clients pay (`business/offers.toml`). Use this text when a form asks:
+Prices are first prices and may change (`business/offers.toml`). Use this text when a form asks:
 
-> Free AI visibility audit. Plans from $750/month (Starter) and $2,000/month (Growth, $1,500/month on a 12-month plan). Month to month. Pro bono or at-cost plans for B Corps, NGOs and charities.
+> Free AI visibility audit. Starter $750/month. Growth $2,000/month, or $1,500/month on a 12-month plan. Month to month.
 
 - **Minimum project size (agency forms):** $750 / month, or "< $1,000".
 - **Hourly rate band (if required):** "$50–$99 / hr". Use it only when the field is required.
+- Do not offer the Impact plan in listing copy.
 
 ## Founder line
 
-> Taras Kornichuk (Tao), founder of citata.ai. I build the delivery system with agents and check each output by hand.
+> Taras Kornichuk (Tao), founder of citata.ai. I help US property management companies get named in AI answers. I build our delivery system with agents and check each change by hand.
 
 Short: `Tao, founder, citata.ai.`
 
@@ -136,4 +156,4 @@ Display name: `citata.ai`. Bio (160 chars max): use the short description above.
 
 ## Site status
 
-On 2026-10-18 https://citata.ai does not answer yet. Still create profiles. Put `https://citata.ai` in website fields. Add "site not live" to `notes` so we return later to check the link.
+https://citata.ai answers since 2026-10-18 (HTTP 200). Put `https://citata.ai` in all website fields.
