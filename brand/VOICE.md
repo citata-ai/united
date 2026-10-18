@@ -4,7 +4,7 @@ Status: v1, 2026-10-18. Owner: Tao.
 
 This file tells people and agents how citata.ai sounds. Read it before you write any text that leaves this repo: email, site copy, case study, post, reply.
 
-Email structure lives in [`business/NEWSLETTER.md`](business/NEWSLETTER.md). This file is the voice. That file is the shape.
+Email structure lives in [`business/NEWSLETTER.md`](../business/NEWSLETTER.md). This file is the voice. That file is the shape.
 
 ## 1. Source
 

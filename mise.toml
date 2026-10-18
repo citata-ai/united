@@ -1,0 +1,166 @@
+[settings]
+experimental = true
+pin = true
+
+[hooks]
+postinstall = "bun install --frozen-lockfile"
+
+[env]
+_.path = "node_modules/.bin"
+
+[tools]
+bun = "1.4.3"
+node = "24.18.1"
+gitleaks = "8.30.1"
+
+# ---------------------------------------------------------------------------
+# Day-to-day tasks (one per package script)
+# ---------------------------------------------------------------------------
+
+[tasks.install]
+description = "Install all workspace dependencies from bun.lock"
+run = "bun install --frozen-lockfile"
+
+[tasks.dev]
+description = "Run all Workers and the landing locally (alchemy dev)"
+run = "bun run dev"
+
+[tasks."dev:landing"]
+description = "Run only the Astro landing dev server"
+run = "bun run --filter @citata/landing dev"
+
+[tasks.typecheck]
+description = "Typecheck root, business, backend, frontend and landing (astro check)"
+run = "bun run typecheck"
+
+[tasks.lint]
+run = "bun run lint"
+
+[tasks.format]
+description = "Format all files with oxfmt (rewrites files)"
+run = "bun run format"
+
+[tasks."format:check"]
+run = "bun run format:check"
+
+[tasks.test]
+run = "bun run test"
+
+[tasks."test:watch"]
+run = "bun run test:watch"
+
+[tasks."test:boundary"]
+description = "Import-direction test: business never imports backend/frontend/landing"
+run = "bun run test:boundary"
+
+[tasks.build]
+description = "Build the frontend (Vite) and the landing (Astro). Local check, not a deploy."
+run = "bun run build"
+
+[tasks.check]
+description = "Typecheck, lint, test, and check formatting"
+run = "bun run typecheck && bun run lint && bun run test && bun run format:check"
+
+[tasks.deploy]
+description = "Deploy the prod stage. Needs CLOUDFLARE_API_TOKEN. Operator approval only."
+run = "bun run deploy --stage prod"
+
+[tasks.prepare]
+run = "bun run prepare"
+
+# ---------------------------------------------------------------------------
+# Gates (docs/gates.md)
+# ---------------------------------------------------------------------------
+
+[tasks.gate1]
+description = "G1 pre-commit: oxlint + oxfmt --check on staged files"
+run = '''
+#!/usr/bin/env bash
+set -euo pipefail
+# Note: mise reads this script as a Tera template, so avoid the `{` + `#` pair.
+files=()
+code=()
+while IFS= read -r f; do
+  [ -f "$f" ] || continue
+  files+=("$f")
+  case "$f" in *.ts|*.tsx|*.js|*.mjs|*.cjs) code+=("$f") ;; esac
+done < <(git diff --cached --name-only --diff-filter=ACMR)
+if [ -z "${files[*]:-}" ]; then echo "[G1] no staged files"; exit 0; fi
+if [ -n "${code[*]:-}" ]; then
+  echo "[G1] oxlint on staged code"
+  oxlint "${code[@]}"
+fi
+echo "[G1] oxfmt --check on staged files"
+oxfmt --check --no-error-on-unmatched-pattern "${files[@]}" \
+  || { echo "[G1] format issues: run 'mise run format', then stage again"; exit 1; }
+'''
+
+[tasks.gate2]
+description = "G2 pre-push: typecheck, tests, boundary test, gitleaks on unpushed commits"
+run = '''
+#!/usr/bin/env bash
+set -euo pipefail
+echo "[G2] typecheck"; bun run typecheck
+echo "[G2] boundary"; bun run test:boundary
+echo "[G2] tests"; bun run test
+if command -v gitleaks >/dev/null 2>&1; then
+  base=$(git merge-base HEAD origin/main 2>/dev/null || true)
+  if [ -n "$base" ]; then
+    echo "[G2] gitleaks ${base:0:7}..HEAD"
+    gitleaks git --no-banner --redact --log-opts="${base}..HEAD" .
+  else
+    echo "[G2] gitleaks (full history, no origin/main)"
+    gitleaks git --no-banner --redact .
+  fi
+else
+  echo "[G2] gitleaks not installed: skip (run 'mise install')"
+fi
+'''
+
+[tasks.gate3]
+description = "G3 local CI mirror: frozen install, format, lint, typecheck, test, build, gitleaks"
+run = '''
+#!/usr/bin/env bash
+set -euo pipefail
+echo "[G3] install";      bun install --frozen-lockfile
+echo "[G3] format:check"; bun run format:check
+echo "[G3] lint";         bun run lint
+echo "[G3] typecheck";    bun run typecheck
+echo "[G3] boundary";     bun run test:boundary
+echo "[G3] test";         bun run test
+echo "[G3] build";        bun run build
+if command -v gitleaks >/dev/null 2>&1; then
+  echo "[G3] gitleaks"; gitleaks git --no-banner --redact .
+else
+  echo "[G3] gitleaks not installed: skip (run 'mise install')"
+fi
+echo "[G3] PASS"
+'''
+
+# ---------------------------------------------------------------------------
+# Helpers from cafe-stack
+# ---------------------------------------------------------------------------
+
+[tasks."cloudflare:profile"]
+description = "Add a Cloudflare profile for Alchemy"
+run = "alchemy profile edit --add Cloudflare"
+
+[tasks."effect-solutions"]
+description = "Browse Effect Solutions guides, e.g. `list` or `show <topic>`"
+run = "bunx effect-solutions"
+
+[tasks."ui:add"]
+description = "Add a foldcn component to frontend/src"
+usage = 'arg "<name>" help="foldcn component name, e.g. button"'
+dir = "frontend"
+run = 'bunx shadcn@latest add "@foldcn/${usage_name}"'
+
+[tasks.patch]
+description = "Prepare a dependency in node_modules for patching"
+usage = 'arg "<package>" help="package name, e.g. @foldkit/vite-plugin"'
+run = 'bun patch "${usage_package}"'
+
+[tasks."patch:commit"]
+description = "Save edits to a patched dependency into patches/"
+usage = 'arg "<package>" help="package name, e.g. @foldkit/vite-plugin"'
+run = 'bun patch --commit "node_modules/${usage_package}"'

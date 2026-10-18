@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["bun"],
+    "plugins": [
+      {
+        "name": "@effect/language-service",
+        "overrides": [
+          {
+            "include": ["backend/src/api.ts", "backend/src/platform/cloudflare/worker.ts"],
+            "options": { "allowedUnstableApis": ["effect/http"] }
+          }
+        ]
+      }
+    ]
+  },
+  "include": ["alchemy.run.ts", "oxlint.config.ts", "vitest.config.ts"]
+}

@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "types": ["vite/client"],
+    "paths": { "@/*": ["./src/*"] },
+    "plugins": [
+      {
+        "name": "@effect/language-service",
+        "allowedDuplicatedPackages": ["effect-oxlint"],
+        "overrides": [
+          {
+            "include": ["src/api.ts", "src/**/command.ts"],
+            "options": { "allowedUnstableApis": ["effect/http"] }
+          },
+          {
+            "include": ["src/**/*.test.ts"],
+            "options": { "allowedUnstableApis": ["@effect/vitest"] }
+          }
+        ]
+      }
+    ]
+  },
+  "include": ["src/**/*.ts", "worker/**/*.ts", "vite.config.ts"]
+}

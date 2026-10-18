@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+# G1 pre-commit: oxlint + oxfmt --check on staged files (docs/gates.md).
+if ! command -v mise >/dev/null 2>&1; then
+  echo "mise is not installed but the pre-commit hook needs it."
+  echo "  Install: curl https://mise.run | sh"
+  echo "  Then:    mise trust && mise install"
+  exit 1
+fi
+
+mise run gate1

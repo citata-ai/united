@@ -1,0 +1,26 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["@cloudflare/workers-types", "bun"],
+    "plugins": [
+      {
+        "name": "@effect/language-service",
+        "overrides": [
+          {
+            "include": ["src/api.ts", "src/platform/cloudflare/worker.ts"],
+            "options": { "allowedUnstableApis": ["effect/http"] }
+          },
+          {
+            "include": ["src/**/*.test.ts"],
+            "options": { "allowedUnstableApis": ["@effect/vitest"] }
+          },
+          {
+            "include": ["src/api.test.ts"],
+            "options": { "allowedUnstableApis": ["effect/http", "@effect/vitest"] }
+          }
+        ]
+      }
+    ]
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+# G2 pre-push: typecheck, tests, boundary test, gitleaks (docs/gates.md).
+if ! command -v mise >/dev/null 2>&1; then
+  echo "mise is not installed but the pre-push hook needs it."
+  echo "  Install: curl https://mise.run | sh"
+  echo "  Then:    mise trust && mise install"
+  exit 1
+fi
+
+mise run gate2

@@ -405,4 +405,4 @@ Aspect ratio [RATIO]. No text, no letters, no logos, no watermark, no frame.
 
 ## Voice
 
-See `/VOICE.md`. Plain, warm, exact. One Latin phrase per page at most, always with its English meaning next to it. Good: *Aetas aurea redit* — the golden age returns. Bad: Latin in buttons or errors.
+See `/brand/VOICE.md`. Plain, warm, exact. One Latin phrase per page at most, always with its English meaning next to it. Good: *Aetas aurea redit* — the golden age returns. Bad: Latin in buttons or errors.

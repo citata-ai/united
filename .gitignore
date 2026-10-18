@@ -1,0 +1,16 @@
+node_modules/
+.alchemy/
+.wrangler/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.DS_Store
+
+# Local agent tooling (not part of the repo)
+.claude/
+.agents/
+skills-lock.json

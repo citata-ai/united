@@ -1,0 +1,63 @@
+---
+import Base from "../layouts/Base.astro";
+
+// One line and verticals: business/strategy.md, sections 1 and 3.
+const oneLine =
+  "citata.ai makes AI assistants name and link our clients when buyers ask them for a recommendation.";
+
+const verticals = [
+  {
+    title: "Property management",
+    text: "Owners ask ChatGPT and Gemini which manager to hire. We work to get your company named in the answer, with a link.",
+  },
+  {
+    title: "PMS software",
+    text: "Property managers ask AI which software to buy. We work to get your product named in those answers.",
+  },
+  {
+    title: "Impact organizations",
+    text: "B Corps, NGOs and charities. Pro bono or at cost, so good work gets found.",
+  },
+];
+---
+
+<Base title="citata.ai — get cited by AI assistants" description={oneLine}>
+  <header class="mx-auto max-w-4xl px-6 pt-8">
+    <a href="/" class="text-lg font-semibold tracking-tight">citata<span class="text-accent">.ai</span></a>
+  </header>
+
+  <main class="mx-auto max-w-4xl px-6">
+    <section class="py-24">
+      <p class="font-mono text-sm uppercase tracking-widest text-muted">Get cited</p>
+      <h1 class="mt-4 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">{oneLine}</h1>
+      <p class="mt-6 max-w-2xl text-lg text-muted">
+        People ask AI for a recommendation before they search. We track the questions your buyers ask,
+        ship one real change a day, and report the result every Monday.
+      </p>
+      <a
+        href="mailto:grow@citata.ai?subject=Free%20AI%20visibility%20audit"
+        class="mt-10 inline-block rounded-lg bg-ink px-5 py-3 font-medium text-white hover:bg-accent"
+      >
+        Get a free AI visibility audit
+      </a>
+    </section>
+
+    <section aria-labelledby="verticals" class="border-t border-gray-200 py-16">
+      <h2 id="verticals" class="text-2xl font-semibold tracking-tight">Who we work with</h2>
+      <ul class="mt-8 grid gap-6 sm:grid-cols-3">
+        {
+          verticals.map((v) => (
+            <li class="rounded-xl border border-gray-200 p-6">
+              <h3 class="font-semibold">{v.title}</h3>
+              <p class="mt-2 text-sm text-muted">{v.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+
+  <footer class="mx-auto max-w-4xl border-t border-gray-200 px-6 py-8 text-sm text-muted">
+    © {new Date().getFullYear()} citata.ai
+  </footer>
+</Base>

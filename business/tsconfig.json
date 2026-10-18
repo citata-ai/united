@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["bun"],
+    "plugins": [
+      {
+        "name": "@effect/language-service",
+        "overrides": [
+          {
+            "include": ["src/load.ts"],
+            "options": { "allowedUnstableApis": ["effect/FileSystem"] }
+          },
+          {
+            "include": ["src/**/*.test.ts"],
+            "options": { "allowedUnstableApis": ["@effect/vitest", "@effect/platform-node"] }
+          }
+        ]
+      }
+    ]
+  },
+  "include": ["src/**/*.ts"]
+}

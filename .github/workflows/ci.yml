@@ -1,0 +1,29 @@
+# CI: the only merge gate. Runs G3 (mise run gate3) on each PR and on main.
+# No deploy here yet: no Cloudflare token exists. See docs/gates.md.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  gate3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # gitleaks scans the full history
+      - uses: jdx/mise-action@v5
+        with:
+          install: true
+          cache: true
+      - run: mise run gate3
