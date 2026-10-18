@@ -2,6 +2,8 @@
 
 Status: v1, 2026-10-18. Owner: Tao. Parent: [`DESIGN.md`](DESIGN.md) → Imagery.
 
+All current site images, one file each: [`art/current/`](art/current/).
+
 This file holds the image style, the prompt blocks and the process. Use it for every cover, hero, OG and social image. Copy the style block word for word, so all images look like one family.
 
 ## 1. Reference: every.to, October 2026
