@@ -2,7 +2,7 @@
 
 Status: v1, 2026-10-18. Owner: Tao. All names, days and cadence are hypotheses until we send 4 issues.
 
-This file is the structure for citata.ai email. Voice rules live in [`/VOICE.md`](../VOICE.md). Read both before you write an email.
+This file is the structure for citata.ai email. Voice rules live in [`/brand/VOICE.md`](../brand/VOICE.md). Read both before you write an email.
 
 Model: the [Every](https://every.to) email program, studied 2026-10-18 (8 emails, 3 posts). We copy the shapes, not the words.
 
@@ -206,7 +206,7 @@ Do not: clickbait, ALL CAPS, emoji, "you won't believe", fake "Re:".
 
 ## 10. Before you send
 
-- [ ] Voice check against `/VOICE.md` section 7 (sentence length, banned words, numbers with sources).
+- [ ] Voice check against `/brand/VOICE.md` section 7 (sentence length, banned words, numbers with sources).
 - [ ] Every claim has a source or the word "hypothesis".
 - [ ] Related parties disclosed.
 - [ ] Client consent on file for any named client.

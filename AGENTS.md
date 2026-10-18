@@ -67,7 +67,8 @@ Run from the repo root.
 - Keep `effect`, `alchemy`, Foldkit, Vite and `@effect/platform-*` pinned to exact versions. Beta releases break between minor versions.
 - Patch dependencies only with `mise run patch` and `mise run patch:commit`. Record each patch in `patches/README.md`.
 
-## Voice and email
+## Brand, voice and email
 
-- Before you write any text that leaves this repo (email, site, post, case study), read [`VOICE.md`](VOICE.md).
+- Before you write any text that leaves this repo (email, site, post, case study), read [`brand/VOICE.md`](brand/VOICE.md).
+- Before you build or change any UI, page or graphic, read [`brand/DESIGN.md`](brand/DESIGN.md). Brand assets (icon, wordmark, fonts, samples) live in `brand/`.
 - Before you write an email or newsletter, also read [`business/NEWSLETTER.md`](business/NEWSLETTER.md). It holds the email types and their structure.
