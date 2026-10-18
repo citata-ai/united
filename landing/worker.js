@@ -18,11 +18,36 @@ export default {
       url.hostname = "citata.ai";
       return Response.redirect(url.toString(), 301);
     }
-    const response = await env.ASSETS.fetch(request);
+    const response = wantsMarkdown(request, url)
+      ? await markdown(request, url, env)
+      : await env.ASSETS.fetch(request);
     if (isTracked(url.pathname)) record(request, url, response.status, env);
     return response;
   },
 };
+
+/** An agent asks for Markdown: "Accept: text/markdown" on a page URL (no file extension). */
+function wantsMarkdown(/** @type {Request} */ request, /** @type {URL} */ url) {
+  return (
+    (request.headers.get("accept") ?? "").includes("text/markdown") &&
+    !/\.[a-z0-9]+$/i.test(url.pathname)
+  );
+}
+
+/** Serve the .md copy that scripts/markdown.mjs wrote at build; fall back to HTML. */
+async function markdown(
+  /** @type {Request} */ request,
+  /** @type {URL} */ url,
+  /** @type {Env} */ env,
+) {
+  const path = url.pathname === "/" ? "/index.md" : `${url.pathname.replace(/\/$/, "")}.md`;
+  const md = await env.ASSETS.fetch(new Request(new URL(path, url), { headers: request.headers }));
+  if (!md.ok) return env.ASSETS.fetch(request);
+  return new Response(md.body, {
+    status: 200,
+    headers: { "content-type": "text/markdown; charset=utf-8", vary: "accept" },
+  });
+}
 
 /** @param {Request} request @param {URL} url @param {number} status @param {Env} env */
 function record(request, url, status, env) {
