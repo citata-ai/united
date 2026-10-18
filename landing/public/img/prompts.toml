@@ -116,3 +116,15 @@ file = "img/footer-v7-*.webp"
 prompt = "No room at the inn: innkeeper with lantern refuses; Joseph with staff leads a donkey with Mary, thin engraved halos; lit cave stable with manger and ox; olive tree left, cypresses right; upper 55% empty white sky; three-ink stamp engraving (style T)"
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-18"
+
+[[image]]
+file = "img/monday-report-v2-*.webp"
+prompt = "Close view: a Roman herald in an orange toga on a stone rostrum holds up a scroll with a rising bar chart (no numbers); bronze bell in a small bell gable; market stalls, arch, fountain, townspeople. Style: match hero-v7 (three-ink stamp engraving), no crane, no big temple."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/fridman-case-v2-*.webp"
+prompt = "An ancient street like a Chicago street: brownstone two-flats with bay windows and stoops, a classical column; a man in an orange toga looks at a smartphone with a map pin. Style: match hero-v7."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"

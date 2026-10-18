@@ -40,6 +40,8 @@ Style: a vintage postage-stamp line engraving printed in three inks on clean whi
 |---|---|
 | `hero-v7` (current) | Edit of the chosen option-4 picture: crane and scaffolding over tiled houses and an arcade (left), a large temple with cypresses (right), a small temple with a glowing door, the man in the orange toga with the key walking toward us in the exact center. Sky made clean, sea and boats replaced by a paved plaza to the bottom edge, no fade. White margins cropped so the scene runs edge to edge. |
 | `footer-v7` (current) | Easter egg made open (owner, 2026-10-18): "no room at the inn". Evening street in Bethlehem: an innkeeper with a lantern turns travelers away; Joseph with a staff leads a donkey with Mary; both have thin engraved halos; they head to a lit cave stable with a manger and an ox. Message for landlords and realtors: Joseph knows the stress of searching, refusals and finding a place. Upper 55 % empty sky. |
+| `monday-report-v2` | Close view of a market square: a herald in an orange toga on a stone rostrum holds up a scroll with a rising bar chart (no numbers); a bronze bell in a small bell gable; stalls, an arch, a lion fountain, townspeople. Not the hero layout. |
+| `fridman-case-v2` | A street of brownstone two-flats with bay windows and stoops, in the same engraving; a man in an orange toga on the sidewalk looks at a phone with a map pin. |
 | `hero-v6`, `footer-v6` (old) | Vignette hero with a faded bottom; hill-town footer with Joseph as a carpenter. |
 
 ## 2a. Old: E · Two-tone engraving (hero-v5, footer-v5)
@@ -85,9 +87,9 @@ Style: fine line engraving illustration like a vintage postage stamp or banknote
 | `stamp-fix-v1` | A Roman stone arch under repair: scaffolding, a ladder, a mallet and chisel on a cut block, a cypress. | Minium |
 | `stamp-report-v1` | A small round temple (tholos) with a bronze bell under the dome, on a hill with olive trees and a stone road. | Green |
 
-## 2c. Figure: the citation engine (engraving theme)
+## 2c. Figure: the citation engine
 
-The animated figure (`landing/scripts/mechanism/build.mjs`, run `bun run mechanism`) uses the same engraving look: ink lines, shading as line hatch (SVG patterns `ce-h0`–`ce-h3`, step 0 is a cross-hatch) on parchment faces, no blur shadow. Like every.to, it sits on its own color plate: sun yellow `#F2C230` (`--ce-field`), so it does not repeat the minium of the hero and footer.
+The animated figure (`landing/scripts/mechanism/build.mjs`) keeps its own flat isometric look (v5). An engraving theme on a yellow plate was tried on 2026-10-18 and rolled back by the owner.
 
 ## 3. Covers: P · Press collage
 
