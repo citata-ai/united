@@ -145,6 +145,20 @@
   .prose-c th {
     @apply font-mono text-[11px] font-normal tracking-[0.06em] text-muted uppercase;
   }
+  /* Guides: wider text column next to the table of contents. */
+  .prose-wide {
+    max-width: none;
+    font-size: 18px;
+  }
+  .prose-wide h2 {
+    scroll-margin-top: 7rem;
+  }
+  /* !important: the link's border-transparent / text-muted utilities win over component classes. */
+  .toc-active {
+    border-left-color: var(--color-minium) !important;
+    color: var(--color-ink) !important;
+    font-weight: 500;
+  }
   .img-frame {
     @apply aspect-video overflow-hidden rounded bg-sunken;
   }
