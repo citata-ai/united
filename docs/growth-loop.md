@@ -51,7 +51,7 @@ Prod needs the owner's "publish" (AGENTS.md). The `measure` run lists the queue 
 
 ## scout: Thursday ideas
 
-1. For each competitor in the latest teardown TOML: fetch the sitemap, list URLs new since the last scout, and note their topics.
+1. Competitors are only the `role = "direct"` rows in `business/competitors.toml`. Apply its `[rule]` to any new name; agents, brokers, developers, lease-up and multifamily renter marketers are `non-competitor`. For each direct competitor: fetch the sitemap, list URLs new since the last scout, and note their topics.
 2. Read the last visibility report: prompts where AI cites others and not us, and the domains it cites.
 3. Search for new landlord and property manager questions (Reddit r/landlord, r/PropertyManagement, r/Section8; BiggerPockets forums; Google "People also ask"; AnswerThePublic free view).
 4. Add at most 10 ideas to `backlog.toml`, each tied to a hypothesis, with `demand` evidence and a score. Drop ideas that copy a competitor page without new data.
