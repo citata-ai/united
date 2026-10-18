@@ -294,3 +294,13 @@
     transition: none;
   }
 }
+
+/* Inside tinted pop panels the minium accent darkens one step, so small orange text keeps 4.5:1 contrast. */
+[class*="bg-sun/"],
+[class*="bg-mint/"],
+[class*="bg-coral/"],
+[class*="bg-sky/"],
+[class*="bg-lilac/"],
+[class*="bg-cobalt/"] {
+  --color-minium: #9e350a;
+}

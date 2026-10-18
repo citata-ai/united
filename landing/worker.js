@@ -24,33 +24,37 @@ export default {
       : await env.ASSETS.fetch(request);
     if (url.hostname.endsWith(".workers.dev")) {
       // Stage and preview hosts: keep them out of search indexes.
-      const staged = new Response(response.body, response);
+      const staged = secure(response, url.pathname, url.search);
       staged.headers.set("X-Robots-Tag", "noindex, nofollow");
       return staged;
     }
     if (isTracked(url.pathname)) record(request, url, response.status, env);
-    return secure(response, url.pathname);
+    return secure(response, url.pathname, url.search);
   },
 };
 
 /** Security headers on every response (HSTS, no framing, no MIME sniffing, strict referrer). */
-function secure(/** @type {Response} */ response, /** @type {string} */ path) {
+function secure(/** @type {Response} */ response, /** @type {string} */ path, search = "") {
   const out = new Response(response.body, response);
   out.headers.set("Strict-Transport-Security", "max-age=31536000");
   out.headers.set("X-Frame-Options", "SAMEORIGIN");
   out.headers.set("X-Content-Type-Options", "nosniff");
   out.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
-  const cache = cacheControl(path);
+  const cache = cacheControl(path, search);
   if (cache && response.ok) out.headers.set("Cache-Control", cache);
   return out;
 }
 
 /**
  * Long browser cache for static files. Fonts never change name; images and figure JS
- * may be replaced under the same name, so they get 30 days and 1 day.
+ * may be replaced under the same name, so they get 30 days and 1 day. Figure files with a content
+ * hash (`?v=`) never change under that URL, so they get a year.
  * @param {string} path
+ * @param {string} [search]
  */
-export function cacheControl(path) {
+export function cacheControl(path, search = "") {
+  if (path.startsWith("/mechanism/") && /[?&]v=[0-9a-f]{6,}/.test(search))
+    return "public, max-age=31536000, immutable";
   if (path.startsWith("/fonts/")) return "public, max-age=31536000, immutable";
   if (/^\/(img|og)\//.test(path) || /\.(svg|png|ico|webp|jpg)$/.test(path))
     return "public, max-age=2592000";
