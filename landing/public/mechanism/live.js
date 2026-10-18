@@ -682,103 +682,132 @@ const ISO_CSS = `
  * page moves every part from the same numbers.
  *
  * World units are about 1 px; x runs along the bench, y toward the viewer, z up.
- * Flow: AI engine hoppers (input) -> belt through the citata frame, past three
- * stations (Indexed, Found, Mentioned) -> drop tube -> queue -> your business.
+ * The loop: your site prints pages onto the upper belt -> the pages pass the
+ * three citata stations (Indexed, Found, Mentioned) -> each page goes up into
+ * an AI engine -> the engine sends a buyer (a ball) down onto the lower belt,
+ * which runs back to your site -> buyers queue at the door and go in one by one.
  */
 
-/** Hopper x positions, one per AI engine (same order as LOGOS). */
-const HOPPER_X = [-210, -176, -142, -108, -74];
-/** The belt runs along this line. */
-const RAIL_Y = -12;
-const RAIL_TOP = 44;
-const RAIL_FROM = -232;
-const RAIL_TO = 148;
-/** A capsule (one buyer question) is a ball of this radius. */
-const CAPSULE_R = 4;
-/** The hopper mouth, where a capsule leaves the funnel. */
-const MOUTH_Z = 58;
-/** The three stations inside the citata frame: the stages of the service. */
+// --- Upper belt: pages, left to right -------------------------------------
+const BELT_Y = -48;
+const BELT_TOP = 44;
+const BELT_FROM = -222;
+const BELT_TO = 232;
+const SPEED = 44;
+const CUP = 24;
+/** Pages leave your site here. */
+const PAGE_X = -214;
+/** The three stations inside the citata frame. */
 const STATIONS = [
-  { name: "Indexed", x: -2 },
-  { name: "Found", x: 50 },
-  { name: "Mentioned", x: 104 },
+  { name: "Indexed", x: -140 },
+  { name: "Found", x: -84 },
+  { name: "Mentioned", x: -28 },
 ];
-/** Belt speed and the spacing of the cups (cleats) that carry the capsules. */
-const SPEED = 46;
-const CUP = 26;
-/** Fall time from a hopper mouth into a cup. */
-const DROP = 0.42;
-/** At the end of the belt a capsule falls down a glass tube to the queue rail. */
-const TUBE_X = 142;
-const QUEUE_Z = 6;
-const TUBE_T = 0.5;
-/** The queue runs along the front of the house to its door. */
-const DOOR_X = 178;
+/** AI engine receivers above the belt, one per engine (same order as LOGOS). */
+const ENGINE_X = [62, 96, 130, 164, 198];
+const MOUTH_Z = 58;
+/** A page rises into the receiver mouth in this time. */
+const LIFT = 0.38;
+
+// --- Lower belt: buyers, right to left ------------------------------------
+const RETURN_Y = -26;
+const RETURN_TOP = 10;
+const RETURN_FROM = -150;
+const RETURN_TO = 232;
+const RETURN_SPEED = 54;
+/** The receiver sends a buyer out of its spout, which falls to the lower belt. */
+const SPOUT_Z = 72;
+const FALL = 0.42;
+const SEND_AFTER = 0.25;
+/** Buyers leave the belt onto the queue rail at RETURN_FROM and roll to a slot. */
+const DOOR_X = -214;
 const SLOT = 9;
-const SLOTS = 5;
-/** Every 7th capsule that enters rings the bell: the Monday report. */
+const SLOTS = 7;
+const BALL_R = 4;
+
+/** Every 7th buyer who goes in rings the bell: the Monday report. */
 const TURNS_PER_REPORT = 7;
-/** Idle cadence: a new question about every second. */
-const SPAWN_EVERY = 0.95;
+/** Idle cadence: a new page about every second. */
+const PAGE_EVERY = 0.9;
 
-const BELT_Z = RAIL_TOP + CAPSULE_R;
-const QUEUE_CZ = QUEUE_Z + CAPSULE_R;
+const BALL_Z = RETURN_TOP + BALL_R;
 
-/** The x of cup `n` at time `t`. */
+/** Upper belt: x of cup `n` at time `t`, and the time cup `n` passes x. */
 const cupX = (n, t) => n * CUP + SPEED * t;
-
-/** The time cup `n` passes x. */
 const cupTime = (n, x) => (x - n * CUP) / SPEED;
 
-/**
- * The first free cup that reaches hopper `index` no earlier than `soonest`,
- * given the set of taken cups. Returns { cup, land }.
- */
-function nextCup(index, soonest, taken) {
-  const x = HOPPER_X[index];
-  let cup = Math.floor((x - SPEED * soonest) / CUP);
+/** Lower belt runs the other way. */
+const backX = (n, t) => n * CUP - RETURN_SPEED * t;
+const backTime = (n, x) => (n * CUP - x) / RETURN_SPEED;
+
+/** The first free upper cup that passes the site outlet no earlier than `soonest`. */
+function pageCup(soonest, taken) {
+  let cup = Math.floor((PAGE_X - SPEED * soonest) / CUP);
   while (taken.has(cup)) cup -= 1;
-  return { cup, land: cupTime(cup, x) };
+  return cup;
+}
+
+/** The first free lower cup under x no earlier than `soonest`. Returns { cup, land }. */
+function buyerCup(x, soonest, taken) {
+  let cup = Math.ceil((x + RETURN_SPEED * soonest) / CUP);
+  while (taken.has(cup)) cup += 1;
+  return { cup, land: backTime(cup, x) };
 }
 
 /**
- * Where a capsule is at time `t`. It rides `cup`, landing under hopper
- * `index` at `land`. phase: "fall" | "belt" | "tube" | "queue".
- * In the queue phase `p` is the tube foot; the live code moves it on.
+ * A page on cup `cup`, bound for engine `engine`, at time `t`.
+ * phase: "wait" (still inside the site) | "belt" | "lift" | "gone".
  */
-function capsuleAt(index, cup, land, t) {
-  const x0 = HOPPER_X[index];
-  if (t < land) {
-    const share = Math.max(0, 1 - (land - t) / DROP) ** 2;
-    return { p: [x0, RAIL_Y, MOUTH_Z - (MOUTH_Z - BELT_Z) * share], phase: "fall" };
-  }
-  const x = cupX(cup, t);
-  if (x < TUBE_X) return { p: [x, RAIL_Y, BELT_Z], phase: "belt" };
-  const u = (t - cupTime(cup, TUBE_X)) / TUBE_T;
-  if (u < 1) return { p: [TUBE_X, RAIL_Y, BELT_Z - (BELT_Z - QUEUE_CZ) * u * u], phase: "tube" };
-  return { p: [TUBE_X, RAIL_Y, QUEUE_CZ], phase: "queue" };
+function pageAt(cup, engine, t) {
+  const out = cupTime(cup, PAGE_X);
+  if (t < out) return { p: [PAGE_X, BELT_Y, BELT_TOP], phase: "wait", at: 0 };
+  const x = ENGINE_X[engine];
+  const reach = cupTime(cup, x);
+  if (t < reach) return { p: [cupX(cup, t), BELT_Y, BELT_TOP], phase: "belt", at: 0 };
+  const u = (t - reach) / LIFT;
+  if (u < 1)
+    return { p: [x, BELT_Y, BELT_TOP + (MOUTH_Z - BELT_TOP) * u * u], phase: "lift", at: u };
+  return { p: [x, BELT_Y, MOUTH_Z], phase: "gone", at: 1 };
 }
 
-/** A smooth 0..1..0 bump for a capsule within `reach` of x = `at`. */
+/** When a page bound for `engine` on `cup` is inside the receiver. */
+const pageDone = (cup, engine) => cupTime(cup, ENGINE_X[engine]) + LIFT;
+
+/**
+ * A buyer sent by `engine` on lower cup `cup` that lands at `land`, at time `t`.
+ * phase: "wait" | "fall" | "belt" | "queue" (then the live code moves it on).
+ */
+function buyerAt(engine, cup, land, t) {
+  const x0 = ENGINE_X[engine];
+  if (t < land - FALL) return { p: [x0, RETURN_Y, SPOUT_Z], phase: "wait" };
+  if (t < land) {
+    const share = (1 - (land - t) / FALL) ** 2;
+    return { p: [x0, RETURN_Y, SPOUT_Z - (SPOUT_Z - BALL_Z) * share], phase: "fall" };
+  }
+  const x = backX(cup, t);
+  if (x > RETURN_FROM) return { p: [x, RETURN_Y, BALL_Z], phase: "belt" };
+  return { p: [RETURN_FROM, RETURN_Y, BALL_Z], phase: "queue" };
+}
+
+/** A smooth 0..1..0 bump for something within `reach` of x = `at`. */
 function bump(x, at, reach) {
   const d = Math.abs(x - at) / reach;
   return d >= 1 ? 0 : Math.cos((d * Math.PI) / 2) ** 2;
 }
 
 
-const P = {"origin":[382.2725283876627,250.68554683014486],"scale":1.2103917444190226,"azimuth":58,"elevation":30};
-const WIDTH = 760, HEIGHT = 430;
+const P = {"origin":[426.2678202299965,288.5157291438784],"scale":1.1723340147217847,"azimuth":58,"elevation":30};
 const ENGINES = ["ChatGPT","Gemini","Claude","Perplexity","Google AI Overviews"];
-const SPOTS = [{"title":"AI engines","text":"Buyers ask AI. We track the questions your buyers ask on ChatGPT, Gemini, Claude, Perplexity and Google, every week."},{"title":"Indexed","text":"We make sure search engines and AI crawlers can read every page: sitemaps, crawl errors, speed."},{"title":"Found","text":"We write exact answers to those questions on your site, and fix weak pages."},{"title":"Mentioned","text":"We fix your listings and profiles so AI engines name you, with a link."},{"title":"One checked change a day","text":"Agents draft it. A person checks it before it ships."},{"title":"Monday report","text":"Which engines named you, for which questions, and what we changed."},{"title":"Your business","text":"More buyers find you. We report citations and leads, not promises."}];
-const REST = 1.55, LENS_POST = [72,-40], LENS_ARM = 35.60898762952971, LENS_R = 7.5, LENS_Z = 64;
-const FLY = [-160,32], FLY_R = 30, FLY_TEETH = 60, TOOTH = 2.6, GEAR_H = 4;
-const IDLER = [-120.56367822100759,41.65072663294166], IDLER_R = 8, IDLER_TEETH = 16, ESCAPE = [-98.23707891373766,34.00331116282277], ESCAPE_R = 13, TEETH = 15, GEAR_Z = 20;
-const ANCHOR = [-98.23707891373766,60.00331116282277], BELL = [-36,40], BELL_Z = 30;
-const DIAL = [216,0], DIAL_R = 12, DIAL_TOP = 28, STAMP_DOWN = 4;
+const SPOTS = [{"title":"Your site","text":"We start with your website: its pages, your listings and the facts about you."},{"title":"Indexed","text":"We make sure search engines and AI crawlers can read every page: sitemaps, crawl errors, speed."},{"title":"Found","text":"We write exact answers to the questions your buyers ask, and fix weak pages."},{"title":"Mentioned","text":"We fix your listings and profiles, so AI engines can name you, with a link."},{"title":"AI engines","text":"ChatGPT, Gemini, Claude, Perplexity and Google read those pages. Every week we check which ones name you."},{"title":"Buyers come back","text":"Buyers follow the link back to your site. We report citations and leads, not promises."},{"title":"One checked change a day","text":"Agents draft it. A person checks it before it ships."},{"title":"Monday report","text":"Which engines named you, for which questions, and what we changed."}];
+const REST = 1.5, LENS_POST = [-62,-80], LENS_ARM = 38.8329756778952, LENS_R = 7.5, LENS_Z = 64;
+const FLY = [44,14], FLY_R = 24, FLY_TEETH = 50, TOOTH = 2.6, GEAR_H = 4;
+const IDLER = [77.05714807768089,20.015393667107695], IDLER_R = 7, IDLER_TEETH = 14, ESCAPE = [97.98565638663082,14.67146814721], ESCAPE_R = 12, TEETH = 15, GEAR_Z = 16;
+const ANCHOR = [123.98565638663082,14.67146814721], BELL = [214,22], BELL_Z = 28;
+const DIAL = [-200,14], DIAL_R = 12, DIAL_TOP = 24, STAMP_DOWN = 5;
 const at = (p) => iso(p, P);
 function lensAt(a) {
   const [px, py] = LENS_POST;
-  const base = Math.atan2(RAIL_Y - py, STATIONS[1].x - px);
+  const base = Math.atan2(BELT_Y - py, STATIONS[1].x - px);
   const t = base + a;
   const cx = px + Math.cos(t) * LENS_ARM;
   const cy = py + Math.sin(t) * LENS_ARM;
@@ -855,28 +884,30 @@ function trainAt(e) {
     k.lineSvg(
       k.ring(ESCAPE[0], ESCAPE[1], ESCAPE_R - 4, top - 1, P, 40) +
         k.ring(ESCAPE[0], ESCAPE[1], 3, top - 1, P, 20),
-      { tone: "lo" },
+      {
+        tone: "lo",
+      },
     ),
   ].join("");
 }
 function anchorAt(rock) {
   const [ax, ay] = ANCHOR;
   const z = GEAR_Z + 0.5;
-  const t = -Math.PI / 2 + rock;
+  const t = Math.PI + rock;
   const P2 = (a, r) => [ax + Math.cos(t + a) * r, ay + Math.sin(t + a) * r];
   const fork = [
-    P2(-0.58, 15),
-    P2(-0.5, 12),
+    P2(-0.58, 14),
+    P2(-0.5, 11.5),
     P2(0, 3.5),
-    P2(0.5, 12),
-    P2(0.58, 15),
-    P2(0.66, 12.5),
+    P2(0.5, 11.5),
+    P2(0.58, 14),
+    P2(0.66, 12),
     P2(0.35, 3),
-    P2(Math.PI - 0.3, 6),
-    P2(Math.PI, 8),
-    P2(Math.PI + 0.3, 6),
+    P2(Math.PI - 0.3, 5.5),
+    P2(Math.PI, 7),
+    P2(Math.PI + 0.3, 5.5),
     P2(-0.35, 3),
-    P2(-0.66, 12.5),
+    P2(-0.66, 12),
   ];
   return [
     k.solidSvg(k.extrude(fork, z, 2, P, { convex: false }), { tone: "hi" }),
@@ -886,15 +917,23 @@ function anchorAt(rock) {
 function cleatsAt(t) {
   let d = "";
   const shift = (((SPEED * t) % CUP) + CUP) % CUP;
-  for (let x = RAIL_FROM + 8 + shift; x < RAIL_TO - 8; x += CUP) {
-    d += k.lineOnTop([x, RAIL_Y - 5], [x, RAIL_Y + 5], RAIL_TOP, P);
+  for (let x = BELT_FROM + 8 + shift; x < BELT_TO - 8; x += CUP) {
+    d += k.lineOnTop([x, BELT_Y - 5], [x, BELT_Y + 5], BELT_TOP, P);
+  }
+  return d;
+}
+function backCleatsAt(t) {
+  let d = "";
+  const shift = (((-RETURN_SPEED * t) % CUP) + CUP) % CUP;
+  for (let x = RETURN_FROM + 8 + shift; x < RETURN_TO - 8; x += CUP) {
+    d += k.lineOnTop([x, RETURN_Y - 5], [x, RETURN_Y + 5], RETURN_TOP, P);
   }
   return d;
 }
 function needleAt(turn) {
   const a = turn * Math.PI * 2;
   const [x, y] = DIAL;
-  return lineOnTop(
+  return k.lineOnTop(
     [x - Math.sin(a) * 3, y + Math.cos(a) * 3],
     [x + Math.sin(a) * (DIAL_R - 4), y - Math.cos(a) * (DIAL_R - 4)],
     DIAL_TOP + 0.2,
@@ -916,57 +955,80 @@ for (const root of document.querySelectorAll(".ce")) {
   const stage = root.querySelector(".iso-stage");
   const svg = stage.querySelector("svg");
   const q = (name) => svg.querySelector('[data-part="' + name + '"]');
-  const pool = [...svg.querySelectorAll('[data-part="capsule"]')];
+  const pagePool = [...svg.querySelectorAll('[data-part="page"]')];
+  const ballPool = [...svg.querySelectorAll('[data-part="ball"]')];
   const waves = [...svg.querySelectorAll('[data-part="wave"]')];
   const dollars = [...svg.querySelectorAll('[data-part="dollar"]')].map((el) => ({ el, born: -9 }));
   const hits = [...svg.querySelectorAll(".ce-hit")];
-  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), gate: q("gate") };
+  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), backcleats: q("backcleats"), gate: q("gate") };
   const readout = root.querySelector("[data-readout]");
   const still = matchMedia("(prefers-reduced-motion: reduce)");
 
-  // State: every number comes from the model (capsuleAt, cups, slots).
-  let balls = [];          // { el, index, cup, land, queued, qx, enter }
-  const taken = new Set(); // cups that carry a ball
-  let queue = [];          // balls waiting at the door, front first
+  // State. Every position comes from the model: pageAt, buyerAt, cups, slots.
+  let pages = [];   // { el, cup, engine }
+  let balls = [];   // { el, engine, cup, land, queued, qx, enter }
+  let queue = [];
+  const upper = new Set();
+  const lower = new Set();
   let clock = 0, last = 0, frame = 0, visible = false;
-  let nextSpawn = 0.2, lastDrop = -9, tour = 0, nextRelease = 0, delivered = 0, ring = -99;
-  let needle = 0, swing = REST, lensDrawn = 99, gate = 0, trainAt0 = -1, hornPass = -99, lastEngine = -1;
+  let nextPage = 0.1, tour = 0, wish = -1, lastWish = -9, nextRelease = 0, delivered = 0, ring = -99;
+  let needle = 0, swing = REST, lensDrawn = 99, gate = 0, trainDrawn = -1, hornPass = -99, lastEngine = -1;
   let lastText = "";
   const say = (text) => { if (text !== lastText) { readout.textContent = text; lastText = text; } };
 
-  function spawn(index) {
-    const free = pool.find((el) => !balls.some((b) => b.el === el));
-    if (!free) return;
-    const { cup, land } = nextCup(index, clock + DROP, taken);
-    taken.add(cup);
-    balls.push({ el: free, index, cup, land, queued: false, qx: TUBE_X, enter: -1 });
-    lastEngine = index;
+  function sendPage(engine) {
+    const el = pagePool.find((e) => !pages.some((p) => p.el === e));
+    if (!el) return;
+    const cup = pageCup(clock, upper);
+    upper.add(cup);
+    pages.push({ el, cup, engine, sent: false });
+  }
+
+  function sendBuyer(engine, after) {
+    const el = ballPool.find((e) => !balls.some((b) => b.el === e));
+    if (!el) return;
+    const { cup, land } = buyerCup(ENGINE_X[engine], after + FALL, lower);
+    lower.add(cup);
+    balls.push({ el, engine, cup, land, queued: false, qx: RETURN_FROM, enter: -1 });
   }
 
   function update(dt) {
     clock += dt;
-    if (clock >= nextSpawn) { spawn(tour % ENGINES.length); tour += 1; nextSpawn = clock + SPAWN_EVERY; }
+    if (clock >= nextPage) {
+      const engine = wish >= 0 ? wish : tour++ % ENGINES.length;
+      wish = -1;
+      sendPage(engine);
+      nextPage = clock + PAGE_EVERY;
+    }
+    for (const p of pages) {
+      const done = pageDone(p.cup, p.engine);
+      const pass = cupTime(p.cup, STATIONS[2].x);
+      if (pass <= clock && pass > hornPass && clock >= cupTime(p.cup, PAGE_X)) hornPass = pass;
+      if (!p.sent && clock >= done) {
+        p.sent = true;
+        upper.delete(p.cup);
+        lastEngine = p.engine;
+        sendBuyer(p.engine, done + SEND_AFTER);
+      }
+    }
+    pages = pages.filter((p) => !p.sent);
     for (const b of balls) {
       if (b.queued || b.enter >= 0) continue;
-      const s = capsuleAt(b.index, b.cup, b.land, clock);
-      if (s.phase === "tube" || s.phase === "queue") taken.delete(b.cup);
-      if (s.phase === "queue") { b.queued = true; queue.push(b); }
-      const passT = cupTime(b.cup, STATIONS[2].x);
-      if (passT <= clock && passT > hornPass && clock >= b.land) hornPass = passT;
+      const s = buyerAt(b.engine, b.cup, b.land, clock);
+      if (s.phase === "queue") { b.queued = true; lower.delete(b.cup); queue.push(b); }
     }
-    // Queue: each ball rolls to its slot; the front one waits at the door.
     queue.forEach((b, i) => {
-      const target = DOOR_X - Math.min(i, SLOTS - 1) * SLOT;
-      b.qx += (target - b.qx) * ease(dt, 0.16);
+      const target = DOOR_X + Math.min(i, SLOTS - 1) * SLOT;
+      b.qx += (target - b.qx) * ease(dt, 0.18);
     });
     const front = queue[0];
     if (front && Math.abs(front.qx - DOOR_X) < 0.6 && clock >= nextRelease) {
       queue.shift();
       front.enter = clock;
-      nextRelease = clock + (queue.length >= 3 ? 0.8 : queue.length >= 2 ? 1.1 : 1.6);
+      nextRelease = clock + (queue.length >= 3 ? 0.75 : queue.length >= 2 ? 1.05 : 1.5);
     }
     for (const b of balls) {
-      if (b.enter >= 0 && clock - b.enter >= 0.45) {
+      if (b.enter >= 0 && clock - b.enter >= 0.42) {
         b.done = true;
         delivered += 1;
         if (delivered % TURNS_PER_REPORT === 0) ring = clock;
@@ -975,38 +1037,44 @@ for (const root of document.querySelectorAll(".ce")) {
       }
     }
     balls = balls.filter((b) => !b.done);
-    const opening = balls.some((b) => b.enter >= 0);
-    gate += ((opening ? 1 : 0) - gate) * ease(dt, 0.08);
+    gate += ((balls.some((b) => b.enter >= 0) ? 1 : 0) - gate) * ease(dt, 0.08);
     needle += (delivered / 40 - needle) * ease(dt, 0.25);
-    const near = balls.some((b) => {
-      if (b.queued || b.enter >= 0 || clock < b.land) return false;
-      const x = cupX(b.cup, clock);
-      return x > STATIONS[1].x - 24 && x < STATIONS[1].x + 10;
+    const near = pages.some((p) => {
+      const s = pageAt(p.cup, p.engine, clock);
+      return s.phase === "belt" && s.p[0] > STATIONS[1].x - 22 && s.p[0] < STATIONS[1].x + 10;
     });
     swing += ((near ? 0 : REST) - swing) * ease(dt, 0.14);
   }
 
   function draw() {
     let stampLoad = 0;
+    for (const p of pages) {
+      const s = pageAt(p.cup, p.engine, clock);
+      if (s.phase === "wait" || s.phase === "gone") { p.el.setAttribute("opacity", "0"); continue; }
+      if (s.phase === "belt") stampLoad = Math.max(stampLoad, bump(s.p[0], STATIONS[0].x, 9));
+      p.el.setAttribute("opacity", s.phase === "lift" ? (1 - s.at * s.at).toFixed(3) : "1");
+      p.el.setAttribute("transform", translateAlong(P, s.p));
+    }
+    for (const el of pagePool) if (!pages.some((p) => p.el === el)) el.setAttribute("opacity", "0");
     for (const b of balls) {
-      let p, alpha = 1;
+      let pos, alpha = 1;
       if (b.enter >= 0) {
-        const u = Math.min(1, (clock - b.enter) / 0.45);
-        p = [DOOR_X, RAIL_Y - 9 * u, QUEUE_CZ];
+        const u = Math.min(1, (clock - b.enter) / 0.42);
+        pos = [DOOR_X - 9 * u, RETURN_Y, BALL_Z];
         alpha = 1 - u * u;
       } else if (b.queued) {
-        p = [b.qx, RAIL_Y, QUEUE_CZ];
+        pos = [b.qx, RETURN_Y, BALL_Z];
       } else {
-        if (clock < b.land - DROP) { b.el.setAttribute("opacity", "0"); continue; }
-        const s = capsuleAt(b.index, b.cup, b.land, clock);
-        p = s.p;
-        if (s.phase === "belt") stampLoad = Math.max(stampLoad, bump(p[0], STATIONS[0].x, 9));
+        const s = buyerAt(b.engine, b.cup, b.land, clock);
+        if (s.phase === "wait") { b.el.setAttribute("opacity", "0"); continue; }
+        pos = s.p;
       }
       b.el.setAttribute("opacity", alpha.toFixed(3));
-      b.el.setAttribute("transform", translateAlong(P, p));
+      b.el.setAttribute("transform", translateAlong(P, pos));
     }
-    for (const el of pool) if (!balls.some((b) => b.el === el)) el.setAttribute("opacity", "0");
+    for (const el of ballPool) if (!balls.some((b) => b.el === el)) el.setAttribute("opacity", "0");
     parts.cleats.setAttribute("d", cleatsAt(clock));
+    parts.backcleats.setAttribute("d", backCleatsAt(clock));
     parts.stamp.setAttribute("transform", translateAlong(P, [0, 0, -STAMP_DOWN * stampLoad]));
     if (Math.abs(swing - lensDrawn) > 0.004) { parts.lens.innerHTML = lensAt(swing); lensDrawn = swing; }
     const since = clock - hornPass;
@@ -1014,14 +1082,13 @@ for (const root of document.querySelectorAll(".ce")) {
       const u = since - i * 0.12;
       w.setAttribute("opacity", (u < 0 || u > 0.7 ? 0 : (1 - u / 0.7) * 0.95).toFixed(3));
     });
-    // Gear train: turns smoothly all the time; the anchor ticks with the escape wheel.
     const e = clock * 0.55;
-    if (Math.abs(e - trainAt0) > 0.02) {
+    if (Math.abs(e - trainDrawn) > 0.02) {
       parts.train.innerHTML = trainAt(e);
       parts.anchor.innerHTML = anchorAt(0.13 * Math.sin(e * TEETH));
-      trainAt0 = e;
+      trainDrawn = e;
     }
-    parts.gate.setAttribute("transform", translateAlong(P, [0, 0, 8 * gate]));
+    parts.gate.setAttribute("transform", translateAlong(P, [0, 0, 10 * gate]));
     const rang = clock - ring;
     const strike = rang >= 0 && rang < 1.4 ? Math.exp(-rang * 3) * Math.abs(Math.sin(rang * 14)) : 0;
     parts.hammer.innerHTML = hammerAt(Math.min(1, strike * 1.4));
@@ -1033,9 +1100,9 @@ for (const root of document.querySelectorAll(".ce")) {
       d.el.setAttribute("opacity", (u < 0.15 ? u / 0.15 : 1 - (u - 0.15) / 0.85).toFixed(3));
       d.el.setAttribute("transform", "translate(0 " + (-16 * u).toFixed(2) + ")");
     }
-    const inside = balls.filter((b) => !b.queued && b.enter < 0 && clock >= b.land - DROP).length;
+    const onWay = balls.filter((b) => !b.queued && b.enter < 0 && clock >= b.land - FALL).length;
     if (rang >= 0 && rang < 2) say("7th buyer in · bell: Monday report");
-    else if (lastEngine >= 0) say(ENGINES[lastEngine] + " asked · " + inside + " in the engine · " + queue.length + " at your door");
+    else if (lastEngine >= 0) say(pages.length + " pages in the workshop · " + ENGINES[lastEngine] + " sent a buyer · " + (onWay + queue.length) + " on the way");
   }
 
   function tick(now) {
@@ -1046,21 +1113,21 @@ for (const root of document.querySelectorAll(".ce")) {
     frame = visible ? requestAnimationFrame(tick) : 0;
   }
   const run = () => { if (!frame && visible && !still.matches) { last = 0; frame = requestAnimationFrame(tick); } };
-  const drop = (index) => {
-    if (still.matches || clock - lastDrop < 0.3) return;
-    lastDrop = clock;
-    spawn(index);
-    nextSpawn = clock + SPAWN_EVERY;
+  const ask = (engine) => {
+    if (still.matches || clock - lastWish < 0.3) return;
+    lastWish = clock;
+    wish = engine;
+    nextPage = Math.min(nextPage, clock);
     run();
   };
   for (const hit of hits) {
-    const index = Number(hit.dataset.engine);
-    hit.addEventListener("pointerenter", () => drop(index));
-    hit.addEventListener("pointerdown", () => drop(index));
+    const engine = Number(hit.dataset.engine);
+    hit.addEventListener("pointerenter", () => ask(engine));
+    hit.addEventListener("pointerdown", () => ask(engine));
   }
   stage.addEventListener("keydown", (event) => {
     const n = Number(event.key);
-    if (event.target === stage && n >= 1 && n <= ENGINES.length) { event.preventDefault(); drop(n - 1); }
+    if (event.target === stage && n >= 1 && n <= ENGINES.length) { event.preventDefault(); ask(n - 1); }
   });
 
   // Hotspots: a tooltip card that stays inside the figure.
@@ -1096,7 +1163,7 @@ for (const root of document.querySelectorAll(".ce")) {
     spot.addEventListener("focus", () => show(spot, true));
     spot.addEventListener("click", (event) => { event.stopPropagation(); show(spot, true); });
   }
-  root.addEventListener("keydown", (event) => { if (event.key === "Escape") { hide(); } });
+  root.addEventListener("keydown", (event) => { if (event.key === "Escape") hide(); });
   document.addEventListener("pointerdown", (event) => {
     if (!tip.hidden && !event.target.closest(".ce-spot") && !event.target.closest(".ce-tip")) hide();
   });
@@ -1105,14 +1172,10 @@ for (const root of document.querySelectorAll(".ce")) {
     visible = entries[entries.length - 1].isIntersecting;
     if (visible) run();
   }, { rootMargin: "80px 0px" }).observe(stage);
-  if (still.matches) {
-    // One still frame: run the model for a while, then draw once.
-    for (let i = 0; i < 420; i++) update(1 / 30);
-    swing = 0;
-    draw();
-  } else {
-    draw();
-  }
+  // Warm start: run the model for a while so the loop is already full, then draw.
+  for (let i = 0; i < 540; i++) update(1 / 30);
+  if (still.matches) swing = 0;
+  draw();
 }
 
 })();
