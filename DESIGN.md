@@ -22,10 +22,10 @@ colors:
   on-secondary: "#F5EFE3"
   gold: "#B8892B"              # gold leaf: ornament only, never small text
   gold-ink: "#7A5A14"          # gold that passes contrast for text
-  rubric: "#A8321F"            # vermilion: drop caps, manicules, citations
+  minium: "#C2410C"            # red lead (minium): logo quotes, drop caps, citations
   verdigris: "#2F6B5C"         # success
   ochre: "#9A6A00"             # warning
-  error: "#A8321F"
+  error: "#C2410C"
   on-error: "#FBF7EE"
   # Dark theme: "Studiolo" (a scholar's study by candlelight)
   dark-background: "#14110E"
@@ -37,7 +37,7 @@ colors:
   dark-primary: "#8EA8E6"
   dark-on-primary: "#14110E"
   dark-gold: "#D4A84B"
-  dark-rubric: "#E07A5F"
+  dark-minium: "#F08A4B"
 typography:
   display-xl:
     fontFamily: Cormorant Garamond
@@ -159,12 +159,12 @@ components:
     typography: "{typography.ui-label}"
     rounded: "{rounded.full}"
   badge-missing:
-    backgroundColor: "{colors.rubric}"
+    backgroundColor: "{colors.minium}"
     textColor: "{colors.on-error}"
     typography: "{typography.ui-label}"
     rounded: "{rounded.full}"
   drop-cap:
-    textColor: "{colors.rubric}"
+    textColor: "{colors.minium}"
     typography: "{typography.display-lg}"
   marginal-note:
     textColor: "{colors.gold-ink}"
@@ -194,9 +194,9 @@ components:
 | Web app (`app.citata.ai`) | Quiet tool: sans UI type, the MyRemotely web-app components, Renaissance only in color, headings and empty states | Foldkit + `@foldkit/ui` (`/frontend`) |
 
 **Logo.**
-- **Icon:** two curly quote pairs, `“` top-left and `”` bottom-right on a square. Cut in **Fraunces Black** (SOFT 100, WONK 1). Fraunces has soft ball terminals with a mid-century feel (Cooper / Windsor). The quotes say "cited".
-- **Wordmark:** `Citata` with a capital C, in Fraunces 600 (SOFT 100), ink. A rubric `“` sits high before the C and a rubric `”` sits low after the last a, so the quotes "hold" the name.
-- **Favicon / app icon:** the icon in parchment on lapis, 22% corner radius.
+- **Icon:** two curly quote pairs, `“` top-left and `”` bottom-right, parchment on a minium-orange square (22% corner radius). Quotes are cut from **DM Serif Display**: round ball terminals with a mid-century feel. The quotes say "cited". Never crop them; keep 7% padding (favicon) or 12% (icon).
+- **Wordmark:** `Citata` with a capital C, in **Fraunces 600** (SOFT 100, opsz 144), ink. A minium DM Serif `“` sits high before the C and a minium `”` sits low after the last a, so the quotes "hold" the name.
+- **Files:** `/brand/` — `icon.svg`, `icon-dark.svg`, `favicon.svg` (bigger quotes for 16–32 px), `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `icon-512.png`, `wordmark.svg`, `wordmark-dark.svg`. All text is outlined to paths. Rebuild: `uv run --with fonttools --with uharfbuzz python -I brand/build.py <font-dir> brand` (fonts: `DMSerifDisplay.ttf`, `Fraunces.ttf` variable, from google/fonts).
 - **Domain** stays lowercase in text: `citata.ai`.
 - **Manicule ☞** (the pointing hand that Renaissance readers drew in margins to mark a passage worth citing) is now a secondary glyph: list bullets and the "cited" status icon. It is not the logo.
 
@@ -208,7 +208,7 @@ The palette comes from real Renaissance pigments and materials.
 - **Iron-gall ink** `#1C1712` (on-surface). Text, rules, ink buttons. Never pure black.
 - **Lapis lazuli** `#1E3A7B` (primary). The most costly pigment of the time; painters kept it for the Virgin's robe. We keep it for the one main action on a screen.
 - **Gold leaf** `#B8892B` (gold). Ornament only: rules, frames, the halo behind a hero image, large display words. It fails contrast for small text. For gold text use **gold-ink** `#7A5A14`.
-- **Vermilion / rubric** `#A8321F`. Scribes wrote headings and initials in red ("rubrics"). We use it for drop caps, the manicule, citation marks, and errors.
+- **Minium** `#C2410C` (minium). Red lead, a deep orange pigment. Scribes painted initials with it; the word "miniature" comes from it. We use it for the logo, drop caps, citation marks and errors. Dark theme: `#F08A4B`.
 - **Verdigris** `#2F6B5C`. Success, "cited" state in the app.
 
 **Dark theme "Studiolo".** Candlelit study: `#14110E` background, `#EDE4D3` ink, softer lapis `#8EA8E6`, warmer gold `#D4A84B`. Tokens use the `dark-` prefix.
@@ -216,13 +216,14 @@ The palette comes from real Renaissance pigments and materials.
 **Rules.**
 - One lapis action per view. Second actions use ink or ghost buttons.
 - Gold covers at most ~5% of a page. More gold looks cheap.
-- Status colors in the app: verdigris = cited, ochre = mentioned without link, rubric = not found.
+- Status colors in the app: verdigris = cited, ochre = mentioned without link, minium = not found.
 
 ## Typography
 
 | Role | Face | Why |
 |---|---|---|
-| Logo only | **Fraunces** 600 / 900, SOFT 100 | Mid-century ball-terminal quotes; never in body text |
+| Logo wordmark | **Fraunces** 600, SOFT 100 | Soft, warm, mid-century; logo only |
+| Logo quotes, big quote marks | **DM Serif Display** | Round ball-terminal quotes |
 | Display, headlines | **Cormorant Garamond** 500–600 | Garamond's 16th-century forms, cut for large sizes |
 | Long text | **EB Garamond** 400 | True Garamond for reading; has small caps and old-style figures |
 | Marginal notes, captions | **IM Fell English** italic | Real 17th-century Fell types; our "hand" (like Every's Palmer script) |
@@ -235,7 +236,7 @@ All faces are open source (OFL). Self-host the `woff2` files; do not call Google
 - Use old-style figures (`onum`) in prose, lining tabular figures (`lnum`, `tnum`) in tables and the app.
 - Section labels: small caps with 0.12em tracking and a Roman numeral, e.g. `I · THE PROBLEM`.
 - Long text measure: 60–70 characters (`spacing.measure`).
-- First paragraph of an article starts with a 3-line rubric drop cap.
+- First paragraph of an article starts with a 3-line minium drop cap.
 - Pull quotes are real citations: quote, then `— Source` in small caps.
 
 ## Layout
@@ -288,13 +289,13 @@ Token mapping into the web-app CSS variables (`src/styles/globals.css` names):
 | `--primary` | `#1E3A7B` | `#8EA8E6` |
 | `--border` | `#D9CDB6` | `#3A332A` |
 | `--ring` | `#1E3A7B` at 55% | `#8EA8E6` at 60% |
-| `--destructive` | `#A8321F` | `#E07A5F` |
+| `--destructive` | `#C2410C` | `#F08A4B` |
 | `--radius` | `0.25rem` | `0.25rem` |
 
 **Brand components (landing).**
-- **Drop cap**: first letter, Cormorant, 3 lines tall, rubric red.
+- **Drop cap**: first letter, Cormorant, 3 lines tall, minium.
 - **Marginal note**: IM Fell italic, gold-ink, in the right column, with a small ☞.
-- **Citation card**: a framed quote of what ChatGPT / Gemini / Claude said about the client, the engine named in small caps, our client's name in rubric. This is the proof object of the brand.
+- **Citation card**: a framed quote of what ChatGPT / Gemini / Claude said about the client, the engine named in small caps, our client's name in minium. This is the proof object of the brand.
 - **Folio label**: `II · FOUND` — small caps, Roman numeral, gold rule above.
 - **Framed artwork**: image + 1px gold inset rule + IM Fell caption with "Made with AI" credit.
 
@@ -324,7 +325,7 @@ Three art styles. Pick one per piece; don't mix inside one image.
 | Style | Use | Look |
 |---|---|---|
 | **A · Fresco** | Hero images, case-study covers, OG images | Raphael / Botticelli painting, warm light, gold leaf details, one modern object |
-| **B · Engraving** | Blog figures, icons, app empty states, social | Dürer-style copperplate: black ink cross-hatching on parchment, rubric red as the only color |
+| **B · Engraving** | Blog figures, icons, app empty states, social | Dürer-style copperplate: black ink cross-hatching on parchment, minium orange as the only color |
 | **C · Codex** | Diagrams that explain (GEO stages, how AI cites) | Leonardo notebook: sepia ink sketch, geometric construction lines, on aged paper |
 
 **Sizes.** Hero 16:9 (2400×1350), OG 1.91:1 (1200×630), square 1:1 (1080) for social, portrait 4:5 for case-study covers, wide 16:5 for section banners.
@@ -337,7 +338,7 @@ Fill the slots. Keep the style block word for word so every image looks like one
 [SUBJECT], [MODERN ELEMENT], [COMPOSITION].
 Style: [STYLE BLOCK].
 Palette: parchment cream #F5EFE3, iron-gall ink #1C1712, lapis blue #1E3A7B,
-gold leaf #B8892B, vermilion #A8321F. Muted, warm, no neon.
+gold leaf #B8892B, minium orange #C2410C. Muted, warm, no neon.
 Aspect ratio [RATIO]. No text, no letters, no logos, no watermark, no frame.
 ```
 
