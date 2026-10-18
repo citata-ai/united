@@ -33,7 +33,14 @@ Analytics Engine columns:
 | `double1` | 1 (count)                                                    |
 | `double2` | HTTP status                                                  |
 
-Weekly report: `python3 tools/ai-visibility/traffic.py --days 7`. Token: Cloudflare account token `citata-ai-traffic-read` (Account Analytics Read only, expires 2027-10-18), in the macOS Keychain as service `citata/CF_ANALYTICS_TOKEN`. Move it to Infisical project `citata` when agents can write there.
+Weekly report:
+
+```sh
+SPARK_INFISICAL_PROJECT_ID=62010fdb-0173-4156-b434-6f5dd884f359 \
+  spark run -- python3 tools/ai-visibility/traffic.py --days 7
+```
+
+Token: `CF_ANALYTICS_TOKEN` in Infisical project `citata`, env `prod`. It is the Cloudflare account token `citata-ai-traffic-read` (Account Analytics Read only, expires 2027-10-18). Agent identity `cosmos-agent-optimus` has the Developer role on the project (2026-10-18).
 
 Watch for fake bots: anyone can send a GPTBot or ClaudeBot user agent. Scanners do this to probe `/.env`. The report counts only HTTP 200 rows. Our own GEO audits (`geo audit`) also send bot user agents; ignore the days we run them.
 

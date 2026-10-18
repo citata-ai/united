@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """AI traffic on citata.ai from Analytics Engine: AI crawlers and AI referrals.
 
-Usage: python3 tools/ai-visibility/traffic.py [--days 7]
+Usage:
+  SPARK_INFISICAL_PROJECT_ID=62010fdb-0173-4156-b434-6f5dd884f359 \
+    spark run -- python3 tools/ai-visibility/traffic.py [--days 7]
 
-Token: env CF_ANALYTICS_TOKEN, else macOS Keychain service "citata/CF_ANALYTICS_TOKEN"
-(Cloudflare token "citata-ai-traffic-read", Account Analytics Read, expires 2027-10-18).
+Token: env CF_ANALYTICS_TOKEN from Infisical project citata, env prod (Cloudflare token
+"citata-ai-traffic-read", Account Analytics Read, expires 2027-10-18). Fallback: macOS
+Keychain service "citata/CF_ANALYTICS_TOKEN".
 Only HTTP 200 rows count: bots that probe /.env and other missing files are scanners
 with a fake user agent, not AI crawlers. See docs/ai-traffic.md.
 """
