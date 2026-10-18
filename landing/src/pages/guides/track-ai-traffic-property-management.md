@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/Guide.astro
-title: "How to Track AI Traffic for a Property Management Company — citata.ai"
+title: "How to Track AI Traffic for a Property Management Company — Citata.ai"
 description: "Track visits from ChatGPT, Gemini and Perplexity in GA4, see AI crawlers, ask landlords how they found you, and check each month if AI names your company."
 headline: "How to Track AI Traffic and AI Mentions"
-dek: "Three signals, five steps and one monthly scorecard, with the setup we use on citata.ai."
+dek: "Three signals, five steps and one monthly scorecard, with the setup we use on Citata.ai."
 published: "2026-10-18"
 updated: "2026-10-18"
 answer: "Track 3 signals: visits from AI assistants, AI crawler visits to your pages, and a 'how did you hear about us' question on your landlord form. GA4 now has an AI Assistant channel, and a custom channel group catches the rest. To check if AI names you, ask the same landlord questions in ChatGPT, Gemini, Claude and Perplexity each month and write down who they name. Bing Webmaster Tools also shows how often Copilot cites your pages."
@@ -130,14 +130,14 @@ A monthly scorecard puts the 3 signals on one page. Fill it in on the same day e
 | Answers that link your site | Manual prompt check |  |  |
 | Copilot citations | Bing Webmaster Tools |  |  |
 
-## How we track AI traffic on citata.ai
+## How we track AI traffic on Citata.ai
 
-We use the same 3 signals on citata.ai. Our setup is small and cheap.
+We use the same 3 signals on Citata.ai. Our setup is small and cheap.
 
 - **Cloudflare Worker.** Our site runs on a Cloudflare Worker. It checks each page request against a list of AI bots and AI referrers. It writes each AI hit to Workers Analytics Engine, with the source, the page and the status.
 - **Ahrefs Web Analytics.** It is free for sites with verified ownership and uses no cookies (Ahrefs). It shows which AI chatbots send visits.
 - **"How did you hear about us."** Our audit request email has this line. The buyer fills it in.
 
-Our baseline is honest. On 2026-10-18 we asked 20 prompts on ChatGPT, Gemini and Claude, 2 runs each. AI named citata.ai in 0 of 108 non-brand answers (our data, 2026-10). It also mixed us up with Citate.ai. We will measure again with the same prompts and report the result.
+Our baseline is honest. On 2026-10-18 we asked 20 prompts on ChatGPT, Gemini and Claude, 2 runs each. AI named Citata.ai in 0 of 108 non-brand answers (our data, 2026-10). It also mixed us up with Citate.ai. We will measure again with the same prompts and report the result.
 
 If you want this check done for you, we run a [free AI visibility audit](/property-management). It covers 20 landlord questions on 4 AI engines and gives you your top 5 fixes.

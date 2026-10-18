@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Guide.astro
-title: "How Landlords Use ChatGPT to Choose a Property Manager — citata.ai"
+title: "How Landlords Use ChatGPT to Choose a Property Manager — Citata.ai"
 description: "Landlords ask ChatGPT, Gemini and Google AI for a property manager by city, fee and need. See what they ask, which sources AI reads and how to get named."
 headline: "How Landlords Use AI to Choose a Property Manager"
 dek: "Landlords ask ChatGPT for a short list. Here is what they ask and where the names come from."
@@ -31,7 +31,7 @@ sources:
     url: "https://ahrefs.com/blog/best-lists-research/"
   - label: "Peek: AI Discovery Black Book, third edition (summary)"
     url: "https://www.peek.us/llms-full.txt"
-  - label: "citata.ai: Fridman Properties case study (AI baseline, 2026-10-16)"
+  - label: "Citata.ai: Fridman Properties case study (AI baseline, 2026-10-16)"
     url: "https://citata.ai/case-studies/fridman-properties"
 ---
 
@@ -113,7 +113,7 @@ For a full step list, see our guide on [why landlord leads are dropping](/guides
 
 The baseline showed us where the names come from: manager sites, Yelp, Expertise.com and Thumbtack. On 2026-10-16, AI named Fridman Properties in 8 of 132 non-brand landlord answers (our data). For the Section 8 prompt, it was named in 0 of 6 answers.
 
-Fridman Properties is a Chicago-area manager with 144 units. Related party: the owner of Fridman Properties is also the CEO of MyRemotely, a partner of citata.ai.
+Fridman Properties is a Chicago-area manager with 144 units. Related party: the owner of Fridman Properties is also the CEO of MyRemotely, a partner of Citata.ai.
 
 We have a plan, but no result yet. We will publish the 90-day result. Read the [Fridman Properties case study](/case-studies/fridman-properties) for the full baseline.
 

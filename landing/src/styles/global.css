@@ -21,7 +21,8 @@
 @font-face {
   font-family: "Paper Mono";
   src: url("/fonts/PaperMono-Regular.woff2") format("woff2");
-  font-display: swap;
+  /* Preloaded; "optional" never swaps late, so mono lines cannot shift the layout. */
+  font-display: optional;
 }
 
 @theme {

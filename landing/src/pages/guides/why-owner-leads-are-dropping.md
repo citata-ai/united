@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Guide.astro
-title: "Why Landlord Leads Are Dropping for Property Managers — citata.ai"
+title: "Why Landlord Leads Are Dropping for Property Managers — Citata.ai"
 description: "Landlord leads from search fall because fewer people search and AI answers take the click. See the data, why SEO still matters, and the steps to take now."
 headline: "Why Landlord Leads From Google Are Dropping"
 dek: "Fewer landlords search, fewer searches end in a click, and AI answers pick the names."
@@ -31,7 +31,7 @@ sources:
     url: "https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/"
   - label: "Ahrefs: AI search traffic and conversions on ahrefs.com (2025-06-16)"
     url: "https://ahrefs.com/blog/ai-search-traffic-conversions-ahrefs/"
-  - label: "citata.ai: Fridman Properties case study (baseline 2026-10-16)"
+  - label: "Citata.ai: Fridman Properties case study (baseline 2026-10-16)"
     url: "https://citata.ai/case-studies/fridman-properties"
 ---
 
@@ -130,10 +130,10 @@ Watch for two gaps. ChatGPT drops the referrer on some links. AI Overviews and A
 
 Run the same prompts each month and keep the answers. AI answers change from run to run. A trend over 3 months tells you more than one result.
 
-We track our own site this way. In our first check on 2026-10-18, AI named citata.ai in 0 of 108 non-brand answers. We will publish the next number. The setup is in our guide to [tracking AI traffic for property management](/guides/track-ai-traffic-property-management).
+We track our own site this way. In our first check on 2026-10-18, AI named Citata.ai in 0 of 108 non-brand answers. We will publish the next number. The setup is in our guide to [tracking AI traffic for property management](/guides/track-ai-traffic-property-management).
 
 ## Where to start this week
 
 Start with one test you can run in 30 minutes. Open ChatGPT, Gemini and AI Mode. Ask "best property management company in [your city] for a single-family rental". Write down who gets named and which sites get cited.
 
-That list shows you where landlords hear about your competitors. citata.ai runs this audit for PM companies and turns the gaps into a page and listing plan. You can also do it yourself with the steps above.
+That list shows you where landlords hear about your competitors. Citata.ai runs this audit for PM companies and turns the gaps into a page and listing plan. You can also do it yourself with the steps above.

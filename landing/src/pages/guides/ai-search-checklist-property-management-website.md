@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Guide.astro
-title: "AI Search Checklist for a Property Management Website — citata.ai"
+title: "AI Search Checklist for a Property Management Website — Citata.ai"
 description: "What a property management website needs so ChatGPT, Gemini and AI Overviews can read, trust and cite it: crawler access, index, schema, llms.txt, landlord pages and exact fee answers."
 headline: "The AI Search Checklist for Property Management Websites"
 dek: "Twelve checks for a 50 to 500 door manager, tested first on our own site."
@@ -17,7 +17,7 @@ faq:
   - q: "What schema type fits a property management company?"
     a: "Schema.org lists RealEstateAgent as a type of LocalBusiness, and it is the closest fit we found. Add FAQPage, Service and BreadcrumbList where the page content matches. Google says no special schema is needed for AI features, so schema helps clarity, not ranking."
   - q: "Is a high technical GEO score enough to get named by ChatGPT?"
-    a: "No. citata.ai scored 96/100 on the geo-optimizer audit on 2026-10-18, after a 0 of 108 baseline in AI answers. Technical work lets AI read the site. Mentions on the sites that AI cites and exact answer pages decide if AI names you."
+    a: "No. Citata.ai scored 96/100 on the geo-optimizer audit on 2026-10-18, after a 0 of 108 baseline in AI answers. Technical work lets AI read the site. Mentions on the sites that AI cites and exact answer pages decide if AI names you."
 sources:
   - label: "Google Search Central: Google's AI optimization guide"
     url: "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
@@ -167,9 +167,9 @@ AI cites pages that put the answer first and keep each section on one topic. Use
 
 You also do not need to cut content into tiny chunks (Google, AI optimization guide). Write for landlords first.
 
-## Worked example: what did citata.ai change on its own site?
+## Worked example: what did Citata.ai change on its own site?
 
-citata.ai ran this checklist on itself first. On 2026-10-18 our score on the open-source geo-optimizer audit went from 58 to 96 out of 100 (our data).
+Citata.ai ran this checklist on itself first. On 2026-10-18 our score on the open-source geo-optimizer audit went from 58 to 96 out of 100 (our data).
 
 What the site has now:
 
@@ -179,8 +179,8 @@ What the site has now:
 - **Organization, FAQPage, Article, Service and WebSite schema**, plus an About page with the founder.
 - **Google Search Console and Bing Webmaster Tools**, sitemap submitted to both.
 
-The honest part: a high technical score did not make AI name us. In the baseline, ChatGPT, Gemini and Claude named citata.ai in 0 of 108 non-brand answers (our data, 2026-10-18). The engines cited clearleaddigital.com in 22 answers and firstpagesage.com in 15. Technical work is necessary, but it is not enough. AI also needs mentions on the sites it already cites and exact answer pages.
+The honest part: a high technical score did not make AI name us. In the baseline, ChatGPT, Gemini and Claude named Citata.ai in 0 of 108 non-brand answers (our data, 2026-10-18). The engines cited clearleaddigital.com in 22 answers and firstpagesage.com in 15. Technical work is necessary, but it is not enough. AI also needs mentions on the sites it already cites and exact answer pages.
 
 To see if AI names you now, read [how to track AI traffic and mentions](/guides/track-ai-traffic-property-management).
 
-Tao, founder, citata.ai
+Tao, founder, Citata.ai

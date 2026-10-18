@@ -29,18 +29,33 @@ export default {
       return staged;
     }
     if (isTracked(url.pathname)) record(request, url, response.status, env);
-    return secure(response);
+    return secure(response, url.pathname);
   },
 };
 
 /** Security headers on every response (HSTS, no framing, no MIME sniffing, strict referrer). */
-function secure(/** @type {Response} */ response) {
+function secure(/** @type {Response} */ response, /** @type {string} */ path) {
   const out = new Response(response.body, response);
   out.headers.set("Strict-Transport-Security", "max-age=31536000");
   out.headers.set("X-Frame-Options", "SAMEORIGIN");
   out.headers.set("X-Content-Type-Options", "nosniff");
   out.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  const cache = cacheControl(path);
+  if (cache && response.ok) out.headers.set("Cache-Control", cache);
   return out;
+}
+
+/**
+ * Long browser cache for static files. Fonts never change name; images and figure JS
+ * may be replaced under the same name, so they get 30 days and 1 day.
+ * @param {string} path
+ */
+export function cacheControl(path) {
+  if (path.startsWith("/fonts/")) return "public, max-age=31536000, immutable";
+  if (/^\/(img|og)\//.test(path) || /\.(svg|png|ico|webp|jpg)$/.test(path))
+    return "public, max-age=2592000";
+  if (path.startsWith("/mechanism/")) return "public, max-age=86400";
+  return null;
 }
 
 /** An agent asks for Markdown: "Accept: text/markdown" on a page URL (no file extension). */

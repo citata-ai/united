@@ -66,7 +66,7 @@ writeFileSync(
   `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>citata.ai</title>
+    <title>Citata.ai</title>
     <link>${site}/</link>
     <atom:link href="${site}/rss.xml" rel="self" type="application/rss+xml" />
     <description>GEO for property management companies: how AI assistants pick a property manager, and what we change to get our clients named.</description>
@@ -75,7 +75,7 @@ writeFileSync(
 ${items
   .map(
     (p) => `    <item>
-      <title>${esc(p.title.replace(/ — citata\.ai$/, ""))}</title>
+      <title>${esc(p.title.replace(/ — Citata\.ai$/, ""))}</title>
       <link>${site}${p.path}</link>
       <guid>${site}${p.path}</guid>
       <pubDate>${rfc822(p.modified)}</pubDate>
