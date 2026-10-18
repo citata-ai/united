@@ -1,0 +1,287 @@
+// Pure math for the free tools under /tools. No DOM, no network: the pages import it at build
+// time (worked examples, first render) and in the browser (the calculator islands).
+// Tests: landing/calculators.test.ts.
+
+/** A number that is finite and 0 or more. Empty or bad input counts as 0. */
+const pos = (n: number | null | undefined): number =>
+  typeof n === "number" && Number.isFinite(n) && n > 0 ? n : 0;
+
+const cents = (n: number): number => Math.round(n * 100) / 100;
+
+// ---------------------------------------------------------------------------
+// Property management fee calculator
+// ---------------------------------------------------------------------------
+
+export type FeeModel = "percent" | "flat";
+
+export interface FeeInput {
+  /** Monthly rent per unit, USD. */
+  rent: number;
+  units: number;
+  model: FeeModel;
+  /** Management fee, percent of rent collected (model "percent"). */
+  percent: number;
+  /** Management fee, USD per door per month (model "flat"). Charged on every door, every month. */
+  flat: number;
+  /** Leasing fee, percent of one month's rent, per new tenant placed. */
+  leasingPercent: number;
+  newLeasesPerYear: number;
+  /** Lease renewal fee, USD per renewal. */
+  renewalFee: number;
+  renewalsPerYear: number;
+  /** Vacant unit-months per year, all units together. Vacant months bring no rent. */
+  vacantMonthsPerYear: number;
+  /** Vacancy fee, USD per vacant unit per month. 0 if the contract has none. */
+  vacancyFee: number;
+}
+
+export interface FeeResult {
+  /** Rent if every unit is let every month. */
+  scheduledRent: number;
+  /** Rent after vacant months. */
+  collectedRent: number;
+  management: number;
+  leasing: number;
+  renewals: number;
+  vacancy: number;
+  totalYear: number;
+  totalMonth: number;
+  perDoorMonth: number;
+  /** Total fees as a percent of rent collected. */
+  effectivePercent: number;
+}
+
+export function computeFees(input: FeeInput): FeeResult {
+  const rent = pos(input.rent);
+  const units = Math.floor(pos(input.units));
+  const doorMonths = units * 12;
+  const vacant = Math.min(pos(input.vacantMonthsPerYear), doorMonths);
+  const scheduledRent = rent * doorMonths;
+  const collectedRent = rent * (doorMonths - vacant);
+  const management =
+    input.model === "flat"
+      ? pos(input.flat) * doorMonths
+      : (collectedRent * pos(input.percent)) / 100;
+  const leasing = ((rent * pos(input.leasingPercent)) / 100) * pos(input.newLeasesPerYear);
+  const renewals = pos(input.renewalFee) * pos(input.renewalsPerYear);
+  const vacancy = pos(input.vacancyFee) * vacant;
+  const totalYear = management + leasing + renewals + vacancy;
+  return {
+    scheduledRent: cents(scheduledRent),
+    collectedRent: cents(collectedRent),
+    management: cents(management),
+    leasing: cents(leasing),
+    renewals: cents(renewals),
+    vacancy: cents(vacancy),
+    totalYear: cents(totalYear),
+    totalMonth: cents(totalYear / 12),
+    perDoorMonth: units ? cents(totalYear / doorMonths) : 0,
+    effectivePercent: collectedRent ? Math.round((totalYear / collectedRent) * 1000) / 10 : 0,
+  };
+}
+
+/**
+ * Typical US fee levels. Only numbers we read on the source page (checked 2026-10-19).
+ * A fee type with no verified number (for example vacancy fees) has no entry.
+ */
+export const typical = {
+  /** All Property Management: "between 8 and 12% of the monthly rental value". */
+  percentRange: { low: 8, high: 12, source: "All Property Management" },
+  /** iPropertyManagement: average advertised percent fee 8.49%, lowest 3.75%, highest 14.0%. */
+  percentAverage: { value: 8.49, low: 3.75, high: 14, source: "iPropertyManagement" },
+  /** iPropertyManagement: average flat fee $101.04 per unit per month. */
+  flatAverage: { value: 101.04, source: "iPropertyManagement" },
+  /** All Property Management: 50–100% of one month's rent per new tenant. */
+  leasingRange: { low: 50, high: 100, source: "All Property Management" },
+  /** iPropertyManagement: 70.6% with full management, 81.8% for placement only. */
+  leasingAverage: { value: 70.6, source: "iPropertyManagement" },
+  /** iPropertyManagement: average flat lease renewal fee $231.77. */
+  renewalAverage: { value: 231.77, source: "iPropertyManagement" },
+} as const;
+
+export type Position = "below" | "within" | "above";
+
+export const position = (value: number, low: number, high: number): Position =>
+  value < low ? "below" : value > high ? "above" : "within";
+
+/** Rent at which a flat fee per door costs the same as a percent fee. */
+export const breakEvenRent = (flat: number, percent: number): number =>
+  percent > 0 ? cents((flat * 100) / percent) : 0;
+
+const word = { below: "below", within: "inside", above: "above" } as const;
+const vs = (diff: number) => (diff >= 0 ? `${usd(cents(diff))} more` : `${usd(cents(-diff))} less`);
+
+/** Plain sentences that compare the inputs with the typical levels above. */
+export function feeComparisons(input: FeeInput): string[] {
+  const out: string[] = [];
+  const t = typical;
+  if (input.model === "percent") {
+    const pc = pos(input.percent);
+    out.push(
+      `Management fee ${pc}%: ${word[position(pc, t.percentRange.low, t.percentRange.high)]} the typical ${t.percentRange.low}–${t.percentRange.high}% range (${t.percentRange.source}). The average advertised rate is ${t.percentAverage.value}% (${t.percentAverage.source}).`,
+    );
+  } else {
+    const flat = pos(input.flat);
+    const atAverage = cents((pos(input.rent) * t.percentAverage.value) / 100);
+    out.push(
+      `Flat fee ${usd(flat)} per door: ${vs(flat - t.flatAverage.value)} than the ${usd(t.flatAverage.value)} average (${t.flatAverage.source}). At your rent, the average ${t.percentAverage.value}% fee is ${usd(atAverage)} per door.`,
+    );
+  }
+  const lp = pos(input.leasingPercent);
+  if (lp > 0) {
+    out.push(
+      `Leasing fee ${lp}% of one month's rent: ${word[position(lp, t.leasingRange.low, t.leasingRange.high)]} the typical ${t.leasingRange.low}–${t.leasingRange.high}% range (${t.leasingRange.source}). The average with full management is ${t.leasingAverage.value}% (${t.leasingAverage.source}).`,
+    );
+  }
+  const rf = pos(input.renewalFee);
+  if (rf > 0) {
+    out.push(
+      `Renewal fee ${usd(rf)}: ${vs(rf - t.renewalAverage.value)} than the ${usd(t.renewalAverage.value)} average flat renewal fee (${t.renewalAverage.source}).`,
+    );
+  }
+  if (pos(input.vacancyFee) > 0) {
+    out.push("Vacancy fee: we found no verified US average, so we show no comparison.");
+  }
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// Section 8 (Housing Choice Voucher) rent calculator
+// Rules: 24 CFR 5.628 (TTP), 5.630 (minimum rent), 982.505 (HAP), 982.508 (40% at first lease),
+// 982.515 (family share), HUD HCV Guidebook "Calculating Rent and HAP Payments" (2019).
+// ---------------------------------------------------------------------------
+
+export interface VoucherInput {
+  /** Rent to owner on the lease, per month. */
+  contractRent: number;
+  /** Housing authority utility allowance for tenant-paid utilities, per month. */
+  utilityAllowance: number;
+  /** Family's adjusted monthly income (after HUD deductions). */
+  adjustedMonthlyIncome: number;
+  /** Family's gross monthly income, for the 10% test. Null if unknown: the test is skipped. */
+  grossMonthlyIncome: number | null;
+  /** Housing authority minimum rent, $0 to $50 (24 CFR 5.630). */
+  minimumRent: number;
+  /** Payment standard for the family (lower of voucher size and unit size). */
+  paymentStandard: number;
+  /** True for the first assisted lease on this unit: the 40% check applies. */
+  firstLease: boolean;
+}
+
+export type TtpBasis = "30% of adjusted income" | "10% of gross income" | "minimum rent";
+
+export interface VoucherResult {
+  grossRent: number;
+  thirtyPercentAdjusted: number;
+  tenPercentGross: number | null;
+  minimumRent: number;
+  /** Total tenant payment, rounded to the nearest dollar (24 CFR 5.628). */
+  ttp: number;
+  ttpBasis: TtpBasis;
+  /** Housing assistance payment, the housing authority's share. */
+  hap: number;
+  /** Part of the HAP paid to the owner (never more than the contract rent). */
+  hapToOwner: number;
+  /** HAP above the contract rent, paid to the family or the utility company. */
+  utilityReimbursement: number;
+  /** Gross rent minus HAP: what the family pays for rent and utilities together. */
+  familyShare: number;
+  /** Part of the family share paid to the owner. */
+  tenantRentToOwner: number;
+  /** Gross rent above the payment standard. The family pays it. */
+  overPaymentStandard: number;
+  /** 40% of adjusted monthly income. */
+  fortyPercentLimit: number;
+  /** The 40% check applies at first lease when the gross rent is above the payment standard. */
+  fortyPercentApplies: boolean;
+  fortyPercentOk: boolean;
+  /** Highest gross rent that passes the 40% check at first lease. */
+  maxGrossRentFirstLease: number;
+}
+
+export function computeVoucher(input: VoucherInput): VoucherResult {
+  const contractRent = pos(input.contractRent);
+  const grossRent = contractRent + pos(input.utilityAllowance);
+  const adjusted = pos(input.adjustedMonthlyIncome);
+  const thirty = adjusted * 0.3;
+  const ten = input.grossMonthlyIncome == null ? null : pos(input.grossMonthlyIncome) * 0.1;
+  const minimumRent = Math.min(pos(input.minimumRent), 50);
+  const options: Array<[number, TtpBasis]> = [
+    [thirty, "30% of adjusted income"],
+    ...(ten == null ? [] : ([[ten, "10% of gross income"]] as Array<[number, TtpBasis]>)),
+    [minimumRent, "minimum rent"],
+  ];
+  const [top, ttpBasis] = options.reduce((a, b) => (b[0] > a[0] ? b : a));
+  const ttp = Math.round(top);
+  const paymentStandard = pos(input.paymentStandard);
+  const hap = Math.max(0, Math.min(paymentStandard, grossRent) - ttp);
+  const hapToOwner = Math.min(hap, contractRent);
+  const familyShare = grossRent - hap;
+  const fortyPercentLimit = cents(adjusted * 0.4);
+  const fortyPercentApplies = input.firstLease && grossRent > paymentStandard;
+  return {
+    grossRent: cents(grossRent),
+    thirtyPercentAdjusted: cents(thirty),
+    tenPercentGross: ten == null ? null : cents(ten),
+    minimumRent,
+    ttp,
+    ttpBasis,
+    hap: cents(hap),
+    hapToOwner: cents(hapToOwner),
+    utilityReimbursement: cents(hap - hapToOwner),
+    familyShare: cents(familyShare),
+    tenantRentToOwner: cents(contractRent - hapToOwner),
+    overPaymentStandard: cents(Math.max(0, grossRent - paymentStandard)),
+    fortyPercentLimit,
+    fortyPercentApplies,
+    fortyPercentOk: !fortyPercentApplies || familyShare <= fortyPercentLimit,
+    maxGrossRentFirstLease: cents(paymentStandard + Math.max(0, fortyPercentLimit - ttp)),
+  };
+}
+
+/** One plain sentence on the 40% check (24 CFR 982.508). */
+export function fortyPercentText(r: VoucherResult, firstLease: boolean): string {
+  if (!firstLease) return "Does not apply: the 40% check is only for the first assisted lease.";
+  if (!r.fortyPercentApplies) {
+    return `Passes: the gross rent is not above the payment standard, so the family pays the TTP of ${usd(r.ttp)}.`;
+  }
+  return r.fortyPercentOk
+    ? `Passes: the family share of ${usd(r.familyShare)} is not more than 40% of adjusted income (${usd(r.fortyPercentLimit)}).`
+    : `Fails: the family share of ${usd(r.familyShare)} is more than 40% of adjusted income (${usd(r.fortyPercentLimit)}). The housing authority will not approve the unit at this rent. Highest gross rent that passes: ${usd(r.maxGrossRentFirstLease)}.`;
+}
+
+// ---------------------------------------------------------------------------
+// Shared formatting
+// ---------------------------------------------------------------------------
+
+export const usd = (n: number): string =>
+  "$" +
+  n.toLocaleString("en-US", {
+    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
+    maximumFractionDigits: 2,
+  });
+
+/** Worked examples on the pages. The tools start with the same numbers. */
+export const feeExample: FeeInput = {
+  rent: 1800,
+  units: 10,
+  model: "percent",
+  percent: 9,
+  flat: 100,
+  leasingPercent: 75,
+  newLeasesPerYear: 3,
+  renewalFee: 250,
+  renewalsPerYear: 7,
+  vacantMonthsPerYear: 3,
+  vacancyFee: 0,
+};
+
+export const voucherExample: VoucherInput = {
+  contractRent: 1500,
+  utilityAllowance: 150,
+  adjustedMonthlyIncome: 2000,
+  grossMonthlyIncome: 2400,
+  minimumRent: 50,
+  paymentStandard: 1600,
+  firstLease: true,
+};

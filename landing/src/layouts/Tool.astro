@@ -1,0 +1,153 @@
+---
+// Layout for a free tool page under /tools (H02-E1). GEO rules as in Guide.astro: answer first,
+// a worked example in plain HTML (AI crawlers that do not run JavaScript still get the answer),
+// visible dates, FAQPage + WebApplication + BreadcrumbList JSON-LD, sources at the end.
+// Slots: "example" (worked example), "tool" (the calculator island), default (extra text).
+import AuditCta from "../components/AuditCta.astro";
+import ToolCta from "../components/ToolCta.astro";
+import Base from "./Base.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  headline: string;
+  dek: string;
+  published: string;
+  updated: string;
+  answer: string;
+  /** One line under the short answer, for example the "estimate only" note. */
+  note?: string;
+  faq: { q: string; a: string }[];
+  sources: { label: string; url: string }[];
+  /** WebApplication name and what it computes. */
+  appName: string;
+  appDescription: string;
+}
+const p = Astro.props;
+const path = Astro.url.pathname.replace(/\.html$/, "");
+const pageUrl = new URL(path, Astro.site).toString();
+
+const app = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: p.appName,
+  description: p.appDescription,
+  url: pageUrl,
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  browserRequirements: "Requires JavaScript. Works offline after the page loads.",
+  isAccessibleForFree: true,
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  inLanguage: "en",
+  datePublished: p.published,
+  dateModified: p.updated,
+  author: { "@id": "https://citata.ai/about#founder" },
+  publisher: { "@id": "https://citata.ai/#org" },
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: p.faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+const breadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Citata.ai", item: "https://citata.ai/" },
+    { "@type": "ListItem", position: 2, name: "Free tools", item: "https://citata.ai/tools" },
+    { "@type": "ListItem", position: 3, name: p.headline, item: pageUrl },
+  ],
+};
+---
+
+<Base title={p.title} description={p.description} modified={p.updated}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(app)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbs)} />
+  </Fragment>
+  <main class="wrap">
+    <article class="mx-auto max-w-[1080px] pt-12 pb-6">
+      <header class="rounded-lg bg-sky/20 p-6 sm:p-10">
+        <p class="meta">
+          <a href="/tools" class="text-minium underline underline-offset-2">Free tools</a> · for landlords and property managers
+        </p>
+        <h1 class="mt-4 max-w-4xl text-[34px] leading-[1.05] sm:text-[52px]">{p.headline}</h1>
+        <p class="mt-4 max-w-3xl text-[19px] text-muted sm:text-[21px]">{p.dek}</p>
+        <p class="meta mt-5">
+          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Published
+          <time datetime={p.published}>{p.published}</time> · Updated
+          <time datetime={p.updated}>{p.updated}</time>
+        </p>
+      </header>
+
+      <aside id="short-answer" aria-label="Short answer" class="mt-8 scroll-mt-28 rounded-md bg-mint/35 p-6">
+        <p class="meta text-minium">Short answer</p>
+        <p class="mt-2 max-w-[70ch] text-[18px]">{p.answer}</p>
+        {p.note && <p class="mt-3 text-[16px] font-medium">{p.note}</p>}
+      </aside>
+
+      <section aria-labelledby="tool-h" class="mt-10">
+        <h2 id="tool-h" class="scroll-mt-28 text-[28px] leading-tight sm:text-[32px]">Calculator</h2>
+        <p class="mt-2 text-[16px] text-muted">
+          Change any number. The results update as you type. The tool starts with the worked example
+          below.
+        </p>
+        <div class="mt-4">
+          <slot name="tool" />
+        </div>
+      </section>
+
+      <section aria-labelledby="example-h" class="prose-c mt-12 max-w-none">
+        <h2 id="example-h" class="scroll-mt-28">Worked example</h2>
+        <slot name="example" />
+      </section>
+
+      <div class="prose-c max-w-none">
+        <slot />
+      </div>
+
+      <ToolCta />
+
+      <section aria-labelledby="faq-h" class="mt-14 border-t border-rule pt-10">
+        <h2 id="faq-h" class="scroll-mt-28 text-[32px] leading-tight">Questions</h2>
+        <div class="mt-6 border-t border-rule">
+          {
+            p.faq.map((f, i) => (
+              <details class="faq-item" name="toolfaq" open={i === 0}>
+                <summary>{f.q}</summary>
+                <p class="pb-6 text-[16px] text-muted">{f.a}</p>
+              </details>
+            ))
+          }
+        </div>
+      </section>
+
+      <section aria-labelledby="src-h" class="mt-12">
+        <h2 id="src-h" class="meta scroll-mt-28">Sources</h2>
+        <ol class="mt-3 list-decimal space-y-1 pl-5 text-[14px] text-muted">
+          {
+            p.sources.map((s) => (
+              <li>
+                <a class="link" href={s.url}>
+                  {s.label}
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+        <p class="mt-4 max-w-3xl text-[13px] text-muted">
+          How we made this tool: AI agents wrote the code and the first draft from the sources above.
+          Unit tests check the math against the source examples, and Taras Kornichuk checks the page
+          before we publish it. This page is general information, not legal, tax or financial advice.
+        </p>
+      </section>
+    </article>
+
+    <AuditCta title="Does AI name your company? Find out for free." />
+  </main>
+</Base>

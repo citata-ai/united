@@ -1,0 +1,127 @@
+---
+// H02-E1 tool 1. Fee levels: only numbers read on the source pages on 2026-10-19
+// (iPropertyManagement research page, updated 2026-09-23; All Property Management guide).
+// No verified US vacancy fee level exists in these sources, so the page shows none.
+import FeeCalculator from "../../components/FeeCalculator.astro";
+import Tool from "../../layouts/Tool.astro";
+import { breakEvenRent, computeFees, feeExample as ex, typical, usd } from "../../lib/calculators.ts";
+import { toolsPublished } from "../../data/tools.ts";
+
+const r = computeFees(ex);
+const t = typical;
+const breakEven = breakEvenRent(t.flatAverage.value, t.percentAverage.value);
+const sources = [
+  {
+    label: "iPropertyManagement: Average Property Management Fees (722 branches, updated 2026-09-23)",
+    url: "https://ipropertymanagement.com/research/average-property-management-fees",
+  },
+  {
+    label: "All Property Management: How Much Do Property Managers Charge?",
+    url: "https://www.allpropertymanagement.com/resources/hiring-a-property-manager/how-much-do-property-managers-charge/",
+  },
+];
+const faq = [
+  {
+    q: "What is a normal property management fee?",
+    a: `Most residential managers charge ${t.percentRange.low}% to ${t.percentRange.high}% of monthly rent (All Property Management). In a sample of 722 branches, the average advertised rate was ${t.percentAverage.value}%, from ${t.percentAverage.low}% to ${t.percentAverage.high}% (iPropertyManagement, updated 2026-09-23).`,
+  },
+  {
+    q: "How much is a leasing fee?",
+    a: `A leasing fee (tenant placement fee) is usually ${t.leasingRange.low}% to ${t.leasingRange.high}% of one month's rent (All Property Management). The average is ${t.leasingAverage.value}% with full management and 81.8% for placement only (iPropertyManagement).`,
+  },
+  {
+    q: "How much is a lease renewal fee?",
+    a: `Among managers that charge a flat renewal fee, the average is ${usd(t.renewalAverage.value)} per renewal (iPropertyManagement). Some managers charge no renewal fee.`,
+  },
+  {
+    q: "Is a flat fee per door cheaper than a percent of rent?",
+    a: `It depends on the rent. The average flat fee is ${usd(t.flatAverage.value)} per door per month and the average percent fee is ${t.percentAverage.value}% (iPropertyManagement). The two cost the same at a rent of about ${usd(Math.round(breakEven))}. Above that rent, the average flat fee costs less.`,
+  },
+  {
+    q: "Why is my effective rate higher than the management fee?",
+    a: `Leasing, renewal and vacancy fees add to the monthly fee. In the worked example on this page, a ${ex.percent}% management fee becomes ${r.effectivePercent}% of rent collected after leasing and renewal fees.`,
+  },
+  {
+    q: "What does this calculator leave out?",
+    a: "Setup fees, maintenance markups, eviction fees and inspection fees. Managers that advertise a setup fee charge an average of $185.24 per contract (iPropertyManagement). Ask each manager for the full fee list in writing.",
+  },
+];
+---
+
+<Tool
+  title="Property Management Fee Calculator (Free, 2026) — Citata.ai"
+  description="Free property management fee calculator: monthly and yearly cost, effective % of rent, and typical US fees (8–12% of rent, leasing 50–100% of one month)."
+  headline="Property Management Fee Calculator"
+  dek="Put in your rent and the manager's fees. See what you pay each month and each year."
+  published={toolsPublished}
+  updated={toolsPublished}
+  answer={`Most US property managers charge ${t.percentRange.low}% to ${t.percentRange.high}% of monthly rent (All Property Management). In a sample of 722 branches, the average advertised rate was ${t.percentAverage.value}%, and flat-fee managers charged ${usd(t.flatAverage.value)} per door per month on average (iPropertyManagement). On top of that, a leasing fee is usually ${t.leasingRange.low}% to ${t.leasingRange.high}% of one month's rent per new tenant, and the average flat renewal fee is ${usd(t.renewalAverage.value)}. So the full cost is higher than the headline rate: in the example below, a ${ex.percent}% fee becomes ${r.effectivePercent}% of rent collected.`}
+  faq={faq}
+  sources={sources}
+  appName="Property Management Fee Calculator"
+  appDescription="Computes the monthly and yearly cost of a property manager from rent, units, management fee (percent or flat per door), leasing, renewal and vacancy fees, and compares the fees with typical US levels."
+>
+  <FeeCalculator slot="tool" />
+
+  <Fragment slot="example">
+    <p>
+      An owner has {ex.units} single-family rentals at {usd(ex.rent)} a month each. The manager
+      charges {ex.percent}% of rent collected, a leasing fee of {ex.leasingPercent}% of one month's
+      rent, and {usd(ex.renewalFee)} per lease renewal. In one year, {ex.newLeasesPerYear} tenants move
+      out and {ex.renewalsPerYear} renew. Each move-out leaves the home empty for 1 month, so the
+      homes are vacant {ex.vacantMonthsPerYear} months in total.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>How we get it</th><th>Per year</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rent collected</td><td>{usd(ex.rent)} × ({ex.units * 12} − {ex.vacantMonthsPerYear}) months</td><td>{usd(r.collectedRent)}</td></tr>
+        <tr><td>Management fee</td><td>{ex.percent}% × {usd(r.collectedRent)}</td><td>{usd(r.management)}</td></tr>
+        <tr><td>Leasing fees</td><td>{ex.leasingPercent}% × {usd(ex.rent)} × {ex.newLeasesPerYear} new tenants</td><td>{usd(r.leasing)}</td></tr>
+        <tr><td>Renewal fees</td><td>{usd(ex.renewalFee)} × {ex.renewalsPerYear} renewals</td><td>{usd(r.renewals)}</td></tr>
+        <tr><td><strong>Total fees</strong></td><td>Sum of the 3 fees</td><td><strong>{usd(r.totalYear)}</strong></td></tr>
+      </tbody>
+    </table>
+    <p>
+      Result: the owner pays {usd(r.totalYear)} a year, or {usd(r.totalMonth)} a month. That is
+      {usd(r.perDoorMonth)} per door per month, and {r.effectivePercent}% of rent collected. The
+      headline fee is {ex.percent}%, so leasing and renewals add {Math.round((r.effectivePercent - ex.percent) * 10) / 10}
+      points.
+    </p>
+    <p>
+      Compared with typical US fees: the {ex.percent}% fee is inside the {t.percentRange.low}–{t.percentRange.high}%
+      range, and the {ex.leasingPercent}% leasing fee is inside the {t.leasingRange.low}–{t.leasingRange.high}%
+      range (All Property Management). The {usd(ex.renewalFee)} renewal fee is
+      {usd(Math.round((ex.renewalFee - t.renewalAverage.value) * 100) / 100)} more than the
+      {usd(t.renewalAverage.value)} average (iPropertyManagement).
+    </p>
+  </Fragment>
+
+  <h2>Typical US property management fees</h2>
+  <p>
+    Typical fee levels come from two public sources. We show only the numbers we read on those pages
+    on 2026-10-19.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Fee</th><th>Typical level</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Monthly management fee</td><td>{t.percentRange.low}–{t.percentRange.high}% of rent</td><td>All Property Management</td></tr>
+      <tr><td>Monthly management fee, average</td><td>{t.percentAverage.value}% (advertised {t.percentAverage.low}% to {t.percentAverage.high}%)</td><td>iPropertyManagement</td></tr>
+      <tr><td>Flat fee per door, average</td><td>{usd(t.flatAverage.value)} per month</td><td>iPropertyManagement</td></tr>
+      <tr><td>Leasing fee</td><td>{t.leasingRange.low}–{t.leasingRange.high}% of one month's rent</td><td>All Property Management</td></tr>
+      <tr><td>Leasing fee, average</td><td>{t.leasingAverage.value}% with management, 81.8% placement only</td><td>iPropertyManagement</td></tr>
+      <tr><td>Lease renewal fee, average</td><td>{usd(t.renewalAverage.value)} flat</td><td>iPropertyManagement</td></tr>
+      <tr><td>Setup fee, average</td><td>$185.24 per contract</td><td>iPropertyManagement</td></tr>
+      <tr><td>Vacancy fee</td><td>No verified US level</td><td>None found</td></tr>
+    </tbody>
+  </table>
+  <p>
+    Fees change by city, property type and service level. Use the calculator with the numbers from
+    each manager's written fee list. To check if a manager is a fit, read
+    <a href="/guides/how-owners-choose-a-property-manager-with-ai">how landlords use AI to choose a property manager</a>.
+    Section 8 landlord? Try the <a href="/tools/section-8-rent-calculator">Section 8 rent calculator</a>.
+  </p>
+</Tool>

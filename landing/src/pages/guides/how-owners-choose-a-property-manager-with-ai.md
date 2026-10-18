@@ -5,7 +5,7 @@ description: "Landlords ask ChatGPT, Gemini and Google AI for a property manager
 headline: "How Landlords Use AI to Choose a Property Manager"
 dek: "Landlords ask ChatGPT for a short list. Here is what they ask and where the names come from."
 published: "2026-10-18"
-updated: "2026-10-18"
+updated: "2026-10-19"
 answer: "Landlords ask ChatGPT, Gemini and Google AI questions like \"best property manager in Chicago for a single-family home\". The AI answer names a short list of companies and links a few sources. The engines pick names from manager websites, review sites such as Yelp, and directories such as Expertise.com and Thumbtack. A manager gets on that list with clear landlord pages, real reviews, complete directory profiles and the same name and address everywhere."
 faq:
   - q: "Do landlords really use ChatGPT to find a property manager?"
@@ -100,7 +100,7 @@ For landlords, the picture is different. In our Chicago test, manager websites w
 
 A firm gets into the AI answer when the engines find clear, matching facts about the company in many places. You cannot control the answer. You can improve the sources the engines read.
 
-1. **Write landlord pages with exact answers.** State your fee, leasing fee, contract length and service area in plain numbers. Add one page per city you serve, with real local facts.
+1. **Write landlord pages with exact answers.** State your fee, leasing fee, contract length and service area in plain numbers. Our free [fee calculator](/tools/property-management-fee-calculator) shows how landlords add up those fees. Add one page per city you serve, with real local facts.
 2. **Answer the special questions.** Write a clear page on Section 8 for landlords, out-of-state landlords and single-family homes, if you serve them. Have a lawyer check the legal parts.
 3. **Collect real landlord reviews.** Ask landlords, not only tenants, to review you on Google and Yelp. AI answers often quote star ratings and review counts.
 4. **Complete your directory profiles.** Claim your profiles on Yelp, Thumbtack and Expertise.com. Fill in services, areas and prices.
