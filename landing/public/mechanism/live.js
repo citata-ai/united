@@ -716,7 +716,7 @@ const RETURN_FROM = -150;
 const RETURN_TO = 232;
 const RETURN_SPEED = 54;
 /** The receiver sends a buyer out of its spout, which falls to the lower belt. */
-const SPOUT_Z = 72;
+const SPOUT_Z = 56;
 const FALL = 0.42;
 const SEND_AFTER = 0.25;
 /** Buyers leave the belt onto the queue rail at RETURN_FROM and roll to a slot. */
@@ -925,7 +925,7 @@ function cleatsAt(t) {
 function backCleatsAt(t) {
   let d = "";
   const shift = (((-RETURN_SPEED * t) % CUP) + CUP) % CUP;
-  for (let x = RETURN_FROM + 8 + shift; x < RETURN_TO - 8; x += CUP) {
+  for (let x = DOOR_X + shift; x < RETURN_TO - 8; x += CUP) {
     d += k.lineOnTop([x, RETURN_Y - 5], [x, RETURN_Y + 5], RETURN_TOP, P);
   }
   return d;
@@ -960,7 +960,7 @@ function init(root) {
   const waves = [...svg.querySelectorAll('[data-part="wave"]')];
   const dollars = [...svg.querySelectorAll('[data-part="dollar"]')].map((el) => ({ el, born: -9 }));
   const hits = [...svg.querySelectorAll(".ce-hit")];
-  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), backcleats: q("backcleats"), gate: q("gate") };
+  const parts = { stamp: q("stamp"), lens: q("lens"), train: q("train"), anchor: q("anchor"), hammer: q("hammer"), bell: q("bell"), needle: q("needle"), cleats: q("cleats"), backcleats: q("backcleats"), door: q("door") };
   const readout = root.querySelector("[data-readout]");
   const still = matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -1037,7 +1037,8 @@ function init(root) {
       }
     }
     balls = balls.filter((b) => !b.done);
-    gate += ((balls.some((b) => b.enter >= 0) ? 1 : 0) - gate) * ease(dt, 0.08);
+    const opening = balls.some((b) => b.enter >= 0) || (queue[0] && clock >= nextRelease - 0.25);
+    gate += ((opening ? 1 : 0) - gate) * ease(dt, 0.1);
     needle += (delivered / 40 - needle) * ease(dt, 0.25);
     const near = pages.some((p) => {
       const s = pageAt(p.cup, p.engine, clock);
@@ -1088,7 +1089,7 @@ function init(root) {
       parts.anchor.innerHTML = anchorAt(0.13 * Math.sin(e * TEETH));
       trainDrawn = e;
     }
-    parts.gate.setAttribute("transform", translateAlong(P, [0, 0, 10 * gate]));
+    parts.door.setAttribute("transform", translateAlong(P, [0, -13 * gate, 0]));
     const rang = clock - ring;
     const strike = rang >= 0 && rang < 1.4 ? Math.exp(-rang * 3) * Math.abs(Math.sin(rang * 14)) : 0;
     parts.hammer.innerHTML = hammerAt(Math.min(1, strike * 1.4));
