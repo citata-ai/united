@@ -1,0 +1,74 @@
+# Content and link ideas, ranked. Runs in docs/growth-loop.md read and update this file.
+# status: idea | building | staged | live | dropped. score = 1..10 (value for CTT-O6 now).
+
+[[item]]
+id = "B001"
+hypothesis = "H06"
+kind = "comparison"
+title = "AppFolio vs Buildium (2026): price per door, minimums, fit by portfolio size"
+demand = "Classic PM software query; AI answers cite comparison tables."
+score = 8
+status = "idea"
+
+[[item]]
+id = "B002"
+hypothesis = "H06"
+kind = "comparison"
+title = "Best property management software for 50-200 doors (honest table)"
+demand = "Our ICP size band; 'best software for X doors' prompts."
+score = 8
+status = "idea"
+
+[[item]]
+id = "B003"
+hypothesis = "H06"
+kind = "comparison"
+title = "Rentvine vs AppFolio vs Buildium vs DoorLoop: per-door price table"
+demand = "Multi-vendor comparison; AI fan-out searches each pair."
+score = 7
+status = "idea"
+
+[[item]]
+id = "B004"
+hypothesis = "H01"
+kind = "data-page"
+title = "Section 8 inspection checklist for landlords (HUD NSPIRE, 2026)"
+demand = "NSPIRE replaced HQS for vouchers; landlords ask what fails an inspection."
+score = 7
+status = "idea"
+
+[[item]]
+id = "B005"
+hypothesis = "H01"
+kind = "data-page"
+title = "Property management fees by state (sourced ranges, 2026)"
+demand = "'How much do property managers charge in <state>' prompts; pairs with H02 calculator."
+score = 7
+status = "idea"
+
+[[item]]
+id = "B006"
+hypothesis = "H07"
+kind = "refresh"
+title = "Refresh the 5 batch-1 guides with FY2027 and H03 index data"
+demand = "Freshness; adds new primary data to old pages."
+score = 6
+status = "idea"
+
+[[item]]
+id = "B007"
+hypothesis = "H08"
+kind = "syndication"
+title = "Republish 'Why owner leads are dropping' on Medium, Substack, Hashnode with canonical"
+demand = "medium.com cited in 8 baseline answers."
+score = 5
+status = "idea"
+
+[[item]]
+id = "B008"
+hypothesis = "H10"
+kind = "outreach"
+title = "Ask webtonic.io and llmpulse.ai lists to review citata.ai (template for Tao)"
+demand = "Both cited in our baseline for agency prompts."
+score = 6
+status = "idea"
