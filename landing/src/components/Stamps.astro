@@ -1,0 +1,181 @@
+---
+// The three steps as engraved postage stamps (brand/IMAGES.md, style S).
+// The engraving is the only image; title, side text and perforation are HTML and CSS.
+const stamps = [
+  {
+    slug: "track",
+    n: "01",
+    title: "Track",
+    side: "every week",
+    text: "The questions your landlords ask AI, every week",
+    ink: "#1e3a7b",
+    alt: "Engraved stamp: an ancient lighthouse with a fire on top over a small harbor with two sailing boats.",
+  },
+  {
+    slug: "fix",
+    n: "02",
+    title: "Fix",
+    side: "one change a day",
+    text: "One checked change to your site a day",
+    ink: "#c1410b",
+    alt: "Engraved stamp: a Roman stone arch under repair with scaffolding, a ladder and a mason's mallet on a block.",
+  },
+  {
+    slug: "report",
+    n: "03",
+    title: "Report",
+    side: "every monday",
+    text: "Who named you, every Monday",
+    ink: "#2f6b5c",
+    alt: "Engraved stamp: a small round temple with a bronze bell under its dome on a hill with olive trees.",
+  },
+];
+---
+
+<ul class="stamps -mx-5 flex snap-x snap-mandatory gap-6 overflow-x-auto border-b border-rule px-5 py-12 sm:mx-0 sm:grid sm:grid-cols-3 sm:justify-items-center sm:overflow-visible sm:px-0">
+  {
+    stamps.map((s, i) => (
+      <li class="w-[66%] max-w-[280px] shrink-0 snap-center sm:w-full">
+        <div class="stamp-wrap" style={`--ink:${s.ink};--tilt:${["-1.6deg", "1.1deg", "-0.6deg"][i]}`}>
+          <div class="stamp">
+            <div class="stamp-face">
+              <img
+                src={`/img/stamp-${s.slug}-v1-480.webp`}
+                srcset={`/img/stamp-${s.slug}-v1-480.webp 480w, /img/stamp-${s.slug}-v1-960.webp 960w`}
+                sizes="(min-width: 640px) 280px, 80vw"
+                alt={s.alt}
+                width="480"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+              <p class="stamp-title">
+                <span class="stamp-n">{s.n}</span>
+                {s.title}
+              </p>
+              <p class="stamp-side" aria-hidden="true">{s.side}</p>
+            </div>
+          </div>
+          {i === 2 && (
+            <svg class="postmark" viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <path id="pm-ring" d="M60 60m-41 0a41 41 0 1 1 82 0a41 41 0 1 1 -82 0" />
+              </defs>
+              <circle cx="60" cy="60" r="52" />
+              <circle cx="60" cy="60" r="33" />
+              <text>
+                <textPath href="#pm-ring" startOffset="0">CITATA.AI · TALLINN · CITATA.AI · TALLINN ·</textPath>
+              </text>
+              <text x="60" y="57" text-anchor="middle" class="pm-big">MON</text>
+              <text x="60" y="71" text-anchor="middle">09:00</text>
+            </svg>
+          )}
+        </div>
+        <p class="mt-5 text-center text-[15px] text-muted">{s.text}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .stamps {
+    scrollbar-width: none;
+  }
+  .stamp-wrap {
+    position: relative;
+    transform: rotate(var(--tilt));
+    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+    filter: drop-shadow(0 1px 1px rgb(28 23 18 / 0.16)) drop-shadow(0 8px 16px rgb(28 23 18 / 0.1));
+  }
+  .stamp-wrap:hover {
+    transform: rotate(0deg) translateY(-3px);
+  }
+  /* Perforated edge: holes on a 14px grid, centred on the outer edge; the content box stays solid. */
+  .stamp {
+    --g: 14px;
+    --r: 4.2px;
+    padding: 12px;
+    background: #fbf7ee;
+    -webkit-mask:
+      radial-gradient(circle, #0000 var(--r), #000 calc(var(--r) + 0.5px)) calc(var(--g) / -2) calc(var(--g) / -2) / var(--g) var(--g) round,
+      linear-gradient(#000 0 0) content-box;
+    mask:
+      radial-gradient(circle, #0000 var(--r), #000 calc(var(--r) + 0.5px)) calc(var(--g) / -2) calc(var(--g) / -2) / var(--g) var(--g) round,
+      linear-gradient(#000 0 0) content-box;
+  }
+  .stamp-face {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: #fbf7ee;
+    outline: 1px solid color-mix(in srgb, var(--ink) 35%, transparent);
+    outline-offset: -1px;
+  }
+  .stamp-face img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 100%;
+  }
+  .stamp-title {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    margin: 0;
+    font-family: "Cal Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size: 34px;
+    line-height: 1;
+    color: var(--color-ink, #1c1712);
+  }
+  .stamp-n {
+    display: block;
+    margin-bottom: 6px;
+    font-family: "Paper Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--ink);
+  }
+  .stamp-side {
+    position: absolute;
+    left: 12px;
+    top: 30%;
+    margin: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: "Paper Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: lowercase;
+    color: #3a2f25;
+  }
+  .postmark {
+    position: absolute;
+    top: -26px;
+    right: -34px;
+    width: 112px;
+    transform: rotate(-14deg);
+    fill: none;
+    stroke: #1c1712;
+    stroke-width: 1.4;
+    opacity: 0.72;
+    pointer-events: none;
+  }
+  .postmark text {
+    fill: #1c1712;
+    stroke: none;
+    font-family: "Paper Mono", ui-monospace, monospace;
+    font-size: 8.4px;
+    letter-spacing: 0.08em;
+  }
+  .postmark .pm-big {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .stamp-wrap {
+      transition: none;
+    }
+  }
+</style>

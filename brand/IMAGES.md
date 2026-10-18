@@ -41,6 +41,31 @@ Style: fine line engraving illustration like a banknote or a vintage postage sta
 | `hero-v4` (old) | An ancient Greek city being built: a temple in scaffolding, a treadwheel crane, stone houses, cypress trees; a stone road leads a man in a toga with a big key to the temple. Crop 0.22. |
 | `footer-v4` (old) | An ancient Greco-Roman harbor town across calm water: tiled roofs, an aqueduct, a temple on the hill, square-sail boats, an olive tree at the left. Crop 0.32. |
 
+## 2b. Steps: S · Engraved postage stamp (since 2026-10-18)
+
+The owner asked for postage-stamp elements in the same engraving technique, with other scenes and colors. Used for the 01 Track / 02 Fix / 03 Report strip under the hero (`landing/src/components/Stamps.astro`).
+
+- Same engraving as style E, but each stamp has its own ink on paper `#FBF7EE`: lapis `#1E3A7B` (Track), minium `#C1410B` (Fix), green `#2F6B5C` (Report).
+- Portrait 3:4. The subject stands in the lower right and is cut by the bottom edge; the upper left is empty for the title. A few birds in the sky.
+- The title, number and vertical side text are HTML. The perforation is a CSS mask. A round postmark (SVG, "MON 09:00") sits on the last stamp.
+- On phones the stamps are a swipe row.
+
+**Style block S** (generate in black and white; recolor with ffmpeg `lutrgb`, black → ink, white → paper):
+
+```text
+Style: fine line engraving illustration like a vintage postage stamp or banknote engraving, crisp black ink lines, cross-hatching and stipple on clean white paper, high detail, sharp and clean, only pure black and pure white, no gray wash, no color. Composition like a postage stamp: portrait 3:4, the subject stands in the lower right two thirds and is cut by the bottom edge; the upper left third is empty plain white paper for a title. A few small birds fly across the white sky as solid black silhouettes. No text, no letters, no numbers, no logos, no watermark, no frame, no border, no perforation.
+```
+
+| Image | Scene | Ink |
+|---|---|---|
+| `stamp-track-v1` | An ancient lighthouse (Pharos) on a rocky harbor point, fire on top, two square-sail boats, stone houses on the quay. Left 9 % cropped (hard edge). | Lapis |
+| `stamp-fix-v1` | A Roman stone arch under repair: scaffolding, a ladder, a mallet and chisel on a cut block, a cypress. | Minium |
+| `stamp-report-v1` | A small round temple (tholos) with a bronze bell under the dome, on a hill with olive trees and a stone road. | Green |
+
+## 2c. Figure: the citation engine (engraving theme)
+
+The animated figure (`landing/scripts/mechanism/build.mjs`, run `bun run mechanism`) uses the same engraving look: ink lines, shading as line hatch (SVG patterns `ce-h0`–`ce-h3`, step 0 is a cross-hatch) on parchment faces, no blur shadow. Like every.to, it sits on its own color plate: sun yellow `#F2C230` (`--ce-field`), so it does not repeat the minium of the hero and footer.
+
 ## 3. Covers: P · Press collage
 
 Use P for post covers, guide covers, the hero, OG images and social cards. Styles A, B and C in `DESIGN.md` stay for special cases (A for older images, B for small figures, C for diagrams).

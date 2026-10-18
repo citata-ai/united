@@ -74,3 +74,21 @@ prompt = "U-shaped composition for a website hero with a headline in the middle:
 [[image]]
 file = "footer-v5"
 prompt = "Wide footer composition with links in the top center: the skyline dips low in the middle (a wide V); empty solid black sky across the top center. Left edge: a large olive tree up to the top. Right edge: a high hill with an ancient temple near the top right. Low in the center: an ancient Greco-Roman harbor town by calm water, an aqueduct, cypress trees, boats with square sails."
+
+[[image]]
+file = "img/stamp-track-v1-*.webp"
+prompt = "An ancient stone lighthouse like the Pharos of Alexandria on a rocky harbor point, a fire at its top, two small square-sail boats on calm water below, low stone houses along the quay. + style block S (brand/IMAGES.md)"
+model = "gemini-3-pro-image via omp"
+date = "2026-10-18"
+
+[[image]]
+file = "img/stamp-fix-v1-*.webp"
+prompt = "A Roman stone arched gateway under repair: wooden scaffolding and a ladder against it, a stonemason's mallet and chisel on a cut stone block in front, neat new stone courses rising, a cypress tree beside it. + style block S (brand/IMAGES.md)"
+model = "gemini-3-pro-image via omp"
+date = "2026-10-18"
+
+[[image]]
+file = "img/stamp-report-v1-*.webp"
+prompt = "A small round classical temple (tholos) with slender columns and a bronze bell hanging under its dome, on a low hill with olive trees, a stone road leading up to it. + style block S (brand/IMAGES.md)"
+model = "gemini-3-pro-image via omp"
+date = "2026-10-18"

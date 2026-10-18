@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import PlatformRibbon from "../components/PlatformRibbon.astro";
 import Mechanism from "../components/Mechanism.astro";
+import Stamps from "../components/Stamps.astro";
 import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
 import { faq } from "../data/faq.ts";
@@ -170,20 +171,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
   </section>
 
   <div class="wrap">
-    <ul class="grid gap-6 border-b border-rule py-8 text-[15px] sm:grid-cols-3">
-      <li>
-        <span class="meta text-minium">01 Track</span>
-        <span class="mt-1 block text-muted">The questions your landlords ask AI, every week</span>
-      </li>
-      <li>
-        <span class="meta text-minium">02 Fix</span>
-        <span class="mt-1 block text-muted">One checked change to your site a day</span>
-      </li>
-      <li>
-        <span class="meta text-minium">03 Report</span>
-        <span class="mt-1 block text-muted">Who named you, every Monday</span>
-      </li>
-    </ul>
+    <Stamps />
   </div>
 
   <PlatformRibbon />
