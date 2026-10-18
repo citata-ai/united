@@ -23,11 +23,7 @@ Scheduled agents run this file. Each run is a fresh session with no memory. This
 ## tick: one change a day
 
 1. `git fetch origin`. Branch `t3/tick-<YYYY-MM-DD>` from `origin/stage`.
-2. Pick the top item: the highest-priority `running` hypothesis that has open work, then the top `backlog.toml` item for it. Kinds, in order of value now:
-   - new page for a running hypothesis (data page, tool, comparison, research);
-   - refresh of a page older than 14 days (H07): new fact with a source, new FAQ, `updated` date, one-line change note;
-   - one `links.csv` row in `todo` that needs no person (H10, H09);
-   - syndication of one live page to Medium, Substack or Hashnode with a canonical link (H08).
+2. Pick the top item in `backlog.toml` with `status = "idea"`: highest `score`, tie-break by the ICE priority of its hypothesis (skip hypotheses that are `invalidated` or `parked`). Items with `status = "building"` have an owner: skip them. Set your item to `building` in your first commit. If no item is left, make one from the kinds below. Kinds, in order of value now:
 3. Build it. Follow the page rules. Every number has a source you read in this run.
 4. `mise run check`, `cd landing && bun run build`. Fix until green. Never `--no-verify`.
 5. Commit. Merge into `stage` with `--no-ff`. Push `stage`. CI deploys https://stage.citata.ai.

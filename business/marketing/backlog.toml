@@ -1,5 +1,5 @@
 # Content and link ideas, ranked. Runs in docs/growth-loop.md read and update this file.
-# status: idea | building | staged | live | dropped. score = 1..10 (value for CTT-O6 now).
+# status: idea | building | staged | live | dropped. A tick run takes the top `idea`. score = 1..10 (value for CTT-O6 now).
 
 [[item]]
 id = "B001"
@@ -71,4 +71,49 @@ kind = "outreach"
 title = "Ask webtonic.io and llmpulse.ai lists to review citata.ai (template for Tao)"
 demand = "Both cited in our baseline for agency prompts."
 score = 6
+status = "idea"
+
+[[item]]
+id = "B009"
+hypothesis = "H01"
+kind = "data-page"
+title = "Section 8 FMR FY2027 pages, top 50 metros + hub (H01-E1)"
+demand = "See H01."
+score = 9
+status = "building"
+
+[[item]]
+id = "B010"
+hypothesis = "H02"
+kind = "free-tool"
+title = "PM fee calculator + Section 8 rent calculator (H02-E1)"
+demand = "See H02."
+score = 8
+status = "building"
+
+[[item]]
+id = "B011"
+hypothesis = "H03"
+kind = "original-research"
+title = "AI Property Manager Index: 50 cities x 3 engines (H03-E1)"
+demand = "See H03."
+score = 8
+status = "building"
+
+[[item]]
+id = "B012"
+hypothesis = "H04"
+kind = "indexing"
+title = "Check Bing index for every sitemap URL; submit missing ones in Bing Webmaster Tools and GSC; record count in H04-E1"
+demand = "ChatGPT search and Copilot read the Bing index."
+score = 7
+status = "idea"
+
+[[item]]
+id = "B013"
+hypothesis = "H09"
+kind = "entity"
+title = "Wikidata item for Citata.ai (draft the statements; account step goes to Asks for Tao)"
+demand = "Point A: AI confused us with Citate.ai."
+score = 5
 status = "idea"
