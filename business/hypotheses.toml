@@ -170,7 +170,7 @@ id = "H02-E1"
 hypothesis = "H02"
 start = "2026-10-19"
 actions = ["Build the property management fee calculator", "Build the Section 8 rent and tenant share calculator", "Ship to stage; publish after owner check"]
-urls = []
+urls = ["https://citata.ai/tools", "https://citata.ai/tools/property-management-fee-calculator", "https://citata.ai/tools/section-8-rent-calculator"]
 status = "running"
 
 [[experiment]]

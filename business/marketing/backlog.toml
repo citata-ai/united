@@ -87,9 +87,9 @@ id = "B010"
 hypothesis = "H02"
 kind = "free-tool"
 title = "PM fee calculator + Section 8 rent calculator (H02-E1)"
-demand = "See H02."
+demand = "See H02. ClearLead already has a fee calculator: ours must answer better (HUD rules, worked example)."
 score = 8
-status = "building"
+status = "staged"
 
 [[item]]
 id = "B011"
