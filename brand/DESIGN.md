@@ -391,6 +391,9 @@ Aspect ratio [RATIO]. No text, no letters, no logos, no watermark, no frame.
 
 ### Tools
 
+- **omp (oh-my-pi), headless** — what we used on 2026-10-18. Its `generate_image` tool calls `google-antigravity/gemini-3-pro-image` and rotates the logged-in accounts. Turn it on with a config overlay, one empty temp dir per image:
+  `printf 'generate_image:\n  enabled: true\n' > /tmp/omp-img.yml && omp -p --no-session --config /tmp/omp-img.yml --auto-approve --max-time 8m --model gemini-3-flash "Use the generate_image tool once to create: <prompt>. Save the image into <dir> as <name>.png."`
+  Fallback: `agy -p "Use the image-generator subagent ..."` (one account; its quota runs out fast).
 - **Gemini (Nano Banana / Imagen)** — default. Generate through the Gemini API or AI Studio where we can; test once whether that output has the visible sparkle mark.
 - Fix text, faces and hands by hand or with an edit pass. Never ship an image with garbled letters.
 - Keep a `prompts.toml` next to each image set: prompt, model, date, seed if any.
