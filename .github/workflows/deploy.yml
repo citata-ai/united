@@ -40,6 +40,14 @@ jobs:
       - name: G3 (same gate as CI)
         run: mise run gate3
 
+      - name: Pages that will change (prod only, for IndexNow)
+        if: env.STAGE == 'prod'
+        working-directory: landing
+        run: |
+          node scripts/changed-urls.mjs > "$RUNNER_TEMP/changed.txt"
+          echo "Changed pages: $(wc -l < "$RUNNER_TEMP/changed.txt")"
+          cat "$RUNNER_TEMP/changed.txt"
+
       - name: Cloudflare credentials from Infisical (OIDC)
         uses: Infisical/secrets-action@v1.0.18
         with:
@@ -74,4 +82,16 @@ jobs:
             test "$code" = 301
           else
             curl -sI "$SITE/" | grep -i '^x-robots-tag: noindex'
+          fi
+
+      # Tell Bing, Yandex, Seznam, Naver and Yep (IndexNow) which pages changed, so AI search and
+      # Copilot re-read them. Google ignores IndexNow; it reads the sitemap lastmod.
+      - name: IndexNow ping (prod, changed pages only)
+        if: env.STAGE == 'prod'
+        working-directory: landing
+        run: |
+          if [ -s "$RUNNER_TEMP/changed.txt" ]; then
+            xargs node scripts/indexnow.mjs < "$RUNNER_TEMP/changed.txt"
+          else
+            echo "No page changed: no IndexNow ping."
           fi
