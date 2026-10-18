@@ -47,6 +47,8 @@ Rules:
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
+Score after the second deploy (2026-10-18): 96/100. Added: About page, WebSite / Article / Person schema, dates and author, Markdown copy of each page (`Accept: text/markdown`), `llms-full.txt`, `/.well-known/ai.txt`, `/ai/*.json`, RSS. The last 4 points need 3 knowledge-graph profiles in `sameAs` (LinkedIn, Crunchbase, Wikidata). The LINK BUILD thread owns them.
+
 ## Publish step (when new content is ready)
 
 IndexNow waits until the first content batch is live.
