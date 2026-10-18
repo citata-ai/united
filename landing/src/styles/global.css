@@ -139,4 +139,17 @@
   .img-frame img {
     @apply size-full object-cover;
   }
+  /* Hover zoom inside the frame, like every.to cards (brand/DESIGN.md: scale 1.03, 0.4s). */
+  .img-zoom img {
+    transition: transform 0.4s ease;
+  }
+  .group:hover .img-zoom img,
+  .group:focus-visible .img-zoom img {
+    transform: scale(1.04);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .img-zoom img {
+      transition: none;
+    }
+  }
 }

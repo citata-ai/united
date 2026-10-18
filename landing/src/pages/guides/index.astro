@@ -7,12 +7,18 @@ const title = "Guides: AI search for property management companies — citata.ai
 const description =
   "Short guides for property managers: why owner leads drop, how owners use AI to pick a manager, and how to get named in AI answers.";
 
+// build.format "file" gives URLs that end in ".html"; the live URLs do not.
 const guides = Object.values(
   import.meta.glob<{ frontmatter: GuideFrontmatter; url: string }>("./*.md", { eager: true }),
-).sort((a, b) => b.frontmatter.updated.localeCompare(a.frontmatter.updated));
+)
+  .map((g) => {
+    const href = g.url.replace(/\.html$/, "");
+    return { ...g.frontmatter, href, cover: guideCovers[href.split("/").pop() ?? ""] };
+  })
+  .sort((a, b) => b.updated.localeCompare(a.updated));
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} image="/og/guide-owners-ai.jpg">
   <main class="wrap">
     <section class="border-b border-rule py-12 md:py-16">
       <p class="meta"><span class="text-minium">Guides</span> · AI search for property managers</p>
@@ -21,29 +27,29 @@ const guides = Object.values(
         Each guide answers one question that property managers ask us. Every number names its source.
       </p>
     </section>
-    <ul class="divide-y divide-rule">
+    <ul class="grid gap-x-8 gap-y-12 py-12 sm:grid-cols-2 lg:grid-cols-3">
       {
-        guides.map((g) => (
-          <li class="py-8">
-            <a href={g.url} class="group grid max-w-4xl items-start gap-6 sm:grid-cols-[240px_1fr]">
-              {guideCovers[g.url.split("/").pop() ?? ""] && (
-                <figure class="img-frame">
+        guides.map((g, i) => (
+          <li>
+            <a href={g.href} class="group block">
+              {g.cover && (
+                <figure class="img-frame img-zoom">
                   <img
-                    src={`/img/${guideCovers[g.url.split("/").pop() ?? ""].img}-640.webp`}
-                    srcset={coverSrcset(guideCovers[g.url.split("/").pop() ?? ""].img)}
-                    sizes="240px"
-                    alt=""
-                    width="640"
-                    height="357"
-                    loading="lazy"
+                    src={`/img/${g.cover.img}-960.webp`}
+                    srcset={coverSrcset(g.cover.img)}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, calc(100vw - 40px)"
+                    alt={g.cover.alt}
+                    width="1280"
+                    height="714"
+                    loading={i < 3 ? "eager" : "lazy"}
                   />
                 </figure>
               )}
-              <div>
-              <h2 class="text-[26px] leading-tight group-hover:text-minium">{g.frontmatter.headline}</h2>
-              <p class="mt-2 text-muted">{g.frontmatter.dek}</p>
-              <p class="meta mt-3">Updated {g.frontmatter.updated}</p>
-              </div>
+              <p class="meta mt-4">
+                <span class="text-minium">Guide</span> · {g.updated}
+              </p>
+              <h2 class="mt-2 text-[22px] leading-tight group-hover:text-minium">{g.headline}</h2>
+              <p class="mt-2 text-[15px] text-muted">{g.dek}</p>
             </a>
           </li>
         ))
