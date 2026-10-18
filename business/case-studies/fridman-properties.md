@@ -42,6 +42,7 @@ Ran Fridman owns Fridman Properties and is CEO of MyRemotely, a TAO partner. Fri
 | Engines and models | ChatGPT gpt-6-luna, Claude claude-sonnet-5-5, Gemini gemini-3-flash | `answers.jsonl` field `model` |
 | Named / linked | ChatGPT 4/48, 3 linked; Claude 11/48, 6; Gemini 5/48, 5 | `report.md:7-11` |
 | Without brand prompts | named in 8 of 132 answers, linked in 3 | computed from `answers.jsonl` (group != brand) |
+| Companies per answer | median 5 names (132 non-brand answers); ChatGPT 4, Claude 10, Gemini 5 | computed from `answers.jsonl` field `n_companies` (group != brand) |
 | Section 8 prompt | named in 0 of 6 | computed from `answers.jsonl` (prompt_id = section8) |
 | Area groups | South Side 0/42, Chicago 0/18, NW Indiana 0/18, NW suburbs 6/18 | `report.md:15-22` |
 | ChatGPT app, logged out | #1 only for the no-leasing-fee prompt; not named for South Side, Section 8, out-of-state, Arlington Heights | `.../2026-10-16/chatgpt-app-logged-out.md` |
