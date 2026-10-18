@@ -65,3 +65,12 @@ prompt = "Wide panoramic landscape for a website hero: an ancient Greek city bei
 [[image]]
 file = "footer-v4"
 prompt = "Wide panoramic landscape for a website footer: an ancient Greco-Roman harbor town seen from across calm water, stone houses with tiled roofs, an arched aqueduct, a temple on the hill, cypress trees, stone quays, ancient wooden boats with square sails; an olive tree at the left edge; reeds and stones on the near shore."
+
+# 2026-10-18, style E, composition framed around the text (owner request). Frame line cropped 3–4 %.
+[[image]]
+file = "hero-v5"
+prompt = "U-shaped composition for a website hero with a headline in the middle: empty solid black sky in the center and top center. Left edge, to the top: a temple corner under construction with marble columns, wooden scaffolding and a tall treadwheel crane. Right edge, to the top: tall finished temple columns with an entablature and cypress trees. Bottom 30 percent: an ancient Greek town being built, a stone road to a temple door with a warm lamp, a small man in a toga with a big key."
+
+[[image]]
+file = "footer-v5"
+prompt = "Wide footer composition with links in the top center: the skyline dips low in the middle (a wide V); empty solid black sky across the top center. Left edge: a large olive tree up to the top. Right edge: a high hill with an ancient temple near the top right. Low in the center: an ancient Greco-Roman harbor town by calm water, an aqueduct, cypress trees, boats with square sails."

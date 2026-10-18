@@ -137,22 +137,22 @@ const article = {
 const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
-<Base title={title} description={description} image="/og/hero-v4.jpg" modified="2026-10-18">
+<Base title={title} description={description} image="/og/hero-v5.jpg" modified="2026-10-18">
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
   </Fragment>
   <main>
-  <!-- Hero as an engraved print (style E, brand/IMAGES.md): text on solid minium, the engraving below.
-       The image sky is the same minium, so the two join with no line and never overlap. -->
-  <section class="bg-minium text-parchment">
-    <div class="wrap flex flex-col items-center pt-14 pb-6 text-center md:pt-20">
+  <!-- Hero as an engraved print (style E, brand/IMAGES.md). Desktop: the art frames the text, which sits in
+       the empty sky in the middle. Phone: text first, then the whole picture below it, nothing cut. -->
+  <section class="relative isolate bg-minium text-parchment xl:min-h-[54.6vw]">
+    <div class="wrap relative flex flex-col items-center pt-14 pb-6 text-center xl:pt-[4vw] xl:pb-[23vw]">
       <p class="meta text-parchment/90"><span class="text-parchment">GEO + AEO</span> · for property management companies</p>
-      <h1 class="mt-5 max-w-4xl text-[44px] leading-[1.02] sm:text-[64px] lg:text-[76px]">
+      <h1 class="mt-5 max-w-3xl text-[44px] leading-[1.02] sm:text-[56px] lg:text-[64px]">
         Get named when landlords ask AI for a property manager
       </h1>
-      <p class="mt-6 max-w-2xl text-[18px] leading-normal text-parchment/95 sm:text-[20px]">
+      <p class="mt-6 max-w-xl text-[18px] leading-normal text-parchment/95 sm:text-[19px]">
         Fewer landlord leads from Google? Landlords now ask ChatGPT or Gemini who to hire. Citata.ai
         gets your company named and linked in that answer. We do the work.
       </p>
@@ -163,14 +163,14 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
       <p class="mt-4 text-sm text-parchment/90">Free: 20 landlord questions on 4 AI engines, and your top 5 fixes.</p>
     </div>
     <img
-      src="/img/hero-v4-1280.webp"
-      srcset="/img/hero-v4-640.webp 640w, /img/hero-v4-960.webp 960w, /img/hero-v4-1280.webp 1280w, /img/hero-v4-1920.webp 1920w, /img/hero-v4-2560.webp 2560w, /img/hero-v4-3840.webp 3840w"
+      src="/img/hero-v5-1280.webp"
+      srcset="/img/hero-v5-640.webp 640w, /img/hero-v5-960.webp 960w, /img/hero-v5-1280.webp 1280w, /img/hero-v5-1920.webp 1920w, /img/hero-v5-2560.webp 2560w, /img/hero-v5-3840.webp 3840w"
       sizes="100vw"
-      alt="An engraved ancient city being built: a temple in scaffolding, a wooden crane, stone houses, and a road that leads a man with a big key to the temple."
+      alt="An engraved ancient town being built: a temple in scaffolding with a wooden crane on the left, finished columns and cypress trees on the right, and a man with a big key walking to a lit temple door."
       width="3840"
-      height="1672"
+      height="2100"
       fetchpriority="high"
-      class="block h-auto w-full"
+      class="block h-auto w-full xl:absolute xl:bottom-0 xl:left-0 xl:-z-10"
     />
   </section>
 

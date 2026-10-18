@@ -24,7 +24,7 @@ What makes them work:
 The owner chose this style for the hero and the footer after the halftone versions looked low-quality when upscaled. References: a two-tone engraved footer (ink sky, cream land) and an engraved postage stamp.
 
 - Crisp line engraving, two colors only: minium ink `#C1410B` on parchment `#F5EFE3`. No gray, no halftone dots.
-- The top of the image is a flat sky in ink color. On the page the text sits on a plain block of the same color, and the image starts below it. Text never sits on the art.
+- Compose the art AROUND the text (owner, 2026-10-18): tall things on the left and right edges up to the top, the skyline low in the middle, an empty ink-color sky where the text goes. From 1280 px wide the image fills the block and the text sits in that empty sky; below 1280 px the text comes first and the whole image follows. Text never sits on the art, and the art is never cut.
 
 **Style block E** (generate in black and white; the script recolors it):
 
@@ -36,8 +36,10 @@ Style: fine line engraving illustration like a banknote or a vintage postage sta
 
 | Image | Scene |
 |---|---|
-| `hero-v4` | An ancient Greek city being built: a temple in scaffolding, a treadwheel crane, stone houses, cypress trees; a stone road leads a man in a toga with a big key to the temple. Crop 0.22. |
-| `footer-v4` | An ancient Greco-Roman harbor town across calm water: tiled roofs, an aqueduct, a temple on the hill, square-sail boats, an olive tree at the left. Crop 0.32. |
+| `hero-v5` | U-shape: temple in scaffolding with a treadwheel crane (left), finished columns and cypresses (right), a town being built along the bottom, a man with a key on the road. Frame cropped 3 %. |
+| `footer-v5` | V-shape: olive tree (left), hill with a temple (right), harbor town low in the middle. Frame cropped 3–4 %. |
+| `hero-v4` (old) | An ancient Greek city being built: a temple in scaffolding, a treadwheel crane, stone houses, cypress trees; a stone road leads a man in a toga with a big key to the temple. Crop 0.22. |
+| `footer-v4` (old) | An ancient Greco-Roman harbor town across calm water: tiled roofs, an aqueduct, a temple on the hill, square-sail boats, an olive tree at the left. Crop 0.32. |
 
 ## 3. Covers: P · Press collage
 
