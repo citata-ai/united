@@ -46,3 +46,13 @@ prompt = "A marble statue of an ancient astronomer on a temple terrace looks thr
 file = "guide-checklist"
 field = "sun yellow #F2C230"
 prompt = "A temple under construction with wooden scaffolding; a marble statue of an architect stands in front holding an unrolled blueprint scroll and a brass plumb line; a vintage cathode-ray computer sits on a stonemason's workbench beside him; small houses on the low horizon."
+
+[[image]]
+file = "hero-art"
+style = "P · Press collage, minium field; option B of 2 (A: statue at a glowing computer)"
+prompt = "Wide cinematic landscape for a website hero. A vast valley of ancient marble ruins: broken Greek temple columns and fallen stones rise like cliffs on the left and right edges and frame an open space in the middle. Far away in the middle of the valley floor, a small marble temple doorway with one warm glowing lamp inside, and a marble statue of a landlord holding a big brass key walking toward it. A thin row of small suburban houses on the far low horizon. The upper half and the center are open sky for a headline."
+
+[[image]]
+file = "footer-art"
+style = "F · Footer engraving, deep ink #1C1712 with minium accents; option B of 2 (A: lapis ink, had a plate frame). Cropped top 31%, sides 3%; paper lifted to white so it blends with the page."
+prompt = "Wide panoramic copperplate engraving for a website footer. A harbor town seen from across calm water: classical stone houses with tiled roofs, a few American two-flat brick rental buildings and small apartment blocks, a Greek temple on the hill above the town, soft hills, small boats, a tree at the left edge. Town and water in the lower half; upper half empty parchment sky with soft engraved clouds."

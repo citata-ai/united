@@ -40,6 +40,16 @@ Style: black-and-white high-contrast photographic halftone collage like a 1960s 
 
 **Duotone variant P2** (for a strong single subject, like a bust): `the subject printed as a single-ink halftone in lapis blue #1E3A7B on a flat minium orange #C1410B field, rough risograph misregistration` — replace the last two clauses of block P.
 
+**Style block F · Footer engraving** (wide panoramas at the bottom of a page, like an old print):
+
+```text
+Style: fine 18th-century copperplate engraving and etching, printed in one ink, deep ink #1C1712, on warm parchment paper #F5EFE3; cross-hatching, stipple and line work, paper grain visible; a few small accents in minium orange #C1410B on some roofs, one boat and the leaves of a tree; calm, detailed, an art print.
+```
+
+After you generate it: crop the empty top and the plate edges, lift the paper to white (`ffmpeg … colorlevels`), and show it with `mix-blend-mode: multiply` so the paper becomes the page color.
+
+**Hero layout.** The hero image is full-bleed. Ask for "the upper half and the center are open sky for a headline" and put the small focal point (a lit doorway, a statue) low in the middle. The text sits in the sky in parchment color.
+
 ## 3. Prompt template
 
 ```text

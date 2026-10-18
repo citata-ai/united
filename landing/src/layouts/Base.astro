@@ -72,6 +72,36 @@ const website = {
   publisher: { "@id": "https://citata.ai/#org" },
 };
 
+const footerCols = [
+  {
+    title: "Service",
+    links: [
+      { href: "/#how", label: "How it works" },
+      { href: "/#pricing", label: "Pricing" },
+      { href: "/property-management", label: "Owner questions" },
+      { href: auditHref, label: "Free AI audit" },
+    ],
+  },
+  {
+    title: "Guides",
+    links: [
+      { href: "/guides/why-owner-leads-are-dropping", label: "Why owner leads drop" },
+      { href: "/guides/geo-agencies-for-property-management", label: "GEO agencies compared" },
+      { href: "/guides/track-ai-traffic-property-management", label: "Track AI traffic" },
+      { href: "/guides", label: "All guides" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { href: "/about", label: "About" },
+      { href: "/case-studies/fridman-properties", label: "Case study" },
+      { href: "/#faq", label: "FAQ" },
+      { href: "mailto:grow@citata.ai", label: "grow@citata.ai" },
+    ],
+  },
+];
+
 const nav = [
   { href: "/#how", label: "How it works" },
   { href: "/property-management", label: "Owner questions" },
@@ -118,7 +148,7 @@ const nav = [
     <div class="sticky top-0 z-50 border-b border-rule bg-parchment/90 backdrop-blur supports-[backdrop-filter]:bg-parchment/80">
       <header class="wrap flex items-center justify-between gap-6 py-3">
         <a href="/" aria-label="citata.ai home">
-          <img src="/wordmark.svg" alt="Citata" width="157" height="56" class="block h-12 w-auto sm:h-14" />
+          <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-12 w-auto sm:h-14" />
         </a>
         <nav aria-label="Main" class="hidden md:block">
           <ul class="flex gap-7 text-[15px] text-muted">
@@ -139,27 +169,52 @@ const nav = [
 
     <slot />
 
-    <div class="wrap">
-      <footer
-        class="mt-14 flex flex-col gap-6 border-t border-rule pt-8 pb-14 text-[13px] text-muted sm:flex-row sm:justify-between"
-      >
-        <p>
-          <span class="text-ink"><em class="not-italic text-minium">Aetas aurea redit</em></span> — the
-          golden age returns.<br />© {new Date().getFullYear()} citata.ai. Images made with AI.
-        </p>
-        <ul class="flex flex-wrap gap-x-6 gap-y-2">
-          {
-            nav.map((n) => (
-              <li>
-                <a href={n.href} class="hover:text-ink">
-                  {n.label}
-                </a>
-              </li>
-            ))
-          }
-          <li><a href="mailto:grow@citata.ai" class="hover:text-ink">grow@citata.ai</a></li>
-        </ul>
-      </footer>
-    </div>
+    <!-- Footer as an art print: links on parchment, an engraved town across the bottom (brand/IMAGES.md). -->
+    <footer class="footer-art relative mt-16 overflow-hidden border-t border-rule">
+      <div class="wrap grid gap-10 pt-14 text-[14px] md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div>
+          <a href="/" aria-label="citata.ai home">
+            <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-11 w-auto" loading="lazy" />
+          </a>
+          <p class="mt-4 max-w-xs font-mono text-[13px] leading-relaxed text-muted">
+            GEO for property management companies. Get named when owners ask AI.
+          </p>
+          <p class="mt-4 text-[13px]">
+            <em class="not-italic text-minium">Aetas aurea redit</em>
+            <span class="text-muted"> — the golden age returns.</span>
+          </p>
+        </div>
+        {
+          footerCols.map((col) => (
+            <nav aria-label={col.title}>
+              <p class="meta text-ink">{col.title}</p>
+              <ul class="mt-4 space-y-2.5 text-muted">
+                {col.links.map((l) => (
+                  <li>
+                    <a href={l.href} class="hover:text-ink">
+                      {l.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))
+        }
+      </div>
+      <div class="wrap mt-10 flex flex-col gap-2 border-t border-rule pt-5 font-mono text-[12px] text-muted sm:flex-row sm:justify-between">
+        <span>© {new Date().getFullYear()} citata.ai · WarmDevs OÜ, Tallinn</span>
+        <span>Images made with AI</span>
+      </div>
+      <img
+        src="/img/footer-art-1280.webp"
+        srcset="/img/footer-art-960.webp 960w, /img/footer-art-1280.webp 1280w"
+        sizes="100vw"
+        alt="An engraved harbor town: stone houses, brick two-flats and a temple on the hill above calm water."
+        width="1293"
+        height="507"
+        loading="lazy"
+        class="footer-art-img mt-2 block w-full"
+      />
+    </footer>
   </body>
 </html>
