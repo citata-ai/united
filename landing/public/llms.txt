@@ -14,6 +14,7 @@ Contact: grow@citata.ai. Free AI visibility audit: 20 landlord questions on 4 AI
 - [Landlord questions](https://citata.ai/property-management): landlord questions vs renter questions in AI search. Listing sites get 72% of renter citations (Peek). Section 8 angle.
 - [Case study: Fridman Properties](https://citata.ai/case-studies/fridman-properties): Chicago-area property manager. Site moved 2026-10-15/16, AI baseline 2026-10-16 (named in 8 of 132 non-brand landlord answers). Results due 2027-01-14. Related party: owner Ran Fridman is CEO of MyRemotely, a Citata.ai partner.
 - [AI Property Manager Index 2026](https://citata.ai/research/ai-property-manager-index-2026): original data. ChatGPT, Gemini and Claude asked "What is the best property management company in <City, ST>?" for the 50 largest US cities, 150 answers, 2026-10-19. 821 companies named, 76% of names local firms. 88% of answers used a directory or review site as a source (Expertise.com in 93 of 150). Gemini linked a company site in 96% of answers, ChatGPT in 30%. Free CSV (CC BY 4.0): https://citata.ai/data/ai-property-manager-index-2026.csv
+- [Section 8 rent limits 2027](https://citata.ai/section-8): HUD FY2027 Fair Market Rents (0 to 4 bedrooms) for the 50 largest US metro areas, the change from FY2026, and payment standard basics. In effect from 2026-10-01. One page per metro, for example /section-8/chicago-fair-market-rent-2027. Source: HUD.
 
 ## Free tools
 

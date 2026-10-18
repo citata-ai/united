@@ -1,0 +1,58 @@
+# Main public housing agency (PHA) per HUD FMR area, for the "Payment standard vs FMR" section.
+# Rule: `url` is set only if we fetched it (HTTP 200) and the page names payment standards.
+# Empty `url`: the page says "check your housing authority" and links nothing.
+# Checked 2026-10-19. Dated PDFs older than 2026 were dropped (stale numbers).
+
+checked = "2026-10-19"
+
+[pha]
+METRO35620MM5600 = { name = "New York City Housing Authority (NYCHA)", url = "https://www.nyc.gov/site/nycha/section-8/voucher-payment-standards-utility-allowance-schedules.page" }
+METRO31080MM4480 = { name = "Housing Authority of the City of Los Angeles (HACLA)", url = "https://www.hacla.org/en/about-section-8/payment-standards" }
+METRO16980M16980 = { name = "Chicago Housing Authority (CHA)", url = "" }
+METRO26420M26420 = { name = "Houston Housing Authority (Alliance Houston)", url = "https://www.alliancehtx.org/landlords" }
+METRO37980M37980 = { name = "Philadelphia Housing Authority (PHA)", url = "https://www.pha.phila.gov/housing/housing-choice-voucher/payment-standards/" }
+METRO47900M47900 = { name = "DC Housing Authority (DCHA)", url = "https://www.dchousing.org/wordpress/vouchers/payment-standard/" }
+METRO12060M12060 = { name = "Atlanta Housing", url = "" }
+METRO19100M19100 = { name = "DHA Housing Solutions for North Texas", url = "https://dhantx.com/resources/payment-standards-housing-choice-voucher-program/" }
+METRO38060M38060 = { name = "City of Phoenix Housing Department", url = "" }
+METRO40140M40140 = { name = "Housing Authority of the County of Riverside", url = "" }
+METRO19820M19820 = { name = "Detroit Housing Commission", url = "https://www.dhcmi.org/sites/default/files/department-resources/rental-assistance/forms-and-resources/2026PaymentStandard.pdf" }
+METRO33460M33460 = { name = "Minneapolis Public Housing Authority (MPHA)", url = "https://mphaonline.org/wp-content/uploads/2025/11/2026-Payment-Standards-and-Utility-Chart.pdf" }
+METRO14460MM1120 = { name = "Boston Housing Authority (BHA)", url = "https://www.bostonhousing.org/en/Section-8-Leased-Housing/Finding-An-Apartment/Payment-Standards.aspx" }
+METRO45300M45300 = { name = "Tampa Housing Authority", url = "" }
+METRO41740M41740 = { name = "San Diego Housing Commission (SDHC)", url = "https://sdhc.org/housing-opportunities/choice-communities-initiative/" }
+METRO31080MM5945 = { name = "Orange County Housing Authority (OCHA)", url = "https://housingauthority.oc.gov/sites/ocha/files/2025-10/2025-2026%20Payment%20Standard%20Public.pdf" }
+METRO42660MM7600 = { name = "Seattle Housing Authority (SHA)", url = "https://www.seattlehousing.org/housing/housing-choice-vouchers/renting-voucher/voucher-payment-standards" }
+METRO19740M19740 = { name = "Denver Housing Authority (DHA)", url = "https://www.denverhousing.org/housing-choice-vouchers-section8/" }
+METRO35620MM5380 = { name = "Nassau County Office of Housing and Community Development", url = "" }
+METRO12580M12580 = { name = "Housing Authority of Baltimore City (HABC)", url = "" }
+METRO41860MM5775 = { name = "Oakland Housing Authority (OHA)", url = "https://www.oakha.org/propertyowners/paymentstandards/" }
+METRO36740M36740 = { name = "Orlando Housing Authority", url = "" }
+METRO41180M41180 = { name = "St. Louis Housing Authority", url = "" }
+METRO33100MM5000 = { name = "Miami-Dade Public Housing and Community Development", url = "" }
+METRO19100MM2800 = { name = "Fort Worth Housing Solutions", url = "https://fwhs.org/housing-programs/housing-choice-voucher/" }
+METRO38900M38900 = { name = "Home Forward", url = "https://www.homeforward.org/housing-choice-voucher/" }
+METRO41700M41700 = { name = "Opportunity Home San Antonio", url = "https://homesa.org/housing/find-a-home/vouchers/housing-assistance-payments/" }
+METRO12420M12420 = { name = "Housing Authority of the City of Austin", url = "https://austinha.org/resources/voucher-clients/" }
+METRO29820M29820 = { name = "Southern Nevada Regional Housing Authority", url = "https://cdn.prod.website-files.com/6578d5f8bf00aeb22afcf651/699f2ecc284378a77ffb616b_Payment%20Standards%20Memo%20Final.pdf" }
+METRO38300M38300 = { name = "Housing Authority of the City of Pittsburgh (HACP)", url = "https://hacp.org/doing-business/landlord-resources/" }
+METRO40900M40900 = { name = "Sacramento Housing and Redevelopment Agency (SHRA)", url = "https://www.shra.org/housing-choice-voucher-program/" }
+METRO28140M28140 = { name = "Housing Authority of Kansas City, Missouri", url = "" }
+METRO17140M17140 = { name = "Cincinnati Metropolitan Housing Authority", url = "" }
+METRO16740M16740 = { name = "INLIVIAN (Charlotte)", url = "https://www.inlivian.com/housing-choice-voucher/" }
+METRO35620MM5640 = { name = "Newark Housing Authority", url = "https://www.newarkha.org/Programs-Services/Housing-Choice-Voucher-Program-Section-8" }
+METRO17410N17460 = { name = "Cuyahoga Metropolitan Housing Authority (CMHA)", url = "" }
+METRO18140M18140 = { name = "Columbus Metropolitan Housing Authority (CMHA)", url = "https://cmhanet.com/statement-regarding-housing-choice-voucher-payment-standard-adjustment/statement-regarding-housing-choice-voucher-payment-standard-adjustment" }
+METRO26900M26900 = { name = "Indianapolis Housing Agency", url = "" }
+METRO33100MM2680 = { name = "Housing Authority of the City of Fort Lauderdale", url = "" }
+METRO41940M41940 = { name = "Santa Clara County Housing Authority", url = "https://www.scchousingauthority.org/section-8/payment-standards/" }
+METRO34980M34980 = { name = "Metropolitan Development and Housing Agency (MDHA)", url = "https://www.nashville-mdha.org/rental-assistance-voucher-program/" }
+METRO41860MM7360 = { name = "San Francisco Housing Authority", url = "https://sfha.org/resources-forms/payment-standards" }
+METRO47260M47260 = { name = "Norfolk Redevelopment and Housing Authority", url = "" }
+METRO27260M27260 = { name = "Jacksonville Housing Authority", url = "" }
+METRO41980MM7440 = { name = "", url = "" }
+METRO33340M33340 = { name = "Housing Authority of the City of Milwaukee (HACM)", url = "" }
+METRO33100MM8960 = { name = "Palm Beach County Housing Authority", url = "https://www.pbchafl.org/people/residents/housing-choice-voucher/" }
+METRO39580M39580 = { name = "Raleigh Housing Authority", url = "" }
+METRO35620MM0875 = { name = "Housing Authority of Bergen County", url = "" }
+METRO36420M36420 = { name = "Oklahoma City Housing Authority", url = "" }
