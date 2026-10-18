@@ -3,6 +3,7 @@ import AuditCta from "../../components/AuditCta.astro";
 import Base from "../../layouts/Base.astro";
 import type { GuideFrontmatter } from "../../layouts/Guide.astro";
 import { coverSrcset, guideCovers } from "../../data/guide-covers.ts";
+import { tools } from "../../data/tools.ts";
 
 const title = "Guides: AI search for property management companies — Citata.ai";
 const description =
@@ -56,6 +57,24 @@ const guides = Object.values(
         ))
       }
     </ul>
+    <section aria-labelledby="tools-h" class="rounded-lg bg-mint/25 p-6 sm:p-10">
+      <p class="meta"><span class="text-minium">Free tools</span> · calculators</p>
+      <h2 id="tools-h" class="mt-3 text-[28px] leading-tight sm:text-[32px]">
+        <a href="/tools" class="hover:text-minium">Free calculators for landlords and managers</a>
+      </h2>
+      <ul class="mt-5 grid gap-4 md:grid-cols-2">
+        {
+          tools.map((t) => (
+            <li>
+              <a href={t.href} class="group block rounded-md bg-page p-5">
+                <p class="text-[20px] leading-tight group-hover:text-minium">{t.name}</p>
+                <p class="mt-1 text-[15px] text-muted">{t.dek}</p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
     <AuditCta />
   </main>
 </Base>

@@ -12,7 +12,7 @@ const today = new Date().toISOString().slice(0, 10);
 const skip = (rel) => rel === "404.html" || rel.startsWith("mechanism/");
 
 /** Fixed order first in llms-full.txt; other pages follow by path. */
-const order = ["/", "/property-management", "/about", "/guides"];
+const order = ["/", "/property-management", "/about", "/guides", "/tools"];
 
 const files = walk(dist).filter((f) => f.endsWith(".html") && !skip(relative(dist, f)));
 const pages = files

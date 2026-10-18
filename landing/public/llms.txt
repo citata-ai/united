@@ -13,3 +13,9 @@ Contact: grow@citata.ai. Free AI visibility audit: 20 landlord questions on 4 AI
 - [Home](https://citata.ai/): GEO for property management companies. Why landlord leads drop (7 generic property management terms −46% in Chicago, −43% US, year over year, Keyword Planner). How it works. Who it is for. Prices: free audit, Starter $750/mo, Growth $2,000/mo or $1,500/mo on 12 months (first prices, may change). FAQ.
 - [Landlord questions](https://citata.ai/property-management): landlord questions vs renter questions in AI search. Listing sites get 72% of renter citations (Peek). Section 8 angle.
 - [Case study: Fridman Properties](https://citata.ai/case-studies/fridman-properties): Chicago-area property manager. Site moved 2026-10-15/16, AI baseline 2026-10-16 (named in 8 of 132 non-brand landlord answers). Results due 2027-01-14. Related party: owner Ran Fridman is CEO of MyRemotely, a Citata.ai partner.
+
+## Free tools
+
+- [Free tools](https://citata.ai/tools): two free calculators for landlords and property managers. No sign-up; numbers stay in the browser.
+- [Property management fee calculator](https://citata.ai/tools/property-management-fee-calculator): monthly and yearly cost, effective percent of rent, and typical US fees. Most managers charge 8% to 12% of rent (All Property Management); average advertised rate 8.49%, flat fee $101.04 per door, renewal $231.77 (iPropertyManagement, 722 branches). Leasing fee 50% to 100% of one month's rent (All Property Management).
+- [Section 8 rent calculator](https://citata.ai/tools/section-8-rent-calculator): tenant share (total tenant payment: highest of 30% of adjusted monthly income, 10% of gross monthly income, or minimum rent up to $50, 24 CFR 5.628), housing assistance payment (lower of payment standard or gross rent, minus TTP, 24 CFR 982.505) and the 40% check at first lease (24 CFR 982.508). Estimate only; the housing authority sets the final numbers.

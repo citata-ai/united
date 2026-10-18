@@ -23,7 +23,8 @@ export function htmlToMarkdown(html, base) {
   s = s
     .replace(/\s+/g, " ") // HTML whitespace carries no meaning; structure comes from tags
     .replace(/<\/?(thead|tbody)[^>]*>/gi, "")
-    .replace(/<(script|style|svg|noscript)[\s\S]*?<\/\1>/gi, "")
+    // Forms are interactive tools; their worked examples carry the answer in plain HTML.
+    .replace(/<(script|style|svg|noscript|form)[\s\S]*?<\/\1>/gi, "")
     .replace(/<img[^>]*>/gi, "")
     .replace(/<a [^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
       const t = text.replace(/<[^>]+>/g, "").trim();
