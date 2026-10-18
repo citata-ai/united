@@ -47,7 +47,13 @@ const article = {
   headline: fm.headline,
   description: fm.description,
   ...(cover ? { image: `https://citata.ai/og/${cover.img}.jpg` } : {}),
-  author: { "@id": "https://citata.ai/#org" },
+  author: {
+    "@type": "Person",
+    "@id": "https://citata.ai/about#founder",
+    name: "Taras Kornichuk",
+    jobTitle: "Founder",
+    url: "https://citata.ai/about",
+  },
   publisher: { "@id": "https://citata.ai/#org" },
   datePublished: fm.published,
   dateModified: fm.updated,
@@ -94,12 +100,12 @@ const breadcrumbs = {
         <h1 class="mt-4 max-w-4xl text-[36px] leading-[1.05] sm:text-[52px]">{fm.headline}</h1>
         <p class="mt-4 max-w-3xl text-[19px] text-muted sm:text-[21px]">{fm.dek}</p>
         <p class="meta mt-5">
-          By <a rel="author" class="link normal-case" href="/about">Citata.ai</a> · Updated
+          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Updated
           <time datetime={fm.updated}>{fm.updated}</time>
         </p>
         <p class="mt-2 max-w-3xl text-[13px] text-muted">
           How we made this guide: AI agents drafted it from our own tests and the sources listed at the
-          end. Citata.ai checks every claim and edits the text before we publish.
+          end. Taras Kornichuk checked every claim and edited the text.
         </p>
       </header>
 

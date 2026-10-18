@@ -36,7 +36,7 @@ What the numbers say:
 
 - Every mixes short punches with long, winding sentences. We keep the punches and cut the long ones. ASD-STE100 caps a sentence at 20 words for steps and 25 for description.
 - Every uses a lot of numbers. So do we. A claim without a number is weak.
-- We speak as the company: "we", signed "Citata.ai". The reader is "you", most of all in calls to action. Bylines, "checked by" lines and schema `author` name Citata.ai, not a person (Tao, 2026-10-19). Use "I" or a personal name only when Tao asks for a signed piece.
+- The writer speaks as "I" in essays and as "we" for the team. The reader is "you", most of all in calls to action.
 
 ## 3. Writer persona
 
@@ -70,7 +70,7 @@ Think: a careful engineer who writes a letter to a friend who runs a business.
 6. **Numbered lists with a bold verb lead.** "1. Buy the model direct, not third-party tools." Then 2–4 sentences.
 7. **Admit the format.** "This is a new format. Tell us what you think." One line, at the top. It invites replies.
 8. **Close on what the reader can do.** Not a summary. A next step or one link.
-9. **Sign as the company.** "Citata.ai." A personal signature only when Tao asks for it.
+9. **Sign with a name and role.** "Tao, founder, citata.ai."
 
 ## 6. Patterns we do not take
 
@@ -100,7 +100,7 @@ Numbers:
 - Dates are absolute: 2026-10-18 in docs, "October 18" in email.
 
 Pronouns:
-- "I" only in a piece Tao asks to sign himself.
+- "I" for the founder's own work and opinion.
 - "We" for the team, people and agents together.
 - "You" for the reader. Use it in every call to action.
 
@@ -170,4 +170,4 @@ Not in range: hype, fear, anger, sarcasm.
 
 ## 13. Voice in one paragraph
 
-citata.ai writes like a founder who does the work and shows the receipts. Sentences are short, active and plain, about 12 words on average and never more than 25. Each piece opens with a real event or a number, walks through what we did, says what failed, and ends with one step the reader can take. We speak as Citata.ai: "we" for the team of people and agents, and "you" for the reader. Numbers carry the argument, and each one has a source. The tone is calm and kind: no hype, no fear, no fake urgency. The mission, positive impact on Earth, shows in the clients we pick and the honesty we keep, not in slogans.
+citata.ai writes like a founder who does the work and shows the receipts. Sentences are short, active and plain, about 12 words on average and never more than 25. Each piece opens with a real event or a number, walks through what we did, says what failed, and ends with one step the reader can take. We speak as "I" for the founder, "we" for the team of people and agents, and "you" for the reader. Numbers carry the argument, and each one has a source. The tone is calm and kind: no hype, no fear, no fake urgency. The mission, positive impact on Earth, shows in the clients we pick and the honesty we keep, not in slogans.
