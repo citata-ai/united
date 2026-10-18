@@ -55,15 +55,14 @@ Score after the second deploy (2026-10-18): 96/100. Added: About page, WebSite /
 - Bing Webmaster Tools: `https://citata.ai/`, imported from GSC (same Google account). Sitemap submitted. Its AI Performance report shows Copilot citations: export the CSV weekly.
 - Ahrefs Webmaster Tools: project "Citata", verified, weekly Site Audit.
 
-## Publish step (when new content is ready)
+## Publish step (automatic since 2026-10-19)
 
-IndexNow waits until the first content batch is live.
+Merge `stage` into `main`. The deploy job (`.github/workflows/deploy.yml`) then:
 
-1. Deploy the batch. Update `lastmod` in `landing/public/sitemap.xml`.
-2. Ping IndexNow (Bing, Yandex, Seznam, Naver, Yep). Google does not use it: use GSC.
-3. Test Cloudflare Crawler Hints once (free, now off). It sends IndexNow on a cache MISS. Cloudflare docs do not say if it works for a Worker with static assets. Test:
-   - Add the site to Bing Webmaster Tools.
-   - Turn on Crawler Hints: dashboard → citata.ai → Caching → Configuration.
-   - Deploy one changed page. After 24 hours, check Bing Webmaster → IndexNow for that URL.
-   - URL there: keep Crawler Hints, no script. No URL: turn it off and POST to `api.indexnow.org` from the deploy script.
+1. Lists the sitemap pages whose new HTML differs from live citata.ai (`landing/scripts/changed-urls.mjs`).
+2. Deploys prod with Alchemy and runs the smoke test.
+3. Pings IndexNow (Bing, Yandex, Seznam, Naver, Yep) with only the changed pages. No change, no ping. Google does not use IndexNow: it reads the sitemap (`lastmod` comes from the build), and new pages can be sent through GSC "Request indexing" by hand.
 
+Cloudflare **Crawler Hints** is on (2026-10-19, Caching → Configuration). It sends IndexNow signals when cached content changes. Our HTML is served by a Worker, so it may not fire for pages; the CI ping covers that. Check once: Bing Webmaster Tools → IndexNow shows which URLs arrived and from where.
+
+First full ping: 2026-10-19, 10 URLs, HTTP 202 (`node landing/scripts/indexnow.mjs`).
