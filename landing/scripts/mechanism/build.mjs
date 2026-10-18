@@ -20,6 +20,8 @@ import { LOGOS } from "./logos.mjs";
 import * as M from "./model.mjs";
 
 const { depthOf } = k;
+/** Facet cap for small turned parts: keeps the inline SVG light. */
+const LOW = { steps: 24 };
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -76,14 +78,14 @@ const HORN_Z = 66;
 const HORN_AXIS = [0, 0.94, 0.34];
 
 // AI engine receivers: bins with funnels down to the belt and a spout forward.
-const BIN = 22;
+const BIN = 26;
 const BIN_Z0 = 74;
 const BIN_Z1 = 94;
 const GANTRY_Y = -76;
 const BEAM_Z = 98;
 
 // Front: counter dial by the door, the gear train and the bell.
-const DIAL = [-200, 14];
+const DIAL = [-262, 18];
 const DIAL_Z = 18;
 const DIAL_R = 12;
 const DIAL_TOP = DIAL_Z + 6;
@@ -93,15 +95,15 @@ const GEAR_Z = 16;
 const GEAR_H = 4;
 const FLY = [44, 14];
 const FLY_R = 24;
-const FLY_TEETH = 50;
+const FLY_TEETH = 36;
 const IDLER_R = 7;
-const IDLER_TEETH = 14;
+const IDLER_TEETH = 11;
 const IDLER = [
   FLY[0] + (FLY_R + IDLER_R + TOOTH) * Math.cos(0.18),
   FLY[1] + (FLY_R + IDLER_R + TOOTH) * Math.sin(0.18),
 ];
 const ESCAPE_R = 12;
-const TEETH = 15;
+const TEETH = 12;
 const ESCAPE = [
   IDLER[0] + (IDLER_R + ESCAPE_R + TOOTH) * Math.cos(-0.25),
   IDLER[1] + (IDLER_R + ESCAPE_R + TOOTH) * Math.sin(-0.25),
@@ -305,10 +307,6 @@ function post(x, y) {
 function frameBack() {
   const out = [];
   for (const x of FRAME_X) out.push(post(x, FRAME_Y[0]));
-  for (const x of FRAME_X) {
-    const beam = { x: x - 3.5, y: FRAME_Y[0] - 3.5, w: 7, d: FRAME_Y[1] - FRAME_Y[0] + 7, r: 1 };
-    out.push(S(k.slabOf(beam, FRAME_TOP - 8, 6, P, 3, 0.4), { tone: "mid" }), count());
-  }
   const beam = {
     x: FRAME_X[0] - 3.5,
     y: FRAME_Y[0] - 3.5,
@@ -333,8 +331,6 @@ function frameBack() {
   count();
   return out.join("");
 }
-
-const frameFront = () => FRAME_X.map((x) => post(x, FRAME_Y[1])).join("");
 
 function cabinet() {
   const out = [];
@@ -431,7 +427,7 @@ function horn() {
   out.push(S(k.cylinder(HORN.x, HORN.y, 4, HORN_Z - 12, 3, P, 24), { tone: "mid" }));
   count(3);
   const box = G.frameAlong([HORN.x, HORN.y - 4, HORN_Z - 4], [0, 1, 0]);
-  out.push(S(G.disc(0, 6, 8, box, P), { tone: "mid" }), count());
+  out.push(S(G.disc(0, 6, 8, box, P, LOW), { tone: "mid" }), count());
   out.push(L(G.circleOf(box, 6, 5.4, P), { tone: "lo" }));
   const F = hornFrame();
   const len = 34;
@@ -534,7 +530,7 @@ function belt({ y, top, from, to, legs, cleats, part }) {
   }
   for (const x of [from + 1, to - 1]) {
     const F = G.frameAlong([x, y0 - 0.5, top - 3], [0, 1, 0]);
-    out.push(S(G.disc(0, 15, Math.min(4.2, top - 3), F, P), { tone: "mid" }), count());
+    out.push(S(G.disc(0, 15, Math.min(4.2, top - 3), F, P, LOW), { tone: "mid" }), count());
   }
   return out.join("");
 }
@@ -664,6 +660,7 @@ function receivers() {
           ],
           F,
           P,
+          LOW,
         ),
         { tone: "mid" },
       ),
@@ -677,9 +674,9 @@ function receivers() {
     );
     out.push(S(k.slabOf(k.insetPlan(plan, -1), BIN_Z1, 1.6, P, 3, 0.4), { tone: "mid" }));
     out.push(L(k.planOutline(k.insetPlan(plan, 3), BIN_Z1 + 1.6, P, 3), { tone: "lo" }));
-    const m = k.sideMatrix([x - 7, plan.y + plan.d], BIN_Z1 - 3, P, "left");
+    const m = k.sideMatrix([x - 11, plan.y + plan.d], BIN_Z1 - 1.5, P, "left");
     out.push(
-      `<g transform="${m}"><rect x="0" y="0" width="14" height="14" rx="0.8" class="iso-line" data-tone="mid"/>${rivets(14, 14)}<path class="ce-logo" transform="translate(2.5 2.5) scale(0.375)" d="${LOGOS[i].d}"/></g>`,
+      `<g transform="${m}"><rect x="0" y="0" width="22" height="17" rx="0.8" class="ce-logo-plate"/>${rivets(22, 17, 1.4)}<path class="ce-logo" transform="translate(4.25 1.75) scale(0.5625)" d="${LOGOS[i].d}"/></g>`,
     );
     count(5);
     return `<g data-part="receiver" data-engine="${i}">${out.join("")}</g>`;
@@ -696,10 +693,10 @@ function spouts() {
     const drop = G.frameAlong([x, M.RETURN_Y, z], [0, 0, -1]);
     count(3);
     return [
-      S(G.disc(0, len, 4.4, run, P), { tone: "mid" }),
-      S(G.sphereOf([x, M.RETURN_Y, z], 5, P), { tone: "mid" }),
-      S(G.disc(0, z - M.SPOUT_Z, 4.4, drop, P), { tone: "mid" }),
-      S(G.ringBand(z - M.SPOUT_Z - 1.6, z - M.SPOUT_Z, 4.4, 5.8, drop, P), { tone: "mid" }),
+      S(G.disc(0, len, 4.4, run, P, LOW), { tone: "mid" }),
+      S(G.sphereOf([x, M.RETURN_Y, z], 5, P, { steps: 20 }), { tone: "mid" }),
+      S(G.disc(0, z - M.SPOUT_Z, 4.4, drop, P, LOW), { tone: "mid" }),
+      S(G.ringBand(z - M.SPOUT_Z - 1.6, z - M.SPOUT_Z, 4.4, 5.8, drop, P, LOW), { tone: "mid" }),
     ].join("");
   }).join("");
 }
@@ -722,7 +719,7 @@ function dropTubes() {
         P,
       )}"/>`,
       L(G.arcOf(F, (z1 - z0) / 2, r, P), { tone: "faint" }),
-      S(G.ringBand(0, 1.6, r, r + 1.2, F, P), { tone: "mid" }),
+      S(G.ringBand(0, 1.6, r, r + 1.2, F, P, LOW), { tone: "mid" }),
     ].join("");
   }).join("");
 }
@@ -992,7 +989,7 @@ const DOLLAR_AT = at([HOUSE.x + HOUSE.w / 2, HOUSE.y + HOUSE.d / 2, HOUSE_H + 24
 const dollars = Array.from(
   { length: 4 },
   () =>
-    `<text data-part="dollar" class="ce-dollar" x="${DOLLAR_AT[0].toFixed(1)}" y="${DOLLAR_AT[1].toFixed(1)}" text-anchor="middle" opacity="0">$</text>`,
+    `<text data-part="dollar" class="ce-dollar" x="${DOLLAR_AT[0].toFixed(1)}" y="${DOLLAR_AT[1].toFixed(1)}" text-anchor="middle" opacity="0" visibility="hidden" aria-hidden="true">$</text>`,
 ).join("");
 
 /** Hotspots in story order: world points on key parts, with the step we do there. */
@@ -1003,17 +1000,17 @@ const SPOTS = [
     text: "We start with your website: its pages, your listings and the facts about you.",
   },
   {
-    p: [CABINET.x + CABINET.w - 6, CABINET.y + 8, CABINET_H + 3],
+    p: [CABINET.x + 10, CABINET.y + CABINET.d - 2, 30],
     title: "Indexed",
     text: "We make sure search engines and AI crawlers can read every page: sitemaps, crawl errors, speed.",
   },
   {
-    p: [LENS_POST[0], LENS_POST[1], LENS_Z + 10],
+    p: [LENS_POST[0], LENS_POST[1], LENS_Z + 7],
     title: "Found",
     text: "We write exact answers to the questions your buyers ask, and fix weak pages.",
   },
   {
-    p: [HORN.x, HORN.y + 30, HORN_Z + 8],
+    p: [HORN.x + 34, HORN.y + 30, HORN_Z + 4],
     title: "Mentioned",
     text: "We fix your listings and profiles, so AI engines can name you, with a link.",
   },
@@ -1044,6 +1041,35 @@ const spotsHtml = SPOTS.map((spot, i) => {
 }).join("");
 const tipHtml = `<div class="ce-tip" role="tooltip" hidden><strong></strong><span></span></div>`;
 
+if (process.argv.includes("--sizes")) {
+  const named = {
+    bench,
+    gantry,
+    plinth,
+    frameBack,
+    cabinet,
+    lensPost,
+    horn,
+    house,
+    upperBelt,
+    receivers,
+    spouts,
+    lowerBelt,
+    dropTubes,
+    drive,
+    bell,
+    dial,
+  };
+  for (const [n, f] of Object.entries(named)) console.log(n, (f().length / 1024).toFixed(1));
+  console.log(
+    "page",
+    (page().length / 1024).toFixed(1),
+    "ball",
+    (ball().length / 1024).toFixed(1),
+    "train",
+    (trainAt(0).length / 1024).toFixed(1),
+  );
+}
 const svg = k.figureSvg({
   width: WIDTH,
   height: HEIGHT,
@@ -1065,7 +1091,6 @@ const svg = k.figureSvg({
     `<g data-part="stamp">${stamp()}</g>`,
     `<g data-part="lens">${lensAt(REST)}</g>`,
     hornWaves(),
-    frameFront(),
     spouts(),
     lowerBelt(),
     `<g data-part="gate">${gate()}</g>`,
@@ -1084,7 +1109,7 @@ const svg = k.figureSvg({
 count(9);
 
 const CSS = `
-.ce{--anatomy-page:#f5efe3;--anatomy-card:#f5efe3;--anatomy-text:#5c5145;--anatomy-strong:#1c1712;--anatomy-muted:#8a7d6c;
+.iso.ce[data-theme="light"]{--anatomy-page:#f5efe3;--anatomy-card:#f5efe3;--anatomy-text:#5c5145;--anatomy-strong:#1c1712;--anatomy-muted:#5c5145;
 --anatomy-paper:#fbf7ee;--anatomy-face:#fffdf8;--anatomy-top:#fbf6ec;
 --anatomy-shade-0:#d2c4a8;--anatomy-shade-1:#ddd1b9;--anatomy-shade-2:#e8dfcc;--anatomy-shade-3:#f1eadb;
 --anatomy-lit-top:#e8743f;--anatomy-lit-shade:#c1410b;
@@ -1097,11 +1122,13 @@ const CSS = `
 .ce .iso-plate-corner{font-size:11px}
 .ce .iso-plate-corner[data-corner="fig"],.ce .iso-plate-corner[data-corner="title"]{color:#c1410b}
 .ce .iso-legend{color:var(--anatomy-text);font-size:14px}
-.ce .ce-logo{fill:var(--anatomy-hi)}
+.ce .ce-logo{fill:#1c1712}
+.ce .ce-logo-plate{fill:#fffdf8;stroke:var(--anatomy-mid);stroke-width:.5}
 .ce .ce-rivet{fill:var(--anatomy-mid);stroke:none}
 .ce .ce-hit{fill:transparent;stroke:none;cursor:pointer;pointer-events:all}
 .ce .ce-hit:hover{fill:#c1410b;fill-opacity:.06}
-.ce .iso-stage{position:relative;outline:none;touch-action:manipulation}
+.ce .iso-stage{position:relative;width:100%;aspect-ratio:${WIDTH}/${HEIGHT};outline:none;touch-action:manipulation}
+.ce .iso-stage>svg{position:absolute;inset:0;width:100%;height:100%}
 .ce .iso-stage:focus-visible{box-shadow:0 0 0 2px #c1410b;border-radius:4px}
 .ce .ce-small{display:block;margin-top:2px;font-size:12px;color:var(--anatomy-muted)}
 .ce .ce-plate{fill:var(--anatomy-top);stroke:var(--anatomy-mid);stroke-width:.25}
@@ -1120,7 +1147,7 @@ const CSS = `
 .ce .ce-tip strong{display:block;font-weight:600;color:#c1410b;margin-bottom:2px}
 .ce .ce-tip[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.ce .ce-spot::before{animation:none}}
-@media (max-width:560px){.ce .iso-plate{padding:28px 0 52px}.ce .iso-plate-corner{font-size:10px}.ce .iso-plate-corner[data-corner="hint"]{display:none}.ce .iso-plate-corner[data-corner="readout"]{left:0;right:auto;white-space:normal;line-height:1.3}.ce .ce-spot{width:20px;height:20px;margin:-10px 0 0 -10px}.ce .ce-spot span{inset:5px}.ce .ce-spot span::after{inset:2.5px}}
+@media (max-width:560px){.ce .iso-plate{padding:28px 0 52px}.ce .iso-plate-corner{font-size:10px}.ce .iso-plate-corner[data-corner="hint"]{display:none}.ce .iso-plate-corner[data-corner="readout"]{left:0;right:auto;white-space:normal;line-height:1.3}.ce .ce-spot{width:24px;height:24px;margin:-12px 0 0 -12px}.ce .ce-spot span{inset:7px}.ce .ce-spot span::after{inset:2.5px}.ce .ce-spot::before{inset:4px}}
 `;
 
 const caption =
@@ -1137,7 +1164,7 @@ const plate = k
       { mark: "lit", label: "A buyer sent by an AI engine" },
     ],
     caption,
-    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine.">${svg}${spotsHtml}${tipHtml}</div>`,
+    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure.html"></div>`,
   })
   .replace(
     "</figcaption>",
@@ -1145,6 +1172,50 @@ const plate = k
   );
 
 const markup = `<div class="iso ce" data-theme="light"><style>${k.ISO_CSS}${CSS}</style>${plate}</div>`;
+
+/**
+ * Simplify every polyline path (M/L/Z only) with Ramer-Douglas-Peucker at
+ * 0.12 viewBox units: the kit samples curves densely; most points are on a line.
+ */
+function simplify(text, tolerance = 0.12) {
+  const rdp = (pts) => {
+    if (pts.length < 3) return pts;
+    const [ax, ay] = pts[0];
+    const [bx, by] = pts[pts.length - 1];
+    const dx = bx - ax;
+    const dy = by - ay;
+    const len = Math.hypot(dx, dy) || 1;
+    let far = 0;
+    let at = 0;
+    for (let i = 1; i < pts.length - 1; i++) {
+      const d = Math.abs((pts[i][0] - ax) * dy - (pts[i][1] - ay) * dx) / len;
+      if (d > far) {
+        far = d;
+        at = i;
+      }
+    }
+    if (far <= tolerance) return [pts[0], pts[pts.length - 1]];
+    return [...rdp(pts.slice(0, at + 1)).slice(0, -1), ...rdp(pts.slice(at))];
+  };
+  return text.replace(/ d="([MLZ0-9.\- ]+)"/g, (all, d) => {
+    let out = "";
+    for (const sub of d.match(/M[^M]*/g) ?? []) {
+      const closed = sub.includes("Z");
+      const nums = sub.replace(/[MLZ]/g, " ").trim().split(/\s+/).map(Number);
+      const pts = [];
+      for (let i = 0; i + 1 < nums.length; i += 2) pts.push([nums[i], nums[i + 1]]);
+      out +=
+        "M" +
+        rdp(pts)
+          .map(([x, y]) => `${x} ${y}`)
+          .join("L") +
+        (closed ? "Z" : "");
+    }
+    return ` d="${out}"`;
+  });
+}
+
+const figureMarkup = simplify(svg) + spotsHtml + tipHtml;
 
 // ---------------------------------------------------------------------------
 // Live script
@@ -1177,7 +1248,7 @@ function hammerAt(swing) {
 const k = { solidSvg, extrude, cylinder, lineSvg, ring, lineOnTop, dotsSvg };
 const ease = (dt, s) => 1 - Math.exp(-dt / s);
 
-for (const root of document.querySelectorAll(".ce")) {
+function init(root) {
   const stage = root.querySelector(".iso-stage");
   const svg = stage.querySelector("svg");
   const q = (name) => svg.querySelector('[data-part="' + name + '"]');
@@ -1322,7 +1393,8 @@ for (const root of document.querySelectorAll(".ce")) {
     parts.needle.setAttribute("d", needleAt(needle));
     for (const d of dollars) {
       const u = (clock - d.born) / 0.85;
-      if (u < 0 || u > 1) { d.el.setAttribute("opacity", "0"); continue; }
+      if (u < 0 || u > 1) { d.el.setAttribute("opacity", "0"); d.el.setAttribute("visibility", "hidden"); continue; }
+      d.el.setAttribute("visibility", "visible");
       d.el.setAttribute("opacity", (u < 0.15 ? u / 0.15 : 1 - (u - 0.15) / 0.85).toFixed(3));
       d.el.setAttribute("transform", "translate(0 " + (-16 * u).toFixed(2) + ")");
     }
@@ -1398,10 +1470,35 @@ for (const root of document.querySelectorAll(".ce")) {
     visible = entries[entries.length - 1].isIntersecting;
     if (visible) run();
   }, { rootMargin: "80px 0px" }).observe(stage);
-  // Warm start: run the model for a while so the loop is already full, then draw.
-  for (let i = 0; i < 540; i++) update(1 / 30);
-  if (still.matches) swing = 0;
-  draw();
+  // Warm start in small slices so no task runs long, then draw.
+  let warm = 0;
+  const slice = () => {
+    const end = performance.now() + 8;
+    while (warm < 540 && performance.now() < end) { update(1 / 30); warm++; }
+    if (warm < 540) { setTimeout(slice, 0); return; }
+    if (still.matches) swing = 0;
+    draw();
+    run();
+  };
+  slice();
+}
+
+// Load the figure only when its section comes near the viewport.
+for (const root of document.querySelectorAll(".ce")) {
+  const stage = root.querySelector(".iso-stage");
+  const src = stage.dataset.figure;
+  const load = async () => {
+    const html = window.__ceFigure || (await (await fetch(src)).text());
+    stage.innerHTML = html;
+    init(root);
+  };
+  const watch = new IntersectionObserver((entries) => {
+    if (!entries.some((e) => e.isIntersecting)) return;
+    watch.disconnect();
+    const go = () => load().catch(() => {});
+    if ("requestIdleCallback" in window) requestIdleCallback(go, { timeout: 1200 }); else setTimeout(go, 0);
+  }, { rootMargin: "600px 0px" });
+  watch.observe(stage);
 }
 `;
 
@@ -1414,11 +1511,28 @@ const script =
 const wrapped = `/* citata.ai citation engine. Built by scripts/mechanism/build.mjs; do not edit.\n   Kit: anatomy (MIT), vendor/anatomy. */\n(() => {\n${script}\n})();\n`;
 
 writeFileSync(join(ROOT, "src/components/mechanism/figure.generated.html"), markup + "\n");
+writeFileSync(join(ROOT, "public/mechanism/figure.html"), figureMarkup + "\n");
 writeFileSync(join(ROOT, "public/mechanism/live.js"), wrapped);
 if (process.argv.includes("--page")) {
-  const page = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Citation engine</title><style>@font-face{font-family:"Paper Mono";src:url(../../public/fonts/PaperMono-Regular.woff2)}@font-face{font-family:"Cal Sans";src:url(../../public/fonts/CalSansVF.woff2)}body{margin:0;background:#f5efe3;font:15px/1.5 system-ui}main{width:min(1376px,100% - 32px);margin:40px auto}</style></head><body><main>${markup}</main><script>${wrapped.replace(/<\/(script)/gi, "<\\/$1")}</script></body></html>`;
+  const page = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Citation engine</title><style>@font-face{font-family:"Paper Mono";src:url(../../public/fonts/PaperMono-Regular.woff2)}@font-face{font-family:"Cal Sans";src:url(../../public/fonts/CalSansVF.woff2)}body{margin:0;background:#f5efe3;font:15px/1.5 system-ui}main{width:min(1376px,100% - 32px);margin:40px auto}</style></head><body><main>${markup}</main><script>window.__ceFigure = ${JSON.stringify(figureMarkup).replace(/<\//g, "<\\/")};</script><script>${wrapped.replace(/<\/(script)/gi, "<\\/$1")}</script></body></html>`;
   writeFileSync(join(HERE, "preview.html"), page);
 }
 console.log(
-  `parts ${parts} · svg ${(svg.length / 1024).toFixed(0)} KB · live.js ${(wrapped.length / 1024).toFixed(0)} KB`,
+  `parts ${parts} · figure ${(figureMarkup.length / 1024).toFixed(0)} KB (raw ${(svg.length / 1024).toFixed(0)}) · shell ${(markup.length / 1024).toFixed(0)} KB · live.js ${(wrapped.length / 1024).toFixed(0)} KB`,
 );
+{
+  const pts = SPOTS.map((spot) => at(spot.p));
+  let min = Infinity;
+  for (let i = 0; i < pts.length; i++)
+    for (let j = i + 1; j < pts.length; j++)
+      min = Math.min(min, Math.hypot(pts[i][0] - pts[j][0], pts[i][1] - pts[j][1]));
+  pts.forEach((a, i) =>
+    pts.forEach((b, j) => {
+      if (j > i && Math.hypot(a[0] - b[0], a[1] - b[1]) < 80)
+        console.log("close:", SPOTS[i].title, "/", SPOTS[j].title);
+    }),
+  );
+  console.log(
+    `hotspots: closest pair ${min.toFixed(1)} units = ${((min * 358) / WIDTH).toFixed(1)} px at 390 wide`,
+  );
+}

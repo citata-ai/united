@@ -800,10 +800,10 @@ const P = {"origin":[426.2678202299965,288.5157291438784],"scale":1.172334014721
 const ENGINES = ["ChatGPT","Gemini","Claude","Perplexity","Google AI Overviews"];
 const SPOTS = [{"title":"Your site","text":"We start with your website: its pages, your listings and the facts about you."},{"title":"Indexed","text":"We make sure search engines and AI crawlers can read every page: sitemaps, crawl errors, speed."},{"title":"Found","text":"We write exact answers to the questions your buyers ask, and fix weak pages."},{"title":"Mentioned","text":"We fix your listings and profiles, so AI engines can name you, with a link."},{"title":"AI engines","text":"ChatGPT, Gemini, Claude, Perplexity and Google read those pages. Every week we check which ones name you."},{"title":"Buyers come back","text":"Buyers follow the link back to your site. We report citations and leads, not promises."},{"title":"One checked change a day","text":"Agents draft it. A person checks it before it ships."},{"title":"Monday report","text":"Which engines named you, for which questions, and what we changed."}];
 const REST = 1.5, LENS_POST = [-62,-80], LENS_ARM = 38.8329756778952, LENS_R = 7.5, LENS_Z = 64;
-const FLY = [44,14], FLY_R = 24, FLY_TEETH = 50, TOOTH = 2.6, GEAR_H = 4;
-const IDLER = [77.05714807768089,20.015393667107695], IDLER_R = 7, IDLER_TEETH = 14, ESCAPE = [97.98565638663082,14.67146814721], ESCAPE_R = 12, TEETH = 15, GEAR_Z = 16;
+const FLY = [44,14], FLY_R = 24, FLY_TEETH = 36, TOOTH = 2.6, GEAR_H = 4;
+const IDLER = [77.05714807768089,20.015393667107695], IDLER_R = 7, IDLER_TEETH = 11, ESCAPE = [97.98565638663082,14.67146814721], ESCAPE_R = 12, TEETH = 12, GEAR_Z = 16;
 const ANCHOR = [123.98565638663082,14.67146814721], BELL = [214,22], BELL_Z = 28;
-const DIAL = [-200,14], DIAL_R = 12, DIAL_TOP = 24, STAMP_DOWN = 5;
+const DIAL = [-262,18], DIAL_R = 12, DIAL_TOP = 24, STAMP_DOWN = 5;
 const at = (p) => iso(p, P);
 function lensAt(a) {
   const [px, py] = LENS_POST;
@@ -951,7 +951,7 @@ function hammerAt(swing) {
 const k = { solidSvg, extrude, cylinder, lineSvg, ring, lineOnTop, dotsSvg };
 const ease = (dt, s) => 1 - Math.exp(-dt / s);
 
-for (const root of document.querySelectorAll(".ce")) {
+function init(root) {
   const stage = root.querySelector(".iso-stage");
   const svg = stage.querySelector("svg");
   const q = (name) => svg.querySelector('[data-part="' + name + '"]');
@@ -1096,7 +1096,8 @@ for (const root of document.querySelectorAll(".ce")) {
     parts.needle.setAttribute("d", needleAt(needle));
     for (const d of dollars) {
       const u = (clock - d.born) / 0.85;
-      if (u < 0 || u > 1) { d.el.setAttribute("opacity", "0"); continue; }
+      if (u < 0 || u > 1) { d.el.setAttribute("opacity", "0"); d.el.setAttribute("visibility", "hidden"); continue; }
+      d.el.setAttribute("visibility", "visible");
       d.el.setAttribute("opacity", (u < 0.15 ? u / 0.15 : 1 - (u - 0.15) / 0.85).toFixed(3));
       d.el.setAttribute("transform", "translate(0 " + (-16 * u).toFixed(2) + ")");
     }
@@ -1172,10 +1173,35 @@ for (const root of document.querySelectorAll(".ce")) {
     visible = entries[entries.length - 1].isIntersecting;
     if (visible) run();
   }, { rootMargin: "80px 0px" }).observe(stage);
-  // Warm start: run the model for a while so the loop is already full, then draw.
-  for (let i = 0; i < 540; i++) update(1 / 30);
-  if (still.matches) swing = 0;
-  draw();
+  // Warm start in small slices so no task runs long, then draw.
+  let warm = 0;
+  const slice = () => {
+    const end = performance.now() + 8;
+    while (warm < 540 && performance.now() < end) { update(1 / 30); warm++; }
+    if (warm < 540) { setTimeout(slice, 0); return; }
+    if (still.matches) swing = 0;
+    draw();
+    run();
+  };
+  slice();
+}
+
+// Load the figure only when its section comes near the viewport.
+for (const root of document.querySelectorAll(".ce")) {
+  const stage = root.querySelector(".iso-stage");
+  const src = stage.dataset.figure;
+  const load = async () => {
+    const html = window.__ceFigure || (await (await fetch(src)).text());
+    stage.innerHTML = html;
+    init(root);
+  };
+  const watch = new IntersectionObserver((entries) => {
+    if (!entries.some((e) => e.isIntersecting)) return;
+    watch.disconnect();
+    const go = () => load().catch(() => {});
+    if ("requestIdleCallback" in window) requestIdleCallback(go, { timeout: 1200 }); else setTimeout(go, 0);
+  }, { rootMargin: "600px 0px" });
+  watch.observe(stage);
 }
 
 })();
