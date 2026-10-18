@@ -146,3 +146,15 @@ file = "img/hero-v8-*.webp"
 prompt = "Edit of hero-v7: keep everything and the white sky; add pop accents: pink and sun yellow striped awnings, mint green and cobalt doors and shutters, pots with bright pink flowers, coral and cyan pennants on the crane rope"
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-18"
+
+[[image]]
+file = "img/footer-v8-*.webp"
+prompt = "Edit of footer-v7: more vivid (cobalt mantle, orange cloak, mint shutters, pink-yellow awning, pink flowers), then radiant gold halos with engraved rays and a strong golden glow with rays from the cave; white sky kept"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/stamp-*-v2-*.webp"
+prompt = "Same stamp engravings as v1, recolored brighter: cobalt #1F57FF, red-orange #FF4A26, green #009E6E on paper #FBF7EE"
+model = "recolor (ffmpeg lutrgb)"
+date = "2026-10-18"

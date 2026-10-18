@@ -40,7 +40,8 @@ Style: a vintage postage-stamp line engraving printed in three inks on clean whi
 |---|---|
 | `hero-v8` (current) | hero-v7 plus pop accents, sky still white (owner pick, option A of 4): pink and sun-yellow striped awnings, mint and cobalt doors and shutters, pots of pink flowers, coral and cyan pennants on the crane rope. |
 | `hero-v7` (old) | Edit of the chosen option-4 picture: crane and scaffolding over tiled houses and an arcade (left), a large temple with cypresses (right), a small temple with a glowing door, the man in the orange toga with the key walking toward us in the exact center. Sky made clean, sea and boats replaced by a paved plaza to the bottom edge, no fade. White margins cropped so the scene runs edge to edge. |
-| `footer-v7` (current) | Easter egg made open (owner, 2026-10-18): "no room at the inn". Evening street in Bethlehem: an innkeeper with a lantern turns travelers away; Joseph with a staff leads a donkey with Mary; both have thin engraved halos; they head to a lit cave stable with a manger and an ox. Message for landlords and realtors: Joseph knows the stress of searching, refusals and finding a place. Upper 55 % empty sky. |
+| `footer-v8` (current) | footer-v7 made vivid (owner, 2026-10-18): saturated colors, striped pink-yellow awning, mint shutters, pink flowers; radiant gold halos with engraved rays; a strong golden glow with rays from the cave. Sky stays white. |
+| `footer-v7` (old) | Easter egg made open (owner, 2026-10-18): "no room at the inn". Evening street in Bethlehem: an innkeeper with a lantern turns travelers away; Joseph with a staff leads a donkey with Mary; both have thin engraved halos; they head to a lit cave stable with a manger and an ox. Message for landlords and realtors: Joseph knows the stress of searching, refusals and finding a place. Upper 55 % empty sky. |
 | `monday-report-v3` | Style N (below). Market square: a herald in an orange toga on a rostrum holds up a scroll with a rising cobalt bar chart; bronze bell; yellow awnings; lion fountain. Coral sky `#FF6B5B`. |
 | `fridman-case-v3` | Style N. Brownstone two-flats in pink, coral and lilac; a man in an orange toga with a phone and a map pin. Sun-yellow sky `#F2C230`. |
 | `hero-v6`, `footer-v6` (old) | Vignette hero with a faded bottom; hill-town footer with Joseph as a carpenter. |
@@ -79,7 +80,7 @@ Style: fine line engraving illustration like a banknote or a vintage postage sta
 
 The owner asked for postage-stamp elements in the same engraving technique, with other scenes and colors. Used for the 01 Track / 02 Fix / 03 Report strip under the hero (`landing/src/components/Stamps.astro`).
 
-- Same engraving as style E, but each stamp has its own ink on paper `#FBF7EE`: lapis `#1E3A7B` (Track), minium `#C1410B` (Fix), green `#2F6B5C` (Report).
+- Same engraving as style E, but each stamp has its own ink on paper `#FBF7EE`: bright cobalt `#1F57FF` (Track), bright red-orange `#FF4A26` (Fix), bright green `#009E6E` (Report) — v2, brighter on owner request; v1 used lapis `#1E3A7B`, minium `#C1410B`, green `#2F6B5C`.
 - Portrait 3:4. The subject stands in the lower right and is cut by the bottom edge; the upper left is empty for the title. A few birds in the sky.
 - The title, number and vertical side text are HTML. The perforation is a CSS mask. A round postmark (SVG, "MON 09:00") sits on the last stamp.
 - On phones the stamps are a swipe row.
