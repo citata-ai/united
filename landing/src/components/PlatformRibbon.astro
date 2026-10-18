@@ -1,0 +1,52 @@
+---
+// Slow right-to-left ribbon of the AI platforms where buyers ask.
+// Two copies of the list make a seamless loop. Pauses on hover; still under reduced motion.
+import { platforms } from "../data/platforms.ts";
+
+const rows = [0, 1];
+---
+
+<section aria-label="AI platforms where your buyers ask" class="ribbon border-y border-rule py-8">
+  <p class="meta mb-5 text-center">Where your buyers ask AI</p>
+  <div class="ribbon-mask overflow-hidden">
+    <div class="ribbon-track flex w-max">
+      {
+        rows.map((r) => (
+          <ul class="flex shrink-0 items-center gap-12 pr-12" aria-hidden={r === 1 ? "true" : undefined}>
+            {platforms.map((p) => (
+              <li class="flex items-center gap-2.5 whitespace-nowrap text-muted">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" class="fill-current">
+                  <path d={p.path} />
+                </svg>
+                <span class="text-[17px] text-ink">{p.name}</span>
+              </li>
+            ))}
+          </ul>
+        ))
+      }
+    </div>
+  </div>
+  <p class="mt-4 text-center text-[11px] text-muted">Logos belong to their owners.</p>
+</section>
+
+<style>
+  .ribbon-mask {
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+  .ribbon-track {
+    animation: ribbon 45s linear infinite;
+  }
+  .ribbon:hover .ribbon-track {
+    animation-play-state: paused;
+  }
+  @keyframes ribbon {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ribbon-track {
+      animation: none;
+    }
+  }
+</style>

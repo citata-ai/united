@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import BaselineCard from "../components/BaselineCard.astro";
+import PlatformRibbon from "../components/PlatformRibbon.astro";
 import Mechanism from "../components/Mechanism.astro";
 import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
@@ -89,32 +89,55 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
 <Base title={title} description={description} image="/og/hero.jpg">
-  <main class="wrap">
-    <section class="grid items-center gap-10 border-b border-rule py-12 md:grid-cols-[1.25fr_1fr] md:py-16">
+  <main>
+  <div class="wrap">
+    <section class="grid items-center gap-10 py-12 md:grid-cols-[1.15fr_1fr] md:py-16">
       <div>
-        <p class="meta"><span class="text-minium">GEO</span> · getting cited by AI answers</p>
+        <p class="meta"><span class="text-minium">GEO agency</span> · GEO: getting cited by AI answers</p>
         <h1 class="mt-4 text-[40px] leading-[1.04] sm:text-[56px] sm:leading-[1.02]">
-          Get named when buyers ask AI
+          Get your business named in AI answers
         </h1>
         <p class="mt-5 max-w-xl text-[19px] leading-normal text-muted">
-          citata.ai makes AI assistants name and link our clients when buyers ask them for a
-          recommendation. We track the questions your buyers ask, ship one checked change a day, and
-          report every Monday.
+          Buyers now ask ChatGPT, Gemini and Claude who to hire. We work so those answers name your
+          company and link to your site. You do not need to learn AI search. We do the work.
         </p>
+        <ul class="mt-6 grid max-w-xl gap-3 text-[15px] sm:grid-cols-3">
+          <li class="border-t border-rule pt-3">
+            <span class="meta text-minium">01 Track</span>
+            <span class="mt-1 block text-muted">The questions your buyers ask AI</span>
+          </li>
+          <li class="border-t border-rule pt-3">
+            <span class="meta text-minium">02 Fix</span>
+            <span class="mt-1 block text-muted">One checked change to your site a day</span>
+          </li>
+          <li class="border-t border-rule pt-3">
+            <span class="meta text-minium">03 Report</span>
+            <span class="mt-1 block text-muted">Who named you, every Monday</span>
+          </li>
+        </ul>
         <div class="mt-8 flex flex-wrap items-center gap-3">
           <a class="btn-lapis" href={auditHref}>Get a free AI visibility audit</a>
-          <a class="btn-ink" href="/case-studies/fridman-properties">Read our first case study</a>
+          <a class="btn-ink" href="#engine">See how it works</a>
         </div>
         <p class="mt-4 text-sm text-muted">
           The audit is free: 20 questions on 4 AI engines, and your top 5 fixes.
         </p>
       </div>
-      <div>
-        <BaselineCard />
-        <p class="meta mt-3">Our first client, before any GEO work. <a class="link normal-case" href="/case-studies/fridman-properties">Read why</a></p>
-      </div>
+      <figure class="img-frame">
+        <img
+          src="/img/hero.jpg"
+          alt="A marble hand points at one open book on a shelf. A chat bubble sits above the book."
+          width="1280"
+          height="714"
+          fetchpriority="high"
+        />
+      </figure>
     </section>
+  </div>
 
+  <PlatformRibbon />
+
+  <div class="wrap">
     <section aria-labelledby="engine" class="border-b border-rule py-14">
       <p class="label" id="engine">How the work flows</p>
       <Mechanism />
@@ -291,6 +314,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
         <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
       </div>
     </section>
+  </div>
   </main>
 </Base>
 
