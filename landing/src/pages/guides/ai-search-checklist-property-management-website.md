@@ -1,18 +1,18 @@
 ---
 layout: ../../layouts/Guide.astro
 title: "AI Search Checklist for a Property Management Website — citata.ai"
-description: "What a property management website needs so ChatGPT, Gemini and AI Overviews can read, trust and cite it: crawler access, index, schema, llms.txt, owner pages and exact fee answers."
+description: "What a property management website needs so ChatGPT, Gemini and AI Overviews can read, trust and cite it: crawler access, index, schema, llms.txt, landlord pages and exact fee answers."
 headline: "The AI Search Checklist for Property Management Websites"
 dek: "Twelve checks for a 50 to 500 door manager, tested first on our own site."
 published: "2026-10-18"
 updated: "2026-10-18"
-answer: "A property management website needs three things to get cited in AI answers. First, crawlers must reach the pages, and the indexes must hold them. Second, schema and consistent business data must say clearly who you are and where you work. Third, owner pages must give exact answers on fees, contract terms, screening and each city you serve."
+answer: "A property management website needs three things to get cited in AI answers. First, crawlers must reach the pages, and the indexes must hold them. Second, schema and consistent business data must say clearly who you are and where you work. Third, landlord pages must give exact answers on fees, contract terms, screening and each city you serve."
 faq:
   - q: "Does a property management website need an llms.txt file?"
     a: "An llms.txt file is optional. Google says Search ignores llms.txt, and no major AI company says it uses the file for citations. It takes about an hour to write, so we add one, but we do not expect results from it."
   - q: "Which robots.txt rule lets ChatGPT cite a property management website?"
     a: "OAI-SearchBot is the OpenAI crawler that finds pages for ChatGPT answers, so robots.txt must allow it. GPTBot is a different crawler for model training. Blocking GPTBot does not remove a site from ChatGPT answers."
-  - q: "Can Cloudflare block AI crawlers on a property management website without the owner knowing?"
+  - q: "Can Cloudflare block AI crawlers on a property management website without the landlord knowing?"
     a: "Yes. Cloudflare has default AI crawler settings, and from 2026-09-15 new domains block Training and Agent crawlers on pages that show ads. Check the AI crawler settings in the Cloudflare dashboard, not only robots.txt."
   - q: "What schema type fits a property management company?"
     a: "Schema.org lists RealEstateAgent as a type of LocalBusiness, and it is the closest fit we found. Add FAQPage, Service and BreadcrumbList where the page content matches. Google says no special schema is needed for AI features, so schema helps clarity, not ranking."
@@ -68,7 +68,7 @@ An AI search checklist is a list of site checks that let answer engines reach yo
 | 7 | Same name, address and phone as Google Business Profile | Identity | 1 hour |
 | 8 | About page with real people | Identity | 2 hours |
 | 9 | llms.txt (optional) | Identity | 1 hour |
-| 10 | Owner pages with exact answers | Answers | 1 to 3 days |
+| 10 | Landlord pages with exact answers | Answers | 1 to 3 days |
 | 11 | One real page per city served | Answers | 1 day per city |
 | 12 | Answer-first format, dates, no JavaScript-only text | Answers | per page |
 
@@ -108,13 +108,13 @@ What to do: open the Cloudflare dashboard, find the AI crawler settings, and set
 
 Answer engines can only cite pages that an index holds. To be a link in AI Overviews or AI Mode, a page "must be indexed and eligible to be shown in Google Search with a snippet" (Google, AI features). The same page says there are "no additional technical requirements."
 
-Rank still matters a lot. Ahrefs found that 38% of pages cited in AI Overviews also rank in the top 10 (Ahrefs, 2026, 863,000 keyword results). So 62% come from lower positions. AI Overviews run many related searches across subtopics (this is called query fan-out). Owner sub-questions are your way in.
+Rank still matters a lot. Ahrefs found that 38% of pages cited in AI Overviews also rank in the top 10 (Ahrefs, 2026, 863,000 keyword results). So 62% come from lower positions. AI Overviews run many related searches across subtopics (this is called query fan-out). Landlord sub-questions are your way in.
 
 Index checklist:
 
-- **Sitemap.** List every owner page and city page in `sitemap.xml`. Submit it in Search Console.
+- **Sitemap.** List every landlord page and city page in `sitemap.xml`. Submit it in Search Console.
 - **One canonical URL.** Each page points its canonical tag to itself, with a URL that answers 200. Our own canonical once pointed to a URL that answered 307.
-- **Google Search Console.** Check "Pages" for owner pages that are not indexed. The AI optimization guide also says the site must be included in Search generative AI features in Search Console.
+- **Google Search Console.** Check "Pages" for landlord pages that are not indexed. The AI optimization guide also says the site must be included in Search generative AI features in Search Console.
 - **Bing Webmaster Tools.** The AI Performance report shows citations in Microsoft Copilot and Bing AI summaries (Bing, 2026-02-10).
 - **IndexNow.** One ping tells Bing, Naver, Seznam, Yandex, Yep and Amazon that a page changed (IndexNow FAQ). Google does not appear on that list.
 
@@ -128,7 +128,7 @@ Structured data (schema) tells machines who you are in a fixed format. Schema is
 |---|---|---|
 | RealEstateAgent (a LocalBusiness type) or Organization | Home, About | Name, address, phone, area served, `sameAs` profiles |
 | Service | Each service page | Full management, leasing only, Section 8 |
-| FAQPage | Owner FAQ | Questions and answers that show on the page |
+| FAQPage | Landlord FAQ | Questions and answers that show on the page |
 | BreadcrumbList | All pages | Where the page sits on the site |
 | Article with author | Guides, blog | Who wrote it and when |
 
@@ -142,9 +142,9 @@ An llms.txt file is optional: a short Markdown map of your site for AI agents. J
 
 Our view: add one if you have an hour. List your company, area, services, fees page and city pages. Do not expect citations from it.
 
-## Which owner pages does AI quote?
+## Which landlord pages does AI quote?
 
-AI quotes pages that answer an owner's question with exact facts. Owners ask about fees, contract terms, tenant screening and Section 8. Each needs its own page or section:
+AI quotes pages that answer a landlord's question with exact facts. Landlords ask about fees, contract terms, tenant screening and Section 8. Each needs its own page or section:
 
 1. **Fees.** Management percent, leasing fee, renewal fee, vacancy fee. Use a table.
 2. **Contract terms.** Length, how to cancel, cancel fee.
@@ -159,13 +159,13 @@ The Chicago example shows the gap. On the Fridman Properties site, two city page
 AI cites pages that put the answer first and keep each section on one topic. Use this format:
 
 - **Answer in the first sentence** of each section.
-- **Questions as headings**, in the words owners use.
+- **Questions as headings**, in the words landlords use.
 - **Tables** for fees and comparisons.
 - **A visible "Updated" date** and the author name.
 - **Text in the HTML.** Some AI crawlers do not run JavaScript, so fees in a script widget can stay hidden. Test with "view source": if your fees are not there, move them.
 - **Fast pages.** Static HTML loads fast, and every crawler can read it without a browser.
 
-You also do not need to cut content into tiny chunks (Google, AI optimization guide). Write for owners first.
+You also do not need to cut content into tiny chunks (Google, AI optimization guide). Write for landlords first.
 
 ## Worked example: what did citata.ai change on its own site?
 

@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/Guide.astro
 title: "How to Track AI Traffic for a Property Management Company — citata.ai"
-description: "Track visits from ChatGPT, Gemini and Perplexity in GA4, see AI crawlers, ask owners how they found you, and check each month if AI names your company."
+description: "Track visits from ChatGPT, Gemini and Perplexity in GA4, see AI crawlers, ask landlords how they found you, and check each month if AI names your company."
 headline: "How to Track AI Traffic and AI Mentions"
 dek: "Three signals, five steps and one monthly scorecard, with the setup we use on citata.ai."
 published: "2026-10-18"
 updated: "2026-10-18"
-answer: "Track 3 signals: visits from AI assistants, AI crawler visits to your pages, and a 'how did you hear about us' question on your owner form. GA4 now has an AI Assistant channel, and a custom channel group catches the rest. To check if AI names you, ask the same owner questions in ChatGPT, Gemini, Claude and Perplexity each month and write down who they name. Bing Webmaster Tools also shows how often Copilot cites your pages."
+answer: "Track 3 signals: visits from AI assistants, AI crawler visits to your pages, and a 'how did you hear about us' question on your landlord form. GA4 now has an AI Assistant channel, and a custom channel group catches the rest. To check if AI names you, ask the same landlord questions in ChatGPT, Gemini, Claude and Perplexity each month and write down who they name. Bing Webmaster Tools also shows how often Copilot cites your pages."
 faq:
   - q: "Does Google Analytics 4 show traffic from ChatGPT?"
     a: "Yes. Since May 2026, GA4 has an AI Assistant channel in the default channel group. It names ChatGPT, Gemini, DeepSeek, Copilot and Grok as examples, so add a custom channel group to catch Perplexity and Claude."
@@ -17,7 +17,7 @@ faq:
   - q: "How do I see if AI crawlers read my property management website?"
     a: "Cloudflare AI Crawl Control shows AI crawler requests on all Cloudflare plans. Ahrefs Bot Analytics is free during its beta. Your server logs also show user agents such as GPTBot, OAI-SearchBot, ClaudeBot and PerplexityBot."
   - q: "How often should I check if AI names my company?"
-    a: "Check once a month with the same 10 to 20 owner questions. Ask each question at least twice per engine, because AI answers change from run to run. Track the rate, for example 'named in 3 of 40 answers'."
+    a: "Check once a month with the same 10 to 20 landlord questions. Ask each question at least twice per engine, because AI answers change from run to run. Track the rate, for example 'named in 3 of 40 answers'."
 sources:
   - label: "Google Analytics Help: Default channel group"
     url: "https://support.google.com/analytics/answer/9756891"
@@ -47,9 +47,9 @@ A property management company can track AI traffic with 3 signals. Each one fill
 |---|---|---|
 | AI referral visits | People clicked a link in an AI answer | GA4, Ahrefs Web Analytics |
 | AI crawler visits | AI tools read your pages | Cloudflare, Ahrefs Bot Analytics, server logs |
-| "How did you hear about us" | Owners who asked AI, then came back by other routes | Your owner form or CRM |
+| "How did you hear about us" | Landlords who asked AI, then came back by other routes | Your landlord form or CRM |
 
-The form answer matters most. Many owners read an AI answer, then type your name into Google. Analytics counts that visit as search, not AI.
+The form answer matters most. Many landlords read an AI answer, then type your name into Google. Analytics counts that visit as search, not AI.
 
 ## Step 1: How do you see AI visits in Google Analytics 4?
 
@@ -70,7 +70,7 @@ Watch for: the native channel does not count visits from before the rollout (Sea
 
 The tag utm_source=chatgpt.com means the visit came from a ChatGPT answer. ChatGPT adds this tag to links in its search results (OpenAI Help Center). GA4 shows it as the session source.
 
-What to do: in GA4, add "Session source" as a secondary dimension. Look for chatgpt.com in both the referrer and the UTM tag. If your form tool saves UTM tags, an owner lead can carry "chatgpt.com" into your CRM.
+What to do: in GA4, add "Session source" as a secondary dimension. Look for chatgpt.com in both the referrer and the UTM tag. If your form tool saves UTM tags, a landlord lead can carry "chatgpt.com" into your CRM.
 
 ## Why do AI visit counts look so low?
 
@@ -78,7 +78,7 @@ AI visit counts are low because part of the AI traffic hides in other channels. 
 
 - **No referrer.** Some AI links, for example from mobile apps, arrive with no referrer. GA4 counts them as Direct (Search Engine Journal, 2026).
 - **Google's own AI.** Google AI Overviews and AI Mode count as Organic Search, not AI Assistant (Google Analytics Help).
-- **Later visits.** An owner reads an answer today and searches your name next week.
+- **Later visits.** A landlord reads an answer today and searches your name next week.
 
 Use AI visit counts for trends. A rise from 2 to 9 visits a month is a signal. The exact total is not.
 
@@ -94,19 +94,19 @@ AI crawler visits show which pages AI tools read. A bot that reads a page again 
 
 Watch for fake bots. Anyone can send a GPTBot user agent. Scanners do this to probe files like `/.env`. Count only requests that got a normal page (HTTP 200).
 
-What to do: check that your owner pages get bot visits. If your management fee page never gets a visit, read [the AI search checklist for property management websites](/guides/ai-search-checklist-property-management-website).
+What to do: check that your landlord pages get bot visits. If your management fee page never gets a visit, read [the AI search checklist for property management websites](/guides/ai-search-checklist-property-management-website).
 
-## Step 4: How do you ask owners where they heard about you?
+## Step 4: How do you ask landlords where they heard about you?
 
-Add one question to your owner contact form: "How did you hear about us?" Give choices: ChatGPT, Gemini, Google, Perplexity, a friend, other. Add a free text field too.
+Add one question to your landlord contact form: "How did you hear about us?" Give choices: ChatGPT, Gemini, Google, Perplexity, a friend, other. Add a free text field too.
 
-Ask the same question on the first call. Write the answer in your CRM. This signal catches the owners that analytics misses. It also tells you which engine owners in your city use. For more on how owners use AI, read [how owners choose a property manager with AI](/guides/how-owners-choose-a-property-manager-with-ai).
+Ask the same question on the first call. Write the answer in your CRM. This signal catches the landlords that analytics misses. It also tells you which engine landlords in your city use. For more on how landlords use AI, read [how landlords choose a property manager with AI](/guides/how-owners-choose-a-property-manager-with-ai).
 
 ## Step 5: How do you check whether AI mentions your company?
 
-Ask AI the questions your owners ask, and record the answers. Do this once a month.
+Ask AI the questions your landlords ask, and record the answers. Do this once a month.
 
-1. **Write 10 to 20 owner questions.** Example: "Who is the best property manager for a duplex in Austin?" Keep the list the same each month.
+1. **Write 10 to 20 landlord questions.** Example: "Who is the best property manager for a duplex in Austin?" Keep the list the same each month.
 2. **Log out or use a private window.** Your own history changes the answer.
 3. **Ask each engine.** Use ChatGPT, Gemini, Claude and Perplexity. Ask each question at least twice, because answers change from run to run.
 4. **Record 2 facts per answer.** Did it name your company? Did it link your site?
@@ -123,9 +123,9 @@ A monthly scorecard puts the 3 signals on one page. Fill it in on the same day e
 | Metric | Source | Last month | This month |
 |---|---|---|---|
 | AI visits (AI Assistant + custom AI channel) | GA4 |  |  |
-| Owner leads with utm_source=chatgpt.com | CRM |  |  |
-| AI crawler visits to owner pages | Cloudflare or Ahrefs |  |  |
-| Owners who said "ChatGPT" or another AI | Owner form, first call |  |  |
+| Landlord leads with utm_source=chatgpt.com | CRM |  |  |
+| AI crawler visits to landlord pages | Cloudflare or Ahrefs |  |  |
+| Landlords who said "ChatGPT" or another AI | Landlord form, first call |  |  |
 | Answers that name you (for example, 4 of 40) | Manual prompt check |  |  |
 | Answers that link your site | Manual prompt check |  |  |
 | Copilot citations | Bing Webmaster Tools |  |  |
@@ -140,4 +140,4 @@ We use the same 3 signals on citata.ai. Our setup is small and cheap.
 
 Our baseline is honest. On 2026-10-18 we asked 20 prompts on ChatGPT, Gemini and Claude, 2 runs each. AI named citata.ai in 0 of 108 non-brand answers (our data, 2026-10). It also mixed us up with Citate.ai. We will measure again with the same prompts and report the result.
 
-If you want this check done for you, we run a [free AI visibility audit](/property-management). It covers 20 owner questions on 4 AI engines and gives you your top 5 fixes.
+If you want this check done for you, we run a [free AI visibility audit](/property-management). It covers 20 landlord questions on 4 AI engines and gives you your top 5 fixes.

@@ -11,7 +11,7 @@ import { faq } from "../data/faq.ts";
 // baseline). Every number names its source. Niche: US property management companies only.
 const title = "citata.ai — GEO for property management companies";
 const description =
-  "Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai gets your property management company named and linked in that answer.";
+  "Landlords now ask ChatGPT and Gemini which property manager to hire. citata.ai gets your property management company named and linked in that answer.";
 
 const facts = [
   {
@@ -22,7 +22,7 @@ const facts = [
   },
   {
     n: "8 of 132",
-    text: "owner answers named our first client, a Chicago manager with 20+ years. 0 of 6 for Section 8.",
+    text: "landlord answers named our first client, a Chicago manager with 20+ years. 0 of 6 for Section 8.",
     src: "our baseline, 144 AI answers, 2026-10-16",
     href: "/case-studies/fridman-properties",
   },
@@ -46,36 +46,36 @@ const stages = [
   {
     n: "01",
     name: "Indexed",
-    text: "Google, Bing and AI crawlers can read every owner page. We fix crawl errors, sitemaps, canonical tags and slow pages.",
+    text: "Google, Bing and AI crawlers can read every landlord page. We fix crawl errors, sitemaps, canonical tags and slow pages.",
   },
   {
     n: "02",
     name: "Found",
-    text: "Your site answers the exact questions owners ask: fees, contracts, screening, Section 8, your cities. One page per question.",
+    text: "Your site answers the exact questions landlords ask: fees, contracts, screening, Section 8, your cities. One page per question.",
   },
   {
     n: "03",
     name: "Mentioned",
-    text: "ChatGPT, Gemini, Claude and Perplexity name your company, with a link, when an owner asks for a manager in your city.",
+    text: "ChatGPT, Gemini, Claude and Perplexity name your company, with a link, when a landlord asks for a manager in your city.",
   },
 ];
 
 const steps = [
   {
     head: "Send one sentence.",
-    text: "Tell us your goal by email. Example: “Owners in Chicago find us when they ask AI for a manager.”",
+    text: "Tell us your goal by email. Example: “Landlords in Chicago find us when they ask AI for a manager.”",
   },
   {
     head: "We take a baseline.",
-    text: "We ask 4 AI engines your owners’ questions and record which managers they name. No baseline, no proof.",
+    text: "We ask 4 AI engines your landlords’ questions and record which managers they name. No baseline, no proof.",
   },
   {
     head: "One checked change a day.",
-    text: "Agents draft a page fix, an owner answer or a listing update. A person checks each one before it ships.",
+    text: "Agents draft a page fix, a landlord answer or a listing update. A person checks each one before it ships.",
   },
   {
     head: "A report every Monday.",
-    text: "Which engines named you, for which owner questions, and what we changed. Short, with numbers.",
+    text: "Which engines named you, for which landlord questions, and what we changed. Short, with numbers.",
   },
 ];
 
@@ -83,7 +83,7 @@ const fit = {
   yes: [
     "US property management companies with 50 to 500 doors",
     "Single-family homes and small multifamily",
-    "You sell to rental owners and want more owner leads",
+    "You sell to landlords and want more landlord leads",
     "Section 8 and affordable housing managers",
     "PMS and proptech software that sells to property managers",
   ],
@@ -113,7 +113,7 @@ const serviceSchema = {
   areaServed: { "@type": "Country", name: "United States" },
   audience: { "@type": "BusinessAudience", name: "Property management companies with 50 to 500 doors" },
   description:
-    "Done-for-you GEO: weekly tracking of owner questions on ChatGPT, Gemini, Claude and Perplexity, one human-checked change a day, and a Monday report.",
+    "Done-for-you GEO: weekly tracking of landlord questions on ChatGPT, Gemini, Claude and Perplexity, one human-checked change a day, and a Monday report.",
   offers: [
     { "@type": "Offer", name: "Free AI visibility audit", price: 0, priceCurrency: "USD" },
     { "@type": "Offer", name: "Starter", price: 750, priceCurrency: "USD" },
@@ -159,17 +159,17 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
     <div class="wrap flex min-h-[640px] flex-col items-center pt-12 pb-[390px] text-center sm:min-h-[min(88vh,860px)] sm:pb-[min(40vw,420px)] md:pt-20">
       <p class="meta text-parchment/90"><span class="text-parchment">GEO + AEO</span> · for property management companies</p>
       <h1 class="hero-title mt-5 max-w-4xl text-[44px] leading-[1.02] sm:text-[64px] lg:text-[76px]">
-        Get named when owners ask AI for a property manager
+        Get named when landlords ask AI for a property manager
       </h1>
       <p class="hero-title mt-6 max-w-2xl text-[18px] leading-normal text-parchment/95 sm:text-[20px]">
-        Fewer owner leads from Google? Rental owners now ask ChatGPT or Gemini who to hire. citata.ai
+        Fewer landlord leads from Google? Landlords now ask ChatGPT or Gemini who to hire. citata.ai
         gets your company named and linked in that answer. We do the work.
       </p>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
         <a class="btn-light" href={auditHref}>Get a free AI visibility audit</a>
         <a class="btn-ghost-light" href="#engine">See how it works</a>
       </div>
-      <p class="mt-4 text-sm text-parchment/90">Free: 20 owner questions on 4 AI engines, and your top 5 fixes.</p>
+      <p class="mt-4 text-sm text-parchment/90">Free: 20 landlord questions on 4 AI engines, and your top 5 fixes.</p>
     </div>
   </section>
 
@@ -177,7 +177,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
     <ul class="grid gap-6 border-b border-rule py-8 text-[15px] sm:grid-cols-3">
       <li>
         <span class="meta text-minium">01 Track</span>
-        <span class="mt-1 block text-muted">The questions your owners ask AI, every week</span>
+        <span class="mt-1 block text-muted">The questions your landlords ask AI, every week</span>
       </li>
       <li>
         <span class="meta text-minium">02 Fix</span>
@@ -199,7 +199,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
     </section>
 
     <section aria-labelledby="why" class="border-b border-rule py-14">
-      <p class="label" id="why">Why owner leads drop</p>
+      <p class="label" id="why">Why landlord leads drop</p>
       <ul class="grid gap-8 md:grid-cols-3">
         {
           facts.map((f) => (
@@ -214,15 +214,15 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
         }
       </ul>
       <p class="mt-8 max-w-[66ch] text-muted">
-        An owner who asks AI for a manager gets 3 to 5 names, not 10 blue links. If AI does not know
-        your company, that owner may never hear your name. We think part of the lost search demand went
+        A landlord who asks AI for a manager gets 3 to 5 names, not 10 blue links. If AI does not know
+        your company, that landlord may never hear your name. We think part of the lost search demand went
         to these answers. That is a hypothesis, and we test it each week.
       </p>
     </section>
 
     <section aria-labelledby="ask" class="border-b border-rule py-14">
       <p class="label">The questions</p>
-      <h2 id="ask" class="text-[32px] leading-tight">What your owners ask AI</h2>
+      <h2 id="ask" class="text-[32px] leading-tight">What your landlords ask AI</h2>
       <p class="mt-3 max-w-[66ch] text-muted">
         We track questions like these every week, on ChatGPT, Gemini, Claude and Perplexity. For each
         one we record if the answer names you, and if it links to your site.
@@ -234,7 +234,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           ))
         }
       </ul>
-      <a href="/property-management" class="link mt-6 inline-block">Owner vs renter questions, and the Section 8 angle →</a>
+      <a href="/property-management" class="link mt-6 inline-block">Landlord vs renter questions, and the Section 8 angle →</a>
     </section>
 
     <section id="how" aria-labelledby="how-h" class="border-b border-rule py-14">
@@ -281,7 +281,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           <h2 class="text-[32px] leading-tight">Fridman Properties: the baseline before the work</h2>
           <p class="mt-4 text-muted">
             We moved a Chicago manager’s 90-page site to a fast static stack and kept every URL, word and
-            SEO tag. Then we asked 3 AI engines 24 owner questions. Outside its own name, AI named the
+            SEO tag. Then we asked 3 AI engines 24 landlord questions. Outside its own name, AI named the
             company in 8 of 132 answers. We publish the plan and the baseline now, and the results at 90
             days. Related party: the owner is also the CEO of MyRemotely, a partner of ours.
           </p>
@@ -296,7 +296,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
       <p class="label">Who it is for</p>
       <h2 id="fit-h" class="text-[32px] leading-tight">Only the property management market. On purpose.</h2>
       <p class="mt-3 max-w-[66ch] text-muted">
-        We work in one niche, so we know the owner questions, the sources AI reads and the Fair Housing
+        We work in one niche, so we know the landlord questions, the sources AI reads and the Fair Housing
         rules. If we cannot help you, we will say so.
       </p>
       <div class="mt-8 grid gap-6 md:grid-cols-2">
@@ -399,7 +399,7 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
       </h2>
       <div>
         <p class="text-muted">
-          Email us your site and the cities you serve. We ask 4 AI engines 20 questions your owners ask,
+          Email us your site and the cities you serve. We ask 4 AI engines 20 questions your landlords ask,
           check your index, and send a one-page report with your top 5 fixes. If we cannot help, we will
           say so.
         </p>

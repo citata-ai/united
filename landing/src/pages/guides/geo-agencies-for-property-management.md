@@ -87,7 +87,7 @@ We run citata.ai, so weigh our entry with that in mind. We sort the list by audi
 |---|---|---|---|---|---|
 | ClearLead Digital | PM companies only | "AI search optimization (GEO and AEO)": entity signals, structured data, answer-ready content | $1,199, $1,699, $2,299/mo; month to month | Client list; no numbers on the case study page | You want a PM-only SEO agency with AI work in the plan |
 | citata.ai | US PM companies, 50–500 doors | Done-for-you GEO: baseline, prompt tracking, one human-checked change a day | Starter $750/mo; Growth $2,000/mo or $1,500/mo on 12 months | First case study (Fridman Properties, related party); results due 2027-01-14 | You want GEO as the main job, with a weekly report |
-| Goodjuju Marketing | Residential managers only | GEO inside SEO, "we don't sell GEO separately"; monthly AI answer checks, AI lead tracking | SEO $1,185–$7,930/mo; month to month | Own study: AI tools 3.4% of owner leads (fall 2026); door-growth case studies | You want SEO first and proof in owner leads |
+| Goodjuju Marketing | Residential managers only | GEO inside SEO, "we don't sell GEO separately"; monthly AI answer checks, AI lead tracking | SEO $1,185–$7,930/mo; month to month | Own study: AI tools 3.4% of landlord leads (fall 2026); door-growth case studies | You want SEO first and proof in landlord leads |
 | Upkeep Media | Single-family, multifamily, vacation rental | AI citation building, schema, AI search monitoring (ChatGPT, Gemini, Perplexity) | Not stated | Door-growth case studies; no AI case study; "8,800+ AI citations per week" with no method | You want SEO, ads and consulting from one team |
 | Property Manager Websites (PMW) | PM businesses; a Rentvine company | AIO Reporting: monthly LLM visibility report, 2 competitors, 30/60/90-day plan | AIO Reporting $99/mo; bundles $145–$1,995/mo need Rentvine | "4x faster growth" after a site relaunch; no AI case study | You use Rentvine or want a cheap AI report |
 | Fourandhalf | PM companies | AI search copywriting; Scale plan content for "AI-assisted search" | $349, $699, $1,199/mo plus setup | Testimonials; no numbers | You want a low-cost content and reviews plan |
@@ -101,14 +101,14 @@ Sources: each company's own page, listed below. Prices as of 2026-10-18.
 
 ## What does GEO for property management include?
 
-GEO for property management is mostly good SEO, aimed at the questions owners ask AI. Goodjuju Marketing says so plainly on its GEO page. A full GEO service usually includes 6 parts:
+GEO for property management is mostly good SEO, aimed at the questions landlords ask AI. Goodjuju Marketing says so plainly on its GEO page. A full GEO service usually includes 6 parts:
 
-1. **Baseline.** Ask ChatGPT, Gemini, Claude and Google AI Overviews a fixed set of owner prompts. Record who they name and which sites they cite.
-2. **Owner answer pages.** Fees, contracts, screening, Section 8, and one page per city you serve.
+1. **Baseline.** Ask ChatGPT, Gemini, Claude and Google AI Overviews a fixed set of landlord prompts. Record who they name and which sites they cite.
+2. **Landlord answer pages.** Fees, contracts, screening, Section 8, and one page per city you serve.
 3. **Facts AI can read.** Schema, a clear About page, the same name, address and phone on every listing.
 4. **Third-party sources.** Reviews on Google, Yelp and Thumbtack, plus directories that AI cites. Upkeep Media names NARPM, AppFolio and Buildium as citation targets.
 5. **Fixes.** Wrong fees, old addresses or missing cities in AI answers get fixed at the source.
-6. **Weekly or monthly report.** The same prompts again, with changes in citations and owner leads.
+6. **Weekly or monthly report.** The same prompts again, with changes in citations and landlord leads.
 
 ## How much do GEO agencies charge?
 
@@ -131,9 +131,9 @@ Upkeep Media, ApartmentSEO and Resident360 do not publish prices. Ask them for a
 Pick a GEO agency by its method and its reports, not by its claims. Ask each agency these 6 questions before you sign:
 
 1. **Do you take a baseline first?** Without a "before" number, nobody can show a change.
-2. **Which prompts do you track?** Ask for the list. It should match how owners ask, like "best property manager in Tampa for a single-family home".
+2. **Which prompts do you track?** Ask for the list. It should match how landlords ask, like "best property manager in Tampa for a single-family home".
 3. **Which engines do you check?** ChatGPT, Gemini, Google AI Overviews, Claude, Perplexity and Copilot give different answers.
-4. **What is in the report, and how often?** Look for citations by prompt and engine, and owner leads from AI.
+4. **What is in the report, and how often?** Look for citations by prompt and engine, and landlord leads from AI.
 5. **Who checks the content?** A person must read each page before it goes live.
 6. **What proof can you show for AI results?** Many case studies show door growth or Google rankings, not AI citations. Both are useful, but they are not the same.
 
