@@ -1,0 +1,146 @@
+---
+// Section 8 (Housing Choice Voucher) rent calculator: a small vanilla island. The math lives in
+// src/lib/calculators.ts (tested against HUD Guidebook examples). The first render comes from the
+// build, so the page shows full results without JavaScript. No data leaves the page.
+import { computeVoucher, fortyPercentText, usd, voucherExample as ex } from "../lib/calculators.ts";
+
+const r = computeVoucher(ex);
+const field =
+  "mt-1 block h-10 w-full rounded border border-rule-strong bg-parchment px-3 text-[15px] outline-none focus:border-minium";
+const rows = [
+  { key: "grossRent", label: "Gross rent (contract rent + utility allowance)", value: usd(r.grossRent) },
+  { key: "thirtyPercentAdjusted", label: "30% of adjusted monthly income", value: usd(r.thirtyPercentAdjusted) },
+  { key: "tenPercentGross", label: "10% of gross monthly income", value: r.tenPercentGross == null ? "not given" : usd(r.tenPercentGross) },
+  { key: "minimumRent", label: "Minimum rent", value: usd(r.minimumRent) },
+  { key: "ttp", label: "Total tenant payment (TTP), highest of the three", value: usd(r.ttp) },
+  { key: "overPaymentStandard", label: "Gross rent above the payment standard", value: usd(r.overPaymentStandard) },
+  { key: "hap", label: "HAP: lower of payment standard or gross rent, minus TTP", value: usd(r.hap) },
+  { key: "utilityReimbursement", label: "Utility reimbursement (HAP above contract rent)", value: usd(r.utilityReimbursement) },
+  { key: "familyShare", label: "Family share: gross rent minus HAP", value: usd(r.familyShare) },
+  { key: "maxGrossRentFirstLease", label: "Highest gross rent that passes the 40% check", value: usd(r.maxGrossRentFirstLease) },
+];
+---
+
+<form class="voucher-calc rounded-md border border-rule bg-page p-5 sm:p-6" novalidate>
+  <div class="grid gap-x-6 gap-y-4 sm:grid-cols-2">
+    <label>
+      <span class="meta">Contract rent (rent to owner, $/month)</span>
+      <input name="contractRent" type="number" inputmode="decimal" min="0" step="any" value={ex.contractRent} class={field} />
+    </label>
+    <label>
+      <span class="meta">Utility allowance ($/month)</span>
+      <input name="utilityAllowance" type="number" inputmode="decimal" min="0" step="any" value={ex.utilityAllowance} class={field} />
+    </label>
+    <label>
+      <span class="meta">Tenant adjusted monthly income ($)</span>
+      <input name="adjustedMonthlyIncome" type="number" inputmode="decimal" min="0" step="any" value={ex.adjustedMonthlyIncome} class={field} />
+    </label>
+    <label>
+      <span class="meta">Tenant gross monthly income ($, optional)</span>
+      <input name="grossMonthlyIncome" type="number" inputmode="decimal" min="0" step="any" value={ex.grossMonthlyIncome ?? ""} class={field} />
+    </label>
+    <label>
+      <span class="meta">Local payment standard ($/month)</span>
+      <input name="paymentStandard" type="number" inputmode="decimal" min="0" step="any" value={ex.paymentStandard} class={field} />
+    </label>
+    <label>
+      <span class="meta">Housing authority minimum rent ($0–$50)</span>
+      <input name="minimumRent" type="number" inputmode="decimal" min="0" max="50" step="any" value={ex.minimumRent} class={field} />
+    </label>
+    <label class="flex items-center gap-3 sm:col-span-2">
+      <input name="firstLease" type="checkbox" checked={ex.firstLease} class="size-5 accent-minium" />
+      <span class="text-[15px]">This is the first assisted lease for this unit (the 40% check applies)</span>
+    </label>
+  </div>
+
+  <div class="mt-6">
+    <div class="grid gap-3 sm:grid-cols-3" aria-live="polite">
+      <div class="rounded-md bg-coral/30 p-4">
+        <p class="meta text-ink">Tenant pays</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="tenantRentToOwner">{usd(r.tenantRentToOwner)}</p>
+        <p class="text-[13px] text-muted">rent to owner per month, plus own utilities</p>
+      </div>
+      <div class="rounded-md bg-sky/30 p-4">
+        <p class="meta text-ink">Housing authority pays</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="hapToOwner">{usd(r.hapToOwner)}</p>
+        <p class="text-[13px] text-muted">HAP to owner per month</p>
+      </div>
+      <div class="rounded-md bg-mint/40 p-4">
+        <p class="meta text-ink">40% check</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="fortyStatus">{fortyPercentText(r, ex.firstLease).split(":")[0]}</p>
+        <p class="text-[13px] text-muted">limit <span data-out="fortyPercentLimit">{usd(r.fortyPercentLimit)}</span> family share</p>
+      </div>
+    </div>
+    <p class="mt-4 text-[15px]" data-out="fortyText">{fortyPercentText(r, ex.firstLease)}</p>
+
+    <table class="mt-5 w-full border-collapse text-[15px]">
+      <caption class="meta pb-2 text-left">How the numbers add up</caption>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr class="border-b border-rule">
+              <th scope="row" class="py-2 pr-4 text-left font-normal">{row.label}</th>
+              <td class="py-2 text-right whitespace-nowrap tabular-nums" data-out={row.key}>{row.value}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="mt-4 text-[14px] font-medium">Estimate only. Your housing authority sets the final numbers.</p>
+  <p class="mt-1 text-[12px] text-muted">
+    The tool leaves out welfare rent, prorated assistance and hardship exemptions. Your numbers stay
+    in your browser.
+  </p>
+</form>
+
+<script>
+  import { computeVoucher, fortyPercentText, usd } from "../lib/calculators.ts";
+
+  for (const form of document.querySelectorAll<HTMLFormElement>(".voucher-calc")) {
+    const input = (name: string) => {
+      const el = form.elements.namedItem(name);
+      return el instanceof HTMLInputElement ? el : null;
+    };
+    const num = (name: string): number => {
+      const v = input(name)?.value ?? "";
+      return v === "" ? 0 : Number(v);
+    };
+    const set = (key: string, text: string) => {
+      for (const el of form.querySelectorAll(`[data-out="${key}"]`)) el.textContent = text;
+    };
+    const update = () => {
+      const gross = input("grossMonthlyIncome")?.value ?? "";
+      const firstLease = input("firstLease")?.checked ?? false;
+      const r = computeVoucher({
+        contractRent: num("contractRent"),
+        utilityAllowance: num("utilityAllowance"),
+        adjustedMonthlyIncome: num("adjustedMonthlyIncome"),
+        grossMonthlyIncome: gross === "" ? null : Number(gross),
+        minimumRent: num("minimumRent"),
+        paymentStandard: num("paymentStandard"),
+        firstLease,
+      });
+      const text = fortyPercentText(r, firstLease);
+      set("tenantRentToOwner", usd(r.tenantRentToOwner));
+      set("hapToOwner", usd(r.hapToOwner));
+      set("fortyStatus", text.split(":")[0] ?? "");
+      set("fortyPercentLimit", usd(r.fortyPercentLimit));
+      set("fortyText", text);
+      set("grossRent", usd(r.grossRent));
+      set("thirtyPercentAdjusted", usd(r.thirtyPercentAdjusted));
+      set("tenPercentGross", r.tenPercentGross == null ? "not given" : usd(r.tenPercentGross));
+      set("minimumRent", usd(r.minimumRent));
+      set("ttp", usd(r.ttp));
+      set("overPaymentStandard", usd(r.overPaymentStandard));
+      set("hap", usd(r.hap));
+      set("utilityReimbursement", usd(r.utilityReimbursement));
+      set("familyShare", usd(r.familyShare));
+      set("maxGrossRentFirstLease", usd(r.maxGrossRentFirstLease));
+    };
+    form.addEventListener("input", update);
+    form.addEventListener("change", update);
+    form.addEventListener("submit", (e) => e.preventDefault());
+    update();
+  }
+</script>
