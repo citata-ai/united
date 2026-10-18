@@ -32,7 +32,7 @@ const status = [
 const cats = ["Perf", "A11y", "Best", "SEO"];
 ---
 
-<Base title={title} description={description} type="article">
+<Base title={title} description={description} type="article" image="/og/fridman-case.jpg">
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <main class="wrap">
     <article class="pt-12">
@@ -53,6 +53,9 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
           Tao, founder, citata.ai
         </div>
       </header>
+      <figure class="img-frame mt-8 max-w-4xl">
+        <img src="/img/fridman-case.jpg" alt="A marble statue looks at a phone with a map pin, in front of a brownstone and a column." width="1280" height="714" fetchpriority="high" />
+      </figure>
 
       <aside class="mt-8 max-w-3xl rounded border border-rule-strong bg-sunken p-5 text-[15px]">
         <p class="meta text-ochre">Related party</p>
