@@ -9,3 +9,8 @@ This repo is the home of the citata.ai organization. Its goal: positive impact a
 - Write in ASD-STE100 Simplified Technical English. Short words, active voice.
 - Keep the README warm and short.
 - Commit small, clear changes.
+
+## Voice and email
+
+- Before you write any text that leaves this repo (email, site, post, case study), read [`VOICE.md`](VOICE.md).
+- Before you write an email or newsletter, also read [`business/NEWSLETTER.md`](business/NEWSLETTER.md). It holds the email types and their structure.

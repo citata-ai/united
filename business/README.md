@@ -14,6 +14,7 @@ Now the data is TOML, so people and agents can read it. Later the scaffold (CIT-
 | `competitors.toml` | The model business (FirstIndex) and agencies with proof   |
 | `tools.toml`       | Delivery toolset, open source first                      |
 | `finance.toml`     | Legal entity, payments, open money decisions             |
+| `NEWSLETTER.md`    | Email types and structure. Voice: `/VOICE.md`            |
 
 Rules:
 - One fact lives in one file. Link, do not copy.
