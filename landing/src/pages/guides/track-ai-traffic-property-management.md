@@ -16,7 +16,7 @@ faq:
     a: "ChatGPT adds utm_source=chatgpt.com to links in its search answers. A visit with that tag came from a ChatGPT answer, even when the referrer is missing."
   - q: "How do I see if AI crawlers read my property management website?"
     a: "Cloudflare AI Crawl Control shows AI crawler requests on all Cloudflare plans. Ahrefs Bot Analytics is free during its beta. Your server logs also show user agents such as GPTBot, OAI-SearchBot, ClaudeBot and PerplexityBot."
-  - q: "How often should I check if ChatGPT names my company?"
+  - q: "How often should I check if AI names my company?"
     a: "Check once a month with the same 10 to 20 owner questions. Ask each question at least twice per engine, because AI answers change from run to run. Track the rate, for example 'named in 3 of 40 answers'."
 sources:
   - label: "Google Analytics Help: Default channel group"
@@ -37,7 +37,7 @@ sources:
     url: "https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview"
 ---
 
-AI visits are small but they matter. At Ahrefs, AI search sent 0.5% of visits in 30 days. Those visits brought 12.1% of signups (Ahrefs, 2025). Your numbers will differ. But you cannot see the trend if you do not track it.
+AI traffic is the set of visits that reach your site from links in AI answers. These visits are small, but they matter. At Ahrefs, AI search sent 0.5% of visits in 30 days. Those visits brought 12.1% of signups (Ahrefs, 2025). Your numbers will differ. But you cannot see the trend if you do not track it.
 
 ## What are the 3 signals of AI traffic?
 

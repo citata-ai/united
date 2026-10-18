@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import type { GuideFrontmatter } from "../../layouts/Guide.astro";
+import { coverSrcset, guideCovers } from "../../data/guide-covers.ts";
 
 const title = "Guides: AI search for property management companies — citata.ai";
 const description =
@@ -24,10 +25,25 @@ const guides = Object.values(
       {
         guides.map((g) => (
           <li class="py-8">
-            <a href={g.url} class="group block max-w-3xl">
+            <a href={g.url} class="group grid max-w-4xl items-start gap-6 sm:grid-cols-[240px_1fr]">
+              {guideCovers[g.url.split("/").pop() ?? ""] && (
+                <figure class="img-frame">
+                  <img
+                    src={`/img/${guideCovers[g.url.split("/").pop() ?? ""].img}-640.webp`}
+                    srcset={coverSrcset(guideCovers[g.url.split("/").pop() ?? ""].img)}
+                    sizes="240px"
+                    alt=""
+                    width="640"
+                    height="357"
+                    loading="lazy"
+                  />
+                </figure>
+              )}
+              <div>
               <h2 class="text-[26px] leading-tight group-hover:text-minium">{g.frontmatter.headline}</h2>
               <p class="mt-2 text-muted">{g.frontmatter.dek}</p>
               <p class="meta mt-3">Updated {g.frontmatter.updated}</p>
+              </div>
             </a>
           </li>
         ))

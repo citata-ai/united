@@ -29,9 +29,19 @@ export default {
       return staged;
     }
     if (isTracked(url.pathname)) record(request, url, response.status, env);
-    return response;
+    return secure(response);
   },
 };
+
+/** Security headers on every response (HSTS, no framing, no MIME sniffing, strict referrer). */
+function secure(/** @type {Response} */ response) {
+  const out = new Response(response.body, response);
+  out.headers.set("Strict-Transport-Security", "max-age=31536000");
+  out.headers.set("X-Frame-Options", "SAMEORIGIN");
+  out.headers.set("X-Content-Type-Options", "nosniff");
+  out.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  return out;
+}
 
 /** An agent asks for Markdown: "Accept: text/markdown" on a page URL (no file extension). */
 function wantsMarkdown(/** @type {Request} */ request, /** @type {URL} */ url) {

@@ -10,7 +10,7 @@ answer: "Rental owners ask ChatGPT, Gemini and Google AI questions like \"best p
 faq:
   - q: "Do rental owners really use ChatGPT to find a property manager?"
     a: "Many consumers now use AI for local picks. In a BrightLocal survey of 1,002 US adults, AI use for local recommendations rose from 6% to 45% in one year (BrightLocal, 2026). No public survey measures rental owners alone."
-  - q: "How many property managers does an AI answer name?"
+  - q: "How many companies does an AI answer name?"
     a: "Usually a short list. In our Chicago test of 132 owner answers, the median answer named 5 companies (our data, 2026-10-16). ChatGPT named fewer than Claude."
   - q: "Which websites does AI use to recommend a property manager?"
     a: "Manager websites first, then review sites and directories. In our Chicago test, Yelp appeared as a source in 35 answers, Expertise.com in 22 and Thumbtack in 17 (our data, 2026-10-16)."
@@ -37,7 +37,7 @@ sources:
 
 ## Do rental owners use AI to find a property manager?
 
-Yes, and the share grows fast. BrightLocal asked 1,002 US adults in 2026. Use of ChatGPT and other AI tools for local recommendations rose from 6% to 45% in one year (BrightLocal, 2026). The same survey found that 97% of consumers read reviews for local businesses.
+Choosing a property manager with AI is asking ChatGPT, Gemini or Google AI for a short list of firms, then checking the names. Owners do this, and the share grows fast. BrightLocal asked 1,002 US adults in 2026. Use of ChatGPT and other AI tools for local recommendations rose from 6% to 45% in one year (BrightLocal, 2026). The same survey found that 97% of consumers read reviews for local businesses.
 
 No public survey measures rental owners alone. So treat 45% as a signal for all local services, not a count of landlords. Our own test shows what owners get when they ask. The rest of this guide uses that data.
 
@@ -57,7 +57,7 @@ Rental owners ask AI the same things they used to type into Google, but in full 
 
 AI engines break each prompt into many small searches. This is called query fan-out. One fee question can trigger searches for "management fee Chicago", "leasing fee" and "contract terms". So the manager with exact answers on each small topic has more chances to be found.
 
-## What does a typical AI answer about property managers look like?
+## What does a typical AI answer look like?
 
 A typical AI answer is a short list of companies with one line about each. In our Chicago test, the median answer named 5 companies (our data, 2026-10-16). ChatGPT's median was 4 names. Claude's median was 10.
 
@@ -72,7 +72,7 @@ In the ChatGPT app, logged out, some answers also showed a map with star ratings
 
 ## Which sources does AI read to pick a property manager?
 
-AI engines pick property managers mostly from manager websites, review sites and local directories. In our Chicago baseline of 144 answers on 2026-10-16, the most cited sources were manager sites. After those came Yelp (35 answers), Expertise.com (22 answers) and Thumbtack (17 answers). The test ran 24 prompts on ChatGPT, Claude and Gemini, 2 runs each (our data).
+AI engines pick names mostly from manager websites, review sites and local directories. In our Chicago baseline of 144 answers on 2026-10-16, the most cited sources were manager sites. After those came Yelp (35 answers), Expertise.com (22 answers) and Thumbtack (17 answers). The test ran 24 prompts on ChatGPT, Claude and Gemini, 2 runs each (our data).
 
 Google AI Overviews and ChatGPT do not read the web in the same way:
 
@@ -82,7 +82,7 @@ Google AI Overviews and ChatGPT do not read the web in the same way:
 | ChatGPT, Gemini, Copilot | Only 12% of cited links rank in Google's top 10 for the same prompt | Ahrefs, 2025 |
 | ChatGPT | "Best X" lists were 43.8% of the page types in its sources | Ahrefs, 2025 |
 
-What this means for a property manager:
+What this means for your company:
 
 - **For Google AI Overviews,** classic SEO still matters. A page in the top 10 has a good chance to be cited.
 - **For ChatGPT,** "best property managers in [city]" lists matter. Directories like Expertise.com publish these lists.
@@ -94,11 +94,11 @@ Owner questions and renter questions get different sources. Renters ask for an a
 
 For renters, listing sites win. Peek's AI Discovery Black Book found that 72% of the sources AI cited for apartments were listing sites (Peek, 2026). Corporate home pages got under 0.3% of AI citations (Peek, 2026). So for renters, work on Zillow, Apartments.com and your Google Business Profile.
 
-For owners, the picture is different. In our Chicago test, manager websites were the top sources for owner questions (our data, 2026-10-16). So a property manager's own site has a real chance to be the source for owner questions. Owners are also the people who pay you. For more on this split, see our [property management page](/property-management).
+For owners, the picture is different. In our Chicago test, manager websites were the top sources for owner questions (our data, 2026-10-16). So your own site has a real chance to be the source for owner questions. Owners are also the people who pay you. For more on this split, see our [property management page](/property-management).
 
 ## How does a property manager get into the AI answer?
 
-A property manager gets into the AI answer when the engines find clear, matching facts about the company in many places. You cannot control the answer. You can improve the sources the engines read.
+A firm gets into the AI answer when the engines find clear, matching facts about the company in many places. You cannot control the answer. You can improve the sources the engines read.
 
 1. **Write owner pages with exact answers.** State your fee, leasing fee, contract length and service area in plain numbers. Add one page per city you serve, with real local facts.
 2. **Answer the special questions.** Write a clear page on Section 8 for owners, out-of-state owners and single-family homes, if you serve them. Have a lawyer check the legal parts.
@@ -111,11 +111,11 @@ For a full step list, see our guide on [why owner leads are dropping](/guides/wh
 
 ## What did we learn from the Fridman Properties baseline?
 
+The baseline showed us where the names come from: manager sites, Yelp, Expertise.com and Thumbtack. On 2026-10-16, AI named Fridman Properties in 8 of 132 non-brand owner answers (our data). For the Section 8 prompt, it was named in 0 of 6 answers.
+
 Fridman Properties is a Chicago-area manager with 144 units. Related party: the owner of Fridman Properties is also the CEO of MyRemotely, a partner of citata.ai.
 
-On 2026-10-16, AI named Fridman Properties in 8 of 132 non-brand owner answers (our data). For the Section 8 prompt, it was named in 0 of 6 answers.
-
-The test showed us where the names come from: manager sites, Yelp, Expertise.com and Thumbtack. We have a plan, but no result yet. We will publish the 90-day result. Read the [Fridman Properties case study](/case-studies/fridman-properties) for the full baseline.
+We have a plan, but no result yet. We will publish the 90-day result. Read the [Fridman Properties case study](/case-studies/fridman-properties) for the full baseline.
 
 ## How can you test what AI says about your company?
 

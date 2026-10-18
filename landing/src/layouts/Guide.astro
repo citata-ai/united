@@ -4,6 +4,7 @@
 // visible date and author, Article + FAQPage JSON-LD. Voice: brand/VOICE.md.
 import Base from "./Base.astro";
 import { auditHref } from "../data/site.ts";
+import { coverSrcset, guideCovers } from "../data/guide-covers.ts";
 
 export interface GuideFrontmatter {
   title: string;
@@ -23,6 +24,8 @@ export interface GuideFrontmatter {
 
 const { frontmatter, url } = Astro.props as { frontmatter: GuideFrontmatter; url?: string };
 const fm = frontmatter;
+const slug = (url ?? Astro.url.pathname).replace(/\.html$/, "").split("/").filter(Boolean).pop() ?? "";
+const cover = guideCovers[slug];
 const pageUrl = new URL(url ?? Astro.url.pathname.replace(/\.html$/, ""), Astro.site).toString();
 
 const article = {
@@ -30,6 +33,7 @@ const article = {
   "@type": "Article",
   headline: fm.headline,
   description: fm.description,
+  ...(cover ? { image: `https://citata.ai/og/${cover.img}.jpg` } : {}),
   author: {
     "@type": "Person",
     "@id": "https://citata.ai/about#founder",
@@ -61,7 +65,13 @@ const breadcrumbs = {
 };
 ---
 
-<Base title={fm.title} description={fm.description} type="article" modified={fm.updated} image={fm.image}>
+<Base
+  title={fm.title}
+  description={fm.description}
+  type="article"
+  modified={fm.updated}
+  image={fm.image ?? (cover ? `/og/${cover.img}.jpg` : undefined)}
+>
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
     {faqSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />}
@@ -79,7 +89,27 @@ const breadcrumbs = {
           By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Updated
           <time datetime={fm.updated}>{fm.updated}</time>
         </p>
+        <p class="mt-2 text-[13px] text-muted">
+          How we made this guide: AI agents drafted it from our own tests and the sources listed at the
+          end. Taras Kornichuk checked every claim and edited the text.
+        </p>
       </header>
+
+      {
+        cover && (
+          <figure class="img-frame mt-8 max-w-3xl">
+            <img
+              src={`/img/${cover.img}-1280.webp`}
+              srcset={coverSrcset(cover.img)}
+              sizes="(min-width: 800px) 768px, calc(100vw - 40px)"
+              alt={cover.alt}
+              width="1280"
+              height="714"
+              fetchpriority="high"
+            />
+          </figure>
+        )
+      }
 
       <aside aria-label="Short answer" class="mt-8 max-w-3xl rounded border border-rule-strong bg-sunken p-6">
         <p class="meta text-minium">Short answer</p>
