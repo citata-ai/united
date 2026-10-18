@@ -34,7 +34,7 @@ baseline = 0
 target = 150
 due = "2026-11-18"
 kill_if = "Fewer than 15 AI sessions to the tools 21 days after publish."
-ice = { impact = 7, confidence = 5, ease = 6 }
+ice = { impact = 7, confidence = 6, ease = 6 }
 status = "running"
 
 [[hypothesis]]
@@ -97,7 +97,7 @@ id = "H07"
 objective = "CTT-O3"
 lever = "refresh"
 statement = "If we refresh each guide every 14 days (new data point, new FAQ, visible updated date, change note), then our non-brand AI mention share goes from 0% to 10% by 2026-11-18."
-because = "AI engines favor recent pages. Our 5 guides are 1 day old, so a refresh habit keeps them in the fresh set."
+because = "AI engines favor recent pages. Our 5 guides are 1 day old, so a refresh habit keeps them in the fresh set. ClearLead updated 40 blog URLs in 2026-08 alone (teardown 2026-10-19): the leader refreshes in bulk."
 metric = "ai_mention_share"
 baseline = 0
 target = 10

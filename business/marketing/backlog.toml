@@ -126,3 +126,39 @@ title = "Section 8 FMR pages for the next 50 FMR areas (Memphis, Salt Lake City,
 demand = "H01-E1 covers only the top 50 by HUD population; landlords in mid-size metros ask the same question."
 score = 6
 status = "idea"
+
+[[item]]
+id = "B015"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Rent vs sell calculator for landlords"
+demand = "All 3 direct competitors ship it for clients (playbook move 5)."
+score = 7
+status = "idea"
+
+[[item]]
+id = "B016"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Vacancy loss calculator (days vacant x rent, turnover cost)"
+demand = "Playbook move 5; ClearLead and PMW tools."
+score = 6
+status = "idea"
+
+[[item]]
+id = "B017"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Rental property ROI calculator (cap rate, cash on cash)"
+demand = "Playbook move 5; high landlord demand."
+score = 6
+status = "idea"
+
+[[item]]
+id = "B018"
+hypothesis = "H06"
+kind = "comparison"
+title = "How to choose a property manager: owner decision checklist with fee table template"
+demand = "Playbook moves 1 and 3: the top page type at all 3 competitors' clients."
+score = 7
+status = "idea"
