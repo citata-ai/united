@@ -19,6 +19,8 @@
     { "pattern": "citata.ai", "custom_domain": true },
     { "pattern": "www.citata.ai", "custom_domain": true },
   ],
+  // AI crawlers and AI referrals (landing/ai-traffic.js). Query: docs/ai-traffic.md.
+  "analytics_engine_datasets": [{ "binding": "AI_TRAFFIC", "dataset": "citata_ai_traffic" }],
   "observability": { "enabled": true },
   // Stage: `npx wrangler@4 deploy --env stage` -> citata-landing-stage.<sub>.workers.dev.
   // No custom domain. worker.js adds `X-Robots-Tag: noindex` on workers.dev.

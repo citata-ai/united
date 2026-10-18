@@ -10,14 +10,51 @@ interface Props {
   type?: "website" | "article";
 }
 const { title, description, image = "/og/property-management.jpg", type = "website" } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site);
+// build.format "file" makes Astro.url end in ".html"; the live URLs do not.
+const cleanPath = Astro.url.pathname.replace(/(index)?\.html$/, "").replace(/(.)\/$/, "$1");
+const canonical = new URL(cleanPath, Astro.site);
 const ogImage = new URL(image, Astro.site);
+
+/** One entity for AI and search: who we are, and that we are not Citate.ai. */
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://citata.ai/#org",
+  name: "citata.ai",
+  alternateName: "Citata",
+  url: "https://citata.ai",
+  logo: "https://citata.ai/icon.svg",
+  email: "grow@citata.ai",
+  description:
+    "citata.ai is a done-for-you GEO and AEO agency. It gets property management companies named and linked in answers from ChatGPT, Gemini, Claude and Perplexity.",
+  disambiguatingDescription:
+    "citata.ai (with an a) is a GEO agency run by WarmDevs OÜ. It is not Citate.ai, a different AI visibility software product.",
+  knowsAbout: [
+    "Generative engine optimization (GEO)",
+    "Answer engine optimization (AEO)",
+    "AI search visibility",
+    "Property management marketing",
+    "Owner lead generation for property managers",
+  ],
+  areaServed: "US",
+  legalName: "WarmDevs OÜ",
+  founder: { "@type": "Person", name: "Taras Kornichuk" },
+  sameAs: [
+    "https://github.com/citata-ai",
+    "https://medium.com/@citataai",
+    "https://substack.com/@citata",
+    "https://startupbase.io/@citata",
+    "https://app.dealroom.co/companies/citata_ai",
+    "https://ecosystem.startupestonia.ee/companies/citata_ai",
+  ],
+};
 
 const nav = [
   { href: "/#how", label: "How it works" },
-  { href: "/property-management", label: "Property management" },
+  { href: "/property-management", label: "Owner questions" },
   { href: "/case-studies/fridman-properties", label: "Case study" },
   { href: "/#pricing", label: "Pricing" },
+  { href: "/#faq", label: "FAQ" },
 ];
 ---
 
@@ -42,6 +79,9 @@ const nav = [
     <meta property="og:type" content={type} />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="ahrefs-site-verification" content="c373191b9e5ef7a015c4cc2786b14f0c505cd415d2516dc4d70cb57db4fa2f1b" />
+    <script is:inline src="https://analytics.ahrefs.com/analytics.js" data-key="ZBFZfEWCf4yVC1R7LkUI3w" async></script>
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(organization)} />
     <slot name="head" />
   </head>
   <body class="font-sans text-base leading-normal antialiased">

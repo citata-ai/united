@@ -1,0 +1,114 @@
+# Prompts for the citata.ai AI-visibility check. Each prompt runs on every engine.
+# Niche: GEO / AEO for property management companies that see fewer owner leads.
+# Keep ids stable: the weekly loop compares runs by id. Add prompts; do not edit old ones.
+
+brand = ["citata.ai", "citata", "Citata"]
+our_domain = "citata.ai"
+# What the extractor lists from each answer.
+entity = "agencies, consultants, tools or companies that offer GEO, AEO, AI search or SEO services"
+out_dir = "business/marketing/ai-visibility"
+
+# --- brand: does AI know us at all? ---
+[[prompt]]
+id = "brand-what"
+group = "brand"
+text = "What is citata.ai?"
+
+[[prompt]]
+id = "brand-reviews"
+group = "brand"
+text = "Is citata.ai a good GEO agency? Reviews and prices."
+
+# --- pm-geo: the core niche, buyer asks for a provider ---
+[[prompt]]
+id = "pm-geo-agency"
+group = "pm-geo"
+text = "Which agencies do GEO (generative engine optimization) for property management companies? Give names."
+
+[[prompt]]
+id = "pm-aeo-agency"
+group = "pm-geo"
+text = "Best AEO or AI search optimization agency for a property management company in the US?"
+
+[[prompt]]
+id = "pm-chatgpt-recommend"
+group = "pm-geo"
+text = "How do I get ChatGPT to recommend my property management company when landlords ask for a property manager?"
+
+[[prompt]]
+id = "pm-ai-overviews"
+group = "pm-geo"
+text = "How can a property management company show up in Google AI Overviews and AI Mode?"
+
+[[prompt]]
+id = "pm-geo-cost"
+group = "pm-geo"
+text = "How much does GEO or AI SEO cost for a property management company, and who offers it?"
+
+[[prompt]]
+id = "pm-geo-small"
+group = "pm-geo"
+text = "I run a property management company with 200 doors. Is there a done-for-you service that gets us cited by AI assistants?"
+
+# --- pm-leads: the pain, before the buyer knows the word GEO ---
+[[prompt]]
+id = "pm-leads-decline"
+group = "pm-leads"
+text = "Our property management company gets fewer owner leads from Google every month. Why, and what should we do?"
+
+[[prompt]]
+id = "pm-owner-search"
+group = "pm-leads"
+text = "How do landlords find a property manager in 2026? Do they use ChatGPT?"
+
+[[prompt]]
+id = "pm-seo-worth"
+group = "pm-leads"
+text = "Is SEO still worth it for property management companies now that people use AI search?"
+
+[[prompt]]
+id = "pm-marketing-agency"
+group = "pm-leads"
+text = "Best marketing agencies for property management companies that want more owner leads in 2026?"
+
+[[prompt]]
+id = "pm-owner-leads"
+group = "pm-leads"
+text = "How can a property management company get more rental owner leads without paying for ads?"
+
+# --- pm-how: informational, AI eats the click; we want a mention ---
+[[prompt]]
+id = "pm-llms-txt"
+group = "pm-how"
+text = "Should a property management website have an llms.txt file and schema markup for AI search?"
+
+[[prompt]]
+id = "pm-track-ai"
+group = "pm-how"
+text = "How can a property management company track traffic and leads that come from ChatGPT and other AI assistants?"
+
+[[prompt]]
+id = "pm-ai-visibility-check"
+group = "pm-how"
+text = "How do I check if AI assistants mention my property management company? Is there a free AI visibility audit?"
+
+[[prompt]]
+id = "pm-section8-ai"
+group = "pm-how"
+text = "How can a property manager that accepts Section 8 get found by landlords in AI search?"
+
+# --- geo-general: wider GEO market, small business ---
+[[prompt]]
+id = "geo-agency-small"
+group = "geo-general"
+text = "Best done-for-you GEO agencies for small businesses with a monthly plan under $2,000?"
+
+[[prompt]]
+id = "geo-firstindex-alt"
+group = "geo-general"
+text = "What are alternatives to FirstIndex for GEO and AI search optimization?"
+
+[[prompt]]
+id = "geo-case-study"
+group = "geo-general"
+text = "Show me real GEO case studies with numbers for local service businesses or real estate."

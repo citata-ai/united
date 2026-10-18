@@ -21,6 +21,14 @@ export default defineConfig({
         },
       },
       {
+        test: {
+          name: "landing",
+          root: "landing",
+          include: ["*.test.ts"],
+          environment: "node",
+        },
+      },
+      {
         resolve: {
           alias: { "@/": fileURLToPath(new URL("./frontend/src/", import.meta.url)) },
           dedupe: ["effect", "foldkit"],
