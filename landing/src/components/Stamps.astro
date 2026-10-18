@@ -111,6 +111,19 @@ const stamps = [
     outline: 1px solid color-mix(in srgb, var(--ink) 35%, transparent);
     outline-offset: -1px;
   }
+  /* Guilloche: fine concentric rings over the paper, like an engraved stamp ground. */
+  .stamp-face::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-radial-gradient(
+      circle at 38% 42%,
+      transparent 0 2.1px,
+      rgb(28 23 18 / 0.16) 2.1px 2.6px
+    );
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
   .stamp-face img {
     position: absolute;
     inset: 0;
@@ -121,6 +134,7 @@ const stamps = [
   }
   .stamp-title {
     position: absolute;
+    z-index: 1;
     top: 14px;
     left: 16px;
     margin: 0;
