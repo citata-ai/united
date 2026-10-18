@@ -161,8 +161,8 @@ status = "running"
 id = "H01-E1"
 hypothesis = "H01"
 start = "2026-10-19"
-actions = ["Pull HUD FY2027 FMR data for the top 50 metros", "Build one page per metro plus a hub page", "Ship to stage; publish after owner check"]
-urls = []
+actions = ["Pull HUD FY2027 FMR data for the top 50 FMR areas (HUD 2024 population rank)", "Build one page per metro plus a hub page (staged 2026-10-19, 51 pages; 30 values cross-checked vs HUD rows)", "Ship to stage; publish after owner check"]
+urls = ["https://citata.ai/section-8", "https://citata.ai/section-8/chicago-fair-market-rent-2027", "https://citata.ai/section-8/houston-fair-market-rent-2027"]
 status = "running"
 
 [[experiment]]

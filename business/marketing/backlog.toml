@@ -80,7 +80,7 @@ kind = "data-page"
 title = "Section 8 FMR FY2027 pages, top 50 metros + hub (H01-E1)"
 demand = "See H01."
 score = 9
-status = "building"
+status = "staged"
 
 [[item]]
 id = "B010"
@@ -116,4 +116,13 @@ kind = "entity"
 title = "Wikidata item for Citata.ai (draft the statements; account step goes to Asks for Tao)"
 demand = "Point A: AI confused us with Citate.ai."
 score = 5
+status = "idea"
+
+[[item]]
+id = "B014"
+hypothesis = "H01"
+kind = "data-page"
+title = "Section 8 FMR pages for the next 50 FMR areas (Memphis, Salt Lake City, Providence ...)"
+demand = "H01-E1 covers only the top 50 by HUD population; landlords in mid-size metros ask the same question."
+score = 6
 status = "idea"
