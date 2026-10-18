@@ -177,8 +177,9 @@ status = "running"
 id = "H03-E1"
 hypothesis = "H03"
 start = "2026-10-19"
-actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines", "Write the research page with method and data download", "Pitch 30 sites"]
-urls = []
+actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines (done 2026-10-19, 150/150 answers)", "Write the research page with method and data download (staged)", "Pitch 30 sites (list: business/marketing/outreach/h03-targets.csv; waits for Tao)"]
+urls = ["https://citata.ai/research/ai-property-manager-index-2026", "https://citata.ai/data/ai-property-manager-index-2026.csv"]
+learned = "Run 1: 88% of answers used a directory or review site (Expertise.com 93/150, Yelp 50, iPropertyManagement 50). Gemini linked a company site in 96% of answers, ChatGPT in 30%. For client work: listings on Expertise.com and iPropertyManagement come first."
 status = "running"
 
 [[experiment]]

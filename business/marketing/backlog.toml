@@ -98,7 +98,7 @@ kind = "original-research"
 title = "AI Property Manager Index: 50 cities x 3 engines (H03-E1)"
 demand = "See H03."
 score = 8
-status = "building"
+status = "staged"
 
 [[item]]
 id = "B012"
