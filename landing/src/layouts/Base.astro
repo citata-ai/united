@@ -143,10 +143,15 @@ const nav = [
     <script is:inline src="https://analytics.ahrefs.com/analytics.js" data-key="ZBFZfEWCf4yVC1R7LkUI3w" async></script>
     <script type="application/ld+json" is:inline set:html={JSON.stringify(organization)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(website)} />
+    <!-- Fetch a same-site page when the pointer rests on its link, so the next page is ready on click.
+         Prefetch only (no prerender), so analytics never counts a page nobody opened. -->
+    <script type="speculationrules" is:inline>
+      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[rel~=nofollow]"}}]},"eagerness":"moderate"}]}
+    </script>
     <slot name="head" />
   </head>
   <body class="font-sans text-base leading-normal antialiased">
-    <div class="sticky top-0 z-50 border-b border-rule bg-parchment/90 backdrop-blur supports-[backdrop-filter]:bg-parchment/80">
+    <div class="site-bar sticky top-0 z-50 border-b border-rule bg-parchment/90 backdrop-blur supports-[backdrop-filter]:bg-parchment/80">
       <header class="wrap flex items-center justify-between gap-6 py-3">
         <a href="/" aria-label="Citata.ai home">
           <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-[38px] w-auto sm:h-[45px]" />

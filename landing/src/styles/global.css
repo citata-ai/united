@@ -179,3 +179,27 @@
     }
   }
 }
+
+/* Page-to-page: the browser keeps the menu bar still and fades only the content
+   (cross-document view transitions; browsers without support just load the page). */
+@view-transition {
+  navigation: auto;
+}
+.site-bar {
+  view-transition-name: site-bar;
+}
+::view-transition-group(site-bar),
+::view-transition-old(site-bar),
+::view-transition-new(site-bar) {
+  animation: none;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.16s;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
