@@ -7,6 +7,17 @@
   font-weight: 400 600;
   font-display: swap;
 }
+/* Fallback with Cal Sans metrics, so the font swap moves no text (CLS 0).
+   size-adjust = Cal Sans / Arial width of all home-page text, measured in Chrome (91667 / 88510). */
+@font-face {
+  font-family: "Cal Sans Fallback";
+  src:
+    local("Arial"), local("Liberation Sans"), local("Arimo"), local("Helvetica"), local("Roboto");
+  size-adjust: 103.57%;
+  ascent-override: 86.9%;
+  descent-override: 23.7%;
+  line-gap-override: 0%;
+}
 @font-face {
   font-family: "Paper Mono";
   src: url("/fonts/PaperMono-Regular.woff2") format("woff2");
@@ -14,7 +25,7 @@
 }
 
 @theme {
-  --font-sans: "Cal Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Cal Sans", "Cal Sans Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Paper Mono", ui-monospace, monospace;
   --color-parchment: #f5efe3;
   --color-page: #fbf7ee;
