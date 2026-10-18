@@ -38,7 +38,8 @@ Style: a vintage postage-stamp line engraving printed in three inks on clean whi
 
 | Image | Scene (add block T) |
 |---|---|
-| `hero-v8` (current) | hero-v7 plus pop accents, sky still white (owner pick, option A of 4): pink and sun-yellow striped awnings, mint and cobalt doors and shutters, pots of pink flowers, coral and cyan pennants on the crane rope. |
+| `hero-v9` (current) | hero-v8 with finer engraving (tiles, stone joints, reliefs, fluting) and a painted temple: frieze and pediment in cobalt, coral and sun yellow, a meander band (option C of 3). |
+| `hero-v8` (old) | hero-v7 plus pop accents, sky still white (owner pick, option A of 4): pink and sun-yellow striped awnings, mint and cobalt doors and shutters, pots of pink flowers, coral and cyan pennants on the crane rope. |
 | `hero-v7` (old) | Edit of the chosen option-4 picture: crane and scaffolding over tiled houses and an arcade (left), a large temple with cypresses (right), a small temple with a glowing door, the man in the orange toga with the key walking toward us in the exact center. Sky made clean, sea and boats replaced by a paved plaza to the bottom edge, no fade. White margins cropped so the scene runs edge to edge. |
 | `footer-v8` (current) | footer-v7 made vivid (owner, 2026-10-18): saturated colors, striped pink-yellow awning, mint shutters, pink flowers; radiant gold halos with engraved rays; a strong golden glow with rays from the cave. Sky stays white. |
 | `footer-v7` (old) | Easter egg made open (owner, 2026-10-18): "no room at the inn". Evening street in Bethlehem: an innkeeper with a lantern turns travelers away; Joseph with a staff leads a donkey with Mary; both have thin engraved halos; they head to a lit cave stable with a manger and an ox. Message for landlords and realtors: Joseph knows the stress of searching, refusals and finding a place. Upper 55 % empty sky. |
