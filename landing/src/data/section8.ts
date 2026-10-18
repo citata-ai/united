@@ -1,4 +1,4 @@
-// HUD FY2027 Fair Market Rents for the Section 8 pages (src/pages/section-8/).
+// HUD FY2027 Fair Market Rents for the Section 8 pages (src/pages/guides/section-8-rent-limits/).
 // The JSON comes from tools/section8/build.py. Do not edit it by hand: every number is HUD's.
 import data from "./fmr-fy2027.json";
 
@@ -30,7 +30,8 @@ export const updated = "2026-10-19";
 
 export const bedrooms = ["Studio (0 BR)", "1 bedroom", "2 bedrooms", "3 bedrooms", "4 bedrooms"];
 
-export const metroPath = (m: Metro) => `/section-8/${m.slug}-fair-market-rent-2027`;
+export const metroPath = (m: Metro) =>
+  `/guides/section-8-rent-limits/${m.slug}-fair-market-rent-2027`;
 export const bySlug = (slug: string) => metros.find((m) => m.slug === slug);
 
 export const usd = (n: number) => `$${n.toLocaleString("en-US")}`;

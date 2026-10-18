@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { cacheControl } from "./worker.js";
+import { cacheControl, movedPath } from "./worker.js";
 
 describe("cacheControl", () => {
   it("caches fonts for a year and images for 30 days", () => {
@@ -16,5 +16,19 @@ describe("cacheControl", () => {
     expect(cacheControl("/")).toBeNull();
     expect(cacheControl("/guides")).toBeNull();
     expect(cacheControl("/llms.txt")).toBeNull();
+  });
+});
+
+describe("movedPath", () => {
+  it("sends old Section 8 URLs to /guides/section-8-rent-limits", () => {
+    expect(movedPath("/section-8")).toBe("/guides/section-8-rent-limits");
+    expect(movedPath("/section-8/chicago-fair-market-rent-2027")).toBe(
+      "/guides/section-8-rent-limits/chicago-fair-market-rent-2027",
+    );
+    expect(movedPath("/section-8/chicago-fair-market-rent-2027.md")).toBe(
+      "/guides/section-8-rent-limits/chicago-fair-market-rent-2027.md",
+    );
+    expect(movedPath("/guides")).toBeNull();
+    expect(movedPath("/section-80")).toBeNull();
   });
 });
