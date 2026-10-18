@@ -1,11 +1,11 @@
 # CI: the only merge gate. Runs G3 (mise run gate3) on each PR and on main.
-# No deploy here yet: no Cloudflare token exists. See docs/gates.md.
+# Deploys run in deploy.yml (push to stage or main).
 name: ci
 
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, stage]
 
 concurrency:
   group: ci-${{ github.ref }}

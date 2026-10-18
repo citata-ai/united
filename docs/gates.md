@@ -34,11 +34,21 @@ Rules:
 
 `backend/src/platform/boundary.test.ts` (from cafe-stack) keeps Cloudflare and Alchemy out of backend domain code.
 
-## Deploy (not yet)
+## Deploy (GitHub Actions + Alchemy, since 2026-10-18)
 
-TODO(CTT-3 follow-up): add `.github/workflows/deploy.yml` when the Cloudflare token exists.
+`.github/workflows/deploy.yml` deploys the landing only (`CITATA_DEPLOY=landing`):
 
-- Operator creates `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in Infisical project `citata` (Approver.app).
-- CI reads them through an Infisical machine identity (OIDC), not repo secrets.
-- PR: `alchemy deploy --stage pr-<n>`, destroy on close.
-- main: `alchemy deploy --stage prod`, then G4 smoke test (`/api/health` 200, landing 200).
+| Push to | Alchemy stage | URL | Worker |
+|---|---|---|---|
+| `stage` | `stage` | https://stage.citata.ai (noindex) | `citata-landing-stage` |
+| `main` | `prod` | https://citata.ai (+ www 301) | `citata-landing` |
+
+Each run: G3 → Cloudflare credentials from Infisical → `bun run deploy --stage <stage> --yes` → smoke test.
+
+**Credentials.** No Cloudflare secret lives in GitHub. The job gets a GitHub OIDC token; Infisical (`https://env.myremotely.ai`, project `citata`, env `prod`, path `/ci`) trusts it through machine identity `citata-github-deploy` (OIDC auth, subject `repo:citata-ai/united:environment:stage` or `…:prod`). It returns `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Repo variable `INFISICAL_IDENTITY_ID` holds the identity id (not a secret).
+
+**GitHub environments.** `stage` accepts only branch `stage`; `prod` accepts only `main`. So a work branch can never get the credentials.
+
+**State.** Alchemy keeps state in its Cloudflare state store Worker on the account (`Cloudflare.state()`).
+
+**Not yet:** `citata-web` and `citata-api` (run the full stack without `CITATA_DEPLOY`), PR preview stages.

@@ -24,6 +24,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "5.20261014.1",
     "@effect/language-service": "0.87.4",
+    "@effect/platform-bun": "4.0.4",
     "@effect/tsgo": "0.52.0",
     "@effect/vitest": "4.0.4",
     "@foldkit/oxlint-plugin": "0.15.3",
