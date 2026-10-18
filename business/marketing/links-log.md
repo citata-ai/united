@@ -24,3 +24,5 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | reposition | - | - | - | - | - | Kit v2 (US property management). GitHub bio updated. Added niche rows L101-L106. K1 (LinkedIn, Crunchbase) and R1 (6 live profiles) started. |
 | 2026-10-18 | R1 | 6 | 6 | 0 | 0 | 0 | Repositioned Dealroom (+Startup Estonia), Trustpilot, X, Medium, Substack. Dealroom industries in review. R2 started. |
 | 2026-10-18 | R2 | 5 | 4 | 0 | 0 | 0 | Repositioned Hashnode, StartupBase, Qwoted; Owler waits for review; Startup Ranking needs Google sign-in. |
+| 2026-10-18 | N1 | 6 | 0 | 0 | 0 | 6 | Niche rows: BiggerPockets $250/mo, NARPM $270-320/yr (paid); AllPropertyManagement, Expertise.com, proptech directories: no agency route. Added L107-L110 (Local Vendor Connect free; Rent Manager, Buildium, AppFolio partner programs = founder decision). |
+| 2026-10-18 | K1 | 3 | 0 | 0 | 3 | 0 | LinkedIn: founder email confirmation needed. Newsletter: 150+ followers rule. Crunchbase: Google Connect not done. |
