@@ -9,7 +9,7 @@ Scheduled agents run this file. Each run is a fresh session with no memory. This
 | Run | When (Kyiv) | Does |
 |---|---|---|
 | `tick` | Mon–Sat 10:00 | One real change: build, refresh or link. Ship to stage. |
-| `measure` | Mon 08:00 | Numbers, hypothesis status, Monday report. |
+| `measure` | Mon 11:00 | Numbers, hypothesis status, Monday report. |
 | `scout` | Thu 08:00 | Competitor scan, new content ideas, outreach list. |
 
 ## Read first (every run)
@@ -46,7 +46,7 @@ Prod needs the owner's "publish" (AGENTS.md). The `measure` run lists the queue 
 ## measure: Monday numbers
 
 1. AI traffic: `SPARK_INFISICAL_PROJECT_ID=62010fdb-0173-4156-b434-6f5dd884f359 spark run -- python3 tools/ai-visibility/traffic.py --days 7`. Record referral sessions by source and bot fetches by path.
-2. AI visibility: `python3 tools/ai-visibility/run.py --runs 2` (same prompts; new prompts go at the end, never edit old ones).
+2. AI visibility: the scheduled "citata.ai weekly GEO re-verify" runs `tools/ai-visibility/run.py --runs 2` at Mon 09:00. Read today's `business/marketing/ai-visibility/<date>/report.md`. If it is missing, run it yourself (same prompts; new prompts go at the end, never edit old ones).
 3. Search: GSC clicks and impressions, Bing Webmaster indexed count and Copilot citations, if the agent can read them. If not, say so in the report.
 4. For each hypothesis: compare the metric to `target` and `kill_if`. Set `status` (`running`, `validated`, `invalidated`, `parked`) and fill `result` and `learned` in the experiments. Do not claim a result that the data does not show.
 5. Re-score ICE from the data. Propose at most 2 new hypotheses (next free `H<nn>`) when a bet dies.
