@@ -88,11 +88,6 @@
   .hero-title {
     text-shadow: 0 1px 18px rgb(120 35 0 / 0.45);
   }
-  /* Engraving paper blends into the page parchment; the top fades so links stay clear. */
-  .footer-art-img {
-    mix-blend-mode: multiply;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 28%);
-  }
   .btn-secondary {
     @apply inline-block rounded border border-minium px-4 py-2.5 text-sm font-medium text-minium transition-colors hover:bg-minium hover:text-page;
   }

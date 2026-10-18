@@ -23,4 +23,4 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
 };
 
 export const coverSrcset = (img: string) =>
-  [640, 720, 960, 1280].map((w) => `/img/${img}-${w}.webp ${w}w`).join(", ");
+  [640, 720, 960, 1280, 1920, 2560].map((w) => `/img/${img}-${w}.webp ${w}w`).join(", ");

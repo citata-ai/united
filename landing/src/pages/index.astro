@@ -137,7 +137,7 @@ const article = {
 const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
-<Base title={title} description={description} image="/og/hero-art.jpg" modified="2026-10-18">
+<Base title={title} description={description} image="/og/hero-v3.jpg" modified="2026-10-18">
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
@@ -147,12 +147,12 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
   <!-- Hero as an art print: full-bleed image (style P, brand/IMAGES.md), text in the empty sky. -->
   <section class="hero-art relative isolate overflow-hidden bg-minium text-parchment">
     <img
-      src="/img/hero-art-1280.webp"
-      srcset="/img/hero-art-960.webp 960w, /img/hero-art-1280.webp 1280w, /img/hero-art-1920.webp 1920w"
+      src="/img/hero-v3-1280.webp"
+      srcset="/img/hero-v3-640.webp 640w, /img/hero-v3-960.webp 960w, /img/hero-v3-1280.webp 1280w, /img/hero-v3-1920.webp 1920w, /img/hero-v3-2560.webp 2560w, /img/hero-v3-3840.webp 3840w"
       sizes="100vw"
-      alt="A valley of marble ruins under an orange sky. Far away, a statue of a landlord stands by an old computer with a glowing screen."
-      width="1920"
-      height="1072"
+      alt="A new ancient city rises under an orange sky: colonnades in scaffolding with wooden cranes, and a stone road that leads a landlord with a big key to a temple with a warm light."
+      width="3840"
+      height="2143"
       fetchpriority="high"
       class="absolute inset-0 -z-10 size-full object-cover object-bottom"
     />

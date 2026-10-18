@@ -102,6 +102,7 @@ files = {
   "wordmark.svg": wordmark_lead(),
   "wordmark-dark.svg": wordmark_lead(ink="#EDE4D3", accent=ORANGE_DARK),
   "wordmark-around.svg": wordmark(),
+  "wordmark-on-minium.svg": wordmark_lead(ink=PARCH, accent=INK),
 }
 for n, s in files.items():
     open(f"{out}/{n}", "w").write(s)

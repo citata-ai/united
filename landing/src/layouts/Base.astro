@@ -170,29 +170,39 @@ const nav = [
 
     <slot />
 
-    <!-- Footer as an art print: links on parchment, an engraved town across the bottom (brand/IMAGES.md). -->
-    <footer class="footer-art relative mt-16 overflow-hidden border-t border-rule">
-      <div class="wrap grid gap-10 pt-14 text-[14px] md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <!-- Footer as an art print, same style as the hero (brand/IMAGES.md): text sits in the orange sky. -->
+    <footer class="relative isolate mt-16 overflow-hidden bg-minium text-parchment">
+      <img
+        src="/img/footer-v3-1280.webp"
+        srcset="/img/footer-v3-640.webp 640w, /img/footer-v3-960.webp 960w, /img/footer-v3-1280.webp 1280w, /img/footer-v3-1920.webp 1920w, /img/footer-v3-2560.webp 2560w, /img/footer-v3-3840.webp 3840w"
+        sizes="100vw"
+        alt="An ancient harbor town under an orange sky: stone houses with tiled roofs, an aqueduct, a temple on the hill, sailing boats and an olive tree."
+        width="3840"
+        height="2143"
+        loading="lazy"
+        class="absolute inset-0 -z-10 size-full object-cover object-bottom"
+      />
+      <div class="wrap grid gap-10 pt-14 pb-[min(52vw,520px)] text-[14px] md:grid-cols-[1.4fr_1fr_1fr_1fr] md:pb-[min(34vw,560px)]">
         <div>
           <a href="/" aria-label="Citata.ai home">
-            <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-11 w-auto" loading="lazy" />
+            <img src="/wordmark-on-minium.svg" alt="Citata" width="215" height="56" class="block h-10 w-auto" loading="lazy" />
           </a>
-          <p class="mt-4 max-w-xs font-mono text-[13px] leading-relaxed text-muted">
+          <p class="mt-4 max-w-xs font-mono text-[13px] leading-relaxed text-parchment/90">
             GEO for property management companies. Get named when landlords ask AI.
           </p>
-          <p class="mt-4 text-[13px]">
-            <em class="not-italic text-minium">Aetas aurea redit</em>
-            <span class="text-muted"> — the golden age returns.</span>
+          <p class="mt-4 text-[13px] text-parchment/90">
+            <em class="not-italic text-parchment">Aetas aurea redit</em> — the golden age returns.
           </p>
+          <p class="mt-6 font-mono text-[12px] text-parchment/80">© {new Date().getFullYear()} Citata.ai · WarmDevs OÜ, Tallinn</p>
         </div>
         {
           footerCols.map((col) => (
             <nav aria-label={col.title}>
-              <p class="meta text-ink">{col.title}</p>
-              <ul class="mt-4 space-y-2.5 text-muted">
+              <p class="meta text-parchment">{col.title}</p>
+              <ul class="mt-4 space-y-2.5 text-parchment/90">
                 {col.links.map((l) => (
                   <li>
-                    <a href={l.href} class="hover:text-ink">
+                    <a href={l.href} class="underline-offset-4 hover:text-parchment hover:underline">
                       {l.label}
                     </a>
                   </li>
@@ -202,19 +212,6 @@ const nav = [
           ))
         }
       </div>
-      <div class="wrap mt-10 flex flex-col gap-2 border-t border-rule pt-5 font-mono text-[12px] text-muted sm:flex-row sm:justify-between">
-        <span>© {new Date().getFullYear()} Citata.ai · WarmDevs OÜ, Tallinn</span>
-      </div>
-      <img
-        src="/img/footer-art-1280.webp"
-        srcset="/img/footer-art-960.webp 960w, /img/footer-art-1280.webp 1280w"
-        sizes="100vw"
-        alt="An engraved harbor town: stone houses, brick two-flats and a temple on the hill above calm water."
-        width="1293"
-        height="507"
-        loading="lazy"
-        class="footer-art-img mt-2 block w-full"
-      />
     </footer>
   </body>
 </html>

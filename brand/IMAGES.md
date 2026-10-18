@@ -81,8 +81,9 @@ Subject rules for our niche:
    Up to 3 in parallel work. One image takes about 1–2 minutes.
 3. Look at the image. Reject it for: letters or fake text, extra fingers, a cartoon object, a white sticker edge, more than one color field. Generate again with the fix in the prompt.
 4. Convert to WebP at 640, 720, 960 and 1280 px wide, and a 1200×630 JPG for OG. Put them in `landing/public/img/` and `landing/public/og/`.
-5. Add an entry to `landing/public/img/prompts.toml`: file, prompt, model, date.
-6. No visible "made with AI" label on the site (owner decision, 2026-10-18). Do not remove SynthID or C2PA marks.
+5. Put a version in the file name (`hero-v3-1280.webp`). The site caches images for 30 days, so a new image under an old name stays hidden from repeat visitors.
+6. Add an entry to `landing/public/img/prompts.toml`: file, prompt, model, date.
+7. No visible "made with AI" label on the site (owner decision, 2026-10-18). Do not remove SynthID or C2PA marks.
 
 ## 5. Approved prompts
 
