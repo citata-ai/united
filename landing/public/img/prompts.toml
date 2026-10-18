@@ -92,3 +92,15 @@ file = "img/stamp-report-v1-*.webp"
 prompt = "A small round classical temple (tholos) with slender columns and a bronze bell hanging under its dome, on a low hill with olive trees, a stone road leading up to it. + style block S (brand/IMAGES.md)"
 model = "gemini-3-pro-image via omp"
 date = "2026-10-18"
+
+[[image]]
+file = "img/hero-v6-*.webp"
+prompt = "Hero scene from brand/IMAGES.md section 2 (hero-v6) + style block T, vignette, no sea"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/footer-v6-*.webp"
+prompt = "Footer scene from brand/IMAGES.md section 2 (footer-v6, St Joseph easter egg) + style block T"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"

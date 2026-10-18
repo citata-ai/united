@@ -177,21 +177,29 @@ const nav = [
 
     <!-- Footer as an engraved print (style E): desktop — the olive tree, the hill and the temple frame the
          links, which sit in the empty sky; phone — links first, then the whole picture below. -->
-    <footer class="relative isolate mt-16 bg-minium text-parchment xl:h-[54vw] xl:max-h-[1100px] xl:min-h-[640px]">
-      <div class="wrap relative flex flex-col items-center pt-12 pb-8 text-center xl:pt-[3.5vw]">
-        <a href="/" aria-label="Citata.ai home">
-          <img src="/wordmark-on-minium.svg" alt="Citata" width="215" height="56" class="block h-10 w-auto" loading="lazy" />
-        </a>
-        <p class="mt-3 font-mono text-[13px] text-parchment/90">GEO for property management companies.</p>
-        <div class="mt-8 grid w-full max-w-[680px] grid-cols-1 gap-8 text-[14px] sm:grid-cols-3">
+    <!-- Footer art: three-ink stamp engraving (brand/IMAGES.md). The white sky blends into the page
+         (multiply). ≥1280px the links sit in the sky; below that, links first, then the picture.
+         Easter egg: a carpenter planes a roof beam, a lily staff by his door (St Joseph, patron of home owners). -->
+    <footer class="relative mt-16 border-t border-rule">
+      <div class="wrap relative z-10 pt-12 xl:absolute xl:inset-x-0 xl:top-0 xl:pt-[2.6vw]">
+        <div class="grid grid-cols-2 gap-x-6 gap-y-8 text-[14px] lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:gap-10 xl:mx-auto xl:max-w-[min(60vw,980px)] xl:gap-6">
+          <div class="col-span-2 lg:col-span-1">
+            <a href="/" aria-label="Citata.ai home">
+              <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-10 w-auto" loading="lazy" />
+            </a>
+            <p class="mt-3 font-mono text-[13px] text-muted">GEO for property management companies.</p>
+            <p class="mt-5 font-mono text-[12px] leading-relaxed text-muted">
+              © {new Date().getFullYear()} Citata.ai<br />WarmDevs OÜ, Tallinn<br /><em class="not-italic">Aetas aurea redit</em>
+            </p>
+          </div>
           {
             footerCols.map((col) => (
               <nav aria-label={col.title}>
-                <p class="meta text-parchment">{col.title}</p>
-                <ul class="mt-3 space-y-2 text-parchment/90">
+                <p class="meta">{col.title}</p>
+                <ul class="mt-3 space-y-2 text-ink">
                   {col.links.map((l) => (
                     <li>
-                      <a href={l.href} class="underline-offset-4 hover:text-parchment hover:underline">
+                      <a href={l.href} class="underline-offset-4 hover:text-minium hover:underline">
                         {l.label}
                       </a>
                     </li>
@@ -201,19 +209,16 @@ const nav = [
             ))
           }
         </div>
-        <p class="mt-8 font-mono text-[12px] text-parchment/80">
-          © {new Date().getFullYear()} Citata.ai · WarmDevs OÜ, Tallinn · <em class="not-italic">Aetas aurea redit</em>
-        </p>
       </div>
       <img
-        src="/img/footer-v5-1280.webp"
-        srcset="/img/footer-v5-640.webp 640w, /img/footer-v5-960.webp 960w, /img/footer-v5-1280.webp 1280w, /img/footer-v5-1920.webp 1920w, /img/footer-v5-2560.webp 2560w, /img/footer-v5-3840.webp 3840w"
+        src="/img/footer-v6-1280.webp"
+        srcset="/img/footer-v6-640.webp 640w, /img/footer-v6-960.webp 960w, /img/footer-v6-1280.webp 1280w, /img/footer-v6-1920.webp 1920w, /img/footer-v6-2560.webp 2560w, /img/footer-v6-3840.webp 3840w"
         sizes="100vw"
-        alt="An engraved ancient harbor town: an olive tree on the left, a temple on a hill on the right, an aqueduct, stone houses and sailing boats on calm water."
+        alt="An engraved hill town in three inks: an olive tree on the left, vineyards and tiled roofs, a temple on a hill on the right, and a carpenter planing a roof beam in his open workshop, a staff with white lilies by the door."
         width="3840"
-        height="2076"
+        height="1543"
         loading="lazy"
-        class="block h-auto w-full xl:absolute xl:inset-0 xl:-z-10 xl:h-full xl:object-cover xl:object-bottom"
+        class="mt-6 block h-auto w-full mix-blend-multiply xl:mt-0"
       />
     </footer>
   </body>

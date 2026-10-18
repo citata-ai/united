@@ -19,7 +19,29 @@ What makes them work:
 | Subject | One old thing and one modern thing in one calm, centered scene (a CRT computer in the Acropolis) | Statue holds a modern prop |
 | Mood | Calm, editorial, a little strange | Pop, playful |
 
-## 2. Hero and footer: E · Two-tone engraving (since 2026-10-18)
+## 2. Hero and footer: T · Three-ink stamp engraving (current, since 2026-10-18)
+
+The owner chose this over E: more color, same engraving. Options shown: Botticelli tempera, hand-colored engraving, fresco, three-ink stamp; the stamp won.
+
+- Line engraving in three inks on clean white paper: lapis blue, minium orange-red (roofs, stone, the toga), dark green (trees). No gray, no gradients.
+- The sky is clean white paper: no lines, no clouds, no birds. The text sits on it in ink. No guilloche rings on the hero or footer (rings are for stamps only).
+- No sea in the hero. The bottom is a vignette that fades into paper, so the hero flows into the next section with no cut objects.
+- On the site the image has `mix-blend-mode: multiply`, so the white paper becomes the page color. Do not put `isolate` on its parent, or the blend stops.
+- From 1280 px the text sits in the empty sky over the image; below that, text first and the image after it.
+- Footer easter egg: a carpenter planes a roof beam in an open workshop; a staff with white lilies leans by the door. This is St Joseph, patron of home owners, landlords and realtors. No halo, no child, no angel: keep it quiet.
+
+**Style block T** (use as is, then upscale ×4 with Real-ESRGAN; no recolor):
+
+```text
+Style: a vintage postage-stamp line engraving printed in three inks on clean white paper: deep lapis blue, minium orange-red for roofs and stone, dark green for trees and cypresses; crisp engraved lines and cross-hatching, no gray, no gradients. The sky is pure clean white paper: no lines, no hatching, no clouds, no birds, no texture, completely empty. No text, no letters, no numbers, no logos, no watermark, no frame, no border line around the picture.
+```
+
+| Image | Scene (add block T) |
+|---|---|
+| `hero-v6` | An ideal ancient Mediterranean town being built: a stone building in scaffolding with a treadwheel crane (left), a tall temple with columns and cypresses (right), a paved road to a small temple with a glowing door, a man in an orange toga with a large key. Upper middle half empty. Vignette: the bottom fades into paper; no sea, no boats. |
+| `footer-v6` | A quiet hill town as a low band: olive tree (far left), vineyard, tiled roofs, temple on a hill with cypresses (far right); the carpenter's workshop (Joseph) at lower right. Upper 60 % empty sky; 28 % of the sky cropped to keep the footer short. |
+
+## 2a. Old: E · Two-tone engraving (hero-v5, footer-v5)
 
 The owner chose this style for the hero and the footer after the halftone versions looked low-quality when upscaled. References: a two-tone engraved footer (ink sky, cream land) and an engraved postage stamp.
 
