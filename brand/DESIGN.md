@@ -258,7 +258,7 @@ Two families, both OFL, both already in the MyRemotely web-app. Files: `/brand/f
 8. **Subscribe**: big headline left ("Get cited. **Every Monday**, in your inbox."), email field right.
 9. **Footer**: hairline, motto left, links right.
 
-**Grid.** Max width 1280px, side padding 32px, gutter 28px. Sections divided by 1px `outline` hairlines, 56px vertical space.
+**Grid.** Max width 1280px (1440px from 1536px screens), side padding 32px (40px wide), gutter 28px. Sections divided by 1px `outline` hairlines, 56px vertical space.
 
 **Section label.** Paper Mono uppercase with a small 8px minium square before it.
 

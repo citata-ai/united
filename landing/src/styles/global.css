@@ -48,7 +48,7 @@
 
 @layer components {
   .wrap {
-    @apply mx-auto max-w-[1280px] px-5 sm:px-8;
+    @apply mx-auto max-w-[1280px] px-5 sm:px-8 2xl:max-w-[1440px] 2xl:px-10;
   }
   .label {
     @apply mb-4 flex items-center gap-2.5 font-mono text-xs tracking-[0.08em] text-muted uppercase;
