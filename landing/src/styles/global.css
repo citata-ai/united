@@ -103,6 +103,17 @@
   .prose-c ol {
     @apply list-decimal pl-6;
   }
+  /* Wide comparison tables scroll inside their own box on phones, not the whole page. */
+  .prose-c table {
+    @apply block max-w-full overflow-x-auto text-[15px];
+  }
+  .prose-c th,
+  .prose-c td {
+    @apply border-b border-rule px-3 py-2 text-left align-top;
+  }
+  .prose-c th {
+    @apply font-medium;
+  }
   .prose-c li {
     @apply my-1.5;
   }
