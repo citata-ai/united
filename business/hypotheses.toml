@@ -1,0 +1,190 @@
+# Growth hypotheses. Schema: [entity.Hypothesis], [entity.Experiment] in model.toml.
+# Each bet: "If we <change>, then <metric> moves to <target> by <due>, because <reason>."
+# Priority = ice.impact x ice.confidence x ice.ease. The routine (docs/growth-loop.md) works the top
+# running hypotheses first, logs each run as an [[experiment]], and sets status from the data.
+#
+# Traffic math for CTT-O6 (1,000 AI sessions in 30 days). Our niche prompts ("GEO agency for
+# property management") have tiny demand. So most of the 1,000 must come from landlord and
+# property manager questions with real demand, where AI cites data, tools and comparison tables.
+# Planned split: H01 400, H02 150, H06 150, H03 100, H05 100, H08 50, rest 50.
+# Baseline (2026-10-19, 7 days): 0 AI referral sessions, 93 AI bot fetches.
+
+[[hypothesis]]
+id = "H01"
+objective = "CTT-O6"
+lever = "data-page"
+statement = "If we publish one Fair Market Rent and Section 8 payment standard page for each of the top 50 US metros (FY2027 HUD data, answer first, one table, source link), then AI referral sessions reach 400 in 30 days."
+because = "Landlords ask AI 'what does Section 8 pay in <city>'. HUD published FY2027 FMRs on 2026-09-01, in effect from 2026-10-01 (Federal Register FR-6553-N-03). Zip-level data sites (fairmarketrentmap.com) already exist, so we win on what they lack: FY2026 to FY2027 change, the local housing authority payment standard, and the landlord steps. AI search prefers fresh pages with exact numbers and a primary source."
+metric = "ai_referral_sessions"
+baseline = 0
+target = 400
+due = "2026-11-18"
+kill_if = "Fewer than 20 AI sessions and fewer than 3 AI bot fetches per page 21 days after publish."
+ice = { impact = 9, confidence = 4, ease = 7 }
+status = "running"
+
+[[hypothesis]]
+id = "H02"
+objective = "CTT-O6"
+lever = "free-tool"
+statement = "If we ship two free tools (property management fee calculator; Section 8 rent and tenant share calculator) with a text answer above each tool, then AI referral sessions to the tools reach 150 in 30 days."
+because = "AI answers link out when the user must compute something. Tools also earn links from forums. FirstIndex sells 'free tools' as a core deliverable."
+metric = "ai_referral_sessions"
+baseline = 0
+target = 150
+due = "2026-11-18"
+kill_if = "Fewer than 15 AI sessions to the tools 21 days after publish."
+ice = { impact = 7, confidence = 5, ease = 6 }
+status = "running"
+
+[[hypothesis]]
+id = "H03"
+objective = "CTT-O6"
+lever = "original-research"
+statement = "If we publish 'Which property managers does AI recommend?' (ChatGPT, Gemini, Claude asked 'best property management company in <city>' for 50 US cities, with the cited sources), then 10 sites link to it and it brings 100 visits in 30 days."
+because = "Original data is the most linked and most cited content type. No one publishes this data for property management. Our tools/ai-visibility runner already does the work."
+metric = "referring_domains"
+baseline = 0
+target = 10
+due = "2026-11-18"
+kill_if = "Fewer than 3 referring domains 21 days after publish and outreach to 30 sites."
+ice = { impact = 8, confidence = 4, ease = 6 }
+status = "running"
+
+[[hypothesis]]
+id = "H04"
+objective = "CTT-O6"
+lever = "indexing"
+statement = "If every new or changed page goes to IndexNow, Bing Webmaster Tools and GSC on the day it ships, then 95% of sitemap URLs are in the Bing index within 7 days."
+because = "ChatGPT search and Copilot read the Bing index. A page that Bing does not index cannot be cited there."
+metric = "indexed_pages"
+target = 95
+due = "2026-11-02"
+kill_if = "Never: this is hygiene. Park it when the check passes 2 weeks in a row."
+ice = { impact = 6, confidence = 8, ease = 10 }
+status = "running"
+
+[[hypothesis]]
+id = "H05"
+objective = "CTT-O6"
+lever = "community"
+statement = "If Tao posts 3 helpful answers a week in r/landlord, r/PropertyManagement, r/Section8, BiggerPockets and Quora, with a link only where our page answers better, then referral sessions from those sites reach 100 in 30 days."
+because = "Reddit is in the top cited sources of our baseline (8 answers). Answers that AI cites send clicks twice: from the thread and from the AI answer."
+metric = "referral_sessions"
+baseline = 0
+target = 100
+due = "2026-11-18"
+kill_if = "Fewer than 10 referral sessions after 12 posts, or any mod warning."
+ice = { impact = 6, confidence = 5, ease = 5 }
+status = "proposed"
+
+[[hypothesis]]
+id = "H06"
+objective = "CTT-O6"
+lever = "comparison"
+statement = "If we publish 6 honest comparison pages for property management software (AppFolio, Buildium, Rentvine, DoorLoop, Rent Manager, TenantCloud: price per door, door minimums, fit by portfolio size), then AI referral sessions reach 150 in 30 days."
+because = "Property managers (our buyers) ask AI 'AppFolio vs Buildium' and 'best software for 100 doors'. AI cites pages with price tables and a clear 'pick this if' line."
+metric = "ai_referral_sessions"
+baseline = 0
+target = 150
+due = "2026-11-18"
+kill_if = "Fewer than 15 AI sessions 21 days after publish."
+ice = { impact = 7, confidence = 5, ease = 6 }
+status = "proposed"
+
+[[hypothesis]]
+id = "H07"
+objective = "CTT-O3"
+lever = "refresh"
+statement = "If we refresh each guide every 14 days (new data point, new FAQ, visible updated date, change note), then our non-brand AI mention share goes from 0% to 10% by 2026-11-18."
+because = "AI engines favor recent pages. Our 5 guides are 1 day old, so a refresh habit keeps them in the fresh set."
+metric = "ai_mention_share"
+baseline = 0
+target = 10
+due = "2026-11-18"
+kill_if = "Refreshed pages show no gain over not-yet-refreshed pages after 2 weekly runs."
+ice = { impact = 5, confidence = 5, ease = 9 }
+status = "proposed"
+
+[[hypothesis]]
+id = "H08"
+objective = "CTT-O6"
+lever = "syndication"
+statement = "If we republish each new piece on Medium, Substack, Hashnode and LinkedIn with a canonical link to citata.ai, then those copies bring 50 referral sessions and get cited in AI answers in 30 days."
+because = "medium.com is in our baseline top cited sources (8 answers). We already own @citataai on Medium, @citata on Substack and Hashnode."
+metric = "referral_sessions"
+baseline = 0
+target = 50
+due = "2026-11-18"
+kill_if = "Fewer than 5 referral sessions after 6 republished pieces."
+ice = { impact = 4, confidence = 6, ease = 8 }
+status = "proposed"
+
+[[hypothesis]]
+id = "H09"
+objective = "CTT-O3"
+lever = "entity"
+statement = "If citata.ai has a Wikidata item plus live LinkedIn, Crunchbase, X, Trustpilot, Clutch and G2 profiles in sameAs, then all brand answers name us correctly and none confuse us with Citate.ai by 2026-11-18."
+because = "AI resolves a brand through knowledge-graph profiles. At point A, AI offered Citate.ai, Citant.ai, Citala or Citeca. A wrong entity loses every click that brand interest makes."
+metric = "ai_mention_share"
+target = 100
+due = "2026-11-18"
+kill_if = "Never: entity hygiene. Park when 2 runs in a row are correct."
+ice = { impact = 4, confidence = 7, ease = 7 }
+status = "running"
+
+[[hypothesis]]
+id = "H10"
+objective = "CTT-O3"
+lever = "listicle"
+statement = "If citata.ai gets into 5 third-party 'best GEO agencies for property management / real estate' lists that AI cites (webtonic.io, llmpulse.ai, thestacc.com, concurate.com, almcorp.com and similar), then our mention share on pm-geo prompts goes from 0% to 15%."
+because = "For 'which agency' prompts, AI repeats lists from third-party pages. 85% of brand mentions in AI answers come from third-party sites, not the brand site (AirOps, via aeoengine.ai)."
+metric = "ai_mention_share"
+baseline = 0
+target = 15
+due = "2026-11-18"
+kill_if = "No list accepts us after 15 pitches."
+ice = { impact = 6, confidence = 4, ease = 5 }
+status = "proposed"
+
+# --- Experiments: one row per run. The routine appends rows and fills result and learned. ---
+
+[[experiment]]
+id = "H04-E1"
+hypothesis = "H04"
+start = "2026-10-19"
+actions = ["Ping IndexNow for every sitemap URL", "Check Bing Webmaster Tools URL inspection for the 5 guides", "Record indexed count"]
+urls = ["https://citata.ai/sitemap.xml"]
+status = "running"
+
+[[experiment]]
+id = "H01-E1"
+hypothesis = "H01"
+start = "2026-10-19"
+actions = ["Pull HUD FY2027 FMR data for the top 50 metros", "Build one page per metro plus a hub page", "Ship to stage; publish after owner check"]
+urls = []
+status = "running"
+
+[[experiment]]
+id = "H02-E1"
+hypothesis = "H02"
+start = "2026-10-19"
+actions = ["Build the property management fee calculator", "Build the Section 8 rent and tenant share calculator", "Ship to stage; publish after owner check"]
+urls = []
+status = "running"
+
+[[experiment]]
+id = "H03-E1"
+hypothesis = "H03"
+start = "2026-10-19"
+actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines", "Write the research page with method and data download", "Pitch 30 sites"]
+urls = []
+status = "running"
+
+[[experiment]]
+id = "H09-E1"
+hypothesis = "H09"
+start = "2026-10-19"
+actions = ["Add live X, Trustpilot, Clutch, G2, Medium, Substack profiles to Organization sameAs", "Create Wikidata item (needs a person: account)", "Finish LinkedIn and Crunchbase (blocked on Tao)"]
+urls = []
+status = "running"

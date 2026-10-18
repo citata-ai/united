@@ -35,7 +35,7 @@ fields = { project = "Project.slug", week = "YYYY-Www", metrics = "Metric[]", ch
 
 [entity.Metric]
 doc = "A measured number with its source."
-values = ["gsc_clicks", "gsc_impressions", "ai_mention_share", "ai_link_share", "ai_referral_sessions", "leads", "indexed_pages"]
+values = ["gsc_clicks", "gsc_impressions", "ai_mention_share", "ai_link_share", "ai_referral_sessions", "ai_bot_fetches", "referral_sessions", "referring_domains", "leads", "indexed_pages"]
 
 [entity.CaseStudy]
 doc = "Published proof for one Project: baseline, changes, result, disclosure."
@@ -47,3 +47,19 @@ fields = { account = "Account.slug", offer = "Offer.slug", stripe_id = "string",
 
 [enum.Vertical]
 values = ["property-management", "pms-software", "impact-org", "saas", "self"]
+
+# --- Growth primitives: every bet is a Hypothesis until data proves it. ---
+
+[entity.Hypothesis]
+doc = "A bet we test: 'If we <change>, then <metric> moves to <target> by <due>, because <reason>.' Every growth task starts from one."
+fields = { id = "H<nn>", objective = "Objective.id", lever = "Lever", statement = "string", because = "string", metric = "Metric", baseline = "number?", target = "number", due = "date", kill_if = "string", ice = "{ impact, confidence, ease } 1..10", status = "HypothesisStatus" }
+
+[entity.Experiment]
+doc = "One run that tests one Hypothesis: the work we ship and what we measure. A Hypothesis can have many Experiments."
+fields = { id = "H<nn>-E<n>", hypothesis = "Hypothesis.id", start = "date", end = "date?", actions = "string[]", urls = "string[]", result = "number?", learned = "string?", status = "planned | running | done | stopped" }
+
+[enum.Lever]
+values = ["data-page", "free-tool", "original-research", "indexing", "community", "comparison", "refresh", "syndication", "entity", "listicle", "outreach"]
+
+[enum.HypothesisStatus]
+values = ["proposed", "running", "validated", "invalidated", "parked"]

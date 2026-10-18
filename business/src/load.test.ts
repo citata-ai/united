@@ -11,7 +11,7 @@ import { entities, enums } from "./model.ts";
 
 const businessDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
-it.effect("decodes accounts.toml, offers.toml and goals.toml", () =>
+it.effect("decodes accounts.toml, offers.toml, goals.toml and hypotheses.toml", () =>
   Effect.gen(function* () {
     const business = yield* loadBusiness(businessDir);
     expect(business.accounts.account.map((a) => a.slug)).toEqual([
@@ -36,6 +36,7 @@ it.effect("decodes accounts.toml, offers.toml and goals.toml", () =>
       "CTT-O3",
       "CTT-O4",
       "CTT-O5",
+      "CTT-O6",
     ]);
   }).pipe(Effect.provide(NodeFileSystem.layer)),
 );
@@ -45,6 +46,18 @@ it.effect("each Project points to an Offer that exists", () =>
     const { projects, offers } = yield* loadBusiness(businessDir);
     const slugs = new Set(offers.offer.map((o) => o.slug));
     expect(projects.filter((p) => !slugs.has(p.offer))).toEqual([]);
+  }).pipe(Effect.provide(NodeFileSystem.layer)),
+);
+
+it.effect("each Hypothesis points to an Objective, each Experiment to a Hypothesis", () =>
+  Effect.gen(function* () {
+    const { goals, hypotheses } = yield* loadBusiness(businessDir);
+    const objectives = new Set(goals.objective.map((o) => o.id));
+    const ids = hypotheses.hypothesis.map((h) => h.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    expect(hypotheses.hypothesis.filter((h) => !objectives.has(h.objective))).toEqual([]);
+    expect(hypotheses.experiment.filter((e) => !ids.includes(e.hypothesis))).toEqual([]);
+    expect(hypotheses.experiment.filter((e) => !e.id.startsWith(`${e.hypothesis}-`))).toEqual([]);
   }).pipe(Effect.provide(NodeFileSystem.layer)),
 );
 

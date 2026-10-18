@@ -4,7 +4,15 @@
  * `onExcessProperty: "error"`, so a new key fails until it is added here.
  */
 import * as Schema from "effect/Schema";
-import { Account, EvidenceStatus, IsoDate, Offer, ProjectFields } from "./model.ts";
+import {
+  Account,
+  EvidenceStatus,
+  Experiment,
+  Hypothesis,
+  IsoDate,
+  Offer,
+  ProjectFields,
+} from "./model.ts";
 
 const Strings = Schema.Array(Schema.String);
 
@@ -62,3 +70,10 @@ export type Objective = typeof Objective.Type;
 
 export const GoalsFile = Schema.Struct({ objective: Schema.Array(Objective) });
 export type GoalsFile = typeof GoalsFile.Type;
+
+/** hypotheses.toml: the growth bets and the runs that test them. */
+export const HypothesesFile = Schema.Struct({
+  hypothesis: Schema.Array(Hypothesis),
+  experiment: Schema.Array(Experiment),
+});
+export type HypothesesFile = typeof HypothesesFile.Type;

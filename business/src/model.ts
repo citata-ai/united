@@ -60,10 +60,38 @@ export const Metric = Schema.Literals([
   "ai_mention_share",
   "ai_link_share",
   "ai_referral_sessions",
+  "ai_bot_fetches",
+  "referral_sessions",
+  "referring_domains",
   "leads",
   "indexed_pages",
 ]);
 export type Metric = typeof Metric.Type;
+
+/** The kind of growth move a Hypothesis tests. */
+export const Lever = Schema.Literals([
+  "data-page",
+  "free-tool",
+  "original-research",
+  "indexing",
+  "community",
+  "comparison",
+  "refresh",
+  "syndication",
+  "entity",
+  "listicle",
+  "outreach",
+]);
+export type Lever = typeof Lever.Type;
+
+export const HypothesisStatus = Schema.Literals([
+  "proposed",
+  "running",
+  "validated",
+  "invalidated",
+  "parked",
+]);
+export type HypothesisStatus = typeof HypothesisStatus.Type;
 
 // ENTITIES
 
@@ -174,6 +202,42 @@ export const Subscription = Schema.Struct({
 });
 export type Subscription = typeof Subscription.Type;
 
+/** ICE score: impact, confidence, ease, each 1..10. Priority = product. */
+const Score = Schema.Int.check(Schema.isBetween({ minimum: 1, maximum: 10 }));
+export const Ice = Schema.Struct({ impact: Score, confidence: Score, ease: Score });
+export type Ice = typeof Ice.Type;
+
+/** A bet we test. Every growth task starts from one. */
+export const Hypothesis = Schema.Struct({
+  id: Schema.String.check(Schema.isPattern(/^H\d{2}$/, { message: "id must be H<nn>" })),
+  objective: Schema.String,
+  lever: Lever,
+  statement: Schema.String,
+  because: Schema.String,
+  metric: Metric,
+  baseline: Schema.optionalKey(Schema.Finite),
+  target: Schema.Finite,
+  due: IsoDate,
+  kill_if: Schema.String,
+  ice: Ice,
+  status: HypothesisStatus,
+});
+export type Hypothesis = typeof Hypothesis.Type;
+
+/** One run that tests one Hypothesis. */
+export const Experiment = Schema.Struct({
+  id: Schema.String.check(Schema.isPattern(/^H\d{2}-E\d+$/, { message: "id must be H<nn>-E<n>" })),
+  hypothesis: Schema.String,
+  start: IsoDate,
+  end: Schema.optionalKey(IsoDate),
+  actions: Schema.Array(Schema.String),
+  urls: Schema.Array(Schema.String),
+  result: Schema.optionalKey(Schema.Finite),
+  learned: Schema.optionalKey(Schema.String),
+  status: Schema.Literals(["planned", "running", "done", "stopped"]),
+});
+export type Experiment = typeof Experiment.Type;
+
 /** Every entity in model.toml, by name. A test checks this list against model.toml. */
 export const entities = {
   Account,
@@ -187,7 +251,9 @@ export const entities = {
   Metric,
   CaseStudy,
   Subscription,
+  Hypothesis,
+  Experiment,
 } as const;
 
 /** Every enum in model.toml, by name. */
-export const enums = { Vertical } as const;
+export const enums = { Vertical, Lever, HypothesisStatus } as const;
