@@ -140,3 +140,9 @@ file = "img/fridman-case-v3-*.webp"
 prompt = "Edit of fridman-case-v2 into style N: flat sun yellow #F2C230 sky, brownstones in pink, coral and lilac, cobalt line work, mint trees, toga orange"
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-18"
+
+[[image]]
+file = "img/hero-v8-*.webp"
+prompt = "Edit of hero-v7: keep everything and the white sky; add pop accents: pink and sun yellow striped awnings, mint green and cobalt doors and shutters, pots with bright pink flowers, coral and cyan pennants on the crane rope"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
