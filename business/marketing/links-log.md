@@ -22,3 +22,4 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | B14 | 5 | 0 | 0 | 5 | 0 | Pinterest needs DOB. HackerNoon profile (no link). Propmodo, RHJ need an article by a person. e-Residency marketplace needs founder decision + client references. |
 | 2026-10-18 | H1 | 8 | 1 | 0 | 7 | 0 | Help batch: X @citataai live (nofollow), Reddit u/citata-ai made. 6 assists timed out (dev.to, F6S, Indie Hackers, Crunchbase, YouTube) or need more (Alignable US phone). citata.ai now live. All P1/P2 rows done. |
 | 2026-10-18 | reposition | - | - | - | - | - | Kit v2 (US property management). GitHub bio updated. Added niche rows L101-L106. K1 (LinkedIn, Crunchbase) and R1 (6 live profiles) started. |
+| 2026-10-18 | R1 | 6 | 6 | 0 | 0 | 0 | Repositioned Dealroom (+Startup Estonia), Trustpilot, X, Medium, Substack. Dealroom industries in review. R2 started. |
