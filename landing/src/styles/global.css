@@ -21,7 +21,8 @@
 @font-face {
   font-family: "Paper Mono";
   src: url("/fonts/PaperMono-Regular.woff2") format("woff2");
-  font-display: swap;
+  /* Preloaded; "optional" never swaps late, so mono lines cannot shift the layout. */
+  font-display: optional;
 }
 
 @theme {
@@ -42,6 +43,13 @@
   --color-minium-hover: #9e350a;
   --color-verdigris: #2f6b5c;
   --color-ochre: #9a6a00;
+  /* Pop accents (neo-Renaissance, 2026-10-18): section panels, stat cards, chips. */
+  --color-coral: #ff6b5b;
+  --color-sun: #f2c230;
+  --color-sky: #2fa7e0;
+  --color-mint: #8fe2c5;
+  --color-lilac: #b79cff;
+  --color-cobalt: #1f57ff;
 }
 
 @layer base {
@@ -76,6 +84,17 @@
   .btn-primary {
     @apply inline-block rounded border border-minium bg-minium px-4 py-2.5 text-sm font-medium text-page transition-colors hover:border-minium-hover hover:bg-minium-hover;
   }
+  /* Buttons on a dark or colored art background (hero). */
+  .btn-light {
+    @apply inline-block rounded bg-parchment px-5 py-3 text-[15px] font-medium text-ink hover:bg-page;
+  }
+  .btn-ghost-light {
+    @apply inline-block rounded border border-parchment/80 px-5 py-3 text-[15px] font-medium text-parchment hover:bg-parchment/10;
+  }
+  /* Keep hero text readable where white halftone clouds pass behind it. */
+  .hero-title {
+    text-shadow: 0 1px 18px rgb(120 35 0 / 0.45);
+  }
   .btn-secondary {
     @apply inline-block rounded border border-minium px-4 py-2.5 text-sm font-medium text-minium transition-colors hover:bg-minium hover:text-page;
   }
@@ -103,6 +122,17 @@
   .prose-c ol {
     @apply list-decimal pl-6;
   }
+  /* Wide comparison tables scroll inside their own box on phones, not the whole page. */
+  .prose-c table {
+    @apply block max-w-full overflow-x-auto text-[15px];
+  }
+  .prose-c th,
+  .prose-c td {
+    @apply border-b border-rule px-3 py-2 text-left align-top;
+  }
+  .prose-c th {
+    @apply font-medium;
+  }
   .prose-c li {
     @apply my-1.5;
   }
@@ -122,10 +152,145 @@
   .prose-c th {
     @apply font-mono text-[11px] font-normal tracking-[0.06em] text-muted uppercase;
   }
+  /* Guides: wider text column next to the table of contents. */
+  .prose-wide {
+    max-width: none;
+    font-size: 18px;
+  }
+  .prose-wide h2 {
+    scroll-margin-top: 7rem;
+  }
+  /* !important: the link's border-transparent / text-muted utilities win over component classes. */
+  .toc-active {
+    border-left-color: var(--color-minium) !important;
+    color: var(--color-ink) !important;
+    font-weight: 500;
+  }
   .img-frame {
     @apply aspect-video overflow-hidden rounded bg-sunken;
   }
   .img-frame img {
     @apply size-full object-cover;
+  }
+  /* Hover zoom inside the frame, like every.to cards (brand/DESIGN.md: scale 1.03, 0.4s). */
+  .img-zoom img {
+    transition: transform 0.4s ease;
+  }
+  .group:hover .img-zoom img,
+  .group:focus-visible .img-zoom img {
+    transform: scale(1.04);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .img-zoom img {
+      transition: none;
+    }
+  }
+}
+
+/* Page-to-page: the browser keeps the menu bar still and fades only the content
+   (cross-document view transitions; browsers without support just load the page). */
+@view-transition {
+  navigation: auto;
+}
+.site-bar {
+  view-transition-name: site-bar;
+}
+::view-transition-group(site-bar),
+::view-transition-old(site-bar),
+::view-transition-new(site-bar) {
+  animation: none;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.16s;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+/* Chapter label: big number + name, one per home section. */
+.chapter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.chapter b {
+  display: inline-grid;
+  place-items: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--chip, var(--color-sun));
+  color: var(--color-ink);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+/* FAQ accordion: native details, smooth open where the browser supports it. */
+.faq-item {
+  border-bottom: 1px solid var(--color-rule);
+  interpolate-size: allow-keywords;
+}
+.faq-item summary {
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  font-size: 19px;
+  font-weight: 500;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--color-page);
+  border: 1px solid var(--color-rule);
+  font-size: 20px;
+  line-height: 1;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+  background: var(--color-sun);
+  border-color: var(--color-sun);
+}
+.faq-item summary:hover {
+  color: var(--color-minium);
+}
+.faq-item::details-content {
+  height: 0;
+  overflow: clip;
+  transition:
+    height 0.3s ease,
+    content-visibility 0.3s allow-discrete;
+}
+.faq-item[open]::details-content {
+  height: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-item::details-content,
+  .faq-item summary::after {
+    transition: none;
   }
 }

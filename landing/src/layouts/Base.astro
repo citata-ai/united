@@ -11,10 +11,25 @@ interface Props {
   /** Last content update, YYYY-MM-DD. Shown to crawlers as article:modified_time. */
   modified?: string;
 }
-const { title, description, image = "/og/property-management.jpg", type = "website", modified } = Astro.props;
+const { title, description, image = "/og/property-management-v2.jpg", type = "website", modified } = Astro.props;
+import { platforms } from "../data/platforms.ts";
+
+// "Ask AI about Citata.ai" (like propertymanagement.com): each engine opens with a ready question
+// about us, this page and llms.txt.
+const icon = (name: string) => platforms.find((p) => p.name === name)?.path ?? "";
 // build.format "file" makes Astro.url end in ".html"; the live URLs do not.
 const cleanPath = Astro.url.pathname.replace(/(index)?\.html$/, "").replace(/(.)\/$/, "$1");
 const canonical = new URL(cleanPath, Astro.site);
+const askPrompt = encodeURIComponent(
+  `Tell me about Citata.ai: what it does (GEO and AEO for US property management companies, so landlords find them in ChatGPT, Gemini, Claude and Perplexity), how it works and who it is for. Current page: ${canonical} More context: https://citata.ai/llms.txt`,
+);
+const askAI = [
+  { name: "ChatGPT", href: `https://chatgpt.com/?q=${askPrompt}` },
+  { name: "Claude", href: `https://claude.ai/new?q=${askPrompt}` },
+  { name: "Perplexity", href: `https://www.perplexity.ai/search?q=${askPrompt}` },
+  { name: "Google AI Overviews", label: "Google AI Mode", href: `https://www.google.com/search?udm=50&q=${askPrompt}` },
+  { name: "Grok", href: `https://grok.com/?q=${askPrompt}` },
+];
 // Markdown copy of the page for AI agents (scripts/markdown.mjs writes it at build).
 const markdownHref = cleanPath === "/" ? "/index.md" : `${cleanPath}.md`;
 const ogImage = new URL(image, Astro.site);
@@ -24,7 +39,7 @@ const organization = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://citata.ai/#org",
-  name: "citata.ai",
+  name: "Citata.ai",
   alternateName: "Citata",
   url: "https://citata.ai",
   logo: "https://citata.ai/icon.svg",
@@ -37,15 +52,15 @@ const organization = {
     addressCountry: "EE",
   },
   description:
-    "citata.ai is a done-for-you GEO and AEO agency. It gets property management companies named and linked in answers from ChatGPT, Gemini, Claude and Perplexity.",
+    "Citata.ai is a done-for-you GEO and AEO agency. It gets property management companies named and linked in answers from ChatGPT, Gemini, Claude and Perplexity.",
   disambiguatingDescription:
-    "citata.ai (with an a) is a GEO agency run by WarmDevs OÜ. It is not Citate.ai, a different AI visibility software product.",
+    "Citata.ai (with an a) is a GEO agency run by WarmDevs OÜ. It is not Citate.ai, a different AI visibility software product.",
   knowsAbout: [
     "Generative engine optimization (GEO)",
     "Answer engine optimization (AEO)",
     "AI search visibility",
     "Property management marketing",
-    "Owner lead generation for property managers",
+    "Landlord lead generation for property managers",
   ],
   areaServed: "US",
   legalName: "WarmDevs OÜ",
@@ -64,19 +79,50 @@ const website = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": "https://citata.ai/#website",
-  name: "citata.ai",
+  name: "Citata.ai",
   url: "https://citata.ai",
   description:
-    "Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai gets your property management company named and linked in that answer.",
+    "Landlords now ask ChatGPT and Gemini which property manager to hire. Citata.ai gets your property management company named and linked in that answer.",
   inLanguage: "en",
   publisher: { "@id": "https://citata.ai/#org" },
 };
 
+const footerCols = [
+  {
+    title: "Service",
+    links: [
+      { href: "/#how", label: "How it works" },
+      { href: "/#pricing", label: "Pricing" },
+      { href: "/property-management", label: "Landlord questions" },
+      { href: auditHref, label: "Free AI audit" },
+    ],
+  },
+  {
+    title: "Guides",
+    links: [
+      { href: "/guides/why-owner-leads-are-dropping", label: "Why landlord leads drop" },
+      { href: "/guides/geo-agencies-for-property-management", label: "GEO agencies compared" },
+      { href: "/guides/track-ai-traffic-property-management", label: "Track AI traffic" },
+      { href: "/guides", label: "All guides" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { href: "/about", label: "About" },
+      { href: "/case-studies/fridman-properties", label: "Case study" },
+      { href: "/#faq", label: "FAQ" },
+      { href: "mailto:grow@citata.ai", label: "grow@citata.ai" },
+    ],
+  },
+];
+
 const nav = [
   { href: "/#how", label: "How it works" },
-  { href: "/property-management", label: "Owner questions" },
+  { href: "/property-management", label: "Landlord questions" },
   { href: "/case-studies/fridman-properties", label: "Case study" },
   { href: "/#pricing", label: "Pricing" },
+  { href: "/guides", label: "Guides" },
   { href: "/#faq", label: "FAQ" },
   { href: "/about", label: "About" },
 ];
@@ -95,8 +141,9 @@ const nav = [
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href="/fonts/CalSansVF.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/PaperMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#F5EFE3" />
-    <meta property="og:site_name" content="citata.ai" />
+    <meta property="og:site_name" content="Citata.ai" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -105,22 +152,27 @@ const nav = [
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="author" content="Taras Kornichuk" />
     {modified && <meta property="article:modified_time" content={modified} />}
-    <link rel="alternate" type="application/rss+xml" title="citata.ai" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Citata.ai" href="/rss.xml" />
     <link rel="alternate" type="text/markdown" href={markdownHref} />
     <meta name="ahrefs-site-verification" content="c373191b9e5ef7a015c4cc2786b14f0c505cd415d2516dc4d70cb57db4fa2f1b" />
     <script is:inline src="https://analytics.ahrefs.com/analytics.js" data-key="ZBFZfEWCf4yVC1R7LkUI3w" async></script>
     <script type="application/ld+json" is:inline set:html={JSON.stringify(organization)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(website)} />
+    <!-- Fetch a same-site page when the pointer rests on its link, so the next page is ready on click.
+         Prefetch only (no prerender), so analytics never counts a page nobody opened. -->
+    <script type="speculationrules" is:inline>
+      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[rel~=nofollow]"}}]},"eagerness":"moderate"}]}
+    </script>
     <slot name="head" />
   </head>
   <body class="font-sans text-base leading-normal antialiased">
-    <div class="sticky top-0 z-50 border-b border-rule bg-parchment/90 backdrop-blur supports-[backdrop-filter]:bg-parchment/80">
+    <div class="site-bar sticky top-0 z-50 border-b border-rule bg-parchment/90 backdrop-blur supports-[backdrop-filter]:bg-parchment/80">
       <header class="wrap flex items-center justify-between gap-6 py-3">
-        <a href="/" aria-label="citata.ai home">
-          <img src="/wordmark.svg" alt="Citata" width="157" height="56" class="block h-12 w-auto sm:h-14" />
+        <a href="/" aria-label="Citata.ai home">
+          <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-[38px] w-auto sm:h-[45px]" />
         </a>
         <nav aria-label="Main" class="hidden md:block">
-          <ul class="flex gap-7 text-[15px] text-muted">
+          <ul class="flex gap-4 text-[14px] whitespace-nowrap text-muted lg:gap-5 xl:gap-7 xl:text-[15px]">
             {
               nav.map((n) => (
                 <li>
@@ -132,33 +184,78 @@ const nav = [
             }
           </ul>
         </nav>
-        <a class="btn-primary" href={auditHref}>Free AI audit</a>
+        <a class="btn-primary md:hidden lg:inline-flex" href={auditHref}>Free AI audit</a>
       </header>
     </div>
 
     <slot />
 
-    <div class="wrap">
-      <footer
-        class="mt-14 flex flex-col gap-6 border-t border-rule pt-8 pb-14 text-[13px] text-muted sm:flex-row sm:justify-between"
-      >
-        <p>
-          <span class="text-ink"><em class="not-italic text-minium">Aetas aurea redit</em></span> — the
-          golden age returns.<br />© {new Date().getFullYear()} citata.ai. Images made with AI.
-        </p>
-        <ul class="flex flex-wrap gap-x-6 gap-y-2">
+    <!-- Footer as an engraved print (style E): desktop — the olive tree, the hill and the temple frame the
+         links, which sit in the empty sky; phone — links first, then the whole picture below. -->
+    <!-- Footer art: three-ink stamp engraving (brand/IMAGES.md). The white sky blends into the page
+         (multiply). ≥1280px the links sit in the sky; below that, links first, then the picture.
+         Easter egg: no room at the inn. Joseph and Mary are turned away and find the stable cave (St Joseph, patron of home owners, landlords and realtors). -->
+    <footer class="relative mt-16 border-t border-rule">
+      <div class="wrap relative z-10 pt-12 xl:absolute xl:inset-x-0 xl:top-0 xl:pt-[2.6vw]">
+        <div class="grid grid-cols-2 gap-x-6 gap-y-8 text-[14px] lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:gap-10 xl:mx-auto xl:max-w-[min(56vw,960px)] xl:gap-6">
+          <div class="col-span-2 lg:col-span-1">
+            <a href="/" aria-label="Citata.ai home">
+              <img src="/wordmark.svg" alt="Citata" width="215" height="56" class="block h-10 w-auto" loading="lazy" />
+            </a>
+            <p class="mt-3 font-mono text-[13px] text-muted">GEO for property management companies.</p>
+                        <p class="mt-5 font-mono text-[12px] leading-relaxed text-muted">
+              © {new Date().getFullYear()} Citata.ai<br />WarmDevs OÜ, Tallinn<br /><em class="not-italic"><span aria-hidden="true">☀&#xFE0E;</span> Aetas aurea redit</em>
+            </p>
+          </div>
           {
-            nav.map((n) => (
-              <li>
-                <a href={n.href} class="hover:text-ink">
-                  {n.label}
-                </a>
-              </li>
+            footerCols.map((col) => (
+              <nav aria-label={col.title}>
+                <p class="meta">{col.title}</p>
+                <ul class="mt-3 space-y-2 text-ink">
+                  {col.links.map((l) => (
+                    <li>
+                      <a href={l.href} class="underline-offset-4 hover:text-minium hover:underline">
+                        {l.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             ))
           }
-          <li><a href="mailto:grow@citata.ai" class="hover:text-ink">grow@citata.ai</a></li>
-        </ul>
-      </footer>
-    </div>
+          <div class="col-span-2 flex flex-wrap items-center gap-3 lg:col-span-3 lg:col-start-2 lg:-mt-2">
+              <p class="font-mono text-[11px] tracking-[0.1em] text-muted uppercase">Ask AI about Citata.ai</p>
+              <ul class="flex gap-1.5">
+                {
+                  askAI.map((a) => (
+                    <li>
+                      <a
+                        href={a.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`Ask ${a.label ?? a.name}`}
+                        aria-label={`Ask ${a.label ?? a.name} about Citata.ai (opens in a new tab)`}
+                        class="grid size-9 place-items-center rounded-full border border-rule bg-page text-ink transition-colors hover:border-sun hover:bg-sun"
+                      >
+                        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" class="fill-current"><path d={icon(a.name)} /></svg>
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+        </div>
+      </div>
+      <img
+        src="/img/footer-v8-1280.webp"
+        srcset="/img/footer-v8-640.webp 640w, /img/footer-v8-960.webp 960w, /img/footer-v8-1280.webp 1280w, /img/footer-v8-1920.webp 1920w, /img/footer-v8-2560.webp 2560w, /img/footer-v8-3840.webp 3840w"
+        sizes="100vw"
+        alt="An engraved evening street in Bethlehem: an innkeeper with a lantern turns travelers away; Joseph with a staff leads a donkey carrying Mary, both with radiant gold halos, toward a cave stable full of golden light with a manger and an ox."
+        width="3840"
+        height="1801"
+        loading="lazy"
+        class="mt-6 block h-auto w-full mix-blend-multiply xl:mt-0"
+      />
+    </footer>
   </body>
 </html>

@@ -38,7 +38,7 @@ export const RETURN_FROM = -150;
 export const RETURN_TO = 232;
 export const RETURN_SPEED = 54;
 /** The receiver sends a buyer out of its spout, which falls to the lower belt. */
-export const SPOUT_Z = 72;
+export const SPOUT_Z = 56;
 export const FALL = 0.42;
 export const SEND_AFTER = 0.25;
 /** Buyers leave the belt onto the queue rail at RETURN_FROM and roll to a slot. */

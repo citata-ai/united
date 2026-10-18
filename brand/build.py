@@ -74,12 +74,35 @@ def wordmark(ink=INK, accent=ORANGE):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb}">'
             f'<title>Citata</title><path fill="{accent}" d="{d1} {d2}"/><path fill="{ink}" d="{wd}"/></svg>')
 
+# ---------- wordmark, mark first: both quotes in front of the word (2026-10-18) ----------
+def wordmark_lead(ink=INK, accent=ORANGE):
+    fs = 200
+    q = fs*1.05
+    b1 = bounds(dm_path, "“", q); b2 = bounds(dm_path, "”", q)
+    wb0 = bounds(fr_path, "Citata", fs); cap_top = wb0[1]
+    # mark: opening quote high (top a bit above cap top), closing quote low (bottom on the baseline),
+    # side by side with a small overlap, like the icon's diagonal.
+    o_dx = -b1[0]; o_dy = (cap_top - fs*0.06) - b1[1]
+    c_dx = (b1[2]-b1[0]) - fs*0.02 - b2[0]; c_dy = 0 - b2[3]
+    d1, bb1, _ = render(dm_path, "“", q, o_dx, o_dy)
+    d2, bb2, _ = render(dm_path, "”", q, c_dx, c_dy)
+    gap = fs*0.16
+    wx = bb2[2] + gap - wb0[0]
+    wd, wb, _ = render(fr_path, "Citata", fs, wx, 0)
+    minx = bb1[0]; miny = min(bb1[1], wb[1]); maxx = wb[2]; maxy = max(bb2[3], wb[3])
+    m = fs*0.06
+    vb = f"{minx-m:.1f} {miny-m:.1f} {maxx-minx+2*m:.1f} {maxy-miny+2*m:.1f}"
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb}">'
+            f'<title>Citata</title><path fill="{accent}" d="{d1} {d2}"/><path fill="{ink}" d="{wd}"/></svg>')
+
 files = {
   "icon.svg": icon(),
   "favicon.svg": icon(padf=0.07, qf=1.42, radius=0.2),
   "icon-dark.svg": icon(fg="#14110E", bg=ORANGE_DARK),
-  "wordmark.svg": wordmark(),
-  "wordmark-dark.svg": wordmark(ink="#EDE4D3", accent=ORANGE_DARK),
+  "wordmark.svg": wordmark_lead(),
+  "wordmark-dark.svg": wordmark_lead(ink="#EDE4D3", accent=ORANGE_DARK),
+  "wordmark-around.svg": wordmark(),
+  "wordmark-on-minium.svg": wordmark_lead(ink=PARCH, accent=INK),
 }
 for n, s in files.items():
     open(f"{out}/{n}", "w").write(s)

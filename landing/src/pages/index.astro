@@ -2,6 +2,8 @@
 import Base from "../layouts/Base.astro";
 import PlatformRibbon from "../components/PlatformRibbon.astro";
 import Mechanism from "../components/Mechanism.astro";
+import Stamps from "../components/Stamps.astro";
+import AuditCta from "../components/AuditCta.astro";
 import PromptTester from "../components/PromptTester.astro";
 import { auditHref, offers } from "../data/site.ts";
 import { faq } from "../data/faq.ts";
@@ -9,81 +11,58 @@ import { faq } from "../data/faq.ts";
 // Copy sources: business/strategy.md (§1 one line, §2 process, §3 verticals, §5 facts),
 // business/offers.toml (price ladder), business/case-studies/fridman-properties.md (demand trend,
 // baseline). Every number names its source. Niche: US property management companies only.
-const title = "citata.ai — GEO for property management companies";
+const title = "Citata.ai — GEO for property management companies";
 const description =
-  "Rental owners now ask ChatGPT and Gemini which property manager to hire. citata.ai gets your property management company named and linked in that answer.";
+  "Landlords now ask ChatGPT and Gemini which property manager to hire. Citata.ai gets your property management company named and linked in that answer.";
 
 const facts = [
   {
     n: "−46%",
-    text: "Google searches for 7 generic property management terms, Chicago area, year over year. −43% in the US.",
-    src: "Keyword Planner, 2025/26 vs 2024/25 (our data)",
+    text: "Google searches for property management, Chicago area, year over year",
+    src: "Keyword Planner, our data",
     href: "/case-studies/fridman-properties",
+    bg: "bg-coral",
   },
   {
-    n: "8 of 132",
-    text: "owner answers named our first client, a Chicago manager with 20+ years. 0 of 6 for Section 8.",
-    src: "our baseline, 144 AI answers, 2026-10-16",
+    n: "5",
+    text: "managers named in a typical AI answer. Not on the list? The landlord never hears your name",
+    src: "our baseline, 132 answers",
     href: "/case-studies/fridman-properties",
+    bg: "bg-sun",
   },
   {
-    n: "0.5% → 12.1%",
-    text: "AI sent 0.5% of visits to one site, but 12.1% of its signups. AI traffic is small, but it buys.",
+    n: "12.1%",
+    text: "of one site's signups came from AI, which sent only 0.5% of its visits",
     src: "Ahrefs",
     href: "https://ahrefs.com/blog/ai-search-traffic-conversions-ahrefs/",
+    bg: "bg-sky",
   },
-];
-
-const ownerPrompts = [
-  "best property management company in <city>",
-  "property manager for my single-family rental in <city>",
-  "property manager that handles Section 8 tenants",
-  "how much does property management cost in <city>",
-  "is it worth hiring a property manager for one rental",
 ];
 
 const stages = [
-  {
-    n: "01",
-    name: "Indexed",
-    text: "Google, Bing and AI crawlers can read every owner page. We fix crawl errors, sitemaps, canonical tags and slow pages.",
-  },
-  {
-    n: "02",
-    name: "Found",
-    text: "Your site answers the exact questions owners ask: fees, contracts, screening, Section 8, your cities. One page per question.",
-  },
-  {
-    n: "03",
-    name: "Mentioned",
-    text: "ChatGPT, Gemini, Claude and Perplexity name your company, with a link, when an owner asks for a manager in your city.",
-  },
+  { n: "01", name: "Indexed", text: "AI crawlers can read every landlord page.", bg: "bg-cobalt/12", chip: "bg-cobalt text-page" },
+  { n: "02", name: "Found", text: "Your pages answer what landlords ask.", bg: "bg-mint/35", chip: "bg-mint" },
+  { n: "03", name: "Mentioned", text: "AI names you, with a link, in your city.", bg: "bg-coral/15", chip: "bg-coral" },
 ];
 
 const steps = [
-  {
-    head: "Send one sentence.",
-    text: "Tell us your goal by email. Example: “Owners in Chicago find us when they ask AI for a manager.”",
-  },
-  {
-    head: "We take a baseline.",
-    text: "We ask 4 AI engines your owners’ questions and record which managers they name. No baseline, no proof.",
-  },
-  {
-    head: "One checked change a day.",
-    text: "Agents draft a page fix, an owner answer or a listing update. A person checks each one before it ships.",
-  },
-  {
-    head: "A report every Monday.",
-    text: "Which engines named you, for which owner questions, and what we changed. Short, with numbers.",
-  },
+  { head: "Send one sentence", text: "Your goal, by email." },
+  { head: "We take a baseline", text: "4 AI engines, your landlords’ questions." },
+  { head: "One change a day", text: "A person checks each one." },
+  { head: "Monday report", text: "Who named you, and what changed." },
+];
+
+const caseNumbers = [
+  { n: "90", text: "pages moved, every URL kept" },
+  { n: "144", text: "AI answers in the baseline" },
+  { n: "8 / 132", text: "landlord answers named them" },
 ];
 
 const fit = {
   yes: [
     "US property management companies with 50 to 500 doors",
     "Single-family homes and small multifamily",
-    "You sell to rental owners and want more owner leads",
+    "You sell to landlords and want more landlord leads",
     "Section 8 and affordable housing managers",
     "PMS and proptech software that sells to property managers",
   ],
@@ -113,7 +92,7 @@ const serviceSchema = {
   areaServed: { "@type": "Country", name: "United States" },
   audience: { "@type": "BusinessAudience", name: "Property management companies with 50 to 500 doors" },
   description:
-    "Done-for-you GEO: weekly tracking of owner questions on ChatGPT, Gemini, Claude and Perplexity, one human-checked change a day, and a Monday report.",
+    "Done-for-you GEO: weekly tracking of landlord questions on ChatGPT, Gemini, Claude and Perplexity, one human-checked change a day, and a Monday report.",
   offers: [
     { "@type": "Offer", name: "Free AI visibility audit", price: 0, priceCurrency: "USD" },
     { "@type": "Offer", name: "Starter", price: 750, priceCurrency: "USD" },
@@ -137,203 +116,192 @@ const article = {
 const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
 ---
 
-<Base title={title} description={description} image="/og/hero.jpg" modified="2026-10-18">
+<Base title={title} description={description} image="/og/hero-v9.jpg" modified="2026-10-18">
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
   </Fragment>
   <main>
-  <div class="wrap">
-    <section class="grid items-center gap-10 py-12 md:grid-cols-[1.15fr_1fr] md:py-16">
-      <div>
-        <p class="meta"><span class="text-minium">GEO + AEO</span> · for property management companies</p>
-        <h1 class="mt-4 text-[40px] leading-[1.04] sm:text-[56px] sm:leading-[1.02]">
-          Get named when owners ask AI for a property manager
-        </h1>
-        <p class="mt-5 max-w-xl text-[19px] leading-normal text-muted">
-          Fewer owner leads from Google? More rental owners now ask ChatGPT or Gemini who to hire.
-          citata.ai gets your property management company named and linked in that answer. We do the
-          work.
-        </p>
-        <ul class="mt-6 grid max-w-xl gap-3 text-[15px] sm:grid-cols-3">
-          <li class="border-t border-rule pt-3">
-            <span class="meta text-minium">01 Track</span>
-            <span class="mt-1 block text-muted">The questions your buyers ask AI</span>
-          </li>
-          <li class="border-t border-rule pt-3">
-            <span class="meta text-minium">02 Fix</span>
-            <span class="mt-1 block text-muted">One checked change to your site a day</span>
-          </li>
-          <li class="border-t border-rule pt-3">
-            <span class="meta text-minium">03 Report</span>
-            <span class="mt-1 block text-muted">Who named you, every Monday</span>
-          </li>
-        </ul>
-        <div class="mt-8 flex flex-wrap items-center gap-3">
-          <a class="btn-primary" href={auditHref}>Get a free AI visibility audit</a>
-          <a class="btn-secondary" href="#engine">See how it works</a>
-        </div>
-        <p class="mt-4 text-sm text-muted">
-          The audit is free: 20 owner questions on 4 AI engines, and your top 5 fixes.
-        </p>
+  <!-- Hero: three-ink stamp engraving (brand/IMAGES.md). The white sky blends into the page (multiply).
+       ≥1280px the text sits in the empty sky; below that, text first and the picture after it. -->
+  <section class="relative">
+    <div class="wrap relative z-10 flex flex-col items-center pt-14 text-center xl:absolute xl:inset-x-0 xl:top-0 xl:pt-[3.4vw]">
+      <p class="meta"><span class="text-minium">GEO + AEO</span> · for property management companies</p>
+      <h1 class="mt-5 max-w-3xl text-[44px] leading-[1.02] sm:text-[56px] lg:text-[64px]">
+        Get named when landlords ask AI for a property manager
+      </h1>
+      <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+        <a class="btn-primary !px-5 !py-3 !text-[15px]" href={auditHref}>Get a free AI visibility audit</a>
+        <a class="btn-secondary !border-ink !px-5 !py-3 !text-[15px] !text-ink hover:!bg-ink hover:!text-page" href="#engine">See how it works</a>
       </div>
-      <figure class="img-frame">
-        <img
-          src="/img/hero-720.webp" srcset="/img/hero-640.webp 640w, /img/hero-720.webp 720w, /img/hero-960.webp 960w, /img/hero-1280.webp 1280w" sizes="(min-width: 768px) 50vw, calc(100vw - 40px)"
-          alt="A marble hand points at one open book on a shelf. A chat bubble sits above the book."
-          width="1280"
-          height="714"
-          fetchpriority="high"
-        />
-      </figure>
-    </section>
-  </div>
+    </div>
+    <img
+      src="/img/hero-v9-1280.webp"
+      srcset="/img/hero-v9-640.webp 640w, /img/hero-v9-960.webp 960w, /img/hero-v9-1280.webp 1280w, /img/hero-v9-1920.webp 1920w, /img/hero-v9-2560.webp 2560w, /img/hero-v9-3840.webp 3840w"
+      sizes="100vw"
+      alt="An engraved ancient town being built, with pop accents: a temple frieze painted in cobalt, coral and yellow, striped awnings, mint doors, flower pots and pennants on the crane; tiled houses and scaffolding on the left, a large temple with cypress trees on the right, and a man in an orange toga with a big key walking toward us from a temple with a glowing door."
+      width="3840"
+      height="2145"
+      fetchpriority="high"
+      class="-mt-[8vw] block h-auto w-full mix-blend-multiply xl:mt-0"
+    />
+  </section>
 
   <PlatformRibbon />
 
   <div class="wrap">
-    <section aria-labelledby="engine" class="border-b border-rule py-14">
-      <p class="label" id="engine">How the work flows</p>
-      <Mechanism />
-    </section>
+    <Stamps />
+  </div>
 
-    <section aria-labelledby="why" class="border-b border-rule py-14">
-      <p class="label" id="why">Why owner leads drop</p>
-      <ul class="grid gap-8 md:grid-cols-3">
-        {
-          facts.map((f) => (
-            <li>
-              <p class="text-[40px] leading-none font-semibold">{f.n}</p>
-              <p class="mt-3 text-[17px]">{f.text}</p>
-              <p class="meta mt-2">
-                Source: <a class="link normal-case" href={f.href}>{f.src}</a>
-              </p>
-            </li>
-          ))
-        }
-      </ul>
-      <p class="mt-8 max-w-[66ch] text-muted">
-        An owner who asks AI for a manager gets 3 to 5 names, not 10 blue links. If AI does not know
-        your company, that owner may never hear your name. We think part of the lost search demand went
-        to these answers. That is a hypothesis, and we test it each week.
-      </p>
+  <div class="wrap">
+    <!-- 01 The problem -->
+    <section aria-labelledby="why-h" class="py-16">
+      <p class="chapter" style="--chip:var(--color-coral)"><b>01</b>The problem</p>
+      <div class="grid items-center gap-10 lg:grid-cols-[1fr_1.15fr]">
+        <div>
+          <h2 id="why-h" class="text-[36px] leading-[1.05] sm:text-[44px]">Landlords stopped searching. They ask AI.</h2>
+          <figure class="img-frame mt-8">
+            <img src="/img/problem-v1-720.webp" srcset="/img/problem-v1-640.webp 640w, /img/problem-v1-960.webp 960w, /img/problem-v1-1280.webp 1280w, /img/problem-v1-1920.webp 1920w" sizes="(min-width: 1024px) 45vw, calc(100vw - 40px)" alt="A pop engraving under a cyan sky: a landlord in an orange toga waits on the steps of a quiet villa by an empty letterbox, while far away people line up at a small oracle temple." width="1280" height="714" loading="lazy" />
+          </figure>
+        </div>
+        <ul class="grid gap-4">
+          {
+            facts.map((f) => (
+              <li class={`grid grid-cols-[auto_1fr] items-center gap-6 rounded-md p-6 sm:p-7 ${f.bg}`}>
+                <p class="min-w-[3.2ch] text-[52px] leading-none font-semibold sm:text-[60px]">{f.n}</p>
+                <div>
+                  <p class="text-[17px] leading-snug">{f.text}</p>
+                  <a class="meta mt-2 inline-block text-ink/75 underline underline-offset-2 hover:text-ink" href={f.href}>{f.src}</a>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </section>
+  </div>
 
-    <section aria-labelledby="ask" class="border-b border-rule py-14">
-      <p class="label">The questions</p>
-      <h2 id="ask" class="text-[32px] leading-tight">What your owners ask AI</h2>
-      <p class="mt-3 max-w-[66ch] text-muted">
-        We track questions like these every week, on ChatGPT, Gemini, Claude and Perplexity. For each
-        one we record if the answer names you, and if it links to your site.
-      </p>
-      <ul class="mt-8 grid gap-3 md:grid-cols-2">
-        {
-          ownerPrompts.map((p) => (
-            <li class="rounded border border-rule bg-page px-5 py-4 font-mono text-[13px]">“{p}”</li>
-          ))
-        }
-      </ul>
-      <a href="/property-management" class="link mt-6 inline-block">Owner vs renter questions, and the Section 8 angle →</a>
-    </section>
-
-    <section id="how" aria-labelledby="how-h" class="border-b border-rule py-14">
-      <p class="label">How it works</p>
-      <h2 id="how-h" class="text-[32px] leading-tight">Indexed → Found → Mentioned</h2>
-      <ol class="mt-8 grid gap-6 md:grid-cols-3">
+  <!-- 02 How it works: its own tinted band -->
+  <section id="how" aria-labelledby="how-h" class="border-y border-rule bg-page py-16">
+    <div class="wrap">
+      <p class="chapter" id="engine" style="--chip:var(--color-sky)"><b>02</b>How it works</p>
+      <h2 id="how-h" class="text-[36px] leading-[1.05] sm:text-[44px]">Indexed → Found → Mentioned</h2>
+      <ol class="mt-8 grid gap-4 md:grid-cols-3">
         {
           stages.map((s) => (
-            <li class="rounded border border-rule bg-page p-6">
-              <p class="meta text-minium">{s.n}</p>
-              <h3 class="mt-2 text-[22px]">{s.name}</h3>
-              <p class="mt-2 text-[15px] text-muted">{s.text}</p>
+            <li class={`rounded-md p-6 ${s.bg}`}>
+              <span class={`meta inline-block rounded-full px-2.5 py-1 ${s.chip}`}>{s.n}</span>
+              <h3 class="mt-3 text-[26px]">{s.name}</h3>
+              <p class="mt-1 text-[16px] text-muted">{s.text}</p>
             </li>
           ))
         }
       </ol>
-      <div class="mt-12 grid items-center gap-10 md:grid-cols-[1.3fr_1fr]">
-      <ol class="grid gap-y-6">
-        {
-          steps.map((s, i) => (
-            <li class="flex gap-4">
-              <span class="meta mt-1 w-6 flex-none">{i + 1}.</span>
-              <p>
-                <strong class="font-medium">{s.head}</strong>{" "}
-                <span class="text-muted">{s.text}</span>
-              </p>
-            </li>
-          ))
-        }
-      </ol>
+      <div class="mt-10">
+        <Mechanism />
+      </div>
+
+      <div class="mt-14 grid items-center gap-10 lg:grid-cols-[1fr_1.1fr]">
+        <div>
+          <h3 class="text-[28px] leading-tight">Your first month</h3>
+          <ol class="mt-6 grid gap-3 sm:grid-cols-2">
+            {
+              steps.map((s, i) => (
+                <li class="rounded-md border border-rule bg-parchment p-5">
+                  <span class="meta text-minium">Step {i + 1}</span>
+                  <p class="mt-1 text-[18px] font-medium">{s.head}</p>
+                  <p class="text-[15px] text-muted">{s.text}</p>
+                </li>
+              ))
+            }
+          </ol>
+        </div>
         <figure class="img-frame">
-          <img src="/img/monday-report-720.webp" srcset="/img/monday-report-640.webp 640w, /img/monday-report-720.webp 720w, /img/monday-report-960.webp 960w, /img/monday-report-1280.webp 1280w" sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" alt="A marble bust reads a newspaper with a small bar chart. A brass bell stands beside it." width="1280" height="714" loading="lazy" />
+          <img src="/img/monday-report-v3-720.webp" srcset="/img/monday-report-v3-640.webp 640w, /img/monday-report-v3-720.webp 720w, /img/monday-report-v3-960.webp 960w, /img/monday-report-v3-1280.webp 1280w, /img/monday-report-v3-1920.webp 1920w" sizes="(min-width: 1024px) 50vw, calc(100vw - 40px)" alt="A pop engraving of a Roman market under a coral sky: a herald in an orange toga holds up a scroll with a rising blue bar chart, a bronze bell hangs beside him, and townspeople look up." width="1280" height="714" loading="lazy" />
         </figure>
       </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <!-- 03 Try it -->
+    <section id="ask" aria-labelledby="try" class="grid gap-10 py-16 md:grid-cols-[1fr_1.3fr]">
+      <div>
+        <p class="chapter" style="--chip:var(--color-mint)"><b>03</b>Try it now</p>
+        <h2 id="try" class="text-[36px] leading-[1.05] sm:text-[44px]">Ask AI what your landlords ask</h2>
+        <p class="mt-4 max-w-[44ch] text-muted">Type your city and open a question. Are you in the answer?</p>
+        <a href="/property-management" class="link mt-5 inline-block">All landlord questions we track →</a>
+      </div>
+      <PromptTester />
     </section>
 
-    <section aria-labelledby="proof" class="my-14 rounded-md border border-rule bg-page p-6 sm:p-10">
-      <div class="grid items-center gap-8 md:grid-cols-[1fr_1.1fr]">
-        <a href="/case-studies/fridman-properties" class="img-frame block">
-          <img src="/img/fridman-case-720.webp" srcset="/img/fridman-case-640.webp 640w, /img/fridman-case-720.webp 720w, /img/fridman-case-960.webp 960w, /img/fridman-case-1280.webp 1280w" sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" alt="A marble statue looks at a phone with a map pin, in front of a brownstone and a column." width="1280" height="714" loading="lazy" />
+    <!-- 04 Case study -->
+    <section aria-labelledby="proof" class="rounded-lg bg-sun/25 p-6 sm:p-10">
+      <p class="chapter" style="--chip:var(--color-sun)"><b>04</b>Case study · in progress</p>
+      <div class="grid items-center gap-10 md:grid-cols-[1.1fr_1fr]">
+        <a href="/case-studies/fridman-properties" class="img-frame img-zoom block overflow-hidden">
+          <img src="/img/fridman-case-v3-720.webp" srcset="/img/fridman-case-v3-640.webp 640w, /img/fridman-case-v3-720.webp 720w, /img/fridman-case-v3-960.webp 960w, /img/fridman-case-v3-1280.webp 1280w, /img/fridman-case-v3-1920.webp 1920w" sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" alt="A pop engraving of a street of pink and lilac brownstone two-flats under a yellow sky: a man in an orange toga looks at a phone that shows a map pin." width="1280" height="706" loading="lazy" />
         </a>
         <div>
-          <p class="label" id="proof">Case study · in progress</p>
-          <h2 class="text-[32px] leading-tight">Fridman Properties: the baseline before the work</h2>
-          <p class="mt-4 text-muted">
-            We moved a Chicago manager’s 90-page site to a fast static stack and kept every URL, word and
-            SEO tag. Then we asked 3 AI engines 24 owner questions. Outside its own name, AI named the
-            company in 8 of 132 answers. We publish the plan and the baseline now, and the results at 90
-            days. Related party: the owner is also the CEO of MyRemotely, a partner of ours.
-          </p>
-          <a href="/case-studies/fridman-properties" class="mt-6 inline-block text-minium underline underline-offset-2">
-            Read the case study →
-          </a>
+          <h2 id="proof" class="text-[32px] leading-tight sm:text-[38px]">Fridman Properties, Chicago</h2>
+          <ul class="mt-6 grid grid-cols-3 gap-4">
+            {
+              caseNumbers.map((c) => (
+                <li>
+                  <p class="text-[30px] leading-none font-semibold sm:text-[36px]">{c.n}</p>
+                  <p class="mt-2 text-[14px] text-muted">{c.text}</p>
+                </li>
+              ))
+            }
+          </ul>
+          <p class="mt-6 text-[15px] text-muted">Baseline now, results at 90 days. Related party: the owner is CEO of MyRemotely, our partner.</p>
+          <a href="/case-studies/fridman-properties" class="btn-primary mt-6">Read the case study</a>
         </div>
       </div>
     </section>
 
-    <section aria-labelledby="fit-h" class="border-b border-rule pb-14">
-      <p class="label">Who it is for</p>
-      <h2 id="fit-h" class="text-[32px] leading-tight">Only the property management market. On purpose.</h2>
-      <p class="mt-3 max-w-[66ch] text-muted">
-        We work in one niche, so we know the owner questions, the sources AI reads and the Fair Housing
-        rules. If we cannot help you, we will say so.
-      </p>
-      <div class="mt-8 grid gap-6 md:grid-cols-2">
-        <div class="rounded border border-rule bg-page p-6">
-          <p class="meta text-verdigris">A good fit</p>
-          <ul class="mt-3 space-y-2 text-[15px]">
-            {fit.yes.map((t) => <li class="flex gap-2"><span class="text-verdigris">·</span>{t}</li>)}
+    <!-- 05 Fit -->
+    <section aria-labelledby="fit-h" class="py-16">
+      <p class="chapter" style="--chip:var(--color-lilac)"><b>05</b>Who it is for</p>
+      <h2 id="fit-h" class="text-[36px] leading-[1.05] sm:text-[44px]">Only property management. On purpose.</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-2">
+        <div class="rounded-md bg-mint/35 p-6">
+          <p class="meta">A good fit</p>
+          <ul class="mt-3 space-y-2 text-[16px]">
+            {fit.yes.map((t) => <li class="flex gap-2"><span>✓</span>{t}</li>)}
           </ul>
         </div>
-        <div class="rounded border border-rule bg-page p-6">
-          <p class="meta text-minium">Not a fit</p>
-          <ul class="mt-3 space-y-2 text-[15px] text-muted">
-            {fit.no.map((t) => <li class="flex gap-2"><span class="text-minium">·</span>{t}</li>)}
+        <div class="rounded-md border border-rule bg-page p-6">
+          <p class="meta">Not a fit</p>
+          <ul class="mt-3 space-y-2 text-[16px] text-muted">
+            {fit.no.map((t) => <li class="flex gap-2"><span>×</span>{t}</li>)}
           </ul>
         </div>
       </div>
     </section>
+  </div>
 
-    <section id="pricing" aria-labelledby="pricing-h" class="border-b border-rule py-14">
-      <p class="label">Pricing</p>
-      <h2 id="pricing-h" class="text-[32px] leading-tight">Clear prices, in public.</h2>
-      <p class="mt-3 max-w-[66ch] text-muted">
-        These are our first prices. We will check them with our first 3 paying clients and may change
-        them. You can stop any month.
-      </p>
-      <div role="radiogroup" aria-label="Billing" class="billing mt-6 inline-flex rounded border border-rule p-0.5 text-[13px]">
-        <button type="button" role="radio" aria-checked="true" data-bill="month" class="bill-opt cursor-pointer rounded-sm px-3 py-1">Month to month</button>
-        <button type="button" role="radio" aria-checked="false" data-bill="year" class="bill-opt cursor-pointer rounded-sm px-3 py-1">12 months</button>
+  <!-- 06 Pricing -->
+  <section id="pricing" aria-labelledby="pricing-h" class="border-y border-rule bg-page py-16">
+    <div class="wrap">
+      <p class="chapter" style="--chip:var(--color-sky)"><b>06</b>Pricing</p>
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <h2 id="pricing-h" class="text-[36px] leading-[1.05] sm:text-[44px]">Clear prices, in public</h2>
+        <div role="radiogroup" aria-label="Billing" class="billing inline-flex rounded-full border border-rule bg-parchment p-1 text-[13px]">
+          <button type="button" role="radio" aria-checked="true" data-bill="month" class="bill-opt cursor-pointer rounded-full px-4 py-1.5">Month to month</button>
+          <button type="button" role="radio" aria-checked="false" data-bill="year" class="bill-opt cursor-pointer rounded-full px-4 py-1.5">12 months</button>
+        </div>
       </div>
-      <ul class="pricing-list mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <p class="mt-3 text-muted">First prices. Stop any month.</p>
+      <ul class="pricing-list mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {
           offers.filter((o) => o.slug !== "impact").map((o) => (
-            <li class={`flex flex-col rounded border bg-page p-6 ${o.slug === "growth" ? "border-minium" : "border-rule"}`}>
+            <li class={`flex flex-col rounded-md p-6 ${o.slug === "growth" ? "bg-sun/35 ring-2 ring-sun" : "border border-rule bg-parchment"}`}>
               <h3 class="text-xl font-medium">{o.name}</h3>
               <p class="mt-3">
                 <span
-                  class="price text-[32px] font-semibold"
+                  class="price text-[36px] font-semibold"
                   data-month={usd(o.price_usd_month)}
                   data-year={usd(("annual_price_usd_month" in o ? o.annual_price_usd_month : undefined) ?? o.price_usd_month)}
                 >
@@ -359,53 +327,32 @@ const usd = (n: number) => (n === 0 ? "$0" : `$${n.toLocaleString("en-US")}`);
           ))
         }
       </ul>
-      <a class="btn-primary mt-8" href={auditHref}>Start with the free audit</a>
-    </section>
+    </div>
+  </section>
 
-    <section aria-labelledby="try" class="grid gap-10 border-b border-rule py-14 md:grid-cols-[1fr_1.3fr]">
+  <div class="wrap">
+    <!-- 07 FAQ -->
+    <section id="faq" aria-labelledby="faq-h" class="grid gap-10 py-16 lg:grid-cols-[1fr_1.6fr]">
       <div>
-        <p class="label">Test it yourself</p>
-        <h2 id="try" class="text-[32px] leading-tight">Ask AI what your buyers ask</h2>
-        <p class="mt-3 max-w-[48ch] text-muted">
-          Type your city. Open each question in an engine and read the answer. If your company is not in
-          it, the buyer may never hear your name. This is the first step of our audit.
+        <p class="chapter" style="--chip:var(--color-coral)"><b>07</b>Questions</p>
+        <h2 id="faq-h" class="text-[36px] leading-[1.05] sm:text-[44px]">GEO for property managers, answered</h2>
+        <p class="meta mt-6">
+          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a>, founder. Updated <time datetime="2026-10-18">2026-10-18</time>.
         </p>
       </div>
-      <PromptTester />
-    </section>
-
-    <section id="faq" aria-labelledby="faq-h" class="border-b border-rule py-14">
-      <p class="label">Questions</p>
-      <h2 id="faq-h" class="text-[32px] leading-tight">GEO for property managers, answered</h2>
-      <div class="mt-8 grid gap-x-10 gap-y-8 md:grid-cols-2">
+      <div class="border-t border-rule">
         {
-          faq.map((f) => (
-            <div>
-              <h3 class="text-[19px] font-medium">{f.q}</h3>
-              <p class="mt-2 text-[15px] text-muted">{f.a}</p>
-            </div>
+          faq.map((f, i) => (
+            <details class="faq-item" name="faq" open={i === 0}>
+              <summary>{f.q}</summary>
+              <p class="pb-6 text-[16px] text-muted">{f.a}</p>
+            </details>
           ))
         }
       </div>
-      <p class="meta mt-10">
-        Written by <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a>, founder of citata.ai.
-        Updated <time datetime="2026-10-18">2026-10-18</time>.
-      </p>
     </section>
 
-    <section aria-labelledby="cta" class="grid items-center gap-8 pt-14 md:grid-cols-[1.2fr_1fr]">
-      <h2 id="cta" class="text-[36px] leading-[1.05] sm:text-[44px]">
-        Does ChatGPT name your company in your city? <span class="text-minium">Find out for free.</span>
-      </h2>
-      <div>
-        <p class="text-muted">
-          Email us your site and the cities you serve. We ask 4 AI engines 20 questions your owners ask,
-          check your index, and send a one-page report with your top 5 fixes. If we cannot help, we will
-          say so.
-        </p>
-        <a class="btn-primary mt-5" href={auditHref}>Email grow@citata.ai</a>
-      </div>
-    </section>
+    <AuditCta />
   </div>
   </main>
 </Base>

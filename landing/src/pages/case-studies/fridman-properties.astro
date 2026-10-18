@@ -6,9 +6,9 @@ import { baseline, lighthouse } from "../../data/fridman.ts";
 
 // Every claim on this page has a source row in business/case-studies/fridman-properties.md.
 // Do not add a number here without a row there.
-const title = "Fridman Properties: our first GEO case study, before the results — citata.ai";
+const title = "Fridman Properties: our first GEO case study, before the results — Citata.ai";
 const description =
-  "We moved a Chicago property manager's 90-page site in 2 days and kept every SEO tag. Then we asked AI 24 owner questions. Here is the baseline and the plan.";
+  "We moved a Chicago property manager's 90-page site in 2 days and kept every SEO tag. Then we asked AI 24 landlord questions. Here is the baseline and the plan.";
 const published = "2026-10-18";
 const resultsDue = "2027-01-14";
 
@@ -18,7 +18,7 @@ const jsonLd = {
   headline: "Fridman Properties: our first GEO case study, before the results",
   datePublished: published,
   author: { "@type": "Person", name: "Tao" },
-  publisher: { "@type": "Organization", name: "citata.ai", url: "https://citata.ai" },
+  publisher: { "@type": "Organization", name: "Citata.ai", url: "https://citata.ai" },
   about: { "@type": "Organization", name: "Fridman Properties LLC", url: "https://www.fridmanproperties.com" },
 };
 
@@ -32,17 +32,18 @@ const status = [
 const cats = ["Perf", "A11y", "Best", "SEO"];
 ---
 
-<Base title={title} description={description} type="article" image="/og/fridman-case.jpg">
+<Base title={title} description={description} type="article" image="/og/fridman-case-v3.jpg">
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <main class="wrap">
     <article class="pt-12">
-      <header class="max-w-3xl">
+      <div class="grid items-center gap-8 rounded-lg bg-coral/20 p-6 sm:p-10 lg:grid-cols-[1.1fr_1fr]">
+      <header>
         <p class="meta"><span class="text-minium">Case study · in progress</span> · October 18, 2026</p>
         <h1 class="mt-4 text-[38px] leading-[1.04] sm:text-[52px] sm:leading-[1.02]">
           Fridman Properties: Our First GEO Case Study, Before the Results
         </h1>
         <p class="mt-5 text-[19px] text-muted">
-          We moved a Chicago manager’s 90-page site in 2 days. AI named the company in 8 of 132 owner
+          We moved a Chicago manager’s 90-page site in 2 days. AI named the company in 8 of 132 landlord
           answers.
         </p>
         <div class="mt-6 flex items-center gap-2 text-[13px] text-muted">
@@ -50,14 +51,15 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
             class="inline-flex size-6 items-center justify-center rounded-full bg-minium text-[10px] text-page"
             >T</span
           >
-          Tao, founder, citata.ai
+          Tao, founder, Citata.ai
         </div>
       </header>
-      <figure class="img-frame mt-8 max-w-4xl">
-        <img src="/img/fridman-case-720.webp" srcset="/img/fridman-case-640.webp 640w, /img/fridman-case-720.webp 720w, /img/fridman-case-960.webp 960w, /img/fridman-case-1280.webp 1280w" sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" alt="A marble statue looks at a phone with a map pin, in front of a brownstone and a column." width="1280" height="714" fetchpriority="high" />
+      <figure class="img-frame">
+        <img src="/img/fridman-case-v3-720.webp" srcset="/img/fridman-case-v3-640.webp 640w, /img/fridman-case-v3-720.webp 720w, /img/fridman-case-v3-960.webp 960w, /img/fridman-case-v3-1280.webp 1280w, /img/fridman-case-v3-1920.webp 1920w" sizes="(min-width: 768px) 50vw, calc(100vw - 40px)" alt="A pop engraving of a street of pink and lilac brownstone two-flats under a yellow sky: a man in an orange toga looks at a phone that shows a map pin." width="1280" height="706" fetchpriority="high" />
       </figure>
+      </div>
 
-      <aside class="mt-8 max-w-3xl rounded border border-rule-strong bg-sunken p-5 text-[15px]">
+      <aside class="mt-8 max-w-3xl rounded-md bg-sun/30 p-5 text-[15px]">
         <p class="meta text-gold-ink">Related party</p>
         <p class="mt-2">
           Ran Fridman owns Fridman Properties. He is also the CEO of MyRemotely, a partner of ours, and
@@ -68,8 +70,8 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
 
       <ul class="mt-8 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
         {
-          status.map((s) => (
-            <li class="border-t border-rule pt-3">
+          status.map((s, i) => (
+            <li class={`rounded-md p-4 ${["bg-sky/20", "bg-mint/35", "bg-sun/30", "bg-lilac/30"][i % 4]}`}>
               <p class="meta">{s.label}</p>
               <p class={`mt-1 text-[15px] ${s.tone}`}>{s.value}</p>
             </li>
@@ -86,7 +88,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
               IL, with 144 active units on 2026-10-16.
             </li>
             <li>
-              <strong>The problem:</strong> AI rarely named the company when owners asked for a
+              <strong>The problem:</strong> AI rarely named the company when landlords asked for a
               manager. Its site talked to the suburbs, but most of its units are on Chicago’s South
               Side.
             </li>
@@ -109,13 +111,13 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
 
           <h2>The client</h2>
           <p>
-            Fridman Properties LLC manages rental homes for owners. The office is in Arlington Heights,
+            Fridman Properties LLC manages rental homes for landlords. The office is in Arlington Heights,
             a northwest suburb of Chicago. On 2026-10-16 it had 144 active units. Most of them are in
             Chicago, on the South Side.
           </p>
           <p>
-            The buyer is the rental owner, not the renter. Our first target is the owner who lives far
-            from the rental and needs someone local. That owner is likely to ask ChatGPT or Gemini which
+            The buyer is the landlord, not the renter. Our first target is the landlord who lives far
+            from the rental and needs someone local. That landlord is likely to ask ChatGPT or Gemini which
             manager to hire.
           </p>
 
@@ -134,7 +136,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
               “South Side”.
             </li>
             <li>
-              <strong>Section 8 was one answer.</strong> The owner FAQ had one question about Section 8.
+              <strong>Section 8 was one answer.</strong> The landlord FAQ had one question about Section 8.
               The answer may not match current Illinois law (see the note below). We flagged it for the
               client’s legal review.
             </li>
@@ -216,7 +218,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
 
           <h3>6. Take the AI baseline (October 16)</h3>
           <p>
-            We wrote {baseline.prompts} questions that owners ask, by area and by need. Examples: “Which
+            We wrote {baseline.prompts} questions that landlords ask, by area and by need. Examples: “Which
             Chicago property management companies work with Section 8 tenants?” and “I live out of state
             and bought a rental house in Chicago. Which property management company should I use?” We
             asked each one twice on ChatGPT, Claude and Gemini: {baseline.answers} answers.
@@ -242,7 +244,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
           <p>This is the plan. None of it is done yet.</p>
           <ol>
             <li>
-              <strong>Write a Section 8 owner guide.</strong> Inspections, HAP payments (the housing
+              <strong>Write a Section 8 landlord guide.</strong> Inspections, HAP payments (the housing
               authority’s share of rent), the Chicago Housing Authority steps, rent limits, and a voucher
               rent vs market rent calculator. A lawyer checks it first. All copy follows Fair Housing
               rules.
@@ -275,7 +277,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
             promise. AI answers change. On {resultsDue} I will publish what happened.
           </p>
 
-          <aside class="my-8 rounded border border-rule-strong bg-sunken p-5 text-[15px]">
+          <aside class="my-8 rounded-md bg-sun/30 p-5 text-[15px]">
             <p class="meta text-gold-ink">Note on Section 8 and the law</p>
             <p class="mt-2">
               Illinois lists source of income, including housing vouchers, as a protected class in
@@ -286,7 +288,7 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
 
           <h2>What you can do</h2>
           <p>
-            If you run a property management company, ask ChatGPT the question your owners ask: “best
+            If you run a property management company, ask ChatGPT the question your landlords ask: “best
             property manager in [your city]”. Does it name you? If you want the full picture, we run 20
             questions on 4 engines for free and send your top 5 fixes.
           </p>
@@ -294,14 +296,14 @@ const cats = ["Perf", "A11y", "Best", "SEO"];
             <a class="btn-primary no-underline" href={auditHref}>Get a free AI visibility audit</a>
           </p>
           <p class="text-[15px] text-muted">
-            Thank you to the Fridman Properties team for the access to their site and data. — Tao, founder, citata.ai
+            Thank you to the Fridman Properties team for the access to their site and data. — Tao, founder, Citata.ai
           </p>
         </div>
 
         <aside class="lg:sticky lg:top-6 lg:self-start">
           <BaselineCard />
           <p class="meta mt-3">Models: gpt-6-luna, claude-sonnet-5-5, gemini-3-flash</p>
-          <div class="mt-8 rounded border border-rule bg-page p-6 text-[15px]">
+          <div class="mt-8 rounded-md bg-mint/35 p-6 text-[15px]">
             <p class="meta">The site</p>
             <ul class="mt-3 space-y-2">
               <li><span class="font-medium">90</span> <span class="text-muted">HTML pages moved</span></li>

@@ -1,0 +1,240 @@
+---
+import AuditCta from "../components/AuditCta.astro";
+// Layout for Markdown guides in src/pages/guides/*.md.
+// GEO rules (docs/geo-loop.md): answer first, one idea per section, every number has a source,
+// visible date and author, Article + FAQPage JSON-LD. Voice: brand/VOICE.md.
+import Base from "./Base.astro";
+import { coverSrcset, guideCovers } from "../data/guide-covers.ts";
+
+export interface GuideFrontmatter {
+  title: string;
+  description: string;
+  /** H1 on the page. Title Case, 4–10 words. */
+  headline: string;
+  /** One sentence under the H1. */
+  dek: string;
+  published: string;
+  updated: string;
+  /** "Short answer": 2–4 sentences that answer the page question. */
+  answer: string;
+  faq?: { q: string; a: string }[];
+  sources?: { label: string; url: string }[];
+  image?: string;
+}
+
+const { frontmatter, url, headings = [] } = Astro.props as {
+  frontmatter: GuideFrontmatter;
+  url?: string;
+  headings?: { depth: number; slug: string; text: string }[];
+};
+const fm = frontmatter;
+const slug = (url ?? Astro.url.pathname).replace(/\.html$/, "").split("/").filter(Boolean).pop() ?? "";
+const cover = guideCovers[slug];
+// Table of contents: the H2s of the body, then the FAQ and the sources.
+const toc = [
+  { slug: "short-answer", text: "Short answer" },
+  ...headings.filter((h) => h.depth === 2).map((h) => ({ slug: h.slug, text: h.text })),
+  ...(frontmatter.faq?.length ? [{ slug: "faq-h", text: "Questions" }] : []),
+  ...(frontmatter.sources?.length ? [{ slug: "src-h", text: "Sources" }] : []),
+];
+const pageUrl = new URL(url ?? Astro.url.pathname.replace(/\.html$/, ""), Astro.site).toString();
+
+const article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: fm.headline,
+  description: fm.description,
+  ...(cover ? { image: `https://citata.ai/og/${cover.img}.jpg` } : {}),
+  author: {
+    "@type": "Person",
+    "@id": "https://citata.ai/about#founder",
+    name: "Taras Kornichuk",
+    jobTitle: "Founder",
+    url: "https://citata.ai/about",
+  },
+  publisher: { "@id": "https://citata.ai/#org" },
+  datePublished: fm.published,
+  dateModified: fm.updated,
+  mainEntityOfPage: pageUrl,
+  about: ["Generative engine optimization", "Property management"],
+};
+const faqSchema = fm.faq?.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: fm.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+    }
+  : null;
+const breadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Citata.ai", item: "https://citata.ai/" },
+    { "@type": "ListItem", position: 2, name: "Guides", item: "https://citata.ai/guides" },
+    { "@type": "ListItem", position: 3, name: fm.headline, item: pageUrl },
+  ],
+};
+---
+
+<Base
+  title={fm.title}
+  description={fm.description}
+  type="article"
+  modified={fm.updated}
+  image={fm.image ?? (cover ? `/og/${cover.img}.jpg` : undefined)}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(article)} />
+    {faqSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />}
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbs)} />
+  </Fragment>
+  <main class="wrap">
+    <article class="mx-auto max-w-[1080px] pt-12 pb-6">
+      <header class="rounded-lg bg-sun/25 p-6 sm:p-10">
+        <p class="meta">
+          <a href="/guides" class="text-minium">Guides</a> · for property management companies
+        </p>
+        <h1 class="mt-4 max-w-4xl text-[36px] leading-[1.05] sm:text-[52px]">{fm.headline}</h1>
+        <p class="mt-4 max-w-3xl text-[19px] text-muted sm:text-[21px]">{fm.dek}</p>
+        <p class="meta mt-5">
+          By <a rel="author" class="link normal-case" href="/about">Taras Kornichuk</a> · Updated
+          <time datetime={fm.updated}>{fm.updated}</time>
+        </p>
+        <p class="mt-2 max-w-3xl text-[13px] text-muted">
+          How we made this guide: AI agents drafted it from our own tests and the sources listed at the
+          end. Taras Kornichuk checked every claim and edited the text.
+        </p>
+      </header>
+
+      {
+        cover && (
+          <figure class="img-frame mt-8">
+            <img
+              src={`/img/${cover.img}-1280.webp`}
+              srcset={coverSrcset(cover.img)}
+              sizes="(min-width: 1120px) 1080px, calc(100vw - 40px)"
+              alt={cover.alt}
+              width="1280"
+              height="714"
+              fetchpriority="high"
+            />
+          </figure>
+        )
+      }
+
+      <div class="mt-10 grid gap-12 lg:grid-cols-[230px_minmax(0,1fr)]">
+        <!-- Table of contents: sticky on desktop, the current section is marked (script below). -->
+        <nav aria-label="Contents" class="toc hidden lg:block">
+          <div class="sticky top-28">
+            <p class="meta text-ink">Contents</p>
+            <ol class="mt-4 space-y-0.5 border-l border-rule text-[14px] leading-snug">
+              {
+                toc.map((t) => (
+                  <li>
+                    <a href={`#${t.slug}`} data-toc={t.slug} class="-ml-px block border-l-2 border-transparent py-1.5 pl-4 text-muted hover:text-ink">
+                      {t.text}
+                    </a>
+                  </li>
+                ))
+              }
+            </ol>
+          </div>
+        </nav>
+
+        <div class="min-w-0">
+          <details class="mb-6 rounded-md bg-sky/20 p-4 lg:hidden">
+            <summary class="meta cursor-pointer text-ink">Contents</summary>
+            <ol class="mt-3 space-y-2 text-[15px]">
+              {toc.map((t) => (
+                <li>
+                  <a href={`#${t.slug}`} class="text-muted hover:text-ink">
+                    {t.text}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </details>
+
+          <aside id="short-answer" aria-label="Short answer" class="scroll-mt-28 rounded-md bg-mint/35 p-6">
+            <p class="meta text-minium">Short answer</p>
+            <p class="mt-2 text-[18px]">{fm.answer}</p>
+          </aside>
+
+          <div class="prose-c prose-wide mt-4">
+            <slot />
+          </div>
+
+          {
+            fm.faq?.length ? (
+              <section aria-labelledby="faq-h" class="mt-14 border-t border-rule pt-10">
+                <h2 id="faq-h" class="scroll-mt-28 text-[32px] leading-tight">Questions</h2>
+                <div class="mt-6 border-t border-rule">
+                  {fm.faq.map((f, i) => (
+                    <details class="faq-item" name="guidefaq" open={i === 0}>
+                      <summary>{f.q}</summary>
+                      <p class="pb-6 text-[16px] text-muted">{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </section>
+            ) : null
+          }
+
+          {
+            fm.sources?.length ? (
+              <section aria-labelledby="src-h" class="mt-12">
+                <h2 id="src-h" class="meta scroll-mt-28">Sources</h2>
+                <ol class="mt-3 list-decimal space-y-1 pl-5 text-[14px] text-muted">
+                  {fm.sources.map((s) => (
+                    <li>
+                      <a class="link" href={s.url}>
+                        {s.label}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            ) : null
+          }
+        </div>
+      </div>
+    </article>
+
+    <AuditCta title="Does AI name your company? Find out for free." />
+  </main>
+</Base>
+
+<script is:inline>
+  // Mark the section in view in the table of contents (like ahrefs.com/blog):
+  // the current section is the last heading above a reading line at 35% of the screen height.
+  (() => {
+    const links = [...document.querySelectorAll("[data-toc]")];
+    const targets = links.map((a) => document.getElementById(a.dataset.toc)).filter(Boolean);
+    if (!targets.length) return;
+    let current = "";
+    const update = () => {
+      let id = targets[0].id;
+      const line = innerHeight * 0.35;
+      for (const t of targets) if (t.getBoundingClientRect().top < line) id = t.id;
+      if (id === current) return;
+      current = id;
+      for (const a of links) {
+        const on = a.dataset.toc === id;
+        a.classList.toggle("toc-active", on);
+        if (on) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      }
+    };
+    let queued = false;
+    addEventListener("scroll", () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => {
+        queued = false;
+        update();
+      });
+    }, { passive: true });
+    addEventListener("hashchange", update);
+    update();
+  })();
+</script>

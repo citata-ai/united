@@ -1,0 +1,61 @@
+---
+import AuditCta from "../../components/AuditCta.astro";
+import Base from "../../layouts/Base.astro";
+import type { GuideFrontmatter } from "../../layouts/Guide.astro";
+import { coverSrcset, guideCovers } from "../../data/guide-covers.ts";
+
+const title = "Guides: AI search for property management companies — Citata.ai";
+const description =
+  "Short guides for property managers: why landlord leads drop, how landlords use AI to pick a manager, and how to get named in AI answers.";
+
+// build.format "file" gives URLs that end in ".html"; the live URLs do not.
+const guides = Object.values(
+  import.meta.glob<{ frontmatter: GuideFrontmatter; url: string }>("./*.md", { eager: true }),
+)
+  .map((g) => {
+    const href = g.url.replace(/\.html$/, "");
+    return { ...g.frontmatter, href, cover: guideCovers[href.split("/").pop() ?? ""] };
+  })
+  .sort((a, b) => b.updated.localeCompare(a.updated));
+---
+
+<Base title={title} description={description} image="/og/guide-owners-ai-v2.jpg">
+  <main class="wrap">
+    <section class="mt-8 rounded-lg bg-sky/20 p-6 sm:p-12">
+      <p class="meta"><span class="text-minium">Guides</span> · AI search for property managers</p>
+      <h1 class="mt-4 max-w-3xl text-[38px] leading-[1.04] sm:text-[52px]">How landlords find a property manager now</h1>
+      <p class="mt-5 max-w-[66ch] text-[19px] text-muted">
+        Each guide answers one question that property managers ask us. Every number names its source.
+      </p>
+    </section>
+    <ul class="grid gap-x-8 gap-y-12 py-12 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        guides.map((g, i) => (
+          <li>
+            <a href={g.href} class="group block">
+              {g.cover && (
+                <figure class="img-frame img-zoom">
+                  <img
+                    src={`/img/${g.cover.img}-960.webp`}
+                    srcset={coverSrcset(g.cover.img)}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, calc(100vw - 40px)"
+                    alt={g.cover.alt}
+                    width="1280"
+                    height="714"
+                    loading={i < 3 ? "eager" : "lazy"}
+                  />
+                </figure>
+              )}
+              <p class="meta mt-4">
+                <span class={`rounded-full px-2 py-0.5 text-ink ${["bg-coral","bg-sun","bg-sky","bg-lilac","bg-mint"][i % 5]}`}>Guide</span> · {g.updated}
+              </p>
+              <h2 class="mt-2 text-[22px] leading-tight group-hover:text-minium">{g.headline}</h2>
+              <p class="mt-2 text-[15px] text-muted">{g.dek}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <AuditCta />
+  </main>
+</Base>

@@ -4,7 +4,7 @@ import { offers } from "../../data/site.ts";
 export const GET = () =>
   Response.json({
     name: "GEO and AEO for property management companies",
-    provider: "citata.ai",
+    provider: "Citata.ai",
     area_served: "United States",
     process: ["Indexed", "Found", "Mentioned"],
     cadence: "One human-checked change a day, a report every Monday",

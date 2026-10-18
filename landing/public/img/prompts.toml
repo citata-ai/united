@@ -20,3 +20,153 @@ prompt = "A marble classical statue holding a big brass key and a rolled scroll,
 [[image]]
 file = "monday-report.jpg"
 prompt = "A marble bust of a Roman scholar reading a folded newspaper that shows a small simple bar chart drawing (no text), a small brass bell beside it. Flat sky cyan background."
+
+# 2026-10-18, omp generate_image, google-antigravity/gemini-3-pro-image. Style block P · Press collage (brand/IMAGES.md).
+[[image]]
+file = "guide-leads"
+field = "minium orange #C1410B"
+prompt = "A marble statue of a Roman landlord sits alone on the wide steps of a ruined temple, holding a silent old rotary telephone in his lap; an empty brass letterbox stands on a broken column beside him; a long row of suburban houses lies far away on the low horizon."
+
+[[image]]
+file = "guide-owners-ai"
+field = "sun yellow #F2C230"
+prompt = "An oracle scene: a vintage cathode-ray computer sits on a stone tripod altar between temple columns, thin smoke rising from it like the Oracle of Delphi; a marble statue of a homeowner stands before it holding a small model of a two-flat house in both hands."
+
+[[image]]
+file = "guide-agencies"
+field = "sky cyan #2FA7E0"
+prompt = "Five marble busts of different Roman men stand in a row on stone pedestals of different heights, like candidates in a contest, on a temple terrace; a large antique brass balance scale stands in front of them; a few suburban rooftops on the low horizon."
+
+[[image]]
+file = "guide-track"
+field = "minium orange #C1410B"
+prompt = "A marble statue of an ancient astronomer on a temple terrace looks through a big brass telescope at a flock of paper airplanes flying in toward the temple door from the horizon; a vintage mechanical tally counter rests on the stone balustrade."
+
+[[image]]
+file = "guide-checklist"
+field = "sun yellow #F2C230"
+prompt = "A temple under construction with wooden scaffolding; a marble statue of an architect stands in front holding an unrolled blueprint scroll and a brass plumb line; a vintage cathode-ray computer sits on a stonemason's workbench beside him; small houses on the low horizon."
+
+[[image]]
+file = "hero-art"
+style = "P · Press collage, minium field; option B of 2 (A: statue at a glowing computer)"
+prompt = "Wide cinematic landscape for a website hero. A vast valley of ancient marble ruins: broken Greek temple columns and fallen stones rise like cliffs on the left and right edges and frame an open space in the middle. Far away in the middle of the valley floor, a small marble temple doorway with one warm glowing lamp inside, and a marble statue of a landlord holding a big brass key walking toward it. A thin row of small suburban houses on the far low horizon. The upper half and the center are open sky for a headline."
+
+[[image]]
+file = "footer-art"
+style = "F · Footer engraving, deep ink #1C1712 with minium accents; option B of 2 (A: lapis ink, had a plate frame). Cropped top 31%, sides 3%; paper lifted to white so it blends with the page."
+prompt = "Wide panoramic copperplate engraving for a website footer. A harbor town seen from across calm water: classical stone houses with tiled roofs, a few American two-flat brick rental buildings and small apartment blocks, a Greek temple on the hill above the town, soft hills, small boats, a tree at the left edge. Town and water in the lower half; upper half empty parchment sky with soft engraved clouds."
+
+# 2026-10-18, style E · two-tone engraving (brand/IMAGES.md), processed with brand/engrave.sh.
+[[image]]
+file = "hero-v4"
+prompt = "Wide panoramic landscape for a website hero: an ancient Greek city being built on a wide plain. A new temple with columns in wooden scaffolding, a wooden treadwheel crane lifts a stone block, stone houses with tiled roofs and cypress trees, a straight stone road leads from the foreground to the temple; on the road, small, a man in a toga carrying a big key. Grass and stones in the foreground."
+
+[[image]]
+file = "footer-v4"
+prompt = "Wide panoramic landscape for a website footer: an ancient Greco-Roman harbor town seen from across calm water, stone houses with tiled roofs, an arched aqueduct, a temple on the hill, cypress trees, stone quays, ancient wooden boats with square sails; an olive tree at the left edge; reeds and stones on the near shore."
+
+# 2026-10-18, style E, composition framed around the text (owner request). Frame line cropped 3–4 %.
+[[image]]
+file = "hero-v5"
+prompt = "U-shaped composition for a website hero with a headline in the middle: empty solid black sky in the center and top center. Left edge, to the top: a temple corner under construction with marble columns, wooden scaffolding and a tall treadwheel crane. Right edge, to the top: tall finished temple columns with an entablature and cypress trees. Bottom 30 percent: an ancient Greek town being built, a stone road to a temple door with a warm lamp, a small man in a toga with a big key."
+
+[[image]]
+file = "footer-v5"
+prompt = "Wide footer composition with links in the top center: the skyline dips low in the middle (a wide V); empty solid black sky across the top center. Left edge: a large olive tree up to the top. Right edge: a high hill with an ancient temple near the top right. Low in the center: an ancient Greco-Roman harbor town by calm water, an aqueduct, cypress trees, boats with square sails."
+
+[[image]]
+file = "img/stamp-track-v1-*.webp"
+prompt = "An ancient stone lighthouse like the Pharos of Alexandria on a rocky harbor point, a fire at its top, two small square-sail boats on calm water below, low stone houses along the quay. + style block S (brand/IMAGES.md)"
+model = "gemini-3-pro-image via omp"
+date = "2026-10-18"
+
+[[image]]
+file = "img/stamp-fix-v1-*.webp"
+prompt = "A Roman stone arched gateway under repair: wooden scaffolding and a ladder against it, a stonemason's mallet and chisel on a cut stone block in front, neat new stone courses rising, a cypress tree beside it. + style block S (brand/IMAGES.md)"
+model = "gemini-3-pro-image via omp"
+date = "2026-10-18"
+
+[[image]]
+file = "img/stamp-report-v1-*.webp"
+prompt = "A small round classical temple (tholos) with slender columns and a bronze bell hanging under its dome, on a low hill with olive trees, a stone road leading up to it. + style block S (brand/IMAGES.md)"
+model = "gemini-3-pro-image via omp"
+date = "2026-10-18"
+
+[[image]]
+file = "img/hero-v6-*.webp"
+prompt = "Hero scene from brand/IMAGES.md section 2 (hero-v6) + style block T, vignette, no sea"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/footer-v6-*.webp"
+prompt = "Footer scene from brand/IMAGES.md section 2 (footer-v6, St Joseph easter egg) + style block T"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/hero-v7-*.webp"
+prompt = "Edit of option-4 hero (/tmp/img-opt/h4.png): keep colors, style, centered man with key; clean white sky; sea and boats replaced by paved plaza; no border"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/footer-v7-*.webp"
+prompt = "No room at the inn: innkeeper with lantern refuses; Joseph with staff leads a donkey with Mary, thin engraved halos; lit cave stable with manger and ox; olive tree left, cypresses right; upper 55% empty white sky; three-ink stamp engraving (style T)"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/monday-report-v2-*.webp"
+prompt = "Close view: a Roman herald in an orange toga on a stone rostrum holds up a scroll with a rising bar chart (no numbers); bronze bell in a small bell gable; market stalls, arch, fountain, townspeople. Style: match hero-v7 (three-ink stamp engraving), no crane, no big temple."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/fridman-case-v2-*.webp"
+prompt = "An ancient street like a Chicago street: brownstone two-flats with bay windows and stoops, a classical column; a man in an orange toga looks at a smartphone with a map pin. Style: match hero-v7."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/monday-report-v3-*.webp"
+prompt = "Edit of monday-report-v2 into style N (brand/IMAGES.md): flat coral #FF6B5B sky, sun yellow awnings, cobalt clothes, mint cypresses, scroll keeps the rising cobalt bar chart, toga orange"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/fridman-case-v3-*.webp"
+prompt = "Edit of fridman-case-v2 into style N: flat sun yellow #F2C230 sky, brownstones in pink, coral and lilac, cobalt line work, mint trees, toga orange"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/hero-v8-*.webp"
+prompt = "Edit of hero-v7: keep everything and the white sky; add pop accents: pink and sun yellow striped awnings, mint green and cobalt doors and shutters, pots with bright pink flowers, coral and cyan pennants on the crane rope"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/footer-v8-*.webp"
+prompt = "Edit of footer-v7: more vivid (cobalt mantle, orange cloak, mint shutters, pink-yellow awning, pink flowers), then radiant gold halos with engraved rays and a strong golden glow with rays from the cave; white sky kept"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/stamp-*-v2-*.webp"
+prompt = "Same stamp engravings as v1, recolored brighter: cobalt #1F57FF, red-orange #FF4A26, green #009E6E on paper #FBF7EE"
+model = "recolor (ffmpeg lutrgb)"
+date = "2026-10-18"
+
+[[image]]
+file = "img/hero-v9-*.webp"
+prompt = "Edit of hero-v8: much finer engraving detail; paint the temple like a Greek painted temple (frieze and pediment in cobalt, coral, sun yellow, meander band); brighter awnings and flowers; mint doors; white sky kept"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"
+
+[[image]]
+file = "img/{guide-leads,guide-owners-ai,guide-agencies,guide-track,guide-checklist,property-management,section8}-v2-*.webp"
+prompt = "Style N (brand/IMAGES.md) with monday-report-v3 as style reference; scenes as in the table in IMAGES.md section 2b-N; one flat pop sky per image"
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-18"

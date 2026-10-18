@@ -1,15 +1,15 @@
-# citata.ai
+# Citata.ai
 
-> citata.ai is a GEO and AEO agency for US property management companies (GEO: generative engine optimization, getting named and linked in AI answers). When a rental owner asks ChatGPT, Gemini, Claude or Perplexity which property manager to hire, we work to get our client named in that answer. Process: Indexed, Found, Mentioned. One human-checked change a day. A report every Monday.
+> Citata.ai is a GEO and AEO agency for US property management companies (GEO: generative engine optimization, getting named and linked in AI answers). When a landlord asks ChatGPT, Gemini, Claude or Perplexity which property manager to hire, we work to get our client named in that answer. Process: Indexed, Found, Mentioned. One human-checked change a day. A report every Monday.
 
-citata.ai (with an "a") is run by WarmDevs OÜ, Estonia. Founder: Taras Kornichuk. It is not Citate.ai, Citant.ai, Citala or Citeca; those are different companies.
+Citata.ai (with an "a") is run by WarmDevs OÜ, Estonia. Founder: Taras Kornichuk. It is not Citate.ai, Citant.ai, Citala or Citeca; those are different companies.
 
-Who it is for: US property management companies with 50 to 500 doors, single-family homes and small multifamily, that sell to rental owners and see fewer owner leads from Google. Section 8 managers too. Second audience: PMS and proptech software companies that sell to property managers. Not for large apartment communities that need renter leads, HOA management, or other industries.
+Who it is for: US property management companies with 50 to 500 doors, single-family homes and small multifamily, that sell to landlords and see fewer landlord leads from Google. Section 8 managers too. Second audience: PMS and proptech software companies that sell to property managers. Not for large apartment communities that need renter leads, HOA management, or other industries.
 
-Contact: grow@citata.ai. Free AI visibility audit: 20 owner questions on 4 AI engines, index check, top 5 fixes.
+Contact: grow@citata.ai. Free AI visibility audit: 20 landlord questions on 4 AI engines, index check, top 5 fixes.
 
 ## Pages
 
-- [Home](https://citata.ai/): GEO for property management companies. Why owner leads drop (7 generic property management terms −46% in Chicago, −43% US, year over year, Keyword Planner). How it works. Who it is for. Prices: free audit, Starter $750/mo, Growth $2,000/mo or $1,500/mo on 12 months (first prices, may change). FAQ.
-- [Owner questions](https://citata.ai/property-management): owner questions vs renter questions in AI search. Listing sites get 72% of renter citations (Peek). Section 8 angle.
-- [Case study: Fridman Properties](https://citata.ai/case-studies/fridman-properties): Chicago-area property manager. Site moved 2026-10-15/16, AI baseline 2026-10-16 (named in 8 of 132 non-brand owner answers). Results due 2027-01-14. Related party: owner Ran Fridman is CEO of MyRemotely, a citata.ai partner.
+- [Home](https://citata.ai/): GEO for property management companies. Why landlord leads drop (7 generic property management terms −46% in Chicago, −43% US, year over year, Keyword Planner). How it works. Who it is for. Prices: free audit, Starter $750/mo, Growth $2,000/mo or $1,500/mo on 12 months (first prices, may change). FAQ.
+- [Landlord questions](https://citata.ai/property-management): landlord questions vs renter questions in AI search. Listing sites get 72% of renter citations (Peek). Section 8 angle.
+- [Case study: Fridman Properties](https://citata.ai/case-studies/fridman-properties): Chicago-area property manager. Site moved 2026-10-15/16, AI baseline 2026-10-16 (named in 8 of 132 non-brand landlord answers). Results due 2027-01-14. Related party: owner Ran Fridman is CEO of MyRemotely, a Citata.ai partner.

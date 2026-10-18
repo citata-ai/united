@@ -1,15 +1,15 @@
 ---
+import AuditCta from "../components/AuditCta.astro";
 import Base from "../layouts/Base.astro";
-import { auditHref } from "../data/site.ts";
 
 // Facts: business/marketing/listing-kit.md (company facts, founder line),
 // business/strategy.md (§4 dog food accounts, §7 related parties). Do not add a fact that is not there.
-const title = "About citata.ai — a GEO agency for property management companies";
+const title = "About Citata.ai — a GEO agency for property management companies";
 const description =
-  "Who runs citata.ai, why we work only with property management companies, and how we check our own claims.";
+  "Who runs Citata.ai, why we work only with property management companies, and how we check our own claims.";
 
 const facts = [
-  ["Company", "citata.ai, a trade name of WarmDevs OÜ"],
+  ["Company", "Citata.ai, a trade name of WarmDevs OÜ"],
   ["Registry code", "16788177, Estonian Business Register"],
   ["VAT", "EE102647727"],
   ["Address", "Sepapaja tn 6, 15551 Tallinn, Estonia (registered address)"],
@@ -37,18 +37,18 @@ const person = {
     <script type="application/ld+json" is:inline set:html={JSON.stringify(person)} />
   </Fragment>
   <main class="wrap">
-    <section class="border-b border-rule py-12 md:py-16">
-      <p class="meta"><span class="text-minium">About</span> · citata.ai</p>
+    <section class="mt-8 rounded-lg bg-mint/35 p-6 sm:p-12">
+      <p class="meta"><span class="text-minium">About</span> · Citata.ai</p>
       <h1 class="mt-4 max-w-3xl text-[38px] leading-[1.04] sm:text-[52px] sm:leading-[1.02]">
         A small GEO agency for property management companies
       </h1>
       <p class="mt-5 max-w-[66ch] text-[19px] text-muted">
-        citata.ai gets property management companies named and linked when rental owners ask AI
+        Citata.ai gets property management companies named and linked when landlords ask AI
         assistants who to hire. GEO (generative engine optimization) is the name for this work.
       </p>
     </section>
 
-    <section aria-labelledby="who" class="grid gap-10 border-b border-rule py-14 md:grid-cols-[1.2fr_1fr]">
+    <section aria-labelledby="who" class="grid gap-10 py-14 md:grid-cols-[1.2fr_1fr]">
       <div class="prose-c">
         <h2 id="who">Who does the work</h2>
         <p>
@@ -56,7 +56,7 @@ const person = {
           agents, and I check each output by hand before it goes live.
         </p>
         <p>
-          Agents do the repeat work: they ask AI engines the same owner questions each week, read the
+          Agents do the repeat work: they ask AI engines the same landlord questions each week, read the
           answers and draft page fixes. A person decides what ships. We do not publish bulk AI text.
         </p>
         <h2>Why only property management</h2>
@@ -66,7 +66,7 @@ const person = {
           manager.
         </p>
         <p>
-          One niche lets us go deep. We know which questions owners ask, which sites AI reads for the
+          One niche lets us go deep. We know which questions landlords ask, which sites AI reads for the
           answer, and which Fair Housing rules apply to the copy.
         </p>
         <h2>How we check our own claims</h2>
@@ -77,7 +77,7 @@ const person = {
         </p>
         <p>
           We test on our own site first. On 2026-10-18 we asked ChatGPT, Gemini and Claude 20
-          questions about GEO for property managers. They named citata.ai in 0 of 108 answers. We
+          questions about GEO for property managers. They named Citata.ai in 0 of 108 answers. We
           publish that number, and we will publish the next ones.
         </p>
         <h2>Related parties</h2>
@@ -86,7 +86,7 @@ const person = {
           study, and he is the CEO of MyRemotely, our partner. Each case study says so at the top.
         </p>
       </div>
-      <aside class="self-start rounded border border-rule bg-page p-6">
+      <aside class="self-start rounded-md bg-sun/30 p-6">
         <p class="meta text-minium">Company facts</p>
         <table class="mt-4 w-full text-[15px]">
           <tbody>
@@ -106,17 +106,6 @@ const person = {
       </aside>
     </section>
 
-    <section aria-labelledby="cta" class="grid items-center gap-8 pt-14 md:grid-cols-[1.2fr_1fr]">
-      <h2 id="cta" class="text-[32px] leading-[1.05] sm:text-[40px]">
-        Want to know what AI says about your company?
-      </h2>
-      <div>
-        <p class="text-muted">
-          Email us your site and the cities you serve. We send a free one-page report with your top 5
-          fixes.
-        </p>
-        <a class="btn-lapis mt-5" href={auditHref}>Email grow@citata.ai</a>
-      </div>
-    </section>
+    <AuditCta title="Want to know what AI says about your company?" />
   </main>
 </Base>

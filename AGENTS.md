@@ -77,4 +77,5 @@ Run from the repo root.
 
 - Before you write any text that leaves this repo (email, site, post, case study), read [`brand/VOICE.md`](brand/VOICE.md).
 - Before you build or change any UI, page or graphic, read [`brand/DESIGN.md`](brand/DESIGN.md). Brand assets (icon, wordmark, fonts, samples) live in `brand/`.
+- Before you make an AI image (cover, hero, OG), read [`brand/IMAGES.md`](brand/IMAGES.md). It holds the style block and the prompts.
 - Before you write an email or newsletter, also read [`business/NEWSLETTER.md`](business/NEWSLETTER.md). It holds the email types and their structure.
