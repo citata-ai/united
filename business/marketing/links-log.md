@@ -15,3 +15,4 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | B7 | 5 | 0 | 0 | 5 | 0 | Quora profile made (no link anchor). Reddit, BiggerPockets, Upwork, Indie Hackers stuck in onboarding. L036 D&B blocked (registry code, address). B9 started. |
 | 2026-10-18 | B8 | 5 | 1 | 0 | 1 | 2 | StartupBase @citata live (nofollow). Uneed paid queue, SaaSHub not a fit: skipped. dev.to reCAPTCHA. Startup Ranking retry (date now known). B10 re-run with phone started. |
 | 2026-10-18 | B9 | 5 | 1 | 1 | 1 | 0 | Qwoted expert profile live (no public anchor). Tracxn submitted (#1121718). Alignable reCAPTCHA. Owler, Agency Spotter back to todo (address, location now known). Help batch H1 started (8 rows, owner assists). |
+| 2026-10-18 | B10 | 5 | 0 | 0 | 5 | 0 | Re-run with phone: Clutch, GoodFirms, DesignRush need the phone shown publicly (owner decision). Sortlist: phone tied to another agency. |
