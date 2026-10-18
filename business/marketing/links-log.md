@@ -26,3 +26,4 @@ One line per batch. Status board: `links.csv` on `main`.
 | 2026-10-18 | R2 | 5 | 4 | 0 | 0 | 0 | Repositioned Hashnode, StartupBase, Qwoted; Owler waits for review; Startup Ranking needs Google sign-in. |
 | 2026-10-18 | N1 | 6 | 0 | 0 | 0 | 6 | Niche rows: BiggerPockets $250/mo, NARPM $270-320/yr (paid); AllPropertyManagement, Expertise.com, proptech directories: no agency route. Added L107-L110 (Local Vendor Connect free; Rent Manager, Buildium, AppFolio partner programs = founder decision). |
 | 2026-10-18 | K1 | 3 | 0 | 0 | 3 | 0 | LinkedIn: founder email confirmation needed. Newsletter: 150+ followers rule. Crunchbase: Google Connect not done. |
+| 2026-10-18 | R3 | 7 | 3 | 1 | 0 | 0 | Clutch, The Manifest, G2 now public (repositioned; G2 no link). Reddit, Quora, HackerNoon bios repositioned (still need human posts). Local Vendor Connect submitted. |
