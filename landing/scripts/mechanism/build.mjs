@@ -11,6 +11,7 @@
  * The loop, left to right: your site -> the citata workshop (Indexed, Found,
  * Mentioned) -> AI engines -> buyers ride back to your site and go in.
  */
+import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -1161,7 +1162,7 @@ const plate = k
       { mark: "lit", label: "A buyer sent by an AI engine" },
     ],
     caption,
-    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure"></div>`,
+    body: `<div class="iso-stage" tabindex="0" role="group" aria-label="Citation engine. Press 1 to 5 to send a page to an engine." data-figure="/mechanism/figure?v=__FIGURE_V__"></div>`,
   })
   .replace(
     "</figcaption>",
@@ -1508,7 +1509,14 @@ const script =
   LIVE;
 const wrapped = `/* citata.ai citation engine. Built by scripts/mechanism/build.mjs; do not edit.\n   Kit: anatomy (MIT), vendor/anatomy. */\n(() => {\n${script}\n})();\n`;
 
-writeFileSync(join(ROOT, "src/components/mechanism/figure.generated.html"), markup + "\n");
+/** Content hash in the URL: the edge and browsers cache /mechanism/* for a day. */
+const hash = (text) => createHash("sha256").update(text).digest("hex").slice(0, 10);
+const version = { figure: hash(figureMarkup), live: hash(wrapped) };
+writeFileSync(
+  join(ROOT, "src/components/mechanism/figure.generated.html"),
+  markup.replace("__FIGURE_V__", version.figure) + "\n",
+);
+writeFileSync(join(ROOT, "src/components/mechanism/version.json"), JSON.stringify(version) + "\n");
 writeFileSync(join(ROOT, "public/mechanism/figure.html"), figureMarkup + "\n");
 writeFileSync(join(ROOT, "public/mechanism/live.js"), wrapped);
 if (process.argv.includes("--page")) {
