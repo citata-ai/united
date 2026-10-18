@@ -2,11 +2,11 @@
 export const faq = [
   {
     q: "What is GEO for a property management company?",
-    a: "GEO (generative engine optimization) is the work that gets AI assistants to name your company. When an owner asks ChatGPT for a property manager in your city, the answer lists 3 to 5 companies. GEO works to put yours on that list, with a link.",
+    a: "GEO (generative engine optimization) is the work that gets AI assistants to name your company. When a landlord asks ChatGPT who should manage a rental in your city, the answer lists 3 to 5 companies. GEO works to put yours on that list, with a link.",
   },
   {
     q: "Why do property management companies get fewer owner leads from Google?",
-    a: "Part of the search demand moved. Searches for 7 generic property management terms fell 46% in the Chicago area and 43% in the US in one year (Keyword Planner). We think part of this moved to AI answers. That is a hypothesis, and we test it each week.",
+    a: "Part of the search demand moved. Searches for 7 generic terms such as “property management chicago” fell 46% in the Chicago area and 43% in the US in one year (Keyword Planner). We think part of this moved to AI answers. That is a hypothesis, and we test it each week.",
   },
   {
     q: "How is GEO different from SEO?",
