@@ -1,5 +1,5 @@
 # Domain model for citata.ai. Names here are the ubiquitous language.
-# The scaffold (CIT-2) turns each [entity.*] into an Effect Schema.
+# The scaffold (CTT-3) turns each [entity.*] into an Effect Schema.
 
 [entity.Account]
 doc = "An organization we work with: a client, a partner, or ourselves."

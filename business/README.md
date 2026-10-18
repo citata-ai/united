@@ -2,7 +2,7 @@
 
 Business-as-Code for citata.ai. This folder is the source of truth for what the business is, what it wants and who it serves.
 
-Now the data is TOML, so people and agents can read it. Later the scaffold (CIT-2) turns `model.toml` into Effect Schema and loads the other files through it.
+Now the data is TOML, so people and agents can read it. Later the scaffold (CTT-3) turns `model.toml` into Effect Schema and loads the other files through it.
 
 | File               | Holds                                                    |
 |--------------------|----------------------------------------------------------|
