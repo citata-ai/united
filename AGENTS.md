@@ -20,6 +20,7 @@ Read `docs/architecture.md` first.
 | `backend/`       | Effect API Worker `citata-api` (`GET /api/health`).                      |
 | `frontend/`      | Foldkit app on Website Worker `citata-web`. `/api/*` goes to the API.    |
 | `landing/`       | Astro 7 static site `citata-landing` (citata.ai).                        |
+| `tools/`         | External tools we use (docs + glue). Not vendored. See `tools/README.md`. |
 | `alchemy.run.ts` | One Alchemy Stack for all Cloudflare resources.                          |
 | `docs/gates.md`  | Gates G1, G2, G3 and CI.                                                 |
 
