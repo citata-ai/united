@@ -6,19 +6,19 @@ Status: v1, 2026-10-19. Source: 31 confirmed clients of the 3 direct competitors
 
 | # | Move | ClearLead | PMW | Goodjuju | Into |
 |---|---|---|---|---|---|
-| 1 | One owner decision page per real service city, linked to services, reviews and rental analysis | rank 1, 3 | rank 1, 6 | rank 2 | proposal: Starter + Growth |
+| 1 | One owner decision page per real service city, linked to services, reviews and rental analysis | rank 1, 3 | rank 1, 6 | rank 2 | Starter + Growth |
 | 2 | Check and fix public listings and entity facts (GBP, Yelp, Expertise.com, iPropertyManagement, BBB) | rank 2 | rank 2 | rank 8 | Starter + Growth, first week |
-| 3 | Full owner fee table and owner protections (guarantees, cancel terms) | rank 4 | rank 3 | rank 6 | proposal: Starter + Growth |
-| 4 | Rental analysis that gives value before the call | rank 5 | rank 4 | rank 2 | proposal: Starter + Growth |
+| 3 | Full owner fee table and owner protections (guarantees, cancel terms) | rank 4 | rank 3 | rank 6 | Starter + Growth |
+| 4 | Rental analysis that gives value before the call | rank 5 | rank 4 | rank 2 | Starter + Growth |
 | 5 | 3 owner tools: rent-vs-sell, vacancy loss, rental ROI | rank 5 | rank 5 | rank 4 | Growth (1 per quarter); our site now |
 | 6 | Local landlord question clusters with checked facts | rank 6 | rank 8 | rank 5 | Growth articles |
-| 7 | Reviews: honest requests + GBP work, visible and linked | rank 7 | rank 7 | rank 3 | proposal: Starter + Growth |
+| 7 | Reviews: honest requests + GBP work, visible and linked | rank 7 | rank 7 | rank 3 | Starter + Growth |
 | 8 | Valid, truthful schema; crawl access check | rank 9 | rank 10 | rank 9 | Starter (we already do this for our site) |
 | 9 | Report from lead to signed door, not only traffic | rank 10 | rank 10 | rank 1 | Monday report |
 
-## Offer change (proposal, not live)
+## Offer change
 
-`business/offers.toml` feeds the public prices on citata.ai (`landing offers.json` test). So the base package is a proposal for Tao: add moves 1-4, 7 and 9 to Starter and Growth scope, move 5 to Growth. Until Tao agrees, delivery uses this playbook and the public scope stays as is.
+Tao approved the base package on 2026-10-19. It is in `business/offers.toml` and on the price section of citata.ai.
 
 ## Where we beat them
 

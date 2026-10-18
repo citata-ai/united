@@ -80,7 +80,7 @@ kind = "data-page"
 title = "Section 8 FMR FY2027 pages, top 50 metros + hub (H01-E1)"
 demand = "See H01."
 score = 9
-status = "staged"
+status = "live"
 
 [[item]]
 id = "B010"
@@ -89,7 +89,7 @@ kind = "free-tool"
 title = "PM fee calculator + Section 8 rent calculator (H02-E1)"
 demand = "See H02. ClearLead already has a fee calculator: ours must answer better (HUD rules, worked example)."
 score = 8
-status = "staged"
+status = "live"
 
 [[item]]
 id = "B011"
@@ -98,7 +98,7 @@ kind = "original-research"
 title = "AI Property Manager Index: 50 cities x 3 engines (H03-E1)"
 demand = "See H03."
 score = 8
-status = "staged"
+status = "live"
 
 [[item]]
 id = "B012"

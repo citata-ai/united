@@ -33,11 +33,13 @@ Scheduled agents run this file. Each run is a fresh session with no memory. This
    - `docs/geo-loop.md` change log: one row.
    - `backlog.toml`: set the item `status = "staged"`.
 8. Add the page to the publish queue: `business/marketing/publish-queue.md` (URL, hypothesis, one-line summary).
-9. Publish (merge `stage` into `main`) only under the publish rule below.
+9. Publish to prod under the publish rule below.
 
 ## Publish rule
 
-Prod needs the owner's "publish" (AGENTS.md). The `measure` run lists the queue in the Monday report and asks for one "publish" for the whole batch. When Tao has said "publish" for the queue in the current thread, merge `stage` into `main`, push, and run the smoke check from AGENTS.md. CI pings IndexNow for changed pages.
+Since 2026-10-19 Tao allows the growth runs to publish to prod as often as needed. After the stage check (step 6 of `tick` gives 200 and the page looks right), merge `stage` into `main` with `--no-ff`, push, and run the smoke check from AGENTS.md. CI deploys https://citata.ai and pings IndexNow for changed pages. Log the URLs as live in `publish-queue.md` and set the backlog item to `live`.
+
+Do not publish when: a check fails, a number has no source, the page names a client or a person in a new way, or the change touches prices, legal text or the email setup. Those go to "Asks for Tao".
 
 ## measure: Monday numbers
 
@@ -46,7 +48,7 @@ Prod needs the owner's "publish" (AGENTS.md). The `measure` run lists the queue 
 3. Search: GSC clicks and impressions, Bing Webmaster indexed count and Copilot citations, if the agent can read them. If not, say so in the report.
 4. For each hypothesis: compare the metric to `target` and `kill_if`. Set `status` (`running`, `validated`, `invalidated`, `parked`) and fill `result` and `learned` in the experiments. Do not claim a result that the data does not show.
 5. Re-score ICE from the data. Propose at most 2 new hypotheses (next free `H<nn>`) when a bet dies.
-6. Write `business/marketing/reports/<YYYY-Www>.md`: CTT-O6 progress (sessions so far vs pace needed), table per hypothesis, changes shipped, publish queue, asks for Tao.
+6. Write `business/marketing/reports/<YYYY-Www>.md`: CTT-O6 progress (sessions so far vs pace needed), table per hypothesis, changes shipped and published, asks for Tao.
 7. Commit and merge to `stage` as in `tick`.
 
 ## scout: Thursday ideas

@@ -14,7 +14,7 @@ slug = "starter"
 name = "Starter"
 price_usd_month = 750
 status = "hypothesis"
-scope = ["50 prompts tracked weekly", "4 articles / month", "20 page fixes / month", "listings and Google Business Profile", "Monday report"]
+scope = ["50 prompts tracked weekly", "week 1: listings and facts fixed (Google Business Profile, Yelp, Expertise.com, iPropertyManagement, BBB)", "owner page for each city you serve, with fee table and rental analysis", "review requests and Google Business Profile", "4 articles / month", "20 page fixes / month", "Monday report: AI answers, owner leads, signed doors"]
 
 [[offer]]
 slug = "growth"
@@ -22,7 +22,7 @@ name = "Growth"
 price_usd_month = 2000
 annual_price_usd_month = 1500
 status = "hypothesis"
-scope = ["150 prompts tracked weekly", "up to 12 articles / month", "50+ page fixes / month", "vs and alternatives pages", "1 free tool / quarter", "wrong-answer fixes", "Monday report"]
+scope = ["150 prompts tracked weekly", "everything in Starter", "owner tools: rent vs sell, vacancy loss, rental ROI", "up to 12 articles / month", "50+ page fixes / month", "vs and alternatives pages", "wrong-answer fixes", "Monday report: AI answers, owner leads, signed doors"]
 
 [[offer]]
 slug = "impact"
