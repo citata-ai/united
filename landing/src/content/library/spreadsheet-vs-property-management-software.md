@@ -1,5 +1,5 @@
 ---
-title: "Spreadsheet vs Rental Software: When You Should Switch — Citata.ai"
+title: "Spreadsheet vs Rental Software: When To Switch — Citata.ai"
 description: "Switch from rental spreadsheets when payment work, missed tasks, or weak records cost more than software. Measure staff time and test a free plan first."
 headline: "When To Move Beyond Rental Spreadsheets"
 dek: "Use work volume, repeat errors, and handoffs to decide when rental software earns its cost."

@@ -1,5 +1,5 @@
 ---
-title: "AI Tools for Property Managers: Tasks, Price and Tests — Citata.ai"
+title: "AI Tools for Property Managers: Price and Tests — Citata.ai"
 description: "Compare AI tools for property managers by leasing, maintenance, accounting and price. Start with a narrow task, keep approvals and measure the full work saved."
 headline: "AI Tools for Property Managers That Fit"
 dek: "Start with a task you can inspect, then measure completed work and corrections."
