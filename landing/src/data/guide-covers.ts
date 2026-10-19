@@ -20,6 +20,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-checklist-v2",
     alt: "A pop engraving under a coral sky: an architect in an orange toga with a blueprint and a plumb line before a temple in scaffolding; an old computer on a workbench.",
   },
+  "appfolio-vs-buildium": {
+    img: "guide-appfolio-buildium-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga weighs model houses against a coin purse on a brass scale between two market stalls with old computers.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

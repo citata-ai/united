@@ -170,3 +170,9 @@ file = "img/{guide-leads,guide-owners-ai,guide-agencies,guide-track,guide-checkl
 prompt = "Style N (brand/IMAGES.md) with monday-report-v3 as style reference; scenes as in the table in IMAGES.md section 2b-N; one flat pop sky per image"
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-18"
+
+[[image]]
+file = "img/guide-appfolio-buildium-v1-*.webp"
+prompt = "Style reference guide-agencies-v2 (style N). A Roman marketplace with two rival merchant stalls side by side under striped awnings, one cobalt and mint, the other pink and coral; each counter holds a vintage CRT desktop computer and a small stack of coins; in the exact center a landlord in an orange toga holds a big antique brass balance scale, one pan with many tiny model houses, the other with one leather coin purse; a row of small tiled houses on the low horizon. Flat sun yellow #F2C230 sky. 16:9. No text, no logos, no frame."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"

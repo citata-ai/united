@@ -20,3 +20,4 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-agencies-v2.webp` | Guide: GEO agencies compared | N, cyan |
 | `guide-track-v2.webp` | Guide: track AI traffic | N, lilac |
 | `guide-checklist-v2.webp` | Guide: AI search checklist | N, coral |
+| `guide-appfolio-buildium-v1.webp` | Guide: AppFolio vs Buildium | N, yellow |
