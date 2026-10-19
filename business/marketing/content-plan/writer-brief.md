@@ -65,3 +65,12 @@ Answer sentence first. ...
 - Run `bunx vitest run landing/library.test.ts` from the repo root. It parses your YAML and checks keys, word count, FAQ and sources. Fix every failure in your files.
 - Do not run the site build. Do not commit. Do not edit any file that is not one of your articles.
 - End with a short report: slugs written, slugs skipped and why (for example: no source found).
+
+## Cluster notes
+
+- **state-law:** the statute citations in `demand` came partly from memory. Open the official statute text (legislature or official code site; law.cornell.edu or justia.com only as a fallback that quotes the text) and verify every limit, deadline and section number. No statute text, no rule. Start with a summary table (rule | limit or deadline | statute). Name 2024–2026 changes only when you confirmed them.
+- **local-market:** the local facts in `demand` came from memory: verify each at the city, county or state site. Fee pages: a table of 10+ local managers' published fees with URLs; never use the iPropertyManagement 2022 numbers as current. Rents: `landing/src/data/fmr-fy2027.json`; link to the metro page `/guides/section-8-rent-limits/<slug>-fair-market-rent-2027` (slugs in `landing/src/data/section8.ts`).
+- **section-8:** link to `/guides/section-8-rent-limits` and `/tools/section-8-rent-calculator` where it helps.
+- **software:** prices conflict between sources. Take every price from the vendor's own pricing page, with the date you read it. If the vendor shows no price, say "quote only". Comparisons: a feature and price table first.
+- **ai-search:** our own data is in `business/marketing/competitors/clients/playbook.md` (H03: Expertise.com was a source in 93 of 150 answers) and `business/marketing/ai-visibility/`. Do not repeat the topics of the 6 live guides; link to them instead.
+- **glossary-templates:** templates are generic, hold the full template text in a code block or list, and tell the reader to check local law.
