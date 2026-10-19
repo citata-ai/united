@@ -164,3 +164,8 @@ run = 'bun patch "${usage_package}"'
 description = "Save edits to a patched dependency into patches/"
 usage = 'arg "<package>" help="package name, e.g. @foldkit/vite-plugin"'
 run = 'bun patch --commit "node_modules/${usage_package}"'
+
+[tasks."publish:library"]
+description = "Make the next N library drafts visible: mise run publish:library -- 10 (docs/content-library.md)"
+dir = "landing"
+run = "node scripts/publish-library.mjs"
