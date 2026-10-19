@@ -158,3 +158,11 @@ kind = "search-console"
 title = "Google Search Console: sitemap resubmitted by API; prod deploy now resubmits it when pages change (keyless, GCP citata-ai-ops)"
 ref = ".github/workflows/deploy.yml"
 result = "HTTP 204, sitemap pending in GSC"
+
+[[entry]]
+date = "2026-10-19"
+side = "external"
+kind = "ugc"
+title = "Reddit radar: 2 Social Radar alerts (PM marketing/leads; AI search/GEO), daily, webhook to a T3 task that drafts disclosed replies for approval"
+ref = "docs/growth-loop.md Reddit radar"
+result = ""
