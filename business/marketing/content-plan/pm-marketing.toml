@@ -1,0 +1,1802 @@
+# Topic plan for cluster pm-marketing (owner lead generation for property management companies).
+# Sources: sitemaps of clearleaddigital.com, gogoodjuju.com, propertymanagerwebsites.com, fourandhalf.com; web search.
+
+[[topic]]
+slug = "property-management-marketing-plan"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Property management marketing plan for owner leads"
+question = "How do I build a marketing plan that brings owner leads to my property management company?"
+subquestions = ["What goes into a property management marketing plan?", "Which channels should a small PM company start with?", "How do I set monthly lead goals from a door goal?", "How often should I review the plan?"]
+inspired_by = "https://www.clearleaddigital.com/blog/property-management-marketing-plan"
+demand = "ClearLead and Fourandhalf both publish marketing plan posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-marketing-budget"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How much a property management company should spend on marketing"
+question = "How much should a property management company spend on marketing each month?"
+subquestions = ["What percent of revenue do PM companies spend on marketing?", "How do I set a budget from a door growth goal?", "How should I split budget between SEO, ads and referrals?", "What does a starter budget look like for 100 doors?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-to-build-a-property-management-marketing-budget-that-actually-drives-owner-leads"
+demand = "PMW and Fourandhalf (set-property-management-marketing-budget, budget survey) cover it"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "value-of-an-owner-lead"
+cluster = "pm-marketing"
+kind = "data"
+title = "What one owner lead is worth to a property management company"
+question = "How much is one owner lead worth to a property management company?"
+subquestions = ["How do I calculate revenue per door per year?", "What close rate should I use?", "How much can I pay per lead and still profit?", "How does lead value change with door count per owner?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-to-calculate-the-true-value-of-a-lead-for-your-property-management-business"
+demand = "PMW \"true value\" series (5 parts) and Know Your Numbers worksheet"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "owner-lifetime-value-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to calculate owner client lifetime value"
+question = "How do I calculate the lifetime value of one owner client for my property management company?"
+subquestions = ["Which fees go into owner lifetime value?", "How does average owner tenure change the number?", "How do extra doors from the same owner count?", "How do I use lifetime value to set ad spend?"]
+inspired_by = "https://fourandhalf.com/lifetime-vs-transactional-value/"
+demand = "PMW SEO series part 2 and Fourandhalf lifetime value posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "cost-to-acquire-a-door"
+cluster = "pm-marketing"
+kind = "data"
+title = "What it costs to add one door through marketing"
+question = "How much does it cost a property management company to win one new door?"
+subquestions = ["How do I calculate cost per acquired door?", "How does cost per door differ by channel?", "What is a healthy payback period for a new door?", "How do I lower my cost per door?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-true-value-series-understanding-generating-and-growing-property-management-leads-part-2"
+demand = "PMW true value series; Fourandhalf buying leads vs building a platform"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "buy-doors-vs-market-for-doors"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Buy a portfolio or market for doors: which costs less"
+question = "Is it cheaper to buy a property management portfolio or to win doors through marketing?"
+subquestions = ["What does a door cost through acquisition?", "What does a door cost through Google Ads or SEO?", "Which doors stay longer?", "When does each path make sense?"]
+inspired_by = "https://fourandhalf.com/grow-property-management-acquisitions-vs-google-adwords/"
+demand = "Fourandhalf has two posts on acquisitions vs Google Ads"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-lead-sources-compared"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Owner lead sources for property managers compared"
+question = "Which lead sources bring the most owner clients to property management companies?"
+subquestions = ["What share of owner leads comes from Google search and Maps?", "How do referrals compare on close rate?", "Do social media and paid ads bring owner leads?", "How big is AI as an owner lead source?"]
+inspired_by = "https://gogoodjuju.com/property-management-lead-source-report-2026/"
+demand = "Goodjuju lead source report 2026 (35 companies, 2,525 leads); ClearLead top lead sources"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "ideal-owner-profile-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How to define your ideal owner client"
+question = "Which rental owners should a property management company market to, and which should it avoid?"
+subquestions = ["What makes an owner a good fit?", "Which owner traits predict churn?", "How do I write an ideal owner profile?", "How do I filter bad-fit owners on my website?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-right-owner-vs-the-wrong-owner"
+demand = "Fourandhalf ideal-owner-profile and marketing-to-the-wrong-owner; PMW right vs wrong owner"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "marketing-to-accidental-landlords"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How to market property management to accidental landlords"
+question = "How can a property management company reach people who must rent out a home they cannot sell?"
+subquestions = ["Who are accidental landlords?", "Where do accidental landlords search for help?", "Which messages and offers work for them?", "How does a rent-vs-sell analysis help?"]
+inspired_by = "https://fourandhalf.com/three-types-of-landlords/"
+demand = "Fourandhalf three types of landlords; ClearLead buyer personas"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "marketing-to-out-of-state-owners"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to win out-of-state rental owners"
+question = "How can a property management company find and win owners who live in another state?"
+subquestions = ["How do out-of-state owners search for a manager?", "How do I target ads to owners outside my market?", "What proof do remote owners want?", "Which reports and portals reassure them?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-to-localize-ads-targeting-out-of-state-owners"
+demand = "PMW post on targeting out-of-state owners"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "marketing-to-real-estate-investors"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How property managers attract real estate investors"
+question = "How can a property management company attract investors who buy rental homes?"
+subquestions = ["Where do local investors meet and read?", "What do investors want that accidental landlords do not?", "Which content brings investor leads?", "How do I partner with investor-friendly agents?"]
+inspired_by = "https://fourandhalf.com/how-to-capture-more-investor-leads-on-your-property-management-website/"
+demand = "Fourandhalf attract-real-estate-investors, property-managers-attract-investors, investor leads on website"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "marketing-to-self-managing-landlords"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How to convert self-managing landlords into clients"
+question = "How do I convince landlords who manage their own rentals to hire a property manager?"
+subquestions = ["Why do self-managing landlords resist a manager?", "Which pain points make them switch?", "What offer lowers the risk of trying a manager?", "Which channels reach DIY landlords?"]
+inspired_by = "https://fourandhalf.com/growing-a-property-managing-company-by-targeting-self-managing-investment-property-owners-blue-ocean-strategy-with-scott-brady/"
+demand = "Fourandhalf blue ocean strategy post on self-managing owners"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "marketing-to-military-owners"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to market to military homeowners who must PCS"
+question = "How can a property management company near a military base win owners who must relocate on orders?"
+subquestions = ["What do military owners need from a manager?", "When in the PCS cycle should I reach them?", "Which local groups and offices help?", "What proof builds trust with military families?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/marketing-with-military-precision-how-pmw-is-winning-for-property-managers"
+demand = "PMW military marketing post"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "marketing-to-hoa-boards"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to win HOA management clients"
+question = "How can a property management company market its services to HOA boards?"
+subquestions = ["How do HOA boards choose a management company?", "What should an HOA services page include?", "Which proposals win HOA contracts?", "How can an HOA website become a lead source?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/turning-an-hoa-website-into-a-community-hub-and-lead-generator"
+demand = "PMW HOA website lead generator post"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "property-management-unique-selling-proposition"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to write a unique selling proposition for a PM company"
+question = "How do I make my property management company stand out from local competitors?"
+subquestions = ["What is a unique selling proposition?", "Which claims do owners trust?", "How do I find what competitors do not offer?", "Where do I put my USP on the website?"]
+inspired_by = "https://fourandhalf.com/property-management-unique-selling-proposition/"
+demand = "Fourandhalf USP post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "why-owners-dont-hire-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Why owners do not hire a property manager, and how to answer"
+question = "Why do rental owners decide not to hire a property manager?"
+subquestions = ["Is the fee the main reason?", "Do owners fear losing control?", "How do bad past experiences shape the choice?", "Which website content answers each fear?"]
+inspired_by = "https://fourandhalf.com/3-reasons-why-homeowners-dont-hire-property-managers/"
+demand = "Fourandhalf 3 reasons homeowners don't hire property managers"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-marketing-first-90-days"
+cluster = "pm-marketing"
+kind = "guide"
+title = "What to do in the first 90 days of PM marketing"
+question = "What should a property management company do in the first 90 days and first year of a new marketing program?"
+subquestions = ["What gets done in month 1?", "When should leads start to come?", "What results are fair to expect at 6 and 12 months?", "Which tasks repeat each month?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-90-day-to-12-month-property-management-marketing-framework"
+demand = "PMW 90-day to 12-month framework post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-marketing-kpis"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Marketing KPIs a property management company should track"
+question = "Which marketing numbers should a property management company track each month?"
+subquestions = ["How do I track leads by source?", "What is a normal lead-to-signed-door rate?", "Which numbers matter more than traffic?", "How do I build a simple monthly report?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/data-driven-marketing-roi-lead-conversion"
+demand = "PMW data-driven marketing ROI; Goodjuju reports lead to signed door; Fourandhalf property-management-kpi"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-sales-cycle"
+cluster = "pm-marketing"
+kind = "data"
+title = "How long an owner lead takes to sign"
+question = "How long does it take an owner lead to sign a management agreement?"
+subquestions = ["What is the average sales cycle for a PM lead?", "Why do some owners take months?", "How should follow-up change over a long cycle?", "How do I measure my own cycle?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/whats-the-average-sales-cycle-for-a-pm-lead"
+demand = "PMW average sales cycle post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "in-house-marketer-vs-agency"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "In-house marketer or agency for a PM company"
+question = "Should a property management company hire a marketing person or use an agency?"
+subquestions = ["What does an in-house marketer cost?", "Which tasks need specialist skills?", "Can a hybrid setup work?", "At what door count does each make sense?"]
+inspired_by = "https://fourandhalf.com/why-hire-fourandhalf-when-marketing-person-on-staff/"
+demand = "Fourandhalf post on agency vs staff marketer"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "questions-to-ask-property-management-marketing-agency"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Questions to ask a property management marketing agency"
+question = "What should I ask a marketing agency before I sign with it?"
+subquestions = ["Who owns the website and domain?", "How does the agency report leads and signed doors?", "What are the contract and cancel terms?", "Which client results can it show?"]
+inspired_by = "https://www.clearleaddigital.com/blog/questions-to-ask-seo-marketing-agency"
+demand = "ClearLead questions to ask an SEO agency; Fourandhalf interview a PM marketing firm"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-marketing-mistakes"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Common marketing mistakes property managers make"
+question = "What marketing mistakes cost property management companies owner leads?"
+subquestions = ["Why does marketing to tenants hurt owner lead flow?", "Which website errors lose leads?", "Why does slow follow-up waste ad spend?", "Which tracking gaps hide results?"]
+inspired_by = "https://fourandhalf.com/top-5-marketing-mistakes-that-property-managers-make/"
+demand = "Fourandhalf top 5 marketing mistakes and blind spots posts"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "property-management-company-name-seo"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Should a property management name include the city?"
+question = "Should I put my city or \"property management\" in my company name for SEO?"
+subquestions = ["Does an exact-match name still help rankings?", "What risks come with a city in the name?", "How does the name affect Google Business Profile rules?", "How do I test a name before I commit?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/keyword-power-vs-brand-personality-choosing-between-a-unique-name-and-city-pm-for-seo"
+demand = "PMW name vs keyword post; Fourandhalf property-management-names"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "rebrand-property-management-company-seo"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to rebrand a PM company without losing search traffic"
+question = "How do I change my property management company name or domain without losing rankings and reviews?"
+subquestions = ["What happens to Google reviews after a rebrand?", "How do I set up redirects?", "Which listings must I update?", "How do I tell owners and tenants?"]
+inspired_by = "https://fourandhalf.com/rebranding/"
+demand = "Fourandhalf rebranding and consistent branding posts"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "property-management-marketing-ideas"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Property management marketing ideas that bring owners"
+question = "What are practical marketing ideas to get more owner clients?"
+subquestions = ["Which low-cost ideas work for a small company?", "Which ideas build referrals?", "Which online ideas work fastest?", "How do I pick ideas for my market?"]
+inspired_by = "https://fourandhalf.com/property-management-marketing-ideas-owner-leads/"
+demand = "Fourandhalf marketing ideas; Goodjuju marketing tactics; ClearLead top strategies"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "get-first-property-management-clients"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How a new property management company gets its first owners"
+question = "How does a new property management company get its first 10 to 50 doors?"
+subquestions = ["Which first clients come from my own network?", "Which partners refer new managers?", "Can a new company rank on Google?", "What offer helps a company with no track record?"]
+inspired_by = "https://www.clearleaddigital.com/blog/how-to-start-a-property-management-company"
+demand = "ClearLead how to start a PM company; TurboTenant and Hemlane \"how to get property management clients\" pages"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-seo-guide"
+cluster = "pm-marketing"
+kind = "guide"
+title = "SEO for property management companies: the full guide"
+question = "How does SEO work for a property management company that wants owner leads?"
+subquestions = ["Which pages rank for owner searches?", "How do local SEO and organic SEO differ?", "How much content does a PM site need?", "How do I measure SEO in signed doors?"]
+inspired_by = "https://gogoodjuju.com/the-property-management-seo-guide/"
+demand = "Goodjuju SEO guide; ClearLead SEO blueprint; PMW 15-part SEO series"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-long-does-seo-take-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How long SEO takes for a property management company"
+question = "How long does it take for SEO to bring owner leads to a property management website?"
+subquestions = ["What changes in months 1 to 3?", "When do rankings usually move?", "What makes SEO slower in big cities?", "What can speed it up?"]
+inspired_by = "https://gogoodjuju.com/how-long-does-seo-take-for-property-management-companies/"
+demand = "Goodjuju, Fourandhalf (how-long-seo-takes) and PMW SEO timeline posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-seo-cost"
+cluster = "pm-marketing"
+kind = "data"
+title = "What SEO costs for a property management company"
+question = "How much does SEO cost for a property management company?"
+subquestions = ["What do PM SEO agencies charge each month?", "What is included at each price level?", "Is cheap SEO a risk?", "How do I compare SEO quotes?"]
+inspired_by = "https://gogoodjuju.com/property-management-seo-costs/"
+demand = "Goodjuju SEO costs and pm-seo-pricing; ClearLead seo-cost-property-management-companies"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-seo-roi"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to calculate SEO ROI in signed doors"
+question = "How do I calculate the return on SEO for my property management company?"
+subquestions = ["Which numbers go into SEO ROI?", "How do I credit leads to organic search?", "How long until SEO pays back?", "How do I compare SEO ROI to ads ROI?"]
+inspired_by = "https://www.clearleaddigital.com/blog/property-management-seo-roi"
+demand = "ClearLead property-management-seo-roi"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-keywords"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Keywords owners search to find a property manager"
+question = "Which keywords do rental owners use to find a property management company?"
+subquestions = ["Which keywords show owner intent and which show tenant intent?", "How do I find local keyword volume?", "Which long-tail owner questions should I target?", "How do I map keywords to pages?"]
+inspired_by = "https://gogoodjuju.com/keywords-for-property-management/"
+demand = "Goodjuju keywords; ClearLead property-management-keywords; PMW keyword discovery 2026"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-seo-audit"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "SEO audit checklist for a property management website"
+question = "How do I audit the SEO of my property management website?"
+subquestions = ["Which technical checks come first?", "How do I check owner pages for thin content?", "How do I check local listings?", "Which free tools run the audit?"]
+inspired_by = "https://gogoodjuju.com/how-to-do-an-seo-audit-for-a-property-management-company/"
+demand = "Goodjuju SEO audit; ClearLead property-manager-seo-audit-checklist and seo-audit"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "technical-seo-property-management-website"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Technical SEO checklist for property management websites"
+question = "Which technical SEO issues hurt property management websites most?"
+subquestions = ["How fast must a PM site load?", "Do rental listing feeds cause duplicate content?", "How do I fix crawl and index errors?", "Which mobile issues matter?"]
+inspired_by = "https://gogoodjuju.com/technical-seo-checklist-property-management/"
+demand = "Goodjuju technical SEO checklist; PMW 20 technical SEO factors; ClearLead technical SEO"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "local-seo-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Local SEO for property management companies"
+question = "How do property management companies rank in local Google results?"
+subquestions = ["What are the main local ranking factors?", "How do Google Business Profile and website work together?", "How do reviews affect local rank?", "What local SEO tasks repeat each month?"]
+inspired_by = "https://gogoodjuju.com/the-local-seo-checklist-property-management/"
+demand = "Goodjuju local SEO checklist; ClearLead and PMW local SEO posts"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rank-in-multiple-cities-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to rank in more than one city as a property manager"
+question = "How can one property management company rank in several cities or suburbs?"
+subquestions = ["Do I need a page for each city?", "Can one office rank in a city 30 miles away?", "How do I avoid thin copy-paste city pages?", "When does a second office make sense?"]
+inspired_by = "https://fourandhalf.com/can-property-managers-rank-multiple-cities-google/"
+demand = "Fourandhalf rank multiple cities; PMW local SEO how to rank in every market"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "city-page-template-property-management"
+cluster = "pm-marketing"
+kind = "template"
+title = "Template for a property management city page owners trust"
+question = "What should a city page for rental owners include so it ranks and converts?"
+subquestions = ["Which local facts belong on a city page?", "How do I show fees and services per city?", "Which reviews and proof go on the page?", "How do I link city pages to services?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/local-seo-for-property-managers-how-to-rank-in-every-market"
+demand = "Client playbook move 1 (all 3 competitors build owner city pages)"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "content-clusters-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to plan content clusters for a PM website"
+question = "How do content clusters help a property management website rank?"
+subquestions = ["What is a pillar page and a cluster?", "Which owner topics make good clusters?", "How should cluster pages link?", "How many posts does a cluster need?"]
+inspired_by = "https://gogoodjuju.com/cluster-blogging-for-property-managers/"
+demand = "Goodjuju cluster blogging; PMW content clustering posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "blog-topics-property-management-owners"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Blog topics that turn landlords into owner leads"
+question = "Which blog topics bring rental owner leads to a property management website?"
+subquestions = ["Which topics attract owners, not tenants?", "Which local law topics work?", "How do I find questions owners ask?", "Which topics fit the bottom of the funnel?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/what-are-the-top-5-blog-topics-that-convert-landlords-into-leads"
+demand = "PMW top 5 blog topics; Fourandhalf property-management-blog-topics and blogs-to-create"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "does-blogging-help-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Does blogging still help property managers get owners?"
+question = "Does a blog still bring owner leads to a property management company?"
+subquestions = ["What results can a PM blog bring?", "How many posts are needed before results?", "Which posts get cited by AI tools?", "When is a blog a waste of money?"]
+inspired_by = "https://www.clearleaddigital.com/ai-answers/does-blogging-help-property-managers-get-owners"
+demand = "ClearLead AI-answers page; Fourandhalf is-content-marketing-still-relevant"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "ai-written-content-property-management-seo"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Can AI write your property management blog?"
+question = "Can a property management company use AI to write blog posts without hurting SEO?"
+subquestions = ["What does Google say about AI content?", "Which parts of a post should a person write?", "How do I add local facts AI does not know?", "How do I check AI drafts for errors?"]
+inspired_by = "https://gogoodjuju.com/google-helpful-content-update-property-management/"
+demand = "Goodjuju helpful content update; Fourandhalf educating-owners-and-the-misuse-of-ai"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "google-updates-property-management-websites"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How Google core updates affect property management sites"
+question = "How do Google core and helpful content updates affect property management websites?"
+subquestions = ["Which PM sites lost traffic in recent updates?", "How do I check if an update hit my site?", "What content does Google reward?", "What should I do after a drop?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/what-the-february-2026-google-algorithm-update-means-for-property-management-websites"
+demand = "PMW February 2026 update; ClearLead 2025 core updates; Fourandhalf 2025 Google updates"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "backlinks-for-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How property managers get good backlinks"
+question = "How can a property management company earn backlinks that help local rankings?"
+subquestions = ["Which local links matter most?", "Do NARPM and chamber links help?", "Does guest posting still work?", "Which link offers are spam?"]
+inspired_by = "https://www.clearleaddigital.com/blog/backlinks-for-stronger-seo-rankings"
+demand = "ClearLead backlinks and guest blogging; Fourandhalf why-are-backlinks-important"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-services-page-template"
+cluster = "pm-marketing"
+kind = "template"
+title = "Template for a property management services page"
+question = "What should a property management services page say to win owners?"
+subquestions = ["Which services should each page list?", "How do I show what is in the fee?", "Should leasing-only have its own page?", "Which questions should the page answer?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/seo-for-property-managers-part-8-building-great-property-management-services-pages"
+demand = "PMW SEO series part 8 (services pages)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "google-search-console-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Google Search Console for property managers"
+question = "How can a property manager use Google Search Console to find owner search terms and fix problems?"
+subquestions = ["How do I find owner queries in Search Console?", "How do I filter out tenant queries?", "What do the indexing reports mean?", "How do I link Search Console to GA4?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/google-search-console-optimization-what-it-really-tells-you"
+demand = "PMW Search Console posts; Fourandhalf Analytics and Search Console guide"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ga4-property-management-website"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Set up GA4 to track owner leads on a PM website"
+question = "How do I set up Google Analytics 4 to track owner leads, not just traffic?"
+subquestions = ["Which events count as an owner lead?", "How do I separate owner and tenant visits?", "How do I set up key events for forms and calls?", "Which reports should I check monthly?"]
+inspired_by = "https://www.clearleaddigital.com/blog/google-analytics-for-property-managers"
+demand = "ClearLead GA for property managers; PMW analytics data retention setting"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "website-migration-without-losing-seo"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to switch website vendors without losing rankings"
+question = "How do I move my property management website to a new vendor without losing SEO?"
+subquestions = ["What should I export before I leave a vendor?", "How do I map and redirect old URLs?", "What happens to blog posts on the old platform?", "How do I check traffic after launch?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/no-blog-left-behind-the-seo-fallout-of-a-botched-site-migration"
+demand = "PMW botched site migration post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-traffic-vs-tenant-traffic"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Why your PM website gets tenants, not owners"
+question = "Why does my property management website get mostly tenant traffic, and how do I get more owners?"
+subquestions = ["How do I check what share of visits are owners?", "Which pages pull tenant traffic?", "How do I build more owner-intent pages?", "Should tenant pages stay on the main site?"]
+inspired_by = "https://www.clearleaddigital.com/blog/owners-not-tenants"
+demand = "ClearLead owners-not-tenants post"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "bing-for-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Is Bing worth it for property managers?"
+question = "Is Bing search and Bing Ads worth the effort for a property management company?"
+subquestions = ["What share of searches happen on Bing?", "How do I set up Bing Webmaster Tools and Bing Places?", "Do Bing Ads cost less per lead?", "Which owners use Bing?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/bing-optimization-still-worth-it-in-the-age-of-google"
+demand = "PMW Bing optimization and Bing Ads posts; Fourandhalf Bing Ads post"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "yelp-outranks-property-management-website"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Why Yelp and directories outrank your PM website"
+question = "Why do Yelp and directory sites rank above my property management website, and what can I do?"
+subquestions = ["Why do directories win \"best property manager\" searches?", "Should I claim and fix my directory profiles?", "Can my site outrank them?", "How do directories affect AI answers?"]
+inspired_by = "https://fourandhalf.com/yelp-ranking-higher-than-property-management-website/"
+demand = "Fourandhalf Yelp ranking higher post; our data: Yelp in 35 answers, Expertise.com in 22 (Fridman case study)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "seo-glossary-property-managers"
+cluster = "pm-marketing"
+kind = "glossary"
+title = "SEO terms explained for property managers"
+question = "What do common SEO terms mean for a property management company?"
+subquestions = ["What are SERP, map pack and organic results?", "What is a backlink and domain authority?", "What are crawl and index?", "What is E-E-A-T?"]
+inspired_by = "https://www.clearleaddigital.com/blog/a-guide-seo-terms-explained"
+demand = "ClearLead SEO terms guide; Fourandhalf search-engine-results-page-serp"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "seo-vs-google-ads-property-management"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "SEO vs Google Ads for owner leads"
+question = "Should a property management company invest in SEO or Google Ads first?"
+subquestions = ["Which brings leads faster?", "Which costs less per signed door over 2 years?", "Do paid ads help organic rankings?", "How do I split budget between them?"]
+inspired_by = "https://fourandhalf.com/seo-vs-sem/"
+demand = "Fourandhalf seo-vs-sem and ppc-and-seo benefits; PMW do paid ads affect organic growth"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-franchise-local-seo"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Local SEO for property management franchise offices"
+question = "How does a property management franchise office rank locally when it shares a brand site?"
+subquestions = ["What can a franchisee change on a franchise site?", "How do franchise offices share Google Business Profile rules?", "Can a franchisee run its own blog?", "How do franchise sites handle territory pages?"]
+inspired_by = "https://www.clearleaddigital.com/blog/franchise-website-platform-seo"
+demand = "ClearLead franchise website platform SEO; Goodjuju Bay Area PM franchise case study"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "diy-seo-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Can you do SEO yourself as a property manager?"
+question = "Can a small property management company do its own SEO, and what does it take?"
+subquestions = ["Which SEO tasks can an owner do in a few hours a week?", "Which tasks need an expert?", "Which free tools help?", "When should I hire help?"]
+inspired_by = "https://www.clearleaddigital.com/blog/why-property-managers-struggle-with-seo"
+demand = "ClearLead why PMs struggle with SEO and managed SEO posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "seo-competitor-analysis-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to study local PM competitors for SEO"
+question = "How do I find what my local property management competitors rank for?"
+subquestions = ["Which tools show competitor keywords?", "How do I find content gaps?", "How do I compare reviews and listings?", "Which competitor moves should I copy and which skip?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/competitor-content-gap-analysis-how-weve-studied-every-market-so-you-dont-have-to"
+demand = "PMW competitor content gap analysis post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "eeat-property-management-website"
+cluster = "pm-marketing"
+kind = "guide"
+title = "E-E-A-T for property management websites"
+question = "How can a property management website show experience, expertise and trust to Google and owners?"
+subquestions = ["Who should be the author of PM blog posts?", "Which credentials help (license, NARPM, RMP)?", "How do I show real experience on pages?", "Which trust pages does a PM site need?"]
+inspired_by = "https://fourandhalf.com/eeat-and-content-clusters/"
+demand = "Fourandhalf E-E-A-T post; ClearLead blog author and trust-is-the-new-seo posts"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "google-business-profile-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Google Business Profile guide for property managers"
+question = "How should a property management company set up and optimize its Google Business Profile?"
+subquestions = ["Which fields matter most for ranking?", "Which services and description should I add?", "How often should I post updates and photos?", "How do I link the profile to my site?"]
+inspired_by = "https://gogoodjuju.com/google-business-profile-optimization-for-property-managers/"
+demand = "Goodjuju and ClearLead GBP optimization guides; PMW Google Business whys and hows"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "google-business-profile-categories-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Best Google Business Profile categories for property managers"
+question = "Which Google Business Profile categories should a property management company choose?"
+subquestions = ["What should the primary category be?", "Which secondary categories fit (real estate agency, HOA management)?", "Can wrong categories hurt rankings?", "How do I check competitor categories?"]
+inspired_by = "https://www.clearleaddigital.com/blog/google-business-profile-optimization-guide"
+demand = "GBP optimization guides from ClearLead and Goodjuju"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "google-business-profile-service-area-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Service area or address: GBP setup for property managers"
+question = "Should a property management company show its office address or use a service area on Google Business Profile?"
+subquestions = ["What does Google allow for service-area businesses?", "Can a home-based PM show an address?", "Does a service area change map rankings?", "Can changing the setting trigger a suspension?"]
+inspired_by = "https://localsearchforum.com/threads/confusing-suspension.62910/post-201107"
+demand = "Local Search Forum threads on service-area changes and suspensions"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "google-business-profile-suspended-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "What to do when your PM Google Business Profile is suspended"
+question = "How do I get a suspended Google Business Profile back for my property management company?"
+subquestions = ["Why do Google profiles get suspended?", "What proof does Google ask for in an appeal?", "How long does reinstatement take?", "How do I avoid a second suspension?"]
+inspired_by = "https://wolfpackadvising.com/blog/thousands-just-got-their-google-business-profile-suspended/"
+demand = "Local Search Forum suspension threads; 2026 suspension wave reports"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "google-business-profile-verification-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to verify a Google Business Profile for a PM company"
+question = "How do I verify my property management company on Google Business Profile?"
+subquestions = ["Which verification methods does Google use now?", "What video proof does Google want?", "What if verification fails?", "Can a virtual office be verified?"]
+inspired_by = "https://fourandhalf.com/google-business-profile-verification-for-property-management-companies/"
+demand = "Fourandhalf GBP verification post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "google-business-profile-posts-photos"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Do GBP posts and photos help a property manager rank?"
+question = "Do Google Business Profile posts and photos help a property management company get owner leads?"
+subquestions = ["What should a PM post on its profile?", "How often should I post?", "Which photos build owner trust?", "Can I see results in GBP insights?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/google-my-business-optimization-local-visibility-done-right"
+demand = "PMW GMB optimization; Fourandhalf google-my-business-property-management"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "multiple-google-business-profiles-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Can a PM company have a Google profile in each city?"
+question = "Can a property management company have more than one Google Business Profile for different cities?"
+subquestions = ["What does Google require for a second location?", "Are virtual offices allowed?", "What happens with duplicate profiles?", "How do I rank in a city with no office?"]
+inspired_by = "https://fourandhalf.com/google-local-changes-and-how-this-affects-property-managers/"
+demand = "Fourandhalf rank multiple cities and Google local changes posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-not-showing-on-google-maps"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Why your PM company does not show on Google Maps"
+question = "Why does my property management company not show up in the Google map pack, and how do I fix it?"
+subquestions = ["Is my profile verified and active?", "How does distance from the searcher affect results?", "Do my categories and reviews match competitors?", "Are spam listings pushing me down?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/market-leader-monday---gmb-radius-targeting-removed"
+demand = "Goodjuju report: Google Search and Map Pack bring over half of owner leads; PMW GMB radius post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "local-citations-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Local citations and NAP consistency for property managers"
+question = "Which local citations does a property management company need, and how do I keep them consistent?"
+subquestions = ["What is NAP consistency?", "Which citation sites matter for property managers?", "Should I use a tool like Yext?", "How do I fix old wrong listings?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/directory-citation-creation-a-how-listings-build-local-authority"
+demand = "PMW directory citation and Yext posts; ClearLead local citation management"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "google-local-services-ads-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Can property managers use Google Local Services Ads?"
+question = "Can a property management company run Google Local Services Ads, and are they worth it?"
+subquestions = ["Is property management an eligible LSA category?", "What verification does LSA need?", "How do LSA leads differ from search ads?", "What does an LSA lead cost?"]
+inspired_by = "https://www.webfx.com/digital-advertising/learn/google-local-services-ads-vs-thumbtack/"
+demand = "LSA vs Thumbtack comparisons; LSA verification guides"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "get-more-google-reviews-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to get more Google reviews as a property manager"
+question = "How can a property management company get more Google reviews from owners and tenants?"
+subquestions = ["When is the best time to ask for a review?", "Should I ask owners, tenants or both?", "How do review drip campaigns work?", "How do I make the review link easy?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-best-time-to-ask-for-a-review-and-exactly-what-to-say"
+demand = "PMW best time to ask and review drip posts; Fourandhalf get-tenant-reviews"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "review-request-templates-property-management"
+cluster = "pm-marketing"
+kind = "template"
+title = "Review request templates for property managers"
+question = "What should a property manager say when it asks for a review by email or text?"
+subquestions = ["What is a good review request email to an owner?", "What is a short text request to a tenant?", "When should I send a reminder?", "Which words break Google review rules?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-step-by-step-guide-to-setting-up-review-drip-campaigns"
+demand = "PMW review drip and what-to-say posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "respond-to-negative-reviews-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to respond to negative reviews as a property manager"
+question = "How should a property management company respond to a bad online review?"
+subquestions = ["What should the first reply say?", "How do I reply without breaking tenant privacy?", "When should I take it offline?", "Can a good reply win owners?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/reputation-rescue-responding-to-bad-reviews-with-class"
+demand = "PMW reputation rescue and negative reviews posts; Fourandhalf negative reviews series"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "tenant-reviews-and-owner-leads"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How tenant reviews affect owner leads"
+question = "Do bad tenant reviews stop owners from hiring a property management company?"
+subquestions = ["Why do tenants leave most PM reviews?", "How do owners read tenant complaints?", "How do I prevent avoidable tenant reviews?", "How do I balance tenant and owner reviews?"]
+inspired_by = "https://fourandhalf.com/how-property-managers-handle-negative-tenant-reviews/"
+demand = "Fourandhalf prevent negative tenant reviews and negative review data posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "remove-fake-google-reviews-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to remove fake or unfair Google reviews"
+question = "Which Google reviews can a property management company get removed, and how?"
+subquestions = ["Which reviews break Google policy?", "How do I flag a review?", "What if Google rejects my request?", "Can I take legal action for a fake review?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-to-handle-negative-google-reviews-and-when-to-flag-them"
+demand = "PMW when to flag negative reviews post; Fourandhalf manage inauthentic reviews"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "review-incentives-rules-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Can property managers pay or reward for reviews?"
+question = "Is it legal for a property management company to offer rewards for reviews?"
+subquestions = ["What do Google review policies say about incentives?", "What do FTC rules say about fake reviews?", "Is review gating allowed?", "Which reward programs are safe?"]
+inspired_by = "https://fourandhalf.com/incentivizing-your-online-property-management-reviews/"
+demand = "Fourandhalf incentivizing reviews and paying for 5-star reviews posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "how-many-reviews-property-management-needs"
+cluster = "pm-marketing"
+kind = "data"
+title = "How many reviews a property management company needs"
+question = "How many Google reviews does a property management company need to compete locally?"
+subquestions = ["Do more reviews beat a higher star rating?", "How does review recency matter?", "How do I benchmark against local competitors?", "What review pace should I aim for?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/why-a-steady-stream-of-reviews-beats-a-perfect-star-rating-in-googles-local-rankings"
+demand = "PMW steady stream of reviews and review quality vs quantity posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "yelp-for-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Yelp for property managers: claim, fix or advertise?"
+question = "Should a property management company care about Yelp, and should it pay for Yelp ads?"
+subquestions = ["Why does Yelp filter some reviews?", "Does Yelp show up in AI answers?", "Are Yelp ads worth it for owner leads?", "How do I handle a bad Yelp page?"]
+inspired_by = "https://fourandhalf.com/should-property-managers-focus-on-yelp-or-google-for-online-reviews/"
+demand = "Fourandhalf Yelp vs Google and should-I-advertise-with-Yelp posts; Yelp in 35 answers (Fridman case study)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "reputation-management-software-property-management"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Reputation management tools for property managers compared"
+question = "Which review and reputation management tools do property managers use?"
+subquestions = ["What do tools like Birdeye and Podium do?", "Do PM software platforms include review tools?", "What do these tools cost?", "Do I need a tool below 200 doors?"]
+inspired_by = "https://www.clearleaddigital.com/blog/best-reputation-management-for-property-managers"
+demand = "ClearLead best reputation management; Goodjuju reputation management"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-directories"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Directories every property management company should be on"
+question = "Which online directories should a property management company claim and fix?"
+subquestions = ["Which directories do AI tools cite most?", "Which directories are free?", "Which listings send real owner leads?", "How do I keep directory facts the same everywhere?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/directory-citation-creation-a-how-listings-build-local-authority"
+demand = "Client playbook move 2; our data: Expertise.com source in 93 of 150 answers (H03)"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "expertise-com-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How Expertise.com picks property managers"
+question = "How does Expertise.com choose the best property managers in a city, and can my company get listed?"
+subquestions = ["What criteria does Expertise.com use?", "Can I pay to be listed?", "How often does Expertise.com update its lists?", "Why do AI tools cite Expertise.com?"]
+inspired_by = ""
+demand = "Our H03 data: Expertise.com a source in 93 of 150 answers; 22 answers in Fridman case study"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "all-property-management-leads-review"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Is All Property Management worth it for owner leads?"
+question = "Are paid leads from AllPropertyManagement.com worth it for a property management company?"
+subquestions = ["How does the All Property Management lead model work?", "What does a lead cost?", "How do I measure close rate on these leads?", "What do managers report about lead quality?"]
+inspired_by = ""
+demand = "Paid lead marketplace questions in PMW lead series and pay-per-lead posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "thumbtack-for-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Thumbtack for property managers: does it work?"
+question = "Can a property management company get owner clients from Thumbtack?"
+subquestions = ["How does Thumbtack charge for leads?", "Do owners search Thumbtack for managers?", "Why do AI tools cite Thumbtack lists?", "How do I set up a profile that converts?"]
+inspired_by = "https://leadcapture.io/blog/thumbtack-lead-cost/"
+demand = "Thumbtack lead cost posts; Thumbtack in 17 answers (Fridman case study)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ipropertymanagement-listing"
+cluster = "pm-marketing"
+kind = "guide"
+title = "iPropertyManagement listings for property managers"
+question = "How does a property management company get listed and reviewed on iPropertyManagement?"
+subquestions = ["Is an iPropertyManagement listing free?", "How do its rankings work?", "Do owners use it to choose a manager?", "How do I fix wrong facts on it?"]
+inspired_by = "https://ipropertymanagement.com/guides/property-management-marketing"
+demand = "Client playbook move 2 (iPropertyManagement among listings to fix)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "narpm-membership-owner-leads"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Does NARPM membership bring owner leads?"
+question = "Does NARPM membership and its Find a Manager directory help a property management company get owners?"
+subquestions = ["What does NARPM cost?", "How does the Find a Manager directory work?", "Do designations like RMP help in marketing?", "Do NARPM members refer out-of-area owners?"]
+inspired_by = "https://fourandhalf.com/5-reasons-why-property-managers-should-join-narpm/"
+demand = "Fourandhalf 5 reasons to join NARPM"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "nextdoor-for-property-managers"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Nextdoor for property management companies"
+question = "Can a property management company get owner leads from Nextdoor?"
+subquestions = ["How does a Nextdoor business page work?", "Do neighbors recommend managers on Nextdoor?", "Are Nextdoor ads worth testing?", "What should a PM post there?"]
+inspired_by = ""
+demand = "Local referral channel in Buildium and iPropertyManagement marketing guides"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "pay-per-lead-vs-owned-leads"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Buying leads vs building your own lead flow"
+question = "Should a property management company buy leads or build its own lead sources?"
+subquestions = ["How do pay-per-lead costs change over time?", "Which lead type closes better?", "What do owned channels cost up front?", "How do I mix both?"]
+inspired_by = "https://fourandhalf.com/property-management-marketing-costs-buying-leads-vs-building-platform/"
+demand = "Fourandhalf buying leads vs building a platform and buy-vs-rent analogy posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "biggerpockets-for-property-managers"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How property managers use BiggerPockets to find owners"
+question = "Can a property management company win investor clients on BiggerPockets?"
+subquestions = ["How does the BiggerPockets PM finder work?", "Should I answer forum questions?", "What profile details matter?", "What are the costs?"]
+inspired_by = "https://fourandhalf.com/how-to-use-bigger-pockets-as-a-resource-for-your-property-management-business/"
+demand = "Fourandhalf BiggerPockets post; BiggerPockets member posts on finding a manager"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "property-management-website-cost"
+cluster = "pm-marketing"
+kind = "data"
+title = "What a property management website costs"
+question = "How much does it cost to build and run a property management website?"
+subquestions = ["What do template sites cost per month?", "What does a custom site cost?", "Which add-ons (SEO, listings, chat) raise the price?", "What hidden fees should I watch for?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-much-does-it-cost-to-build-a-property-management-website"
+demand = "PMW website cost post; Goodjuju pm-website-pricing"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-website-must-haves"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Property management website checklist for owner leads"
+question = "What must a property management website have to turn owners into leads?"
+subquestions = ["Which pages must every PM site have?", "What goes above the fold on the home page?", "Which trust signals do owners look for?", "Which forms and calls to action convert?"]
+inspired_by = "https://www.clearleaddigital.com/blog/property-management-website-features"
+demand = "ClearLead website features; PMW website features that convert owners"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-website-conversion-rate"
+cluster = "pm-marketing"
+kind = "data"
+title = "Property management website conversion rate benchmarks"
+question = "What is a good conversion rate for a property management website?"
+subquestions = ["What share of visitors become owner leads?", "How does conversion differ by traffic source?", "Which page changes raise conversion?", "How do I measure my own rate?"]
+inspired_by = "https://gogoodjuju.com/property-management-website-benchmark/"
+demand = "Goodjuju website benchmark and lead source report (CVR by channel); PMW website conversion post"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "template-vs-custom-property-management-website"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Template vs custom website for a PM company"
+question = "Should a property management company use a template website or a custom build?"
+subquestions = ["What does each cost?", "Which ranks better?", "How much can I change on a template?", "When does custom pay off?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/template-vs-custom-website-design-which-site-design-is-right-for-me"
+demand = "PMW template vs custom and specialist vs local guy posts"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-website-vendors-compared"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Property management website vendors compared"
+question = "How do property management website vendors like PMW, Fourandhalf and Goodjuju compare?"
+subquestions = ["What does each vendor include?", "What are the contract terms?", "Who owns the site if I leave?", "Which integrate with my PM software?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/top-10-property-management-websites-2026"
+demand = "PMW top 10 PM websites and best PM websites for owner leads posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "appfolio-buildium-website-vs-custom"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Is the AppFolio or Buildium website enough?"
+question = "Is the website that comes with AppFolio or Buildium good enough to win owner leads?"
+subquestions = ["What do built-in PM software sites include?", "What SEO limits do they have?", "How do listings feed into a custom site?", "When should I move to my own site?"]
+inspired_by = "https://gogoodjuju.com/buildium-website-integration/"
+demand = "Goodjuju Buildium website integration; PMW why your website and software must work together"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-homepage-template"
+cluster = "pm-marketing"
+kind = "template"
+title = "What a property management home page should say"
+question = "What should the home page of a property management website include?"
+subquestions = ["What should the headline say to owners?", "How do I route owners and tenants apart?", "Which proof belongs near the top?", "Where should the main call to action go?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/your-property-management-website-home-page-should-be-a-traffic-cop"
+demand = "PMW home page traffic cop and SEO part 7 home page posts"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "publish-fees-on-property-management-website"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Should you publish your management fees online?"
+question = "Should a property management company publish its fees on its website?"
+subquestions = ["Do owners trust companies that show prices?", "How do I show a full fee table?", "Do public fees help in AI answers?", "How do I show value, not just price?"]
+inspired_by = "https://fourandhalf.com/marketing-a-property-management-company-pricing-website/"
+demand = "Client playbook move 3 (fee table, all 3 competitors); Fourandhalf pricing on website post"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "management-guarantees-marketing"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Do property management guarantees help win owners?"
+question = "Do guarantees like a tenant, pet or cancel-anytime guarantee help a property manager win owners?"
+subquestions = ["Which guarantees do PM companies offer?", "What does each guarantee cost to back?", "Do owners trust guarantees?", "How do I word them on the website?"]
+inspired_by = "https://fourandhalf.com/do-guarantees-work/"
+demand = "Fourandhalf do guarantees work post; client playbook move 3 (owner protections)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-landing-page-template"
+cluster = "pm-marketing"
+kind = "template"
+title = "Owner landing page template for property managers"
+question = "What makes a landing page convert rental owners into leads?"
+subquestions = ["What are the parts of a strong owner landing page?", "How long should the page be?", "Which offer should the page lead with?", "How do I test changes?"]
+inspired_by = "https://fourandhalf.com/5-elements-killer-landing-pages-property-managers/"
+demand = "Fourandhalf killer landing pages and landing page that converts posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-lead-form-best-practices"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to design an owner lead form that converts"
+question = "How many fields should an owner lead form have, and what should it ask?"
+subquestions = ["Is an address-first form better?", "Which fields lower form completion?", "Should I ask for door count and rent?", "Where should the form sit on the page?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/add-forms-to-your-property-management-website-to-increase-conversion"
+demand = "PMW add forms and address-first leads tripled posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "address-only-owner-leads"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "What to do with an address-only owner lead"
+question = "How should a property manager follow up when an owner leaves only a property address?"
+subquestions = ["How do I find the owner from an address?", "Is skip tracing legal for this?", "What first message works?", "How fast should I respond?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/from-address-to-nowwhere-the-cost-of-ignoring-address-only-leads"
+demand = "PMW address-only leads and skip tracing posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "live-chat-chatbot-property-management-website"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Live chat or chatbot on a PM website?"
+question = "Should a property management website use live chat, a chatbot, or neither?"
+subquestions = ["Do chat tools raise owner lead volume?", "How do I keep tenants from flooding chat?", "What does live chat cost?", "Can an AI chatbot answer fee questions?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-benefits-of-live-chat-and-chatbot-for-your-property-management-website"
+demand = "PMW live chat and chatbot posts"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ada-website-compliance-property-management"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "ADA website compliance for property managers"
+question = "Does a property management website need to meet ADA rules, and how do I check it?"
+subquestions = ["Why are PM sites targets of ADA lawsuits?", "Which WCAG checks matter most?", "Do accessibility overlay tools work?", "How do I fix common problems?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/company-websites-that-arent-ada-compliant-becoming-litigation-targets"
+demand = "PMW, ClearLead and Fourandhalf ADA compliance posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "when-to-redesign-property-management-website"
+cluster = "pm-marketing"
+kind = "guide"
+title = "When to redesign your property management website"
+question = "How do I know when my property management website needs a redesign?"
+subquestions = ["Which signs show a site is out of date?", "How often do PM companies rebuild?", "Can a redesign hurt rankings?", "What should I fix before a full redesign?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-benefits-of-rebuilding-your-property-management-website-regularly"
+demand = "PMW rebuilding regularly; ClearLead fire your website designer; Fourandhalf update website"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "who-owns-your-property-management-website"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Do you own your website if you leave your vendor?"
+question = "Do I own my property management website, content and domain if I leave my marketing vendor?"
+subquestions = ["Who holds the domain registration?", "Can I take my blog posts and photos?", "What do vendor contracts say about ownership?", "How do I check before I sign?"]
+inspired_by = "https://www.clearleaddigital.com/blog/the-dangers-of-poorly-managed-websites"
+demand = "ClearLead dangers of poorly managed websites; PMW botched migration post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-faq-page"
+cluster = "pm-marketing"
+kind = "template"
+title = "FAQ page template for a property management company"
+question = "What questions should the FAQ page on a property management website answer?"
+subquestions = ["Which fee questions do owners ask most?", "Which legal and eviction questions belong?", "How long should each answer be?", "Should I add FAQ schema?"]
+inspired_by = "https://fourandhalf.com/the-5-benefits-of-a-faq-for-your-property-management-business/"
+demand = "Fourandhalf 5 benefits of an FAQ post"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "call-tracking-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Call tracking for property management marketing"
+question = "How can a property management company track which marketing brings phone calls from owners?"
+subquestions = ["How does call tracking with dynamic numbers work?", "Does call tracking hurt local SEO?", "Can I record calls for training?", "What does call tracking cost?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/phone-call-tracking--why-you-need-it"
+demand = "PMW call tracking and Google Ads call recording posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rental-analysis-lead-magnet"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Using a free rental analysis to get owner leads"
+question = "How can a free rental analysis bring more owner leads to a property management company?"
+subquestions = ["How many leads can a rental analysis tool generate?", "Should the analysis be instant or manual?", "How do I follow up after the report?", "Which data sources set the rent number?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-many-leads-can-a-rental-analysis-tool-actually-generate"
+demand = "PMW rental analysis leads posts; client playbook move 4"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rental-analysis-report-template"
+cluster = "pm-marketing"
+kind = "template"
+title = "What a free rental analysis report should include"
+question = "What should a property manager include in a rental analysis report for an owner?"
+subquestions = ["Which comps should I show?", "How do I show a rent range, not one number?", "Should I add a vacancy and cost estimate?", "How do I end the report with a next step?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/property-management-leads-rental-analysis"
+demand = "Client playbook move 4 (rental analysis that gives value before the call)"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rent-estimate-tools-for-property-managers"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Rent estimate tools property managers use"
+question = "Which rent estimate tools do property managers use for owner rental analysis?"
+subquestions = ["How do Rentometer, RentCast and Zillow rent estimates differ?", "How accurate are these tools?", "What do they cost?", "Can I embed one on my website?"]
+inspired_by = ""
+demand = "Rental analysis tool posts by PMW; owner rental analysis demand"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "lead-magnets-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Lead magnets that work for property managers"
+question = "Which lead magnets bring owner leads to a property management website?"
+subquestions = ["Do ebooks and owner guides still work?", "Which calculators convert best?", "How do I gate a lead magnet?", "How do I follow up on downloads?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/what-lead-bait-should-a-pm-site-have"
+demand = "PMW what lead bait should a PM site have; Fourandhalf why property managers need ebooks"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "owner-calculators-property-management-website"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Owner calculators for a property management website"
+question = "Which calculators should a property management website offer owners?"
+subquestions = ["How does a rent-vs-sell calculator work?", "How do I build a vacancy loss calculator?", "What inputs does a rental ROI calculator need?", "Do calculators help SEO and AI answers?"]
+inspired_by = "https://fourandhalf.com/roi-calculator/"
+demand = "Client playbook move 5 (rent-vs-sell, vacancy loss, rental ROI); Fourandhalf ROI calculator"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "owner-education-seminars"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Owner education events and seminars as a lead source"
+question = "Can owner education events and investor seminars bring property management clients?"
+subquestions = ["Which topics draw owners to an event?", "Online webinar or in-person?", "How do I promote the event?", "How do I follow up after it?"]
+inspired_by = "https://fourandhalf.com/how-owner-education-events-will-grow-your-portfolio/"
+demand = "Fourandhalf owner education events and real estate investor seminars posts"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "rental-market-report-owner-leads"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How a local rental market report wins owners"
+question = "How can a property management company use a local rental market report to get owner leads?"
+subquestions = ["Which data goes into a monthly market report?", "Where can I get local rent data?", "How do I share the report (email, site, social)?", "How do I turn readers into leads?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/market-data-win-more-owner-listings"
+demand = "PMW market data win more owner listings; data SEO insights post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "google-ads-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Google Ads for property management companies"
+question = "How should a property management company set up Google Ads to get owner leads?"
+subquestions = ["Which campaign type works best for owner leads?", "How do I target the right area?", "Which ad copy attracts owners, not tenants?", "How do I track leads from ads?"]
+inspired_by = "https://gogoodjuju.com/property-management-google-ads/"
+demand = "Goodjuju, ClearLead, PMW and Fourandhalf all publish Google Ads guides for PMs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "google-ads-cost-per-lead-property-management"
+cluster = "pm-marketing"
+kind = "data"
+title = "Google Ads cost per lead for property managers"
+question = "How much does a Google Ads owner lead cost a property management company?"
+subquestions = ["What is a typical cost per click for PM keywords?", "Why can leads pass $300 in big markets?", "How has PM click cost changed since 2018?", "What budget do I need to test ads?"]
+inspired_by = "https://fourandhalf.com/property-management-cpc-since-2018/"
+demand = "Fourandhalf CPC since 2018; PMW true value series (Google Ads leads over $300 in competitive markets)"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "google-ads-negative-keywords-property-management"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Negative keywords for property management Google Ads"
+question = "Which negative keywords stop tenants and job seekers from clicking property management ads?"
+subquestions = ["Which tenant searches waste the most budget?", "How do I block apartment and job searches?", "How do I read the search terms report?", "How often should I update the list?"]
+inspired_by = "https://fourandhalf.com/5-most-common-adwords-mistakes-property-managers-make-when-they-run-their-own-campaigns/"
+demand = "Fourandhalf AdWords mistakes posts; ClearLead owners-not-tenants"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "facebook-ads-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Facebook and Instagram ads for property managers"
+question = "Can Facebook and Instagram ads bring owner leads to a property management company?"
+subquestions = ["Which audiences reach rental owners?", "Which ad offers work on Meta?", "How do lead forms on Meta compare to the website?", "What does a Meta owner lead cost?"]
+inspired_by = "https://gogoodjuju.com/facebook-ads-for-property-managers/"
+demand = "Goodjuju Facebook ads; ClearLead Meta ads for property managers; Fourandhalf Facebook marketing"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "meta-housing-special-ad-category"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Meta housing ad rules for property managers"
+question = "How does Meta's housing special ad category limit property management ads?"
+subquestions = ["Which ads must use the housing category?", "Which targeting options are removed?", "Do owner-service ads count as housing ads?", "How do I still reach owners?"]
+inspired_by = ""
+demand = "Meta ads posts by ClearLead and Goodjuju; Fair Housing limits on ad targeting"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "remarketing-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Remarketing ads for property management companies"
+question = "How can remarketing ads bring back owners who visited my property management website?"
+subquestions = ["How do Google and Meta remarketing differ?", "Which visitors should I target?", "How long should the audience window be?", "Do housing ad rules affect remarketing?"]
+inspired_by = "https://fourandhalf.com/property-management-remarketing-campaigns/"
+demand = "Fourandhalf remarketing campaigns post"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "google-ads-vs-facebook-ads-property-management"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "Google Ads vs Facebook Ads for owner leads"
+question = "Which works better for owner leads: Google Ads or Facebook Ads?"
+subquestions = ["Which has higher intent?", "Which costs less per lead?", "Which closes better?", "When should a PM run both?"]
+inspired_by = "https://fourandhalf.com/marketing-for-property-management-google-vs-facebook/"
+demand = "Fourandhalf Google vs Facebook; Goodjuju report: paid search and social each near 1% of owner leads"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "chatgpt-ads-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "ChatGPT ads for property managers: what we know"
+question = "Can a property management company advertise inside ChatGPT, and should it?"
+subquestions = ["How do ChatGPT ads work?", "Who can buy them now?", "How do ads differ from organic AI mentions?", "How would I track leads from them?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/pmw-now-offers-chatgpt-ads"
+demand = "PMW now offers ChatGPT ads post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "social-media-owner-leads-property-management"
+cluster = "pm-marketing"
+kind = "data"
+title = "Does social media bring owner leads to property managers?"
+question = "Does social media marketing bring owner clients to a property management company?"
+subquestions = ["What share of owner leads comes from social?", "Which platforms do owners use?", "What is social good for if not leads?", "How much time should I spend on it?"]
+inspired_by = "https://gogoodjuju.com/property-management-lead-source-report-2026/"
+demand = "Goodjuju report: social 0.8% of owner leads; Fourandhalf social media posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "linkedin-for-property-managers"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "LinkedIn for property managers: owners and agent referrals"
+question = "How can a property manager use LinkedIn to get owner clients and realtor referrals?"
+subquestions = ["What should a PM LinkedIn profile show?", "How do I connect with local agents?", "Which posts work on LinkedIn?", "Should the company page or the founder post?"]
+inspired_by = "https://fourandhalf.com/how-to-use-linkedin-to-gain-realtor-referrals/"
+demand = "Fourandhalf LinkedIn realtor referrals post"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "youtube-for-property-managers"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "Should a property management company start a YouTube channel?"
+question = "Can a YouTube channel bring owner leads to a property management company?"
+subquestions = ["Which video topics do owners watch?", "How long should videos be?", "What gear do I need?", "How do I link videos to my site?"]
+inspired_by = "https://fourandhalf.com/property-managers-need-youtube-channel/"
+demand = "Fourandhalf YouTube channel and video blog posts; youtube.com cited in 7 AI answers (our report)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "facebook-groups-landlords"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to use local landlord Facebook groups"
+question = "Can a property manager get owner clients from local landlord Facebook groups?"
+subquestions = ["How do I join without breaking group rules?", "Which answers build trust?", "Should I start my own group?", "How do I move from group help to a call?"]
+inspired_by = "https://fourandhalf.com/attract-more-landlords-on-facebook/"
+demand = "Fourandhalf attract more landlords on Facebook post"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "reddit-for-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Should property managers answer landlord questions on Reddit?"
+question = "Can a property management company get visibility and owner trust from Reddit?"
+subquestions = ["Which subreddits do landlords use?", "What do Reddit rules say about self-promotion?", "Why do AI tools cite Reddit threads?", "How do I answer without selling?"]
+inspired_by = ""
+demand = "Our report: reddit.com among most cited sources (8 answers) in our niche"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "email-marketing-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Email marketing for property management companies"
+question = "How can email marketing help a property management company win and keep owners?"
+subquestions = ["Which email lists should a PM build?", "What content do owners open?", "How often should I send?", "Which tools fit a small PM company?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/essential-email-marketing-tips-for-property-managers"
+demand = "PMW email marketing tips; Fourandhalf email marketing for property managers"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-newsletter-property-management"
+cluster = "pm-marketing"
+kind = "template"
+title = "Owner newsletter template for property managers"
+question = "What should a monthly owner newsletter from a property management company include?"
+subquestions = ["Which sections do owners read?", "How do I add local market numbers?", "Should the newsletter ask for referrals?", "How long should it be?"]
+inspired_by = "https://fourandhalf.com/can-newsletters-help-property-management-business/"
+demand = "Fourandhalf can newsletters help post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "email-sender-rules-property-management"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Gmail and Yahoo sender rules for property managers"
+question = "What do Gmail and Yahoo sender rules mean for property management emails?"
+subquestions = ["What are SPF, DKIM and DMARC?", "What spam rate is too high?", "Do I need a one-click unsubscribe?", "How do I check my setup?"]
+inspired_by = "https://fourandhalf.com/2024-gmail-and-yahoo-sender-requirements/"
+demand = "Fourandhalf 2024 Gmail and Yahoo sender requirements post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-lead-nurture-email-sequence"
+cluster = "pm-marketing"
+kind = "template"
+title = "Email nurture sequence for owner leads"
+question = "What emails should a property manager send to an owner lead who is not ready to sign?"
+subquestions = ["What should the first email say?", "How many emails over how many weeks?", "Which content moves owners to a call?", "When should I stop?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/stand-out-from-the-first-click-how-custom-postcards-personalized-emails-win-more-owners"
+demand = "PMW sales cycle and personalized emails posts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "direct-mail-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Direct mail for property management owner leads"
+question = "Does direct mail still bring owner leads to property management companies?"
+subquestions = ["Which mail pieces get responses?", "How many times should I mail one list?", "What does a campaign cost?", "How do I track mail leads?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/postcards-arent-dead-how-direct-mail-still-converts-in-2025"
+demand = "PMW postcards aren't dead; Fourandhalf direct mail and data-driven direct mail posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "find-rental-owners-for-marketing"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to find rental owners to market to"
+question = "How can a property management company build a list of local rental owners and absentee owners?"
+subquestions = ["How do I use county property records?", "What is an absentee owner list?", "Can I find landlords from rental listings?", "What data rules apply?"]
+inspired_by = "https://fourandhalf.com/data-driven-direct-mail-marketing-for-property-management/"
+demand = "Fourandhalf data-driven direct mail post; PMW skip tracing post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "cold-calling-texting-rental-owners-rules"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Cold calling and texting rental owners: the rules"
+question = "Can a property manager cold call or text rental owners, and which rules apply?"
+subquestions = ["What does the Do Not Call registry mean for PMs?", "What does the TCPA say about texts?", "What is A2P 10DLC registration?", "How do I keep consent records?"]
+inspired_by = ""
+demand = "Cold calls and cold emails listed as a tactic in TurboTenant and Hemlane client guides"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "for-rent-by-owner-outreach"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to reach for-rent-by-owner landlords"
+question = "How can a property management company reach landlords who list their rentals themselves?"
+subquestions = ["Where do FRBO landlords list?", "What first message is helpful, not pushy?", "When is the best time to reach out?", "Which offer works for FRBO owners?"]
+inspired_by = "https://fourandhalf.com/property-management-marketing-zumper-facebook-marketplace/"
+demand = "Fourandhalf Zumper and Facebook Marketplace post; self-managing landlord posts"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "realtor-referral-program-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to build a realtor referral program"
+question = "How can a property management company get steady owner referrals from real estate agents?"
+subquestions = ["Why do agents refer owners to managers?", "How do I promise to send buyers and sellers back?", "What referral fee is normal?", "How do I stay top of mind with agents?"]
+inspired_by = "https://fourandhalf.com/realtor-referral-program/"
+demand = "Fourandhalf realtor referral program; Buildium and iPropertyManagement guides name agents as top partners"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "referral-fee-rules-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Can a property manager pay referral fees?"
+question = "Can a property management company pay a referral fee to an owner, tenant or unlicensed person?"
+subquestions = ["What do state license laws say about referral fees?", "Can I pay a licensed agent?", "Are gift cards for owners allowed?", "How do I write a referral agreement?"]
+inspired_by = ""
+demand = "Referral program posts by Fourandhalf and Referral Rock raise the fee question"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "owner-referral-program-property-management"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to get more referrals from current owners"
+question = "How can a property management company get more referrals from the owners it already serves?"
+subquestions = ["When should I ask an owner for a referral?", "Do referral rewards work?", "Which software tracks referrals?", "What do referred owners expect?"]
+inspired_by = "https://fourandhalf.com/create-property-management-referral-program/"
+demand = "Fourandhalf create referral program and get more owner referrals; Goodjuju report: referral 3.7% of leads"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "referral-partners-property-management"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "Referral partners that send owners to property managers"
+question = "Which local businesses and professionals can send owner referrals to a property management company?"
+subquestions = ["Do lenders, title companies and attorneys refer owners?", "Can vendors and contractors refer owners?", "Do relocation companies send leads?", "How do I start each partnership?"]
+inspired_by = "https://fourandhalf.com/get-vendors-grow-owner-portfolio/"
+demand = "Fourandhalf vendors grow portfolio and referral relationships posts; Buildium partner list"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-lead-follow-up"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to follow up with owner leads"
+question = "How fast and how often should a property manager follow up with a new owner lead?"
+subquestions = ["How fast should the first reply be?", "How many follow-ups before I stop?", "Which channel works best: call, text or email?", "Which phone habits lose leads?"]
+inspired_by = "https://fourandhalf.com/how-to-follow-up-with-a-property-management-lead/"
+demand = "Fourandhalf follow-up posts and 4 bad phone practices; PMW sales cycle"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "owner-sales-call-script"
+cluster = "pm-marketing"
+kind = "template"
+title = "Sales call script for owner leads"
+question = "What should a property manager say on the first sales call with a rental owner?"
+subquestions = ["How do I open the call?", "Which discovery questions matter most?", "How do I present fees?", "How do I close for a next step?"]
+inspired_by = "https://fourandhalf.com/the-art-of-the-sale-for-property-managers-part-2-discovery/"
+demand = "Fourandhalf art of the sale series (4 parts) and sales call post"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "questions-owners-ask-property-managers"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Questions owners ask property managers, with good answers"
+question = "Which questions do rental owners ask a property manager before they sign, and how should I answer?"
+subquestions = ["Which fee questions come first?", "How do I explain tenant screening?", "How do I answer \"what if the tenant does not pay\"?", "Which answers belong on my website too?"]
+inspired_by = "https://fourandhalf.com/5-questions-owner-leads-ask-property-managers/"
+demand = "Fourandhalf 5 questions owner leads ask; Fourandhalf why homeowners ask how much do you cost"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "qualify-owner-leads"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "How to qualify owner leads before the call"
+question = "How do I tell if an owner lead is a good fit before I spend time on it?"
+subquestions = ["Which questions show fit?", "Which properties should I decline?", "How do I screen on the form?", "How do I say no politely?"]
+inspired_by = "https://fourandhalf.com/qualify-property-management-leads/"
+demand = "Fourandhalf qualify leads and 4 types of leads posts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-objections-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "How to answer owner objections on fees and control"
+question = "How should a property manager answer owners who say the fee is too high or they want control?"
+subquestions = ["How do I answer \"your fee is too high\"?", "How do I answer \"I can do it myself\"?", "How do I answer \"I had a bad manager before\"?", "Which proof helps each answer?"]
+inspired_by = "https://fourandhalf.com/why-homeowners-ask-how-much-do-you-cost/"
+demand = "Fourandhalf why homeowners ask how much do you cost and taking owners from fear to trust"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "management-proposal-template"
+cluster = "pm-marketing"
+kind = "template"
+title = "Property management proposal template for owners"
+question = "What should a property management proposal to an owner include?"
+subquestions = ["Which sections does a proposal need?", "How do I show fees clearly?", "Should I add a rental analysis?", "How fast should I send it?"]
+inspired_by = "https://fourandhalf.com/the-art-of-the-sale-for-property-managers-part-3-presentation-close/"
+demand = "Fourandhalf art of the sale part 3 (presentation and close)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-crm-for-owner-leads"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "CRM options for tracking owner leads"
+question = "Which CRM should a property management company use to track owner leads?"
+subquestions = ["Do LeadSimple, HubSpot or GoHighLevel fit PM sales?", "Does my PM software have a lead CRM?", "What should a lead pipeline look like?", "What do these tools cost?"]
+inspired_by = "https://www.clearleaddigital.com/blog/gohighlevel-crm-for-property-management"
+demand = "ClearLead GoHighLevel CRM; PMW best CRM for owner leads; Goodjuju JujuConvert CRM; Rentvine owner lead portal"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "why-owner-leads-do-not-sign"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Why owner leads do not sign, and how to fix the leak"
+question = "Why do owner leads not turn into signed management agreements?"
+subquestions = ["Where do leads drop out of the funnel?", "Is slow response the main cause?", "Do unclear fees stop owners?", "How do I find my own leak?"]
+inspired_by = "https://fourandhalf.com/property-management-leaky-sales-funnel/"
+demand = "Fourandhalf leaky sales funnel, 6 ways PM companies lose business"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "mystery-shop-property-management-company"
+cluster = "pm-marketing"
+kind = "checklist"
+title = "How to mystery shop your own PM company"
+question = "How can a property management company test its own lead handling the way an owner would?"
+subquestions = ["How do I set up a test lead?", "What should I time and record?", "How do I check calls, forms and chat?", "How do I compare with competitors?"]
+inspired_by = "https://fourandhalf.com/4-bad-phone-practices-that-can-lose-property-management-leads/"
+demand = "Fourandhalf bad phone practices and is my website losing me business posts"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "owner-lead-attribution"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to know where your owner leads come from"
+question = "How can a property management company find out which channel brought each owner lead?"
+subquestions = ["How do I tag leads by source in a CRM?", "Should I ask \"how did you hear about us\"?", "Why does GA4 miss some leads?", "How do I report signed doors by source?"]
+inspired_by = "https://gogoodjuju.com/property-management-lead-source-report-2026/"
+demand = "Goodjuju report section on how to know where owner leads come from (GA4 undercounts AI leads)"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "business-development-manager-property-management"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Should a property management company hire a BDM?"
+question = "When should a property management company hire a business development manager, and how should it pay one?"
+subquestions = ["At what door count does a BDM pay off?", "What does a good BDM do each week?", "How should a BDM be paid?", "Which KPIs measure a BDM?"]
+inspired_by = "https://fourandhalf.com/property-management-bdm/"
+demand = "Fourandhalf good BDM, property management BDM and compensate salesperson posts"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "real-estate-license-advertising-rules"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Advertising rules for licensed property managers"
+question = "What must a property management company include in ads and on its website under real estate license law?"
+subquestions = ["Must ads show the broker name?", "Do I need a license number on the site?", "Which claims can get me in trouble?", "How do rules differ by state?"]
+inspired_by = ""
+demand = "Starting a PM company and licensing questions in ClearLead start-a-company guide"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-case-study-template"
+cluster = "pm-marketing"
+kind = "template"
+title = "How to write an owner case study"
+question = "How should a property management company write a case study that wins new owners?"
+subquestions = ["Which results should a case study show?", "How do I get owner consent?", "What do FTC endorsement rules require?", "Where should case studies live on the site?"]
+inspired_by = "https://gogoodjuju.com/goodjuju-reviews-and-client-case-studies/"
+demand = "Goodjuju and PMW publish many client case studies"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-tools-for-property-management-marketing"
+cluster = "pm-marketing"
+kind = "comparison"
+title = "AI tools for property management marketing"
+question = "Which AI tools help a property management company with marketing tasks?"
+subquestions = ["Which tools write and edit content?", "Which tools help with ads and reports?", "Which tools answer leads?", "What should a person still check?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/best-ai-tools-for-property-management-marketing-lead-generation"
+demand = "PMW best AI tools; ClearLead best AI for property management; Fourandhalf ChatGPT for marketing"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-management-marketing"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to market Section 8 management to owners"
+question = "How can a property management company win owners who rent to Housing Choice Voucher tenants?"
+subquestions = ["What do Section 8 owners worry about?", "Which facts (FMR, payment standards) should my page show?", "Which owners search for Section 8 managers?", "How do I show inspection experience?"]
+inspired_by = ""
+demand = "Client playbook: only ClearLead has a narrow Section 8 owner idea; Fridman named in 0 of 6 Section 8 answers"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "expand-property-management-to-new-market"
+cluster = "pm-marketing"
+kind = "how-to"
+title = "How to market a PM company in a new city"
+question = "How do I market my property management company when I expand into a new city?"
+subquestions = ["Do I need a local office for Google?", "How do I get first reviews in the new market?", "Which partners help in a new city?", "How long until leads come?"]
+inspired_by = "https://fourandhalf.com/how-to-expand-into-a-new-market-without-acquisition/"
+demand = "Fourandhalf expand into a new market without acquisition post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "leasing-only-offer-to-win-owners"
+cluster = "pm-marketing"
+kind = "guide"
+title = "Can a leasing-only service win full-management owners?"
+question = "Should a property management company offer tenant placement only to win owners for full management later?"
+subquestions = ["What do leasing-only fees look like?", "How many leasing-only owners convert?", "How do I market leasing-only without cheapening my brand?", "What should the agreement say about upgrades?"]
+inspired_by = "https://fourandhalf.com/expand-property-management-services/"
+demand = "Fourandhalf expand services post; services page demand (PMW part 8)"
+priority = 4
+status = "planned"
