@@ -1,6 +1,6 @@
 ---
 title: "What Does 'Doors' Mean in Property Management? — Citata.ai"
-description: "A door is one rentable unit under management. Learn how managers count doors, why software and fees price per door, staffing ratios, and how companies grow door count."
+description: "A door is one rentable unit under management. See how managers count doors, why software and fees price per door, staff ratios, and how to grow door count."
 headline: "What a Door Means in Property Management"
 dek: "One door is one rentable unit. Here is why the whole industry counts them."
 published: "2026-10-19"
@@ -61,6 +61,20 @@ Property management companies count doors because almost every cost and every do
 - **Company size.** Door count and fee per door give a quick, fair way to compare 2 companies.
 
 Worked example: you manage 180 doors at an average rent of $1,700 and an 8% fee. Monthly fee revenue is 180 × $1,700 × 0.08 = $24,480. That is $136 per door per month. At $1.49 per unit, software at list price is at least $268 a month, about 1.1% of fee revenue, before any minimum spend.
+
+## How do you count doors in edge cases?
+
+You count doors in edge cases by asking one question: does this space have its own lease and its own rent? If yes, it is a door. Write your rule down, so every report and every quote uses the same count.
+
+| Case | Count as a door? |
+|---|---|
+| Vacant unit you manage | Yes, it is still under management |
+| Room rented by the bed, with separate leases | Count each lease, and say so in reports |
+| Garage or parking space leased on its own | Track it apart, not as a door |
+| Commercial space in a mixed-use building | Track it apart, as commercial units |
+| HOA homes you serve for the association | Track as association units, not rental doors |
+
+Watch for: quotes from software vendors. Ask how they count units before you sign, because a per-unit price depends on that count.
 
 ## How many doors does a property manager handle?
 
