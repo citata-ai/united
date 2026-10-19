@@ -1,6 +1,6 @@
 ---
 title: "Zero-Click Search: How Many PM Searches End Without a Click — Citata.ai"
-description: "About 58.5% of US Google searches end with no click, and AI Overviews cut clicks to result 1 by 58%. What it means for property managers and what still gets clicks."
+description: "58.5% of US Google searches end with no click, and AI Overviews cut clicks to result 1 by 58%. What it means for property managers, and what still gets clicks."
 headline: "Zero-Click Search for Property Management Companies"
 dek: "Most Google searches now end on Google. Here is the data, query by query."
 published: "2026-10-19"
@@ -127,7 +127,7 @@ Checklist:
 
 - **Put one direct answer per question** at the top of a page or section. Write your real fee, for example "8% of collected rent", not "competitive pricing".
 - **Fill your Google Business Profile.** Add your categories, service area, hours, phone and a short description with your door count and cities.
-- **Fix your listings.** In our test of 150 AI answers for "best property management company" in 50 US cities, Expertise.com was a source in 93 answers, and Yelp and iPropertyManagement in 50 each (our data, 2026-10-19).
+- **Fix your listings.** We tested 150 AI answers for "best property management company" in 50 US cities. Expertise.com was a source in 93 answers, Yelp and iPropertyManagement in 50 each (our data, 2026-10-19).
 - **Ask for honest reviews** from owners and tenants after real events, such as a lease signed or a repair done.
 - **Track branded searches** in Search Console. More searches for your name can be a sign that AI answers name you.
 
