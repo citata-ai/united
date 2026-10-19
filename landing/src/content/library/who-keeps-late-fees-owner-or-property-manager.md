@@ -1,6 +1,6 @@
 ---
-title: "Who Keeps Late Fees: Rental Owner or Property Manager? \u2014 Citata.ai"
-description: "The lease governs tenant charges; the management agreement should define allocation. Check local caps, grace periods and payment rules before splitting late fees."
+title: "Who Keeps Late Fees: Owner or Property Manager? \u2014 Citata.ai"
+description: "The lease governs tenant charges; the management agreement defines allocation. Check local caps, grace periods and payment rules before splitting late fees."
 headline: "Who Should Keep Tenant Late Fees?"
 dek: "Agree the allocation separately from the legal right to charge a resident."
 published: "2026-10-19"

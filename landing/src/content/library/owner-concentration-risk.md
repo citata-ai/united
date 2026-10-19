@@ -1,6 +1,6 @@
 ---
-title: "Owner Concentration Risk: Measure Fees, Doors and Cash — Citata.ai"
-description: "Measure owner concentration by doors, recurring fees and profit. Test a large owner's departure, protect service quality, and reduce dependence without weak sales."
+title: "Owner Concentration Risk: Fees, Doors and Cash — Citata.ai"
+description: "Measure owner concentration by doors, recurring fees and profit. Test a large owner's departure, protect service, and reduce dependence with sound sales."
 headline: "Measure and Reduce Owner Concentration Risk"
 dek: "Count the fees and cash at risk when a large owner leaves."
 published: "2026-10-19"

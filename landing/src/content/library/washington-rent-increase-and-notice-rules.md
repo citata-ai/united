@@ -66,7 +66,7 @@ This is general information, not legal advice. Check the current law or ask a lo
 
 ## Does Washington have a cap on rent increases or rent control?
 
-Yes. Since 2025, Washington has a statewide cap on rent increases. RCW 59.18.700 says a landlord may not increase rent in any 12-month period by more than 7% plus the consumer price index, or 10%, whichever is less. The cap applies to month-to-month tenancies and to fixed terms of any length.
+Yes. Since 2025, Washington has a statewide cap on rent increases. Under RCW 59.18.700, a rent increase in any 12 months may not exceed 7% plus the consumer price index, or 10%, whichever is less. The cap applies to month-to-month tenancies and to fixed terms of any length.
 
 The Department of Commerce publishes the number each July. It uses the June 12-month change in the CPI for all urban consumers in the Seattle area. Commerce's Landlord Resource Center shows the 2026 math:
 

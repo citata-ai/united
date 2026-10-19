@@ -1,6 +1,6 @@
 ---
 title: "PM Acquisition Earnouts: Retention and Clawback Terms — Citata.ai"
-description: "An earnout pays part of a purchase price after agreed performance tests, while a retention clawback can reduce value for lost accounts."
+description: "Define PM acquisition earnouts and retention clawbacks with an account schedule, payment formula and review rights. Compare cash timing and risk before signing."
 headline: "Define Earnouts Before You Sell Your Company"
 dek: "Separate cash at close from later payments and define who controls the result."
 published: "2026-10-19"

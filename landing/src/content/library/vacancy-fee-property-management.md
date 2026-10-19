@@ -1,6 +1,6 @@
 ---
 title: "Vacancy Fees for Property Managers: Scope and Pricing — Citata.ai"
-description: "Charge a vacancy fee only for defined work and clear value. Compare vacant-home oversight, a monthly minimum and no-rent-no-fee pricing before changing agreements."
+description: "Charge a vacancy fee for defined work with clear value. Compare vacant-home oversight, a monthly minimum and no-rent-no-fee pricing before changing a contract."
 headline: "Decide Whether to Charge a Vacancy Fee"
 dek: "Price the work on an empty home and show owners what they receive."
 published: "2026-10-19"

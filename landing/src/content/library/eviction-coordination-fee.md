@@ -1,6 +1,6 @@
 ---
 title: "Eviction Coordination Fees: Price the Work and Scope — Citata.ai"
-description: "Set an eviction coordination fee from staff work, not a claimed national rate. Separate legal bills, court costs, guarantees and owner approvals in the agreement."
+description: "Set an eviction coordination fee from staff work, not a claimed national rate. Separate legal bills, court costs, guarantees and owner approvals in a contract."
 headline: "Price Eviction Coordination With Clear Scope"
 dek: "Separate your service fee from legal work and costs paid to others."
 published: "2026-10-19"

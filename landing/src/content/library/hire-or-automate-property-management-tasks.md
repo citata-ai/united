@@ -1,6 +1,6 @@
 ---
 title: "Hire or Automate Property Management Tasks: A Decision Guide — Citata.ai"
-description: "Automate repeatable property management steps with clear inputs, rules and review paths."
+description: "Automate repeat property management steps and keep people responsible for judgment. Compare full costs, test exceptions and check the work left for your staff."
 headline: "Choose Which Management Tasks Need a Person"
 dek: "Automate repeat steps, keep judgment with staff and measure the work left behind."
 published: "2026-10-19"

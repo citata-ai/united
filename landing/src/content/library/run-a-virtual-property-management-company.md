@@ -1,6 +1,6 @@
 ---
-title: "Run a Virtual Property Management Company With Local Help — Citata.ai"
-description: "A virtual property management company still needs local field support. Plan showings, access, inspections, remote work and owner updates before closing an office."
+title: "Run a Virtual Property Management Company — Citata.ai"
+description: "A virtual property management company still needs local field support. Plan showings, access, inspections, team work and owner updates before closing an office."
 headline: "Run a Virtual Property Management Company"
 dek: "Move desk work online while keeping clear control of local field work."
 published: "2026-10-19"

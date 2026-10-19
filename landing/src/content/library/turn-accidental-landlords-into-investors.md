@@ -1,5 +1,5 @@
 ---
-title: "Help Accidental Landlords Become Long-Term Rental Owners — Citata.ai"
+title: "Help Accidental Landlords Plan Long-Term Ownership — Citata.ai"
 description: "Keep accidental landlords through clear reports and honest rent-or-sell reviews. Help owners assess repairs, cash needs and growth without pressure to buy more."
 headline: "Help Accidental Landlords Plan Their Next Step"
 dek: "Use clear property facts to support an owner's choice to hold, sell or grow."

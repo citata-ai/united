@@ -1,6 +1,6 @@
 ---
-title: "Property Management Wire Fraud: Protect Payouts and Data — Citata.ai"
-description: "Protect owner payouts with verified bank changes, separate approvals and incident plans. Check cyber and crime policy terms before relying on insurance for fraud."
+title: "Property Management Wire Fraud: Protect Payouts — Citata.ai"
+description: "Protect owner payouts with verified bank changes, separate approvals and incident plans. Check cyber and crime policy terms before relying on fraud coverage."
 headline: "Protect Owner Payouts and Resident Data"
 dek: "Verify payment changes through a trusted route before money leaves an account."
 published: "2026-10-19"

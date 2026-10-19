@@ -1,5 +1,5 @@
 ---
-title: "Unlicensed Property Management Staff: Tasks and Limits — Citata.ai"
+title: "Unlicensed Management Staff: Tasks and Limits — Citata.ai"
 description: "Set task limits for unlicensed property management staff. Use Texas and California examples, broker review and clear scripts before assigning leasing or access."
 headline: "Set Limits for Unlicensed Management Staff"
 dek: "Assign tasks by state rules and actual conduct, not by job title."

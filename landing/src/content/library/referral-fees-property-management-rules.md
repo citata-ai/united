@@ -1,6 +1,6 @@
 ---
 title: "Property Management Referral Fees: Rules and Checks \u2014 Citata.ai"
-description: "Check state licensing rules before paying referral fees. Use broker-approved terms, verify the recipient and disclose outside compensation where the law requires."
+description: "Check state licensing rules before paying referral fees. Use approved terms, verify the recipient and disclose outside compensation where the law requires."
 headline: "Property Management Referral Fees and Legal Checks"
 dek: "A referral program starts with license checks, payment authority and clear owner disclosures."
 published: "2026-10-19"

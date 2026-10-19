@@ -1,6 +1,6 @@
 ---
 title: "Property Manager Job Description: Duties, Pay and Goals — Citata.ai"
-description: "A residential property manager job description should state the portfolio scope, daily duties, decision authority, required credentials and pay terms."
+description: "Use a residential property manager job description template with duties, authority, pay and early goals. Check local license and hiring rules before posting."
 headline: "Write a Clear Property Manager Job Description"
 dek: "Use this role template to state duties, authority, pay and the first review goals."
 published: "2026-10-19"

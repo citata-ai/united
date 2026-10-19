@@ -1,6 +1,6 @@
 ---
 title: "When to End an Owner Client Agreement and How to Exit — Citata.ai"
-description: "End an owner relationship when documented conduct, funding failures or service mismatch makes continued management unsafe or unsustainable."
+description: "End an owner agreement using facts about service fit, conduct and funding. Check local duties, plan the handover and reconcile the account before the last bill."
 headline: "End an Owner Agreement With Clear Records"
 dek: "Use service fit, conduct and funding facts to decide whether the relationship can continue."
 published: "2026-10-19"

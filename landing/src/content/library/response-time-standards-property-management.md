@@ -1,5 +1,5 @@
 ---
-title: "Property Management Response Times: Set Clear Standards — Citata.ai"
+title: "Property Management Response Times: Clear Standards — Citata.ai"
 description: "Set property management response times by urgency, channel and staffing. Track the first useful reply, keep owners informed, and separate replies from repairs."
 headline: "Set Clear Property Management Response Times"
 dek: "Promise a useful reply, assign a backup, and show what happens next."

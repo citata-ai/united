@@ -37,7 +37,7 @@ sources:
 
 ## Which numbers go into property management SEO ROI?
 
-SEO ROI needs 4 numbers: what SEO costs, how many owner leads it brings, how many of those leads sign, and what one signed owner is worth. Everything else is detail. Get these 4 right and the answer is simple math.
+SEO ROI needs 4 numbers: SEO cost, owner leads, close rate, and the value of one signed owner. Everything else is detail. Get these 4 right and the answer is simple math.
 
 | Input | Where you get it | Example value |
 |---|---|---|
@@ -83,7 +83,7 @@ Watch for "Direct" traffic. In the same report, Direct / Maps brought 35.6% of o
 
 ## How long until SEO pays back?
 
-Property management SEO usually takes months, not weeks, to pay back. Goodjuju's pricing FAQ gives its own estimate: 2–4 months if the site and rankings are already decent, 6–10 months from a low start in a mid-size market, and 12–18 months in the most competitive metros.
+Property management SEO usually takes months, not weeks, to pay back. Goodjuju's pricing FAQ gives its own estimate. It is 2–4 months if the site already ranks well. From a low start in a mid-size market, it is 6–10 months. In the most competitive metros, it is 12–18 months.
 
 Payback month is the month when total fee revenue from organic owners passes total SEO spend. Use monthly fees, not the 36-month value, for this check. This table assumes a slow start: no new owners in months 1–3, then about 1 new owner a month, each paying $180 a month.
 

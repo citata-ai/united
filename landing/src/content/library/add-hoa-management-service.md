@@ -1,6 +1,6 @@
 ---
 title: "Should Your Property Management Firm Add HOA Work? \u2014 Citata.ai"
-description: "HOA management needs board support, association accounting and a distinct scope. Check licensing, price meeting work and test capacity before adding the service."
+description: "HOA management needs board support, association accounting and a distinct scope. Check licensing, price meeting work and test capacity before adding service."
 headline: "Should Your Company Add HOA Management?"
 dek: "Community association work needs its own service model, records and board communication process."
 published: "2026-10-19"

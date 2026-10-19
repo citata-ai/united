@@ -1,6 +1,6 @@
 ---
 title: "Flat Fee vs Percentage: Calculate the Break-Even Rent — Citata.ai"
-description: "Divide the monthly flat fee by the percentage rate as a decimal to find the rent where management fee revenue is equal."
+description: "Find equal fee revenue by dividing a flat fee by the percentage rate as a decimal. Compare scope, rent growth, vacancy terms and service costs before choosing."
 headline: "Find Your Flat Fee Break-Even Rent"
 dek: "Compare equal service scopes, collection rules and costs before you choose a fee model."
 published: "2026-10-19"

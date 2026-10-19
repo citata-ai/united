@@ -1,5 +1,5 @@
 ---
-title: "Property Management Indemnity: Terms to Review With Counsel — Citata.ai"
+title: "Property Management Indemnity: Terms to Review — Citata.ai"
 description: "Review a management indemnity clause by claim, fault and insurance. Define defense duties, exclusions and additional-insured terms with counsel and your broker."
 headline: "Review Your Property Management Indemnity Clause"
 dek: "Match the contract's risk terms to the work and coverage you actually have."

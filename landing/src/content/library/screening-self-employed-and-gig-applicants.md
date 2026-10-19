@@ -107,4 +107,4 @@ Use this recommended review sequence:
 
 Browse the [guide library](/guides) for related rental operations. Your next step is to write the evidence policy before the next application arrives.
 
-This is general information, not legal advice. Check the current law or ask a local attorney.
+This is general information, not legal advice. Check the current law or ask a local attorney. For tax questions, ask a tax professional.

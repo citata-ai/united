@@ -1,6 +1,6 @@
 ---
 title: "Should Property Managers Publish Their Fees Online? \u2014 Citata.ai"
-description: "Publish a clear owner fee table with scope, billing terms and exclusions. Test signed clients and service margin rather than judging success by lead volume alone."
+description: "Publish an owner fee table with scope, billing terms and exclusions. Test signed clients and service margin rather than judging success by lead volume alone."
 headline: "Should You Publish Property Management Fees?"
 dek: "A public fee table helps owners compare scope before they book a call."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
-title: "Property Management Agreement Terms: Length and Renewal \u2014 Citata.ai"
-description: "Choose an agreement term from service costs and exit needs. State renewal, notice and handoff terms clearly; a longer contract does not prove stronger retention."
+title: "Management Agreement Terms: Length and Renewal \u2014 Citata.ai"
+description: "Choose an agreement term from service costs and exit needs. State renewal, notice and handoff terms; a longer contract does not prove stronger retention."
 headline: "Choose a Property Management Agreement Term"
 dek: "Match contract length to the work, then make renewal and exit steps clear."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
 title: "Weekly Property Management Scorecard: Team Template — Citata.ai"
-description: "Use a weekly property management scorecard to track company cash, owner changes, leasing and service. Assign each metric a source, a lead and a clear next action."
+description: "Use a weekly property management scorecard to track company cash, owner changes, leasing and service. Assign each metric a source, a lead and a next action."
 headline: "Build a Useful Weekly Management Scorecard"
 dek: "Choose numbers your team can act on and give each a clear owner."
 published: "2026-10-19"

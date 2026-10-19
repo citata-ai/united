@@ -1,6 +1,6 @@
 ---
 title: "After-Hours Maintenance: Coverage, Costs and Vendor Rules — Citata.ai"
-description: "Handle after-hours maintenance with a written triage plan, a staffed contact route and vendors who confirm each dispatch."
+description: "Set after-hours maintenance coverage with safe triage, staffed contacts, confirmed vendor dispatch and clear costs. Test the backup before an urgent call."
 headline: "Set Up After-Hours Emergency Maintenance Coverage"
 dek: "Define the response, assign a person and test the backup before an urgent call."
 published: "2026-10-19"

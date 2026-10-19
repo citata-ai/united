@@ -41,6 +41,8 @@ A unit year measures management over time, not just the number of homes on today
 
 Short overview wording can be less precise than the checklist. If a page describes units while the application describes unit years, ask NARPM to confirm the intended measure. Do not guess based on a search snippet.
 
+NARPM's RMP checklist calls for 18 hours of NARPM education and its ethics course. It also requires 50 elective points. Check the listed conditions and evidence rules before choosing activities.
+
 Build a candidate folder with the checklist, proof of work, course records and recommendations. Keep private owner and resident details out of unnecessary copies. Ask NARPM how to submit sensitive evidence safely.
 
 Assign time for the application work as well as classes. A plan that covers tuition but ignores document gathering can stall before submission.
@@ -50,6 +52,8 @@ Assign time for the application work as well as classes. A plan that covers tuit
 Master Property Manager builds on the RMP and adds its own experience and development requirements. NARPM's MPM checklist specifies an existing RMP and 500 unit years. It also sets education, recommendation and participation requirements.
 
 Use the current MPM checklist to assess gaps. Do not assume every course or service record from RMP automatically satisfies the next designation. Ask NARPM to confirm any credit or alternate path before booking work.
+
+NARPM's MPM checklist calls for 24 hours of education and its ethics course. It sets 200 elective points, including credit from the RMP. It also specifies license-experience evidence where a license is required. Confirm your particular path with NARPM.
 
 Treat the process as a professional development project. Choose learning that addresses weak parts of your management system. A credential has more practical value when staff use the resulting skills.
 

@@ -1,6 +1,6 @@
 ---
 title: "Wisconsin Eviction Process: 5-Day and 14-Day Notices, Court — Citata.ai"
-description: "A Wisconsin eviction starts with a 5-day pay-or-vacate or 14-day notice. File in small claims court; the return date is 5 to 25 days out, and the sheriff executes the writ."
+description: "A Wisconsin eviction starts with a 5-day pay-or-vacate or 14-day notice. File in small claims court; the return date is 5 to 25 days out. The sheriff removes."
 headline: "Wisconsin Eviction Process for Landlords"
 dek: "5-day, 14-day and 28-day notices, small claims court and a sheriff's writ."
 published: "2026-10-19"
@@ -58,7 +58,7 @@ This is general information, not legal advice. Check the current law or ask a lo
 
 The notice depends on the type of tenancy. Wis. Stat. 704.17 defines "rent" to include past-due rent and late fees owed on it.
 
-**Month-to-month or week-to-week tenant.** You may give a notice to pay rent or vacate by a date at least 5 days after the notice. If the tenant does not pay, the tenancy ends. Or, while the tenant is in default, you may give a notice to vacate at least 14 days out, with no right to pay and stay (Wis. Stat. 704.17(1p)(a)).
+**Month-to-month or week-to-week tenant.** You may give a notice to pay rent or vacate by a date at least 5 days after the notice. If the tenant does not pay, the tenancy ends. Or, while the tenant is in default, give a notice to vacate at least 14 days out. That notice gives no right to pay and stay (Wis. Stat. 704.17(1p)(a)).
 
 **Lease of one year or less, or year-to-year.** You give a notice to pay rent or vacate at least 5 days out. A second late payment can come within one year of a prior default with notice. Then you may give a 14-day notice to vacate (Wis. Stat. 704.17(2)(a)).
 
@@ -81,7 +81,7 @@ A Wisconsin eviction for unpaid rent can reach the first court date in as little
 | Hardship stay, if granted | Up to 30 days (799.44(3)) | Up to day 61 |
 | Sheriff's execution | After the writ and fee are delivered (799.45(1)) | Varies |
 
-If the tenant contests, the court may set a later trial date. A tenant may also ask for a stay for emergency assistance. That stay ends when eligibility is decided and any aid is paid, but it may not last more than 10 working days. No such stay is allowed after the writ issues (Wis. Stat. 799.40(4)(a)).
+A tenant may also ask for a stay for emergency assistance. That stay ends when eligibility is decided and any aid is paid, but it may not last more than 10 working days. No such stay is allowed after the writ issues (Wis. Stat. 799.40(4)(a)).
 
 ## Where does a landlord file an eviction case in Wisconsin, and what does it cost?
 
@@ -109,7 +109,7 @@ A tenant complies with a cure notice by taking reasonable steps at once and proc
 
 For no cause, end a periodic tenancy under Wis. Stat. 704.19. Give at least 28 days' written notice, ending at the end of a rental period (704.19(2)(b), (3)). A tenant who holds over after a lease expires may be removed by any lawful means (Wis. Stat. 704.25(1)). For a residential lease, you may instead elect to hold the tenant month-to-month (704.25(2)(b)).
 
-Two limits apply. You may not bring an eviction to retaliate against a tenant who made a good-faith code complaint, complained about repairs, or used a legal right (Wis. Stat. 704.45). And a lease clause that lets you act because a tenant called police, health or safety services is void (Wis. Stat. 704.44(1m)).
+Two limits apply. You may not evict to retaliate against a tenant's good-faith code complaint, repair complaint or use of a legal right (Wis. Stat. 704.45). And a lease clause that lets you act because a tenant called police, health or safety services is void (Wis. Stat. 704.44(1m)).
 
 ## Who removes the tenant after a judgment in Wisconsin?
 

@@ -98,6 +98,18 @@ California Civil Code 1947.3 lets a landlord demand cash for up to 3 months afte
 
 **Stop payments:** under Regulation E (12 CFR 1005.10(c)), a tenant can stop a preauthorized transfer by telling their bank at least 3 business days before the scheduled date. If a tenant stops autopay, the rent is still due. Ask for another payment method.
 
+## What should the autopay authorization say?
+
+The autopay authorization should be clear enough that the tenant knows what will leave their account and when. Most rent platforms create the form for you. Check that it covers:
+
+- [ ] The amount, or how the amount is set if it can vary.
+- [ ] The debit date each month.
+- [ ] The bank account to debit.
+- [ ] How to change or cancel the authorization.
+- [ ] The tenant's signature or electronic consent.
+
+Regulation E (12 CFR 1005.10(d)) also covers debits that vary in amount. The payee or bank must send written notice of the amount and date at least 10 days before the transfer. The consumer may instead choose notice only when a debit falls outside an agreed range. If rent plus fees can change month to month, ask your platform how it handles this notice.
+
 ## What you can do next
 
 Add an autopay setup step to your lease-signing checklist, and keep one other way to pay. If you want a manager to handle rent collection, compare costs with the [property management fee calculator](/tools/property-management-fee-calculator).

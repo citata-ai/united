@@ -37,7 +37,7 @@ sources:
 
 ## What is the difference between bought leads and owned leads?
 
-A bought lead is an owner inquiry that another company collects and sells to you. An owned lead comes to you through a channel you control: your website, your Google Business Profile, your reviews, your email list or your referral partners.
+A bought lead is an owner inquiry that another company collects and sells to you. An owned lead comes through a channel you control. Examples: your website, Google Business Profile, reviews, email list and referral partners.
 
 The difference is control. A pay-per-lead site owns the page, the traffic and the owner's first impression. You rent access to it, one lead at a time. When you stop paying, the leads stop.
 
@@ -53,7 +53,7 @@ An owned channel keeps working after you stop spending on it. A city page that r
 
 ## How do pay-per-lead costs change over time?
 
-Pay-per-lead costs tend to rise as more managers bid in the same market. Fourandhalf made this point in 2014: as a category gets more competitive, more companies bid for the same leads, so the cost per lead goes up. Owned channels work the other way. They cost more at the start, then the cost per lead falls as the asset grows.
+Pay-per-lead costs tend to rise as more managers bid in the same market. Fourandhalf made this point in 2014. As more companies bid for the same leads, the cost per lead goes up. Owned channels work the other way. They cost more at the start, then the cost per lead falls as the asset grows.
 
 Paid search shows the same pressure. WordStream's 2025 Google Ads benchmarks give these numbers for the Real Estate category:
 
@@ -82,7 +82,7 @@ Owned leads usually close better, because the owner already chose you. The best 
 
 Read the paid row with care. Only 6 of the 35 companies ran search ads, and the study counts only form leads on the main site. Goodjuju says itself that calls and separate landing pages are not fully counted.
 
-Speed matters more than source for bought leads. A bought lead often goes to 2 or 3 managers at once. In the InsideSales.com and MIT Lead Response Management study (2007), the odds to qualify a web lead dropped 21 times when the first call came at 30 minutes instead of 5. That study measured qualification, not signed contracts, and it used data from 6 companies outside property management. The lesson still holds: a slow reply wastes the money you paid for the lead.
+Speed matters more than source for bought leads. A bought lead often goes to 2 or 3 managers at once. The InsideSales.com and MIT Lead Response Management study (2007) tested call speed. The odds to qualify a web lead dropped 21 times at 30 minutes versus 5. That study measured qualification, not signed contracts, and it used data from 6 companies outside property management. The lesson still holds: a slow reply wastes the money you paid for the lead.
 
 ## What do owned channels cost up front?
 
@@ -118,6 +118,6 @@ A simple split:
 - **Top-up:** a capped paid budget (Google Ads or a pay-per-lead site) when you need more doors now or want to test a new city.
 - **Rule:** each quarter, compare cost per signed owner by channel. Move money to the channel with the lowest cost per signed owner, not the lowest cost per lead.
 
-Track the source of every lead. Ask "How did you first hear about us?" on the form and on the first call. GA4 alone misses part of the picture: Goodjuju found GA4 missed about 4 in 10 of the AI leads it could trace on its own site. Our guide on how to [track AI traffic to a property management site](/guides/track-ai-traffic-property-management) shows the setup.
+Track the source of every lead. Ask "How did you first hear about us?" on the form and on the first call. GA4 alone misses part of the picture. Goodjuju found GA4 missed about 4 in 10 AI leads it could trace on its own site. Our guide on how to [track AI traffic to a property management site](/guides/track-ai-traffic-property-management) shows the setup.
 
 Watch for: a vendor who reports only cost per lead. What to do: ask for leads, signed agreements and doors, by month, for at least 6 months.

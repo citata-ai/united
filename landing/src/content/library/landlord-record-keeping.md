@@ -27,6 +27,8 @@ sources:
     url: "https://www.irs.gov/publications/p527"
   - label: "FTC: Using consumer reports, landlord duties"
     url: "https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-landlords-need-know"
+  - label: "New York Senate: RPP 235-e, cash rent receipt records"
+    url: "https://www.nysenate.gov/legislation/laws/RPP/235-E"
   - label: "Massachusetts Legislature: Chapter 186 section 15B, deposit records"
     url: "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B"
 ---
@@ -92,7 +94,7 @@ Set retention by the record's purpose and the rules that apply to it. Tax, depos
 
 The IRS generally calls for 3 years for ordinary tax records, but lists longer periods for specific situations. Its guidance says property records can need retention through disposal and the relevant tax limitation period. Do not use the ordinary period to delete purchase and improvement proof. [Read the IRS retention guidance](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records).
 
-State tenancy rules add separate duties. Massachusetts chapter 186 section 15B requires specified deposit records for 2 years after tenancy ends. That rule is not a national retention schedule.
+State tenancy rules add separate duties. Massachusetts chapter 186 section 15B requires specified deposit records for 2 years after tenancy ends. New York RPP 235-e separately requires cash rent receipt records for at least 3 years. Neither rule is a national retention schedule. [Read New York's receipt rule](https://www.nysenate.gov/legislation/laws/RPP/235-E).
 
 Ask counsel and your tax professional to approve a table for your properties. List the record, purpose, retention trigger and deletion owner. Add a hold flag for active disputes.
 

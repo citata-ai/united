@@ -1,6 +1,6 @@
 ---
 title: "Tenant Bankruptcy: Rent, Eviction and the Automatic Stay — Citata.ai"
-description: "When a tenant files bankruptcy, check the automatic stay before collecting rent debt or continuing eviction. Separate old balances, current rent and court orders."
+description: "When a tenant files bankruptcy, check the automatic stay before collecting old rent or continuing eviction. Track old balances, current rent and court orders."
 headline: "When a Tenant Files for Bankruptcy"
 dek: "Pause collection automation and get the case reviewed before you take another step."
 published: "2026-10-19"

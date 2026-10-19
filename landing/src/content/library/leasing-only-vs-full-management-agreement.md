@@ -1,6 +1,6 @@
 ---
 title: "Leasing Only vs Full Management: Scope and Agreement \u2014 Citata.ai"
-description: "Leasing-only service ends at a defined handoff; full management continues after move-in. Price the work, define authority and review duties that survive placement."
+description: "Leasing-only service ends at a defined handoff; full management continues after move-in. Price the work, define authority and review duties after placement."
 headline: "Leasing Only or Full Property Management?"
 dek: "Define where placement ends so owners and residents know who handles the next request."
 published: "2026-10-19"

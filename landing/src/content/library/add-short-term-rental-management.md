@@ -1,6 +1,6 @@
 ---
 title: "Add Short-Term Rental Management: Check Work and Risk — Citata.ai"
-description: "Assess short-term rental management before adding it to a residential firm. Compare staffing, fees, local permits and business value using a small operating trial."
+description: "Assess short-term rental management before adding it to a residential firm. Compare staffing, fees, local permits and business value using a service trial."
 headline: "Should You Add Short-Term Rental Management?"
 dek: "Treat guest service as a new operating model with its own costs and limits."
 published: "2026-10-19"

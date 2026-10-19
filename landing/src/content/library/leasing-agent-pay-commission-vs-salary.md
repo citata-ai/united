@@ -1,6 +1,6 @@
 ---
 title: "Leasing Agent Pay: Salary, Commission and a Mixed Plan — Citata.ai"
-description: "Choose leasing agent pay based on the work: a base supports ongoing service, while commission can reward defined leasing results."
+description: "Compare leasing agent salary, commission and mixed pay plans. Define when pay is earned, track lease credit and check wage and license rules before launch."
 headline: "Choose a Clear Leasing Agent Pay Plan"
 dek: "Match pay to duties, record the earning event and check wage and license rules."
 published: "2026-10-19"

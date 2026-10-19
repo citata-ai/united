@@ -103,7 +103,7 @@ Plan the move-out inspection. Under 14 DCMR 310, you may inspect within 3 days b
 
 Yes. A DC landlord who keeps any part of the deposit must give an itemized statement. 14 DCMR 309.2 requires a list of the repairs and other uses of the money and the cost of each. The statement goes with the refund of the balance.
 
-Missing the steps is costly. 14 DCMR 309.3 says a failure to comply with 309.1 and 309.2 is prima facie evidence (proof unless rebutted) that the tenant gets the full deposit plus interest. One relief exists: if you tried in good faith to serve the tenant in person or by certified mail and failed, that is not a failure to comply (14 DCMR 309.4).
+Missing the steps is costly. Under 14 DCMR 309.3, a failure to comply with 309.1 and 309.2 is prima facie evidence (proof unless rebutted). It shows the tenant gets the full deposit plus interest. One relief exists. A good-faith but failed try to serve the tenant in person or by certified mail is not a failure to comply (14 DCMR 309.4).
 
 ## Must a District of Columbia landlord pay interest or keep the deposit in a separate account?
 

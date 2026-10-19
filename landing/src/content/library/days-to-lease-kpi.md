@@ -1,6 +1,6 @@
 ---
 title: "Days to Lease: Define the Clock and Reduce Vacancy Time — Citata.ai"
-description: "Measure days to lease with a written start date and stop date, then use the same definition across your portfolio."
+description: "Measure days to lease with fixed start and stop dates, track open vacancies and find delayed stages. Report the facts and next action to each rental owner."
 headline: "Measure Days to Lease With Clear Dates"
 dek: "Separate marketing time, make-ready work and move-in delays before you set a target."
 published: "2026-10-19"

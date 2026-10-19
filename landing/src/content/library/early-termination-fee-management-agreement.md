@@ -1,6 +1,6 @@
 ---
 title: "Management Agreement Exit Fees: Cost, Fairness and Risk — Citata.ai"
-description: "A management agreement can address early termination, but there is no universal lawful fee amount."
+description: "Set clear management agreement exit terms for notice, charges and handover. Check local law before using an early termination fee or a cancel-anytime promise."
 headline: "Set Fair Management Agreement Exit Terms"
 dek: "Explain cancellation costs before signing and separate the fee from a safe handover."
 published: "2026-10-19"

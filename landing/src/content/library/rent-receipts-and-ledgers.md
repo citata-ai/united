@@ -35,7 +35,7 @@ Receipt requirements depend on where the property sits and how the tenant pays. 
 
 New York Real Property Law section 235-e requires written receipts for residential rent paid in cash or instruments other than the tenant's personal check. A written request triggers receipts for personal checks too. The law also sets timing and content requirements. [Read New York's receipt statute](https://www.nysenate.gov/legislation/laws/RPP/235-E).
 
-Washington RCW 59.18.063 requires receipts for cash and, on tenant request, for other forms of payment. It also addresses written receipts for charges paid with money orders or cashier's checks. Check the current text for the exact situation. [Read Washington's payment rule](https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.063).
+Washington RCW 59.18.063 requires receipts for cash and, on tenant request, for other forms of payment. That on-request rule covers noncash forms such as money orders and cashier's checks. Check the current text for the exact situation. [Read Washington's payment rule](https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.063).
 
 Do not assume an online system removes the legal duty. Check the content and delivery of the confirmation. The tenant needs a record that identifies the payment, not simply a screen saying a transfer started.
 

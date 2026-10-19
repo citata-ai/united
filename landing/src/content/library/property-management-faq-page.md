@@ -1,6 +1,6 @@
 ---
-title: "Property Management FAQ Page: An Owner-Focused Template — Citata.ai"
-description: "Build a property management FAQ around fees, leasing, repairs, reports, and handoffs. Use clear local answers, check legal claims, and skip rich-result promises."
+title: "Property Management FAQ: An Owner-Focused Template — Citata.ai"
+description: "Build a property management FAQ around fees, leasing, repairs, reports, and handoffs. Use clear local answers, check legal claims, and avoid search promises."
 headline: "A Property Management FAQ Owners Can Use"
 dek: "Answer the hard service questions before asking an owner to book a call."
 published: "2026-10-19"

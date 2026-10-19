@@ -1,6 +1,6 @@
 ---
 title: "Rent Reporting to Credit Bureaus: A Landlord's Checklist — Citata.ai"
-description: "Rent reporting can add payment history to credit files. Check bureau coverage, tenant costs, error handling and legal duties before offering a reporting service."
+description: "Rent reporting can add payment history to credit files. Check bureau coverage, tenant costs, error handling and legal duties before offering rent reporting."
 headline: "Should You Offer Rent Payment Reporting?"
 dek: "Accurate reporting needs a clean ledger and a clear path to fix errors."
 published: "2026-10-19"

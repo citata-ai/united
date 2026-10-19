@@ -1,6 +1,6 @@
 ---
 title: "Trust Account Audit Checklist for Property Managers — Citata.ai"
-description: "Prepare a trust account audit by matching bank balances, control records and beneficiary ledgers, then trace transactions to their source documents."
+description: "Prepare a trust account audit with matched bank balances, owner ledgers, source records and state rules. Use a checklist to find gaps before records go out."
 headline: "Prepare Your Trust Account Audit Records"
 dek: "Build an audit file that connects bank cash, owner balances and source records."
 published: "2026-10-19"
@@ -23,6 +23,8 @@ faq:
 sources:
   - label: "California DRE: Do You Handle Trust Funds? Ensure You\u2019re Audit Ready"
     url: "https://www.dre.ca.gov/Newsroom/DRE_Updates/2026_10_06_Trust_Fund_Records.html"
+  - label: "Justia: California Business and Professions Code section 10148, statutory text"
+    url: "https://law.justia.com/codes/california/code-bpc/division-4/part-1/chapter-3/article-1/section-10148/"
 ---
 
 ## Which records will the auditor ask for?
@@ -75,6 +77,8 @@ Keep an issue log with the amount, cause, correction and reviewer. An unresolved
 ## How long must I keep trust account records?
 
 Trust account retention depends on the state, record type and any active claim or audit. Do not adopt a retention period from another manager's checklist.
+
+California Business and Professions Code section 10148, as quoted by Justia, requires brokers to retain specified transaction records for 3 years. The section starts the period at transaction closing, or the listing date if the transaction is not completed. This is a California example, not permission to delete every record after that period.
 
 Create a retention schedule that names the rule, record owner, storage location and destruction approval. Ask local counsel to verify the deadline and the event that starts it. Keep the cited rule with the schedule.
 

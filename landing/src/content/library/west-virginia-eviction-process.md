@@ -1,6 +1,6 @@
 ---
 title: "West Virginia Eviction Process: Summary Petition, Timeline — Citata.ai"
-description: "West Virginia landlords file a verified petition in magistrate or circuit court. The hearing comes 5 to 10 judicial days later, and the sheriff removes the tenant."
+description: "West Virginia landlords file a verified petition in magistrate or circuit court. The hearing comes 5 to 10 judicial days later; the sheriff removes the tenant."
 headline: "West Virginia Eviction Process for Landlords"
 dek: "A summary petition, a hearing in 5 to 10 judicial days and a sheriff."
 published: "2026-10-19"
@@ -112,7 +112,7 @@ Magistrate court costs come from W. Va. Code 50-3-1. For a civil action that see
 | More than $2,000 | $50 |
 | Relief other than money damages | $30 |
 
-The section also lists other charges, such as certified mail and enforcement services. Ask the magistrate clerk for the total before you file. Circuit court fees are different.
+The section also lists other charges, such as certified mail and enforcement services. Ask the magistrate clerk for the total before you file. 
 
 ## Can a West Virginia landlord evict a tenant for a lease violation or with no cause?
 

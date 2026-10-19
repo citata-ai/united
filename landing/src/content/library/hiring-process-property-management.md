@@ -1,6 +1,6 @@
 ---
 title: "Property Management Hiring: Interviews, Tests and References — Citata.ai"
-description: "Hire property management staff by defining the work, asking consistent job-related questions and checking a realistic sample task."
+description: "Hire property management staff with a clear role, shared interview questions, sample tasks and checked references. Use job evidence to assess each applicant."
 headline: "Build a Clear Property Management Hiring Process"
 dek: "Use the same job tasks and scoring rules to compare each applicant fairly."
 published: "2026-10-19"
