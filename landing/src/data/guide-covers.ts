@@ -44,6 +44,26 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-s8-refuse-v1",
     alt: "A pop engraving under a coral sky: a landlord in an orange toga welcomes a family with a sealed scroll at a red-brick two-flat, beside a brass scale of justice.",
   },
+  "directories-ai-cites-property-management": {
+    img: "guide-ai-directories-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga pulls one scroll from colorful library shelves beside a marble bust and an old computer.",
+  },
+  "google-ai-overviews-property-management": {
+    img: "guide-ai-overviews-v1",
+    alt: "A pop engraving under a yellow sky: a lighthouse with an old computer on top shines one beam on a colorful house where a landlord in an orange toga holds a key.",
+  },
+  "how-to-become-a-section-8-landlord": {
+    img: "guide-s8-become-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga climbs the steps of a red-brick two-flat where a family waits at the open door.",
+  },
+  "how-to-get-recommended-by-chatgpt-property-management": {
+    img: "guide-chatgpt-named-v1",
+    alt: "A pop engraving under a coral sky: an old computer on an oracle altar sends a trail of smoke to a landlord in an orange toga with a key at his office door.",
+  },
+  "how-to-switch-property-management-software": {
+    img: "guide-switch-software-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga carries a crate of scrolls over a bridge from an old cracked temple to a new mint one.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

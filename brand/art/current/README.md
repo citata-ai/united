@@ -26,3 +26,8 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-ca-eviction-v1.webp` | Library: California eviction process | N, lilac |
 | `guide-ca-deposit-v1.webp` | Library: California security deposit law | N, yellow |
 | `guide-s8-refuse-v1.webp` | Library: can a landlord refuse Section 8 | N, coral |
+| `guide-ai-directories-v1.webp` | Library: directories AI cites | N, cyan |
+| `guide-ai-overviews-v1.webp` | Library: get cited in Google AI Overviews | N, yellow |
+| `guide-s8-become-v1.webp` | Library: how to become a Section 8 landlord | N, lilac |
+| `guide-chatgpt-named-v1.webp` | Library: get named by ChatGPT | N, coral |
+| `guide-switch-software-v1.webp` | Library: switch property software | N, cyan |
