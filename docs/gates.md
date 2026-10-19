@@ -43,7 +43,7 @@ Rules:
 | `stage` | `stage` | https://stage.citata.ai (noindex) | `citata-landing-stage` |
 | `main` | `prod` | https://citata.ai (+ www 301) | `citata-landing` |
 
-Each run: G3 → Cloudflare credentials from Infisical → `bun run deploy --stage <stage> --yes` → smoke test.
+Each run: G3 → Cloudflare credentials from Infisical → `bun run deploy --stage <stage> --yes` → smoke test. Prod only, when pages changed: IndexNow ping, then a Google Search Console sitemap resubmit (keyless: GitHub OIDC → GCP Workload Identity Federation, project `citata-ai-ops` owned by grow@citata.ai, pool `github`, provider `citata-united` limited to repo id 1424141050 and environment `prod` → service account `gsc-sitemap@citata-ai-ops.iam.gserviceaccount.com`, "Full" user on `sc-domain:citata.ai`).
 
 **Credentials.** No Cloudflare secret lives in GitHub. The job gets a GitHub OIDC token; Infisical (`https://env.myremotely.ai`, project `citata`, env `prod`, path `/`) trusts it through machine identity `citata-github-deploy` (id `8dc48f81-57d6-44f6-91b7-14825cac419a`, org role No Access, project role Viewer; OIDC auth, subject `repo:citata-ai/united:environment:*`, token TTL 10 min). It returns `CLOUDFLARE_API_TOKEN` (Cloudflare account token `citata-alchemy-deploy`: Workers template + Secrets Store Write; on citata.ai: Zone Read, DNS, SSL and Certificates, Dynamic URL Redirects) and `CLOUDFLARE_ACCOUNT_ID`. Repo variable `INFISICAL_IDENTITY_ID` holds the identity id (not a secret).
 
