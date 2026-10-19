@@ -48,6 +48,7 @@ Answer sentence first. ...
 ## Facts
 
 - Every number and every legal rule has a source you fetched and read in this session (WebFetch). Name the source in the sentence and list the URL in `sources`.
+- If WebFetch gives 403 or 503 (hud.gov does), use Bash: `curl -sL -A "Mozilla/5.0 (Macintosh)" <url> | python3 -c "import sys,re,html;t=re.sub(r'<script.*?</script>|<style.*?</style>','',sys.stdin.read(),flags=re.S);print(html.unescape(re.sub(r'<[^>]+>',' ',t))[:20000])"`. A fact you saw only in a search result snippet is not verified.
 - Prefer primary sources: statutes, government sites (HUD, IRS, state legislatures, census.gov), vendor pricing pages, original studies.
 - If you cannot verify a fact, leave it out. Never invent a number, a client, a quote, a review or a statute section.
 - Law and tax: say what the rule is and cite it. Add one line: "This is general information, not legal advice. Check the current law or ask a local attorney." (tax: "...ask a tax professional.").
