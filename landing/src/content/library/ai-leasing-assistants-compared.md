@@ -1,5 +1,5 @@
 ---
-title: "AI Leasing Assistants: Compare Features, Risk and Cost — Citata.ai"
+title: "AI Leasing Assistants: Features, Risk and Cost — Citata.ai"
 description: "Compare EliseAI, AppFolio and showing-platform AI by lead replies, tour booking, human handoff and cost. Test current listings and access rules before launch."
 headline: "AI Leasing Assistants: What to Compare"
 dek: "Buy accurate answers and clear handoffs, then test the assistant against your live leasing process."

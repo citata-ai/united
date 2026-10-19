@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT for Property Managers: Tasks, Prompts and Checks — Citata.ai"
+title: "ChatGPT for Property Managers: Prompts and Checks — Citata.ai"
 description: "Use ChatGPT for rental drafts, owner updates and staff checklists. These prompts keep private data out and require a person to check facts before sending."
 headline: "ChatGPT for Property Managers: Practical Prompts"
 dek: "Start with low-risk drafts, remove private details and check every fact before anyone receives the result."
