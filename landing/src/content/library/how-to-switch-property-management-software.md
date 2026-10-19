@@ -1,6 +1,6 @@
 ---
 title: "How to Switch Property Software Without Lost Records — Citata.ai"
-description: "Switch property management software with a tested export, agreed opening balances and clear payment notices. Use this checklist before you cancel the old system."
+description: "Switch property management software with a tested export, agreed balances and clear payment notices. Use this checklist before you cancel the software system."
 headline: "How to Switch Property Management Software"
 dek: "Move records, prove the balances and give owners and renters clear payment instructions."
 published: "2026-10-19"
