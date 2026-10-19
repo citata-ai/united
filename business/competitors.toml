@@ -113,3 +113,13 @@ price = "AI visibility reporting from $99/mo (guide check 2026-10-18)"
 
 [gap]
 note = "No published GEO case study for Section 8, affordable housing, NGOs or B Corps. Open niche."
+
+[[agency]]
+name = "Citant.ai"
+url = "https://citant.ai"
+role = "direct"
+why = "Direct competitor by owner decision (Tao, 2026-10-19), although it does not focus on property managers: same service (done-for-you GEO agency), near-identical name, and AI answers mix the two brands (point A and 2026-10-19 runs)."
+vertical = "B2B SaaS, 20-200 employees, Seed to Series B (US, UK, CA, AU)"
+claim = "AI-Toolbox.co: ChatGPT citations 58 -> 110, weekly AI sessions ~100 -> 378 in 5 weeks (vendor claim)"
+price = "AI Search Audit $440 one-time; GEO Pilot $7,875 / 9 weeks with a refund guarantee (named in 3 of 10 queries on 2 of 6 engines); retainer from $5,000/mo, 3-month minimum"
+owner = "Hamza Wamiq, founder (Oct 2025)"
