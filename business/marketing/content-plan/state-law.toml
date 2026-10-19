@@ -1,0 +1,1841 @@
+# Topic plan: cluster state-law (business/marketing/content-plan/clusters.toml).
+# 50 states + DC, 3 topics each: security deposit, eviction process, and the third topic with the most demand
+# (rent increase and notice rules, or late fee law where the state has a statutory late fee cap).
+# `demand` holds the statute or official state source. Writers must check the current text at that source before they write.
+# Competitor model: ipropertymanagement.com/laws/<state>-security-deposit-returns | -eviction-process | -rent-increases.
+
+[[topic]]
+slug = "alabama-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Alabama Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Alabama law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Alabama?", "How many days does a Alabama landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Alabama?", "Does a Alabama landlord have to give an itemized list of deductions?", "Must a Alabama landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Alabama landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/alabama-security-deposit-returns"
+demand = "Ala. Code §35-9A-201; source URL: https://alison.legislature.state.al.us/code-of-alabama"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "alabama-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Alabama Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Alabama?"
+subquestions = ["What notice must a Alabama landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Alabama?", "Where does a landlord file an eviction case in Alabama, and what does it cost?", "Can a Alabama landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Alabama?", "Is a self-help eviction (lockout, utility shutoff) legal in Alabama?"]
+inspired_by = "https://ipropertymanagement.com/laws/alabama-eviction-process"
+demand = "Ala. Code §35-9A-421 (7-day notice) and §6-6-310 et seq.; source URL: https://alison.legislature.state.al.us/code-of-alabama"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "alabama-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Alabama Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Alabama landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Alabama have a cap on rent increases or rent control?", "How many days notice does a Alabama landlord need to raise the rent?", "Can a Alabama landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Alabama?", "Do cities in Alabama add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/alabama-rent-increases"
+demand = "Ala. Code §35-9A-441 (periodic tenancy notice), §11-80-8.1 (rent control preemption); source URL: https://alison.legislature.state.al.us/code-of-alabama"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "alaska-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Alaska Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Alaska law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Alaska?", "How many days does a Alaska landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Alaska?", "Does a Alaska landlord have to give an itemized list of deductions?", "Must a Alaska landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Alaska landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/alaska-security-deposit-returns"
+demand = "Alaska Stat. §34.03.070; source URL: https://www.akleg.gov/basis/statutes.asp#34.03.070"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "alaska-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Alaska Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Alaska?"
+subquestions = ["What notice must a Alaska landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Alaska?", "Where does a landlord file an eviction case in Alaska, and what does it cost?", "Can a Alaska landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Alaska?", "Is a self-help eviction (lockout, utility shutoff) legal in Alaska?"]
+inspired_by = "https://ipropertymanagement.com/laws/alaska-eviction-process"
+demand = "Alaska Stat. §34.03.220 and §09.45.090 (forcible entry and detainer); source URL: https://www.akleg.gov/basis/statutes.asp#34.03.220"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "alaska-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Alaska Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Alaska landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Alaska have a cap on rent increases or rent control?", "How many days notice does a Alaska landlord need to raise the rent?", "Can a Alaska landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Alaska?", "Do cities in Alaska add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/alaska-rent-increases"
+demand = "Alaska Stat. §34.03.290 (periodic tenancy notice); source URL: https://www.akleg.gov/basis/statutes.asp#34.03.290"
+priority = 8
+status = "planned"
+
+[[topic]]
+slug = "arizona-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Arizona Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Arizona law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Arizona?", "How many days does a Arizona landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Arizona?", "Does a Arizona landlord have to give an itemized list of deductions?", "Must a Arizona landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Arizona landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/arizona-security-deposit-returns"
+demand = "A.R.S. §33-1321; source URL: https://www.azleg.gov/ars/33/01321.htm"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "arizona-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Arizona Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Arizona?"
+subquestions = ["What notice must a Arizona landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Arizona?", "Where does a landlord file an eviction case in Arizona, and what does it cost?", "Can a Arizona landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Arizona?", "Is a self-help eviction (lockout, utility shutoff) legal in Arizona?"]
+inspired_by = "https://ipropertymanagement.com/laws/arizona-eviction-process"
+demand = "A.R.S. §33-1368 (notices) and §12-1171 et seq. (special detainer); source URL: https://www.azleg.gov/ars/33/01368.htm"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "arizona-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Arizona Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Arizona landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Arizona have a cap on rent increases or rent control?", "How many days notice does a Arizona landlord need to raise the rent?", "Can a Arizona landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Arizona?", "Do cities in Arizona add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/arizona-rent-increases"
+demand = "A.R.S. §33-1375 (periodic tenancy notice), §33-1329 (rent control preemption); source URL: https://www.azleg.gov/ars/33/01375.htm"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "arkansas-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Arkansas Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Arkansas law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Arkansas?", "How many days does a Arkansas landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Arkansas?", "Does a Arkansas landlord have to give an itemized list of deductions?", "Must a Arkansas landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Arkansas landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/arkansas-security-deposit-returns"
+demand = "Ark. Code §18-16-301 to -306; source URL: https://www.arkleg.state.ar.us/ArkansasLaw"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "arkansas-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Arkansas Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Arkansas?"
+subquestions = ["What notice must a Arkansas landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Arkansas?", "Where does a landlord file an eviction case in Arkansas, and what does it cost?", "Can a Arkansas landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Arkansas?", "Is a self-help eviction (lockout, utility shutoff) legal in Arkansas?"]
+inspired_by = "https://ipropertymanagement.com/laws/arkansas-eviction-process"
+demand = "Ark. Code §18-60-304 (unlawful detainer) and §18-17-901 (failure to vacate); source URL: https://www.arkleg.state.ar.us/ArkansasLaw"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "arkansas-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Arkansas Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Arkansas landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Arkansas have a cap on rent increases or rent control?", "How many days notice does a Arkansas landlord need to raise the rent?", "Can a Arkansas landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Arkansas?", "Do cities in Arkansas add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/arkansas-rent-increases"
+demand = "Ark. Code Title 18, Ch. 17 (Residential Landlord-Tenant Act of 2007), check periodic tenancy notice section; source URL: https://www.arkleg.state.ar.us/ArkansasLaw"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "california-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "California Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does California law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in California?", "How many days does a California landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in California?", "Does a California landlord have to give an itemized list of deductions?", "Must a California landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a California landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/california-security-deposit-returns"
+demand = "Cal. Civ. Code §1950.5 (AB 12 deposit cap from 2024-07-01); source URL: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "california-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "California Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in California?"
+subquestions = ["What notice must a California landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in California?", "Where does a landlord file an eviction case in California, and what does it cost?", "Can a California landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in California?", "Is a self-help eviction (lockout, utility shutoff) legal in California?"]
+inspired_by = "https://ipropertymanagement.com/laws/california-eviction-process"
+demand = "Cal. Code Civ. Proc. §1161 (notices), §1946.2 (just cause, AB 1482); source URL: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "california-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "California Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a California landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does California have a cap on rent increases or rent control?", "How many days notice does a California landlord need to raise the rent?", "Can a California landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in California?", "Do cities in California add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/california-rent-increases"
+demand = "Cal. Civ. Code §1947.12 (AB 1482 rent cap) and §827 (30/90-day notice); source URL: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "colorado-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Colorado Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Colorado law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Colorado?", "How many days does a Colorado landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Colorado?", "Does a Colorado landlord have to give an itemized list of deductions?", "Must a Colorado landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Colorado landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/colorado-security-deposit-returns"
+demand = "C.R.S. §38-12-101 to -104; source URL: https://leg.colorado.gov/colorado-revised-statutes"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "colorado-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Colorado Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Colorado?"
+subquestions = ["What notice must a Colorado landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Colorado?", "Where does a landlord file an eviction case in Colorado, and what does it cost?", "Can a Colorado landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Colorado?", "Is a self-help eviction (lockout, utility shutoff) legal in Colorado?"]
+inspired_by = "https://ipropertymanagement.com/laws/colorado-eviction-process"
+demand = "C.R.S. §13-40-104 and §13-40-106 (10-day demand); source URL: https://leg.colorado.gov/colorado-revised-statutes"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "colorado-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Colorado Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Colorado, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Colorado?", "Does Colorado law require a grace period before a late fee?", "Must the late fee be written in the lease in Colorado?", "Can a Colorado landlord charge a daily late fee?", "Can a Colorado landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/colorado-landlord-tenant-rights"
+demand = "C.R.S. §38-12-105 (late fee cap: greater of $50 or 5%, 7-day grace), §38-12-701 (60-day rent increase notice); source URL: https://leg.colorado.gov/colorado-revised-statutes"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "connecticut-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Connecticut Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Connecticut law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Connecticut?", "How many days does a Connecticut landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Connecticut?", "Does a Connecticut landlord have to give an itemized list of deductions?", "Must a Connecticut landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Connecticut landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/connecticut-security-deposit-returns"
+demand = "Conn. Gen. Stat. §47a-21; source URL: https://www.cga.ct.gov/current/pub/chap_831.htm"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "connecticut-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Connecticut Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Connecticut?"
+subquestions = ["What notice must a Connecticut landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Connecticut?", "Where does a landlord file an eviction case in Connecticut, and what does it cost?", "Can a Connecticut landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Connecticut?", "Is a self-help eviction (lockout, utility shutoff) legal in Connecticut?"]
+inspired_by = "https://ipropertymanagement.com/laws/connecticut-eviction-process"
+demand = "Conn. Gen. Stat. §47a-23 (notice to quit) and Ch. 832 (summary process); source URL: https://www.cga.ct.gov/current/pub/chap_832.htm"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "connecticut-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Connecticut Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Connecticut, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Connecticut?", "Does Connecticut law require a grace period before a late fee?", "Must the late fee be written in the lease in Connecticut?", "Can a Connecticut landlord charge a daily late fee?", "Can a Connecticut landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/connecticut-landlord-tenant-rights"
+demand = "Conn. Gen. Stat. §47a-15a (late charge grace period and cap); source URL: https://www.cga.ct.gov/current/pub/chap_830.htm"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "delaware-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Delaware Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Delaware law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Delaware?", "How many days does a Delaware landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Delaware?", "Does a Delaware landlord have to give an itemized list of deductions?", "Must a Delaware landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Delaware landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/delaware-security-deposit-returns"
+demand = "25 Del. C. §5514; source URL: https://delcode.delaware.gov/title25/index.html"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "delaware-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Delaware Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Delaware?"
+subquestions = ["What notice must a Delaware landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Delaware?", "Where does a landlord file an eviction case in Delaware, and what does it cost?", "Can a Delaware landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Delaware?", "Is a self-help eviction (lockout, utility shutoff) legal in Delaware?"]
+inspired_by = "https://ipropertymanagement.com/laws/delaware-eviction-process"
+demand = "25 Del. C. §5502 (5-day notice) and Ch. 57 (summary possession); source URL: https://delcode.delaware.gov/title25/index.html"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "delaware-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Delaware Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Delaware, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Delaware?", "Does Delaware law require a grace period before a late fee?", "Must the late fee be written in the lease in Delaware?", "Can a Delaware landlord charge a daily late fee?", "Can a Delaware landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/delaware-landlord-tenant-rights"
+demand = "25 Del. C. §5501(d) (late fee cap 5%, grace period); source URL: https://delcode.delaware.gov/title25/index.html"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "washington-dc-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "District of Columbia Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does District of Columbia law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in District of Columbia?", "How many days does a District of Columbia landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in District of Columbia?", "Does a District of Columbia landlord have to give an itemized list of deductions?", "Must a District of Columbia landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a District of Columbia landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/washington-dc-security-deposit-returns"
+demand = "D.C. Code §42-3502.17 and 14 DCMR §308-311; source URL: https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.17"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "washington-dc-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "District of Columbia Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in District of Columbia?"
+subquestions = ["What notice must a District of Columbia landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in District of Columbia?", "Where does a landlord file an eviction case in District of Columbia, and what does it cost?", "Can a District of Columbia landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in District of Columbia?", "Is a self-help eviction (lockout, utility shutoff) legal in District of Columbia?"]
+inspired_by = "https://ipropertymanagement.com/laws/washington-dc-eviction-process"
+demand = "D.C. Code §42-3505.01 (notice to vacate, just cause); source URL: https://code.dccouncil.gov/us/dc/council/code/sections/42-3505.01"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "washington-dc-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "District of Columbia Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a District of Columbia landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does District of Columbia have a cap on rent increases or rent control?", "How many days notice does a District of Columbia landlord need to raise the rent?", "Can a District of Columbia landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in District of Columbia?", "Do cities in District of Columbia add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/washington-dc-rent-increases"
+demand = "D.C. Code §42-3502.08 (rent stabilization), §42-3509.04 (30-day increase notice); source URL: https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.08"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "florida-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Florida Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Florida law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Florida?", "How many days does a Florida landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Florida?", "Does a Florida landlord have to give an itemized list of deductions?", "Must a Florida landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Florida landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/florida-security-deposit-returns"
+demand = "Fla. Stat. §83.49; source URL: https://www.flsenate.gov/Laws/Statutes/2025/83.49"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "florida-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Florida Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Florida?"
+subquestions = ["What notice must a Florida landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Florida?", "Where does a landlord file an eviction case in Florida, and what does it cost?", "Can a Florida landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Florida?", "Is a self-help eviction (lockout, utility shutoff) legal in Florida?"]
+inspired_by = "https://ipropertymanagement.com/laws/florida-eviction-process"
+demand = "Fla. Stat. §83.56 (3-day notice) and §83.59-.62 (removal of tenant); source URL: https://www.flsenate.gov/Laws/Statutes/2025/83.56"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "florida-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Florida Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Florida landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Florida have a cap on rent increases or rent control?", "How many days notice does a Florida landlord need to raise the rent?", "Can a Florida landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Florida?", "Do cities in Florida add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/florida-rent-increases"
+demand = "Fla. Stat. §83.57 (30-day notice to end month-to-month), §83.425 (preemption of local rent rules); source URL: https://www.flsenate.gov/Laws/Statutes/2025/83.57"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "georgia-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Georgia Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Georgia law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Georgia?", "How many days does a Georgia landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Georgia?", "Does a Georgia landlord have to give an itemized list of deductions?", "Must a Georgia landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Georgia landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/georgia-security-deposit-returns"
+demand = "O.C.G.A. §44-7-30 to -37; source URL: https://dca.georgia.gov (Georgia Landlord Tenant Handbook) and https://www.legis.ga.gov"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "georgia-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Georgia Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Georgia?"
+subquestions = ["What notice must a Georgia landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Georgia?", "Where does a landlord file an eviction case in Georgia, and what does it cost?", "Can a Georgia landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Georgia?", "Is a self-help eviction (lockout, utility shutoff) legal in Georgia?"]
+inspired_by = "https://ipropertymanagement.com/laws/georgia-eviction-process"
+demand = "O.C.G.A. §44-7-50 to -59 (dispossessory proceedings); source URL: https://www.legis.ga.gov"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "georgia-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Georgia Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Georgia landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Georgia have a cap on rent increases or rent control?", "How many days notice does a Georgia landlord need to raise the rent?", "Can a Georgia landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Georgia?", "Do cities in Georgia add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/georgia-rent-increases"
+demand = "O.C.G.A. §44-7-7 (60-day landlord notice for tenancy at will), §44-7-19 (rent control preemption); source URL: https://www.legis.ga.gov"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "hawaii-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Hawaii Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Hawaii law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Hawaii?", "How many days does a Hawaii landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Hawaii?", "Does a Hawaii landlord have to give an itemized list of deductions?", "Must a Hawaii landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Hawaii landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/hawaii-security-deposit-returns"
+demand = "Haw. Rev. Stat. §521-44; source URL: https://www.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0521/HRS_0521-0044.htm"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "hawaii-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Hawaii Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Hawaii?"
+subquestions = ["What notice must a Hawaii landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Hawaii?", "Where does a landlord file an eviction case in Hawaii, and what does it cost?", "Can a Hawaii landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Hawaii?", "Is a self-help eviction (lockout, utility shutoff) legal in Hawaii?"]
+inspired_by = "https://ipropertymanagement.com/laws/hawaii-eviction-process"
+demand = "Haw. Rev. Stat. §521-68 (5-day notice) and Ch. 666 (summary possession); source URL: https://www.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0521/HRS_0521-0068.htm"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "hawaii-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Hawaii Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Hawaii landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Hawaii have a cap on rent increases or rent control?", "How many days notice does a Hawaii landlord need to raise the rent?", "Can a Hawaii landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Hawaii?", "Do cities in Hawaii add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/hawaii-rent-increases"
+demand = "Haw. Rev. Stat. §521-21(d) (45-day rent increase notice), §521-71 (termination notice); source URL: https://www.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0521/HRS_0521-0021.htm"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "idaho-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Idaho Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Idaho law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Idaho?", "How many days does a Idaho landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Idaho?", "Does a Idaho landlord have to give an itemized list of deductions?", "Must a Idaho landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Idaho landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/idaho-security-deposit-returns"
+demand = "Idaho Code §6-321; source URL: https://legislature.idaho.gov/statutesrules/idstat/title6/t6ch3/sect6-321/"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "idaho-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Idaho Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Idaho?"
+subquestions = ["What notice must a Idaho landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Idaho?", "Where does a landlord file an eviction case in Idaho, and what does it cost?", "Can a Idaho landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Idaho?", "Is a self-help eviction (lockout, utility shutoff) legal in Idaho?"]
+inspired_by = "https://ipropertymanagement.com/laws/idaho-eviction-process"
+demand = "Idaho Code §6-303 (unlawful detainer, 3-day notice) and §6-310 (expedited trial); source URL: https://legislature.idaho.gov/statutesrules/idstat/title6/t6ch3/sect6-303/"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "idaho-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Idaho Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Idaho landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Idaho have a cap on rent increases or rent control?", "How many days notice does a Idaho landlord need to raise the rent?", "Can a Idaho landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Idaho?", "Do cities in Idaho add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/idaho-rent-increases"
+demand = "Idaho Code §55-307 (month-to-month rent increase notice); source URL: https://legislature.idaho.gov/statutesrules/idstat/title55/t55ch3/sect55-307/"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "illinois-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Illinois Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Illinois law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Illinois?", "How many days does a Illinois landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Illinois?", "Does a Illinois landlord have to give an itemized list of deductions?", "Must a Illinois landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Illinois landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/illinois-security-deposit-returns"
+demand = "765 ILCS 710 (Security Deposit Return Act) and 765 ILCS 715 (interest); source URL: https://www.ilga.gov/legislation/ilcs/ilcs.asp"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "illinois-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Illinois Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Illinois?"
+subquestions = ["What notice must a Illinois landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Illinois?", "Where does a landlord file an eviction case in Illinois, and what does it cost?", "Can a Illinois landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Illinois?", "Is a self-help eviction (lockout, utility shutoff) legal in Illinois?"]
+inspired_by = "https://ipropertymanagement.com/laws/illinois-eviction-process"
+demand = "735 ILCS 5/9-209 (5-day notice) and Art. IX (Eviction Act); source URL: https://www.ilga.gov/legislation/ilcs/ilcs.asp"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "illinois-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Illinois Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Illinois landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Illinois have a cap on rent increases or rent control?", "How many days notice does a Illinois landlord need to raise the rent?", "Can a Illinois landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Illinois?", "Do cities in Illinois add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/illinois-rent-increases"
+demand = "735 ILCS 5/9-207 (30-day month-to-month notice), 50 ILCS 825 (Rent Control Preemption Act), Chicago RLTO; source URL: https://www.ilga.gov/legislation/ilcs/ilcs.asp"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "indiana-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Indiana Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Indiana law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Indiana?", "How many days does a Indiana landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Indiana?", "Does a Indiana landlord have to give an itemized list of deductions?", "Must a Indiana landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Indiana landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/indiana-security-deposit-returns"
+demand = "Ind. Code §32-31-3; source URL: https://iga.in.gov/laws/2025/ic/titles/32"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "indiana-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Indiana Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Indiana?"
+subquestions = ["What notice must a Indiana landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Indiana?", "Where does a landlord file an eviction case in Indiana, and what does it cost?", "Can a Indiana landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Indiana?", "Is a self-help eviction (lockout, utility shutoff) legal in Indiana?"]
+inspired_by = "https://ipropertymanagement.com/laws/indiana-eviction-process"
+demand = "Ind. Code §32-31-1-6 (10-day notice for rent) and §32-30-3 (ejectment); source URL: https://iga.in.gov/laws/2025/ic/titles/32"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "indiana-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Indiana Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Indiana landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Indiana have a cap on rent increases or rent control?", "How many days notice does a Indiana landlord need to raise the rent?", "Can a Indiana landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Indiana?", "Do cities in Indiana add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/indiana-rent-increases"
+demand = "Ind. Code §32-31-1-1 (30-day notice to end month-to-month), §32-31-1-20 (rent control preemption); source URL: https://iga.in.gov/laws/2025/ic/titles/32"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "iowa-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Iowa Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Iowa law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Iowa?", "How many days does a Iowa landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Iowa?", "Does a Iowa landlord have to give an itemized list of deductions?", "Must a Iowa landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Iowa landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/iowa-security-deposit-returns"
+demand = "Iowa Code §562A.12; source URL: https://www.legis.iowa.gov/docs/code/562A.12.pdf"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "iowa-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Iowa Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Iowa?"
+subquestions = ["What notice must a Iowa landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Iowa?", "Where does a landlord file an eviction case in Iowa, and what does it cost?", "Can a Iowa landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Iowa?", "Is a self-help eviction (lockout, utility shutoff) legal in Iowa?"]
+inspired_by = "https://ipropertymanagement.com/laws/iowa-eviction-process"
+demand = "Iowa Code §562A.27 (3-day notice) and Ch. 648 (forcible entry and detainer); source URL: https://www.legis.iowa.gov/docs/code/562A.27.pdf"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "iowa-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Iowa Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Iowa, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Iowa?", "Does Iowa law require a grace period before a late fee?", "Must the late fee be written in the lease in Iowa?", "Can a Iowa landlord charge a daily late fee?", "Can a Iowa landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/iowa-landlord-tenant-rights"
+demand = "Iowa Code §562A.9(4) (late fee cap tied to monthly rent); source URL: https://www.legis.iowa.gov/docs/code/562A.9.pdf"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "kansas-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Kansas Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Kansas law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Kansas?", "How many days does a Kansas landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Kansas?", "Does a Kansas landlord have to give an itemized list of deductions?", "Must a Kansas landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Kansas landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/kansas-security-deposit-returns"
+demand = "K.S.A. §58-2550; source URL: https://www.ksrevisor.gov/statutes/chapters/ch58/058_025_0050.html"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "kansas-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Kansas Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Kansas?"
+subquestions = ["What notice must a Kansas landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Kansas?", "Where does a landlord file an eviction case in Kansas, and what does it cost?", "Can a Kansas landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Kansas?", "Is a self-help eviction (lockout, utility shutoff) legal in Kansas?"]
+inspired_by = "https://ipropertymanagement.com/laws/kansas-eviction-process"
+demand = "K.S.A. §58-2564 (3-day notice) and K.S.A. Ch. 61 Art. 38 (eviction); source URL: https://www.ksrevisor.gov/statutes/chapters/ch58/058_025_0064.html"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "kansas-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Kansas Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Kansas landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Kansas have a cap on rent increases or rent control?", "How many days notice does a Kansas landlord need to raise the rent?", "Can a Kansas landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Kansas?", "Do cities in Kansas add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/kansas-rent-increases"
+demand = "K.S.A. §58-2570 (periodic tenancy termination notice); source URL: https://www.ksrevisor.gov/statutes/chapters/ch58/058_025_0070.html"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "kentucky-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Kentucky Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Kentucky law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Kentucky?", "How many days does a Kentucky landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Kentucky?", "Does a Kentucky landlord have to give an itemized list of deductions?", "Must a Kentucky landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Kentucky landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/kentucky-security-deposit-returns"
+demand = "KRS §383.580; source URL: https://apps.legislature.ky.gov/law/statutes/"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "kentucky-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Kentucky Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Kentucky?"
+subquestions = ["What notice must a Kentucky landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Kentucky?", "Where does a landlord file an eviction case in Kentucky, and what does it cost?", "Can a Kentucky landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Kentucky?", "Is a self-help eviction (lockout, utility shutoff) legal in Kentucky?"]
+inspired_by = "https://ipropertymanagement.com/laws/kentucky-eviction-process"
+demand = "KRS §383.660 (URLTA areas, 7-day notice) and §383.200-.285 (forcible detainer); source URL: https://apps.legislature.ky.gov/law/statutes/"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "kentucky-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Kentucky Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Kentucky landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Kentucky have a cap on rent increases or rent control?", "How many days notice does a Kentucky landlord need to raise the rent?", "Can a Kentucky landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Kentucky?", "Do cities in Kentucky add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/kentucky-rent-increases"
+demand = "KRS §383.695 (URLTA periodic tenancy notice), KRS §383.160 (non-URLTA areas); source URL: https://apps.legislature.ky.gov/law/statutes/"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "louisiana-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Louisiana Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Louisiana law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Louisiana?", "How many days does a Louisiana landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Louisiana?", "Does a Louisiana landlord have to give an itemized list of deductions?", "Must a Louisiana landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Louisiana landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/louisiana-security-deposit-returns"
+demand = "La. R.S. 9:3251 to 9:3254; source URL: https://legis.la.gov/legis/LawSearch.aspx"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "louisiana-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Louisiana Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Louisiana?"
+subquestions = ["What notice must a Louisiana landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Louisiana?", "Where does a landlord file an eviction case in Louisiana, and what does it cost?", "Can a Louisiana landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Louisiana?", "Is a self-help eviction (lockout, utility shutoff) legal in Louisiana?"]
+inspired_by = "https://ipropertymanagement.com/laws/louisiana-eviction-process"
+demand = "La. Code Civ. Proc. art. 4701-4735 (5-day notice to vacate, eviction); source URL: https://legis.la.gov/legis/LawSearch.aspx"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "louisiana-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Louisiana Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Louisiana landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Louisiana have a cap on rent increases or rent control?", "How many days notice does a Louisiana landlord need to raise the rent?", "Can a Louisiana landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Louisiana?", "Do cities in Louisiana add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/louisiana-rent-increases"
+demand = "La. Civ. Code art. 2728 (notice to end month-to-month lease); source URL: https://legis.la.gov/legis/LawSearch.aspx"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "maine-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Maine Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Maine law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Maine?", "How many days does a Maine landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Maine?", "Does a Maine landlord have to give an itemized list of deductions?", "Must a Maine landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Maine landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/maine-security-deposit-returns"
+demand = "14 M.R.S. §6031-6038; source URL: https://legislature.maine.gov/statutes/14/title14sec6033.html"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "maine-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Maine Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Maine?"
+subquestions = ["What notice must a Maine landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Maine?", "Where does a landlord file an eviction case in Maine, and what does it cost?", "Can a Maine landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Maine?", "Is a self-help eviction (lockout, utility shutoff) legal in Maine?"]
+inspired_by = "https://ipropertymanagement.com/laws/maine-eviction-process"
+demand = "14 M.R.S. §6002 (7-day and 30-day notices) and §6001-6017 (forcible entry and detainer); source URL: https://legislature.maine.gov/statutes/14/title14sec6002.html"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "maine-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Maine Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Maine, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Maine?", "Does Maine law require a grace period before a late fee?", "Must the late fee be written in the lease in Maine?", "Can a Maine landlord charge a daily late fee?", "Can a Maine landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/maine-landlord-tenant-rights"
+demand = "14 M.R.S. §6028 (late fee cap 4%, 15-day grace) and §6015 (45-day rent increase notice); source URL: https://legislature.maine.gov/statutes/14/title14sec6028.html"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "maryland-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Maryland Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Maryland law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Maryland?", "How many days does a Maryland landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Maryland?", "Does a Maryland landlord have to give an itemized list of deductions?", "Must a Maryland landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Maryland landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/maryland-security-deposit-returns"
+demand = "Md. Code, Real Prop. §8-203; source URL: https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&section=8-203"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "maryland-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Maryland Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Maryland?"
+subquestions = ["What notice must a Maryland landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Maryland?", "Where does a landlord file an eviction case in Maryland, and what does it cost?", "Can a Maryland landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Maryland?", "Is a self-help eviction (lockout, utility shutoff) legal in Maryland?"]
+inspired_by = "https://ipropertymanagement.com/laws/maryland-eviction-process"
+demand = "Md. Code, Real Prop. §8-401 (failure to pay rent, 10-day notice) and §8-402; source URL: https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&section=8-401"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "maryland-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Maryland Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Maryland, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Maryland?", "Does Maryland law require a grace period before a late fee?", "Must the late fee be written in the lease in Maryland?", "Can a Maryland landlord charge a daily late fee?", "Can a Maryland landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/maryland-landlord-tenant-rights"
+demand = "Md. Code, Real Prop. §8-208(d)(3) (late fee cap 5% of monthly rent); source URL: https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&section=8-208"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "massachusetts-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Massachusetts Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Massachusetts law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Massachusetts?", "How many days does a Massachusetts landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Massachusetts?", "Does a Massachusetts landlord have to give an itemized list of deductions?", "Must a Massachusetts landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Massachusetts landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/massachusetts-security-deposit-returns"
+demand = "Mass. Gen. Laws ch. 186 §15B; source URL: https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "massachusetts-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Massachusetts Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Massachusetts?"
+subquestions = ["What notice must a Massachusetts landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Massachusetts?", "Where does a landlord file an eviction case in Massachusetts, and what does it cost?", "Can a Massachusetts landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Massachusetts?", "Is a self-help eviction (lockout, utility shutoff) legal in Massachusetts?"]
+inspired_by = "https://ipropertymanagement.com/laws/massachusetts-eviction-process"
+demand = "Mass. Gen. Laws ch. 186 §11-12 (notice to quit) and ch. 239 (summary process); source URL: https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleIII/Chapter239"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "massachusetts-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Massachusetts Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Massachusetts landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Massachusetts have a cap on rent increases or rent control?", "How many days notice does a Massachusetts landlord need to raise the rent?", "Can a Massachusetts landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Massachusetts?", "Do cities in Massachusetts add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/massachusetts-rent-increases"
+demand = "Mass. Gen. Laws ch. 186 §12 (notice to end tenancy at will), §15B(1)(c) (late fee after 30 days); source URL: https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "michigan-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Michigan Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Michigan law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Michigan?", "How many days does a Michigan landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Michigan?", "Does a Michigan landlord have to give an itemized list of deductions?", "Must a Michigan landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Michigan landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/michigan-security-deposit-returns"
+demand = "MCL §554.601-.616 (Security Deposit Act); source URL: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-554-609"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "michigan-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Michigan Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Michigan?"
+subquestions = ["What notice must a Michigan landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Michigan?", "Where does a landlord file an eviction case in Michigan, and what does it cost?", "Can a Michigan landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Michigan?", "Is a self-help eviction (lockout, utility shutoff) legal in Michigan?"]
+inspired_by = "https://ipropertymanagement.com/laws/michigan-eviction-process"
+demand = "MCL §600.5714 (summary proceedings) and §554.134 (7-day demand); source URL: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-5714"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "michigan-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Michigan Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Michigan landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Michigan have a cap on rent increases or rent control?", "How many days notice does a Michigan landlord need to raise the rent?", "Can a Michigan landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Michigan?", "Do cities in Michigan add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/michigan-rent-increases"
+demand = "MCL §554.134 (notice to end month-to-month), MCL §123.411 (rent control preemption); source URL: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-554-134"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "minnesota-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Minnesota Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Minnesota law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Minnesota?", "How many days does a Minnesota landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Minnesota?", "Does a Minnesota landlord have to give an itemized list of deductions?", "Must a Minnesota landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Minnesota landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/minnesota-security-deposit-returns"
+demand = "Minn. Stat. §504B.178; source URL: https://www.revisor.mn.gov/statutes/cite/504B.178"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "minnesota-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Minnesota Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Minnesota?"
+subquestions = ["What notice must a Minnesota landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Minnesota?", "Where does a landlord file an eviction case in Minnesota, and what does it cost?", "Can a Minnesota landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Minnesota?", "Is a self-help eviction (lockout, utility shutoff) legal in Minnesota?"]
+inspired_by = "https://ipropertymanagement.com/laws/minnesota-eviction-process"
+demand = "Minn. Stat. §504B.135, §504B.291 and §504B.321 (eviction action, 14-day notice for rent); source URL: https://www.revisor.mn.gov/statutes/cite/504B.321"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "minnesota-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Minnesota Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Minnesota, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Minnesota?", "Does Minnesota law require a grace period before a late fee?", "Must the late fee be written in the lease in Minnesota?", "Can a Minnesota landlord charge a daily late fee?", "Can a Minnesota landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/minnesota-landlord-tenant-rights"
+demand = "Minn. Stat. §504B.177 (late fee cap 8% of overdue rent); source URL: https://www.revisor.mn.gov/statutes/cite/504B.177"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "mississippi-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Mississippi Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Mississippi law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Mississippi?", "How many days does a Mississippi landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Mississippi?", "Does a Mississippi landlord have to give an itemized list of deductions?", "Must a Mississippi landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Mississippi landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/mississippi-security-deposit-returns"
+demand = "Miss. Code §89-8-21; source URL: https://www.legislature.ms.gov"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "mississippi-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Mississippi Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Mississippi?"
+subquestions = ["What notice must a Mississippi landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Mississippi?", "Where does a landlord file an eviction case in Mississippi, and what does it cost?", "Can a Mississippi landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Mississippi?", "Is a self-help eviction (lockout, utility shutoff) legal in Mississippi?"]
+inspired_by = "https://ipropertymanagement.com/laws/mississippi-eviction-process"
+demand = "Miss. Code §89-7-27 (3-day notice) and §89-8-13 (14-day notice); source URL: https://www.legislature.ms.gov"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "mississippi-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Mississippi Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Mississippi landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Mississippi have a cap on rent increases or rent control?", "How many days notice does a Mississippi landlord need to raise the rent?", "Can a Mississippi landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Mississippi?", "Do cities in Mississippi add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/mississippi-rent-increases"
+demand = "Miss. Code §89-8-19 (periodic tenancy termination notice); source URL: https://www.legislature.ms.gov"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "missouri-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Missouri Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Missouri law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Missouri?", "How many days does a Missouri landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Missouri?", "Does a Missouri landlord have to give an itemized list of deductions?", "Must a Missouri landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Missouri landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/missouri-security-deposit-returns"
+demand = "Mo. Rev. Stat. §535.300; source URL: https://revisor.mo.gov/main/OneSection.aspx?section=535.300"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "missouri-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Missouri Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Missouri?"
+subquestions = ["What notice must a Missouri landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Missouri?", "Where does a landlord file an eviction case in Missouri, and what does it cost?", "Can a Missouri landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Missouri?", "Is a self-help eviction (lockout, utility shutoff) legal in Missouri?"]
+inspired_by = "https://ipropertymanagement.com/laws/missouri-eviction-process"
+demand = "Mo. Rev. Stat. Ch. 535 (rent and possession) and Ch. 534 (unlawful detainer); source URL: https://revisor.mo.gov/main/OneSection.aspx?section=535.010"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "missouri-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Missouri Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Missouri landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Missouri have a cap on rent increases or rent control?", "How many days notice does a Missouri landlord need to raise the rent?", "Can a Missouri landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Missouri?", "Do cities in Missouri add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/missouri-rent-increases"
+demand = "Mo. Rev. Stat. §441.060 (one-month notice for month-to-month), §441.043 (rent control preemption); source URL: https://revisor.mo.gov/main/OneSection.aspx?section=441.060"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "montana-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Montana Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Montana law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Montana?", "How many days does a Montana landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Montana?", "Does a Montana landlord have to give an itemized list of deductions?", "Must a Montana landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Montana landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/montana-security-deposit-returns"
+demand = "Mont. Code §70-25-101 to -206; source URL: https://leg.mt.gov/bills/mca/"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "montana-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Montana Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Montana?"
+subquestions = ["What notice must a Montana landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Montana?", "Where does a landlord file an eviction case in Montana, and what does it cost?", "Can a Montana landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Montana?", "Is a self-help eviction (lockout, utility shutoff) legal in Montana?"]
+inspired_by = "https://ipropertymanagement.com/laws/montana-eviction-process"
+demand = "Mont. Code §70-24-422 (3-day notice) and §70-27-101 et seq. (forcible entry and detainer); source URL: https://leg.mt.gov/bills/mca/"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "montana-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Montana Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Montana landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Montana have a cap on rent increases or rent control?", "How many days notice does a Montana landlord need to raise the rent?", "Can a Montana landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Montana?", "Do cities in Montana add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/montana-rent-increases"
+demand = "Mont. Code §70-24-441 (periodic tenancy termination notice); source URL: https://leg.mt.gov/bills/mca/"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "nebraska-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Nebraska Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Nebraska law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Nebraska?", "How many days does a Nebraska landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Nebraska?", "Does a Nebraska landlord have to give an itemized list of deductions?", "Must a Nebraska landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Nebraska landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/nebraska-security-deposit-returns"
+demand = "Neb. Rev. Stat. §76-1416; source URL: https://nebraskalegislature.gov/laws/statutes.php?statute=76-1416"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "nebraska-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Nebraska Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Nebraska?"
+subquestions = ["What notice must a Nebraska landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Nebraska?", "Where does a landlord file an eviction case in Nebraska, and what does it cost?", "Can a Nebraska landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Nebraska?", "Is a self-help eviction (lockout, utility shutoff) legal in Nebraska?"]
+inspired_by = "https://ipropertymanagement.com/laws/nebraska-eviction-process"
+demand = "Neb. Rev. Stat. §76-1431 (7-day notice) and §25-21,219 et seq. (restitution); source URL: https://nebraskalegislature.gov/laws/statutes.php?statute=76-1431"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "nebraska-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Nebraska Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Nebraska landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Nebraska have a cap on rent increases or rent control?", "How many days notice does a Nebraska landlord need to raise the rent?", "Can a Nebraska landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Nebraska?", "Do cities in Nebraska add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/nebraska-rent-increases"
+demand = "Neb. Rev. Stat. §76-1437 (periodic tenancy termination notice); source URL: https://nebraskalegislature.gov/laws/statutes.php?statute=76-1437"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "nevada-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Nevada Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Nevada law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Nevada?", "How many days does a Nevada landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Nevada?", "Does a Nevada landlord have to give an itemized list of deductions?", "Must a Nevada landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Nevada landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/nevada-security-deposit-returns"
+demand = "NRS §118A.242; source URL: https://www.leg.state.nv.us/NRS/NRS-118A.html"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "nevada-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Nevada Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Nevada?"
+subquestions = ["What notice must a Nevada landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Nevada?", "Where does a landlord file an eviction case in Nevada, and what does it cost?", "Can a Nevada landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Nevada?", "Is a self-help eviction (lockout, utility shutoff) legal in Nevada?"]
+inspired_by = "https://ipropertymanagement.com/laws/nevada-eviction-process"
+demand = "NRS §40.2512-40.2542 and §40.253 (7-day pay-or-quit, summary eviction); source URL: https://www.leg.state.nv.us/NRS/NRS-040.html"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "nevada-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Nevada Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Nevada landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Nevada have a cap on rent increases or rent control?", "How many days notice does a Nevada landlord need to raise the rent?", "Can a Nevada landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Nevada?", "Do cities in Nevada add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/nevada-rent-increases"
+demand = "NRS §118A.300 (rent increase notice), §118A.210 (late fee cap 5%); source URL: https://www.leg.state.nv.us/NRS/NRS-118A.html"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "new-hampshire-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "New Hampshire Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does New Hampshire law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in New Hampshire?", "How many days does a New Hampshire landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in New Hampshire?", "Does a New Hampshire landlord have to give an itemized list of deductions?", "Must a New Hampshire landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a New Hampshire landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-hampshire-security-deposit-returns"
+demand = "RSA 540-A:5 to 540-A:8; source URL: https://www.gencourt.state.nh.us/rsa/html/LV/540-A/540-A-7.htm"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "new-hampshire-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "New Hampshire Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in New Hampshire?"
+subquestions = ["What notice must a New Hampshire landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in New Hampshire?", "Where does a landlord file an eviction case in New Hampshire, and what does it cost?", "Can a New Hampshire landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in New Hampshire?", "Is a self-help eviction (lockout, utility shutoff) legal in New Hampshire?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-hampshire-eviction-process"
+demand = "RSA 540:2-540:3 (just cause, 7-day notice for rent) and RSA 540:12-14 (writ of possession); source URL: https://www.gencourt.state.nh.us/rsa/html/LV/540/540-mrg.htm"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "new-hampshire-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "New Hampshire Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a New Hampshire landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does New Hampshire have a cap on rent increases or rent control?", "How many days notice does a New Hampshire landlord need to raise the rent?", "Can a New Hampshire landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in New Hampshire?", "Do cities in New Hampshire add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-hampshire-rent-increases"
+demand = "RSA 540:2 and 540:3 (30-day notice, rent increase as a reason to end tenancy); source URL: https://www.gencourt.state.nh.us/rsa/html/LV/540/540-mrg.htm"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "new-jersey-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "New Jersey Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does New Jersey law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in New Jersey?", "How many days does a New Jersey landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in New Jersey?", "Does a New Jersey landlord have to give an itemized list of deductions?", "Must a New Jersey landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a New Jersey landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-jersey-security-deposit-returns"
+demand = "N.J.S.A. §46:8-19 to -26 (Rent Security Deposit Act); source URL: https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf (DCA Truth in Renting)"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "new-jersey-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "New Jersey Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in New Jersey?"
+subquestions = ["What notice must a New Jersey landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in New Jersey?", "Where does a landlord file an eviction case in New Jersey, and what does it cost?", "Can a New Jersey landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in New Jersey?", "Is a self-help eviction (lockout, utility shutoff) legal in New Jersey?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-jersey-eviction-process"
+demand = "N.J.S.A. §2A:18-61.1 (Anti-Eviction Act, good cause) and §2A:18-61.2 (notices); source URL: https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "new-jersey-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "New Jersey Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a New Jersey landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does New Jersey have a cap on rent increases or rent control?", "How many days notice does a New Jersey landlord need to raise the rent?", "Can a New Jersey landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in New Jersey?", "Do cities in New Jersey add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-jersey-rent-increases"
+demand = "N.J.S.A. §2A:18-61.1(f) (unconscionable increase), municipal rent control ordinances; source URL: https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "new-mexico-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "New Mexico Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does New Mexico law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in New Mexico?", "How many days does a New Mexico landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in New Mexico?", "Does a New Mexico landlord have to give an itemized list of deductions?", "Must a New Mexico landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a New Mexico landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-mexico-security-deposit-returns"
+demand = "N.M. Stat. §47-8-18; source URL: https://nmonesource.com"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "new-mexico-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "New Mexico Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in New Mexico?"
+subquestions = ["What notice must a New Mexico landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in New Mexico?", "Where does a landlord file an eviction case in New Mexico, and what does it cost?", "Can a New Mexico landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in New Mexico?", "Is a self-help eviction (lockout, utility shutoff) legal in New Mexico?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-mexico-eviction-process"
+demand = "N.M. Stat. §47-8-33 (3-day notice) and §47-8-40 to -46 (possession action); source URL: https://nmonesource.com"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "new-mexico-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "New Mexico Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in New Mexico, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in New Mexico?", "Does New Mexico law require a grace period before a late fee?", "Must the late fee be written in the lease in New Mexico?", "Can a New Mexico landlord charge a daily late fee?", "Can a New Mexico landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-mexico-landlord-tenant-rights"
+demand = "N.M. Stat. §47-8-15(D) (late fee cap 10% of rent per period); source URL: https://nmonesource.com"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "new-york-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "New York Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does New York law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in New York?", "How many days does a New York landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in New York?", "Does a New York landlord have to give an itemized list of deductions?", "Must a New York landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a New York landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-york-security-deposit-returns"
+demand = "N.Y. Gen. Oblig. Law §7-103 to 7-108 (one-month cap, 14-day return); source URL: https://www.nysenate.gov/legislation/laws/GOB/7-108"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "new-york-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "New York Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in New York?"
+subquestions = ["What notice must a New York landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in New York?", "Where does a landlord file an eviction case in New York, and what does it cost?", "Can a New York landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in New York?", "Is a self-help eviction (lockout, utility shutoff) legal in New York?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-york-eviction-process"
+demand = "N.Y. RPAPL §711 (14-day rent demand) and RPL §216 (Good Cause Eviction, 2024); source URL: https://www.nysenate.gov/legislation/laws/RPA/711"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "new-york-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "New York Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a New York landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does New York have a cap on rent increases or rent control?", "How many days notice does a New York landlord need to raise the rent?", "Can a New York landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in New York?", "Do cities in New York add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/new-york-rent-increases"
+demand = "N.Y. RPL §226-c (30/60/90-day notice of increase or non-renewal), §238-a (late fee cap $50 or 5%); source URL: https://www.nysenate.gov/legislation/laws/RPP/226-C"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "north-carolina-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "North Carolina Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does North Carolina law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in North Carolina?", "How many days does a North Carolina landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in North Carolina?", "Does a North Carolina landlord have to give an itemized list of deductions?", "Must a North Carolina landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a North Carolina landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/north-carolina-security-deposit-returns"
+demand = "N.C. Gen. Stat. §42-50 to -56 (Tenant Security Deposit Act); source URL: https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_42/GS_42-52.html"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "north-carolina-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "North Carolina Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in North Carolina?"
+subquestions = ["What notice must a North Carolina landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in North Carolina?", "Where does a landlord file an eviction case in North Carolina, and what does it cost?", "Can a North Carolina landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in North Carolina?", "Is a self-help eviction (lockout, utility shutoff) legal in North Carolina?"]
+inspired_by = "https://ipropertymanagement.com/laws/north-carolina-eviction-process"
+demand = "N.C. Gen. Stat. §42-3 (10-day demand) and §42-26 to -36.2 (summary ejectment); source URL: https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_42/Article_3.html"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "north-carolina-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "North Carolina Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in North Carolina, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in North Carolina?", "Does North Carolina law require a grace period before a late fee?", "Must the late fee be written in the lease in North Carolina?", "Can a North Carolina landlord charge a daily late fee?", "Can a North Carolina landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/north-carolina-landlord-tenant-rights"
+demand = "N.C. Gen. Stat. §42-46 (late fee cap $15 or 5%, 5-day grace; eviction fees); source URL: https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_42/GS_42-46.html"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "north-dakota-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "North Dakota Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does North Dakota law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in North Dakota?", "How many days does a North Dakota landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in North Dakota?", "Does a North Dakota landlord have to give an itemized list of deductions?", "Must a North Dakota landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a North Dakota landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/north-dakota-security-deposit-returns"
+demand = "N.D. Cent. Code §47-16-07.1; source URL: https://ndlegis.gov/cencode/t47c16.pdf"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "north-dakota-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "North Dakota Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in North Dakota?"
+subquestions = ["What notice must a North Dakota landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in North Dakota?", "Where does a landlord file an eviction case in North Dakota, and what does it cost?", "Can a North Dakota landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in North Dakota?", "Is a self-help eviction (lockout, utility shutoff) legal in North Dakota?"]
+inspired_by = "https://ipropertymanagement.com/laws/north-dakota-eviction-process"
+demand = "N.D. Cent. Code §47-32-01 to -02 (3-day notice, eviction); source URL: https://ndlegis.gov/cencode/t47c32.pdf"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "north-dakota-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "North Dakota Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a North Dakota landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does North Dakota have a cap on rent increases or rent control?", "How many days notice does a North Dakota landlord need to raise the rent?", "Can a North Dakota landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in North Dakota?", "Do cities in North Dakota add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/north-dakota-rent-increases"
+demand = "N.D. Cent. Code §47-16-07 (rent increase notice), §47-16-15 (termination notice); source URL: https://ndlegis.gov/cencode/t47c16.pdf"
+priority = 8
+status = "planned"
+
+[[topic]]
+slug = "ohio-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Ohio Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Ohio law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Ohio?", "How many days does a Ohio landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Ohio?", "Does a Ohio landlord have to give an itemized list of deductions?", "Must a Ohio landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Ohio landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/ohio-security-deposit-returns"
+demand = "Ohio Rev. Code §5321.16; source URL: https://codes.ohio.gov/ohio-revised-code/section-5321.16"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "ohio-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Ohio Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Ohio?"
+subquestions = ["What notice must a Ohio landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Ohio?", "Where does a landlord file an eviction case in Ohio, and what does it cost?", "Can a Ohio landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Ohio?", "Is a self-help eviction (lockout, utility shutoff) legal in Ohio?"]
+inspired_by = "https://ipropertymanagement.com/laws/ohio-eviction-process"
+demand = "Ohio Rev. Code §1923.04 (3-day notice) and Ch. 1923 (forcible entry and detainer); source URL: https://codes.ohio.gov/ohio-revised-code/section-1923.04"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "ohio-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Ohio Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Ohio landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Ohio have a cap on rent increases or rent control?", "How many days notice does a Ohio landlord need to raise the rent?", "Can a Ohio landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Ohio?", "Do cities in Ohio add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/ohio-rent-increases"
+demand = "Ohio Rev. Code §5321.17 (30-day notice to end month-to-month); source URL: https://codes.ohio.gov/ohio-revised-code/section-5321.17"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "oklahoma-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Oklahoma Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Oklahoma law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Oklahoma?", "How many days does a Oklahoma landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Oklahoma?", "Does a Oklahoma landlord have to give an itemized list of deductions?", "Must a Oklahoma landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Oklahoma landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/oklahoma-security-deposit-returns"
+demand = "Okla. Stat. tit. 41 §115; source URL: https://www.oscn.net"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "oklahoma-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Oklahoma Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Oklahoma?"
+subquestions = ["What notice must a Oklahoma landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Oklahoma?", "Where does a landlord file an eviction case in Oklahoma, and what does it cost?", "Can a Oklahoma landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Oklahoma?", "Is a self-help eviction (lockout, utility shutoff) legal in Oklahoma?"]
+inspired_by = "https://ipropertymanagement.com/laws/oklahoma-eviction-process"
+demand = "Okla. Stat. tit. 41 §131 (5-day notice) and tit. 12 §1148.1 et seq. (forcible entry and detainer); source URL: https://www.oscn.net"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "oklahoma-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Oklahoma Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Oklahoma landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Oklahoma have a cap on rent increases or rent control?", "How many days notice does a Oklahoma landlord need to raise the rent?", "Can a Oklahoma landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Oklahoma?", "Do cities in Oklahoma add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/oklahoma-rent-increases"
+demand = "Okla. Stat. tit. 41 §111 (30-day periodic tenancy notice); source URL: https://www.oscn.net"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "oregon-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Oregon Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Oregon law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Oregon?", "How many days does a Oregon landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Oregon?", "Does a Oregon landlord have to give an itemized list of deductions?", "Must a Oregon landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Oregon landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/oregon-security-deposit-returns"
+demand = "ORS §90.300; source URL: https://www.oregonlegislature.gov/bills_laws/ors/ors090.html"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "oregon-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Oregon Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Oregon?"
+subquestions = ["What notice must a Oregon landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Oregon?", "Where does a landlord file an eviction case in Oregon, and what does it cost?", "Can a Oregon landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Oregon?", "Is a self-help eviction (lockout, utility shutoff) legal in Oregon?"]
+inspired_by = "https://ipropertymanagement.com/laws/oregon-eviction-process"
+demand = "ORS §90.394 (nonpayment notice), §90.427 (just cause) and §105.105-.168 (FED); source URL: https://www.oregonlegislature.gov/bills_laws/ors/ors090.html"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "oregon-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Oregon Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Oregon landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Oregon have a cap on rent increases or rent control?", "How many days notice does a Oregon landlord need to raise the rent?", "Can a Oregon landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Oregon?", "Do cities in Oregon add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/oregon-rent-increases"
+demand = "ORS §90.323 (statewide rent cap, 90-day notice), §90.600; source URL: https://www.oregonlegislature.gov/bills_laws/ors/ors090.html"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "pennsylvania-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Pennsylvania Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Pennsylvania law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Pennsylvania?", "How many days does a Pennsylvania landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Pennsylvania?", "Does a Pennsylvania landlord have to give an itemized list of deductions?", "Must a Pennsylvania landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Pennsylvania landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/pennsylvania-security-deposit-returns"
+demand = "68 P.S. §250.511a-250.512 (Landlord and Tenant Act of 1951); source URL: https://www.palegis.us"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "pennsylvania-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Pennsylvania Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Pennsylvania?"
+subquestions = ["What notice must a Pennsylvania landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Pennsylvania?", "Where does a landlord file an eviction case in Pennsylvania, and what does it cost?", "Can a Pennsylvania landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Pennsylvania?", "Is a self-help eviction (lockout, utility shutoff) legal in Pennsylvania?"]
+inspired_by = "https://ipropertymanagement.com/laws/pennsylvania-eviction-process"
+demand = "68 P.S. §250.501 (notice to quit) and §250.502-.513 (recovery of possession); source URL: https://www.palegis.us"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "pennsylvania-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Pennsylvania Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Pennsylvania landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Pennsylvania have a cap on rent increases or rent control?", "How many days notice does a Pennsylvania landlord need to raise the rent?", "Can a Pennsylvania landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Pennsylvania?", "Do cities in Pennsylvania add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/pennsylvania-rent-increases"
+demand = "68 P.S. §250.501 (notice periods), no statewide rent cap; Philadelphia Code Ch. 9-800 for Philadelphia; source URL: https://www.palegis.us"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rhode-island-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Rhode Island Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Rhode Island law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Rhode Island?", "How many days does a Rhode Island landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Rhode Island?", "Does a Rhode Island landlord have to give an itemized list of deductions?", "Must a Rhode Island landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Rhode Island landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/rhode-island-security-deposit-returns"
+demand = "R.I. Gen. Laws §34-18-19; source URL: https://webserver.rilegislature.gov/Statutes/TITLE34/34-18/34-18-19.htm"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "rhode-island-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Rhode Island Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Rhode Island?"
+subquestions = ["What notice must a Rhode Island landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Rhode Island?", "Where does a landlord file an eviction case in Rhode Island, and what does it cost?", "Can a Rhode Island landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Rhode Island?", "Is a self-help eviction (lockout, utility shutoff) legal in Rhode Island?"]
+inspired_by = "https://ipropertymanagement.com/laws/rhode-island-eviction-process"
+demand = "R.I. Gen. Laws §34-18-35 (nonpayment notice) and §34-18-37; source URL: https://webserver.rilegislature.gov/Statutes/TITLE34/34-18/34-18-35.htm"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "rhode-island-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Rhode Island Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Rhode Island landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Rhode Island have a cap on rent increases or rent control?", "How many days notice does a Rhode Island landlord need to raise the rent?", "Can a Rhode Island landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Rhode Island?", "Do cities in Rhode Island add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/rhode-island-rent-increases"
+demand = "R.I. Gen. Laws §34-18-37 (periodic tenancy termination), §34-18-15 (rent increase notice); source URL: https://webserver.rilegislature.gov/Statutes/TITLE34/34-18/INDEX.htm"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "south-carolina-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "South Carolina Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does South Carolina law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in South Carolina?", "How many days does a South Carolina landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in South Carolina?", "Does a South Carolina landlord have to give an itemized list of deductions?", "Must a South Carolina landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a South Carolina landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/south-carolina-security-deposit-returns"
+demand = "S.C. Code §27-40-410; source URL: https://www.scstatehouse.gov/code/t27c040.php"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "south-carolina-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "South Carolina Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in South Carolina?"
+subquestions = ["What notice must a South Carolina landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in South Carolina?", "Where does a landlord file an eviction case in South Carolina, and what does it cost?", "Can a South Carolina landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in South Carolina?", "Is a self-help eviction (lockout, utility shutoff) legal in South Carolina?"]
+inspired_by = "https://ipropertymanagement.com/laws/south-carolina-eviction-process"
+demand = "S.C. Code §27-40-710 (5-day notice) and §27-37-10 et seq. (ejectment); source URL: https://www.scstatehouse.gov/code/t27c040.php"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "south-carolina-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "South Carolina Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a South Carolina landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does South Carolina have a cap on rent increases or rent control?", "How many days notice does a South Carolina landlord need to raise the rent?", "Can a South Carolina landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in South Carolina?", "Do cities in South Carolina add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/south-carolina-rent-increases"
+demand = "S.C. Code §27-40-770 (periodic tenancy termination notice); source URL: https://www.scstatehouse.gov/code/t27c040.php"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "south-dakota-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "South Dakota Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does South Dakota law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in South Dakota?", "How many days does a South Dakota landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in South Dakota?", "Does a South Dakota landlord have to give an itemized list of deductions?", "Must a South Dakota landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a South Dakota landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/south-dakota-security-deposit-returns"
+demand = "S.D. Codified Laws §43-32-6.1 and §43-32-24; source URL: https://sdlegislature.gov/Statutes/43-32-24"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "south-dakota-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "South Dakota Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in South Dakota?"
+subquestions = ["What notice must a South Dakota landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in South Dakota?", "Where does a landlord file an eviction case in South Dakota, and what does it cost?", "Can a South Dakota landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in South Dakota?", "Is a self-help eviction (lockout, utility shutoff) legal in South Dakota?"]
+inspired_by = "https://ipropertymanagement.com/laws/south-dakota-eviction-process"
+demand = "S.D. Codified Laws §21-16-1 to -2 (forcible entry and detainer, 3-day notice); source URL: https://sdlegislature.gov/Statutes/21-16-1"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "south-dakota-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "South Dakota Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a South Dakota landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does South Dakota have a cap on rent increases or rent control?", "How many days notice does a South Dakota landlord need to raise the rent?", "Can a South Dakota landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in South Dakota?", "Do cities in South Dakota add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/south-dakota-rent-increases"
+demand = "S.D. Codified Laws §43-32-13 (month-to-month termination notice); source URL: https://sdlegislature.gov/Statutes/43-32-13"
+priority = 8
+status = "planned"
+
+[[topic]]
+slug = "tennessee-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Tennessee Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Tennessee law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Tennessee?", "How many days does a Tennessee landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Tennessee?", "Does a Tennessee landlord have to give an itemized list of deductions?", "Must a Tennessee landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Tennessee landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/tennessee-security-deposit-returns"
+demand = "Tenn. Code §66-28-301 (URLTA counties); source URL: https://www.capitol.tn.gov"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tennessee-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Tennessee Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Tennessee?"
+subquestions = ["What notice must a Tennessee landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Tennessee?", "Where does a landlord file an eviction case in Tennessee, and what does it cost?", "Can a Tennessee landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Tennessee?", "Is a self-help eviction (lockout, utility shutoff) legal in Tennessee?"]
+inspired_by = "https://ipropertymanagement.com/laws/tennessee-eviction-process"
+demand = "Tenn. Code §66-28-505 (14-day notice) and §29-18-101 et seq. (detainer); source URL: https://www.capitol.tn.gov"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tennessee-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Tennessee Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Tennessee, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Tennessee?", "Does Tennessee law require a grace period before a late fee?", "Must the late fee be written in the lease in Tennessee?", "Can a Tennessee landlord charge a daily late fee?", "Can a Tennessee landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/tennessee-landlord-tenant-rights"
+demand = "Tenn. Code §66-28-201(d) (late fee cap 10%, 5-day grace); source URL: https://www.capitol.tn.gov"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "texas-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Texas Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Texas law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Texas?", "How many days does a Texas landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Texas?", "Does a Texas landlord have to give an itemized list of deductions?", "Must a Texas landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Texas landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/texas-security-deposit-returns"
+demand = "Tex. Prop. Code §92.101-.109; source URL: https://statutes.capitol.texas.gov/Docs/PR/htm/PR.92.htm"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "texas-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Texas Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Texas?"
+subquestions = ["What notice must a Texas landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Texas?", "Where does a landlord file an eviction case in Texas, and what does it cost?", "Can a Texas landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Texas?", "Is a self-help eviction (lockout, utility shutoff) legal in Texas?"]
+inspired_by = "https://ipropertymanagement.com/laws/texas-eviction-process"
+demand = "Tex. Prop. Code §24.005 (notice to vacate) and Tex. R. Civ. P. 510; source URL: https://statutes.capitol.texas.gov/Docs/PR/htm/PR.24.htm"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "texas-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Texas Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Texas, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Texas?", "Does Texas law require a grace period before a late fee?", "Must the late fee be written in the lease in Texas?", "Can a Texas landlord charge a daily late fee?", "Can a Texas landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/texas-landlord-tenant-rights"
+demand = "Tex. Prop. Code §92.019 (late fee cap 12% / 10%, 2 full days grace); source URL: https://statutes.capitol.texas.gov/Docs/PR/htm/PR.92.htm"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "utah-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Utah Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Utah law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Utah?", "How many days does a Utah landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Utah?", "Does a Utah landlord have to give an itemized list of deductions?", "Must a Utah landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Utah landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/utah-security-deposit-returns"
+demand = "Utah Code §57-17-1 to -5; source URL: https://le.utah.gov/xcode/Title57/Chapter17/57-17-S3.html"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "utah-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Utah Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Utah?"
+subquestions = ["What notice must a Utah landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Utah?", "Where does a landlord file an eviction case in Utah, and what does it cost?", "Can a Utah landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Utah?", "Is a self-help eviction (lockout, utility shutoff) legal in Utah?"]
+inspired_by = "https://ipropertymanagement.com/laws/utah-eviction-process"
+demand = "Utah Code §78B-6-802 (notices) and §78B-6-810 (unlawful detainer); source URL: https://le.utah.gov/xcode/Title78B/Chapter6/78B-6-S802.html"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "utah-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Utah Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Utah landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Utah have a cap on rent increases or rent control?", "How many days notice does a Utah landlord need to raise the rent?", "Can a Utah landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Utah?", "Do cities in Utah add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/utah-rent-increases"
+demand = "Utah Code §78B-6-802 (15-day notice for month-to-month), §57-20-1 (rent control preemption); source URL: https://le.utah.gov/xcode/Title78B/Chapter6/78B-6-S802.html"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "vermont-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Vermont Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Vermont law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Vermont?", "How many days does a Vermont landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Vermont?", "Does a Vermont landlord have to give an itemized list of deductions?", "Must a Vermont landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Vermont landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/vermont-security-deposit-returns"
+demand = "9 V.S.A. §4461; source URL: https://legislature.vermont.gov/statutes/section/09/137/04461"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "vermont-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Vermont Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Vermont?"
+subquestions = ["What notice must a Vermont landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Vermont?", "Where does a landlord file an eviction case in Vermont, and what does it cost?", "Can a Vermont landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Vermont?", "Is a self-help eviction (lockout, utility shutoff) legal in Vermont?"]
+inspired_by = "https://ipropertymanagement.com/laws/vermont-eviction-process"
+demand = "9 V.S.A. §4467 (termination notices) and 12 V.S.A. §4851 et seq. (ejectment); source URL: https://legislature.vermont.gov/statutes/section/09/137/04467"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "vermont-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Vermont Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Vermont landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Vermont have a cap on rent increases or rent control?", "How many days notice does a Vermont landlord need to raise the rent?", "Can a Vermont landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Vermont?", "Do cities in Vermont add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/vermont-rent-increases"
+demand = "9 V.S.A. §4455 (60-day rent increase notice); source URL: https://legislature.vermont.gov/statutes/section/09/137/04455"
+priority = 8
+status = "planned"
+
+[[topic]]
+slug = "virginia-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Virginia Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Virginia law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Virginia?", "How many days does a Virginia landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Virginia?", "Does a Virginia landlord have to give an itemized list of deductions?", "Must a Virginia landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Virginia landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/virginia-security-deposit-returns"
+demand = "Va. Code §55.1-1226; source URL: https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1226/"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "virginia-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Virginia Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Virginia?"
+subquestions = ["What notice must a Virginia landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Virginia?", "Where does a landlord file an eviction case in Virginia, and what does it cost?", "Can a Virginia landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Virginia?", "Is a self-help eviction (lockout, utility shutoff) legal in Virginia?"]
+inspired_by = "https://ipropertymanagement.com/laws/virginia-eviction-process"
+demand = "Va. Code §55.1-1245 (5-day pay-or-quit notice) and §8.01-126 (unlawful detainer); source URL: https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1245/"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "virginia-late-fee-law"
+cluster = "state-law"
+kind = "data"
+title = "Virginia Late Fee Law for Landlords: Caps, Grace Periods, Lease Terms"
+question = "How much can a landlord charge as a late rent fee in Virginia, and when?"
+subquestions = ["What is the maximum late fee a landlord can charge in Virginia?", "Does Virginia law require a grace period before a late fee?", "Must the late fee be written in the lease in Virginia?", "Can a Virginia landlord charge a daily late fee?", "Can a Virginia landlord evict a tenant for unpaid late fees?"]
+inspired_by = "https://ipropertymanagement.com/laws/virginia-landlord-tenant-rights"
+demand = "Va. Code §55.1-1204(E) (late fee cap 10% of rent or remaining balance); source URL: https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1204/"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "washington-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Washington Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Washington law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Washington?", "How many days does a Washington landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Washington?", "Does a Washington landlord have to give an itemized list of deductions?", "Must a Washington landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Washington landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/washington-security-deposit-returns"
+demand = "RCW 59.18.260-.285; source URL: https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.280"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "washington-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Washington Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Washington?"
+subquestions = ["What notice must a Washington landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Washington?", "Where does a landlord file an eviction case in Washington, and what does it cost?", "Can a Washington landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Washington?", "Is a self-help eviction (lockout, utility shutoff) legal in Washington?"]
+inspired_by = "https://ipropertymanagement.com/laws/washington-eviction-process"
+demand = "RCW 59.12.030 (14-day pay-or-vacate), RCW 59.18.650 (just cause); source URL: https://app.leg.wa.gov/RCW/default.aspx?cite=59.12.030"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "washington-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Washington Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Washington landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Washington have a cap on rent increases or rent control?", "How many days notice does a Washington landlord need to raise the rent?", "Can a Washington landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Washington?", "Do cities in Washington add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/washington-rent-increases"
+demand = "RCW 59.18.140 (rent increase notice) and ESHB 1217 (2025, statewide rent increase cap); source URL: https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.140"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "west-virginia-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "West Virginia Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does West Virginia law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in West Virginia?", "How many days does a West Virginia landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in West Virginia?", "Does a West Virginia landlord have to give an itemized list of deductions?", "Must a West Virginia landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a West Virginia landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/west-virginia-security-deposit-returns"
+demand = "W. Va. Code §37-6A-1 to -6; source URL: https://code.wvlegislature.gov/37-6A-2/"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "west-virginia-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "West Virginia Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in West Virginia?"
+subquestions = ["What notice must a West Virginia landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in West Virginia?", "Where does a landlord file an eviction case in West Virginia, and what does it cost?", "Can a West Virginia landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in West Virginia?", "Is a self-help eviction (lockout, utility shutoff) legal in West Virginia?"]
+inspired_by = "https://ipropertymanagement.com/laws/west-virginia-eviction-process"
+demand = "W. Va. Code §55-3A-1 (summary eviction); source URL: https://code.wvlegislature.gov/55-3A-1/"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "west-virginia-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "West Virginia Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a West Virginia landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does West Virginia have a cap on rent increases or rent control?", "How many days notice does a West Virginia landlord need to raise the rent?", "Can a West Virginia landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in West Virginia?", "Do cities in West Virginia add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/west-virginia-rent-increases"
+demand = "W. Va. Code §37-6-5 (notice to end month-to-month tenancy); source URL: https://code.wvlegislature.gov/37-6-5/"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "wisconsin-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Wisconsin Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Wisconsin law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Wisconsin?", "How many days does a Wisconsin landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Wisconsin?", "Does a Wisconsin landlord have to give an itemized list of deductions?", "Must a Wisconsin landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Wisconsin landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/wisconsin-security-deposit-returns"
+demand = "Wis. Admin. Code ATCP 134.06 and Wis. Stat. §704.28; source URL: https://docs.legis.wisconsin.gov/code/admin_code/atcp/090/134"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "wisconsin-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Wisconsin Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Wisconsin?"
+subquestions = ["What notice must a Wisconsin landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Wisconsin?", "Where does a landlord file an eviction case in Wisconsin, and what does it cost?", "Can a Wisconsin landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Wisconsin?", "Is a self-help eviction (lockout, utility shutoff) legal in Wisconsin?"]
+inspired_by = "https://ipropertymanagement.com/laws/wisconsin-eviction-process"
+demand = "Wis. Stat. §704.17 (5-day and 14-day notices) and Ch. 799 (eviction); source URL: https://docs.legis.wisconsin.gov/statutes/statutes/704"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "wisconsin-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Wisconsin Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Wisconsin landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Wisconsin have a cap on rent increases or rent control?", "How many days notice does a Wisconsin landlord need to raise the rent?", "Can a Wisconsin landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Wisconsin?", "Do cities in Wisconsin add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/wisconsin-rent-increases"
+demand = "Wis. Stat. §704.19 (28-day periodic tenancy notice), §66.1015 (rent control preemption); source URL: https://docs.legis.wisconsin.gov/statutes/statutes/704"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "wyoming-security-deposit-law"
+cluster = "state-law"
+kind = "data"
+title = "Wyoming Security Deposit Law for Landlords: Limits, Deadlines, Deductions"
+question = "What does Wyoming law say about security deposit limits, return deadlines and deductions?"
+subquestions = ["What is the maximum security deposit a landlord can charge in Wyoming?", "How many days does a Wyoming landlord have to return a security deposit?", "What can a landlord deduct from a security deposit in Wyoming?", "Does a Wyoming landlord have to give an itemized list of deductions?", "Must a Wyoming landlord pay interest or keep the deposit in a separate account?", "What is the penalty for a Wyoming landlord who keeps a deposit wrongly?"]
+inspired_by = "https://ipropertymanagement.com/laws/wyoming-security-deposit-returns"
+demand = "Wyo. Stat. §1-21-1207 to -1208; source URL: https://wyoleg.gov/statutes/compress/title01.pdf"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "wyoming-eviction-process"
+cluster = "state-law"
+kind = "data"
+title = "Wyoming Eviction Process for Landlords: Notices, Court Steps, Timeline"
+question = "What are the steps and the timeline to evict a tenant in Wyoming?"
+subquestions = ["What notice must a Wyoming landlord give before filing an eviction for unpaid rent?", "How long does an eviction take in Wyoming?", "Where does a landlord file an eviction case in Wyoming, and what does it cost?", "Can a Wyoming landlord evict a tenant for a lease violation or with no cause?", "Who removes the tenant after a judgment in Wyoming?", "Is a self-help eviction (lockout, utility shutoff) legal in Wyoming?"]
+inspired_by = "https://ipropertymanagement.com/laws/wyoming-eviction-process"
+demand = "Wyo. Stat. §1-21-1002 to -1003 (3-day notice, forcible entry and detainer); source URL: https://wyoleg.gov/statutes/compress/title01.pdf"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "wyoming-rent-increase-and-notice-rules"
+cluster = "state-law"
+kind = "data"
+title = "Wyoming Rent Increase and Notice Rules: How Much Notice Landlords Must Give"
+question = "How much notice must a Wyoming landlord give to raise the rent or end a month-to-month lease?"
+subquestions = ["Does Wyoming have a cap on rent increases or rent control?", "How many days notice does a Wyoming landlord need to raise the rent?", "Can a Wyoming landlord raise the rent during a fixed-term lease?", "How much notice is needed to end a month-to-month tenancy in Wyoming?", "Do cities in Wyoming add their own rent or notice rules?"]
+inspired_by = "https://ipropertymanagement.com/laws/wyoming-rent-increases"
+demand = "Wyo. Stat. §1-21-1201 et seq. (Residential Rental Property Act; no statutory rent increase notice, lease controls); source URL: https://wyoleg.gov/statutes/compress/title01.pdf"
+priority = 8
+status = "planned"
