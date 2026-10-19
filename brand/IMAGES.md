@@ -51,6 +51,11 @@ Style: a vintage postage-stamp line engraving printed in three inks on clean whi
 | `property-management-v2` | Style N. A Roman insula with colorful shutters, one lit window with a laptop; landlord in orange toga with a key. Yellow sky. |
 | `section8-v2` | Style N. A red-brick Chicago two-flat with a column; a family waves from the porch; landlord in orange toga offers a key. Cyan sky. |
 | `fridman-case-v3` | Style N. Brownstone two-flats in pink, coral and lilac; a man in an orange toga with a phone and a map pin. Sun-yellow sky `#F2C230`. |
+| `guide-appfolio-alts-v1` | Style N, library draft `appfolio-alternatives`, style reference `guide-agencies-v2`. A Roman crossroads: four roads lead to four small temples (pink, mint, lilac, cobalt), each with a CRT computer; a landlord in an orange toga at center reads a brass compass. Cyan sky. |
+| `guide-best-software-v1` | Style N, library draft `best-property-management-software-50-200-doors`, style reference `guide-agencies-v2`. A landlord in an orange toga carries a CRT computer up a road on a hill with a growing row of colorful tiled houses; a brass measuring rod by the path. Coral sky. |
+| `guide-ca-eviction-v1` | Style N, library draft `california-eviction-process`, style reference `guide-agencies-v2`. A landlord in an orange toga climbs courthouse steps with a sealed scroll; a big brass hourglass on a mint column; a pink stucco house with palm trees. Lilac sky. |
+| `guide-ca-deposit-v1` | Style N, library draft `california-security-deposit-law`, style reference `guide-agencies-v2`. At the door of a pink stucco house with palm trees, a landlord in an orange toga hands a coin purse back to a leaving tenant; an open strongbox and a brass clock beside them. Yellow sky. |
+| `guide-s8-refuse-v1` | Style N, library draft `can-a-landlord-refuse-section-8`, style reference `guide-agencies-v2`. At the porch of a red-brick two-flat, a landlord in an orange toga welcomes a family; the father holds a scroll with a red wax seal; a brass scale of justice in front. Coral sky. |
 | `hero-v6`, `footer-v6` (old) | Vignette hero with a faded bottom; hill-town footer with Joseph as a carpenter. |
 
 ## 2b-N. Content images: N · Neo-Renaissance pop (since 2026-10-18)

@@ -24,6 +24,26 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-appfolio-buildium-v1",
     alt: "A pop engraving under a yellow sky: a landlord in an orange toga weighs model houses against a coin purse on a brass scale between two market stalls with old computers.",
   },
+  "appfolio-alternatives": {
+    img: "guide-appfolio-alts-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga with a brass compass stands at a crossroads between four colored temples, each with an old computer.",
+  },
+  "best-property-management-software-50-200-doors": {
+    img: "guide-best-software-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga carries an old computer up a hill road lined with more and more colorful houses.",
+  },
+  "california-eviction-process": {
+    img: "guide-ca-eviction-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga climbs courthouse steps with a sealed scroll past a big brass hourglass; a pink house and palm trees behind.",
+  },
+  "california-security-deposit-law": {
+    img: "guide-ca-deposit-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga hands a coin purse back to a leaving tenant at the door of a pink house with palm trees.",
+  },
+  "can-a-landlord-refuse-section-8": {
+    img: "guide-s8-refuse-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga welcomes a family with a sealed scroll at a red-brick two-flat, beside a brass scale of justice.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

@@ -176,3 +176,33 @@ file = "img/guide-appfolio-buildium-v1-*.webp"
 prompt = "Style reference guide-agencies-v2 (style N). A Roman marketplace with two rival merchant stalls side by side under striped awnings, one cobalt and mint, the other pink and coral; each counter holds a vintage CRT desktop computer and a small stack of coins; in the exact center a landlord in an orange toga holds a big antique brass balance scale, one pan with many tiny model houses, the other with one leather coin purse; a row of small tiled houses on the low horizon. Flat sun yellow #F2C230 sky. 16:9. No text, no logos, no frame."
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-19"
+
+[[image]]
+file = "img/guide-appfolio-alts-v1-*.webp"
+prompt = "Use the image /tmp/img-appfolio-alternatives/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga stands at a Roman crossroads where four paved roads lead to four small temples of different colors (pink, mint, lilac, cobalt), each temple with a vintage CRT desktop computer on its steps; he holds a brass compass; small tiled houses on the low horizon. The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-best-software-v1-*.webp"
+prompt = "Use the image /tmp/img-best-property-management-software-50-200-doors/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga walks up a gentle hill lined with a growing row of colorful tiled houses, few small ones at the bottom and many at the top; he carries a vintage CRT desktop computer in his arms; a brass measuring rod stands beside the path. The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-ca-eviction-v1-*.webp"
+prompt = "Use the image /tmp/img-california-eviction-process/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a Roman courthouse with cream columns on a hill with palm trees; a landlord in an orange toga climbs the courthouse steps holding a rolled paper scroll with a red wax seal; a small pink stucco house with a red tile roof at the side; a big brass hourglass stands on a column. The sky is one flat lilac #B48CE6 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-ca-deposit-v1-*.webp"
+prompt = "Use the image /tmp/img-california-security-deposit-law/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga at the door of a pink stucco house with palm trees hands a small leather coin purse back to a departing tenant carrying a travel bag; an open brass-bound strongbox and a brass calendar dial stand beside them. The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-s8-refuse-v1-*.webp"
+prompt = "Use the image /tmp/img-can-a-landlord-refuse-section-8/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a red-brick two-flat with a classical column porch; a landlord in an orange toga at the open door welcomes a family; the father holds a scroll with a red wax seal; a large brass scale of justice stands balanced on a stone pedestal in front. The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"

@@ -21,3 +21,8 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-track-v2.webp` | Guide: track AI traffic | N, lilac |
 | `guide-checklist-v2.webp` | Guide: AI search checklist | N, coral |
 | `guide-appfolio-buildium-v1.webp` | Guide: AppFolio vs Buildium | N, yellow |
+| `guide-appfolio-alts-v1.webp` | Library: AppFolio alternatives | N, cyan |
+| `guide-best-software-v1.webp` | Library: best software for 50 to 200 doors | N, coral |
+| `guide-ca-eviction-v1.webp` | Library: California eviction process | N, lilac |
+| `guide-ca-deposit-v1.webp` | Library: California security deposit law | N, yellow |
+| `guide-s8-refuse-v1.webp` | Library: can a landlord refuse Section 8 | N, coral |
