@@ -70,7 +70,7 @@ What to do: set a written reply target, for example same business day for owner 
 
 ## How do maintenance costs drive churn?
 
-Maintenance costs drive churn when they surprise the owner or cut too deep into rent. Hespen named a threshold in 2022: once an owner's maintenance costs go over 12% of the rent they collect, the owner is far more likely to leave (Fourandhalf, 2022). He said this applies to small investors with one or two properties, not to institutional clients.
+Maintenance costs drive churn when they surprise the owner or cut too deep into rent. Hespen named a threshold in 2022. Owners whose maintenance costs go over 12% of collected rent are far more likely to leave (Fourandhalf, 2022). He said this applies to small investors with one or two properties, not to institutional clients.
 
 Hespen also found something that surprised him. Owners who got 15% more maintenance work than average were more likely to stay. More small, low-cost jobs build trust. One big surprise bill breaks it.
 

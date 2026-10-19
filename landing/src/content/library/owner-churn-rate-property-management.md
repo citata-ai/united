@@ -1,6 +1,6 @@
 ---
 title: "Owner Churn Rate in Property Management: Formula, Benchmarks — Citata.ai"
-description: "Owner churn is doors lost in a year divided by doors at the start. Published benchmarks run from 9.6% to 25% a year. Here is the formula, the data and the targets."
+description: "Owner churn is doors lost in a year divided by doors at the start. Published benchmarks run from 9.6% to 25% a year. The formula, the data and the targets."
 headline: "Owner Churn Rate: How to Calculate It and What Is Normal"
 dek: "Published churn benchmarks for property managers run from 9.6% to 25%, and few cite a study."
 published: "2026-10-19"
@@ -90,7 +90,7 @@ Ray Hespen of Property Meld gave a number for this in 2022. Owners whose mainten
 
 ## Should I track churn by owner or by unit?
 
-Track both, because they answer different questions. Lohmann puts it this way in his January 2026 newsletter: client churn is the best metric for service quality, and unit churn is best for growth forecasts (issue #173).
+Track both, because they answer different questions. Lohmann put it this way in January 2026. Client churn is the best metric for service quality. Unit churn is best for growth forecasts (issue #173).
 
 | Metric | Formula | Use it for |
 |---|---|---|
@@ -115,7 +115,7 @@ Real companies move around this scale. Lohmann published his client churn for fo
 
 Churn matters more as you grow. Craig gives the example of 1,000 doors at 25% churn: you lose 250 doors a year, about 20 a month (Fourandhalf, 2022). Many companies add 10 to 30 doors a month, he says, so churn can eat most of the new business.
 
-If you want to see what one point of churn costs you in fees, run your door count and fee through our [property management fee calculator](/tools/property-management-fee-calculator). For the lead side of the same problem, read [why owner leads are dropping](/guides/why-owner-leads-are-dropping).
+To see what one point of churn costs you in fees, use our [property management fee calculator](/tools/property-management-fee-calculator). For the lead side of the same problem, read [why owner leads are dropping](/guides/why-owner-leads-are-dropping).
 
 ## Checklist: start to measure churn this month
 
