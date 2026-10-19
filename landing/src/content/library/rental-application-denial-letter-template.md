@@ -33,7 +33,7 @@ sources:
 
 ## How should a landlord deny a rental application in a fair and legal way?
 
-A landlord should deny a rental application in writing, for a reason that comes from written screening criteria, and with an adverse action notice when a consumer report played a part. Those 3 steps cover most of the risk. A phone call that says "it didn't work out" covers none of it.
+A landlord should deny a rental application in writing, for a reason from written screening criteria. Add an adverse action notice when a consumer report played a part. Those 3 steps cover most of the risk. A phone call that says "it didn't work out" covers none of it.
 
 Follow these steps for each denial:
 
@@ -111,7 +111,7 @@ The letter must give 4 facts about the consumer report, plus the credit score if
 3. **The free report.** The applicant's right to a free copy of the report from the agency if they ask within 60 days.
 4. **The dispute right.** The applicant's right to dispute wrong or incomplete information with the agency.
 
-If you used a credit score, the FTC says to give the score, a description of it (source, date and range for that model) and the key factors that hurt the score, ranked by importance. Your screening company often supplies these facts in its report. Copy them into the letter exactly.
+If you used a credit score, the FTC says to give the score and a description of it (source, date and range). Also list the key factors that hurt the score, ranked by importance. Your screening company often supplies these facts in its report. Copy them into the letter exactly.
 
 Watch for: a screening company that gives you only a "pass" or "fail" result. What to do: ask the company for the agency name, contact data and score details before you send the notice.
 

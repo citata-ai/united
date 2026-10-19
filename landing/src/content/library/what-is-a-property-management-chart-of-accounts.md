@@ -143,7 +143,7 @@ Sample balance sheet accounts for the trust books:
 | 3000 | Owner contributions | Equity |
 | 3100 | Owner draws | Equity |
 
-Account 2200 shows a common gap. Your books may hold prepaid rent as a liability until it is earned, but for tax, Pub 527 counts advance rent as income in the year received. Ask the owner's tax adviser how to report it.
+Account 2200 shows a common gap. Your books may hold prepaid rent as a liability until it is earned. For tax, Pub 527 counts advance rent as income in the year received. Ask the owner's tax adviser how to report it.
 
 ## Should every property use the same chart of accounts?
 

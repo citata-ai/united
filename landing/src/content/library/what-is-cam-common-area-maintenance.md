@@ -1,6 +1,6 @@
 ---
 title: "What Are CAM Charges? Common Area Maintenance Explained — Citata.ai"
-description: "CAM charges are what tenants pay to maintain shared spaces like lobbies and parking lots. What goes into CAM, how a tenant's share is split, and how reconciliation works."
+description: "CAM charges are what tenants pay to maintain shared spaces like lobbies and parking lots. What goes into CAM, how shares split, and how to reconcile CAM."
 headline: "What Are CAM Charges, and How Are They Split?"
 dek: "The pro rata math, a year-end reconciliation worked through, and when CAM shows up in residential."
 published: "2026-10-19"
@@ -63,7 +63,7 @@ Tango Analytics also tells tenants to make sure the lease grants "reasonable rig
 
 ## How do you calculate a tenant's CAM share?
 
-You calculate a tenant's CAM share by dividing the tenant's square feet by the total square feet in the lease, then multiplying by the CAM cost. This method is called pro rata share.
+You calculate a tenant's CAM share in 2 steps. Divide the tenant's square feet by the total square feet in the lease, then multiply by the CAM cost. This method is called pro rata share.
 
 The formula:
 

@@ -1,6 +1,6 @@
 ---
 title: "1099 Forms for Landlords and Property Managers (2026) — Citata.ai"
-description: "Which 1099 forms a property manager sends: 1099-MISC box 1 for rent paid to owners, 1099-NEC for vendors, the $2,000 threshold for 2026, and the January 31 deadline."
+description: "Which 1099s a property manager sends: 1099-MISC box 1 for rent paid to owners, 1099-NEC for vendors, the $2,000 threshold for 2026, and the January 31 date."
 headline: "Which 1099 Forms Does a Property Manager Send?"
 dek: "1099-MISC for owners, 1099-NEC for vendors, and the 2026 rules in one table."
 published: "2026-10-19"
@@ -55,7 +55,7 @@ This is general information, not tax advice. Check the current law or ask a tax 
 
 ## Does a property manager send owners a 1099-MISC?
 
-Yes. A property manager who collects rent from tenants sends each owner a Form 1099-MISC. The IRS instructions say that when a tenant pays a real estate agent or property manager, the agent "must use Form 1099-MISC to report the rent paid over to the property owner".
+Yes. A property manager who collects rent from tenants sends each owner a Form 1099-MISC. The IRS instructions cover the case where a tenant pays a real estate agent or property manager. The agent "must use Form 1099-MISC to report the rent paid over to the property owner".
 
 The tenant does not send the 1099. The IRS says rent paid to a property manager is generally not reported by the payer. The duty sits with the manager, who passes the rent to the owner.
 

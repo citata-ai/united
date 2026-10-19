@@ -1,6 +1,6 @@
 ---
-title: "RFTA Guide: Request for Tenancy Approval Without Delays — Citata.ai"
-description: "How to fill out the Section 8 Request for Tenancy Approval (HUD-52517): what is in the packet, approval times, common mistakes, W-9 and ownership proof, rent rejections."
+title: "RFTA Guide: Fill Out a Request for Tenancy Approval — Citata.ai"
+description: "How to fill out the Section 8 Request for Tenancy Approval (HUD-52517): the packet, approval times, common mistakes, W-9 and ownership proof, rent rejections."
 headline: "Request for Tenancy Approval: Fill It Out Without Delays"
 dek: "One incomplete page can add weeks. A field-by-field checklist from a real packet."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
 title: "What Is a Tenant Ledger? Entries, Disputes, Records — Citata.ai"
-description: "A tenant ledger is the running record of every charge, payment and credit on one lease. What goes on it, how it differs from a rent ledger, and how long to keep it."
+description: "A tenant ledger is the running record of every charge, payment and credit on one lease. What goes on it, tenant vs rent ledger, and how long to keep it."
 headline: "What Is a Tenant Ledger, and Why Does It Matter?"
 dek: "A sample ledger, the 7 entry types, and how a clean ledger settles a rent dispute."
 published: "2026-10-19"
@@ -88,7 +88,7 @@ Watch for these 4 ledger problems. Each one weakens your case:
 3. **Wrong payment order.** Payments applied to fees first when the lease or local law says rent comes first.
 4. **Missing payments.** A payment the tenant can prove but the ledger does not show.
 
-A worked example. A tenant says they owe $0. The ledger shows $120. You print the ledger and point to 2 lines: a $75 late fee (lease section 4, paid 5 days late) and a $45 blind charge (work order #2231, with photos). The tenant can now see the source of each dollar, and the talk moves from "who is right" to "is this charge fair".
+A worked example. A tenant says they owe $0. The ledger shows $120. You print the ledger and point to 2 lines. One is a $75 late fee (lease section 4, paid 5 days late). The other is a $45 blind charge (work order #2231, with photos). The tenant can now see the source of each dollar, and the talk moves from "who is right" to "is this charge fair".
 
 Some states set rules for receipts, which feed the ledger. Minnesota statute 504B.118, as shown on the Revisor's site, says a landlord who receives rent in cash "must provide a written receipt". The receipt is due at once for an in-person payment, or within 3 business days otherwise. The Revisor page notes a 2026 amendment, so check the current text.
 
@@ -129,7 +129,7 @@ This is general information, not tax advice. Check the current law or ask a tax 
 
 A tenant can ask for a copy of the ledger, and you should give one. A copy shows good faith and often ends a dispute fast. Many tenant portals show the ledger all the time.
 
-Some states require receipts on request. Nevada statute NRS 118A.250 says the landlord "shall deliver to the tenant upon the tenant's request a signed written receipt" for deposits, fees and rent paid. The same section says "the tenant may refuse to make rent payments until the landlord tenders the requested receipt." That is a strong reason to answer requests fast.
+Some states require receipts on request. Nevada statute NRS 118A.250 covers receipts. The landlord "shall deliver to the tenant upon the tenant's request a signed written receipt" for deposits, fees and rent paid. The same section says "the tenant may refuse to make rent payments until the landlord tenders the requested receipt." That is a strong reason to answer requests fast.
 
 Before you send the copy, check 3 things:
 

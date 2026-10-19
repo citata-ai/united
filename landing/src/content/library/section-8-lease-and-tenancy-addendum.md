@@ -1,6 +1,6 @@
 ---
-title: "The Section 8 Lease and HUD Tenancy Addendum Explained — Citata.ai"
-description: "Use your own standard lease plus the HUD tenancy addendum, word for word. Required terms, banned clauses, the one-year first term, and which text wins in a conflict."
+title: "The Section 8 Lease and HUD Tenancy Addendum — Citata.ai"
+description: "Use your own standard lease plus the HUD tenancy addendum, word for word. Required terms, banned clauses, the one-year first term, and which text wins."
 headline: "The Section 8 Lease and the HUD Tenancy Addendum"
 dek: "Your lease, plus HUD's addendum word for word. When they conflict, HUD's text wins."
 published: "2026-10-19"

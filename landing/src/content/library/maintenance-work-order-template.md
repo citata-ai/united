@@ -157,9 +157,9 @@ The invoice then goes on the owner's statement. The photos stay on the order. If
 
 ## What changes for homes built before 1978?
 
-Homes built before 1978 add one more check before you assign the vendor. The EPA Renovation, Repair and Painting (RRP) Program says anyone paid to do work that disturbs painted surfaces in housing built before 1978 must be certified. The EPA page names property management firms that do or offer this work.
+Homes built before 1978 add one more check before you assign the vendor. The EPA Renovation, Repair and Painting (RRP) Program covers housing built before 1978. Anyone paid to do work there that disturbs painted surfaces must be certified. The EPA page names property management firms that do or offer this work.
 
-The rule has a small-job exception. Under 40 CFR 745.83, "minor repair and maintenance" means 6 square feet or less of painted surface per room inside, or 20 square feet or less outside. Window replacement and demolition of painted surfaces do not count as minor, at any size.
+The rule has a small-job exception. Under 40 CFR 745.83, "minor repair and maintenance" means 6 square feet or less of painted surface per room inside. Outside, the limit is 20 square feet. Window replacement and demolition of painted surfaces do not count as minor, at any size.
 
 So add two fields to the work order: "Year built" and "Lead-safe certified firm". If the year is before 1978 and the job disturbs paint above those limits, send a certified firm. Some states run their own program, so check your state's rules too.
 

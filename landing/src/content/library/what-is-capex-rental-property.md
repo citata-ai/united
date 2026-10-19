@@ -1,7 +1,7 @@
 ---
 title: "What Is CapEx on a Rental Property? Repair vs Improvement — Citata.ai"
-description: "CapEx on a rental is money spent to better, restore or adapt the property, like a new roof. The IRS line between repair and improvement, budgets, owner reports and NOI."
-headline: "What Is CapEx on a Rental, and How Is It Not a Repair?"
+description: "CapEx on a rental is money spent to better, restore or adapt it, like a new roof. The IRS line between repair and improvement, budgets, owner reports and NOI."
+headline: "What Is CapEx on a Rental Property?"
 dek: "The IRS betterment, restoration and adaptation tests, 3 safe harbors, and a reserve budget worked out."
 published: "2026-10-19"
 updated: "2026-10-19"
@@ -63,8 +63,8 @@ So scale matters. Replacing 1 broken HVAC fan motor is generally a repair. Repla
 The IRS gives 3 safe harbors that let owners deduct some costs that might otherwise be capitalized:
 
 1. **De minimis safe harbor.** Deduct purchases up to $2,500 per invoice or item if you have no applicable financial statement ($5,000 if you do). Elect it each year on your return.
-2. **Small taxpayer safe harbor.** For owners with average annual gross receipts of $10 million or less, and a building with an unadjusted basis under $1 million. You can deduct repairs and improvements on that building if the year's total is no more than the lesser of 2% of the building's basis or $10,000.
-3. **Routine maintenance safe harbor.** Deduct recurring work you expect to do on a building more than once in the 10 years after it is placed in service.
+2. **Small taxpayer safe harbor.** This is for owners with average annual gross receipts of $10 million or less. The building must have an unadjusted basis under $1 million. You can then deduct repairs and improvements on that building, up to a yearly cap. The cap is the lesser of 2% of the building's basis or $10,000.
+3. **Routine maintenance safe harbor.** Deduct recurring work on a building that you expect to do more than once in 10 years. The 10 years start when the building is placed in service.
 
 A worked example of the small taxpayer safe harbor. A rental house has an unadjusted basis of $300,000. 2% of $300,000 is $6,000, which is less than $10,000. So the limit is $6,000. If all repairs and improvements on that house total $5,400 for the year, the owner can elect to deduct all $5,400. If they total $7,000, the safe harbor does not apply to that year.
 
@@ -82,7 +82,7 @@ Land is not depreciable, as the Schedule E instructions note. Only the building 
 
 Owners should budget for CapEx from a list of major components, their replacement costs and their remaining lives. A flat rule of thumb is a start, not a plan.
 
-One lender benchmark: the Fannie Mae Multifamily Guide, section 105.01, sets the minimum replacement reserve for its multifamily loans at the greater of a property-specific calculation or "$250 per unit per year". That is a floor for loan underwriting, not a full budget for an older building.
+One lender benchmark is the Fannie Mae Multifamily Guide, section 105.01. For its multifamily loans, the minimum replacement reserve is the greater of a property calculation or "$250 per unit per year". That is a floor for loan underwriting, not a full budget for an older building.
 
 Build a component budget instead. Here is a worked example for one single-family rental. The costs and lives are sample inputs; use local quotes and the age of each item.
 

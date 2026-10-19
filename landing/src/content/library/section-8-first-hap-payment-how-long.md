@@ -1,6 +1,6 @@
 ---
 title: "How Long Until the First Section 8 Payment Arrives? — Citata.ai"
-description: "The first HAP payment can take up to 60 days after move-in. It is backdated to the later of move-in or the passed inspection. What delays it and how to speed it up."
+description: "The first HAP payment can take up to 60 days after move-in. It is backdated to the later of move-in or a passed inspection. What delays it and how to speed up."
 headline: "How Long Until the First Section 8 Payment Arrives"
 dek: "Plan for up to 60 days. Three housing authorities show why, and what to file early."
 published: "2026-10-19"

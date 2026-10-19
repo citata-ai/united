@@ -1,5 +1,5 @@
 ---
-title: "Can a Landlord Refuse Section 8? Federal and State Law — Citata.ai"
+title: "Can a Landlord Refuse Section 8? What the Law Says — Citata.ai"
 description: "No federal law makes most landlords accept vouchers, but 19 states plus DC and Guam ban source-of-income bias. Check your state, your city and your ads."
 headline: "Can a Landlord Refuse a Section 8 Voucher?"
 dek: "Federal law says yes for most owners. Your state or city may say no."

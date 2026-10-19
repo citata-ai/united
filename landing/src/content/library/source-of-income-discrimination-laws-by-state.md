@@ -1,5 +1,5 @@
 ---
-title: "Source-of-Income Laws by State: Where Vouchers Are Protected — Citata.ai"
+title: "Source-of-Income Laws by State: Voucher Protections — Citata.ai"
 description: "19 states plus DC and Guam protect voucher holders from source-of-income bias, per PRRAC's March 2026 list. State-by-state table, local laws and penalties."
 headline: "Source-of-Income Laws by State, 2026"
 dek: "19 states, DC and Guam protect voucher holders. Seven states block local laws."

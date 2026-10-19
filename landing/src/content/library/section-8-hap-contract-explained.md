@@ -1,5 +1,5 @@
 ---
-title: "The HAP Contract Explained: What a Section 8 Landlord Signs — Citata.ai"
+title: "The HAP Contract Explained for Section 8 Landlords — Citata.ai"
 description: "The HAP contract is between you and the housing authority, not the tenant. Its three parts, your certifications, how it ends and what happens at move-out."
 headline: "The HAP Contract Explained for Section 8 Landlords"
 dek: "Three parts, seven owner promises, and nine ways the contract can end."

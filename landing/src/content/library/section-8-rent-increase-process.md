@@ -1,5 +1,5 @@
 ---
-title: "How to Raise the Rent on a Section 8 Tenant: The Steps — Citata.ai"
+title: "How to Raise the Rent on a Section 8 Tenant — Citata.ai"
 description: "No rent increase in the first lease term, 60 days' notice to the housing authority, and a new rent reasonableness check. Steps, timeline and a request template."
 headline: "How to Raise the Rent on a Section 8 Tenant"
 dek: "Wait out the first lease term, give 60 days' notice, and pass the rent check again."

@@ -33,7 +33,7 @@ sources:
 
 ## What should a pet addendum to a lease include?
 
-A pet addendum to a lease should include 6 parts: the parties, the pet, the money terms, the rules, damage and liability, and what happens on a breach. Each part answers one question that comes up later in a dispute. Without the addendum, the lease alone often says "no pets" or says nothing.
+A pet addendum to a lease should include 6 parts. They are the parties, the pet, the money terms, the rules, damage and liability, and breach. Each part answers one question that comes up later in a dispute. Without the addendum, the lease alone often says "no pets" or says nothing.
 
 Use the template below. Fill in the blanks for each pet. One addendum can cover more than one pet, but list each pet on its own line.
 
@@ -117,7 +117,7 @@ This is general information, not legal advice. Check the current law or ask a lo
 
 Handle service animals and support animals as a reasonable accommodation, not as pets. The federal Fair Housing Act bans housing discrimination on 6 bases, and disability is one of them. The U.S. Department of Justice lists them: race or color, religion, sex, national origin, familial status and disability.
 
-HUD set out the rules for animals in notice FHEO-2020-01 (January 2020). A summary by the National Low Income Housing Coalition quotes the notice: a housing provider may not "charge a fee or deposit" for service animals or support animals. The tenant can still be charged for actual damage the animal causes.
+HUD set out the rules for animals in notice FHEO-2020-01 (January 2020). The National Low Income Housing Coalition quotes the notice in its summary. A housing provider may not "charge a fee or deposit" for service animals or support animals. The tenant can still be charged for actual damage the animal causes.
 
 The ADA uses a narrower term. ADA.gov says a service animal is a dog "individually trained to do work or perform tasks" for a person with a disability. When the task is not obvious, staff may ask only 2 questions:
 

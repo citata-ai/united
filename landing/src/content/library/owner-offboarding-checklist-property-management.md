@@ -1,5 +1,5 @@
 ---
-title: "Owner Offboarding Checklist for Property Managers — Citata.ai"
+title: "Owner Offboarding Checklist for Property Managers (Free) — Citata.ai"
 description: "What a property manager must hand over when an owner ends management: deposits, trust funds, records, keys, tenant notices and a final owner statement."
 headline: "Owner Offboarding Checklist: What to Hand Over and When"
 dek: "A 5-part handover checklist, a sample timeline and the final statement math for an exiting owner."
@@ -93,7 +93,7 @@ This is a generic checklist, not a state legal form. Check your state's laws and
 
 Transfer security deposits and prepaid rent to the owner or the next manager, with a separate line for each tenant. The tenant's deposit belongs to the tenant until the lease ends, so the money must stay traceable.
 
-Florida gives a clear example. Florida statute 83.49(7) says that on a sale or "a change in the designated rental agent", deposits and advance rents go to the new owner or agent. The transfer includes any earned interest and "an accurate accounting showing the amounts to be credited to each tenant account". The statute also releases the old party once it hands over the funds and records and gets a written receipt.
+Florida gives a clear example. Florida statute 83.49(7) covers a sale or "a change in the designated rental agent". In both cases, deposits and advance rents go to the new owner or agent. The transfer includes any earned interest and "an accurate accounting showing the amounts to be credited to each tenant account". The statute also releases the old party once it hands over the funds and records and gets a written receipt.
 
 Other states have their own rules. Some say the old landlord stays liable until the tenant gets notice. Find your state's deposit statute before you move any money.
 
@@ -151,7 +151,7 @@ Here is a worked example for a 3-unit building:
 
 The math: $2,100 + $4,500 − $360 − $640 + $500 = $6,100 owed to the owner. The $6,200 of deposits and prepaid rent is tenant money, not owner income. Show it on its own transfer page, not inside the net payout.
 
-Then send the year-to-date income and expense report. The owner needs it for tax filing. IRS instructions for Forms 1099-MISC and 1099-NEC say a property manager who collects rent "must use Form 1099-MISC to report the rent paid over to the property owner". For tax year 2026, the rent threshold is $2,000. So tell the owner that you will still send the 1099-MISC for the months you managed.
+Then send the year-to-date income and expense report. The owner needs it for tax filing. The IRS instructions for Forms 1099-MISC and 1099-NEC cover this. A manager who collects rent "must use Form 1099-MISC to report the rent paid over to the property owner". For tax year 2026, the rent threshold is $2,000. So tell the owner that you will still send the 1099-MISC for the months you managed.
 
 This is general information, not tax advice. Check the current law or ask a tax professional.
 

@@ -1,6 +1,6 @@
 ---
 title: "Mold in a Rental: What Landlords Must Do and When — Citata.ai"
-description: "A tenant reports mold. Find the moisture source, fix it in 24-48 hours, clean small areas, and know when state law and EPA guidance call for more."
+description: "A tenant reports mold. Find the moisture source, dry it in 24-48 hours, clean small areas, and learn when state law and EPA guidance call for more work."
 headline: "Mold in a Rental: What Landlords Must Do"
 dek: "Fix the water first, then the mold, then write down what you did."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
 title: "What Is a 1031 Exchange? A Guide for Rental Owners — Citata.ai"
-description: "A 1031 exchange lets a rental owner defer tax on gain by trading one investment property for another. The 45-day and 180-day rules, records and the manager's role."
+description: "A 1031 exchange lets a rental owner defer tax on gain by trading one investment property for another. The 45-day and 180-day rules, and the manager role."
 headline: "What Is a 1031 Exchange for Rental Property Owners?"
 dek: "The 45-day and 180-day rules, a worked timeline, and the records a property manager supplies."
 published: "2026-10-19"
@@ -35,7 +35,7 @@ sources:
 
 ## What is a 1031 exchange?
 
-A 1031 exchange is a trade of one investment or business real property for another like-kind real property, with the tax on the gain put off. The name comes from Internal Revenue Code section 1031. The IRS says that in a qualifying exchange "you are not required to recognize a gain or loss".
+A 1031 exchange is a trade of one investment or business real property for another like-kind real property. The tax on the gain is put off. The name comes from Internal Revenue Code section 1031. The IRS says that in a qualifying exchange "you are not required to recognize a gain or loss".
 
 The tax is deferred, not erased. The gain from the old property carries into the new one. If the owner later sells without another exchange, the tax comes due then.
 
@@ -50,7 +50,7 @@ This is general information, not tax advice. Check the current law or ask a tax 
 The 45-day and 180-day rules set the deadlines in a deferred exchange. A deferred exchange is one where the owner sells first and buys the replacement later. The IRS Form 8824 instructions (2025) give both deadlines:
 
 1. **45 days to identify.** Identify the replacement property in writing "no later than 45 days after the date you transferred the property you gave up".
-2. **180 days to close.** Receive the replacement property by the earlier of the 180th day after the transfer or the due date of your tax return, with extensions.
+2. **180 days to close.** Receive the replacement property by the 180th day after the transfer. If your tax return due date (with extensions) comes first, that date is the limit.
 
 Both clocks start on the same day: the day the old property transfers. The 45 days sit inside the 180 days, not before them.
 
@@ -124,7 +124,7 @@ Three practical points for managers:
 
 1. **Do not give tax advice.** Send the owner to a tax professional for exchange rules.
 2. **Be fast with data.** Rent comps and expense history help the owner pick in 45 days.
-3. **Watch the related-party rule.** If the owner wants to buy from a relative or a company they control, flag the 2-year rule and send them to their adviser.
+3. **Watch the related-party rule.** The owner may want to buy from a relative or a company they control. If so, flag the 2-year rule and send them to their adviser.
 
 To show owners what you charge for the new property, use the [property management fee calculator](/tools/property-management-fee-calculator).
 

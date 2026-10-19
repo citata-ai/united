@@ -1,6 +1,6 @@
 ---
-title: "Section 8 Landlord Incentives: Bonuses, Vacancy Pay, Damage — Citata.ai"
-description: "Some housing authorities pay voucher landlords a signing bonus, vacancy loss pay or damage claims. Real amounts from Delaware and Santa Cruz, and what HUD OIG found."
+title: "Section 8 Landlord Incentives: Bonuses and Damage Pay — Citata.ai"
+description: "Some housing authorities pay voucher landlords signing bonuses, vacancy pay or damage claims. Real amounts from Delaware and Santa Cruz, and what HUD OIG found."
 headline: "Section 8 Landlord Incentives: What PHAs Pay"
 dek: "A $1,000 signing bonus in Delaware, up to $5,000 in damage cover in Santa Cruz."
 published: "2026-10-19"

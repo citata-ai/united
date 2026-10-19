@@ -1,6 +1,6 @@
 ---
 title: "Rental Application Approval Letter Template (Free) — Citata.ai"
-description: "A free rental application approval letter template: lease start, signing deadline, move-in funds table, conditions, and when a conditional approval needs an FCRA notice."
+description: "A free rental approval letter template: lease start, signing deadline, move-in funds, conditions, and when a conditional approval needs an FCRA notice."
 headline: "Rental Application Approval Letter Template and Checklist"
 dek: "A copy-ready approval letter, a move-in funds table, and the conditional approval rule."
 published: "2026-10-19"
@@ -33,7 +33,7 @@ sources:
 
 ## What should a rental application approval letter include?
 
-A rental application approval letter should include 7 items: the applicant, the unit, the approval, the lease terms, the move-in funds, the deadline and any conditions. The letter turns a "yes" into a clear next step. A vague "you're approved, call us" letter leads to missed deadlines and an empty unit.
+A rental application approval letter should include 7 items. They are the applicant, the unit, the approval, the lease terms, the move-in funds, the deadline and any conditions. The letter turns a "yes" into a clear next step. A vague "you're approved, call us" letter leads to missed deadlines and an empty unit.
 
 Use this checklist before you send:
 
@@ -97,7 +97,7 @@ This is a generic template, not a state legal form. Check your local law before 
 
 The applicant has as long as your letter says. No federal rule sets the deadline, so put a clear date and time in the letter. A short deadline keeps the unit moving. A deadline that is too short can push out good applicants who need a day to move money.
 
-Pick one rule for your company and use it for every applicant. The same deadline for every applicant is fair and easy to defend. It also follows the spirit of the Fair Housing Act, which bans discrimination based on race or color, religion, sex, national origin, familial status and disability (U.S. Department of Justice).
+Pick one rule for your company and use it for every applicant. The same deadline for every applicant is fair and easy to defend. It also follows the spirit of the Fair Housing Act. That law bans discrimination based on race or color, religion, sex, national origin, familial status and disability (U.S. Department of Justice).
 
 A sample deadline table:
 

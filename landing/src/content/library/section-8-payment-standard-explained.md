@@ -1,5 +1,5 @@
 ---
-title: "Section 8 Payment Standard vs Fair Market Rent, Explained — Citata.ai"
+title: "Section 8 Payment Standard vs Fair Market Rent — Citata.ai"
 description: "HUD sets the Fair Market Rent. Your housing authority sets the payment standard at 90% to 110% of it. How the cap works, exception standards and FY2027 FMRs."
 headline: "Payment Standard vs Fair Market Rent: The Voucher Cap"
 dek: "HUD publishes the FMR. Your housing authority turns it into the number that sets the HAP."

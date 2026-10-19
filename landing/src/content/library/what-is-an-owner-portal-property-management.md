@@ -1,6 +1,6 @@
 ---
-title: "What Is an Owner Portal in Property Management? — Citata.ai"
-description: "An owner portal is the secure website or app where a rental owner sees statements, reports, documents and repairs. What it should show, approvals, and vs tenant portal."
+title: "What Is an Owner Portal in Property Management? A Guide — Citata.ai"
+description: "An owner portal is the secure site or app where a rental owner sees statements, reports, documents and repairs. What it should show, approvals, vs tenant portals."
 headline: "What Is an Owner Portal, and What Should You See?"
 dek: "A checklist of the reports, documents and approvals an owner portal should give you."
 published: "2026-10-19"
@@ -68,7 +68,7 @@ The bills line matters more than it looks. The Propertyware owner portal guide, 
 
 ## Can owners approve repairs in the portal?
 
-Owners can approve repairs in some owner portals, if the manager turns that feature on. The Propertyware owner portal guide lists "Approve or reject work orders" as an owner task. The guide also says the buttons "are only available if your property management company requires approvals for work orders", and only for open, unapproved work orders.
+Owners can approve repairs in some owner portals, if the manager turns that feature on. The Propertyware owner portal guide lists "Approve or reject work orders" as an owner task. The guide says the buttons "are only available if your property management company requires approvals for work orders". They show only for open, unapproved work orders.
 
 Other portals handle repairs as requests and history. The Buildium owner portal page says owners "can submit maintenance requests as tasks" and view "the full history of maintenance and repair tasks". The page does not describe an owner approval button, so ask your manager how approvals work in theirs.
 

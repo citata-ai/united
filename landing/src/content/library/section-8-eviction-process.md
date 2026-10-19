@@ -1,6 +1,6 @@
 ---
-title: "How to Evict a Section 8 Tenant: The Rules That Differ — Citata.ai"
-description: "Evicting a voucher tenant needs good cause during the lease, a written notice of grounds, a copy to the housing authority and a court order. HAP rules during the case."
+title: "How to Evict a Section 8 Tenant: What Differs — Citata.ai"
+description: "Evicting a voucher tenant takes good cause during the lease, a notice of grounds, a copy to the housing authority and a court order. HAP rules during the case."
 headline: "How to Evict a Section 8 Tenant: What Differs"
 dek: "State eviction law still applies. Federal rules add four steps and two limits."
 published: "2026-10-19"

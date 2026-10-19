@@ -1,5 +1,5 @@
 ---
-title: "Vendor Onboarding Checklist for Property Managers — Citata.ai"
+title: "Vendor Onboarding Checklist for Property Managers (Free) — Citata.ai"
 description: "What to collect before a new vendor starts work: W-9, certificate of insurance, license checks, lead-safe status, rates, response times and payment terms."
 headline: "Vendor Onboarding Checklist for Property Management Teams"
 dek: "One checklist, a vendor terms sheet and the 2026 IRS rules that make the W-9 matter."
@@ -111,7 +111,7 @@ Use this table to plan your checks:
 | General handyman | Any state or city limits on job size | State contractor board | At onboarding |
 | Any trade in pre-1978 homes | EPA lead-safe firm certification | EPA or your state program | At onboarding, then at renewal |
 
-The lead-safe check comes from federal law. The EPA Renovation, Repair and Painting (RRP) Program says anyone paid to do work that disturbs painted surfaces in housing built before 1978 must be certified. The EPA page names property management firms that do this work. Some states run their own program instead of EPA.
+The lead-safe check comes from federal law. The EPA Renovation, Repair and Painting (RRP) Program covers housing built before 1978. Anyone paid to do work there that disturbs painted surfaces must be certified. The EPA page names property management firms that do this work. Some states run their own program instead of EPA.
 
 Save a screenshot of each lookup in the vendor record. Add a reminder for each license end date.
 

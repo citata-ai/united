@@ -1,6 +1,6 @@
 ---
 title: "How to Do a Move-Out Inspection That Holds Up — Citata.ai"
-description: "Run a move-out inspection that matches the move-in report: when to do it, whether the tenant attends, how to compare photos, and the deposit deadlines in 3 states."
+description: "Run a move-out inspection that matches the move-in report: when to do it, if the tenant attends, how to compare photos, and deposit deadlines in 3 states."
 headline: "How to Do a Move-Out Inspection"
 dek: "Compare room by room against the move-in report, then meet your state's deposit deadline."
 published: "2026-10-19"

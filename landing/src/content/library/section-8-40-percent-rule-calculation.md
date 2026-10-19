@@ -1,6 +1,6 @@
 ---
-title: "The Section 8 40% Rule: How to Calculate Max Rent at Move-In — Citata.ai"
-description: "At move-in, a voucher family cannot pay more than 40% of monthly adjusted income for rent and utilities. The formula, a 2-bedroom worked example and the max rent."
+title: "The Section 8 40% Rule: Max Rent at Move-In — Citata.ai"
+description: "At move-in, a voucher family cannot pay over 40% of monthly adjusted income for rent and utilities. The formula, a 2-bedroom worked example and the max rent."
 headline: "The Section 8 40% Rule, With a Worked Example"
 dek: "One formula tells you the highest rent a voucher family can take at move-in."
 published: "2026-10-19"

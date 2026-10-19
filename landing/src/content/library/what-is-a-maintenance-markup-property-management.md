@@ -42,7 +42,7 @@ Managers price that work in 3 common ways:
 
 ## What is a typical maintenance markup percent?
 
-A typical maintenance markup is 10% to 15% of the vendor invoice. Baselane's property management fee statistics (updated 2026-09-17) say "most property managers add a markup of 10% to 15% on maintenance and repair invoices, with some charging up to 25%." Baselane cites a fee study from rapideyeinspections.com for this figure.
+A typical maintenance markup is 10% to 15% of the vendor invoice. Baselane's property management fee statistics were updated 2026-09-17. They say "most property managers add a markup of 10% to 15% on maintenance and repair invoices, with some charging up to 25%." Baselane cites a fee study from rapideyeinspections.com for this figure.
 
 A markup looks small on one job. It adds up over a year. Here is a worked example for one single-family rental with $4,000 of vendor repairs in a year:
 
@@ -55,7 +55,7 @@ A markup looks small on one job. It adds up over a year. Here is a worked exampl
 
 The math: $4,000 × 10% = $400. The 20-rental column multiplies that by 20.
 
-Now compare it with the management fee. If the rent is $1,800 a month and the fee is 8%, the owner pays $1,800 × 12 × 8% = $1,728 a year in management fees. A 10% markup on $4,000 of repairs adds $400. The true cost of management is then $2,128, or about 9.9% of rent, not 8%.
+Now compare it with the management fee. Say the rent is $1,800 a month and the fee is 8%. The owner pays $1,800 × 12 × 8% = $1,728 a year in management fees. A 10% markup on $4,000 of repairs adds $400. The true cost of management is then $2,128, or about 9.9% of rent, not 8%.
 
 The rent, fee and repair amounts are an example. Use your own numbers. To model a fee on your own rent roll, use the [property management fee calculator](/tools/property-management-fee-calculator).
 

@@ -1,5 +1,5 @@
 ---
-title: "How to Become a Section 8 Landlord: Steps to First HAP — Citata.ai"
+title: "How to Become a Section 8 Landlord, Step by Step — Citata.ai"
 description: "Seven steps from listing to the first housing assistance payment: screen, file the RFTA, pass inspection, sign the lease and HAP contract, and get paid."
 headline: "How to Become a Section 8 Landlord, Step by Step"
 dek: "Seven steps from your listing to the first payment, with the federal rule behind each one."
