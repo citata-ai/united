@@ -47,6 +47,8 @@ Answer sentence first. ...
 
 ## Facts
 
+- Fetch only with WebFetch, curl or `r.jina.ai`. Do not drive the user's browser (Arc, Chrome) and do not use `ssh` to other hosts. If a page stays blocked, cite another primary source or leave the fact out.
+
 - Every number and every legal rule has a source you fetched and read in this session (WebFetch). Name the source in the sentence and list the URL in `sources`.
 - If WebFetch gives 403 or 503 (hud.gov does), use Bash: `curl -sL -A "Mozilla/5.0 (Macintosh)" <url> | python3 -c "import sys,re,html;t=re.sub(r'<script.*?</script>|<style.*?</style>','',sys.stdin.read(),flags=re.S);print(html.unescape(re.sub(r'<[^>]+>',' ',t))[:20000])"`. If curl also gets 403, read the page through `https://r.jina.ai/<url>` (a reader proxy; cite the original URL). A fact you saw only in a search result snippet is not verified. hud.gov blocks even curl: for HUD voucher rules cite the regulation on ecfr.gov (24 CFR part 982, 982.305 etc.) or law.cornell.edu, and HUD notices on federalregister.gov or a housing authority site.
 - Prefer primary sources: statutes, government sites (HUD, IRS, state legislatures, census.gov), vendor pricing pages, original studies.
