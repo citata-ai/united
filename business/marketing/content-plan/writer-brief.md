@@ -48,7 +48,7 @@ Answer sentence first. ...
 ## Facts
 
 - Every number and every legal rule has a source you fetched and read in this session (WebFetch). Name the source in the sentence and list the URL in `sources`.
-- If WebFetch gives 403 or 503 (hud.gov does), use Bash: `curl -sL -A "Mozilla/5.0 (Macintosh)" <url> | python3 -c "import sys,re,html;t=re.sub(r'<script.*?</script>|<style.*?</style>','',sys.stdin.read(),flags=re.S);print(html.unescape(re.sub(r'<[^>]+>',' ',t))[:20000])"`. A fact you saw only in a search result snippet is not verified. hud.gov blocks even curl: for HUD voucher rules cite the regulation on ecfr.gov (24 CFR part 982, 982.305 etc.) or law.cornell.edu, and HUD notices on federalregister.gov or a housing authority site.
+- If WebFetch gives 403 or 503 (hud.gov does), use Bash: `curl -sL -A "Mozilla/5.0 (Macintosh)" <url> | python3 -c "import sys,re,html;t=re.sub(r'<script.*?</script>|<style.*?</style>','',sys.stdin.read(),flags=re.S);print(html.unescape(re.sub(r'<[^>]+>',' ',t))[:20000])"`. If curl also gets 403, read the page through `https://r.jina.ai/<url>` (a reader proxy; cite the original URL). A fact you saw only in a search result snippet is not verified. hud.gov blocks even curl: for HUD voucher rules cite the regulation on ecfr.gov (24 CFR part 982, 982.305 etc.) or law.cornell.edu, and HUD notices on federalregister.gov or a housing authority site.
 - Prefer primary sources: statutes, government sites (HUD, IRS, state legislatures, census.gov), vendor pricing pages, original studies.
 - If you cannot verify a fact, leave it out. Never invent a number, a client, a quote, a review or a statute section.
 - Law and tax: say what the rule is and cite it. Add one line: "This is general information, not legal advice. Check the current law or ask a local attorney." (tax: "...ask a tax professional.").
@@ -58,7 +58,7 @@ Answer sentence first. ...
 ## Links
 
 1–3 internal links per article, only to pages that are live now:
-`/guides`, `/property-management`, `/tools/property-management-fee-calculator`, `/tools/section-8-rent-calculator`, `/guides/section-8-rent-limits`, `/research/ai-property-manager-index-2026`, and the guides in `landing/src/pages/guides/*.md` (`/guides/<file name>`). Do not link to other library drafts: they are not live yet.
+`/guides`, `/property-management`, `/tools/property-management-fee-calculator`, `/tools/section-8-rent-calculator`, `/guides/section-8-rent-limits`, `/research/ai-property-manager-index-2026`, `/case-studies/fridman-properties` (say it is a related party), `/about`, and the guides in `landing/src/pages/guides/*.md` (`/guides/<file name>`). Do not link to other library drafts: they are not live yet.
 
 ## Check before hand-off
 
