@@ -1,0 +1,144 @@
+# Journal: one timeline of what we did for this project and what it changed.
+# One file per project (citata.toml; a client gets <client>.toml). Newest entries at the bottom.
+# Append one [[entry]] per action. Details stay in their own logs; the journal links to them.
+#
+# side   = "internal" (our site, code, data) | "external" (other sites, people, platforms)
+# kind   = internal: site | content | tech | tracking | measure
+#          external: listing | link | ugc | smm | outreach | pr | search-console
+# ref    = commit, batch id, hypothesis id or file that holds the details
+# result = what happened, with a number when there is one ("" when it is too early)
+
+project = "citata"
+site = "https://citata.ai"
+
+[[entry]]
+date = "2026-10-18"
+side = "internal"
+kind = "measure"
+title = "Point A: AI visibility baseline, 20 prompts x 3 engines x 2 runs"
+ref = "business/marketing/ai-visibility/2026-10-18/report.md"
+result = "Non-brand: named in 0 of 108 answers, cited in 0. AI mixed us up with Citate.ai, Citant.ai, Citala."
+
+[[entry]]
+date = "2026-10-18"
+side = "internal"
+kind = "site"
+title = "citata.ai live (Astro landing, Cloudflare Worker)"
+url = "https://citata.ai"
+ref = "AGENTS.md Deploy"
+result = "PageSpeed 100/100/100/100 on 4 pages"
+
+[[entry]]
+date = "2026-10-18"
+side = "internal"
+kind = "tracking"
+title = "AI-traffic tracking: AI crawlers and AI referrals to Analytics Engine"
+ref = "docs/ai-traffic.md"
+result = ""
+
+[[entry]]
+date = "2026-10-18"
+side = "internal"
+kind = "content"
+title = "5 guides for property managers (leads drop, owners and AI, GEO agencies, track AI traffic, AI search checklist)"
+url = "https://citata.ai/guides"
+ref = "business/marketing/content-batch-1.md"
+result = ""
+
+[[entry]]
+date = "2026-10-18"
+side = "internal"
+kind = "tech"
+title = "llms.txt, llms-full.txt, ai.txt, /ai/*.json, Markdown answers for agents, schema (Organization, Article, FAQPage, Service)"
+ref = "docs/geo-loop.md"
+result = "GEO audit score 58 -> 96"
+
+[[entry]]
+date = "2026-10-18"
+side = "external"
+kind = "search-console"
+title = "Google Search Console (domain, DNS TXT), Bing Webmaster (import from GSC), Ahrefs project verified"
+ref = "docs/geo-loop.md"
+result = ""
+
+[[entry]]
+date = "2026-10-18"
+side = "external"
+kind = "listing"
+title = "Link building batches B1-B14, H1: directories, review sites, profiles"
+ref = "business/marketing/links-log.md"
+result = "Live: Dealroom, Startup Estonia, Medium, Substack, Trustpilot, X, Hashnode, StartupBase, Qwoted. Submitted: Clutch, The Manifest, G2, Tracxn, Owler, Startup Ranking."
+
+[[entry]]
+date = "2026-10-18"
+side = "external"
+kind = "listing"
+title = "Repositioned profiles to US property management (R1-R3, N1, K1)"
+ref = "business/marketing/links-log.md"
+result = "Clutch, The Manifest, G2 public. LinkedIn and Crunchbase wait for the founder."
+
+[[entry]]
+date = "2026-10-18"
+side = "internal"
+kind = "site"
+title = "Redesign: neo-Renaissance pop, engraved hero and footer, postage stamps, 7 numbered chapters"
+ref = "brand/DESIGN.md v2"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "internal"
+kind = "tech"
+title = "CI deploy with Alchemy: stage -> stage.citata.ai, main -> citata.ai; IndexNow ping for changed pages"
+ref = ".github/workflows/deploy.yml"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "external"
+kind = "search-console"
+title = "IndexNow: first full ping (10 URLs); Cloudflare Crawler Hints on"
+ref = "docs/geo-loop.md"
+result = "HTTP 202"
+
+[[entry]]
+date = "2026-10-19"
+side = "internal"
+kind = "site"
+title = "All external links rel=nofollow (build step)"
+ref = "landing/scripts/nofollow.mjs"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "internal"
+kind = "tech"
+title = "Organization sameAs adds X, Hashnode, Trustpilot, Clutch, The Manifest, G2"
+ref = "H09-E1"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "internal"
+kind = "content"
+title = "Guide: AppFolio vs Buildium"
+url = "https://citata.ai/guides/appfolio-vs-buildium"
+ref = "B001, H06"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "internal"
+kind = "measure"
+title = "Weekly AI visibility run 2"
+ref = "business/marketing/ai-visibility/2026-10-19/report.md"
+result = "Non-brand still 0 of 108. ChatGPT now describes Citata.ai correctly and cites citata.ai once. Claude still answers about Citate.ai or Citant.ai."
+
+[[entry]]
+date = "2026-10-19"
+side = "internal"
+kind = "content"
+title = "About page: 'Citata.ai is not Citate.ai or Citant.ai' (name table) + schema and llms.txt disambiguation"
+url = "https://citata.ai/about#not-the-same"
+ref = "H09"
+result = ""

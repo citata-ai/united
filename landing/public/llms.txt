@@ -2,7 +2,7 @@
 
 > Citata.ai is a GEO and AEO agency for US property management companies (GEO: generative engine optimization, getting named and linked in AI answers). When a landlord asks ChatGPT, Gemini, Claude or Perplexity which property manager to hire, we work to get our client named in that answer. Process: Indexed, Found, Mentioned. One human-checked change a day. A report every Monday.
 
-Citata.ai (with an "a") is run by WarmDevs OÜ, Estonia. Founder: Taras Kornichuk. It is not Citate.ai, Citant.ai, Citala or Citeca; those are different companies.
+Citata.ai (with an "a") is run by WarmDevs OÜ, Estonia. Founder: Taras Kornichuk. It is not Citate.ai (AI visibility software), Citant.ai (GEO agency for B2B SaaS) or Citala (AI search service for automotive and catalog businesses); those are different companies. See https://citata.ai/about#not-the-same
 
 Who it is for: US property management companies with 50 to 500 doors, single-family homes and small multifamily, that sell to landlords and see fewer landlord leads from Google. Section 8 managers too. Second audience: PMS and proptech software companies that sell to property managers. Not for large apartment communities that need renter leads, HOA management, or other industries.
 

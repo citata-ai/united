@@ -33,6 +33,12 @@ Rules:
 - Technical score (`uvx --from geo-optimizer-skill geo audit --url https://citata.ai`): 58/100. Canonical on every page pointed to a `.html` URL that answers 307.
 - Most cited for our niche: clearleaddigital.com (22 answers), firstpagesage.com (15), gogoodjuju.com (13), propertymanagerwebsites.com (11), reddit.com (8), youtube.com (7).
 
+## Weekly report format
+
+`tools/ai-visibility/run.py` writes `report.md` with TOML front matter between `+++` lines: the standard metrics (non-brand and brand mentions and cites, per engine, top companies and sources, token usage per model). A script can compare weeks from the front matter alone. Below it come the tables and two sections the analyst fills: **Gaps** and **Actions**. Re-render an old run without API calls: `python3 tools/ai-visibility/run.py --report-only <dir>`.
+
+Each weekly run also appends one `measure` entry to `business/journal/citata.toml`.
+
 ## Change log
 
 | Date       | Change                                                                 | Live since |
