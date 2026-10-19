@@ -142,3 +142,11 @@ title = "About page: 'Citata.ai is not Citate.ai or Citant.ai' (name table) + sc
 url = "https://citata.ai/about#not-the-same"
 ref = "H09"
 result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "internal"
+kind = "measure"
+title = "Weekly growth report 2026-W43 (first measure run)"
+ref = "business/marketing/reports/2026-W43.md"
+result = "CTT-O6 day 1: 0 of 1,000 AI referral sessions (pace needed 33.3 a day). 420 AI bot fetches in 7 days, 255 on the 50 Section 8 metro pages. No hypothesis status changed."
