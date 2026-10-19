@@ -25,8 +25,6 @@ sources:
     url: "https://www.flsenate.gov/Laws/Statutes/2026/83.63"
   - label: "Virginia General Assembly: Section 55.1-1240, fire or casualty"
     url: "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1240/"
-  - label: "FEMA: Returning home"
-    url: "https://www.ready.gov/returning-home"
 ---
 
 ## Does the lease end after a fire?
@@ -79,7 +77,7 @@ Photograph damage only after safe entry is allowed. Keep wide views and close vi
 
 Save the lease, rent ledger, inspection history and work orders. Add the official incident report when available. Include estimates, temporary repair invoices and the adjuster's instructions.
 
-FEMA's returning-home guidance puts safe entry before cleanup. Treat that as the start of your response. Do not send staff into a damaged building merely to meet an internal photo deadline. [Read Ready.gov's return guidance](https://www.ready.gov/returning-home).
+Put safe entry before cleanup in your response plan. Obtain access clearance from the responsible officials before staff enter. Do not send staff into a damaged building merely to meet an internal photo deadline. Record who authorized access and what limits apply.
 
 Track expenses separately from claim payments. Mark estimates as estimates and paid invoices as paid. Keep a list of unresolved coverage questions so the next conversation has a clear purpose.
 
