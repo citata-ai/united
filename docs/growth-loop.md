@@ -61,6 +61,19 @@ Do not publish when: a check fails, a number has no source, the page names a cli
 6. Add up to 10 outreach targets for H03 and H10 to `business/marketing/outreach/`. Do not send pitches: Tao sends them or approves a template once.
 7. Commit to a branch and merge to `stage` (data only, no deploy risk).
 
+## Reddit radar (since 2026-10-19)
+
+Social Radar (social-radar.io, login dread9ko@gmail.com via Google) scans Reddit posts and comments daily for two alerts:
+
+| Alert | Terms (exact phrases, whole-term, not case-sensitive) |
+|---|---|
+| Citata: property managers asking about leads/marketing | property management marketing / SEO / leads / website, owner leads, landlord leads, marketing for property managers, more doors … |
+| Citata: AI search / GEO questions | generative engine optimization, GEO / AEO / AI SEO agency, show up in / recommended by / cited by ChatGPT, AI Overviews traffic, llms.txt … |
+
+Matches go by webhook to a T3 scheduled task ("Reddit match → draft disclosed reply"). Each scan starts one agent run in a fresh thread: it triages the matches, reads the thread and the subreddit rules, and drafts at most 3 replies. It never posts. Tao approves with "post N"; then the agent posts as u/citata-ai and adds a `ugc` entry to the journal.
+
+Every reply: helps on its own, discloses "I run Citata.ai", follows the subreddit's self-promotion rule, no DMs, no fake claims. Reddit bans undisclosed self-promotion and vote manipulation.
+
 ## Rules for every run
 
 - One fact lives in one file. Absolute dates.
