@@ -157,6 +157,8 @@ Subject rules for our niche:
 
 ## 5. Process
 
+For a page cover, follow section 7. This section is the general process.
+
 1. Write the prompt from the template. One concept per image.
 2. Generate with omp (rotates the logged-in Antigravity accounts; see `DESIGN.md` → Tools):
 
@@ -186,4 +188,34 @@ Subject rules for our niche:
 | Guide: AI search checklist | A temple under construction with wooden scaffolding; a marble statue of an architect stands in front holding an unrolled blueprint scroll and a brass plumb line; a vintage cathode-ray computer sits on a stonemason's workbench beside him; small houses on the low horizon. | Sun yellow |
 
 Small brass accents (letterbox, plumb line, scale) come through in color. We keep them: they are small and warm. If an image shows more color than that, generate again.
+
+## 7. Cover for every new page (rule since 2026-10-19)
+
+Owner rule (Tao, 2026-10-19): every new guide gets a cover picture. New research pages get one too. Section 8 metro sub-pages and calculators do not need one. `landing/guide-covers.test.ts` fails `mise run check` when a guide in `landing/src/pages/guides/*.md` has no cover or misses a file.
+
+Style: always **N** (section 2b-N). Not T, E, S or P.
+
+1. **Pick the sky.** One flat color: coral `#FF6B5B`, sun yellow `#F2C230`, sky cyan `#2FA7E0` or lilac. Do not repeat the sky of the guide before it on `/guides` (see `landing/src/data/guide-covers.ts`). Money and prices: yellow is a good default.
+2. **Write the scene.** One idea of the page, shown as a Roman scene. The man in the orange toga is the landlord or manager. Add one modern thing (a CRT computer, a rotary phone, a key, a letterbox) and one property detail (small tiled houses, a two-flat). No text, no logos, no brand names, no screens with UI.
+3. **Generate 2 variants** with an existing N cover as the style reference (for example `brand/art/current/guide-agencies-v2.webp`, converted to PNG):
+
+   ```sh
+   mkdir -p /tmp/img-<slug> && cd /tmp/img-<slug>
+   ffmpeg -loglevel error -y -i <repo>/brand/art/current/guide-agencies-v2.webp ref.png
+   printf 'generate_image:\n  enabled: true\n' > /tmp/omp-img.yml
+   P="Use the image /tmp/img-<slug>/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: <SCENE>. The sky is one flat <COLOR> field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+   for n in a b; do
+     omp -p --no-session --config /tmp/omp-img.yml --auto-approve --max-time 8m --model gemini-3-flash \
+       "Use the generate_image tool once to create this image. $P Save the image into /tmp/img-<slug> as <slug>-$n.png. Reply only with the path." &
+   done; wait
+   ```
+
+   One image takes 1–2 minutes. If omp fails, use `agy` (Antigravity CLI, `image-generator` subagent) with the same prompt.
+4. **Look at both.** Reject: letters or fake text, extra fingers, more than one sky color, a frame, a cut-off main figure. Keep the one with the clearest single idea in the center.
+5. **Export** from the repo root: `brand/cover.sh /tmp/img-<slug>/<slug>-b.png guide-<short>-v1`. It upscales ×4 (Real-ESRGAN, downloads itself to `/tmp/esrgan` when missing), writes `landing/public/img/<name>-{640,720,960,1280,1920,2560}.webp`, `landing/public/og/<name>.jpg` (1200×630) and `brand/art/current/<name>.webp`.
+6. **Wire it.** Add the slug to `landing/src/data/guide-covers.ts` with `img` and `alt` (one sentence, starts "A pop engraving under a <color> sky: ..."). The Guide layout then shows the cover on top, in the `/guides` card and as the OG image.
+7. **Log it.** Add a row to section 2 table (scene, sky), a row to `brand/art/current/README.md`, and an `[[image]]` entry to `landing/public/img/prompts.toml` (file, prompt, model, date).
+8. **Check.** `mise run check` (cover test), `cd landing && bun run build`, then look at the page on stage.
+
+**Update an image.** Never overwrite a published file: the site caches images for 30 days. Make `-v2` with steps 3–7, point `guide-covers.ts` to it, delete the old master in `brand/art/current/` and change its README row. Keep the old WebP files in `landing/public/img/` (old shares and caches may still use them).
 
