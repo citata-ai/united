@@ -23,6 +23,8 @@ faq:
 sources:
   - label: "MCP: Architecture overview"
     url: "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture"
+  - label: "MagicDoor: Pricing and API/MCP access, read 2026-10-19"
+    url: "https://magicdoor.com/pricing"
   - label: "Rentvine: MCP in property management software"
     url: "https://www.rentvine.com/blog/what-is-mcp-property-management-software"
 ---
@@ -53,6 +55,8 @@ Rentvine also says the connection follows existing user roles and keeps financia
 | User permissions | Restricted-role demonstration | Reject excess access |
 | Financial actions | Read and write limits | Keep posting rights under control |
 | Logs | A completed test record | Require a review trail |
+
+MagicDoor also lists API/MCP access on its pricing page, read on 2026-10-19. Ask for supported tools and setup documentation before treating that listing as a working connection.
 
 Do not infer MCP support from an AI badge, an open API, or an integration directory. Ask each shortlisted vendor for its own documentation. If the vendor cannot show a supported connection, plan around exports or an approved integration instead.
 
