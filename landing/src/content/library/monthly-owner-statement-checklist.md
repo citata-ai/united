@@ -1,6 +1,6 @@
 ---
-title: "Monthly Owner Statement Checklist for Property Managers — Citata.ai"
-description: "A monthly owner statement shows opening balance, rent collected, fees, repairs, reserves and the payout. Use this 20-line checklist and the year-end report list."
+title: "Monthly Owner Statement Checklist for Managers — Citata.ai"
+description: "A monthly owner statement shows opening balance, rent collected, fees, repairs, reserves and the payout. Use this checklist and the year-end report list."
 headline: "Monthly Owner Statement Checklist for Property Managers"
 dek: "Twenty lines owners check, a worked statement, and the year-end reports they need."
 published: "2026-10-19"
