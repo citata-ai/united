@@ -44,6 +44,7 @@ Rules:
 | 2026-10-18 | AI traffic tracking in the Worker; Ahrefs Web Analytics; audit email asks "how did you hear" | 2026-10-18 |
 | 2026-10-18 | Home page for property management companies only: FAQ (FAQPage), Service schema, fit / not fit, llms.txt | 2026-10-18 |
 | 2026-10-18 | Ahrefs project "Citata" verified; Site Audit weekly, Sundays 15:00 Kyiv | — |
+| 2026-10-19 | Guide /guides/appfolio-vs-buildium (H06-E1, B001): plan prices, minimums, Buildium fees, fit by door count | 2026-10-19 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
