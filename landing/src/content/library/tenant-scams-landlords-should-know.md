@@ -1,6 +1,6 @@
 ---
-title: "Scams That Target Landlords and How to Spot Them — Citata.ai"
-description: "Overpayment checks, fake identities, squatters with fake leases and fake vendor invoices hit landlords. Learn the warning signs and the checks that stop each one."
+title: "Scams That Target Landlords and How to Spot Each One — Citata.ai"
+description: "Overpayment checks, fake identities, squatters with fake leases and fake vendor invoices hit landlords. Learn the warning signs and the checks that stop them."
 headline: "Scams Targeting Landlords and How to Spot Them"
 dek: "Four scams cause most landlord losses, and each has a simple check that stops it."
 published: "2026-10-19"

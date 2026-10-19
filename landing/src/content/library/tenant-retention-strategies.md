@@ -1,6 +1,6 @@
 ---
 title: "How to Keep Good Tenants Longer and Cut Turnover Costs — Citata.ai"
-description: "Fast repairs, early renewal talks, a fair rent increase and small targeted upgrades keep good tenants. Use the turnover cost math and checklist to plan each renewal."
+description: "Fast repairs, early renewal talks, a fair rent increase and small upgrades keep good tenants. Use the turnover cost math and checklist to plan each renewal."
 headline: "How to Keep Good Tenants Longer"
 dek: "One turnover can cost more than a year of small upgrades, so do the math first."
 published: "2026-10-19"

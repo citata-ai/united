@@ -1,6 +1,6 @@
 ---
 title: "Co-Signer vs Guarantor on a Lease: How to Screen Each — Citata.ai"
-description: "A co-signer usually signs the lease and shares duties; a guarantor promises to pay if the tenant does not. Learn income rules, screening steps and guarantor companies."
+description: "A co-signer usually signs the lease and shares duties; a guarantor promises to pay if the tenant does not. Learn income rules, screening and guarantor firms."
 headline: "Co-Signer vs Guarantor on a Lease"
 dek: "Both back the rent, but they sign different papers and carry different duties."
 published: "2026-10-19"

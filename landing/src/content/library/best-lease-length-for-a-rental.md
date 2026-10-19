@@ -1,6 +1,6 @@
 ---
 title: "Best Lease Length for a Rental: 6, 12, 18 or 24 Months? — Citata.ai"
-description: "A 12-month lease fits most rentals, but 18- or 24-month terms suit stable tenants and help line up lease ends with peak season. Compare terms, rules and pricing."
+description: "A 12-month lease fits most rentals, but 18- or 24-month terms suit stable tenants and can move lease ends into peak season. Compare terms, rules and pricing."
 headline: "What Lease Length Is Best for a Rental?"
 dek: "Pick the term that cuts your vacancy risk, then price short terms for their extra cost."
 published: "2026-10-19"

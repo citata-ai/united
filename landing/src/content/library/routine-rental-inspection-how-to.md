@@ -1,6 +1,6 @@
 ---
 title: "How to Do a Routine Inspection of an Occupied Rental — Citata.ai"
-description: "Give the notice your state requires, check each room with one checklist, photograph conditions not belongings, and turn findings into repair orders and a letter."
+description: "Give the notice your state requires, check each room with one checklist, photograph conditions, not belongings, and turn findings into repairs and a letter."
 headline: "How to Run a Routine Rental Inspection"
 dek: "Notice, a room-by-room checklist and a written follow-up keep inspections fair and useful."
 published: "2026-10-19"

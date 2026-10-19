@@ -1,6 +1,6 @@
 ---
 title: "When to Start Marketing a Rental Before the Tenant Moves Out — Citata.ai"
-description: "List as soon as the tenant gives notice, show the unit with proper entry notice, use photos from the last vacancy, and set the available date after your turnover time."
+description: "List when the tenant gives notice, show the unit with proper entry notice, use photos from the last vacancy, and set the available date after your turnover."
 headline: "When to Start Marketing a Unit Before Move-Out"
 dek: "Start the day notice arrives, but plan showings and photos around the current tenant."
 published: "2026-10-19"

@@ -1,5 +1,5 @@
 ---
-title: "What to Do When a Tenant Always Pays Rent Late — Citata.ai"
+title: "What to Do When a Tenant Always Pays Rent Late Each Month — Citata.ai"
 description: "Find the cause, consider a new due date, enforce lease late fees within state caps every time, and document each late payment before you decide on renewal."
 headline: "What to Do When a Tenant Always Pays Late"
 dek: "Find the cause first, then enforce one rule every month and keep a clean record."

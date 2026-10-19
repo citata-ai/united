@@ -1,6 +1,6 @@
 ---
 title: "Rent-Ready Checklist: What a Unit Needs Before Move-In — Citata.ai"
-description: "A rent-ready unit is clean, safe, and fully working, with every repair done and documented. Use this checklist for cleaning, safety, systems, paint and walk-through."
+description: "A rent-ready unit is clean, safe and fully working, with every repair done and documented. Use this checklist for cleaning, safety, systems and walk-through."
 headline: "Rent-Ready Standard: What Every Unit Needs Before Move-In"
 dek: "One written standard stops turnover arguments and gives the next tenant a safe, working home."
 published: "2026-10-19"

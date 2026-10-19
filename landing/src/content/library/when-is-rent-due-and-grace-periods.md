@@ -1,6 +1,6 @@
 ---
-title: "When Is Rent Due, and How Do Grace Periods Work? — Citata.ai"
-description: "Rent is due on the date your lease sets, often the 1st. Some states add a grace period before a late fee, such as 5 days in New York. See weekend rules and examples."
+title: "When Is Rent Due, and How Do Rent Grace Periods Work? — Citata.ai"
+description: "Rent is due on the date your lease sets, often the 1st. Some states add a grace period before a late fee, such as 5 days in New York. See examples and rules."
 headline: "When Is Rent Due and How Grace Periods Work"
 dek: "The lease sets the due date; state law often decides when a late fee may start."
 published: "2026-10-19"

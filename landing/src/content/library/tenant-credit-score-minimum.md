@@ -1,6 +1,6 @@
 ---
 title: "What Credit Score Should a Tenant Have? Set a Fair Minimum — Citata.ai"
-description: "Many landlords use a score floor near 620 to 670, but score is one input. Weigh rent history, income and the report itself, follow FCRA notice rules and state deposit caps."
+description: "Many landlords set a credit score floor in the 600s, but score is one input. Weigh rent history and income, and follow FCRA notice rules and state deposit caps."
 headline: "What Credit Score Should a Tenant Have?"
 dek: "A score floor helps, but the report, rent history and income tell you more."
 published: "2026-10-19"

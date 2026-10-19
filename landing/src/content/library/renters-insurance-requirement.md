@@ -1,6 +1,6 @@
 ---
 title: "Can a Landlord Require Renters Insurance? Rules and Limits — Citata.ai"
-description: "Most states let landlords require renters insurance in the lease. Some set limits. Learn the liability amount to ask for, the interested-party step and what to do on a lapse."
+description: "Most states let landlords require renters insurance in the lease; some set limits. Learn what liability amount to ask for and what to do when a policy lapses."
 headline: "Should You Require Renters Insurance?"
 dek: "A lease clause, a proof step and a lapse plan make the rule work."
 published: "2026-10-19"

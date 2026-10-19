@@ -1,6 +1,6 @@
 ---
-title: "How to Get Tenants on Rent Autopay (and When You Can't Require It) — Citata.ai"
-description: "Autopay helps rent arrive on time, but some states ban making electronic payment the only option. Learn how to offer it, when to run it and what to do when it fails."
+title: "How to Get Tenants on Rent Autopay, and When You Can't Require It — Citata.ai"
+description: "Autopay helps rent arrive on time, but some states ban making electronic payment the only option. Learn how to offer it, when to run it and how to handle fails."
 headline: "How to Get Tenants on Rent Autopay"
 dek: "Make autopay the easy default, keep one other way to pay, and plan for failed debits."
 published: "2026-10-19"
