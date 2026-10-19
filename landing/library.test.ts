@@ -3,6 +3,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
+import { parse } from "yaml";
 
 const lib = join(import.meta.dirname, "src/content/library");
 const files = existsSync(lib) ? readdirSync(lib).filter((f) => f.endsWith(".md")) : [];
@@ -25,6 +26,9 @@ describe.skipIf(files.length === 0)("library articles", () => {
     const [, fm = "", ...rest] = readFileSync(join(lib, f), "utf8").split(/^---$/m);
     const body = rest.join("---");
     for (const k of keys) expect(fm, `frontmatter key ${k}`).toMatch(new RegExp(`^${k}:`, "m"));
+    const data = parse(fm) as Record<string, unknown>;
+    expect(typeof data.visible, "visible is true or false").toBe("boolean");
+    expect(String(data.title).length, "title 30–80 chars").toBeGreaterThanOrEqual(30);
     expect(fm, "no layout key: the /guides/[slug] route renders it").not.toMatch(/^layout:/m);
     expect(fm, "at least 1 source").toMatch(/^sources:\s*\n\s+- label:/m);
     expect((fm.match(/^\s+- q:/gm) ?? []).length, "3+ FAQ items").toBeGreaterThanOrEqual(3);
