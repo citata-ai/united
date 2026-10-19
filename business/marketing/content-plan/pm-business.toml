@@ -1,0 +1,1442 @@
+# Topic plan for cluster pm-business (business/marketing/content-plan/clusters.toml).
+# 120 topics. Sources: competitor sitemaps and blogs (Buildium, Property Meld, Rentvine, AppFolio, DoorGrow) and web search, 2026-10-19.
+
+[[topic]]
+slug = "property-management-fee-models-compared"
+cluster = "pm-business"
+kind = "comparison"
+title = "Percentage, flat, hybrid or tiered fees: which model fits your company?"
+question = "Which management fee model (percentage of rent, flat fee, hybrid or tiered) fits a residential property management company best?"
+subquestions = ["How does a percentage fee compare to a flat monthly fee at different rents?", "What is a hybrid fee model?", "Which fee model do owners prefer?", "Which fee model gives the most predictable revenue?", "Do a la carte fees hide the real cost?"]
+inspired_by = "https://www.biggerpockets.com/blog/how-much-do-property-managers-charge"
+demand = "BiggerPockets, Showdigs, Landager and RedAwning compare commission, flat and hybrid models; DoorGrow pitches a three-tier hybrid model"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-price-property-management-services"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to set your management fee from your cost per door"
+question = "How do I set my property management fees so that each door makes a profit?"
+subquestions = ["What does one door cost me to manage each month?", "How do I find the local market fee range?", "What margin should my fee include?", "How do I price a low-rent door?", "When should I walk away from a door?"]
+inspired_by = "https://www.showdigs.com/property-managers/how-much-is-property-management"
+demand = "DoorGrow coaching says fees must cover the real cost of the work; Showdigs publishes cost-per-door analysis"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-leasing-fee"
+cluster = "pm-business"
+kind = "guide"
+title = "How much to charge for a leasing (tenant placement) fee"
+question = "How much should a property management company charge for a leasing or tenant placement fee?"
+subquestions = ["Is a leasing fee a percent of first month rent or a flat fee?", "What costs does the leasing fee cover?", "Should a leasing fee change with days on market?", "Do I charge a leasing fee to existing owners on turnover?"]
+inspired_by = "https://www.rentecdirect.com/blog/property-management-fees/"
+demand = "Rentec Direct and other fee guides list leasing fees from 50% to 100% of first month rent"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "lease-renewal-fee-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Should you charge a lease renewal fee, and how much?"
+question = "Should a property management company charge owners a lease renewal fee, and what is a fair amount?"
+subquestions = ["What work does a renewal include?", "Flat renewal fee or percent of rent?", "How do owners react to renewal fees?", "Can a renewal fee replace a leasing fee in revenue?"]
+inspired_by = "https://landager.com/en/blog/property-management/leasing-fee-vs-renewal-fee"
+demand = "Landager 'Leasing fee vs renewal fee'; fee guides give renewal fees from $0 to $500"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "maintenance-markup-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Maintenance markups and coordination fees: what you must disclose"
+question = "Can a property manager add a markup to vendor invoices, and what must the agreement and owner statements disclose?"
+subquestions = ["Is a 10% maintenance markup normal?", "What did regulators fine brokers for?", "How do I disclose a markup in the management agreement?", "Markup or flat coordination fee: which is easier to defend?", "Must I disclose vendor volume discounts?"]
+inspired_by = "https://www2.dre.ca.gov/hearingfiles/H07502SAC_260414_P.pdf"
+demand = "California DRE hearing files cite brokers for undisclosed 10% to 20% repair markups and vendor discounts"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "tiered-service-packages-property-management"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to build three service packages for owners"
+question = "How do I build good, better and best management packages that owners understand?"
+subquestions = ["What goes in each tier?", "How many tiers should I offer?", "How do I price the middle tier?", "How do I show the tiers on my website?", "Do tiers reduce owner churn?"]
+inspired_by = "https://doorgrow.com/dgs-230-elevating-the-owner-experience-in-property-management/"
+demand = "DoorGrow podcast DGS 230 describes a three-tier hybrid pricing model"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-setup-fee"
+cluster = "pm-business"
+kind = "guide"
+title = "Should you charge a new owner setup fee?"
+question = "Should a property management company charge a setup or onboarding fee, and what should it cover?"
+subquestions = ["What work happens at owner onboarding?", "Per property or per unit setup fee?", "Does a setup fee lose leads?", "Can I waive the setup fee as an offer?"]
+inspired_by = "https://www.rentecdirect.com/blog/property-management-fees/"
+demand = "Fee guides list setup fees from free to $500 per unit"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "vacancy-fee-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Should you charge a fee when a unit is vacant?"
+question = "Should a property manager charge owners a monthly fee while a unit is vacant?"
+subquestions = ["What does a vacancy fee cover?", "How do owners see a vacancy fee?", "What about a minimum monthly fee?", "How does 'no rent, no fee' change incentives?"]
+inspired_by = "https://www.rentecdirect.com/blog/property-management-fees/"
+demand = "Fee guides list a small monthly vacancy fee, about $50"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "who-keeps-late-fees-owner-or-property-manager"
+cluster = "pm-business"
+kind = "guide"
+title = "Who keeps late fees: the owner or the property manager?"
+question = "Should the property manager or the owner keep tenant late fees, and how do I write that in the agreement?"
+subquestions = ["What do most companies do with late fees?", "Is a split fair?", "Does keeping late fees create a conflict of interest?", "How do state late fee caps affect this?"]
+inspired_by = "https://www.rentecdirect.com/blog/property-management-fees/"
+demand = "Rentec Direct notes a manager can keep all, part or none of tenant late fees"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "resident-benefit-package-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Resident benefit packages: revenue, value and junk-fee rules"
+question = "Is a resident benefit package a fair revenue source for a property management company, and what rules apply?"
+subquestions = ["What is in a typical resident benefit package?", "How much revenue per door can it add?", "What do junk-fee rules and state laws say?", "How do I disclose the fee to applicants?", "What do residents get in return?"]
+inspired_by = "https://www.buildium.com/blog/grow-your-property-management-revenue/"
+demand = "Buildium 'Grow your property management revenue'; resident fees are a common topic in PM revenue articles"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "ancillary-revenue-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Ancillary revenue for property management companies: a list with numbers"
+question = "What ancillary revenue streams can a property management company add, and how much can each one earn per door?"
+subquestions = ["Which add-on services do owners pay for?", "Which tenant-side fees are allowed?", "How much can in-house maintenance add?", "Which ancillary fees hurt reviews?"]
+inspired_by = "https://www.buildium.com/blog/residential-moving-services-to-generate-revenue/"
+demand = "Buildium posts on new revenue streams and preventative maintenance revenue"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "raise-management-fees-existing-owners"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to raise fees for existing owners without losing them"
+question = "How do I raise management fees for existing owners and keep most of them?"
+subquestions = ["How much notice should I give?", "Should I grandfather old owners?", "What should the letter say?", "How many owners leave after a fee increase?", "Should I raise fees for all owners at once?"]
+inspired_by = "https://www.buildium.com/blog/lets-compete-on-service-not-fees/"
+demand = "Coaching sources say firms raise revenue on the same doors through better pricing"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "revenue-per-door-property-management"
+cluster = "pm-business"
+kind = "data"
+title = "Revenue per door: how to calculate it and raise it"
+question = "How do I calculate revenue per door for my property management company, and what raises it?"
+subquestions = ["What counts in revenue per door?", "What is a good annual revenue per door?", "Which fees move revenue per door the most?", "How does rent level change revenue per door?"]
+inspired_by = "https://www.rentvine.com/blog/know-the-true-value-of-a-door-why-every-property-manager-needs-to-understand-lifetime-value"
+demand = "Rentvine 'Know the true value of a door'; Vida coaching example: $100,000 on 200 doors raised to $150,000+"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "eviction-coordination-fee"
+cluster = "pm-business"
+kind = "guide"
+title = "What to charge owners for eviction coordination"
+question = "How much should a property manager charge an owner to coordinate an eviction?"
+subquestions = ["What work does eviction coordination include?", "Flat fee or hourly for court time?", "Should an eviction guarantee replace the fee?", "How do I write the fee in the agreement?"]
+inspired_by = "https://bnbcalc.com/blog/a-complete-rundown-of-all-property-management-fees"
+demand = "Fee rundowns list eviction charges as a common a la carte fee"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "management-fee-collected-vs-scheduled-rent"
+cluster = "pm-business"
+kind = "guide"
+title = "Fee on collected rent or scheduled rent: which is fair?"
+question = "Should a management fee be a percent of collected rent or of scheduled rent?"
+subquestions = ["What is the difference between collected and scheduled rent?", "Which basis do most companies use?", "What happens to the fee when a tenant pays late?", "Which fees count in the base: pet rent, utilities, late fees?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Fee guides state fees as a percent of 'monthly rent collected'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "flat-fee-vs-percentage-break-even-rent"
+cluster = "pm-business"
+kind = "data"
+title = "At what rent does a flat fee beat a percentage fee?"
+question = "At which monthly rent does a flat management fee earn more or less than a percentage fee?"
+subquestions = ["How do I calculate the break-even rent?", "Which owners prefer a flat fee?", "How does rent growth change flat fee revenue?", "Can I mix flat and percent fees in one portfolio?"]
+inspired_by = "https://www.showdigs.com/property-managers/how-much-is-property-management"
+demand = "iPropertyManagement study: flat fee average $101.04 per unit per month vs 8.49% average fee"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "answer-owner-your-fee-is-too-high"
+cluster = "pm-business"
+kind = "how-to"
+title = "What to say when an owner says your fee is too high"
+question = "How should a property manager answer an owner who says the management fee is too high?"
+subquestions = ["How do I show the value behind the fee?", "How do I compare total cost, not headline rate?", "When should I offer a lower tier?", "When should I let the owner go?"]
+inspired_by = "https://www.buildium.com/blog/lets-compete-on-service-not-fees/"
+demand = "Buildium 'Let's compete on service, not fees'; fee guides warn low base fees hide add-on fees"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "publish-fees-on-property-management-website"
+cluster = "pm-business"
+kind = "guide"
+title = "Should you publish your fees on your website?"
+question = "Should a property management company show its full fee table on its website?"
+subquestions = ["Do public fees get more or fewer owner leads?", "What should a fee table include?", "How do AI assistants use a public fee table?", "How do I show fees without a race to the bottom?"]
+inspired_by = ""
+demand = "Our client playbook: all 3 direct competitors publish a full owner fee table (move 3)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-guarantees"
+cluster = "pm-business"
+kind = "guide"
+title = "Leasing, pet, eviction and rent guarantees: are they worth it?"
+question = "Should a property management company offer guarantees like a leasing, eviction or rent guarantee, and what do they cost?"
+subquestions = ["Which guarantees do companies offer?", "What does a guarantee cost me when it fails?", "How do guarantees change owner trust?", "How do I write guarantee terms?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-to-retain-property-owners"
+demand = "Our client playbook: competitors show owner protections (guarantees, cancel terms) on fee pages"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "pricing-single-family-vs-small-multifamily"
+cluster = "pm-business"
+kind = "comparison"
+title = "How to price single-family homes vs small multifamily"
+question = "Should a property manager price single-family homes and small multifamily buildings differently?"
+subquestions = ["How does the work per unit differ?", "Per unit or per building fees?", "How do maintenance fees differ?", "Which type is more profitable per door?"]
+inspired_by = "https://www.showdigs.com/property-managers/cost-of-property-management"
+demand = "Showdigs and PM M&A sources split SFR and multifamily economics"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "management-agreement-clauses-checklist"
+cluster = "pm-business"
+kind = "checklist"
+title = "Residential management agreement: 20 clauses to include"
+question = "Which clauses must a residential property management agreement include?"
+subquestions = ["What are the core clauses: term, fees, authority, reserves?", "Which clauses protect the manager?", "Which clauses do owners read first?", "What do state broker laws require in writing?", "How long should the agreement be?"]
+inspired_by = "https://www.buildium.com/blog/what-to-include-in-a-residential-real-estate-management-agreement/"
+demand = "Buildium 'What to include in a residential real estate management agreement' and 'Property management agreements guide'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "management-agreement-termination-clause"
+cluster = "pm-business"
+kind = "guide"
+title = "How to write the termination clause in a management agreement"
+question = "How should a property management agreement handle termination by the owner or the manager?"
+subquestions = ["What notice period is normal?", "Who keeps the tenant after the owner cancels?", "How are deposits and files handed over?", "What fees apply at termination?"]
+inspired_by = "https://ipropertymanagement.com/templates/property-management-termination-letter"
+demand = "iPropertyManagement template: many agreements allow exit with 30 to 90 days notice"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "early-termination-fee-management-agreement"
+cluster = "pm-business"
+kind = "guide"
+title = "Early termination fees in management agreements: fair or not?"
+question = "Should a property management agreement have an early termination fee, and how large can it be?"
+subquestions = ["How do owners see a cancellation fee?", "Is a cancellation fee enforceable?", "Which is better: a fee or a 'cancel anytime' promise?", "How does a fee change owner churn?"]
+inspired_by = "https://ipropertymanagement.com/templates/property-management-termination-letter"
+demand = "iPropertyManagement notes fixed-term agreements can carry fees for early termination"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-reserve-amount"
+cluster = "pm-business"
+kind = "guide"
+title = "How large should the owner reserve be?"
+question = "How much money should an owner keep in reserve with the property manager?"
+subquestions = ["What is the reserve used for?", "Per unit or per property reserve?", "What happens when the reserve runs low?", "How do trust account rules treat the reserve?"]
+inspired_by = "https://www.buildium.com/blog/owner-distributions-for-property-managers/"
+demand = "Buildium 'Owner distributions for property managers'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-repair-approval-limit"
+cluster = "pm-business"
+kind = "guide"
+title = "How to set the owner repair approval limit"
+question = "What repair approval limit (not-to-exceed amount) should a management agreement set, and how does it affect repair speed?"
+subquestions = ["What is a typical approval limit?", "When must I call the owner first?", "How do emergencies work above the limit?", "How does slow owner approval hurt tenants and retention?"]
+inspired_by = "https://propertymeld.com/blog/the-crucial-role-of-monitoring-investor-approval-speed-on-maintenance-repairs/"
+demand = "Property Meld post on investor approval speed for repairs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "leasing-only-vs-full-management-agreement"
+cluster = "pm-business"
+kind = "comparison"
+title = "Leasing-only agreement vs full management: what to offer"
+question = "Should a property management company offer leasing-only (tenant placement) service, and how is that agreement different?"
+subquestions = ["What does leasing-only include?", "How should I price leasing-only?", "Do leasing-only clients convert to full management?", "What liability do I keep after placement?"]
+inspired_by = "https://www.rentecdirect.com/blog/property-management-fees/"
+demand = "Fee guides list tenant placement as a separate service and fee"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "indemnification-clause-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Hold harmless and indemnification clauses for property managers"
+question = "What should the indemnification (hold harmless) clause in a management agreement say?"
+subquestions = ["Who protects whom in an indemnity clause?", "What does the clause not cover?", "How does it work with E&O insurance?", "Should the owner name me as additional insured?"]
+inspired_by = "https://www.hubinternational.com/industries/real-estate-insurance/property-management-insurance/"
+demand = "Insurance pages on PM liability; agreement guides list indemnity as a core clause"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "management-agreement-term-length"
+cluster = "pm-business"
+kind = "guide"
+title = "Agreement term: one year, month-to-month or auto-renew?"
+question = "How long should a property management agreement run, and should it auto-renew?"
+subquestions = ["What term length is most common?", "Does month-to-month help sales?", "How do I write an auto-renewal clause?", "Which term lowers owner churn?"]
+inspired_by = "https://www.buildium.com/blog/property-management-agreements-guide/"
+demand = "Buildium 'Property management agreements guide'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "state-rules-for-management-agreements"
+cluster = "pm-business"
+kind = "guide"
+title = "What state broker laws require in a management agreement"
+question = "Which state real estate rules apply to residential property management agreements?"
+subquestions = ["Must the agreement be in writing?", "Must fees be stated in the agreement?", "What must I disclose about markups and affiliates?", "How do I find my state's rules?"]
+inspired_by = "https://www2.dre.ca.gov/hearingfiles/H39498LA_140620_P.pdf"
+demand = "California DRE hearing files show brokers fined for fees the agreement did not allow"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "take-over-property-from-previous-manager"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to take over a property from the previous manager"
+question = "What steps does a property manager take to take over a rental from another management company?"
+subquestions = ["Which files and keys must I collect?", "How do I transfer security deposits?", "What notice do tenants get?", "How do I check the rent ledger?", "What if the old manager will not cooperate?"]
+inspired_by = "https://www.rentvine.com/blog/how-rosenbaum-realty-group-switched-scaled-and-acquired-all-at-once"
+demand = "Owner switch and acquisition stories on Rentvine; termination templates on iPropertyManagement"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-churn-rate-property-management"
+cluster = "pm-business"
+kind = "data"
+title = "Owner churn rate: how to calculate it and what is normal"
+question = "What is a normal owner (door) churn rate for a property management company, and how do I calculate it?"
+subquestions = ["How do I calculate door churn per year?", "What is the NARPM benchmark?", "Which churn is not my fault (owner sells)?", "What churn rate is a strong result?"]
+inspired_by = "https://fourandhalf.com/what-factors-affect-owner-churn/"
+demand = "Coverage cites a NARPM benchmark of 20% churn, 10% as strong; vendor blogs give 8% to 15%"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "why-owners-leave-property-managers"
+cluster = "pm-business"
+kind = "guide"
+title = "Why owners fire their property manager: the top reasons"
+question = "Why do rental owners leave their property management company?"
+subquestions = ["Which reasons can I control?", "How much does communication matter?", "How do maintenance costs drive churn?", "How do owner sales count?", "Which early signs show an owner will leave?"]
+inspired_by = "https://propertymeld.com/blog/why-property-owner-retention-is-crucial-for-property-management-success/"
+demand = "Property Meld retention series; Blanket and RedAwning churn guides list revenue, communication and transparency"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "door-growth-ceiling-churn"
+cluster = "pm-business"
+kind = "data"
+title = "The growth ceiling: how churn caps your door count"
+question = "How does owner churn set a maximum door count for my property management company?"
+subquestions = ["How do I calculate my growth ceiling?", "Why does churn stay flat as I grow?", "How much does each point of churn cost?", "Which grows doors faster: more leads or less churn?"]
+inspired_by = "https://peter.beehiiv.com/p/peter-lohmann-s-newsletter-issue-173"
+demand = "Peter Lohmann newsletter: 10 doors a month with 25% churn caps a company at 400 doors"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "owner-onboarding-first-90-days"
+cluster = "pm-business"
+kind = "checklist"
+title = "Owner onboarding: a 90-day checklist"
+question = "What should a property management company do in a new owner's first 90 days?"
+subquestions = ["What happens in week 1?", "When should the first owner call happen?", "What should the welcome packet include?", "How do I set expectations on repairs and statements?"]
+inspired_by = "https://www.rentmanager.com/?p=56956"
+demand = "Rent Manager: a client's first impression forms in the first 90 days"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "owner-communication-plan"
+cluster = "pm-business"
+kind = "guide"
+title = "How often to update owners, and how"
+question = "How often should a property manager contact owners, and by which channel?"
+subquestions = ["Which updates are monthly and which are on events?", "Email, portal, text or call?", "What response time should I promise owners?", "How do I talk about bad news?"]
+inspired_by = "https://propertymeld.com/blog/how-communication-and-transparency-improves-investor-retention/"
+demand = "Property Meld 'How communication and transparency improves investor retention'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "monthly-owner-statement-checklist"
+cluster = "pm-business"
+kind = "checklist"
+title = "What a monthly owner statement must show"
+question = "What should a monthly owner statement from a property manager include?"
+subquestions = ["Which line items do owners check first?", "How do I show repairs and markups?", "Should I add a short note?", "What year-end reports do owners need?"]
+inspired_by = "https://www.buildium.com/blog/how-to-set-up-automated-monthly-reports-for-owners/"
+demand = "Buildium 'How to set up automated monthly reports for owners'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-exit-interview"
+cluster = "pm-business"
+kind = "template"
+title = "Owner exit interview: questions and template"
+question = "What should a property manager ask an owner who cancels, and how do I use the answers?"
+subquestions = ["When do I ask: at notice or after?", "Which 8 questions give useful answers?", "How do I sort the reasons?", "How do I turn exit data into fixes?"]
+inspired_by = "https://fourandhalf.com/what-factors-affect-owner-churn/"
+demand = "Churn guides from Four and Half and Blanket ask why owners leave"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "save-owner-who-wants-to-cancel"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to save an owner who wants to cancel"
+question = "What should a property manager do when an owner gives notice to cancel?"
+subquestions = ["Who should call the owner?", "What offers are fair to make?", "When should I let the owner go?", "How do I hand off well if they leave?"]
+inspired_by = "https://blankethomes.com/client-churn-rate/"
+demand = "Blanket and RedAwning owner churn playbooks"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "keep-the-door-when-owner-sells"
+cluster = "pm-business"
+kind = "guide"
+title = "When an owner sells: how to keep the door"
+question = "How can a property manager keep a door when the owner sells the rental?"
+subquestions = ["Why do owners sell?", "Can I refer the sale to an agent partner?", "How do I pitch the buyer?", "Can I keep the tenant with the new owner?"]
+inspired_by = "https://propertymeld.com/blog/3-main-reasons-property-owners-sell/"
+demand = "Property Meld '3 main reasons property owners sell'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "maintenance-costs-and-owner-retention"
+cluster = "pm-business"
+kind = "guide"
+title = "How maintenance costs and speed affect owner retention"
+question = "How do maintenance costs and repair speed change owner retention?"
+subquestions = ["At what maintenance spend do owners get upset?", "How does repair speed affect tenant renewals?", "How do I report maintenance spend to owners?", "Which maintenance data predicts churn?"]
+inspired_by = "https://propertymeld.com/blog/how-property-owner-retention-is-impacted-by-poor-maintenance/"
+demand = "Property Meld posts on maintenance data and investor retention; a podcast cites 12% of rent as a churn trigger"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "lifetime-value-of-a-door"
+cluster = "pm-business"
+kind = "data"
+title = "Lifetime value of a door: the calculation"
+question = "How do I calculate the lifetime value of one door for my property management company?"
+subquestions = ["Which revenue goes into lifetime value?", "How does churn change lifetime value?", "How much can I spend to win a door?", "How does lifetime value change a buy price?"]
+inspired_by = "https://www.rentvine.com/blog/know-the-true-value-of-a-door-why-every-property-manager-needs-to-understand-lifetime-value"
+demand = "Rentvine 'Know the true value of a door'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "owner-satisfaction-survey"
+cluster = "pm-business"
+kind = "template"
+title = "Owner satisfaction survey (NPS) for property managers"
+question = "How do I survey owner satisfaction and use a Net Promoter Score?"
+subquestions = ["Which questions should the survey ask?", "How often should I send it?", "What is a good owner NPS?", "How do I follow up on low scores?"]
+inspired_by = "https://www.buildium.com/blog/how-rental-owners-evaluate-a-property-managers-performance/"
+demand = "Buildium 'How rental owners evaluate a property manager's performance'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "turn-accidental-landlords-into-investors"
+cluster = "pm-business"
+kind = "guide"
+title = "How to turn accidental landlords into long-term clients"
+question = "How can a property manager keep accidental landlords as clients and help them buy more rentals?"
+subquestions = ["Why do accidental landlords churn?", "Which reports help them think like investors?", "How do I talk about rent vs sell?", "Which partners help them buy the next door?"]
+inspired_by = "https://doorgrow.com/dgs-230-elevating-the-owner-experience-in-property-management/"
+demand = "DoorGrow DGS 230 on turning accidental owners into investors"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "handle-owner-complaints"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to handle owner complaints step by step"
+question = "What is a good process for handling an owner complaint?"
+subquestions = ["Who owns the complaint?", "How fast should I reply?", "How do I log and track complaints?", "When do I give a credit?"]
+inspired_by = "https://propertymeld.com/blog/how-to-build-strong-relationships-with-property-owners/"
+demand = "Property Meld 'How to build strong relationships with property owners'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "fire-a-bad-owner-client"
+cluster = "pm-business"
+kind = "guide"
+title = "When and how to fire an owner client"
+question = "When should a property manager end an agreement with a difficult owner, and how?"
+subquestions = ["Which owners cost more than they pay?", "What red flags show at intake?", "How do I end the agreement cleanly?", "What must I hand over?"]
+inspired_by = "https://www.secondnature.com/newsletter/why-it-pays-to-be-picky"
+demand = "Second Nature newsletter 'Why it pays to be picky'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-kpis"
+cluster = "pm-business"
+kind = "guide"
+title = "15 KPIs a property management company owner should track"
+question = "Which KPIs should a property management company owner track each week and each month?"
+subquestions = ["Which KPIs show growth?", "Which KPIs show service quality?", "Which KPIs show profit?", "How often should I review each KPI?", "Who owns each KPI?"]
+inspired_by = "https://www.buildium.com/blog/property-management-kpis-to-track/"
+demand = "Buildium 'Property management KPIs to track'; AppFolio '6 key metrics'"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-profit-margin"
+cluster = "pm-business"
+kind = "data"
+title = "What profit margin does a property management company earn?"
+question = "What profit margin is normal for a residential property management company?"
+subquestions = ["What is a good net margin?", "How does margin change with door count?", "Which costs eat the most margin?", "Where do benchmarks come from?"]
+inspired_by = "https://www.buildium.com/blog/how-to-build-a-more-profitable-property-management-business/"
+demand = "NARPM and ProfitCoach 2022 Financial Benchmark Study of 215 managers; Buildium profitability post"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-many-doors-to-break-even"
+cluster = "pm-business"
+kind = "data"
+title = "How many doors to break even and pay yourself?"
+question = "How many doors does a property management company need to break even and pay the owner a salary?"
+subquestions = ["What are my fixed monthly costs?", "How much revenue does one door bring?", "How does door density change the answer?", "At what door count do I need a team?"]
+inspired_by = "https://www.wexfordins.com/post/is-a-property-management-company-profitable-door-count-economics-in-2026"
+demand = "Sources give 50 to 150 doors; one report says economies of scale show at 500 to 750 doors"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-company-budget"
+cluster = "pm-business"
+kind = "template"
+title = "Annual budget template for a property management company"
+question = "How do I build an annual budget for my property management company?"
+subquestions = ["Which revenue lines go in the budget?", "Which cost lines are fixed and which grow with doors?", "How do I plan for churn?", "How do I track budget vs actual?"]
+inspired_by = "https://propertymeld.com/blog/how-to-build-a-property-management-budget/"
+demand = "Property Meld 'How to build a property management budget'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "days-to-lease-kpi"
+cluster = "pm-business"
+kind = "guide"
+title = "Days to lease: how to measure it and cut it"
+question = "How do I measure days to lease (days on market) for my portfolio and make it shorter?"
+subquestions = ["When does the clock start and stop?", "What is a good days-to-lease number?", "Which steps add the most days?", "How do I report it to owners?"]
+inspired_by = "https://www.buildium.com/blog/lead-to-lease-optimization-tips/"
+demand = "Buildium lead-to-lease posts; Showdigs links flat fees to speed-to-lease"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "payroll-percent-of-revenue"
+cluster = "pm-business"
+kind = "data"
+title = "Payroll as a percent of revenue: a better staffing metric"
+question = "What share of revenue should a property management company spend on payroll?"
+subquestions = ["Why is doors per manager a weak metric?", "How do I calculate payroll percent?", "What ratio is healthy?", "How does payroll percent change as I grow?"]
+inspired_by = "https://eliteagent.com/the-property-management-metric-stuck-in-the-90s-and-why-it-needs-to-go/"
+demand = "EliteAgent argues to replace doors per manager with staff cost as share of revenue"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "doors-per-employee-benchmark"
+cluster = "pm-business"
+kind = "data"
+title = "Doors per employee: benchmarks by role"
+question = "How many doors should each employee in a property management company handle?"
+subquestions = ["What do NARPM and NAR data say?", "How many doors per leasing agent?", "How many doors per maintenance coordinator?", "How does software change the ratio?"]
+inspired_by = "https://www.lethub.co/blog/doors-per-leasing-agent-benchmarks"
+demand = "LetHub roundup: about 40 to 60 doors per person; NARPM 49 units per direct team member; NAR median 40"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-kpi-dashboard"
+cluster = "pm-business"
+kind = "template"
+title = "A KPI dashboard for a property management company"
+question = "What should a KPI dashboard for a property management company show?"
+subquestions = ["Which 8 to 10 numbers go on the dashboard?", "Weekly or monthly view?", "Which data comes from the PM software?", "Who sees which numbers?"]
+inspired_by = "https://propertymeld.com/blog/what-is-a-kpi-dashboard/"
+demand = "Property Meld 'What is a KPI dashboard'; Rentvine reporting dashboards post"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "resident-retention-rate-benchmark"
+cluster = "pm-business"
+kind = "data"
+title = "What is a good resident retention rate for a PM company?"
+question = "What resident retention (renewal) rate should a property management company aim for, and how do I calculate it?"
+subquestions = ["How do I calculate the renewal rate?", "What does a turnover cost the owner?", "How does resident retention affect owner retention?", "Which actions raise renewals?"]
+inspired_by = "https://propertymeld.com/blog/what-is-a-good-resident-retention-rate-for-property-management-companies/"
+demand = "Property Meld 'What is a good resident retention rate for property management companies'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "property-management-chart-of-accounts"
+cluster = "pm-business"
+kind = "template"
+title = "Chart of accounts for a property management company"
+question = "How should a property management company set up its chart of accounts for company books and trust books?"
+subquestions = ["Which accounts are company and which are trust?", "How do I code management fees?", "How do I code markups and ancillary fees?", "How detailed should the chart be?"]
+inspired_by = "https://www.buildium.com/blog/chart-of-accounts-property-management/"
+demand = "Buildium 'Chart of accounts for property management'"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "owner-concentration-risk"
+cluster = "pm-business"
+kind = "guide"
+title = "Owner concentration: when one client is too large"
+question = "When does one owner hold too large a share of my doors, and what are the risks?"
+subquestions = ["How do I measure concentration?", "Why do buyers discount concentrated books?", "How do I lower concentration?", "What agreement terms protect me?"]
+inspired_by = "https://www.ctacquisitions.com/guides/property-management-business-valuation/"
+demand = "M&A guides list owner concentration as a value driver"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "cost-to-acquire-a-door"
+cluster = "pm-business"
+kind = "data"
+title = "Cost to acquire a door: how to calculate it"
+question = "How much does it cost my property management company to win one new door?"
+subquestions = ["Which costs go into acquisition cost?", "How do I split cost by lead source?", "What payback period is healthy?", "How does acquisition cost compare to buying doors?"]
+inspired_by = "https://www.rentvine.com/blog/know-the-true-value-of-a-door-why-every-property-manager-needs-to-understand-lifetime-value"
+demand = "Rentvine lifetime value post; our playbook: report from lead to signed door"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "weekly-scorecard-property-management"
+cluster = "pm-business"
+kind = "template"
+title = "Weekly leadership scorecard for a property management company"
+question = "What should a weekly leadership scorecard for a property management company include?"
+subquestions = ["Which numbers belong on the scorecard?", "Who reports each number?", "What targets should I set?", "How do I run the weekly meeting?"]
+inspired_by = "https://www.buildium.com/blog/accounting-to-set-property-management-kpis/"
+demand = "Buildium 'Accounting to set property management KPIs'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "property-management-cash-flow-seasonality"
+cluster = "pm-business"
+kind = "guide"
+title = "Cash flow in a property management business: plan for the seasons"
+question = "How does cash flow change through the year in a property management company, and how do I plan for it?"
+subquestions = ["When do leasing fees peak?", "Which costs come in the slow months?", "How large should my cash reserve be?", "How do I forecast cash flow?"]
+inspired_by = "https://www.buildium.com/blog/rental-property-marketing-ideas-for-leasing-season/"
+demand = "Buildium leasing-season posts"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "maintenance-as-revenue-center"
+cluster = "pm-business"
+kind = "guide"
+title = "Maintenance as a revenue center: what works and what to avoid"
+question = "Can maintenance be a profit center for a property management company without hurting owners?"
+subquestions = ["Which maintenance revenue models exist?", "How much margin is fair?", "How do I disclose it to owners?", "When does it hurt owner trust?"]
+inspired_by = "https://propertymeld.com/blog/how-to-use-property-maintenance-as-a-revenue-center-for-your-business/"
+demand = "Property Meld 'How to use property maintenance as a revenue center'; Buildium 'Preventative maintenance revenue'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "in-house-maintenance-vs-vendors"
+cluster = "pm-business"
+kind = "comparison"
+title = "In-house maintenance team or outside vendors?"
+question = "Should a property management company build an in-house maintenance team or use outside vendors?"
+subquestions = ["At what door count does an in-house tech pay off?", "What does one technician cost?", "What insurance and licenses do I need?", "How do I avoid conflicts of interest?"]
+inspired_by = "https://www.rentvine.com/blog/rentvines-internal-maintenance-and-why-it-is-important"
+demand = "Rentvine internal maintenance post; Property Meld 'Building a world-class internal maintenance team'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "first-hire-property-management-company"
+cluster = "pm-business"
+kind = "guide"
+title = "Your first hire: who to hire first in a property management company"
+question = "Who should a property management company owner hire first, and when?"
+subquestions = ["At what door count should I hire?", "Admin, leasing or maintenance coordinator first?", "Local hire or virtual assistant?", "How do I pay for the first hire?"]
+inspired_by = "https://doorgrow.com/dgs-260-your-property-management-hire-doesnt-need-experience/"
+demand = "DoorGrow 'The #1 hiring mistake property managers make'; Vendoroo 'The $60K hire that caps your growth'"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "portfolio-vs-pod-vs-department-model"
+cluster = "pm-business"
+kind = "comparison"
+title = "Portfolio, pod or department model: which team structure?"
+question = "Which team structure fits a property management company: portfolio managers, pods or departments?"
+subquestions = ["What is the portfolio model?", "What is a pod and how many people are in one?", "What is the department model?", "When should I switch models?"]
+inspired_by = "https://www.rentvine.com/blog/how-property-managers-are-using-pods"
+demand = "Rentvine pods post; Blanket 'Best company structure'; DoorGrow: firms at 200 to 400 doors struggle with team structure"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-manager-job-description"
+cluster = "pm-business"
+kind = "template"
+title = "Property manager job description template"
+question = "What should a job description for a residential property manager include?"
+subquestions = ["Which duties go in the description?", "Which skills and licenses do I ask for?", "How do I write the pay range?", "How do I describe success in 90 days?"]
+inspired_by = "https://www.appfolio.com/blog/attract-top-property-management-talent"
+demand = "AppFolio 'Attract top property management talent'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-manager-salary"
+cluster = "pm-business"
+kind = "data"
+title = "What to pay a property manager: salary data and bonus plans"
+question = "How much should a property management company pay a property manager, and how should bonuses work?"
+subquestions = ["What do BLS data show for property managers?", "Salary or salary plus bonus?", "Which KPIs should a bonus use?", "How does pay change by market?"]
+inspired_by = ""
+demand = "Hiring is a top topic on DoorGrow and AppFolio staffing pages"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "leasing-agent-pay-commission-vs-salary"
+cluster = "pm-business"
+kind = "comparison"
+title = "Leasing agent pay: commission, salary or both?"
+question = "How should a property management company pay leasing agents: commission, salary or a mix?"
+subquestions = ["What does a per-lease commission look like?", "How does pay change agent behavior?", "Are there license rules for paying commission?", "How do I track commissions?"]
+inspired_by = "https://www.buildium.com/blog/introducing-a-new-way-to-track-leasing-agent-commissions/"
+demand = "Buildium post on tracking leasing agent commissions"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "business-development-manager-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "When to hire a business development manager (BDM), and how to pay one"
+question = "When should a property management company hire a business development manager, and how should the pay work?"
+subquestions = ["What does a BDM do all day?", "At what door count does a BDM pay off?", "Base plus commission per door?", "How do I measure a BDM?"]
+inspired_by = "https://doorgrow.com/dgs-145-are-you-ready-for-a-property-management-bdm/"
+demand = "DoorGrow DGS 145 'Are you ready for a property management BDM?'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "virtual-assistants-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Virtual assistants for property management: tasks, cost and risks"
+question = "Which tasks can a property management company give to virtual assistants, and what are the costs and risks?"
+subquestions = ["Which tasks fit a VA?", "What does an offshore VA cost?", "Which tasks need a licensed person?", "How do I protect owner and tenant data?"]
+inspired_by = "https://www.buildium.com/blog/property-management-virtual-assistants/"
+demand = "Buildium 'Property management virtual assistants'; Vendoroo maintenance VA pages"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "maintenance-coordinator-role"
+cluster = "pm-business"
+kind = "guide"
+title = "The maintenance coordinator: role, doors and KPIs"
+question = "What does a maintenance coordinator do, and how many doors can one handle?"
+subquestions = ["Which tasks does the coordinator own?", "How many doors per coordinator?", "Which KPIs measure the role?", "When should I add a second coordinator?"]
+inspired_by = "https://propertymeld.com/blog/empowering-maintenance-coordinators-with-performance-based-metrics/"
+demand = "Property Meld 'Empowering maintenance coordinators with performance-based metrics'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "hiring-process-property-management"
+cluster = "pm-business"
+kind = "how-to"
+title = "A hiring process for property management staff"
+question = "What hiring process helps a property management company pick the right people?"
+subquestions = ["Which interview questions work?", "Should I use a work test?", "Does the hire need PM experience?", "How do I check references?"]
+inspired_by = "https://doorgrow.com/dgs-275-tough-love-hiring-in-your-property-management-business/"
+demand = "DoorGrow DGS 275 'Tough love: hiring' and DGS 260"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "onboard-new-property-management-employee"
+cluster = "pm-business"
+kind = "checklist"
+title = "Onboarding checklist for a new property management employee"
+question = "How should a property management company onboard a new employee in the first 30, 60 and 90 days?"
+subquestions = ["What happens on day 1?", "Which software training comes first?", "When does the new hire talk to owners?", "How do I check progress at 90 days?"]
+inspired_by = "https://www.buildium.com/blog/onboarding-new-property-managers/"
+demand = "Buildium 'Onboarding new property managers'; DoorGrow on 90-day onboarding"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "property-management-employee-retention"
+cluster = "pm-business"
+kind = "guide"
+title = "How to keep good property management employees"
+question = "Why do property management employees quit, and how do I keep them?"
+subquestions = ["What drives burnout in PM roles?", "Which pay and schedule changes help?", "How does cross-training help?", "How do I measure staff turnover?"]
+inspired_by = "https://www.appfolio.com/blog/employee-retention"
+demand = "AppFolio 'Employee retention' and 'Boost employee retention'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "employee-vs-contractor-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Employee or independent contractor in property management?"
+question = "Should a property management company hire staff as employees or independent contractors?"
+subquestions = ["What tests does the IRS use?", "Can leasing agents be contractors?", "What are the risks of misclassification?", "Which roles fit contractors?"]
+inspired_by = "https://www.buildium.com/blog/the-difference-between-an-employee-and-an-independent-contractor/"
+demand = "Buildium 'The difference between an employee and an independent contractor'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "standard-operating-procedures-property-management"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to write SOPs for a property management company"
+question = "How do I write and keep standard operating procedures for my property management company?"
+subquestions = ["Which processes need an SOP first?", "What format works: text, video, checklist?", "Where should SOPs live?", "How do I keep SOPs current?"]
+inspired_by = "https://www.buildium.com/blog/written-policies-and-procedures-are-good-for-business/"
+demand = "Buildium 'Written policies and procedures are good for business'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-org-chart-by-door-count"
+cluster = "pm-business"
+kind = "data"
+title = "Org chart at 100, 300 and 500 doors"
+question = "What does a property management company org chart look like at 100, 300 and 500 doors?"
+subquestions = ["Which roles exist at 100 doors?", "What changes at 300 doors?", "What changes at 500 doors?", "Which role does the owner keep?"]
+inspired_by = "https://blankethomes.com/best-structure-for-asset-management/"
+demand = "DoorGrow: firms at 200 to 400 doors struggle with team structure; coaching: owners handle up to about 100 doors alone"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "owner-step-back-from-operations"
+cluster = "pm-business"
+kind = "guide"
+title = "How to stop being the bottleneck in your own company"
+question = "How can a property management company owner step back from daily operations?"
+subquestions = ["Which tasks should I hand off first?", "How do I build a second leader?", "Which reports let me manage from the numbers?", "How long does the change take?"]
+inspired_by = "https://vida.io/blog/property-management-coaching"
+demand = "Vida coaching guide: owners handle about 100 doors before they need processes and a team"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "hire-or-automate-property-management-tasks"
+cluster = "pm-business"
+kind = "comparison"
+title = "Hire or automate: 10 property management tasks"
+question = "Which property management tasks should I automate, and which need a person?"
+subquestions = ["Which tasks are easy to automate?", "Which tasks need human judgment?", "What does automation cost vs a hire?", "How do I test automation safely?"]
+inspired_by = "https://www.buildium.com/blog/automate-or-staff-10-property-management-tasks-and-how-to-tackle-them/"
+demand = "Buildium 'Automate or staff: 10 property management tasks'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-to-grow-property-management-company"
+cluster = "pm-business"
+kind = "guide"
+title = "How to grow a property management company: the door growth plan"
+question = "How do I grow the door count of my property management company?"
+subquestions = ["Which growth sources bring the most doors?", "How much does churn slow growth?", "Organic growth or acquisitions?", "What growth rate is realistic?"]
+inspired_by = "https://www.buildium.com/blog/how-to-grow-your-property-management-business/"
+demand = "Buildium 'How to grow your property management business' and 'Property management tips for growth'"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "get-first-100-doors"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to get your first 100 doors"
+question = "How does a new property management company get its first 100 doors?"
+subquestions = ["Where do the first doors come from?", "Should I buy a small book?", "Which owners should I take or decline?", "How long does 100 doors take?"]
+inspired_by = "https://www.buildium.com/blog/get-your-first-100-doors-with-these-property-management-tips/"
+demand = "Buildium 'Get your first 100 doors'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "buy-property-management-book-of-business"
+cluster = "pm-business"
+kind = "guide"
+title = "How to buy a property management book of business"
+question = "How do I find, price and buy another property management company's book of business?"
+subquestions = ["Where do I find sellers?", "Asset purchase or stock purchase?", "How do I price the deal?", "How do I keep the owners after closing?"]
+inspired_by = "https://www.buildium.com/blog/grow-through-property-management-acquisitions/"
+demand = "Buildium 'Grow through property management acquisitions'; CT Acquisitions and BigIdeasDB buyer guides"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-company-valuation"
+cluster = "pm-business"
+kind = "data"
+title = "What is a property management company worth? Multiples and per-door prices"
+question = "How do I value a property management company or a book of doors?"
+subquestions = ["What SDE and EBITDA multiples apply?", "What price per door do buyers pay?", "How does door count change the multiple?", "Which factors raise or lower value?"]
+inspired_by = "https://www.secondnature.com/blog/how-to-value-property-management-company"
+demand = "CT Acquisitions: $200 to $500 per door, 2.5x to 3x SDE; PM Assist: about 20% higher price above 350 doors"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "sell-property-management-company"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to sell your property management company"
+question = "How do I prepare and sell my property management company for the best price?"
+subquestions = ["How early should I prepare?", "Broker or direct sale?", "Which numbers will buyers ask for?", "How do earnouts work?", "What happens to my staff?"]
+inspired_by = "https://www.buildium.com/blog/selling-your-property-management-company/"
+demand = "Buildium 'Selling your property management company'; CT Acquisitions sell guide"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "due-diligence-checklist-buying-pm-company"
+cluster = "pm-business"
+kind = "checklist"
+title = "Due diligence checklist for buying a property management company"
+question = "What should I check before I buy a property management company?"
+subquestions = ["How do I check the trust account?", "Which agreements must transfer?", "How do I check owner churn history?", "Which legal and license risks should I look for?"]
+inspired_by = "https://www.buildium.com/blog/how-to-use-due-diligence-to-expose-business-landmines/"
+demand = "Buildium 'How to use due diligence to expose business landmines'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "earnouts-retention-clawbacks-pm-acquisitions"
+cluster = "pm-business"
+kind = "guide"
+title = "Earnouts and retention clawbacks in PM acquisitions"
+question = "How do earnouts and door retention clawbacks work when you buy or sell a property management company?"
+subquestions = ["What is a retention clawback?", "How long is a typical earnout period?", "How are lost doors counted?", "Which terms protect the seller?"]
+inspired_by = "https://pmassist.substack.com/p/beyond-the-rumors-real-numbers-in"
+demand = "PM Assist 'Beyond the rumors: real numbers in PM M&A'; CT Acquisitions per-door and EBITDA math"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "integrate-acquired-doors"
+cluster = "pm-business"
+kind = "how-to"
+title = "After the purchase: how to move acquired doors without losing owners"
+question = "How do I move owners, tenants and data from an acquired company into mine?"
+subquestions = ["What do owners and tenants hear, and when?", "How do I move trust funds and deposits?", "How do I move data between software?", "What churn should I expect after closing?"]
+inspired_by = "https://www.rentvine.com/blog/how-rosenbaum-realty-group-switched-scaled-and-acquired-all-at-once"
+demand = "Rentvine story 'Switched, scaled and acquired all at once'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "expand-property-management-to-new-market"
+cluster = "pm-business"
+kind = "guide"
+title = "How to expand your property management company into a new market"
+question = "How do I open a property management office in a new city or state?"
+subquestions = ["Which licenses does the new state need?", "Do I need local staff?", "How do I pick the market?", "Buy a local book or start from zero?"]
+inspired_by = "https://www.buildium.com/blog/expanding-your-property-management-portfolio-into-new-markets/"
+demand = "Buildium 'Expanding your property management portfolio into new markets'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "add-hoa-management-service"
+cluster = "pm-business"
+kind = "guide"
+title = "Should you add HOA management to your company?"
+question = "Should a residential property management company add HOA or community association management?"
+subquestions = ["How is HOA work different?", "How is HOA work priced?", "Which licenses or certifications apply?", "How do HOA multiples compare?"]
+inspired_by = "https://www.buildium.com/blog/how-to-diversify-your-property-management-portfolio/"
+demand = "Buildium diversify posts; CT Acquisitions: HOA/CAM multiples are the highest"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "add-short-term-rental-management"
+cluster = "pm-business"
+kind = "comparison"
+title = "Should you add short-term rental management?"
+question = "Should a long-term rental property management company add short-term rental management?"
+subquestions = ["How does the work differ?", "How do STR fees differ?", "Which local rules limit STRs?", "How do STR company multiples compare?"]
+inspired_by = "https://www.ctacquisitions.com/guides/property-management-business-valuation/"
+demand = "CT Acquisitions: STR PM multiples are the lowest at 4x to 7x EBITDA"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "add-commercial-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Should a residential PM company add commercial properties?"
+question = "Should a residential property management company take on commercial property management?"
+subquestions = ["How do commercial leases differ?", "How is commercial management priced?", "What new skills and insurance do I need?", "When does it make sense?"]
+inspired_by = "https://www.buildium.com/blog/guide-to-commercial-real-estate-leases/"
+demand = "Buildium commercial lease and diversify posts"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "referral-fees-property-management-rules"
+cluster = "pm-business"
+kind = "guide"
+title = "Referral fees in property management: what is legal"
+question = "Can a property management company pay or receive referral fees from agents and others?"
+subquestions = ["Can I pay an unlicensed person for a referral?", "How do agent-to-agent referral fees work?", "How do I set up a realtor referral program?", "What must I disclose to the owner?"]
+inspired_by = ""
+demand = "Referral and partner programs show up in DoorGrow and Buildium growth content; license rules vary by state"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-business-plan"
+cluster = "pm-business"
+kind = "template"
+title = "Business plan template for a property management company"
+question = "What should a property management company business plan include?"
+subquestions = ["Which market data do I need?", "How do I forecast doors and revenue?", "Which costs do I plan for year 1?", "Do banks want a plan for a PM company?"]
+inspired_by = "https://www.buildium.com/blog/create-a-property-management-business-plan/"
+demand = "Buildium 'Create a property management business plan'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "private-equity-roll-ups-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Private equity roll-ups: what they mean for independent PM companies"
+question = "What do private equity roll-ups mean for independent property management companies?"
+subquestions = ["Who is buying PM companies?", "What do PE buyers pay for?", "How do roll-ups change local competition?", "Should I sell to a roll-up?"]
+inspired_by = "https://pmassist.substack.com/p/beyond-the-rumors-real-numbers-in"
+demand = "PM Assist M&A analysis; Ad Astra and CT Acquisitions sell-side pages"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-coaching-worth-it"
+cluster = "pm-business"
+kind = "comparison"
+title = "Is property management coaching worth it? Coaching vs mastermind vs franchise"
+question = "Is paying for property management coaching or a mastermind worth it, and how does it compare to a franchise?"
+subquestions = ["What does PM coaching cost?", "What do coaches actually do?", "Mastermind or 1-to-1 coaching?", "How does coaching compare to a franchise?"]
+inspired_by = "https://doorgrow.com/llms-2/faq/"
+demand = "DoorGrow FAQ 'Coaching vs franchise'; DoorGrow lists $4,000 join plus $1,100 per month"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-start-property-management-company"
+cluster = "pm-business"
+kind = "guide"
+title = "How to start a property management company: the steps"
+question = "What are the steps to start a residential property management company?"
+subquestions = ["Which license do I need?", "Which business entity should I form?", "Which insurance do I need first?", "Which software and bank accounts do I set up?", "How do I find the first owners?"]
+inspired_by = "https://www.buildium.com/blog/how-to-start-a-property-management-company/"
+demand = "Buildium 'How to start a property management company' plus about 50 state versions; Rentvine version"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-startup-costs"
+cluster = "pm-business"
+kind = "data"
+title = "What does it cost to start a property management company?"
+question = "How much money does it take to start a property management company?"
+subquestions = ["What are the one-time costs?", "What are the monthly fixed costs?", "What does a home-based start cost?", "How long until the company pays for itself?"]
+inspired_by = "https://www.wexfordins.com/post/is-a-property-management-company-profitable-door-count-economics-in-2026"
+demand = "Startup guides say $35,000 to $90,000 for a 50-door company built to be ready, less from home"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-license-by-state"
+cluster = "pm-business"
+kind = "data"
+title = "Property management license requirements by state"
+question = "Does a property manager need a real estate broker license, and what does each state require?"
+subquestions = ["Which states require a broker license?", "Which states have a separate PM license?", "Which states have no license rule for residential PM?", "Can I work under another broker?"]
+inspired_by = "https://www.rentecdirect.com/blog/property-management-licenses/"
+demand = "Rentec Direct, DoorLoop and Yardi Breeze publish license-by-state lists; the lists do not fully agree"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-franchise-vs-independent"
+cluster = "pm-business"
+kind = "comparison"
+title = "Franchise or independent: which way to start a PM company?"
+question = "Should I buy a property management franchise or start an independent company?"
+subquestions = ["What does a franchise give me?", "What does it cost over 5 years?", "How much freedom do I lose?", "Can I leave a franchise later?"]
+inspired_by = "https://www.buildium.com/blog/the-pros-and-cons-of-property-management-franchises/"
+demand = "Buildium 'The pros and cons of property management franchises'; DoorGrow coaching vs franchise FAQ"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-franchise-costs"
+cluster = "pm-business"
+kind = "data"
+title = "Property management franchise costs and royalties compared"
+question = "How much do property management franchises cost in fees and royalties?"
+subquestions = ["What is the initial franchise fee?", "What royalty and brand fund do they charge?", "What is the total startup investment?", "Where do I find the FDD numbers?"]
+inspired_by = "https://frannet.com/franchise-directory/real-property-management/"
+demand = "FranNet and BizBuySell: Real Property Management fee $69,900 (2026 FDD summary), 7% royalty, 2% brand fund"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-insurance-types"
+cluster = "pm-business"
+kind = "guide"
+title = "Insurance for property management companies: which policies you need"
+question = "Which insurance policies does a property management company need?"
+subquestions = ["What does general liability cover?", "What does E&O cover?", "Do I need crime, fidelity or cyber cover?", "What do states require (bonds)?", "What do owners ask me to carry?"]
+inspired_by = "https://www.insureon.com/real-estate-business-insurance/property-managers/cost"
+demand = "Insureon, Leavitt, Hemlane and HUB International property manager insurance pages"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "errors-and-omissions-insurance-property-managers"
+cluster = "pm-business"
+kind = "guide"
+title = "E&O insurance for property managers: cost and coverage"
+question = "What does errors and omissions insurance cover for a property manager, and what does it cost?"
+subquestions = ["Which claims does E&O pay?", "What does E&O exclude?", "What does a $1M policy cost?", "How do limits and deductibles change the price?"]
+inspired_by = "https://www.insureon.com/real-estate-business-insurance/property-managers/cost"
+demand = "Insureon: $83 per month average for property managers; Hemlane: $85 to $120 per month"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "narpm-membership-worth-it"
+cluster = "pm-business"
+kind = "guide"
+title = "Is NARPM membership worth it for a property management company?"
+question = "What does NARPM membership cost and give a residential property management company?"
+subquestions = ["What does NARPM membership include?", "What do local chapters offer?", "Which NARPM designations exist?", "What do members say it is worth?"]
+inspired_by = "https://www.narpm.org/"
+demand = "NARPM is in the cluster look-at list; Rentvine posts on NARPM affiliate status and events"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "narpm-rmp-mpm-designations"
+cluster = "pm-business"
+kind = "guide"
+title = "NARPM RMP, MPM and CRMC: how to earn each designation"
+question = "How do I earn the NARPM RMP, MPM or CRMC designation, and does it help win owners?"
+subquestions = ["What are the requirements for RMP?", "What does MPM add?", "What does CRMC require of a company?", "Do owners know these designations?"]
+inspired_by = "https://www.narpm.org/"
+demand = "NARPM designations are part of the NARPM topic in the cluster scope"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "llc-vs-s-corp-property-management-company"
+cluster = "pm-business"
+kind = "comparison"
+title = "LLC or S corp for a property management company?"
+question = "Which business entity fits a property management company: LLC, S corp or other?"
+subquestions = ["What are the tax differences?", "Does my state license the entity or the person?", "When does an S corp election make sense?", "What do I need for a bank and trust account?"]
+inspired_by = ""
+demand = "Entity choice is a step in every 'how to start a property management company' guide (Buildium, Rentvine)"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "trust-account-rules-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Trust accounting for property managers: the rules"
+question = "What are the trust account rules for a property management company?"
+subquestions = ["What money must go in a trust account?", "Can I mix deposits and rents?", "Who may sign on the trust account?", "What do states audit?"]
+inspired_by = "https://www.rentvine.com/blog/what-is-trust-accounting-property-management"
+demand = "Rentvine trust accounting series; Buildium 'What you didn't know about trust accounting'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "three-way-reconciliation"
+cluster = "pm-business"
+kind = "how-to"
+title = "Three-way reconciliation: how to do it each month"
+question = "How does a property manager do a monthly three-way reconciliation of the trust account?"
+subquestions = ["What are the three balances?", "What causes a mismatch?", "Which reports do I need?", "How do I fix a shortage?"]
+inspired_by = "https://www.rentvine.com/blog/how-3-way-reconciliation-works-in-property-management-and-why-its-critical"
+demand = "Rentvine 'How 3-way reconciliation works'; California DRE files cite trust account shortages"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "trust-account-audit-checklist"
+cluster = "pm-business"
+kind = "checklist"
+title = "Trust account audit: a preparation checklist"
+question = "How do I prepare my property management company for a state trust account audit?"
+subquestions = ["Which records will the auditor ask for?", "How is the account titled?", "What are the most common findings?", "How long must I keep records?"]
+inspired_by = "https://www.rentvine.com/blog/how-to-prepare-for-trust-account-audit-property-management"
+demand = "Rentvine audit prep post and 'Zero violations: how Prandi passed a CA DRE audit'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "fair-housing-compliance-checklist-pm-company"
+cluster = "pm-business"
+kind = "checklist"
+title = "Fair housing compliance checklist for a property management company"
+question = "What must a property management company do to comply with fair housing law?"
+subquestions = ["Which staff need fair housing training?", "How do I review ads and screening criteria?", "How do I handle reasonable accommodation requests?", "Which records should I keep?"]
+inspired_by = "https://www.insureon.com/real-estate-business-insurance/property-managers/cost"
+demand = "Insureon names tenant discrimination claims as a main E&O risk for property managers"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-lawsuit-risks"
+cluster = "pm-business"
+kind = "guide"
+title = "The most common lawsuits against property managers and how to prevent them"
+question = "What are the most common lawsuits against property management companies, and how do I lower the risk?"
+subquestions = ["Which claims come from tenants?", "Which claims come from owners?", "How does documentation protect me?", "How does insurance fit in?"]
+inspired_by = "https://propertymeld.com/blog/how-property-management-companies-can-prevent-negligence-lawsuits/"
+demand = "Property Meld legal series on negligence lawsuits and documentation"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "1099-forms-for-property-managers"
+cluster = "pm-business"
+kind = "how-to"
+title = "1099 forms for property managers: owners and vendors"
+question = "Which 1099 forms must a property management company file for owners and vendors?"
+subquestions = ["1099-MISC or 1099-NEC: which for whom?", "What is the deadline?", "Which W-9s do I need first?", "How does the software file them?"]
+inspired_by = "https://www.buildium.com/blog/1099-for-property-management/"
+demand = "Buildium has yearly 1099 updates for property managers and a 1099-NEC post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "unlicensed-staff-rules-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "What unlicensed staff may and may not do"
+question = "Which tasks can unlicensed assistants do in a property management company?"
+subquestions = ["Can unlicensed staff show units?", "Can they quote rent or sign leases?", "What supervision does the broker owe?", "How do the rules differ by state?"]
+inspired_by = "https://www.rentecdirect.com/blog/property-management-licenses/"
+demand = "License guides: some states let a manager work under a licensed broker's team"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "wire-fraud-cyber-risk-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Wire fraud and cyber risk in property management"
+question = "How do I protect owner payouts and tenant data from wire fraud and cyber attacks?"
+subquestions = ["How do payout fraud schemes work?", "Which controls stop fake bank change requests?", "Does cyber or crime insurance cover losses?", "What must I do after a breach?"]
+inspired_by = "https://www.appfolio.com/blog/appfolio-data-protection-for-property-managers"
+demand = "AppFolio 'Data protection for property managers'; HUB notes E&O excludes fraud and theft"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "after-hours-emergency-maintenance"
+cluster = "pm-business"
+kind = "guide"
+title = "How to cover after-hours emergency maintenance"
+question = "How should a property management company handle after-hours maintenance emergencies?"
+subquestions = ["What counts as an emergency?", "In-house on-call or answering service?", "What does after-hours cover cost?", "How do I set vendor rules for nights and weekends?"]
+inspired_by = "https://propertymeld.com/blog/how-to-prepare-for-common-property-maintenance-issues/"
+demand = "Property Meld maintenance operations posts; Vendoroo maintenance VA pages"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-distributions-timing"
+cluster = "pm-business"
+kind = "guide"
+title = "When and how to pay owners each month"
+question = "When should a property management company pay owner distributions, and how?"
+subquestions = ["What day of the month do most firms pay?", "How do I handle late rent before payout?", "ACH, check or other?", "How do reserves change the payout?"]
+inspired_by = "https://www.buildium.com/blog/owner-distributions-for-property-managers/"
+demand = "Buildium 'Owner distributions for property managers'; Rentvine owner payment flow post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "switch-property-management-software"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to switch property management software without losing data"
+question = "How do I move my property management company to new software without losing data or owners?"
+subquestions = ["Which data must move?", "How long does a switch take?", "When in the year should I switch?", "How do I tell owners and tenants?"]
+inspired_by = "https://www.buildium.com/blog/switch-property-management-software-step-by-step-evaluation/"
+demand = "Buildium step-by-step switch post; Rentvine 'How to switch software without losing your data'"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "vendor-management-program"
+cluster = "pm-business"
+kind = "how-to"
+title = "How to build a vendor management program"
+question = "How should a property management company screen, onboard and manage vendors?"
+subquestions = ["Which documents do vendors give me (W-9, COI, license)?", "How do I set vendor rates?", "How do I score vendor performance?", "How many vendors per trade?"]
+inspired_by = "https://www.buildium.com/blog/vendor-screening/"
+demand = "Buildium 'Vendor screening' and 'Property management vendor guide'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-in-property-management-operations"
+cluster = "pm-business"
+kind = "guide"
+title = "Where AI saves time in a property management company"
+question = "Which property management tasks can AI do today, and what are the risks?"
+subquestions = ["Can AI handle leasing inquiries?", "Can AI triage maintenance requests?", "What are the fair housing and data risks?", "How do I measure time saved?"]
+inspired_by = "https://www.rentvine.com/blog/ai-property-management-concerns"
+demand = "Rentvine AI concerns post; Buildium 'Evaluate AI software for property management'; AppFolio AI report"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "run-a-virtual-property-management-company"
+cluster = "pm-business"
+kind = "guide"
+title = "How to run a virtual property management company"
+question = "Can a property management company run without an office, and how?"
+subquestions = ["Which tasks need people on the ground?", "How do I do showings and inspections remotely?", "How do I manage a remote team?", "What do owners think of no office?"]
+inspired_by = "https://www.buildium.com/blog/how-to-start-and-run-a-virtual-property-management-company/"
+demand = "Buildium 'How to start and run a virtual property management company'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "business-continuity-plan-property-management"
+cluster = "pm-business"
+kind = "checklist"
+title = "Business continuity plan for a property management company"
+question = "What should a property management company plan for a storm, outage or key staff loss?"
+subquestions = ["Which data and systems need backup?", "Who calls owners and tenants in an event?", "How do I keep paying owners and vendors?", "How often should I test the plan?"]
+inspired_by = "https://propertymeld.com/blog/dealing-with-property-maintenance-in-inclement-weather-and-natural-disasters/"
+demand = "Property Meld disaster maintenance post; Buildium hurricane plan post"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "year-end-checklist-property-management-company"
+cluster = "pm-business"
+kind = "checklist"
+title = "Year-end checklist for a property management company"
+question = "What should a property management company finish at year end?"
+subquestions = ["Which tax forms go to owners and vendors?", "Which owner reviews should I hold?", "When should I review fees and agreements?", "Which numbers go into next year's plan?"]
+inspired_by = "https://www.appfolio.com/blog/end-of-year-reporting-1099s"
+demand = "AppFolio 'End of year reporting: 1099s'; Buildium 'Form 1099s and year-end statements'"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "response-time-standards-property-management"
+cluster = "pm-business"
+kind = "guide"
+title = "Response time standards: what to promise owners and tenants"
+question = "What response times should a property management company promise owners and tenants?"
+subquestions = ["What response time do owners expect?", "How fast should maintenance requests get a reply?", "How do I track response time?", "Should response times be in the agreement?"]
+inspired_by = "https://propertymeld.com/blog/why-communication-is-the-baseline-to-maintenance-excellence/"
+demand = "Property Meld 'Why communication is the baseline to maintenance excellence'; churn guides cite slow communication"
+priority = 5
+status = "planned"
