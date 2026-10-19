@@ -62,7 +62,7 @@ Two more numbers from the same run. 132 of 150 answers (88%) cited a listing sit
 
 ## Do complaints and lawsuits show up in AI answers?
 
-Complaints can show up when they sit on a source the engine reads. The BBB is the clearest case. Its letter grade comes from a business's BBB file and 7 elements: complaint history, type of business, time in business, transparent business practices, failure to honor commitments to BBB, licensing information and advertising issues (BBB).
+Complaints can show up when they sit on a source the engine reads. The BBB is the clearest case. Its letter grade comes from a business's BBB file and 7 elements (BBB). They are complaint history, type of business, time in business and transparent business practices. The other 3 are failure to honor commitments to BBB, licensing information and advertising issues.
 
 The BBB's complaint factors include "Appropriate and timely response to complaints" and "Patterns of unresolved issues". The BBB also says: "Customer reviews are not used in the letter-grade calculation." So a slow reply to one complaint can hurt the grade more than a 3-star review.
 

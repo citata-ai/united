@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile Categories for Property Managers — Citata.ai"
+title: "Business Profile Categories for Property Managers — Citata.ai"
 description: "Pick Property management company as the primary category, add only categories your firm truly is, and list each service. A checklist with Google's own rules."
 headline: "Google Business Profile Categories for Property Managers"
 dek: "Google's own category rules, the real category IDs, and a 12-step checklist for your profile."
@@ -49,7 +49,7 @@ The right primary category for most firms is Property management company. Google
 
 Google's guidelines give a simple test. A category must complete the sentence "This business IS a", not "this business HAS a". A firm that manages rentals for owners IS a property management company. It HAS a leasing service, a maintenance team and an owner portal. Those are services, not categories.
 
-Property Manager Websites, a website vendor for managers, adds one more reason. Its support page says that after you pick Property management company, Google turns on features for that category, such as a way for owners to book an appointment. We did not test that feature ourselves.
+Property Manager Websites, a website vendor for managers, adds one more reason. Its support page says Google turns on extra features after you pick Property management company. One example is a way for owners to book an appointment. We did not test that feature ourselves.
 
 ## Which category IDs exist for rental businesses?
 
@@ -100,10 +100,10 @@ Write each description in plain words, 1–3 sentences. Use the same service nam
 
 Categories may change AI answers, but no public test proves it for property managers. Here is what we know from Google and from our own data.
 
-- **Google Maps uses the profile.** Google says Gemini in Maps is "grounded in our trusted data about 250 million places around the world" and summarizes reviews (Google, 2024-10-31).
+- **Google Maps uses the profile.** Google says Gemini in Maps is "grounded in our trusted data about 250 million places around the world". It also summarizes reviews (Google, 2024-10-31).
 - **Google search AI wants current data.** Google's AI features page says to check "that your Merchant Center and Business Profile information is up-to-date". It also says there is "no special schema.org structured data that you need to add".
 - **Local rank uses relevance.** Google says local results are "mainly based on relevance, distance, and popularity". Relevance is "how well a Business Profile matches what someone is searching for".
-- **ChatGPT, Claude and Gemini read listings.** In our test of 150 answers to "What is the best property management company in [city]?", 132 answers (88%) used a listing site as a source. Expertise.com was a source in 93 answers, Yelp and iPropertyManagement in 50 each (our data, 2026-10-19, 50 cities, 3 engines).
+- **ChatGPT, Claude and Gemini read listings.** We asked "What is the best property management company in [city]?" and got 150 answers. 132 of them (88%) used a listing site as a source. Expertise.com was a source in 93 answers, Yelp and iPropertyManagement in 50 each (our data, 2026-10-19, 50 cities, 3 engines).
 
 So the profile is one input among many. A wrong category can make the profile less relevant to an owner's question. A correct category will not, by itself, put you in an AI answer. For the full list of sources that AI reads, see [how rental owners use AI to choose a property manager](/guides/how-owners-choose-a-property-manager-with-ai).
 

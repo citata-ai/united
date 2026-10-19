@@ -1,6 +1,6 @@
 ---
 title: "TenantCloud Alternatives: Free Plans and Growth Fit — Citata.ai"
-description: "Compare TenantCloud alternatives by free plans, published vendor prices, lease limits and owner reporting. Test migration before moving rent collection or books."
+description: "Compare TenantCloud alternatives by free plans, vendor prices, lease limits and owner reporting. Test migration before moving rent collection or your books."
 headline: "TenantCloud Alternatives for Landlords and Small Managers"
 dek: "Match the next tool to your lease count, owner reporting and accounting work."
 published: "2026-10-19"

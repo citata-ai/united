@@ -1,11 +1,11 @@
 ---
-title: "Property Software Implementation: A Practical Timeline — Citata.ai"
+title: "Property Software Implementation: Plan and Timeline — Citata.ai"
 description: "Plan property management software implementation by cleanup, import, training and cutover checks. Set the launch date from data readiness, not a sales promise."
 headline: "Plan Your Property Management Software Implementation"
 dek: "Use data checks and staff readiness to set the date for switching live work."
 published: "2026-10-19"
 updated: "2026-10-19"
-answer: "Implementation takes as long as the required data, accounting and staff checks need. No single vendor promise establishes a reliable timeline for every portfolio. Plan phases with clear exit tests, then set a cutover date after a sample import and balance review."
+answer: "Rentvine reports an average of 45 days to go live, but that vendor figure is not a universal timeline. Your schedule depends on data, accounting and staff readiness. Plan phases with clear exit tests, then approve cutover after a sample import and balance review."
 visible: false
 cluster: "software"
 kind: "guide"
@@ -31,9 +31,13 @@ sources:
     url: "https://www.propertyware.com/pricing/"
   - label: "Rentvine: Pricing and onboarding (read 2026-10-19)"
     url: "https://www.rentvine.com/pricing"
+  - label: "Rentvine: Onboarding timeline (read 2026-10-19)"
+    url: "https://www.rentvine.com/onboarding"
 ---
 
 ## What happens in each phase of onboarding?
+
+Rentvine reports an average of 45 days from agreement to go-live on its onboarding page, read October 19, 2026. That is a vendor-reported average, not an independent benchmark or a promise for your portfolio. Buildium describes import and training work without a universal duration on its reviewed onboarding page. Ask each vendor to inspect your records before setting a date.
 
 A workable implementation plan moves through data, accounting, staff practice and a controlled cutover. Treat the schedule below as our planning template, not a vendor guarantee.
 

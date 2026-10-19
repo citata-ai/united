@@ -102,4 +102,6 @@ Practise the accounting close and emergency handoff before you grow. Buildium's 
 
 Review unresolved tasks, failed automation and unclear balances before adding features. Keep source documents linked to entries. Give the backup only the access needed and test it.
 
+Write down the backup process before taking on another property. Test that the backup can find approved records without using your personal login.
+
 Use the [management fee calculator](/tools/property-management-fee-calculator) to check your confirmed software and service costs. Find related comparisons in the [guide library](/guides). Take a full rent-to-statement example to your next demo and ask what work remains outside the system.

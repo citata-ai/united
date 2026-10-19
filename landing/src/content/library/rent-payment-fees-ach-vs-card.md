@@ -107,4 +107,6 @@ Test a successful payment, return and refund with sample records. Confirm the le
 
 Keep changes controlled. Save old settings, approved terms and the date new instructions apply. Tell residents what action they need to take without conflicting payment links.
 
+Give staff a written explanation of each payment status. Test the wording against the portal and bank record. A resident should understand whether a fee applies before authorizing payment. Keep the approved schedule available when staff handle questions, refunds or a failed transaction.
+
 Use the [management fee calculator](/tools/property-management-fee-calculator) for business cost planning. Our [AppFolio and Buildium guide](/guides/appfolio-vs-buildium) shows how plan fees can change comparisons. Request a dated schedule for your plan and inspect the checkout total before changing payment methods.

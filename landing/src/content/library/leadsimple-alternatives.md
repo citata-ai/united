@@ -113,3 +113,5 @@ Save current workflows and exports before changing the live account. Decide wher
 Record the full bill and remaining manual steps. Ask a reference to explain a failed handoff and recovery. Avoid ranking products by unverified review scores.
 
 Owner acquisition also depends on how people find your company. Read [how owners use AI to choose a manager](/guides/how-owners-choose-a-property-manager-with-ai) for that separate task. Bring your lead-to-agreement process to the demo and require the vendor to complete it.
+
+Keep a copy of the tested workflow with your contract. Staff should know which product owns each handoff after the change.

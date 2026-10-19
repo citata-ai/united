@@ -93,6 +93,8 @@ Build the remaining budget around your activity. Add setup, payments, screening 
 
 Ask how invoices change when units enter or leave. Confirm taxes and partial-period billing. A monthly rate does not mean a month-to-month contract.
 
+Before approving the quote, ask who will review the first invoice. Compare the billed units, minimum and selected services with the signed schedule. Keep any difference open until the vendor explains it. Save that review with the contract so another staff member can repeat the check at renewal.
+
 Use the [management fee calculator](/tools/property-management-fee-calculator) to assess confirmed costs against your service income. A minimum can be a large share of a small portfolio's fee income. For a larger one, payment volume and staff work may matter more. Keep both in the decision sheet.
 
 ## Which plan should you test first?
