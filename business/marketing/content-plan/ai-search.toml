@@ -1,0 +1,1214 @@
+# AI search cluster topic plan. Source: cluster "ai-search" in clusters.toml.
+# Generated 2026-10-19 by the topic planner. Status values: planned.
+
+[[topic]]
+slug = "how-to-get-recommended-by-chatgpt-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to get your property management company recommended by ChatGPT"
+question = "How does a property management company get ChatGPT to name it when a landlord asks for a manager?"
+subquestions = ["Which sources does ChatGPT search use for local businesses?", "Does ChatGPT use Google reviews?", "How long until ChatGPT mentions a new company?", "Can you pay ChatGPT to recommend you?", "How do you test what ChatGPT says about you?"]
+inspired_by = "https://citant.ai/blog/how-to-rank-in-chatgpt/"
+demand = "ClearLead FAQ 'How do I get my property management company mentioned in ChatGPT?'; Citant post; Texta and Trakkr PM pages"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "google-ai-overviews-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "How property managers show up in Google AI Overviews"
+question = "How does a property management company get cited in Google AI Overviews?"
+subquestions = ["Which property management searches show an AI Overview?", "Does a top-10 ranking help you get cited?", "Do AI Overviews take clicks from property management sites?", "What page formats does Google cite?"]
+inspired_by = "https://citant.ai/blog/how-to-appear-in-google-ai-overviews/"
+demand = "ClearLead post and FAQ 'Do AI Overviews steal traffic'; Citant post"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "google-ai-mode-property-managers"
+cluster = "ai-search"
+kind = "guide"
+title = "Google AI Mode for property managers"
+question = "How does Google AI Mode choose which property management companies to show?"
+subquestions = ["How is AI Mode different from the Local Pack?", "How many businesses does AI Mode list?", "Does AI Mode use Google Business Profile data?", "Does device location change the answer?"]
+inspired_by = "https://www.humanlevel.com/en/blog/seo/google-ai-mode-and-local-search-results"
+demand = "Human Level and Cloutly analyses of AI Mode local results; Google has not published the selection rules"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "perplexity-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to get cited by Perplexity as a property manager"
+question = "How does a property management company get Perplexity to cite its website?"
+subquestions = ["Which sources does Perplexity cite for local service questions?", "Does Perplexity use Bing or its own index?", "Do Reddit and directories matter for Perplexity?", "How do you check Perplexity citations?"]
+inspired_by = "https://citant.ai/blog/how-to-rank-in-perplexity/"
+demand = "Citant post; Trakkr and Recomaze list Perplexity in PM monitoring"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "gemini-property-management-recommendations"
+cluster = "ai-search"
+kind = "how-to"
+title = "How Google Gemini recommends property managers"
+question = "How does Gemini decide which property management companies to recommend?"
+subquestions = ["Does Gemini use Google Maps and Business Profile data?", "Is Gemini different from AI Overviews?", "Which facts does Gemini show about a local business?", "How do you test Gemini answers?"]
+inspired_by = "https://citant.ai/blog/optimize-for-gemini/"
+demand = "Citant post; Yext 'Where do Gemini and ChatGPT get local business information'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "claude-property-management-recommendations"
+cluster = "ai-search"
+kind = "guide"
+title = "What Claude says about property managers, and why"
+question = "Where does Claude get its facts when a landlord asks it to compare property managers?"
+subquestions = ["Does Claude search the web?", "Which search index does Claude use?", "How does Claude cite sources?", "What can a property manager change to be cited?"]
+inspired_by = "https://citant.ai/blog/optimize-for-claude/"
+demand = "Citant post on optimizing for Claude"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "microsoft-copilot-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "Microsoft Copilot and Bing for property managers"
+question = "How does a property management company show up in Microsoft Copilot answers?"
+subquestions = ["Does Copilot use Bing Places?", "Does Bing Webmaster Tools help?", "Which review sites does Bing show?", "How do you test Copilot answers?"]
+inspired_by = "https://www.localfalcon.com/blog/chatgpt-local-search-data-sources-where-does-business-info-come-from"
+demand = "Local Falcon and Whitespark notes on Bing Places as a pipe into AI answers"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "google-ask-maps-property-managers"
+cluster = "ai-search"
+kind = "guide"
+title = "Google Maps AI answers for property managers"
+question = "How do the AI answers in Google Maps pick property management companies?"
+subquestions = ["What does Ask Maps pull from a Business Profile?", "Do review words change the answer?", "How is Maps AI different from AI Mode?", "What should a property manager update first?"]
+inspired_by = "https://cloutly.com/blog/google-ai-mode-for-local-business/"
+demand = "Vendor posts (March 2026) on Ask Maps answering local queries from profiles and reviews"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "chatgpt-vs-google-owner-leads"
+cluster = "ai-search"
+kind = "comparison"
+title = "ChatGPT vs Google: where property management owner leads come from"
+question = "Do property management companies get more owner leads from ChatGPT or from Google?"
+subquestions = ["What share of leads comes from AI search?", "Do AI leads convert better?", "Why does AI under-report in analytics?", "Where should a small company spend first?"]
+inspired_by = "https://www.fastcompany.com/91572952/the-invisible-landlord-era-is-ending"
+demand = "Fast Company: 30 PM companies, 90 days, Google about 88% of leads, AI about 1.6%"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "ai-overviews-vs-ai-mode"
+cluster = "ai-search"
+kind = "comparison"
+title = "AI Overviews vs AI Mode: what is different for property managers"
+question = "What is the difference between Google AI Overviews and AI Mode for a property management company?"
+subquestions = ["Do they cite the same sources?", "Which one shows local business lists?", "Which one takes more clicks?", "Do you need different pages for each?"]
+inspired_by = "https://pt.linkedin.com/in/hugomss"
+demand = "Ahrefs research summary: same conclusions 86% of the time, 13.7% citation overlap"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "chatgpt-perplexity-gemini-sources-compared"
+cluster = "ai-search"
+kind = "comparison"
+title = "Which sources ChatGPT, Perplexity, Gemini and Copilot use for local businesses"
+question = "How do ChatGPT, Perplexity, Gemini and Copilot differ in the sources they use to name a property manager?"
+subquestions = ["Which assistant uses Google Business Profile?", "Which uses Yelp, Foursquare or Bing?", "Which shows links to your website?", "Which one should you check first?"]
+inspired_by = "https://www.yext.com/blog/where-do-google-gemini-chatgpt-get-local-business-information"
+demand = "Yext, BrightLocal and Local Falcon source studies"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-geo-property-management"
+cluster = "ai-search"
+kind = "glossary"
+title = "What is GEO (generative engine optimization) for property managers?"
+question = "What does generative engine optimization mean for a property management company?"
+subquestions = ["How is GEO different from SEO?", "Which assistants does GEO cover?", "What does GEO work include?", "Who needs GEO?"]
+inspired_by = "https://citant.ai/blog/what-is-generative-engine-optimization/"
+demand = "Citant post; Goodjuju 'property management SEO plus GEO' page"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "what-is-aeo-property-management"
+cluster = "ai-search"
+kind = "glossary"
+title = "What is AEO (answer engine optimization) for property managers?"
+question = "What is answer engine optimization for a property management company?"
+subquestions = ["Is AEO the same as GEO?", "What makes a page an answer?", "Which pages should get AEO first?", "How do you measure AEO?"]
+inspired_by = "https://citant.ai/blog/what-is-answer-engine-optimization/"
+demand = "ClearLead FAQ 'What is AEO for property management?'; Citant post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "geo-vs-seo-property-management"
+cluster = "ai-search"
+kind = "comparison"
+title = "GEO vs SEO for property management companies"
+question = "Is GEO different from SEO for a property management company, and do you need both?"
+subquestions = ["What work overlaps?", "What is only GEO?", "Does ranking on Google help AI citations?", "How should you split the budget?"]
+inspired_by = "https://citant.ai/blog/geo-vs-seo/"
+demand = "ClearLead FAQ 'Is GEO different from SEO?'; Citant post; NARPM podcast 'search everywhere optimization'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "geo-aeo-aio-llmo-names-explained"
+cluster = "ai-search"
+kind = "glossary"
+title = "GEO, AEO, AIO, LLMO: the AI search names explained"
+question = "What do GEO, AEO, AIO and LLMO mean, and are they different things?"
+subquestions = ["Who uses each name?", "Is AIO reporting the same as GEO?", "Which name do agencies use for the same work?", "Which name should you search for?"]
+inspired_by = "https://citant.ai/blog/geo-vs-aeo/"
+demand = "Citant 'GEO vs AEO'; PMW 'AIO reporting' page; Goodjuju 'SEO plus GEO'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "query-fan-out-explained"
+cluster = "ai-search"
+kind = "glossary"
+title = "What is query fan-out, and why does it matter to property managers?"
+question = "What is query fan-out in AI search, and how does it change the pages a property manager needs?"
+subquestions = ["How does AI break one question into many searches?", "Which sub-questions does a landlord question create?", "How do you plan pages for fan-out?", "Can you see fan-out queries?"]
+inspired_by = ""
+demand = "Our content-batch-1 brief; Search Engine Land coverage of AI Mode follow-up questions"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "ai-search-glossary-property-managers"
+cluster = "ai-search"
+kind = "glossary"
+title = "AI search glossary for property managers"
+question = "What do the main AI search terms mean for a property management company?"
+subquestions = ["What is a citation vs a mention?", "What is share of voice?", "What is an entity?", "What is a zero-click search?", "What is an AI crawler?"]
+inspired_by = ""
+demand = "Many terms used without definition in ClearLead, PMW and Citant posts"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "how-llms-decide-what-to-cite"
+cluster = "ai-search"
+kind = "guide"
+title = "How AI assistants decide which property management site to cite"
+question = "How do ChatGPT and other AI assistants choose which websites to cite in an answer?"
+subquestions = ["Does ranking position matter?", "Do facts and numbers help?", "Do brand mentions on other sites matter?", "Why does the answer change each time?"]
+inspired_by = "https://citant.ai/blog/how-llms-decide-what-to-cite/"
+demand = "ClearLead section 'How AI Overviews and ChatGPT pick their sources'; Citant post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-is-an-entity-in-ai-search"
+cluster = "ai-search"
+kind = "glossary"
+title = "What is an entity in AI search, and why your company needs to be one"
+question = "What does it mean for a property management company to be a clear entity for AI?"
+subquestions = ["Which facts define your entity?", "How does AI connect your site, listings and reviews?", "What breaks an entity?", "How do you check your entity?"]
+inspired_by = ""
+demand = "Cluster scope (entity facts); SOCi: only 68% of contact info in ChatGPT and Perplexity matches GBP"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "zero-click-search-property-management"
+cluster = "ai-search"
+kind = "data"
+title = "Zero-click search: how many property management searches end without a click"
+question = "How many property management searches end on Google or in AI without a click to your website?"
+subquestions = ["How much do AI Overviews cut clicks?", "Which searches lose the most clicks?", "What still gets clicks?", "How do you win a zero-click search?"]
+inspired_by = "https://www.clearleaddigital.com/blog/ai-overviews-chatgpt-property-management"
+demand = "ClearLead FAQ 'Do AI Overviews steal traffic'; Ahrefs: AI Overviews cut clicks to result 1 by 58%"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "where-chatgpt-gets-local-business-data"
+cluster = "ai-search"
+kind = "guide"
+title = "Where ChatGPT gets local business data for property managers"
+question = "Where does ChatGPT get the business facts it shows about a property management company?"
+subquestions = ["Does ChatGPT use Yelp?", "Does ChatGPT use Foursquare?", "Does Bing Places matter?", "Does Google Business Profile feed ChatGPT?", "Why do studies disagree?"]
+inspired_by = "https://brightlocal.com/blog/ai-search-using-listings-sources"
+demand = "Yext, BrightLocal, Local Falcon, Steady Demand and MapAtlas studies; Yelp-OpenAI license (Axios)"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "bing-places-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "Bing Places setup for property managers"
+question = "How should a property management company set up Bing Places so AI assistants show correct facts?"
+subquestions = ["How do you claim a Bing Places listing?", "Can you import from Google Business Profile?", "Which categories fit property management?", "Does Bing Places change ranking in ChatGPT?"]
+inspired_by = "https://www.localfalcon.com/blog/chatgpt-local-search-data-sources-where-does-business-info-come-from"
+demand = "Local Falcon: complete Bing Places profile is referenced by ChatGPT; Near Media coverage"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "yelp-property-management-chatgpt"
+cluster = "ai-search"
+kind = "how-to"
+title = "Yelp for property managers in the ChatGPT era"
+question = "Does a property management company need a Yelp page to show up in ChatGPT?"
+subquestions = ["What did Yelp license to OpenAI?", "How often do Yelp links show in ChatGPT business cards?", "How do you claim and fix a Yelp page?", "What about bad tenant reviews on Yelp?"]
+inspired_by = "https://letsdatascience.com/news/yelp-licenses-local-business-data-to-openai-c85a895a"
+demand = "Yelp-OpenAI data license; Steady Demand: Yelp links in 95.83% of ChatGPT business card runs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "foursquare-listing-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "Foursquare listing for property managers"
+question = "Should a property management company claim its Foursquare listing for AI search?"
+subquestions = ["How much does ChatGPT use Foursquare?", "How do you claim a Foursquare place?", "Which fields matter?", "Why do Foursquare and Yelp studies conflict?"]
+inspired_by = "https://mapatlas.eu/blog/chatgpt-local-business-data-sources-foursquare"
+demand = "MapAtlas and BrightLocal report 60-70% Foursquare share in some ChatGPT local results"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "apple-business-connect-property-managers"
+cluster = "ai-search"
+kind = "how-to"
+title = "Apple Business Connect for property managers"
+question = "How does a property management company claim and fill its Apple Business Connect listing?"
+subquestions = ["What fields does Apple show?", "Where does Apple take reviews from?", "How long does verification take?", "Is it worth it for a service-area business?"]
+inspired_by = ""
+demand = "Part of the listing set (GBP, Bing, Apple, Yelp) in Yext and BrightLocal posts"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "expertise-com-property-management"
+cluster = "ai-search"
+kind = "guide"
+title = "Expertise.com and AI answers for property managers"
+question = "Why does AI cite Expertise.com for property managers, and how does a company get listed?"
+subquestions = ["How does Expertise.com pick companies?", "Can you pay to be listed?", "How often does AI cite it?", "What to do if you are not on the list?"]
+inspired_by = ""
+demand = "Our H03 data: Expertise.com was a source in 93 of 150 AI answers (competitors/clients/playbook.md)"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "ipropertymanagement-listing"
+cluster = "ai-search"
+kind = "how-to"
+title = "iPropertyManagement listing for property managers"
+question = "How does a property management company get listed and reviewed on iPropertyManagement?"
+subquestions = ["Is the listing free?", "Does AI cite iPropertyManagement?", "How do reviews work there?", "How do you fix wrong data?"]
+inspired_by = ""
+demand = "Listed in the base package move 2 by all 3 direct competitors (playbook.md)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "bbb-profile-ai-search"
+cluster = "ai-search"
+kind = "how-to"
+title = "Does a BBB profile help property managers in AI search?"
+question = "Does a Better Business Bureau profile change what AI says about a property management company?"
+subquestions = ["Does AI cite BBB pages?", "Do BBB complaints show in AI answers?", "Is accreditation needed?", "How do you fix BBB facts?"]
+inspired_by = ""
+demand = "BBB is in the competitors' listing fix set (playbook.md move 2)"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "nap-consistency-property-management"
+cluster = "ai-search"
+kind = "checklist"
+title = "NAP consistency checklist for property managers"
+question = "How does a property management company make its name, address and phone the same everywhere AI looks?"
+subquestions = ["Which sites must match?", "What about a PO box or virtual office?", "How do you find old wrong listings?", "Which tools find mismatches?"]
+inspired_by = "https://www.soci.ai/?p=37706"
+demand = "SOCi 2026 Local Visibility Index: only 68% of contact info in ChatGPT and Perplexity matches GBP"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "directories-ai-cites-property-management"
+cluster = "ai-search"
+kind = "data"
+title = "Which directories AI cites for property managers"
+question = "Which directories and list sites do AI assistants cite most when a landlord asks for a property manager?"
+subquestions = ["How often is each directory cited?", "Do directories beat company websites?", "Which are free to join?", "Which should you fix first?"]
+inspired_by = ""
+demand = "Our H03 run (150 answers); PMW clients named in 11 answers with 1 direct site citation (playbook.md)"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "best-of-lists-property-management-ai"
+cluster = "ai-search"
+kind = "guide"
+title = "How to get on 'best property managers in [city]' lists"
+question = "How does a property management company get onto the best-of lists that AI assistants quote?"
+subquestions = ["Which best-of sites does AI use?", "Are pay-to-play lists worth it?", "How do editors choose companies?", "How do you check your rank on a list?"]
+inspired_by = ""
+demand = "AI answers to 'best property manager in X' lean on list sites (how-owners-choose guide, H03 data)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "entity-facts-sheet-template"
+cluster = "ai-search"
+kind = "template"
+title = "Entity facts sheet template for property management companies"
+question = "Which company facts should a property manager keep the same on its website, listings and profiles?"
+subquestions = ["Which facts does AI repeat most?", "How do you write door count and service area?", "Where do you publish the facts sheet?", "How often do you update it?"]
+inspired_by = ""
+demand = "Entity facts in cluster scope; SOCi data on mismatched facts"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "fix-wrong-info-ai-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to fix wrong facts about your company in ChatGPT and Google AI"
+question = "What can a property manager do when ChatGPT or Google AI shows wrong fees, a wrong address or says the company closed?"
+subquestions = ["Where does the wrong fact come from?", "How do you send feedback to Google and OpenAI?", "Which listings do you fix first?", "How long until AI shows the fix?"]
+inspired_by = ""
+demand = "PMW AIO reporting and ClearLead 'test your own AI visibility' sections show owners check this"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "why-chatgpt-recommends-my-competitor"
+cluster = "ai-search"
+kind = "guide"
+title = "Why ChatGPT recommends your competitor and not you"
+question = "Why does ChatGPT name a competitor property manager and not my company?"
+subquestions = ["What sources does the competitor have that you lack?", "Is it reviews, directories or content?", "How do you compare side by side?", "What is the fastest fix?"]
+inspired_by = "https://www.clearleaddigital.com/blog/ai-overviews-chatgpt-property-management"
+demand = "ClearLead CTA 'Want to know if AI recommends you or your competitor?'; PMW AIO competitor benchmarking"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "google-business-profile-ai-search"
+cluster = "ai-search"
+kind = "how-to"
+title = "Google Business Profile for AI search"
+question = "How should a property management company set up its Google Business Profile for AI Overviews, AI Mode and Gemini?"
+subquestions = ["Which fields does AI read?", "Do posts and photos matter?", "Does a stale profile hurt?", "How do you add services and service areas?"]
+inspired_by = "https://gogoodjuju.com/google-business-profile-optimization-for-property-managers/"
+demand = "ClearLead GBP guide; Goodjuju GBP page; inboundrem: profile not updated in 3 months seen as 'MIA'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "gbp-categories-property-management"
+cluster = "ai-search"
+kind = "checklist"
+title = "Google Business Profile categories and services for property managers"
+question = "Which Google Business Profile categories and services should a property management company pick?"
+subquestions = ["What is the right primary category?", "Which secondary categories fit?", "How do you write services?", "Do categories change AI answers?"]
+inspired_by = "https://www.clearleaddigital.com/blog/seo-google-my-business"
+demand = "ClearLead GBP guide; Goodjuju local SEO checklist"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "reviews-ai-recommendations-property-management"
+cluster = "ai-search"
+kind = "guide"
+title = "How reviews shape AI recommendations for property managers"
+question = "How do online reviews change whether AI recommends a property management company?"
+subquestions = ["Which review sites does AI read?", "Does review text matter more than stars?", "Do review counts matter?", "How fast do new reviews show up in AI?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/why-your-next-client-might-come-from-chatgpt--and-how-reviews-help"
+demand = "PMW post on reviews and ChatGPT; Goodjuju reputation page"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "owner-review-request-templates"
+cluster = "ai-search"
+kind = "template"
+title = "Review request templates for property management owners"
+question = "How should a property manager ask owners for reviews in a fair, honest way?"
+subquestions = ["When is the best time to ask?", "What should the email and text say?", "Which site should you send owners to?", "What does Google forbid?"]
+inspired_by = "https://gogoodjuju.com/property-management-reputation-management-and-reviews/"
+demand = "Goodjuju reputation pages; playbook move 7 (honest review requests)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "negative-reviews-ai-answers"
+cluster = "ai-search"
+kind = "how-to"
+title = "How bad reviews change AI answers about your property management company"
+question = "How do negative tenant reviews affect what AI says about a property management company?"
+subquestions = ["Does AI quote bad reviews?", "Should you reply to every review?", "Can you remove unfair reviews?", "How do you balance the review mix?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/why-your-next-client-might-come-from-chatgpt--and-how-reviews-help"
+demand = "PMW: track sentiment and alerts for new negative reviews in AIO reporting"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tenant-reviews-vs-owner-reviews"
+cluster = "ai-search"
+kind = "guide"
+title = "Tenant reviews vs owner reviews: what AI reads"
+question = "Why do tenant reviews outnumber owner reviews for property managers, and how does AI treat them?"
+subquestions = ["Why do tenants post more reviews?", "Does AI split tenant and owner views?", "How do you get more owner reviews?", "Should you answer tenant reviews for owners?"]
+inspired_by = ""
+demand = "Common PM review mix; owner vs renter question split in our how-owners-choose guide"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-many-reviews-property-manager-needs"
+cluster = "ai-search"
+kind = "data"
+title = "How many reviews a property manager needs for AI search"
+question = "Is there a review count or star rating a property manager needs before AI recommends it?"
+subquestions = ["What do studies show?", "Why are thresholds a guess?", "How do you compare with local competitors?", "How fast should reviews come in?"]
+inspired_by = "https://www.humanlevel.com/en/blog/seo/google-ai-mode-and-local-search-results"
+demand = "SEO writers note vendors who give exact review thresholds are guessing; owners still ask"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "which-review-site-matters-for-ai"
+cluster = "ai-search"
+kind = "comparison"
+title = "Google vs Yelp vs Facebook vs BBB reviews for AI search"
+question = "Which review site matters most for AI answers about property managers?"
+subquestions = ["Which sites does ChatGPT link?", "Which sites does Bing show?", "Which sites does Google AI read?", "Where should you send owners?"]
+inspired_by = "https://www.steadydemand.com/?p=4927"
+demand = "Steady Demand (Yelp in ChatGPT cards); Whitespark (Facebook, Yelp, Tripadvisor for Bing Places)"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "reddit-ai-search-property-management"
+cluster = "ai-search"
+kind = "guide"
+title = "Reddit and AI search for property managers"
+question = "Does Reddit change what AI says about property management companies, and should a property manager post there?"
+subquestions = ["How often does AI cite Reddit?", "What do r/PropertyManagement and r/landlord threads say about managers?", "What are the rules for business posts?", "How do you answer without spam?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/the-property-managers-guide-to-modern-seo--what-works-what-doesnt-and-what-to-do-instead"
+demand = "PMW: Reddit gains in AI search from first-hand posts; findskill quotes r/PropertyManagement threads"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "youtube-ai-search-property-managers"
+cluster = "ai-search"
+kind = "guide"
+title = "YouTube and AI search for property managers"
+question = "Do YouTube videos help a property management company show up in AI answers?"
+subquestions = ["Does Google AI cite YouTube?", "Which video topics do owners search?", "Do transcripts matter?", "How short can a video be?"]
+inspired_by = "https://gogoodjuju.com/youtube-resources-property-management/"
+demand = "Goodjuju YouTube resources page"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "local-news-pr-ai-citations"
+cluster = "ai-search"
+kind = "how-to"
+title = "Local news and PR for AI citations"
+question = "Do local news mentions help a property management company get recommended by AI?"
+subquestions = ["Which mentions count?", "How do you pitch local news?", "Do paid press releases work?", "How do you track mentions?"]
+inspired_by = "https://recomaze.ai/geo-for-local-business-getting-cited-in-ai-answers-for-local-queries"
+demand = "Recomaze: AI weighs mentions in local news and industry press"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "publish-fees-for-ai-search"
+cluster = "ai-search"
+kind = "how-to"
+title = "Should a property manager publish its fees for AI search?"
+question = "Should a property management company publish its full fee table so AI quotes it correctly?"
+subquestions = ["What does AI say when fees are hidden?", "Which fees to show?", "How do you show ranges?", "Does a fee table cost you leads?"]
+inspired_by = "https://www.clearleaddigital.com/blog/ai-overviews-chatgpt-property-management"
+demand = "ClearLead: 'The highest-leverage change is publishing your actual pricing'; playbook move 3"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "service-city-pages-ai-search"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to write a service-city page that AI cites"
+question = "How should a property manager write a city page so AI assistants cite it for that city?"
+subquestions = ["What facts make a city page unique?", "How many city pages are too many?", "What is a doorway page?", "How do you link city pages?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/multi-location-seo-property-management"
+demand = "PMW 'GEO pages for property managers'; playbook move 1 (all 3 competitors)"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "faq-page-template-property-management"
+cluster = "ai-search"
+kind = "template"
+title = "FAQ page template for property management websites"
+question = "Which owner questions should a property management FAQ page answer, and how?"
+subquestions = ["Which questions do owners ask AI most?", "How long should each answer be?", "Should the FAQ use schema?", "One FAQ page or one per service?"]
+inspired_by = "https://www.clearleaddigital.com/blog/ai-overviews-chatgpt-property-management"
+demand = "ClearLead FAQ block; FAQ answers are the unit AI quotes"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "about-page-ai-entity"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to write an About page that AI understands"
+question = "What should a property management About page say so AI gets the company facts right?"
+subquestions = ["Which facts belong on the About page?", "Should you name the owner and team?", "How do you show licenses?", "Should About link to profiles?"]
+inspired_by = ""
+demand = "Entity facts scope; Goodjuju team and founder pages show the pattern"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-blog-author"
+cluster = "ai-search"
+kind = "how-to"
+title = "Who should be the author of a property management blog post?"
+question = "Should a property management blog post name a person as author for Google and AI?"
+subquestions = ["Why not the company as author?", "What goes in an author bio?", "Do author pages need schema?", "What if staff leave?"]
+inspired_by = "https://www.clearleaddigital.com/blog/property-management-blog-author"
+demand = "ClearLead post 'Why your blog should not list your company as the author'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-analysis-page-ai"
+cluster = "ai-search"
+kind = "how-to"
+title = "Rental analysis pages that AI can quote"
+question = "How should a property manager build a free rental analysis page that gives value before the call?"
+subquestions = ["What does the page show before the form?", "Which data sources are fair to cite?", "Should rent ranges be public?", "How do you measure leads from it?"]
+inspired_by = ""
+demand = "Playbook move 4 (all 3 competitors)"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "owner-calculators-ai-citations"
+cluster = "ai-search"
+kind = "guide"
+title = "Owner calculators and AI citations"
+question = "Do calculators like rent-vs-sell or vacancy loss help a property manager get cited by AI?"
+subquestions = ["Which calculators do owners use?", "Can AI read a calculator?", "What text must go with the tool?", "How do you track tool leads?"]
+inspired_by = ""
+demand = "Playbook move 5: rent-vs-sell, vacancy loss, rental ROI tools"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "case-study-page-ai"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to write a property management case study that AI can quote"
+question = "How should a property manager write a case study so AI can quote its numbers?"
+subquestions = ["Which numbers matter to owners?", "How do you get owner consent?", "What format do AI tools quote?", "Where do case studies link?"]
+inspired_by = "https://gogoodjuju.com/case-study-bpm-chattanooga/"
+demand = "Goodjuju has 10+ case study pages; ClearLead 'what I have seen work' callouts"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "content-clusters-ai-search"
+cluster = "ai-search"
+kind = "how-to"
+title = "Content clusters for property management sites in AI search"
+question = "How should a property manager group blog posts into clusters so Google and AI see topic depth?"
+subquestions = ["What is a cluster vs a pillar?", "How many posts per cluster?", "Which owner topics make good clusters?", "How do you link a cluster?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/how-strategic-content-clustering-drives-google-rankings-for-property-management-sites"
+demand = "PMW clustering post; Goodjuju cluster-blogging page"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-written-blog-posts-property-management"
+cluster = "ai-search"
+kind = "guide"
+title = "Can a property manager use AI to write blog posts?"
+question = "Can a property management company use ChatGPT to write blog posts without hurting Google and AI visibility?"
+subquestions = ["What does Google say about AI content?", "What is scaled content abuse?", "What must a human add?", "How many posts a week is safe?"]
+inspired_by = "https://gogoodjuju.com/google-helpful-content-update-property-management/"
+demand = "Goodjuju helpful content page; PMW 'Should I let AI design my website?'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-guarantees-page-ai"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to present guarantees and cancel terms so AI repeats them right"
+question = "How should a property manager write guarantees and cancel terms so AI quotes them correctly?"
+subquestions = ["Which guarantees do owners compare?", "How do you word cancel terms?", "Should terms be on one page?", "How do you check AI repeats them right?"]
+inspired_by = ""
+demand = "Playbook move 3 (owner protections, all 3 competitors)"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "franchise-website-ai-search"
+cluster = "ai-search"
+kind = "guide"
+title = "AI search on a franchise property management website"
+question = "Can a franchise property manager win AI search on a website it does not fully control?"
+subquestions = ["What can you change on a franchise site?", "Do national brand pages help or hurt?", "Where else can you publish local facts?", "How do listings fill the gap?"]
+inspired_by = "https://www.clearleaddigital.com/blog/franchise-website-platform-seo"
+demand = "ClearLead post 'Locked into a franchise website platform?'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "one-site-or-city-domains-ai"
+cluster = "ai-search"
+kind = "comparison"
+title = "One website or many city domains for AI search?"
+question = "Should a property manager use one website or separate domains for each city?"
+subquestions = ["What happens to authority on many domains?", "How does AI treat duplicate sites?", "When does a second domain make sense?", "How do you merge sites safely?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/multi-location-seo-property-management"
+demand = "PMW multi-location SEO post; owners with many markets ask this"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "find-questions-landlords-ask-ai"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to find the questions landlords ask AI"
+question = "How does a property manager find the real questions owners ask ChatGPT and Google?"
+subquestions = ["Which tools show questions?", "How do you use People Also Ask?", "What do Reddit threads show?", "How do you turn questions into pages?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/keyword-discovery-in-2026-a-modern-guide-for-property-management-seo"
+demand = "PMW keyword discovery post; Goodjuju keywords page"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-owner-content-ai"
+cluster = "ai-search"
+kind = "guide"
+title = "Section 8 owner content that AI quotes"
+question = "What Section 8 content should a property manager publish so AI cites it for owners?"
+subquestions = ["Which Section 8 questions do owners ask?", "Which official sources should you cite?", "How do FMR tables help?", "How do you keep the numbers current?"]
+inspired_by = ""
+demand = "Playbook: only ClearLead has a Section 8 owner guide; we have 51 FMR pages"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "hoa-management-ai-search"
+cluster = "ai-search"
+kind = "guide"
+title = "AI search for HOA management companies"
+question = "How does an HOA or community association manager show up in AI answers?"
+subquestions = ["What do boards ask AI?", "Which directories cover HOA managers?", "Which pages do boards need?", "How is it different from rental management?"]
+inspired_by = ""
+demand = "Board members search for HOA managers the same way owners do; no competitor covers this"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "multifamily-ai-search"
+cluster = "ai-search"
+kind = "guide"
+title = "AI search for multifamily and apartment managers"
+question = "How do renters use AI to find apartments, and how does a multifamily manager show up?"
+subquestions = ["Which sources do AI tools use for apartments?", "Do ILS listings feed AI answers?", "What property facts must be correct?", "How do you track renter leads from AI?"]
+inspired_by = "https://www.clearleaddigital.com/blog/apartments-seo-the-complete-strategy"
+demand = "Trakkr 'AI search for multifamily and property management'; ClearLead apartments SEO post"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "does-schema-help-ai-citations"
+cluster = "ai-search"
+kind = "data"
+title = "Does schema markup help AI citations?"
+question = "Does adding schema markup make AI cite a property management website more often?"
+subquestions = ["What did the Ahrefs schema study find?", "Why do vendors still sell schema?", "Which schema is still worth it?", "What does schema not do?"]
+inspired_by = "https://www.stanventures.com/news/schema-markup-has-no-meaningful-impact-on-ai-citations-7231.md.txt"
+demand = "Ahrefs study: 1,885 pages with JSON-LD vs 4,000 controls, no meaningful citation lift"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "localbusiness-schema-property-management"
+cluster = "ai-search"
+kind = "template"
+title = "LocalBusiness schema template for property managers"
+question = "What JSON-LD should a property management company put on its home and city pages?"
+subquestions = ["Which schema type fits?", "How do you list service areas?", "How do you link profiles with sameAs?", "How do you test the markup?"]
+inspired_by = "https://gogoodjuju.com/technical-seo-checklist-property-management/"
+demand = "Goodjuju technical SEO checklist; playbook move 8 (valid, truthful schema)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "llms-txt-template-property-management"
+cluster = "ai-search"
+kind = "template"
+title = "llms.txt template for a property management website"
+question = "What should an llms.txt file for a property management company contain?"
+subquestions = ["Which pages go in the file?", "How long should it be?", "Do you need llms-full.txt?", "How do you keep it current?"]
+inspired_by = "https://pixis.ai/blog/does-llms-txt-help-ai-citations-what-the-evidence-actually-shows/"
+demand = "Many vendors push llms.txt; SE Ranking and Google say it does not change citations, so owners want a cheap correct file"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "can-ai-read-wix-squarespace-sites"
+cluster = "ai-search"
+kind = "guide"
+title = "Can ChatGPT read a property management website built on Wix, Squarespace or JavaScript?"
+question = "Can AI crawlers read a property management website that loads its text with JavaScript?"
+subquestions = ["Which AI crawlers run JavaScript?", "How do you check what a crawler sees?", "Are Wix and Squarespace safe?", "What about rental listing widgets?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/should-i-let-ai-design-my-website"
+demand = "PMW web design posts; many small PM sites run on site builders"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "indexnow-bing-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "IndexNow for property managers"
+question = "Should a property management website use IndexNow so Bing and Copilot see changes faster?"
+subquestions = ["What is IndexNow?", "Which engines use it?", "How do you turn it on?", "Does it help ChatGPT search?"]
+inspired_by = ""
+demand = "Bing feeds Copilot and ChatGPT search; pairs with Bing Places work"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "bing-webmaster-tools-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "Bing Webmaster Tools setup for property managers"
+question = "How does a property manager set up Bing Webmaster Tools, and what does it show about AI?"
+subquestions = ["How do you verify the site?", "Can you import from Search Console?", "What AI data does Bing show?", "Which errors matter most?"]
+inspired_by = ""
+demand = "Local Falcon and Near Media on Bing as a pipe into ChatGPT and Copilot"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "search-console-ai-overviews-data"
+cluster = "ai-search"
+kind = "how-to"
+title = "AI Overviews and AI Mode data in Google Search Console"
+question = "Can a property manager see AI Overviews and AI Mode traffic in Google Search Console?"
+subquestions = ["Does Search Console split AI Overview clicks?", "How do you find queries that lost clicks?", "What do impressions without clicks mean?", "Which reports to check monthly?"]
+inspired_by = "https://gogoodjuju.com/how-to-do-an-seo-audit-for-a-property-management-company/"
+demand = "Goodjuju SEO audit page; ClearLead FAQ on AI Overviews and traffic"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-visibility-audit-property-management"
+cluster = "ai-search"
+kind = "checklist"
+title = "One-hour AI visibility audit for a property management company"
+question = "How does a property manager audit its AI visibility in one hour?"
+subquestions = ["Which prompts to run?", "Which listings to check?", "Which site checks to run?", "How do you score the result?"]
+inspired_by = "https://gogoodjuju.com/how-to-do-an-seo-audit-for-a-property-management-company/"
+demand = "ClearLead 'How to test your own AI visibility today'; Goodjuju SEO audit page"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "ai-visibility-tools-property-management"
+cluster = "ai-search"
+kind = "comparison"
+title = "AI visibility tools for property managers compared"
+question = "Which tools track whether ChatGPT, Gemini and Perplexity mention a property management company, and what do they cost?"
+subquestions = ["What does each tool track?", "What is the price per prompt?", "Can you do it by hand?", "Which tool fits a 100-door company?"]
+inspired_by = "https://trakkr.ai/resources/industry-tools/best-ai-search-monitoring-tools-for-property-management-companies"
+demand = "Trakkr PM tool list (OtterlyAI from $29/month for 15 prompts); Citant best GEO and AEO tools; PMW AIO reporting"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "prompts-to-track-property-management"
+cluster = "ai-search"
+kind = "template"
+title = "AI prompts a property manager should track"
+question = "Which ChatGPT and Gemini prompts should a property management company track each month?"
+subquestions = ["Which owner prompts matter most?", "How many prompts are enough?", "How do you add your city?", "Should you track brand prompts?"]
+inspired_by = "https://propertymanagerwebsites.com/aio-reporting"
+demand = "PMW AIO reporting; Trakkr per-prompt pricing; our tools/ai-visibility/prompts.toml"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "ai-lead-source-crm-call-tracking"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to record AI as a lead source in your CRM and call tracking"
+question = "How does a property manager record owner leads that came from ChatGPT or other AI in its CRM and call tracking?"
+subquestions = ["Which lead source values to add?", "How do you tag AI calls?", "How do you ask on the intake form?", "How do you report AI leads to the team?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/your-pmw-leads-just-got-a-home-to-land-in-introducing-crm-owner-lead-portal-by-rentvine"
+demand = "Fast Company: AI leads under-counted (1.6% seen vs 4-8% estimated); PMW CRM post"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-search-roi-calculation"
+cluster = "ai-search"
+kind = "data"
+title = "Is AI search worth it? An ROI calculation for property managers"
+question = "How do you calculate whether AI search work pays back for a property management company?"
+subquestions = ["What is one owner lead worth?", "What conversion rate to use?", "How many AI leads must you win to break even?", "What does a 100-door example look like?"]
+inspired_by = "https://citant.ai/blog/measuring-geo-roi/"
+demand = "Citant 'Measuring GEO ROI'; Fast Company: AI search converts 3.7% vs Google 2.7%"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "why-ai-answers-change"
+cluster = "ai-search"
+kind = "guide"
+title = "Why ChatGPT gives a different answer each time"
+question = "Why does ChatGPT name different property managers each time, and how do you measure that?"
+subquestions = ["Why do answers vary?", "How many runs give a fair number?", "Do location and login change answers?", "What is a fair visibility score?"]
+inspired_by = ""
+demand = "Owners see different results when they test AI by hand; tools charge per prompt run"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "geo-agency-guarantees"
+cluster = "ai-search"
+kind = "guide"
+title = "Can a GEO agency guarantee ChatGPT mentions?"
+question = "Can an agency guarantee that ChatGPT or Google AI will recommend your property management company?"
+subquestions = ["What can an agency control?", "What do guarantee terms say?", "Money back vs free month: what is the difference?", "Which promises are red flags?"]
+inspired_by = "https://citant.ai/blog/do-geo-agencies-guarantee-results/"
+demand = "Citant has 4 posts on GEO guarantees"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "diy-vs-agency-ai-search"
+cluster = "ai-search"
+kind = "comparison"
+title = "Do AI search in-house or hire an agency?"
+question = "Should a 50 to 500 door property manager do AI search work in-house or hire an agency?"
+subquestions = ["Which tasks can staff do?", "How many hours a month does it take?", "What does an agency add?", "What does each option cost?"]
+inspired_by = "https://citant.ai/blog/how-much-does-geo-cost/"
+demand = "Citant GEO cost post; ClearLead and Goodjuju SEO cost pages"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "marketing-budget-seo-ads-ai-split"
+cluster = "ai-search"
+kind = "guide"
+title = "How to split a marketing budget between SEO, ads and AI search"
+question = "How should a property management company split its marketing budget between SEO, Google Ads and AI search?"
+subquestions = ["What does each channel cost?", "What share of leads does each bring?", "What changes for under 100 doors?", "How often should you change the split?"]
+inspired_by = "https://www.clearleaddigital.com/blog/seo-cost-property-management-companies"
+demand = "ClearLead 'What this means for your SEO budget'; Goodjuju lead source report 2026"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-long-to-show-up-in-chatgpt"
+cluster = "ai-search"
+kind = "guide"
+title = "How long does it take to show up in ChatGPT?"
+question = "How long does it take a property management company to show up in ChatGPT and Google AI answers?"
+subquestions = ["What changes show up fast?", "What takes months?", "How does it compare to SEO timelines?", "How do you know it is working?"]
+inspired_by = "https://gogoodjuju.com/how-long-does-seo-take-for-property-management-companies/"
+demand = "ClearLead FAQ 'How long does it take to show up in AI Overviews?'; Goodjuju SEO timeline page"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "chatgpt-ads-property-management"
+cluster = "ai-search"
+kind = "guide"
+title = "Can property managers advertise in ChatGPT?"
+question = "Can a property management company buy ads in ChatGPT, and do ads change organic AI answers?"
+subquestions = ["Who can buy ChatGPT ads now?", "Where do ads show?", "Do ads affect the recommendations?", "How do you measure ChatGPT ad leads?"]
+inspired_by = "https://www.propertymanagerwebsites.com/chatgpt-ads"
+demand = "PMW sells a ChatGPT Ads service page; Local Falcon: ChatGPT does not take paid local placements"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "ai-lead-share-property-management"
+cluster = "ai-search"
+kind = "data"
+title = "What share of property management leads come from AI search?"
+question = "What share of owner leads do property management companies get from ChatGPT and other AI tools today?"
+subquestions = ["What do lead source studies show?", "Why do numbers differ?", "Is the share growing?", "What should you expect for your size?"]
+inspired_by = "https://gogoodjuju.com/property-management-lead-source-report-2026/"
+demand = "Fast Company 30-company study; Goodjuju 2026 lead source report"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "does-ai-favor-big-property-managers"
+cluster = "ai-search"
+kind = "data"
+title = "Does AI favor big property management brands over small firms?"
+question = "Do AI assistants recommend large national property managers more than small local companies?"
+subquestions = ["Which brands show up most?", "Why do big brands win?", "Where do small firms win?", "What can a 50-door firm do?"]
+inspired_by = ""
+demand = "Our H03 runs and the AI Property Manager Index; owners of small firms ask this"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-accuracy-property-management-fees"
+cluster = "ai-search"
+kind = "data"
+title = "How accurate is ChatGPT about property management fees?"
+question = "How accurate are ChatGPT and Google AI answers about property management fees in a US city?"
+subquestions = ["Which fee numbers does AI give?", "Where do the numbers come from?", "How far off are they?", "How do you correct them?"]
+inspired_by = ""
+demand = "Owners ask AI 'how much does a property manager charge'; our fee calculator gives a check"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "first-30-days-ai-visibility-plan"
+cluster = "ai-search"
+kind = "checklist"
+title = "First 30 days of AI search for a property management company"
+question = "What should a property manager do in the first 30 days to show up in AI search?"
+subquestions = ["What to fix in week 1?", "Which pages come in week 2?", "Which listings and reviews in week 3?", "What to measure in week 4?"]
+inspired_by = ""
+demand = "Playbook base package order (directories first, week 1); ClearLead AEO checklist"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "backlinks-mentions-ai-search"
+cluster = "ai-search"
+kind = "guide"
+title = "Do backlinks and guest posts still matter for AI search?"
+question = "Do backlinks, guest posts and brand mentions still help a property manager in AI search?"
+subquestions = ["Is a mention without a link worth anything?", "Which sites give the best mentions?", "Are guest posts still safe?", "How do you find mention chances?"]
+inspired_by = "https://www.clearleaddigital.com/blog/guest-blogging-for-seo"
+demand = "ClearLead guest blogging post; Goodjuju authority building page"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "ai-overview-property-management-queries"
+cluster = "ai-search"
+kind = "data"
+title = "Which property management searches trigger Google AI Overviews?"
+question = "Which property management and landlord searches show a Google AI Overview?"
+subquestions = ["Do 'near me' searches show AI Overviews?", "Do fee questions show them?", "Do legal questions show them?", "How often does the list change?"]
+inspired_by = "https://www.clearleaddigital.com/blog/ai-overviews-chatgpt-property-management"
+demand = "ClearLead section 'The 3 places your company can appear in an AI answer'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "new-property-management-company-ai-search"
+cluster = "ai-search"
+kind = "how-to"
+title = "AI search for a new property management company"
+question = "How does a new property management company with no reviews get into AI answers?"
+subquestions = ["What can you do before reviews?", "Which listings go first?", "Which pages to publish first?", "How long until AI knows you?"]
+inspired_by = "https://www.clearleaddigital.com/blog/how-to-start-a-property-management-company"
+demand = "ClearLead 'How to start a property management company' draws new owners"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "service-area-business-ai-local"
+cluster = "ai-search"
+kind = "how-to"
+title = "Service-area property managers and AI local answers"
+question = "Can a property manager with no public office show up in AI local answers?"
+subquestions = ["How do service areas work in GBP?", "Does a hidden address hurt?", "How does AI pick the city?", "What about home offices?"]
+inspired_by = "https://gogoodjuju.com/the-local-seo-checklist-property-management/"
+demand = "Goodjuju local SEO checklist; many small PM firms run from home offices"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "ai-search-myths-property-management"
+cluster = "ai-search"
+kind = "guide"
+title = "AI search myths that property managers hear from agencies"
+question = "Which AI search claims from marketing agencies are not supported by data?"
+subquestions = ["Does llms.txt make AI cite you?", "Does schema alone get citations?", "Is SEO dead?", "Is AI already the main lead source?"]
+inspired_by = "https://www.fastcompany.com/91572952/the-invisible-landlord-era-is-ending"
+demand = "Fast Company: consultants 'selling fear'; Ahrefs schema study; SE Ranking llms.txt study"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "ai-agents-contact-property-manager"
+cluster = "ai-search"
+kind = "guide"
+title = "What AI agents need to send a lead to a property manager"
+question = "What does a property management website need so an AI agent can book a call or send an owner lead?"
+subquestions = ["What is an AI agent in search?", "Can agents fill contact forms?", "Which facts must be machine-readable?", "How do you test with an agent?"]
+inspired_by = "https://gogoodjuju.com/ai-agents-for-property-managers/"
+demand = "Goodjuju AI agents page; ClearLead 'SEO agent' post"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "ai-confuses-company-same-name"
+cluster = "ai-search"
+kind = "how-to"
+title = "When AI confuses your company with another of the same name"
+question = "What should a property manager do when AI mixes up its company with another business of the same name?"
+subquestions = ["Why does AI merge two entities?", "Which facts tell them apart?", "Which listings to fix?", "How do you check the fix worked?"]
+inspired_by = ""
+demand = "Entity facts scope; common PM names (e.g. city + 'Property Management') clash"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "competitor-ai-audit-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "How to see which competitors AI names in your city"
+question = "How does a property manager find which competitors ChatGPT and Google AI name in its city, and why?"
+subquestions = ["Which prompts to run?", "How do you record the sources?", "How do you compare listings and reviews?", "What gaps to fix first?"]
+inspired_by = "https://propertymanagerwebsites.com/aio-reporting"
+demand = "PMW AIO competitor benchmarking; Recomaze audit-first framework"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "landlord-law-pages-ai"
+cluster = "ai-search"
+kind = "guide"
+title = "Local landlord law pages that AI cites"
+question = "Should a property manager write local landlord law pages, and which ones does AI cite?"
+subquestions = ["Which law questions do owners ask?", "Which official sources to link?", "How do you avoid legal advice risk?", "How often to update?"]
+inspired_by = ""
+demand = "Playbook move 6: local landlord question clusters with checked facts"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-data-pages-ai"
+cluster = "ai-search"
+kind = "guide"
+title = "Local rent data pages for AI citations"
+question = "Do local rent price pages help a property manager get cited by AI?"
+subquestions = ["Which rent sources are fair to use?", "How often to update numbers?", "Do tables help AI quote you?", "How do you show your own data?"]
+inspired_by = ""
+demand = "Owners ask AI 'what can I rent my house for in X'; rental analysis is playbook move 4"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "knowledge-panel-property-management"
+cluster = "ai-search"
+kind = "how-to"
+title = "How a property management company gets a Google knowledge panel"
+question = "How does a property management company get a Google knowledge panel, and does it help AI?"
+subquestions = ["What is a knowledge panel vs a Business Profile?", "Which sources feed it?", "How do you claim it?", "Does it change AI answers?"]
+inspired_by = ""
+demand = "Entity scope; knowledge panels show the facts Google holds about a brand"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "website-redesign-ai-visibility-checklist"
+cluster = "ai-search"
+kind = "checklist"
+title = "Website redesign checklist to keep AI visibility"
+question = "What should a property manager check before and after a website redesign so it does not lose Google and AI visibility?"
+subquestions = ["Which URLs must redirect?", "Which facts must stay the same?", "How do you check crawler access after launch?", "What to measure in the first 30 days?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/template-vs-custom-website-design-which-site-design-is-right-for-me"
+demand = "PMW web design posts; Goodjuju website benchmark"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "broker-license-trust-signals-ai"
+cluster = "ai-search"
+kind = "how-to"
+title = "License, insurance and trust facts for AI search"
+question = "Which trust facts (broker license, insurance, memberships) should a property manager show for owners and AI?"
+subquestions = ["Where to show the license number?", "Which memberships matter (NARPM, BBB)?", "Should you link the state license lookup?", "Does AI repeat trust facts?"]
+inspired_by = ""
+demand = "Owners ask AI 'is this property manager licensed'; entity facts scope"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "company-description-template-ai"
+cluster = "ai-search"
+kind = "template"
+title = "Company description template that AI repeats"
+question = "How should a property manager write the short company description that AI tools repeat?"
+subquestions = ["What goes in 50 words?", "What goes in 150 words?", "Which facts not to put in?", "Where to paste it?"]
+inspired_by = ""
+demand = "Listings need short and long descriptions; AI repeats them (SOCi fact mismatch data)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "is-property-management-company-legit-ai"
+cluster = "ai-search"
+kind = "guide"
+title = "What AI says when an owner asks 'Is this company legit?'"
+question = "What does ChatGPT say when an owner asks if a property management company is legit, and how do you shape it?"
+subquestions = ["Which sources does AI use for trust questions?", "Do complaints and lawsuits show up?", "How do you answer fairly?", "Which pages help?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/why-your-next-client-might-come-from-chatgpt--and-how-reviews-help"
+demand = "Brand trust prompts are a common AI check before an owner calls; PMW review sentiment tracking"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-search-for-owners-vs-tenants-pages"
+cluster = "ai-search"
+kind = "guide"
+title = "Owner pages vs tenant pages in AI search"
+question = "Why does AI send tenants to a property manager's site and not owners, and how do you fix that?"
+subquestions = ["Which pages attract tenants?", "Which pages attract owners?", "How do you split navigation?", "How do you check which audience AI sends?"]
+inspired_by = "https://www.clearleaddigital.com/blog/owners-not-tenants"
+demand = "ClearLead 'Owners, not tenants' post; renter vs landlord question split"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-search-report-to-owner-of-pm-company"
+cluster = "ai-search"
+kind = "template"
+title = "Monthly AI search report template for a property management team"
+question = "What should a monthly AI search report for a property management team show, from prompt to signed door?"
+subquestions = ["Which numbers go on one page?", "How do you link AI mentions to leads?", "How do you show change over time?", "Who reads it?"]
+inspired_by = "https://gogoodjuju.com/property-management-lead-source-report-2026/"
+demand = "Playbook move 9: report from lead to signed door, not only traffic (Goodjuju rank 1)"
+priority = 4
+status = "planned"
