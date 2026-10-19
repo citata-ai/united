@@ -1,6 +1,6 @@
 ---
-title: "How to Show a Rental Property: Steps That Get Applicants — Citata.ai"
-description: "Show a rental with set time slots, a prepared unit, the same facts for every visitor and a follow-up within a day. Steps, a showing kit and Fair Housing words to avoid."
+title: "How to Show a Rental Property, Step by Step — Citata.ai"
+description: "Show a rental with set time slots, a ready unit, the same facts for every visitor and a follow-up within a day. Steps, a showing kit and words to avoid."
 headline: "How to Show a Rental Property: Step by Step"
 dek: "Same script, same facts, same follow-up for every visitor."
 published: "2026-10-19"

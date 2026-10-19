@@ -55,7 +55,7 @@ A Housing Choice Voucher works the other way. The PHA pays a housing assistance 
 | Federal agency | IRS (Treasury), via state credit agencies | HUD, via local PHAs |
 | Main rule | 26 U.S.C. 42; 26 CFR 1.42-5 | 24 CFR part 982 |
 | Tied to | The building, for 30+ years | The household, for each lease |
-| Income limit | 50% or 60% of AMI, or an average of 60% (42(g)(1)) | Set at admission by the PHA |
+| Income limit | 50% or 60% of AMI, or an average of 60% (42(g)(1)) | HUD income limits, checked by the PHA at admission |
 | Rent cap | Gross rent ≤ 30% of the imputed income limit (42(g)(2)) | Reasonable rent; HAP capped by the payment standard |
 | Tenant pays | Up to the LIHTC rent, whatever their income | About 30% of adjusted income (24 CFR 5.628) |
 | Length | 15-year compliance period plus 15+ years extended use | Initial lease of at least 1 year (24 CFR 982.309) |
@@ -91,7 +91,7 @@ A worked example, with made-up numbers:
 | HAP (payment standard − TTP, since gross rent is higher) | $1,350 |
 | Family rent to owner | $350 |
 
-In this example the gross rent of $1,850 is above the payment standard, so the family pays $50 more than its TTP. The PHA must also check the 40% cap at move-in. Many owners set the voucher rent so that gross rent equals the payment standard: here, $1,650.
+In this example the gross rent of $1,850 is above the payment standard, so the family pays $50 more than its TTP. The PHA must also check the 40% cap at move-in. An owner who wants the family to pay only its TTP can set the rent so that gross rent equals the payment standard: here, $1,650.
 
 ## Which has stricter inspections?
 
@@ -101,7 +101,7 @@ The standards overlap. The LIHTC agency may use local codes or HUD's physical co
 
 | Inspection point | LIHTC | Section 8 |
 |---|---|---|
-| Before move-in | No unit inspection required | Yes, every unit |
+| Before move-in | No per-unit rule in 26 CFR 1.42-5 | Yes, every unit |
 | Routine frequency | At least every 3 years, sample of units | At least every 2 years, every assisted unit |
 | Penalty for failure | Noncompliance report to IRS; credit risk | HAP abatement, then contract ends |
 
