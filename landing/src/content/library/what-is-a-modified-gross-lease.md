@@ -1,6 +1,6 @@
 ---
-title: "What Is a Modified Gross Lease? How It Splits Costs — Citata.ai"
-description: "A modified gross lease splits operating costs between landlord and tenant. See which costs tenants pay, base year and expense stop examples, and when managers use it."
+title: "What Is a Modified Gross Lease? How Costs Split — Citata.ai"
+description: "A modified gross lease splits operating costs between landlord and tenant. See which costs tenants pay, base year and expense stop math, and when to use it."
 headline: "What Is a Modified Gross Lease"
 dek: "The middle ground between gross and net leases, with 2 worked expense stop examples."
 published: "2026-10-19"

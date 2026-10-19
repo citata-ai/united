@@ -1,6 +1,6 @@
 ---
-title: "What Is DSCR on a Rental Property? Formula and Lender Rules — Citata.ai"
-description: "DSCR is net operating income divided by debt payments. Learn how to calculate DSCR for a rental, what ratio lenders want, and how a DSCR loan works."
+title: "What Is DSCR on a Rental? Formula and Lender Rules — Citata.ai"
+description: "DSCR is net operating income divided by yearly loan payments. Learn how to calculate DSCR for a rental, what ratio lenders want, and how a DSCR loan works."
 headline: "What Is DSCR on a Rental Property"
 dek: "The formula, 2 worked examples, and the 1.0x and 1.25x lines lenders draw."
 published: "2026-10-19"

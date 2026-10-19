@@ -1,6 +1,6 @@
 ---
-title: "What Is an Absentee Owner, and What Do They Need From a PM? — Citata.ai"
-description: "An absentee owner owns a rental but does not live near it or run it day to day. See the risks, how out-of-state owners manage, and the monthly reports to ask for."
+title: "What Is an Absentee Owner? Risks and Reports — Citata.ai"
+description: "An absentee owner owns a rental but does not live near it or run it. See the risks, how out-of-state owners manage, and the monthly reports to ask for."
 headline: "What Is an Absentee Owner and What They Need"
 dek: "6 risks, 3 ways to manage from far away, and a monthly report checklist."
 published: "2026-10-19"
@@ -31,7 +31,7 @@ sources:
 
 ## What is an absentee owner?
 
-An absentee owner is a person or company that owns a property but does not live in it or near it and does not run it day to day. In rentals, the term most often means an owner in another city or state. A landlord who lives 5 minutes away but never visits can also act like an absentee owner.
+An absentee owner is a person or company that owns a property but does not live in it or near it. The owner also does not run it day to day. In rentals, the term most often means an owner in another city or state. A landlord who lives 5 minutes away but never visits can also act like an absentee owner.
 
 Many rental owners are small investors. The Congressional Research Service reports that individual investors owned 70.2% of US rental properties in 2020. That figure comes from the 2021 Rental Housing Finance Survey by HUD and the Census Bureau. The same report says 85.6% of the 19.3 million rental properties were single-unit properties. So a large part of US rental housing belongs to individuals with 1 or a few homes, and some of them live far away.
 

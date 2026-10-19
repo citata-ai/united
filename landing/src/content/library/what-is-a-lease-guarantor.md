@@ -1,6 +1,6 @@
 ---
-title: "What Is a Lease Guarantor, and When Should You Ask for One? — Citata.ai"
-description: "A lease guarantor promises to pay rent and lease costs if the tenant does not. See income rules, what a guarantor owes, guarantor vs co-signer, and guarantor services."
+title: "What Is a Lease Guarantor, and When to Ask for One — Citata.ai"
+description: "A lease guarantor promises to pay rent if the tenant does not. See income rules, what a guarantor owes, guarantor vs co-signer, and guarantor services."
 headline: "What Is a Lease Guarantor and When to Ask"
 dek: "Income rules, costs of guarantor services, and a 7-point checklist for a written policy."
 published: "2026-10-19"
@@ -118,7 +118,7 @@ Guarantor services are companies that act as the guarantor for a fee that the re
 
 Two examples:
 
-- **TheGuarantors.** Its help center says Rent Coverage for a 1-year lease generally costs from about 40% of one month's rent to "a bit more than a full month's rent". It is a one-time fee for the lease term. Its Deposit Coverage is "usually between 25% and 50% of a full month's rent" and varies by state.
+- **TheGuarantors.** Its help center gives the price of Rent Coverage for a 1-year lease. It is about 40% of one month's rent up to "a bit more than a full month's rent". It is a one-time fee for the lease term. Its Deposit Coverage is "usually between 25% and 50% of a full month's rent" and varies by state.
 - **Insurent.** Its site says it is accepted at over 775,000 units across NY, NJ, MA, VA, MD, DC, IL, NV, CA and FL.
 
 Worked cost example, with made-up rent. For $2,000 monthly rent, a 40% to 110% fee is $800 to $2,200 for the year.

@@ -1,6 +1,6 @@
 ---
-title: "Days on Market for Rentals: What It Means and What Is Normal — Citata.ai"
-description: "Days on market counts the days a rental is listed before a lease is signed. See how to count it, 2026 benchmarks, what makes it long, and how managers report it."
+title: "Days on Market for Rentals: What Is Normal? — Citata.ai"
+description: "Days on market counts the days a rental is listed before a lease is signed. See how to count it, 2026 benchmarks, causes of delay, and what owners should get."
 headline: "Days on Market for a Rental, Explained"
 dek: "How to count it, what 2026 data shows, and the cost of each empty day."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
 title: "What Is a HAP Contract in Section 8? An Owner's Guide — Citata.ai"
-description: "A HAP contract is the agreement between a Section 8 owner and the housing authority. Learn who signs it, when HAP is paid, inspection abatement and rent changes."
+description: "A HAP contract is the agreement between a Section 8 owner and the housing authority. See who signs it, when HAP is paid, inspection abatement and rent."
 headline: "What Is a HAP Contract in Section 8"
 dek: "The federal rules behind each voucher payment, with deadlines in one table."
 published: "2026-10-19"

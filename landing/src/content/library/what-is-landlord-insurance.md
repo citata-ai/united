@@ -1,6 +1,6 @@
 ---
-title: "What Does Landlord Insurance Cover? Plus Renters Insurance — Citata.ai"
-description: "Landlord insurance covers the rental building, liability and often lost rent. It does not cover the tenant's things. See DP-1 vs DP-3 and why tenants need renters insurance."
+title: "What Does Landlord Insurance Cover? A Plain Guide — Citata.ai"
+description: "Landlord insurance covers the rental building, liability and often lost rent, but not the tenant's things. See DP-1 vs DP-3 and why renters need cover."
 headline: "What Landlord Insurance Covers and What It Does Not"
 dek: "DP-1, DP-2 and DP-3 in one table, plus a lost-rent example and a policy checklist."
 published: "2026-10-19"

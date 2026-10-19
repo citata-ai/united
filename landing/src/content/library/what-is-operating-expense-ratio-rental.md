@@ -1,6 +1,6 @@
 ---
-title: "Operating Expense Ratio (OER) for Rentals: Formula and Norms — Citata.ai"
-description: "The operating expense ratio is operating costs divided by income. See how to calculate OER for a rental, what the 50% rule means, and which costs raise OER most."
+title: "Operating Expense Ratio (OER) for Rentals — Citata.ai"
+description: "The operating expense ratio is operating costs divided by income. See how to calculate OER for a rental, the 50% rule, and which costs raise OER most."
 headline: "What Is the Operating Expense Ratio for Rentals"
 dek: "The formula, a worked 4-unit example, and NAA's 2025 rent dollar split."
 published: "2026-10-19"

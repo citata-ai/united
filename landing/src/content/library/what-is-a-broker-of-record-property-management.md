@@ -1,6 +1,6 @@
 ---
 title: "What Is a Broker of Record in Property Management? — Citata.ai"
-description: "A broker of record is the licensed broker who supervises a property management company and answers to the state. See the Texas and California rules and an owner checklist."
+description: "A broker of record is the licensed broker who supervises a property manager and answers to the state. See Texas and California rules and an owner checklist."
 headline: "What Is a Broker of Record in Property Management"
 dek: "Texas and California law in one table, plus 6 checks an owner can run in 10 minutes."
 published: "2026-10-19"
@@ -58,7 +58,7 @@ In many states, property managers need a real estate license when they lease or 
 
 **Texas.** Occupations Code 1101.002 defines a broker as a person who, for pay, leases real estate, offers to lease it, or negotiates a lease. The list also includes a person who "controls the acceptance or deposit of rent from a resident of a single-family residential real property unit". Section 1101.005 exempts some people. It names an owner or the owner's employee who leases the owner's property, and "an on-site manager of an apartment complex".
 
-**California.** Business and Professions Code 10131(b) covers leasing or renting property for others, soliciting tenants, and the act of a person who "collects rents from real property". Those acts need a broker license, or a salesperson license under a broker.
+**California.** Business and Professions Code 10131(b) covers leasing or renting property for others and soliciting tenants. It also covers a person who "collects rents from real property". Those acts need a broker license, or a salesperson license under a broker.
 
 Quick test for an owner:
 
@@ -86,7 +86,7 @@ For property managers, trust funds carry the highest risk. A gap in a trust acco
 
 ## What happens if a company loses its broker of record?
 
-If a company loses its broker of record, it loses the right to do licensed work until it names a qualified replacement. Texas states this plainly. Under Occupations Code 1101.355(b), a business entity may not act as a broker unless its designated broker is "a licensed individual broker in active status and good standing".
+If a company loses its broker of record, it loses the right to do licensed work until it names a qualified replacement. Texas states this plainly in Occupations Code 1101.355(b). A business entity may not act as a broker unless its designated broker is "a licensed individual broker in active status and good standing".
 
 In practice, a manager without an active broker of record cannot legally:
 
@@ -94,7 +94,7 @@ In practice, a manager without an active broker of record cannot legally:
 - Show and market units for owners, where the state counts this as a broker act.
 - Collect rent and hold deposits, where the state counts this as a broker act.
 
-Texas adds one more rule. If the designated broker owns less than 10% of the business entity, the entity must carry errors and omissions insurance with a minimum annual limit of $1 million for each occurrence (Occupations Code 1101.355(a)(2)).
+Texas adds one more rule, in Occupations Code 1101.355(a)(2). If the designated broker owns less than 10% of the business entity, the entity must carry errors and omissions insurance. The minimum annual limit is $1 million for each occurrence.
 
 What an owner should do: if your manager tells you its broker left, ask for the new broker's name and license number in writing. Check it before your next rent payment goes out.
 

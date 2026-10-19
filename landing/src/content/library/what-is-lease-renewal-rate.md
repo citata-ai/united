@@ -1,6 +1,6 @@
 ---
-title: "What Is Lease Renewal Rate and How Do You Calculate It? — Citata.ai"
-description: "Lease renewal rate is the share of expiring leases that renew. See the formula, a worked example, 2026 benchmarks from RealPage data, and the link to turnover cost."
+title: "Lease Renewal Rate: Formula and Benchmarks — Citata.ai"
+description: "Lease renewal rate is the share of expiring leases that renew. See the formula, a worked example, a 2026 benchmark from RealPage and the turnover math."
 headline: "What Is Lease Renewal Rate in Property Management"
 dek: "The formula, the 56% 2026 benchmark, and the turnover math that makes each renewal worth money."
 published: "2026-10-19"
@@ -72,7 +72,7 @@ Counting rules to write down:
 
 ## What is a good renewal rate?
 
-A good renewal rate depends on the property type and market, but recent apartment data gives a benchmark. LeaseLock, citing RealPage's database of lease transactions, reports that "56 percent of market rate apartment residents with leases expiring in the first half of 2026" signed renewal leases. The same article says renewal rent growth averaged 3.5% so far in 2026.
+A good renewal rate depends on the property type and market, but recent apartment data gives a benchmark. LeaseLock cites RealPage's database of lease transactions. It reports that "56 percent of market rate apartment residents with leases expiring in the first half of 2026" signed renewal leases. The same article says renewal rent growth averaged 3.5% so far in 2026.
 
 How to use the benchmark:
 

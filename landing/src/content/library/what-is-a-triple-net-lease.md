@@ -1,6 +1,6 @@
 ---
-title: "What Is a Triple Net (NNN) Lease? Who Pays Which Costs — Citata.ai"
-description: "In a triple net lease, the tenant pays base rent plus property taxes, insurance and maintenance. See the 3 nets, NNN vs gross leases, a worked example and owner risks."
+title: "What Is a Triple Net (NNN) Lease? Who Pays What — Citata.ai"
+description: "In a triple net lease, the tenant pays base rent plus taxes, insurance and maintenance. See the 3 nets, NNN vs gross, a worked example and owner risks."
 headline: "What Is a Triple Net Lease and Who Pays What"
 dek: "The 3 nets, 5 lease types in one table, and the risks an NNN owner still keeps."
 published: "2026-10-19"
@@ -37,7 +37,7 @@ A triple net lease is a lease where the tenant pays base rent plus 3 property co
 
 The landlord's income is the base rent, "net" of those 3 costs. So the landlord can plan its income with less risk. The tenant takes the risk that taxes, insurance or upkeep rise.
 
-Tyler Cauble's commercial real estate glossary defines an NNN lease as one where "the tenant pays base rent plus their pro rata share of property taxes" and related costs. "Pro rata share" means the tenant's part of the building, often by square feet.
+Tyler Cauble's commercial real estate glossary gives a definition. In an NNN lease, "the tenant pays base rent plus their pro rata share of property taxes" and related costs. "Pro rata share" means the tenant's part of the building, often by square feet.
 
 ## What are the 3 "nets"?
 
