@@ -8,6 +8,8 @@
 # property manager questions with real demand, where AI cites data, tools and comparison tables.
 # Planned split: H01 400, H02 150, H06 150, H03 100, H05 100, H08 50, rest 50.
 # Baseline (2026-10-19, 7 days): 0 AI referral sessions, 93 AI bot fetches.
+# Measure 2026-10-19 (W43, day 1 of 30): 0 AI referral sessions, 420 AI bot fetches (7 days). No status changed:
+# kill checks fall on 2026-11-09. Report: business/marketing/reports/2026-W43.md.
 
 [[hypothesis]]
 id = "H01"
