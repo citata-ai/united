@@ -73,6 +73,8 @@ Answer sentence first. ...
 
 Do not put an H1 in the body (the layout prints `headline`). Do not use raw HTML. Use `**bold**` only for the lead phrase of a list item.
 
+Cover picture: each guide needs one (style N). The editor makes it with `brand/IMAGES.md` section 7.
+
 ## Check before hand-off
 
 - Do not run the build (other writers share the folder). The editor builds and checks all pages.
