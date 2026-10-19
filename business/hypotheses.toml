@@ -90,7 +90,7 @@ target = 150
 due = "2026-11-18"
 kill_if = "Fewer than 15 AI sessions 21 days after publish."
 ice = { impact = 7, confidence = 5, ease = 6 }
-status = "proposed"
+status = "running"
 
 [[hypothesis]]
 id = "H07"
@@ -188,4 +188,12 @@ hypothesis = "H09"
 start = "2026-10-19"
 actions = ["Add live X, Trustpilot, Clutch, G2, Medium, Substack profiles to Organization sameAs", "Create Wikidata item (needs a person: account)", "Finish LinkedIn and Crunchbase (blocked on Tao)"]
 urls = []
+status = "running"
+
+[[experiment]]
+id = "H06-E1"
+hypothesis = "H06"
+start = "2026-10-19"
+actions = ["Guide 1 of 6: AppFolio vs Buildium, prices read on both pricing pages 2026-10-19 (B001)", "Next: B002 best software for 50-200 doors, B003 4-vendor per-door table"]
+urls = ["https://citata.ai/guides/appfolio-vs-buildium"]
 status = "running"

@@ -8,7 +8,7 @@ kind = "comparison"
 title = "AppFolio vs Buildium (2026): price per door, minimums, fit by portfolio size"
 demand = "Classic PM software query; AI answers cite comparison tables."
 score = 8
-status = "idea"
+status = "staged"
 
 [[item]]
 id = "B002"
