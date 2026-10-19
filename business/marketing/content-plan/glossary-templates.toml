@@ -1,0 +1,843 @@
+# Topic plan: cluster glossary-templates (target 70).
+# Glossary: one term per article, worked example where it helps.
+# Templates and checklists: generic, not state legal forms. Each article holds the full template text and tells the reader to check local law.
+
+[[topic]]
+slug = "what-is-net-operating-income-rental"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is net operating income (NOI) on a rental property?"
+question = "What is NOI on a rental, and how do you calculate it?"
+subquestions = ["What counts as an operating expense for NOI?", "Does NOI include the mortgage payment?", "What is a good NOI for a single-family rental?", "How does a property manager raise NOI?", "What is the difference between NOI and cash flow?"]
+inspired_by = "https://allcountyprop.com/?p=5404"
+demand = "NOI is in every PM glossary we checked (All County, Magicdoor, Verdant); 'what is NOI' is a core owner question"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "what-is-cap-rate-rental-property"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a cap rate on a rental property? (with a worked example)"
+question = "What is a cap rate, and how do you use it to value a rental?"
+subquestions = ["How do you calculate cap rate from NOI and price?", "What is a good cap rate for rentals?", "Why do cap rates change by market?", "What is the difference between cap rate and cash-on-cash return?"]
+inspired_by = "https://www.buildium.com/dictionary/capitalization-rate/"
+demand = "Buildium dictionary term; Investopedia term page; frequent owner question"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-property-management-agreement"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a property management agreement?"
+question = "What is a property management agreement, and what must it include?"
+subquestions = ["What fees does a management agreement list?", "How long does a property management agreement last?", "How do you cancel a property management agreement?", "Who is liable under a management agreement?", "What clauses should an owner check before signing?"]
+inspired_by = "https://www.hostfully.com/glossary/management-agreement/"
+demand = "Glossary pages at Hostfully, Oliva, Contracko; iPropertyManagement agreement template"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-property-management-trust-account"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a property management trust account?"
+question = "What is a trust account in property management, and why must rent and deposits go there?"
+subquestions = ["What money goes into a trust account?", "Can a property manager mix trust funds with operating funds?", "What is a three-way reconciliation?", "Do all states require a trust account?", "What happens if a manager misuses trust funds?"]
+inspired_by = "https://www.buildium.com/dictionary/property-management-trust-account/"
+demand = "Buildium dictionary term; trust accounting is a top owner worry"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "what-is-an-owner-draw-property-management"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is an owner draw in property management?"
+question = "What is an owner draw, and how does a property manager calculate it each month?"
+subquestions = ["When do owners get paid by their property manager?", "Why is my owner draw less than the rent?", "What is held back before an owner draw?", "How does the owner reserve affect the draw?"]
+inspired_by = ""
+demand = "No competitor glossary we checked defines owner draw; owners ask it after the first statement (gap)"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "what-is-cam-common-area-maintenance"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What are CAM charges (common area maintenance)?"
+question = "What are CAM charges, and how are they split between tenants?"
+subquestions = ["What costs go into CAM?", "How do you calculate a tenant's CAM share?", "What is a CAM reconciliation?", "Are CAM charges used in residential leases?"]
+inspired_by = "https://verdant.copeland.com/property-management"
+demand = "CAM is in Verdant and PropertyMe glossaries; Investopedia term page"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-gross-rent-multiplier"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is the gross rent multiplier (GRM)? (with a worked example)"
+question = "What is the gross rent multiplier, and when should an investor use it?"
+subquestions = ["How do you calculate GRM?", "What is a good gross rent multiplier?", "What is the difference between GRM and cap rate?", "What are the limits of GRM?"]
+inspired_by = "https://www.propertyme.com.au/blog/property-management/ultimate-glossary-real-estate-terms-abbreviations"
+demand = "Investopedia term page; investor glossaries list GRM next to cap rate"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-rent-roll"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a rent roll?"
+question = "What is a rent roll, and what should it show?"
+subquestions = ["What columns does a rent roll have?", "Why do buyers and lenders ask for a rent roll?", "How often should a property manager update the rent roll?", "What is the difference between a rent roll and a rent ledger?"]
+inspired_by = "https://www.buildium.com/dictionary/rent-roll/"
+demand = "Buildium dictionary term; asked when owners buy or refinance"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "what-is-vacancy-rate-rental"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a vacancy rate for rental property?"
+question = "What is a vacancy rate, and how do you calculate it for a rental portfolio?"
+subquestions = ["What is a normal vacancy rate?", "How does vacancy rate differ from occupancy rate?", "How do property managers lower vacancy?", "How is vacancy rate used in a pro forma?"]
+inspired_by = "https://www.buildium.com/dictionary/vacancy-rate/"
+demand = "Buildium dictionary term (vacancy rate, rental occupancy rate)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-is-tenant-turnover-rate"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is tenant turnover rate?"
+question = "What is tenant turnover rate, and what does turnover cost an owner?"
+subquestions = ["How do you calculate turnover rate?", "What is the average cost of a tenant turnover?", "What is a good turnover rate for single-family rentals?", "How do property managers reduce turnover?"]
+inspired_by = "https://www.buildium.com/dictionary/turnover-rate/"
+demand = "Buildium dictionary terms 'Tenant Turnover' and 'Turnover Rate'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-property-management-fee"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a property management fee?"
+question = "What is a property management fee, and what does it usually cover?"
+subquestions = ["Is the management fee a percent of rent collected or rent due?", "What is the typical management fee range?", "What is a flat-fee management model?", "What services cost extra beyond the management fee?"]
+inspired_by = ""
+demand = "'How much do property managers charge' is a top owner query; glossaries define the fee"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-leasing-fee-property-management"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a leasing fee (tenant placement fee)?"
+question = "What is a leasing fee, and when does a property manager charge it?"
+subquestions = ["How much is a typical leasing fee?", "Is a leasing fee the same as a tenant placement fee?", "Do managers charge a leasing fee on renewals?", "What does a leasing fee cover?"]
+inspired_by = ""
+demand = "Common line on owner fee sheets; owners compare it across managers"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-is-cash-on-cash-return-rental"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is cash-on-cash return on a rental? (with a worked example)"
+question = "What is cash-on-cash return, and how do you calculate it for a rental?"
+subquestions = ["What counts as cash invested?", "What is a good cash-on-cash return?", "How does financing change cash-on-cash return?", "Cash-on-cash return vs cap rate: which to use?"]
+inspired_by = ""
+demand = "Investopedia term page; investor-owner question next to cap rate"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-security-deposit-account"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a security deposit account?"
+question = "What is a security deposit account, and how must a landlord hold deposits?"
+subquestions = ["Must security deposits be kept in a separate account?", "Do deposits earn interest for the tenant?", "Who holds the deposit when a property manager changes?", "What records must a landlord keep for deposits?"]
+inspired_by = "https://www.buildium.com/dictionary/security-deposit-account/"
+demand = "Buildium dictionary term"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-tenant-ledger"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a tenant ledger?"
+question = "What is a tenant ledger, and why does it matter in a rent dispute?"
+subquestions = ["What entries go on a tenant ledger?", "Tenant ledger vs rent ledger: what is the difference?", "How long should you keep tenant ledgers?", "Can a tenant ask for a copy of the ledger?"]
+inspired_by = "https://www.buildium.com/dictionary/tenant-ledger/"
+demand = "Buildium dictionary terms 'Tenant Ledger', 'Lease Ledger', 'Rent Ledger'; iPropertyManagement rent ledger template"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-economic-vacancy"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is economic vacancy vs physical vacancy?"
+question = "What is economic vacancy, and how is it different from physical vacancy?"
+subquestions = ["How do you calculate economic vacancy?", "Why can a full building still lose rent?", "What causes economic vacancy (concessions, bad debt, delinquency)?", "Which vacancy number should an owner report watch?"]
+inspired_by = ""
+demand = "Asked by multifamily owners reading reports; few PM glossaries cover it (gap)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-effective-gross-income"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is effective gross income (EGI)?"
+question = "What is effective gross income, and how does it lead to NOI?"
+subquestions = ["How do you calculate EGI?", "What other income goes into EGI?", "Gross potential rent vs EGI: what is the difference?", "Where does EGI appear in an owner report?"]
+inspired_by = "https://www.buildium.com/dictionary/gross-effective-income/"
+demand = "Buildium dictionary term 'Gross Effective Income'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-market-rent"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is market rent, and how do property managers set it?"
+question = "What is market rent, and how does a property manager find it for a unit?"
+subquestions = ["How do you run a rent comp analysis?", "Market rent vs contract rent: what is the difference?", "How often should rent be checked against the market?", "What happens if you price above market rent?"]
+inspired_by = "https://www.buildium.com/dictionary/market-rent/"
+demand = "Buildium dictionary term; owners ask 'how much can I rent my house for'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-triple-net-lease"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a triple net (NNN) lease?"
+question = "What is a triple net lease, and who pays which costs?"
+subquestions = ["What are the three 'nets'?", "NNN lease vs gross lease: what is the difference?", "Are NNN leases used for residential property?", "What risks does an owner keep in an NNN lease?"]
+inspired_by = "https://www.buildium.com/dictionary/triple-net-lease/"
+demand = "Buildium dictionary terms 'NNN Lease', 'Triple Net Lease', 'Net Lease'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-modified-gross-lease"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a modified gross lease?"
+question = "What is a modified gross lease, and how does it split costs?"
+subquestions = ["Which costs does the tenant pay in a modified gross lease?", "Modified gross vs full-service gross lease?", "When do property managers use a modified gross lease?"]
+inspired_by = "https://www.buildium.com/dictionary/modified-gross-lease/"
+demand = "Buildium dictionary term"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "what-is-an-absentee-owner"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is an absentee owner (absentee landlord)?"
+question = "What is an absentee owner, and what does an absentee owner need from a property manager?"
+subquestions = ["What risks does an absentee owner face?", "How do out-of-state owners manage rentals?", "What reports should an absentee owner get each month?"]
+inspired_by = "https://www.buildium.com/dictionary/absentee-owner/"
+demand = "Buildium dictionary term; core persona for PM owner leads"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-1031-exchange-rental-owners"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a 1031 exchange for rental property owners?"
+question = "What is a 1031 exchange, and how does it affect a rental owner and the manager?"
+subquestions = ["What are the 45-day and 180-day rules?", "What is a like-kind property?", "What records does a property manager give for a 1031 exchange?", "Can you 1031 into a property under management?"]
+inspired_by = "https://www.buildium.com/dictionary/1031-exchange/"
+demand = "Buildium dictionary term; Investopedia term page"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-1099-for-landlords-and-property-managers"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a 1099 form for landlords and property managers?"
+question = "Which 1099 forms does a property manager send to owners and vendors?"
+subquestions = ["Does a property manager send owners a 1099-MISC?", "When must 1099s go out?", "Do vendors need a W-9 first?", "What box shows rent on a 1099-MISC?"]
+inspired_by = "https://www.buildium.com/dictionary/1099/"
+demand = "Buildium dictionary term; seasonal question each January"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-an-owner-reserve-property-management"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is an owner reserve in property management?"
+question = "What is an owner reserve, and how much should a property manager hold?"
+subquestions = ["Why does a property manager keep an owner reserve?", "What is a typical reserve amount per door?", "When does the manager use the reserve?", "Is the reserve held in the trust account?"]
+inspired_by = ""
+demand = "Owners ask why money is held back on statements; few glossaries define it (gap)"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-maintenance-markup-property-management"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a maintenance markup in property management?"
+question = "What is a maintenance markup, and is it fair for a property manager to charge one?"
+subquestions = ["What is a typical maintenance markup percent?", "Must a manager disclose a markup?", "Markup vs maintenance coordination fee?", "How can owners check vendor invoices?"]
+inspired_by = ""
+demand = "Owners ask about hidden fees; markup shows up in management agreement reviews"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-make-ready-turn"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a make-ready (unit turn)?"
+question = "What is a make-ready, and what work happens between two tenants?"
+subquestions = ["How long does a make-ready take?", "What does a make-ready cost?", "Make-ready vs renovation: what is the difference?", "Who approves make-ready costs?"]
+inspired_by = ""
+demand = "Common PM term; multifamily ops content and job ads use it"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-an-estoppel-certificate"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is an estoppel certificate?"
+question = "What is an estoppel certificate, and when does a tenant sign one?"
+subquestions = ["Why do buyers and lenders ask for estoppel certificates?", "What does an estoppel certificate confirm?", "Can a tenant refuse to sign one?"]
+inspired_by = "https://www.buildium.com/dictionary/estoppel-certificate/"
+demand = "Buildium dictionary term"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-lease-guarantor"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a lease guarantor?"
+question = "What is a lease guarantor, and when should a landlord ask for one?"
+subquestions = ["What income must a guarantor have?", "What does a guarantor agree to pay?", "Guarantor vs co-signer: what is the difference?", "What are guarantor services?"]
+inspired_by = "https://www.buildium.com/dictionary/guarantor/"
+demand = "Buildium dictionary term"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-landlord-insurance"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is landlord insurance, and how is it different from renters insurance?"
+question = "What does landlord insurance cover, and why should tenants also have renters insurance?"
+subquestions = ["Is homeowners insurance enough for a rental?", "What is dwelling fire insurance?", "Can a landlord require renters insurance?", "What does loss-of-rent cover pay?"]
+inspired_by = "https://www.buildium.com/dictionary/landlord-insurance/"
+demand = "Buildium dictionary terms 'Landlord Insurance', 'Renters Insurance', 'Dwelling Fire Insurance'"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-rent-guarantee-insurance"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is rent guarantee insurance?"
+question = "What is rent guarantee insurance, and is it worth it for an owner?"
+subquestions = ["What does rent guarantee insurance pay?", "How is it different from a rent guarantee from a property manager?", "What are the common exclusions?"]
+inspired_by = "https://www.buildium.com/dictionary/rent-guarantee-insurance/"
+demand = "Buildium dictionary term"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-property-management-chart-of-accounts"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a chart of accounts for property management?"
+question = "What is a property management chart of accounts, and how should it be set up?"
+subquestions = ["Which income and expense accounts does a rental need?", "How do you match the chart of accounts to Schedule E?", "Should every property use the same chart of accounts?"]
+inspired_by = "https://www.buildium.com/dictionary/property-management-chart-of-accounts/"
+demand = "Buildium dictionary term"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-capex-rental-property"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is CapEx on a rental property?"
+question = "What is a capital expenditure on a rental, and how is it different from a repair?"
+subquestions = ["Repair vs capital improvement: what is the line?", "How much should owners budget for CapEx?", "How is CapEx shown on an owner report?", "Is CapEx part of NOI?"]
+inspired_by = ""
+demand = "Investor forums and Investopedia; owners ask why a roof is not in NOI"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-operating-expense-ratio-rental"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is the operating expense ratio (OER)?"
+question = "What is the operating expense ratio, and what is a normal OER for rentals?"
+subquestions = ["How do you calculate OER?", "What is the 50 percent rule?", "Which costs raise OER the most?"]
+inspired_by = ""
+demand = "Investopedia term page; investor glossaries"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-dscr-rental-property"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is the debt service coverage ratio (DSCR) on a rental?"
+question = "What is DSCR, and why do lenders ask for it on rental loans?"
+subquestions = ["How do you calculate DSCR from NOI?", "What DSCR do lenders want?", "What is a DSCR loan?"]
+inspired_by = ""
+demand = "Investopedia term page; DSCR loans are a popular investor query"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-an-owner-portal-property-management"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is an owner portal in property management?"
+question = "What is an owner portal, and what should an owner see in it?"
+subquestions = ["What reports are in an owner portal?", "Can owners approve repairs in the portal?", "Owner portal vs tenant portal?"]
+inspired_by = "https://www.buildium.com/dictionary/tenant-portal/"
+demand = "Buildium dictionary has 'Tenant Portal'; owners ask what they will see after signing"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-hap-contract-section-8"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a HAP contract (Section 8)?"
+question = "What is a Housing Assistance Payments contract, and what does it mean for the owner?"
+subquestions = ["Who signs the HAP contract?", "When does the housing authority pay?", "What happens to the HAP contract when the unit fails inspection?", "Can rent change under a HAP contract?"]
+inspired_by = ""
+demand = "Section 8 owners ask it; links to our section-8 cluster"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-lease-renewal-rate"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a lease renewal rate (retention rate)?"
+question = "What is a lease renewal rate, and how do property managers measure it?"
+subquestions = ["How do you calculate renewal rate?", "What is a good renewal rate?", "How does renewal rate link to turnover cost?"]
+inspired_by = ""
+demand = "PM KPI lists and owner reports show it"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-days-on-market-rental"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is days on market (days vacant) for a rental?"
+question = "What does days on market mean for a rental, and what is a normal number?"
+subquestions = ["How do you count days on market for a rental?", "What causes long days on market?", "How do property managers report days vacant to owners?"]
+inspired_by = ""
+demand = "Owners judge managers by days vacant; KPI lists"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-broker-of-record-property-management"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a broker of record in property management?"
+question = "What is a broker of record, and why do many states require one for property management?"
+subquestions = ["Do property managers need a real estate license?", "What does the broker of record supervise?", "What happens if a company loses its broker of record?"]
+inspired_by = ""
+demand = "Licensing question from new PM companies and owners checking a manager"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-turnkey-rental-property"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What is a turnkey rental property?"
+question = "What is a turnkey rental, and what should an owner check before buying one?"
+subquestions = ["Who manages a turnkey rental?", "What are the risks of turnkey providers?", "Is a turnkey rental passive income?"]
+inspired_by = "https://www.buildium.com/dictionary/turnkey-property/"
+demand = "Buildium dictionary term"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-door-in-property-management"
+cluster = "glossary-templates"
+kind = "glossary"
+title = "What does 'doors' mean in property management?"
+question = "What is a door in property management, and why do companies count doors?"
+subquestions = ["How many doors does a property manager handle?", "How many doors per employee is normal?", "How do property management companies grow door count?"]
+inspired_by = ""
+demand = "Industry slang our readers use (50 to 500 doors); owners and new managers search it"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-onboarding-checklist-property-management"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Owner onboarding checklist for property managers (free template)"
+question = "What steps should a property manager take to onboard a new owner and property?"
+subquestions = ["Which documents do you collect from a new owner?", "How do you set up the owner in accounting and the trust account?", "What do you check at the first property inspection?", "How do you move tenants and deposits from the old manager?", "What should the owner get in the first 30 days?"]
+inspired_by = "https://treaty-oak-property-management-llc.helpscoutdocs.com/article/22-new-owner-onboarding-workflow-checklist"
+demand = "Clustdoc, ContentSnare, ClickUp, OxMaint all publish owner onboarding checklists; real PM firm publishes its workflow"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "move-in-inspection-checklist"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Move-in inspection checklist (room by room, free template)"
+question = "What should a move-in inspection checklist cover, room by room?"
+subquestions = ["How do you document condition with photos?", "Should the tenant sign the move-in checklist?", "How long does a tenant have to return it?", "How does the move-in checklist protect the deposit?"]
+inspired_by = "https://ipropertymanagement.com/templates/tenant-move-in-checklist"
+demand = "iPropertyManagement, TurboTenant condition reports, LandlordStudio fillable checklist"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "move-out-inspection-checklist"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Move-out inspection checklist (free template)"
+question = "What should a landlord check at move-out to decide deposit deductions?"
+subquestions = ["Normal wear and tear vs damage: what is the line?", "Should the tenant attend the move-out inspection?", "How do you compare move-in and move-out reports?", "Which photos should you take?"]
+inspired_by = "https://ipropertymanagement.com/templates/tenant-move-out-checklist"
+demand = "iPropertyManagement move-out checklist; TurboTenant condition reports"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rent-increase-letter-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Rent increase letter template (with full text)"
+question = "How should a landlord write a rent increase letter, and what must it include?"
+subquestions = ["How much notice do you need before a rent increase?", "How do you explain a rent increase to a good tenant?", "Can you raise rent during a fixed-term lease?", "What local rent caps should you check?"]
+inspired_by = "https://ipropertymanagement.com/templates/rent-increase-notice-letter"
+demand = "iPropertyManagement, PandaDoc, many template mirrors rank for it"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "late-rent-notice-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Late rent notice template (friendly and formal versions)"
+question = "What should a late rent notice say, and when should a landlord send it?"
+subquestions = ["When is rent legally late?", "How much can you charge as a late fee?", "Late rent notice vs pay or quit notice?", "How do you record the notice on the tenant ledger?"]
+inspired_by = "https://ipropertymanagement.com/templates/late-rent-notice"
+demand = "iPropertyManagement late rent notice; TurboTenant forms pack"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "lease-renewal-offer-letter-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Lease renewal offer letter template"
+question = "How should a property manager write a lease renewal offer?"
+subquestions = ["How early should you send a renewal offer?", "Should the renewal offer include a rent change?", "What renewal options can you offer (12-month, month-to-month)?", "What if the tenant does not reply?"]
+inspired_by = "https://ipropertymanagement.com/templates/lease-renewal-letter"
+demand = "iPropertyManagement lease renewal letter and lease extension addendum"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "maintenance-request-policy-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Maintenance request policy template for tenants"
+question = "What should a rental maintenance request policy say?"
+subquestions = ["What counts as an emergency repair?", "How should tenants submit requests?", "What response times should the policy promise?", "Which repairs are the tenant's job?", "When can the manager enter to repair?"]
+inspired_by = ""
+demand = "PM companies post maintenance policies on their sites; owners and tenants ask about response times"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-monthly-report-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Owner monthly report template for property managers"
+question = "What should a property manager's monthly owner report include?"
+subquestions = ["Which numbers belong on an owner statement?", "How do you show income, expenses and the owner draw?", "Should the report include photos and notes?", "What extra items go in a year-end owner report?"]
+inspired_by = ""
+demand = "Owners ask what reports to expect; software vendors show sample owner statements"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-agreement-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Property management agreement template (generic outline)"
+question = "What clauses should a property management agreement template include?"
+subquestions = ["What fee and term clauses are standard?", "How should the termination clause read?", "What authority limit for repairs should the owner set?", "What must be checked against state licensing law?"]
+inspired_by = "https://ipropertymanagement.com/templates/property-management-agreement"
+demand = "iPropertyManagement agreement template; glossary pages define the agreement"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "new-management-letter-to-tenants-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Letter to tenants about new property management (template)"
+question = "How should a property manager tell tenants that the property has new management?"
+subquestions = ["What must the letter say about rent payment?", "How do you handle the security deposit transfer?", "How do tenants submit maintenance requests now?", "When should the letter go out?"]
+inspired_by = "https://ipropertymanagement.com/blog/letter-to-tenant-stating-property-is-under-new-management"
+demand = "iPropertyManagement 'Notice to Tenant of New Management'"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "tenant-welcome-letter-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Tenant welcome letter template"
+question = "What should a tenant welcome letter include?"
+subquestions = ["Which contacts and rent payment steps go in the letter?", "How do you explain move-in rules?", "What utility setup info should you add?"]
+inspired_by = "https://ipropertymanagement.com/templates/tenant-welcome-letter"
+demand = "iPropertyManagement and Avail both publish a welcome letter"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "security-deposit-return-letter-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Security deposit return letter template (itemized deductions)"
+question = "How should a landlord write a security deposit return letter with itemized deductions?"
+subquestions = ["What is the deadline to return a deposit?", "How do you itemize deductions?", "Must you send receipts?", "What if you keep the full deposit?"]
+inspired_by = "https://ipropertymanagement.com/templates/security-deposit-return-letter"
+demand = "iPropertyManagement return letter, not-refunding letter and demand letter"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "notice-of-non-renewal-of-lease-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Notice of non-renewal of lease template"
+question = "How should a landlord tell a tenant that the lease will not be renewed?"
+subquestions = ["How much notice is required for non-renewal?", "Do you have to give a reason?", "What move-out steps should the notice list?"]
+inspired_by = "https://ipropertymanagement.com/templates/notice-non-renewal-of-lease"
+demand = "iPropertyManagement template"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "notice-of-entry-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Notice of entry template (24-hour notice to enter)"
+question = "How should a landlord give notice before entering a rental unit?"
+subquestions = ["How much notice does a landlord need to enter?", "What reasons for entry are allowed?", "When can a landlord enter without notice?"]
+inspired_by = "https://support.turbotenant.com/en/articles/4003989-what-forms-are-included-in-the-ultimate-landlord-forms-pack"
+demand = "TurboTenant and TenantCloud 24-hour notice to enter forms"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rental-application-denial-letter-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Rental application denial letter template (adverse action notice)"
+question = "How should a landlord deny a rental application in a fair and legal way?"
+subquestions = ["When is an adverse action notice required?", "What must the letter say about the credit report?", "How do you avoid fair housing problems?"]
+inspired_by = "https://ipropertymanagement.com/templates/rental-application-denial-letter"
+demand = "iPropertyManagement template"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-application-approval-letter-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Rental application approval letter template"
+question = "What should a rental application approval letter include?"
+subquestions = ["How long does the applicant have to sign?", "What move-in funds should the letter list?", "Should you include conditions (guarantor, deposit)?"]
+inspired_by = "https://ipropertymanagement.com/templates/rental-application-approval-letter"
+demand = "iPropertyManagement template"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-welcome-letter-property-management"
+cluster = "glossary-templates"
+kind = "template"
+title = "Owner welcome letter template for property managers"
+question = "What should a property manager send a new owner on day one?"
+subquestions = ["Which contacts and timelines go in the owner welcome letter?", "How do you explain when owners get paid?", "What documents does the owner still need to send?"]
+inspired_by = ""
+demand = "PM firms send next-steps emails (Treaty Oak workflow); pairs with owner onboarding"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-termination-letter-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Property management termination letter template"
+question = "How should an owner or manager end a property management agreement in writing?"
+subquestions = ["How much notice does the agreement need?", "What must the manager hand over (keys, deposits, ledgers)?", "Are there termination fees?"]
+inspired_by = "https://ipropertymanagement.com/templates/property-management-termination-letter"
+demand = "iPropertyManagement template"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "annual-rental-property-inspection-checklist"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Annual rental property inspection checklist"
+question = "What should a property manager check during a routine rental inspection?"
+subquestions = ["How often should you inspect an occupied rental?", "Which safety items must you test?", "How do you report findings to the owner?"]
+inspired_by = "https://ipropertymanagement.com/templates/landlord-inspection-checklist"
+demand = "iPropertyManagement landlord inspection checklist"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-ready-turnover-checklist"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Rent-ready (make-ready) turnover checklist"
+question = "What must be done to make a rental unit rent-ready between tenants?"
+subquestions = ["What is the order of make-ready tasks?", "Which items do you replace every turn?", "How do you keep turn time short?"]
+inspired_by = "https://ipropertymanagement.com/vacation-rental-cleaning-checklist"
+demand = "Cleaning and turnover checklists rank at iPropertyManagement; make-ready is a common ops term"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tenant-screening-criteria-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Tenant screening criteria template (written policy)"
+question = "What should a written tenant screening criteria policy include?"
+subquestions = ["What income ratio should you require?", "How do you treat credit, eviction and criminal history fairly?", "Why publish the criteria before applications?"]
+inspired_by = "https://www.buildium.com/dictionary/tenant-screening/"
+demand = "Buildium dictionary terms 'Tenant Screening', 'Tenant Background Check'"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "pet-addendum-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Pet addendum template"
+question = "What should a pet addendum to a lease include?"
+subquestions = ["Pet deposit vs pet rent vs pet fee?", "How do you handle service and support animals?", "Which pet rules should the addendum list?"]
+inspired_by = "https://ipropertymanagement.com/templates/pet-addendum"
+demand = "iPropertyManagement, Avail, TurboTenant, TenantCloud all publish one; Buildium 'Pet Addendum to Lease'"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "lease-violation-notice-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Lease violation notice template"
+question = "How should a landlord write a notice for a lease violation?"
+subquestions = ["What details must the notice include?", "How long should the tenant have to fix the issue?", "When does a violation lead to a cure or quit notice?"]
+inspired_by = "https://ipropertymanagement.com/templates/unauthorized-occupant-violation-notice"
+demand = "iPropertyManagement violation notices (unauthorized occupant, notice to clean)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "maintenance-work-order-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Maintenance work order template"
+question = "What fields should a maintenance work order have?"
+subquestions = ["How do you track a work order from request to close?", "Which approvals does the owner need to give?", "How do you attach photos and invoices?"]
+inspired_by = ""
+demand = "Work order templates from PM software vendors and ClickUp-type tools"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "preventive-maintenance-checklist-rental"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Preventive maintenance checklist for rentals (by season)"
+question = "What preventive maintenance should a property manager schedule each season?"
+subquestions = ["Which HVAC, roof and plumbing checks go in each season?", "How often should smoke and CO detectors be tested?", "How do you show preventive maintenance to owners?"]
+inspired_by = "https://ipropertymanagement.com/templates/smoke-carbon-monoxide-detector-addendum"
+demand = "Seasonal maintenance checklists are common landlord content"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-proposal-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Property management proposal template for owner leads"
+question = "What should a property management proposal to a prospective owner include?"
+subquestions = ["How do you present fees clearly?", "Which proof (reviews, case studies, numbers) should you add?", "How do you answer 'why you and not a cheaper manager'?", "How should the proposal end?"]
+inspired_by = ""
+demand = "Our readers win owner leads; proposals are a direct path from lead to contract"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rent-receipt-template"
+cluster = "glossary-templates"
+kind = "template"
+title = "Rent receipt template"
+question = "What should a rent receipt show?"
+subquestions = ["Must a landlord give rent receipts?", "What details go on a receipt for cash rent?", "How do partial payment receipts work?"]
+inspired_by = "https://ipropertymanagement.com/templates/rent-receipt"
+demand = "iPropertyManagement template; Avail security deposit receipt"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "owner-offboarding-checklist-property-management"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Owner offboarding checklist (when an owner leaves)"
+question = "What must a property manager hand over when an owner ends management?"
+subquestions = ["How do you transfer security deposits and trust funds?", "Which records and keys go to the owner or next manager?", "How do you tell tenants?", "What final statement does the owner get?"]
+inspired_by = ""
+demand = "Pairs with termination letter; few competitors cover the handover (gap)"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "vendor-onboarding-checklist-property-management"
+cluster = "glossary-templates"
+kind = "checklist"
+title = "Vendor onboarding checklist for property managers"
+question = "What should a property manager collect before a new vendor starts work?"
+subquestions = ["Why do you need a W-9 and a certificate of insurance?", "Which license checks should you do?", "What rates and response terms should you agree in writing?"]
+inspired_by = ""
+demand = "PM ops content; tied to 1099 and maintenance policies"
+priority = 4
+status = "planned"
