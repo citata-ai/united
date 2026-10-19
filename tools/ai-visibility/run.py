@@ -15,7 +15,7 @@ Env:
   CLIPROXY_KEY   default: contents of ~/.config/cliproxy/api-key
 Output: <out_dir from prompts.toml>/<date>/ (answers.jsonl, mentions.csv, report.md)
 """
-import argparse, concurrent.futures as cf, csv, datetime as dt, json, os, re, sys, time, tomllib, urllib.error, urllib.request
+import argparse, concurrent.futures as cf, csv, datetime as dt, json, os, re, sys, threading, time, tomllib, urllib.error, urllib.request
 from collections import Counter, defaultdict
 from urllib.parse import urlparse
 
@@ -33,6 +33,25 @@ ENGINES = {
 EXTRACTOR = "claude-haiku-4-5"
 
 
+USAGE = {}  # model -> Counter of tokens and web searches, filled by post()
+USAGE_LOCK = threading.Lock()
+
+
+def track_usage(model, d):
+    """Count tokens per model from OpenAI, Gemini and Anthropic response shapes."""
+    u = d.get("usage") or {}
+    g = d.get("usageMetadata") or {}
+    c = Counter(
+        input_tokens=(u.get("input_tokens", 0) + u.get("cache_read_input_tokens", 0) + u.get("cache_creation_input_tokens", 0))
+        or (g.get("promptTokenCount", 0) + g.get("toolUsePromptTokenCount", 0)),
+        output_tokens=u.get("output_tokens", 0) or g.get("candidatesTokenCount", 0) + g.get("thoughtsTokenCount", 0),
+        web_searches=(u.get("server_tool_use") or {}).get("web_search_requests", 0),
+        calls=1,
+    )
+    with USAGE_LOCK:
+        USAGE.setdefault(model, Counter()).update(c)
+
+
 def post(path, body, timeout=240):
     req = urllib.request.Request(BASE + path, data=json.dumps(body).encode(), headers={
         "Authorization": "Bearer " + KEY, "x-api-key": KEY, "x-goog-api-key": KEY,
@@ -40,7 +59,9 @@ def post(path, body, timeout=240):
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return json.loads(r.read())
+                d = json.loads(r.read())
+                track_usage(body.get("model") or path.split("/models/")[-1].split(":")[0], d)
+                return d
         except urllib.error.HTTPError as e:
             err = f"HTTP {e.code}: {e.read().decode()[:300]}"
             if e.code < 500 and e.code != 429:
@@ -149,9 +170,58 @@ def previous(out, ok):
     return lines
 
 
-def report(rows, out):
+def toml_value(v):
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    if isinstance(v, (int, float)):
+        return str(v)
+    if isinstance(v, list):
+        return "[" + ", ".join(toml_value(x) for x in v) + "]"
+    return json.dumps(str(v), ensure_ascii=False)
+
+
+def frontmatter(rows, out, usage):
+    """Standard weekly metrics as TOML, so runs can be compared by a script."""
     ok = [r for r in rows if not r["error"]]
-    lines = [f"# AI visibility — {rows[0]['date']}", "",
+    nb = [r for r in ok if r["group"] != "brand"]
+    br = [r for r in ok if r["group"] == "brand"]
+    base = os.path.dirname(out)
+    prev = sorted(d for d in os.listdir(base) if d < os.path.basename(out) and os.path.exists(os.path.join(base, d, "mentions.csv")))
+    comp = Counter(c for r in nb for c in set(r["companies"]))
+    doms = Counter(d for r in ok for d in r["cited_domains"])
+    lines = ["+++", f'date = "{rows[0]["date"]}"', f'previous = "{prev[-1] if prev else ""}"',
+             f"prompts = {len({r['prompt_id'] for r in rows})}", f"answers_ok = {len(ok)}", f"answers_failed = {len(rows) - len(ok)}",
+             f"nonbrand_answers = {len(nb)}", f"nonbrand_mentions = {sum(r['mentioned'] for r in nb)}",
+             f"nonbrand_cites = {sum(r['cited_us'] for r in nb)}", f"brand_answers = {len(br)}",
+             f"brand_mentions = {sum(r['mentioned'] for r in br)}", f"brand_cites = {sum(r['cited_us'] for r in br)}",
+             f"top_companies = {toml_value([c for c, _ in comp.most_common(10)])}",
+             f"top_sources = {toml_value([d for d, _ in doms.most_common(10)])}"]
+    for e in sorted({r["engine"] for r in ok}):
+        rr = [r for r in ok if r["engine"] == e]
+        lines += ["", f"[engine.{e}]", f'model = "{ENGINES.get(e, "")}"', f"answers = {len(rr)}",
+                  f"nonbrand_mentions = {sum(r['mentioned'] for r in rr if r['group'] != 'brand')}",
+                  f"brand_mentions = {sum(r['mentioned'] for r in rr if r['group'] == 'brand')}",
+                  f"cites = {sum(r['cited_us'] for r in rr)}"]
+    for m, c in sorted(usage.items()):
+        lines += ["", f'[usage."{m}"]'] + [f"{k} = {v}" for k, v in sorted(c.items())]
+    return lines + ["+++", ""]
+
+
+ANALYST = """
+## Gaps
+
+<!-- The analyst fills this: the top 3 gaps (competitors named and we are not; wrong facts about us; how-to prompts with no page of ours). -->
+
+## Actions
+
+<!-- One concrete content or mention change per gap, with the hypothesis id. -->
+"""
+
+
+def report(rows, out, usage=None):
+    ok = [r for r in rows if not r["error"]]
+    lines = frontmatter(rows, out, usage if usage is not None else USAGE)
+    lines += [f"# AI visibility — {rows[0]['date']}", "",
              f"Prompts: {len({r['prompt_id'] for r in rows})} · engines: {', '.join(sorted({r['engine'] for r in rows}))} · answers: {len(ok)} ok / {len(rows) - len(ok)} failed", ""]
     lines += ["## Mention rate", "", "| Engine | Answers | Mentions us | Cites our site |", "| --- | --- | --- | --- |"]
     for e in sorted({r["engine"] for r in ok}):
@@ -171,7 +241,7 @@ def report(rows, out):
     lines += ["", "## Where we are mentioned", ""]
     hits = [r for r in ok if r["mentioned"]]
     lines += [f"- {r['engine']} · `{r['prompt_id']}` · rank {r['rank'] or '—'}" for r in hits] or ["- none"]
-    open(os.path.join(out, "report.md"), "w").write("\n".join(lines) + "\n")
+    open(os.path.join(out, "report.md"), "w").write("\n".join(lines) + "\n" + ANALYST)
 
 
 def main():
@@ -181,7 +251,13 @@ def main():
     ap.add_argument("--engines", default=",".join(ENGINES))
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--prompts", default=os.path.join(HERE, "prompts.toml"))
+    ap.add_argument("--report-only", default="", help="re-render report.md from <dir>/answers.jsonl (no API calls)")
     a = ap.parse_args()
+    if a.report_only:
+        rows = [json.loads(l) for l in open(os.path.join(a.report_only, "answers.jsonl"))]
+        report(rows, os.path.abspath(a.report_only), usage={})
+        print("re-rendered", a.report_only)
+        return
     cfg = tomllib.load(open(a.prompts, "rb"))
     CFG.update(cfg)
     prompts = [p for p in cfg["prompt"] if not a.only or p["id"] in a.only.split(",")]

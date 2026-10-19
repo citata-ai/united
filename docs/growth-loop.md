@@ -69,4 +69,5 @@ Do not publish when: a check fails, a number has no source, the page names a cli
 - Fair Housing: no text that steers renters by a protected class.
 - Needs a person (login, CAPTCHA, phone, payment, a post as Tao)? Do not stop the run. Add it to "Asks for Tao" in the next report and go to the next item.
 - Do not touch Worker `tao-email`, `mail.citata.ai`, or the email DNS records.
+- Journal: append one `[[entry]]` to `business/journal/citata.toml` for each action that shipped (site change, new page, listing, link, post, outreach). It is the project timeline; details stay in their own logs.
 - End each run with a 5-line summary: what shipped, URL, hypothesis, number moved, asks.
