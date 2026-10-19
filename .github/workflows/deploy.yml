@@ -95,3 +95,28 @@ jobs:
           else
             echo "No page changed: no IndexNow ping."
           fi
+
+      # Google ignores IndexNow. Resubmit the sitemap through the Search Console API, so Google reads
+      # the new lastmod dates. Keyless: GitHub OIDC -> Workload Identity Federation (GCP project
+      # citata-ai-ops, pool github, provider citata-united, prod environment of this repo only) ->
+      # service account gsc-sitemap, which has "Full" permission on sc-domain:citata.ai.
+      - name: Google auth (prod, changed pages only)
+        id: gauth
+        if: env.STAGE == 'prod'
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/309097519085/locations/global/workloadIdentityPools/github/providers/citata-united
+          service_account: gsc-sitemap@citata-ai-ops.iam.gserviceaccount.com
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/webmasters
+
+      - name: Search Console sitemap resubmit (prod, changed pages only)
+        if: env.STAGE == 'prod'
+        env:
+          TOKEN: ${{ steps.gauth.outputs.access_token }}
+        run: |
+          if [ ! -s "$RUNNER_TEMP/changed.txt" ]; then echo "No page changed: no sitemap resubmit."; exit 0; fi
+          code=$(curl -s -o /dev/null -w '%{http_code}' -X PUT -H "Authorization: Bearer $TOKEN" \
+            "https://www.googleapis.com/webmasters/v3/sites/sc-domain%3Acitata.ai/sitemaps/https%3A%2F%2Fcitata.ai%2Fsitemap.xml")
+          echo "Search Console sitemap submit: HTTP $code"
+          test "$code" = 204
