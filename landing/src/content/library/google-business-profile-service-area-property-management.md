@@ -92,4 +92,8 @@ A Local Search Forum thread shows the risk. A manager of a two-location garage d
 4. **Wait 48 hours.** Google's help page says approved service area edits may take up to 48 hours to show.
 5. **Do not create a new profile** if the old one goes into review. Google's guidelines allow only one profile per business per location.
 
+### Quick decision
+
+Ask one question: if an owner walked in at 10 a.m. on a Tuesday, would a staff member greet them at a signed office? If yes, show the address. If no, hide it and use a service area. Write the answer down with the date, so the next person who edits the profile follows the same rule.
+
 Your profile is only one source owners and AI tools read. Our guide to the [AI search checklist for a property management website](/guides/ai-search-checklist-property-management-website) covers the site side. For how your Google results connect to owner leads, see [why owner leads are dropping](/guides/why-owner-leads-are-dropping).

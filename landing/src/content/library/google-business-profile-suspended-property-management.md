@@ -39,7 +39,7 @@ sources:
 
 Google suspends a Business Profile when it decides the profile breaks its guidelines. Google's suspension help page says it may suspend or disable profiles that do not follow the guidelines. The page does not list every trigger, so check your profile against the guideline rules one by one.
 
-A suspension costs a property manager more than most businesses. Goodjuju Marketing's 2026 lead source report found Google Search and the Map Pack brought 50.6% of owner leads across 35 property management companies in its fall window. A suspended profile drops out of the Map Pack.
+A suspension costs a property manager more than most businesses. Goodjuju Marketing's 2026 lead source report studied 35 property management companies. In its fall window, Google Search and the Map Pack brought 50.6% of owner leads. A suspended profile drops out of the Map Pack.
 
 These are the rules in Google's guidelines that property managers break most often:
 

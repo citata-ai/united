@@ -37,7 +37,7 @@ sources:
 
 The primary category should be "Property management company" for a firm that manages rentals for owners. Google's category help page says to select the specific category that best describes your business. It also says the categories you pick affect your local ranking.
 
-The primary category matters more for property managers than for most trades. Goodjuju Marketing's 2026 lead source report found that Google Search and the Map Pack produced 50.6% of owner leads across 35 property management companies in its fall window. The Map Pack is the box of three local results at the top of a Google search. Your category is one of the first facts Google uses to decide if you belong in that box.
+The primary category matters more for property managers than for most trades. Goodjuju Marketing's 2026 lead source report studied 35 property management companies. In its fall window, Google Search and the Map Pack produced 50.6% of owner leads. The Map Pack is the box of three local results at the top of a Google search. Your category is one of the first facts Google uses to decide if you belong in that box.
 
 Pick a different primary only if the "property management" work is not your core business. A brokerage that sells homes and manages 20 rentals on the side may be a "Real estate agency" first. Be honest about what most of your staff do each day.
 
@@ -88,5 +88,7 @@ Use these three methods:
 3. **A spreadsheet.** Put companies in rows and categories in columns. Count which categories the top 3 share.
 
 Do not copy a competitor's list. If the top company uses "Real estate agency" and you are not one, that category is not for you. Use the list to find true categories you forgot, not to add false ones.
+
+Write down what you find each quarter. Competitors change categories too, and a new rival in the top 3 may show a category you never checked. A dated log lets you see if a change in the Map Pack follows a category change.
 
 Categories are one part of a full profile. Owners also check reviews, fees and service areas before they call. Our guide on [how owners choose a property manager with AI](/guides/how-owners-choose-a-property-manager-with-ai) shows what they compare.

@@ -29,6 +29,8 @@ sources:
     url: "https://support.google.com/business/answer/9157481"
   - label: "Google Business Profile Help: Tips to improve your local ranking on Google"
     url: "https://support.google.com/business/answer/7091"
+  - label: "Google Business Profile Help: Verify your business on Google"
+    url: "https://support.google.com/business/answer/7107242"
   - label: "Google Business Profile Help: Fix suspended or disabled profiles"
     url: "https://support.google.com/business/answer/4569145"
 ---
@@ -87,5 +89,12 @@ Use a service area, a real city page and local proof. A Business Profile in a ci
 3. **Ask owners in that city for reviews.** Same honest request as everyone else; no rewards.
 4. **Get listed where that city's owners look.** Local landlord groups, the city's chamber, directories that AI tools cite for that city.
 5. **Open a real office when the doors justify it.** Then create a second profile with its own staff and verify it.
+
+### Common mistakes to avoid
+
+- **A second profile at a staff member's home.** It is not a staffed office that receives customers.
+- **One profile per city with the same phone number.** Google's guidelines ask for a phone number that connects to the individual location.
+- **City names added to the business name.** Google's guidelines do not allow unnecessary information in the name.
+- **A service area that covers the whole state.** Keep it within about 2 hours of driving from your base.
 
 Our guide on [how owners choose a property manager with AI](/guides/how-owners-choose-a-property-manager-with-ai) shows how AI answers pick firms by city. For listing cleanup, see the [AI search checklist for a property management website](/guides/ai-search-checklist-property-management-website).

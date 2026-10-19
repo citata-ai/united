@@ -114,4 +114,6 @@ Use lifetime value to set a ceiling on what you pay to sign one owner. Then comp
 
 These are example numbers. Read vendor data with care too. Goodjuju Marketing's Traverse case study reports a 38% closing ratio on owner leads; that is one client's claim, not a norm. Goodjuju's own 2026 study warns its paid search figures cover only 6 of 35 companies and miss calls and outside landing pages.
 
+Recalculate lifetime value once a year. Fees, rents and churn change, and an old number can push you to overspend or underspend for a full year.
+
 You need clean source data to fill the table. Our guide on [tracking AI traffic to a property management site](/guides/track-ai-traffic-property-management) shows how to tag leads.

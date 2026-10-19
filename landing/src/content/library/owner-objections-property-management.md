@@ -113,4 +113,6 @@ Proof beats promises in every objection. Owners trust documents, numbers and oth
 5. **A reference call** with a current owner who agrees to take it.
 6. **Your own numbers**, dated: average days to lease, renewal rate, owner retention.
 
+Train the whole team on these answers. Owners raise the same objections with leasing staff and assistants, not only with the person who runs sales. Write the three answers on one page and review them in a team meeting each quarter.
+
 Owners also check you before the call. Goodjuju Marketing's 2026 study found Google Search and the Map Pack brought 50.6% of owner leads across 35 property managers, so your reviews are often the first proof they see. Our guide on [how owners choose a property manager with AI](/guides/how-owners-choose-a-property-manager-with-ai) shows what else they compare.
