@@ -1,6 +1,6 @@
 ---
 title: "Notice of Non-Renewal of Lease Template — Citata.ai"
-description: "A free notice of non-renewal template, with notice periods and just-cause rules in California, Florida and Oregon, and the move-out steps the notice should list."
+description: "A free notice of non-renewal template, with notice periods and just-cause rules in California, Florida and Oregon, plus the move-out steps to list in it."
 headline: "Notice of Non-Renewal of Lease Template"
 dek: "A fill-in letter, the notice periods in 3 states, and when the law needs a reason."
 published: "2026-10-19"

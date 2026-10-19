@@ -1,6 +1,6 @@
 ---
 title: "Notice of Entry Template (24-Hour Notice to Enter) — Citata.ai"
-description: "A free notice of entry template for landlords, plus state notice rules: 24 hours in California, Florida and Oregon, 2 days in Arizona, and the emergency exception."
+description: "A free notice of entry template, plus state rules: 24 hours in California, Florida and Oregon, 2 days in Arizona, and when a landlord may enter with no notice."
 headline: "Notice of Entry Template: 24-Hour Notice to Enter"
 dek: "A fill-in notice, the rules in 4 states, and when you may enter without notice."
 published: "2026-10-19"

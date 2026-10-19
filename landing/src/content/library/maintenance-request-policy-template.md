@@ -1,6 +1,6 @@
 ---
 title: "Maintenance Request Policy Template for Tenants — Citata.ai"
-description: "A free maintenance request policy template: emergency list, how tenants submit requests, response times, tenant repair duties and entry rules, with state law notes."
+description: "A free maintenance request policy template: emergency list, how tenants submit requests, response times, tenant duties and entry rules, with state law notes."
 headline: "Maintenance Request Policy Template for Rentals"
 dek: "One page that tells tenants what an emergency is, how to report it, and when you respond."
 published: "2026-10-19"

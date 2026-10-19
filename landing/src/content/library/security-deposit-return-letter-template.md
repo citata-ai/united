@@ -1,6 +1,6 @@
 ---
 title: "Security Deposit Return Letter Template (Itemized) — Citata.ai"
-description: "A free security deposit return letter with itemized deductions, plus deadlines and receipt rules in California, Florida, New York and Texas, and what to do if you keep it all."
+description: "A free security deposit return letter with itemized deductions, plus the deadlines and receipt rules in California, Florida, New York and Texas in one table."
 headline: "Security Deposit Return Letter With Itemized Deductions"
 dek: "A fill-in letter, a deduction table, and the deadlines in 4 large rental states."
 published: "2026-10-19"

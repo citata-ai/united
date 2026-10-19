@@ -1,6 +1,6 @@
 ---
 title: "What Is a Security Deposit Account for Rentals? — Citata.ai"
-description: "A security deposit account holds tenant deposits apart from the landlord's money. See Florida and New York rules, interest, trust accounts, and the records to keep."
+description: "A security deposit account holds tenant deposits apart from the landlord's money. See Florida and New York rules, interest, trust accounts and records."
 headline: "What a Security Deposit Account Is and How It Works"
 dek: "Where tenant deposits must sit, when they earn interest, and who holds them after a change."
 published: "2026-10-19"

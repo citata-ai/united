@@ -1,6 +1,6 @@
 ---
 title: "Tenant Screening Criteria Template (Written Policy) — Citata.ai"
-description: "A free written tenant screening criteria template: income, credit, rental and criminal history rules, Fair Housing limits, FCRA adverse action steps, and why to publish it first."
+description: "A free tenant screening criteria template: income, credit, rental and criminal history rules, Fair Housing limits, FCRA notices, and why to publish it."
 headline: "Tenant Screening Criteria Template: A Written Policy"
 dek: "One policy for every applicant, with the federal rules that shape each criterion."
 published: "2026-10-19"

@@ -1,5 +1,5 @@
 ---
-title: "Preventive Maintenance Checklist for Rentals by Season — Citata.ai"
+title: "Preventive Maintenance Checklist for Rentals — Citata.ai"
 description: "A season-by-season preventive maintenance checklist for rentals: HVAC, roof, plumbing, water heater and alarm checks, with intervals from the DOE and USFA."
 headline: "Preventive Maintenance Checklist for Rentals by Season"
 dek: "Spring, summer, fall and winter tasks, with intervals from federal safety and energy guides."

@@ -1,6 +1,6 @@
 ---
 title: "Property Management Termination Letter Template — Citata.ai"
-description: "A free letter to end a property management agreement: notice periods, the handover list for keys, deposits and ledgers, termination fees, and state deposit transfer rules."
+description: "A free letter to end a property management agreement: notice periods, the handover list for keys, deposits and ledgers, fees, and deposit transfer rules."
 headline: "Property Management Termination Letter Template"
 dek: "A fill-in letter, the full handover list, and the fee and deposit rules to check first."
 published: "2026-10-19"
