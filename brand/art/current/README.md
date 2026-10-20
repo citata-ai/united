@@ -31,3 +31,8 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-s8-become-v1.webp` | Library: how to become a Section 8 landlord | N, lilac |
 | `guide-chatgpt-named-v1.webp` | Library: get named by ChatGPT | N, coral |
 | `guide-switch-software-v1.webp` | Library: switch property software | N, cyan |
+| `guide-expertise-v1.webp` | Library: Expertise.com and AI answers | N, yellow |
+| `guide-ny-eviction-v1.webp` | Library: New York eviction process | N, lilac |
+| `guide-ny-deposit-v1.webp` | Library: New York security deposit law | N, coral |
+| `guide-nspire-v1.webp` | Library: NSPIRE-V inspection checklist | N, cyan |
+| `guide-owner-report-v1.webp` | Library: owner monthly report template | N, yellow |

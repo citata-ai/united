@@ -64,6 +64,26 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-switch-software-v1",
     alt: "A pop engraving under a cyan sky: a landlord in an orange toga carries a crate of scrolls over a bridge from an old cracked temple to a new mint one.",
   },
+  "expertise-com-property-management": {
+    img: "guide-expertise-v1",
+    alt: "A pop engraving under a yellow sky: three marble judges on a stone bench hand a laurel wreath to a landlord in an orange toga beside an old computer.",
+  },
+  "new-york-eviction-process": {
+    img: "guide-ny-eviction-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga climbs courthouse steps with a sealed scroll at the end of a street of colorful brownstones.",
+  },
+  "new-york-security-deposit-law": {
+    img: "guide-ny-deposit-v1",
+    alt: "A pop engraving under a coral sky: on a brownstone stoop a landlord in an orange toga pours coins back into the hand of a tenant with a travel bag.",
+  },
+  "nspire-v-inspection-checklist-landlords": {
+    img: "guide-nspire-v1",
+    alt: "A pop engraving under a cyan sky: in a cut-away house an inspector with a magnifying glass checks a smoke alarm while a landlord in an orange toga holds a lantern.",
+  },
+  "owner-monthly-report-template": {
+    img: "guide-owner-report-v1",
+    alt: "A pop engraving under a yellow sky: under an arcade a manager in an orange toga hands a scroll with a rising bar chart to a homeowner.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
