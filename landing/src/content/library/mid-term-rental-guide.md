@@ -1,6 +1,6 @@
 ---
 title: "Mid-Term Rentals: Furnishing, Costs and Legal Checks \u2014 Citata.ai"
-description: "A mid-term rental offers furnished housing for longer stays. Check local tenancy rules, furnish for real demand, and compare net income after utilities and vacancy."
+description: "A mid-term rental offers furnished housing for longer stays. Check local tenancy rules, furnish for real demand, and compare net income after costs and vacancy."
 headline: "Is a Mid-Term Rental Right for You?"
 dek: "Compare furnished stays with annual leases before you buy furniture or accept bookings."
 published: "2026-10-19"

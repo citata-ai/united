@@ -1,6 +1,6 @@
 ---
 title: "Rental vs Homestead Property Tax: What Can Change \u2014 Citata.ai"
-description: "Property tax may rise when a home becomes a rental because owner benefits can end. Ask the assessor about exemptions, timing, reporting, and the new taxable value."
+description: "Property tax may rise when a home becomes a rental because owner benefits can end. Ask the assessor about exemptions, timing, reporting, and new taxable value."
 headline: "Will Renting Your Home Raise Property Tax?"
 dek: "Check lost exemptions and local assessment rules before you use the old tax bill."
 published: "2026-10-19"

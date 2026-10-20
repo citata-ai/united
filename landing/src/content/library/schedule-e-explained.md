@@ -1,6 +1,6 @@
 ---
 title: "Schedule E for Rentals: Income, Expenses and Records \u2014 Citata.ai"
-description: "Schedule E reports ordinary rental income and expenses. Match receipts, loan interest, repairs, personal-use days, and depreciation to the current IRS instructions."
+description: "Schedule E reports rental income and costs. Match receipts, loan interest, repairs, personal-use days, and depreciation to the current IRS filing instructions."
 headline: "How to Read Your Rental Schedule E"
 dek: "Build a clean property ledger before you place amounts on the tax form."
 published: "2026-10-19"

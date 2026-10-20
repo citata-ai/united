@@ -1,6 +1,6 @@
 ---
-title: "Separate Rental Bank Accounts: Rent, Deposits, Reserves \u2014 Citata.ai"
-description: "A separate rental account makes records easier, while deposit rules depend on state law. Match ownership, track each tenant balance, and reconcile the cash you hold."
+title: "Rental Bank Accounts: Rent, Deposits and Reserves \u2014 Citata.ai"
+description: "A separate rental account helps with records, while deposit rules depend on state law. Match ownership, track tenant balances, and reconcile the cash you hold."
 headline: "How to Separate Your Rental Bank Accounts"
 dek: "Keep earned rent, tenant money, and repair cash clear from the start."
 published: "2026-10-19"

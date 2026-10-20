@@ -1,6 +1,6 @@
 ---
 title: "Rent Your House When Relocating: A Remote Owner Plan \u2014 Citata.ai"
-description: "You can rent a house after relocating if you arrange local repairs, clear records, suitable insurance, and enough cash. Compare a full manager quote with selling."
+description: "You can rent a house after relocating if you arrange local repairs, clear records, suitable insurance, and cash reserves. Compare a manager quote with selling."
 headline: "How to Rent Your House From Afar"
 dek: "Set up local repair cover and clear money rules before you leave town."
 published: "2026-10-19"
