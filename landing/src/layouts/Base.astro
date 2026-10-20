@@ -163,7 +163,16 @@ const nav = [
     <link rel="alternate" type="application/rss+xml" title="Citata.ai" href="/rss.xml" />
     <link rel="alternate" type="text/markdown" href={markdownHref} />
     <meta name="ahrefs-site-verification" content="c373191b9e5ef7a015c4cc2786b14f0c505cd415d2516dc4d70cb57db4fa2f1b" />
-    <script is:inline src="https://analytics.ahrefs.com/analytics.js" data-key="ZBFZfEWCf4yVC1R7LkUI3w" async></script>
+    <!-- Ahrefs Web Analytics on prod only, so stage.citata.ai and local runs do not count as visits. -->
+    <script is:inline>
+      if (location.hostname === "citata.ai") {
+        const s = document.createElement("script");
+        s.src = "https://analytics.ahrefs.com/analytics.js";
+        s.dataset.key = "ZBFZfEWCf4yVC1R7LkUI3w";
+        s.async = true;
+        document.head.appendChild(s);
+      }
+    </script>
     <script type="application/ld+json" is:inline set:html={JSON.stringify(organization)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(website)} />
     <!-- Fetch a same-site page when the pointer rests on its link, so the next page is ready on click.
