@@ -1,5 +1,5 @@
 ---
-title: "Direct Mail for Property Management Owner Leads — Citata.ai"
+title: "Direct Mail for Property Management Owner Leads in 2026 — Citata.ai"
 description: "Direct mail can still reach rental owners if you mail a clean owner list, repeat the touch and track every piece. Mail types, costs and a tracking plan."
 headline: "Direct Mail for Property Management Owner Leads"
 dek: "Postcards reach owners who never search, but only a tracked list tells you if they work."
@@ -111,7 +111,7 @@ Report results per 1,000 pieces. That makes a 2,000-piece drop and a 500-piece d
 
 ## Is direct mail legal to send to owners?
 
-Postal mail to owners is legal, and the federal CAN-SPAM rules cover email, not paper mail (FTC). Two rules still apply. Do not use data you got under a restriction. For example, the Driver's Privacy Protection Act lets states release motor vehicle records for bulk marketing only with the person's express consent (18 U.S.C. 2721). Honor every request to stop. If you add owners' emails from a mail response, follow CAN-SPAM: a valid postal address, a clear way to opt out, and opt-outs processed within 10 business days (FTC).
+Postal mail to owners is legal, and the federal CAN-SPAM rules cover email, not paper mail (FTC). Two rules still apply. Do not use data you got under a restriction. For example, the Driver's Privacy Protection Act lets states release motor vehicle records for bulk marketing only with the person's express consent (18 U.S.C. 2721). Honor every request to stop. If you add owners' emails from a mail response, follow CAN-SPAM. Each email needs a valid postal address and a clear opt-out, and you must process opt-outs within 10 business days (FTC).
 
 This is general information, not legal advice. Check the current law or ask a local attorney.
 

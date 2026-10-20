@@ -1,5 +1,5 @@
 ---
-title: "Facebook and Instagram Ads for Property Managers — Citata.ai"
+title: "Facebook and Instagram Ads for Property Managers: What Works — Citata.ai"
 description: "Meta ads can bring owner leads, but in one 2026 study social was 0.8% of owner leads. Audiences, offers, Meta lead forms vs the website, and cost per lead."
 headline: "Facebook and Instagram Ads for Property Managers"
 dek: "Meta ads can reach owners who never search, but measure every lead to the signed door."

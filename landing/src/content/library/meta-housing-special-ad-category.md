@@ -1,5 +1,5 @@
 ---
-title: "Meta Housing Ad Rules for Property Managers — Citata.ai"
+title: "Meta Housing Special Ad Category Rules for Property Managers — Citata.ai"
 description: "Meta's housing Special Ad Category removes age, gender, ZIP code, lookalike and exclusion targeting and forces a 15-mile radius. What it means for PM ads."
 headline: "Meta Housing Ad Rules for Property Managers"
 dek: "Rental listing ads lose most targeting. Owner ads need a clear, careful setup."
@@ -34,7 +34,7 @@ sources:
     url: "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-I/subchapter-A/part-100/subpart-B/section-100.75"
 ---
 
-On June 21, 2022, the US Justice Department sued Meta. The complaint said Meta's housing ad system showed ads by race, color, religion, sex, disability, familial status and national origin, in breach of the Fair Housing Act. The court approved a settlement on June 27, 2022 (US DOJ). Every property manager who runs Facebook or Instagram ads today works inside the rules that came from that case.
+On June 21, 2022, the US Justice Department sued Meta. The complaint said Meta's housing ad system broke the Fair Housing Act. It said the system discriminated by race, color, religion, sex, disability, familial status and national origin. The court approved a settlement on June 27, 2022 (US DOJ). Every property manager who runs Facebook or Instagram ads today works inside the rules that came from that case.
 
 ## What is the housing Special Ad Category?
 
@@ -111,7 +111,7 @@ Five tactics that work inside the rules:
 
 ## Fair Housing still applies to your ad text
 
-The Fair Housing Act rules apply to what you write, not only to how Meta targets. HUD's rule at 24 CFR 100.75 makes it unlawful to publish a rental ad that shows a preference or limit based on race, color, religion, sex, handicap, familial status or national origin. It also covers the choice of media or locations that deny groups information about housing (eCFR, 24 CFR 100.75).
+The Fair Housing Act rules apply to what you write, not only to how Meta targets. HUD's rule at 24 CFR 100.75 covers rental ads. It bans an ad that shows a preference or limit by race, color, religion, sex, handicap, familial status or national origin. It also covers the choice of media or locations that deny groups information about housing (eCFR, 24 CFR 100.75).
 
 Check every rental ad for these:
 

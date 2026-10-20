@@ -37,7 +37,7 @@ Ahrefs looked at about 14 billion pages in its index. It found that 96.55% of th
 
 ## What is a pillar page and a cluster?
 
-A pillar page is the main guide on one broad owner topic, and a cluster is the group of pages that each answer one related question. The pillar gives the short answer to every sub-question. Each cluster page goes deep on one of them.
+A pillar page is the main guide on one broad owner topic. A cluster is the group of pages that each answer one related question. The pillar gives the short answer to every sub-question. Each cluster page goes deep on one of them.
 
 Example for a manager in one city:
 

@@ -1,5 +1,5 @@
 ---
-title: "Can You Do SEO Yourself as a Property Manager? — Citata.ai"
+title: "Can You Do SEO Yourself as a Property Management Company? — Citata.ai"
 description: "A small property management company can do most of its own SEO in 2 to 4 hours a week. The tasks you can own, the ones that need an expert, and free tools."
 headline: "Can You Do SEO Yourself as a Property Manager?"
 dek: "Google says a small local business can do much of the work. Here is the weekly plan."

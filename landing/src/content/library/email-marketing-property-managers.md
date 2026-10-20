@@ -1,5 +1,5 @@
 ---
-title: "Email Marketing for Property Management Companies — Citata.ai"
+title: "Email Marketing for Property Management Companies: A Guide — Citata.ai"
 description: "Email helps a property manager keep owners and turn slow leads into clients. The lists to build, what owners open, how often to send, tools and the rules."
 headline: "Email Marketing for Property Management Companies"
 dek: "Three lists, one useful email a month, and the sender rules Gmail now enforces."

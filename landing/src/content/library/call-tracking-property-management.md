@@ -1,5 +1,5 @@
 ---
-title: "Call Tracking for Property Management Marketing — Citata.ai"
+title: "Call Tracking for Property Management Marketing in 2026 — Citata.ai"
 description: "Call tracking shows which ads, pages and listings make owners call. How dynamic numbers work, the local SEO rules, recording consent and what it costs."
 headline: "Call Tracking for Property Management Owner Leads"
 dek: "Many owners call instead of filling a form, so count the calls by source."

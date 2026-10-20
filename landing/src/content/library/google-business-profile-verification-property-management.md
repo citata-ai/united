@@ -1,5 +1,5 @@
 ---
-title: "Verify a Google Business Profile for a PM Company — Citata.ai"
+title: "How to Verify a Google Business Profile for a PM Company — Citata.ai"
 description: "Google picks the verification method: phone, email, video recording, live video or mail. What a property manager must show on video, fixes, and virtual offices."
 headline: "How to Verify a Google Business Profile for a PM Company"
 dek: "Google picks the method. Plan the video before you press record."
@@ -15,7 +15,7 @@ faq:
   - q: "How do I verify my property management company on Google?"
     a: "Open your Business Profile, select Get verified and use one of the methods Google offers. Methods can include phone or text, email, video recording, live video call or postcard."
   - q: "What must a Google verification video show?"
-    a: "A live, unedited video of at least 30 seconds that shows where the business is, proof the business exists, such as signage or branded tools, and proof that you manage it, such as unlocking the office."
+    a: "A live, unedited video of at least 30 seconds that shows where the business is, proof the business exists, such as signage or branded tools, and proof that you manage it, such as opening the office with your key."
   - q: "How long does Google Business Profile verification take?"
     a: "Google says verification reviews take up to 5 business days, and rarely longer. Postcard codes usually arrive within 14 days and expire after 30 days."
   - q: "Can a property management company verify a virtual office?"
@@ -51,7 +51,7 @@ Google recommends the video recording option when it is offered. Some profiles v
 
 ## What video proof does Google want?
 
-Google wants a live, unedited video of at least 30 seconds that proves three things: where you are, that the business exists and that you manage it. You must record it through the Business Profile on a mobile device. Pre-recorded videos are not allowed (Google Business Profile Help).
+Google wants a live, unedited video of at least 30 seconds. It must prove three things: where you are, that the business exists and that you manage it. You must record it through the Business Profile on a mobile device. Pre-recorded videos are not allowed (Google Business Profile Help).
 
 The rules depend on your profile type.
 
@@ -59,13 +59,13 @@ The rules depend on your profile type.
 
 1. **Location.** Street signs, the building number, nearby businesses.
 2. **The business exists.** Your business name on a permanent sign, wall or window. The name must match your profile.
-3. **You manage it.** Unlock the office door, open a key cabinet, log in to your property management software.
+3. **You manage it.** Open the office door with your key, open a key cabinet, log in to your property management software.
 
 **Service-area business.** A manager with no public office belongs here. Google says do not add your address to the profile if you do not serve customers there. Your video must show:
 
 1. **Where you operate.** Street signs or landmarks near your business address. From a home office, record signs in your neighborhood.
 2. **The business exists.** Tools, business cards, branded shirts, lockboxes, signs you put in yards.
-3. **You manage it.** Unlock a branded vehicle, or show a business permit, invoice or utility bill with the profile name.
+3. **You manage it.** Open a branded vehicle with your key, or show a business permit, invoice or utility bill with the profile name.
 
 Do not show bank account, tax or ID numbers, private information or other people's faces (Google Business Profile Help). For a property manager, that also means no tenant files, owner statements or keys tagged with addresses.
 
@@ -75,7 +75,7 @@ A 45-second shot plan for a storefront office:
 |---|---|
 | 0–10 | Street sign at the corner, then pan to your building number |
 | 10–20 | Walk to the door; show the permanent sign with your business name |
-| 20–35 | Unlock the door; show the front desk and branded material |
+| 20–35 | Open the door with your key; show the front desk and branded material |
 | 35–45 | Open the key cabinet or log in to your software (no tenant data on screen) |
 
 ## What if verification fails?
