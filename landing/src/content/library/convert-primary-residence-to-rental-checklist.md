@@ -1,6 +1,6 @@
 ---
-title: "Checklist: Convert Your Primary Home Into a Rental Property — Citata.ai"
-description: "A step-by-step checklist to turn your home into a rental: loan, insurance, utilities, safety, rent, tax records and the cost basis rule from IRS Publication 527."
+title: "Checklist: Convert Your Home Into a Rental — Citata.ai"
+description: "A step-by-step checklist to turn your home into a rental: the loan, insurance, safety, rent, tax records and the cost basis rule in IRS Publication 527."
 headline: "Checklist to Turn Your Home Into a Rental"
 dek: "Paperwork, repairs, rent and tax records, in the order you need them."
 published: "2026-10-19"
@@ -33,6 +33,8 @@ sources:
     url: "https://www.epa.gov/lead/real-estate-disclosure"
   - label: "FTC: Using Consumer Reports: What Landlords Need to Know"
     url: "https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-landlords-need-know"
+  - label: "Cornell LII: 42 U.S. Code 3604, Discrimination in the sale or rental of housing"
+    url: "https://www.law.cornell.edu/uscode/text/42/3604"
   - label: "Fannie Mae Selling Guide: B3-3.8-05, Rental Income from a Departing Residence"
     url: "https://selling-guide.fanniemae.com/sel/b3-3.8-05/rental-income-non-subject-property-departing-residence"
 ---
@@ -91,7 +93,7 @@ A home that sits empty costs money each day. Price near the middle of your comps
 
 If you plan to accept housing vouchers, compare your rent to the local limits in our [Section 8 rent limits guide](/guides/section-8-rent-limits).
 
-Screen every applicant with the same written criteria. The FTC says that if you deny an applicant based partly on a consumer report, you must give an adverse action notice. Fair housing law bans choices based on protected classes.
+Screen every applicant with the same written criteria. The FTC says that if you deny an applicant based partly on a consumer report, you must give an adverse action notice. The Fair Housing Act, 42 U.S.C. 3604, bans choices based on race, color, religion, sex, disability, familial status or national origin.
 
 ## What Records Do I Need for Taxes From Day One?
 

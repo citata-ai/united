@@ -1,6 +1,6 @@
 ---
-title: "How to Sell a Rental Property With Tenants Still Living There — Citata.ai"
-description: "Sell a rental with tenants in place: the lease and deposits pass to the buyer, showings need state-law notice, and cash for keys can free the home for an owner-occupant."
+title: "How to Sell a Rental With Tenants in Place — Citata.ai"
+description: "Sell a rental with tenants in place: the lease and deposits pass to the buyer, showings need notice under state law, and cash for keys can empty the home."
 headline: "How to Sell a Rental With Tenants in Place"
 dek: "Leases, deposits, showing notice and cash for keys, with state law examples."
 published: "2026-10-19"

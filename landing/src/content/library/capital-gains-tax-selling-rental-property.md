@@ -1,5 +1,5 @@
 ---
-title: "Capital Gains Tax on a Rental Property Sale, Step by Step — Citata.ai"
+title: "Capital Gains Tax When You Sell a Rental — Citata.ai"
 description: "A rental sale is taxed on the gain over your adjusted basis. Depreciation is taxed at up to 25%, the rest at 0%, 15% or 20%, and you report it on Form 4797."
 headline: "Capital Gains Tax When You Sell a Rental"
 dek: "Find your adjusted basis, split the gain into parts, and report the sale on Form 4797."

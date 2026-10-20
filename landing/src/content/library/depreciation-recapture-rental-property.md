@@ -1,5 +1,5 @@
 ---
-title: "Depreciation Recapture on a Rental Sale: How the IRS Taxes It — Citata.ai"
+title: "Depreciation Recapture When You Sell a Rental — Citata.ai"
 description: "When you sell a rental, the gain from depreciation is unrecaptured section 1250 gain, taxed at up to 25%. It applies even if you never claimed the depreciation."
 headline: "Depreciation Recapture When You Sell a Rental"
 dek: "The IRS taxes back the depreciation you took, or could have taken, at up to 25%."

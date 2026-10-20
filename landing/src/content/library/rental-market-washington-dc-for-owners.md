@@ -95,7 +95,7 @@ DC and Montgomery County both cap rent increases on covered units. We did not re
 
 A worked example: a DC rent-controlled 2-bedroom at $2,438 can go up by no more than 4.1%, or $99.96 a month. In Montgomery County, a regulated unit at the same rent can go up by 5.2%, or $126.78. A post-1975 DC building can follow the market, which rose 1.4% last year.
 
-DHCA does not handle rent issues in Gaithersburg, Rockville, Takoma Park or Laytonsville. Those cities have their own offices.
+Montgomery County rent stabilization does not apply in Gaithersburg, Rockville, Takoma Park, Barnesville or Laytonsville, per DHCA.
 
 This is general information, not legal advice. Check the current law or ask a local attorney.
 

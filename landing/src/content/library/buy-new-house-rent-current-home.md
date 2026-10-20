@@ -1,6 +1,6 @@
 ---
-title: "Buy a New House and Rent Out Your Current Home: How It Works — Citata.ai"
-description: "You can keep your old home as a rental when you buy a new one. Fannie Mae counts 75% of market rent, minus the old home's payment, and may need 6 months of reserves."
+title: "Buy a New House and Rent Out the Old One — Citata.ai"
+description: "You can keep your old home as a rental when you buy a new one. Fannie Mae counts 75% of market rent minus the old payment and may need 6 months of reserves."
 headline: "Buy a New Home and Rent Out the Old One"
 dek: "How lenders count future rent, what cash you need, and how to test cash flow first."
 published: "2026-10-19"

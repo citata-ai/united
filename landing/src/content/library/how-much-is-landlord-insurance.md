@@ -1,5 +1,5 @@
 ---
-title: "How Much Does Landlord Insurance Cost Per Year? NAIC Data — Citata.ai"
+title: "How Much Does Landlord Insurance Cost? — Citata.ai"
 description: "NAIC data for 2023 puts the average dwelling fire premium at $1,019 a year, against $1,737 for an HO-3. See what drives the price and how to lower it."
 headline: "How Much Landlord Insurance Costs Per Year"
 dek: "Regulator data on dwelling fire premiums, what pushes them up, and why some carriers leave."

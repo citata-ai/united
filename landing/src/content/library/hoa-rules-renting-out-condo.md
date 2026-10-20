@@ -1,6 +1,6 @@
 ---
-title: "HOA Rental Rules: Caps, Lease Terms and Tenant Approval — Citata.ai"
-description: "HOA rules can cap rentals, ban short stays or ask about tenants. State law limits them: see California, Florida, Arizona and Texas rules before you rent your condo."
+title: "HOA Rental Rules: Caps, Terms and Approvals — Citata.ai"
+description: "HOA rules can cap rentals, ban short stays or ask about tenants. State law limits them. See California, Florida, Arizona and Texas rules before you rent."
 headline: "HOA Rules That Can Stop You From Renting"
 dek: "Rental caps, short-term bans and tenant approval, with four state examples."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
-title: "Cap Rate vs Cash-on-Cash Return: Which Number to Use — Citata.ai"
-description: "Cap rate measures a rental's income against its value, before debt. Cash-on-cash return measures your cash flow against the cash you put in. See both on one house."
+title: "Cap Rate vs Cash-on-Cash Return Explained — Citata.ai"
+description: "Cap rate measures a rental's income against its value, before debt. Cash-on-cash measures cash flow against the cash you put in. See both on one house."
 headline: "Cap Rate vs Cash-on-Cash Return"
 dek: "One number rates the property, the other rates your deal. A worked example shows both."
 published: "2026-10-19"

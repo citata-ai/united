@@ -1,6 +1,6 @@
 ---
-title: "What Is a Good Cap Rate for a Rental Property in 2026? — Citata.ai"
-description: "Cap rate is net operating income divided by property value. A good cap rate beats safer options: in October 2026 the 10-year Treasury paid 5.09% and mortgages 7.40%."
+title: "What Is a Good Cap Rate for a Rental House? — Citata.ai"
+description: "Cap rate is NOI divided by value. A good cap rate beats safer options: in October 2026 the 10-year Treasury paid 5.09% and 30-year mortgages cost 7.40%."
 headline: "What Is a Good Cap Rate for a Rental?"
 dek: "The formula, why the right number moves by market, and a check you can run today."
 published: "2026-10-19"

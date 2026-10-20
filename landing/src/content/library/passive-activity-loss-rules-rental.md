@@ -1,6 +1,6 @@
 ---
-title: "Passive Loss Rules for Rentals and the $25,000 Allowance — Citata.ai"
-description: "A rental loss is passive, but owners who actively participate can deduct up to $25,000 against wages. The allowance phases out between $100,000 and $150,000 of MAGI."
+title: "Passive Loss Rules and the $25,000 Allowance — Citata.ai"
+description: "A rental loss is passive, but owners who actively participate can deduct up to $25,000 against wages. The allowance phases out from $100,000 to $150,000."
 headline: "Can You Deduct a Rental Loss Against Your Salary?"
 dek: "The $25,000 allowance, the income phaseout, and what happens to the losses you can't use."
 published: "2026-10-19"

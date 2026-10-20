@@ -1,5 +1,5 @@
 ---
-title: "LLC vs Umbrella Insurance: Which Protects a Small Landlord? — Citata.ai"
+title: "LLC vs Umbrella Insurance for a Landlord — Citata.ai"
 description: "An LLC keeps rental debts inside the company; an umbrella policy pays claims above your base liability limit. Compare costs, gaps and why many owners use both."
 headline: "LLC or Umbrella Policy for Your Rental?"
 dek: "One separates your assets, the other pays the claim. Here is how they differ."

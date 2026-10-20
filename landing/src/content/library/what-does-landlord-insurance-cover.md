@@ -1,6 +1,6 @@
 ---
-title: "What Does Landlord Insurance Cover, and What Does It Exclude? — Citata.ai"
-description: "Landlord insurance, often a dwelling fire policy (DP-1, DP-2, DP-3), covers the building, other structures and lost rent. Liability is often extra. Floods, wear and tear are out."
+title: "What Does Landlord Insurance Cover and Exclude? — Citata.ai"
+description: "Landlord insurance (DP-1, DP-2, DP-3) covers the building, other structures and lost rent. Liability is often extra; floods and wear and tear are excluded."
 headline: "What Landlord Insurance Covers and Leaves Out"
 dek: "The three dwelling policy forms, the gaps in each, and what to add."
 published: "2026-10-19"

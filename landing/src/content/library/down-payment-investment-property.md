@@ -1,6 +1,6 @@
 ---
-title: "Down Payment for an Investment Property: 2026 Loan Rules — Citata.ai"
-description: "Fannie Mae allows 85% LTV on a 1-unit investment purchase (15% down) and 75% on 2-4 units. FHA and VA can work for a 2-4 unit home you live in. Rules and math."
+title: "Down Payment for an Investment Property — Citata.ai"
+description: "Fannie Mae allows 85% LTV on a 1-unit investment purchase (15% down) and 75% on 2-4 units. FHA and VA work only for a home you live in. Rules and math."
 headline: "How Much Down Payment a Rental Property Needs"
 dek: "Conventional, FHA and VA rules, reserves, and what a bigger down payment does to cash flow."
 published: "2026-10-19"
