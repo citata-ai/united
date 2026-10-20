@@ -63,6 +63,8 @@ def main():
         want = min(SCHED["covers"]["per_run"], max(0, target - ready + SCHED["covers"]["per_run"]))
         if ready >= target:
             want = 0
+        if os.environ.get("COVERS_FORCE"):  # test run: make this many now
+            want = int(os.environ["COVERS_FORCE"])
         print("\n".join([s for s in q if not has_cover(s, covers)][:want]))
     elif cmd == "meta":  # headline and answer for a slug
         t = fm(a[0])
