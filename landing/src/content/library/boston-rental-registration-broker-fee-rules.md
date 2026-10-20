@@ -1,6 +1,6 @@
 ---
 title: "Boston Rental Registration, Broker Fee and Deposit Rules — Citata.ai"
-description: "Boston makes owners register each rental by July 1 and inspects every 5 years. Since August 1, 2025, the landlord pays the broker it hires. Fees and deposit rules."
+description: "Boston owners register each rental by July 1; the city inspects every 5 years. Since August 1, 2025, the landlord pays its own broker. Fees and deposit rules."
 headline: "Boston Rental Rules: Registration, Broker Fees and Deposits"
 dek: "Four rules every Boston rental owner meets in 2026, with the fees and the deadlines."
 published: "2026-10-19"
@@ -38,7 +38,7 @@ sources:
 
 ## What is the Boston Rental Registration and Inspection ordinance?
 
-The Boston Rental Registration and Inspection ordinance makes every rental owner register each unit every year and accept a city inspection about once every 5 years. Boston Inspectional Services (ISD) runs the program. The deadline is July 1, and the online period runs from January 2 to June 30.
+The Boston Rental Registration and Inspection ordinance has 2 parts. Every rental owner registers each unit every year, and the city inspects each rental about once every 5 years. Boston Inspectional Services (ISD) runs the program. The deadline is July 1, and the online period runs from January 2 to June 30.
 
 The fees, from the ISD page:
 

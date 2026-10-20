@@ -1,6 +1,6 @@
 ---
 title: "NYC HPD Registration and Local Law 1 Lead Rules for Owners — Citata.ai"
-description: "NYC owners of 3+ unit buildings, and 1-2 family homes the owner does not live in, register with HPD by September 1. Local Law 1 and Local Law 31 lead duties, fines."
+description: "NYC owners of 3+ unit buildings, and of 1-2 family homes they do not live in, register with HPD by September 1. Local Law 1 and 31 lead duties and fines."
 headline: "NYC HPD Registration and Lead Paint Rules for Owners"
 dek: "The yearly HPD filing, the Local Law 1 lead duties and the 2025 XRF test, in one checklist."
 published: "2026-10-20"
@@ -32,7 +32,7 @@ sources:
 
 ## Which NYC buildings must register with HPD each year?
 
-NYC owners must register a residential building with the Department of Housing Preservation and Development (HPD) each year if it falls in one of 2 groups, per HPD:
+NYC owners must register with the Department of Housing Preservation and Development (HPD) each year. Two groups of buildings must register, per HPD:
 
 - **Multiple dwellings:** 3 or more residential units.
 - **Private dwellings:** 1-2 residential units where neither the owner nor the owner's immediate family lives.

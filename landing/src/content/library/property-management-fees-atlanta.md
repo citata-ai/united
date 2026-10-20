@@ -53,7 +53,7 @@ sources:
 
 ## What is the average monthly management fee in Atlanta?
 
-The median Atlanta monthly management fee is about 8.3% of rent, or $145.48 on a $1,762 rent, across 10 Atlanta-area managers that publish prices (our count, read 2026-10-20). We used $1,762 because it is HUD's FY2027 two-bedroom Fair Market Rent for the Atlanta metro, down 3.2% from $1,820. See the [Atlanta Fair Market Rent 2027 page](/guides/section-8-rent-limits/atlanta-fair-market-rent-2027).
+The median Atlanta monthly management fee is about 8.3% of rent, or $145.48 on a $1,762 rent. We based it on 10 Atlanta-area managers that publish prices (our count, read 2026-10-20). We used $1,762 because it is HUD's FY2027 two-bedroom Fair Market Rent for the Atlanta metro, down 3.2% from $1,820. See the [Atlanta Fair Market Rent 2027 page](/guides/section-8-rent-limits/atlanta-fair-market-rent-2027).
 
 | Manager | Monthly fee | Leasing fee | Renewal fee | Price page |
 |---|---|---|---|---|

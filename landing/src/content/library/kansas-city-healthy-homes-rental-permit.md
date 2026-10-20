@@ -1,6 +1,6 @@
 ---
 title: "Kansas City Healthy Homes Rental Permit: 2026 Fees and Rules — Citata.ai"
-description: "Every Kansas City, Missouri rental needs a yearly Healthy Homes permit: $25 per unit plus a one-time $25 application in 2026. Inspections, tenant rights, a cost table."
+description: "Every Kansas City, Missouri rental needs a yearly Healthy Homes permit: $25 per unit plus a one-time $25 application in 2026. Inspections, tenant rights, costs."
 headline: "Kansas City Healthy Homes Rental Permit: What Owners Owe"
 dek: "The 2026 permit fee, what triggers an inspection, and the tenant rights that come with it."
 published: "2026-10-20"

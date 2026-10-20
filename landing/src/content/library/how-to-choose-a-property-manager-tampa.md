@@ -1,6 +1,6 @@
 ---
 title: "How to Choose a Property Manager in Tampa: 2026 Checklist — Citata.ai"
-description: "A Tampa property manager who rents homes for others for pay needs a Florida real estate license. How to check it, the deposit rules in Fla. Stat. 83.49, what to ask."
+description: "A Tampa property manager who rents homes for pay needs a Florida real estate license. How to check it, the deposit rules in Fla. Stat. 83.49, and what to ask."
 headline: "How to Choose a Property Manager in Tampa"
 dek: "A Florida license check, the deposit rules to quiz them on, and a hurricane plan to put in writing."
 published: "2026-10-20"

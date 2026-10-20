@@ -1,6 +1,6 @@
 ---
 title: "Detroit Rental Certificate of Compliance: 2026 Steps and Fees — Citata.ai"
-description: "Every Detroit rental needs registration and a Certificate of Compliance. Since 2025: one 15-point inspection, $195 for one unit, $225 for a duplex. Lead and escrow."
+description: "Every Detroit rental needs registration and a Certificate of Compliance. Since 2025: one 15-point inspection, $195 for 1 unit, $225 for a duplex. Lead, escrow."
 headline: "Detroit Certificate of Compliance for Rentals, Step by Step"
 dek: "The 2024 rental ordinance cut the inspection to 15 points. Here is the process and the cost."
 published: "2026-10-20"

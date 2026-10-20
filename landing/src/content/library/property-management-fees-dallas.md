@@ -53,7 +53,7 @@ sources:
 
 ## What is the average monthly management fee in Dallas?
 
-The median Dallas monthly management fee is about 9% of rent, or $162.50 on a $1,807 rent, across 10 Dallas-Fort Worth managers that publish prices (our count, read 2026-10-20). We used $1,807 because it is HUD's FY2027 two-bedroom Fair Market Rent for the Dallas metro. That rent fell 6.4% from $1,931 in FY2026, the largest two-bedroom drop of the 50 metros in our HUD data. See the [Dallas Fair Market Rent 2027 page](/guides/section-8-rent-limits/dallas-fair-market-rent-2027).
+The median Dallas monthly management fee is about 9% of rent, or $162.50 on a $1,807 rent. We based it on 10 Dallas-Fort Worth managers that publish prices (our count, read 2026-10-20). We used $1,807 because it is HUD's FY2027 two-bedroom Fair Market Rent for the Dallas metro. That rent fell 6.4% from $1,931 in FY2026, the largest two-bedroom drop of the 50 metros in our HUD data. See the [Dallas Fair Market Rent 2027 page](/guides/section-8-rent-limits/dallas-fair-market-rent-2027).
 
 | Manager | Monthly fee | Leasing fee | Renewal fee | Price page |
 |---|---|---|---|---|

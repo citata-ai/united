@@ -38,7 +38,7 @@ sources:
 
 ## Which Oakland rentals are under the RAP?
 
-Oakland's Rent Adjustment Program (RAP) runs 2 ordinances in Oakland Municipal Code Chapter 8.22: the Rent Adjustment Ordinance, which caps rent, and the Just Cause for Eviction Ordinance (Measure EE), which limits evictions. They cover different sets of units.
+Oakland's Rent Adjustment Program (RAP) runs 2 ordinances in Oakland Municipal Code Chapter 8.22. The Rent Adjustment Ordinance caps rent. The Just Cause for Eviction Ordinance (Measure EE) limits evictions. They cover different sets of units.
 
 | Rule | Units covered | Source |
 |---|---|---|

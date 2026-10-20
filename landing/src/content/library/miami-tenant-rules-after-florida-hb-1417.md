@@ -1,6 +1,6 @@
 ---
 title: "Miami-Dade Tenant Rules After Florida HB 1417: What Applies — Citata.ai"
-description: "Florida HB 1417 (2023) moved landlord-tenant rules to the state. Miami-Dade's 60-day notice and Tenant's Bill of Rights may no longer apply. What still does."
+description: "Florida HB 1417 (2023) moved landlord-tenant rules to the state. Miami-Dade's 60-day notice and Tenant's Bill of Rights may no longer apply. What still applies."
 headline: "Miami-Dade Tenant Rules After Florida HB 1417"
 dek: "What the 2022 county ordinances required, what the 2023 state law preempted, and the state rules left."
 published: "2026-10-20"

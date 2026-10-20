@@ -1,6 +1,6 @@
 ---
 title: "Dallas Rental Registration: Who Must Register and the Cost — Citata.ai"
-description: "Dallas makes every rental owner register each year: $74 per single-family, duplex or condo unit, or $13 per unit for 3+ units. Inspections, fines, Texas rent law."
+description: "Dallas makes every rental owner register each year: $74 per house, duplex or condo unit, or $13 per unit at 3+ units. Inspections, fines and Texas rent law."
 headline: "Dallas Rental Registration: Rules, Fees and Inspections"
 dek: "Dallas City Code Chapter 27, Article VII, read on 2026-10-19 and turned into a cost table."
 published: "2026-10-19"

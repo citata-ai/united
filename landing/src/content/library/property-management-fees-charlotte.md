@@ -55,7 +55,7 @@ sources:
 
 ## What is the average monthly management fee in Charlotte?
 
-The median Charlotte monthly management fee is about 8.7% of rent, or $155.33 on a $1,785 rent, across 10 Charlotte-area managers that publish prices (our count, read 2026-10-20). We used $1,785 because it is HUD's FY2027 two-bedroom Fair Market Rent for the Charlotte metro, up 5.9% from $1,686. See the [Charlotte Fair Market Rent 2027 page](/guides/section-8-rent-limits/charlotte-fair-market-rent-2027).
+The median Charlotte monthly management fee is about 8.7% of rent, or $155.33 on a $1,785 rent. We based it on 10 Charlotte-area managers that publish prices (our count, read 2026-10-20). We used $1,785 because it is HUD's FY2027 two-bedroom Fair Market Rent for the Charlotte metro, up 5.9% from $1,686. See the [Charlotte Fair Market Rent 2027 page](/guides/section-8-rent-limits/charlotte-fair-market-rent-2027).
 
 | Manager | Monthly fee | Leasing fee | Renewal fee | Price page |
 |---|---|---|---|---|

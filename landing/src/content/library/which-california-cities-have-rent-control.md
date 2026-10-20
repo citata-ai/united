@@ -1,7 +1,7 @@
 ---
 title: "Which California Cities Have Rent Control in 2026? — Citata.ai"
-description: "AB 1482 caps most California rent increases at 5% plus CPI, max 10%. 35 local laws add their own cap. See the list by metro and who is exempt."
-headline: "Which California Cities Have Rent Control on Top of AB 1482"
+description: "AB 1482 caps most California rent increases at 5% plus CPI, max 10%. 35 local laws add their own cap. See the list by metro, the 2026 caps, and who is exempt."
+headline: "California Cities With Rent Control on Top of AB 1482"
 dek: "The Attorney General's 2026 chart, sorted by our 8 California metros, with each local cap."
 published: "2026-10-19"
 updated: "2026-10-19"
