@@ -1,0 +1,1201 @@
+# Topic plan for cluster 'software' (docs/content-library.md). Planner output, 2026-10-19.
+
+[[topic]]
+slug = "best-property-management-software-50-200-doors"
+cluster = "software"
+kind = "comparison"
+title = "Best Property Management Software for 50 to 200 Doors (Honest Table)"
+question = "Which property management software fits a company with 50 to 200 doors?"
+subquestions = ["Which software has no minimum unit count?", "What does each tool cost at 50, 100 and 200 doors?", "Which tools have trust accounting built in?", "Which tools suit single-family vs small multifamily?", "When do you outgrow an entry-level tool?"]
+inspired_by = "https://gummysearch.com/tools/best-products/property-management-software"
+demand = "Backlog B002 (score 8); Reddit-review aggregator ranks AppFolio, Buildium, Yardi; BiggerPockets 'which software do you use' threads."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rentvine-vs-appfolio-vs-buildium-vs-doorloop"
+cluster = "software"
+kind = "comparison"
+title = "Rentvine vs AppFolio vs Buildium vs DoorLoop: Per-Door Price Table"
+question = "How do Rentvine, AppFolio, Buildium and DoorLoop compare on price per door and features?"
+subquestions = ["What is the monthly minimum for each?", "What does each cost at 100 doors?", "Which has the best accounting?", "Which has built-in AI?", "Which has an owner portal and owner app?"]
+inspired_by = "https://costbench.com/stats/property-management-pricing-2026/"
+demand = "Backlog B003 (score 7); CostBench and ManageCasa publish multi-vendor price tables; AI fan-out searches each pair."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-cost-per-door"
+cluster = "software"
+kind = "data"
+title = "How Much Does Property Management Software Cost per Door?"
+question = "What does property management software cost per door per month?"
+subquestions = ["Which vendors price per unit and which use flat tiers?", "What are the monthly minimums?", "What setup and onboarding fees apply?", "What add-ons raise the price?", "How do I calculate my total yearly cost?"]
+inspired_by = "https://managecasa.com/articles/property-management-software-pricing-what-it-actually-costs-for-under-100-doors"
+demand = "Price questions appear on CostBench, Toolradar, Belong; published prices conflict, so a sourced table adds value."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "appfolio-alternatives"
+cluster = "software"
+kind = "comparison"
+title = "AppFolio Alternatives for Property Managers Under 50 Doors and Up"
+question = "What are the best alternatives to AppFolio, and who should switch?"
+subquestions = ["Why do property managers leave AppFolio?", "Which alternatives have no 50-unit minimum?", "Which alternative is closest in features?", "What does each alternative cost?", "How hard is it to move data off AppFolio?"]
+inspired_by = "https://next.magicdoor.com/blog/appfolio-alternatives-property-management-software-options"
+demand = "Many vendor pages (MagicDoor, Hemlane, Agora, Toolradar, CostBench) target 'AppFolio alternatives'."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "appfolio-minimum-units-and-pricing"
+cluster = "software"
+kind = "data"
+title = "Does AppFolio Have a Minimum Unit Count? Pricing Explained"
+question = "What is AppFolio's minimum unit count and monthly minimum fee?"
+subquestions = ["What is the AppFolio minimum monthly fee?", "How many units do you need to sign up?", "What do the AppFolio plans include?", "What add-ons cost extra?", "What does AppFolio cost at 100 doors?"]
+inspired_by = "https://costbench.com/compare/appfolio-vs-buildium/"
+demand = "Sources disagree on AppFolio price and minimum (CostBench, MagicDoor, Belong); clear sourced answer has demand."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "buildium-alternatives"
+cluster = "software"
+kind = "comparison"
+title = "Buildium Alternatives: What to Use When Buildium No Longer Fits"
+question = "What are the best alternatives to Buildium for a growing property management company?"
+subquestions = ["Why do managers leave Buildium?", "Which tools do Reddit users switch to from Buildium?", "How do prices compare at 100 doors?", "Which alternatives have better accounting?", "What does a Buildium data export include?"]
+inspired_by = "https://gummysearch.com/tools/best-products/property-management-software"
+demand = "Reddit comments describe moves from Buildium to AppFolio and to Rent Manager."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "buildium-pricing-plans"
+cluster = "software"
+kind = "data"
+title = "Buildium Pricing Plans: What Each Tier Includes and Costs"
+question = "How much does Buildium cost, and what does each plan include?"
+subquestions = ["What are the Buildium plan names and prices?", "How does Buildium price above 20 units?", "Are there onboarding or setup fees?", "Which features need a higher tier?", "What does Buildium cost at 50, 100 and 200 units?"]
+inspired_by = "https://www.costbench.com/compare/buildium-vs-appfolio/"
+demand = "CostBench and TurboTenant cite Buildium entry prices and setup fees; price queries are common."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rentvine-vs-appfolio"
+cluster = "software"
+kind = "comparison"
+title = "Rentvine vs AppFolio: Price, Accounting and Fit by Portfolio Size"
+question = "Should a property management company choose Rentvine or AppFolio?"
+subquestions = ["How do Rentvine and AppFolio prices compare?", "Which has stronger trust accounting?", "How do their AI features compare?", "Which has better owner and tenant portals?", "How hard is a switch between them?"]
+inspired_by = "https://www.rentvine.com/blog"
+demand = "Rentvine blog publishes switch stories; pairwise fan-out from multi-vendor queries."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rentvine-vs-buildium"
+cluster = "software"
+kind = "comparison"
+title = "Rentvine vs Buildium: Which Fits a Growing Residential Manager?"
+question = "How do Rentvine and Buildium compare for a residential property management company?"
+subquestions = ["What does each cost at 100 doors?", "Which handles three-way reconciliation natively?", "Which has better maintenance tools?", "Which integrates with LeadSimple?", "Which suits single-family portfolios?"]
+inspired_by = "https://www.rentvine.com/blog/property-management-data-portability"
+demand = "Pairwise fan-out; Rentvine targets Buildium users in its content."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "buildium-vs-doorloop"
+cluster = "software"
+kind = "comparison"
+title = "Buildium vs DoorLoop: Pricing, Features and Who Each Fits"
+question = "Is Buildium or DoorLoop the better property management software?"
+subquestions = ["How do the entry plans compare?", "Which has more features at the base tier?", "How do their accounting tools compare?", "Which is easier for a small team?", "Which has better reviews on Capterra and G2?"]
+inspired_by = "https://www.doorloop.com/blog/appfolio-vs-buildium"
+demand = "DoorLoop publishes comparison pages against both big vendors; common pair."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "appfolio-vs-yardi-breeze"
+cluster = "software"
+kind = "comparison"
+title = "AppFolio vs Yardi Breeze: Which Is Better for Mid-Size Managers?"
+question = "How do AppFolio and Yardi Breeze compare for a mid-size property manager?"
+subquestions = ["What do AppFolio and Yardi Breeze cost?", "What is the difference between Yardi Breeze and Breeze Premier?", "Which has better support?", "Which handles commercial units?", "Which is easier to learn?"]
+inspired_by = "https://capterra.com/compare/2732-164741/Rent-Manager-vs-Yardi-Breeze"
+demand = "Capterra and G2 compare pages; Yardi rated top 3 in Reddit aggregate."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rent-manager-vs-appfolio"
+cluster = "software"
+kind = "comparison"
+title = "Rent Manager vs AppFolio: Flexibility vs Simplicity"
+question = "Should a property management company pick Rent Manager or AppFolio?"
+subquestions = ["How do Rent Manager and AppFolio price their plans?", "Which has more accounting depth?", "Which has a better mobile app?", "Which suits 100+ units?", "What do Reddit users say about each?"]
+inspired_by = "https://gummysearch.com/tools/best-products/property-management-software"
+demand = "Reddit users praise Rent Manager accounting; Capterra lists Rent Manager for 100+ units (4.6/5, 620 reviews)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-to-switch-property-management-software"
+cluster = "software"
+kind = "checklist"
+title = "How to Switch Property Management Software: Step-by-Step Checklist"
+question = "How do you switch property management software without losing data or money?"
+subquestions = ["What data must you export before you cancel?", "How long does a migration take?", "Should you run both systems in parallel?", "How do you reconcile balances after the move?", "How do you tell owners and tenants about the switch?", "When is the best month to switch?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/switching-property-management-software-data-migration"
+demand = "Many vendor guides (PMW, RentRedi, Fàr Out, ExactEstate, Rentvine) on migration; attachments and ledgers often lost."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-data-export-checklist"
+cluster = "software"
+kind = "checklist"
+title = "What Data to Export Before You Leave Your Property Management Software"
+question = "What records must you export from your old property management software before the contract ends?"
+subquestions = ["Which ledgers and reports must you keep?", "How do you export attachments and documents?", "What do state record-keeping rules require?", "How do API rate limits affect an export?", "How do you check that the export is complete?"]
+inspired_by = "https://faroutsolutions.com/blog/property-management-software-data-migration-guide/"
+demand = "Fàr Out reports thousands of attachments left behind after go-live; Rentvine writes on data lock-in."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-demo-questions"
+cluster = "software"
+kind = "checklist"
+title = "Questions to Ask in a Property Management Software Demo"
+question = "What should you ask a property management software vendor in a demo?"
+subquestions = ["How do you test trust accounting in a demo?", "What questions reveal hidden fees?", "How do you check support quality?", "What should you ask about data export?", "Which workflows should you ask them to show live?"]
+inspired_by = "https://www.rentvine.com/blog/trust-accounting-property-management-software"
+demand = "Vendor guides advise testing trust reconciliation first; buyers ask on BiggerPockets 'what software do you actually recommend'."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-features-checklist"
+cluster = "software"
+kind = "checklist"
+title = "Property Management Software Features Checklist (Must-Have vs Nice-to-Have)"
+question = "Which features must property management software have, and which are optional?"
+subquestions = ["Which accounting features are must-have?", "Which owner portal features matter most?", "Which maintenance features save the most time?", "Which leasing features do you need?", "Which AI features are worth paying for?"]
+inspired_by = "https://www.doorloop.com/blog/top-rental-management-softwares"
+demand = "Every 'best software' list sorts by features; a checklist is easy to cite."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-contract-red-flags"
+cluster = "software"
+kind = "checklist"
+title = "Property Management Software Contract Red Flags"
+question = "What should you check in a property management software contract before you sign?"
+subquestions = ["How long is the contract term?", "Can the vendor raise prices mid-term?", "Who owns your data and how do you get it out?", "Are there payment processing fee markups?", "What are the cancellation terms?"]
+inspired_by = "https://www.rentvine.com/blog/sd-real-estate-open-api-data-lock-in-rentvine"
+demand = "Rentvine case study on data lock-in; CostBench notes setup fees and quote-only pricing."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-implementation-timeline"
+cluster = "software"
+kind = "guide"
+title = "How Long Does It Take to Implement New Property Management Software?"
+question = "How long does property management software implementation take, and what happens in each phase?"
+subquestions = ["What happens in each phase of onboarding?", "How long does data migration take?", "How long does staff training take?", "What slows an implementation down?", "What does implementation cost?"]
+inspired_by = "https://www.propertymanagerwebsites.com/blog/switching-property-management-software-migration-guide"
+demand = "Guides give 60 to 90 days vs 'days, not weeks'; the conflict shows demand for a clear answer."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "spreadsheet-vs-property-management-software"
+cluster = "software"
+kind = "guide"
+title = "Spreadsheets vs Property Management Software: When to Switch"
+question = "At what number of units should a landlord move from spreadsheets to property management software?"
+subquestions = ["What does a spreadsheet cost you in time per unit?", "Which tasks break first in a spreadsheet?", "What is the cheapest step up from a spreadsheet?", "How do you move spreadsheet data into software?", "Is free software good enough?"]
+inspired_by = "https://www.landlordstudio.com/blog/best-landlord-apps"
+demand = "Common landlord question; r/landlord advice is 'start free, move up as you grow'."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-property-management-software-small-landlords"
+cluster = "software"
+kind = "comparison"
+title = "Best Property Management Software for Small Landlords (1 to 20 Units)"
+question = "Which property management software is best for a landlord with 1 to 20 units?"
+subquestions = ["Which tools are free?", "Which tools charge per unit vs flat?", "Which have the best mobile app?", "Which include tenant screening and leases?", "Which handle accounting for taxes?"]
+inspired_by = "https://www.doorloop.com/blog/small-landlord-property-management-software"
+demand = "DoorLoop, TenantCloud, Hemlane, iPropertyManagement and Wise all publish this list."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "free-property-management-software"
+cluster = "software"
+kind = "comparison"
+title = "Free Property Management Software: What You Get and What It Costs Later"
+question = "Which property management software is really free, and what are the limits?"
+subquestions = ["Which tools have a free plan?", "Who pays the fees on a free plan?", "Which features are behind the paywall?", "How do free tools make money?", "When should you move to a paid plan?"]
+inspired_by = "https://www.tenantcloud.com/review/property-management-software-for-small-landlords"
+demand = "TurboTenant, Avail and Apartments.com advertise free plans; Reddit landlords ask for free options."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "best-property-management-software-startups"
+cluster = "software"
+kind = "comparison"
+title = "Best Software for a New Property Management Company (0 to 50 Doors)"
+question = "Which software should a new property management company start with?"
+subquestions = ["Which tools have no unit minimum?", "Which tools grow with you past 100 doors?", "What is the cheapest full tech stack?", "Do you need trust accounting from day one?", "Which tool makes a later switch easy?"]
+inspired_by = "https://www.biggerpockets.com/forums/48/topics/1294461-what-property-management-software-do-you-actually-recommend"
+demand = "AppFolio 50-unit minimum shuts out new firms; BiggerPockets threads ask which software to start on."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "best-property-management-software-single-family"
+cluster = "software"
+kind = "comparison"
+title = "Best Property Management Software for Single-Family Rentals"
+question = "Which property management software works best for a single-family rental portfolio?"
+subquestions = ["Which tools were built for scattered-site homes?", "How do Propertyware, Rentvine and AppFolio compare?", "Which handle maintenance across many addresses?", "Which have the best leasing and showing integrations?", "What does each cost per home?"]
+inspired_by = "https://capterra.com/compare/2732-164741/Rent-Manager-vs-Yardi-Breeze"
+demand = "Capterra positions Propertyware for single-family; Latchel targets single-family managers."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "best-property-management-software-500-plus-doors"
+cluster = "software"
+kind = "comparison"
+title = "Best Property Management Software for 500+ Doors"
+question = "Which property management software suits a company with more than 500 doors?"
+subquestions = ["When do you need Yardi, Entrata or RealPage?", "Which mid-market tools scale past 500 doors?", "How does enterprise pricing work?", "Which tools have an open API?", "How do you plan a migration at this size?"]
+inspired_by = "https://belonghome.com/blog/what-is-the-best-software-to-manage-multiple-properties"
+demand = "Belong guide says Yardi, MRI, Entrata need custom pricing, often $10,000+ a year."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "software-for-solo-property-manager"
+cluster = "software"
+kind = "guide"
+title = "Software Stack for a One-Person Property Management Company"
+question = "What software does a solo property manager need, and what does it cost?"
+subquestions = ["Which one tool covers the most tasks?", "What can you automate as a solo manager?", "How do you handle after-hours maintenance alone?", "What is the monthly cost at 50 and 120 doors?", "Which tools can you skip?"]
+inspired_by = "https://www.rentvine.com/blog/tejas-private-money-120-doors-solo-rentvine"
+demand = "Rentvine case study: one person runs 120 doors."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-tech-stack-100-doors"
+cluster = "software"
+kind = "guide"
+title = "The Property Management Tech Stack for 100 Doors: Tools and Costs"
+question = "What tools does a 100-door property management company need, and what does the stack cost?"
+subquestions = ["Which category of tool comes first?", "Which tools does the core PMS replace?", "Which add-ons are worth it (showings, maintenance, CRM)?", "What is the total monthly cost per door?", "Which integrations matter most?"]
+inspired_by = "https://www.rentvine.com/blog/how-rosenbaum-realty-group-switched-scaled-and-acquired-all-at-once"
+demand = "Managers ask what to add around the PMS; vendors sell CRM, showings, maintenance add-ons."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-tech-stack-cost-calculator"
+cluster = "software"
+kind = "data"
+title = "How to Calculate Your Tech Stack Cost per Door"
+question = "How do you calculate what your software costs per door per month?"
+subquestions = ["Which costs do you include?", "How do you count payment processing fees?", "What is a normal cost per door?", "Which costs can you pass on to owners or tenants?", "How do you compare two stacks?"]
+inspired_by = "https://costbench.com/stats/property-management-pricing-2026/"
+demand = "CostBench and ManageCasa price benchmarks; managers compare cost per door."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-hoa-management-software"
+cluster = "software"
+kind = "comparison"
+title = "Best HOA Management Software for Management Companies"
+question = "Which software is best for a company that manages HOAs and community associations?"
+subquestions = ["How do Vantaca, CINC and AppFolio compare?", "Which tools handle assessments and violations?", "Which have a board portal?", "How is HOA software priced?", "Can rental PM software handle HOAs?"]
+inspired_by = "https://www.getapp.co.uk/alternatives/2050285/vantaca"
+demand = "GetApp lists Vantaca (4.4/5) and CINC (4.3/5) as HOA-specific platforms."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "vantaca-vs-cinc"
+cluster = "software"
+kind = "comparison"
+title = "Vantaca vs CINC: HOA Management Software Compared"
+question = "How do Vantaca and CINC compare for community association managers?"
+subquestions = ["What does each cost?", "Which has better automation?", "How do their accounting tools compare?", "Which has better homeowner portals?", "What do reviewers say?"]
+inspired_by = "https://www.getapp.co.nz/alternatives/2011207/cinc"
+demand = "Both appear as top HOA picks on GetApp and Software Advice."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-software-self-managed-hoa"
+cluster = "software"
+kind = "comparison"
+title = "Best Software for a Self-Managed HOA Board"
+question = "Which software should a self-managed HOA board use?"
+subquestions = ["Which tools are cheap enough for a small HOA?", "Which handle dues collection online?", "Which keep records and votes?", "When should a board hire a management company?", "Can a board use rental software?"]
+inspired_by = "https://www.getapp.ca/alternatives/2050285/vantaca"
+demand = "Self-managed boards ask which tool fits; HOA-specific tools target companies."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "buildium-vs-appfolio-for-hoa"
+cluster = "software"
+kind = "comparison"
+title = "Buildium vs AppFolio for HOA and Association Management"
+question = "Is Buildium or AppFolio better for managing HOAs and condo associations?"
+subquestions = ["Which supports association accounting?", "How do they handle violations and architectural requests?", "What does each cost for associations?", "How do they compare with Vantaca and CINC?", "Can you mix rentals and HOAs in one account?"]
+inspired_by = "https://www.getapp.com.au/alternatives/2011207/cinc"
+demand = "GetApp lists AppFolio next to HOA tools; mixed-portfolio managers ask this."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "ai-tools-for-property-managers"
+cluster = "software"
+kind = "comparison"
+title = "AI Tools for Property Managers: What Works Today"
+question = "Which AI tools can a property management company use today, and for which tasks?"
+subquestions = ["Which AI is built into AppFolio, Rentvine and Entrata?", "Which standalone AI tools handle leasing and maintenance?", "Which tasks are safe to hand to AI?", "What do AI tools cost?", "How do you measure if an AI tool pays off?"]
+inspired_by = "https://www.buildium.com/blog/ai-in-property-management-early-adopters/"
+demand = "Buildium, Rentvine, AppFolio and Entrata all publish AI content; Sacra notes Entrata's 100+ agents."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "ai-leasing-assistants-compared"
+cluster = "software"
+kind = "comparison"
+title = "AI Leasing Assistants Compared: EliseAI, AppFolio and Others"
+question = "Which AI leasing assistant should a property manager use to answer prospects?"
+subquestions = ["What does an AI leasing assistant do?", "How does EliseAI differ from AI built into the PMS?", "How do AI assistants handle showings?", "What are the Fair Housing risks?", "How are they priced?"]
+inspired_by = "https://ustechautomations.com/resources/blog/appfolio-vs-eliseai-2026"
+demand = "AppFolio vs EliseAI comparison exists; EliseAI sells LeasingAI, VoiceAI modules."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "eliseai-vs-built-in-pms-ai"
+cluster = "software"
+kind = "comparison"
+title = "Do You Need EliseAI If Your Software Already Has AI?"
+question = "Should a property manager buy a standalone AI layer like EliseAI or use the AI built into its PMS?"
+subquestions = ["What does EliseAI add on top of a PMS?", "What does AppFolio Realm-X cover?", "What does a second vendor cost?", "How do the tools share data?", "Which portfolio size justifies a standalone tool?"]
+inspired_by = "https://sacra.com/c/eliseai"
+demand = "Sacra flags the risk that portfolios decide native AI is good enough."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "appfolio-realm-x-explained"
+cluster = "software"
+kind = "guide"
+title = "AppFolio Realm-X: What It Does for Property Managers"
+question = "What does AppFolio Realm-X do, and which tasks can it automate?"
+subquestions = ["What are Realm-X Assistant and Realm-X Messages?", "What do the Leasing and Maintenance Performers do?", "Does Realm-X cost extra?", "What are its limits?", "How does it compare with Rentvine AI?"]
+inspired_by = "https://www.appfolio.com/newsroom/appfolio-unveils-realm-x-the-property-management-industry-s-first-ever-generative-ai-conversational-interface"
+demand = "AppFolio press releases on Realm-X; managers ask what it does."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-maintenance-triage-tools"
+cluster = "software"
+kind = "comparison"
+title = "AI Maintenance Triage Tools for Property Managers"
+question = "Which AI tools can take and triage maintenance requests for a property manager?"
+subquestions = ["What does AI triage do with a work order?", "How do Rentvine Cru, AppFolio Maintenance Performer and Latchel compare?", "Can AI handle after-hours emergencies?", "How do you keep a human in the loop?", "What does each cost?"]
+inspired_by = "https://www.rentvine.com/blog/ai-maintenance-agent-for-property-managers-rentvine-cru"
+demand = "Rentvine launched Cru; AppFolio launched Maintenance Performer (June 2025)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "chatgpt-for-property-managers"
+cluster = "software"
+kind = "how-to"
+title = "How Property Managers Use ChatGPT: 20 Tasks and Prompts"
+question = "How can a property manager use ChatGPT or Claude in daily work?"
+subquestions = ["Which tasks save the most time?", "Which prompts work for listings and owner emails?", "What data must you not paste into ChatGPT?", "How do you check AI output for errors?", "Which paid plan do you need?"]
+inspired_by = "https://www.rentvine.com/blog/webinar-the-ai-cookbook-recipes-for-running-your-portfolio-with-ai-"
+demand = "Rentvine 'AI Cookbook' webinar; Buildium AI early adopters article."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "ai-policy-for-property-management-teams"
+cluster = "software"
+kind = "template"
+title = "AI Use Policy for a Property Management Team (Template)"
+question = "What rules should a property management company set for staff use of AI tools?"
+subquestions = ["Which data must never go into an AI tool?", "Which tasks need human review?", "How do you keep Fair Housing compliance?", "Who approves new AI tools?", "How do you train staff?"]
+inspired_by = "https://www.rentvine.com/blog/hot-takes-how-rentvine-builds-ai-the-right-way"
+demand = "AI adoption content from Buildium and Rentvine; teams need a written policy."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "ai-tenant-screening-fair-housing-risk"
+cluster = "software"
+kind = "guide"
+title = "AI Tenant Screening and Fair Housing: What Landlords Must Know"
+question = "What Fair Housing risks come with AI and algorithm-based tenant screening?"
+subquestions = ["How do screening algorithms score applicants?", "What has HUD said about screening tools?", "What must an adverse action notice say?", "How do you audit a screening vendor?", "Which questions should you ask the vendor?"]
+inspired_by = ""
+demand = "Growth of AI in screening and leasing tools (EliseAI, Snappt); managers ask about liability."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "mcp-property-management-software"
+cluster = "software"
+kind = "guide"
+title = "What Is MCP in Property Management Software?"
+question = "What is MCP (Model Context Protocol), and why does it matter in property management software?"
+subquestions = ["What does MCP let an AI assistant do?", "Which property management software supports MCP?", "What can you ask an AI with MCP access?", "What are the security risks?", "How do you start?"]
+inspired_by = "https://www.rentvine.com/blog/what-is-mcp-property-management-software"
+demand = "Rentvine published two MCP posts; new topic with little competition."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "ai-listing-description-tools"
+cluster = "software"
+kind = "how-to"
+title = "How to Write Rental Listings With AI (and Stay Fair Housing Safe)"
+question = "How can a property manager use AI to write rental listing descriptions safely?"
+subquestions = ["Which tools write listings (ChatGPT, built-in PMS AI)?", "Which words break Fair Housing rules?", "How do you add the facts AI does not know?", "How do you check the result?", "Does AI-written text hurt listing reach?"]
+inspired_by = "https://www.buildium.com/blog/ai-in-property-management-early-adopters/"
+demand = "Listing text is a top AI use case in vendor AI content."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "best-tenant-screening-services"
+cluster = "software"
+kind = "comparison"
+title = "Best Tenant Screening Services for Landlords and Property Managers"
+question = "Which tenant screening service should a landlord or property manager use?"
+subquestions = ["Which services include credit, criminal and eviction reports?", "Who pays the screening fee?", "Which bureaus does each service use?", "Which integrate with your PMS?", "What does each cost?"]
+inspired_by = "https://ipropertymanagement.com/reviews/best-tenant-screening-services"
+demand = "iPropertyManagement runs 14 screening reviews (SmartMove, RentSpree, RentPrep, Zillow, etc.)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "smartmove-vs-rentspree"
+cluster = "software"
+kind = "comparison"
+title = "TransUnion SmartMove vs RentSpree: Tenant Screening Compared"
+question = "Is TransUnion SmartMove or RentSpree better for tenant screening?"
+subquestions = ["What does each report include?", "What does each cost and who pays?", "Which has the better applicant experience?", "Which syndicates listings?", "Which integrates with property management software?"]
+inspired_by = "https://ipropertymanagement.com/reviews/transunion-smartmove-tenant-screening"
+demand = "Both reviewed on iPropertyManagement; common pair."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tenant-screening-fraud-detection-software"
+cluster = "software"
+kind = "comparison"
+title = "Fake Pay Stubs: Income Fraud Detection Tools for Landlords"
+question = "How can landlords detect fake pay stubs and bank statements, and which tools help?"
+subquestions = ["How common is application fraud?", "How does Snappt check documents?", "Can tools detect AI-made documents?", "What manual checks still work?", "What does fraud detection cost?"]
+inspired_by = "https://snappt.com/blog/fake-proof-of-income/"
+demand = "Snappt and Burnt explainers; fake pay stub sites are a known problem."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-maintenance-software-property-managers"
+cluster = "software"
+kind = "comparison"
+title = "Best Maintenance Software for Property Managers"
+question = "Which maintenance and work order software should a property manager use?"
+subquestions = ["When is the PMS work order module enough?", "How do Property Meld, Latchel and Lula compare?", "Which tools offer 24/7 coordination?", "How do vendor portals work?", "What does each cost per door?"]
+inspired_by = "https://www.doorloop.com/blog/top-10-work-order-software"
+demand = "DoorLoop 'Top 10 work order software'; Property Meld vs Latchel comparisons exist."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-meld-vs-latchel"
+cluster = "software"
+kind = "comparison"
+title = "Property Meld vs Latchel: Maintenance Coordination Compared"
+question = "Should a property manager choose Property Meld or Latchel for maintenance?"
+subquestions = ["How do their operating models differ?", "Which gives 24/7 emergency coverage?", "Which integrates with your PMS?", "How is each priced?", "Which fits single-family portfolios?"]
+inspired_by = "https://ustechautomations.com/resources/blog/property-meld-vs-latchel-maintenance-coordination-2026"
+demand = "Dedicated comparison pages from CB Insights and US Tech Automations."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "after-hours-maintenance-options"
+cluster = "software"
+kind = "comparison"
+title = "After-Hours Maintenance Calls: Answering Service vs Software vs Outsourced"
+question = "How should a property manager handle after-hours maintenance calls?"
+subquestions = ["What does an answering service cost?", "What do Latchel and similar services do?", "Can AI take emergency calls?", "What counts as a true emergency?", "Which option fits 50, 150 and 400 doors?"]
+inspired_by = "https://www.cbinsights.com/compare/latchel-vs-property-meld"
+demand = "Latchel offers 24/7 emergency coordination; solo managers ask about after-hours coverage."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "best-property-inspection-apps"
+cluster = "software"
+kind = "comparison"
+title = "Best Property Inspection Apps for Move-In and Move-Out"
+question = "Which inspection app should a property manager use for move-in, move-out and routine inspections?"
+subquestions = ["Which apps make photo reports with timestamps?", "Which integrate with your PMS?", "Which work offline?", "How do reports help in deposit disputes?", "What does each cost?"]
+inspired_by = "https://www.biggerpockets.com/posts/7311648"
+demand = "BiggerPockets thread notes claims depend on move-in documentation; inspection is a core PM task."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "best-self-showing-software"
+cluster = "software"
+kind = "comparison"
+title = "Best Self-Showing Software for Rental Homes"
+question = "Which self-showing or showing software should a property manager use?"
+subquestions = ["How do ShowMojo, Tenant Turner, Rently and Showdigs compare?", "How do they verify a prospect's identity?", "Which lockboxes and smart locks do they support?", "What do they cost?", "What are the security risks?"]
+inspired_by = "https://www.showdigs.com/property-managers/tenantturner-vs-showmojo-vs-alternatives-which-is-right-for-you-in-2026"
+demand = "Showdigs and RentEngine publish showing-tool comparisons."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "showmojo-vs-tenant-turner"
+cluster = "software"
+kind = "comparison"
+title = "ShowMojo vs Tenant Turner: Showing Software Compared"
+question = "Is ShowMojo or Tenant Turner better for scheduling rental showings?"
+subquestions = ["How do their features differ?", "Which suits which portfolio size?", "How do they pre-screen prospects?", "What does each cost?", "What changed after the ownership change?"]
+inspired_by = "https://www.cbinsights.com/compare/showmojo-vs-tenant-turner"
+demand = "Showdigs 2026 comparison; CB Insights compare page."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-trust-accounting-software-property-management"
+cluster = "software"
+kind = "comparison"
+title = "Best Trust Accounting Software for Property Management Companies"
+question = "Which property management software handles trust accounting best?"
+subquestions = ["What is trust accounting in property management?", "Which tools do three-way reconciliation natively?", "Which tools pass a state audit?", "Can QuickBooks handle trust accounting?", "What reports does an auditor ask for?"]
+inspired_by = "https://www.rentvine.com/blog/property-management-trust-accounting-software"
+demand = "Rentvine, MagicDoor, Rentec Direct, GuestPoint all publish trust accounting pages."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "three-way-reconciliation-software-checklist"
+cluster = "software"
+kind = "checklist"
+title = "Three-Way Reconciliation in Your Software: Monthly Checklist"
+question = "How do you run a three-way reconciliation in property management software each month?"
+subquestions = ["Which three balances must match?", "Which reports do you pull?", "What causes a mismatch?", "How do you fix common errors?", "How often should you reconcile?"]
+inspired_by = "https://www.rentvine.com/blog/how-to-master-three-way-reconciliation-and-avoid-costly-trust-errors"
+demand = "Rentvine, Rentec Direct help docs, MagicDoor guide on three-way reconciliation."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "quickbooks-for-property-management"
+cluster = "software"
+kind = "guide"
+title = "Can You Run a Property Management Company on QuickBooks?"
+question = "Is QuickBooks enough for a property management company, or do you need property management software?"
+subquestions = ["What does QuickBooks do well for rentals?", "Where does QuickBooks fail on trust accounting?", "Which PMS tools integrate with QuickBooks?", "When should you switch?", "What does each setup cost?"]
+inspired_by = "https://www.doorloop.com/blog/quickbooks-property-management-integration"
+demand = "DoorLoop 'software that integrates with QuickBooks'; frequent owner question."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-accounting-software-landlords"
+cluster = "software"
+kind = "comparison"
+title = "Best Accounting Software for Landlords"
+question = "Which accounting software is best for a landlord who manages their own rentals?"
+subquestions = ["How do Stessa, Baselane, REI Hub and Landlord Studio compare?", "Which make Schedule E reports?", "Which connect to your bank?", "Which are free?", "When do you need a CPA tool instead?"]
+inspired_by = "https://www.doorloop.com/blog/best-real-estate-accounting-software"
+demand = "DoorLoop 'Best real estate accounting software'; Landlord Studio 'Baselane vs Stessa'."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "stessa-vs-baselane"
+cluster = "software"
+kind = "comparison"
+title = "Stessa vs Baselane: Landlord Banking and Bookkeeping Compared"
+question = "Is Stessa or Baselane better for rental bookkeeping?"
+subquestions = ["What does each free plan include?", "Which plan gives Schedule E reports?", "How do their banking features differ?", "Which has better rent collection?", "What do the paid plans cost?"]
+inspired_by = "https://www.landlordstudio.com/blog/baselane-vs-stessa"
+demand = "Landlord Studio comparison updated 2026-10-16; theclose.com Baselane review."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "stessa-vs-landlord-studio"
+cluster = "software"
+kind = "comparison"
+title = "Stessa vs Landlord Studio: Which Rental Bookkeeping App Fits You?"
+question = "How do Stessa and Landlord Studio compare for rental income and expense tracking?"
+subquestions = ["Which has better receipt scanning?", "Which makes tax reports?", "How do prices compare?", "Which has a better mobile app?", "Which handles more units?"]
+inspired_by = "https://www.landlordstudio.com/blog/best-landlord-apps"
+demand = "Landlord Studio lists landlord apps; pair is a common fan-out."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rei-hub-vs-stessa"
+cluster = "software"
+kind = "comparison"
+title = "REI Hub vs Stessa: Double-Entry Bookkeeping for Rentals"
+question = "Should a landlord use REI Hub or Stessa for rental bookkeeping?"
+subquestions = ["What is double-entry bookkeeping and do you need it?", "How do the reports differ?", "How do prices compare?", "Which does your CPA prefer?", "Which handles many entities or LLCs?"]
+inspired_by = "https://www.vrplatform.app/vacation-rental-accounting-software-comparison"
+demand = "REI Hub appears in accounting comparisons; landlords with LLCs ask about double-entry."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "turbotenant-vs-rentredi"
+cluster = "software"
+kind = "comparison"
+title = "TurboTenant vs RentRedi: Landlord Software Compared"
+question = "Is TurboTenant or RentRedi better for a small landlord?"
+subquestions = ["What does each free or base plan include?", "How do rent payment fees compare?", "Which has a better mobile app?", "How many sites does each syndicate listings to?", "Which has better screening?"]
+inspired_by = "https://www.turbotenant.com/reviews/avail-vs-rentredi/"
+demand = "TurboTenant reviews section compares Avail, RentRedi and itself."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "turbotenant-vs-avail"
+cluster = "software"
+kind = "comparison"
+title = "TurboTenant vs Avail: Free Landlord Software Compared"
+question = "Should a landlord choose TurboTenant or Avail?"
+subquestions = ["What does each free plan include?", "What do the paid plans add?", "How many listing sites does each use?", "Which has state-specific leases?", "How do ACH fees compare?"]
+inspired_by = "https://www.turbotenant.com/reviews/turbotenant-vs-avail/"
+demand = "TurboTenant and TenantCloud both publish this pair."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "avail-vs-rentredi"
+cluster = "software"
+kind = "comparison"
+title = "Avail vs RentRedi: Which Landlord App Fits You?"
+question = "How do Avail and RentRedi compare for a landlord with under 10 units?"
+subquestions = ["Which has a free plan?", "How do their mobile apps compare?", "Which has better lease templates?", "How do rent payments work in each?", "What is the state of Avail after the Realtor.com purchase?"]
+inspired_by = "https://www.turbotenant.com/reviews/avail-vs-rentredi/"
+demand = "TurboTenant 'Avail vs RentRedi'; VerticalRent 2026 Avail review."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "tenantcloud-vs-buildium"
+cluster = "software"
+kind = "comparison"
+title = "TenantCloud vs Buildium: Small Landlord or Growing Manager?"
+question = "Should you choose TenantCloud or Buildium?"
+subquestions = ["How do prices compare?", "Which has better accounting?", "Which suits a PM company vs a landlord?", "How do their portals compare?", "When do you outgrow TenantCloud?"]
+inspired_by = "https://www.buildium.com/blog/tenantcloud-vs-buildium/"
+demand = "Buildium published TenantCloud vs Buildium, TenantCloud review and alternatives."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "tenantcloud-alternatives"
+cluster = "software"
+kind = "comparison"
+title = "TenantCloud Alternatives for Landlords and Small Managers"
+question = "What are the best alternatives to TenantCloud?"
+subquestions = ["Why do users leave TenantCloud?", "Which alternatives are free?", "Which alternatives scale to 100+ units?", "How do prices compare?", "How do you move your data?"]
+inspired_by = "https://www.buildium.com/blog/tenantcloud-alternatives/"
+demand = "Buildium 'TenantCloud alternatives: 6 platforms compared'."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "doorloop-alternatives"
+cluster = "software"
+kind = "comparison"
+title = "DoorLoop Alternatives: What Else to Consider"
+question = "What are the main alternatives to DoorLoop?"
+subquestions = ["How does DoorLoop price its plans?", "Which alternatives cost less?", "Which have stronger accounting?", "Which suit commercial units?", "What do reviewers say?"]
+inspired_by = "https://toolradar.com/alternatives/appfolio-property-manager"
+demand = "Alternatives queries are common for each vendor; DoorLoop is a frequent list member."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-manager-alternatives"
+cluster = "software"
+kind = "comparison"
+title = "Rent Manager Alternatives for Growing Property Managers"
+question = "What are the alternatives to Rent Manager, and when should you switch?"
+subquestions = ["Why do companies outgrow Rent Manager?", "Which alternatives have simpler setup?", "How do prices compare?", "Which keep accounting depth?", "How do you migrate off Rent Manager?"]
+inspired_by = "https://www.rentvine.com/blog/outgrowing-rent-manager"
+demand = "Rentvine 'Outgrowing Rent Manager?' post; GetApp Rent Manager alternatives."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-manager-vs-rentvine"
+cluster = "software"
+kind = "comparison"
+title = "Rent Manager vs Rentvine: Which Fits a 100 to 500 Door Company?"
+question = "How do Rent Manager and Rentvine compare for a mid-size residential manager?"
+subquestions = ["How do their prices compare?", "Which is easier to set up?", "Which has better trust accounting?", "Which has an open API?", "Which has better owner portals?"]
+inspired_by = "https://www.rentvine.com/blog/outgrowing-rent-manager"
+demand = "Rentvine targets Rent Manager users directly."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "yardi-breeze-vs-buildium"
+cluster = "software"
+kind = "comparison"
+title = "Yardi Breeze vs Buildium: Price and Features for Small Managers"
+question = "Is Yardi Breeze or Buildium better for a small property manager?"
+subquestions = ["How do their prices compare?", "Which has better support?", "Which handles commercial units?", "Which has better reports?", "Which is easier to learn?"]
+inspired_by = "https://capterra.com/compare/2732-164741/Rent-Manager-vs-Yardi-Breeze"
+demand = "Capterra users praise Yardi Breeze support; Buildium is a common pair."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "yardi-breeze-pricing"
+cluster = "software"
+kind = "data"
+title = "Yardi Breeze Pricing: Breeze vs Breeze Premier"
+question = "How much does Yardi Breeze cost, and what does Breeze Premier add?"
+subquestions = ["What is the price per unit?", "What is the monthly minimum?", "What does Breeze Premier add?", "Are there setup fees?", "What does it cost at 100 doors?"]
+inspired_by = "https://www.capterra.co.uk/alternatives/164741/yardi-breeze"
+demand = "Pricing questions for each major vendor."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rentvine-pricing"
+cluster = "software"
+kind = "data"
+title = "Rentvine Pricing: What It Costs per Door"
+question = "How much does Rentvine cost per door, and is there a minimum?"
+subquestions = ["What is the price per unit?", "What is the monthly minimum?", "What add-ons cost extra?", "Are there setup fees?", "What does Rentvine cost at 100 and 300 doors?"]
+inspired_by = "https://toolradar.com/tools/rentvine/pricing"
+demand = "Toolradar Rentvine pricing page; sources conflict ($1.50 vs $2.50 per unit)."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "doorloop-pricing"
+cluster = "software"
+kind = "data"
+title = "DoorLoop Pricing Plans Explained"
+question = "How much does DoorLoop cost, and what does each plan include?"
+subquestions = ["What are the plan names and prices?", "How does price change with unit count?", "Which features need a higher tier?", "Are there onboarding fees?", "What does DoorLoop cost at 50 and 150 units?"]
+inspired_by = "https://dupple.com/learn/best-property-management-software"
+demand = "DoorLoop 'from $69/mo' appears across roundups."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "propertyware-alternatives"
+cluster = "software"
+kind = "comparison"
+title = "Propertyware Alternatives for Single-Family Managers"
+question = "What are the alternatives to Propertyware for single-family rental managers?"
+subquestions = ["Why do managers leave Propertyware?", "Which alternatives focus on single-family?", "How do prices compare?", "Which have better reviews?", "How do you migrate off Propertyware?"]
+inspired_by = "https://capterra.com/compare/2732-164741/Rent-Manager-vs-Yardi-Breeze"
+demand = "Capterra rates Propertyware 3.9/5 (325 reviews), lower than peers."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rentec-direct-vs-buildium"
+cluster = "software"
+kind = "comparison"
+title = "Rentec Direct vs Buildium: Low-Cost Option vs Full Suite"
+question = "Should a small manager choose Rentec Direct or Buildium?"
+subquestions = ["How do prices compare?", "Which supports three-way reconciliation?", "Which has better support?", "Which suits PM companies vs landlords?", "Which has better portals?"]
+inspired_by = "https://help.rentecdirect.com/article/778-audit-assistance-three-way-reconciliation"
+demand = "Rentec Direct starts at $4.99/month per aggregator; has PM audit tools."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "hemlane-review"
+cluster = "software"
+kind = "guide"
+title = "Hemlane: Software, Leasing Help or Both? Who It Fits"
+question = "What does Hemlane offer, and which landlords is it right for?"
+subquestions = ["What does the software do?", "What does the leasing and local agent help add?", "How does Hemlane price its plans?", "How does Hemlane record Section 8 payments?", "What are the alternatives?"]
+inspired_by = "https://www.hemlane.com/resources/appfolio-alternatives/"
+demand = "Hemlane publishes many alternatives pages; appears in Baselane alternatives lists."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "magicdoor-review"
+cluster = "software"
+kind = "guide"
+title = "MagicDoor: What the New Property Management Software Offers"
+question = "What is MagicDoor, and how does it compare with older property management software?"
+subquestions = ["What features does MagicDoor have?", "How does it handle trust accounting?", "How does it handle Section 8 subsidies?", "What does it cost?", "Who is it for?"]
+inspired_by = "https://www.doorloop.com/blog/magicdoor-alternatives"
+demand = "DoorLoop published 'MagicDoor alternatives, reviews and pricing'."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "realpage-vs-yardi"
+cluster = "software"
+kind = "comparison"
+title = "RealPage vs Yardi: Enterprise Software for Large Portfolios"
+question = "How do RealPage and Yardi compare for large multifamily portfolios?"
+subquestions = ["What modules does each sell?", "How is enterprise pricing set?", "Which has better accounting?", "How long does implementation take?", "Which suits 1,000+ units?"]
+inspired_by = "https://www.doorloop.com/blog/realpage-vs-yardi"
+demand = "DoorLoop 'RealPage vs Yardi'."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "best-commercial-property-management-software"
+cluster = "software"
+kind = "comparison"
+title = "Best Commercial Property Management Software"
+question = "Which software is best for managing commercial (office, retail, industrial) property?"
+subquestions = ["Which tools handle CAM reconciliation?", "Which handle percentage rent?", "Which residential tools also do commercial?", "What does commercial software cost?", "When do you need a separate tool?"]
+inspired_by = "https://www.doorloop.com/blog/best-commercial-property-management-software"
+demand = "DoorLoop '10 Best Commercial Property Management Software'."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "best-software-mixed-residential-commercial"
+cluster = "software"
+kind = "comparison"
+title = "Software for Mixed Residential and Commercial Portfolios"
+question = "Which property management software handles both residential and commercial units well?"
+subquestions = ["Which tools support commercial leases and CAM?", "Which handle both in one ledger?", "What are the limits of residential tools?", "How do prices compare?", "Should you run two systems?"]
+inspired_by = "https://next.magicdoor.com/blog/appfolio-alternatives-property-management-software-options"
+demand = "MagicDoor names AppFolio limits for commercial and mixed portfolios."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "best-section-8-property-management-software"
+cluster = "software"
+kind = "comparison"
+title = "Best Property Management Software for Section 8 Rentals"
+question = "Which property management software handles Section 8 rentals and HAP payments best?"
+subquestions = ["How does each tool split tenant rent and HAP?", "Which track inspection dates?", "Which apply late fees only to the tenant portion?", "Which handle housing authority wires?", "What do landlords use today?"]
+inspired_by = "https://www.doorloop.com/blog/property-management-for-section-8"
+demand = "Vendors (MagicDoor, ExactEstate, Hemlane, DoorLoop) and BiggerPockets threads on split rent."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "track-hap-payments-in-property-management-software"
+cluster = "software"
+kind = "how-to"
+title = "How to Track HAP and Tenant Rent in Property Management Software"
+question = "How do you record a Section 8 HAP payment and the tenant portion in your software?"
+subquestions = ["Should HAP and tenant rent be two charges?", "How do you post a PHA wire that covers many units?", "How do you handle an abatement month?", "How do you set late fees only on the tenant share?", "How do you reconcile HAP each month?"]
+inspired_by = "https://www.biggerpockets.com/posts/7250086"
+demand = "BiggerPockets 'Section 8 owners: how do you reconcile split rent?'; Hemlane help article."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-rent-collection-apps"
+cluster = "software"
+kind = "comparison"
+title = "Best Rent Collection Apps for Landlords"
+question = "Which app should a landlord use to collect rent online?"
+subquestions = ["Which apps are free for landlords?", "Who pays the ACH and card fees?", "How fast do funds arrive?", "Which block partial payments?", "Which report rent to credit bureaus?"]
+inspired_by = "https://www.doorloop.com/blog/best-online-rent-payment-system"
+demand = "DoorLoop 'Best online rent payment portals'; Avail, Rentec Direct guides."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "zelle-venmo-for-rent"
+cluster = "software"
+kind = "guide"
+title = "Should Landlords Take Rent Through Zelle, Venmo or Cash App?"
+question = "Is it safe for a landlord to accept rent through Zelle, Venmo or Cash App?"
+subquestions = ["What fees does each app charge?", "Does Venmo allow rent on a personal account?", "Can you block partial payments?", "What records do you get for taxes?", "What are better options?"]
+inspired_by = "https://www.rentecdirect.com/blog/rent-with-zelle-venmo-and-cash-app/"
+demand = "Rentec Direct, TenantCloud and Avail all cover it; sources conflict on Venmo fees."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-payment-fees-ach-vs-card"
+cluster = "software"
+kind = "data"
+title = "Rent Payment Fees: ACH vs Debit vs Credit Card"
+question = "What do rent payment fees cost by method, and who should pay them?"
+subquestions = ["What do ACH payments cost?", "What do card payments cost?", "Can you pass fees to tenants?", "Do state laws limit convenience fees?", "How do fees compare across platforms?"]
+inspired_by = "https://hemlane.com/resources/baselane-alternatives/"
+demand = "Vendors compete on $0 ACH fees (Hemlane); fee questions in rent app reviews."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "best-owner-portal-features"
+cluster = "software"
+kind = "checklist"
+title = "Owner Portal Checklist: What Rental Owners Expect to See"
+question = "What should a property management owner portal show rental owners?"
+subquestions = ["Which reports do owners check most?", "How often should statements arrive?", "Should owners see work orders live?", "Which software has the best owner app?", "How does the portal help owner retention?"]
+inspired_by = "https://www.doorloop.com/blog/top-rental-management-softwares"
+demand = "Owner portals appear in every PMS feature list; owners judge a PM by reports."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "owner-statement-what-to-include"
+cluster = "software"
+kind = "checklist"
+title = "Owner Statement Checklist: What Your Software Report Must Show"
+question = "What should a monthly owner statement from property management software include?"
+subquestions = ["Which lines must every statement show?", "How do you show reserves and held funds?", "How do you show management fees?", "How do you explain a negative month?", "Which software makes the clearest statements?"]
+inspired_by = "https://www.buildium.com/blog/property-management-accounting-basics/"
+demand = "Buildium accounting guide; owner statements are a core report."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "tenant-portal-features-checklist"
+cluster = "software"
+kind = "checklist"
+title = "Tenant Portal Checklist: Features Renters Actually Use"
+question = "Which tenant portal features matter most to renters?"
+subquestions = ["Which payment options must the portal offer?", "How should maintenance requests work?", "Should renters see their ledger?", "Do renters need a mobile app?", "Which software has the best tenant app?"]
+inspired_by = "https://www.doorloop.com/blog/resident-engagement"
+demand = "DoorLoop 'Resident engagement: strategies and software'."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "best-crm-for-property-management"
+cluster = "software"
+kind = "comparison"
+title = "Best CRM for Property Management Companies"
+question = "Which CRM should a property management company use for owner leads and workflows?"
+subquestions = ["Do you need a CRM if your PMS has one?", "How do LeadSimple, Rentvine CRM and general CRMs compare?", "Which track owner leads from first call to signed agreement?", "What does each cost?", "Which integrate with your PMS?"]
+inspired_by = "https://www.lethub.co/blog/leadsimple-alternatives-for-property-managers"
+demand = "LetHub LeadSimple alternatives; Rentvine CRM Owner Lead Portal launch; Buildium leasing CRM post."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "leadsimple-alternatives"
+cluster = "software"
+kind = "comparison"
+title = "LeadSimple Alternatives for Property Managers"
+question = "What are the alternatives to LeadSimple for property management workflows and sales?"
+subquestions = ["What does LeadSimple do?", "Why do some managers look for alternatives?", "Which PMS tools now include CRM features?", "How do prices compare?", "How does LeadSimple integrate with Rentvine?"]
+inspired_by = "https://www.lethub.co/blog/leadsimple-alternatives-for-property-managers"
+demand = "LetHub article; GetApp LeadSimple alternatives pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-onboarding-software"
+cluster = "software"
+kind = "how-to"
+title = "How to Automate Owner Onboarding With Software"
+question = "How can a property management company automate new owner onboarding?"
+subquestions = ["Which steps can you automate?", "Which tools run onboarding workflows?", "How do you collect owner documents and W-9s?", "How do you set up the property in the PMS fast?", "How do you measure onboarding time?"]
+inspired_by = "https://leadsimple.com/blog/leadsimple-rentvine"
+demand = "LeadSimple sells process management for PMs; onboarding is a top workflow."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "zillow-rental-manager-vs-apartments-com"
+cluster = "software"
+kind = "comparison"
+title = "Zillow Rental Manager vs Apartments.com: Where to List a Rental"
+question = "Should a landlord list on Zillow Rental Manager or Apartments.com?"
+subquestions = ["What does each charge to list?", "Which sites does each syndicate to?", "Which has better screening and leases?", "Which brings more leads?", "Can you use both?"]
+inspired_by = "https://www.rfp.wiki/specialty-industries/real-estate-property/apartments-com-rental-manager/zillow-rental-manager"
+demand = "rfp.wiki, TurboTenant, Avail and TenantCloud compare against Zillow Rental Manager."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-rental-listing-syndication-tools"
+cluster = "software"
+kind = "comparison"
+title = "Rental Listing Syndication: Which Tool Posts to the Most Sites?"
+question = "Which tools post a rental listing to the most sites for free?"
+subquestions = ["Which sites does each tool reach?", "Which tools reach both Zillow and Apartments.com?", "Is free syndication enough?", "How do PMS tools syndicate?", "How do you track which site brought the lead?"]
+inspired_by = "https://www.rentspree.com/blog/zillow-rental-manager-alternatives"
+demand = "Avail claims 24 sites, TurboTenant 50+, RentSpree Zillow plus CoStar."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-pricing-tools"
+cluster = "software"
+kind = "comparison"
+title = "Rent Pricing Tools: How to Set Rent With Data"
+question = "Which tools help a landlord or property manager set the right rent?"
+subquestions = ["How do rent estimate tools work?", "How do Rentometer and Zillow estimates compare?", "How many comps do you need?", "How do you adjust for features?", "Which PMS tools suggest rent?"]
+inspired_by = "https://www.turbotenant.com/rental-advertising/rental-comps/"
+demand = "TurboTenant 'Rental comps' post covers free rent estimate tools."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "security-deposit-alternatives-compared"
+cluster = "software"
+kind = "comparison"
+title = "Security Deposit Alternatives: Rhino vs LeaseLock vs Obligo"
+question = "How do security deposit alternatives like Rhino, LeaseLock and Obligo work, and are they good for landlords?"
+subquestions = ["How does each product work?", "Who pays and how much?", "What happens when you file a claim?", "Which work with your PMS?", "Do state laws allow them?"]
+inspired_by = "https://www.biggerpockets.com/posts/7311648"
+demand = "BiggerPockets thread asks for experience with all three; CB Insights compare pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "resident-benefits-package-explained"
+cluster = "software"
+kind = "guide"
+title = "Resident Benefits Packages: What They Include and How Managers Use Them"
+question = "What is a resident benefits package, and should a property manager offer one?"
+subquestions = ["What does a resident benefits package include?", "How does renters insurance in a package work?", "How do credit-building services work?", "What does it cost the renter?", "What do state laws say about added fees?"]
+inspired_by = "https://www.secondnature.com/rbp-pmc"
+demand = "Second Nature markets RBP widely to PMs; managers ask if it is worth it."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "vendor-insurance-coi-tracking"
+cluster = "software"
+kind = "how-to"
+title = "How to Track Vendor Insurance Certificates (COIs)"
+question = "How should a property manager track vendor insurance certificates and W-9s?"
+subquestions = ["Which documents must every vendor give you?", "Which tools track expiry dates?", "What happens if an uninsured vendor gets hurt?", "How do vendor portals help?", "How often should you check COIs?"]
+inspired_by = "https://www.doorloop.com/blog/top-10-work-order-software"
+demand = "Vendor portals are part of maintenance software lists."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-security-checklist"
+cluster = "software"
+kind = "checklist"
+title = "Security Checklist for Property Management Software Accounts"
+question = "How do you protect your property management software and trust funds from fraud and hacks?"
+subquestions = ["Which user roles should you set?", "Should you turn on two-factor login?", "How do you stop payment change fraud?", "Why is monthly reconciliation not enough?", "What logs should you check?"]
+inspired_by = "https://www.rentvine.com/blog/hot-takes-why-a-monthly-reconciliation-isnt-enough-to-catch-fraud"
+demand = "Rentvine 'why monthly reconciliation isn't enough to catch fraud'."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-software-integrations-checklist"
+cluster = "software"
+kind = "checklist"
+title = "Integration Checklist: What Your Property Management Software Must Connect To"
+question = "Which integrations should property management software have?"
+subquestions = ["Does it have an open API?", "Which screening and showing tools does it connect to?", "Does it connect to QuickBooks or your CPA?", "Which maintenance tools does it connect to?", "How do you test an integration before you buy?"]
+inspired_by = "https://www.rentvine.com/blog/sd-real-estate-open-api-data-lock-in-rentvine"
+demand = "Rentvine open API case study; LeadSimple and Latchel integration pages."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "best-landlord-mobile-apps"
+cluster = "software"
+kind = "comparison"
+title = "Best Mobile Apps for Landlords"
+question = "Which mobile apps help landlords manage rentals from a phone?"
+subquestions = ["Which full PM apps work best on mobile?", "Which apps scan receipts?", "Which apps track mileage?", "Which apps sign leases?", "Which are free?"]
+inspired_by = "https://www.landlordstudio.com/blog/best-landlord-apps"
+demand = "Landlord Studio '9 Best Landlord Apps'."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "tenant-communication-texting-tools"
+cluster = "software"
+kind = "comparison"
+title = "Texting Tenants: Tools for Mass Text and Two-Way SMS"
+question = "Which tools let a property manager text tenants and keep a record?"
+subquestions = ["Which PMS tools include two-way texting?", "What are the consent rules for text messages?", "How do you send mass notices?", "How do you keep a record of messages?", "Can AI answer tenant texts?"]
+inspired_by = "https://www.doorloop.com/blog/resident-engagement"
+demand = "Resident engagement tools; AppFolio Realm-X Messages."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "software-reviews-g2-vs-capterra"
+cluster = "software"
+kind = "guide"
+title = "How to Read Property Management Software Reviews (G2, Capterra, Reddit)"
+question = "How can you trust property management software reviews on G2, Capterra and Reddit?"
+subquestions = ["How do G2 and Capterra collect reviews?", "Why do ratings differ by site?", "How do you spot vendor-written comparisons?", "What do Reddit threads show that review sites do not?", "What questions should you ask references?"]
+inspired_by = "https://gummysearch.com/tools/best-products/property-management-software"
+demand = "Ratings differ by site and country (Capterra, GetApp); most comparison pages are vendor-written."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-property-management-system"
+cluster = "software"
+kind = "glossary"
+title = "What Is a Property Management System (PMS)?"
+question = "What is a property management system, and what does it do?"
+subquestions = ["What modules does a PMS have?", "How is a PMS different from accounting software?", "Who uses a PMS?", "How is a PMS priced?", "What are the main PMS vendors in the US?"]
+inspired_by = "https://www.doorloop.com/blog/what-is-property-management"
+demand = "DoorLoop 'What is property management? ... software tools'."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "smart-locks-and-access-control-for-rentals"
+cluster = "software"
+kind = "comparison"
+title = "Smart Locks and Access Control for Rental Properties"
+question = "Which smart lock and access control tools work best for rental properties?"
+subquestions = ["Which locks work with showing software?", "How do you change access between tenants?", "Which cloud access systems suit small multifamily?", "What do they cost per door?", "What are the security risks?"]
+inspired_by = "https://www.doorloop.com/blog/best-access-control-systems"
+demand = "DoorLoop 'Top 12 cloud-based access control systems'; showing tools need lockbox or smart lock."
+priority = 6
+status = "planned"

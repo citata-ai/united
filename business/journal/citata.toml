@@ -166,3 +166,39 @@ kind = "ugc"
 title = "Reddit radar: 2 Social Radar alerts (PM marketing/leads; AI search/GEO), daily, webhook to a T3 task that drafts disclosed replies for approval"
 ref = "docs/growth-loop.md Reddit radar"
 result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "external"
+kind = "ugc"
+title = "Reddit u/citata-ai: Citata logo as avatar; Social Radar filters narrowed (r/PropertyManager alert paused, the subreddit is banned; new r/GEO_optimization alert)"
+url = "https://www.reddit.com/user/citata-ai"
+ref = "business/marketing/reddit-drafts.md"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "external"
+kind = "ugc"
+title = "Reddit comment: Google vs Facebook ads for a multifamily PM (r/PropertyManagement, no link, no pitch)"
+url = "https://www.reddit.com/r/PropertyManagement/comments/1vkmxq9/comment/phnygg7/"
+ref = "business/marketing/reddit-drafts.md #1"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "external"
+kind = "ugc"
+title = "Reddit comment: how a small commercial PM in Tulsa gets found (r/PropertyManagement, no link, no pitch)"
+url = "https://www.reddit.com/r/PropertyManagement/comments/1vmx7et/comment/pho0zlo/"
+ref = "business/marketing/reddit-drafts.md #2"
+result = ""
+
+[[entry]]
+date = "2026-10-19"
+side = "external"
+kind = "ugc"
+title = "Reddit post in r/GEO_optimization: what AI cited in 144 answers about hiring a Chicago property manager (disclosed, no pitch)"
+url = "https://www.reddit.com/r/GEO_optimization/comments/1x9t0qj/what_chatgpt_claude_and_gemini_cited_in_144/"
+ref = "business/marketing/reddit-drafts.md #3"
+result = "Removed by Reddit's spam filter at once (account 1 day old, 0 comment karma). Ask the mods to approve, or repost when the account has karma."

@@ -1,0 +1,1563 @@
+# Topic plan for cluster owner-education (business/marketing/content-plan/clusters.toml).
+# Reader: US rental owners (the property manager's client). Tax topics point to IRS sources and give no tax advice.
+# Researched 2026-10-19: Baselane, Stessa, Mashvisor, iPropertyManagement and BiggerPockets sitemaps; web search for owner questions.
+
+[[topic]]
+slug = "should-i-rent-or-sell-my-house"
+cluster = "owner-education"
+kind = "comparison"
+title = "Should I Rent or Sell My House? A Side-by-Side Comparison"
+question = "Should I rent out my house or sell it when I move?"
+subquestions = ["What does it cost to sell a house versus rent it out?", "How much cash flow will my house make as a rental?", "How does renting affect the home sale tax exclusion?", "When does selling make more sense than renting?", "How do I compare the two options with real numbers?"]
+inspired_by = "https://www.mashvisor.com/blog/should-i-sell-or-rent-my-house/"
+demand = "Mashvisor post should-i-sell-or-rent-my-house; Taxstra and canorealestate pages on rent vs sell; owner tool rent-vs-sell in our playbook"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "accidental-landlord-guide"
+cluster = "owner-education"
+kind = "guide"
+title = "The Accidental Landlord: What to Do First"
+question = "I did not plan to be a landlord. What must I do first to rent out my home?"
+subquestions = ["What steps come before the first tenant moves in?", "Do I need to tell my mortgage lender?", "What insurance change do I need?", "Do I need a rental license or registration?", "Should I self-manage or hire a property manager?"]
+inspired_by = "https://www.biggerpockets.com/blog/how-accidental-landlords-are-reshaping-housing-markets-across-the-country"
+demand = "BiggerPockets post on accidental landlords; augustapp dictionary entry; Business Insider and MPR News stories on accidental landlords"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-much-rent-can-i-get-for-my-house"
+cluster = "owner-education"
+kind = "how-to"
+title = "How Much Rent Can I Get for My House?"
+question = "How do I find out how much rent my house can get?"
+subquestions = ["What are rent comps and where do I find them?", "How do HUD Fair Market Rents compare?", "Which features raise rent the most?", "How does the price-to-rent ratio help?"]
+inspired_by = "https://ipropertymanagement.com/guides/how-much-charge-rent"
+demand = "iPropertyManagement guide how-much-charge-rent; Mashvisor rentology-how-much-can-i-rent-my-house-for; Baselane what-are-rent-comps"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "self-manage-vs-hire-property-manager"
+cluster = "owner-education"
+kind = "comparison"
+title = "Self-Manage or Hire a Property Manager? A Real Comparison"
+question = "Should I manage my rental myself or hire a property manager?"
+subquestions = ["How many hours per year does one rental take?", "What does a property manager cost per month?", "What tasks can I keep and what can I hand off?", "When does a manager pay for itself?", "How does distance change the answer?"]
+inspired_by = "https://www.baselane.com/resources/real-estate-self-management-vs-hiring-a-property-manager"
+demand = "Baselane real-estate-self-management-vs-hiring-a-property-manager; Mashvisor pros-cons-professional-property-management; BiggerPockets member blog is-a-property-manager-worth-it"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "what-does-a-property-manager-do"
+cluster = "owner-education"
+kind = "guide"
+title = "What Does a Property Manager Do for an Owner?"
+question = "What exactly does a property manager do for a rental owner?"
+subquestions = ["Which tasks are in full-service management?", "What does a manager do in a vacancy?", "How does a manager handle repairs and emergencies?", "What reports does the owner get each month?", "What does a manager not do?"]
+inspired_by = "https://ipropertymanagement.com/guides/what-does-property-manager-do"
+demand = "iPropertyManagement guide what-does-property-manager-do; Baselane property-manager-job-description"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "is-a-property-manager-worth-it-for-one-rental"
+cluster = "owner-education"
+kind = "guide"
+title = "Is a Property Manager Worth It for One Rental?"
+question = "Is it worth hiring a property manager if I own only one rental?"
+subquestions = ["What is the fee on one house in dollars?", "How much time does one rental take?", "Which owners of one rental benefit most?", "Can I hire a manager for leasing only?"]
+inspired_by = "https://capital.thebamcompanies.com/is-it-worth-it-to-have-a-property-manager-on-one-property"
+demand = "BAM Capital page is-it-worth-it-to-have-a-property-manager-on-one-property; ptmoney are-property-managers-worth-their-fees; Reddit-style comments quoted on Mashvisor"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-much-does-a-property-manager-cost-owner"
+cluster = "owner-education"
+kind = "data"
+title = "How Much Does a Property Manager Cost? What Owners Pay"
+question = "How much will a property manager cost me as an owner, fee by fee?"
+subquestions = ["What is a typical monthly management fee?", "What is a leasing fee or tenant placement fee?", "What are renewal, setup and maintenance markup fees?", "What does the total cost look like for one house in a year?"]
+inspired_by = "https://ipropertymanagement.com/guides/property-management-fees"
+demand = "iPropertyManagement guide property-management-fees and research average-property-management-fees; Baselane how-much-do-property-managers-charge; our property-management-fee-calculator tool"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Choose a Property Manager: A Step-by-Step Method"
+question = "How do I choose a good property manager for my rental?"
+subquestions = ["Where do I find property managers to compare?", "How do I check license and reviews?", "What should I compare across three managers?", "Which red flags should stop me?"]
+inspired_by = "https://ipropertymanagement.com/guides/find-property-manager"
+demand = "iPropertyManagement guide find-property-manager; Mashvisor hire-professional-property-management"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "questions-to-ask-a-property-manager"
+cluster = "owner-education"
+kind = "checklist"
+title = "Questions to Ask a Property Manager Before You Sign"
+question = "What questions should I ask a property manager in the interview?"
+subquestions = ["What questions show how they screen tenants?", "What questions show how they handle repairs?", "What questions reveal hidden fees?", "What questions check how fast they fill vacancies?", "How do I end the contract if I am not happy?"]
+inspired_by = "https://ipropertymanagement.com/guides/questions-hoa-management-company"
+demand = "iPropertyManagement guides find-property-manager and questions-hoa-management-company; DealMachine deciding-on-property-manager post"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-calculate-rental-property-roi"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Calculate ROI on a Rental Property"
+question = "How do I calculate the return on investment of my rental property?"
+subquestions = ["What is the ROI formula for a rental?", "How does ROI differ for cash and financed purchases?", "Which costs go into the calculation?", "What is a good ROI for a rental?", "Can you show a worked example?"]
+inspired_by = "https://www.baselane.com/resources/return-on-investment-rental-property"
+demand = "Baselane return-on-investment-rental-property and rental-property-roi-statistics; Mashvisor every-real-estate-investor-needs-roi-calculator; owner tool rental ROI in our playbook"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-good-cap-rate-for-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "What Is a Good Cap Rate for a Rental Property?"
+question = "What cap rate is good for a rental property, and how do I calculate it?"
+subquestions = ["What is the cap rate formula?", "Why does a good cap rate differ by market?", "What does cap rate leave out?", "How do I calculate cap rate for my own house?"]
+inspired_by = "https://www.mashvisor.com/blog/what-is-a-good-cap-rate-renting-out/"
+demand = "Mashvisor what-is-a-good-cap-rate-renting-out and determine-cap-rate-for-rental-property; Baselane cap-rates-explained"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-calculate-rental-cash-flow"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Calculate Cash Flow on a Rental Property"
+question = "How do I calculate the monthly cash flow of my rental?"
+subquestions = ["Which income lines go in?", "Which expenses do owners forget (vacancy, capex, management)?", "What is a cash flow worksheet?", "What is good monthly cash flow per door?"]
+inspired_by = "https://www.baselane.com/resources/real-estate-cash-flow-maximize-income"
+demand = "Baselane real-estate-cash-flow-maximize-income and rental-property-cash-flow-statistics; Mashvisor invest-in-positive-cash-flow-real-estate-properties"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "vacancy-loss-cost-calculation"
+cluster = "owner-education"
+kind = "how-to"
+title = "How Much Does a Vacant Month Cost You?"
+question = "How much money do I lose when my rental is empty?"
+subquestions = ["How do I calculate vacancy loss?", "What carrying costs continue in a vacancy?", "What vacancy rate should I plan for?", "Is a lower rent with a faster lease better?"]
+inspired_by = "https://www.baselane.com/resources/rental-vacancy-rate-statistics"
+demand = "Baselane rental-vacancy-rate-statistics and tenant-turnover-statistics; owner tool vacancy loss in our playbook"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "what-does-landlord-insurance-cover"
+cluster = "owner-education"
+kind = "guide"
+title = "What Does Landlord Insurance Cover?"
+question = "What does a landlord insurance policy cover, and what does it not cover?"
+subquestions = ["How does landlord insurance differ from homeowners insurance?", "What do dwelling, liability and loss of rent cover?", "What is usually excluded?", "Does it cover tenant damage?"]
+inspired_by = "https://www.baselane.com/resources/what-is-landlord-insurance-what-does-it-cover"
+demand = "Baselane what-is-landlord-insurance-what-does-it-cover; Stessa what-does-landlord-insurance-cover"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "landlord-insurance-vs-homeowners-insurance"
+cluster = "owner-education"
+kind = "comparison"
+title = "Landlord Insurance vs Homeowners Insurance"
+question = "Do I need landlord insurance when I rent out my home, or is homeowners insurance enough?"
+subquestions = ["When does a homeowners policy stop covering?", "What does a DP-3 policy mean?", "How much more does landlord insurance cost?", "When must I switch?"]
+inspired_by = "https://www.baselane.com/resources/landlord-insurance-guide-to-protect-your-rental"
+demand = "Accidental landlord guides (Northwood, UK) warn home cover can be invalidated once tenants move in; Baselane landlord-insurance-guide-to-protect-your-rental"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-rental-income-is-taxed"
+cluster = "owner-education"
+kind = "guide"
+title = "How Is Rental Income Taxed? The Basics From IRS Publication 527"
+question = "How does the IRS tax my rental income?"
+subquestions = ["What counts as rental income (IRS Pub 527)?", "Are advance rent and security deposits income?", "Which form reports rental income (Schedule E)?", "Is rental income earned or passive income?"]
+inspired_by = "https://www.stessa.com/blog/is-rental-income-earned-income/"
+demand = "Stessa is-rental-income-earned-income and how-does-irs-know-if-you-have-rental-income; IRS Pub 527 and Topic 414"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rental-property-tax-deductions-list"
+cluster = "owner-education"
+kind = "checklist"
+title = "Rental Property Tax Deductions: The IRS List in Plain Words"
+question = "Which rental expenses does the IRS let owners deduct?"
+subquestions = ["Which expenses does IRS Pub 527 list?", "What is the difference between a repair and an improvement?", "Are mortgage interest and property tax deductible?", "Can I deduct travel to my rental?", "What records must I keep?"]
+inspired_by = "https://ipropertymanagement.com/guides/rental-property-tax-deductions"
+demand = "iPropertyManagement rental-property-tax-deductions; Baselane rental-property-tax-write-offs; Stessa rental-property-deductions-checklist; IRS Pub 527"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rental-property-depreciation-basics"
+cluster = "owner-education"
+kind = "guide"
+title = "Rental Property Depreciation: How It Works (IRS Pub 527 and 946)"
+question = "How does depreciation on a rental house work?"
+subquestions = ["Why does the IRS treat a rental as a 27.5-year asset?", "What is the depreciable basis and why is land excluded?", "When does depreciation start?", "Must I take depreciation (allowed or allowable)?", "Can you show a worked example?"]
+inspired_by = "https://www.stessa.com/blog/do-you-have-to-depreciate-rental-property/"
+demand = "Stessa do-you-have-to-depreciate-rental-property; Baselane rental-property-depreciation-all-you-need-to-know; IRS Pub 946 and Pub 527"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "sell-former-home-after-renting-section-121"
+cluster = "owner-education"
+kind = "guide"
+title = "Selling a Former Home You Rented Out: The Section 121 Exclusion"
+question = "Can I still use the home sale tax exclusion if I rented out my former home?"
+subquestions = ["What is the 2-of-5-year test (IRS Pub 523)?", "What is nonqualified use?", "Why do owners talk about a 3-year window?", "Does depreciation still get taxed?"]
+inspired_by = "https://www.journalofaccountancy.com/issues/2014/oct/sec-121-gain-exclusion/"
+demand = "BiggerPockets forum question on renting a former home over 3 years; CNBC tax-bomb story; Journal of Accountancy on Sec. 121; IRS Pub 523"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "do-i-need-an-llc-for-my-rental"
+cluster = "owner-education"
+kind = "guide"
+title = "Do You Need an LLC for Your Rental Property?"
+question = "Should I put my rental property in an LLC?"
+subquestions = ["What does an LLC protect and not protect?", "What does an LLC cost per year by state?", "Does an LLC change my taxes (single-member disregarded entity)?", "When is insurance enough for one rental?"]
+inspired_by = "https://www.biggerpockets.com/blog/do-real-estate-investors-need-an-llc"
+demand = "BiggerPockets do-real-estate-investors-need-an-llc and why-even-small-investors-might-still-want-to-consider-an-llc; iPropertyManagement llc-for-rental-property"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "1031-exchange-basics-rental-owners"
+cluster = "owner-education"
+kind = "guide"
+title = "1031 Exchange Basics for Rental Owners"
+question = "How does a 1031 exchange work when I sell a rental?"
+subquestions = ["What property qualifies as like-kind (IRS Form 8824)?", "What are the 45-day and 180-day deadlines?", "What is a qualified intermediary?", "What is boot?"]
+inspired_by = "https://www.baselane.com/resources/how-does-a-1031-exchange-work-a-comprehensive-guide"
+demand = "Baselane how-does-a-1031-exchange-work and 1031-exchange-rules-real-estate-investors; IRS About Form 8824"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "short-term-vs-long-term-rental"
+cluster = "owner-education"
+kind = "comparison"
+title = "Short-Term vs Long-Term Rental: Which Earns More After Costs?"
+question = "Should I rent my property on Airbnb or to a long-term tenant?"
+subquestions = ["How do gross income and occupancy compare?", "How do costs compare (cleaning, supplies, management)?", "How much more time does an STR take?", "How do local rules and taxes differ?"]
+inspired_by = "https://www.baselane.com/resources/short-term-vs-long-term-rental-which-is-right-for-you"
+demand = "Baselane short-term-vs-long-term-rental-which-is-right-for-you and airbnb-vs-renting-out; Mashvisor long-term-rentals-vs-short-term-rentals"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-buy-your-first-rental-property"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Buy Your First Rental Property: Step by Step"
+question = "What are the steps to buy my first rental property?"
+subquestions = ["How much money do I need to start?", "How do I pick a market and a property type?", "How do I analyze a deal before I offer?", "What due diligence comes before closing?", "Who should be on my team?"]
+inspired_by = "https://www.mashvisor.com/blog/how-to-buy-an-investment-property/"
+demand = "Mashvisor how-to-buy-an-investment-property and guide-to-buy-and-hold-investment-properties; Baselane how-to-get-started-with-real-estate-investing"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rent-out-house-with-mortgage"
+cluster = "owner-education"
+kind = "guide"
+title = "Can You Rent Out a House That Has a Mortgage?"
+question = "Can I rent out my house if I still have a mortgage on it?"
+subquestions = ["What does the owner-occupancy clause say?", "How long must I live in the home first?", "What happens if I rent without telling the lender?", "Does an FHA or VA loan change the rules?", "Should I refinance into an investment loan?"]
+inspired_by = "https://ipropertymanagement.com/guides/rent-house-with-mortgage"
+demand = "iPropertyManagement guide rent-house-with-mortgage; Steadily and Redfin pages on the owner-occupancy clause"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "convert-primary-residence-to-rental-checklist"
+cluster = "owner-education"
+kind = "checklist"
+title = "Checklist: Convert Your Home Into a Rental"
+question = "What must I do, step by step, to turn my primary home into a rental?"
+subquestions = ["What paperwork changes (loan, insurance, utilities)?", "What repairs and safety items come first?", "How do I set the rent?", "What records do I need for taxes from day one?", "What is the cost basis of a converted home?"]
+inspired_by = "https://ipropertymanagement.com/guides/house-ready-to-rent"
+demand = "iPropertyManagement guides house-ready-to-rent and rent-out-your-house; Stessa cost-basis-for-rental-property"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "buy-new-house-rent-current-home"
+cluster = "owner-education"
+kind = "guide"
+title = "Buy a New House and Rent Out the Old One: How It Works"
+question = "Can I buy a new home and keep my current one as a rental?"
+subquestions = ["Will a lender count future rent as income?", "How much down payment do I need for the second home?", "What are the risks of two mortgages?", "How do I check if the old home will cash flow?"]
+inspired_by = "https://ipropertymanagement.com/guides/buy-house-rent-current-home"
+demand = "iPropertyManagement guide buy-house-rent-current-home; Stessa how-to-buy-second-home-and-rent-the-first; Baselane buying-second-home-renting-the-first"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "first-time-landlord-mistakes"
+cluster = "owner-education"
+kind = "checklist"
+title = "First-Time Landlord Mistakes and How to Avoid Them"
+question = "What mistakes do new landlords make most often?"
+subquestions = ["What do new landlords forget about insurance?", "Why do new landlords underprice or overprice rent?", "Which tax records do new landlords skip?", "What legal steps do new landlords miss?"]
+inspired_by = "https://www.baselane.com/resources/10-things-private-landlords-should-know-before-leasing-a-property"
+demand = "Baselane 10-things-private-landlords-should-know-before-leasing-a-property; BiggerPockets 8-biggest-mistakes-new-cash-flow-investors-make"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-agreement-owner-review"
+cluster = "owner-education"
+kind = "checklist"
+title = "Property Management Agreement: What Owners Should Check"
+question = "What should an owner check in a property management agreement before signing?"
+subquestions = ["What term and cancellation clauses are fair?", "Who controls repair spending limits?", "Who owns the lease and tenant after cancellation?", "How are trust account funds and reserves held?"]
+inspired_by = "https://ipropertymanagement.com/guides/property-management-agreement"
+demand = "iPropertyManagement guide property-management-agreement"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-manager-red-flags"
+cluster = "owner-education"
+kind = "checklist"
+title = "Property Manager Red Flags Owners Should Not Ignore"
+question = "What signs show a property manager is bad?"
+subquestions = ["What review patterns are a warning?", "What contract terms are a warning?", "What reporting gaps are a warning?", "Can a property management company put my rental at risk?"]
+inspired_by = "https://www.biggerpockets.com/blog/your-property-management-company-could-be-putting-you-at-risk"
+demand = "BiggerPockets your-property-management-company-could-be-putting-you-at-risk; ptmoney bad-manager signs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-to-fire-your-property-manager"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Fire Your Property Manager and Switch Without Losing Rent"
+question = "How do I end my property management contract and move to a new manager?"
+subquestions = ["What does the termination clause usually require?", "What records and deposits must the old manager hand over?", "How do I tell the tenants?", "What does a letter announcing a new property manager say?"]
+inspired_by = "https://www.stessa.com/blog/letter-announcing-new-property-manager/"
+demand = "Stessa letter-announcing-new-property-manager; iPropertyManagement property-management-agreement guide"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "long-distance-landlord-guide"
+cluster = "owner-education"
+kind = "guide"
+title = "How to Be a Long-Distance Landlord"
+question = "How do I manage a rental that is in another city or state?"
+subquestions = ["Who do I need on the ground?", "How do I do inspections from far away?", "Which tasks can I run online?", "When do I need a local property manager?"]
+inspired_by = "https://www.baselane.com/resources/how-to-manage-out-of-state-rental-property"
+demand = "Baselane how-to-manage-out-of-state-rental-property; Stessa how-to-manage-rental-property-remotely"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "cap-rate-vs-cash-on-cash-return"
+cluster = "owner-education"
+kind = "comparison"
+title = "Cap Rate vs Cash-on-Cash Return: Which Number to Use"
+question = "What is the difference between cap rate and cash-on-cash return?"
+subquestions = ["How is each one calculated?", "Why does a loan change cash-on-cash but not cap rate?", "Which number should an owner of one rental watch?", "Can you show both on one property?"]
+inspired_by = "https://www.stessa.com/blog/cap-rate-vs-cash-on-cash/"
+demand = "Stessa cap-rate-vs-cash-on-cash; Mashvisor all-about-cash-on-cash-return"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rental-property-expenses-list"
+cluster = "owner-education"
+kind = "checklist"
+title = "Rental Property Expenses: The Full List"
+question = "What are all the expenses of owning a rental property?"
+subquestions = ["What are fixed and variable rental costs?", "What are capital expenses vs repairs?", "How much to set aside for maintenance?", "What one-time costs come at the start?"]
+inspired_by = "https://ipropertymanagement.com/guides/rental-property-expenses"
+demand = "iPropertyManagement rental-property-expenses; Baselane most-common-rental-property-expenses; Stessa operating-expenses-rental-property"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-much-to-save-for-rental-repairs-capex"
+cluster = "owner-education"
+kind = "guide"
+title = "How Much Should You Save for Repairs and CapEx?"
+question = "How much money should I set aside each month for repairs and big replacements on my rental?"
+subquestions = ["What is the difference between repairs and capital expenses?", "How long do roofs, HVAC and water heaters last?", "What is a reserve fund per door?", "How does home age change the number?"]
+inspired_by = "https://www.stessa.com/blog/capital-expenditures-rental-property/"
+demand = "Stessa capital-expenditures-rental-property; Baselane reserve-fund-account-for-landlords and rental-property-maintenance-cost-statistics; BiggerPockets how-home-age-impacts-cash-flow"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rental-property-analysis-worksheet"
+cluster = "owner-education"
+kind = "template"
+title = "Rental Property Analysis Worksheet (Copy and Use)"
+question = "How do I analyze a rental property deal on one page?"
+subquestions = ["What inputs does a rental analysis need?", "Which outputs should it show (cash flow, cap rate, CoC)?", "How do I stress-test the numbers?", "Can you show a filled-in example?"]
+inspired_by = "https://www.baselane.com/resources/rental-property-analysis-spreadsheet"
+demand = "Baselane rental-property-analysis-spreadsheet; Mashvisor rental-property-calculator-numbers-to-know"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "negative-cash-flow-rental-what-to-do"
+cluster = "owner-education"
+kind = "guide"
+title = "My Rental Loses Money Every Month. What Can I Do?"
+question = "What can I do if my rental has negative cash flow?"
+subquestions = ["How do I find where the money goes?", "Can I raise rent or cut costs safely?", "When does a refinance help?", "When is it time to sell?"]
+inspired_by = "https://www.biggerpockets.com/blog/rents-are-down-nationwide-heres-how-investors-can-protect-their-cash-flow"
+demand = "BiggerPockets rents-are-down-nationwide post; Stessa the-rise-of-negative-leverage"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-much-is-landlord-insurance"
+cluster = "owner-education"
+kind = "data"
+title = "How Much Does Landlord Insurance Cost?"
+question = "How much does landlord insurance cost per year?"
+subquestions = ["What drives the premium?", "Which states cost the most?", "How can I lower the premium?", "Why are some carriers not renewing?"]
+inspired_by = "https://www.stessa.com/blog/how-much-is-landlord-insurance/"
+demand = "Stessa how-much-is-landlord-insurance; BiggerPockets most-affordable-states-for-landlord-insurance and whats-driving-the-landlord-insurance-crisis"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "llc-vs-umbrella-insurance-rental"
+cluster = "owner-education"
+kind = "comparison"
+title = "LLC vs Umbrella Insurance: Which Protects a Landlord Better?"
+question = "Is an LLC or an umbrella policy the better protection for a small landlord?"
+subquestions = ["What does each one protect?", "What does each one cost per year?", "Why do many owners use both?", "Which fits one or two rentals?"]
+inspired_by = "https://www.coveragecat.com/insurance-types/umbrella-versus-llc-for-rentals"
+demand = "Coverage Cat umbrella-versus-llc-for-rentals summarizes Reddit debate; UpCounsel rental-property-llc-vs-umbrella-insurance"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "depreciation-recapture-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "Depreciation Recapture: What Happens When You Sell a Rental"
+question = "What is depreciation recapture when I sell my rental property?"
+subquestions = ["What is unrecaptured section 1250 gain?", "Does recapture apply if I never took depreciation?", "How does recapture interact with the home sale exclusion?", "Where does the IRS explain this (Pub 544, Pub 523)?"]
+inspired_by = "https://www.stessa.com/blog/what-happens-to-depreciation-when-you-sell-rental-property/"
+demand = "Stessa rental-property-depreciation-recapture and what-happens-to-depreciation-when-you-sell; Baselane depreciation-recapture-tax-rate-rental-property"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "capital-gains-tax-selling-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "Capital Gains Tax on a Rental Property Sale: How It Works"
+question = "How is the sale of a rental property taxed?"
+subquestions = ["How do I find my adjusted basis?", "What is the difference between short and long-term gain?", "Which selling costs reduce the gain?", "Which IRS forms report the sale (Form 4797)?"]
+inspired_by = "https://www.stessa.com/blog/how-much-tax-when-you-sell-rental-property/"
+demand = "Stessa how-much-tax-when-you-sell-rental-property; Baselane capital-gains-tax-rental-property; IRS Pub 544"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "repair-vs-improvement-rental-tax"
+cluster = "owner-education"
+kind = "comparison"
+title = "Repair or Improvement? How the IRS Sees Rental Work"
+question = "Is my rental work a deductible repair or an improvement I must depreciate?"
+subquestions = ["What is the IRS betterment, restoration and adaptation test?", "What is the de minimis safe harbor?", "What is the routine maintenance safe harbor?", "Can you show examples in a table?"]
+inspired_by = "https://www.baselane.com/resources/capital-expense-vs-operating-expense"
+demand = "Baselane capital-expense-vs-operating-expense and capital-expenses-for-rental-property; Stessa rental-property-improvements-depreciation; IRS tangible property regulations FAQ"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "passive-activity-loss-rules-rental"
+cluster = "owner-education"
+kind = "guide"
+title = "Passive Loss Rules for Rentals: The $25,000 Allowance"
+question = "Can I deduct my rental loss against my salary?"
+subquestions = ["What is a passive activity (IRS Pub 925)?", "What is the $25,000 special allowance for active participation?", "How does income phase out the allowance?", "What happens to losses I cannot use (Form 8582)?"]
+inspired_by = "https://www.stessa.com/blog/passive-activity-limits-passive-losses/"
+demand = "Stessa passive-activity-limits-passive-losses; IRS Pub 925 and Form 8582"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rental-property-records-irs"
+cluster = "owner-education"
+kind = "checklist"
+title = "What Records Should a Landlord Keep for the IRS?"
+question = "What records do I need to keep for my rental, and for how long?"
+subquestions = ["Which receipts and statements does the IRS expect?", "How long should I keep records (IRS guidance)?", "Should I use a separate bank account?", "What is a simple record system for one rental?"]
+inspired_by = "https://www.stessa.com/blog/rental-property-record-keeping-template/"
+demand = "Stessa rental-property-record-keeping-template; Baselane separate-bank-account-for-rental-property; BiggerPockets real-estate-investor-tax-document-checklist"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-to-sell-a-rental-property-with-tenants"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Sell a Rental Property With Tenants in Place"
+question = "How do I sell my rental while a tenant lives there?"
+subquestions = ["Does the lease transfer to the buyer?", "What notice do tenants get for showings?", "Is cash for keys an option?", "Should I sell to an investor or an owner-occupant?"]
+inspired_by = "https://www.stessa.com/blog/selling-rental-property/"
+demand = "Stessa selling-rental-property and cash-for-keys; iPropertyManagement cash-for-keys"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "when-to-sell-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "When Is It Time to Sell a Rental Property?"
+question = "How do I know when to sell my rental property?"
+subquestions = ["What signs show a rental no longer works?", "How do I compare equity returns with a new investment?", "How do taxes change the timing?", "What is the return on equity test?"]
+inspired_by = "https://www.mashvisor.com/blog/has-the-time-come-to-sell-your-investment-property/"
+demand = "Mashvisor has-the-time-come-to-sell-your-investment-property"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "hoa-rules-renting-out-condo"
+cluster = "owner-education"
+kind = "guide"
+title = "HOA Rental Rules: Caps, Waiting Periods and Approvals"
+question = "What HOA rules can stop me from renting out my condo or townhouse?"
+subquestions = ["What is a rental cap?", "What are minimum lease terms and short-term bans?", "Can the HOA approve or screen my tenant?", "What happens if I break the rules?"]
+inspired_by = "https://ipropertymanagement.com/guides/rent-out-condo"
+demand = "iPropertyManagement rent-out-condo; Baselane homeowners-association-hoa-fees-everything-you-should-know"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "down-payment-investment-property"
+cluster = "owner-education"
+kind = "data"
+title = "How Much Down Payment Do You Need for a Rental Property?"
+question = "How much down payment does a lender need for an investment property?"
+subquestions = ["What down payment do conventional investment loans need?", "Can I use FHA or VA for a rental (owner-occupied 2-4 units)?", "How do reserves requirements work?", "How does a bigger down payment change cash flow?"]
+inspired_by = "https://www.stessa.com/blog/down-payment-for-investment-property/"
+demand = "Stessa down-payment-for-investment-property; Baselane ultimate-guide-to-va-loans-for-rental-properties and how-to-secure-fha-loan-for-rental-property"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rental-property-due-diligence-checklist"
+cluster = "owner-education"
+kind = "checklist"
+title = "Rental Property Due Diligence Checklist Before You Close"
+question = "What should I check before I close on a rental property?"
+subquestions = ["Which inspections should I order?", "How do I check the current leases and rent roll?", "What should I check about permits and zoning?", "How do I confirm taxes, insurance and HOA costs?"]
+inspired_by = "https://www.biggerpockets.com/blog/the-due-diligence-item-that-makes-or-breaks-cash-flow-after-closing"
+demand = "BiggerPockets the-due-diligence-item-that-makes-or-breaks-cash-flow-after-closing"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "tell-mortgage-lender-renting-out-house"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Tell Your Mortgage Lender You Are Renting Out Your House"
+question = "Do I have to tell my mortgage lender that I rent out my house, and how do I do it?"
+subquestions = ["Which loan documents hold the occupancy rule?", "What do I say when I call the servicer?", "Can the lender call the loan due?", "Is it mortgage fraud to rent without telling them?", "Is renting a room treated differently?"]
+inspired_by = "https://www.steadily.com/blog/rent-out-house-without-telling-lender"
+demand = "Steadily blog rent-out-house-without-telling-lender; PadSplit and Redfin pages; CRE forum threads on the occupancy clause"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "how-long-live-in-house-before-renting"
+cluster = "owner-education"
+kind = "guide"
+title = "How Long Must You Live in a House Before You Rent It Out?"
+question = "How long do I have to live in my home before I can rent it out?"
+subquestions = ["What is the 12-month occupancy rule?", "Do FHA, VA and conventional loans differ?", "What counts as a valid reason to move early?", "Does the waiting time affect taxes?"]
+inspired_by = "https://ipropertymanagement.com/guides/how-long-primary-residence-before-renting"
+demand = "iPropertyManagement guide how-long-primary-residence-before-renting"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-out-house-when-relocating"
+cluster = "owner-education"
+kind = "guide"
+title = "Moving for Work: Rent Out Your House From Another City"
+question = "I am relocating for work. Can I rent out my house from far away?"
+subquestions = ["What does a long-distance landlord need?", "Who handles repairs when I am not there?", "How much does a property manager cost for one house?", "When does it make sense to sell instead?"]
+inspired_by = "https://www.mashvisor.com/blog/rent-your-home-moving-different-city/"
+demand = "Mashvisor post rent-your-home-moving-different-city; Baselane how-to-manage-out-of-state-rental-property; Business Insider on return-to-office accidental landlords"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-out-condo-guide"
+cluster = "owner-education"
+kind = "guide"
+title = "How to Rent Out Your Condo: HOA Rules, Costs and Cash Flow"
+question = "What must I check before I rent out my condo?"
+subquestions = ["Does my HOA allow rentals or limit them?", "How do HOA fees change my cash flow?", "What does the HOA master policy not cover?", "Do I need HOA approval for a tenant?"]
+inspired_by = "https://ipropertymanagement.com/guides/rent-out-condo"
+demand = "iPropertyManagement guide rent-out-condo; BiggerPockets condo-investing cash flow analysis post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "costs-to-sell-a-house-vs-rent"
+cluster = "owner-education"
+kind = "data"
+title = "What Does It Cost to Sell a House Compared to Renting It Out?"
+question = "How much does it cost to sell my house, and how does that compare with the cost to rent it out?"
+subquestions = ["What are typical seller closing costs?", "What does it cost to get a house ready to rent?", "What are the first-year costs of a rental?", "How do I put both in one table?"]
+inspired_by = ""
+demand = "Rent vs sell question set (Mashvisor, Taxstra); owner tool rent-vs-sell"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "lock-in-rate-keep-house-as-rental"
+cluster = "owner-education"
+kind = "guide"
+title = "Keep Your Low-Rate Mortgage and Rent the House Out?"
+question = "Is a low mortgage rate a good reason to keep my old house as a rental?"
+subquestions = ["How does a low rate change cash flow?", "What does the rate not cover (taxes, insurance, repairs)?", "What is the opportunity cost of the equity?", "How do I compare with a sale and a new investment?"]
+inspired_by = "https://www.cotality.com/insights/media/mortgage-lock-in-effect-rental-market"
+demand = "Cotality insight on mortgage lock-in and the rental market"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "what-landlords-are-legally-responsible-for"
+cluster = "owner-education"
+kind = "guide"
+title = "What Is a Landlord Legally Responsible For?"
+question = "What are a landlord's legal duties to tenants in the US?"
+subquestions = ["What is the implied warranty of habitability?", "Which repairs must a landlord make?", "What Fair Housing rules apply to every owner?", "What does a landlord owe on entry and privacy?"]
+inspired_by = "https://www.baselane.com/resources/what-are-the-legal-obligations-of-a-private-landlord"
+demand = "Baselane what-are-the-legal-obligations-of-a-private-landlord; Stessa landlord-responsibilities"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "full-service-vs-leasing-only-property-management"
+cluster = "owner-education"
+kind = "comparison"
+title = "Full-Service Management vs Leasing-Only: Which Do You Need?"
+question = "What is the difference between full-service management and a tenant placement only service?"
+subquestions = ["What does a leasing-only service include?", "What does it cost compared with full service?", "Who does the work after move-in?", "Which owners fit each option?"]
+inspired_by = "https://ipropertymanagement.com/guides/property-management-fees"
+demand = "iPropertyManagement property-management-fees guide lists leasing fees; blog sources describe partial management"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-manager-vs-landlord-software"
+cluster = "owner-education"
+kind = "comparison"
+title = "Property Manager or Landlord Software: What a Small Owner Needs"
+question = "Can landlord software replace a property manager for a small owner?"
+subquestions = ["Which jobs does software do (rent, screening, listings)?", "Which jobs still need a person?", "What does each cost per year?", "When does an owner outgrow software?"]
+inspired_by = "https://www.baselane.com/resources/rental-software-vs-property-manager"
+demand = "Baselane rental-software-vs-property-manager and diy-landlord-vs-landlord-apps"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "noi-vs-cash-flow-vs-net-income"
+cluster = "owner-education"
+kind = "comparison"
+title = "NOI vs Cash Flow vs Net Income for a Rental"
+question = "What is the difference between NOI, cash flow and taxable net income on a rental?"
+subquestions = ["What goes into NOI?", "Why is the mortgage outside NOI?", "Why can taxable income be lower than cash flow?", "Can you show all three on one property?"]
+inspired_by = "https://www.baselane.com/resources/noi-vs-cash-flow-vs-net-income"
+demand = "Baselane noi-vs-cash-flow-vs-net-income and noi-real-estate"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "one-percent-rule-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "The 1% Rule for Rentals: Does It Still Work?"
+question = "What is the 1% rule for rental property, and is it still useful?"
+subquestions = ["How does the 1% rule work?", "Why do many markets fail the 1% rule?", "What does the rule leave out?", "What better test can an owner use?"]
+inspired_by = ""
+demand = "Common investor screening rule discussed across BiggerPockets and Mashvisor rental calculators"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "fifty-percent-rule-rental-expenses"
+cluster = "owner-education"
+kind = "guide"
+title = "The 50% Rule: How Much of Rent Goes to Expenses?"
+question = "What share of rent goes to operating expenses on a typical rental?"
+subquestions = ["What is the 50% rule?", "Which expenses does it include?", "How do real expense ratios compare?", "When is the rule wrong for my house?"]
+inspired_by = "https://www.baselane.com/resources/rental-property-operating-expense-statistics"
+demand = "Baselane rental-property-operating-expense-statistics and most-common-rental-property-expenses"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "cash-flow-vs-appreciation"
+cluster = "owner-education"
+kind = "comparison"
+title = "Cash Flow vs Appreciation: What Should Drive a Rental Decision?"
+question = "Should I own a rental for monthly cash flow or for long-term appreciation?"
+subquestions = ["What is the total return of a rental?", "How does equity paydown add to return?", "What risks come with an appreciation-only plan?", "How do I compare both on my own house?"]
+inspired_by = "https://www.mashvisor.com/blog/cash-flow-vs-appreciation-what-should-drive-your-real-estate-investment-decision/"
+demand = "Mashvisor cash-flow-vs-appreciation post; BiggerPockets should-you-invest-for-cash-flow-or-appreciation"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "how-to-increase-rental-income"
+cluster = "owner-education"
+kind = "checklist"
+title = "Ways to Increase Rental Income Without Losing Good Tenants"
+question = "How can I earn more from my rental without high turnover?"
+subquestions = ["Which upgrades raise rent the most?", "Can I add fees (pets, parking, storage)?", "How does a renewal rent increase compare with turnover cost?", "What is a reasonable rent increase?"]
+inspired_by = "https://www.mashvisor.com/blog/how-to-increase-rental-income/"
+demand = "Mashvisor how-to-increase-rental-income and effective-tips-increase-rental-income; Baselane 5-ways-to-make-your-rental-property-more-profitable"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "umbrella-insurance-for-landlords"
+cluster = "owner-education"
+kind = "guide"
+title = "Umbrella Insurance for Landlords: Do You Need It?"
+question = "Should a landlord buy an umbrella insurance policy?"
+subquestions = ["What does an umbrella policy cover?", "How much coverage do landlords buy?", "What does an umbrella cost?", "What does it exclude?"]
+inspired_by = "https://www.baselane.com/resources/umbrella-insurance-for-rental-property"
+demand = "Baselane umbrella-insurance-for-rental-property; Stessa is-umbrella-insurance-tax-deductible"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "cost-basis-of-rental-property"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Find the Cost Basis of Your Rental Property"
+question = "How do I calculate the cost basis of my rental for depreciation and sale?"
+subquestions = ["What goes into basis at purchase?", "How do improvements change basis?", "What is the basis of a home converted to a rental (lower of cost or FMV)?", "How do I split land and building value?"]
+inspired_by = "https://www.stessa.com/blog/cost-basis-for-rental-property/"
+demand = "Stessa cost-basis-for-rental-property; IRS Pub 527 and Pub 551"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "schedule-e-explained"
+cluster = "owner-education"
+kind = "how-to"
+title = "Schedule E Explained Line by Line for Landlords"
+question = "How do I read and fill in Schedule E for my rental?"
+subquestions = ["Which lines hold rents and each expense?", "Where does depreciation go?", "How do fair rental days and personal use days work?", "When does a rental go on Schedule C instead?"]
+inspired_by = "https://www.irs.gov/forms-pubs/about-schedule-e-form-1040"
+demand = "IRS About Schedule E; Stessa turbotax-rental-property and hr-block-rental-property"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "vacation-home-rental-tax-rules"
+cluster = "owner-education"
+kind = "guide"
+title = "Renting Out a Vacation Home: The 14-Day Rule and Mixed Use"
+question = "How does the IRS treat a home I rent part of the year and use myself?"
+subquestions = ["What is the 14-day rule (IRS Topic 415)?", "How do I split expenses between personal and rental days?", "When is rental income tax-free?", "How do losses work on mixed-use homes?"]
+inspired_by = "https://www.irs.gov/taxtopics/tc415"
+demand = "IRS Topic 415; Baselane vacation-rental-income-tax-rules-and-rates and airbnb-tax-reporting-how-to-report-income"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-tax-rental-vs-homestead"
+cluster = "owner-education"
+kind = "guide"
+title = "Property Tax on a Rental: Losing the Homestead Exemption"
+question = "Will my property tax go up when I turn my home into a rental?"
+subquestions = ["What is a homestead exemption?", "Do I have to report the change of use?", "How much can the tax bill rise?", "Is property tax deductible on a rental?"]
+inspired_by = "https://www.biggerpockets.com/blog/states-with-the-highest-and-lowest-property-taxes"
+demand = "BiggerPockets states-with-the-highest-and-lowest-property-taxes; Stessa property-tax-by-state"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "transfer-rental-property-to-llc"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Move a Rental Property Into an LLC"
+question = "How do I transfer a rental I already own into an LLC?"
+subquestions = ["What deed do I use?", "Will the due-on-sale clause apply?", "Does the insurance policy need to change?", "Will a transfer trigger new taxes or fees?"]
+inspired_by = "https://www.stessa.com/blog/llc-mortgage/"
+demand = "Stessa llc-mortgage; Baselane separate-bank-account-for-llcs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "llc-vs-sole-proprietor-landlord"
+cluster = "owner-education"
+kind = "comparison"
+title = "LLC or Own It in Your Name? A Comparison for Landlords"
+question = "Should I own my rental in my own name or in an LLC?"
+subquestions = ["How does liability differ?", "How do costs and paperwork differ?", "How do loans differ?", "How does tax reporting differ?"]
+inspired_by = "https://www.baselane.com/resources/sole-proprietorship-vs-llc-rental-property"
+demand = "Baselane sole-proprietorship-vs-llc-rental-property and sole-proprietorship-advantages-disadvantages-real-estate-investors"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "separate-bank-account-for-rental"
+cluster = "owner-education"
+kind = "how-to"
+title = "Why and How to Open a Separate Bank Account for Your Rental"
+question = "Do I need a separate bank account for my rental property?"
+subquestions = ["Why does mixing money cause tax and LLC problems?", "What accounts do landlords use (operating, deposits, reserves)?", "Do states require a separate deposit account?", "How do I set it up?"]
+inspired_by = "https://www.baselane.com/resources/separate-bank-account-for-rental-property"
+demand = "Baselane separate-bank-account-for-rental-property and set-up-separate-bank-accounts-every-rental-property; Stessa rental-property-bank-account"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "1031-exchange-timeline-checklist"
+cluster = "owner-education"
+kind = "checklist"
+title = "1031 Exchange Timeline: A Day-by-Day Checklist"
+question = "What must happen, and by which day, in a 1031 exchange?"
+subquestions = ["What must I do before I list the property?", "What happens on day 0?", "How do I identify replacement property by day 45?", "What closes by day 180?"]
+inspired_by = "https://www.irs.gov/forms-pubs/about-form-8824"
+demand = "IRS Form 8824; Baselane 1031-exchange-rules-real-estate-investors"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "hoa-fees-rental-cash-flow"
+cluster = "owner-education"
+kind = "how-to"
+title = "How HOA Fees and Special Assessments Change Rental Cash Flow"
+question = "How do HOA fees and special assessments affect my rental returns?"
+subquestions = ["What do HOA fees cover?", "What is a special assessment?", "How do I read the HOA reserve study?", "Are HOA fees tax deductible on a rental?"]
+inspired_by = "https://www.stessa.com/blog/hoa-tax-deductible-rental-property/"
+demand = "Stessa hoa-tax-deductible-rental-property; iPropertyManagement research hoa-statistics; BiggerPockets HOA foreclosures post"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "mid-term-rental-guide"
+cluster = "owner-education"
+kind = "guide"
+title = "Mid-Term Rentals (30+ Days): How They Work for Owners"
+question = "What is a mid-term rental, and is it right for my property?"
+subquestions = ["Who rents mid-term (nurses, relocations, insurance stays)?", "Where do owners list mid-term rentals?", "How do furnishing costs compare?", "Do tenant laws apply to 30-day stays?"]
+inspired_by = "https://ipropertymanagement.com/guides/mid-term-rental"
+demand = "iPropertyManagement mid-term-rental; Baselane mid-term-rentals"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "airbnb-rules-check-before-listing"
+cluster = "owner-education"
+kind = "checklist"
+title = "Before You List on Airbnb: Rules to Check"
+question = "What local rules must I check before I turn my property into a short-term rental?"
+subquestions = ["Does my city require an STR permit?", "Does my HOA or lease allow STRs?", "What occupancy taxes apply?", "Does my insurance cover STR guests?"]
+inspired_by = "https://www.biggerpockets.com/blog/what-landlord-insurance-policies-dont-cover-when-it-comes-to-short-term-rentals"
+demand = "BiggerPockets what-landlord-insurance-policies-dont-cover for STRs; Baselane vrbo-host-requirements-rules"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "dscr-loan-explained"
+cluster = "owner-education"
+kind = "guide"
+title = "DSCR Loans for Rentals: How They Work"
+question = "What is a DSCR loan, and who should use one?"
+subquestions = ["How is the debt service coverage ratio calculated?", "What DSCR do lenders want?", "How do DSCR rates compare with conventional loans?", "Can a DSCR loan be in an LLC name?"]
+inspired_by = "https://www.baselane.com/resources/your-guide-to-dscr-loans-for-rental-property"
+demand = "Baselane your-guide-to-dscr-loans-for-rental-property and what-type-of-loan-is-best-for-rental-property"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "buying-a-rental-property-out-of-state"
+cluster = "owner-education"
+kind = "guide"
+title = "Buying a Rental Property in Another State"
+question = "How do I buy and run a rental in a state where I do not live?"
+subquestions = ["How do I pick an out-of-state market?", "How do I check a property I cannot visit?", "What is turnkey property and what are its risks?", "Which local team do I need?"]
+inspired_by = "https://www.mashvisor.com/blog/buying-a-house-out-of-state/"
+demand = "Mashvisor buying-a-house-out-of-state and how-do-i-buy-an-investment-property-in-an-unfamiliar-area; BiggerPockets how-to-generate-7k-monthly-cash-flow-with-out-of-state-properties"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "single-family-vs-multifamily-rental"
+cluster = "owner-education"
+kind = "comparison"
+title = "Single-Family vs Small Multifamily: Which Rental to Buy?"
+question = "Is a single-family house or a duplex/fourplex a better first rental?"
+subquestions = ["How do price per door and cash flow compare?", "How do vacancy risk and turnover compare?", "How do financing rules differ for 2-4 units?", "How does management work differ?"]
+inspired_by = "https://www.baselane.com/resources/multifamily-vs-single-family-investing"
+demand = "Baselane multifamily-vs-single-family-investing; Mashvisor buy-multi-family-real-estate"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "is-rental-income-passive-income-time"
+cluster = "owner-education"
+kind = "guide"
+title = "Is Rental Income Really Passive? The Time It Takes"
+question = "How much work does owning a rental really take?"
+subquestions = ["How many hours does one rental take per year?", "Which tasks take the most time?", "How does a property manager change the hours?", "What does passive mean for the IRS (Pub 925)?"]
+inspired_by = "https://www.biggerpockets.com/member-blogs/8626/blog_posts/101006-is-a-property-manager-worth-it"
+demand = "BiggerPockets member blog says a single rental takes at least 40 hours per year; Baselane how-earn-passive-income-from-real-estate"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-out-inherited-house"
+cluster = "owner-education"
+kind = "guide"
+title = "Inherited a House? Rent It, Sell It or Keep It"
+question = "I inherited a house. Should I rent it out or sell it?"
+subquestions = ["What is stepped-up basis (IRS Pub 551)?", "How do co-heirs share rent and costs?", "What does the house need before it can be rented?", "How do I compare rent income with a sale now?"]
+inspired_by = ""
+demand = "Search demand for inherited-house decisions; IRS Publication 551 covers basis of inherited property"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-out-house-in-a-down-market"
+cluster = "owner-education"
+kind = "guide"
+title = "Rent Instead of Sell When the Market Is Slow?"
+question = "Should I rent my house until prices recover instead of selling now?"
+subquestions = ["How long can I rent and keep the home sale exclusion?", "What if rents also fall?", "How do I set a break-even date?", "What are the risks of waiting?"]
+inspired_by = "https://www.stessa.com/blog/wfh-reason-for-selling/"
+demand = "MPR News 2010 story on accidental landlords in a down market; Cotality page on mortgage lock-in effect"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "what-is-a-property-manager-trust-account"
+cluster = "owner-education"
+kind = "guide"
+title = "Where Does My Rent Money Go? Property Manager Trust Accounts"
+question = "How does a property manager hold my rent and the tenant's deposit?"
+subquestions = ["What is a trust or escrow account?", "When does the owner get paid each month?", "What is an owner reserve?", "How can I check the money is safe?"]
+inspired_by = "https://www.baselane.com/resources/how-to-open-an-escrow-account-for-security-deposits"
+demand = "Baselane escrow and security deposit accounting resources; Stessa security-deposit-accounting"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "owner-statement-how-to-read"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Read Your Monthly Owner Statement"
+question = "How do I read the owner statement my property manager sends?"
+subquestions = ["What lines are on an owner statement?", "How do I check fees against the contract?", "What is the difference from a P&L?", "Which numbers do I need at tax time?"]
+inspired_by = "https://www.stessa.com/blog/how-to-read-rent-ledger/"
+demand = "Stessa how-to-read-rent-ledger and rental-property-income-statement-template; Baselane profit-and-loss-statement-for-rental-property"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-manager-maintenance-markup"
+cluster = "owner-education"
+kind = "guide"
+title = "Maintenance Markups: What Property Managers Charge on Repairs"
+question = "Do property managers mark up repair bills, and is that fair?"
+subquestions = ["What is a maintenance markup or coordination fee?", "What is a normal repair approval limit?", "Can I use my own contractor?", "How do I see the vendor's real invoice?"]
+inspired_by = "https://ipropertymanagement.com/guides/property-management-fees"
+demand = "iPropertyManagement property-management-fees guide; Mashvisor minimize-property-management-fees"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "short-term-rental-property-manager-cost"
+cluster = "owner-education"
+kind = "data"
+title = "What Does a Short-Term Rental Manager Cost?"
+question = "How much does an Airbnb or vacation rental manager charge?"
+subquestions = ["What fee range do STR managers charge?", "What is included in the fee?", "How do cleaning and supplies work?", "How does it compare with long-term management?"]
+inspired_by = "https://ipropertymanagement.com/guides/short-term-rental-management-fees"
+demand = "iPropertyManagement short-term-rental-management-fees and choosing-short-term-rental-management-company"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-manager-license-check"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Check if a Property Manager Is Licensed"
+question = "Does my property manager need a license, and how do I check it?"
+subquestions = ["Which states require a broker license for property management?", "Where is the state license lookup?", "What do NARPM and other designations mean?", "What does a license protect?"]
+inspired_by = "https://ipropertymanagement.com/guides/property-management-certification"
+demand = "iPropertyManagement property-management-certification guide"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "price-to-rent-ratio-owners"
+cluster = "owner-education"
+kind = "guide"
+title = "Price-to-Rent Ratio: Is Your House Better to Rent or Sell?"
+question = "How can the price-to-rent ratio help me decide to rent or sell?"
+subquestions = ["What is the price-to-rent ratio formula?", "What ratio favors renting out?", "How do I find my home's ratio?", "What does the ratio leave out?"]
+inspired_by = "https://www.baselane.com/resources/price-to-rent-ratio-real-estate-investors"
+demand = "Baselane price-to-rent-ratio-real-estate-investors and best-price-to-rent-ratio-cities"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-property-vs-stocks"
+cluster = "owner-education"
+kind = "comparison"
+title = "Rental Property vs Stocks: An Honest Comparison"
+question = "Is a rental property a better investment than an index fund?"
+subquestions = ["How do returns compare with the same cash?", "How much time does each need?", "How do taxes differ?", "How does liquidity differ?"]
+inspired_by = "https://www.mashvisor.com/blog/should-i-buy-a-rental-property-or-invest-in-stocks/"
+demand = "Mashvisor should-i-buy-a-rental-property-or-invest-in-stocks; Baselane reit-vs-rental-which-one-to-invest"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-renovations-that-increase-roi"
+cluster = "owner-education"
+kind = "guide"
+title = "Rental Renovations That Pay Back"
+question = "Which renovations on a rental give the best return?"
+subquestions = ["Which upgrades do tenants pay more for?", "Which upgrades lower repair costs?", "How do I calculate payback months?", "Which renovations do not pay back?"]
+inspired_by = "https://www.baselane.com/resources/rental-renovations-that-increase-roi"
+demand = "Baselane rental-renovations-that-increase-roi; Mashvisor renovations-with-the-highest-roi; iPropertyManagement rental-renovations"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "qbi-deduction-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "Does the QBI Deduction Apply to Rental Property?"
+question = "Can a rental owner take the 20% qualified business income deduction?"
+subquestions = ["When is a rental a trade or business?", "What is the IRS 250-hour safe harbor (Rev. Proc. 2019-38)?", "Which records does the safe harbor need?", "Do triple-net leases qualify?"]
+inspired_by = "https://www.baselane.com/resources/qbi-for-rental-property"
+demand = "Baselane qbi-for-rental-property and qbi-safe-harbor-rental-real-estate; Stessa 20-percent-pass-through-tax-deduction-faqs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "short-term-rental-tax-rules"
+cluster = "owner-education"
+kind = "guide"
+title = "Short-Term Rental Taxes: How the 7-Day Average Stay Changes the Rules"
+question = "How are short-term rentals taxed differently from long-term rentals?"
+subquestions = ["Why does an average stay of 7 days or less matter (Treas. Reg. 1.469-1T)?", "When does an STR go on Schedule C?", "What are local occupancy taxes?", "Why do people call it the STR loophole?"]
+inspired_by = "https://www.biggerpockets.com/blog/short-term-vs-long-term-rentals-does-it-change-the-tax-strategy"
+demand = "BiggerPockets short-term-vs-long-term-rentals-does-it-change-the-tax-strategy and how-to-take-advantage-of-short-term-rental-tax-breaks; Baselane airbnb-qbi-short-term-rental-rules"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "bonus-depreciation-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "Bonus Depreciation and Rental Property: The Basics"
+question = "How does bonus depreciation apply to rental property?"
+subquestions = ["Which rental assets qualify for bonus depreciation?", "Does the building itself qualify?", "What changed in recent tax law?", "How does it differ from Section 179?"]
+inspired_by = "https://www.biggerpockets.com/blog/bonus-depreciation-explained-without-the-jargon"
+demand = "BiggerPockets bonus-depreciation-explained-without-the-jargon and what-investors-need-to-know-about-100-percent-bonus-depreciation-in-2026; Baselane bonus-depreciation-rental-property-guide; IRS Pub 946"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "deduct-rental-expenses-no-income"
+cluster = "owner-education"
+kind = "guide"
+title = "Can You Deduct Rental Expenses When the House Is Empty?"
+question = "Can I deduct expenses on my rental when it has no tenant?"
+subquestions = ["When is a home held for rent?", "What happens before the first tenant?", "How long can a home sit empty?", "Where does the IRS explain this (Pub 527)?"]
+inspired_by = "https://www.stessa.com/blog/deducting-rental-expenses-with-no-rental-income/"
+demand = "Stessa deducting-rental-expenses-with-no-rental-income; IRS Pub 527"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "form-1099-for-landlords"
+cluster = "owner-education"
+kind = "guide"
+title = "Do Landlords Need to Send or Receive Form 1099?"
+question = "When does a landlord get or send a Form 1099 for rent and contractors?"
+subquestions = ["When does a property manager send Form 1099-MISC?", "Must I send 1099-NEC to contractors?", "What is Form 1099-K for rent payments?", "What is a W-9 and when do I ask for one?"]
+inspired_by = "https://www.irs.gov/forms-pubs/about-form-1099-misc"
+demand = "IRS About Form 1099-MISC; Stessa how-does-irs-know-if-you-have-rental-income"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "1031-exchange-former-home"
+cluster = "owner-education"
+kind = "guide"
+title = "Can You 1031 Exchange a House You Used to Live In?"
+question = "Can I use a 1031 exchange and the home sale exclusion on a former home I now rent?"
+subquestions = ["When does a former home become investment property?", "How do Section 121 and 1031 combine (IRS Rev. Proc. 2005-14)?", "How long should I rent it first?", "What records show investment intent?"]
+inspired_by = "https://www.irs.gov/publications/p523"
+demand = "IRS Pub 523; Kitces and Journal of Accountancy pages on Sec. 121"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "condo-vs-single-family-rental"
+cluster = "owner-education"
+kind = "comparison"
+title = "Condo vs Single-Family Home as a Rental"
+question = "Is a condo or a single-family house a better rental?"
+subquestions = ["How do costs and HOA fees compare?", "How do rent and tenant demand compare?", "Who pays for exterior repairs?", "How do appreciation and resale compare?"]
+inspired_by = "https://ipropertymanagement.com/guides/condo-vs-apartment"
+demand = "Mashvisor why-buying-a-condo-for-investment-might-be-a-bad-idea; BiggerPockets condo-investing-opportunities-2026-cash-flow-analysis"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "switch-short-term-to-long-term-rental"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Switch From Short-Term to Long-Term Rental"
+question = "How do I move my Airbnb property to a long-term lease?"
+subquestions = ["When does the switch make sense?", "What do I do with the furniture?", "How do I price a long-term lease?", "How do taxes change after the switch?"]
+inspired_by = "https://www.baselane.com/resources/str-to-ltr-transition"
+demand = "Baselane str-to-ltr-transition"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "short-term-rental-insurance"
+cluster = "owner-education"
+kind = "guide"
+title = "Short-Term Rental Insurance: What Owners Need"
+question = "What insurance does a short-term rental owner need?"
+subquestions = ["Why does a landlord policy often exclude STR use?", "What does host protection from platforms cover?", "What does a dedicated STR policy cost?", "What liability limits do hosts buy?"]
+inspired_by = "https://www.biggerpockets.com/blog/how-to-compare-short-term-rental-insurance"
+demand = "BiggerPockets how-to-compare-short-term-rental-insurance and the-fine-print-between-landlord-and-str-insurance-policies; Baselane what-kind-of-insurance-do-you-need-for-an-airbnb-property"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-out-a-room-in-your-house"
+cluster = "owner-education"
+kind = "guide"
+title = "Renting Out a Room in Your Home: What Owners Must Know"
+question = "What do I need to know before I rent a room in my house?"
+subquestions = ["Does Fair Housing apply to a shared home?", "How is room rent taxed (IRS Pub 527)?", "What should a room rental agreement say?", "Does my insurance cover a lodger?"]
+inspired_by = "https://ipropertymanagement.com/guides/rules-renting-room"
+demand = "iPropertyManagement rules-renting-room and mrs-murphy-exemption; Baselane how-to-rent-a-room-in-a-house"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "house-hacking-guide"
+cluster = "owner-education"
+kind = "guide"
+title = "House Hacking: Live in One Unit and Rent the Rest"
+question = "How does house hacking work for a first-time owner?"
+subquestions = ["Which loans allow 2-4 unit owner-occupied purchases?", "How do I estimate the other units' rent?", "What are the risks of living next to tenants?", "When can I move out and keep it as a rental?"]
+inspired_by = ""
+demand = "BiggerPockets house hacking content; FHA owner-occupied 2-4 unit loans"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "investment-property-mortgage-rates-vs-primary"
+cluster = "owner-education"
+kind = "guide"
+title = "Why Investment Property Mortgage Rates Are Higher"
+question = "Why are mortgage rates higher on a rental than on a home I live in?"
+subquestions = ["How much higher are investment property rates?", "What lender rules differ for rentals?", "Does rental income help me qualify?", "How can I get a better rate?"]
+inspired_by = "https://www.baselane.com/resources/daily-investment-property-mortgage-rates-guide"
+demand = "Baselane daily-investment-property-mortgage-rates-guide; Mashvisor what-you-need-know-rental-property-mortgage"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "cash-out-refinance-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "Cash-Out Refinance on a Rental: When It Makes Sense"
+question = "Should I do a cash-out refinance on my rental property?"
+subquestions = ["How much equity can I take out?", "How does a new rate change cash flow?", "Is refinance interest deductible (IRS Pub 527)?", "How does a HELOC on a rental compare?"]
+inspired_by = "https://www.stessa.com/blog/cash-out-refinance-rental-property/"
+demand = "Stessa cash-out-refinance-rental-property, refinance-rental-property and heloc-on-rental-property"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "buying-rental-with-tenants-in-place"
+cluster = "owner-education"
+kind = "guide"
+title = "Buying a Rental That Already Has Tenants"
+question = "What should I check when I buy a property with tenants already in it?"
+subquestions = ["What is an estoppel certificate?", "How do security deposits transfer?", "Can I change the lease terms?", "What do I tell the tenants after closing?"]
+inspired_by = "https://ipropertymanagement.com/guides/estoppel-certificate"
+demand = "iPropertyManagement estoppel-certificate; Stessa rent-roll"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-many-rental-properties-to-retire"
+cluster = "owner-education"
+kind = "guide"
+title = "How Many Rentals Do You Need to Retire?"
+question = "How many rental properties do I need to replace my salary?"
+subquestions = ["How do I set a target monthly income?", "What net cash flow per door is realistic?", "How does paying off loans change the count?", "What risks come with a rentals-only retirement?"]
+inspired_by = "https://www.mashvisor.com/blog/how-to-become-rich-with-rental-properties/"
+demand = "Mashvisor how-to-become-rich-with-rental-properties and passive-income-from-rental-properties; Baselane how-earn-passive-income-from-real-estate"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-property-reserves-how-much"
+cluster = "owner-education"
+kind = "guide"
+title = "How Much Cash Should a Rental Owner Keep in Reserve?"
+question = "How much emergency cash should I keep for my rental property?"
+subquestions = ["What is a reserve per door?", "What do lenders require in reserves?", "Where should reserve money sit?", "How does a property manager hold an owner reserve?"]
+inspired_by = "https://www.baselane.com/resources/reserve-fund-account-for-landlords"
+demand = "Baselane reserve-fund-account-for-landlords, best-cash-reserve-account-landlords and how-much-to-keep-in-hysa-account-landlords-investors"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rent-out-house-while-trying-to-sell"
+cluster = "owner-education"
+kind = "guide"
+title = "Can You Rent Out a House While You Try to Sell It?"
+question = "Can I rent my house to a tenant while it is listed for sale?"
+subquestions = ["How does a tenant affect showings?", "What lease terms allow a sale?", "Does a sale end the lease?", "Is a lease-to-own deal a better fit?"]
+inspired_by = "https://www.mashvisor.com/blog/faqs-how-does-rent-to-own-work/"
+demand = "Mashvisor post faqs-how-does-rent-to-own-work; Business Insider note that owners rent when they cannot find a buyer"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "rent-out-house-after-divorce"
+cluster = "owner-education"
+kind = "guide"
+title = "Keeping the House as a Rental After a Divorce"
+question = "Can two ex-spouses keep a jointly owned house as a rental?"
+subquestions = ["How do co-owners split rent and costs?", "Who reports the rental income (IRS Pub 527)?", "What should a co-ownership agreement say?", "When is a sale cleaner?"]
+inspired_by = "https://www.stessa.com/blog/joint-ownership-of-property-rental-income/"
+demand = "Stessa joint-ownership-of-property-rental-income; Northwood accidental landlord page lists divorce as a common case"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-lower-property-management-fees"
+cluster = "owner-education"
+kind = "how-to"
+title = "How to Lower What You Pay a Property Manager"
+question = "Can I negotiate property management fees, and how?"
+subquestions = ["Which fees are most often negotiable?", "Does a portfolio of several doors get a lower rate?", "What can I trade for a lower fee?", "When is a cheap manager a false saving?"]
+inspired_by = "https://www.mashvisor.com/blog/minimize-property-management-fees/"
+demand = "Mashvisor minimize-property-management-fees"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-many-rentals-before-hiring-property-manager"
+cluster = "owner-education"
+kind = "guide"
+title = "How Many Rentals Before You Need a Property Manager?"
+question = "At how many rental units should I hire a property manager?"
+subquestions = ["How do hours per unit add up?", "What is the value of my own time per hour?", "Does unit type (single-family vs small multifamily) matter?", "What other signs show it is time?"]
+inspired_by = "https://www.baselane.com/resources/self-managing-landlord-statistics"
+demand = "Baselane self-managing-landlord-statistics and mom-pop-landlord-statistics"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "gross-rent-multiplier"
+cluster = "owner-education"
+kind = "guide"
+title = "Gross Rent Multiplier: A Fast Way to Price a Rental"
+question = "What is the gross rent multiplier, and how do I use it?"
+subquestions = ["What is the GRM formula?", "How does GRM compare with cap rate?", "What GRM is normal?", "What are the limits of GRM?"]
+inspired_by = "https://www.baselane.com/resources/gross-rent-multiplier-grm-real-estate"
+demand = "Baselane gross-rent-multiplier-grm-real-estate; Stessa gross-rent-multiplier"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "require-renters-insurance"
+cluster = "owner-education"
+kind = "guide"
+title = "Should You Require Tenants to Have Renters Insurance?"
+question = "Can and should I require my tenant to carry renters insurance?"
+subquestions = ["What does renters insurance cover?", "How does it protect the owner?", "Is a requirement legal in my state?", "How do I check proof of coverage?"]
+inspired_by = "https://www.baselane.com/resources/what-is-renters-insurance-and-why-do-you-need-it"
+demand = "Baselane what-is-renters-insurance-and-why-do-you-need-it"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "loss-of-rent-insurance"
+cluster = "owner-education"
+kind = "guide"
+title = "Loss of Rent Insurance vs Rent Guarantee Insurance"
+question = "What is the difference between loss of rent coverage and rent guarantee insurance?"
+subquestions = ["When does loss of rent coverage pay?", "What does rent guarantee insurance pay?", "What do both cost?", "Which one does a small owner need?"]
+inspired_by = "https://www.baselane.com/resources/the-basics-of-rent-loss-insurance-why-landlords-need-it"
+demand = "Baselane rent-loss and rent-guarantee-insurance pages; Stessa rent-guarantee-insurance"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "landlord-insurance-claims-common"
+cluster = "owner-education"
+kind = "data"
+title = "The Most Common Landlord Insurance Claims and How to Prevent Them"
+question = "What causes most landlord insurance claims?"
+subquestions = ["Why are water claims so common?", "How do fire and liability claims happen?", "What maintenance prevents claims?", "Do claims raise my premium?"]
+inspired_by = "https://www.biggerpockets.com/blog/most-common-landlord-insurance-claims-and-how-to-prevent-them"
+demand = "BiggerPockets most-common-landlord-insurance-claims-and-how-to-prevent-them"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "real-estate-professional-status-basics"
+cluster = "owner-education"
+kind = "guide"
+title = "Real Estate Professional Status: What the IRS Requires"
+question = "What does the IRS require to be a real estate professional for rental losses?"
+subquestions = ["What are the 750-hour and more-than-half tests (IRS Pub 925)?", "What records prove the hours?", "How does material participation differ?", "Why do audits target this?"]
+inspired_by = "https://www.irs.gov/publications/p925"
+demand = "IRS Pub 925; BiggerPockets is-real-estate-the-best-tax-strategy and the-missing-pieces-in-your-real-estate-tax-strategy"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "cost-segregation-basics"
+cluster = "owner-education"
+kind = "guide"
+title = "Cost Segregation: What It Is and When It Is Worth It"
+question = "What is a cost segregation study, and is it worth it for a small rental?"
+subquestions = ["What does a cost segregation study do?", "What does a study cost?", "How does bonus depreciation interact?", "What happens to recapture at sale?"]
+inspired_by = "https://www.baselane.com/resources/is-cost-segregation-study-worth-it"
+demand = "Baselane is-cost-segregation-study-worth-it and cost-segregation-study-rental-property; IRS Cost Segregation Audit Techniques Guide"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "renting-to-family-tax-rules"
+cluster = "owner-education"
+kind = "guide"
+title = "Renting to a Family Member: Tax Rules and Fair Rental Price"
+question = "What happens to my taxes if I rent my property to a relative for less than market rent?"
+subquestions = ["What is fair rental price (IRS Pub 527)?", "When does a family rental count as personal use?", "Which deductions do I lose?", "How do I document fair rent?"]
+inspired_by = "https://www.irs.gov/publications/p527"
+demand = "IRS Pub 527 personal use rules; common landlord question on renting to family"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "one-llc-or-many-for-rentals"
+cluster = "owner-education"
+kind = "guide"
+title = "One LLC for All Rentals or One per Property?"
+question = "Should each rental have its own LLC?"
+subquestions = ["What is the risk of one LLC holding all rentals?", "What does a series LLC do?", "How much does each extra LLC cost?", "How do bank accounts work with several LLCs?"]
+inspired_by = "https://www.baselane.com/resources/business-banking-structure-for-multiple-rental-properties"
+demand = "Baselane business-banking-structure-for-multiple-rental-properties and multiple-bank-accounts-for-real-estate-investors"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "co-owning-rental-property-agreement"
+cluster = "owner-education"
+kind = "guide"
+title = "Co-Owning a Rental With a Friend or Partner"
+question = "How should two people co-own a rental property?"
+subquestions = ["What ownership forms exist (tenants in common, joint tenancy, LLC)?", "What should a co-ownership agreement cover?", "How is income reported for each owner?", "What happens when one owner wants out?"]
+inspired_by = "https://www.stessa.com/blog/real-estate-partnership/"
+demand = "Stessa real-estate-partnership and joint-ownership-of-property-rental-income"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "airbnb-with-a-mortgage"
+cluster = "owner-education"
+kind = "guide"
+title = "Can You Airbnb a House With a Mortgage?"
+question = "Can I put my mortgaged home on Airbnb?"
+subquestions = ["Does the mortgage allow short-term rentals?", "What do lenders count as rental use?", "What about renting a room only?", "What are the risks?"]
+inspired_by = "https://ipropertymanagement.com/guides/airbnb-house-with-mortgage"
+demand = "iPropertyManagement airbnb-house-with-mortgage; Baselane airbnb-loans-mortgage-rules-rental-property"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "brrrr-method-explained"
+cluster = "owner-education"
+kind = "guide"
+title = "The BRRRR Method Explained for Owners"
+question = "How does the BRRRR method (buy, rehab, rent, refinance, repeat) work?"
+subquestions = ["What does each BRRRR step involve?", "How does after-repair value (ARV) set the refinance?", "What are the main BRRRR risks?", "Can you show a worked example?"]
+inspired_by = "https://ipropertymanagement.com/guides/brrrr-method"
+demand = "iPropertyManagement brrrr-method; Baselane brrrr-method-for-real-estate and calculate-arv-after-repair-value-real-estate"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "hoa-vs-property-manager-what-each-does"
+cluster = "owner-education"
+kind = "comparison"
+title = "HOA Management vs Rental Property Management: Who Does What?"
+question = "What is the difference between an HOA management company and my rental's property manager?"
+subquestions = ["What does an HOA manager do?", "What does a rental property manager do?", "Who handles a leak from a common area?", "Who do tenants call?"]
+inspired_by = "https://ipropertymanagement.com/guides/hoa-management-company-responsibility"
+demand = "iPropertyManagement hoa-management-company-responsibility and hoa-management guides"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "what-to-expect-first-90-days-property-manager"
+cluster = "owner-education"
+kind = "guide"
+title = "Your First 90 Days With a New Property Manager"
+question = "What should happen in the first three months after I hire a property manager?"
+subquestions = ["What does onboarding include?", "What documents must the owner give?", "When should the first owner statement arrive?", "What should I review at day 90?"]
+inspired_by = ""
+demand = "Owner onboarding questions in iPropertyManagement and Baselane guides on working with a PM"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "insurance-market-value-vs-rebuild-value"
+cluster = "owner-education"
+kind = "guide"
+title = "Market Value vs Rebuild Cost: Insure Your Rental for the Right Amount"
+question = "How much dwelling coverage should my rental policy have?"
+subquestions = ["What is replacement cost?", "Why is rebuild cost not market value?", "What is a coinsurance penalty?", "How do I check my coverage amount?"]
+inspired_by = "https://www.biggerpockets.com/blog/market-value-vs-rebuild-value-the-insurance-mistake-that-costs-investors-thousands"
+demand = "BiggerPockets market-value-vs-rebuild-value post; BiggerPockets 8-things-to-check-before-signing-your-landlord-insurance-policy"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "estimated-taxes-rental-income"
+cluster = "owner-education"
+kind = "guide"
+title = "Do You Need to Pay Estimated Taxes on Rental Income?"
+question = "Do I have to make quarterly estimated tax payments on my rental income?"
+subquestions = ["When are estimated payments due (IRS Form 1040-ES)?", "What is the safe harbor to avoid a penalty?", "Can I raise my W-4 withholding instead?", "How do I estimate rental profit?"]
+inspired_by = "https://www.irs.gov/forms-pubs/about-form-1040-es"
+demand = "IRS Form 1040-ES and Topic 414 on rental income"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "travel-expenses-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "Can You Deduct Travel to Your Rental Property?"
+question = "Can I deduct mileage and travel to my rental?"
+subquestions = ["Which trips count as rental business?", "How does the standard mileage rate work?", "What records does the IRS want?", "Can I deduct a trip to look at a new rental?"]
+inspired_by = "https://www.stessa.com/blog/rental-property-travel-expenses/"
+demand = "Stessa rental-property-travel-expenses; IRS Pub 527 and Pub 463"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "fixing-up-rental-before-sale"
+cluster = "owner-education"
+kind = "guide"
+title = "Fix Up a Rental Before Selling: What Pays and What the IRS Allows"
+question = "Which repairs should I make before I sell my rental, and how are they treated for tax?"
+subquestions = ["Which fixes raise the sale price?", "Are fix-up costs deductible or added to basis?", "How long should the home sit empty?", "Should I sell as-is?"]
+inspired_by = "https://www.stessa.com/blog/fixing-up-expenses-sale-of-rental-property/"
+demand = "Stessa fixing-up-expenses-sale-of-rental-property"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "installment-sale-rental-property"
+cluster = "owner-education"
+kind = "guide"
+title = "Seller Financing a Rental: Installment Sale Basics"
+question = "Can I sell my rental with seller financing, and how is it taxed?"
+subquestions = ["What is an installment sale (IRS Pub 537)?", "Is depreciation recapture spread out?", "What are the risks of buyer default?", "What terms are common?"]
+inspired_by = "https://www.irs.gov/publications/p537"
+demand = "IRS Pub 537; owner interest in seller financing in a high-rate market"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "hoa-violation-caused-by-tenant"
+cluster = "owner-education"
+kind = "guide"
+title = "Your Tenant Broke an HOA Rule. Who Pays the Fine?"
+question = "Who is responsible when my tenant breaks HOA rules?"
+subquestions = ["Why does the HOA fine the owner?", "Can I pass the fine to the tenant?", "What should the lease say about HOA rules?", "How do I handle repeat violations?"]
+inspired_by = ""
+demand = "Common condo owner question; iPropertyManagement HOA guides"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "what-happens-when-property-manager-sells-company"
+cluster = "owner-education"
+kind = "guide"
+title = "What Happens to My Rental When My Property Manager Is Sold?"
+question = "What happens to my contract and money if my property management company is sold?"
+subquestions = ["Does my agreement move to the new company?", "Can I cancel after a sale?", "What should I check about deposits and reserves?", "How do I judge the new owner?"]
+inspired_by = ""
+demand = "Owners face PM company sales and new-manager letters (Stessa letter-announcing-new-property-manager)"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "land-trust-vs-llc-rental"
+cluster = "owner-education"
+kind = "comparison"
+title = "Land Trust vs LLC for a Rental: What Each Does"
+question = "What is the difference between a land trust and an LLC for holding a rental?"
+subquestions = ["What privacy does a land trust give?", "What liability shield does an LLC give?", "Do owners combine them?", "Which states use land trusts?"]
+inspired_by = ""
+demand = "Common investor question on asset protection; Stessa how-to-protect-real-estate-assets"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "rental-property-in-a-trust-estate-planning"
+cluster = "owner-education"
+kind = "guide"
+title = "Should You Put Your Rental in a Living Trust?"
+question = "Should I hold my rental property in a revocable living trust?"
+subquestions = ["What does a living trust do for a rental?", "Does a trust protect from lawsuits?", "How does a trust affect the step-up in basis?", "How does a trust work with an LLC?"]
+inspired_by = ""
+demand = "Owner estate questions on rentals; IRS Pub 551 for basis of inherited property"
+priority = 7
+status = "planned"

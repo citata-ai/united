@@ -1,0 +1,1826 @@
+# Topic plan for cluster landlord-ops (day-to-day rental operations).
+# Planner: landlord-ops agent, 2026-10-19. Sources: competitor sitemaps (TurboTenant, RentRedi, Landlord Studio, DoorLoop), BiggerPockets forum threads, web search.
+
+[[topic]]
+slug = "how-to-price-a-rental-with-comps"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Price a Rental With Comps"
+question = "How do I set the right rent for a vacant rental using comparable listings?"
+subquestions = ["Where do I find rental comps?", "How many comps do I need?", "How do I adjust comps for size, beds and amenities?", "What if the unit gets no calls in two weeks?", "Should I price a little under market?"]
+inspired_by = "https://www.turbotenant.com/rental-advertising/rental-comps/"
+demand = "TurboTenant publishes a post on this question (/rental-advertising/rental-comps/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "cost-of-a-vacant-month-vs-lower-rent"
+cluster = "landlord-ops"
+kind = "data"
+title = "Vacancy Cost vs a Lower Rent: The Math"
+question = "Is it better to drop the rent or wait for a tenant at a higher price?"
+subquestions = ["How much does one vacant month cost per year of rent?", "How many months at a higher rent pay back one vacant month?", "When should I cut the asking rent?", "What is a price drop step that works?"]
+inspired_by = "https://www.landlordstudio.com/blog/property-vacancy-rate"
+demand = "Landlord Studio publishes a post on this question (/blog/property-vacancy-rate); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "where-to-list-a-rental-property"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Where to List a Rental: Sites Compared"
+question = "Which listing sites bring the most qualified renters for a single-family or small multifamily rental?"
+subquestions = ["Is Zillow Rental Manager free?", "What is listing syndication?", "Is Facebook Marketplace worth it for rentals?", "Is Craigslist still worth it?", "Which sites charge landlords to list?"]
+inspired_by = "https://rentredi.com/blog/best-rental-listing-syndication-sites/"
+demand = "RentRedi publishes a post on this question (/blog/best-rental-listing-syndication-sites/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-write-a-rental-listing-that-leases"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Write a Rental Listing That Leases Fast"
+question = "What should a rental listing say to get more qualified inquiries?"
+subquestions = ["What goes in the first line of a listing?", "How long should the description be?", "Which details cut unqualified calls?", "Which words break Fair Housing advertising rules?", "Should I list the screening criteria in the ad?"]
+inspired_by = "https://www.landlordstudio.com/blog/write-the-perfect-rental-listing"
+demand = "Landlord Studio publishes a post on this question (/blog/write-the-perfect-rental-listing); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "fair-housing-rules-for-rental-ads"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Fair Housing Rules for Rental Ads"
+question = "What words and photos must a landlord avoid in a rental ad under the Fair Housing Act?"
+subquestions = ["What does HUD say about advertising words?", "Can an ad say 'no kids' or 'adults only'?", "Can I say 'near churches' or 'walk to school'?", "Are photos of people a risk?", "How do I describe accessibility features?"]
+inspired_by = "https://www.doorloop.com/blog/hud-advertising-guidelines"
+demand = "DoorLoop publishes a post on this question (/blog/hud-advertising-guidelines); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rental-listing-photos-that-get-clicks"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Rental Listing Photos: What to Shoot and How"
+question = "How many photos does a rental listing need, and how do I take good ones with a phone?"
+subquestions = ["How many photos should a listing have?", "Which rooms should come first?", "What time of day is best for photos?", "Should I hire a photographer?", "Do I need a video or 3D tour?"]
+inspired_by = "https://www.landlordstudio.com/blog/how-to-get-perfect-rental-photography"
+demand = "Landlord Studio publishes a post on this question (/blog/how-to-get-perfect-rental-photography); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "when-to-start-marketing-a-rental-before-move-out"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "When to Start Marketing a Unit Before Move-Out"
+question = "How early should I list a rental when the current tenant gives notice?"
+subquestions = ["Can I show a unit while the tenant still lives there?", "How much notice do I give the current tenant for showings?", "What photos do I use for an occupied unit?", "How do I set the available date?"]
+inspired_by = ""
+demand = "Owner and PM forums discuss the vacancy gap between move-out and move-in; competitors cover pre-marketing in turnover guides"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-concessions-when-to-offer"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Rent Concessions: When to Offer One and What Kind"
+question = "When should a landlord offer a move-in special, and which concession costs the least?"
+subquestions = ["What is a rent concession?", "One month free vs a lower monthly rent: which is better?", "How do I write a concession into the lease?", "Do concessions attract weaker applicants?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/rent-concession/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/rent-concession/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-to-avoid-rental-listing-scams"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Stop Scammers From Copying Your Rental Listing"
+question = "How do I stop scammers from re-posting my rental listing and taking deposits from renters?"
+subquestions = ["How do rental listing scams work?", "How do I check if my listing was copied?", "Where do I report a fake listing?", "What should my listing say to warn renters?", "How do I protect a vacant unit from squatters?"]
+inspired_by = "https://rentredi.com/blog/how-to-avoid-rental-scams/"
+demand = "RentRedi publishes a post on this question (/blog/how-to-avoid-rental-scams/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "days-on-market-for-rentals"
+cluster = "landlord-ops"
+kind = "data"
+title = "Days on Market for Rentals: What Is Normal"
+question = "How long should it take to rent a property, and what does a long vacancy tell me?"
+subquestions = ["What is a normal days-on-market for a rental?", "Which season leases fastest?", "What does the inquiry-to-showing ratio show?", "When do I change price or photos?"]
+inspired_by = "https://www.doorloop.com/blog/rental-vacancy-statistics"
+demand = "DoorLoop publishes a post on this question (/blog/rental-vacancy-statistics); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "best-season-to-list-a-rental"
+cluster = "landlord-ops"
+kind = "data"
+title = "Best Time of Year to Rent Out a Property"
+question = "Which months bring the most renters, and how do I time lease ends to match?"
+subquestions = ["Which months have the most rental demand?", "How do I move a lease end date to spring or summer?", "Should I offer a 15-month lease to shift the end date?", "Is winter leasing always slow?"]
+inspired_by = "https://www.landlordstudio.com/blog/us-landlord-insights-seasonal-tenant-trends"
+demand = "Landlord Studio publishes a post on this question (/blog/us-landlord-insights-seasonal-tenant-trends); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-respond-to-rental-inquiries-fast"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How Fast to Answer Rental Inquiries (and What to Say)"
+question = "How quickly should I answer a renter's inquiry, and what should the first reply include?"
+subquestions = ["Why does reply speed matter?", "What goes in the first reply?", "Should I pre-screen in the first message?", "Can I use an auto-reply or AI chatbot?", "How do I treat all inquiries the same for Fair Housing?"]
+inspired_by = "https://www.doorloop.com/blog/how-to-track-rental-property-prospects"
+demand = "DoorLoop publishes a post on this question (/blog/how-to-track-rental-property-prospects); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "how-to-show-a-rental-property"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Show a Rental Property: Step by Step"
+question = "What are the steps for a rental showing that turns visitors into applicants?"
+subquestions = ["How do I schedule showings?", "What do I bring to a showing?", "Should I do group open houses or one-on-one?", "What should I say and not say at a showing?", "How do I follow up after a showing?"]
+inspired_by = "https://www.landlordstudio.com/blog/show-rental-property"
+demand = "Landlord Studio publishes a post on this question (/blog/show-rental-property); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "self-showings-vs-agent-showings"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Self-Showings vs Agent Showings for Rentals"
+question = "Should I use lockbox self-showings or have a person show the rental?"
+subquestions = ["How do self-showing lockboxes work?", "Do self-showings cause more fraud or squatters?", "Which costs less per lease?", "How do I verify ID before a self-showing?", "Which renters prefer each type?"]
+inspired_by = "https://www.landlordstudio.com/blog/rental-lock-box"
+demand = "Lockbox scam news (ABC15, Arizona) and a lockbox vendor saying scam exposure is a top reason managers stop self-showings (lethub.co)"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "reduce-rental-showing-no-shows"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Cut No-Shows at Rental Showings"
+question = "Why do renters miss showings, and how do I cut the no-show rate?"
+subquestions = ["What no-show rate is normal?", "Do confirmation texts help?", "Should I pre-screen before a showing?", "Do group showings fix no-shows?"]
+inspired_by = ""
+demand = "Property managers discuss no-shows in self-showing vendor blogs (lethub.co) and forum threads"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "showing-an-occupied-rental"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Show a Rental While the Tenant Still Lives There"
+question = "How do I show an occupied unit without upsetting the current tenant?"
+subquestions = ["How much entry notice do I give for a showing?", "Can the tenant refuse showings?", "Should I offer the tenant a credit?", "How do I keep the unit clean for photos?"]
+inspired_by = "https://rentredi.com/blog/landlords-legal-right-of-entry-rental-units/"
+demand = "RentRedi publishes a post on this question (/blog/landlords-legal-right-of-entry-rental-units/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "prescreening-questions-before-a-showing"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Pre-Screening Questions to Ask Before a Showing"
+question = "Which questions should I ask a renter before I book a showing?"
+subquestions = ["What is a legal pre-screening question?", "Can I ask about income before a showing?", "Can I ask why they are moving?", "How do I ask every renter the same questions?"]
+inspired_by = "https://rentredi.com/blog/prescreening-tenants-ask-these-questions-first/"
+demand = "RentRedi publishes a post on this question (/blog/prescreening-tenants-ask-these-questions-first/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "holding-deposit-for-a-rental"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Holding Deposits: How They Work for Rentals"
+question = "Should I take a holding deposit to take a unit off the market, and when must I return it?"
+subquestions = ["What is a holding deposit?", "How much is a normal holding deposit?", "When can I keep a holding deposit?", "Is a holding deposit part of the security deposit?", "Do I need a written holding deposit agreement?"]
+inspired_by = "https://www.landlordstudio.com/blog/steps-to-collecting-the-security-deposit-and-first-months-rent"
+demand = "Landlord Studio publishes a post on this question (/blog/steps-to-collecting-the-security-deposit-and-first-months-rent); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-to-screen-tenants-step-by-step"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Screen Tenants: A Step-by-Step Process"
+question = "What steps should a landlord follow to screen a rental applicant fairly and well?"
+subquestions = ["What should be in written screening criteria?", "In what order do I check credit, income and references?", "How long does screening take?", "How do I compare two qualified applicants?", "How do I stay consistent for Fair Housing?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/how-to-screen-tenants/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/how-to-screen-tenants/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "written-tenant-screening-criteria"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Write Tenant Screening Criteria"
+question = "What should written tenant screening criteria include, and why should every landlord have them?"
+subquestions = ["Which criteria are common: income, credit, rental history?", "How do I set a minimum credit score?", "Should criteria be in the listing?", "How does HUD view criminal history criteria?", "How often should I update the criteria?"]
+inspired_by = "https://rentredi.com/blog/balancing-fair-housing-compliance-with-effective-screening-standards/"
+demand = "RentRedi publishes a post on this question (/blog/balancing-fair-housing-compliance-with-effective-screening-standards/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rent-to-income-ratio-3x-rule"
+cluster = "landlord-ops"
+kind = "data"
+title = "The 3x Rent Rule: How to Use a Rent-to-Income Ratio"
+question = "Is the 3x rent income rule a good standard, and how do I calculate it?"
+subquestions = ["How do I calculate rent-to-income?", "Is 3x rent a law?", "Should I use gross or net income?", "How do I count co-applicants' income?", "What about cities that cap the income rule?"]
+inspired_by = "https://rentredi.com/blog/rent-to-income-ratio/"
+demand = "Landlord Studio runs a rent-to-income calculator; Reddit threads on 3x rent cited in verticalrent.com"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-verify-tenant-income"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Verify a Tenant's Income"
+question = "What documents prove a rental applicant's income, and how do I check them?"
+subquestions = ["Which proof of income is best: pay stubs, bank statements, offer letter?", "How do I verify income for self-employed applicants?", "How do I verify employment by phone?", "What is automated income verification?"]
+inspired_by = "https://www.turbotenant.com/rental-applications/proof-of-income/"
+demand = "TurboTenant publishes a post on this question (/rental-applications/proof-of-income/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "spot-fake-pay-stubs-and-bank-statements"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Spot Fake Pay Stubs and Bank Statements"
+question = "How can a landlord tell if a rental applicant sent a fake pay stub?"
+subquestions = ["What are signs of a fake pay stub?", "How do I check an employer is real?", "Do document-fraud tools work?", "What do I do if I find fraud?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/how-to-recognize-fake-pay-stubs/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/how-to-recognize-fake-pay-stubs/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-to-read-a-tenant-screening-report"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Read a Tenant Screening Report"
+question = "What do the parts of a tenant screening report mean, and which items matter most?"
+subquestions = ["What is in a credit report for renters?", "What do collections and charge-offs tell me?", "How do I read an eviction record?", "What is a resident score?", "Which items should not count against an applicant?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/how-to-read-a-tenant-screening-report/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/how-to-read-a-tenant-screening-report/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "tenant-credit-score-minimum"
+cluster = "landlord-ops"
+kind = "guide"
+title = "What Credit Score Should a Tenant Have?"
+question = "What minimum credit score should a landlord ask for, and what else should count?"
+subquestions = ["What credit score do most landlords want?", "Should medical debt count?", "How do I weigh thin credit files?", "Can a higher deposit offset low credit?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/tenant-credit-check-guide/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/tenant-credit-check-guide/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "how-to-check-eviction-history"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Check a Rental Applicant's Eviction History"
+question = "How do I find out if an applicant has an eviction record?"
+subquestions = ["Which records do screening reports search?", "Are court records free to search?", "Do sealed evictions show up?", "How old an eviction should count?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/how-to-check-eviction-records/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/how-to-check-eviction-records/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "criminal-background-checks-for-tenants"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Criminal Background Checks for Tenants: HUD Guidance"
+question = "How can a landlord use criminal history in screening without breaking Fair Housing rules?"
+subquestions = ["What does HUD guidance say about criminal records?", "Can I use arrest records?", "What is an individual assessment?", "Which cities limit criminal history checks?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/fcra-background-check/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/fcra-background-check/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "landlord-reference-check-questions"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Landlord Reference Check: Questions to Ask"
+question = "What should I ask a past landlord when I check a rental applicant's references?"
+subquestions = ["How do I know the reference is a real landlord?", "Which questions get honest answers?", "What can a past landlord legally say?", "Should I call the current or prior landlord?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/diy-reference-check-questions-to-ask-former-landlords/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/diy-reference-check-questions-to-ask-former-landlords/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "fcra-adverse-action-notice-for-landlords"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Adverse Action Notices: What the FCRA Requires"
+question = "When must a landlord send an adverse action notice after a screening report?"
+subquestions = ["What is adverse action under the FCRA?", "What must the notice include?", "Does a conditional approval need a notice?", "What are the risks if I skip it?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/fcra-adverse-action-letter/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/fcra-adverse-action-letter/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-to-deny-a-rental-application"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Deny a Rental Application the Right Way"
+question = "How do I reject a rental applicant legally and politely?"
+subquestions = ["Which reasons are legal to deny?", "Must I say why I denied?", "Do I refund the application fee?", "How do I keep records of a denial?"]
+inspired_by = "https://www.landlordstudio.com/blog/how-to-legally-reject-a-tenants-rental-application"
+demand = "Landlord Studio publishes a post on this question (/blog/how-to-legally-reject-a-tenants-rental-application); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rental-application-fees-how-much"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Rental Application Fees: How Much and What They Cover"
+question = "How much should a landlord charge for a rental application, and what can the fee cover?"
+subquestions = ["What is a normal application fee?", "Do some states cap application fees?", "What can the fee pay for?", "Should I refund the fee if the unit is gone?"]
+inspired_by = "https://www.turbotenant.com/rental-applications/rental-application-fees/"
+demand = "TurboTenant publishes a post on this question (/rental-applications/rental-application-fees/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "first-come-first-served-application-policy"
+cluster = "landlord-ops"
+kind = "guide"
+title = "First Come, First Served: Choosing Between Applicants"
+question = "How do I choose between two qualified rental applicants fairly?"
+subquestions = ["What is a first-come, first-served policy?", "Can I pick the higher income?", "How do I time-stamp applications?", "Which cities require first-in-time rules?"]
+inspired_by = ""
+demand = "Fair Housing screening guidance in competitor posts (rentredi.com) and forum questions on picking between applicants"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "co-signers-and-guarantors-for-rentals"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Co-Signer vs Guarantor on a Lease"
+question = "When should I accept a co-signer or guarantor, and how do I screen one?"
+subquestions = ["What is the difference between a co-signer and a guarantor?", "What income should a guarantor have?", "Do I screen the guarantor the same way?", "What about third-party guarantor companies?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/how-to-add-a-cosigner-to-a-lease/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/how-to-add-a-cosigner-to-a-lease/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "portable-tenant-screening-reports"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Portable Tenant Screening Reports: Should You Accept Them?"
+question = "Should a landlord accept a renter's portable screening report instead of running a new one?"
+subquestions = ["What is a portable screening report?", "Which states require landlords to accept them?", "How old can the report be?", "How do I check it is real?"]
+inspired_by = "https://www.turbotenant.com/rental-screening/portable-tenant-screening-report/"
+demand = "TurboTenant publishes a post on this question (/rental-screening/portable-tenant-screening-report/); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "screening-applicants-without-ssn"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Screen an Applicant Without a Social Security Number"
+question = "How can a landlord screen a rental applicant who has no SSN?"
+subquestions = ["Can I require an SSN?", "Can I screen with an ITIN?", "What other proof of history can I accept?", "How do I avoid national origin discrimination?"]
+inspired_by = "https://www.landlordstudio.com/blog/tenant-screening-without-ssn"
+demand = "Landlord Studio publishes a post on this question (/blog/tenant-screening-without-ssn); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "screening-self-employed-and-gig-applicants"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Screen Self-Employed and Gig Worker Applicants"
+question = "How do I verify income for a freelancer, contractor or gig worker who wants to rent?"
+subquestions = ["Which documents show self-employed income?", "How many months of bank statements do I ask for?", "Do tax returns help?", "How do I handle uneven monthly income?"]
+inspired_by = "https://rentredi.com/blog/tenant-is-a-freelancer/"
+demand = "RentRedi publishes a post on this question (/blog/tenant-is-a-freelancer/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "screening-roommates-and-multiple-applicants"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Screen Roommates on One Lease"
+question = "How do I screen several adult roommates who will share one lease?"
+subquestions = ["Does each adult apply separately?", "Do I combine incomes for the rent rule?", "What is joint and several liability?", "What happens when one roommate leaves?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/leases-for-multiple-tenants/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/leases-for-multiple-tenants/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "lease-clauses-every-landlord-needs"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "Lease Clauses Every Residential Lease Needs"
+question = "Which clauses should every residential lease include?"
+subquestions = ["Which clauses cover rent, fees and late payment?", "What maintenance clauses do I need?", "Which clauses cover entry and access?", "Which clauses are often unenforceable?", "Do I need a severability clause?"]
+inspired_by = "https://www.doorloop.com/blog/27-lease-agreement-clauses-landlords"
+demand = "DoorLoop publishes a post on this question (/blog/27-lease-agreement-clauses-landlords); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "common-lease-addenda-explained"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Common Lease Addenda and When to Use Each"
+question = "Which lease addenda should a landlord use, and what does each one cover?"
+subquestions = ["What is a lease addendum?", "Which addenda are required by federal law?", "When do I need a pet addendum?", "What goes in a mold or smoke-free addendum?"]
+inspired_by = "https://www.landlordstudio.com/blog/11-essential-lease-addendums"
+demand = "Landlord Studio publishes a post on this question (/blog/11-essential-lease-addendums); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "lead-based-paint-disclosure-rules"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Lead-Based Paint Disclosure: What Landlords Must Do"
+question = "When must a landlord give a lead-based paint disclosure, and what must it include?"
+subquestions = ["Which homes need a lead disclosure?", "What pamphlet must the tenant get?", "How long do I keep the signed form?", "What are the penalties?"]
+inspired_by = "https://www.turbotenant.com/property-management/lead-based-paint-disclosure/"
+demand = "TurboTenant publishes a post on this question (/property-management/lead-based-paint-disclosure/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "fixed-term-vs-month-to-month-lease"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Fixed-Term vs Month-to-Month Lease"
+question = "Should I offer a 12-month lease or a month-to-month agreement?"
+subquestions = ["What are the pros of month-to-month?", "Should month-to-month rent be higher?", "How much notice ends each type?", "What happens when a fixed lease ends?"]
+inspired_by = "https://rentredi.com/blog/benefits-of-month-to-month-lease/"
+demand = "RentRedi publishes a post on this question (/blog/benefits-of-month-to-month-lease/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-lease-length-for-a-rental"
+cluster = "landlord-ops"
+kind = "guide"
+title = "What Lease Length Is Best for a Rental?"
+question = "Is a 6-, 12-, 18- or 24-month lease best for a landlord?"
+subquestions = ["Why do most leases run 12 months?", "When is a 2-year lease smart?", "How do I align lease ends with peak season?", "Should I charge more for short leases?"]
+inspired_by = "https://rentredi.com/blog/best-lengths-for-leases/"
+demand = "RentRedi publishes a post on this question (/blog/best-lengths-for-leases/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "can-a-landlord-change-a-lease-mid-term"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Can a Landlord Change a Lease Mid-Term?"
+question = "Can I change lease terms after the lease is signed?"
+subquestions = ["Can I add a fee mid-lease?", "How do I add a new rule?", "Does the tenant have to agree?", "When do changes take effect on month-to-month leases?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/landlord-change-lease-after-signed/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/landlord-change-lease-after-signed/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-handle-a-tenant-breaking-a-lease"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Handle a Tenant Who Wants to Break the Lease"
+question = "What should a landlord do when a tenant wants to break a lease early?"
+subquestions = ["What can I charge a tenant who breaks a lease?", "What is a lease break fee clause?", "Do I have to re-rent the unit (mitigate)?", "When can a tenant break a lease without penalty?", "How do I document the move-out?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/tenant-wants-to-break-a-lease/"
+demand = "Forum and article questions on re-letting fees and the duty to mitigate (inman.com 'lease breakers fight re-rent fee')"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "early-termination-fee-vs-reletting-fee"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Early Termination Fee vs Reletting Fee"
+question = "Should my lease use a flat early termination fee or charge actual reletting costs?"
+subquestions = ["What is a reletting fee?", "How much is a typical early termination fee?", "Which option is easier to enforce?", "Can I charge both?"]
+inspired_by = "https://www.doorloop.com/blog/early-termination-of-lease-agreement"
+demand = "DoorLoop publishes a post on this question (/blog/early-termination-of-lease-agreement); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "military-lease-termination-scra"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Military Lease Termination Under the SCRA"
+question = "When can a servicemember end a lease early under the Servicemembers Civil Relief Act?"
+subquestions = ["Who qualifies under the SCRA?", "What notice must the tenant give?", "When does the lease end after notice?", "Can I charge a fee?"]
+inspired_by = ""
+demand = "Lease-break guides from competitors list military orders as a legal reason to end a lease early (turbotenant.com lease-agreements)"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "subletting-and-assignment-rules"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Sublet vs Assignment: What Landlords Should Allow"
+question = "Should I allow a tenant to sublet or assign the lease, and what is the difference?"
+subquestions = ["What is the difference between a sublet and an assignment?", "Can a lease ban subletting?", "Do I screen a subtenant?", "Who owes rent in a sublet?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/subleasing/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/subleasing/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "short-term-rental-clause-airbnb-ban"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Stop Tenants From Listing Your Rental on Airbnb"
+question = "How do I stop a tenant from sub-renting my unit on Airbnb or other short-term sites?"
+subquestions = ["What lease clause bans short-term rentals?", "How do I find out if my unit is listed?", "Is it a lease violation I can act on?", "What about rental arbitrage requests?"]
+inspired_by = "https://www.turbotenant.com/glossary/rental-arbitrage/"
+demand = "TurboTenant publishes a post on this question (/glossary/rental-arbitrage/); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "when-does-a-guest-become-a-tenant"
+cluster = "landlord-ops"
+kind = "guide"
+title = "When Does a Guest Become a Tenant?"
+question = "How long can a tenant's guest stay before they count as an occupant?"
+subquestions = ["What is a guest clause?", "How many nights is common in a guest clause?", "Can I make a long-term guest apply?", "What if the guest refuses to leave?"]
+inspired_by = "https://www.turbotenant.com/property-management/when-does-a-guest-become-a-tenant/"
+demand = "TurboTenant publishes a post on this question (/property-management/when-does-a-guest-become-a-tenant/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "lease-violation-notice-how-to"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Handle a Lease Violation"
+question = "What steps should I take when a tenant breaks a lease rule?"
+subquestions = ["Which violations need a written notice?", "What is a cure-or-quit notice?", "How many warnings should I give?", "How do I document violations?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/how-to-write-a-lease-violation-notice/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/how-to-write-a-lease-violation-notice/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "smoke-free-lease-policy"
+cluster = "landlord-ops"
+kind = "guide"
+title = "How to Set and Enforce a Smoke-Free Rental Policy"
+question = "How do I make a rental smoke-free, and what can I do if a tenant smokes inside?"
+subquestions = ["Can I ban smoking in a lease?", "Does a ban cover vaping and cannabis?", "How do I prove smoking?", "What can I charge for smoke damage?"]
+inspired_by = "https://rentredi.com/blog/getting-rid-of-cigarette-smoke/"
+demand = "RentRedi publishes a post on this question (/blog/getting-rid-of-cigarette-smoke/); same topic appears in other landlord-software blogs"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "tenant-move-in-process-step-by-step"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Tenant Move-In Process: Step by Step"
+question = "What steps should a landlord complete before and on a tenant's move-in day?"
+subquestions = ["What must be paid before keys?", "Which documents do I collect before move-in?", "How do I hand over keys?", "What do I put in a welcome packet?"]
+inspired_by = "https://www.doorloop.com/blog/tips-for-a-smooth-new-tenant-move-in"
+demand = "DoorLoop publishes a post on this question (/blog/tips-for-a-smooth-new-tenant-move-in); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "move-in-inspection-how-to"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Do a Move-In Inspection That Protects the Deposit"
+question = "How do I document a unit's condition at move-in so deposit deductions hold up later?"
+subquestions = ["Should the tenant attend the inspection?", "How many photos do I need?", "Should I use video?", "How long does the tenant have to add items?", "How do I store the report?"]
+inspired_by = "https://www.turbotenant.com/property-management/rental-inspection-checklists/"
+demand = "TurboTenant publishes a post on this question (/property-management/rental-inspection-checklists/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "collect-first-month-rent-and-deposit"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Collect First Month's Rent and the Deposit"
+question = "How and when should I collect the deposit and first month's rent from a new tenant?"
+subquestions = ["Should I accept a personal check for move-in funds?", "Should funds clear before keys?", "How do I prorate the first month?", "Where do I hold the deposit?"]
+inspired_by = "https://www.landlordstudio.com/blog/steps-to-collecting-the-security-deposit-and-first-months-rent"
+demand = "Landlord Studio publishes a post on this question (/blog/steps-to-collecting-the-security-deposit-and-first-months-rent); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "how-to-calculate-prorated-rent"
+cluster = "landlord-ops"
+kind = "data"
+title = "How to Calculate Prorated Rent"
+question = "How do I calculate prorated rent for a mid-month move-in or move-out?"
+subquestions = ["Daily rate by days in month or 365 days?", "Which method does the lease use?", "Do I prorate the first or second month?", "Worked example for a move-in on the 18th"]
+inspired_by = "https://rentredi.com/blog/what-is-prorated-rent-and-how-to-calculate/"
+demand = "RentRedi publishes a post on this question (/blog/what-is-prorated-rent-and-how-to-calculate/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rekey-locks-between-tenants"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Should You Rekey Locks Between Tenants?"
+question = "Should a landlord rekey or change the locks after every tenant moves out?"
+subquestions = ["Rekey vs replace: which costs less?", "Are smart locks worth it in rentals?", "Who pays for lost keys?", "Can a tenant change the locks?"]
+inspired_by = "https://rentredi.com/blog/lock-turnover-for-landlords/"
+demand = "RentRedi publishes a post on this question (/blog/lock-turnover-for-landlords/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "renters-insurance-requirement"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Should You Require Renters Insurance?"
+question = "Can a landlord require renters insurance, and how do I check a tenant has it?"
+subquestions = ["Is requiring renters insurance legal?", "What liability limit should I ask for?", "Should I be an interested party on the policy?", "What if the policy lapses?"]
+inspired_by = "https://rentredi.com/blog/landlords-should-require-renters-insurance/"
+demand = "RentRedi publishes a post on this question (/blog/landlords-should-require-renters-insurance/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "utility-transfer-at-move-in"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Transfer Utilities at Move-In and Move-Out"
+question = "How do I make sure utilities move into the tenant's name on time?"
+subquestions = ["Which utilities should the tenant put in their name?", "What is a landlord revert-to-owner agreement?", "Can I require proof of transfer before keys?", "Who pays the gap days?"]
+inspired_by = "https://rentredi.com/blog/stress-free-moving-starts-with-utility-connect/"
+demand = "RentRedi publishes a post on this question (/blog/stress-free-moving-starts-with-utility-connect/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "best-ways-to-collect-rent"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Best Ways to Collect Rent: Methods Compared"
+question = "What is the best way for a landlord to collect rent: ACH, card, Zelle, check or cash?"
+subquestions = ["What are the fees for each method?", "How fast does each method settle?", "Which methods can a tenant reverse?", "Should I accept cash?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/best-way-to-collect-rent-as-a-landlord/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/best-way-to-collect-rent-as-a-landlord/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "ach-rent-payments-how-long"
+cluster = "landlord-ops"
+kind = "guide"
+title = "ACH Rent Payments: Timing, Returns and Fees"
+question = "How long does an ACH rent payment take, and what happens if it bounces?"
+subquestions = ["How many days does ACH take to clear?", "What is an NSF return?", "Can I charge an NSF fee?", "When should I stop accepting ACH from a tenant?"]
+inspired_by = "https://www.landlordstudio.com/blog/how-long-does-ach-take-for-rent"
+demand = "Landlord Studio publishes a post on this question (/blog/how-long-does-ach-take-for-rent); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "venmo-zelle-cash-app-for-rent"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Venmo, Zelle or Cash App for Rent: Risks"
+question = "Is it safe to collect rent with Venmo, Zelle or Cash App?"
+subquestions = ["Do peer-to-peer apps allow business payments?", "Can a tenant reverse a payment?", "How do I keep records for taxes?", "What happens if the app freezes funds?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/venmo-for-rent-payments/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/venmo-for-rent-payments/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "set-up-autopay-for-rent"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Get Tenants on Rent Autopay"
+question = "How do I get more tenants to set up autopay for rent?"
+subquestions = ["Does autopay raise on-time payment rates?", "Can I require autopay?", "When should autopay run?", "What if the autopay fails?"]
+inspired_by = "https://rentredi.com/blog/autopay-helps-tenants-pay-on-time/"
+demand = "RentRedi publishes a post on this question (/blog/autopay-helps-tenants-pay-on-time/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "when-is-rent-due-and-grace-periods"
+cluster = "landlord-ops"
+kind = "guide"
+title = "When Is Rent Due and How Grace Periods Work"
+question = "When is rent legally due, and what is a grace period?"
+subquestions = ["Is rent due on the 1st by law?", "What is a grace period?", "Does a grace period make rent not late?", "What if the due date falls on a weekend?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/when-is-rent-due/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/when-is-rent-due/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-receipts-and-ledgers"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Rent Receipts and Tenant Ledgers: What to Keep"
+question = "Must a landlord give rent receipts, and how do I keep a tenant ledger?"
+subquestions = ["Which payments need a receipt?", "What goes on a rent receipt?", "What is a tenant ledger?", "How long should I keep payment records?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/how-to-write-a-rent-receipt/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/how-to-write-a-rent-receipt/); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "should-landlords-accept-partial-rent"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Should Landlords Accept Partial Rent?"
+question = "Should I accept a partial rent payment, and how can it affect an eviction?"
+subquestions = ["Can partial payment waive a pay-or-quit notice?", "What is a partial payment agreement?", "How do I apply partial payments to fees vs rent?", "Can I refuse partial rent?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/should-a-landlord-accept-partial-rent-payments/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/should-a-landlord-accept-partial-rent-payments/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rent-payment-plans-for-tenants"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Set Up a Rent Payment Plan"
+question = "How do I set up a payment plan for a tenant who is behind on rent?"
+subquestions = ["When is a payment plan better than eviction?", "What terms go in a written plan?", "What happens if the tenant misses a plan payment?", "Should late fees stop during the plan?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/tenant-not-paying-rent/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/tenant-not-paying-rent/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-reporting-to-credit-bureaus"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Rent Reporting to Credit Bureaus: Should You Offer It?"
+question = "Should landlords report tenants' rent payments to the credit bureaus?"
+subquestions = ["How does rent reporting work?", "Does it help tenants pay on time?", "Which bureaus take rent data?", "Can I report only late payments?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/rent-reporting-services/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/rent-reporting-services/); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "how-to-set-a-late-fee"
+cluster = "landlord-ops"
+kind = "guide"
+title = "How to Set a Late Fee That Holds Up"
+question = "How much should a rent late fee be, and how do I make it enforceable?"
+subquestions = ["Flat fee or percentage?", "Is a daily late fee legal?", "What makes a late fee 'reasonable'?", "Must the lease state the late fee?", "Can I waive a late fee once?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/everything-you-need-to-know-about-late-fees/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/everything-you-need-to-know-about-late-fees/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "what-to-do-when-rent-is-late"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What to Do When Rent Is Late: Day-by-Day Plan"
+question = "What should a landlord do on day 1, day 5 and day 10 when rent is late?"
+subquestions = ["When do I contact the tenant?", "When do I add the late fee?", "When do I serve a pay-or-quit notice?", "When should I call an attorney?"]
+inspired_by = "https://www.landlordstudio.com/blog/what-to-do-when-the-rent-is-late"
+demand = "Many guides answer 'tenant not paying rent' with a step order (biggerpockets.com, tenantcloud.com, purepm.co)"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "tenant-keeps-paying-rent-late"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What to Do When a Tenant Always Pays Late"
+question = "How do I handle a tenant who pays rent late every month?"
+subquestions = ["Should I change the due date?", "Do I enforce late fees every time?", "Is chronic late payment grounds to non-renew?", "What do I document?"]
+inspired_by = "https://rentredi.com/blog/tenant-keeps-paying-rent-late/"
+demand = "RentRedi publishes a post on this question (/blog/tenant-keeps-paying-rent-late/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "pay-or-quit-notice-explained"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Pay-or-Quit Notice: How It Works"
+question = "What is a pay-or-quit notice, and how do I serve one correctly?"
+subquestions = ["What must a pay-or-quit notice include?", "How many days does the tenant get?", "How do I serve the notice?", "What mistakes void a notice?"]
+inspired_by = "https://www.landlordstudio.com/blog/what-can-void-a-three-day-notice"
+demand = "Landlord Studio publishes a post on this question (/blog/what-can-void-a-three-day-notice); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "collect-unpaid-rent-after-tenant-leaves"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Collect Unpaid Rent After a Tenant Moves Out"
+question = "How can a landlord collect rent a former tenant still owes?"
+subquestions = ["Small claims court or collection agency?", "How do I find a former tenant?", "What does a collection agency charge?", "How long do I have to collect?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/how-long-collect-unpaid-rent/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/how-long-collect-unpaid-rent/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tenant-files-bankruptcy-what-landlord-can-do"
+cluster = "landlord-ops"
+kind = "guide"
+title = "What Happens When a Tenant Files Bankruptcy"
+question = "What can a landlord do when a tenant files Chapter 7 or Chapter 13 bankruptcy?"
+subquestions = ["What is the automatic stay?", "Can I still evict?", "What happens to unpaid rent?", "Chapter 7 vs Chapter 13 for landlords"]
+inspired_by = "https://www.doorloop.com/blog/my-tenant-filed-chapter-7-everything-you-need-to-know-as-a-landlord"
+demand = "DoorLoop publishes a post on this question (/blog/my-tenant-filed-chapter-7-everything-you-need-to-know-as-a-landlord); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "small-claims-court-for-landlords"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Small Claims Court for Landlords: How to Prepare"
+question = "How does a landlord sue a tenant in small claims court for rent or damages?"
+subquestions = ["What can I claim in small claims?", "What evidence do I bring?", "How do I serve the tenant?", "How do I collect after I win?"]
+inspired_by = "https://www.doorloop.com/blog/tenant-suing-landlord-for-security-deposit-what-should-property-owners-know"
+demand = "DoorLoop publishes a post on this question (/blog/tenant-suing-landlord-for-security-deposit-what-should-property-owners-know); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-fast-must-a-landlord-make-repairs"
+cluster = "landlord-ops"
+kind = "guide"
+title = "How Fast Must a Landlord Make Repairs?"
+question = "How quickly does a landlord have to fix a repair after a tenant reports it?"
+subquestions = ["What is a habitability repair?", "What counts as an emergency repair?", "What can a tenant do if repairs wait too long?", "How do I set repair response targets?"]
+inspired_by = "https://rentredi.com/blog/how-long-should-a-landlord-take-to-make-repairs/"
+demand = "RentRedi publishes a post on this question (/blog/how-long-should-a-landlord-take-to-make-repairs/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "emergency-vs-routine-maintenance"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Emergency vs Routine Maintenance: How to Triage"
+question = "Which maintenance requests are emergencies, and which can wait?"
+subquestions = ["What counts as an emergency?", "What is urgent but not an emergency?", "How do I set after-hours rules?", "What should the tenant do first in a leak or no-heat case?"]
+inspired_by = "https://www.turbotenant.com/property-management/landlord-emergency-preparedness/"
+demand = "TurboTenant publishes a post on this question (/property-management/landlord-emergency-preparedness/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "maintenance-request-process"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Set Up a Maintenance Request Process"
+question = "How should tenants submit maintenance requests, and how do I track them to done?"
+subquestions = ["Should I require written requests?", "What info should a request include?", "How do I track status?", "How do I close out a request with the tenant?"]
+inspired_by = "https://www.turbotenant.com/property-management/rental-property-maintenance-requests/"
+demand = "TurboTenant publishes a post on this question (/property-management/rental-property-maintenance-requests/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "landlord-vs-tenant-repair-responsibilities"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Who Pays for What: Landlord vs Tenant Repairs"
+question = "Which repairs does the landlord pay for and which does the tenant pay for?"
+subquestions = ["Who pays for clogged drains?", "Who pays for light bulbs and filters?", "Who pays for appliance repairs?", "How do I write repair duties into the lease?"]
+inspired_by = "https://rentredi.com/blog/how-to-outline-maintenance-responsibilities/"
+demand = "RentRedi publishes a post on this question (/blog/how-to-outline-maintenance-responsibilities/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "preventive-maintenance-schedule-for-rentals"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "Preventive Maintenance Schedule for Rentals"
+question = "Which preventive maintenance tasks should a rental get each month, season and year?"
+subquestions = ["Monthly tasks", "Spring and fall tasks", "Yearly tasks", "Which tasks can the tenant do?", "What does preventive maintenance save?"]
+inspired_by = "https://www.doorloop.com/blog/preventive-maintenance-checklist-for-property-management"
+demand = "DoorLoop publishes a post on this question (/blog/preventive-maintenance-checklist-for-property-management); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "hvac-maintenance-for-rental-properties"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "HVAC Maintenance for Rentals: What and How Often"
+question = "How often should a rental's HVAC system get service, and who changes the filters?"
+subquestions = ["How often should filters change?", "Who changes filters: landlord or tenant?", "How often should a pro service the HVAC?", "What does an HVAC service visit cost?"]
+inspired_by = "https://rentredi.com/blog/preventative-hvac-maintenance-checklist/"
+demand = "RentRedi publishes a post on this question (/blog/preventative-hvac-maintenance-checklist/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "winterize-a-rental-property"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "How to Winterize a Rental Property"
+question = "What should a landlord do to prepare a rental for winter?"
+subquestions = ["How do I prevent frozen pipes?", "What should a vacant unit get in winter?", "Who handles snow removal?", "What do I tell tenants before a freeze?"]
+inspired_by = "https://rentredi.com/blog/prepare-your-rental-property-for-winter/"
+demand = "RentRedi publishes a post on this question (/blog/prepare-your-rental-property-for-winter/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "most-common-rental-repairs-and-costs"
+cluster = "landlord-ops"
+kind = "data"
+title = "Most Common Rental Repairs and What They Cost"
+question = "Which repairs come up most in rentals, and how much should I budget for each?"
+subquestions = ["What are the most common repair requests?", "How much does an appliance repair cost?", "How much should I budget for maintenance per year?", "Which repairs can I prevent?"]
+inspired_by = "https://www.doorloop.com/blog/most-common-rental-repairs-and-problems"
+demand = "DoorLoop publishes a post on this question (/blog/most-common-rental-repairs-and-problems); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rental-maintenance-budget-rule"
+cluster = "landlord-ops"
+kind = "data"
+title = "How Much to Budget for Rental Maintenance"
+question = "How much should a landlord budget each year for maintenance and capital repairs?"
+subquestions = ["What is the 1% rule for maintenance?", "What is the 50% rule?", "How do age and type of home change the budget?", "What is a capex reserve?"]
+inspired_by = "https://rentredi.com/blog/how-much-is-enough-for-rental-property-reserves/"
+demand = "RentRedi publishes a post on this question (/blog/how-much-is-enough-for-rental-property-reserves/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "how-to-find-reliable-rental-contractors"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Find and Vet Contractors for Rentals"
+question = "How do I find reliable vendors for rental repairs and check them?"
+subquestions = ["Which trades do I need on call?", "What should I check: license, insurance, W-9?", "How do I compare quotes?", "Should I use a handyman or a licensed trade?"]
+inspired_by = "https://www.doorloop.com/blog/the-importance-of-vendor-relationship-management-for-landlords"
+demand = "DoorLoop publishes a post on this question (/blog/the-importance-of-vendor-relationship-management-for-landlords); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "pest-control-landlord-or-tenant"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Pest Control in Rentals: Landlord or Tenant Responsibility?"
+question = "Who is responsible for pest control in a rental, the landlord or the tenant?"
+subquestions = ["Who pays for bed bugs?", "Who pays for mice or roaches?", "What lease clause covers pests?", "How do I prevent pest problems at turnover?"]
+inspired_by = "https://www.doorloop.com/blog/pest-control-tenant-and-landlord-responsibilities"
+demand = "DoorLoop publishes a post on this question (/blog/pest-control-tenant-and-landlord-responsibilities); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "mold-in-rental-property"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Mold in a Rental: What Landlords Must Do"
+question = "What should a landlord do when a tenant reports mold?"
+subquestions = ["Is mold a habitability issue?", "Who is at fault: leak or tenant humidity?", "When do I need a mold inspection?", "What goes in a mold addendum?"]
+inspired_by = "https://www.doorloop.com/blog/removing-mold-rental-properties"
+demand = "DoorLoop publishes a post on this question (/blog/removing-mold-rental-properties); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "water-leak-in-a-rental-what-to-do"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Water Leak in a Rental: What to Do First"
+question = "What should a landlord do in the first hours after a water leak in a rental?"
+subquestions = ["How do I shut off the water?", "Do I call insurance first or a plumber?", "Who pays for tenant belongings?", "How do I prevent mold after a leak?"]
+inspired_by = "https://rentredi.com/blog/how-to-emergency-proof-your-rental-for-evictions-and-repairs/"
+demand = "RentRedi publishes a post on this question (/blog/how-to-emergency-proof-your-rental-for-evictions-and-repairs/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "appliances-in-rentals-repair-or-replace"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Rental Appliances: Repair or Replace?"
+question = "When should a landlord repair an appliance and when should it be replaced?"
+subquestions = ["How long do appliances last?", "What is the 50% rule for repair vs replace?", "Must a landlord provide appliances?", "Should I buy home warranties?"]
+inspired_by = "https://www.turbotenant.com/property-management/average-cost-of-rental-unit-appliance-repairs/"
+demand = "TurboTenant publishes a post on this question (/property-management/average-cost-of-rental-unit-appliance-repairs/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "can-tenants-withhold-rent-for-repairs"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Can Tenants Withhold Rent for Repairs?"
+question = "When can a tenant withhold rent or repair-and-deduct, and how should a landlord respond?"
+subquestions = ["What is repair and deduct?", "What notice must a tenant give?", "What is the warranty of habitability?", "How do I avoid a rent withholding dispute?"]
+inspired_by = "https://www.turbotenant.com/collect-rent-payments-online/payment-resources/withhold-rent-repairs/"
+demand = "TurboTenant publishes a post on this question (/collect-rent-payments-online/payment-resources/withhold-rent-repairs/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tenant-diy-repairs-and-alterations"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Tenant Repairs and Changes: What to Allow"
+question = "Should a landlord let a tenant paint, make repairs or install fixtures?"
+subquestions = ["Can a tenant paint the walls?", "What changes need written consent?", "Who owns fixtures the tenant installs?", "Can I charge to undo changes?"]
+inspired_by = "https://www.doorloop.com/blog/allowing-tenants-to-paint-rental-walls-a-landlords-guide"
+demand = "DoorLoop publishes a post on this question (/blog/allowing-tenants-to-paint-rental-walls-a-landlords-guide); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "how-often-to-inspect-a-rental"
+cluster = "landlord-ops"
+kind = "guide"
+title = "How Often Should You Inspect a Rental?"
+question = "How often should a landlord inspect an occupied rental unit?"
+subquestions = ["Move-in, routine, move-out: what is the difference?", "Is once a year enough?", "Do inspections help insurance claims?", "What do routine inspections look for?"]
+inspired_by = "https://www.doorloop.com/blog/rental-property-inspections-frequency"
+demand = "BiggerPockets forum threads 'how often are you expecting property managers to walkthrough' and 'stop inspecting occupied rentals'"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "routine-rental-inspection-how-to"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Do a Routine Inspection of an Occupied Rental"
+question = "What should a landlord check during a routine inspection, and how do I run it?"
+subquestions = ["How much notice do I give?", "What do I check room by room?", "Can I take photos of tenant belongings?", "What do I do with the findings?"]
+inspired_by = "https://rentredi.com/blog/inspect-occupied-properties/"
+demand = "RentRedi publishes a post on this question (/blog/inspect-occupied-properties/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "landlord-right-of-entry-notice"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Landlord Right of Entry: Notice and Limits"
+question = "When can a landlord enter a rented unit, and how much notice is normal?"
+subquestions = ["What counts as reasonable notice?", "When can I enter without notice?", "Can a tenant refuse entry?", "What hours are reasonable?"]
+inspired_by = "https://rentredi.com/blog/landlords-legal-right-of-entry-rental-units/"
+demand = "RentRedi publishes a post on this question (/blog/landlords-legal-right-of-entry-rental-units/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "pre-move-out-inspection"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Pre-Move-Out Inspection: Why and How"
+question = "Should I do a walk-through before the tenant moves out?"
+subquestions = ["What is a pre-move-out inspection?", "When should it happen?", "What do I tell the tenant to fix?", "Does it reduce deposit disputes?"]
+inspired_by = "https://rentredi.com/blog/pre-move-out-inspection-things-to-know/"
+demand = "RentRedi publishes a post on this question (/blog/pre-move-out-inspection-things-to-know/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "annual-safety-inspection-for-rentals"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "Annual Safety Check for Rentals"
+question = "What safety items should a landlord check in every rental each year?"
+subquestions = ["Smoke and CO detectors", "Water heater and gas lines", "Railings, stairs and windows", "Electrical panel and GFCI outlets", "Dryer vents and fire risks"]
+inspired_by = "https://www.turbotenant.com/property-management/the-ultimate-rental-property-maintenance-checklist-for-fall/"
+demand = "TurboTenant publishes a post on this question (/property-management/the-ultimate-rental-property-maintenance-checklist-for-fall/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "ai-and-photo-inspections-for-rentals"
+cluster = "landlord-ops"
+kind = "guide"
+title = "AI and Photo-Based Rental Inspections"
+question = "Do AI and tenant-led photo inspections work as well as in-person inspections?"
+subquestions = ["How do self-guided photo inspections work?", "What can AI flag in photos?", "When is an in-person visit still needed?", "Will the photos hold up in a deposit dispute?"]
+inspired_by = "https://www.doorloop.com/blog/ai-inspections"
+demand = "DoorLoop publishes a post on this question (/blog/ai-inspections); same topic appears in other landlord-software blogs"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "how-much-should-a-security-deposit-be"
+cluster = "landlord-ops"
+kind = "guide"
+title = "How Much Should a Security Deposit Be?"
+question = "How much security deposit should a landlord charge?"
+subquestions = ["Is one month's rent the norm?", "Can I charge more for higher risk?", "Do pet deposits count toward the cap?", "What is a deposit alternative?"]
+inspired_by = "https://www.doorloop.com/blog/how-much-should-a-security-deposit-be"
+demand = "DoorLoop publishes a post on this question (/blog/how-much-should-a-security-deposit-be); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "normal-wear-and-tear-vs-damage"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Normal Wear and Tear vs Damage: Examples"
+question = "What counts as normal wear and tear, and what counts as tenant damage?"
+subquestions = ["Is carpet wear normal?", "Are nail holes damage?", "Is faded paint wear and tear?", "How do I prove damage?", "Wear vs damage table by item"]
+inspired_by = "https://www.turbotenant.com/glossary/normal-wear-and-tear/"
+demand = "Reddit thread on $800 move-out charges for repainting and reglazing (sentinel-team snapshot); ipropertymanagement normal-wear-and-tear page"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "depreciation-for-deposit-deductions"
+cluster = "landlord-ops"
+kind = "data"
+title = "Charging for Damage: Useful Life and Prorating"
+question = "How much can I deduct for damaged carpet, paint or appliances based on their age?"
+subquestions = ["What is useful life for carpet and paint?", "How do I prorate a replacement charge?", "Worked example: 4-year-old carpet", "Can I charge labor at my own rate?"]
+inspired_by = "https://www.doorloop.com/blog/landlords-charge-tenants-carpet-cleaning-damages"
+demand = "iPropertyManagement shows prorating carpet by remaining life; forum posts dispute useful-life years"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "security-deposit-deductions-list"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "Security Deposit Deductions: What You Can and Cannot Charge"
+question = "Which charges can a landlord take from a security deposit?"
+subquestions = ["Can I deduct unpaid rent?", "Can I deduct cleaning?", "Can I charge for re-keying?", "What needs a receipt?"]
+inspired_by = "https://www.doorloop.com/blog/security-deposit-deductions-list-a-guide-for-landlords"
+demand = "DoorLoop publishes a post on this question (/blog/security-deposit-deductions-list-a-guide-for-landlords); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-to-return-a-security-deposit"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Return a Security Deposit Step by Step"
+question = "How do I return a security deposit with an itemized statement on time?"
+subquestions = ["What goes in an itemized statement?", "Where do I send it if the tenant left no address?", "How do I pay it out?", "What happens if I miss the deadline?"]
+inspired_by = "https://rentredi.com/blog/how-to-return-security-deposit-to-tenant/"
+demand = "RentRedi publishes a post on this question (/blog/how-to-return-security-deposit-to-tenant/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "move-out-inspection-how-to"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Do a Move-Out Inspection"
+question = "How do I run a move-out inspection that compares to the move-in report?"
+subquestions = ["Should the tenant attend?", "How do I compare move-in and move-out photos?", "What do I do with left-behind items?", "When do I do it after keys come back?"]
+inspired_by = "https://www.turbotenant.com/property-management/move-out-checklist/"
+demand = "TurboTenant publishes a post on this question (/property-management/move-out-checklist/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "move-out-instructions-for-tenants"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What to Send Tenants Before They Move Out"
+question = "What instructions should I give a tenant before move-out to get the unit back clean?"
+subquestions = ["When should I send move-out instructions?", "What cleaning standard do I ask for?", "How do they return keys?", "How do I get a forwarding address?"]
+inspired_by = "https://www.doorloop.com/blog/tenant-move-out-checklist"
+demand = "DoorLoop publishes a post on this question (/blog/tenant-move-out-checklist); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "security-deposit-disputes"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Handle a Security Deposit Dispute"
+question = "What should a landlord do when a tenant disputes deposit deductions?"
+subquestions = ["What evidence wins a deposit dispute?", "Should I offer a partial refund?", "What if the tenant sues in small claims?", "What penalties exist for bad-faith withholding?"]
+inspired_by = "https://www.doorloop.com/blog/tenant-suing-landlord-for-security-deposit-what-should-property-owners-know"
+demand = "DoorLoop publishes a post on this question (/blog/tenant-suing-landlord-for-security-deposit-what-should-property-owners-know); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "where-to-hold-security-deposits"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Where to Hold Security Deposits"
+question = "Must a landlord keep security deposits in a separate account, and does it earn interest?"
+subquestions = ["Separate account or not?", "Do I owe interest on deposits?", "Can I spend the deposit?", "How do I track deposits across units?"]
+inspired_by = "https://www.doorloop.com/blog/escrow-account-for-security-deposits"
+demand = "DoorLoop publishes a post on this question (/blog/escrow-account-for-security-deposits); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "security-deposit-alternatives"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Security Deposit Alternatives: Insurance and Bonds"
+question = "Are deposit alternatives like surety bonds or deposit insurance good for landlords?"
+subquestions = ["How does deposit insurance work?", "What does the tenant pay?", "How do claims work?", "What are the risks for the landlord?"]
+inspired_by = "https://www.doorloop.com/blog/security-deposit-insurance"
+demand = "DoorLoop publishes a post on this question (/blog/security-deposit-insurance); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "abandoned-property-after-move-out"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What to Do With Things a Tenant Leaves Behind"
+question = "What can a landlord do with belongings a tenant leaves after move-out?"
+subquestions = ["How long must I store items?", "What notice must I send?", "Can I throw away trash right away?", "What about vehicles?"]
+inspired_by = "https://rentredi.com/blog/legally-handle-abandoned-property/"
+demand = "RentRedi publishes a post on this question (/blog/legally-handle-abandoned-property/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tenant-abandoned-the-unit"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What to Do When a Tenant Abandons the Unit"
+question = "How do I know a tenant has abandoned a rental, and what steps do I take?"
+subquestions = ["What are signs of abandonment?", "Do I post a notice of abandonment?", "When can I re-enter and re-rent?", "What happens to the deposit?"]
+inspired_by = "https://www.turbotenant.com/property-management/tenant-abandonment-guide/"
+demand = "TurboTenant publishes a post on this question (/property-management/tenant-abandonment-guide/); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-much-to-raise-rent-at-renewal"
+cluster = "landlord-ops"
+kind = "data"
+title = "How Much to Raise Rent at Renewal"
+question = "How much should I raise the rent when a good tenant renews?"
+subquestions = ["What is a typical yearly rent increase?", "How do I compare to market rent?", "When is a flat rent better?", "Worked example: increase vs turnover cost"]
+inspired_by = "https://www.landlordstudio.com/blog/whats-a-reasonable-rent-increase"
+demand = "Renewal raise questions in landlord blogs and Quora (rentecdirect.com, evernest.co, landager.com)"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rent-increase-notice-timing"
+cluster = "landlord-ops"
+kind = "guide"
+title = "How Much Notice for a Rent Increase?"
+question = "How much notice must a landlord give before a rent increase?"
+subquestions = ["Can I raise rent during a fixed lease?", "How much notice is common?", "How does notice differ for month-to-month?", "How do I deliver the notice?"]
+inspired_by = "https://www.landlordstudio.com/blog/how-to-write-and-send-a-rent-increase-notice"
+demand = "Landlord Studio publishes a post on this question (/blog/how-to-write-and-send-a-rent-increase-notice); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "lease-renewal-process-timeline"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Lease Renewal Process: A 90-Day Timeline"
+question = "When and how should I start the lease renewal process?"
+subquestions = ["When do I send the renewal offer?", "Should I inspect before renewing?", "How long does the tenant have to answer?", "What if the tenant does not respond?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/lease-renewal/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/lease-renewal/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "renew-or-replace-a-tenant"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Renew or Replace a Tenant: Cost Comparison"
+question = "Is it cheaper to renew a current tenant at a lower raise or find a new tenant at market rent?"
+subquestions = ["What does turnover cost?", "How many months of higher rent pay back a vacancy?", "When is non-renewal the right call?", "Worked comparison table"]
+inspired_by = "https://rentredi.com/blog/when-to-offer-lease-renewals-versus-finding-new-tenants/"
+demand = "RentRedi publishes a post on this question (/blog/when-to-offer-lease-renewals-versus-finding-new-tenants/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-to-not-renew-a-lease"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Not Renew a Tenant's Lease"
+question = "How do I tell a tenant I will not renew the lease, and how much notice is needed?"
+subquestions = ["Do I need a reason to not renew?", "How much notice is common?", "What is retaliation risk?", "What if the tenant stays after the end date?"]
+inspired_by = "https://www.doorloop.com/blog/non-renewal-of-lease-letter"
+demand = "DoorLoop publishes a post on this question (/blog/non-renewal-of-lease-letter); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "tenant-retention-strategies"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "How to Keep Good Tenants Longer"
+question = "What do landlords do to keep good tenants and cut turnover?"
+subquestions = ["Does fast maintenance raise renewals?", "Do renewal incentives work?", "Should I upgrade the unit at renewal?", "How do I ask tenants what they want?"]
+inspired_by = "https://www.doorloop.com/blog/reduce-tenant-turnover"
+demand = "DoorLoop publishes a post on this question (/blog/reduce-tenant-turnover); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "holdover-tenant-what-to-do"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What to Do With a Holdover Tenant"
+question = "What can a landlord do when a tenant stays after the lease ends?"
+subquestions = ["What is a holdover tenant?", "Does accepting rent create a new tenancy?", "Can I charge holdover rent?", "When do I start an eviction?"]
+inspired_by = "https://rentredi.com/blog/how-to-handle-a-holdover-tenant/"
+demand = "RentRedi publishes a post on this question (/blog/how-to-handle-a-holdover-tenant/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rent-control-basics-for-landlords"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Rent Control and Rent Caps: What Landlords Should Check"
+question = "How do I know if rent control or a rent cap applies to my rental?"
+subquestions = ["Which kinds of rent regulation exist?", "Are single-family homes exempt?", "What are just-cause eviction rules?", "Where do I check local rules?"]
+inspired_by = "https://www.turbotenant.com/rent-collection/states-with-rent-control/"
+demand = "TurboTenant publishes a post on this question (/rent-collection/states-with-rent-control/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "eviction-process-step-by-step"
+cluster = "landlord-ops"
+kind = "guide"
+title = "The Eviction Process Step by Step"
+question = "What are the steps of a residential eviction from notice to lockout?"
+subquestions = ["What notice starts an eviction?", "What happens at the court hearing?", "What is a writ of possession?", "Who does the lockout?", "How long does each step take?"]
+inspired_by = "https://www.turbotenant.com/property-management/how-to-evict-a-tenant/"
+demand = "TurboTenant publishes a post on this question (/property-management/how-to-evict-a-tenant/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "cost-of-an-eviction"
+cluster = "landlord-ops"
+kind = "data"
+title = "How Much Does an Eviction Cost?"
+question = "What does an eviction cost a landlord in fees, lost rent and turnover?"
+subquestions = ["Court and filing fees", "Attorney fees", "Lost rent during the case", "Damage and turnover costs", "Worked total example"]
+inspired_by = "https://rentredi.com/blog/cost-of-an-eviction/"
+demand = "RentRedi publishes a post on this question (/blog/cost-of-an-eviction/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "cash-for-keys-agreement"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Cash for Keys: When and How to Offer It"
+question = "When is cash for keys cheaper than an eviction, and how do I structure the deal?"
+subquestions = ["How much do landlords offer?", "What conditions go in the agreement?", "When do I pay the cash?", "Is cash for keys a risk?"]
+inspired_by = "https://rentredi.com/blog/cash-for-keys-what-landlords-need-to-know/"
+demand = "RentRedi publishes a post on this question (/blog/cash-for-keys-what-landlords-need-to-know/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "self-help-eviction-is-illegal"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Self-Help Eviction: What Landlords Must Never Do"
+question = "What is a self-help eviction, and why is it illegal?"
+subquestions = ["Can I change the locks on a tenant who does not pay?", "Can I shut off utilities?", "Can I remove belongings?", "What penalties apply?"]
+inspired_by = "https://www.landlordstudio.com/blog/self-help-eviction-are-they-legal"
+demand = "Landlord Studio publishes a post on this question (/blog/self-help-eviction-are-they-legal); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "eviction-court-hearing-preparation"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Prepare for an Eviction Hearing"
+question = "What documents and evidence should a landlord bring to an eviction hearing?"
+subquestions = ["Which documents do I bring?", "How do I show the notice was served?", "What do tenants raise as defenses?", "Do I need an attorney?"]
+inspired_by = "https://www.doorloop.com/blog/master-the-eviction-process-legal-insights"
+demand = "DoorLoop publishes a post on this question (/blog/master-the-eviction-process-legal-insights); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "evict-a-tenant-with-no-lease"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Remove a Tenant With No Written Lease"
+question = "How do I end a tenancy when there is no written lease?"
+subquestions = ["Is a verbal lease valid?", "What notice ends a tenancy at will?", "How do I prove the tenancy terms?", "What about a family member or friend who moved in?"]
+inspired_by = "https://www.landlordstudio.com/blog/evict-a-tenant-with-no-lease"
+demand = "Landlord Studio publishes a post on this question (/blog/evict-a-tenant-with-no-lease); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "retaliation-and-eviction"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Retaliation: When an Eviction or Rent Raise Is Illegal"
+question = "What counts as retaliation against a tenant, and how do landlords avoid it?"
+subquestions = ["What is retaliation?", "Which tenant actions are protected?", "How long after a complaint does the risk last?", "How do records protect me?"]
+inspired_by = "https://www.doorloop.com/blog/tenant-harassment"
+demand = "DoorLoop publishes a post on this question (/blog/tenant-harassment); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "pet-policy-for-rentals"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Write a Pet Policy for a Rental"
+question = "What should a rental pet policy include?"
+subquestions = ["Which pets and how many?", "Weight or breed limits and insurance", "Pet screening steps", "Pet rules and waste cleanup"]
+inspired_by = "https://rentredi.com/blog/pet-policy/"
+demand = "RentRedi publishes a post on this question (/blog/pet-policy/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "pet-deposit-vs-pet-fee-vs-pet-rent"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Pet Deposit vs Pet Fee vs Pet Rent"
+question = "Should I charge a pet deposit, a pet fee, pet rent or a mix?"
+subquestions = ["What is the difference between each?", "How much is typical?", "Which ones are refundable?", "Can I charge all three?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/pet-deposit/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/pet-deposit/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "how-much-to-charge-pet-rent"
+cluster = "landlord-ops"
+kind = "data"
+title = "How Much to Charge for Pet Rent"
+question = "How much pet rent should a landlord charge per month?"
+subquestions = ["What is a normal pet rent?", "Should pet rent vary by size?", "Does pet rent cover pet damage?", "Worked math: pet rent over a 12-month lease"]
+inspired_by = "https://www.doorloop.com/blog/how-much-to-charge-pet-rent"
+demand = "DoorLoop publishes a post on this question (/blog/how-much-to-charge-pet-rent); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "assistance-animal-requests"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Service and Assistance Animal Requests: A Landlord's Guide"
+question = "How should a landlord handle a request for a service animal or emotional support animal?"
+subquestions = ["What does HUD say about assistance animals?", "Can I charge a pet fee for an assistance animal?", "What documents can I ask for?", "When can I deny a request?"]
+inspired_by = "https://rentredi.com/blog/renting-to-tenants-with-emotional-support-dogs/"
+demand = "RentRedi publishes a post on this question (/blog/renting-to-tenants-with-emotional-support-dogs/); same topic appears in other landlord-software blogs"
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "utilities-landlord-or-tenant-pays"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Who Pays Utilities: Landlord or Tenant?"
+question = "Which utilities should the tenant pay, and which should stay in the landlord's name?"
+subquestions = ["Which utilities are usually in the tenant's name?", "Why does water often stay with the owner?", "Can unpaid tenant water become a lien?", "How do I write utilities into the lease?"]
+inspired_by = "https://rentredi.com/blog/rental-property-utility-savings-guide-for-landlords/"
+demand = "Utility billing pages (City of La Crosse), forum threads (BiggerPockets, Avail community 'utilities question')"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rubs-utility-billing-explained"
+cluster = "landlord-ops"
+kind = "guide"
+title = "RUBS Utility Billing: How Ratio Billing Works"
+question = "How does a ratio utility billing system (RUBS) split utility costs among tenants?"
+subquestions = ["What is RUBS?", "How is each unit's share calculated?", "Is RUBS legal everywhere?", "RUBS vs submetering"]
+inspired_by = "https://www.doorloop.com/blog/rubs-rental-property-utility-billing"
+demand = "DoorLoop publishes a post on this question (/blog/rubs-rental-property-utility-billing); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "including-utilities-in-rent"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Utilities Included in Rent: Pros and Cons"
+question = "Should I include utilities in the rent, and how do I price them?"
+subquestions = ["How do I estimate utility cost per unit?", "Do included utilities raise use?", "How do I cap included utilities?", "Is it better for mid-term rentals?"]
+inspired_by = ""
+demand = "Utility billing questions on forums (Avail community, BiggerPockets) and competitor utility guides"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "utility-shutoff-and-landlord-liability"
+cluster = "landlord-ops"
+kind = "guide"
+title = "When Utilities Get Shut Off at a Rental"
+question = "What should a landlord do when a tenant's utility gets shut off?"
+subquestions = ["Is a shut-off a habitability problem?", "Can the utility bill the owner?", "How do I get service restored?", "Can I deduct utility debt from the deposit?"]
+inspired_by = ""
+demand = "Municipal pages say a tenant's past-due water can become the owner's debt (City of La Crosse); forum utility threads"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "rental-turnover-checklist"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "Rental Turnover Checklist: From Keys Back to New Lease"
+question = "What tasks make up a rental turnover, and in what order?"
+subquestions = ["What happens on day 1 after move-out?", "Which trades go first?", "When do I re-list?", "How do I track the turn?"]
+inspired_by = "https://www.doorloop.com/blog/apartment-turnover-checklist-property-managers"
+demand = "DoorLoop publishes a post on this question (/blog/apartment-turnover-checklist-property-managers); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-long-should-a-make-ready-take"
+cluster = "landlord-ops"
+kind = "data"
+title = "How Long Should a Make-Ready Take?"
+question = "How many days should a rental turnover take from move-out to rent-ready?"
+subquestions = ["What is a normal light turn?", "How long does a heavy turn take?", "What slows a turn down?", "Days vacant vs work days"]
+inspired_by = ""
+demand = "BiggerPockets forum (PM policy of 10 days felt long) and vendor guides (propertymeld.com, lula.life) on make-ready time"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "cost-of-tenant-turnover"
+cluster = "landlord-ops"
+kind = "data"
+title = "The Real Cost of Tenant Turnover"
+question = "How much does one tenant turnover cost a landlord?"
+subquestions = ["Lost rent while vacant", "Cleaning, paint and repairs", "Marketing and screening cost", "Worked example on a $1,500 rental"]
+inspired_by = "https://www.landlordstudio.com/blog/the-actual-cost-of-apartment-turnover"
+demand = "Landlord Studio publishes a post on this question (/blog/the-actual-cost-of-apartment-turnover); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rent-ready-standards"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "Rent-Ready Standard: What Every Unit Needs Before Move-In"
+question = "What must be done for a rental to count as rent-ready?"
+subquestions = ["Cleaning standard", "Safety items", "Working systems and appliances", "Paint and flooring", "Final walk-through"]
+inspired_by = "https://rentredi.com/blog/5-life-hacks-to-get-rent-ready/"
+demand = "RentRedi publishes a post on this question (/blog/5-life-hacks-to-get-rent-ready/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "best-paint-and-flooring-for-rentals"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Best Paint and Flooring for Rentals"
+question = "Which paint finish and flooring last longest and cost least in a rental?"
+subquestions = ["Flat, eggshell or satin paint?", "LVP vs carpet vs tile", "How long does each last?", "Cost per year of life table"]
+inspired_by = "https://www.landlordstudio.com/blog/best-flooring-rental-property"
+demand = "Landlord Studio publishes a post on this question (/blog/best-flooring-rental-property); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "tenant-communication-best-practices"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Communicate With Tenants: Channels and Rules"
+question = "Which channels and response times should a landlord use with tenants?"
+subquestions = ["Text, email, portal or phone?", "What should always be in writing?", "How fast should I reply?", "How do I set office hours?"]
+inspired_by = "https://www.doorloop.com/blog/5-ways-to-simplify-landlord-tenant-communications"
+demand = "DoorLoop publishes a post on this question (/blog/5-ways-to-simplify-landlord-tenant-communications); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "noise-complaints-between-tenants"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Handle Noise Complaints Between Tenants"
+question = "What should a landlord do when one tenant complains about another's noise?"
+subquestions = ["What is quiet enjoyment?", "What do I ask the complaining tenant?", "How do I warn the noisy tenant?", "When is noise a lease violation?"]
+inspired_by = "https://www.landlordstudio.com/blog/managing-noise-complaints"
+demand = "Landlord Studio publishes a post on this question (/blog/managing-noise-complaints); same topic appears in other landlord-software blogs"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "parking-rules-for-rentals"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Parking Rules for Rentals: What to Put in the Lease"
+question = "How do I set and enforce parking rules at a rental property?"
+subquestions = ["How do I assign spaces?", "Can I tow a tenant's car?", "Can I ban boats and RVs?", "What about EV charging?"]
+inspired_by = "https://www.doorloop.com/blog/things-to-know-about-tenant-parking-rights"
+demand = "DoorLoop publishes a post on this question (/blog/things-to-know-about-tenant-parking-rights); same topic appears in other landlord-software blogs"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "snow-removal-and-lawn-care"
+cluster = "landlord-ops"
+kind = "comparison"
+title = "Snow Removal and Lawn Care: Landlord or Tenant?"
+question = "Who should handle snow removal and lawn care at a rental: landlord or tenant?"
+subquestions = ["What does the lease say by default?", "What is the liability risk of slip-and-fall?", "Should I hire a service and add it to rent?", "How do I write the duty into the lease?"]
+inspired_by = "https://www.doorloop.com/blog/snow-removal-laws"
+demand = "DoorLoop publishes a post on this question (/blog/snow-removal-laws); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "tenant-death-what-landlord-does"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What a Landlord Should Do When a Tenant Dies"
+question = "What steps does a landlord take when a tenant dies during the lease?"
+subquestions = ["Does the lease end at death?", "Who can enter and remove belongings?", "What happens to the deposit?", "How do I deal with the estate?"]
+inspired_by = "https://www.doorloop.com/blog/lease-agreement-tenants-death"
+demand = "DoorLoop publishes a post on this question (/blog/lease-agreement-tenants-death); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "buying-a-rental-with-existing-tenants"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Taking Over a Rental With Existing Tenants"
+question = "What should I do when I take over a rental that already has tenants?"
+subquestions = ["Which documents do I get from the seller?", "What is a tenant estoppel certificate?", "How do I transfer deposits?", "How do I tell tenants about the new owner?"]
+inspired_by = "https://www.turbotenant.com/property-management/inheriting-tenants-the-landlords-complete-playbook/"
+demand = "TurboTenant publishes a post on this question (/property-management/inheriting-tenants-the-landlords-complete-playbook/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "security-cameras-at-a-rental"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Security Cameras at a Rental: What Is Allowed"
+question = "Can a landlord put security cameras at a rental property?"
+subquestions = ["Where can cameras go?", "Can cameras record audio?", "Must I tell tenants?", "Can I use footage for lease violations?"]
+inspired_by = "https://rentredi.com/blog/pros-cons-security-camera-on-rental-property/"
+demand = "RentRedi publishes a post on this question (/blog/pros-cons-security-camera-on-rental-property/); same topic appears in other landlord-software blogs"
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "manage-a-rental-remotely"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Manage a Rental From Far Away"
+question = "How do I run a rental property in another city without being there?"
+subquestions = ["Which tasks need a local person?", "How do I do showings remotely?", "How do I handle emergencies?", "When should I hire a property manager?"]
+inspired_by = "https://www.turbotenant.com/property-management/how-to-manage-rental-property-remotely/"
+demand = "TurboTenant publishes a post on this question (/property-management/how-to-manage-rental-property-remotely/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "first-time-landlord-setup"
+cluster = "landlord-ops"
+kind = "checklist"
+title = "First-Time Landlord: What to Set Up Before the First Tenant"
+question = "What does a first-time landlord need to set up before renting out a property?"
+subquestions = ["Bank account and rent collection", "Lease, criteria and disclosures", "Insurance", "Vendors and maintenance plan", "Records and receipts"]
+inspired_by = "https://rentredi.com/blog/first-time-landlord-checklist-what-to-set-up-before-move-in/"
+demand = "RentRedi publishes a post on this question (/blog/first-time-landlord-checklist-what-to-set-up-before-move-in/); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "landlord-record-keeping"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "What Records a Landlord Should Keep and for How Long"
+question = "Which records should a landlord keep for each tenancy, and for how long?"
+subquestions = ["Applications and screening reports", "Leases and notices", "Payments and receipts", "Inspection photos and repair records", "How long to keep each"]
+inspired_by = "https://rentredi.com/blog/rental-property-recordkeeping-rules-every-landlord-should-follow/"
+demand = "RentRedi publishes a post on this question (/blog/rental-property-recordkeeping-rules-every-landlord-should-follow/); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "mid-term-rentals-operations"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Mid-Term Rentals: How Operations Differ"
+question = "How do leasing, screening and turnover change for a 1-to-6-month furnished rental?"
+subquestions = ["What lease works for a mid-term stay?", "Who are mid-term renters?", "How often do I turn the unit?", "How do utilities and furniture work?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/what-landlords-need-to-know-about-midterm-rentals/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/what-landlords-need-to-know-about-midterm-rentals/); same topic appears in other landlord-software blogs"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "room-rentals-operations"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Renting by the Room: How It Works"
+question = "How do I run a rental where each tenant leases one room?"
+subquestions = ["One lease or a lease per room?", "How do I split utilities?", "How do I handle conflict between roommates?", "Which house rules go in the lease?"]
+inspired_by = "https://www.turbotenant.com/lease-agreements/room-rental-agreement/"
+demand = "TurboTenant publishes a post on this question (/lease-agreements/room-rental-agreement/); same topic appears in other landlord-software blogs"
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "tenant-scams-landlords-should-know"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Scams Targeting Landlords and How to Spot Them"
+question = "Which scams target landlords, and how do I avoid them?"
+subquestions = ["Overpayment and refund scams", "Fake identity applications", "Squatters with fake leases", "Fake maintenance vendors"]
+inspired_by = "https://rentredi.com/blog/5-examples-of-tenants-scamming-landlords/"
+demand = "RentRedi publishes a post on this question (/blog/5-examples-of-tenants-scamming-landlords/); same topic appears in other landlord-software blogs"
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "squatters-in-a-vacant-rental"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "How to Protect a Vacant Rental From Squatters"
+question = "How can a landlord keep squatters out of a vacant rental, and what if they get in?"
+subquestions = ["How do I secure a vacant unit?", "How often should I check a vacant property?", "What is the difference between a squatter and a tenant?", "Who do I call first?"]
+inspired_by = ""
+demand = "Lockbox and fake-lease squatter scam news (ABC15, WRTV) and self-showing vendor reports"
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "fire-or-casualty-in-a-rental"
+cluster = "landlord-ops"
+kind = "how-to"
+title = "Fire or Disaster at a Rental: What Landlords Do"
+question = "What does a landlord do after a fire or disaster makes a rental unlivable?"
+subquestions = ["Does the lease end?", "Is rent still owed?", "Who pays for tenant housing?", "What do I file with insurance?"]
+inspired_by = "https://www.doorloop.com/blog/tenant-accidentally-causes-fire"
+demand = "DoorLoop publishes a post on this question (/blog/tenant-accidentally-causes-fire); same topic appears in other landlord-software blogs"
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "habitability-standards-for-rentals"
+cluster = "landlord-ops"
+kind = "guide"
+title = "Warranty of Habitability: What a Rental Must Have"
+question = "What makes a rental habitable, and what must a landlord provide?"
+subquestions = ["Heat, water and power", "Structure, roof and windows", "Pests and mold", "Locks and safety items", "What happens if a unit fails"]
+inspired_by = "https://www.doorloop.com/blog/landlord-tenant-rights"
+demand = "DoorLoop publishes a post on this question (/blog/landlord-tenant-rights); same topic appears in other landlord-software blogs"
+priority = 2
+status = "planned"
