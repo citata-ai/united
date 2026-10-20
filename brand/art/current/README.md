@@ -46,3 +46,12 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-s8-failed-inspection-v1.webp` | Library: failed Section 8 inspection | N, cyan |
 | `guide-s8-incentives-v1.webp` | Library: Section 8 landlord incentives | N, lilac |
 | `guide-s8-payment-standard-v1.webp` | Library: payment standard vs fair market rent | N, coral |
+| `guide-s8-rent-increase-v1.webp` | Library: raise the rent on a Section 8 tenant | N, yellow |
+| `guide-soi-laws-v1.webp` | Library: source-of-income laws by state | N, cyan |
+| `guide-tx-eviction-v1.webp` | Library: Texas eviction process | N, lilac |
+| `guide-tx-deposit-v1.webp` | Library: Texas security deposit law | N, coral |
+| `guide-trust-account-v1.webp` | Library: what is a trust account | N, cyan |
+| `guide-noi-v1.webp` | Library: what is NOI on a rental | N, lilac |
+| `guide-chatgpt-data-v1.webp` | Library: where ChatGPT gets local business data | N, coral |
+| `guide-owners-leave-v1.webp` | Library: why owners leave property managers | N, yellow |
+| `guide-screening-criteria-v1.webp` | Library: written tenant screening criteria | N, cyan |

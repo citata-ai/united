@@ -124,6 +124,42 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-s8-payment-standard-v1",
     alt: "A pop engraving under a coral sky: in a busy market a brass scale weighs a model house against gold coins as an official and a landlord in an orange toga measure.",
   },
+  "section-8-rent-increase-process": {
+    img: "guide-s8-rent-increase-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga hands a sealed scroll to an official across a counter where coin stacks rise like stairs.",
+  },
+  "source-of-income-discrimination-laws-by-state": {
+    img: "guide-soi-laws-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga with a sealed scroll and a key stands before a hillside of walled towns as a family looks on.",
+  },
+  "texas-eviction-process": {
+    img: "guide-tx-eviction-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga walks a dusty road past a ranch house and windmills toward a domed courthouse with a sealed scroll.",
+  },
+  "texas-security-deposit-law": {
+    img: "guide-tx-deposit-v1",
+    alt: "A pop engraving under a coral sky: on the porch of a mint ranch house a landlord in an orange toga hands a coin purse back to a leaving tenant.",
+  },
+  "what-is-a-property-management-trust-account": {
+    img: "guide-trust-account-v1",
+    alt: "A pop engraving under a cyan sky: a manager in an orange toga with a big key guards an open vault with separate coin chests, each topped by a small house.",
+  },
+  "what-is-net-operating-income-rental": {
+    img: "guide-noi-v1",
+    alt: "A pop engraving under a lilac sky: gold coins pour into a house-shaped fountain, some run out into buckets with tools, while a landlord in an orange toga holds an abacus.",
+  },
+  "where-chatgpt-gets-local-business-data": {
+    img: "guide-chatgpt-data-v1",
+    alt: "A pop engraving under a coral sky: messengers carry scrolls from colorful houses to a temple with an old computer; a manager in an orange toga hands one a scroll.",
+  },
+  "why-owners-leave-property-managers": {
+    img: "guide-owners-leave-v1",
+    alt: "A pop engraving under a yellow sky: a manager in an orange toga holds a silent rotary phone at his door as a homeowner walks away carrying a small house.",
+  },
+  "written-tenant-screening-criteria": {
+    img: "guide-screening-criteria-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga holds up a scroll of rules in symbols to waiting applicants beside a brass scale.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
