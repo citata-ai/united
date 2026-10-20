@@ -1,6 +1,6 @@
 ---
-title: "Louisiana Eviction Process: 5-Day Notice to Vacate, Rule to Show Cause — Citata.ai"
-description: "Louisiana eviction: a 5-day notice to vacate (CCP art. 4701), a rule to show cause tried no earlier than the 3rd day after service, then a warrant after 24 hours."
+title: "Louisiana Eviction Process: 5-Day Notice to Vacate, Court Steps — Citata.ai"
+description: "Louisiana eviction: a 5-day notice to vacate (CCP art. 4701), a court hearing no earlier than the 3rd day after service, then a warrant after 24 hours."
 headline: "Louisiana Eviction Process for Landlords, Step by Step"
 dek: "Code of Civil Procedure articles 4701 to 4735 set a short, fixed path."
 published: "2026-10-19"
@@ -103,7 +103,7 @@ Yes. Article 4701 applies when the right of occupancy ends "by expiration of its
 
 **Lease violation.** If the lease lets you end it for a breach, end it under its terms. Then deliver the 5-day notice to vacate, unless the lease waives it.
 
-**No cause, month-to-month.** Give written notice of termination at least 10 calendar days before the end of the month (Civil Code art. 2728; art. 2729 requires writing for a residence). That notice also serves as the notice to vacate.
+**No cause, month-to-month.** Give notice of termination at least 10 calendar days before the end of the month (Civil Code art. 2728). For a residence, it must be in writing (art. 2729). That notice also serves as the notice to vacate.
 
 **No cause, fixed term.** The lease ends on its date. You may send the notice to vacate up to 30 days before that date (art. 4701).
 

@@ -1,6 +1,6 @@
 ---
 title: "Section 8 Tenant Income Change: What Happens to Your HAP — Citata.ai"
-description: "When a voucher tenant's income changes, your total rent stays the same. The split between HAP and tenant changes after an interim reexam. See timing and examples."
+description: "When a voucher tenant's income changes, your total rent stays the same. The HAP and tenant split moves after an interim reexam. See timing and a worked example."
 headline: "When a Voucher Tenant's Income Changes Mid-Lease"
 dek: "Your contract rent stays fixed. The split between the PHA and the tenant moves."
 published: "2026-10-19"

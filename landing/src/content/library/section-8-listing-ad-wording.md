@@ -1,6 +1,6 @@
 ---
 title: "How to Word a Section 8 Rental Listing: Ad Template — Citata.ai"
-description: "Describe the unit, not the renter. Use a voucher-friendly ad template, see phrases that risk a fair housing complaint, and learn what to state about rent and size."
+description: "Describe the unit, not the renter. Get a voucher-friendly ad template, see phrases that risk a fair housing complaint, and learn what to say on rent and size."
 headline: "How to Word a Listing That Accepts Vouchers"
 dek: "Describe the home, state the terms, welcome vouchers. Never describe who should live there."
 published: "2026-10-19"

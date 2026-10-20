@@ -1,6 +1,6 @@
 ---
 title: "Lead Paint Rules for Section 8 Units in Pre-1978 Buildings — Citata.ai"
-description: "HUD lead rules apply to voucher units built before 1978 when a child under 6 lives there. See the visual check, 30-day fix, EBLL steps, trained-worker rule and records."
+description: "HUD lead rules apply to pre-1978 voucher units where a child under 6 lives. See the visual check, 30-day fix, EBLL steps, trained-worker rule and records."
 headline: "Lead Paint Rules for Voucher Units in Older Buildings"
 dek: "A child under 6 turns on the strictest rules. Here are the deadlines, the trades and the paperwork."
 published: "2026-10-19"

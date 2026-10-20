@@ -1,6 +1,6 @@
 ---
 title: "When a Section 8 Tenant Gives Notice: HAP, Deposit, Next Steps — Citata.ai"
-description: "When a voucher tenant moves out, you keep the HAP for the move-out month and it stops after. How to handle the deposit, tell the PHA and re-rent to a new voucher holder."
+description: "When a voucher tenant moves out, you keep HAP for the move-out month and it stops after. How to handle the deposit, tell the PHA and re-rent to a new voucher."
 headline: "When a Voucher Tenant Gives Notice to Move Out"
 dek: "The HAP stops after the move-out month. A fast turnover protects the next month."
 published: "2026-10-19"

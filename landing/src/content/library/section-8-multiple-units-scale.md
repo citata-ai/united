@@ -1,6 +1,6 @@
 ---
 title: "Running Many Section 8 Units: Inspections, HAP, Software, KPIs — Citata.ai"
-description: "Run 50 to 500 voucher units without missed inspections or HAP gaps. Track due dates, reconcile HAP across PHAs, split tasks by role and watch 8 KPIs."
+description: "Run 50 to 500 voucher units without missed inspections or HAP gaps. Track due dates, reconcile HAP across PHAs, split tasks by role and watch 8 key KPIs."
 headline: "How to Run Many Voucher Units Without Missed Deadlines"
 dek: "At scale, voucher income depends on dates. Put every federal clock in one sheet."
 published: "2026-10-19"

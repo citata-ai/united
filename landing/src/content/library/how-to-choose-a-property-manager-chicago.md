@@ -24,6 +24,10 @@ faq:
 sources:
   - label: "IDFPR: Division of Real Estate Licensing and Education Unit brochure (fees, License Lookup)"
     url: "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/brochures/DRE-Licensing-and-Education-Unit-Brochure.pdf"
+  - label: "Illinois General Assembly: 225 ILCS 454/1-10, definitions"
+    url: "https://www.ilga.gov/Documents/legislation/ilcs/documents/022504540K1-10.htm"
+  - label: "Illinois General Assembly: 225 ILCS 454/5-20, exemptions"
+    url: "https://www.ilga.gov/Documents/legislation/ilcs/documents/022504540K5-20.htm"
   - label: "IDFPR: License Lookup"
     url: "https://online-dfpr.micropact.com/Lookup/LicenseLookup.aspx"
   - label: "Illinois REALTORS: How to get a real estate broker license (2024)"
@@ -55,7 +59,7 @@ A Chicago property manager who leases and runs rentals for other owners works un
 | Residential leasing agent | Leases homes and apartments only, under a sponsor | $100 |
 | Real estate entity or firm | The company license | $250 |
 
-Illinois REALTORS notes that there is no "salesperson" or "agent" license in Illinois (Illinois REALTORS license guide, 2024). When we checked on 2026-10-19, the Illinois General Assembly site (ilga.gov) did not answer, so we could not read the Act's section on who needs a license. Ask each manager which license covers its work, and ask its attorney if the answer is not clear.
+Illinois REALTORS notes that there is no "salesperson" or "agent" license in Illinois (Illinois REALTORS license guide, 2024). Under Section 1-10 of the Act, a "broker" is anyone who, for another and for pay, rents or leases real estate, offers to, or supervises the collection of rent. Section 5-20 exempts an owner who manages only the owner's own property, and the owner's regular employees. That exemption does not cover work for property the person does not own. So a company that leases units and collects rent for you needs a license.
 
 How to check a license in 4 steps:
 

@@ -45,6 +45,10 @@ sources:
     url: "https://www.gcrealtyinc.com/pricing"
   - label: "IDFPR: Division of Real Estate Licensing and Education Unit brochure"
     url: "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/brochures/DRE-Licensing-and-Education-Unit-Brochure.pdf"
+  - label: "Illinois General Assembly: 225 ILCS 454/1-10, definitions"
+    url: "https://www.ilga.gov/Documents/legislation/ilcs/documents/022504540K1-10.htm"
+  - label: "Illinois General Assembly: 225 ILCS 454/5-20, exemptions"
+    url: "https://www.ilga.gov/Documents/legislation/ilcs/documents/022504540K5-20.htm"
   - label: "Chicago Municipal Code 5-12-080: Security deposits"
     url: "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639124"
 ---
@@ -111,7 +115,7 @@ This is general information, not legal advice. Check the current law or ask a lo
 
 ## Must a Chicago property manager hold an Illinois license?
 
-Real estate work for others in Illinois falls under the Real Estate License Act of 2000 (225 ILCS 454). The Illinois Department of Financial and Professional Regulation (IDFPR) issues broker ($150), managing broker ($175), residential leasing agent ($100) and firm ($250) licenses (IDFPR brochure). The Illinois General Assembly site did not answer when we checked, so we could not quote the section on who must hold which license.
+Real estate work for others in Illinois falls under the Real Estate License Act of 2000 (225 ILCS 454). The Illinois Department of Financial and Professional Regulation (IDFPR) issues broker ($150), managing broker ($175), residential leasing agent ($100) and firm ($250) licenses (IDFPR brochure). Section 1-10 of the Act defines a broker as anyone who, for another and for pay, rents or leases real estate or supervises rent collection. Section 5-20 exempts owners who manage only their own property. So a firm that manages your rental needs a license.
 
 What to do: search the firm and its managing broker on the IDFPR License Lookup. Write both license numbers in the management agreement.
 

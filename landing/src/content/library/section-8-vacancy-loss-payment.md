@@ -1,6 +1,6 @@
 ---
 title: "Section 8 Vacancy Loss Payments: Who Pays and How Much — Citata.ai"
-description: "Federal voucher rules pay HAP only through the move-out month. Some PHAs add vacancy loss payments. See the rules, PBV limits, a worked example and a claim checklist."
+description: "Federal voucher rules pay HAP only through the move-out month. Some PHAs add vacancy loss pay. See the rules, PBV limits, a worked example and a claim list."
 headline: "Does Section 8 Pay for Vacant Days Between Tenants?"
 dek: "The base rule stops HAP after the move-out month. Local incentive programs can fill part of the gap."
 published: "2026-10-19"

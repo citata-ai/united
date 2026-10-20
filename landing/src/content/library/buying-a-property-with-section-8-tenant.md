@@ -1,6 +1,6 @@
 ---
 title: "Buying a Property With a Section 8 Tenant: Due Diligence — Citata.ai"
-description: "Before you buy a unit with a voucher tenant, check the HAP contract, the last inspection, rent vs payment standard and any abatement. A 15-point due diligence list."
+description: "Before you buy a unit with a voucher tenant, check the HAP contract, last inspection, rent vs payment standard and any abatement. A due diligence checklist."
 headline: "Buying a Property With a Section 8 Tenant in Place"
 dek: "The HAP contract, the inspection file and the rent all transfer with the risk. Check them first."
 published: "2026-10-19"

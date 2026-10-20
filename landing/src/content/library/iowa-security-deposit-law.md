@@ -1,6 +1,6 @@
 ---
 title: "Iowa Security Deposit Law: 2-Month Cap, 30-Day Return — Citata.ai"
-description: "Iowa caps security deposits at 2 months' rent. Landlords return the deposit or a written statement within 30 days of move-out and receipt of an address. § 562A.12."
+description: "Iowa caps security deposits at 2 months' rent. Landlords return the deposit or a written statement within 30 days of move-out and getting an address. § 562A.12."
 headline: "Iowa Security Deposit Law for Landlords"
 dek: "Iowa Code § 562A.12 sets the cap, the bank rule, the 30-day clock and the penalty."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
 title: "Section 8 Direct Deposit and Landlord Portal: Setup Guide — Citata.ai"
-description: "Set up HAP direct deposit with a voided check and W-9, then use the PHA owner portal for payments, abatements and inspections. What to do when a HAP payment is missing."
+description: "Set up HAP direct deposit with a voided check and W-9, then use the PHA owner portal for payments, abatements and inspections, and to trace a missing HAP."
 headline: "How to Set Up HAP Direct Deposit and the Owner Portal"
 dek: "Two tools that PHAs rate as their best landlord perks, and how to use them well."
 published: "2026-10-19"

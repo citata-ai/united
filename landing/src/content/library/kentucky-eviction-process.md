@@ -1,6 +1,6 @@
 ---
 title: "Kentucky Eviction Process: 7-Day Notice, FED Case, 7-Day Appeal — Citata.ai"
-description: "Kentucky eviction: a 7-day pay notice in URLTA areas (KRS 383.660), a forcible detainer case in District Court, a 7-day appeal window, then a warrant of restitution."
+description: "Kentucky eviction: a 7-day pay notice in URLTA areas (KRS 383.660), a forcible detainer case in District Court, a 7-day appeal window, then a warrant."
 headline: "Kentucky Eviction Process for Landlords, Step by Step"
 dek: "Two rule sets apply: the URLTA where a local government adopted it, and KRS 383.195 elsewhere."
 published: "2026-10-19"
@@ -101,7 +101,7 @@ Yes to both, with the right notice.
 
 **No cause, URLTA area.** End a month-to-month tenancy with written notice at least 30 days before the periodic rental date (KRS 383.695(2)). Week-to-week needs 7 days (KRS 383.695(1)).
 
-**Holdover.** If a tenant stays willfully and not in good faith, the landlord may recover up to 3 months' rent or 3 times actual damages, whichever is greater, plus attorney fees (KRS 383.695(4)).
+**Holdover.** A willful, bad-faith holdover adds damages (KRS 383.695(4)). The landlord may recover up to 3 months' rent or 3 times actual damages, whichever is greater, plus attorney fees.
 
 **Retaliation.** KRS 383.705 bars an eviction after a code complaint, a repair complaint or tenant union activity. A complaint within 1 year creates a presumption of retaliation. The bar does not apply if the tenant is in default in rent.
 
@@ -109,7 +109,7 @@ Yes to both, with the right notice.
 
 The sheriff or a constable removes the tenant under a warrant of restitution. If the tenant does not file an appeal "on or before the seventh day after the finding," the court, on request, issues the warrant (KRS 383.245). The warrant commands the officer to put the landlord in possession, "with the power of the county if necessary."
 
-To appeal, the tenant must file within 7 days and deposit with the circuit court clerk the rent owed since the case started, plus each month's rent while the appeal runs (KRS 383.255(1)).
+To appeal, the tenant must file within 7 days (KRS 383.255(1)). The tenant must also deposit with the circuit court clerk the rent owed since the case started, plus each month's rent while the appeal runs.
 
 ## Is a self-help eviction (lockout, utility shutoff) legal in Kentucky?
 

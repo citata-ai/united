@@ -1,6 +1,6 @@
 ---
 title: "Selling a Section 8 Unit: HAP Contract Change of Ownership — Citata.ai"
-description: "When you sell a voucher unit, the PHA must approve the buyer and assign the HAP contract. See the forms, who gets the sale-month HAP and the buyer's lease limits."
+description: "When you sell a voucher unit, the PHA must approve the buyer and assign the HAP contract. See the forms, who gets sale-month HAP and the buyer's lease limits."
 headline: "What Happens to the HAP Contract When You Sell"
 dek: "The lease stays. The HAP contract moves only after the PHA has the buyer's papers."
 published: "2026-10-19"

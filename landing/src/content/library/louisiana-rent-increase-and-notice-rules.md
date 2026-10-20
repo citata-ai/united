@@ -1,5 +1,5 @@
 ---
-title: "Louisiana Rent Increase and Notice Rules: 10 Days for Month-to-Month — Citata.ai"
+title: "Louisiana Rent Increase Rules: 10-Day Month-to-Month Notice — Citata.ai"
 description: "Louisiana has no rent cap. Civil Code art. 2728 ends a month-to-month lease with written notice 10 calendar days before month-end. Longer periods need 30 days."
 headline: "Louisiana Rent Increase and Notice Rules for Landlords"
 dek: "The Civil Code sets termination notice by lease period, from 30 days down to none."

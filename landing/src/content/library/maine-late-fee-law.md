@@ -1,6 +1,6 @@
 ---
 title: "Maine Late Fee Law: 4% Cap After 15 Days, Written Notice — Citata.ai"
-description: "Maine caps late rent fees at 4% of one month's rent. Rent is late only after 15 days, and the landlord must give written notice of the fee at signing. 14 M.R.S. § 6028."
+description: "Maine caps late rent fees at 4% of one month's rent. Rent is late only after 15 days, and the tenant must get written notice of the fee at signing. § 6028."
 headline: "Maine Late Fee Law for Landlords"
 dek: "14 M.R.S. § 6028 sets a 15-day grace period, a 4% cap and a notice rule."
 published: "2026-10-19"

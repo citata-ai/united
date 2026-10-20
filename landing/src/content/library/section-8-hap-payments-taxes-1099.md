@@ -1,6 +1,6 @@
 ---
 title: "Section 8 HAP Payments and Taxes: 1099-MISC Box 1 Explained — Citata.ai"
-description: "HAP payments are rental income. PHAs report them on Form 1099-MISC box 1, now at $2,000 or more. How to match PHA statements to your books and what records to keep."
+description: "HAP payments are rental income. PHAs report them on Form 1099-MISC box 1, now at $2,000 or more. How to match PHA statements to your books and what to keep."
 headline: "How to Report Section 8 HAP Payments on Your Taxes"
 dek: "The PHA's share of the rent is rent. The IRS tells housing agencies to report it on a 1099-MISC."
 published: "2026-10-19"

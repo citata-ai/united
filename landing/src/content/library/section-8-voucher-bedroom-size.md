@@ -1,6 +1,6 @@
 ---
 title: "Section 8 Voucher Bedroom Size: Which Units Can a Family Rent? — Citata.ai"
-description: "A voucher's bedroom size caps the subsidy, not the unit. The PHA uses the lower payment standard of voucher size or unit size. See the rule and a worked example."
+description: "A voucher's bedroom size caps the subsidy, not the unit. The PHA uses the lower payment standard of voucher size or unit size. See the rule and an example."
 headline: "How Voucher Bedroom Size Limits the Units a Family Rents"
 dek: "A family can rent a bigger or smaller unit. The subsidy follows the smaller of the two sizes."
 published: "2026-10-19"

@@ -98,7 +98,7 @@ Yes to both, with the right notice.
 
 **No cause.** For a month-to-month tenancy, the notice must name a rent-paying date at least 30 days after the tenant receives it (K.S.A. 58-2570(b)). For week-to-week, the notice is 7 days (K.S.A. 58-2570(a)). For a fixed term, the lease ends on its date.
 
-**Holdover.** If the tenant stays after the lease ends, the landlord may file for possession. If the holdover is willful and not in good faith, the landlord may recover up to 1.5 months' rent or 1.5 times actual damages, whichever is greater (K.S.A. 58-2570(c)).
+**Holdover.** If the tenant stays after the lease ends, the landlord may file for possession. A willful, bad-faith holdover adds damages (K.S.A. 58-2570(c)). The landlord may recover up to 1.5 months' rent or 1.5 times actual damages, whichever is greater.
 
 **Retaliation.** K.S.A. 58-2572 bars retaliation after a code complaint, a repair complaint or tenant union activity. The landlord may still file if the tenant is in default in rent.
 

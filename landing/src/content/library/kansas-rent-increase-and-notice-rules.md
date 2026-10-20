@@ -85,7 +85,7 @@ Not unless the lease allows it. A fixed-term lease sets the rent for the term. K
 
 If you want the right to raise rent mid-term, write a clear clause in the lease. Name the amount or the formula and the notice you will give. Without one, wait for the lease to end and offer a new lease at the new rent.
 
-K.S.A. 58-2570(b) adds a point on terms: a rental agreement for a definite term of more than 30 days is not a month-to-month tenancy, even if rent is paid every 30 days.
+K.S.A. 58-2570(b) adds a point on terms. A lease for a definite term of more than 30 days is not month-to-month, even if rent is paid every 30 days.
 
 ## How much notice is needed to end a month-to-month tenancy in Kansas?
 
@@ -96,7 +96,7 @@ Other periods in the same section:
 - **Week-to-week:** written notice at least 7 days before the termination date (K.S.A. 58-2570(a)).
 - **Military orders:** a tenant in the U.S. military whose orders require the move needs to give no more than 15 days' written notice (K.S.A. 58-2570(b)).
 
-If a landlord gives a tenant a form to sign as the tenant's notice to vacate, and the form adds terms that are not in the lease, it must carry the boldface warning in K.S.A. 58-2570(e). Without it, the extra terms do not bind the tenant.
+A landlord may give a tenant a form to sign as the notice to vacate. If that form adds terms not in the lease, it must carry the boldface warning in K.S.A. 58-2570(e). Without it, the extra terms do not bind the tenant.
 
 ## Do cities in Kansas add their own rent or notice rules?
 

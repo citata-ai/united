@@ -1,6 +1,6 @@
 ---
 title: "Emergency Housing, Mainstream and FYI Vouchers for Landlords — Citata.ai"
-description: "EHV, Mainstream and FYI vouchers are tenant-based like Section 8, but partner agencies refer the tenants. What landlords get, and what happens as EHV funding ends."
+description: "EHV, Mainstream and FYI vouchers are tenant-based like Section 8, but partner agencies refer tenants. What landlords get, and what happens as EHV funds end."
 headline: "How Special-Purpose Vouchers Work for Landlords"
 dek: "EHV, Mainstream and FYI tenants come through partner agencies. The lease paperwork looks familiar."
 published: "2026-10-19"

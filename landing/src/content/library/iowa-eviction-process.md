@@ -99,7 +99,7 @@ The court must have proof of service. Serve the original notice by a signed rece
 
 Yes to both, with the right notice.
 
-**Lease violation.** Send a written notice that names the breach and says the lease ends on a date at least 7 days after receipt if the tenant does not fix it in 7 days (§ 562A.27(1)). If the tenant fixes it in time, the lease goes on. If the same breach comes back within 6 months, a 7-day notice ends the lease with no second chance.
+**Lease violation.** Send a written notice that names the breach (§ 562A.27(1)). It must say the lease ends at least 7 days after receipt if the tenant does not fix the breach in 7 days. If the tenant fixes it in time, the lease goes on. If the same breach comes back within 6 months, a 7-day notice ends the lease with no second chance.
 
 **Danger to others.** For a clear and present danger, such as assault or illegal weapon use, § 562A.27A allows one 3-day notice of termination and notice to quit. The notice must quote the tenant exemptions in subsection 3.
 

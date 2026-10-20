@@ -1,5 +1,5 @@
 ---
-title: "Louisiana Security Deposit Law: 1-Month Return, $300 or 2x Penalty — Citata.ai"
+title: "Louisiana Security Deposit Law: 1-Month Return, $300 Penalty — Citata.ai"
 description: "Louisiana requires deposit return within 1 month of lease end. A 2026 act adds 15 more days for the itemized statement. Willful failure costs $300 or 2x."
 headline: "Louisiana Security Deposit Law for Landlords"
 dek: "La. R.S. 9:3251 to 9:3254, with the 2026 change to the itemized statement deadline."

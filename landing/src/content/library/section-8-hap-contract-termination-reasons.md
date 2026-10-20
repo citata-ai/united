@@ -1,6 +1,6 @@
 ---
 title: "Why a PHA Can End a Section 8 HAP Contract: 8 Reasons — Citata.ai"
-description: "A PHA can end a HAP contract for unfixed repairs, owner breach, a too-small unit, lack of funds or 180 days with no payment. See each rule and how to prevent it."
+description: "A PHA can end a HAP contract for unfixed repairs, owner breach, a too-small unit, lack of funds or 180 days with no payment. See each rule and how to avoid it."
 headline: "Why a Housing Authority Can End Your HAP Contract"
 dek: "Most terminations start with a failed repair. A few start with the owner's own record."
 published: "2026-10-19"

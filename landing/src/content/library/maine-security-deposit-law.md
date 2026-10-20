@@ -1,6 +1,6 @@
 ---
 title: "Maine Security Deposit Law: 2-Month Cap, 21 or 30-Day Return — Citata.ai"
-description: "Maine caps deposits at 2 months' rent. Return within 30 days for a written lease or 21 days for a tenancy at will. Wrongful retention costs double. 14 M.R.S. § 6033."
+description: "Maine caps deposits at 2 months' rent. Return in 30 days for a written lease or 21 days for a tenancy at will. Wrongful retention costs double. § 6033."
 headline: "Maine Security Deposit Law for Landlords"
 dek: "14 M.R.S. §§ 6031 to 6038 set the cap, two deadlines, an escrow rule and double damages."
 published: "2026-10-19"
@@ -70,7 +70,7 @@ The maximum Maine deposit is 2 months' rent. A lease or tenancy at will "may not
 | $1,400 | $2,800 |
 | $1,800 | $3,600 |
 
-Maine also caps the total money due at the start. Under § 6022-A, a landlord, agent or broker may not require more than the first full month's rent, a deposit within § 6032, and any mandatory recurring fee properly disclosed under § 6030-J. So no extra last-month's rent on top of a 2-month deposit.
+Maine also caps the total money due at the start. Under § 6022-A, a landlord, agent or broker may require only 3 things at the start. These are the first full month's rent, a deposit within § 6032, and any mandatory recurring fee disclosed under § 6030-J. So no extra last-month's rent on top of a 2-month deposit.
 
 If the tenant pays any of the deposit in cash, give a written receipt at once. It must show the date, amount, payer, that it is a deposit, and the signer's printed name (§ 6022).
 
@@ -99,7 +99,7 @@ A Maine landlord may keep the deposit only for "actual cause" (§ 6033(2)). The 
 - unpaid rent, and
 - unpaid utility charges the tenant had to pay directly to the landlord.
 
-"Normal wear and tear" is never a deduction (§ 6033(1)). Section 6031(1) defines it as deterioration from intended use "without negligence, carelessness, accident or abuse." It does not include the cost of removing trash or other things the tenant left. If the unit was habitable at move-in, it also does not include costs, including cleaning, to make it habitable again, unless someone other than the tenant's household caused the need.
+"Normal wear and tear" is never a deduction (§ 6033(1)). Section 6031(1) defines it as deterioration from intended use "without negligence, carelessness, accident or abuse." It does not include the cost of removing trash or other things the tenant left. Say the unit was habitable at move-in. Then wear and tear also excludes the cost, including cleaning, to make it habitable again. The exception is when someone outside the tenant's household caused the need.
 
 ## Does a Maine landlord have to give an itemized list of deductions?
 

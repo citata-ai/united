@@ -111,7 +111,7 @@ Yes, by tenancy type.
 
 **Written lease.** FED may be brought at the end or forfeiture of the lease term (§ 6001(1)). If the lease has no termination or notice language for a breach, use the 7-day rules of § 6002 (§ 6001(1-B)).
 
-**Retaliation.** A case is presumed retaliatory if, within 6 months before filing, the tenant used rights under listed sections or made a good-faith code or repair complaint (§ 6001(3)).
+**Retaliation.** Watch the 6 months before you file (§ 6001(3)). If the tenant used listed rights or made a good-faith code or repair complaint in that time, the case is presumed retaliatory.
 
 ## Who removes the tenant after a judgment in Maine?
 

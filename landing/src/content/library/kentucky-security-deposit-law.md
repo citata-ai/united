@@ -115,7 +115,7 @@ The main penalty is loss of the whole deposit. Under KRS 383.580(4), "no landlor
 
 A tenant who disputes the move-out list may sue in District Court, but only on the items the tenant dissented from in writing (KRS 383.580(5)).
 
-If a landlord unlawfully locks out a tenant and the lease ends, KRS 383.655 requires the return of all prepaid rent, and the tenant may recover up to 3 months' rent plus attorney fees.
+After an unlawful lockout, the tenant may end the lease under KRS 383.655. The landlord must then return all prepaid rent. The tenant may also recover up to 3 months' rent plus attorney fees.
 
 ## Kentucky deposit checklist
 
