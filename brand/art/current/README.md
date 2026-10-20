@@ -55,3 +55,7 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-chatgpt-data-v1.webp` | Library: where ChatGPT gets local business data | N, coral |
 | `guide-owners-leave-v1.webp` | Library: why owners leave property managers | N, yellow |
 | `guide-screening-criteria-v1.webp` | Library: written tenant screening criteria | N, cyan |
+| `guide-1031-v1.webp` | Library: 1031 exchange basics | N, coral |
+| `guide-city-page-v1.webp` | Library: city page template | N, cyan |
+| `guide-accidental-landlord-v1.webp` | Library: accidental landlord guide | N, yellow |
+| `guide-door-churn-v1.webp` | Library: door growth ceiling and churn | N, coral |

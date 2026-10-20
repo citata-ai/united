@@ -160,6 +160,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-screening-criteria-v1",
     alt: "A pop engraving under a cyan sky: a landlord in an orange toga holds up a scroll of rules in symbols to waiting applicants beside a brass scale.",
   },
+  "1031-exchange-basics-rental-owners": {
+    img: "guide-1031-v1",
+    alt: "A pop engraving under a coral sky: on a bridge an owner in blue holds a pink cottage model and a landlord in an orange toga holds a blue apartment model to swap.",
+  },
+  "city-page-template-property-management": {
+    img: "guide-city-page-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga marks a big colorful town map with a quill beside a brass pin and an old computer.",
+  },
+  "accidental-landlord-guide": {
+    img: "guide-accidental-landlord-v1",
+    alt: "A pop engraving under a yellow sky: a surprised young man in an orange toga holds a glowing key at the blue door of a pink cottage, with scrolls and a toolbox.",
+  },
+  "door-growth-ceiling-churn": {
+    img: "guide-door-churn-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga pours small houses into a big amphora while other houses spill out of a crack at its base.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
