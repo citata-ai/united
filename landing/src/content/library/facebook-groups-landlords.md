@@ -1,6 +1,6 @@
 ---
 title: "How Property Managers Can Use Local Landlord Facebook Groups — Citata.ai"
-description: "Local landlord Facebook groups can bring a property manager trust and a few owner calls. How to join without breaking rules, answers that work, starting your own group, and the move to a call."
+description: "Local landlord Facebook groups can bring a property manager trust and some owner calls. How to join within the rules, good answers and how to move to a call."
 headline: "How to Use Local Landlord Facebook Groups"
 dek: "Help first, disclose who you are, and let the group admin set the limits."
 published: "2026-10-19"

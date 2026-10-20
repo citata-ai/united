@@ -1,6 +1,6 @@
 ---
 title: "Should a Property Management Company Start a YouTube Channel? — Citata.ai"
-description: "YouTube was a source in 7 AI answers in our 2026 test, but social gave only 0.8% of owner leads in a 35-company study. Topics, video length, gear and how to link videos to your site."
+description: "YouTube was a source in 7 AI answers in our test, but social gave 0.8% of owner leads in one study. Topics, length, gear and how to link videos to your site."
 headline: "Should a Property Manager Start a YouTube Channel?"
 dek: "Owner questions, short videos, a phone and a watch page on your own site."
 published: "2026-10-19"

@@ -1,6 +1,6 @@
 ---
 title: "Do Google Business Profile Posts and Photos Help PMs? — Citata.ai"
-description: "Google names relevance, distance and prominence as local ranking factors, not posts. Posts and photos help owners trust you. What to post, how often, and what to track."
+description: "Google ranks local results on relevance, distance and prominence, not posts. What a property manager should post, which photos to add and what to track in GBP."
 headline: "Do GBP Posts and Photos Help a Property Manager?"
 dek: "Google ranks on relevance, distance and prominence. Posts and photos work on the owner instead."
 published: "2026-10-19"

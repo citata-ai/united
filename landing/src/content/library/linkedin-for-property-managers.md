@@ -1,6 +1,6 @@
 ---
 title: "LinkedIn for Property Managers: Owner Leads and Agent Referrals — Citata.ai"
-description: "LinkedIn helps a property manager win agent referrals more than direct owner leads. Profile setup, how to connect with local agents, posts that work, and founder vs company page."
+description: "LinkedIn helps a property manager win agent referrals more than owner leads. Profile setup, how to connect with local agents, posts that work, founder vs page."
 headline: "LinkedIn for Property Managers: Owners and Agent Referrals"
 dek: "Agents meet owners who cannot sell. LinkedIn is where you become their go-to manager."
 published: "2026-10-19"
@@ -108,6 +108,15 @@ Post ideas for a property manager:
 5. **Agent shout-out:** thank an agent who referred an owner, with their consent.
 
 Keep posts short: a 1-line hook, 3 to 5 lines of facts, one question. Do not post tenant details or photos of tenants.
+
+### What not to post
+
+- Tenant names, photos or unit details without consent.
+- Rental listings that describe the "ideal tenant" by family status or any protected class.
+- Claims such as "best property manager in town" without a source.
+- Fee comparisons with named rivals that you cannot prove.
+
+LinkedIn is a public, permanent record. Write each post as if an owner, an agent and a regulator will all read it.
 
 ## Should the company page or the founder post?
 

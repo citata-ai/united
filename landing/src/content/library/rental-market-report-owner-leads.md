@@ -1,6 +1,6 @@
 ---
 title: "How a Local Rental Market Report Wins Property Owners — Citata.ai"
-description: "A monthly rental market report gives owners facts no rival has: your days on market, rents and vacancy. Data to use, free public sources, how to share it and turn readers into leads."
+description: "A monthly rental market report shows owners data no rival has: your rents, days on market and vacancy. What to include, free data sources and how to win leads."
 headline: "How a Local Rental Market Report Wins Owners"
 dek: "Your own leasing data, three free public sources and one clear call to action."
 published: "2026-10-19"

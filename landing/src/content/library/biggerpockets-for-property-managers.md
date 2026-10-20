@@ -1,6 +1,6 @@
 ---
 title: "How Property Managers Use BiggerPockets to Find Investor Owners — Citata.ai"
-description: "BiggerPockets matches investors with property managers and runs a business directory and forums. How the finder works, how to answer in the forums, profile tips and costs."
+description: "BiggerPockets matches investors with property managers and runs a directory and forums. How the finder works, forum tips, profile details and the real costs."
 headline: "How Property Managers Use BiggerPockets"
 dek: "A match tool, a directory with reviews, and forums full of investors asking about managers."
 published: "2026-10-19"
@@ -108,6 +108,16 @@ A $1,600 rental. You charge 8% a month and a 50% leasing fee.
 - Year 1 with one placement: $2,336.
 
 Put a line like that on your profile. Investors trust a manager who shows the full cost up front.
+
+### Questions to ask BiggerPockets before you pay
+
+1. How many investors searched for a manager in my market last quarter?
+2. Does a match go to me alone, or to several managers at once?
+3. Do I pay per lead, per month or per year?
+4. Can I pause the listing?
+5. How do reviews on my directory profile get collected and checked?
+
+Write the answers down. Then compare the cost per owner lead with your other channels after 90 days.
 
 ## What are the costs?
 

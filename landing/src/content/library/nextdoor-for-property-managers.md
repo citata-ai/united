@@ -1,6 +1,6 @@
 ---
 title: "Nextdoor for Property Management Companies: Pages, Posts, Ads — Citata.ai"
-description: "Nextdoor gives a property manager a free Business Page, free local posts and paid ads from $3 a day. How each works, how neighbor recommendations help, and what to post."
+description: "Nextdoor gives a property manager a free Business Page, free posts and ads from $3 a day. How each works, how neighbor recommendations help and what to post."
 headline: "Nextdoor for Property Management Companies"
 dek: "A free page, free posts, neighbor recommendations and small daily ad budgets."
 published: "2026-10-19"
@@ -95,6 +95,17 @@ It says you are "charged upfront your daily budget times 31 days," then the same
 The leads number is an example. Compare your real cost per owner lead with your other channels. In the Goodjuju Marketing fall 2026 study of 35 property management companies, social media gave 0.8% of owner leads and Google Search and the Map Pack gave 50.6%. Nextdoor is a social channel, so start small.
 
 Ad rules: target by area, never by who lives there. Fair Housing rules apply to ads for rentals and to any copy about neighborhoods.
+
+### Ad checklist before you pay
+
+- [ ] Free page complete, with a real photo and your service area
+- [ ] At least 3 recommendations from real clients
+- [ ] One clear offer: a free rental analysis for the owner's address
+- [ ] A landing page that matches the ad text
+- [ ] UTM tags on the ad link
+- [ ] A calendar note to review results at day 31 and day 62
+
+An ad that sends neighbors to a weak page wastes the budget. Fix the page first, then pay for reach.
 
 ## What should a property manager post on Nextdoor?
 

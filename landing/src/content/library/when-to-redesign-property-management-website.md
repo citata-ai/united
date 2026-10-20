@@ -1,5 +1,5 @@
 ---
-title: "When to Redesign Your Property Management Website — Citata.ai"
+title: "When to Redesign Your Property Management Website: 8 Signs — Citata.ai"
 description: "Redesign when your site fails Core Web Vitals, converts under 5 owner leads per 1,000 visitors, or cannot hold city and fee pages. Fix these 6 things first."
 headline: "When to Redesign Your Property Management Website"
 dek: "Use your conversion rate and Google's speed bar, not the calendar, to decide."
@@ -85,6 +85,15 @@ The risk is highest when URLs change. Google's rules for a safe move:
 The real danger is content loss. A redesign that drops your city pages, FAQ answers or fee table loses the words that ranked. Keep every page that brings owner leads, with its text, unless you have a better version ready.
 
 Google Search and the Map Pack gave 50.6% of owner leads in Goodjuju's fall 2026 study of 35 companies. A careless launch puts that share at risk.
+
+### Redesign or fix: a quick decision table
+
+| Situation | Action |
+|---|---|
+| 0–2 signs failed, lead rate in range | Keep the site; fix the failed items |
+| 0–2 signs failed, lead rate below 5 per 1,000 | Fix owner pages and calls to action first |
+| 3+ signs failed, platform blocks the fixes | Plan a redesign with a URL map |
+| Site cannot be edited without the old vendor | Plan a move; confirm you own the domain and content |
 
 ## What should I fix before a full redesign?
 

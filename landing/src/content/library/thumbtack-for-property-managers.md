@@ -1,6 +1,6 @@
 ---
 title: "Thumbtack for Property Managers: Does It Bring Owners? — Citata.ai"
-description: "Thumbtack charges property managers per lead, with no membership fee. Owners do use it, and AI answers cite its lists. Here is how to test it and set a lead cap."
+description: "Thumbtack charges property managers per lead, with no membership fee. AI answers cite its lists too. How it works, what it costs and how to test it for 90 days."
 headline: "Thumbtack for Property Managers: Does It Work?"
 dek: "Pay per lead, a few rivals per lead, and a list that AI answers cite."
 published: "2026-10-19"

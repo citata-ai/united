@@ -1,6 +1,6 @@
 ---
 title: "Template vs Custom Website for a Property Management Company — Citata.ai"
-description: "A PM template site costs about $1,795 to set up; custom builds start near $3,895 and run past $9,000. Prices, build times, ranking facts and when custom pays off."
+description: "A PM template site costs about $1,795 to set up; custom builds start near $3,895 and run past $9,000. Prices, build times, ranking facts and when custom pays."
 headline: "Template vs Custom Website for a Property Manager"
 dek: "Published prices from 4 vendors, a 3-year cost table and a simple test for custom."
 published: "2026-10-19"

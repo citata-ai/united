@@ -1,6 +1,6 @@
 ---
 title: "How Google Core Updates Affect Property Management Sites — Citata.ai"
-description: "Google ran 2 core updates in 2026 (March and May) and 3 in 2025. How to check if one hit your property management site, what Google rewards, and what to do after a drop."
+description: "Google ran core updates in March and May 2026. How to check if an update hit your property management site, what Google rewards, and what to do after a drop."
 headline: "How Google Updates Affect Property Management Websites"
 dek: "Seven 2026 ranking updates, one Search Console check, and a plan for a real drop."
 published: "2026-10-19"

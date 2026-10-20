@@ -1,6 +1,6 @@
 ---
 title: "Should Property Managers Answer Landlord Questions on Reddit? — Citata.ai"
-description: "Reddit threads feed AI answers: Google and OpenAI both license Reddit data. How a property manager can answer landlord questions there without breaking Reddit's spam rules."
+description: "AI tools license Reddit data, so landlord threads shape AI answers. How a property manager can answer on Reddit without breaking its spam and promo rules."
 headline: "Should Property Managers Answer Questions on Reddit?"
 dek: "AI tools read Reddit. Owners read it too. Selling there gets you banned."
 published: "2026-10-19"
@@ -75,6 +75,16 @@ AI tools cite Reddit because it holds many first-hand answers, and AI firms pay 
 A thread where 5 landlords debate "Is 10% too much for a property manager?" is exactly what an AI answer wants to quote. If your reply is the clearest one, with real numbers, it can shape the answer. That is a hypothesis: no study shows that a manager's Reddit replies lead to AI naming the company.
 
 Keep the scale in mind. In the Goodjuju Marketing fall 2026 study of 35 property management companies, social media gave 0.8% of owner leads. Reddit is a trust and visibility play, not a lead machine.
+
+## What should I never do on Reddit?
+
+Some moves get a business account banned fast, and they also hurt trust with the owners who read the thread. Avoid these:
+
+- **Fake reviews of your own company.** Rule 5 bans misleading others; praise from a hidden staff account breaks it.
+- **Vote rings.** Asking staff to upvote is content manipulation under Rule 2.
+- **Copy-paste answers.** The same reply in 10 threads reads as spam to mods and users.
+- **Tenant details.** Rule 3 bans posting someone's personal or confidential information. Never describe a real tenant in a way that identifies them.
+- **Arguing with tenants.** You will not win, and owners read the thread too.
 
 ## How do I answer without selling?
 
