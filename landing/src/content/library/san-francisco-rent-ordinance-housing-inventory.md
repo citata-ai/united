@@ -75,7 +75,7 @@ Rules that change the math:
 
 A worked example: a tenant pays $3,697, the HUD FY2027 fair market rent for a 2-bedroom in the San Francisco area. A 1.6% increase is $3,697 x 0.016 = $59.15. The new base rent is $3,756.15. Compare that with the HUD area 2-bedroom FMR rise of 2.6% on the [San Francisco fair market rent 2027 page](/guides/section-8-rent-limits/san-francisco-fair-market-rent-2027).
 
-If you skipped three years, the Rent Board's own example shows how banking adds up: 1.7% (2024) + 1.4% (2025) + 1.6% (2026) = 4.7% on the anniversary date.
+The Rent Board's own example shows how banking adds up over three years: 1.7% (2024) + 1.4% (2025) + 1.6% (2026) = 4.7%.
 
 ## Who must report to the SF Rent Board Housing Inventory?
 

@@ -1,6 +1,6 @@
 ---
 title: "Montgomery County, MD Rent Stabilization: 2026 Rules — Citata.ai"
-description: "Montgomery County caps regulated rent increases at 5.2% from July 2026 to June 2027. See who is exempt, the rental license fees and how Prince George's compares."
+description: "Montgomery County caps regulated rent increases at 5.2% from July 2026 to June 2027. See who is exempt, license fees and how Prince George's County compares."
 headline: "Montgomery County, Maryland Rent Stabilization: Rules for Owners"
 dek: "The 2026 cap is 5.2%, units under 23 years old are exempt, and every rental needs a license."
 published: "2026-10-19"

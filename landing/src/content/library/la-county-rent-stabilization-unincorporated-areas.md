@@ -62,9 +62,15 @@ The yearly allowed increase in unincorporated LA County is 1.919% from July 1, 2
 
 Source: DCBA Rent Stabilization Bulletin, revised 2026-03-02.
 
-Who counts as a small property landlord, per DCBA: an owner who gets a Homeowners' Property Tax Exemption on the property; or who owns or controls one rental property with no more than 10 units; or who owns or controls no more than 3 rental properties with no more than 10 units in total, counting property outside the county. Small property landlords must self-certify to DCBA.
+DCBA lists three ways to be a small property landlord:
 
-A luxury unit has 2 bedrooms or fewer, sits in a structure with 25 or more units, and rented for at least $4,000 a month as of September 11, 2018.
+- You get a Homeowners' Property Tax Exemption on the property.
+- You own or control one rental property with no more than 10 units.
+- You own or control no more than 3 rental properties with 10 units or fewer in total, counting property outside the county.
+
+Small property landlords must self-certify to DCBA.
+
+A luxury unit has 2 bedrooms or fewer and sits in a structure with 25 or more units. It also rented for at least $4,000 a month as of September 11, 2018.
 
 A worked example: a fully covered 2-bedroom renting at $2,964, the HUD FY2027 fair market rent for the Los Angeles area, may rise by 1.919%, or $56.88 a month. A small property landlord may charge 2.919%, or $86.52. See the [Los Angeles fair market rent 2027 page](/guides/section-8-rent-limits/los-angeles-fair-market-rent-2027) for other sizes.
 
@@ -86,7 +92,7 @@ Yes. Owners in unincorporated LA County must register every rental unit and mobi
 | Partially covered rental unit (just cause only) | $30 |
 | Mobilehome space | $90 |
 
-Up to 50% of the fee for a fully covered unit or a mobilehome space may pass to the tenant, in 12 equal monthly installments unless the tenant agrees otherwise. Penalties and late fees may not pass to tenants.
+Up to 50% of the fee for a fully covered unit or a mobilehome space may pass to the tenant. The tenant pays it in 12 equal monthly installments, unless agreed otherwise. Penalties and late fees may not pass to tenants.
 
 A worked example: a 6-unit fully covered building pays 6 x $90 = $540 a year. You may pass up to $270 to tenants, or $45 per unit, which is $3.75 a month per unit.
 
@@ -106,7 +112,7 @@ The county RSTPO and the City of LA Rent Stabilization Ordinance (RSO) are separ
 | Increase | 60% of CPI, 3% ceiling (1.919% in 2026-27) | LAHD's yearly allowable rent increase |
 | Frequency | Once every 12 months | Once every 12 months |
 
-LAHD also made two changes effective February 2, 2026: landlords can no longer add an extra percentage for utilities, and the extra 10% for an added dependent is no longer allowed.
+LAHD also made two changes on February 2, 2026. Landlords can no longer add an extra percentage for utilities. The extra 10% for an added dependent is gone too.
 
 Checklist for an owner in unincorporated LA County:
 

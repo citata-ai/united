@@ -66,7 +66,7 @@ An Atlanta manager must know Georgia's deposit, notice and eviction rules, becau
 | Eviction | No self-help eviction. File a dispossessory affidavit in magistrate court in the county of the property |
 | Tender defense | For non-payment, the tenant has 7 days after service to pay rent, fees and court costs, once in 12 months |
 
-The escrow row matters most for you. Once you hire a manager, the escrow rule applies to you even with one house. The same handbook warns that an owner of more than 10 units, or one who uses a management agent, can owe three times the amount wrongly withheld plus attorney fees.
+The escrow row matters most for you. Once you hire a manager, the escrow rule applies to you even with one house. The same handbook adds a warning for these owners. A wrongly withheld deposit can cost three times the amount, plus attorney fees.
 
 GREC adds its own rule for brokers. Its FAQ says a broker who keeps a separate account for rentals must register that trust account with the Commission (License Law 43-40-20 and Rule 520-1-.08).
 

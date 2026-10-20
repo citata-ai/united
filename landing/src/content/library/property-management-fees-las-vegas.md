@@ -102,7 +102,7 @@ We did the math from each page. Your rent, vacancy and repairs change the result
 Nevada law sets a few limits that change what a manager can collect for you. Three rules matter most for fees.
 
 1. **Deposit cap.** NRS 118A.242 says a landlord may not take security, including the last month's rent, of more than 3 months' periodic rent.
-2. **Deposit return.** Under the same statute, a landlord who fails to return the rest of a deposit within 30 days can owe the tenant the full deposit plus up to the same amount again.
+2. **Deposit return.** The same statute sets a 30-day limit to return the rest of a deposit. A landlord who misses it can owe the full deposit plus up to the same amount again.
 3. **Late fee cap.** NRS 118A.210 limits a late fee to 5% of the periodic rent. A $1,700 rent can carry a late fee of no more than $85.
 
 Ask each manager who keeps the late fee. Some managers keep it as income, and that is a fee to you in all but name.

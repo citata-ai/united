@@ -1,6 +1,6 @@
 ---
 title: "Phoenix Rental Market 2026: Rents, Rules and Outlook — Citata.ai"
-description: "HUD's 2-bedroom fair market rent for Phoenix fell 5.7% for FY2027. Zillow rents are up 1.0% in a year, and record absorption is cutting vacancy."
+description: "HUD's 2-bedroom fair market rent for Phoenix fell 5.7% for FY2027. Zillow rents rose 1.0% in a year, and record absorption is cutting vacancy in every class."
 headline: "Phoenix Rental Market for Owners: Rents, Rules and Outlook"
 dek: "HUD rents fell 5.7%, market rents are flat over three years, and the city rent tax is gone."
 published: "2026-10-19"

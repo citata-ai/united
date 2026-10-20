@@ -77,7 +77,7 @@ What to do: if you live more than 100 miles away and have no Ohio license, name 
 
 ## What does the Columbus pay-to-stay rule mean?
 
-The Columbus pay-to-stay rule gives tenants a defense in a non-payment eviction. Council's 2023 bulletin says Ordinance 2109-2023 amends Chapter 4551 so that tenants can "assert tender of rent as an affirmative defense to an eviction action filed on the basis of nonpayment of rent." City Council lists it as passed on July 31, 2023.
+The Columbus pay-to-stay rule gives tenants a defense in a non-payment eviction. Council's 2023 bulletin says Ordinance 2109-2023 amends Chapter 4551. Tenants can now "assert tender of rent as an affirmative defense" to an eviction for non-payment of rent. City Council lists it as passed on July 31, 2023.
 
 Tender means an offer to pay what is owed. So if your tenant offers the rent before the court rules, that offer can defeat or delay your case. Council's Housing For All page says the goal is to give residents time to secure rental assistance up until a court judgment.
 

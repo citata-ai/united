@@ -1,6 +1,6 @@
 ---
 title: "Washington, DC Rental Market 2026: Rents, Rules, Outlook — Citata.ai"
-description: "HUD's 2-bedroom fair market rent for the DC metro rose 8.5% for FY2027. Zillow rents rose 1.4%, federal jobs fell 11.8%, and new supply is slowing."
+description: "HUD's 2-bedroom fair market rent for the DC metro rose 8.5% for FY2027. Zillow rents rose 1.4%, federal jobs fell 11.8%, and the flow of new supply is slowing."
 headline: "Washington, DC Rental Market for Owners: Rents, Rules, Outlook"
 dek: "HUD rents rose 8.5%, market rents rose 1.4%, and the metro lost 41,600 federal jobs in a year."
 published: "2026-10-19"

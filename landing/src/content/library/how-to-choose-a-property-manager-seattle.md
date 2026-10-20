@@ -1,6 +1,6 @@
 ---
 title: "How to Choose a Property Manager in Seattle: A Checklist — Citata.ai"
-description: "Check a Seattle manager's Washington broker license, RRIO registration, First-in-Time screening and 180-day rent notices. Step list, 10 questions, contract terms."
+description: "Check a Seattle manager's Washington license, RRIO registration, First-in-Time screening and 180-day rent notices. A step list, 10 questions and contract terms."
 headline: "How to Choose a Property Manager in Seattle"
 dek: "Washington treats property management as broker work. Seattle adds RRIO, First-in-Time and 180-day notices."
 published: "2026-10-19"

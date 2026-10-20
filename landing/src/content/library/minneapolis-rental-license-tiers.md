@@ -59,7 +59,7 @@ Source: City of Minneapolis, "Rental license rules and regulations." Licenses ar
 
 Two more rules catch new owners:
 
-- **Buying a rental:** apply for a license within 60 days of closing, or pay an administrative fee of $250 for the first unit plus $20 for each extra unit.
+- **Buying a rental:** apply for a license within 60 days of closing. If you miss it, the administrative fee is $250 for the first unit plus $20 for each extra unit.
 - **Living far away:** you need a local contact if you live more than 60 miles from the property or outside the listed nearby counties.
 
 ## How does Minneapolis set tier 1, 2 or 3?
@@ -116,7 +116,7 @@ For scale, HUD's FY2027 fair market rent for a 2-bedroom in the Minneapolis-St. 
 
 ## What can cause a license revocation?
 
-A Minneapolis rental license can be revoked when the property fails the city's licensing standards. A 2006 Minnesota Court of Appeals opinion quotes Minneapolis Code section 244.1910: failure to meet its standards and conditions is adequate grounds to deny, refuse to renew, revoke or suspend a rental license. Court cases name examples such as over-occupancy.
+A Minneapolis rental license can be revoked when the property fails the city's licensing standards. A 2006 Minnesota Court of Appeals opinion quotes Minneapolis Code section 244.1910. Failure to meet its standards is adequate grounds to deny, refuse to renew, revoke or suspend a license. Court cases name examples such as over-occupancy.
 
 Getting a license back is slow and costly. The city's reinstatement page lists the steps:
 
@@ -133,12 +133,12 @@ This is general information, not legal advice. Check the current law or ask a lo
 
 Minneapolis requires owners to share set information at set times. The city's renter notifications page lists them.
 
-- **Before the lease is signed:** the name and physical address of a real person (owner or manager) for legal papers, the tier status and related code violations, all open violations, and a waste and recycling summary. Lead paint disclosure also applies. If you skip this, the renter can end the lease with short notice.
+- **Before the lease is signed:** the name and physical address of a real person (owner or manager) for legal papers. Add the tier status, related and open code violations, and a waste summary. Lead paint disclosure also applies. If you skip this, the renter can end the lease with short notice.
 - **Within 90 days after the lease starts:** a disclosure of renter rights under city, state and federal law.
 - **Before an eviction for non-payment:** a pre-eviction notice with the amount due, how to pay and when fees are due. Then wait 30 days.
 - **Always:** post the rental license and a Who to Call poster near the main entrance.
 - **Before selling some affordable housing:** advance notice of sale to the city and renters.
 
-Screening has rules too. The city's renter screening page offers two paths: follow its inclusive screening criteria, or screen more strictly but review each case individually. Under inclusive criteria, for example, you may ask for monthly income of at least 3 times the rent, but you must make an exception for an applicant who earned less and still paid rent on time. You may not consider a credit score. The city also says owners must accept renters who use public assistance.
+Screening has rules too. The city's renter screening page offers two paths: follow its inclusive screening criteria, or screen more strictly but review each case individually. Under inclusive criteria, you may ask for monthly income of at least 3 times the rent. But you must make an exception for an applicant who earned less and still paid on time. You may not consider a credit score. The city also says owners must accept renters who use public assistance.
 
 A manager who knows the tier system can protect your score. To budget for one, use the [property management fee calculator](/tools/property-management-fee-calculator).

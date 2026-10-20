@@ -36,7 +36,7 @@ sources:
 
 ## Which license must a Boston property manager hold, and how do I look it up?
 
-Massachusetts has no separate property manager license. But the state's real estate license law covers most of what a manager does when a unit turns over. MGL chapter 112, section 87PP defines a real estate broker as a person who, for another and for a fee, rents or leases real estate, or negotiates or offers to negotiate a rental. It also covers a person who holds out as in the business of renting or leasing.
+Massachusetts has no separate property manager license. But the state's real estate license law covers most of what a manager does when a unit turns over. MGL chapter 112, section 87PP defines a real estate broker. It is a person who, for another and for a fee, rents or leases real estate, or negotiates a rental. It also covers a person who holds out as in the business of renting or leasing.
 
 So a Boston manager who finds tenants and signs leases for you, for pay, should work under a broker license. A salesperson must work under a broker.
 
@@ -63,7 +63,7 @@ The deposit law first. MGL chapter 186, section 15B is strict.
 | Last month's rent | The tenant is entitled to interest at 5% a year, or the lower rate the bank paid |
 | Interest penalty | If the lessor fails to pay interest due within 30 days after the tenancy ends, damages of 3 times the interest, plus costs and attorney fees |
 
-A worked example: at the HUD FY2027 2-bedroom fair market rent of $3,008 for the Boston area, the most you can collect at move-in is $3,008 (first) + $3,008 (last) + $3,008 (deposit) = $9,024, plus the key and lock cost. See the [Boston fair market rent 2027 page](/guides/section-8-rent-limits/boston-fair-market-rent-2027) for other sizes.
+A worked example uses $3,008, the HUD FY2027 2-bedroom fair market rent for the Boston area. The most you can collect at move-in is $3,008 x 3 = $9,024 (first, last and deposit), plus the key and lock cost. See the [Boston fair market rent 2027 page](/guides/section-8-rent-limits/boston-fair-market-rent-2027) for other sizes.
 
 Now the city rule. Boston's rental registration page says:
 
