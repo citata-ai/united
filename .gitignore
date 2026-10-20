@@ -11,7 +11,8 @@ dist/
 .DS_Store
 
 # Local agent tooling (not part of the repo)
-.claude/
+.claude/*
+!.claude/agents/
 .agents/
 skills-lock.json
 landing/scripts/mechanism/preview.html

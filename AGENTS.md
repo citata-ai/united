@@ -9,6 +9,7 @@ This repo is the home of the citata.ai organization. Its goal: positive impact a
 - Write in ASD-STE100 Simplified Technical English. Short words, active voice.
 - Keep the README warm and short.
 - Commit small, clear changes.
+- In a content wave, start each writer or cover task as the `content-writer` agent (sonnet, no subagents). Keep Opus for the orchestrator. Send at most 20 agents at a time. A wave of Opus writers used the full plan limit in 36 minutes on 2026-10-19.
 
 ## Layout
 
