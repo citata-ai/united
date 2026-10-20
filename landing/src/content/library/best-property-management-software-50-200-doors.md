@@ -1,124 +1,124 @@
 ---
-title: "Best Property Software for 50 to 200 Doors — Citata.ai"
-description: "Compare software for 50 to 200 doors using vendor prices, monthly minimums and accounting tests. See what is known and which costs still need a written quote."
-headline: "Best Property Software for Midsize Rental Portfolios"
-dek: "Compare the bill at your current size and test the work your team repeats."
+title: "Best Property Management Software for 50 to 200 Doors — Citata.ai"
+description: "Monthly cost at 50, 100 and 200 doors for Yardi Breeze, AppFolio, DoorLoop, Rentvine and Buildium, from their pricing pages, read 2026-10-20."
+headline: "Best Property Management Software for 50 to 200 Doors"
+dek: "Five pricing pages, read on 2026-10-20, turned into one monthly bill per door count."
 published: "2026-10-19"
-updated: "2026-10-19"
-answer: "For a company with 50 to 200 doors, shortlist Buildium, Yardi Breeze, Rentvine, DoorLoop and AppFolio. Yardi publishes a clear residential minimum; several others need a tailored quote. Choose through an accounting test and total cost review."
-visible: false
+updated: "2026-10-20"
+answer: "For 50 to 200 doors, shortlist Yardi Breeze, AppFolio Core, DoorLoop One, Rentvine and Buildium. At list price, Yardi Breeze is the lowest: $100 a month for 50 or 100 doors and $200 for 200 doors. AppFolio Core costs at least $74.50, $149 and $298 at the same sizes, before a minimum spend it does not publish. Rentvine and Buildium need a written quote, so test accounting first and compare quotes second."
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 1
 inspired_by: "https://gummysearch.com/tools/best-products/property-management-software"
 faq:
+  - q: "What is the cheapest property management software for 100 doors?"
+    a: "At list price, Yardi Breeze: $1 per unit a month with a $100 monthly minimum, so $100 for 100 doors (Yardi Breeze pricing, 2026-10-20). AppFolio Core starts at $149 and DoorLoop One at $250 for 100 doors. Fees for payments and screening come on top."
   - q: "Which software has no unit minimum?"
-    a: "Yardi Breeze states no unit minimum. A monthly minimum charge still applies."
+    a: "Yardi Breeze says there is no minimum number of units, but it charges at least $100 a month for residential portfolios. DoorLoop One has a $199 monthly minimum. AppFolio Core needs 50 units and a minimum spend."
   - q: "Can I use AppFolio at 50 doors?"
-    a: "AppFolio Core states a 50-unit minimum and a minimum spend. Ask for both conditions in a written quote."
-  - q: "Which software is cheapest at 100 doors?"
-    a: "Yardi Breeze has a published residential formula. A complete ranking needs size-specific quotes and transaction costs."
-  - q: "When should I replace an entry-level tool?"
-    a: "Replace it when owner accounting, approvals or repeated manual transfers fail your work tests. Door count alone is not the trigger."
+    a: "Yes. AppFolio Core has a 50-unit minimum, so 50 doors is the entry point. A minimum spend also applies, and the pricing page does not give the number."
+  - q: "How much does DoorLoop cost for 200 doors?"
+    a: "DoorLoop One lists $2.50 per unit a month and $1.50 per unit above 100. For 200 doors that is $400 a month. The page offers up to 25% off on yearly billing."
+  - q: "Which tools show trust accounting and three-way reconciliation?"
+    a: "Rentvine has a trust accounting page with three-way reconciliation of bank statement, trust ledger and property ledgers. Ask every vendor to show the same reconciliation on your own sample data."
+  - q: "When do you outgrow an entry-level tool?"
+    a: "When manual work breaks your controls or slows owner statements. Door count alone is not the trigger."
 sources:
-  - label: "AppFolio: Pricing (read 2026-10-19)"
-    url: "https://www.appfolio.com/pricing"
-  - label: "Buildium: Pricing (read 2026-10-19)"
-    url: "https://www.buildium.com/pricing/"
-  - label: "Yardi Breeze: Pricing (read 2026-10-19)"
+  - label: "Yardi Breeze: Pricing (read 2026-10-20)"
     url: "https://www.yardibreeze.com/pricing/"
-  - label: "Yardi Breeze: FAQ (read 2026-10-19)"
+  - label: "Yardi Breeze: FAQ (read 2026-10-20)"
     url: "https://www.yardibreeze.com/faq/"
-  - label: "Rentvine: Pricing (read 2026-10-19)"
-    url: "https://www.rentvine.com/pricing"
-  - label: "DoorLoop: Pricing (read 2026-10-19)"
+  - label: "AppFolio: Pricing (read 2026-10-20)"
+    url: "https://www.appfolio.com/pricing"
+  - label: "DoorLoop: Pricing (read 2026-10-20)"
     url: "https://www.doorloop.com/pricing"
-  - label: "Rentvine: Trust accounting (read 2026-10-19)"
+  - label: "Rentvine: Pricing (read 2026-10-20)"
+    url: "https://www.rentvine.com/pricing"
+  - label: "Rentvine: Trust accounting (read 2026-10-20)"
     url: "https://www.rentvine.com/features/trust-accounting"
+  - label: "Buildium: Pricing (read 2026-10-20)"
+    url: "https://www.buildium.com/pricing/"
 ---
 
-## Which software fits a company with 50 to 200 doors?
+## What does property management software cost at 50, 100 and 200 doors?
 
-The best software fits your accounting model and staff capacity at today's door count. Start with this feature and price table.
+Yardi Breeze is the lowest list price at every size from 50 to 200 doors. We did the math from each pricing page on 2026-10-20. These are list floors, not quotes.
 
-| Software | Public price basis | Minimum | Work to test |
-|---|---|---|---|
-| Yardi Breeze residential | $1 per unit monthly | $100 monthly; annual agreement | Owner reports and accounting |
-| AppFolio Core | From $1.49 per unit monthly | 50 units; undisclosed spend minimum | Leasing, work orders and reports |
-| Buildium Essential | From $62 monthly | Unit minimum not published | Accounting and maintenance |
-| Rentvine | As low as $1.50 per active unit | Quote only | Trust accounting |
-| DoorLoop One | $2.50 per unit monthly displayed | $199 monthly displayed | Core platform and AI assistance |
+| Software | 50 doors | 100 doors | 200 doors | How the page prices it |
+|---|---|---|---|---|
+| Yardi Breeze (residential) | $100 | $100 | $200 | $1 per unit a month, $100 monthly minimum, annual agreement |
+| AppFolio Core | $74.50 + spend minimum | $149 + spend minimum | $298 + spend minimum | From $1.49 per unit a month, 50-unit minimum, minimum spend not shown |
+| DoorLoop One | $199 | $250 | $400 | $2.50 per unit a month, $1.50 per unit above 100, $199 monthly minimum |
+| Rentvine | From $75 | From $150 | From $300 | "As low as" $1.50 per unit, quote only, one-time setup fee |
+| Buildium Essential | From $62 | Quote | Quote | From $62 a month, price by size not shown |
 
-Sources: [Yardi](https://www.yardibreeze.com/pricing/), [AppFolio](https://www.appfolio.com/pricing), [Buildium](https://www.buildium.com/pricing/), [Rentvine](https://www.rentvine.com/pricing) and [DoorLoop](https://www.doorloop.com/pricing), read 2026-10-19. Confirm DoorLoop's billing term for the displayed offer.
+Sources: the Yardi Breeze, AppFolio, DoorLoop, Rentvine and Buildium pricing pages, read 2026-10-20.
 
-The table supports a short list. It does not establish equal accounting depth or total cost. Ask your accountant and operations lead to review different parts of the demo.
+Read the table with care. AppFolio says a minimum spend applies but does not give the number. Rentvine shows only an "as low as" rate. Buildium shows only a starting price. So for those three, only a written quote gives the true number.
 
-## Which tools have no minimum unit count?
+## Which software has no minimum unit count?
 
-Yardi Breeze states no unit minimum in its FAQ, but charges a monthly minimum. Separate a unit rule from a spending rule.
+Yardi Breeze has no unit minimum. Its FAQ says: "There is no minimum number of units that you must manage." But Breeze charges at least $100 a month for residential portfolios, $200 for commercial or mixed, and $400 for Breeze Premier.
 
-AppFolio Core requires 50 units, according to its pricing page. Eligibility does not establish value. Ask for the unpublished minimum spend before comparing its unit rate.
+The other four tools work like this:
 
-Buildium does not state a unit minimum on its pricing page. Rentvine does not answer its minimum-unit FAQ with a number. Confirm eligibility for your business rather than treating silence as a promise.
+- **AppFolio Core:** a 50-unit minimum and a minimum spend. Plus and Max also have unit and spend minimums that the page does not show.
+- **DoorLoop One:** no unit minimum on the page, but a $199 monthly minimum. Connect has a $299 minimum and Multiply a $399 minimum.
+- **Rentvine:** prices "per active unit". The page gives no unit floor.
+- **Buildium:** the page shows no unit minimum. Customers with more than 5,000 units call for a price.
 
-Ask sales how vacant homes and inactive properties count. Use the same door definition across quotes. Otherwise, a lower rate may apply to more billable records.
+A unit rule and a spend rule are different. At 50 doors, a $199 minimum costs more than a $1.49 rate. Ask each vendor how it counts vacant and inactive units.
 
-Keep the signed quote with its date and term. Check how the bill changes if an owner leaves. A growth forecast should not hide a subscription you cannot cover today.
+## What setup and transaction fees come on top?
 
-## What does each tool cost at 50, 100 and 200 doors?
+Setup and transaction fees change the real bill, and most pages do not price them.
 
-Yardi Breeze gives a published residential formula; other products leave gaps that need a quote.
+| Software | Setup or onboarding | Transaction fees on the page |
+|---|---|---|
+| Yardi Breeze | "No onboarding fees", no training or support fees | Screening and other per-transaction costs billed separately |
+| AppFolio | Not shown | Not shown |
+| DoorLoop | Not shown | Tenant screening $35 per applicant |
+| Rentvine | One-time setup fee, amount not shown | "Transaction and screening fees may apply" |
+| Buildium | Onboarding required on Growth and Premium, price not shown | Incoming EFT $2.35 (Essential), $1.35 (Growth), free 12 months then $0.60 (Premium) |
 
-| Doors | Yardi Breeze residential base | AppFolio Core rate calculation | Buildium Essential |
-|---|---|---|---|
-| 50 | $100 monthly | $74.50 before spend minimum | From $62; confirm size price |
-| 100 | $100 monthly | $149 before spend minimum | Size-specific quote |
-| 200 | $200 monthly | $298 before spend minimum | Size-specific quote |
-
-Calculation source: Yardi's $1 rate and $100 minimum, and AppFolio's $1.49 starting rate, read 2026-10-19. AppFolio figures are arithmetic, not payable quotes.
-
-Rentvine's as-low-as rate does not establish the rate or minimum for your account. Ask for a tailored offer. DoorLoop also offers annual and monthly billing, so confirm the term before adding its price to a budget.
-
-List incoming payments, owner payments, screening and signatures. Mark who pays each fee. A tenant-paid charge may sit outside your bill, but still affects the renter's experience.
+On 100 doors, rent alone is about 100 incoming payments a month. At $2.35 each, Buildium Essential adds $235 a month to its $62 base. Ask every vendor who pays each fee: you, the owner or the tenant.
 
 ## Which tools have trust accounting built in?
 
-Rentvine expressly describes built-in trust accounting and native three-way reconciliation on its accounting page. That makes it a useful candidate for an accounting-led demo.
+Rentvine has a page for trust accounting. The page lists "3-way tie reconciliation": bank statement, trust ledger and property ledgers matched at once. The page does not say that every plan includes it, so ask.
 
-AppFolio, Buildium, Yardi Breeze and DoorLoop describe accounting features. Ask each to show the exact owner-fund controls and reconciliation process you need. The word accounting does not prove a specific trust workflow.
+AppFolio, Buildium, Yardi Breeze and DoorLoop also sell accounting. Do not trust the word "accounting" alone. Give each vendor the same test case in the demo:
 
-Bring a returned payment, an outstanding check and an owner reserve. Ask the vendor to show how each affects the ledger. Your accountant should explain the ending balance without a separate repair sheet.
+1. **A returned rent payment.** See how the tenant, owner and trust ledgers change.
+2. **An outstanding check.** See it in the bank reconciliation.
+3. **An owner reserve.** See it on the owner statement.
+4. **Two owners on one bank account.** See if a negative owner balance shows clearly.
 
-Test separate owners sharing a bank account. Check whether negative balances appear clearly. Ask who can change bank details and approve payments.
+Your accountant must explain the ending balance without a side spreadsheet. Keep the sample reports with your buying notes.
 
-Do not select software on an audit-ready slogan. The useful evidence is a complete result your own accountant can review. Keep the sample reports with the buying record.
+## Which tool fits which company?
 
-## Which tools suit single-family or small multifamily rentals?
+Start from your door count and your accounting needs. Then compare quotes.
 
-Single-family and small multifamily firms should test different work patterns with the same accounting standard. Scattered homes need clear address, access and vendor records. Small buildings need shared-cost allocation.
-
-Use a vacant home and a building with common expenses as demo cases. Follow a repair from tenant request to owner statement. Check whether photos and invoices stay attached.
-
-For leasing, test an applicant moving between listings. Confirm that staff can see the history without copying private data into another sheet. Then test a renewal with changed rent.
-
-For owner reporting, compare an owner with a home against an owner with several buildings. Ask whether the report combines results without losing property detail.
-
-Choose based on your common work. A generic product award cannot show whether your team can finish a turn or explain a repair charge.
+- **Lowest list price, 50 to 200 doors:** Yardi Breeze. $100 a month up to 100 doors, no setup fee, annual agreement.
+- **Accounting-led team that wants trust tools shown up front:** Rentvine. Get a quote for your active units and the setup fee.
+- **Want a published per-unit price above 100 doors:** DoorLoop One. The rate drops to $1.50 per unit above 100.
+- **Plan to grow past 200 doors on one platform:** AppFolio. Core starts at $1.49 per unit, Plus at $3.20 and Max at $5.00.
+- **Want a low monthly base:** Buildium Essential from $62 a month. Count the EFT fees first.
 
 ## When do you outgrow an entry-level tool?
 
-You outgrow an entry-level tool when manual work weakens controls or delays service. Door count alone does not define that point.
+You outgrow an entry-level tool when manual work breaks your controls or slows service. Door count alone is not the trigger.
 
-Watch for duplicate records, late statements and repeated manual transfers. Check whether staff can track repairs without searching personal messages. Ask whether an absence stops payment approvals.
+Watch for these signs:
 
-Use this decision checklist:
+- **Late owner statements.** Name the task and the person who waits.
+- **Repeat manual transfers.** Count them for one month.
+- **Repairs tracked in text messages.** Staff cannot find the history.
+- **One absence stops payments.** Only one person can approve.
+- **Exports you cannot open.** Check that you can keep your own records.
 
-- **Record delays.** Name the task and the person waiting.
-- **Review errors.** Separate data mistakes from missing controls.
-- **Test access.** Confirm staff see only the records they need.
-- **Open exports.** Check that your business can retain its records.
-- **Price the fix.** Compare training, a plan upgrade and a move.
+For two of these tools side by side, read [AppFolio vs Buildium](/guides/appfolio-vs-buildium). Software is a cost per door, so check that your fee covers it with the [property management fee calculator](/tools/property-management-fee-calculator).
 
-Use the [AppFolio versus Buildium guide](/guides/appfolio-vs-buildium) for more buying questions. Check the full cost against your margin with the [fee calculator](/tools/property-management-fee-calculator).
-
-Ask each finalist to run the same accounting case. Choose the product whose result your staff can explain and repeat.
+Disclosure: this page has no affiliate links. No vendor paid for it or checked it.
