@@ -404,3 +404,9 @@ file = "img/guide-door-churn-v1-*.webp"
 prompt = "Use the image /tmp/img-door-growth-ceiling-churn/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga pours small model houses into the top of a big Roman stone amphora, while the same number of model houses leak out of a crack at its bottom; the amphora stays half full; colorful tiled houses on the horizon. The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-19"
+
+[[image]]
+file = "img/guide-assistance-animal-requests-v1-*.webp"
+prompt = "Use the image /tmp/img-assistance-animal-requests/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: At the columned porch of a mint two-flat, a landlord in an orange toga warmly welcomes a tenant with a calm service dog and hands them a brass key. In the distance, a quiet row of small tiled houses lines the stone street."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-20"

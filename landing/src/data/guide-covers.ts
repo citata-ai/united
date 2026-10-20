@@ -176,6 +176,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-door-churn-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga pours small houses into a big amphora while other houses spill out of a crack at its base.",
   },
+  "assistance-animal-requests": {
+    img: "guide-assistance-animal-requests-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga hands a brass key to a tenant with a calm service dog at the porch of a mint two-flat, with small tiled houses in the distance.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
