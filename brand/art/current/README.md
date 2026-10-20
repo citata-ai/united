@@ -36,3 +36,8 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-ny-deposit-v1.webp` | Library: New York security deposit law | N, coral |
 | `guide-nspire-v1.webp` | Library: NSPIRE-V inspection checklist | N, cyan |
 | `guide-owner-report-v1.webp` | Library: owner monthly report template | N, yellow |
+| `guide-cost-per-door-v1.webp` | Library: software cost per door | N, lilac |
+| `guide-publish-fees-v1.webp` | Library: publish fees for AI search | N, coral |
+| `guide-rent-letter-v1.webp` | Library: rent increase letter template | N, cyan |
+| `guide-four-software-v1.webp` | Library: Rentvine, AppFolio, Buildium and DoorLoop compared | N, yellow |
+| `guide-s8-first-hap-v1.webp` | Library: how long until the first Section 8 payment | N, lilac |

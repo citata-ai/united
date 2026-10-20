@@ -84,6 +84,26 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-owner-report-v1",
     alt: "A pop engraving under a yellow sky: under an arcade a manager in an orange toga hands a scroll with a rising bar chart to a homeowner.",
   },
+  "property-management-software-cost-per-door": {
+    img: "guide-cost-per-door-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga counts on a brass abacus in an arcade of colorful doors, each with a coin stack on its step.",
+  },
+  "publish-fees-for-ai-search": {
+    img: "guide-publish-fees-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga shows coin stacks and model houses at an open stall; an old computer on an oracle tripod smokes nearby.",
+  },
+  "rent-increase-letter-template": {
+    img: "guide-rent-letter-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga hands a sealed letter to a tenant at the door of a mint house; coin stacks rise on the step.",
+  },
+  "rentvine-vs-appfolio-vs-buildium-vs-doorloop": {
+    img: "guide-four-software-v1",
+    alt: "A pop engraving under a yellow sky: four colored chariots, each with an old computer, wait at a start line; a landlord in an orange toga holds up a laurel wreath.",
+  },
+  "section-8-first-hap-payment-how-long": {
+    img: "guide-s8-first-hap-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga waits at the gate of a red-brick house while a rider brings a coin purse; an hourglass on the gate post.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
