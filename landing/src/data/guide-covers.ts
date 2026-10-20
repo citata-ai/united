@@ -104,6 +104,26 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-s8-first-hap-v1",
     alt: "A pop engraving under a lilac sky: a landlord in an orange toga waits at the gate of a red-brick house while a rider brings a coin purse; an hourglass on the gate post.",
   },
+  "section-8-hap-contract-explained": {
+    img: "guide-s8-hap-contract-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga, a tenant and an official with a wax seal sign one long scroll on a stone table.",
+  },
+  "section-8-hap-abatement-explained": {
+    img: "guide-s8-abatement-v1",
+    alt: "A pop engraving under a yellow sky: an official closes a brass gate on an aqueduct of gold coins while a landlord in an orange toga brings tools to a broken window.",
+  },
+  "section-8-inspection-failed-what-next": {
+    img: "guide-s8-failed-inspection-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga on a ladder fixes a broken shutter while an inspector with a magnifying glass waits below.",
+  },
+  "section-8-landlord-incentives-signing-bonus": {
+    img: "guide-s8-incentives-v1",
+    alt: "A pop engraving under a lilac sky: at the gate of a red-brick house an official hands a coin purse and a laurel wreath to a landlord in an orange toga.",
+  },
+  "section-8-payment-standard-explained": {
+    img: "guide-s8-payment-standard-v1",
+    alt: "A pop engraving under a coral sky: in a busy market a brass scale weighs a model house against gold coins as an official and a landlord in an orange toga measure.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

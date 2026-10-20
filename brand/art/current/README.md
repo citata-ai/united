@@ -41,3 +41,8 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-rent-letter-v1.webp` | Library: rent increase letter template | N, cyan |
 | `guide-four-software-v1.webp` | Library: Rentvine, AppFolio, Buildium and DoorLoop compared | N, yellow |
 | `guide-s8-first-hap-v1.webp` | Library: how long until the first Section 8 payment | N, lilac |
+| `guide-s8-hap-contract-v1.webp` | Library: the HAP contract explained | N, coral |
+| `guide-s8-abatement-v1.webp` | Library: HAP abatement explained | N, yellow |
+| `guide-s8-failed-inspection-v1.webp` | Library: failed Section 8 inspection | N, cyan |
+| `guide-s8-incentives-v1.webp` | Library: Section 8 landlord incentives | N, lilac |
+| `guide-s8-payment-standard-v1.webp` | Library: payment standard vs fair market rent | N, coral |

@@ -296,3 +296,33 @@ file = "img/guide-s8-first-hap-v1-*.webp"
 prompt = "Use the image /tmp/img-section-8-first-hap-payment-how-long/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga waits by a brass letterbox at the gate of a red-brick two-flat; a Roman courier on a cream horse rides up the road with a leather coin purse; a big brass hourglass stands on the gate post. The sky is one flat lilac #B48CE6 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
 model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
 date = "2026-10-19"
+
+[[image]]
+file = "img/guide-s8-hap-contract-v1-*.webp"
+prompt = "Use the image /tmp/img-section-8-hap-contract-explained/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: three people sign one long scroll on a stone table under a portico: a landlord in an orange toga, a tenant in mint, and a city official in cobalt holding a wax seal stamp; a red-brick two-flat behind them; a brass inkwell with a quill. The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-s8-abatement-v1-*.webp"
+prompt = "Use the image /tmp/img-section-8-hap-abatement-explained/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a Roman aqueduct carries a stream of gold coins toward a red-brick two-flat, but a city official in cobalt has closed a brass sluice gate so the coins stop; a landlord in an orange toga stands by a cracked window of the house holding a hammer and a toolbox. The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-s8-failed-inspection-v1-*.webp"
+prompt = "Use the image /tmp/img-section-8-inspection-failed-what-next/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga on a ladder fixes a broken shutter on a pink two-flat while a Roman inspector in cream with a brass magnifying glass and a wax tablet waits below; a wooden toolbox and a brass hourglass on the steps. The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-s8-incentives-v1-*.webp"
+prompt = "Use the image /tmp/img-section-8-landlord-incentives-signing-bonus/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a city official in a cobalt toga hands a heavy leather coin purse and a laurel wreath to a landlord in an orange toga at the gate of a red-brick two-flat; a family with travel bags waits behind; small tiled houses on the horizon. The sky is one flat lilac #B48CE6 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
+
+[[image]]
+file = "img/guide-s8-payment-standard-v1-*.webp"
+prompt = "Use the image /tmp/img-section-8-payment-standard-explained/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a large brass balance scale stands in a Roman market; on one pan a small model of a two-flat house, on the other a stack of gold coins; a landlord in an orange toga and a city official in cobalt measure the stacks with a brass measuring rod; colorful tiled houses behind. The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp; Real-ESRGAN x4"
+date = "2026-10-19"
