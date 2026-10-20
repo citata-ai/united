@@ -1,6 +1,6 @@
 ---
 title: "How to Screen Tenants Step by Step: A Fair Process — Citata.ai"
-description: "Screen tenants in 7 steps: written criteria, a complete application, ID and income checks, a consumer report with consent, references, a decision, and an FCRA notice."
+description: "Screen tenants in 7 steps: written criteria, full applications, ID and income checks, a consumer report with consent, references, a decision and an FCRA notice."
 headline: "How to Screen Tenants: A Step-by-Step Process"
 dek: "Seven steps, one written standard, and the federal notice you owe every denied applicant."
 published: "2026-10-19"

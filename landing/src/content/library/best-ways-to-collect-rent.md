@@ -1,6 +1,6 @@
 ---
 title: "Best Ways to Collect Rent: ACH, Card, Zelle, Check, Cash — Citata.ai"
-description: "ACH autopay is the best default for most landlords: low or no fee, a record for each payment. Compare fees, speed and reversal risk for ACH, cards, Zelle, checks and cash."
+description: "ACH autopay is the best default for most landlords: low or no fee and a record of each payment. Fees, speed and reversal risk for ACH, cards, Zelle, checks, cash."
 headline: "Best Ways to Collect Rent: Methods Compared"
 dek: "Fees from 3 rent tools, reversal windows from the rules, and a policy you can copy."
 published: "2026-10-19"

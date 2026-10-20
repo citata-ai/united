@@ -1,6 +1,6 @@
 ---
 title: "Service and Assistance Animal Requests: A Landlord Guide — Citata.ai"
-description: "Under the Fair Housing Act, a landlord must allow a needed assistance animal, may not charge a pet fee for it, and may ask for proof only when the need is not obvious."
+description: "Under the Fair Housing Act, a landlord must allow a needed assistance animal, may not charge a pet fee for it, and may ask for proof only if the need is unclear."
 headline: "How to Handle Service and Assistance Animal Requests"
 dek: "What the law text says now that HUD withdrew its 2020 animal guidance, with a 6-step process."
 published: "2026-10-19"
@@ -39,13 +39,13 @@ sources:
 
 ## What does the law say about assistance animals in rentals?
 
-An assistance animal request is a request for a reasonable accommodation under the Fair Housing Act. The federal regulation, 24 CFR 100.204, makes it unlawful to refuse a reasonable accommodation in "rules, policies, practices, or services" when the person with a disability needs it for equal use of the home. The regulation's own first example is a blind applicant with a guide dog in a "no pets" building. Refusing the dog is a violation.
+An assistance animal request is a request for a reasonable accommodation under the Fair Housing Act. The federal regulation, 24 CFR 100.204, makes it unlawful to refuse a reasonable accommodation in "rules, policies, practices, or services." The test is whether a person with a disability needs it for equal use of the home. The regulation's own first example is a blind applicant with a guide dog in a "no pets" building. Refusing the dog is a violation.
 
 So a "no pets" rule does not end the talk. The question is whether the person has a disability and a disability-related need for this animal.
 
 ## What changed when HUD withdrew its animal guidance?
 
-HUD withdrew 8 fair housing guidance documents, effective September 17, 2025. The list, published in the Federal Register on April 6, 2026, includes FHEO-2020-01 (the 2020 notice on assistance animal requests) and FHEO Notice 2013-01 (service and assistance animals). HUD says those documents "should not be relied upon as authoritative."
+HUD withdrew 8 fair housing guidance documents, effective September 17, 2025. The Federal Register published the list on April 6, 2026. It includes FHEO-2020-01, the 2020 notice on assistance animal requests, and FHEO Notice 2013-01 on service and assistance animals. HUD says those documents "should not be relied upon as authoritative."
 
 What did not change:
 

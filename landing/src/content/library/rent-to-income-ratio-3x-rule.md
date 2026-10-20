@@ -1,6 +1,6 @@
 ---
 title: "The 3x Rent Rule: How to Use a Rent-to-Income Ratio — Citata.ai"
-description: "The 3x rule asks for gross monthly income of 3 times the rent. It is a custom, not a law. How to calculate it, count co-applicants and apply it to voucher holders."
+description: "The 3x rule asks for gross monthly income of 3 times the rent. It is a custom, not a law. How to do the math, count co-applicants and treat voucher holders."
 headline: "The 3x Rent Rule and the Rent-to-Income Ratio"
 dek: "How to do the math, where the custom comes from, and where the law limits it."
 published: "2026-10-19"

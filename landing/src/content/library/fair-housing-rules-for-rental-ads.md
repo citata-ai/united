@@ -1,6 +1,6 @@
 ---
 title: "Fair Housing Rules for Rental Ads: Words and Photos — Citata.ai"
-description: "The Fair Housing Act bans rental ads that show a preference by race, color, religion, sex, disability, familial status or national origin. Describe the unit, not the renter."
+description: "The Fair Housing Act bans rental ads that show a preference by race, color, religion, sex, disability, family status or origin. Describe the unit, not the renter."
 headline: "Fair Housing Rules for Rental Ads"
 dek: "What the statute and HUD rule ban, with a word swap table and a pre-post checklist."
 published: "2026-10-19"
@@ -68,7 +68,7 @@ The statute and the rule did not change. The same notice says HUD will still enf
 
 No, not for normal rental housing. Familial status is a protected class. "No kids," "adults only," "perfect for a single person" and "not suitable for children" all convey a limit on families.
 
-There is one exception: housing for older persons under 42 U.S.C. 3607(b). It covers housing for people 62 or older, or housing for 55 and older where at least 80% of occupied units have at least one person aged 55 or more, with published policies and age checks. If your building does not meet that test, do not use age words.
+There is one exception: housing for older persons under 42 U.S.C. 3607(b). It covers housing for people 62 or older. It also covers 55-and-older housing where at least 80% of occupied units have at least one person aged 55 or more. That housing must publish its policies and verify ages. If your building does not meet that test, do not use age words.
 
 What to do: describe the space. "2 bedrooms, 850 square feet, second floor" gives renters the facts without a limit on who may live there.
 

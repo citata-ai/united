@@ -1,6 +1,6 @@
 ---
-title: "How to Set a Rent Late Fee That Holds Up — Citata.ai"
-description: "A late fee holds up when the lease states it, it starts after any required grace period, and it stays under your state's cap, such as 8% in Minnesota or 10% in Virginia."
+title: "How to Set a Rent Late Fee That Holds Up in Court — Citata.ai"
+description: "A late fee holds up when the lease states it, it starts after any grace period the law sets, and it stays under the state cap, such as 8% in Minnesota."
 headline: "How to Set a Late Fee That Holds Up"
 dek: "Four state rules side by side, a fee calculator in plain math, and a lease clause."
 published: "2026-10-19"

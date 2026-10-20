@@ -1,5 +1,5 @@
 ---
-title: "What to Do When Rent Is Late: A Day-by-Day Plan — Citata.ai"
+title: "What to Do When Rent Is Late: A Day-by-Day Landlord Plan — Citata.ai"
 description: "Day 1: a friendly reminder. After the grace period: the late fee. Then the state's pay-or-quit notice, from 3 days in Florida to 14 in Virginia. Then court."
 headline: "What to Do When Rent Is Late: Day by Day"
 dek: "A calm, written schedule from the first missed day to the attorney, with 4 state notice periods."
