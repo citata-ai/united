@@ -1,0 +1,63 @@
+# Topic clusters for the content library (docs/content-library.md). Target: about 1,000 articles.
+# One planner agent per cluster writes <id>.toml in this folder. Writers then fill landing/src/content/library/.
+# Reader: US property management company owners (50-500 doors) and the landlords and rental owners they serve.
+
+[[cluster]]
+id = "pm-marketing"
+target = 150
+scope = "Owner (landlord) lead generation for property management companies: SEO, local SEO, Google Business Profile, reviews, websites, content, ads, referrals, directories, email, conversion, rental analysis offers."
+look_at = ["clearleaddigital.com/blog", "gogoodjuju.com", "propertymanagerwebsites.com/blog", "doorgrow.com", "fourandhalf.com", "propertymanagement.com/blog (if any)"]
+
+[[cluster]]
+id = "ai-search"
+target = 100
+scope = "AI search for property managers and landlords: ChatGPT, Gemini, Claude, Perplexity, Copilot, Google AI Overviews and AI Mode, GEO/AEO, llms.txt, schema, entity facts, directories that AI cites, measuring AI traffic."
+look_at = ["clearleaddigital.com/blog", "gogoodjuju.com", "propertymanagerwebsites.com/blog", "citant.ai", "ahrefs.com/blog (AI search)", "searchengineland.com (GEO)"]
+
+[[cluster]]
+id = "pm-business"
+target = 120
+scope = "Running and growing a property management company: fees and pricing models, management agreements, owner retention, owner churn, hiring, KPIs, door growth, buying a PM book of business, franchises, licensing, insurance for PMs, NARPM, operations."
+look_at = ["buildium.com/blog", "appfolio.com/blog", "doorgrow.com", "narpm.org", "rentvine.com/blog", "propertymeld.com/blog"]
+
+[[cluster]]
+id = "software"
+target = 100
+scope = "Property management software and tools: X vs Y comparisons, alternatives to X, best software for N doors / single-family / HOA / Section 8, pricing per door, tenant screening tools, maintenance tools, accounting, owner portals, AI tools."
+look_at = ["capterra.com", "g2.com", "buildium.com", "appfolio.com", "rentvine.com", "doorloop.com", "turbotenant.com", "avail.co", "rentredi.com", "landlordstudio.com"]
+
+[[cluster]]
+id = "landlord-ops"
+target = 150
+scope = "Day-to-day rental operations: marketing a vacancy, showings, tenant screening, leases and addenda, rent collection, late fees, maintenance, inspections, move-in and move-out, security deposits, renewals, rent increases, evictions as a process, pets, utilities, turnover."
+look_at = ["turbotenant.com/blog", "avail.co/education", "biggerpockets.com/blog", "landlordstudio.com/blog", "rentredi.com/blog", "innago.com/blog", "doorloop.com/blog"]
+
+[[cluster]]
+id = "section-8"
+target = 60
+scope = "Housing Choice Voucher (Section 8) and affordable housing for landlords and PMs: HAP contracts, NSPIRE inspections, payment standards, rent reasonableness, abatement, portability, VASH, source-of-income laws, LIHTC basics. Link to our /guides/section-8-rent-limits pages."
+look_at = ["hud.gov", "affordablehousingonline.com", "gosection8.com", "turbotenant.com/blog", "avail.co/education"]
+
+[[cluster]]
+id = "state-law"
+target = 150
+scope = "State landlord-tenant rules, one state per article, for all 50 states + DC: security deposit limits and return deadlines, notice periods for rent increase and lease end, late fee caps, entry notice, eviction timeline. 2-3 articles per state. Sources must be the state statute or official state site."
+look_at = ["nolo.com", "avail.co/education/laws", "turbotenant.com/landlord-tenant-laws", "ipropertymanagement.com/laws", "landlordstudio.com", "official state legislature sites"]
+
+[[cluster]]
+id = "local-market"
+target = 70
+scope = "Metro guides for rental owners and PMs in the top US rental metros: rents (HUD FY2027 FMR in landing/src/data/fmr-fy2027.json), local rules (rent control, registration, licensing), what a property manager costs there, how to choose one. Only metros with real data; no thin city-swap pages."
+look_at = ["ipropertymanagement.com", "rentometer.com", "zillow.com/research", "apartmentlist.com/research", "local PM company blogs"]
+
+[[cluster]]
+id = "owner-education"
+target = 130
+scope = "Education for rental owners (the PM's client): accidental landlords, rent vs sell, self-manage vs hire a PM, what a PM does, rental ROI, cap rate, cash flow, taxes and depreciation basics (cite IRS), insurance, LLCs, 1031 basics, HOA, short-term vs long-term rentals, buying a rental."
+look_at = ["biggerpockets.com/blog", "ipropertymanagement.com", "mashvisor.com/blog", "roofstock.com/blog", "baselane.com/resources", "stessa.com/blog"]
+
+[[cluster]]
+id = "glossary-templates"
+target = 70
+scope = "Glossary terms (one term per article, e.g. 'What is a management agreement', 'What is NOI') and practical templates and checklists (owner onboarding checklist, move-out checklist, rent increase letter, late rent notice) with the template text in the article."
+look_at = ["ipropertymanagement.com", "buildium.com/blog", "turbotenant.com/blog", "investopedia.com (terms)", "avail.co/education"]

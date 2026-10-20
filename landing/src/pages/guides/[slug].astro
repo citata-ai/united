@@ -1,0 +1,18 @@
+---
+// Library articles (src/content/library) at /guides/<slug>. Only `visible: true` entries build.
+import type { GetStaticPaths } from "astro";
+import { getCollection, render } from "astro:content";
+import Guide from "../../layouts/Guide.astro";
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection("library", (e) => e.data.visible);
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+---
+
+<Guide frontmatter={entry.data} url={`/guides/${entry.id}`} headings={headings} about={entry.data.about}>
+  <Content />
+</Guide>

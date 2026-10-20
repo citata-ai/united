@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import AuditCta from "../../components/AuditCta.astro";
 import Base from "../../layouts/Base.astro";
 import type { GuideFrontmatter } from "../../layouts/Guide.astro";
@@ -31,6 +32,14 @@ const guides = Object.values(
     const href = g.url.replace(/\.html$/, "");
     return { ...g.frontmatter, href, cover: guideCovers[href.split("/").pop() ?? ""] };
   })
+  // Library articles (src/content/library): only visible ones.
+  .concat(
+    (await getCollection("library", (e) => e.data.visible)).map((e) => ({
+      ...e.data,
+      href: `/guides/${e.id}`,
+      cover: guideCovers[e.id],
+    })),
+  )
   .sort((a, b) => rank(a.href) - rank(b.href) || b.updated.localeCompare(a.updated));
 const s8 = [...metros].sort((a, b) => a.short.localeCompare(b.short));
 ---

@@ -1,0 +1,722 @@
+# Section 8 cluster topic plan. Planner: section-8. Source of the cluster: clusters.toml.
+# Per-metro rent limits live at /guides/section-8-rent-limits/<metro>; these topics do not repeat them.
+
+[[topic]]
+slug = "how-to-become-a-section-8-landlord"
+cluster = "section-8"
+kind = "how-to"
+title = "How to become a Section 8 landlord: the steps from listing to first HAP payment"
+question = "What steps does a landlord take to rent a unit to a Housing Choice Voucher holder?"
+subquestions = ["Do I need to register with the housing authority before I list?", "What is the Request for Tenancy Approval (RFTA)?", "Who screens the tenant, me or the PHA?", "When do I sign the HAP contract and the lease?", "How do I find the PHA that covers my property?"]
+inspired_by = "https://www.tenantcloud.com/property-management/how-to-be-a-section-8-landlord"
+demand = "Many 'how to become a Section 8 landlord' guides rank (TenantCloud, TurboTenant webinar); Orlando and Tacoma PHAs publish the same landlord FAQ."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "section-8-hap-contract-explained"
+cluster = "section-8"
+kind = "guide"
+title = "The HAP contract explained: what a Section 8 landlord signs"
+question = "What does the Housing Assistance Payments (HAP) contract require of the owner?"
+subquestions = ["Who are the parties to the HAP contract?", "How does the HAP contract relate to my lease and the tenancy addendum?", "Can the PHA end the HAP contract?", "What happens to the HAP contract when the tenant moves out?", "Can I add my own lease terms?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-what-landlords-need-to-know-2026"
+demand = "HAP contract is a core term on every PHA landlord page (Maricopa RFTA packet, Tacoma FAQ); competitor post on landlord duties."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "section-8-first-hap-payment-how-long"
+cluster = "section-8"
+kind = "guide"
+title = "How long until the first Section 8 payment arrives?"
+question = "How long does a landlord wait for the first HAP payment after a voucher tenant moves in?"
+subquestions = ["Why can the first payment take up to 60 days?", "Is the first payment backdated to the move-in date?", "Can I charge a late penalty if the PHA pays late?", "What paperwork delays the first payment?", "Does the PHA pay by direct deposit?"]
+inspired_by = "https://www.tacomahousing.org/landlords/landlord-faq/"
+demand = "Tacoma and Maricopa PHAs both warn of up to 60 days; AAGLA article on RFTA timelines."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "rfta-request-for-tenancy-approval-guide"
+cluster = "section-8"
+kind = "how-to"
+title = "Request for Tenancy Approval (RFTA): how to fill it out without delays"
+question = "How does a landlord complete the RFTA packet so the PHA approves it fast?"
+subquestions = ["What is in a typical RFTA packet?", "How long does the PHA take to approve an RFTA?", "What are the most common RFTA mistakes?", "Do I need the W-9 and proof of ownership?", "What happens if the PHA rejects the proposed rent?"]
+inspired_by = "https://maricopahousing.org/wp-content/uploads/2025/01/HAMC-RFTA-Packet-1.2025.pdf"
+demand = "Maricopa says approval within 14 days of a complete packet and warns incomplete packets delay; AAGLA writes on RFTA timelines."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "nspire-v-inspection-checklist-landlords"
+cluster = "section-8"
+kind = "checklist"
+title = "NSPIRE-V inspection checklist for Section 8 landlords (2027 deadline)"
+question = "What does a voucher unit need to pass a NSPIRE-V inspection?"
+subquestions = ["When must PHAs switch from HQS to NSPIRE-V?", "Which deficiencies are life-threatening (24-hour fix)?", "What are the smoke and carbon monoxide alarm rules?", "What fails most often inside the unit?", "Does my PHA already use NSPIRE-V?"]
+inspired_by = "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-18.pdf"
+demand = "Backlog B004 (score 7). HUD Notice PIH 2026-18 sets Feb 1, 2027 for vouchers; NLIHC and PHADA covered the delay."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "hqs-vs-nspire-v-differences"
+cluster = "section-8"
+kind = "comparison"
+title = "HQS vs NSPIRE-V: what changes for landlords"
+question = "How is the NSPIRE-V inspection standard different from the old HQS standard?"
+subquestions = ["What does NSPIRE-V add that HQS did not have?", "Are there new outside and site items?", "Do pass and fail rules change?", "Which rules stay the same?", "What should I fix before my first NSPIRE-V inspection?"]
+inspired_by = "https://nlihc.org/resource/hud-extends-nspire-implementation-date-voucher-and-cpd-programs"
+demand = "NSPIRE delay news (NLIHC, PHADA, Navigate Housing); landlords move from HQS to NSPIRE-V in 2026-2027."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-inspection-failed-what-next"
+cluster = "section-8"
+kind = "how-to"
+title = "Failed a Section 8 inspection? The repair and reinspection timeline"
+question = "What happens after a voucher unit fails its inspection?"
+subquestions = ["How long do I have to fix a fail item?", "Who must fix tenant-caused fail items?", "How do I schedule the reinspection?", "What if the unit fails the reinspection too?", "Can I appeal an inspection result?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-landlord-inspection-failure-2026"
+demand = "TDHCA flowcharts (24 hours vs 30 days); Macon Housing 'helpful hints for inspections'; competitor post on inspection failure."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "section-8-hap-abatement-explained"
+cluster = "section-8"
+kind = "guide"
+title = "HAP abatement: why the PHA stops paying and how to restart payments"
+question = "What is HAP abatement and how does a landlord end it?"
+subquestions = ["When does the PHA start abatement?", "Can I collect the abated amount from the tenant?", "Does the tenant still pay their share during abatement?", "Are payments backdated after the unit passes?", "When does abatement turn into HAP contract termination?"]
+inspired_by = "https://www.maconhousing.com/mha/abatementtips.aspx.html"
+demand = "Macon Housing abatement tips; Worcester and NLS pages on abatement; Habitat Group on low inspection scores and payments."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "section-8-biennial-inspection"
+cluster = "section-8"
+kind = "guide"
+title = "How often does a Section 8 unit get inspected?"
+question = "How often must a PHA inspect a voucher unit, and what are the inspection types?"
+subquestions = ["What is the difference between initial, biennial and special inspections?", "Can a tenant ask for a special inspection?", "Does the PHA do quality-control inspections?", "Can a PHA inspect every year?", "Must I be there for the inspection?"]
+inspired_by = "https://tdhca.texas.gov/sites/default/files/section-8/docs/PIH-HCV-Landlord-HQS-Biennial-Inspection-Flowchart.pdf"
+demand = "TDHCA biennial inspection flowchart; RHA annual inspection notes; landlords report a reinspection before each renewal (BiggerPockets)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "section-8-payment-standard-explained"
+cluster = "section-8"
+kind = "guide"
+title = "Payment standard vs Fair Market Rent: how the PHA sets the voucher cap"
+question = "What is a voucher payment standard and how does it relate to the Fair Market Rent?"
+subquestions = ["Can a PHA set the payment standard between 90% and 110% of FMR?", "What is an exception payment standard?", "How do I find my PHA's payment standard?", "Does a lower FMR cut my current tenant's subsidy?", "Link: where are the FY2027 FMRs for my metro?"]
+inspired_by = "https://www.hud.gov/sites/default/files/PIH/documents/HCV_Guidebook_Payment-Standards_June-2025_final.pdf"
+demand = "HUD HCV Guidebook on payment standards (June 2025); landlords confuse FMR and payment standard (BiggerPockets 'section 8 rent')."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "small-area-fair-market-rents-safmr"
+cluster = "section-8"
+kind = "guide"
+title = "Small Area Fair Market Rents (SAFMR): why voucher rents change by ZIP code"
+question = "What are Small Area FMRs and how do they change voucher rents for landlords?"
+subquestions = ["Which areas must use SAFMRs?", "How can a ZIP code SAFMR be higher than the metro FMR?", "Can a PHA opt in to SAFMRs?", "How do I find the SAFMR for my ZIP code?", "Do SAFMRs change my current HAP contract?"]
+inspired_by = "https://www.huduser.gov/portal/datasets/fmr/fmr2016f/SAFMR-Final-Rule.pdf"
+demand = "SAFMR final rule (HUD User); NLIHC coverage; exception standards up to 110% of SAFMR."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-rent-reasonableness"
+cluster = "section-8"
+kind = "guide"
+title = "Rent reasonableness: how the PHA decides if your Section 8 rent is too high"
+question = "How does a PHA test whether the rent I ask is reasonable?"
+subquestions = ["What comparable units does the PHA use?", "Can my rent pass the payment standard but fail rent reasonableness?", "How do I give the PHA my own comps?", "Is rent reasonableness checked again at a rent increase?", "Can I appeal a rent reasonableness decision?"]
+inspired_by = "https://hacosantacruz.org/program/housing-choice-voucher-section-8-program-for-landlords/"
+demand = "PHA landlord pages say the total rent must meet the 'reasonable rent' standard; landlords negotiate rents (BiggerPockets)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-40-percent-rule-calculation"
+cluster = "section-8"
+kind = "data"
+title = "The 40% rule: how much rent a voucher family can afford at move-in"
+question = "How does the 40% initial affordability limit change the rent a voucher holder can rent?"
+subquestions = ["What is the family share at move-in?", "How do I calculate whether my rent passes the 40% limit?", "Does the utility allowance count?", "Does the 40% limit apply at renewal?", "Worked example with a 2-bedroom unit"]
+inspired_by = "https://www.tacomahousing.org/landlords/landlord-faq/"
+demand = "Common landlord question when the PHA rejects a rent; links to our Section 8 rent calculator."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-utility-allowance-landlord"
+cluster = "section-8"
+kind = "guide"
+title = "Section 8 utility allowance: how it changes the rent you can charge"
+question = "How does the utility allowance affect the gross rent and the landlord's rent?"
+subquestions = ["What is gross rent?", "Should I include utilities in the rent?", "How does the PHA set its utility allowance schedule?", "What happens when the utility allowance changes?", "Worked example: owner-paid vs tenant-paid utilities"]
+inspired_by = ""
+demand = "PHA admin plans (Santa Ana) apply revised utility allowances at reexamination; landlords ask whether to include utilities."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-tenant-portion-calculation"
+cluster = "section-8"
+kind = "data"
+title = "How the tenant's share of Section 8 rent is calculated"
+question = "How much of the rent does the voucher family pay and how much does the PHA pay?"
+subquestions = ["What is Total Tenant Payment (TTP)?", "Why is the family share about 30% of income?", "What happens when rent is above the payment standard?", "What is a minimum rent?", "Worked example of the HAP split"]
+inspired_by = "https://www.tenantcloud.com/property-management/how-to-be-a-section-8-landlord"
+demand = "Becoming-a-landlord guides cite 'about 30% of income'; landlords ask who pays what."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-rent-increase-process"
+cluster = "section-8"
+kind = "how-to"
+title = "How to raise the rent on a Section 8 tenant"
+question = "What steps must a landlord take to raise rent on a voucher unit?"
+subquestions = ["How much notice must I give the tenant and the PHA?", "When in the lease term can rent go up?", "Does the PHA check rent reasonableness again?", "What if the new rent is over the payment standard?", "Rent increase request template"]
+inspired_by = "https://hacosantacruz.org/program/housing-choice-voucher-section-8-program-for-landlords/"
+demand = "PHA pages list 30, 60 or 90 days notice; landlords say rent increases are limited by the PHA (ezLandlordForms)."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "section-8-side-payments-illegal"
+cluster = "section-8"
+kind = "guide"
+title = "Side payments on a Section 8 lease: why extra rent is illegal"
+question = "Can a landlord ask a voucher tenant to pay rent above the approved amount?"
+subquestions = ["What counts as a side payment?", "What happens to a landlord caught taking side payments?", "Can I charge for parking, pets or storage?", "Can the tenant pay more if the PHA approves it?", "How do I return a side payment?"]
+inspired_by = "https://forum.creuniversity.com/t/section-8-your-experience-posted-by-dave-mck/72617"
+demand = "Landlord forum warns side agreements are unenforceable and risk the HAP contract."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-security-deposit-rules"
+cluster = "section-8"
+kind = "guide"
+title = "Section 8 security deposits: how much you can charge and who pays"
+question = "How much security deposit can a landlord charge a voucher tenant?"
+subquestions = ["Can the deposit be more than for an unassisted tenant?", "Does the PHA pay the deposit?", "Do some PHAs offer deposit help?", "Can I claim damages from the PHA?", "How do state deposit limits apply?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-lease-signing-checklist-2026"
+demand = "Common question on PHA and PM FAQ pages (Good Life Mgmt San Diego, hacosantacruz)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-tenant-damage-who-pays"
+cluster = "section-8"
+kind = "guide"
+title = "Tenant damage in a Section 8 unit: who pays for repairs?"
+question = "Who pays when a voucher tenant damages the unit?"
+subquestions = ["Does the PHA cover damages?", "Can I use the security deposit?", "What is a PHA damage mitigation fund?", "Can I take the tenant to small claims court?", "Does unpaid damage affect the tenant's voucher?"]
+inspired_by = "https://www.hud.gov/sites/dfiles/PIH/documents/LLGuidebook_Incentives_FullChapter.pdf"
+demand = "HUD landlord guidebook lists damage mitigation funds; Delaware SHA reimburses damage claims; landlords fear damage risk (BiggerPockets)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-landlord-incentives-signing-bonus"
+cluster = "section-8"
+kind = "guide"
+title = "Section 8 landlord incentives: signing bonuses, vacancy pay and damage funds"
+question = "Which incentive payments can a PHA offer landlords who rent to voucher holders?"
+subquestions = ["What is a landlord signing bonus?", "What is a vacancy loss payment?", "How does a damage mitigation fund work?", "Which PHAs offer incentives?", "Do incentives work, per HUD OIG?"]
+inspired_by = "https://www.hud.gov/sites/dfiles/PIH/documents/LLGuidebook_Incentives_FullChapter.pdf"
+demand = "HUD landlord guidebook incentives chapter; HUD OIG review (28 of 34 PHAs used incentives); Delaware $1,000 sign-on bonus."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "section-8-landlord-incentive-programs-by-pha"
+cluster = "section-8"
+kind = "data"
+title = "Landlord incentive programs at large PHAs: a comparison table"
+question = "What incentive amounts do big housing authorities pay to voucher landlords?"
+subquestions = ["Which PHAs pay a signing bonus and how much?", "Which pay vacancy loss between tenants?", "What damage claim limits apply?", "How do I apply for an incentive?", "Do incentives count as taxable income?"]
+inspired_by = "https://www.destatehousing.com/?p=4160"
+demand = "Delaware SHA program, Hawaii HPHA one-month bonus, MTW plans; landlords search for local incentives."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-lease-and-tenancy-addendum"
+cluster = "section-8"
+kind = "guide"
+title = "The Section 8 lease and the HUD tenancy addendum"
+question = "What must a landlord's lease contain for a voucher tenant?"
+subquestions = ["Can I use my own lease?", "What is the HUD tenancy addendum?", "Which lease terms are not allowed?", "How long must the first lease term be?", "Which clauses win if the lease and addendum conflict?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-lease-signing-checklist-2026"
+demand = "Competitor lease-signing checklist; PHA RFTA packets ask for the owner's lease."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-lease-signing-checklist-landlords"
+cluster = "section-8"
+kind = "checklist"
+title = "Section 8 move-in checklist for landlords and property managers"
+question = "What does a landlord need to finish before a voucher tenant moves in?"
+subquestions = ["Has the unit passed inspection?", "Is the HAP contract signed?", "Is the lease signed with the addendum attached?", "Is direct deposit set up with the PHA?", "Did I document the unit condition?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-lease-signing-checklist-2026"
+demand = "Competitor checklist; PHA FAQs on the order of steps (Tacoma, Orlando)."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-eviction-process"
+cluster = "section-8"
+kind = "guide"
+title = "How to evict a Section 8 tenant: the rules that differ"
+question = "How does eviction work when the tenant has a Housing Choice Voucher?"
+subquestions = ["What is 'good cause' under the HAP contract?", "Must I notify the PHA when I file?", "Can I evict for the PHA's late payment?", "What happens to the HAP during eviction?", "Does state eviction law still apply?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-tenant-rights-2026"
+demand = "PHA pages say state eviction law applies and mid-lease termination needs cause; legal fee fears on ezLandlordForms."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-nonrenewal-leave-program"
+cluster = "section-8"
+kind = "how-to"
+title = "How to end a Section 8 lease or leave the voucher program"
+question = "Can a landlord decline to renew a voucher tenant or stop taking vouchers?"
+subquestions = ["Can I leave the program at the end of a lease term?", "How much notice do I give the tenant and PHA?", "Do source-of-income laws limit nonrenewal?", "What if I sell the property?", "What happens to the HAP contract?"]
+inspired_by = "https://www.goodlifemgmt.com/?p=3325"
+demand = "PM FAQ says the landlord can leave at the end of any lease term; common landlord question."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-tenant-nonpayment-of-tenant-share"
+cluster = "section-8"
+kind = "how-to"
+title = "When a Section 8 tenant does not pay their share of rent"
+question = "What can a landlord do when a voucher tenant does not pay the tenant portion?"
+subquestions = ["Does the PHA cover the missing tenant share?", "Can I charge a late fee on the tenant share?", "Should I tell the PHA?", "Is nonpayment grounds for eviction?", "Can the tenant lose the voucher?"]
+inspired_by = "https://www.biggerpockets.com/posts/7240396"
+demand = "BiggerPockets pros/cons thread; landlords ask what happens when the tenant share goes unpaid."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-tenant-income-change-mid-lease"
+cluster = "section-8"
+kind = "guide"
+title = "Tenant income changes mid-lease: how your Section 8 payment changes"
+question = "What happens to the landlord's HAP payment when a voucher tenant's income changes?"
+subquestions = ["What is an interim reexamination?", "Does my total rent change?", "How fast does the PHA change the HAP?", "What if the tenant's income goes to zero?", "Who tells me about the change?"]
+inspired_by = "https://www.hud.gov/sites/dfiles/PIH/documents/HCV_Guidebook_Reexaminations.pdf"
+demand = "HUD HCV Guidebook on reexaminations; landlords see HAP amounts change without warning."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "section-8-portability-explained"
+cluster = "section-8"
+kind = "guide"
+title = "Section 8 portability: renting to a tenant who moves from another city"
+question = "How does portability work when a voucher holder moves to my area from another PHA?"
+subquestions = ["Which PHA pays me, the initial or the receiving PHA?", "Whose payment standard applies?", "Does portability slow the lease-up?", "Can the tenant port out of my unit mid-lease?", "What paperwork does the landlord see?"]
+inspired_by = ""
+demand = "Portability is in cluster scope; common landlord question in PHA FAQs."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "hud-vash-landlord-guide"
+cluster = "section-8"
+kind = "guide"
+title = "HUD-VASH vouchers for landlords: renting to veterans with VA support"
+question = "How is a HUD-VASH voucher different from a regular Housing Choice Voucher for the landlord?"
+subquestions = ["Who runs HUD-VASH, the PHA or the VA?", "Do the same inspection and rent rules apply?", "What does the VA case manager do?", "Do HUD-VASH landlord incentives exist?", "How do I list a unit for HUD-VASH?"]
+inspired_by = ""
+demand = "HUD-VASH named in cluster scope; search found no clear landlord guide (gap)."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "emergency-housing-vouchers-landlords"
+cluster = "section-8"
+kind = "guide"
+title = "Special-purpose vouchers: EHV, mainstream and FYI vouchers for landlords"
+question = "How do special-purpose vouchers like EHV, Mainstream and FYI work for landlords?"
+subquestions = ["Are the rules the same as a regular HCV?", "Do these vouchers come with landlord incentives?", "Who refers the tenant?", "What happens when EHV funding ends?", "How do I find these programs locally?"]
+inspired_by = ""
+demand = "Special-purpose vouchers appear on PHA landlord pages; few landlord-focused explainers."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "project-based-vs-tenant-based-vouchers"
+cluster = "section-8"
+kind = "comparison"
+title = "Project-based vs tenant-based vouchers: which fits an owner?"
+question = "What is the difference between project-based and tenant-based Section 8 for a property owner?"
+subquestions = ["How does a PBV contract attach to units?", "How long is a PBV contract?", "Can a PBV tenant move with a voucher?", "How does an owner apply for PBVs?", "Which suits a small owner?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-new-construction-2026"
+demand = "Competitor post notes PBV subsidy attaches to units; owners of new builds ask about PBV."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "section-8-vs-market-rent-roi"
+cluster = "section-8"
+kind = "data"
+title = "Section 8 vs market-rate tenants: a cash-flow comparison"
+question = "Does renting to a voucher holder make more or less money than a market-rate tenant?"
+subquestions = ["How do vacancy days compare?", "What do inspections and repairs add to costs?", "How does payment reliability change cash flow?", "Worked example: 3-bedroom single-family home", "When does the voucher rent beat market rent?"]
+inspired_by = "https://community.avail.com/t/what-are-the-pros-cons-of-renting-to-someone-on-section-8/299"
+demand = "Avail community pros/cons thread; BiggerPockets pros/cons; landlords cite guaranteed rent and longer stays."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-pros-and-cons-landlords"
+cluster = "section-8"
+kind = "guide"
+title = "Pros and cons of the Section 8 program for landlords"
+question = "What are the real benefits and costs of the voucher program for a landlord?"
+subquestions = ["Is part of the rent guaranteed?", "How much time do paperwork and inspections take?", "How do rent limits affect income?", "Do voucher tenancies last longer?", "What risks do landlords report?"]
+inspired_by = "https://www.biggerpockets.com/posts/7240396"
+demand = "BiggerPockets and Avail community threads; TurboTenant webinar 'process, pros and cons'."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "source-of-income-discrimination-laws-by-state"
+cluster = "section-8"
+kind = "data"
+title = "Source-of-income laws by state: where landlords must accept vouchers"
+question = "In which states and cities is it illegal to refuse a tenant because they use a voucher?"
+subquestions = ["How many states ban source-of-income discrimination?", "Which state laws cover vouchers explicitly?", "Which cities and counties have local laws?", "Is there a federal rule?", "What are the penalties?"]
+inspired_by = "https://www.hudoig.gov/reports-publications/report/public-housing-authorities-and-source-income-discrimination"
+demand = "HUD OIG audit: 23 states + DC as of Jan 2025, 16 cover vouchers, 152 local ordinances; PRRAC appendix; Vertical Rent 2026 list."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "can-a-landlord-refuse-section-8"
+cluster = "section-8"
+kind = "guide"
+title = "Can a landlord refuse Section 8 vouchers?"
+question = "Is it legal for a landlord to say no to a Housing Choice Voucher?"
+subquestions = ["Does federal law require landlords to accept vouchers?", "What do source-of-income laws change?", "Is 'no Section 8' in an ad legal?", "Can I use the same screening rules for all applicants?", "What are the risks of a refusal?"]
+inspired_by = "https://prrac.org/appendixb/"
+demand = "Top landlord question; Stateline and Urban Institute report voucher refusals; PRRAC list."
+priority = 1
+status = "planned"
+
+[[topic]]
+slug = "section-8-tenant-screening-rules"
+cluster = "section-8"
+kind = "how-to"
+title = "How to screen a Section 8 applicant the same way as other applicants"
+question = "Can a landlord screen a voucher holder, and which criteria are fair?"
+subquestions = ["Does the PHA screen tenants for me?", "Can I use a minimum income rule?", "How do I count the voucher in an income test?", "What criteria must be the same for all applicants?", "Written screening criteria template"]
+inspired_by = "https://www.tenantcloud.com/property-management/how-to-be-a-section-8-landlord"
+demand = "Becoming-a-landlord guides say the landlord screens; income rule questions where SOI laws apply."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-listing-ad-wording"
+cluster = "section-8"
+kind = "template"
+title = "How to write a rental ad that is open to voucher holders"
+question = "How should a landlord word a listing that accepts Housing Choice Vouchers?"
+subquestions = ["Which phrases risk a fair housing complaint?", "Where do I list for voucher holders (GoSection8, PHA lists)?", "Should I state the rent and the voucher size?", "Ad template for a voucher-friendly listing", "Does AffordableHousingOnline list units?"]
+inspired_by = ""
+demand = "Landlords ask where and how to list; GoSection8 and AffordableHousingOnline are big listing sites."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "where-to-list-section-8-rentals"
+cluster = "section-8"
+kind = "comparison"
+title = "Where to list a Section 8 rental: GoSection8, AffordableHousing.com and PHA lists"
+question = "Which sites and lists help a landlord reach voucher holders?"
+subquestions = ["Is the PHA landlord list free?", "What does GoSection8 cost?", "How does AffordableHousing.com compare?", "Do Zillow and Apartments.com filter for vouchers?", "Which channel leases fastest?"]
+inspired_by = ""
+demand = "GoSection8 and AffordableHousingOnline are named in cluster look_at; landlords ask how to find voucher tenants."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "section-8-voucher-bedroom-size"
+cluster = "section-8"
+kind = "guide"
+title = "Voucher bedroom size vs unit size: can a 2-bedroom voucher rent a 3-bedroom?"
+question = "How does the voucher bedroom size limit which units a family can rent?"
+subquestions = ["Which payment standard applies when unit and voucher size differ?", "Can a family rent a bigger unit?", "Can a family rent a smaller unit?", "How does the PHA set voucher size?", "Example with numbers"]
+inspired_by = ""
+demand = "Payment standard rule (lower of voucher size or unit size) is a frequent landlord confusion on forums."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "section-8-direct-deposit-landlord-portal"
+cluster = "section-8"
+kind = "how-to"
+title = "Section 8 landlord portals and direct deposit: how to get paid"
+question = "How does a landlord set up HAP direct deposit and use the PHA owner portal?"
+subquestions = ["What does the PHA need for direct deposit?", "What does a landlord portal show?", "How do I read a HAP payment statement?", "What if a payment is missing?", "How do I change bank details?"]
+inspired_by = "https://www.tacomahousing.org/landlords/landlord-faq/"
+demand = "Tacoma notes banking verification can delay payment; many PHAs run owner portals."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "section-8-hap-payments-taxes-1099"
+cluster = "section-8"
+kind = "guide"
+title = "Section 8 HAP payments and taxes: 1099s and rental income"
+question = "How does a landlord report HAP payments on taxes?"
+subquestions = ["Are HAP payments rental income?", "Does the PHA send a 1099?", "Are landlord incentive payments taxable?", "How do I match PHA statements to my books?", "What records should I keep?"]
+inspired_by = ""
+demand = "Search found no clear answer on 1099s for HAP (gap); landlords ask at tax time."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "section-8-property-manager-duties"
+cluster = "section-8"
+kind = "guide"
+title = "Managing Section 8 units: what a property manager does for the owner"
+question = "What extra work does a property manager do for voucher units?"
+subquestions = ["Who signs the HAP contract, owner or manager?", "How do managers handle inspections?", "Do managers charge more for Section 8 units?", "What reports should the owner get?", "How do I choose a Section 8-ready manager?"]
+inspired_by = ""
+demand = "Our reader is PM owners; Fridman case study shows 0 of 6 AI answers named a manager for Section 8 queries."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-property-management-fees"
+cluster = "section-8"
+kind = "data"
+title = "Property management fees for Section 8 rentals"
+question = "Do property managers charge more to manage voucher units, and how much?"
+subquestions = ["Is there a Section 8 surcharge?", "Who pays reinspection fees?", "How do leasing fees change?", "Fee table by service", "Worked example for a 3-bedroom"]
+inspired_by = ""
+demand = "Owners ask PMs about Section 8 pricing; links to our PM fee calculator."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-change-of-ownership-sale"
+cluster = "section-8"
+kind = "how-to"
+title = "Selling a property with a Section 8 tenant: HAP contract change of ownership"
+question = "What happens to the HAP contract when an owner sells a voucher unit?"
+subquestions = ["Does the HAP contract transfer to the buyer?", "What forms does the PHA need?", "Who gets the HAP for the sale month?", "Can the buyer end the tenancy?", "Do source-of-income laws bind the buyer?"]
+inspired_by = ""
+demand = "Common PHA landlord FAQ item; investors buy tenanted voucher units."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "buying-a-property-with-section-8-tenant"
+cluster = "section-8"
+kind = "guide"
+title = "Buying a rental with a Section 8 tenant in place: a due-diligence checklist"
+question = "What should an investor check before buying a property with a voucher tenant?"
+subquestions = ["Is the HAP contract current?", "When is the next inspection?", "Is the contract rent at or below the payment standard?", "Is there abatement or open fail items?", "Due-diligence checklist"]
+inspired_by = "https://www.biggerpockets.com/forums/52/topics/1295994-section-8-rent"
+demand = "BiggerPockets forum threads on Section 8 rent and investing."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "section-8-reasonable-accommodation-exception-rent"
+cluster = "section-8"
+kind = "guide"
+title = "Exception payment standards up to 120% as a reasonable accommodation"
+question = "When can a PHA approve a higher payment standard for a family with a disability?"
+subquestions = ["What did HOTMA change?", "Who asks for the exception, landlord or family?", "How high can the exception go?", "Does it change my rent approval?", "How long does approval take?"]
+inspired_by = "https://www.localhousingsolutions.org/housing-policy-library/increased-voucher-payment-standards-in-high-cost-areas/"
+demand = "HOTMA lets any PHA set up to 120% FMR as a reasonable accommodation; Local Housing Solutions."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "section-8-fmr-decrease-what-happens"
+cluster = "section-8"
+kind = "guide"
+title = "When Fair Market Rent goes down: what happens to your Section 8 rent"
+question = "Does a lower FMR or payment standard cut the rent a voucher landlord gets?"
+subquestions = ["Does my contract rent change?", "Does the tenant share go up?", "Can the PHA keep the old payment standard?", "When does a decrease take effect?", "What can I do?"]
+inspired_by = "https://hud.gov/sites/documents/HOTMA_DRAFT.PDF"
+demand = "HOTMA summary: PHAs may keep the old payment standard when FMR falls; some FY2027 FMRs fell (our data)."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-glossary-landlords"
+cluster = "section-8"
+kind = "glossary"
+title = "Section 8 glossary for landlords: 40 terms from HAP to TTP"
+question = "What do the Section 8 program terms mean for a landlord?"
+subquestions = ["What is HAP, TTP, RFTA and PHA?", "What is the difference between FMR and payment standard?", "What is abatement?", "What is portability?", "What is NSPIRE-V?"]
+inspired_by = ""
+demand = "Many terms in PHA packets confuse new landlords; glossary pages earn AI citations."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "section-8-faq-landlords"
+cluster = "section-8"
+kind = "guide"
+title = "Section 8 for landlords: 25 common questions answered"
+question = "What do landlords most often ask about the Housing Choice Voucher program?"
+subquestions = ["Can I charge a deposit?", "Who screens the tenant?", "How long until the first payment?", "Can I raise rent?", "Can I leave the program?"]
+inspired_by = "https://www.tacomahousing.org/landlords/landlord-faq/"
+demand = "PHA landlord FAQs (Tacoma, Orlando, Santa Cruz, Good Life Mgmt San Diego)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "section-8-move-out-tenant-gives-notice"
+cluster = "section-8"
+kind = "how-to"
+title = "When a Section 8 tenant moves out: notices, final HAP and deposit"
+question = "What happens to payments and the deposit when a voucher tenant moves out?"
+subquestions = ["Does the HAP stop on the move-out date?", "Can I keep the HAP for the vacant month?", "How do I handle the deposit?", "Must I tell the PHA?", "Can a new voucher holder rent the unit fast?"]
+inspired_by = ""
+demand = "Common PHA FAQ item; landlords ask about the final HAP and vacancy."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "section-8-repair-requests-tenant-complaint"
+cluster = "section-8"
+kind = "guide"
+title = "Tenant repair complaints and special inspections in Section 8 units"
+question = "What happens when a voucher tenant calls the PHA about a repair?"
+subquestions = ["What is a special or complaint inspection?", "How fast must I fix it?", "Can the PHA abate for a complaint item?", "How do I log repair requests?", "Can I raise rent after a complaint?"]
+inspired_by = "https://www.jaxlegalaid.org/wp-content/uploads/2023/Section-8-Voucher-Inspections.pdf"
+demand = "Jacksonville Legal Aid on voucher inspections; tenants request special inspections."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "section-8-smoke-carbon-monoxide-alarm-rules"
+cluster = "section-8"
+kind = "checklist"
+title = "Smoke and carbon monoxide alarm rules for Section 8 units"
+question = "What smoke and CO alarms must a voucher unit have?"
+subquestions = ["Where must smoke alarms go?", "When is a CO alarm required?", "Did the rules start before NSPIRE-V?", "Hardwired or battery?", "Checklist per room"]
+inspired_by = "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-18.pdf"
+demand = "PIH 2026-18 keeps CO and smoke alarm rules in place now (Congressional mandate)."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "lead-paint-rules-section-8"
+cluster = "section-8"
+kind = "guide"
+title = "Lead-based paint rules for Section 8 units built before 1978"
+question = "What lead paint rules apply to a voucher unit in an older building?"
+subquestions = ["When does a visual check apply?", "What if a child under 6 lives in the unit?", "What is an EBLL case?", "Who can do the paint repairs?", "What records must I keep?"]
+inspired_by = ""
+demand = "Lead rules are a standard HCV inspection item; frequent fail on older housing stock."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "lihtc-basics-for-landlords"
+cluster = "section-8"
+kind = "guide"
+title = "LIHTC basics for property owners: rent limits, income limits and compliance"
+question = "How does the Low-Income Housing Tax Credit work for a rental property owner?"
+subquestions = ["How are LIHTC rent limits set?", "What is the compliance period?", "Must LIHTC owners accept vouchers?", "What are the 20/50 and 40/60 tests?", "Who audits LIHTC compliance?"]
+inspired_by = "https://fairmarketrentmap.com/blog/section-8-new-construction-2026"
+demand = "LIHTC in cluster scope; listing sites say LIHTC properties must accept vouchers."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "lihtc-vs-section-8"
+cluster = "section-8"
+kind = "comparison"
+title = "LIHTC vs Section 8: what is the difference for owners?"
+question = "How is a LIHTC property different from renting to a Housing Choice Voucher holder?"
+subquestions = ["Is LIHTC a subsidy to the owner or the tenant?", "Can a voucher holder rent a LIHTC unit?", "Can a LIHTC rent be above the LIHTC limit with a voucher?", "Which has stricter inspections?", "Table: side-by-side terms"]
+inspired_by = "https://affordablehousingonline.com/housing-search/California/Los-Angeles/Burlington-City-Lights/10024967"
+demand = "AffordableHousingOnline LIHTC listings note voucher acceptance; owners confuse the two programs."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "section-8-multiple-units-scale"
+cluster = "section-8"
+kind = "guide"
+title = "Scaling a Section 8 portfolio: systems for 10 to 100 voucher units"
+question = "How does an owner or manager run many voucher units without missed inspections and payments?"
+subquestions = ["How do I track inspection dates?", "How do I reconcile HAP across PHAs?", "What software supports Section 8?", "Which tasks can staff own?", "KPI table for voucher units"]
+inspired_by = ""
+demand = "Our reader runs 50-500 doors; software cluster covers 'best software for Section 8'."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "section-8-hap-contract-termination-reasons"
+cluster = "section-8"
+kind = "guide"
+title = "Why a PHA ends a HAP contract, and how a landlord prevents it"
+question = "For what reasons can a PHA end a HAP contract with an owner?"
+subquestions = ["Does long abatement end the contract?", "Can the PHA ban an owner from the program?", "What owner actions break the HAP contract?", "Is there an appeal?", "Prevention checklist"]
+inspired_by = "https://worcesterhousing.exemplifi.io/?p=1901"
+demand = "Massachusetts program sends termination after 30+ days in abatement; NLS guidance."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "section-8-owner-debarment-conflict-of-interest"
+cluster = "section-8"
+kind = "guide"
+title = "Owner rules in Section 8: relatives, conflicts of interest and debarment"
+question = "Which owners are not allowed to rent to a voucher holder?"
+subquestions = ["Can I rent to a relative with a voucher?", "What is a conflict of interest with PHA staff?", "What does debarment mean?", "Can a PHA refuse an owner with code violations?", "What disclosures does the PHA ask for?"]
+inspired_by = ""
+demand = "Standard PHA RFTA packet items (ownership disclosure); landlord FAQs."
+priority = 7
+status = "planned"
+
+[[topic]]
+slug = "section-8-mtw-agencies-different-rules"
+cluster = "section-8"
+kind = "guide"
+title = "Moving to Work (MTW) housing authorities: why the voucher rules differ"
+question = "How do Moving to Work PHAs change the voucher rules landlords see?"
+subquestions = ["What is the MTW demonstration?", "Which rules can MTW agencies change?", "Do MTW agencies pay incentives?", "Can inspection schedules differ?", "How do I read my PHA's MTW plan?"]
+inspired_by = "https://www.hud.gov/sites/dfiles/PIH/documents/HCB2LandlordIncentives10132020.pdf"
+demand = "HUD MTW landlord incentive guidance; Joliet and Hawaii MTW plans list incentive activities."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "section-8-vacancy-loss-payment"
+cluster = "section-8"
+kind = "guide"
+title = "Vacancy loss payments: getting paid while a voucher unit waits"
+question = "Can a PHA pay a landlord for vacant days between voucher tenants or before inspection?"
+subquestions = ["Which PHAs pay vacancy loss?", "How many days do they cover?", "How do I claim the payment?", "Does vacancy loss apply before the first inspection?", "Example calculation"]
+inspired_by = "https://nlihc.org/resource/huds-office-inspector-general-reviews-landlord-incentives-moving-work-mtw-demonstration"
+demand = "HUD OIG review: vacancy loss among most effective incentives; HUD landlord guidebook vacancy fund."
+priority = 4
+status = "planned"

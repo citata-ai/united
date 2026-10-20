@@ -1,0 +1,19 @@
+# Publish speed for the content library (docs/content-library.md). Owner: Tao, 2026-10-20.
+# publish.sh runs 3 times a day (06:00, 14:00, 22:00 Kyiv) and splits the day's number over the runs.
+start = "2026-10-20"
+runs_per_day = 3
+
+[[phase]]
+days = 7
+per_day = 4
+
+[[phase]]
+days = 21
+per_day = 8
+
+[[phase]]
+per_day = 16 # until the drafts run out
+
+[covers]
+per_run = 4      # covers.sh runs every 2 hours
+buffer_days = 3  # stop when this many days of publishing already have covers

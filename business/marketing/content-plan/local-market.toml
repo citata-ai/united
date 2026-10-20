@@ -1,0 +1,926 @@
+# Topic plan, cluster local-market (business/marketing/content-plan/clusters.toml). Planner run 2026-10-19.
+# Metros: only those in landing/src/data/fmr-fy2027.json. Each topic names its unique local facts in `demand`.
+
+[[topic]]
+slug = "chicago-landlord-rules-rlto-security-deposit-interest"
+cluster = "local-market"
+kind = "local"
+title = "Is Chicago Landlord-Friendly? The RLTO and Local Rules for Rental Owners"
+question = "What local rules must a rental owner in Chicago follow under the RLTO and other city ordinances?"
+subquestions = ["What does the Chicago RLTO require from landlords?", "How does Chicago security deposit interest work each year?", "Which Chicago rentals are exempt from the RLTO?", "What does the Chicago Fair Notice ordinance require before a lease ends?", "What penalties does a Chicago landlord face for deposit mistakes?"]
+inspired_by = ""
+demand = "Chicago Residential Landlord and Tenant Ordinance (Mun. Code 5-12), yearly deposit interest rate set by the City Comptroller, Fair Notice Ordinance (2020). Chicago is our case-study market (Fridman Properties); local PM blogs publish RLTO explainers."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "cook-county-rtlo-suburban-landlords"
+cluster = "local-market"
+kind = "local"
+title = "Cook County RTLO: Rules for Rental Owners in the Chicago Suburbs"
+question = "What does the Cook County Residential Tenant Landlord Ordinance require from suburban rental owners?"
+subquestions = ["Which Cook County towns does the RTLO cover?", "How does the Cook County RTLO differ from the Chicago RLTO?", "What are the security deposit rules under the Cook County RTLO?", "What does the Cook County Just Housing Amendment mean for tenant screening?"]
+inspired_by = ""
+demand = "Cook County RTLO (effective 2021), Just Housing Amendment on criminal history screening (2019); home-rule towns like Evanston and Mount Prospect have their own rules."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "nyc-landlord-rules-rent-stabilization-good-cause"
+cluster = "local-market"
+kind = "local"
+title = "Is New York City Landlord-Friendly? Rent Stabilization and Good Cause Eviction"
+question = "Which local rules shape the rights of a rental owner in New York City?"
+subquestions = ["Which NYC apartments are rent stabilized?", "What did the 2019 HSTPA change for NYC landlords?", "Which NYC buildings does the 2024 Good Cause Eviction law cover?", "How does the Rent Guidelines Board set yearly increases?", "Which small buildings are exempt from Good Cause?"]
+inspired_by = ""
+demand = "NYC Rent Stabilization Law, HSTPA 2019, NY Good Cause Eviction Law (April 2024, RPL Article 6-A), Rent Guidelines Board yearly orders. High owner search volume; many NYC PM blogs."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "nyc-fare-act-broker-fees-for-landlords"
+cluster = "local-market"
+kind = "local"
+title = "NYC FARE Act: Who Pays the Broker Fee Now?"
+question = "What does the NYC FARE Act change for landlords who hire a listing broker?"
+subquestions = ["When did the FARE Act take effect?", "Can a NYC landlord still charge a tenant a broker fee?", "What fees must a NYC listing disclose?", "How do NYC landlords and managers change their leasing budgets after the FARE Act?"]
+inspired_by = ""
+demand = "NYC Local Law 119 of 2024 (FARE Act), effective June 2025; DCWP enforcement. Recent, local, much discussed by NYC brokers and PM blogs."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "nyc-hpd-registration-lead-paint-local-law-1"
+cluster = "local-market"
+kind = "local"
+title = "NYC HPD Registration and Local Law 1: Paperwork for Rental Owners"
+question = "Which yearly registrations and lead rules must a New York City rental owner meet?"
+subquestions = ["Which NYC buildings must register with HPD each year?", "What does Local Law 1 of 2004 require on lead paint?", "What did Local Law 31 add on lead inspections?", "What happens if a NYC owner does not register with HPD?"]
+inspired_by = ""
+demand = "HPD Property Registration (3+ units, or 1-2 units with non-owner occupant), NYC Local Law 1 of 2004 and Local Law 31 of 2020 (XRF lead inspection deadline Aug 2025)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "los-angeles-rso-jco-landlord-rules"
+cluster = "local-market"
+kind = "local"
+title = "Is Los Angeles Landlord-Friendly? The RSO, JCO and Rent Registry"
+question = "Which City of Los Angeles rules apply to a rental owner under the RSO and the Just Cause Ordinance?"
+subquestions = ["How do I know if my Los Angeles rental is under the RSO?", "What is the yearly RSO rent increase?", "What does the LA Just Cause Ordinance cover?", "What is the LAHD Rent Registry and who must register?", "When does an LA owner pay relocation assistance?"]
+inspired_by = ""
+demand = "LA Rent Stabilization Ordinance (pre-Oct 1978 buildings), Just Cause Ordinance (2023), LAHD Rent Registry, yearly RSO registration fee, relocation amounts set by LAHD."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "la-county-rent-stabilization-unincorporated-areas"
+cluster = "local-market"
+kind = "local"
+title = "LA County Rent Stabilization: Rules in Unincorporated Areas"
+question = "What does the Los Angeles County Rent Stabilization and Tenant Protections Ordinance require from owners in unincorporated areas?"
+subquestions = ["Which areas does LA County DCBA rent stabilization cover?", "What is the yearly allowed rent increase in unincorporated LA County?", "Must owners register rentals with LA County?", "How does the county ordinance differ from the City of LA RSO?"]
+inspired_by = ""
+demand = "LA County RSTPO (Ch. 8.52), DCBA rental registry, Mobilehome rules; areas like East LA and Altadena are outside city rules."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "which-california-cities-have-rent-control"
+cluster = "local-market"
+kind = "local"
+title = "Which California Cities Have Rent Control? A Map for Rental Owners"
+question = "Which cities in our California metros have local rent control on top of AB 1482?"
+subquestions = ["What does AB 1482 cap statewide?", "Which cities in LA, Bay Area, San Diego and Orange County have local rent control?", "Which rentals does Costa-Hawkins exempt?", "Do single-family homes fall under local rent control in California?"]
+inspired_by = ""
+demand = "AB 1482 (Civil Code 1947.12), Costa-Hawkins; local ordinances in Los Angeles, San Francisco, Oakland, San Jose, Santa Ana, Berkeley, Pasadena. Covers 7 California metros in our FMR data."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "san-francisco-rent-ordinance-housing-inventory"
+cluster = "local-market"
+kind = "local"
+title = "San Francisco Rent Ordinance and Housing Inventory: Rules for Owners"
+question = "What must a San Francisco rental owner do under the Rent Ordinance and the Rent Board Housing Inventory?"
+subquestions = ["Which SF units are under rent control?", "What is the yearly allowable increase in San Francisco?", "Who must report to the SF Rent Board Housing Inventory?", "What are SF just cause rules for single-family homes?"]
+inspired_by = ""
+demand = "SF Administrative Code Ch. 37, Rent Board yearly allowable increase, Housing Inventory reporting (since 2022) and license fee."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "oakland-rent-adjustment-program-owners"
+cluster = "local-market"
+kind = "local"
+title = "Oakland Rent Adjustment Program: What Owners Must Know"
+question = "How do Oakland's Rent Adjustment Program and Just Cause rules affect a rental owner?"
+subquestions = ["Which Oakland rentals are under the RAP?", "What is the Oakland yearly CPI rent increase?", "What is the RAP program fee and who pays it?", "What does Oakland Measure EE require for evictions?"]
+inspired_by = ""
+demand = "Oakland Rent Adjustment Ordinance (O.M.C. 8.22), RAP service fee, Just Cause for Eviction (Measure EE), Tenant Protection Ordinance."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "san-jose-apartment-rent-ordinance-rules"
+cluster = "local-market"
+kind = "local"
+title = "San Jose Apartment Rent Ordinance: Rules for Rental Owners"
+question = "What does the San Jose Apartment Rent Ordinance require from rental owners?"
+subquestions = ["Which San Jose units fall under the ARO?", "What is the 5 percent yearly cap in San Jose?", "What is the San Jose Rent Registry?", "What does the San Jose Tenant Protection Ordinance cover?"]
+inspired_by = ""
+demand = "San Jose ARO (pre-1979 3+ unit buildings, 5% cap), Rent Stabilization Program registry, Tenant Protection Ordinance, Ellis Act Ordinance."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "san-diego-tenant-protection-ordinance"
+cluster = "local-market"
+kind = "local"
+title = "San Diego Tenant Protection Ordinance: No-Fault Eviction Rules"
+question = "What does the City of San Diego Tenant Protection Ordinance require from rental owners?"
+subquestions = ["When did the San Diego TPO take effect?", "What relocation help does a San Diego owner owe at a no-fault termination?", "Can a San Diego owner end a tenancy to sell or remodel?", "How does the TPO differ from AB 1482?"]
+inspired_by = ""
+demand = "City of San Diego Residential Tenant Protections Ordinance (2023): 2 months relocation, limits on substantial remodel terminations. San Diego PM blogs cover it."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "santa-ana-rent-stabilization-orange-county"
+cluster = "local-market"
+kind = "local"
+title = "Santa Ana Rent Stabilization: The Orange County Exception"
+question = "What do Santa Ana's rent stabilization and just cause rules require from rental owners?"
+subquestions = ["Which Santa Ana rentals are covered?", "What is the yearly allowed increase in Santa Ana?", "Must Santa Ana owners register units?", "Do other Orange County cities have rent control?"]
+inspired_by = ""
+demand = "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance (2021), rental registry fee. The only rent control city in Orange County."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "sacramento-tenant-protection-rental-inspection"
+cluster = "local-market"
+kind = "local"
+title = "Sacramento Rental Rules: Tenant Protection Program and Rental Inspections"
+question = "Which City of Sacramento rules apply to a rental owner?"
+subquestions = ["What does the Sacramento Tenant Protection and Relief Act cap?", "Must Sacramento owners register in the rental housing inventory?", "How does the Sacramento Rental Housing Inspection Program work?", "What fees do Sacramento owners pay each year?"]
+inspired_by = ""
+demand = "Sacramento City Code 5.156 (Tenant Protection and Relief Act), Rental Housing Inventory registration, Rental Housing Inspection Program (City Code 8.120)."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "washington-dc-rental-license-topa-rent-control"
+cluster = "local-market"
+kind = "local"
+title = "Is Washington, DC Landlord-Friendly? Rental License, TOPA and Rent Control"
+question = "What must a rental owner in DC do for a Basic Business License, rent control and TOPA?"
+subquestions = ["Who needs a DC Basic Business License to rent a unit?", "Which DC rentals are under rent control?", "What is TOPA and when does it apply to a sale?", "What is the yearly DC rent increase cap?", "Which DC rentals must register with the Rental Accommodations Division?"]
+inspired_by = ""
+demand = "DC Rental Housing Act of 1985, DLCP Basic Business License (residential rental), TOPA (D.C. Code 42-3404), DHCD Rental Accommodations Division filings. DC FMR rose 8.5% in FY2027."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "montgomery-county-md-rent-stabilization"
+cluster = "local-market"
+kind = "local"
+title = "Montgomery County, Maryland Rent Stabilization: Rules for Owners"
+question = "What does Montgomery County's 2023 rent stabilization law require from rental owners in the DC metro?"
+subquestions = ["What is the yearly cap in Montgomery County?", "Which buildings are exempt?", "Must owners get a Montgomery County rental license?", "How does it compare with Prince George's County rules?"]
+inspired_by = ""
+demand = "Montgomery County Bill 15-23 (rent stabilization, CPI+3% cap to max 6%), county rental license (DHCA). Part of the Washington, DC HUD metro."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "philadelphia-rental-license-landlord-rules"
+cluster = "local-market"
+kind = "local"
+title = "Is Philadelphia Landlord-Friendly? Rental License, Suitability and Lead Rules"
+question = "Which Philadelphia licenses and certificates must a rental owner have before renting?"
+subquestions = ["How do I get a Philadelphia rental license?", "What is the Certificate of Rental Suitability?", "What does the Philadelphia lead certification law require?", "Can a Philadelphia landlord collect rent without a license?", "What does Philadelphia's Good Cause rule cover?"]
+inspired_by = "https://baymgmtgroup.com/blog/philadelphia-rental-laws-guide-for-landlords-2026-update/"
+demand = "Philadelphia L&I Rental License (yearly, per unit fee), Certificate of Rental Suitability, Lead Disclosure and Certification Law, Commercial Activity License, Good Cause eviction (Phila Code 9-804)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "seattle-landlord-rules-rrio-first-in-time"
+cluster = "local-market"
+kind = "local"
+title = "Is Seattle Landlord-Friendly? RRIO, First-in-Time and the State Rent Cap"
+question = "Which Seattle and Washington State rules apply to a rental owner in Seattle?"
+subquestions = ["What is the Seattle RRIO registration and inspection?", "How does the Seattle First-in-Time rule change tenant screening?", "What notice does Seattle require for a rent increase?", "What does Washington's 2025 rent cap (HB 1217) allow?", "When does a Seattle owner pay economic displacement relocation help?"]
+inspired_by = ""
+demand = "Seattle RRIO (SMC 22.214), First-in-Time (SMC 14.08.050), 180-day rent increase notice, Washington HB 1217 (2025) cap of 7% + CPI up to 10%."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "portland-oregon-landlord-rules-relocation-fair"
+cluster = "local-market"
+kind = "local"
+title = "Is Portland Landlord-Friendly? Rent Cap, Relocation and FAIR Screening"
+question = "Which Oregon and City of Portland rules shape the work of a Portland rental owner?"
+subquestions = ["What is Oregon's yearly rent increase cap?", "When does a Portland owner owe relocation assistance?", "What does Portland's FAIR ordinance require for screening?", "What are Portland's security deposit rules?", "Must Portland owners register rentals?"]
+inspired_by = ""
+demand = "Oregon ORS 90.323 (cap 7% + CPI, max 10%), Portland City Code 30.01.085 relocation, FAIR Ordinance (screening and deposits, 2020), Portland Rental Services Office registration."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "st-paul-rent-stabilization-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "St. Paul Rent Stabilization: The 3 Percent Cap Explained"
+question = "How does St. Paul's 3 percent rent stabilization ordinance work for rental owners?"
+subquestions = ["Which St. Paul rentals are under the 3 percent cap?", "How long is new construction exempt?", "How does an owner ask for an exception above 3 percent?", "Does Minneapolis have rent control?"]
+inspired_by = ""
+demand = "St. Paul Rent Stabilization Ordinance (voter approved 2021, amended 2022 and 2024: 20-year new construction exemption), self-certification and staff determination process."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "minneapolis-rental-license-tiers"
+cluster = "local-market"
+kind = "local"
+title = "Minneapolis Rental License Tiers: How Your Rental Is Rated"
+question = "How does the Minneapolis rental license tier system work for owners?"
+subquestions = ["Who needs a Minneapolis rental license?", "How does Minneapolis set tier 1, 2 or 3?", "How much does a Minneapolis rental license cost?", "What can cause a license revocation?", "What do Minneapolis tenant notice rules require?"]
+inspired_by = ""
+demand = "Minneapolis Code Ch. 244 rental licensing, Tier 1-3 system and fees, Minneapolis advance notice of sale and tenant screening ordinances (2019)."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "boston-rental-registration-broker-fee-rules"
+cluster = "local-market"
+kind = "local"
+title = "Is Boston Landlord-Friendly? Rental Registration, Inspections and Broker Fees"
+question = "Which Boston and Massachusetts rules apply to a rental owner in Boston?"
+subquestions = ["What is the Boston Rental Registration and Inspection ordinance?", "What did the 2025 Massachusetts broker fee change do?", "What are Massachusetts security deposit rules?", "Does Boston have rent control?"]
+inspired_by = ""
+demand = "Boston Rental Registration and Inspection Ordinance (yearly registration, inspection every 5 years), Massachusetts 2025 broker fee law (who hires pays), MGL c.186 s.15B deposit rules, Massachusetts rent control ban (1994)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "denver-rental-license-landlord-rules"
+cluster = "local-market"
+kind = "local"
+title = "Is Denver Landlord-Friendly? Rental License and Colorado For-Cause Eviction"
+question = "What must a Denver rental owner do for the city rental license and Colorado's for-cause eviction law?"
+subquestions = ["Who needs a Denver residential rental property license?", "What does the Denver rental inspection check?", "What does Colorado HB24-1098 require for ending a lease?", "Can Denver cap rents?", "What fees can a Colorado landlord charge?"]
+inspired_by = ""
+demand = "Denver Residential Rental Property License (required for all rentals since 2023), Colorado HB24-1098 (for-cause eviction), Colorado rent control preemption (C.R.S. 38-12-301), HB23-1099 screening rules."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "baltimore-rental-license-lead-certificate"
+cluster = "local-market"
+kind = "local"
+title = "Baltimore Rental License and Lead Certificate: Rules for Owners"
+question = "Which Baltimore City licenses and lead certificates must a rental owner have?"
+subquestions = ["Who needs a Baltimore City rental license?", "What does the Baltimore rental inspection check?", "What is a Maryland lead risk reduction certificate?", "Can a Baltimore owner file in rent court without a license?"]
+inspired_by = ""
+demand = "Baltimore City rental licensing (since 2019, inspection by licensed home inspector), Maryland Reduction of Lead Risk in Housing Act (MDE registration, all pre-1978 rentals), license needed for rent court. Baltimore FMR rose 8.0% in FY2027."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "newark-rent-control-rental-registration"
+cluster = "local-market"
+kind = "local"
+title = "Newark Rent Control and Registration: Rules for Rental Owners"
+question = "What do Newark's rent control and registration rules require from a rental owner?"
+subquestions = ["Which Newark rentals fall under rent control?", "What yearly increase does Newark allow?", "How does the Newark Office of Rent Control register units?", "What does the New Jersey Anti-Eviction Act require?"]
+inspired_by = ""
+demand = "Newark Rent Control Ordinance (Title 19), Office of Rent Control registration, NJ Anti-Eviction Act (N.J.S.A. 2A:18-61.1), NJ lead-safe certification law."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "new-jersey-lead-safe-certification-bergen-passaic"
+cluster = "local-market"
+kind = "local"
+title = "New Jersey Lead-Safe Certificates: Rules for Bergen and Passaic Owners"
+question = "What does New Jersey's lead-safe certification law require from rental owners in Bergen and Passaic counties?"
+subquestions = ["Which New Jersey rentals need a lead-safe certificate?", "When must the inspection happen?", "Who does the inspection and what does it cost?", "Which Bergen and Passaic towns also need a certificate of occupancy at turnover?"]
+inspired_by = ""
+demand = "NJ P.L.2021 c.182 (lead-safe certification, first inspection deadline July 2024, then at tenant turnover), municipal CO at resale/re-rental in many Bergen and Passaic towns, NJ municipal rent leveling."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "long-island-rental-permit-rules"
+cluster = "local-market"
+kind = "local"
+title = "Long Island Rental Permits: Hempstead, Babylon and Islip Rules"
+question = "Which Long Island towns require a rental permit, and what must an owner do to get one?"
+subquestions = ["Does the Town of Hempstead require a rental permit?", "How do the Babylon and Islip rental permit programs work?", "Do Nassau County villages use rent stabilization (ETPA)?", "What happens if a Long Island owner rents without a permit?"]
+inspired_by = ""
+demand = "Town-level rental permit codes in Hempstead, Babylon, Islip, Brookhaven; ETPA adopted by some Nassau villages after HSTPA 2019. Nassau-Suffolk is metro 19 in our data."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "kansas-city-healthy-homes-rental-permit"
+cluster = "local-market"
+kind = "local"
+title = "Kansas City Healthy Homes: Rental Permit and Inspection Rules"
+question = "What does the Kansas City, Missouri Healthy Homes program require from rental owners?"
+subquestions = ["Who needs a KCMO rental permit?", "What triggers a Healthy Homes inspection?", "What does the KC Tenants' Bill of Rights cover?", "What does the permit cost per unit?"]
+inspired_by = ""
+demand = "KCMO Healthy Homes Rental Inspection Program (2018, yearly permit fee), KC Tenants' Bill of Rights (2019). KC FMR rose 13.8% in FY2027, the most of our 50 metros."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "st-louis-occupancy-permit-rental-rules"
+cluster = "local-market"
+kind = "local"
+title = "St. Louis Rental Rules: Occupancy Permits and Inspections"
+question = "Which permits and inspections must a St. Louis rental owner get before a new tenant moves in?"
+subquestions = ["Does the City of St. Louis require an occupancy permit for each new tenant?", "How do St. Louis County rental rules differ?", "What does the inspection check?", "What is the St. Louis rental registration?"]
+inspired_by = ""
+demand = "City of St. Louis occupancy permit at each new tenancy, St. Louis County residential occupancy permit; Missouri rent control preemption. St. Louis FMR rose 10.8% in FY2027."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "detroit-rental-certificate-of-compliance"
+cluster = "local-market"
+kind = "local"
+title = "Detroit Rental Ordinance: Certificate of Compliance and Lead Clearance"
+question = "What must a Detroit owner do to get a Certificate of Compliance for a rental?"
+subquestions = ["Who needs a Detroit rental registration?", "What is the Detroit Certificate of Compliance?", "What lead clearance does Detroit require?", "Can a Detroit tenant escrow rent if the owner has no certificate?"]
+inspired_by = ""
+demand = "Detroit Rental Ordinance (2017, revised 2024), BSEED registration and inspection, lead clearance, rent escrow for non-compliant units."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "cleveland-rental-registration-lead-safe-certificate"
+cluster = "local-market"
+kind = "local"
+title = "Cleveland Rental Registration and Lead Safe Certificate"
+question = "What does Cleveland require from rental owners for registration and lead safety?"
+subquestions = ["Who must register a rental in Cleveland?", "What is the Cleveland Lead Safe Certificate?", "Which rentals must have the certificate and when?", "What fines apply for missing registration?"]
+inspired_by = ""
+demand = "Cleveland rental registration (Building and Housing), Cleveland Lead Safe Ordinance (2019, all pre-1978 rentals by 2023), Lead Safe Home Fund grants."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "columbus-ohio-rental-registration-tenant-rules"
+cluster = "local-market"
+kind = "local"
+title = "Columbus, Ohio Rental Rules: Registration, Pay-to-Stay and Source of Income"
+question = "Which Franklin County and Columbus rules apply to a Columbus rental owner?"
+subquestions = ["Must Columbus owners register with the Franklin County Auditor?", "What does the Columbus pay-to-stay rule mean?", "What does the Columbus source-of-income ordinance require?", "Does Ohio allow rent control?"]
+inspired_by = ""
+demand = "Ohio Rev. Code 5323 rental registration (Franklin County Auditor), Columbus Tenant Bill of Rights (2022: source-of-income, pay-to-stay, late fee rules). Columbus FMR rose 12.0% in FY2027."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "cincinnati-landlord-rules-late-fees-pay-to-stay"
+cluster = "local-market"
+kind = "local"
+title = "Cincinnati Landlord Rules: Late Fee Caps and Pay-to-Stay"
+question = "What do Cincinnati's local tenant ordinances require from rental owners?"
+subquestions = ["What late fee cap does Cincinnati set?", "What is pay-to-stay in Cincinnati?", "Must Cincinnati owners register with the Hamilton County Auditor?", "What does the Cincinnati source-of-income rule cover?"]
+inspired_by = ""
+demand = "Cincinnati Municipal Code tenant protections (2020-2021: late fee limit, pay-to-stay, source-of-income), Ohio Rev. Code 5323 registration with Hamilton County. Cincinnati FMR rose 6.6%."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "pittsburgh-rental-registration-permit"
+cluster = "local-market"
+kind = "local"
+title = "Pittsburgh Rental Registration: Permit to Operate Rules"
+question = "What does Pittsburgh's rental registration program require from owners?"
+subquestions = ["When did the Pittsburgh rental registration start?", "What does the permit cost per unit?", "What does the Pittsburgh inspection check?", "What does Allegheny County's fair housing law say about source of income?"]
+inspired_by = ""
+demand = "Pittsburgh Residential Rental Permit to Operate (Rental Registration, PLI), Allegheny County source-of-income protection. Pittsburgh FMR rose 6.9%."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "dallas-rental-registration-program"
+cluster = "local-market"
+kind = "local"
+title = "Dallas Rental Registration: What Owners Must Do"
+question = "Who must register a rental property with the City of Dallas, and what does it cost?"
+subquestions = ["Does Dallas require single-family rental registration?", "What does a Dallas rental inspection check?", "Can Texas cities cap rent?", "What does the Dallas registration fee cost?"]
+inspired_by = ""
+demand = "Dallas Rental Registration Program (Ch. 27, single-family and multitenant), Texas Local Gov't Code 214.902 rent control ban. Dallas FMR fell 6.4% in FY2027, the most of our 50 metros."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "phoenix-rental-registration-and-rental-tax"
+cluster = "local-market"
+kind = "local"
+title = "Phoenix Rental Rules: Maricopa County Registration and the End of the Rental Tax"
+question = "What must a Phoenix rental owner do for county registration and city rental tax?"
+subquestions = ["Why must Arizona owners register rentals with the county assessor?", "Did Phoenix stop the residential rental tax in 2025?", "Can Arizona cities cap rents?", "What does the Arizona Residential Landlord and Tenant Act require on deposits?"]
+inspired_by = ""
+demand = "ARS 33-1902 rental registration with the Maricopa County Assessor, Arizona SB 1131 ended residential rental TPT on 1 Jan 2025, ARS 33-1329 rent control preemption."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "miami-tenant-rules-after-florida-hb-1417"
+cluster = "local-market"
+kind = "local"
+title = "Miami Landlord Rules After Florida HB 1417"
+question = "Which Miami-Dade tenant rules still apply to rental owners after Florida HB 1417 preempted local rules?"
+subquestions = ["What did the Miami-Dade Tenant Bill of Rights require?", "What did Florida HB 1417 (2023) preempt?", "Which local notice rules no longer apply in Miami?", "Which Florida state rules still govern Miami rentals?"]
+inspired_by = ""
+demand = "Miami-Dade Tenant Bill of Rights (2022), Florida HB 1417 (2023, Fla. Stat. 83.425 preemption), Florida 60-day rent increase notice ordinances that HB 1417 voided."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "north-carolina-rental-registration-limits-charlotte-raleigh"
+cluster = "local-market"
+kind = "local"
+title = "Can Charlotte or Raleigh Require a Rental Permit? North Carolina Limits"
+question = "What does North Carolina law let Charlotte and Raleigh require from rental owners?"
+subquestions = ["What does NC G.S. 160D-1207 forbid cities to do?", "When can a North Carolina city make an owner register?", "Does Raleigh have a residential rental registration?", "Can North Carolina cities cap rent?"]
+inspired_by = ""
+demand = "N.C. G.S. 160D-1207 (limits on rental registration and permits), Raleigh short-term rental zoning permit, N.C. G.S. 42-14.1 rent control ban."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "indianapolis-rental-registry-tenant-rights"
+cluster = "local-market"
+kind = "local"
+title = "Indianapolis Rental Registry and Tenant Rights Ordinance"
+question = "What does Indianapolis require from rental owners under its registry and tenant rights rules?"
+subquestions = ["Who must register in the Indianapolis rental registry?", "What does the 2022 Indianapolis tenant rights ordinance require?", "What does Indiana law preempt?", "What fines apply?"]
+inspired_by = ""
+demand = "Indianapolis rental registry (Code Ch. 536), 2022 tenant rights notice ordinance, Indiana Code 36-1-3-8.5 and IC 32-31 preemption. Indianapolis FMR rose 4.3%."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "norfolk-virginia-beach-rental-inspection-districts"
+cluster = "local-market"
+kind = "local"
+title = "Norfolk and Virginia Beach Rental Inspection Rules"
+question = "Which Norfolk and Virginia Beach rentals need a city rental inspection?"
+subquestions = ["What is a Virginia rental inspection district?", "Which Norfolk areas are in a district?", "Does Virginia Beach inspect rentals?", "What does the Virginia VRLTA require on deposits?"]
+inspired_by = ""
+demand = "Virginia Code 36-105.1:1 (rental inspection districts), Norfolk Rental Inspection Program, VRLTA (Va. Code 55.1-1200)."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "nashville-short-term-rental-permit-rules"
+cluster = "local-market"
+kind = "local"
+title = "Nashville Short-Term Rental Permits: Rules for Owners"
+question = "What permit and zoning rules apply to a short-term rental in Nashville?"
+subquestions = ["Who needs a Nashville STRP permit?", "Which zones allow non-owner-occupied short-term rentals?", "What does Nashville require for the permit each year?", "Is a mid-term rental a better choice for a Nashville owner?"]
+inspired_by = ""
+demand = "Metro Nashville Code 6.28.030 (STRP permits), non-owner-occupied zoning limits (BL2020-197), Codes Department permit renewal. High owner search interest."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "which-top-us-metros-have-rent-control"
+cluster = "local-market"
+kind = "local"
+title = "Which of the 50 Largest US Metros Have Rent Control?"
+question = "In which of the 50 largest US rental metros can a city cap rents, and where does state law forbid it?"
+subquestions = ["Which states ban local rent control?", "Which metros have city rent control today?", "Which states have a statewide cap (California, Oregon, Washington)?", "What does a rent cap mean for a single-family rental owner?"]
+inspired_by = ""
+demand = "Compiles rent control preemption statutes and local ordinances for all 50 metros in fmr-fy2027.json (e.g. TX LGC 214.902, ARS 33-1329, CA AB 1482, ORS 90.323, WA HB 1217, St. Paul, NYC). No competitor has one table for these 50 metros."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "which-us-cities-require-rental-registration"
+cluster = "local-market"
+kind = "local"
+title = "Which Big US Cities Require Rental Registration or a License?"
+question = "Which of the largest US metros make rental owners register or license each rental?"
+subquestions = ["Which cities require a yearly rental license?", "Which states let counties register rentals (Arizona, Ohio)?", "Which states limit registration (North Carolina)?", "What does registration cost per unit?", "What happens if I rent without a registration?"]
+inspired_by = ""
+demand = "Registration programs in Philadelphia, DC, Seattle, Denver, Baltimore, Boston, Minneapolis, Kansas City, Detroit, Cleveland, Dallas, Pittsburgh, Maricopa County, Ohio ORC 5323; NC 160D-1207 limits. One table across our 50 metros."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-houston"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Houston: What Owners Pay"
+question = "How much does a property manager cost in Houston, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Houston?", "What leasing and renewal fees do Houston managers charge?", "Which local rules add cost for Houston owners?", "Must a Houston property manager hold a TX license?", "Flat fee or percent: which model is common in Houston?"]
+inspired_by = "https://ipropertymanagement.com/research/houston-property-management-fees"
+demand = "TREC broker license needed to manage for others (Tex. Occ. Code 1101); iPM Houston fee page (8.3%, $101 flat average) is from 2022, so fresh data is needed; HOA and flood-zone homes raise work. Collect fees from 10+ local manager price pages."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-phoenix"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Phoenix: What Owners Pay"
+question = "How much does a property manager cost in Phoenix, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Phoenix?", "What leasing and renewal fees do Phoenix managers charge?", "Which local rules add cost for Phoenix owners?", "Must a Phoenix property manager hold a AZ license?", "Flat fee or percent: which model is common in Phoenix?"]
+inspired_by = "https://ipropertymanagement.com/research/phoenix-property-management-fees"
+demand = "Arizona ADRE broker license and trust account rules (ARS 32-2173); iPM Phoenix fee page (8.7%, $78 flat) dates from 2022; end of the rental TPT in 2025 changed owner costs. Collect fees from 10+ local manager price pages."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-miami"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Miami: What Owners Pay"
+question = "How much does a property manager cost in Miami, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Miami?", "What leasing and renewal fees do Miami managers charge?", "Which local rules add cost for Miami owners?", "Must a Miami property manager hold a FL license?", "Flat fee or percent: which model is common in Miami?"]
+inspired_by = "https://ipropertymanagement.com/research/miami-property-management-fees"
+demand = "Florida DBPR real estate license needed (Fla. Stat. 475); iPM Miami page (8.7%, 7-12%) dates from 2022; condo association and 40-year recertification costs (SB 4-D) change budgets. Collect fees from 10+ local manager price pages."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-dallas"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Dallas: What Owners Pay"
+question = "How much does a property manager cost in Dallas, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Dallas?", "What leasing and renewal fees do Dallas managers charge?", "Which local rules add cost for Dallas owners?", "Must a Dallas property manager hold a TX license?", "Flat fee or percent: which model is common in Dallas?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "TREC license rule; Dallas Rental Registration fee adds owner cost; FMR fell 6.4% in FY2027 so fee as share of rent moves. Collect fees from 10+ local manager price pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-atlanta"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Atlanta: What Owners Pay"
+question = "How much does a property manager cost in Atlanta, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Atlanta?", "What leasing and renewal fees do Atlanta managers charge?", "Which local rules add cost for Atlanta owners?", "Must a Atlanta property manager hold a GA license?", "Flat fee or percent: which model is common in Atlanta?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Georgia GREC license for property managers (O.C.G.A. 43-40); large single-family rental share (institutional owners) sets local fee norms; Atlanta FMR fell 3.2%. Collect fees from 10+ local manager price pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-tampa"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Tampa: What Owners Pay"
+question = "How much does a property manager cost in Tampa, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Tampa?", "What leasing and renewal fees do Tampa managers charge?", "Which local rules add cost for Tampa owners?", "Must a Tampa property manager hold a FL license?", "Flat fee or percent: which model is common in Tampa?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Florida DBPR license; hurricane prep and insurance claims work are local services that change fees; Tampa FMR fell 3.0%. Collect fees from 10+ local manager price pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-las-vegas"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Las Vegas: What Owners Pay"
+question = "How much does a property manager cost in Las Vegas, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Las Vegas?", "What leasing and renewal fees do Las Vegas managers charge?", "Which local rules add cost for Las Vegas owners?", "Must a Las Vegas property manager hold a NV license?", "Flat fee or percent: which model is common in Las Vegas?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Nevada NRED property management permit (NRS 645.6052) is a separate permit; many HOA homes; Las Vegas FMR fell 2.8%. Collect fees from 10+ local manager price pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-charlotte"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Charlotte: What Owners Pay"
+question = "How much does a property manager cost in Charlotte, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Charlotte?", "What leasing and renewal fees do Charlotte managers charge?", "Which local rules add cost for Charlotte owners?", "Must a Charlotte property manager hold a NC license?", "Flat fee or percent: which model is common in Charlotte?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "NCREC broker license and trust account rules (G.S. 93A); Charlotte FMR rose 5.9%; NC limits city rental permits. Collect fees from 10+ local manager price pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-chicago"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Chicago: What Owners Pay"
+question = "How much does a property manager cost in Chicago, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Chicago?", "What leasing and renewal fees do Chicago managers charge?", "Which local rules add cost for Chicago owners?", "Must a Chicago property manager hold a IL license?", "Flat fee or percent: which model is common in Chicago?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Illinois IDFPR license (225 ILCS 454); Chicago RLTO deposit-interest work and 2-4 flat building stock change fee models; Chicago FMR rose 12.9%. Our case-study market. Collect fees from 10+ local manager price pages."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-los-angeles"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Los Angeles: What Owners Pay"
+question = "How much does a property manager cost in Los Angeles, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Los Angeles?", "What leasing and renewal fees do Los Angeles managers charge?", "Which local rules add cost for Los Angeles owners?", "Must a Los Angeles property manager hold a CA license?", "Flat fee or percent: which model is common in Los Angeles?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "California DRE broker license; RSO registration, JCO and relocation compliance add work that some managers price as extra fees. Collect fees from 10+ local manager price pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-denver"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Denver: What Owners Pay"
+question = "How much does a property manager cost in Denver, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Denver?", "What leasing and renewal fees do Denver managers charge?", "Which local rules add cost for Denver owners?", "Must a Denver property manager hold a CO license?", "Flat fee or percent: which model is common in Denver?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Colorado DORA license; Denver rental license and inspection add a setup cost; Colorado HB23-1099 limits on screening fees. Collect fees from 10+ local manager price pages."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-san-antonio"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in San Antonio: What Owners Pay"
+question = "How much does a property manager cost in San Antonio, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in San Antonio?", "What leasing and renewal fees do San Antonio managers charge?", "Which local rules add cost for San Antonio owners?", "Must a San Antonio property manager hold a TX license?", "Flat fee or percent: which model is common in San Antonio?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "TREC license; large military renter base (Joint Base San Antonio) and BAH rents shape leasing work; FMR rose 1.1%. Collect fees from 10+ local manager price pages."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-orlando"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Orlando: What Owners Pay"
+question = "How much does a property manager cost in Orlando, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Orlando?", "What leasing and renewal fees do Orlando managers charge?", "Which local rules add cost for Orlando owners?", "Must a Orlando property manager hold a FL license?", "Flat fee or percent: which model is common in Orlando?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Florida DBPR license; Orlando's mix of long-term and vacation homes near Disney and HOA rules shape fee tiers. Collect fees from 10+ local manager price pages."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "property-management-fees-nashville"
+cluster = "local-market"
+kind = "local"
+title = "Property Management Fees in Nashville: What Owners Pay"
+question = "How much does a property manager cost in Nashville, and which fees are normal there?"
+subquestions = ["What is the average monthly management fee in Nashville?", "What leasing and renewal fees do Nashville managers charge?", "Which local rules add cost for Nashville owners?", "Must a Nashville property manager hold a TN license?", "Flat fee or percent: which model is common in Nashville?"]
+inspired_by = "https://ipropertymanagement.com/research/average-property-management-fees"
+demand = "Tennessee TREC license; Metro Nashville STRP rules split long-term and short-term management fees; FMR rose 3.9%. Collect fees from 10+ local manager price pages."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-chicago"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Chicago"
+question = "How does a rental owner check and choose a property manager in Chicago?"
+subquestions = ["Which license must a Chicago property manager hold, and how do I look it up?", "Which local rules must a Chicago manager know?", "What should a Chicago management agreement say?", "Which questions should I ask a Chicago manager before I sign?", "Where do Chicago owners find manager reviews?"]
+inspired_by = ""
+demand = "Illinois IDFPR license lookup (225 ILCS 454 Real Estate License Act), RLTO deposit handling by managers, Chicago Housing Authority HCV landlord experience. Our case-study market. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-houston"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Houston"
+question = "How does a rental owner check and choose a property manager in Houston?"
+subquestions = ["Which license must a Houston property manager hold, and how do I look it up?", "Which local rules must a Houston manager know?", "What should a Houston management agreement say?", "Which questions should I ask a Houston manager before I sign?", "Where do Houston owners find manager reviews?"]
+inspired_by = ""
+demand = "TREC license lookup, TREC Consumer Protection Notice and Information About Brokerage Services form, Harris County flood zone experience. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-phoenix"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Phoenix"
+question = "How does a rental owner check and choose a property manager in Phoenix?"
+subquestions = ["Which license must a Phoenix property manager hold, and how do I look it up?", "Which local rules must a Phoenix manager know?", "What should a Phoenix management agreement say?", "Which questions should I ask a Phoenix manager before I sign?", "Where do Phoenix owners find manager reviews?"]
+inspired_by = ""
+demand = "Arizona ADRE license lookup, ARS 32-2173 property management agreement rules, ARS 33-1902 county registration task. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-tampa"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Tampa"
+question = "How does a rental owner check and choose a property manager in Tampa?"
+subquestions = ["Which license must a Tampa property manager hold, and how do I look it up?", "Which local rules must a Tampa manager know?", "What should a Tampa management agreement say?", "Which questions should I ask a Tampa manager before I sign?", "Where do Tampa owners find manager reviews?"]
+inspired_by = ""
+demand = "Florida DBPR license lookup (Fla. Stat. 475), Florida escrow rules for deposits (Fla. Stat. 83.49), hurricane plans in the management agreement. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-las-vegas"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Las Vegas"
+question = "How does a rental owner check and choose a property manager in Las Vegas?"
+subquestions = ["Which license must a Las Vegas property manager hold, and how do I look it up?", "Which local rules must a Las Vegas manager know?", "What should a Las Vegas management agreement say?", "Which questions should I ask a Las Vegas manager before I sign?", "Where do Las Vegas owners find manager reviews?"]
+inspired_by = ""
+demand = "Nevada NRED property management permit lookup (NRS 645), NAC 645 property management agreement content rules, HOA experience. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-atlanta"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Atlanta"
+question = "How does a rental owner check and choose a property manager in Atlanta?"
+subquestions = ["Which license must a Atlanta property manager hold, and how do I look it up?", "Which local rules must a Atlanta manager know?", "What should a Atlanta management agreement say?", "Which questions should I ask a Atlanta manager before I sign?", "Where do Atlanta owners find manager reviews?"]
+inspired_by = ""
+demand = "Georgia GREC license lookup, O.C.G.A. 44-7-34 deposit escrow rules, experience with metro Atlanta county dispossessory courts. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-los-angeles"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Los Angeles"
+question = "How does a rental owner check and choose a property manager in Los Angeles?"
+subquestions = ["Which license must a Los Angeles property manager hold, and how do I look it up?", "Which local rules must a Los Angeles manager know?", "What should a Los Angeles management agreement say?", "Which questions should I ask a Los Angeles manager before I sign?", "Where do Los Angeles owners find manager reviews?"]
+inspired_by = ""
+demand = "California DRE license lookup, RSO and JCO compliance as a test question, LAHD Rent Registry filings. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-boston"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Boston"
+question = "How does a rental owner check and choose a property manager in Boston?"
+subquestions = ["Which license must a Boston property manager hold, and how do I look it up?", "Which local rules must a Boston manager know?", "What should a Boston management agreement say?", "Which questions should I ask a Boston manager before I sign?", "Where do Boston owners find manager reviews?"]
+inspired_by = ""
+demand = "Massachusetts has no separate property manager license; check broker license for leasing, MGL c.186 s.15B deposit skill, Boston rental registration duties. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "how-to-choose-a-property-manager-seattle"
+cluster = "local-market"
+kind = "local"
+title = "How to Choose a Property Manager in Seattle"
+question = "How does a rental owner check and choose a property manager in Seattle?"
+subquestions = ["Which license must a Seattle property manager hold, and how do I look it up?", "Which local rules must a Seattle manager know?", "What should a Seattle management agreement say?", "Which questions should I ask a Seattle manager before I sign?", "Where do Seattle owners find manager reviews?"]
+inspired_by = ""
+demand = "Washington DOL license lookup (RCW 18.85), RRIO and First-in-Time compliance, 180-day rent notice discipline. Owners ask AI 'best property manager in <city>'; ClearLead, PMW and Goodjuju clients build city decision pages (playbook move 1)."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "rental-market-kansas-city-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "Kansas City Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the Kansas City rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in Kansas City for FY2027?", "Are Kansas City rents rising or falling?", "Which local rules affect Kansas City rental returns?", "What vacancy rate does Kansas City have?", "Should I rent or sell my Kansas City home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR +13.8% (landing/src/data/fmr-fy2027.json) plus KCMO Healthy Homes permit, Kansas-side vs Missouri-side rules, Census ACS vacancy, largest FY2027 FMR rise of our 50 metros. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rental-market-chicago-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "Chicago Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the Chicago rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in Chicago for FY2027?", "Are Chicago rents rising or falling?", "Which local rules affect Chicago rental returns?", "What vacancy rate does Chicago have?", "Should I rent or sell my Chicago home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR +12.9% (landing/src/data/fmr-fy2027.json) plus Chicago 2-4 flat stock, RLTO, Cook County property tax reassessment cycle, FMR +12.9%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 2
+status = "planned"
+
+[[topic]]
+slug = "rental-market-columbus-oh-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "Columbus, Ohio Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the Columbus, Ohio rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in Columbus, Ohio for FY2027?", "Are Columbus, Ohio rents rising or falling?", "Which local rules affect Columbus, Ohio rental returns?", "What vacancy rate does Columbus, Ohio have?", "Should I rent or sell my Columbus, Ohio home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR +12.0% (landing/src/data/fmr-fy2027.json) plus Intel Ohio fab and job growth news, Franklin County registration, FMR +12.0%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-market-st-louis-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "St. Louis Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the St. Louis rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in St. Louis for FY2027?", "Are St. Louis rents rising or falling?", "Which local rules affect St. Louis rental returns?", "What vacancy rate does St. Louis have?", "Should I rent or sell my St. Louis home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR +10.8% (landing/src/data/fmr-fy2027.json) plus City vs County split, occupancy permits, FMR +10.8%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "rental-market-washington-dc-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "Washington, DC Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the Washington, DC rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in Washington, DC for FY2027?", "Are Washington, DC rents rising or falling?", "Which local rules affect Washington, DC rental returns?", "What vacancy rate does Washington, DC have?", "Should I rent or sell my Washington, DC home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR +8.5% (landing/src/data/fmr-fy2027.json) plus Federal job cuts in 2025, DC rent control, Montgomery County cap, FMR +8.5%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-market-dallas-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "Dallas Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the Dallas rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in Dallas for FY2027?", "Are Dallas rents rising or falling?", "Which local rules affect Dallas rental returns?", "What vacancy rate does Dallas have?", "Should I rent or sell my Dallas home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR -6.4% (landing/src/data/fmr-fy2027.json) plus Record multifamily deliveries in DFW, Dallas registration, largest FMR drop (-6.4%). Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 3
+status = "planned"
+
+[[topic]]
+slug = "rental-market-phoenix-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "Phoenix Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the Phoenix rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in Phoenix for FY2027?", "Are Phoenix rents rising or falling?", "Which local rules affect Phoenix rental returns?", "What vacancy rate does Phoenix have?", "Should I rent or sell my Phoenix home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR -5.7% (landing/src/data/fmr-fy2027.json) plus High new apartment supply, end of rental TPT 2025, FMR -5.7%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 4
+status = "planned"
+
+[[topic]]
+slug = "rental-market-san-diego-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "San Diego Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the San Diego rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in San Diego for FY2027?", "Are San Diego rents rising or falling?", "Which local rules affect San Diego rental returns?", "What vacancy rate does San Diego have?", "Should I rent or sell my San Diego home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR -5.9% (landing/src/data/fmr-fy2027.json) plus Coastal Commission and ADU supply, San Diego TPO, FMR -5.9%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "rental-market-san-jose-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "San Jose Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the San Jose rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in San Jose for FY2027?", "Are San Jose rents rising or falling?", "Which local rules affect San Jose rental returns?", "What vacancy rate does San Jose have?", "Should I rent or sell my San Jose home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR -6.1% (landing/src/data/fmr-fy2027.json) plus Tech jobs, San Jose ARO, FMR -6.1%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 6
+status = "planned"
+
+[[topic]]
+slug = "rental-market-austin-for-owners"
+cluster = "local-market"
+kind = "local"
+title = "Austin Rental Market for Owners: Rents, Rules and Outlook"
+question = "What does the Austin rental market look like for a rental owner now?"
+subquestions = ["How much did HUD's fair market rent change in Austin for FY2027?", "Are Austin rents rising or falling?", "Which local rules affect Austin rental returns?", "What vacancy rate does Austin have?", "Should I rent or sell my Austin home now?"]
+inspired_by = "https://www.apartmentlist.com/research/national-rent-data"
+demand = "HUD FY2027 FMR change for 2BR -1.9% (landing/src/data/fmr-fy2027.json) plus Austin apartment supply wave, Texas preemption, FMR -1.9%. Apartment List and Zillow publish metro rent reports; link to the Section 8 rent limit page, do not repeat it."
+priority = 5
+status = "planned"
+
+[[topic]]
+slug = "fy2027-fair-market-rent-winners-and-losers"
+cluster = "local-market"
+kind = "local"
+title = "Where Rents Rose and Fell: FY2027 Fair Market Rents in 50 Metros"
+question = "In which of the 50 largest US metros did HUD's FY2027 fair market rent rise or fall the most?"
+subquestions = ["Which metros had the biggest FMR rise for FY2027?", "Which metros had FMR drops?", "Why did FMR fall in Dallas, Phoenix and San Jose?", "What does a falling FMR mean for a Section 8 owner?"]
+inspired_by = ""
+demand = "Our own table of 50 metros from fmr-fy2027.json: Kansas City +13.8%, Chicago +12.9%, Columbus +12.0%; Dallas -6.4%, San Jose -6.1%, San Diego -5.9%. Unique data no competitor publishes in one place."
+priority = 2
+status = "planned"
