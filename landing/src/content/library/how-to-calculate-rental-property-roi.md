@@ -1,6 +1,6 @@
 ---
 title: "How to Calculate ROI on a Rental Property: Formulas and Examples — Citata.ai"
-description: "Rental ROI is yearly return divided by the cash you put in. See the formulas for cash and financed buys, which costs to include, and a worked example with numbers."
+description: "Rental ROI is yearly return divided by the cash you put in. See the formulas for cash and financed buys, which costs to include, and a worked example."
 headline: "How to Calculate ROI on a Rental Property"
 dek: "Three formulas, one worked example, and why a financed buy shows a higher ROI on less cash."
 published: "2026-10-19"

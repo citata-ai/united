@@ -1,6 +1,6 @@
 ---
 title: "How Is Rental Income Taxed? The Basics From IRS Pub 527 — Citata.ai"
-description: "The IRS taxes net rental income at your normal rate. See what counts as rent, how advance rent and deposits work, where Schedule E fits, and why rent is passive."
+description: "The IRS taxes net rental income at your normal rate. See what counts as rent, how advance rent and deposits work, where Schedule E fits, and why it is passive."
 headline: "How Is Rental Income Taxed"
 dek: "What the IRS counts as rent, where you report it, and why it is passive income."
 published: "2026-10-19"

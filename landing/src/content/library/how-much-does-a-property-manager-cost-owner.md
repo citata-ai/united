@@ -98,11 +98,13 @@ Worked example with the iPropertyManagement averages:
 
 The example assumes 12 months of rent. A vacant month lowers the monthly fee on a collected-rent plan, but it also costs you a month of rent. The US rental vacancy rate was 7.3% in the second quarter of 2026 (Census Bureau). That is close to one month in 12.
 
-The same house with a flat-fee plan at $150 per month and a $1,500 placement fee would cost $3,300 in a year with a new tenant. Fee models change the total less than the headline rate suggests.
+Now try a flat-fee plan at $150 per month with a $1,500 placement fee. The same house would cost $3,300 in a year with a new tenant. Fee models change the total less than the headline rate suggests.
 
 To run your own rent and fees, use our [property management fee calculator](/tools/property-management-fee-calculator).
 
 ## How to read a fee schedule before you sign
+
+A fee schedule is the one document that shows the full cost. A phone quote usually gives only the monthly rate. The written schedule shows the rest, and the management agreement makes it binding.
 
 Ask each manager for the full written fee schedule, not a quote by phone. Then check these 6 items:
 

@@ -1,6 +1,6 @@
 ---
 title: "Do You Need an LLC for Your Rental Property? Costs and Limits — Citata.ai"
-description: "An LLC can shield your other assets from a rental lawsuit, but it costs money each year and does not cut your taxes. See state fees, tax rules and when insurance is enough."
+description: "An LLC can shield your other assets from a rental claim, but it costs money each year and does not cut taxes. See state fees and when insurance is enough."
 headline: "Do You Need an LLC for Your Rental Property"
 dek: "What an LLC protects, what it costs by state, and why the IRS ignores a single-member LLC."
 published: "2026-10-19"
@@ -94,7 +94,7 @@ That is close to a third of a typical monthly management fee, every year, for a 
 
 ## Does an LLC change my taxes?
 
-A single-member LLC does not change your federal income tax by default. The IRS says an LLC with only one member is treated as an entity disregarded as separate from its owner, unless it files Form 8832 to be taxed as a corporation.
+A single-member LLC does not change your federal income tax by default. The IRS treats an LLC with only one member as an entity disregarded as separate from its owner. The exception: it files Form 8832 to be taxed as a corporation.
 
 What that means in practice:
 
