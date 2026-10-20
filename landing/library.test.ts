@@ -28,6 +28,30 @@ describe.skipIf(files.length === 0)("library articles", () => {
     for (const k of keys) expect(fm, `frontmatter key ${k}`).toMatch(new RegExp(`^${k}:`, "m"));
     const data = parse(fm) as Record<string, unknown>;
     expect(typeof data.visible, "visible is true or false").toBe("boolean");
+    // Same types as the schema in src/content.config.ts: a wrong type breaks the whole build.
+    for (const k of [
+      "title",
+      "description",
+      "headline",
+      "dek",
+      "published",
+      "updated",
+      "answer",
+      "cluster",
+      "kind",
+    ])
+      expect(typeof data[k], `${k} is a quoted string`).toBe("string");
+    if (data.priority !== undefined)
+      expect(typeof data.priority, "priority is a number").toBe("number");
+    if (data.inspired_by !== undefined)
+      expect(typeof data.inspired_by, "inspired_by is a string").toBe("string");
+    for (const x of (data.faq ?? []) as { q: unknown; a: unknown }[])
+      expect([typeof x.q, typeof x.a], "faq q and a are strings").toEqual(["string", "string"]);
+    for (const x of (data.sources ?? []) as { label: unknown; url: unknown }[])
+      expect([typeof x.label, typeof x.url], "sources label and url are strings").toEqual([
+        "string",
+        "string",
+      ]);
     expect(String(data.title).length, "title 30–80 chars").toBeGreaterThanOrEqual(30);
     expect(fm, "no layout key: the /guides/[slug] route renders it").not.toMatch(/^layout:/m);
     expect(fm, "at least 1 source").toMatch(/^sources:\s*\n\s+- label:/m);

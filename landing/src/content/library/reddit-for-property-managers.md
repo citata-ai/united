@@ -28,7 +28,8 @@ sources:
     url: "https://blog.google/inside-google/company-announcements/expanded-reddit-partnership/"
   - label: "Reddit Inc.: Reddit and OpenAI build partnership (2024-05-16)"
     url: "https://redditinc.com/blog/reddit-and-oai-partner"
-  - label: "citata.ai: AI visibility run, 20 prompts x ChatGPT, Gemini, Claude x 2 runs (our data, 2026-10-18, internal report)"
+  - label: "citata.ai: AI visibility run, 20 prompts x ChatGPT, Gemini, Claude x 2 runs (our data, 2026-10-18; summary in our guide)"
+    url: "https://citata.ai/guides/why-owner-leads-are-dropping"
   - label: "Goodjuju Marketing: Property management owner lead source study, fall 2026 update"
     url: "https://gogoodjuju.com/property-management-lead-source-report-2026/"
 ---

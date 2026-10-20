@@ -33,7 +33,8 @@ sources:
     url: "https://support.google.com/youtube/answer/71673"
   - label: "Google Search Central: Video SEO best practices (read 2026-10-20)"
     url: "https://developers.google.com/search/docs/appearance/video"
-  - label: "citata.ai: AI visibility run, 20 prompts x ChatGPT, Gemini, Claude x 2 runs (our data, 2026-10-18, internal report)"
+  - label: "citata.ai: AI visibility run, 20 prompts x ChatGPT, Gemini, Claude x 2 runs (our data, 2026-10-18; summary in our guide)"
+    url: "https://citata.ai/guides/why-owner-leads-are-dropping"
 ---
 
 In our 2026-10-18 test, we ran 20 prompts about AI search for property managers through ChatGPT, Gemini and Claude, 2 runs each. YouTube.com was a cited source in 7 answers. AI tools read video pages and transcripts. That is a reason to make videos. But it is not proof that videos bring owners, and the lead data says to keep expectations low.
