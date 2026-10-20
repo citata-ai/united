@@ -253,7 +253,8 @@ Style: always **N** (section 2b-N). Not T, E, S or P.
 5. **Export** from the repo root: `brand/cover.sh /tmp/img-<slug>/<slug>-b.png guide-<short>-v1`. It upscales ×4 (Real-ESRGAN, downloads itself to `/tmp/esrgan` when missing), writes `landing/public/img/<name>-{640,720,960,1280,1920,2560}.webp`, `landing/public/og/<name>.jpg` (1200×630) and `brand/art/current/<name>.webp`.
 6. **Wire it.** Add the slug to `landing/src/data/guide-covers.ts` with `img` and `alt` (one sentence, starts "A pop engraving under a <color> sky: ..."). The Guide layout then shows the cover on top, in the `/guides` card and as the OG image.
 7. **Log it.** Add a row to section 2 table (scene, sky), a row to `brand/art/current/README.md`, and an `[[image]]` entry to `landing/public/img/prompts.toml` (file, prompt, model, date).
-8. **Check.** `mise run check` (cover test), `cd landing && bun run build`, then look at the page on stage.
+8. **Library covers.** `tools/library/covers.sh` makes covers for library drafts by script (one variant, logged only in `landing/public/img/prompts.toml`). The night check reviews them (step 4 rules) and deletes bad ones; the script then makes them again.
+9. **Check.** `mise run check` (cover test), `cd landing && bun run build`, then look at the page on stage.
 
 **Update an image.** Never overwrite a published file: the site caches images for 30 days. Make `-v2` with steps 3–7, point `guide-covers.ts` to it, delete the old master in `brand/art/current/` and change its README row. Keep the old WebP files in `landing/public/img/` (old shares and caches may still use them).
 
