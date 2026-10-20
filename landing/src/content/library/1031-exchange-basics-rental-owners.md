@@ -3,10 +3,10 @@ title: "1031 Exchange Basics for Rental Owners: Rules and Deadlines — Citata.a
 description: "A 1031 exchange lets you defer tax when you swap one rental for another. Learn the like-kind rule, the 45 and 180 day deadlines, the QI role and boot."
 headline: "1031 Exchange Basics for Rental Owners"
 dek: "Four rules decide if your swap defers the tax: like-kind, 45 days, 180 days, and boot."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-20"
+updated: "2026-10-20"
 answer: "A 1031 exchange lets you sell a rental and buy another investment property without paying tax on the gain now. Under IRS rules, both properties must be real property held for business or investment. You must identify the replacement within 45 days and receive it within 180 days, or by your tax return due date if earlier. Cash or other non-like-kind property you receive, called boot, is taxable up to your gain."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1
