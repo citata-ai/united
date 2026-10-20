@@ -16,13 +16,14 @@ for slug in $slugs; do
   d=/tmp/img-$slug; rm -rf "$d"; mkdir -p "$d"
   meta=$(python3 tools/library/library.py meta "$slug")
   sky=$(python3 tools/library/library.py sky)
+  skyword=$(echo "$sky" | awk '{print $(NF-1)}')
   ref=${refs[$(( RANDOM % 4 ))]}
   ffmpeg -loglevel error -y -i "brand/art/current/$ref.webp" "$d/ref.png"
   style="Use the image $d/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat $sky field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
   ask="You make one cover picture for this article: $meta
 Steps:
 1. Write one scene (1-2 sentences) that shows the article's one idea as a Roman scene: a man in an orange toga is the landlord or property manager; add one modern object (a CRT computer, a rotary phone, a key, a letterbox) and one property detail (small tiled houses, a two-flat). No text, no signs, no screens with UI, no brand names. Save the scene to $d/scene.txt.
-2. Write alt text: one sentence that starts 'A pop engraving under a ${sky%% *} sky: ' and describes the scene. Save it to $d/alt.txt.
+2. Write alt text: one sentence that starts 'A pop engraving under a $skyword sky: ' and describes the scene. Save it to $d/alt.txt.
 3. Use the generate_image tool once with this prompt: '$style New scene: <your scene>'. Save the image as $d/$slug.png.
 Reply only with the image path."
   timeout -k 10 600 omp -p --no-session --config /tmp/omp-img.yml --auto-approve --max-time 8m --model gemini-3-flash "$ask" > "$d/log.txt" 2>&1
