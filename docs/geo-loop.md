@@ -51,6 +51,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-10-18 | Home page for property management companies only: FAQ (FAQPage), Service schema, fit / not fit, llms.txt | 2026-10-18 |
 | 2026-10-18 | Ahrefs project "Citata" verified; Site Audit weekly, Sundays 15:00 Kyiv | — |
 | 2026-10-19 | Guide /guides/appfolio-vs-buildium (H06-E1, B001): plan prices, minimums, Buildium fees, fit by door count | 2026-10-19 |
+| 2026-10-20 | Guide /guides/best-property-management-software-50-200-doors (H06-E1, B002): monthly cost at 50/100/200 doors, 5 vendors, fees, trust accounting test | 2026-10-20 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 

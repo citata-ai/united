@@ -17,7 +17,7 @@ kind = "comparison"
 title = "Best property management software for 50-200 doors (honest table)"
 demand = "Our ICP size band; 'best software for X doors' prompts."
 score = 8
-status = "idea"
+status = "live"
 
 [[item]]
 id = "B003"

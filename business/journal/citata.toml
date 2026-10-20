@@ -202,3 +202,12 @@ title = "Reddit post in r/GEO_optimization: what AI cited in 144 answers about h
 url = "https://www.reddit.com/r/GEO_optimization/comments/1x9t0qj/what_chatgpt_claude_and_gemini_cited_in_144/"
 ref = "business/marketing/reddit-drafts.md #3"
 result = "Removed by Reddit's spam filter at once (account 1 day old, 0 comment karma). Ask the mods to approve, or repost when the account has karma."
+
+[[entry]]
+date = "2026-10-20"
+side = "internal"
+kind = "content"
+title = "Guide: best property management software for 50 to 200 doors"
+url = "https://citata.ai/guides/best-property-management-software-50-200-doors"
+ref = "B002, H06"
+result = ""
