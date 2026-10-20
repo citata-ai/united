@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { cacheControl, movedPath } from "./worker.js";
+import { cacheControl, movedPath, noTransform } from "./worker.js";
 
 describe("cacheControl", () => {
   it("caches fonts for a year and images for 30 days", () => {
@@ -30,5 +30,15 @@ describe("movedPath", () => {
     );
     expect(movedPath("/guides")).toBeNull();
     expect(movedPath("/section-80")).toBeNull();
+  });
+});
+
+describe("noTransform", () => {
+  it("adds no-transform once", () => {
+    expect(noTransform(null)).toBe("no-transform");
+    expect(noTransform("public, max-age=0, must-revalidate")).toBe(
+      "public, max-age=0, must-revalidate, no-transform",
+    );
+    expect(noTransform("public, no-transform")).toBe("public, no-transform");
   });
 });
