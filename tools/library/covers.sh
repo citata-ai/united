@@ -2,6 +2,7 @@
 # Make style-N covers for the next drafts in publish order (brand/IMAGES.md section 7, docs/content-library.md).
 # launchd runs it every 2 hours. It keeps schedule.toml [covers] buffer_days of publishing ahead and stops on quota.
 # It commits to stage but does not push: publish.sh pushes. The night check looks at each new cover.
+# Test: COVERS_FORCE=1 tools/library/covers.sh makes 1 cover now, buffer or not.
 JOB=covers
 source "$(dirname "$0")/common.sh"
 lock
