@@ -35,7 +35,8 @@ kind = "data-page"
 title = "Section 8 inspection checklist for landlords (HUD NSPIRE, 2026)"
 demand = "NSPIRE replaced HQS for vouchers; landlords ask what fails an inspection."
 score = 7
-status = "idea"
+status = "dropped"
+note = "2026-10-21 tick: the library already has landing/src/content/library/nspire-v-inspection-checklist-landlords.md (draft, visible = false). Publish that draft instead of a second page."
 
 [[item]]
 id = "B005"
@@ -134,7 +135,7 @@ kind = "free-tool"
 title = "Rent vs sell calculator for landlords"
 demand = "All 3 direct competitors ship it for clients (playbook move 5)."
 score = 7
-status = "idea"
+status = "staged"
 
 [[item]]
 id = "B016"

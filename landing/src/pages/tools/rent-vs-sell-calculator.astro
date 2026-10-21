@@ -1,0 +1,150 @@
+---
+// H02 tool 3 (backlog B015). The math is pre-tax and lives in src/lib/calculators.ts (tested).
+// Tax facts: only rules read on the IRS pages on 2026-10-21 (Publication 523, Topic 409).
+// The example inputs are an example, not typical US levels: the page claims no typical level.
+import RentSellCalculator from "../../components/RentSellCalculator.astro";
+import Tool from "../../layouts/Tool.astro";
+import {
+  breakEvenAppreciation,
+  computeRentSell,
+  rentSellExample as ex,
+  usd,
+} from "../../lib/calculators.ts";
+import { rentSellPublished } from "../../data/tools.ts";
+
+const r = computeRentSell(ex);
+const be = breakEvenAppreciation(ex);
+const ten = computeRentSell({ ...ex, years: 10 });
+const flat = computeRentSell({ ...ex, appreciationPercent: 0 });
+const sources = [
+  {
+    label: "IRS: Publication 523, Selling Your Home (exclusion, 2-of-5-year test, depreciation, nonqualified use)",
+    url: "https://www.irs.gov/publications/p523",
+  },
+  {
+    label: "IRS: Topic no. 409, Capital gains and losses (rates, unrecaptured section 1250 gain)",
+    url: "https://www.irs.gov/taxtopics/tc409",
+  },
+];
+const faq = [
+  {
+    q: "Is it better to rent out my house or sell it?",
+    a: "Compare the cash you get if you sell now, invested, with the cash from a later sale plus the rent cash flow. A low mortgage rate and steady home price growth favor renting. A negative cash flow, a high cost to sell later and a lost tax exclusion favor selling now.",
+  },
+  {
+    q: "Do I pay tax if I sell my house after I rent it out?",
+    a: "Maybe. You can exclude up to $250,000 of gain ($500,000 for a married couple filing jointly) if you owned the home and lived in it for at least 24 months of the 5 years before the sale (IRS Publication 523). You cannot exclude the gain equal to depreciation after May 6, 1997.",
+  },
+  {
+    q: "How long can I rent out my old home and keep the $250,000 exclusion?",
+    a: "If you lived in the home for at least 2 years, you must sell within about 3 years after you move out. After that, you no longer meet the 24-of-60-month use test in IRS Publication 523.",
+  },
+  {
+    q: "What tax rate applies to depreciation when I sell a rental?",
+    a: "The part of the gain from depreciation (unrecaptured section 1250 gain) is taxed at a maximum 25% rate (IRS Topic 409). Most other long-term capital gain is taxed at no more than 15% for most people, and 20% above set income levels.",
+  },
+  {
+    q: "Why does renting win in the example even with a small negative cash flow?",
+    a: `The tenant pays down the loan and the home grows in value on the full price, not only on your equity. In the example, the balance falls from ${usd(ex.mortgageBalance)} to ${usd(r.futureMortgageBalance)} in ${ex.years} years, while the cash flow is only ${usd(r.firstYearMonthlyCashFlow)} a month in year 1.`,
+  },
+  {
+    q: "What does this calculator leave out?",
+    a: "Income tax on rent, capital gains tax, depreciation recapture, the home sale exclusion, big repairs and eviction costs. Ask a tax professional before you decide. The tool shows the pre-tax result.",
+  },
+];
+---
+
+<Tool
+  title="Rent vs Sell Calculator for Your House (Free, 2026) — Citata.ai"
+  description="Free rent vs sell calculator: compare selling your house now with renting it out and selling later. Cash flow, loan paydown, break-even growth, IRS tax rules."
+  headline="Rent vs Sell Calculator"
+  dek="Should you rent out your house or sell it now? Compare both paths in dollars."
+  published={rentSellPublished}
+  updated={rentSellPublished}
+  answer={`Renting out your house beats selling now when the later sale plus the rent cash flow is worth more than the cash from a sale today, invested. In our example (${usd(ex.homeValue)} home, ${ex.mortgageRate}% mortgage, ${usd(ex.rent)} rent), renting for ${ex.years} years comes out ${usd(r.difference)} ahead before tax, and the paths are equal at ${be}% home price growth a year. Tax can change the answer: you keep the up-to-$250,000 home sale exclusion ($500,000 for joint filers) only if you lived in the home for 24 months of the 5 years before the sale (IRS Publication 523).`}
+  note="Pre-tax estimate. Ask a tax professional before you sell."
+  faq={faq}
+  sources={sources}
+  appName="Rent vs Sell Calculator"
+  appDescription="Compares the pre-tax wealth of selling a house now (sale cash invested) with renting it out for a set number of years and then selling (later sale cash plus monthly cash flow, invested). Shows year-1 cash flow, mortgage paydown and the home price growth at which both paths are equal."
+>
+  <RentSellCalculator slot="tool" />
+
+  <Fragment slot="example">
+    <p>
+      An owner moves out of a home worth {usd(ex.homeValue)}. The mortgage balance is
+      {usd(ex.mortgageBalance)} at {ex.mortgageRate}%, with a payment of {usd(ex.monthlyPayment)} a
+      month for principal and interest. The home can rent for {usd(ex.rent)} a month. Tax, insurance
+      and upkeep cost {usd(ex.monthlyCosts)} a month. A manager charges {ex.managementPercent}% of rent,
+      and the home is empty {ex.vacancyPercent}% of the year. A sale costs {ex.sellCostPercent}% of the
+      price. These are example inputs, not US averages.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>How we get it</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cash if you sell now</td><td>{usd(ex.homeValue)} × {100 - ex.sellCostPercent}% − {usd(ex.mortgageBalance)}</td><td>{usd(r.sellNowCash)}</td></tr>
+        <tr><td>Sell now, after {ex.years} years</td><td>{usd(r.sellNowCash)} invested at {ex.investReturnPercent}% a year</td><td>{usd(r.sellNowFuture)}</td></tr>
+        <tr><td>Cash flow, month 1</td><td>{usd(ex.rent)} × {100 - ex.vacancyPercent}% × {100 - ex.managementPercent}% − {usd(ex.monthlyCosts)} − {usd(ex.monthlyPayment)}</td><td>{usd(r.firstYearMonthlyCashFlow)}</td></tr>
+        <tr><td>Home value in year {ex.years}</td><td>{usd(ex.homeValue)} × {1 + ex.appreciationPercent / 100}<sup>{ex.years}</sup></td><td>{usd(r.futureHomeValue)}</td></tr>
+        <tr><td>Cash from the later sale</td><td>{usd(r.futureHomeValue)} × {100 - ex.sellCostPercent}% − {usd(r.futureMortgageBalance)} balance</td><td>{usd(r.keepSaleCash)}</td></tr>
+        <tr><td>Cash flow, {ex.years * 12} months, with return</td><td>Rent and costs grow {ex.rentGrowthPercent}% a year</td><td>{usd(r.cashFlowFuture)}</td></tr>
+        <tr><td><strong>Rent, then sell</strong></td><td>Sale cash + cash flow</td><td><strong>{usd(r.keepTotal)}</strong></td></tr>
+      </tbody>
+    </table>
+    <p>
+      Result: renting for {ex.years} years ends {usd(r.difference)} ahead of a sale today, before tax.
+      The cash flow is close to zero. The gain comes from {usd(ex.mortgageBalance - r.futureMortgageBalance)}
+      of loan paydown and {usd(r.futureHomeValue - ex.homeValue)} of price growth. With 0% price
+      growth, {flat.difference >= 0 ? `renting still wins by ${usd(flat.difference)}` : `selling now wins by ${usd(-flat.difference)}`}. Over 10 years, the gap grows to {usd(ten.difference)}.
+    </p>
+    <p>
+      The example leaves tax out on purpose, and tax can flip it. This owner rents for {ex.years} years.
+      So at the sale, the owner did not live in the home for 24 of the last 60 months. The owner loses
+      the home sale exclusion in IRS Publication 523. A sale within about 3 years of the move-out keeps it.
+    </p>
+  </Fragment>
+
+  <h2>When does renting out your house beat selling it?</h2>
+  <p>Renting out your house beats selling when most of these are true:</p>
+  <ul>
+    <li><strong>Low mortgage rate.</strong> A cheap loan makes the paydown and the price growth on the full home value worth more than cash in an account.</li>
+    <li><strong>Rent covers the costs.</strong> Use the year-1 cash flow above. A large negative number means you pay each month to keep the home.</li>
+    <li><strong>Steady price growth.</strong> The break-even line above shows the growth rate the plan needs.</li>
+    <li><strong>Time to manage.</strong> Count your hours, or put a manager's fee in the tool.</li>
+  </ul>
+  <p>
+    Selling now is often better when the cash flow is negative, the loan rate is high, or you need
+    the cash. A sale also ends the work of a landlord.
+  </p>
+
+  <h2>Tax rules to check before you decide</h2>
+  <p>The tool is pre-tax. These IRS rules can change the result:</p>
+  <table>
+    <thead>
+      <tr><th>Rule</th><th>What it says</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Home sale exclusion</td><td>Exclude up to $250,000 of gain, or $500,000 for a married couple filing jointly</td><td>IRS Publication 523</td></tr>
+      <tr><td>Ownership and use test</td><td>You owned the home and lived in it for at least 24 months of the 5 years before the sale</td><td>IRS Publication 523</td></tr>
+      <tr><td>Depreciation</td><td>You cannot exclude the gain equal to depreciation allowed or allowable after May 6, 1997</td><td>IRS Publication 523</td></tr>
+      <tr><td>Nonqualified use</td><td>With some exceptions, gain from periods after 2008 when the home was not your main home cannot be excluded</td><td>IRS Publication 523</td></tr>
+      <tr><td>Depreciation rate</td><td>Unrecaptured section 1250 gain is taxed at a maximum 25% rate</td><td>IRS Topic 409</td></tr>
+      <tr><td>Long-term gain</td><td>Hold more than 1 year. Most net capital gain is taxed at no more than 15% for most people; 20% above set income levels</td><td>IRS Topic 409</td></tr>
+    </tbody>
+  </table>
+  <p>
+    Publication 523 has exceptions and worksheets for each rule. Read it, or ask a tax professional,
+    before you sell.
+  </p>
+
+  <h2>Who should manage the home if you rent it out?</h2>
+  <p>
+    A property manager costs a share of the rent and adds leasing and renewal fees. Put the full fee
+    list into the <a href="/tools/property-management-fee-calculator">property management fee calculator</a>,
+    then put the effective rate into the management fee field above. Plan to rent to a voucher holder?
+    The <a href="/tools/section-8-rent-calculator">Section 8 rent calculator</a> shows the housing
+    authority payment and the tenant share.
+  </p>
+</Tool>
