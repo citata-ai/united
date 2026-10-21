@@ -3,10 +3,10 @@ title: "California Security Deposit Law: Cap, 21 Days — Citata.ai"
 description: "California caps most deposits at 1 month's rent since 2024-07-01. Landlords return the rest within 21 days with an itemized list, receipts and photos."
 headline: "California Security Deposit Law for Landlords"
 dek: "Civil Code 1950.5, read on 2026-10-19: the cap, the 21-day rule, photos and penalties."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-21"
+updated: "2026-10-21"
 answer: "Under California Civil Code 1950.5, most landlords may take a deposit of no more than 1 month's rent, plus the first month's rent. A small landlord (a natural person or an all-person LLC with no more than 2 properties and 4 units) may take up to 2 months. Within 21 calendar days after the tenant moves out, the landlord must send an itemized statement and return the rest. A bad faith retention can cost up to twice the deposit in statutory damages, plus actual damages."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1
