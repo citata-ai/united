@@ -9,3 +9,4 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 | 2026-10-19 | /guides/section-8-rent-limits + 50 metro pages (moved from /section-8, 301) | H01 | HUD FY2027 FMR 0-4BR, change vs FY2026, PHA payment-standard links (27 of 50 verified) | 2026-10-19 |
 | 2026-10-19 | /guides/appfolio-vs-buildium | H06 | AppFolio vs Buildium: plan prices, unit minimums, Buildium add-on fees, fit by door count; both pricing pages read 2026-10-19 | 2026-10-19 |
 | 2026-10-20 | /guides/best-property-management-software-50-200-doors | H06 | Monthly cost at 50, 100, 200 doors for Yardi Breeze, AppFolio Core, DoorLoop One, Rentvine, Buildium; 5 pricing pages read 2026-10-20 | 2026-10-20 |
+| 2026-10-21 | /tools/rent-vs-sell-calculator | H02 | Rent vs sell calculator: sell now vs rent then sell, pre-tax, break-even home price growth; IRS Pub 523 and Topic 409 read 2026-10-21 | |

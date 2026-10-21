@@ -52,6 +52,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-10-18 | Ahrefs project "Citata" verified; Site Audit weekly, Sundays 15:00 Kyiv | — |
 | 2026-10-19 | Guide /guides/appfolio-vs-buildium (H06-E1, B001): plan prices, minimums, Buildium fees, fit by door count | 2026-10-19 |
 | 2026-10-20 | Guide /guides/best-property-management-software-50-200-doors (H06-E1, B002): monthly cost at 50/100/200 doors, 5 vendors, fees, trust accounting test | 2026-10-20 |
+| 2026-10-21 | Tool /tools/rent-vs-sell-calculator (H02-E1, B015): sell now vs rent then sell, pre-tax, break-even growth, IRS Pub 523 / Topic 409 rules | — |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 

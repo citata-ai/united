@@ -255,8 +255,8 @@ export function fortyPercentText(r: VoucherResult, firstLease: boolean): string 
 // ---------------------------------------------------------------------------
 
 export const usd = (n: number): string =>
-  "$" +
-  n.toLocaleString("en-US", {
+  (n < 0 ? "-$" : "$") +
+  Math.abs(n).toLocaleString("en-US", {
     minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
     maximumFractionDigits: 2,
   });
@@ -284,4 +284,147 @@ export const voucherExample: VoucherInput = {
   minimumRent: 50,
   paymentStandard: 1600,
   firstLease: true,
+};
+
+// ---------------------------------------------------------------------------
+// Rent vs sell calculator
+// ---------------------------------------------------------------------------
+
+export interface RentSellInput {
+  /** Market value of the home today, USD. */
+  homeValue: number;
+  /** Mortgage balance today, USD. */
+  mortgageBalance: number;
+  /** Mortgage interest rate, percent a year. */
+  mortgageRate: number;
+  /** Monthly principal and interest payment, USD. Taxes and insurance go in monthlyCosts. */
+  monthlyPayment: number;
+  /** Monthly rent, USD. */
+  rent: number;
+  /** Share of the year the home is empty, percent. */
+  vacancyPercent: number;
+  /** Management fee, percent of rent collected. 0 if you self-manage. */
+  managementPercent: number;
+  /** Property tax, insurance, HOA, repairs and upkeep, USD a month. */
+  monthlyCosts: number;
+  /** Agent commission and closing costs at sale, percent of the sale price. */
+  sellCostPercent: number;
+  /** Home price growth, percent a year. */
+  appreciationPercent: number;
+  /** Growth of rent and costs, percent a year. Steps once a year. */
+  rentGrowthPercent: number;
+  /** What the cash earns if you sell now (or what each month's cash flow earns), percent a year. */
+  investReturnPercent: number;
+  /** Years you keep the home and rent it out before you sell. */
+  years: number;
+}
+
+export interface RentSellResult {
+  /** Cash in hand if you sell today: value minus sale costs minus mortgage balance. */
+  sellNowCash: number;
+  /** sellNowCash after it grows at investReturnPercent for `years`. */
+  sellNowFuture: number;
+  /** Monthly cash flow in the first year: rent collected minus fee, costs and mortgage payment. */
+  firstYearMonthlyCashFlow: number;
+  /** Sum of all monthly cash flows, no growth. */
+  cashFlowTotal: number;
+  /** Cash flows, each grown at investReturnPercent to the end. */
+  cashFlowFuture: number;
+  futureHomeValue: number;
+  futureMortgageBalance: number;
+  /** Cash at the later sale: future value minus sale costs minus balance. */
+  keepSaleCash: number;
+  /** keepSaleCash + cashFlowFuture. */
+  keepTotal: number;
+  /** keepTotal - sellNowFuture. Above 0: keeping and renting comes out ahead. */
+  difference: number;
+}
+
+/** Pre-tax wealth at the end of `years` for "sell now" and "rent, then sell". */
+export function computeRentSell(input: RentSellInput): RentSellResult {
+  const months = Math.round(pos(input.years) * 12);
+  const r = pos(input.investReturnPercent) / 100 / 12;
+  const mRate = pos(input.mortgageRate) / 100 / 12;
+  const growth = 1 + pos(input.rentGrowthPercent) / 100;
+  const collectShare = 1 - Math.min(pos(input.vacancyPercent), 100) / 100;
+  const keepShare = 1 - Math.min(pos(input.managementPercent), 100) / 100;
+  const sellShare = 1 - Math.min(pos(input.sellCostPercent), 100) / 100;
+  const appreciation = Number.isFinite(input.appreciationPercent) ? input.appreciationPercent : 0;
+
+  const sellNowCash = pos(input.homeValue) * sellShare - pos(input.mortgageBalance);
+  const sellNowFuture = sellNowCash * (1 + r) ** months;
+
+  let balance = pos(input.mortgageBalance);
+  let cashFlowTotal = 0;
+  let cashFlowFuture = 0;
+  let firstYearMonthlyCashFlow = 0;
+  for (let m = 0; m < months; m++) {
+    const step = growth ** Math.floor(m / 12);
+    let payment = 0;
+    if (balance > 0) {
+      const interest = balance * mRate;
+      payment = Math.min(pos(input.monthlyPayment), balance + interest);
+      balance = Math.max(0, balance + interest - payment);
+    }
+    const flow =
+      pos(input.rent) * step * collectShare * keepShare - pos(input.monthlyCosts) * step - payment;
+    if (m === 0) firstYearMonthlyCashFlow = flow;
+    cashFlowTotal += flow;
+    cashFlowFuture += flow * (1 + r) ** (months - m - 1);
+  }
+
+  const futureHomeValue = Math.max(
+    0,
+    pos(input.homeValue) * (1 + appreciation / 100) ** (months / 12),
+  );
+  const keepSaleCash = futureHomeValue * sellShare - balance;
+  const keepTotal = keepSaleCash + cashFlowFuture;
+  return {
+    sellNowCash: Math.round(sellNowCash),
+    sellNowFuture: Math.round(sellNowFuture),
+    firstYearMonthlyCashFlow: Math.round(firstYearMonthlyCashFlow),
+    cashFlowTotal: Math.round(cashFlowTotal),
+    cashFlowFuture: Math.round(cashFlowFuture),
+    futureHomeValue: Math.round(futureHomeValue),
+    futureMortgageBalance: Math.round(balance),
+    keepSaleCash: Math.round(keepSaleCash),
+    keepTotal: Math.round(keepTotal),
+    difference: Math.round(keepTotal) - Math.round(sellNowFuture),
+  };
+}
+
+/**
+ * Home price growth (percent a year, 1 decimal) at which both paths end equal, or null if no
+ * rate from -10% to 30% a year does it.
+ */
+export function breakEvenAppreciation(input: RentSellInput): number | null {
+  const diff = (a: number) => {
+    const x = computeRentSell({ ...input, appreciationPercent: a });
+    return x.keepTotal - x.sellNowFuture;
+  };
+  let lo = -10;
+  let hi = 30;
+  if (diff(lo) > 0 || diff(hi) < 0) return null;
+  for (let i = 0; i < 50; i++) {
+    const mid = (lo + hi) / 2;
+    if (diff(mid) < 0) lo = mid;
+    else hi = mid;
+  }
+  return Math.round(hi * 10) / 10;
+}
+
+export const rentSellExample: RentSellInput = {
+  homeValue: 400_000,
+  mortgageBalance: 250_000,
+  mortgageRate: 4,
+  monthlyPayment: 1_400,
+  rent: 2_400,
+  vacancyPercent: 5,
+  managementPercent: 9,
+  monthlyCosts: 700,
+  sellCostPercent: 7,
+  appreciationPercent: 3,
+  rentGrowthPercent: 3,
+  investReturnPercent: 6,
+  years: 5,
 };
