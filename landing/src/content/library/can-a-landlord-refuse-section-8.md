@@ -3,10 +3,10 @@ title: "Can a Landlord Refuse Section 8? What the Law Says — Citata.ai"
 description: "No federal law makes most landlords accept vouchers, but 19 states plus DC and Guam ban source-of-income bias. Check your state, your city and your ads."
 headline: "Can a Landlord Refuse a Section 8 Voucher?"
 dek: "Federal law says yes for most owners. Your state or city may say no."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-21"
+updated: "2026-10-21"
 answer: "Under federal law, most private landlords can choose not to take part in the Housing Choice Voucher program. But many states and cities ban source-of-income discrimination, and in those places a refusal because a renter uses a voucher is illegal. PRRAC's March 2026 list shows 19 states plus DC and Guam with laws that protect voucher holders, and many more local laws. Check your state and city law before you write a listing or turn down an applicant."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "guide"
 priority: 1
