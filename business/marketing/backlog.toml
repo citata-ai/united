@@ -135,7 +135,7 @@ kind = "free-tool"
 title = "Rent vs sell calculator for landlords"
 demand = "All 3 direct competitors ship it for clients (playbook move 5)."
 score = 7
-status = "building"
+status = "staged"
 
 [[item]]
 id = "B016"
