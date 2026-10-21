@@ -3,10 +3,10 @@ title: "Service and Assistance Animal Requests: A Landlord Guide — Citata.ai"
 description: "Under the Fair Housing Act, a landlord must allow a needed assistance animal, may not charge a pet fee for it, and may ask for proof only if the need is unclear."
 headline: "How to Handle Service and Assistance Animal Requests"
 dek: "What the law text says now that HUD withdrew its 2020 animal guidance, with a 6-step process."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-21"
+updated: "2026-10-21"
 answer: "Treat a service or emotional support animal request as a request for a reasonable accommodation under the Fair Housing Act, not as a pet request. If the disability or the need is not obvious, you may ask for reliable information about it, but not for a diagnosis or medical records. You may not charge a pet fee, pet rent or a pet deposit for the animal. You may deny a request only on narrow grounds, such as a direct threat or an undue burden, and you should answer promptly."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 1

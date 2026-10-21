@@ -3,10 +3,10 @@ title: "California Eviction Process: Notices to Lockout — Citata.ai"
 description: "A California eviction starts with a 3-day notice, then an unlawful detainer case in superior court. Tenants get 10 court days to answer; sheriff gives 5 days."
 headline: "California Eviction Process for Landlords"
 dek: "Each step from notice to sheriff, with the statute section and the deadline for each."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-21"
+updated: "2026-10-21"
 answer: "A California eviction starts with a written notice, most often a 3-day notice to pay rent or quit, which excludes weekends and court holidays (Code of Civil Procedure 1161). If the tenant does not pay or move, the landlord files an unlawful detainer case in the superior court of the county. The tenant has 10 court days to respond (CCP 1167). After a judgment, only the sheriff removes the tenant, 5 days after the sheriff serves the writ (CCP 715.020)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1
