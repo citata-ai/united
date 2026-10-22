@@ -22,6 +22,7 @@ import {
   usd,
   type Metro,
 } from "../../../data/section8.ts";
+import { cuts } from "../../../data/payment-standard-cuts.ts";
 
 export const getStaticPaths = (() =>
   metros.map((m) => ({ params: { metro: `${m.slug}-fair-market-rent-2027` }, props: { m } }))) satisfies GetStaticPaths;
@@ -36,6 +37,7 @@ const path = metroPath(m);
 const pageUrl = `https://citata.ai${path}`;
 const counties = m.counties.join("; ");
 const twoChange = changeWords(s2, two26, ch[2] ?? 0);
+const localCuts = cuts.filter((c) => c.metroSlug === m.slug);
 
 const fm = {
   title: `${m.short} Section 8 Rent Limits 2027 (Fair Market Rent) — Citata.ai`,
@@ -176,6 +178,15 @@ const dataset = datasetSchema({
       </p>
     ) : (
       <p>Several PHAs work in this FMR area. Check your housing authority for its current payment standards.</p>
+    )
+  }
+  {
+    localCuts.length > 0 && (
+      <p>
+        2025–2026 funding changes in this area: {localCuts.map((c) => `${c.pha}: ${c.action}`).join(" ")} See the{" "}
+        <a href="/guides/section-8-rent-limits/payment-standard-cuts-2026">payment standard cuts tracker</a> for dates
+        and sources.
+      </p>
     )
   }
   <p>
