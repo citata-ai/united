@@ -10,3 +10,4 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 | 2026-10-19 | /guides/appfolio-vs-buildium | H06 | AppFolio vs Buildium: plan prices, unit minimums, Buildium add-on fees, fit by door count; both pricing pages read 2026-10-19 | 2026-10-19 |
 | 2026-10-20 | /guides/best-property-management-software-50-200-doors | H06 | Monthly cost at 50, 100, 200 doors for Yardi Breeze, AppFolio Core, DoorLoop One, Rentvine, Buildium; 5 pricing pages read 2026-10-20 | 2026-10-20 |
 | 2026-10-21 | /tools/rent-vs-sell-calculator | H02 | Rent vs sell calculator: sell now vs rent then sell, pre-tax, break-even home price growth; IRS Pub 523 and Topic 409 read 2026-10-21 | 2026-10-21 |
+| 2026-10-22 | /guides/section-8-rent-limits/payment-standard-cuts-2026 | H01 | Tracker: 6 payment standard cuts, 1 proposal, 15 voucher freezes (22 PHAs); HUD 2026 Budget Management Letter and 24 CFR 982.505 timing; 22 sources read 2026-10-22 | 2026-10-22 |

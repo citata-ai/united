@@ -163,8 +163,8 @@ status = "running"
 id = "H01-E1"
 hypothesis = "H01"
 start = "2026-10-19"
-actions = ["Pull HUD FY2027 FMR data for the top 50 FMR areas (HUD 2024 population rank)", "Build one page per metro plus a hub page (staged 2026-10-19, 51 pages; 30 values cross-checked vs HUD rows)", "Ship to stage; publish after owner check"]
-urls = ["https://citata.ai/guides/section-8-rent-limits", "https://citata.ai/guides/section-8-rent-limits/chicago-fair-market-rent-2027", "https://citata.ai/guides/section-8-rent-limits/houston-fair-market-rent-2027"]
+actions = ["Pull HUD FY2027 FMR data for the top 50 FMR areas (HUD 2024 population rank)", "Build one page per metro plus a hub page (staged 2026-10-19, 51 pages; 30 values cross-checked vs HUD rows)", "Ship to stage; publish after owner check", "B019 (2026-10-22): payment standard cuts tracker, 22 housing authorities, one source per row, HUD 2026 Budget Management Letter; linked from the hub, /guides and matching metro pages"]
+urls = ["https://citata.ai/guides/section-8-rent-limits", "https://citata.ai/guides/section-8-rent-limits/payment-standard-cuts-2026", "https://citata.ai/guides/section-8-rent-limits/chicago-fair-market-rent-2027", "https://citata.ai/guides/section-8-rent-limits/houston-fair-market-rent-2027"]
 status = "running"
 
 [[experiment]]

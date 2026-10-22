@@ -173,7 +173,7 @@ kind = "data-page"
 title = "Section 8 payment standard cuts 2026: tracker by housing authority (% of FMR, start date, new vs current tenants)"
 demand = "HUD 2026 Budget Management Letter tells PHAs to cut payment standards and stop new vouchers. Cuts found: Northampton MA 100% to 90% (2026-01-01), Washington County OR ~96% (new moves 2026-07-01), HACLA 120% to 110%, Columbus 110% to 100%, Contra Costa $11.4M shortfall. Our 50 metro pages show FMR, not what the PHA pays. No competitor has this."
 score = 9
-status = "building"
+status = "live"
 note = "Sub-page of /guides/section-8-rent-limits. Each row needs the PHA notice or board minutes as source. Start with the 50 metros we cover."
 
 [[item]]
