@@ -72,6 +72,10 @@ export const src = {
     label: "eCFR: 24 CFR 982.305, PHA approval of assisted tenancy",
     url: "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-IX/part-982/subpart-G/section-982.305",
   },
+  cfr505: {
+    label: "eCFR: 24 CFR 982.505, how to calculate housing assistance payment",
+    url: "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-IX/part-982/subpart-K/section-982.505",
+  },
   cfr507: {
     label: "eCFR: 24 CFR 982.507, rent to owner: reasonable rent",
     url: "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-IX/part-982/subpart-K/section-982.507",

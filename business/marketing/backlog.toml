@@ -163,3 +163,75 @@ title = "How to choose a property manager: owner decision checklist with fee tab
 demand = "Playbook moves 1 and 3: the top page type at all 3 competitors' clients."
 score = 7
 status = "idea"
+
+# --- scout 2026-10-22: evidence in business/marketing/competitors/2026-10-22-scout.md ---
+
+[[item]]
+id = "B019"
+hypothesis = "H01"
+kind = "data-page"
+title = "Section 8 payment standard cuts 2026: tracker by housing authority (% of FMR, start date, new vs current tenants)"
+demand = "HUD 2026 Budget Management Letter tells PHAs to cut payment standards and stop new vouchers. Cuts found: Northampton MA 100% to 90% (2026-01-01), Washington County OR ~96% (new moves 2026-07-01), HACLA 120% to 110%, Columbus 110% to 100%, Contra Costa $11.4M shortfall. Our 50 metro pages show FMR, not what the PHA pays. No competitor has this."
+score = 9
+status = "live"
+note = "Sub-page of /guides/section-8-rent-limits. Each row needs the PHA notice or board minutes as source. Start with the 50 metros we cover."
+
+[[item]]
+id = "B020"
+hypothesis = "H01"
+kind = "data-page"
+title = "Will Section 8 keep paying landlords in 2027? FY2027 funding status, shortfall rules, what a PHA may do"
+demand = "FY2027 runs on a continuing resolution since late July 2026; the FY2027 request cuts HUD ~13%. Landlord fear of HAP stops. Pairs with B019."
+score = 7
+status = "idea"
+note = "Read congress.gov and HUD PIH notices first; search summaries only so far. Date every fact; refresh when the bill passes."
+
+[[item]]
+id = "B021"
+hypothesis = "H01"
+kind = "refresh"
+title = "Publish the library draft emergency-housing-vouchers-landlords with EHV end-of-funding dates"
+demand = "NYCHA: EHV funding ends late 2026. Owners of EHV units ask what happens next."
+score = 6
+status = "idea"
+note = "Draft exists: landing/src/content/library/emergency-housing-vouchers-landlords.md. Add HUD and 3 PHA notices, then publish via the library flow."
+
+[[item]]
+id = "B022"
+hypothesis = "H06"
+kind = "comparison"
+title = "Switching property management software: onboarding fee, timeline and data export by vendor (AppFolio, Buildium, Rentvine, DoorLoop, Rent Manager, Yardi Breeze)"
+demand = "PMW shipped 3 switching posts in Sep-Oct 2026 (Propertyware, Rent Manager, DoorLoop). Rentvine states 45 days; Yardi Breeze no conversion fee; AppFolio and Buildium publish no fee. No one has the full table."
+score = 7
+status = "idea"
+note = "Link the library drafts propertyware-alternatives, rent-manager-alternatives, doorloop-alternatives. Mark 'not published' where a vendor gives no number."
+
+[[item]]
+id = "B023"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Owner lead value calculator for property managers (doors, fee, churn -> lifetime value and max cost per lead)"
+demand = "Our buyer's own question. Leads per month fell 28.6 to 15.7 (2023-2025, RentScale via Blanket Homes); churn 20-25% a year (NARPM, secondary). Goodjuju posted lead conversion 2026-10-20; Rentvine and PMW have LTV posts, no tool."
+score = 8
+status = "idea"
+note = "Find the NARPM benchmark primary before citing churn. Default inputs from our fee calculator data."
+
+[[item]]
+id = "B024"
+hypothesis = "H03"
+kind = "original-research"
+title = "AI-readiness audit of the property managers AI names: llms.txt, AI bot rules in robots.txt, schema, fee page (from H03 index)"
+demand = "pm-how prompts: 0 of 24 answers name us; AI cites developers.google.com and support.google.com. No public data on PM sites. Citant.ai posted 'How LLMs decide what to cite' 2026-10-20; PMW sells llm-summary tags."
+score = 8
+status = "idea"
+note = "Crawl only public robots.txt, llms.txt and home page. Publish counts and a CSV, not a shame list: name no company in a new way without Tao."
+
+[[item]]
+id = "B025"
+hypothesis = "H07"
+kind = "refresh"
+title = "Refresh /guides/geo-agencies-for-property-management with our measured AI answers (36 pm-geo answers: who is named, which domains are cited)"
+demand = "Gap 2 of the 2026-10-19 report: 0 of 36. AI cites clearleaddigital.com 16, gogoodjuju.com 15, propertymanagerwebsites.com 12, firstpagesage.com 9, webtonic.io 8."
+score = 7
+status = "idea"
+note = "Use the next measure run data (2026-10-26) for fresh counts."
