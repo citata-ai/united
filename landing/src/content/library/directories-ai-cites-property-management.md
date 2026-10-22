@@ -3,10 +3,10 @@ title: "Which Directories AI Cites for Property Managers (2026 Data) — Citata.
 description: "In 150 AI answers on the best property manager in 50 US cities, Expertise.com was a source in 93, Yelp in 50 and iPropertyManagement in 50. Full table inside."
 headline: "Which Directories AI Cites for Property Managers"
 dek: "We asked 3 AI engines about 50 cities and counted every directory they linked."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-22"
+updated: "2026-10-22"
 answer: "In our test of 150 AI answers (50 US cities, ChatGPT, Claude and Gemini engines, 2026-10-19), Expertise.com was a source in 93 answers, Yelp in 50 and iPropertyManagement in 50. ThreeBestRated, Birdeye, PropertyManagement.com, BBB and Bestinhood follow. Each engine has its own favorites, so fix your profile on Expertise.com, Yelp and Google Business Profile first, then on the sites your target engine cites."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "data"
 priority: 1
