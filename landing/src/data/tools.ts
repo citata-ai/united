@@ -21,9 +21,19 @@ export const tools = [
     dek: "Sell your house now or rent it out first? Cash flow, loan paydown, break-even growth.",
     chip: "bg-sun",
   },
+  {
+    href: "/tools/owner-lead-value-calculator",
+    name: "Owner Lead Value Calculator",
+    short: "Owner lead value calculator",
+    dek: "For property managers: lifetime value of an owner, max cost per lead, leads to replace churn.",
+    chip: "bg-mint",
+  },
 ];
 
 export const toolsPublished = "2026-10-19";
 
 /** Rent vs sell calculator (backlog B015), later than the first two tools. */
 export const rentSellPublished = "2026-10-21";
+
+/** Owner lead value calculator (backlog B023). */
+export const leadValuePublished = "2026-10-23";

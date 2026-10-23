@@ -428,3 +428,109 @@ export const rentSellExample: RentSellInput = {
   investReturnPercent: 6,
   years: 5,
 };
+
+// ---------------------------------------------------------------------------
+// Owner lead value calculator (backlog B023): what one owner lead is worth to a property manager
+// ---------------------------------------------------------------------------
+
+export interface LeadValueInput {
+  /** Doors under management today. */
+  doors: number;
+  /** Average monthly rent per door, USD. */
+  rent: number;
+  /** Management fee, percent of rent. */
+  managementPercent: number;
+  /** Other fee revenue per door per year (leasing, renewal, other), USD. */
+  otherRevenuePerDoor: number;
+  /** Average doors per owner client. */
+  doorsPerOwner: number;
+  /** Doors lost per year, percent of doors at the start of the year. */
+  churnPercent: number;
+  /** Gross margin, percent of revenue kept after the direct cost to serve a door. */
+  marginPercent: number;
+  /** Percent of owner leads that sign a management agreement. */
+  closePercent: number;
+  /** Lifetime gross profit per dollar you spend to win the owner (for example 3 for 3:1). */
+  targetRatio: number;
+}
+
+export interface LeadValueResult {
+  revenuePerDoorYear: number;
+  /** Average years an owner stays: 1 / churn, max 20. */
+  lifetimeYears: number;
+  lifetimeRevenue: number;
+  lifetimeProfit: number;
+  /** Most you can pay to win one owner at the target ratio. */
+  maxCostPerOwner: number;
+  /** Most you can pay for one owner lead at the target ratio. */
+  maxCostPerLead: number;
+  /** Lifetime gross profit of one lead: max cost per lead at a 1:1 ratio. */
+  breakEvenCostPerLead: number;
+  doorsLostPerYear: number;
+  /** Owner leads a month you need only to replace the doors you lose. */
+  leadsToReplaceChurn: number;
+}
+
+/** Cap on owner lifetime, years, so a churn near 0 does not give an endless value. */
+export const maxLifetimeYears = 20;
+
+export function computeLeadValue(input: LeadValueInput): LeadValueResult {
+  const doors = pos(input.doors);
+  const churn = pos(input.churnPercent) / 100;
+  const close = pos(input.closePercent) / 100;
+  const ratio = pos(input.targetRatio);
+  const doorsPerOwner = pos(input.doorsPerOwner);
+  const revenuePerDoorYear =
+    (pos(input.rent) * 12 * pos(input.managementPercent)) / 100 + pos(input.otherRevenuePerDoor);
+  const lifetimeYears = churn > 0 ? Math.min(1 / churn, maxLifetimeYears) : maxLifetimeYears;
+  const lifetimeRevenue = revenuePerDoorYear * doorsPerOwner * lifetimeYears;
+  const lifetimeProfit = (lifetimeRevenue * pos(input.marginPercent)) / 100;
+  const maxCostPerOwner = ratio > 0 ? lifetimeProfit / ratio : 0;
+  const doorsLostPerYear = doors * churn;
+  const leadsToReplaceChurn =
+    doorsPerOwner > 0 && close > 0 ? doorsLostPerYear / doorsPerOwner / close / 12 : 0;
+  return {
+    revenuePerDoorYear: cents(revenuePerDoorYear),
+    lifetimeYears: Math.round(lifetimeYears * 10) / 10,
+    lifetimeRevenue: Math.round(lifetimeRevenue),
+    lifetimeProfit: Math.round(lifetimeProfit),
+    maxCostPerOwner: Math.round(maxCostPerOwner),
+    maxCostPerLead: Math.round(maxCostPerOwner * close),
+    breakEvenCostPerLead: Math.round(lifetimeProfit * close),
+    doorsLostPerYear: Math.round(doorsLostPerYear * 10) / 10,
+    leadsToReplaceChurn: Math.round(leadsToReplaceChurn * 10) / 10,
+  };
+}
+
+/**
+ * Benchmarks for the lead value page. Only numbers read on the source pages on 2026-10-23.
+ * No public source gives a gross margin or a cost per owner lead, so the page shows none.
+ */
+export const leadBenchmarks = {
+  /** Peter Lohmann, newsletter #74 (2023-12-29): "industry-average unit churn rate of 19.5%", NARPM / ProfitCoach study, year 2021. */
+  churnAverage: { value: 19.5, year: 2021, source: "NARPM / ProfitCoach via Peter Lohmann" },
+  /** Fourandhalf with Daniel Craig, ProfitCoach (2022-09-08): first study 25%; under 15% "great", under 20% "okay". */
+  churnFirstStudy: {
+    value: 25,
+    great: 15,
+    okay: 20,
+    source: "Daniel Craig, ProfitCoach, via Fourandhalf",
+  },
+  /** Peter Lohmann, newsletter #74: "about 28 valid leads per month ... closing rate of around 20%" (one company). */
+  closeOneCompany: { value: 20, leads: 28, source: "Peter Lohmann, newsletter #74" },
+  /** RentScale data via Blanket Homes: average monthly owner leads 28.6 (2023), 21.1 (2024), 15.7 (2025). */
+  leadsPerMonth: { y2023: 28.6, y2024: 21.1, y2025: 15.7, source: "RentScale via Blanket Homes" },
+} as const;
+
+/** The page's worked example. Churn and fee are benchmarks; the other inputs are an example only. */
+export const leadValueExample: LeadValueInput = {
+  doors: 300,
+  rent: 1_800,
+  managementPercent: 8.49,
+  otherRevenuePerDoor: 300,
+  doorsPerOwner: 1.2,
+  churnPercent: 19.5,
+  marginPercent: 30,
+  closePercent: 20,
+  targetRatio: 3,
+};
