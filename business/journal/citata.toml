@@ -229,3 +229,12 @@ title = "Data page: Section 8 payment standard cuts 2026, tracker by housing aut
 url = "https://citata.ai/guides/section-8-rent-limits/payment-standard-cuts-2026"
 ref = "B019, H01"
 result = "Live on citata.ai 2026-10-22; stage and prod give 200."
+
+[[entry]]
+date = "2026-10-23"
+side = "internal"
+kind = "content"
+title = "Tool: owner lead value calculator for property managers"
+url = "https://citata.ai/tools/owner-lead-value-calculator"
+ref = "B023, H02"
+result = "Live on citata.ai 2026-10-23; stage and prod give 200."

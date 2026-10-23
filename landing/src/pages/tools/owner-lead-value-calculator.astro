@@ -1,0 +1,152 @@
+---
+// H02 tool 4 (backlog B023). The math lives in src/lib/calculators.ts (tested).
+// Benchmarks: only numbers read on the source pages on 2026-10-23 (see leadBenchmarks).
+// No public source gives a gross margin or a typical cost per owner lead: the page claims none.
+import LeadValueCalculator from "../../components/LeadValueCalculator.astro";
+import Tool from "../../layouts/Tool.astro";
+import {
+  computeLeadValue,
+  leadBenchmarks as b,
+  leadValueExample as ex,
+  typical,
+  usd,
+} from "../../lib/calculators.ts";
+import { leadValuePublished } from "../../data/tools.ts";
+
+const r = computeLeadValue(ex);
+const low = computeLeadValue({ ...ex, churnPercent: b.churnFirstStudy.great });
+const high = computeLeadValue({ ...ex, churnPercent: b.churnFirstStudy.value });
+// Doors won a year at the 2025 average lead volume and the example close rate.
+const doorsWon = Math.round(b.leadsPerMonth.y2025 * 12 * (ex.closePercent / 100) * ex.doorsPerOwner * 10) / 10;
+const ceiling = Math.round(doorsWon / (ex.churnPercent / 100));
+const sources = [
+  {
+    label: "Peter Lohmann's Newsletter, issue #74 (2023-12-29): NARPM / ProfitCoach unit churn 19.5% (2021), close rate",
+    url: "https://peter.beehiiv.com/p/peter-lohmanns-mailing-list-issue-74",
+  },
+  {
+    label: "Fourandhalf: Daniel Craig (ProfitCoach) on why customer churn is a silent killer (2022-09-08)",
+    url: "https://fourandhalf.com/customer-churn/",
+  },
+  {
+    label: "Blanket Homes: The 2026 growth playbook for residential property managers (RentScale lead data)",
+    url: "https://blankethomes.com/the-2026-growth-playbook-for-residential-property-managers/",
+  },
+  {
+    label: "iPropertyManagement: Average Property Management Fees (722 branches, updated 2026-09-23)",
+    url: "https://ipropertymanagement.com/research/average-property-management-fees",
+  },
+  {
+    label: "Rentvine: Know the true value of a door (lifetime value example)",
+    url: "https://www.rentvine.com/blog/know-the-true-value-of-a-door-why-every-property-manager-needs-to-understand-lifetime-value",
+  },
+];
+const faq = [
+  {
+    q: "How much is one owner lead worth to a property manager?",
+    a: `Multiply the lifetime gross profit of one owner client by your close rate. In the example on this page, one owner brings ${usd(r.lifetimeProfit)} of gross profit over ${r.lifetimeYears} years, and 1 in 5 leads signs, so one lead is worth ${usd(r.breakEvenCostPerLead)} at break-even.`,
+  },
+  {
+    q: "How much should a property management company pay per owner lead?",
+    a: `Less than the lead's break-even value. Pick a target ratio: the lifetime gross profit you want back for each dollar you spend to win an owner. At a 3:1 target, the example on this page can pay up to ${usd(r.maxCostPerLead)} per lead and ${usd(r.maxCostPerOwner)} per new owner client.`,
+  },
+  {
+    q: "What is a normal owner churn rate for property managers?",
+    a: `The NARPM / ProfitCoach benchmarking study put industry-average unit churn at ${b.churnAverage.value}% for ${b.churnAverage.year} (as cited by Peter Lohmann). The first ProfitCoach study found ${b.churnFirstStudy.value}%. Daniel Craig of ProfitCoach calls churn under ${b.churnFirstStudy.great}% great and under ${b.churnFirstStudy.okay}% okay.`,
+  },
+  {
+    q: "How do I calculate the lifetime value of a property management client?",
+    a: "Revenue per door per year × doors per owner × years an owner stays. Years an owner stays is about 1 divided by your annual churn rate. Multiply by your gross margin to get lifetime gross profit, the number you can spend against.",
+  },
+  {
+    q: "Why does churn change the lead value so much?",
+    a: `Churn sets how long an owner stays. At ${b.churnFirstStudy.great}% churn an owner stays ${low.lifetimeYears} years and one lead is worth up to ${usd(low.maxCostPerLead)} at 3:1. At ${b.churnFirstStudy.value}% churn the owner stays ${high.lifetimeYears} years and the lead is worth up to ${usd(high.maxCostPerLead)}.`,
+  },
+  {
+    q: "What does this calculator leave out?",
+    a: "Referrals from happy owners, doors an owner adds later, rent growth, and the time value of money. The gross margin and close rate are your own numbers: we found no public benchmark for gross margin or cost per owner lead.",
+  },
+];
+---
+
+<Tool
+  title="Owner Lead Value Calculator for Property Managers — Citata.ai"
+  description="Free owner lead value calculator for property managers: lifetime value of an owner client, max cost per lead and per door, and leads needed to replace churn."
+  headline="Owner Lead Value Calculator"
+  dek="How much is one owner lead worth? See the most you can pay per lead and per new owner."
+  published={leadValuePublished}
+  updated={leadValuePublished}
+  answer={`One owner lead is worth its owner's lifetime gross profit times your close rate. Lifetime is about 1 divided by annual churn: the NARPM / ProfitCoach study put average unit churn at ${b.churnAverage.value}% for ${b.churnAverage.year}, so an owner stays about ${r.lifetimeYears} years. In the example below (8.49% fee, ${usd(ex.rent)} rent, ${ex.doorsPerOwner} doors per owner, ${ex.marginPercent}% margin, ${ex.closePercent}% close rate), one lead is worth ${usd(r.breakEvenCostPerLead)} at break-even. At a 3:1 target, pay at most ${usd(r.maxCostPerLead)} per lead.`}
+  faq={faq}
+  sources={sources}
+  appName="Owner Lead Value Calculator"
+  appDescription="Computes the lifetime revenue and gross profit of a property management owner client, the max cost per lead and per new owner at a target ratio, and the owner leads a month needed to replace churn."
+>
+  <LeadValueCalculator slot="tool" />
+
+  <Fragment slot="example">
+    <p>
+      A company manages {ex.doors} doors at {usd(ex.rent)} average rent. It charges {ex.managementPercent}%
+      of rent, the average advertised rate in a sample of 722 branches (iPropertyManagement), and earns
+      {usd(ex.otherRevenuePerDoor)} a door a year from leasing and renewal fees (example). An owner has {ex.doorsPerOwner}
+      doors on average, the same number Rentvine uses in its lifetime value example. Churn is
+      {ex.churnPercent}%, the 2021 industry average (NARPM / ProfitCoach). The {ex.marginPercent}% gross
+      margin and the {ex.closePercent}% close rate are example inputs: use your own.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Step</th><th>How we get it</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Revenue per door per year</td><td>{usd(ex.rent)} × 12 × {ex.managementPercent}% + {usd(ex.otherRevenuePerDoor)}</td><td>{usd(r.revenuePerDoorYear)}</td></tr>
+        <tr><td>Years an owner stays</td><td>1 ÷ {ex.churnPercent}%</td><td>{r.lifetimeYears}</td></tr>
+        <tr><td>Lifetime revenue per owner</td><td>{usd(r.revenuePerDoorYear)} × {ex.doorsPerOwner} doors ÷ {ex.churnPercent}% churn</td><td>{usd(r.lifetimeRevenue)}</td></tr>
+        <tr><td>Lifetime gross profit</td><td>{usd(r.lifetimeRevenue)} × {ex.marginPercent}%</td><td>{usd(r.lifetimeProfit)}</td></tr>
+        <tr><td>Break-even cost per lead</td><td>{usd(r.lifetimeProfit)} × {ex.closePercent}% close rate</td><td>{usd(r.breakEvenCostPerLead)}</td></tr>
+        <tr><td>Max cost per new owner</td><td>{usd(r.lifetimeProfit)} ÷ {ex.targetRatio}</td><td>{usd(r.maxCostPerOwner)}</td></tr>
+        <tr><td><strong>Max cost per lead</strong></td><td>{usd(r.maxCostPerOwner)} × {ex.closePercent}%</td><td><strong>{usd(r.maxCostPerLead)}</strong></td></tr>
+      </tbody>
+    </table>
+    <p>
+      Result: this company can pay up to {usd(r.maxCostPerLead)} per owner lead and keep a 3:1 ratio.
+      A lead that costs more than {usd(r.breakEvenCostPerLead)} loses money over the owner's lifetime.
+    </p>
+  </Fragment>
+
+  <h2>How many owner leads do you need only to stand still?</h2>
+  <p>
+    Churn sets a floor on lead volume. At {ex.churnPercent}% churn, {ex.doors} doors lose
+    {r.doorsLostPerYear} doors a year. At {ex.doorsPerOwner} doors per owner and a {ex.closePercent}% close
+    rate, the company needs {r.leadsToReplaceChurn} owner leads a month just to stay at {ex.doors} doors.
+  </p>
+  <p>
+    Lead volume is falling. RentScale data shows an average of {b.leadsPerMonth.y2023} owner leads a
+    month in 2023, {b.leadsPerMonth.y2024} in 2024 and {b.leadsPerMonth.y2025} in 2025 (RentScale data via
+    Blanket Homes). At {b.leadsPerMonth.y2025} leads a month and the example close rate, a company wins about
+    {doorsWon} doors a year. At {ex.churnPercent}% churn, that stops growth near {ceiling} doors. Read
+    <a href="/guides/door-growth-ceiling-churn">the door growth ceiling</a> for the full math, and
+    <a href="/guides/why-owner-leads-are-dropping">why owner leads are dropping</a> for the causes.
+  </p>
+
+  <h2>Benchmarks we found, and the ones we did not</h2>
+  <table>
+    <thead>
+      <tr><th>Number</th><th>Value</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Unit churn, industry average</td><td>{b.churnAverage.value}% a year ({b.churnAverage.year})</td><td>NARPM / ProfitCoach study, cited by Peter Lohmann</td></tr>
+      <tr><td>Unit churn, first study</td><td>{b.churnFirstStudy.value}% a year</td><td>Daniel Craig, ProfitCoach (Fourandhalf)</td></tr>
+      <tr><td>Good churn</td><td>under {b.churnFirstStudy.great}% great, under {b.churnFirstStudy.okay}% okay</td><td>Daniel Craig, ProfitCoach (Fourandhalf)</td></tr>
+      <tr><td>Owner leads a month, average</td><td>{b.leadsPerMonth.y2023} (2023) → {b.leadsPerMonth.y2025} (2025); the chart in the same post says 26.8 for 2023</td><td>RentScale via Blanket Homes</td></tr>
+      <tr><td>Close rate, one company</td><td>about {b.closeOneCompany.value}% of about {b.closeOneCompany.leads} valid leads a month</td><td>Peter Lohmann (his own company, 2023)</td></tr>
+      <tr><td>Management fee, average advertised</td><td>{typical.percentAverage.value}% of rent</td><td>iPropertyManagement</td></tr>
+      <tr><td>Gross margin per door</td><td>No public benchmark found</td><td>None</td></tr>
+      <tr><td>Cost per owner lead</td><td>No public benchmark found</td><td>None</td></tr>
+    </tbody>
+  </table>
+  <p>
+    A close rate from one company is not an industry average. Use your own close rate from your CRM:
+    owner agreements signed ÷ valid owner leads, over the last 12 months. To check your fee against the
+    market, use the <a href="/tools/property-management-fee-calculator">property management fee calculator</a>.
+  </p>
+</Tool>

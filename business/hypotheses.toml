@@ -171,8 +171,8 @@ status = "running"
 id = "H02-E1"
 hypothesis = "H02"
 start = "2026-10-19"
-actions = ["Build the property management fee calculator", "Build the Section 8 rent and tenant share calculator", "Ship to stage; publish after owner check", "Tool 3: rent vs sell calculator, pre-tax, with IRS Pub 523 and Topic 409 rules read 2026-10-21 (B015)"]
-urls = ["https://citata.ai/tools", "https://citata.ai/tools/property-management-fee-calculator", "https://citata.ai/tools/section-8-rent-calculator", "https://citata.ai/tools/rent-vs-sell-calculator"]
+actions = ["Build the property management fee calculator", "Build the Section 8 rent and tenant share calculator", "Ship to stage; publish after owner check", "Tool 3: rent vs sell calculator, pre-tax, with IRS Pub 523 and Topic 409 rules read 2026-10-21 (B015)", "Tool 4: owner lead value calculator for property managers, churn 19.5% NARPM/ProfitCoach 2021 and RentScale lead data read 2026-10-23 (B023)"]
+urls = ["https://citata.ai/tools", "https://citata.ai/tools/property-management-fee-calculator", "https://citata.ai/tools/section-8-rent-calculator", "https://citata.ai/tools/rent-vs-sell-calculator", "https://citata.ai/tools/owner-lead-value-calculator"]
 status = "running"
 
 [[experiment]]
