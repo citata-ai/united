@@ -213,7 +213,7 @@ kind = "free-tool"
 title = "Owner lead value calculator for property managers (doors, fee, churn -> lifetime value and max cost per lead)"
 demand = "Our buyer's own question. Leads per month fell 28.6 to 15.7 (2023-2025, RentScale via Blanket Homes); churn 20-25% a year (NARPM, secondary). Goodjuju posted lead conversion 2026-10-20; Rentvine and PMW have LTV posts, no tool."
 score = 8
-status = "building"
+status = "live"
 note = "Find the NARPM benchmark primary before citing churn. Default inputs from our fee calculator data."
 
 [[item]]
