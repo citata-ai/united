@@ -3,10 +3,10 @@ title: "How to Become a Section 8 Landlord, Step by Step — Citata.ai"
 description: "Seven steps from listing to the first housing assistance payment: screen, file the RFTA, pass inspection, sign the lease and HAP contract, and get paid."
 headline: "How to Become a Section 8 Landlord, Step by Step"
 dek: "Seven steps from your listing to the first payment, with the federal rule behind each one."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-23"
+updated: "2026-10-23"
 answer: "You do not apply to become a Section 8 landlord in advance. A voucher holder picks your unit, you screen the family, and you fill out the Request for Tenancy Approval (RFTA) the family gives you. The public housing agency (PHA) then checks the rent, inspects the unit and approves the tenancy. You sign the lease with the family and the HAP contract with the PHA, and payments start after the PHA processes the contract, which can take up to 60 days."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "how-to"
 priority: 1
