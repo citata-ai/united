@@ -3,9 +3,11 @@ import {
   breakEvenAppreciation,
   breakEvenRent,
   computeFees,
+  computeLeadValue,
   computeRentSell,
   computeVoucher,
   feeExample,
+  leadValueExample,
   position,
   rentSellExample,
   usd,
@@ -190,5 +192,33 @@ describe("computeRentSell", () => {
     const r = computeRentSell({} as never);
     expect(r.keepTotal).toBe(0);
     expect(r.sellNowFuture).toBe(0);
+  });
+});
+
+describe("computeLeadValue", () => {
+  it("matches the worked example on the page", () => {
+    const r = computeLeadValue(leadValueExample);
+    expect(r.revenuePerDoorYear).toBe(2133.84);
+    expect(r.lifetimeYears).toBe(5.1);
+    expect(r.lifetimeRevenue).toBe(13131);
+    expect(r.lifetimeProfit).toBe(3939);
+    expect(r.maxCostPerOwner).toBe(1313);
+    expect(r.maxCostPerLead).toBe(263);
+    expect(r.breakEvenCostPerLead).toBe(788);
+    expect(r.doorsLostPerYear).toBe(58.5);
+    expect(r.leadsToReplaceChurn).toBe(20.3);
+  });
+
+  it("caps the owner lifetime at 20 years when churn is 0", () => {
+    const r = computeLeadValue({ ...leadValueExample, churnPercent: 0 });
+    expect(r.lifetimeYears).toBe(20);
+    expect(r.doorsLostPerYear).toBe(0);
+    expect(r.leadsToReplaceChurn).toBe(0);
+  });
+
+  it("gives 0, not NaN or Infinity, for empty input", () => {
+    const r = computeLeadValue({} as never);
+    for (const v of Object.values(r)) expect(Number.isFinite(v)).toBe(true);
+    expect(r.maxCostPerLead).toBe(0);
   });
 });

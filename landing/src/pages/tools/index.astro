@@ -1,11 +1,11 @@
 ---
 import AuditCta from "../../components/AuditCta.astro";
 import Base from "../../layouts/Base.astro";
-import { rentSellPublished, tools, toolsPublished } from "../../data/tools.ts";
+import { leadValuePublished, tools, toolsPublished } from "../../data/tools.ts";
 
 const title = "Free Tools for Landlords and Property Managers — Citata.ai";
 const description =
-  "Free calculators for landlords and property managers: property management fee calculator, Section 8 rent calculator and rent vs sell calculator.";
+  "Free calculators for landlords and property managers: property management fee calculator, Section 8 rent calculator, rent vs sell calculator and owner lead value calculator.";
 
 const list = {
   "@context": "https://schema.org",
@@ -20,18 +20,18 @@ const list = {
 };
 ---
 
-<Base title={title} description={description} modified={rentSellPublished}>
+<Base title={title} description={description} modified={leadValuePublished}>
   <script slot="head" type="application/ld+json" is:inline set:html={JSON.stringify(list)} />
   <main class="wrap">
     <section class="mt-8 rounded-lg bg-sky/20 p-6 sm:p-12">
       <p class="meta"><a href="/guides" class="text-minium underline underline-offset-2">Guides</a> › <span class="text-minium">Free tools</span> · for landlords and property managers</p>
       <h1 class="mt-4 max-w-3xl text-[38px] leading-[1.04] sm:text-[52px]">Free Rental Calculators</h1>
       <p class="mt-5 max-w-[66ch] text-[19px] text-muted">
-        Three calculators for questions that need a number. Each page shows the answer and a worked
+        Four calculators for questions that need a number. Each page shows the answer and a worked
         example first, then the tool. Every typical number names its source. Your numbers stay in your
         browser.
       </p>
-      <p class="meta mt-5">Published <time datetime={toolsPublished}>{toolsPublished}</time> · Updated <time datetime={rentSellPublished}>{rentSellPublished}</time></p>
+      <p class="meta mt-5">Published <time datetime={toolsPublished}>{toolsPublished}</time> · Updated <time datetime={leadValuePublished}>{leadValuePublished}</time></p>
     </section>
     <ul class="grid gap-6 py-12 md:grid-cols-2">
       {
