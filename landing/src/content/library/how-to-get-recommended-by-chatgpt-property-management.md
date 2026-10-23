@@ -3,10 +3,10 @@ title: "How to Get Your Property Management Company Named by ChatGPT — Citata.
 description: "ChatGPT names property managers from web search results, and most of those results are directories. Fix your listings, let OAI-SearchBot in, test monthly."
 headline: "How to Get Recommended by ChatGPT as a Property Manager"
 dek: "In our 50-city test, ChatGPT cited a directory in 48 of 50 answers, a manager's site in 15."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-23"
+updated: "2026-10-23"
 answer: "ChatGPT names a property manager when its web search finds that company on the pages it trusts for that city. In our 50-city test, those pages were mostly directories: Expertise.com, Birdeye, BBB and local best-of lists. So get listed and correct on those sites, let OAI-SearchBot crawl your site, and put clear city, service and fee facts on your own pages. You cannot pay for a place in the answer, and no one can promise one."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "how-to"
 priority: 1
