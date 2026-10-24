@@ -3,10 +3,10 @@ title: "New York Eviction Process: Notices, Steps, Timeline — Citata.ai"
 description: "New York eviction steps for landlords: 14-day rent demand, petition served 10 to 17 days before the hearing, 14-day marshal notice, Good Cause and penalties."
 headline: "New York Eviction Process: Notices, Court Steps, Timeline"
 dek: "Each step from the rent demand to the marshal, with the statute for each deadline."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-24"
+updated: "2026-10-24"
 answer: "In New York, a landlord can remove a tenant only through a court case called a summary proceeding (RPAPL 711). For unpaid rent, you first serve a written demand with at least 14 days' notice. Then you file a petition, win a judgment, and a sheriff, marshal or constable serves at least 14 days' written notice before the eviction (RPAPL 749). Lockouts and utility shutoffs are illegal (RPAPL 768)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1
