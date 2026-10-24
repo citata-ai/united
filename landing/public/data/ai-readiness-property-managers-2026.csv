@@ -1,0 +1,145 @@
+date,site,answers_citing_band,robots_ok,robots_names_ai_bot,sitemap_in_robots,llms_txt,home_ok,schema_any,schema_business,schema_rating,schema_faq,price_link,blocked_ai_bots,schema_types
+2026-10-24,site-001,1,False,False,False,False,True,True,True,False,True,False,,Answer; EntryPoint; FAQPage; Organization; Question; SearchAction; WebSite
+2026-10-24,site-002,1,True,True,False,False,False,False,False,False,False,False,GPTBot; ClaudeBot; Google-Extended; CCBot,
+2026-10-24,site-003,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-004,1,True,False,True,False,True,False,False,False,False,False,,
+2026-10-24,site-005,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-006,2-4,True,True,True,True,True,True,True,False,False,True,,Organization
+2026-10-24,site-007,5+,True,False,True,True,True,True,True,True,False,False,,AggregateRating; Article; ImageObject; LocalBusiness; MonetaryAmount; Organization; Person; PostalAddress; QuantitativeValue; Rating; Review; SearchAction; WebPage; WebSite
+2026-10-24,site-008,1,True,False,True,True,True,True,True,False,True,True,,Answer; City; ContactPoint; FAQPage; ImageObject; LocalBusiness; Organization; PostalAddress; Question; VideoObject; WebPage; WebSite
+2026-10-24,site-009,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-010,1,True,False,True,True,True,True,True,True,False,True,,AggregateRating; GeoCoordinates; OpeningHoursSpecification; Person; Place; PostalAddress; Rating; RealEstateAgent; Review; WebSite
+2026-10-24,site-011,1,True,True,True,True,True,True,True,True,True,True,,AggregateRating; Answer; Brand; City; ContactPoint; FAQPage; GeoCoordinates; ImageObject; InteractionCounter; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; Organization; Place; PostalAddress; Question; Service; VideoObject
+2026-10-24,site-012,1,True,False,True,False,True,True,True,True,False,True,,AggregateRating; BreadcrumbList; DayOfWeek; ImageObject; ListItem; LocalBusiness; OpeningHoursSpecification; PostalAddress; Product; ProfessionalService; SearchAction; Service; State; WebSite
+2026-10-24,site-013,2-4,True,True,True,False,True,True,True,False,False,False,GPTBot; ClaudeBot; Google-Extended; CCBot,ContactPoint; Corporation; Country; EntryPoint; GeoCoordinates; ImageObject; NewsArticle; OpeningHoursSpecification; Person; Place; PostalAddress; QuantitativeValue; RealEstateAgent; SearchAction; WebPage; WebSite
+2026-10-24,site-014,1,True,False,False,False,True,True,True,False,False,False,,AdministrativeArea; Corporation; GeoCoordinates; OpeningHoursSpecification; PostalAddress; RealEstateAgent; WebSite
+2026-10-24,site-015,1,True,False,True,True,True,True,False,False,False,False,,WebSite
+2026-10-24,site-016,2-4,True,False,True,True,True,True,True,False,False,True,,AdministrativeArea; BreadcrumbList; EntryPoint; ImageObject; ItemList; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-017,1,True,False,True,True,True,False,False,False,False,True,,
+2026-10-24,site-018,1,True,False,True,False,True,True,True,True,True,False,,AggregateRating; Answer; FAQPage; PostalAddress; Question; RealEstateAgent; State; WebSite
+2026-10-24,site-019,1,True,False,False,False,True,False,False,False,False,True,,
+2026-10-24,site-020,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-021,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-022,1,True,False,True,True,True,True,False,False,False,False,,WebSite
+2026-10-24,site-023,1,True,False,True,True,True,True,True,False,False,True,,LocalBusiness; PostalAddress; WebSite
+2026-10-24,site-024,1,True,True,True,True,True,True,True,True,False,True,,AggregateRating; Brand; City; ContactPoint; GeoCoordinates; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; Organization; Place; PostalAddress; Service; VideoObject
+2026-10-24,site-025,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-026,1,True,False,True,False,True,True,True,False,False,True,,GeoCoordinates; LocalBusiness; OpeningHoursSpecification; PostalAddress; WebSite
+2026-10-24,site-027,1,True,False,True,True,True,True,True,True,True,False,,AggregateRating; Answer; BreadcrumbList; EntryPoint; FAQPage; GeoCoordinates; ImageObject; ListItem; Organization; Person; Place; PostalAddress; PropertyValueSpecification; Question; Rating; ReadAction; RealEstateAgent; Review; SearchAction; WebPage; WebSite
+2026-10-24,site-028,1,True,False,True,True,True,True,True,True,True,True,,AggregateRating; Answer; City; ContactAction; EducationalOccupationalCredential; FAQPage; GeoCoordinates; ImageObject; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; Organization; Place; PostalAddress; Question; Service
+2026-10-24,site-029,2-4,True,False,True,False,True,True,True,False,False,True,,BreadcrumbList; EntryPoint; ImageObject; ListItem; LocalBusiness; Organization; PostalAddress; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-030,1,True,False,True,False,True,True,True,False,False,False,,Organization; WebSite
+2026-10-24,site-031,1,True,False,False,False,True,True,False,False,False,False,,SearchAction; WebSite
+2026-10-24,site-032,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-033,1,True,False,True,False,True,True,True,False,False,False,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-034,1,True,False,True,False,True,True,True,False,False,False,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-035,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-036,1,True,False,True,False,True,True,True,True,False,True,,AggregateRating; GeoCoordinates; ImageObject; LocalBusiness; OpeningHoursSpecification; Organization; Person; PostalAddress; Rating; Review; SearchAction; WebPage; WebSite
+2026-10-24,site-037,1,True,False,True,True,True,True,True,False,False,True,,BreadcrumbList; ImageObject; ListItem; Organization; ReadAction; WebPage; WebSite
+2026-10-24,site-038,1,True,False,False,False,True,False,False,False,False,True,,
+2026-10-24,site-039,2-4,True,False,True,False,True,True,True,False,False,True,,ContactPoint; Organization; PostalAddress
+2026-10-24,site-040,1,True,False,True,True,True,False,False,False,False,True,,
+2026-10-24,site-041,1,True,True,True,True,True,True,True,True,False,True,,Action; AggregateRating; BreadcrumbList; City; ContactPoint; DataCatalog; EducationalOccupationalCredential; GeoCircle; GeoCoordinates; ImageObject; ListItem; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; Organization; Person; PostalAddress; QuantitativeValue; Rating; Review; SearchAction; Service; SpeakableSpecification; WebPage; WebSite
+2026-10-24,site-042,2-4,True,False,True,True,True,True,True,False,False,True,,BreadcrumbList; EntryPoint; GeoCoordinates; ImageObject; ListItem; Organization; PostalAddress; PropertyValueSpecification; ReadAction; RealEstateAgent; SearchAction; WebPage; WebSite
+2026-10-24,site-043,1,False,False,False,False,True,False,False,False,False,False,,
+2026-10-24,site-044,1,False,False,False,False,True,True,True,False,False,True,,GeoCoordinates; PostalAddress; RealEstateAgent; WebSite
+2026-10-24,site-045,1,True,False,True,True,True,True,False,False,False,False,,WebSite
+2026-10-24,site-046,1,True,False,True,False,True,True,False,True,True,True,,AggregateRating; Answer; BreadcrumbList; FAQPage; ImageObject; ItemList; ListItem; Offer; Question; SoftwareApplication
+2026-10-24,site-047,1,True,False,True,False,True,True,True,False,False,True,,City; ContactPoint; GeoCoordinates; ImageObject; LocalBusiness; OpeningHoursSpecification; Organization; PostalAddress; RealEstateAgent; SearchAction; Service; SiteNavigationElement; State; WebSite
+2026-10-24,site-048,1,True,False,False,False,True,False,False,False,False,False,,
+2026-10-24,site-049,1,True,False,True,True,True,True,True,False,False,True,,ContactPoint; ItemList; ListItem; Organization; PostalAddress; RealEstateAgent
+2026-10-24,site-050,1,True,False,True,False,True,True,True,False,False,True,,GeoCoordinates; ImageObject; LocalBusiness; Organization; Place; PostalAddress; SearchAction; WebPage; WebSite
+2026-10-24,site-051,2-4,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-052,1,True,False,True,False,True,True,True,False,False,True,,Organization; Person; Place; PostalAddress; RealEstateAgent
+2026-10-24,site-053,1,True,False,True,False,True,True,True,False,False,True,,City; GeoCoordinates; ImageObject; InteractionCounter; ItemList; OpeningHoursSpecification; Person; Place; PostalAddress; RealEstateAgent; VideoObject; WatchAction; WebPage
+2026-10-24,site-054,5+,True,True,True,True,True,True,True,False,False,False,,Organization; Person
+2026-10-24,site-055,2-4,True,False,True,False,True,True,True,True,True,True,,AggregateRating; Answer; Article; ContactPoint; FAQPage; GeoCoordinates; ImageObject; ItemPage; Offer; Organization; Person; Place; PostalAddress; Product; Question; RealEstateAgent; SearchAction; Service; WebSite
+2026-10-24,site-056,1,True,False,False,False,True,False,False,False,False,False,,
+2026-10-24,site-057,1,True,False,True,True,True,True,True,False,False,True,,ContactPoint; GeoCoordinates; LocalBusiness; Offer; OfferCatalog; Person; Place; PostalAddress; RealEstateAgent; SearchAction; Service; WebPage; WebSite
+2026-10-24,site-058,1,True,False,True,False,True,True,True,False,False,False,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-059,1,True,False,True,False,True,True,True,False,False,True,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-060,1,True,False,False,False,True,False,False,False,False,True,,
+2026-10-24,site-061,1,True,False,False,False,True,False,False,False,False,True,,
+2026-10-24,site-062,1,True,False,True,True,True,True,True,False,False,True,,AdministrativeArea; BreadcrumbList; City; ContactPoint; EntryPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; Place; PostalAddress; PropertyValueSpecification; ReadAction; RealEstateAgent; SearchAction; Service; WebPage; WebSite
+2026-10-24,site-063,1,True,False,True,True,True,True,False,False,False,False,,WebSite
+2026-10-24,site-064,1,True,True,True,True,True,True,True,True,False,True,,City; GeoCoordinates; ImageObject; LocalBusiness; OpeningHoursSpecification; Organization; Person; Place; PostalAddress; RealEstateAgent; WebSite
+2026-10-24,site-065,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-066,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-067,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-068,1,True,False,True,True,True,True,True,False,False,False,,Article; EntryPoint; ImageObject; Organization; Person; SearchAction; WebPage; WebSite
+2026-10-24,site-069,1,True,False,True,True,True,True,True,False,True,True,,AdministrativeArea; Answer; BreadcrumbList; City; CreativeWork; EntryPoint; FAQPage; GeoCoordinates; ImageObject; ListItem; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; Organization; Person; Place; PostalAddress; PropertyValueSpecification; Question; ReadAction; RealEstateAgent; SearchAction; Service; State; WebPage; WebSite
+2026-10-24,site-070,1,True,False,True,True,True,False,False,False,False,True,,
+2026-10-24,site-071,1,True,False,True,True,True,True,False,False,True,False,,Answer; FAQPage; Question; WebSite
+2026-10-24,site-072,1,True,False,True,True,True,True,True,False,True,False,,Answer; BreadcrumbList; FAQPage; ListItem; LocalBusiness; OpeningHoursSpecification; Organization; Question; WebPage; WebSite
+2026-10-24,site-073,1,True,False,True,True,True,True,False,False,False,False,,WebSite
+2026-10-24,site-074,2-4,True,False,True,True,True,True,True,False,False,True,,BreadcrumbList; City; EntryPoint; ImageObject; ListItem; LocalBusiness; OpeningHoursSpecification; Organization; PostalAddress; PropertyValueSpecification; ReadAction; RealEstateAgent; SearchAction; WebPage; WebSite
+2026-10-24,site-075,1,True,False,True,False,True,True,True,False,False,False,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-076,1,True,False,True,False,True,True,True,False,False,True,,AdministrativeArea; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; Organization; PostalAddress; RealEstateAgent; Service; State; UnitPriceSpecification; WebPage; WebSite
+2026-10-24,site-077,1,True,False,False,False,True,True,True,False,False,False,,Organization; SearchAction; WebSite
+2026-10-24,site-078,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-079,1,True,False,True,True,True,True,True,True,False,True,,Action; AggregateRating; City; ContactPoint; GeoCircle; GeoCoordinates; Offer; OpeningHoursSpecification; Organization; Person; PostalAddress; Rating; RealEstateAgent; Review; Service
+2026-10-24,site-080,1,True,False,True,False,True,True,True,False,True,True,,Answer; City; FAQPage; GeoCoordinates; ImageObject; OpeningHoursSpecification; Organization; Place; PostalAddress; Question; RealEstateAgent; WebSite
+2026-10-24,site-081,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-082,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-083,1,True,False,True,False,True,True,True,False,False,False,,GeoCoordinates; PostalAddress; RealEstateAgent
+2026-10-24,site-084,1,True,False,True,True,True,True,True,False,False,True,,AdministrativeArea; City; EntryPoint; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; PostalAddress; RealEstateAgent; SearchAction; Service; WebSite
+2026-10-24,site-085,1,True,True,False,False,False,False,False,False,False,False,GPTBot; OAI-SearchBot; ChatGPT-User; ClaudeBot; Claude-SearchBot; Claude-User; PerplexityBot; Google-Extended; Bingbot; CCBot,
+2026-10-24,site-086,1,True,False,True,False,True,True,True,False,False,True,,City; ContactPoint; OpeningHoursSpecification; PostalAddress; RealEstateAgent
+2026-10-24,site-087,1,False,False,False,False,True,False,False,False,False,False,,
+2026-10-24,site-088,2-4,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-089,2-4,True,False,True,True,True,True,True,False,False,True,,GeoCoordinates; OpeningHoursSpecification; PostalAddress; RealEstateAgent; WebSite
+2026-10-24,site-090,1,True,False,True,True,True,True,True,False,False,True,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-091,1,True,False,True,False,True,True,True,True,True,True,,AggregateRating; Answer; City; FAQPage; GeoCoordinates; ImageObject; LocalBusiness; Offer; OpeningHoursSpecification; Person; PostalAddress; ProfessionalService; Question; Rating; Review; Service; WebSite
+2026-10-24,site-092,2-4,True,False,True,True,True,True,True,False,True,True,,AdministrativeArea; Answer; FAQPage; GeoCoordinates; LocalBusiness; OpeningHoursSpecification; Person; PostalAddress; Question; RealEstateAgent; WebSite
+2026-10-24,site-093,1,True,False,False,False,True,False,False,False,False,True,,
+2026-10-24,site-094,1,True,False,True,False,True,True,True,False,False,False,,LocalBusiness; PostalAddress
+2026-10-24,site-095,1,True,False,False,False,True,False,False,False,False,False,,
+2026-10-24,site-096,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-097,5+,True,False,True,True,True,True,True,True,True,True,,AggregateRating; Answer; ContactPoint; EntryPoint; FAQPage; GeoCoordinates; OpeningHoursSpecification; Organization; Person; PostalAddress; Question; Rating; RealEstateAgent; Review; SearchAction; WebSite
+2026-10-24,site-098,1,True,False,False,False,True,False,False,False,False,False,,
+2026-10-24,site-099,1,True,False,False,False,True,True,True,False,False,False,,AdministrativeArea; City; Offer; OfferCatalog; OpeningHoursSpecification; Person; PostalAddress; RealEstateAgent; Service; State
+2026-10-24,site-100,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-101,1,True,False,True,True,True,False,False,False,False,True,,
+2026-10-24,site-102,1,True,False,False,False,True,False,False,False,False,True,,
+2026-10-24,site-103,2-4,True,False,True,True,True,True,True,True,False,True,,AggregateRating; Brand; City; GeoCoordinates; LocalBusiness; OpeningHoursSpecification; Organization; Person; PostalAddress; VideoObject
+2026-10-24,site-104,1,True,False,False,False,True,False,False,False,False,True,,
+2026-10-24,site-105,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-106,2-4,True,False,True,True,True,True,True,False,False,True,,EntryPoint; Organization; SearchAction; WebSite
+2026-10-24,site-107,1,True,False,True,True,True,True,True,False,True,True,,Answer; BreadcrumbList; EntryPoint; FAQPage; ImageObject; ListItem; Organization; PostalAddress; PropertyValueSpecification; Question; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-108,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-109,1,True,False,True,True,True,True,True,False,False,False,,AdministrativeArea; EducationalOccupationalCredential; GovernmentOrganization; ImageObject; LocalBusiness; PostalAddress; RealEstateAgent; WebSite
+2026-10-24,site-110,5+,True,True,True,True,True,True,True,True,False,True,,AggregateRating; Brand; ContactPoint; ImageObject; Organization; PostalAddress; Product; State; WebPage; WebSite
+2026-10-24,site-111,1,True,False,True,False,True,True,True,True,False,True,,AggregateRating; Brand; City; GeoCoordinates; ImageObject; InteractionCounter; LocalBusiness; OpeningHoursSpecification; Organization; PostalAddress; VideoObject; WatchAction
+2026-10-24,site-112,1,True,False,True,True,True,True,True,False,False,True,,AdministrativeArea; City; GeoCoordinates; LocalBusiness; OpeningHoursSpecification; Place; PostalAddress
+2026-10-24,site-113,1,True,False,True,True,True,True,True,False,False,True,,City; ContactPoint; ImageObject; LocalBusiness; Organization; PostalAddress; WebPage; WebSite
+2026-10-24,site-114,1,True,False,True,False,True,True,True,False,False,False,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-115,1,True,True,True,False,True,True,False,False,False,True,,BreadcrumbList; EntryPoint; ListItem; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-116,1,True,False,True,True,True,True,True,False,True,True,,Answer; FAQPage; Organization; Question; WebSite
+2026-10-24,site-117,1,True,False,True,False,True,True,True,False,False,False,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-118,1,True,True,True,True,True,True,True,False,True,False,CCBot,Answer; City; FAQPage; GeoCoordinates; LocalBusiness; Offer; OpeningHoursSpecification; PostalAddress; Question; RealEstateAgent; SearchAction; Service; UnitPriceSpecification; WebSite
+2026-10-24,site-119,1,True,False,True,False,True,True,True,False,False,True,,ImageObject; LocalBusiness; Organization; PostalAddress
+2026-10-24,site-120,2-4,True,False,True,True,True,True,True,False,False,False,,LocalBusiness; PostalAddress; WebSite
+2026-10-24,site-121,1,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-122,2-4,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-123,1,True,False,True,True,True,False,False,False,False,True,,
+2026-10-24,site-124,1,True,False,True,True,True,True,True,False,False,False,,BreadcrumbList; EntryPoint; ImageObject; ListItem; Organization; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-125,1,True,False,False,False,True,True,True,False,False,True,,ContactPoint; Organization; PostalAddress
+2026-10-24,site-126,2-4,True,False,True,False,True,True,True,False,False,False,,LocalBusiness; PostalAddress
+2026-10-24,site-127,1,True,False,True,False,True,True,False,False,False,True,,BreadcrumbList; EntryPoint; ImageObject; ListItem; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-128,1,True,True,True,True,True,True,True,True,True,False,,AdministrativeArea; AggregateRating; Answer; BlogPosting; Brand; BreadcrumbList; City; EducationalOccupationalCredential; EntryPoint; FAQPage; GeoCoordinates; ImageObject; ListItem; LocalBusiness; Offer; OfferCatalog; OpeningHoursSpecification; Organization; Person; Place; PostalAddress; Question; RealEstateAgent; SearchAction; Service; VideoObject; WebSite
+2026-10-24,site-129,2-4,True,False,True,False,True,True,True,False,False,True,,BreadcrumbList; EntryPoint; GeoCoordinates; ImageObject; ListItem; LocalBusiness; Organization; PostalAddress; PropertyValueSpecification; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-130,5+,True,False,True,False,True,True,True,False,False,True,,BreadcrumbList; ImageObject; ListItem; Organization; ReadAction; WebPage; WebSite
+2026-10-24,site-131,1,True,False,True,True,True,False,False,False,False,True,,
+2026-10-24,site-132,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-133,1,True,False,True,True,True,True,True,False,False,True,,BreadcrumbList; City; EntryPoint; GeoCoordinates; ImageObject; Language; ListItem; OpeningHoursSpecification; Organization; Person; PostalAddress; PropertyValueSpecification; ReadAction; RealEstateAgent; SearchAction; WebPage; WebSite
+2026-10-24,site-134,1,True,False,True,False,True,True,True,False,False,False,,ImageObject; NewsArticle; Organization; Person; RealEstateAgent; SearchAction; WebPage; WebSite
+2026-10-24,site-135,1,True,False,True,True,True,True,True,False,True,True,,Answer; BreadcrumbList; EntryPoint; FAQPage; ImageObject; ListItem; Organization; PropertyValueSpecification; Question; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-136,1,True,False,True,False,True,True,True,False,True,True,,Answer; BreadcrumbList; EntryPoint; FAQPage; ImageObject; ListItem; Organization; Question; ReadAction; SearchAction; WebPage; WebSite
+2026-10-24,site-137,5+,True,False,True,True,True,True,True,False,True,False,,Answer; FAQPage; Organization; Question
+2026-10-24,site-138,1,True,False,False,False,True,False,False,False,False,False,,
+2026-10-24,site-139,2-4,True,False,False,False,True,True,True,False,False,True,,GeoCoordinates; LocalBusiness; OpeningHoursSpecification; PostalAddress
+2026-10-24,site-140,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-141,1,False,False,False,False,False,False,False,False,False,False,,
+2026-10-24,site-142,1,True,False,True,True,True,False,False,False,False,True,,
+2026-10-24,site-143,5+,True,False,True,False,True,False,False,False,False,True,,
+2026-10-24,site-144,1,True,False,True,True,True,True,True,True,False,False,,AggregateRating; City; GeoCoordinates; ImageObject; LocalBusiness; Offer; OpeningHoursSpecification; Organization; PostalAddress; Service; WebPage; WebSite

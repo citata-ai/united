@@ -238,3 +238,12 @@ title = "Tool: owner lead value calculator for property managers"
 url = "https://citata.ai/tools/owner-lead-value-calculator"
 ref = "B023, H02"
 result = "Live on citata.ai 2026-10-23; stage and prod give 200."
+
+[[entry]]
+date = "2026-10-24"
+side = "internal"
+kind = "content"
+title = "Research: AI-readiness of the property manager sites AI cites"
+url = "https://citata.ai/research/ai-readiness-property-managers-2026"
+ref = "B024, H03"
+result = "Staged 2026-10-24."

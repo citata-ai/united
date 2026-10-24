@@ -59,3 +59,4 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-city-page-v1.webp` | Library: city page template | N, cyan |
 | `guide-accidental-landlord-v1.webp` | Library: accidental landlord guide | N, yellow |
 | `guide-door-churn-v1.webp` | Library: door growth ceiling and churn | N, coral |
+| `research-ai-readiness-v1.webp` | Research: AI-readiness of cited manager sites | N, lilac |

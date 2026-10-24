@@ -410,3 +410,9 @@ file = "img/guide-assistance-animal-requests-v1-*.webp"
 prompt = "Use the image /tmp/img-assistance-animal-requests/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: At the columned porch of a mint two-flat, a landlord in an orange toga warmly welcomes a tenant with a calm service dog and hands them a brass key. In the distance, a quiet row of small tiled houses lines the stone street."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-10-20"
+
+[[image]]
+file = "img/research-ai-readiness-v1-*.webp"
+prompt = "Use the image /tmp/img-ai-readiness/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a property manager in an orange toga walks along a row of small tiled houses with a brass lantern and a clipboard, checking each front door; a small robot-like mechanical owl perches on one doorframe reading a blank parchment pinned to the door; an old CRT computer sits on a cart beside him. The sky is one flat lilac field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-flash generate_image via omp; Real-ESRGAN x4"
+date = "2026-10-24"

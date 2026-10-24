@@ -1,0 +1,275 @@
+---
+// B024 / H03: AI-readiness of the property manager sites that AI cites. Numbers come from summary.json of the
+// 2026-10-24 crawl (tools/ai-visibility/readiness_audit.py), copied to src/data/ai-readiness-2026.json.
+// Voice: brand/VOICE.md. Counts only. The public CSV has no domain and no company name (backlog B024 rule).
+import Guide, { type GuideFrontmatter } from "../../layouts/Guide.astro";
+import d from "../../data/ai-readiness-2026.json";
+
+const N = d.sites;
+const H = d.home_reachable;
+const date = d.date;
+const pct = (n: number, t: number) => Math.round((100 * n) / t);
+const csvUrl = "/data/ai-readiness-property-managers-2026.csv";
+const pageUrl = "https://citata.ai/research/ai-readiness-property-managers-2026";
+const indexUrl = "/research/ai-property-manager-index-2026";
+const m = d.mean_cites;
+const noLlms = N - d.llms_txt;
+const noSchema = H - d.schema_any;
+
+const fm: GuideFrontmatter = {
+  title: "AI-Readiness of Property Manager Sites AI Cites (2026) — Citata.ai",
+  description: `We checked robots.txt, llms.txt, schema and fee links on ${N} property manager sites that ChatGPT, Gemini and Claude cited. Counts, method and free CSV.`,
+  headline: "AI-Readiness of the Property Manager Sites AI Cites",
+  dek: `${N} manager sites that AI already cites: most have no llms.txt, and almost none block AI bots.`,
+  published: date,
+  updated: date,
+  answer: `We checked ${N} property manager sites that ChatGPT, Gemini or Claude cited in our 50-city test. ${pct(noLlms, N)}% of them have no llms.txt, and ${pct(noSchema, H)}% of the home pages we could read have no schema markup, yet AI cited them. Only ${d.blocks_any_ai_bot} of ${N} sites block an AI bot in robots.txt. So the basics come first: let AI search bots in, and say the city, the services and the fees in plain text (our data, ${date}).`,
+  faq: [
+    {
+      q: "Does a property management website need llms.txt to be cited by AI?",
+      a: `No. In our data, ${noLlms} of ${N} manager sites that AI cited have no llms.txt. Google says you do not need AI text files or special markup to appear in its AI features. An llms.txt file costs little, but it is not a requirement.`,
+    },
+    {
+      q: "Do property managers block ChatGPT and other AI bots?",
+      a: `Almost never. Only ${d.blocks_any_ai_bot} of ${N} sites in our data block an AI bot in robots.txt, and only ${d.blocks_any_search_bot} blocks a bot that AI search uses. OpenAI says a site that blocks OAI-SearchBot will not show in ChatGPT search answers.`,
+    },
+    {
+      q: "What schema do property management sites use?",
+      a: `${d.schema_any} of ${H} home pages we could read have JSON-LD schema. ${d.schema_business} use a business type such as Organization, LocalBusiness or RealEstateAgent. Only ${d.schema_rating} show a review rating and ${d.schema_faq} have FAQPage markup.`,
+    },
+    {
+      q: "Do AI engines cite sites with schema or llms.txt more often?",
+      a: `In our data, yes, a little: sites with llms.txt were cited in ${m.llms_txt.with} answers on average, sites without in ${m.llms_txt.without}. This is a correlation, not a cause. Big brands with large sites often have both the files and more citations.`,
+    },
+  ],
+  sources: [
+    { label: `Citata.ai: AI-readiness crawl of ${N} cited manager sites, ${date} (CSV, our data)`, url: `https://citata.ai${csvUrl}` },
+    { label: "Citata.ai: AI Property Manager Index 2026 (150 answers, 2026-10-19)", url: `https://citata.ai${indexUrl}` },
+    { label: "OpenAI: Overview of OpenAI crawlers", url: "https://developers.openai.com/api/docs/bots" },
+    { label: "Google Search Central: AI features and your website", url: "https://developers.google.com/search/docs/appearance/ai-features" },
+    { label: "llmstxt.org: The /llms.txt file (Jeremy Howard, 2024-09-03)", url: "https://llmstxt.org/" },
+  ],
+};
+
+const headings = [
+  { depth: 2, slug: "numbers", text: "Headline numbers" },
+  { depth: 2, slug: "method", text: "How we ran the check" },
+  { depth: 2, slug: "robots", text: "Do manager sites block AI bots?" },
+  { depth: 2, slug: "llms", text: "How many manager sites have llms.txt?" },
+  { depth: 2, slug: "schema", text: "Which schema do manager sites use?" },
+  { depth: 2, slug: "fees", text: "Do home pages link to fees?" },
+  { depth: 2, slug: "cited", text: "Are ready sites cited more?" },
+  { depth: 2, slug: "what-to-do", text: "What to fix on your site first" },
+  { depth: 2, slug: "data", text: "Download the data" },
+];
+
+const dataset = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  name: "AI-readiness of property manager sites cited by AI, 2026",
+  description: `robots.txt, llms.txt, home page schema and fee links for ${N} property management company sites that ChatGPT, Gemini or Claude cited in the AI Property Manager Index 2026. One row per site, no domain names.`,
+  url: pageUrl,
+  sameAs: `https://citata.ai${csvUrl}`,
+  creator: { "@id": "https://citata.ai/#org" },
+  publisher: { "@id": "https://citata.ai/#org" },
+  datePublished: date,
+  dateModified: date,
+  temporalCoverage: date,
+  spatialCoverage: { "@type": "Place", name: "United States" },
+  license: "https://creativecommons.org/licenses/by/4.0/",
+  isAccessibleForFree: true,
+  keywords: ["property management", "llms.txt", "robots.txt", "schema.org", "AI search", "GEO", "AI crawlers"],
+  measurementTechnique: "One fetch each of /robots.txt, /llms.txt and the home page per site over HTTPS, with a disclosed crawler user agent.",
+  variableMeasured: ["robots.txt present", "AI bots named or blocked", "llms.txt present", "JSON-LD types", "review rating markup", "FAQPage markup", "fee or pricing link"],
+  distribution: [{ "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csvUrl}` }],
+};
+
+// One bar per check: share of sites that pass. One series, one color, direct labels.
+const bars = [
+  { label: "Has robots.txt", n: d.robots_ok, of: N },
+  { label: "Sitemap in robots.txt", n: d.sitemap_in_robots, of: N },
+  { label: "Any JSON-LD schema", n: d.schema_any, of: H },
+  { label: "Business schema type", n: d.schema_business, of: H },
+  { label: "Fee or pricing link", n: d.price_link, of: H },
+  { label: "Has llms.txt", n: d.llms_txt, of: N },
+  { label: "FAQPage schema", n: d.schema_faq, of: H },
+  { label: "Review rating schema", n: d.schema_rating, of: H },
+  { label: "Names an AI bot in robots.txt", n: d.robots_names_ai_bot, of: N },
+  { label: "Blocks an AI bot", n: d.blocks_any_ai_bot, of: N },
+];
+const rowH = 28;
+const labelW = 230;
+const chartW = 640;
+const plotW = chartW - labelW - 70;
+
+const lift = [
+  { k: "llms_txt", label: "llms.txt" },
+  { k: "schema_business", label: "Business schema type" },
+  { k: "price_link", label: "Fee or pricing link" },
+  { k: "schema_faq", label: "FAQPage schema" },
+  { k: "schema_rating", label: "Review rating schema" },
+  { k: "robots_names_ai_bot", label: "Names an AI bot in robots.txt" },
+] as const;
+const botRows = Object.entries(d.bot_blocks as Record<string, number>).sort((a, b) => b[1] - a[1]);
+---
+
+<Guide frontmatter={fm} url="/research/ai-readiness-property-managers-2026" headings={headings} schema={[dataset]}>
+  <p>
+    Disclosure: citata.ai sells GEO services (GEO: work that gets a company named in AI answers) to property management companies. We
+    report counts only. The data names no company, and a count is not a rating of any company.
+  </p>
+
+  <h2 id="numbers">Headline numbers</h2>
+  <p>
+    In our <a href={indexUrl}>AI Property Manager Index</a>, ChatGPT, Gemini and Claude cited {N} property manager sites in 50 US cities.
+    On {date} we read 3 public files on each site. Here is what they show (our data).
+  </p>
+  <div class="not-prose my-6 grid gap-3 sm:grid-cols-2">
+    <div class="rounded-md bg-sun/30 p-5">
+      <p class="text-[34px] leading-none">{pct(noLlms, N)}%</p>
+      <p class="mt-2 text-[15px] text-muted">of cited sites have no llms.txt ({noLlms} of {N}). AI cited them anyway.</p>
+    </div>
+    <div class="rounded-md bg-mint/40 p-5">
+      <p class="text-[34px] leading-none">{d.blocks_any_ai_bot} of {N}</p>
+      <p class="mt-2 text-[15px] text-muted">sites block an AI bot in robots.txt. Only {d.robots_names_ai_bot} name an AI bot at all.</p>
+    </div>
+    <div class="rounded-md bg-lilac/40 p-5">
+      <p class="text-[34px] leading-none">{pct(d.schema_any, H)}%</p>
+      <p class="mt-2 text-[15px] text-muted">of home pages have JSON-LD schema ({d.schema_any} of {H}). Only {d.schema_rating} mark up a review rating.</p>
+    </div>
+    <div class="rounded-md bg-coral/30 p-5">
+      <p class="text-[34px] leading-none">{pct(d.price_link, H)}%</p>
+      <p class="mt-2 text-[15px] text-muted">of home pages link to a fee or pricing page ({d.price_link} of {H}).</p>
+    </div>
+  </div>
+  <figure class="not-prose my-6">
+    <svg viewBox={`0 0 ${chartW} ${bars.length * rowH + 10}`} role="img" aria-labelledby="chk-t chk-d" class="w-full" style="max-width: 720px">
+      <title id="chk-t">Share of cited manager sites that pass each check</title>
+      <desc id="chk-d">Percent of {N} sites (robots.txt and llms.txt checks) or of {H} readable home pages (schema and fee checks).</desc>
+      {
+        bars.map((b, i) => {
+          const p = (100 * b.n) / b.of;
+          const w = Math.max(2, (plotW * p) / 100);
+          const y = i * rowH + 4;
+          return (
+            <g>
+              <title>{`${b.label}: ${b.n} of ${b.of}`}</title>
+              <text x={labelW - 8} y={y + 16} text-anchor="end" font-size="13" fill="#1c1712">{b.label}</text>
+              <rect x={labelW} y={y + 4} width={w} height={rowH - 10} rx="4" fill="#c1410b" />
+              <text x={labelW + w + 6} y={y + 16} font-size="13" fill="#5c5145">{Math.round(p)}%</text>
+            </g>
+          );
+        })
+      }
+      <line x1={labelW} x2={labelW} y1="0" y2={bars.length * rowH + 6} stroke="#b8a88c" stroke-width="1" />
+    </svg>
+    <figcaption class="mt-2 text-[14px] text-muted">Share of cited manager sites that pass each check. Our data, {date}.</figcaption>
+  </figure>
+
+  <h2 id="method">How we ran the check</h2>
+  <p>
+    The site list comes from the AI Property Manager Index run of 2026-10-19: 150 answers, 50 cities, 3 engines. We took every source domain that our
+    script marks as a property manager's own site. That gave {N} domains, cited {d.answers_citing_total} times in total.
+  </p>
+  <ul>
+    <li><strong>Three files per site.</strong> We fetched /robots.txt, /llms.txt and the home page once, over HTTPS, on {date}.</li>
+    <li><strong>A named crawler.</strong> Our user agent says "citata-research" and links to this page. We read public files only.</li>
+    <li><strong>Strict checks.</strong> An llms.txt counts only when it is plain text, not an HTML error page. A bot is "blocked" when its robots.txt group disallows the whole site.</li>
+    <li><strong>Readable home pages.</strong> {H} of {N} home pages answered. {N - H} gave an error to our crawler, most of them 403 (bot protection). Schema and fee numbers use the {H}.</li>
+  </ul>
+  <p>
+    Limits: our script types domains by name, so a few rows are directories or brokers, not managers. One national brand has 7 city sites in the list. We ran the
+    check once, from one network.
+  </p>
+
+  <h2 id="robots">Do manager sites block AI bots?</h2>
+  <p>
+    Property manager sites almost never block AI bots. {d.robots_ok} of {N} sites have a valid robots.txt, but only {d.robots_names_ai_bot} name any AI bot. Only
+    {d.blocks_any_ai_bot} block one, and only {d.blocks_any_search_bot} blocks a bot that AI search uses.
+  </p>
+  <table>
+    <thead><tr><th>Bot</th><th>Company</th><th>Sites that block it (of {N})</th></tr></thead>
+    <tbody>
+      {botRows.map(([b, n]) => <tr><td>{b}</td><td>{({ GPTBot: "OpenAI", "OAI-SearchBot": "OpenAI", "ChatGPT-User": "OpenAI", ClaudeBot: "Anthropic", "Claude-SearchBot": "Anthropic", "Claude-User": "Anthropic", PerplexityBot: "Perplexity", "Google-Extended": "Google", Bingbot: "Microsoft", CCBot: "Common Crawl" } as Record<string, string>)[b]}</td><td>{n}</td></tr>)}
+    </tbody>
+  </table>
+  <p>
+    The bot matters. GPTBot collects text that may train OpenAI models. OAI-SearchBot finds pages for ChatGPT search, and OpenAI says a site that blocks it
+    "will not be shown in ChatGPT search answers" (OpenAI). So check that your robots.txt does not block the search bots by mistake.
+  </p>
+
+  <h2 id="llms">How many manager sites have llms.txt?</h2>
+  <p>
+    {d.llms_txt} of {N} cited manager sites ({pct(d.llms_txt, N)}%) have an llms.txt file. llms.txt is a Markdown file at the site root that gives AI
+    tools a short map of the site. Jeremy Howard proposed it on 2024-09-03 (llmstxt.org).
+  </p>
+  <p>Many of these files come from a tool, not a person:</p>
+  <ul>
+    <li><strong>Website builders.</strong> 6 of the {d.llms_txt} files are on Wix sites and read like an automatic summary of the site.</li>
+    <li><strong>SEO plugins.</strong> 2 files say in the first line that Yoast SEO or All in One SEO made them.</li>
+    <li><strong>One brand, one file.</strong> 7 files are the same text on the city sites of one national brand.</li>
+  </ul>
+  <p>
+    The other side matters more: AI cited {noLlms} manager sites that have no llms.txt. Google says you do not need "new machine readable files, AI text files,
+    or markup" to appear in its AI features (Google Search Central).
+  </p>
+
+  <h2 id="schema">Which schema do manager sites use?</h2>
+  <p>
+    Most cited manager sites have some schema markup (JSON-LD: data about the page for machines). {d.schema_any} of {H} home pages have it, and {d.schema_business}
+    use a business type. Rich types are rare: {d.schema_rating} mark up a review rating and {d.schema_faq} have FAQPage.
+  </p>
+  <table>
+    <thead><tr><th>Schema type on the home page</th><th>Sites (of {H})</th></tr></thead>
+    <tbody>{(d.top_schema_types as [string, number][]).map(([t, n]) => <tr><td>{t}</td><td>{n}</td></tr>)}</tbody>
+  </table>
+  <p>Google also says no special schema is needed for its AI features. Schema still helps engines read your name, address, city and reviews without guessing.</p>
+
+  <h2 id="fees">Do home pages link to fees?</h2>
+  <p>
+    {d.price_link} of {H} readable home pages ({pct(d.price_link, H)}%) link to a page about fees, pricing or rates. The other {H - d.price_link} make an owner
+    (or an AI) search for the price. Owners ask AI "how much does a property manager charge in my city". A clear fee page gives the engine a direct answer.
+  </p>
+
+  <h2 id="cited">Are ready sites cited more?</h2>
+  <p>
+    In our data, sites with each feature were cited a little more often. The table shows the mean number of answers (of 150) that cited a site, with and without each
+    feature.
+  </p>
+  <table>
+    <thead><tr><th>Feature</th><th>With: mean answers (sites)</th><th>Without: mean answers (sites)</th></tr></thead>
+    <tbody>
+      {
+        lift.map((l) => (
+          <tr><td>{l.label}</td><td>{m[l.k].with} ({m[l.k].n_with})</td><td>{m[l.k].without} ({m[l.k].n_without})</td></tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p>
+    Read this with care. It is a correlation, not a cause. National brands have big, well-built sites and many city answers, so they lift the "with" side. The
+    gaps are small: most cited sites were cited in 1 answer.
+  </p>
+
+  <h2 id="what-to-do">What to fix on your site first</h2>
+  <p>The sites AI cites today are not "AI-optimized". They are open to bots and clear about the business. Start there.</p>
+  <ol>
+    <li><strong>Let the search bots in.</strong> Check robots.txt for OAI-SearchBot, Claude-SearchBot, PerplexityBot and Bingbot. Block training bots only if you want to.</li>
+    <li><strong>Show the fee.</strong> Link a fee page from the home page. Give a range in plain text, by service.</li>
+    <li><strong>Add business schema.</strong> Use LocalBusiness or RealEstateAgent with your name, address, phone and service area.</li>
+    <li><strong>Add llms.txt last.</strong> A short file does no harm. In our data, it is not what separates cited sites from the rest.</li>
+    <li><strong>Work on the sources AI reads.</strong> In the index, directories and review sites were a source in 88% of answers. Your own site is one part of the answer.</li>
+  </ol>
+  <p>
+    Our <a href="/guides/ai-search-checklist-property-management-website">AI search checklist for property management websites</a> walks through each step. Want
+    us to check your site? Ask for a free AI visibility audit on <a href="/property-management">our property management page</a>.
+  </p>
+
+  <h2 id="data">Download the data</h2>
+  <p>
+    <a href={csvUrl} download>Download the CSV</a> ({N} rows, one per site). Columns: date, site number, how many answers cited the site (1, 2-4 or 5+), the
+    checks above as true or false, blocked AI bots and schema types. We left out domain names and shuffled the rows, so no row points to a company.
+  </p>
+  <p>License: CC BY 4.0. You may use and share the data. Please link to this page.</p>
+  <p>Tao (Taras Kornichuk), founder, citata.ai.</p>
+</Guide>
