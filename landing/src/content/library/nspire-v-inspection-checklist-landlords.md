@@ -3,10 +3,10 @@ title: "NSPIRE-V Inspection Checklist for Section 8 Landlords — Citata.ai"
 description: "PHAs must move voucher inspections from HQS to NSPIRE by February 1, 2027. A room-by-room checklist, the 24-hour items and the smoke and CO alarm rules."
 headline: "NSPIRE-V Inspection Checklist for Section 8 Landlords"
 dek: "HUD's voucher deadline is February 1, 2027. Here is what the inspector will check."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-24"
+updated: "2026-10-24"
 answer: "A voucher unit passes NSPIRE when the unit, its path out to the street and the common systems that serve it are working and free of health and safety hazards (24 CFR 5.703). Key items: a working smoke alarm in each bedroom and on each level, carbon monoxide alarms where the rules require them, GFCI outlets within 6 feet of water, a guardrail at drops of 30 inches or more, and hot and cold water in the kitchen and bath. HUD extended the voucher compliance date to February 1, 2027, so some PHAs still use HQS until then."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "checklist"
 priority: 1
