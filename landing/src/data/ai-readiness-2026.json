@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-24",
+  "source_run": "2026-10-19",
+  "sites": 144,
+  "home_reachable": 127,
+  "answers_citing_total": 263,
+  "robots_ok": 125,
+  "robots_names_ai_bot": 13,
+  "sitemap_in_robots": 105,
+  "blocks_any_ai_bot": 4,
+  "blocks_any_search_bot": 1,
+  "bot_blocks": {
+    "GPTBot": 3,
+    "OAI-SearchBot": 1,
+    "ChatGPT-User": 1,
+    "ClaudeBot": 3,
+    "Claude-SearchBot": 1,
+    "Claude-User": 1,
+    "PerplexityBot": 1,
+    "Google-Extended": 3,
+    "Bingbot": 1,
+    "CCBot": 4
+  },
+  "llms_txt": 57,
+  "schema_any": 94,
+  "schema_business": 84,
+  "schema_rating": 21,
+  "schema_faq": 22,
+  "price_link": 83,
+  "top_schema_types": [
+    ["WebSite", 71],
+    ["Organization", 60],
+    ["PostalAddress", 59],
+    ["ImageObject", 50],
+    ["SearchAction", 42],
+    ["WebPage", 40],
+    ["LocalBusiness", 36],
+    ["GeoCoordinates", 35],
+    ["OpeningHoursSpecification", 34],
+    ["RealEstateAgent", 32],
+    ["ListItem", 32],
+    ["BreadcrumbList", 31]
+  ],
+  "mean_cites": {
+    "llms_txt": {
+      "with": 2.28,
+      "without": 1.53,
+      "n_with": 57,
+      "n_without": 87
+    },
+    "robots_names_ai_bot": {
+      "with": 3.08,
+      "without": 1.7,
+      "n_with": 13,
+      "n_without": 131
+    },
+    "schema_business": {
+      "with": 2.11,
+      "without": 1.56,
+      "n_with": 84,
+      "n_without": 43
+    },
+    "schema_faq": {
+      "with": 2.59,
+      "without": 1.78,
+      "n_with": 22,
+      "n_without": 105
+    },
+    "schema_rating": {
+      "with": 3.19,
+      "without": 1.67,
+      "n_with": 21,
+      "n_without": 106
+    },
+    "price_link": {
+      "with": 2.07,
+      "without": 1.64,
+      "n_with": 83,
+      "n_without": 44
+    }
+  },
+  "sites_cited_2plus": 26,
+  "pct_robots_ok": 86.8,
+  "pct_robots_names_ai_bot": 9.0,
+  "pct_sitemap_in_robots": 72.9,
+  "pct_blocks_any_ai_bot": 2.8,
+  "pct_blocks_any_search_bot": 0.7,
+  "pct_llms_txt": 39.6,
+  "pct_schema_any": 74.0,
+  "pct_schema_business": 66.1,
+  "pct_schema_rating": 16.5,
+  "pct_schema_faq": 17.3,
+  "pct_price_link": 65.4
+}

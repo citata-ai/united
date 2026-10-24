@@ -89,6 +89,7 @@ Style: a vintage postage-stamp line engraving printed in three inks on clean whi
 | `guide-city-page-v1` | Style N, library draft `city-page-template-property-management`, style reference `guide-leads-v2`. A landlord in an orange toga leans over a big colorful town map on a table with a quill; a brass pin marks one district; a CRT computer on a side table. Cyan sky. |
 | `guide-accidental-landlord-v1` | Style N, library draft `accidental-landlord-guide`, style reference `guide-appfolio-buildium-v1`. A surprised young man in an orange toga at the blue door of a pink cottage holds a glowing brass key; scrolls and a toolbox at his feet. Yellow sky. |
 | `guide-door-churn-v1` | Style N, library draft `door-growth-ceiling-churn`, style reference `guide-appfolio-buildium-v1`. A man in an orange toga pours model houses into a big stone amphora while houses leak out of a crack at its base; a colorful town behind. Coral sky. |
+| `research-ai-readiness-v1` | Style N, research page `ai-readiness-property-managers-2026`, style reference `guide-agencies-v2`. A manager in an orange toga walks a row of tiled houses with a brass lantern and a clipboard; a brass mechanical owl sits over one door on a pinned parchment; two CRT computers on green carts. Lilac sky. |
 | `hero-v6`, `footer-v6` (old) | Vignette hero with a faded bottom; hill-town footer with Joseph as a carpenter. |
 
 ## 2b-N. Content images: N · Neo-Renaissance pop (since 2026-10-18)

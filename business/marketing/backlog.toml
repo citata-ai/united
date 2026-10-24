@@ -223,7 +223,7 @@ kind = "original-research"
 title = "AI-readiness audit of the property managers AI names: llms.txt, AI bot rules in robots.txt, schema, fee page (from H03 index)"
 demand = "pm-how prompts: 0 of 24 answers name us; AI cites developers.google.com and support.google.com. No public data on PM sites. Citant.ai posted 'How LLMs decide what to cite' 2026-10-20; PMW sells llm-summary tags."
 score = 8
-status = "idea"
+status = "live"
 note = "Crawl only public robots.txt, llms.txt and home page. Publish counts and a CSV, not a shame list: name no company in a new way without Tao."
 
 [[item]]

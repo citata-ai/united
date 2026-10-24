@@ -179,9 +179,9 @@ status = "running"
 id = "H03-E1"
 hypothesis = "H03"
 start = "2026-10-19"
-actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines (done 2026-10-19, 150/150 answers)", "Write the research page with method and data download (staged)", "Pitch 30 sites (list: business/marketing/outreach/h03-targets.csv; waits for Tao)"]
-urls = ["https://citata.ai/research/ai-property-manager-index-2026", "https://citata.ai/data/ai-property-manager-index-2026.csv"]
-learned = "Run 1: 88% of answers used a directory or review site (Expertise.com 93/150, Yelp 50, iPropertyManagement 50). Gemini linked a company site in 96% of answers, ChatGPT in 30%. For client work: listings on Expertise.com and iPropertyManagement come first."
+actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines (done 2026-10-19, 150/150 answers)", "Write the research page with method and data download (staged)", "Pitch 30 sites (list: business/marketing/outreach/h03-targets.csv; waits for Tao)", "B024 follow-up (2026-10-24): AI-readiness crawl of the 144 manager sites the engines cited; research page + CSV with no domain names (live 2026-10-24)"]
+urls = ["https://citata.ai/research/ai-property-manager-index-2026", "https://citata.ai/data/ai-property-manager-index-2026.csv", "https://citata.ai/research/ai-readiness-property-managers-2026", "https://citata.ai/data/ai-readiness-property-managers-2026.csv"]
+learned = "Run 1: 88% of answers used a directory or review site (Expertise.com 93/150, Yelp 50, iPropertyManagement 50). Gemini linked a company site in 96% of answers, ChatGPT in 30%. For client work: listings on Expertise.com and iPropertyManagement come first. Crawl 2026-10-24: of 144 cited manager sites, 60% have no llms.txt, 4 block an AI bot, 74% of 127 readable home pages have JSON-LD, 65% link a fee page. llms.txt is not what gets a manager cited."
 status = "running"
 
 [[experiment]]
