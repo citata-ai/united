@@ -180,6 +180,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-assistance-animal-requests-v1",
     alt: "A pop engraving under a cyan sky: a landlord in an orange toga hands a brass key to a tenant with a calm service dog at the porch of a mint two-flat, with small tiled houses in the distance.",
   },
+  "ai-readiness-property-managers-2026": {
+    img: "research-ai-readiness-v1",
+    alt: "A pop engraving under a lilac sky: a manager in an orange toga walks a row of tiled houses with a lantern and a clipboard; a brass owl sits over a door and old computers wait on carts.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
