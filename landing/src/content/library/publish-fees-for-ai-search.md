@@ -3,10 +3,10 @@ title: "Should a Property Manager Publish Fees for AI Search? — Citata.ai"
 description: "Yes. If your fees are hidden, AI quotes someone else's average. Publish a full fee table with ranges and conditions, the same on your site and Google profile."
 headline: "Should You Publish Your Fees for AI Search?"
 dek: "If your page hides the fees, AI fills the gap with another company's numbers."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-25"
+updated: "2026-10-25"
 answer: "Yes, publish a full owner fee table. When your fees are hidden, an AI answer cannot quote you, so it quotes a market average from other sites or names a company that does publish. Show every fee an owner can pay: management, leasing, renewal, setup, maintenance markup, vacancy and cancellation terms. Use a clear range with the condition that moves the price, and keep the same numbers on your site and your Google Business Profile."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "how-to"
 priority: 1
