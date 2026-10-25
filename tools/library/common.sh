@@ -1,6 +1,6 @@
 # Shared setup for tools/library/*.sh. Runs from launchd: no login shell, so set PATH here.
 export PATH="/Users/admin/.local/share/mise/shims:/Users/admin/.local/share/mise/installs/bun/latest/bin:/opt/homebrew/bin:/Users/admin/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-REPO=${CITATA_PUBLISHER:-/Users/admin/.t3/worktrees/citata.ai/library-publisher}
+REPO=${CITATA_PUBLISHER:-/Users/admin/.citata-library-publisher}
 LOGDIR="$HOME/Library/Logs/citata-library"
 mkdir -p "$LOGDIR"
 cd "$REPO" || exit 1
