@@ -3,10 +3,10 @@ title: "Failed a Section 8 Inspection? What Happens Next — Citata.ai"
 description: "After a failed Section 8 inspection you get 24 hours for life-threatening items and 30 days for others. Tenant damage, reinspection fees, appeals and abatement."
 headline: "Failed a Section 8 Inspection? What Happens Next"
 dek: "You get 24 hours or 30 days to fix it. A second fail can cost you the HAP."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-26"
+updated: "2026-10-26"
 answer: "After a failed inspection, the housing authority sends a written list of deficiencies. You must fix life-threatening items within 24 hours and other items within 30 days, or a PHA-approved extension (24 CFR 982.404). If it was the move-in inspection, payments cannot start until the unit passes. If it was an annual or complaint inspection, missed deadlines lead to withheld and then abated payments, and after 60 more days the PHA must end the HAP contract."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "how-to"
 priority: 1
