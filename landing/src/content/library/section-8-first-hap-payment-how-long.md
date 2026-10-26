@@ -3,10 +3,10 @@ title: "How Long Until the First Section 8 Payment Arrives? — Citata.ai"
 description: "The first HAP payment can take up to 60 days after move-in. It is backdated to the later of move-in or a passed inspection. What delays it and how to speed up."
 headline: "How Long Until the First Section 8 Payment Arrives"
 dek: "Plan for up to 60 days. Three housing authorities show why, and what to file early."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-26"
+updated: "2026-10-26"
 answer: "Plan for up to 60 days from the start of the lease. Federal rules let the housing authority sign the HAP contract up to 60 days after the lease starts, and it cannot pay until the contract is signed (24 CFR 982.305). The first payment then covers the time back to the start of the lease term. Tacoma and Maricopa County both warn of up to 60 days, and Santa Cruz County says two to eight weeks."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "guide"
 priority: 1

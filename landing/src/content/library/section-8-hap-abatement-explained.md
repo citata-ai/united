@@ -3,10 +3,10 @@ title: "HAP Abatement Explained: Why the PHA Stops Paying — Citata.ai"
 description: "HAP abatement stops the housing authority's rent share when repairs miss the deadline. Who pays, whether it is backdated, and when the HAP contract ends."
 headline: "HAP Abatement: Why the PHA Stops Paying"
 dek: "Miss a repair deadline and the subsidy stops. The lost months do not come back."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-26"
+updated: "2026-10-26"
 answer: "HAP abatement means the public housing agency (PHA) stops its share of the rent because the owner did not fix inspection deficiencies on time: 24 hours for life-threatening items, 30 days for others. The tenant keeps paying only the tenant share, and the owner cannot collect the abated amount from the tenant. If the unit passes within 60 days, payments restart, but the PHA does not pay for the abated period. After 60 days the PHA must end the HAP contract (24 CFR 982.404)."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "guide"
 priority: 1
