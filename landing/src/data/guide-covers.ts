@@ -184,6 +184,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "research-ai-readiness-v1",
     alt: "A pop engraving under a lilac sky: a manager in an orange toga walks a row of tiled houses with a lantern and a clipboard; a brass owl sits over a door and old computers wait on carts.",
   },
+  "do-i-need-an-llc-for-my-rental": {
+    img: "guide-do-i-need-an-llc-for-my-rental-v1",
+    alt: "A pop engraving under a coral sky: A man in a vibrant orange toga stands before rows of terracotta-tiled two-flat houses, holding a heavy brass key in one hand while a rotary phone rests on a marble column beside him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
