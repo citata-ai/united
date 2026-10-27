@@ -264,6 +264,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-rental-income-is-taxed-v1",
     alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands outside a two-flat building, holding a brass key while checking a rotary phone with small tiled houses lining the sunny street behind him.",
   },
+  "how-to-buy-your-first-rental-property": {
+    img: "guide-how-to-buy-your-first-rental-property-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a heavy brass key while inspecting a two-flat property.",
+  },
+  "how-to-calculate-rental-cash-flow": {
+    img: "guide-how-to-calculate-rental-cash-flow-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga stands proudly beside a charming row of small tiled houses, holding an old rotary phone.",
+  },
+  "how-to-calculate-rental-property-roi": {
+    img: "guide-how-to-calculate-rental-property-roi-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga stands outside a two-flat house and examines a vintage CRT computer on a marble column amidst small tiled houses.",
+  },
+  "how-to-choose-a-property-manager": {
+    img: "guide-how-to-choose-a-property-manager-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands outside a two-flat holding a rotary phone and comparing several scrolls laid out on a stone table, with a row of small tiled houses lining the sunlit street in the background.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
