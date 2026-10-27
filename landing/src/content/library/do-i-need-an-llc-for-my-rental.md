@@ -3,10 +3,10 @@ title: "Do You Need an LLC for Your Rental Property? Costs and Limits — Citata
 description: "An LLC can shield your other assets from a rental claim, but it costs money each year and does not cut taxes. See state fees and when insurance is enough."
 headline: "Do You Need an LLC for Your Rental Property"
 dek: "What an LLC protects, what it costs by state, and why the IRS ignores a single-member LLC."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "You do not need an LLC to own a rental, and many owners of one home use insurance alone. An LLC can keep a claim from the rental away from your other assets, if you run it as a separate business. It does not change federal tax for a single owner: the IRS treats a single-member LLC as a disregarded entity reported on your own return. State costs vary, from an $800 yearly tax in California to $400 in Delaware."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1
