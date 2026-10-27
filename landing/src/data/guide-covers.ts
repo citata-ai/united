@@ -200,6 +200,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-do-i-need-an-llc-for-my-rental-v1",
     alt: "A pop engraving under a lilac sky: A Roman property manager in an orange toga holding a rotary phone stands in front of small tiled houses.",
   },
+  "eviction-process-step-by-step": {
+    img: "guide-eviction-process-step-by-step-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key and checking a wall letterbox.",
+  },
+  "fair-housing-rules-for-rental-ads": {
+    img: "guide-fair-housing-rules-for-rental-ads-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands outside a two-flat building while holding a brass key.",
+  },
+  "first-hire-property-management-company": {
+    img: "guide-first-hire-property-management-company-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga sits at a stone desk holding a vintage rotary phone amidst scrolls, with a row of small tiled two-flat houses on the horizon.",
+  },
+  "florida-eviction-process": {
+    img: "guide-florida-eviction-process-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat building with tiled roofs, sliding a notice into a metal letterbox while a brass key hangs from his belt.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
