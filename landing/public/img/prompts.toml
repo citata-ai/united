@@ -512,3 +512,27 @@ file = "img/guide-how-much-does-a-property-manager-cost-owner-v1-*.webp"
 prompt = "Use the image /tmp/img-how-much-does-a-property-manager-cost-owner/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands beside a row of small tiled houses, holding a vintage rotary phone while calculating collection fees."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-10-27"
+
+[[image]]
+file = "img/guide-how-much-rent-can-i-get-for-my-house-v1-*.webp"
+prompt = "Use the image /tmp/img-how-much-rent-can-i-get-for-my-house/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A landlord in an orange toga stands before a row of small tiled houses, holding a brass key as he evaluates neighboring rents."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"
+
+[[image]]
+file = "img/guide-how-much-to-raise-rent-at-renewal-v1-*.webp"
+prompt = "Use the image /tmp/img-how-much-to-raise-rent-at-renewal/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A landlord in an orange toga stands before a two-flat holding a brass key, deciding on a fair lease renewal for his tenant. Small tiled houses line the quiet street behind him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"
+
+[[image]]
+file = "img/guide-how-often-to-inspect-a-rental-v1-*.webp"
+prompt = "Use the image /tmp/img-how-often-to-inspect-a-rental/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A landlord in an orange toga stands before a row of small tiled houses holding a brass key while consulting a vintage rotary phone. Beside him rises a two-flat property with neatly tiled roofs."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"
+
+[[image]]
+file = "img/guide-how-rental-income-is-taxed-v1-*.webp"
+prompt = "Use the image /tmp/img-how-rental-income-is-taxed/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands outside a two-flat building, holding a brass key while checking a rotary phone. Small tiled houses line the sunny street behind him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"
