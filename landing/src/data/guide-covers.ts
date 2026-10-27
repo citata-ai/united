@@ -216,6 +216,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-florida-eviction-process-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat building with tiled roofs, sliding a notice into a metal letterbox while a brass key hangs from his belt.",
   },
+  "florida-security-deposit-law": {
+    img: "guide-florida-security-deposit-law-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga stands outside small tiled houses inspecting a brass letterbox while holding a bronze key.",
+  },
+  "get-first-property-management-clients": {
+    img: "guide-get-first-property-management-clients-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before small tiled houses, holding a brass key.",
+  },
+  "get-more-google-reviews-property-management": {
+    img: "guide-get-more-google-reviews-property-management-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands outside a Roman two-flat holding a rotary phone while small tiled houses line the street.",
+  },
+  "google-ads-property-management": {
+    img: "guide-google-ads-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga inspects a rotary phone outside a two-flat building with small tiled houses lining the street.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
