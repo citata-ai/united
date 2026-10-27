@@ -184,6 +184,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "research-ai-readiness-v1",
     alt: "A pop engraving under a lilac sky: a manager in an orange toga walks a row of tiled houses with a lantern and a clipboard; a brass owl sits over a door and old computers wait on carts.",
   },
+  "best-ways-to-collect-rent": {
+    img: "guide-best-ways-to-collect-rent-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holding a rotary phone stands before small tiled houses in an ancient Roman property courtyard.",
+  },
+  "buy-property-management-book-of-business": {
+    img: "guide-buy-property-management-book-of-business-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands between small tiled houses, handing a brass key to a retiring colleague while a rotary phone rests on a stone podium.",
+  },
+  "cost-of-an-eviction": {
+    img: "guide-cost-of-an-eviction-v1",
+    alt: "A pop engraving under a cyan sky: A man in a vibrant orange toga stands among tightly packed two-flat stone houses, holding a heavy ledger while looking at a rotary phone resting on a marble column.",
+  },
+  "do-i-need-an-llc-for-my-rental": {
+    img: "guide-do-i-need-an-llc-for-my-rental-v1",
+    alt: "A pop engraving under a lilac sky: A Roman property manager in an orange toga holding a rotary phone stands in front of small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
