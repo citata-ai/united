@@ -3,10 +3,10 @@ title: "How to Buy a Property Management Book of Business — Citata.ai"
 description: "Find sellers close to home, pick asset or stock purchase, price on SDE with a per-door check, and tie part of the price to doors that stay after closing."
 headline: "How to Buy a Property Management Book of Business"
 dek: "Where sellers hide, how to structure the deal, and how to keep the owners you paid for."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "Start with local firms whose owners want to retire, then use M&A brokers and your network. Most small book purchases are asset purchases of the management agreements. Price the deal on a multiple of earnings, check it per door, and hold back part of the price against doors that leave after closing. A joint letter from seller and buyer keeps the most owners."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "guide"
 priority: 1

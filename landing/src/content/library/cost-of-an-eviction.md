@@ -3,10 +3,10 @@ title: "How Much Does an Eviction Cost a Landlord? — Citata.ai"
 description: "Court fees for an eviction run about $185 to $450 in the states we checked. Lost rent and turnover cost far more. See the fee table and a worked example."
 headline: "How Much Does an Eviction Cost?"
 dek: "Court fees are the small part. Lost rent and turnover are the big part."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "Court and service fees for one eviction are a few hundred dollars: $240 to $450 to file in California, and about $325 in filing, summons, service and writ fees in Hendry County, Florida. The larger costs are lost rent, attorney fees and turnover. In our worked example, a $1,800 unit with 3 months of lost rent costs about $5,725 before attorney fees and repairs."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 1

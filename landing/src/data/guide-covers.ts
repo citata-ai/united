@@ -184,6 +184,86 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "research-ai-readiness-v1",
     alt: "A pop engraving under a lilac sky: a manager in an orange toga walks a row of tiled houses with a lantern and a clipboard; a brass owl sits over a door and old computers wait on carts.",
   },
+  "best-ways-to-collect-rent": {
+    img: "guide-best-ways-to-collect-rent-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holding a rotary phone stands before small tiled houses in an ancient Roman property courtyard.",
+  },
+  "buy-property-management-book-of-business": {
+    img: "guide-buy-property-management-book-of-business-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands between small tiled houses, handing a brass key to a retiring colleague while a rotary phone rests on a stone podium.",
+  },
+  "cost-of-an-eviction": {
+    img: "guide-cost-of-an-eviction-v1",
+    alt: "A pop engraving under a cyan sky: A man in a vibrant orange toga stands among tightly packed two-flat stone houses, holding a heavy ledger while looking at a rotary phone resting on a marble column.",
+  },
+  "do-i-need-an-llc-for-my-rental": {
+    img: "guide-do-i-need-an-llc-for-my-rental-v1",
+    alt: "A pop engraving under a lilac sky: A Roman property manager in an orange toga holding a rotary phone stands in front of small tiled houses.",
+  },
+  "eviction-process-step-by-step": {
+    img: "guide-eviction-process-step-by-step-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key and checking a wall letterbox.",
+  },
+  "fair-housing-rules-for-rental-ads": {
+    img: "guide-fair-housing-rules-for-rental-ads-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands outside a two-flat building while holding a brass key.",
+  },
+  "first-hire-property-management-company": {
+    img: "guide-first-hire-property-management-company-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga sits at a stone desk holding a vintage rotary phone amidst scrolls, with a row of small tiled two-flat houses on the horizon.",
+  },
+  "florida-eviction-process": {
+    img: "guide-florida-eviction-process-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat building with tiled roofs, sliding a notice into a metal letterbox while a brass key hangs from his belt.",
+  },
+  "florida-security-deposit-law": {
+    img: "guide-florida-security-deposit-law-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga stands outside small tiled houses inspecting a brass letterbox while holding a bronze key.",
+  },
+  "get-first-property-management-clients": {
+    img: "guide-get-first-property-management-clients-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before small tiled houses, holding a brass key.",
+  },
+  "get-more-google-reviews-property-management": {
+    img: "guide-get-more-google-reviews-property-management-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands outside a Roman two-flat holding a rotary phone while small tiled houses line the street.",
+  },
+  "google-ads-property-management": {
+    img: "guide-google-ads-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga inspects a rotary phone outside a two-flat building with small tiled houses lining the street.",
+  },
+  "google-business-profile-property-management": {
+    img: "guide-google-business-profile-property-management-v1",
+    alt: "A pop engraving under a coral sky: A property manager in an orange toga inspects a row of small tiled houses while holding a rotary phone.",
+  },
+  "how-fast-must-a-landlord-make-repairs": {
+    img: "guide-how-fast-must-a-landlord-make-repairs-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga stands outside small tiled houses, holding an old rotary phone while reviewing repair requests.",
+  },
+  "how-many-doors-to-break-even": {
+    img: "guide-how-many-doors-to-break-even-v1",
+    alt: "A pop engraving under a cyan sky: A property manager in an orange toga calculates overhead on a vintage rotary phone resting on a stone pedestal, flanked by neat rows of small tiled houses and a two-flat.",
+  },
+  "how-much-does-a-property-manager-cost-owner": {
+    img: "guide-how-much-does-a-property-manager-cost-owner-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands beside a row of small tiled houses, holding a vintage rotary phone while calculating collection fees.",
+  },
+  "how-much-rent-can-i-get-for-my-house": {
+    img: "guide-how-much-rent-can-i-get-for-my-house-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga stands before a row of small tiled houses, holding a brass key as he evaluates neighboring rents.",
+  },
+  "how-much-to-raise-rent-at-renewal": {
+    img: "guide-how-much-to-raise-rent-at-renewal-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga stands before a two-flat holding a brass key, deciding on a fair lease renewal for his tenant while small tiled houses line the street behind him.",
+  },
+  "how-often-to-inspect-a-rental": {
+    img: "guide-how-often-to-inspect-a-rental-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga holding a brass key and a rotary phone stands before small tiled houses and a two-flat property.",
+  },
+  "how-rental-income-is-taxed": {
+    img: "guide-how-rental-income-is-taxed-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands outside a two-flat building, holding a brass key while checking a rotary phone with small tiled houses lining the sunny street behind him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
