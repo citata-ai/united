@@ -488,3 +488,27 @@ file = "img/guide-google-ads-property-management-v1-*.webp"
 prompt = "Use the image /tmp/img-google-ads-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga inspects a rotary phone outside a two-flat building. Small tiled houses line the quiet street under a flat lilac sky."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-10-27"
+
+[[image]]
+file = "img/guide-google-business-profile-property-management-v1-*.webp"
+prompt = "Use the image /tmp/img-google-business-profile-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga inspects a row of small tiled houses while holding a rotary phone."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"
+
+[[image]]
+file = "img/guide-how-fast-must-a-landlord-make-repairs-v1-*.webp"
+prompt = "Use the image /tmp/img-how-fast-must-a-landlord-make-repairs/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands outside small tiled houses, holding an old rotary phone while reviewing repair requests."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"
+
+[[image]]
+file = "img/guide-how-many-doors-to-break-even-v1-*.webp"
+prompt = "Use the image /tmp/img-how-many-doors-to-break-even/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga calculates overhead on a vintage rotary phone resting on a stone pedestal. In the background stand neat rows of small tiled houses and a two-flat."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"
+
+[[image]]
+file = "img/guide-how-much-does-a-property-manager-cost-owner-v1-*.webp"
+prompt = "Use the image /tmp/img-how-much-does-a-property-manager-cost-owner/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands beside a row of small tiled houses, holding a vintage rotary phone while calculating collection fees."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-27"

@@ -232,6 +232,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-google-ads-property-management-v1",
     alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga inspects a rotary phone outside a two-flat building with small tiled houses lining the street.",
   },
+  "google-business-profile-property-management": {
+    img: "guide-google-business-profile-property-management-v1",
+    alt: "A pop engraving under a coral sky: A property manager in an orange toga inspects a row of small tiled houses while holding a rotary phone.",
+  },
+  "how-fast-must-a-landlord-make-repairs": {
+    img: "guide-how-fast-must-a-landlord-make-repairs-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga stands outside small tiled houses, holding an old rotary phone while reviewing repair requests.",
+  },
+  "how-many-doors-to-break-even": {
+    img: "guide-how-many-doors-to-break-even-v1",
+    alt: "A pop engraving under a cyan sky: A property manager in an orange toga calculates overhead on a vintage rotary phone resting on a stone pedestal, flanked by neat rows of small tiled houses and a two-flat.",
+  },
+  "how-much-does-a-property-manager-cost-owner": {
+    img: "guide-how-much-does-a-property-manager-cost-owner-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands beside a row of small tiled houses, holding a vintage rotary phone while calculating collection fees.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
