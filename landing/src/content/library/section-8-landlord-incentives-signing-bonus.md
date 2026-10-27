@@ -3,10 +3,10 @@ title: "Section 8 Landlord Incentives: Bonuses and Damage Pay — Citata.ai"
 description: "Some housing authorities pay voucher landlords signing bonuses, vacancy pay or damage claims. Real amounts from Delaware and Santa Cruz, and what HUD OIG found."
 headline: "Section 8 Landlord Incentives: What PHAs Pay"
 dek: "A $1,000 signing bonus in Delaware, up to $5,000 in damage cover in Santa Cruz."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "Some public housing agencies (PHAs) pay landlords to join or stay in the voucher program. The common types are signing bonuses, vacancy loss payments, damage reimbursement and security deposit help. Delaware's state housing authority pays a $1,000 bonus for a new landlord's first unit, and the Santa Cruz County housing authority covers up to $5,000 in costs above the deposit. There is no national program: each PHA decides, and funds can run out."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "guide"
 priority: 1

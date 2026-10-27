@@ -3,10 +3,10 @@ title: "Section 8 Payment Standard vs Fair Market Rent — Citata.ai"
 description: "HUD sets the Fair Market Rent. Your housing authority sets the payment standard at 90% to 110% of it. How the cap works, exception standards and FY2027 FMRs."
 headline: "Payment Standard vs Fair Market Rent: The Voucher Cap"
 dek: "HUD publishes the FMR. Your housing authority turns it into the number that sets the HAP."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "The Fair Market Rent (FMR) is HUD's estimate of rent for an area and unit size. The payment standard is the cap each housing authority sets from it, usually between 90% and 110% of the FMR, without HUD approval (24 CFR 982.503). The payment standard limits the housing assistance payment (HAP): the PHA pays the lower of the payment standard or the gross rent, minus the family's total tenant payment. A rent above the payment standard is allowed, but the family pays the difference."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "guide"
 priority: 1
