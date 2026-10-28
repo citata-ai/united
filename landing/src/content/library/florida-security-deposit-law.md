@@ -3,10 +3,10 @@ title: "Florida Security Deposit Law: No Cap, 15 and 30-Day Rules — Citata.ai"
 description: "Florida sets no deposit cap. A landlord returns the deposit in 15 days, or sends a claim notice by certified mail in 30 days. Rules from Fla. Stat. 83.49."
 headline: "Florida Security Deposit Law for Landlords"
 dek: "Fla. Stat. § 83.49, read on the Florida Senate site on 2026-10-19, in one table."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "Florida law sets no maximum security deposit. Under Fla. Stat. § 83.49, the landlord must return the full deposit within 15 days after the lease ends, or send a written notice of a claim within 30 days by certified mail or by e-mail under § 83.505. The tenant then has 15 days to object. A landlord who misses the 30-day notice loses the right to take money from the deposit, but may still sue for damages after returning it."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1

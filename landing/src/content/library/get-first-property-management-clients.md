@@ -3,10 +3,10 @@ title: "How a New Property Manager Gets the First 10 to 50 Doors — Citata.ai"
 description: "A new property management company wins its first doors from its own network, agent partners and a real Google Business Profile, with an offer that lowers owner risk."
 headline: "How a New Property Manager Wins the First 50 Doors"
 dek: "No track record yet. Your network, three partner types and a low-risk offer close the gap."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "A new property management company gets its first 10 doors from people who already trust the founder: past clients, coworkers, friends who own a rental, and local agents. Doors 10 to 50 come from partners who meet owners every week and from a Google Business Profile with real reviews. Make the offer low-risk for the owner: published fees, no management fee until the home is rented, and an easy way to cancel."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "how-to"
 priority: 1
