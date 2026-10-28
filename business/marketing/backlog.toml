@@ -184,7 +184,7 @@ kind = "data-page"
 title = "Will Section 8 keep paying landlords in 2027? FY2027 funding status, shortfall rules, what a PHA may do"
 demand = "FY2027 runs on a continuing resolution since late July 2026; the FY2027 request cuts HUD ~13%. Landlord fear of HAP stops. Pairs with B019."
 score = 7
-status = "staged"
+status = "live"
 note = "Shipped 2026-10-28 as /guides/section-8-rent-limits/section-8-funding-2027. hud.gov blocks agents (Cloudflare); HUD PDFs read from web.archive.org copies. Refresh when full-year FY2027 THUD funding passes or the CR is extended (2026-12-11)."
 
 [[item]]
