@@ -247,3 +247,12 @@ title = "Research: AI-readiness of the property manager sites AI cites"
 url = "https://citata.ai/research/ai-readiness-property-managers-2026"
 ref = "B024, H03"
 result = "Live on citata.ai 2026-10-24; stage and prod give 200."
+
+[[entry]]
+date = "2026-10-28"
+side = "internal"
+kind = "content"
+title = "Data page: will Section 8 keep paying landlords in 2027 (FY2027 funding and shortfall rules)"
+url = "https://citata.ai/guides/section-8-rent-limits/section-8-funding-2027"
+ref = "B020, H01"
+result = "Live on citata.ai 2026-10-28; stage and prod give 200."
