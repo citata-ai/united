@@ -1,0 +1,216 @@
+---
+// Backlog B020, hypothesis H01: will Section 8 keep paying landlords in 2027? FY2027 funding status and shortfall rules.
+// Facts read 2026-10-28 from CRS R49341, HUD Notices PIH 2026-12 (Rev. 2) and PIH 2026-25, the HUD 2026 Budget
+// Management Letter, 24 CFR 982.454 and NAHRO (2026-10-19). Refresh when Congress passes full-year FY2027 THUD funding.
+// Rules: answer first, ASD-STE100, sources, no legal advice, Fair Housing (no text about who should rent where).
+import Guide from "../../../layouts/Guide.astro";
+import Section8Cta from "../../../components/Section8Cta.astro";
+import { src } from "../../../data/section8.ts";
+import { hud } from "../../../data/payment-standard-cuts.ts";
+
+const path = "/guides/section-8-rent-limits/section-8-funding-2027";
+const published = "2026-10-28";
+const checked = "2026-10-28";
+
+const s = {
+  crs: {
+    label: "Congressional Research Service: R49341, THUD Appropriations for FY2027 (2026-09-03)",
+    url: "https://www.everycrsreport.com/reports/R49341.html",
+  },
+  pih25: {
+    label: "HUD: Notice PIH 2026-25, Tenant Protection Vouchers for EHV families (2026-09-29)",
+    url: "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-25.pdf",
+  },
+  cfr453: {
+    label: "eCFR: 24 CFR 982.453, owner breach of contract",
+    url: "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-IX/part-982/subpart-H/section-982.453",
+  },
+  cfr454: {
+    label: "eCFR: 24 CFR 982.454, termination of HAP contract: insufficient funding",
+    url: "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-IX/part-982/subpart-H/section-982.454",
+  },
+  nahro: {
+    label: "NAHRO: Congress faces year-end HUD funding decisions as key PHA deadlines approach (2026-10-19)",
+    url: "https://www.nahro.org/news/fy2027-hud-funding-pha-deadlines-october-2026/",
+  },
+};
+
+// Tenant-Based Rental Assistance (Housing Choice Vouchers), $ millions. CRS R49341, Table 3.
+const money = [
+  { line: "Tenant-Based Rental Assistance, total", fy26: 38439, req: 38846, house: 38083 },
+  { line: "Voucher renewals (HAP to owners)", fy26: 34957, req: 35565, house: 35453 },
+  { line: "Administrative fees (housing authority staff)", fy26: 2836, req: 2951, house: 2300 },
+];
+const bn = (m: number) => `$${(m / 1000).toFixed(3)} billion`;
+
+const fm = {
+  title: "Will Section 8 Keep Paying Landlords in 2027? — Citata.ai",
+  description:
+    "Section 8 funding for FY2027: a stopgap law pays HUD at 2026 rates to 2026-12-11. What a housing authority in shortfall may do, and what it means for HAP payments.",
+  headline: "Will Section 8 Keep Paying Landlords in 2027?",
+  dek: "FY2027 voucher funding is not final. Here is what is in law now, and the rules for a shortfall.",
+  published,
+  updated: published,
+  answer:
+    "Yes for now, but full-year money for 2027 is not final. A stopgap law (P.L. 119-103, signed 2026-09-02) funds HUD at 2026 rates and conditions through 2026-12-11, so housing authorities keep paying HAP under current contracts. A housing authority can end a HAP contract for lack of money only if it finds the funding insufficient under HUD rules (24 CFR 982.454), and HUD says preventing such terminations is its highest priority. The real risk for landlords is slower: fewer new vouchers and lower payment standards at housing authorities that run short.",
+  faq: [
+    {
+      q: "Is Section 8 funded for 2027?",
+      a: "Only in part. As of 2026-10-28, a continuing resolution (P.L. 119-103) funds HUD at FY2026 rates through 2026-12-11. Congress has not passed full-year FY2027 HUD funding; the Senate had no FY2027 THUD bill at the time of the CRS report (2026-09-03).",
+    },
+    {
+      q: "Can a housing authority stop paying my HAP because of a budget shortfall?",
+      a: "A housing authority may terminate a HAP contract if it determines, under HUD requirements, that its funding is insufficient (24 CFR 982.454). HUD Notice PIH 2026-12 says preventing terminations is HUD's highest priority and that HUD would approve terminations only in \"extremely rare circumstances\". HUD also says it cannot guarantee funds for all shortfalls.",
+    },
+    {
+      q: "What does a housing authority in shortfall do first?",
+      a: "It works with HUD's Shortfall Prevention Team on an action plan. Typical steps: stop issuing new vouchers, lower payment standards, end exception payment standards and check rent reasonableness (HUD 2026 Budget Management Letter).",
+    },
+    {
+      q: "Can a payment standard cut hit my current tenant at once?",
+      a: "Not under the normal rule: a cut reaches a family that stays in its unit no earlier than 2 years after it starts (24 CFR 982.505). But a housing authority with good cause to prevent a shortfall can ask HUD for a waiver to apply the cut at once, or to set payment standards below 90% of the FMR (Notice PIH 2026-12).",
+    },
+    {
+      q: "What happens to Emergency Housing Vouchers (EHV) in my unit?",
+      a: "Under Notice PIH 2026-25, every EHV family under lease on 2026-09-30 gets a tenant protection voucher by 2026-12-31. The family can stay in the unit and does not need rescreening. The voucher is not reissued when the family leaves.",
+    },
+    {
+      q: "What did the President's FY2027 budget ask for vouchers?",
+      a: "It asked for $35.565 billion for voucher renewals, and language to stop reissuing vouchers on turnover except in some cases (CRS R49341). The House committee bill (H.R. 9170) gives $35.453 billion and does not include that limit.",
+    },
+  ],
+  sources: [s.crs, hud.notice, s.pih25, hud.source, s.cfr454, s.cfr453, src.cfr505, s.nahro],
+};
+
+const headings = [
+  { depth: 2, slug: "status", text: "FY2027 Section 8 funding status on 2026-10-28" },
+  { depth: 2, slug: "numbers", text: "FY2027 voucher funding: request, House bill, 2026 level" },
+  { depth: 2, slug: "hap", text: "Can a housing authority stop HAP payments?" },
+  { depth: 2, slug: "shortfall", text: "What a housing authority in shortfall may do" },
+  { depth: 2, slug: "ehv", text: "Emergency Housing Vouchers end on 2026-12-31" },
+  { depth: 2, slug: "dates", text: "Dates landlords should watch" },
+  { depth: 2, slug: "landlord-steps", text: "Steps for landlords" },
+];
+---
+
+<Guide
+  frontmatter={fm}
+  url={path}
+  headings={headings}
+  section={{ name: "Section 8 rent limits", href: "/guides/section-8-rent-limits", note: "HUD FY2027 data for landlords" }}
+  about={["Section 8 Housing Choice Voucher program", "Housing assistance payment", "United States federal budget"]}
+  method={`How we made this page: AI agents read the CRS report, the HUD notices and the regulation linked below, and we quote them. Last checked ${checked}. Congress can change FY2027 funding at any time; we refresh this page when it does. This page is not legal advice.`}
+>
+  <h2 id="status">FY2027 Section 8 funding status on 2026-10-28</h2>
+  <p>
+    Section 8 funding for FY2027 runs on a stopgap law. The Continuing Appropriations and Extensions Act, 2027 (H.R. 6500,
+    P.L. 119-103) became law on 2026-09-02. It funds HUD through 2026-12-11. CRS says it funds HUD programs "at the same
+    rate and under the same conditions as in FY2026, with some exceptions".
+  </p>
+  <ul>
+    <li><strong>House.</strong> The House Appropriations Committee approved its FY2027 HUD bill, H.R. 9170, on 2026-06-03 (CRS).</li>
+    <li><strong>Senate.</strong> At the time of the CRS report (2026-09-03), the Senate Appropriations Committee had no FY2027 HUD bill.</li>
+    <li><strong>Next step.</strong> Congress must act by 2026-12-11: a full-year bill or another stopgap. NAHRO (2026-10-19) calls the final FY2027 decisions "TBD".</li>
+  </ul>
+
+  <h2 id="numbers">FY2027 voucher funding: request, House bill, 2026 level</h2>
+  <p>
+    FY2027 voucher money is close to the 2026 level in all three plans. The big gap is the fee that pays housing authority
+    staff. Numbers from CRS R49341, Table 3.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Line</th><th>FY2026 enacted</th><th>FY2027 request</th><th>FY2027 House committee</th></tr>
+    </thead>
+    <tbody>
+      {
+        money.map((m) => (
+          <tr>
+            <td>{m.line}</td>
+            <td>{bn(m.fy26)}</td>
+            <td>{bn(m.req)}</td>
+            <td>{bn(m.house)}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <ul>
+    <li><strong>Renewals.</strong> The House bill gives a 1.4% increase for voucher renewals; the budget asked for 1.7% (CRS).</li>
+    <li><strong>Administrative fees.</strong> The House bill gives $536 million less than FY2026.</li>
+    <li><strong>Turnover.</strong> The budget asked that housing authorities stop reissuing vouchers when a family leaves, except in some cases. The House bill does not include this (CRS).</li>
+    <li><strong>HUD as a whole.</strong> The budget asked for $64.9 billion in net new HUD funding, 16.0% less than FY2026 (CRS).</li>
+  </ul>
+
+  <h2 id="hap">Can a housing authority stop HAP payments?</h2>
+  <p>
+    A housing authority can end a HAP contract for lack of money, but only under HUD rules. 24 CFR 982.454 says: "The PHA
+    may terminate the HAP contract if the PHA determines, in accordance with HUD requirements, that funding under the
+    consolidated ACC is insufficient to support continued assistance for families in the program."
+  </p>
+  <p>
+    HUD tries to prevent that step. Notice PIH 2026-12 sets aside "Category 1" shortfall money to prevent terminations, and
+    calls that HUD's "highest priority". HUD would approve terminations only "in extremely rare circumstances". But the same
+    notice says demand for shortfall money "likely will exceed available funds", and HUD's 2026 Budget Management Letter
+    says HUD "cannot guarantee that funding will be available to resolve all shortfall needs".
+  </p>
+  <p>
+    For CY2026, HUD estimated the national renewal proration at 100% (Notice PIH 2026-12). That means most housing
+    authorities got their full renewal formula amount. A shortfall comes when a housing authority's costs grow faster
+    than that amount.
+  </p>
+
+  <h2 id="shortfall">What a housing authority in shortfall may do</h2>
+  <p>
+    A housing authority in shortfall cuts costs before it cuts families. HUD's 2026 Budget Management Letter and Notice
+    PIH 2026-12 list these steps:
+  </p>
+  <ul>
+    <li><strong>Stop new vouchers.</strong> No new vouchers, except HUD-VASH and Foster Youth to Independence. HUD can also require a housing authority to rescind recently issued vouchers.</li>
+    <li><strong>Lower payment standards.</strong> End exception payment standards and stay within 90% to 110% of the FMR. See the <a href="/guides/section-8-rent-limits/payment-standard-cuts-2026">payment standard cuts tracker</a> for housing authorities that did this.</li>
+    <li><strong>Apply cuts faster.</strong> With good cause, ask HUD for a waiver to apply a payment standard cut to current contracts at once, or to go below 90% of the FMR.</li>
+    <li><strong>Check rent reasonableness.</strong> Review how the housing authority approves rents and rent increases.</li>
+    <li><strong>Pause project-based deals.</strong> No new project-based voucher agreements. Contracts already signed stay in force: the housing authority must still meet them.</li>
+  </ul>
+  <p>
+    A housing authority with a projected shortfall over 10% of its 2026 budget gets a confirmed shortfall email from HUD's
+    Shortfall Prevention Team. HUD may keep 2026 shortfall agencies on cost cuts into 2027 (Notice PIH 2026-12).
+  </p>
+
+  <h2 id="ehv">Emergency Housing Vouchers end on 2026-12-31</h2>
+  <p>
+    Emergency Housing Vouchers (EHV) become regular vouchers by 2026-12-31. The stopgap law (section 153 of P.L. 119-103)
+    lets HUD give a tenant protection voucher to each EHV family under lease on 2026-09-30, from $600.6 million (Notice
+    PIH 2026-25).
+  </p>
+  <ul>
+    <li><strong>The family stays.</strong> No rescreening and no waiting list. The family "can remain in units under lease".</li>
+    <li><strong>New rules.</strong> The housing authority's regular payment standard policy now applies to the family.</li>
+    <li><strong>No reissue.</strong> When the family leaves the program, the voucher ends. It does not go to a new family.</li>
+    <li><strong>Funding.</strong> HUD funds December 2026. Later months "are planned to be covered as renewals" and depend on future appropriations.</li>
+  </ul>
+
+  <h2 id="dates">Dates landlords should watch</h2>
+  <table>
+    <thead>
+      <tr><th>Date</th><th>What happens</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>2026-12-11</td><td>The stopgap law ends. Congress passes full-year FY2027 funding or another stopgap.</td><td><a href={s.crs.url}>CRS</a></td></tr>
+      <tr><td>2026-12-31</td><td>Last day for housing authorities to move EHV families to tenant protection vouchers.</td><td><a href={s.pih25.url}>PIH 2026-25</a></td></tr>
+      <tr><td>2027-01-29</td><td>Deadline for housing authorities to apply for 2026 shortfall money (Category 1).</td><td><a href={hud.notice.url}>PIH 2026-12</a></td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="landlord-steps">Steps for landlords</h2>
+  <ol>
+    <li><strong>Ask about shortfall status.</strong> Ask your housing specialist if the housing authority is working with HUD's Shortfall Prevention Team.</li>
+    <li><strong>Watch the payment standard.</strong> A cut raises the tenant share at the next applicable date. Check the <a href="/guides/section-8-rent-limits">FY2027 Fair Market Rents</a> for your metro.</li>
+    <li><strong>Plan for fewer new voucher holders.</strong> A housing authority that stops issuing vouchers sends fewer new applicants. Price vacancies with that in mind.</li>
+    <li><strong>Keep the unit in compliance.</strong> A HAP contract can also end for owner breach (24 CFR 982.453). Do not give a short budget a second reason.</li>
+    <li><strong>Run the numbers.</strong> Estimate the split with the <a href="/tools/section-8-rent-calculator">Section 8 rent calculator</a>.</li>
+  </ol>
+  <p>Rules differ by housing authority. This page is not legal advice. Check your housing authority.</p>
+
+  <Section8Cta slot="cta" />
+</Guide>
