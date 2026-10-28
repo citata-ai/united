@@ -284,6 +284,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-grow-property-management-company-v1",
     alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a rotary phone and inspecting a brass key.",
   },
+  "how-to-price-a-rental-with-comps": {
+    img: "guide-how-to-price-a-rental-with-comps-v1",
+    alt: "A pop engraving under a yellow sky: A property manager in an orange toga stands before three small tiled houses, inspecting a rotary phone while holding a brass key.",
+  },
+  "how-to-price-property-management-services": {
+    img: "guide-how-to-price-property-management-services-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga holding a rotary phone stands before small tiled houses and two-flat apartments.",
+  },
+  "how-to-screen-tenants-step-by-step": {
+    img: "guide-how-to-screen-tenants-step-by-step-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in a vibrant orange toga stands outside a classic two-flat building examining application documents alongside a vintage CRT computer.",
+  },
+  "how-to-set-a-late-fee": {
+    img: "guide-how-to-set-a-late-fee-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key in one hand and pointing to a stone desk with a vintage CRT computer.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
