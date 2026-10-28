@@ -3,10 +3,10 @@ title: "Google Ads for Property Management: Setup for Owner Leads — Citata.ai"
 description: "Use a Search campaign, target by city or radius with Presence only, block tenant searches with negative keywords, and track forms and calls as conversions."
 headline: "Google Ads Setup That Brings Owner Leads"
 dek: "Most property management ad clicks come from renters. The setup below keeps your budget on owners."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "Start with one Google Search campaign, not Performance Max or Display, because Search shows text ads to people who type a need. Target your service cities or a radius with the Presence option, not ZIP codes, since Google bars ZIP code audience targeting for housing and real estate services ads in the US. Add negative keywords that block renter, job and software searches. Track owner forms and calls as conversions before you spend more."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 1
