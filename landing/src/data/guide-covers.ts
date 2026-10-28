@@ -236,6 +236,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-calculate-rental-cash-flow-v1",
     alt: "A pop engraving under a yellow sky: A man in an orange toga stands proudly beside a charming row of small tiled houses, holding an old rotary phone.",
   },
+  "fair-housing-rules-for-rental-ads": {
+    img: "guide-fair-housing-rules-for-rental-ads-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga stands proudly outside small tiled houses as the property manager while holding a rotary phone.",
+  },
+  "florida-eviction-process": {
+    img: "guide-florida-eviction-process-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga stands before a row of small tiled houses with palm trees, holding a large brass key and a notice scroll.",
+  },
+  "florida-security-deposit-law": {
+    img: "guide-florida-security-deposit-law-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga stands by a brass letterbox outside small tiled houses, dropping a written notice inside.",
+  },
+  "how-fast-must-a-landlord-make-repairs": {
+    img: "guide-how-fast-must-a-landlord-make-repairs-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands outside a small tiled two-flat holding a brass key while checking an old rotary phone on a stone pedestal.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
