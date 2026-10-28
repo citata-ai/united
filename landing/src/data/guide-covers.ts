@@ -204,21 +204,9 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-eviction-process-step-by-step-v1",
     alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key and checking a wall letterbox.",
   },
-  "fair-housing-rules-for-rental-ads": {
-    img: "guide-fair-housing-rules-for-rental-ads-v1",
-    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands outside a two-flat building while holding a brass key.",
-  },
   "first-hire-property-management-company": {
     img: "guide-first-hire-property-management-company-v1",
     alt: "A pop engraving under a cyan sky: a man in an orange toga sits at a stone desk holding a vintage rotary phone amidst scrolls, with a row of small tiled two-flat houses on the horizon.",
-  },
-  "florida-eviction-process": {
-    img: "guide-florida-eviction-process-v1",
-    alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat building with tiled roofs, sliding a notice into a metal letterbox while a brass key hangs from his belt.",
-  },
-  "florida-security-deposit-law": {
-    img: "guide-florida-security-deposit-law-v1",
-    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga stands outside small tiled houses inspecting a brass letterbox while holding a bronze key.",
   },
   "get-first-property-management-clients": {
     img: "guide-get-first-property-management-clients-v1",
@@ -236,22 +224,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-google-business-profile-property-management-v1",
     alt: "A pop engraving under a coral sky: A property manager in an orange toga inspects a row of small tiled houses while holding a rotary phone.",
   },
-  "how-fast-must-a-landlord-make-repairs": {
-    img: "guide-how-fast-must-a-landlord-make-repairs-v1",
-    alt: "A pop engraving under a yellow sky: A man in an orange toga stands outside small tiled houses, holding an old rotary phone while reviewing repair requests.",
-  },
-  "how-many-doors-to-break-even": {
-    img: "guide-how-many-doors-to-break-even-v1",
-    alt: "A pop engraving under a cyan sky: A property manager in an orange toga calculates overhead on a vintage rotary phone resting on a stone pedestal, flanked by neat rows of small tiled houses and a two-flat.",
-  },
-  "how-much-does-a-property-manager-cost-owner": {
-    img: "guide-how-much-does-a-property-manager-cost-owner-v1",
-    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands beside a row of small tiled houses, holding a vintage rotary phone while calculating collection fees.",
-  },
-  "how-much-rent-can-i-get-for-my-house": {
-    img: "guide-how-much-rent-can-i-get-for-my-house-v1",
-    alt: "A pop engraving under a coral sky: a landlord in an orange toga stands before a row of small tiled houses, holding a brass key as he evaluates neighboring rents.",
-  },
   "how-much-to-raise-rent-at-renewal": {
     img: "guide-how-much-to-raise-rent-at-renewal-v1",
     alt: "A pop engraving under a yellow sky: a landlord in an orange toga stands before a two-flat holding a brass key, deciding on a fair lease renewal for his tenant while small tiled houses line the street behind him.",
@@ -260,9 +232,25 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-often-to-inspect-a-rental-v1",
     alt: "A pop engraving under a cyan sky: a landlord in an orange toga holding a brass key and a rotary phone stands before small tiled houses and a two-flat property.",
   },
-  "how-rental-income-is-taxed": {
-    img: "guide-how-rental-income-is-taxed-v1",
-    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands outside a two-flat building, holding a brass key while checking a rotary phone with small tiled houses lining the sunny street behind him.",
+  "how-to-calculate-rental-cash-flow": {
+    img: "guide-how-to-calculate-rental-cash-flow-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga stands proudly beside a charming row of small tiled houses, holding an old rotary phone.",
+  },
+  "fair-housing-rules-for-rental-ads": {
+    img: "guide-fair-housing-rules-for-rental-ads-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga stands proudly outside small tiled houses as the property manager while holding a rotary phone.",
+  },
+  "florida-eviction-process": {
+    img: "guide-florida-eviction-process-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga stands before a row of small tiled houses with palm trees, holding a large brass key and a notice scroll.",
+  },
+  "florida-security-deposit-law": {
+    img: "guide-florida-security-deposit-law-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga stands by a brass letterbox outside small tiled houses, dropping a written notice inside.",
+  },
+  "how-fast-must-a-landlord-make-repairs": {
+    img: "guide-how-fast-must-a-landlord-make-repairs-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands outside a small tiled two-flat holding a brass key while checking an old rotary phone on a stone pedestal.",
   },
 };
 

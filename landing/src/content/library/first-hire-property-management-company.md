@@ -3,10 +3,10 @@ title: "First Hire for a Property Management Company: Who and When — Citata.ai
 description: "Hire first for the work that eats most of your week, usually admin or leasing. How to time the hire by door count, choose local or remote, and pay for it."
 headline: "Who to Hire First in Your Property Management Company"
 dek: "Time-log one week, find the biggest block of work you can hand off, then do the math."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "Hire first for the repeat work that takes the most hours of your week, which for most small companies is admin or leasing, not sales. Hire when the doors you have can pay the salary and your own hours are full. A full-time admin at the BLS median wage of $48,310 (May 2025) needs roughly 30 to 40 doors of profit to pay for itself, at $130 to $160 profit per door a month."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "guide"
 priority: 1
