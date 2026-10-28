@@ -268,6 +268,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-rental-income-is-taxed-v1",
     alt: "A pop engraving under a coral sky: a landlord in an orange toga stacks rent coins beside a CRT computer in front of a cream two-flat and small tiled houses.",
   },
+  "how-to-buy-your-first-rental-property": {
+    img: "guide-how-to-buy-your-first-rental-property-v1",
+    alt: "A pop engraving under a yellow sky: A man in a vibrant orange toga stands as a property manager outside a charming two-flat building, examining a rotary phone mounted on the stone wall.",
+  },
+  "how-to-calculate-rental-property-roi": {
+    img: "guide-how-to-calculate-rental-property-roi-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga holding a rotary phone stands before a row of small tiled houses and a two-flat property.",
+  },
+  "how-to-choose-a-property-manager": {
+    img: "guide-how-to-choose-a-property-manager-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga stands on a temple terrace holding a large brass key with a row of small tiled houses on the horizon.",
+  },
+  "how-to-grow-property-management-company": {
+    img: "guide-how-to-grow-property-management-company-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a rotary phone and inspecting a brass key.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
