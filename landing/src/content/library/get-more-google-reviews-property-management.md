@@ -3,10 +3,10 @@ title: "How Property Managers Get More Google Reviews (2026 Rules) — Citata.ai
 description: "Ask owners and tenants for Google reviews at 6 moments, with one link, no gifts and no gating. Google and FTC rules, a drip schedule and request templates."
 headline: "How Property Managers Get More Google Reviews"
 dek: "Six moments to ask, one short link, and the Google and FTC rules you must not break."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "Ask every owner and tenant, not only the happy ones, right after a moment that went well: a lease signing, a fast repair, a first owner statement. Send one short message with your Google review link or QR code. Never give a gift, discount or payment for a review, and never filter out unhappy customers: Google bans both. A steady drip of requests each month beats a one-time push."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "how-to"
 priority: 1
