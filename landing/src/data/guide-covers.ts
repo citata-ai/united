@@ -252,6 +252,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-fast-must-a-landlord-make-repairs-v1",
     alt: "A pop engraving under a coral sky: a property manager in an orange toga stands outside a small tiled two-flat holding a brass key while checking an old rotary phone on a stone pedestal.",
   },
+  "how-many-doors-to-break-even": {
+    img: "guide-how-many-doors-to-break-even-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga stands before a row of small tiled houses, counting keys in his hand while a rotary phone rests on a marble pedestal beside him.",
+  },
+  "how-much-does-a-property-manager-cost-owner": {
+    img: "guide-how-much-does-a-property-manager-cost-owner-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands at a stone desk in front of small tiled houses, counting gold coins on a brass scale next to a CRT computer.",
+  },
+  "how-much-rent-can-i-get-for-my-house": {
+    img: "guide-how-much-rent-can-i-get-for-my-house-v1",
+    alt: "A pop engraving under a lilac sky: A man in an orange toga acting as property manager stands beside three small tiled houses, holding a rotary phone.",
+  },
+  "how-rental-income-is-taxed": {
+    img: "guide-how-rental-income-is-taxed-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga stacks rent coins beside a CRT computer in front of a cream two-flat and small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
