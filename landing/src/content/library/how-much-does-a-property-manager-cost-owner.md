@@ -3,10 +3,10 @@ title: "How Much Does a Property Manager Cost? Fee by Fee for Owners — Citata.
 description: "Owners pay an average 8.49% of rent per month, plus leasing, setup and renewal fees. See each fee with 2026 data and a full-year cost for one rental house."
 headline: "How Much Does a Property Manager Cost"
 dek: "The monthly fee is only part of it. Here is every fee and one full year in dollars."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-29"
+updated: "2026-10-29"
 answer: "Most property managers charge a monthly fee near 8% to 10% of collected rent. iPropertyManagement's 2026 survey of 80 metros found an average of 8.49%, or $101.04 per month for flat-fee plans. On top of that, expect a leasing fee near 70% of one month's rent, an average $185 setup fee and an average $212 renewal fee. For a $2,000 house, that is about $3,600 in a year with a new tenant and $2,250 in a year the tenant renews."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "data"
 priority: 1
