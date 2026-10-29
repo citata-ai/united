@@ -584,3 +584,9 @@ file = "img/guide-how-to-price-property-management-services-v1-*.webp"
 prompt = "Use the image /tmp/img-how-to-price-property-management-services/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands outside a two-flat holding a rotary phone while examining small tiled houses."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-10-29"
+
+[[image]]
+file = "img/guide-emergency-housing-vouchers-landlords-v1-*.webp"
+prompt = "Use the image ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: In the center, a Roman landlord in a bright orange toga stands at the open gate of a small two-flat with tiled roofs. A messenger in a blue tunic on the left hands him a blank rolled scroll tied with a red ribbon, while he holds a plain brass key in his other hand. A plain brass letterbox with no marks sits on the gate post. The scrolls are blank and rolled shut. The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. Absolutely no text anywhere: no letters, no words, no inscriptions on scrolls, signs or boxes, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-29"

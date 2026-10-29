@@ -256,3 +256,12 @@ title = "Data page: will Section 8 keep paying landlords in 2027 (FY2027 funding
 url = "https://citata.ai/guides/section-8-rent-limits/section-8-funding-2027"
 ref = "B020, H01"
 result = "Live on citata.ai 2026-10-28; stage and prod give 200."
+
+[[entry]]
+date = "2026-10-29"
+side = "internal"
+kind = "content"
+title = "Guide: what landlords get when Emergency Housing Vouchers end (TPV rule, dated table of 6 PHA notices)"
+url = "https://citata.ai/guides/emergency-housing-vouchers-landlords"
+ref = "B021, H01"
+result = "Staged 2026-10-29."
