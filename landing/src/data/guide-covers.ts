@@ -280,6 +280,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-set-a-late-fee-v1",
     alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key in one hand and pointing to a stone desk with a vintage CRT computer.",
   },
+  "how-fast-must-a-landlord-make-repairs": {
+    img: "guide-how-fast-must-a-landlord-make-repairs-v1",
+    alt: "A pop engraving under a coral sky: A property manager in an orange toga stands before a mint two-flat house, holding a rotary phone while examining a small tiled roof.",
+  },
+  "how-much-rent-can-i-get-for-my-house": {
+    img: "guide-how-much-rent-can-i-get-for-my-house-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a two-flat building, holding a rotary phone while examining small tiled houses.",
+  },
+  "how-rental-income-is-taxed": {
+    img: "guide-how-rental-income-is-taxed-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a row of small tiled houses while holding a heavy brass key next to a rotary phone on a stone pillar.",
+  },
+  "how-to-price-property-management-services": {
+    img: "guide-how-to-price-property-management-services-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat holding a rotary phone while examining small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
