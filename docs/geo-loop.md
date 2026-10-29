@@ -57,6 +57,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-10-23 | Tool /tools/owner-lead-value-calculator (H02-E1, B023): owner lifetime value, max cost per lead and per new owner, leads to replace churn; NARPM/ProfitCoach churn, RentScale lead volume | 2026-10-23 |
 | 2026-10-24 | Research /research/ai-readiness-property-managers-2026 (H03-E1, B024): robots.txt, llms.txt, schema and fee links on 144 manager sites AI cited; CSV without domains; script tools/ai-visibility/readiness_audit.py | 2026-10-24 |
 | 2026-10-28 | Data page /guides/section-8-rent-limits/section-8-funding-2027 (H01-E1, B020): FY2027 stopgap law to 2026-12-11, voucher funding table (CRS), shortfall rules (PIH 2026-12), HAP termination rule, EHV to TPV by 2026-12-31 | 2026-10-28 |
+| 2026-10-29 | Guide /guides/emergency-housing-vouchers-landlords (H01-E1, B021): EHV ends 2026-12-31, TPV for families leased 2026-09-30 (PIH 2026-25), dated table of 6 PHA notices, owner changes; 12 sources read 2026-10-29 | 2026-10-29 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
