@@ -3,10 +3,10 @@ title: "How Many Doors to Break Even in Property Management — Citata.ai"
 description: "Break-even doors = fixed monthly costs divided by profit per door. A worked example: 16 doors to cover costs, 61 to pay you, about 98 with a first hire."
 headline: "How Many Doors Does a PM Company Need to Break Even"
 dek: "One formula, your own numbers, and a worked example from 16 to 98 doors."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-29"
+updated: "2026-10-29"
 answer: "Divide your fixed monthly costs by the profit one door leaves after its own costs. In our worked example, a company with $2,000 a month of fixed costs and $130 of profit per door breaks even at 16 doors. It needs about 61 doors to also pay the owner a $69,990 salary, the BLS median for property managers. A first full-time admin hire moves the line to about 98 doors."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "data"
 priority: 1
