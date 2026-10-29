@@ -193,9 +193,9 @@ hypothesis = "H01"
 kind = "refresh"
 title = "Publish the library draft emergency-housing-vouchers-landlords with EHV end-of-funding dates"
 demand = "NYCHA: EHV funding ends late 2026. Owners of EHV units ask what happens next."
-score = 6
+score = 8
 status = "idea"
-note = "Draft exists: landing/src/content/library/emergency-housing-vouchers-landlords.md. Add HUD and 3 PHA notices, then publish via the library flow."
+note = "Draft exists: landing/src/content/library/emergency-housing-vouchers-landlords.md. Add HUD and 3 PHA notices, then publish via the library flow. Scout 2026-10-29: score 6 -> 8, end dates are now: Burbank grant term ends 2026-10-31 (https://www.burbankca.gov/documents/d/guest/sr-public-housing-agency-annual-plan), Georgia DCA 2026-06-30 (https://dca.georgia.gov/node/22796), Santa Barbara about 2026-09-30 with 60-day HAP notice (https://hacsb.org/wp-content/uploads/2026/06/EHV-Landlord-Notice-May-2026.pdf), Santa Cruz December 2026 (https://hacosantacruz.org/?p=7433), DeKalb no rent increases (https://www.dekalbhousing.org/pdfs/EHV_Landlord_FAQs_2-2026.pdf), SFHA FAQ (https://sfha.org/about/news-updates/frequently-asked-questions-end-emergency-housing-voucher-ehv-program). Make it a dated table by PHA."
 
 [[item]]
 id = "B022"
@@ -236,3 +236,55 @@ demand = "Gap 2 of the 2026-10-19 report: 0 of 36. AI cites clearleaddigital.com
 score = 7
 status = "idea"
 note = "Use the next measure run data (2026-10-26) for fresh counts."
+
+# --- scout 2026-10-29: evidence in business/marketing/competitors/2026-10-29-scout.md ---
+
+[[item]]
+id = "B026"
+hypothesis = "H03"
+kind = "original-research"
+title = "AI Property Manager Index, update 1: re-run 50 cities x 3 engines, change since 2026-10-19 (who gained, who lost, which sources moved)"
+demand = "No direct competitor publishes a before/after AI answer set (playbook 'Where we beat them'). Change data is new each month, so it gives H03 outreach a fresh reason to link. Same prompts (tools/ai-visibility/cities.toml), new run date."
+score = 8
+status = "idea"
+note = "Run tools/ai-visibility/run.py with the city prompts after 2026-11-02 (14+ days after the first run). Publish counts and a CSV as a dated section of /research/ai-property-manager-index-2026, not a new URL. Name no company in a new way without Tao."
+
+[[item]]
+id = "B027"
+hypothesis = "H07"
+kind = "refresh"
+title = "Refresh /guides/how-owners-choose-a-property-manager-with-ai with 2026 owner survey data (Rentvine PM Trends, Buildium Rental Owners Survey)"
+demand = "Rentvine 2026 PM Trends (500+ landlords, Harris Poll): 75% plan to use AI tools to find their next property manager (https://www.rentvine.com/pm-trends, vendor source). Buildium 2026 survey of 300 small-portfolio owners: 23% say their manager gives excellent value (https://www.buildium.com/blog/how-rental-owners-evaluate-a-property-managers-performance/). The guide has neither number today."
+score = 7
+status = "idea"
+note = "Read both primaries in the run before you cite. Mark Rentvine as vendor-run. New FAQ + visible updated date (H07 rule)."
+
+[[item]]
+id = "B028"
+hypothesis = "H07"
+kind = "data-page"
+title = "Landlord rules that start 2027-01-01: state table (Washington 10% rent cap, Illinois $50 application fee cap and fee disclosure, Virginia HB 678) with start date, who it covers and the primary source"
+demand = "Washington Commerce set the 2027 cap at 10% (formula 7% + CPI, max 10%; 2026 cap 9.683%) (https://www.commerce.wa.gov/housing-policy/hb1217-landlord-resource-center/). Illinois HB 3564: $50 cap on application and screening fees, non-optional fees on page 1 of the lease, leases from 2027-01-01, owner-occupied 6 units or less exempt (https://legiscan.com/IL/bill/HB3564, https://gouldratner.com/publication/illinois-rental-fee-changes-in-2027-what-landlords-and-property-managers-need-to-know). Virginia HB 678: delayed start 2027-01-01, deposit cap 2 months from 2027-07-01 (https://policyrisk.com/state-bill/VA-HB678-2026). Owners and managers search 'new landlord laws 2027' in Q4."
+score = 7
+status = "idea"
+note = "Guide under /guides, link the library state drafts (illinois-*, washington-*, virginia-*). Read each statute or agency page in the run; drop a row with no primary. Add states as found; refresh in December."
+
+[[item]]
+id = "B029"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Rent increase cap calculator for 2027 (Washington, Oregon, California AB 1482): enter rent, state, region -> max legal increase and notice days"
+demand = "Washington 2027 cap 10% published by Commerce (B028 source). Oregon and California publish a new cap each year. Playbook move 5: owner tools. One tool with 3 state formulas and the primary source per state."
+score = 6
+status = "idea"
+note = "Read the 2027 Oregon (OHCS) and California (regional CPI, AB 1482 / Civil Code 1947.12) figures in the run; if a 2027 figure is not out, show 2026 and say so. Fair Housing check on text."
+
+[[item]]
+id = "B030"
+hypothesis = "H02"
+kind = "refresh"
+title = "Owner lead value calculator: add a budget mode (door goal -> owner leads -> monthly budget) with sourced cost per owner lead by channel"
+demand = "Goodjuju shipped a marketing budget calculator on 2026-10-27 (https://gogoodjuju.com/how-to-build-marketing-budget-property-management/) and links an owner lead value calculator at /property-management-leads/ (lastmod 2026-10-20). PMW has a lifetime value calculator in its nav. Our /tools/owner-lead-value-calculator answers only 'what is a lead worth'."
+score = 6
+status = "idea"
+note = "Do not copy their example numbers. New data = cost per owner lead by channel from sources we read (Google Ads, pay-per-lead sites, our case study). If we find no sourced channel costs, drop the item."
