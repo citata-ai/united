@@ -296,6 +296,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-price-property-management-services-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat holding a rotary phone while examining small tiled houses.",
   },
+  "how-to-screen-tenants-step-by-step": {
+    img: "guide-how-to-screen-tenants-step-by-step-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga uses a rotary phone outside a two-flat building with small tiled houses lining the street.",
+  },
+  "how-to-start-property-management-company": {
+    img: "guide-how-to-start-property-management-company-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga inspects a rotary phone beside small tiled houses representing managed rental properties.",
+  },
+  "is-a-property-manager-worth-it-for-one-rental": {
+    img: "guide-is-a-property-manager-worth-it-for-one-rental-v1",
+    alt: "A pop engraving under a cyan sky: A man in an orange toga stands before a two-flat building, examining a rotary phone resting on a stone pillar under a flat cyan sky.",
+  },
+  "landlord-insurance-vs-homeowners-insurance": {
+    img: "guide-landlord-insurance-vs-homeowners-insurance-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands before a Roman two-flat building examining a rotary phone while small tiled houses line the street behind him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
