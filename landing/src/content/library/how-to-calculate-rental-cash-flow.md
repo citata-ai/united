@@ -3,10 +3,10 @@ title: "How to Calculate Cash Flow on a Rental Property, Line by Line — Citata
 description: "Rental cash flow is rent and other income minus vacancy, operating costs, reserves and the loan payment. Use our worksheet and see the costs owners forget."
 headline: "How to Calculate Cash Flow on a Rental Property"
 dek: "A one-page worksheet, the three costs owners forget, and a worked example for one house."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "Monthly cash flow is all rental income, minus a vacancy allowance, minus operating costs, minus reserves for repairs and big replacements, minus the loan payment. Owners most often forget vacancy, capital items such as a roof or HVAC, and management. The US rental vacancy rate was 7.3% in the second quarter of 2026 (Census Bureau), so a 0% vacancy line is not realistic."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 1
