@@ -332,6 +332,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-property-management-fees-by-state-v1",
     alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga weighs gold coins on a brass scale over a stone relief map split into regions, each with small tiled houses, with a rotary phone at the end of the table.",
   },
+  "move-in-inspection-how-to": {
+    img: "guide-move-in-inspection-how-to-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a two-flat building holding a brass key and a written inspection report while a vintage CRT computer rests on a stone table.",
+  },
+  "normal-wear-and-tear-vs-damage": {
+    img: "guide-normal-wear-and-tear-vs-damage-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a colorful two-flat building holding a brass key, inspecting a wall with normal wear next to a damaged fixture, with small tiled houses in the background.",
+  },
+  "owner-churn-rate-property-management": {
+    img: "guide-owner-churn-rate-property-management-v1",
+    alt: "A pop engraving under a lilac sky: A Roman property manager in an orange toga stands before a row of small tiled houses while checking a classic rotary phone resting on a stone pedestal.",
+  },
+  "owner-lead-follow-up": {
+    img: "guide-owner-lead-follow-up-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga holds a rotary phone while standing outside small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

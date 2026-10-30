@@ -3,10 +3,10 @@ title: "How to Choose a Property Manager: A Step-by-Step Method — Citata.ai"
 description: "Choose a property manager in 6 steps: build a list, check the license and reviews, interview 3, compare fees and terms side by side, and stop at red flags."
 headline: "How to Choose a Property Manager"
 dek: "A 6-step method, a side-by-side scorecard for 3 managers, and the red flags that end a deal."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "Build a list of 5 to 8 local managers from search, AI answers, review sites and referrals. Check each one's state license and read recent reviews from owners, not only tenants. Interview 3, ask for the management agreement and fee schedule in writing, and compare a full year of cost, the screening process, repair limits and the exit terms side by side. Stop at red flags such as no license, no written fees or no trust account."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 1
