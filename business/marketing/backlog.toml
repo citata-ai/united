@@ -45,7 +45,7 @@ kind = "data-page"
 title = "Property management fees by state (sourced ranges, 2026)"
 demand = "'How much do property managers charge in <state>' prompts; pairs with H02 calculator."
 score = 7
-status = "staged"
+status = "live"
 
 [[item]]
 id = "B006"
