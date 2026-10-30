@@ -632,3 +632,9 @@ file = "img/guide-local-seo-property-management-v1-*.webp"
 prompt = "Use the image /tmp/img-local-seo-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before a row of small tiled houses, checking a vintage rotary phone mounted on a stone wall. In the background, a two-flat building glows in mint and coral tones under the lilac sky."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-10-30"
+
+[[image]]
+file = "img/guide-property-management-fees-by-state-v1-*.webp"
+prompt = "Use the image /tmp/img-property-management-fees-by-state/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: A Roman property manager in an orange toga stands at a long stone table and weighs gold coins on a brass balance scale. On the table lies a large carved stone relief map made of separate regions, each region holding a few small tiled houses. A black rotary phone sits at the end of the table. The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-flash via omp (generate_image); variant b of 2; Real-ESRGAN x4"
+date = "2026-10-30"
