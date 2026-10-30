@@ -348,6 +348,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-owner-lead-follow-up-v1",
     alt: "A pop engraving under a coral sky: a property manager in an orange toga holds a rotary phone while standing outside small tiled houses.",
   },
+  "owner-lead-sources-compared": {
+    img: "guide-owner-lead-sources-compared-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga inspecting a rotary phone outside a row of small tiled houses.",
+  },
+  "owner-onboarding-checklist-property-management": {
+    img: "guide-owner-onboarding-checklist-property-management-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a colorful two-flat holding a large brass key next to a brass letterbox and small tiled houses.",
+  },
+  "pet-deposit-vs-pet-fee-vs-pet-rent": {
+    img: "guide-pet-deposit-vs-pet-fee-vs-pet-rent-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat building holding a rotary phone next to three clay jars, with a small stone dog resting at his feet.",
+  },
+  "property-management-company-valuation": {
+    img: "guide-property-management-company-valuation-v1",
+    alt: "A pop engraving under a coral sky: an orange-togad Roman property manager stands before uniform small tiled houses, checking a rotary phone on a marble pillar.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
