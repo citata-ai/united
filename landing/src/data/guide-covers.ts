@@ -312,6 +312,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-emergency-housing-vouchers-landlords-v1",
     alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga stands at the gate of a tiled two-flat, holding a key, while a messenger hands him a scroll tied with a red ribbon.",
   },
+  "how-much-rent-can-i-get-for-my-house": {
+    img: "guide-how-much-rent-can-i-get-for-my-house-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspecting a row of small tiled houses while holding an old rotary phone.",
+  },
+  "landlord-vs-tenant-repair-responsibilities": {
+    img: "guide-landlord-vs-tenant-repair-responsibilities-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga inspects a two-flat building with small tiled houses while holding a rotary phone.",
+  },
+  "lease-clauses-every-landlord-needs": {
+    img: "guide-lease-clauses-every-landlord-needs-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key while a rotary phone rests on a stone pillar beside him.",
+  },
+  "local-seo-property-management": {
+    img: "guide-local-seo-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands before a row of small tiled houses and a two-flat building, examining a vintage rotary phone.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
