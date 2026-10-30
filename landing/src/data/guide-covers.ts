@@ -312,6 +312,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-landlord-insurance-vs-homeowners-insurance-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga stands before a Roman two-flat building examining a rotary phone while small tiled houses line the street behind him.",
   },
+  "emergency-housing-vouchers-landlords": {
+    img: "guide-emergency-housing-vouchers-landlords-v1",
+    alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga stands at the gate of a tiled two-flat, holding a key, while a messenger hands him a scroll tied with a red ribbon.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

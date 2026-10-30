@@ -194,7 +194,7 @@ kind = "refresh"
 title = "Publish the library draft emergency-housing-vouchers-landlords with EHV end-of-funding dates"
 demand = "NYCHA: EHV funding ends late 2026. Owners of EHV units ask what happens next."
 score = 8
-status = "idea"
+status = "live"
 note = "Draft exists: landing/src/content/library/emergency-housing-vouchers-landlords.md. Add HUD and 3 PHA notices, then publish via the library flow. Scout 2026-10-29: score 6 -> 8, end dates are now: Burbank grant term ends 2026-10-31 (https://www.burbankca.gov/documents/d/guest/sr-public-housing-agency-annual-plan), Georgia DCA 2026-06-30 (https://dca.georgia.gov/node/22796), Santa Barbara about 2026-09-30 with 60-day HAP notice (https://hacsb.org/wp-content/uploads/2026/06/EHV-Landlord-Notice-May-2026.pdf), Santa Cruz December 2026 (https://hacosantacruz.org/?p=7433), DeKalb no rent increases (https://www.dekalbhousing.org/pdfs/EHV_Landlord_FAQs_2-2026.pdf), SFHA FAQ (https://sfha.org/about/news-updates/frequently-asked-questions-end-emergency-housing-voucher-ehv-program). Make it a dated table by PHA."
 
 [[item]]
