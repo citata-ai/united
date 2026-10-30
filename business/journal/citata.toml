@@ -265,3 +265,12 @@ title = "Guide: what landlords get when Emergency Housing Vouchers end (TPV rule
 url = "https://citata.ai/guides/emergency-housing-vouchers-landlords"
 ref = "B021, H01"
 result = "Live on citata.ai 2026-10-29; stage and prod give 200."
+
+[[entry]]
+date = "2026-10-30"
+side = "internal"
+kind = "content"
+title = "Guide: property management fees by state (16-state table, first-year cost on $2,000 rent)"
+url = "https://citata.ai/guides/property-management-fees-by-state"
+ref = "B005, H01"
+result = "Staged 2026-10-30."
