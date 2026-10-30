@@ -284,10 +284,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-fast-must-a-landlord-make-repairs-v1",
     alt: "A pop engraving under a coral sky: A property manager in an orange toga stands before a mint two-flat house, holding a rotary phone while examining a small tiled roof.",
   },
-  "how-much-rent-can-i-get-for-my-house": {
-    img: "guide-how-much-rent-can-i-get-for-my-house-v1",
-    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a two-flat building, holding a rotary phone while examining small tiled houses.",
-  },
   "how-rental-income-is-taxed": {
     img: "guide-how-rental-income-is-taxed-v1",
     alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a row of small tiled houses while holding a heavy brass key next to a rotary phone on a stone pillar.",
@@ -296,9 +292,41 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-price-property-management-services-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat holding a rotary phone while examining small tiled houses.",
   },
+  "how-to-screen-tenants-step-by-step": {
+    img: "guide-how-to-screen-tenants-step-by-step-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga uses a rotary phone outside a two-flat building with small tiled houses lining the street.",
+  },
+  "how-to-start-property-management-company": {
+    img: "guide-how-to-start-property-management-company-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga inspects a rotary phone beside small tiled houses representing managed rental properties.",
+  },
+  "is-a-property-manager-worth-it-for-one-rental": {
+    img: "guide-is-a-property-manager-worth-it-for-one-rental-v1",
+    alt: "A pop engraving under a cyan sky: A man in an orange toga stands before a two-flat building, examining a rotary phone resting on a stone pillar under a flat cyan sky.",
+  },
+  "landlord-insurance-vs-homeowners-insurance": {
+    img: "guide-landlord-insurance-vs-homeowners-insurance-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands before a Roman two-flat building examining a rotary phone while small tiled houses line the street behind him.",
+  },
   "emergency-housing-vouchers-landlords": {
     img: "guide-emergency-housing-vouchers-landlords-v1",
     alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga stands at the gate of a tiled two-flat, holding a key, while a messenger hands him a scroll tied with a red ribbon.",
+  },
+  "how-much-rent-can-i-get-for-my-house": {
+    img: "guide-how-much-rent-can-i-get-for-my-house-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspecting a row of small tiled houses while holding an old rotary phone.",
+  },
+  "landlord-vs-tenant-repair-responsibilities": {
+    img: "guide-landlord-vs-tenant-repair-responsibilities-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga inspects a two-flat building with small tiled houses while holding a rotary phone.",
+  },
+  "lease-clauses-every-landlord-needs": {
+    img: "guide-lease-clauses-every-landlord-needs-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key while a rotary phone rests on a stone pillar beside him.",
+  },
+  "local-seo-property-management": {
+    img: "guide-local-seo-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands before a row of small tiled houses and a two-flat building, examining a vintage rotary phone.",
   },
 };
 
