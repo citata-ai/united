@@ -328,6 +328,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-local-seo-property-management-v1",
     alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands before a row of small tiled houses and a two-flat building, examining a vintage rotary phone.",
   },
+  "property-management-fees-by-state": {
+    img: "guide-property-management-fees-by-state-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga weighs gold coins on a brass scale over a stone relief map split into regions, each with small tiled houses, with a rotary phone at the end of the table.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

@@ -100,7 +100,7 @@ The example assumes 12 months of rent. A vacant month lowers the monthly fee on 
 
 Now try a flat-fee plan at $150 per month with a $1,500 placement fee. The same house would cost $3,300 in a year with a new tenant. Fee models change the total less than the headline rate suggests.
 
-To run your own rent and fees, use our [property management fee calculator](/tools/property-management-fee-calculator).
+To run your own rent and fees, use our [property management fee calculator](/tools/property-management-fee-calculator). For the averages in 16 states, see [property management fees by state](/guides/property-management-fees-by-state).
 
 ## How to read a fee schedule before you sign
 
