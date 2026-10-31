@@ -199,3 +199,11 @@ start = "2026-10-19"
 actions = ["Guide 1 of 6: AppFolio vs Buildium, prices read on both pricing pages 2026-10-19 (B001)", "Guide 2 of 6: best software for 50-200 doors, library draft rewritten with monthly cost at 50/100/200 doors for Yardi Breeze, AppFolio, DoorLoop, Rentvine, Buildium; 5 pricing pages read 2026-10-20 (B002)", "Next: B003 4-vendor per-door table"]
 urls = ["https://citata.ai/guides/appfolio-vs-buildium", "https://citata.ai/guides/best-property-management-software-50-200-doors"]
 status = "running"
+
+[[experiment]]
+id = "H07-E1"
+hypothesis = "H07"
+start = "2026-10-31"
+actions = ["B027 (2026-10-31): refreshed /guides/how-owners-choose-a-property-manager-with-ai with PM Trends 2026 Q375 (Harris Poll, n=500, 1-10 units, 54% used AI, 75% plan to, MoE 6.1, PDF read) and Buildium 2026 Rental Owners' Survey (n=300, 23% excellent value, hiring and switch reasons); removed the false claim 'no public survey measures landlords alone'; new FAQ, updated date, change note. Corrected 2 library pages: the study is PM Trends, Rentvine is a sponsor."]
+urls = ["https://citata.ai/guides/how-owners-choose-a-property-manager-with-ai"]
+status = "running"
