@@ -3,10 +3,10 @@ title: "How to Screen Tenants Step by Step: A Fair Process — Citata.ai"
 description: "Screen tenants in 7 steps: written criteria, full applications, ID and income checks, a consumer report with consent, references, a decision and an FCRA notice."
 headline: "How to Screen Tenants: A Step-by-Step Process"
 dek: "Seven steps, one written standard, and the federal notice you owe every denied applicant."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "Write your screening criteria before you list the unit, and apply them the same way to every applicant. Take complete applications in the order they arrive, then check identity, income, a consumer report and rental references. If a credit or screening report plays any part in a denial, a co-signer demand or a higher deposit, the FCRA requires an adverse action notice. State law can cap fees and limit what you may consider."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 1
