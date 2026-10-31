@@ -256,7 +256,7 @@ kind = "refresh"
 title = "Refresh /guides/how-owners-choose-a-property-manager-with-ai with 2026 owner survey data (Rentvine PM Trends, Buildium Rental Owners Survey)"
 demand = "Rentvine 2026 PM Trends (500+ landlords, Harris Poll): 75% plan to use AI tools to find their next property manager (https://www.rentvine.com/pm-trends, vendor source). Buildium 2026 survey of 300 small-portfolio owners: 23% say their manager gives excellent value (https://www.buildium.com/blog/how-rental-owners-evaluate-a-property-managers-performance/). The guide has neither number today."
 score = 7
-status = "idea"
+status = "building"
 note = "Read both primaries in the run before you cite. Mark Rentvine as vendor-run. New FAQ + visible updated date (H07 rule)."
 
 [[item]]
