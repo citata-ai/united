@@ -3,10 +3,10 @@ title: "How to Grow a Property Management Company's Door Count — Citata.ai"
 description: "Door growth = doors won minus doors lost. How churn caps growth, which sources bring doors, when to buy a book, and how to set a growth rate you can hit."
 headline: "How to Grow the Door Count of Your PM Company"
 dek: "Growth has two levers: doors won and doors lost. Most plans only pull one."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "Grow on two levers at once: win more doors each month and lose fewer. Churn sets a ceiling on size, so a company that adds 10 doors a month and loses 25% a year stops near 400 to 480 doors. Referrals and your own website bring steady organic doors, and buying a book adds doors in one step. Set a growth target from your own lead, close and churn numbers."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "guide"
 priority: 1
