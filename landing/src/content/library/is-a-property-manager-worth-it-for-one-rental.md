@@ -3,10 +3,10 @@ title: "Is a Property Manager Worth It for One Rental? The Math — Citata.ai"
 description: "On one $2,000 house, a manager costs about $2,250 to $3,600 a year. See the fee in dollars, the time one rental takes, who gains most, and leasing-only options."
 headline: "Is a Property Manager Worth It for One Rental"
 dek: "The fee in dollars, your time per year, and a break-even test you can run tonight."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "A property manager is often worth it on one rental if you live far away, have little spare time, or are new to landlord law. At 2026 average fees, one $2,000 house costs about $2,250 a year in a renewal year and $3,600 in a year with a new tenant. Divide that by the hours you would spend to get your break-even hourly rate. If you live close and have time, a leasing-only service can cover the hardest part for one fee."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1

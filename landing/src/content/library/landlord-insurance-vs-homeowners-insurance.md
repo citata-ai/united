@@ -3,10 +3,10 @@ title: "Landlord Insurance vs Homeowners Insurance: When to Switch — Citata.ai
 description: "A homeowners policy is written for a home you live in. Once a tenant moves in, you need a landlord or dwelling policy. See DP-1 to DP-3 and when to switch."
 headline: "Landlord Insurance vs Homeowners Insurance"
 dek: "What changes when a tenant moves in, what DP-3 means, and the call to make first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "Homeowners insurance is written for a home you live in. When you rent the home to a tenant, you usually need a landlord policy, also called a dwelling policy. The North Carolina Department of Insurance describes dwelling policies as typically for owners who do not make the property their primary residence. Switch before the lease starts, ask for liability and lost rent coverage, and tell your tenant to buy renters insurance for their own things."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "comparison"
 priority: 1
