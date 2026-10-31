@@ -364,6 +364,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-property-management-company-valuation-v1",
     alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga stands before rows of small tiled houses while holding a heavy rotary phone.",
   },
+  "property-management-directories": {
+    img: "guide-property-management-directories-v1",
+    alt: "A pop engraving under a yellow sky: A property manager in an orange toga stands outside a two-flat building, reviewing property directory entries on an old CRT computer resting on a stone podium with small tiled houses lining the classical street.",
+  },
+  "property-management-fee-models-compared": {
+    img: "guide-property-management-fee-models-compared-v1",
+    alt: "A pop engraving under a cyan sky: A landlord in an orange toga inspects a two-flat building while operating a rotary phone placed on a stone pedestal.",
+  },
+  "property-management-kpis": {
+    img: "guide-property-management-kpis-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in a bright orange toga stands beside small tiled houses, inspecting a rotary phone resting on a stone pedestal.",
+  },
+  "property-management-license-by-state": {
+    img: "guide-property-management-license-by-state-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga stands by the entrance of a colorful two-flat holding a large brass key, while a rotary phone rests on a stone pillar beside the door.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
