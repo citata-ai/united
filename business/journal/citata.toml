@@ -274,3 +274,12 @@ title = "Guide: property management fees by state (16-state table, first-year co
 url = "https://citata.ai/guides/property-management-fees-by-state"
 ref = "B005, H01"
 result = "Live on citata.ai 2026-10-30; stage and prod give 200."
+
+[[entry]]
+date = "2026-10-31"
+side = "internal"
+kind = "content"
+title = "Guide refresh: how landlords use AI to choose a manager (PM Trends Harris Poll, Buildium 2026)"
+url = "https://stage.citata.ai/guides/how-owners-choose-a-property-manager-with-ai"
+ref = "B027, H07"
+result = "On stage 2026-10-31, gives 200. Not on prod: waits for Tao's publish."
