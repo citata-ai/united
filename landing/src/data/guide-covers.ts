@@ -324,17 +324,9 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-lease-clauses-every-landlord-needs-v1",
     alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a row of small tiled houses, holding a brass key while a rotary phone rests on a stone pillar beside him.",
   },
-  "local-seo-property-management": {
-    img: "guide-local-seo-property-management-v1",
-    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands before a row of small tiled houses and a two-flat building, examining a vintage rotary phone.",
-  },
   "property-management-fees-by-state": {
     img: "guide-property-management-fees-by-state-v1",
     alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga weighs gold coins on a brass scale over a stone relief map split into regions, each with small tiled houses, with a rotary phone at the end of the table.",
-  },
-  "move-in-inspection-how-to": {
-    img: "guide-move-in-inspection-how-to-v1",
-    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a two-flat building holding a brass key and a written inspection report while a vintage CRT computer rests on a stone table.",
   },
   "normal-wear-and-tear-vs-damage": {
     img: "guide-normal-wear-and-tear-vs-damage-v1",
@@ -343,10 +335,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "owner-churn-rate-property-management": {
     img: "guide-owner-churn-rate-property-management-v1",
     alt: "A pop engraving under a lilac sky: A Roman property manager in an orange toga stands before a row of small tiled houses while checking a classic rotary phone resting on a stone pedestal.",
-  },
-  "owner-lead-follow-up": {
-    img: "guide-owner-lead-follow-up-v1",
-    alt: "A pop engraving under a coral sky: a property manager in an orange toga holds a rotary phone while standing outside small tiled houses.",
   },
   "owner-lead-sources-compared": {
     img: "guide-owner-lead-sources-compared-v1",
@@ -359,10 +347,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "pet-deposit-vs-pet-fee-vs-pet-rent": {
     img: "guide-pet-deposit-vs-pet-fee-vs-pet-rent-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a two-flat building holding a rotary phone next to three clay jars, with a small stone dog resting at his feet.",
-  },
-  "property-management-company-valuation": {
-    img: "guide-property-management-company-valuation-v1",
-    alt: "A pop engraving under a coral sky: an orange-togad Roman property manager stands before uniform small tiled houses, checking a rotary phone on a marble pillar.",
   },
 };
 
