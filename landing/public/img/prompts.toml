@@ -710,3 +710,27 @@ file = "img/guide-property-management-license-by-state-v1-*.webp"
 prompt = "Use the image /tmp/img-property-management-license-by-state/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A landlord in an orange toga stands by the entrance of a colorful two-flat holding a large brass key, while a rotary phone rests on a stone pillar beside the door."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-10-31"
+
+[[image]]
+file = "img/guide-property-management-marketing-budget-v1-*.webp"
+prompt = "Use the image /tmp/img-property-management-marketing-budget/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before a row of small tiled houses, reviewing a vintage rotary phone set upon a stone block while holding a brass key."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-31"
+
+[[image]]
+file = "img/guide-questions-to-ask-a-property-manager-v1-*.webp"
+prompt = "Use the image /tmp/img-questions-to-ask-a-property-manager/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before a Roman two-flat building while reviewing tenant questions on an old rotary phone. Rows of small tiled houses line the street in the background."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-31"
+
+[[image]]
+file = "img/guide-realtor-referral-program-property-management-v1-*.webp"
+prompt = "Use the image /tmp/img-realtor-referral-program-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands as the property manager outside a row of small tiled houses while holding a vintage rotary phone."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-31"
+
+[[image]]
+file = "img/guide-rent-to-income-ratio-3x-rule-v1-*.webp"
+prompt = "Use the image /tmp/img-rent-to-income-ratio-3x-rule/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands outside a small Roman two-flat holding a rotary phone. Small tiled houses line the street behind him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-10-31"

@@ -380,6 +380,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-property-management-license-by-state-v1",
     alt: "A pop engraving under a coral sky: a landlord in an orange toga stands by the entrance of a colorful two-flat holding a large brass key, while a rotary phone rests on a stone pillar beside the door.",
   },
+  "property-management-marketing-budget": {
+    img: "guide-property-management-marketing-budget-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a row of small tiled houses, reviewing a vintage rotary phone set upon a stone block while holding a brass key.",
+  },
+  "questions-to-ask-a-property-manager": {
+    img: "guide-questions-to-ask-a-property-manager-v1",
+    alt: "A pop engraving under a cyan sky: A property manager in an orange toga stands before a Roman two-flat building while reviewing tenant questions on an old rotary phone, with rows of small tiled houses lining the street.",
+  },
+  "realtor-referral-program-property-management": {
+    img: "guide-realtor-referral-program-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands as the property manager outside small tiled houses while holding a vintage rotary phone.",
+  },
+  "rent-to-income-ratio-3x-rule": {
+    img: "guide-rent-to-income-ratio-3x-rule-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga stands outside a small Roman two-flat holding a rotary phone, with small tiled houses lining the street behind him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
