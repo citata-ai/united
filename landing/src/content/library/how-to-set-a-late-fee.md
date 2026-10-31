@@ -3,10 +3,10 @@ title: "How to Set a Rent Late Fee That Holds Up in Court — Citata.ai"
 description: "A late fee holds up when the lease states it, it starts after any grace period the law sets, and it stays under the state cap, such as 8% in Minnesota."
 headline: "How to Set a Late Fee That Holds Up"
 dek: "Four state rules side by side, a fee calculator in plain math, and a lease clause."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "Set a late fee in the written lease, start it after any grace period your state requires, and keep it under your state's cap. Caps differ: Minnesota allows up to 8% of the overdue rent, Virginia the lesser of 10% of the rent or of the balance due, and Oregon limits the fee type and timing. Where no number is set, the fee must be reasonable. A flat fee is the simplest to defend."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 1

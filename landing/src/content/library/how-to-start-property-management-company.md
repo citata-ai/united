@@ -3,10 +3,10 @@ title: "How to Start a Property Management Company: 8 Steps — Citata.ai"
 description: "Get the right state license, form an LLC, buy E&O and liability cover, open trust accounts, pick software and sign your first owners. Steps, costs and a checklist."
 headline: "How to Start a Property Management Company"
 dek: "Eight steps from license to first signed owner, with a break-even example you can change."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "First, check your state's license rule: in most states, managing rentals for others needs a real estate broker or property manager license. Then form a business entity, get an EIN, buy errors and omissions and general liability insurance, and open separate trust accounts. Pick property management software, write your management agreement and fee table, and sign your first owners from your own network. Buildium estimates $2,000 to $10,000 or more to launch."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "guide"
 priority: 1
