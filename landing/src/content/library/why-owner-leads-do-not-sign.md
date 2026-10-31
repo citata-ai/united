@@ -72,7 +72,7 @@ What to do:
 
 Unclear fees stop many owners before they ever call. Owners compare managers online first. If your site says only "contact us for pricing", the owner moves to a site that shows a number.
 
-AI answers make this more important. Rentvine's second annual landlord study surveyed 500 small landlords through Harris Poll. It reports that 75% plan to use AI to find their next property manager. An AI answer can only repeat the fees it can find. A clear fee table on your site gives it something true to repeat.
+AI answers make this more important. The second annual PM Trends study, with Rentvine as a sponsor, surveyed 500 small landlords through Harris Poll. It reports that 75% plan to use AI to find their next property manager. An AI answer can only repeat the fees it can find. A clear fee table on your site gives it something true to repeat.
 
 A good fee table lists every fee, not just the monthly one:
 
