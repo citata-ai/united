@@ -3,10 +3,10 @@ title: "How to Price a Rental With Comps: A Step-by-Step Method — Citata.ai"
 description: "Pull 3 to 6 nearby listings that match beds, baths and size, adjust each for differences, and set rent near the middle. Cut the price if no one applies in 14 days."
 headline: "How to Price a Rental With Comparable Listings"
 dek: "Where to find comps, how to adjust them in a simple table, and when to cut the price."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "Find 3 to 6 rentals near yours with the same beds and baths and a similar size, listed now or rented in the last few months. Adjust each comp's rent up or down for the differences: size, parking, laundry, condition, utilities. Set your rent near the middle of the adjusted numbers. If you get few calls or no applications in 14 days, the price is the first thing to check."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 1

@@ -3,10 +3,10 @@ title: "How to Price Property Management Services From Cost Per Door — Citata.
 description: "Set management fees from your real cost per door: a worked 150-door example, local fee ranges, a target margin, a minimum fee for low rents, and when to say no."
 headline: "How to Set Your Management Fee From Your Cost Per Door"
 dek: "Start with what one door costs you each month, then check the local market."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-31"
+updated: "2026-10-31"
 answer: "Add up your monthly costs and divide by your door count to get your cost per door. Then add your target margin: fee = cost per door / (1 - margin). Check the result against local published fees, which averaged 7.44% in California and 9.04% in Florida samples (iPropertyManagement, updated 2026-09-23). Set a minimum monthly fee so low-rent doors do not lose money, and decline doors where even the minimum cannot cover the work."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "how-to"
 priority: 1
