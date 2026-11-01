@@ -3,10 +3,10 @@ title: "Owner Lead Sources Compared: Google, Referrals, Ads and AI — Citata.ai
 description: "In a 2026 study of 35 property managers and 2,525 owner leads, Google search and Maps brought 86%. AI brought 3.4% but converted best. Every source compared."
 headline: "Which Lead Sources Bring Owner Clients"
 dek: "One 2026 study of 2,525 owner leads, plus our own AI answer data."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "Google brings most owner leads. In the Goodjuju 2026 study of 35 property management companies and 2,525 owner leads, Google search and the Map Pack brought 50.6% of fall leads and direct or Maps visits brought 35.6%. AI tools brought 3.4%, but turned visits into leads at 3.9%, the best rate of any source. Social media brought 0.8% and paid search 1.2%."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "comparison"
 priority: 1
