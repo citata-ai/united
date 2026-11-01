@@ -392,6 +392,18 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-questions-to-ask-a-property-manager-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga holds a rotary phone outside a tiled Roman two-flat building.",
   },
+  "realtor-referral-program-property-management": {
+    img: "guide-realtor-referral-program-property-management-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga stands before small tiled houses, passing a heavy brass key to a visiting colleague while a rotary phone rests on a marble pedestal.",
+  },
+  "rental-analysis-lead-magnet": {
+    img: "guide-rental-analysis-lead-magnet-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a row of small tiled houses, inspecting a letterbox filled with owner inquiry scrolls while holding a heavy brass key.",
+  },
+  "rental-property-depreciation-basics": {
+    img: "guide-rental-property-depreciation-basics-v1",
+    alt: "A pop engraving under a cyan sky: a Roman property manager wearing an orange toga inspects a rotary phone in front of small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
