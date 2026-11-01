@@ -3,10 +3,10 @@ title: "Local SEO for Property Management Companies: 2026 Guide — Citata.ai"
 description: "Google ranks local results by relevance, distance and prominence. How a property manager wins the map pack: profile, site, reviews and a monthly task list."
 headline: "Local SEO for Property Management Companies"
 dek: "Google Search and the map pack brought half of all owner leads in a 35-company study."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "Google ranks local results by three factors: relevance, distance and prominence. A property manager ranks when its Google Business Profile is complete and verified, its website has one clear page per service city, and its reviews keep coming in. Google says you cannot pay for a better local rank. In the Goodjuju 2026 study, Google Search and the map pack brought 50.6% of owner leads, so local SEO is still the largest channel."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 1
