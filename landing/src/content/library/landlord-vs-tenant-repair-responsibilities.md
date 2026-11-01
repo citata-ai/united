@@ -3,10 +3,10 @@ title: "Landlord vs Tenant Repairs: Who Pays for What, by Item — Citata.ai"
 description: "The landlord pays to keep the unit habitable and its systems working. The tenant pays for damage they cause and small upkeep the lease assigns. A table by item."
 headline: "Who Pays for What: Landlord vs Tenant Repairs"
 dek: "What state statutes put on each side, a who-pays table by item, and lease wording."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "The landlord pays to keep the unit fit to live in: structure, plumbing, heating, electrical and any appliances the landlord supplies. The tenant pays to fix damage the tenant, family or guests cause, and must keep the unit clean and use systems in a reasonable way. The lease can shift small upkeep, such as bulbs and filters, to the tenant. Some states let a single-family lease shift more, but never the core habitability duties."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "comparison"
 priority: 1

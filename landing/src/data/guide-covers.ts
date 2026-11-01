@@ -352,21 +352,9 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-local-seo-property-management-v1",
     alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a row of small tiled houses holding a brass key near a vintage CRT computer resting on a stone pedestal.",
   },
-  "move-in-inspection-how-to": {
-    img: "guide-move-in-inspection-how-to-v1",
-    alt: "A pop engraving under a cyan sky: a landlord in an orange toga stands before a mint-green two-flat house with small tiled roofs, holding a large brass key and inspecting the property's condition.",
-  },
   "owner-lead-follow-up": {
     img: "guide-owner-lead-follow-up-v1",
     alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands outside small tiled houses while holding a rotary phone and a brass key.",
-  },
-  "property-management-company-valuation": {
-    img: "guide-property-management-company-valuation-v1",
-    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga stands before rows of small tiled houses while holding a heavy rotary phone.",
-  },
-  "property-management-directories": {
-    img: "guide-property-management-directories-v1",
-    alt: "A pop engraving under a yellow sky: A property manager in an orange toga stands outside a two-flat building, reviewing property directory entries on an old CRT computer resting on a stone podium with small tiled houses lining the classical street.",
   },
   "property-management-fee-models-compared": {
     img: "guide-property-management-fee-models-compared-v1",
@@ -379,6 +367,30 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "property-management-license-by-state": {
     img: "guide-property-management-license-by-state-v1",
     alt: "A pop engraving under a coral sky: a landlord in an orange toga stands by the entrance of a colorful two-flat holding a large brass key, while a rotary phone rests on a stone pillar beside the door.",
+  },
+  "property-management-marketing-budget": {
+    img: "guide-property-management-marketing-budget-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before a row of small tiled houses, reviewing a vintage rotary phone set upon a stone block while holding a brass key.",
+  },
+  "rent-to-income-ratio-3x-rule": {
+    img: "guide-rent-to-income-ratio-3x-rule-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga stands outside a small Roman two-flat holding a rotary phone, with small tiled houses lining the street behind him.",
+  },
+  "move-in-inspection-how-to": {
+    img: "guide-move-in-inspection-how-to-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspects a two-flat building while examining a rotary phone amidst small tiled houses.",
+  },
+  "property-management-company-valuation": {
+    img: "guide-property-management-company-valuation-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands before a row of small tiled houses, examining a vintage CRT computer resting on a stone column.",
+  },
+  "property-management-directories": {
+    img: "guide-property-management-directories-v1",
+    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga stands outside small tiled houses while dialing a rotary phone.",
+  },
+  "questions-to-ask-a-property-manager": {
+    img: "guide-questions-to-ask-a-property-manager-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a rotary phone outside a tiled Roman two-flat building.",
   },
 };
 

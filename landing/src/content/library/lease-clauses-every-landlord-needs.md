@@ -3,10 +3,10 @@ title: "Lease Clauses Every Landlord Needs: Checklist — Citata.ai"
 description: "A residential lease needs clauses for rent, fees, deposits, repairs, entry, pets, lead paint and severability. A checklist with state rules and void clauses."
 headline: "Lease Clauses Every Residential Lease Needs"
 dek: "A 16-item checklist, plus the clauses that state law makes void."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "Every residential lease needs clauses for the parties, term, rent, late fees, deposit, repairs, entry, pets, occupants, utilities and how notices are sent. Homes built before 1978 also need the federal lead paint warning. Add a severability clause, because many states make some lease terms void, and the rest of the lease should still stand."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "checklist"
 priority: 1
