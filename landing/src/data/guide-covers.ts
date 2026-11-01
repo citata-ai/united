@@ -404,6 +404,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-rental-property-depreciation-basics-v1",
     alt: "A pop engraving under a cyan sky: a Roman property manager wearing an orange toga inspects a rotary phone in front of small tiled houses.",
   },
+  "rental-property-tax-deductions-list": {
+    img: "guide-rental-property-tax-deductions-list-v1",
+    alt: "A pop engraving under a lilac sky: A property manager in an orange toga stands before a row of small tiled houses, examining a rotary phone while holding a key.",
+  },
+  "respond-to-negative-reviews-property-management": {
+    img: "guide-respond-to-negative-reviews-property-management-v1",
+    alt: "A pop engraving under a coral sky: A man in an orange toga stands outside a two-flat building with small tiled roofs, calmly holding a rotary phone to his ear as he listens to tenant feedback.",
+  },
+  "security-deposit-deductions-list": {
+    img: "guide-security-deposit-deductions-list-v1",
+    alt: "A pop engraving under a yellow sky: A property manager in an orange toga stands beside small tiled houses while holding a heavy brass key and a rotary phone rests on a stone column nearby.",
+  },
+  "self-manage-vs-hire-property-manager": {
+    img: "guide-self-manage-vs-hire-property-manager-v1",
+    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga stands at a crossroads holding a heavy brass key, with small tiled houses and a two-flat on the horizon.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
