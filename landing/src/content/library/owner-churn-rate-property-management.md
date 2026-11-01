@@ -3,10 +3,10 @@ title: "Owner Churn Rate in Property Management: Formula, Benchmarks — Citata.
 description: "Owner churn is doors lost in a year divided by doors at the start. Published benchmarks run from 9.6% to 25% a year. The formula, the data and the targets."
 headline: "Owner Churn Rate: How to Calculate It and What Is Normal"
 dek: "Published churn benchmarks for property managers run from 9.6% to 25%, and few cite a study."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "Annual door churn is the doors you lost in 12 months divided by the doors you managed at the start of those 12 months. Published numbers for US property managers run from 9.6% to 25% a year, and most come from people who quote a NARPM and ProfitCoach study, not from the study itself. Daniel Craig of ProfitCoach calls under 15% great and under 20% okay. Track unit churn for growth plans and client churn for service quality."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "data"
 priority: 1

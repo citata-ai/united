@@ -3,10 +3,10 @@ title: "Normal Wear and Tear vs Damage: Examples by Item for Landlords — Citat
 description: "Wear and tear is the decline from normal use and age. Damage comes from misuse, accident or neglect. A table by item, a proration example, and how to prove it."
 headline: "Normal Wear and Tear vs Damage, Item by Item"
 dek: "What state laws say, a 20-item comparison table, and a worked carpet proration."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "Normal wear and tear is the decline that comes from ordinary use and age: faded paint, light carpet wear in walkways, a few small nail holes, loose door handles. Damage comes from misuse, accident or neglect: large holes, pet stains, burns, broken fixtures. State deposit laws, such as Virginia's and Oregon's, let a landlord deduct for damage but not for ordinary wear and tear. To deduct, show the start condition, the end condition and the real cost, and charge only for the item's remaining useful life."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "comparison"
 priority: 1
