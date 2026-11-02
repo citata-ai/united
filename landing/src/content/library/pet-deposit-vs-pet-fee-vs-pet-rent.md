@@ -3,10 +3,10 @@ title: "Pet Deposit vs Pet Fee vs Pet Rent: Which to Charge — Citata.ai"
 description: "A pet deposit is refundable, a pet fee is not, and pet rent is monthly. 2025 averages: $35.65 pet rent, $315 fee, about $300 deposit. State limits apply."
 headline: "Pet Deposit vs Pet Fee vs Pet Rent"
 dek: "What each charge is, what it costs renters on average, and where state law limits it."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "A pet deposit is refundable money held against pet damage. A pet fee is a one-time, nonrefundable charge. Pet rent is a monthly charge added to rent. RentCafe's 2025 data puts average pet rent at $35.65, the average pet fee at $315 and the average pet deposit at slightly over $300. Many landlords use a deposit plus pet rent, but state deposit caps and fee rules decide what you may charge, and none of these may be charged for an assistance animal."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "comparison"
 priority: 1

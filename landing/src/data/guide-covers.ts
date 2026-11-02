@@ -380,17 +380,9 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-move-in-inspection-how-to-v1",
     alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspects a two-flat building while examining a rotary phone amidst small tiled houses.",
   },
-  "property-management-company-valuation": {
-    img: "guide-property-management-company-valuation-v1",
-    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands before a row of small tiled houses, examining a vintage CRT computer resting on a stone column.",
-  },
   "property-management-directories": {
     img: "guide-property-management-directories-v1",
     alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga stands outside small tiled houses while dialing a rotary phone.",
-  },
-  "questions-to-ask-a-property-manager": {
-    img: "guide-questions-to-ask-a-property-manager-v1",
-    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a rotary phone outside a tiled Roman two-flat building.",
   },
   "realtor-referral-program-property-management": {
     img: "guide-realtor-referral-program-property-management-v1",
@@ -419,6 +411,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "self-manage-vs-hire-property-manager": {
     img: "guide-self-manage-vs-hire-property-manager-v1",
     alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga stands at a crossroads holding a heavy brass key, with small tiled houses and a two-flat on the horizon.",
+  },
+  "property-management-company-valuation": {
+    img: "guide-property-management-company-valuation-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands outside a two-flat tiled townhouse while examining a vintage rotary phone.",
+  },
+  "questions-to-ask-a-property-manager": {
+    img: "guide-questions-to-ask-a-property-manager-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga stands before small tiled houses holding a rotary phone near terracotta-roofed two-flat buildings.",
+  },
+  "sell-former-home-after-renting-section-121": {
+    img: "guide-sell-former-home-after-renting-section-121-v1",
+    alt: "A pop engraving under a lilac sky: A landlord in an orange toga stands in front of a red-brick two-flat holding a rotary phone, with small tiled houses lining the sunny street behind him.",
+  },
+  "short-term-vs-long-term-rental": {
+    img: "guide-short-term-vs-long-term-rental-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga stands before small tiled houses, inspecting a rotary phone on a stone pillar while holding a brass key.",
   },
 };
 

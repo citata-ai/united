@@ -45,17 +45,7 @@ No public source we found gives a lead count for rental analysis tools. Property
 
 The best public baseline is Goodjuju's 2026 study. Across 35 companies, 141,908 visits in the fall window gave 1,262 owner leads, a 0.9% average rate (Goodjuju, 2026). That rate is for all site visits and all owner forms, not rental analysis forms only. Phone calls were not counted.
 
-Worked estimate (sample numbers, not a benchmark):
-
-| Step | Calculation | Result |
-|---|---|---|
-| Monthly site visits | from GA4 | 3,000 |
-| Share that reach the rental analysis page | 3,000 × 10% | 300 |
-| Form rate on that page | 300 × 5% | 15 requests |
-| Requests that are real owners with a rental | 15 × 70% | 10–11 leads |
-| Leads that sign | 10 × 20% | 2 new owners |
-
-Replace each rate with your own data after 90 days. The 10%, 5%, 70% and 20% here are placeholders. The point is the chain: more visits to the page, a higher form rate, and fast follow-up each move the result.
+Build your estimate from your own records. Count visits to the analysis page, form requests, qualified owner leads and signed owners. Divide each count by the count from the prior step to find where people leave. Keep the period and lead definition the same. Do not use a site-wide lead rate as the rate for this form.
 
 ## Should the analysis be instant or manual?
 
@@ -66,11 +56,11 @@ Use both: an instant range on the page, then a manual report. Each has a job.
 | Owner gets value | At once | In 1–2 days | At once, then more |
 | Accuracy | Rough | Good | Rough, then good |
 | Lead quality | Mixed, some curious visitors | Higher, owner waited | Higher, owner gets a reason to talk |
-| Your work per lead | None | 20–40 minutes | 20–40 minutes, only for real leads |
+| Your work per lead | None | Time each report | Time each report for qualified leads |
 | Starts a sales talk | Rarely | Yes | Yes |
 | Risk | Owner takes the number and leaves | Owner waits and asks another manager | Lowest |
 
-The work time is our estimate, not measured data. The pick for most companies is the third column. Show a range such as "$1,850–$2,100 for a 3-bedroom in this ZIP" right away. Then say: "We will check this against our own leases and send a full report within 1 business day."
+The pick for most companies is the third column. Show a range such as "$1,850–$2,100 for a 3-bedroom in this ZIP" right away. Then say: "We will check this against our own leases and send a full report within 1 business day."
 
 ## How do I follow up after the report?
 

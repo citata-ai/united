@@ -125,7 +125,7 @@ How to report: open your Business Profile, select **Read reviews**, select **Rep
 Some replies break federal law, not only Google policy.
 
 - **No threats.** The FTC rule at 16 CFR 465.7 bans groundless legal threats, physical threats and intimidation against a reviewer. It also bans false public accusations used to stop or remove a review.
-- **No gag clauses.** The Consumer Review Fairness Act (15 U.S.C. 45b) voids form contract terms that bar reviews, charge a fee for a review or take the rights to the review content. A standard lease or management agreement is a form contract when the other party cannot negotiate it.
+- **No gag clauses.** The Consumer Review Fairness Act (15 U.S.C. 45b) voids form contract terms that bar reviews, charge a fee for a review or take the rights to the review content.
 - **No fake counter-reviews.** 16 CFR 465.2 bans fake reviews, and Google bans posts from many accounts by one person.
 - **No hiding bad reviews on your own site** while you present the rest as all reviews (16 CFR 465.7(b)).
 
