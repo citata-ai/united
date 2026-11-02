@@ -4,6 +4,7 @@
 // Voice: brand/VOICE.md. Report counts only; no company is named in a negative way.
 import Guide, { type GuideFrontmatter } from "../../layouts/Guide.astro";
 import data from "../../data/ai-pm-index-2026.json";
+import ch from "../../data/ai-pm-index-2026-change.json";
 
 const o = data.overall;
 const e = data.by_engine;
@@ -29,6 +30,20 @@ const typeLabel: Record<string, string> = {
   association: "Trade associations (NARPM)",
   other: "Other",
 };
+// Update 1 (B026): same prompts, models and cities, run again. Numbers come from change.json (tools/ai-visibility/cities_compare.py).
+const d2 = ch.new_date;
+const csv2Url = `/data/ai-property-manager-index-2026-11-02.csv`;
+const r = ch.retention;
+const exp2 = ch.domains.find((x) => x.domain === "expertise.com") ?? { domain: "expertise.com", old: 0, new: 0, delta: 0 };
+const sign = (n: number) => (n > 0 ? `+${n}` : `${n}`);
+const changeRows = [
+  { key: "avg_companies", label: "Companies named per answer", unit: "" },
+  { key: "pct_names_local", label: "Names that are local firms", unit: "%" },
+  { key: "pct_with_national", label: "Answers with a national or multi-state brand", unit: "%" },
+  { key: "pct_with_listing_site", label: "Answers with a directory or review site", unit: "%" },
+  { key: "pct_with_company_site", label: "Answers that link a company site", unit: "%" },
+  { key: "pct_with_forum", label: "Answers with Reddit or BiggerPockets", unit: "%" },
+] as const;
 const types = Object.entries(o.source_type_answers as Record<string, number>).sort((a, b) => b[1] - a[1]);
 
 const fm: GuideFrontmatter = {
@@ -37,8 +52,8 @@ const fm: GuideFrontmatter = {
   headline: "AI Property Manager Index 2026",
   dek: `Who ChatGPT, Gemini and Claude name as the best property manager in 50 US cities, and the sources they use.`,
   published: date,
-  updated: date,
-  answer: `We asked ChatGPT, Gemini and Claude "What is the best property management company in <city>?" for the 50 largest US cities (${N} answers, ${date}). The engines named ${o.distinct_companies} different companies, and ${Math.round(o.pct_names_local)}% of all names were local firms. ${pct(o.answers_with_listing_site, N)}% of answers used a directory or review site as a source; Expertise.com was a source in ${expertise} of ${N} answers. Gemini linked a property manager's own site in ${pct(e.gemini.answers_with_company_site, 50)}% of answers, ChatGPT in ${pct(e.chatgpt.answers_with_company_site, 50)}%.`,
+  updated: d2,
+  answer: `We asked ChatGPT, Gemini and Claude "What is the best property management company in <city>?" for the 50 largest US cities (${N} answers, ${date}). The engines named ${o.distinct_companies} different companies, and ${Math.round(o.pct_names_local)}% of all names were local firms. ${pct(o.answers_with_listing_site, N)}% of answers used a directory or review site as a source; Expertise.com was a source in ${expertise} of ${N} answers. Gemini linked a property manager's own site in ${pct(e.gemini.answers_with_company_site, 50)}% of answers, ChatGPT in ${pct(e.chatgpt.answers_with_company_site, 50)}%. When we asked again on ${d2}, only ${Math.round(r.all.pct_kept)}% of the names came back, but the top sources stayed the same.`,
   faq: [
     {
       q: "Which property management company does ChatGPT recommend?",
@@ -54,11 +69,12 @@ const fm: GuideFrontmatter = {
     },
     {
       q: "Are these AI recommendations stable?",
-      a: "No. We ran each question once, and AI answers change between runs, days and accounts. Use this data to see patterns across 50 cities, not as a fixed ranking of any one company.",
+      a: `No. We asked the same ${N} questions again 14 days later (${d2}). Only ${Math.round(r.all.pct_kept)}% of the names came back (${r.all.kept.toLocaleString("en-US")} of ${r.all.old_names.toLocaleString("en-US")}), and ${r.all.same_list} of ${N} answers gave the same list. The sources were more stable: Expertise.com was a source in ${exp2.old} answers, then ${exp2.new}.`,
     },
   ],
   sources: [
     { label: `Citata.ai: AI Property Manager Index data, ${N} answers, ${date} (CSV, our data)`, url: `https://citata.ai${csvUrl}` },
+    { label: `Citata.ai: AI Property Manager Index update 1, ${ch.overall.answers.new} answers, ${d2} (CSV, our data)`, url: `https://citata.ai${csv2Url}` },
     {
       label: "Wikipedia: List of United States cities by population (US Census Bureau estimates, July 1, 2025)",
       url: "https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population",
@@ -69,6 +85,7 @@ const fm: GuideFrontmatter = {
 
 const headings = [
   { depth: 2, slug: "numbers", text: "Headline numbers" },
+  { depth: 2, slug: "update-1", text: `Update 1: what changed in 14 days` },
   { depth: 2, slug: "method", text: "How we ran the test" },
   { depth: 2, slug: "companies", text: "Which companies AI names" },
   { depth: 2, slug: "sources", text: "Which sources AI uses" },
@@ -88,15 +105,18 @@ const dataset = {
   creator: { "@id": "https://citata.ai/#org" },
   publisher: { "@id": "https://citata.ai/#org" },
   datePublished: date,
-  dateModified: date,
-  temporalCoverage: date,
+  dateModified: d2,
+  temporalCoverage: `${date}/${d2}`,
   spatialCoverage: { "@type": "Place", name: "United States" },
   license: "https://creativecommons.org/licenses/by/4.0/",
   isAccessibleForFree: true,
   keywords: ["property management", "AI search", "GEO", "ChatGPT", "Gemini", "Claude", "local search", "citations"],
   measurementTechnique: "One prompt per city, one run per engine, through each engine's API with web search on. A second model listed the company names in each answer.",
   variableMeasured: ["companies named", "national or multi-state brands named", "source domains", "links to company sites"],
-  distribution: [{ "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csvUrl}` }],
+  distribution: [
+    { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csvUrl}` },
+    { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csv2Url}` },
+  ],
 };
 
 // Chart data: top cited domains (one series, one color, direct labels).
@@ -155,6 +175,60 @@ const fmt = (v: number, unit: string) => (unit === "%" ? `${Math.round(v)}%` : v
       <p class="mt-2 text-[15px] text-muted">cities had at least one company that all 3 engines named. In the other {50 - o.cities_with_full_agreement} cities, the engines did not agree on any name.</p>
     </div>
   </div>
+
+  <h2 id="update-1">Update 1: what changed in 14 days</h2>
+  <p>
+    AI engines changed many of the names in 14 days, but they kept the same sources. On {d2} we sent the same prompt to the same 3 models for the same 50 cities
+    ({ch.overall.answers.new} answers received, {ch.overall.answers_failed.new} failed). The rest of this page shows the first run ({date}).
+  </p>
+  <div class="not-prose my-6 grid gap-3 sm:grid-cols-2">
+    <div class="rounded-md bg-sun/30 p-5">
+      <p class="text-[34px] leading-none">{Math.round(r.all.pct_kept)}%</p>
+      <p class="mt-2 text-[15px] text-muted">of the names came back in the same engine's answer for the same city ({r.all.kept.toLocaleString("en-US")} of {r.all.old_names.toLocaleString("en-US")}).</p>
+    </div>
+    <div class="rounded-md bg-coral/25 p-5">
+      <p class="text-[34px] leading-none">{r.all.same_list} of {N}</p>
+      <p class="mt-2 text-[15px] text-muted">answers gave the same list of companies. In {r.all.no_name_kept} answers, no name came back.</p>
+    </div>
+    <div class="rounded-md bg-sky/25 p-5">
+      <p class="text-[34px] leading-none">{ch.cities_top_same} of 50</p>
+      <p class="mt-2 text-[15px] text-muted">cities kept the same most-named company. {ch.overall.cities_with_full_agreement.new} cities had a name that all 3 engines gave (first run: {ch.overall.cities_with_full_agreement.old}).</p>
+    </div>
+    <div class="rounded-md bg-mint/40 p-5">
+      <p class="text-[34px] leading-none">{exp2.new} of {N}</p>
+      <p class="mt-2 text-[15px] text-muted">answers used Expertise.com as a source (first run: {exp2.old}). It is still the top source.</p>
+    </div>
+  </div>
+  <p>Names that came back, by engine (same city, same engine, {date} to {d2}):</p>
+  <table>
+    <thead><tr><th>Engine</th><th>Names in first run</th><th>Named again</th><th>Share kept</th><th>Same list</th></tr></thead>
+    <tbody>
+      {engineOrder.map((k) => <tr><td>{engineName[k]}</td><td>{r[k].old_names}</td><td>{r[k].kept}</td><td>{Math.round(r[k].pct_kept)}%</td><td>{r[k].same_list} of 50</td></tr>)}
+    </tbody>
+  </table>
+  <p>The totals moved less than the names. All {N} answers, first run and update 1:</p>
+  <table>
+    <thead><tr><th>Measure</th><th>{date}</th><th>{d2}</th></tr></thead>
+    <tbody>
+      {changeRows.map((m) => <tr><td>{m.label}</td><td>{fmt(ch.overall[m.key].old, m.unit)}</td><td>{fmt(ch.overall[m.key].new, m.unit)}</td></tr>)}
+      <tr><td>Different companies named</td><td>{ch.overall.distinct_companies.old}</td><td>{ch.overall.distinct_companies.new}</td></tr>
+    </tbody>
+  </table>
+  <p>Top source domains on both dates (answers of {N}):</p>
+  <table>
+    <thead><tr><th>Domain</th><th>{date}</th><th>{d2}</th><th>Change</th></tr></thead>
+    <tbody>{ch.domains.slice(0, 15).map((x) => <tr><td>{x.domain}</td><td>{x.old}</td><td>{x.new}</td><td>{sign(x.delta)}</td></tr>)}</tbody>
+  </table>
+  <p>National or multi-state brands on both dates (answers of {N}). A count is not a rating of any company.</p>
+  <table>
+    <thead><tr><th>Brand</th><th>{date}</th><th>{d2}</th></tr></thead>
+    <tbody>{ch.national.slice(0, 12).map((x) => <tr><td>{x.name}</td><td>{x.old}</td><td>{x.new}</td></tr>)}</tbody>
+  </table>
+  <p>
+    What this means for you: one AI answer is a sample, not a rank. Check your city more than once, and with each engine. Work on the sources, because they
+    stay: Expertise.com, Yelp, iPropertyManagement.com, PropertyManagement.com and Birdeye were in the top sources on both dates.
+    <a href={csv2Url} download>Download the update 1 CSV</a> ({ch.overall.answers.new} rows, same columns).
+  </p>
 
   <h2 id="method">How we ran the test</h2>
   <p>We sent the same prompt to each engine on {date}, one run per city and engine:</p>

@@ -283,3 +283,12 @@ title = "Guide refresh: how landlords use AI to choose a manager (PM Trends Harr
 url = "https://stage.citata.ai/guides/how-owners-choose-a-property-manager-with-ai"
 ref = "B027, H07"
 result = "On stage 2026-10-31, gives 200. Not on prod: waits for Tao's publish."
+
+[[entry]]
+date = "2026-11-02"
+side = "internal"
+kind = "content"
+title = "AI Property Manager Index update 1: same 150 questions, 14 days later"
+url = "https://stage.citata.ai/research/ai-property-manager-index-2026#update-1"
+ref = "B026, H03"
+result = "On stage 2026-11-02. 58% of names came back, sources held. New CSV."
