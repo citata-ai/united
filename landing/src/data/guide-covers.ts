@@ -412,6 +412,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-self-manage-vs-hire-property-manager-v1",
     alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga stands at a crossroads holding a heavy brass key, with small tiled houses and a two-flat on the horizon.",
   },
+  "property-management-company-valuation": {
+    img: "guide-property-management-company-valuation-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands outside a two-flat tiled townhouse while examining a vintage rotary phone.",
+  },
+  "questions-to-ask-a-property-manager": {
+    img: "guide-questions-to-ask-a-property-manager-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga stands before small tiled houses holding a rotary phone near terracotta-roofed two-flat buildings.",
+  },
+  "sell-former-home-after-renting-section-121": {
+    img: "guide-sell-former-home-after-renting-section-121-v1",
+    alt: "A pop engraving under a lilac sky: A landlord in an orange toga stands in front of a red-brick two-flat holding a rotary phone, with small tiled houses lining the sunny street behind him.",
+  },
+  "short-term-vs-long-term-rental": {
+    img: "guide-short-term-vs-long-term-rental-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga stands before small tiled houses, inspecting a rotary phone on a stone pillar while holding a brass key.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
