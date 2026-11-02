@@ -283,3 +283,11 @@ title = "Guide refresh: how landlords use AI to choose a manager (PM Trends Harr
 url = "https://stage.citata.ai/guides/how-owners-choose-a-property-manager-with-ai"
 ref = "B027, H07"
 result = "On stage 2026-10-31, gives 200. Not on prod: waits for Tao's publish."
+
+[[entry]]
+date = "2026-11-02"
+side = "internal"
+kind = "measure"
+title = "Weekly AI visibility run 3 (no run on 2026-10-26)"
+ref = "business/marketing/ai-visibility/2026-11-02/report.md"
+result = "Non-brand: named in 3 of 108 (was 0), cited in 6 (was 0). ChatGPT only for names. Brand answers right: 5 of 12, Claude 0 of 4. AI referrals 0 in 7 days, 1,512 bot fetches, Anthropic 1."
