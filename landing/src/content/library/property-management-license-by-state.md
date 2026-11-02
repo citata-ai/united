@@ -3,10 +3,10 @@ title: "Property Management License by State: What the Statutes Say — Citata.a
 description: "Do property managers need a broker license? Statute text for 7 states, which ones have a separate PM license, the exemptions, and how to work under a broker."
 headline: "Property Management License Rules by State, From the Statutes"
 dek: "We read the statute text for 7 states. Online 50-state lists do not fully agree."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "In most states, managing rentals for other people for pay counts as real estate brokerage, so you need a broker license or must work under a licensed broker. Of the 7 states we checked in the statute text, Arizona, California, Florida and Texas treat leasing or rent work for others as broker activity. Oregon and South Carolina also have a separate property manager license. Delaware exempts staff who only do limited tasks. Check your own state's real estate commission before you take your first door."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "data"
 priority: 1

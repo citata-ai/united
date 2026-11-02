@@ -3,10 +3,10 @@ title: "Property Management Marketing Budget: How Much Per Month — Citata.ai"
 description: "Most guides put a property management marketing budget at 7–10% of revenue. Set it from your door goal instead, then split it across SEO, ads and reviews."
 headline: "How Much a Property Manager Should Spend on Marketing"
 dek: "Two ways to set the number: a share of revenue, or the cost of your door goal."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "Property Manager Websites puts a growth budget at 7 to 10% of management revenue, and 10 to 15% for fast growth or a new market. For a 100-door company with $1,696 of fees per door a year, 7 to 10% is about $989 to $1,413 a month. A better check is your door goal: count the owners you must sign, the leads you need, and what each signed owner is worth."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 1
