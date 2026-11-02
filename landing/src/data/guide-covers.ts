@@ -380,17 +380,9 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-move-in-inspection-how-to-v1",
     alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspects a two-flat building while examining a rotary phone amidst small tiled houses.",
   },
-  "property-management-company-valuation": {
-    img: "guide-property-management-company-valuation-v1",
-    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands before a row of small tiled houses, examining a vintage CRT computer resting on a stone column.",
-  },
   "property-management-directories": {
     img: "guide-property-management-directories-v1",
     alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga stands outside small tiled houses while dialing a rotary phone.",
-  },
-  "questions-to-ask-a-property-manager": {
-    img: "guide-questions-to-ask-a-property-manager-v1",
-    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a rotary phone outside a tiled Roman two-flat building.",
   },
   "realtor-referral-program-property-management": {
     img: "guide-realtor-referral-program-property-management-v1",
