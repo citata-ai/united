@@ -3,10 +3,10 @@ title: "Property Management Directories to Claim and Fix in 2026 — Citata.ai"
 description: "Which directories AI cites for property managers, which are free, which send owner leads, and how to keep your name, phone and services the same everywhere."
 headline: "Which Directories a Property Manager Should Claim"
 dek: "In our 150-answer AI test, listing sites were a source in 88% of answers."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "Start with the listings AI engines and owners read most: Google Business Profile, Yelp, Expertise.com, iPropertyManagement, BBB and your local association pages. In our test of 150 AI answers about property managers in 50 US cities, listing sites were a source in 88% of answers, and Expertise.com alone in 93. Claim the free ones, fix wrong facts, and keep your name, phone, address and services the same on each one."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "checklist"
 priority: 1
