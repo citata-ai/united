@@ -246,7 +246,7 @@ kind = "original-research"
 title = "AI Property Manager Index, update 1: re-run 50 cities x 3 engines, change since 2026-10-19 (who gained, who lost, which sources moved)"
 demand = "No direct competitor publishes a before/after AI answer set (playbook 'Where we beat them'). Change data is new each month, so it gives H03 outreach a fresh reason to link. Same prompts (tools/ai-visibility/cities.toml), new run date."
 score = 8
-status = "idea"
+status = "building"
 note = "Run tools/ai-visibility/run.py with the city prompts after 2026-11-02 (14+ days after the first run). Publish counts and a CSV as a dated section of /research/ai-property-manager-index-2026, not a new URL. Name no company in a new way without Tao."
 
 [[item]]
