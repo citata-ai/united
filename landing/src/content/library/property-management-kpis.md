@@ -3,10 +3,10 @@ title: "Property Management KPIs to Track Each Week and Month — Citata.ai"
 description: "12 KPIs for a property management company owner: growth, service and profit. Each with its formula, how often to review it and who owns it."
 headline: "The Property Management KPIs an Owner Should Track"
 dek: "Twelve numbers, one scorecard: what to check weekly, what to check monthly, and who owns each."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "Track growth (doors won, doors lost, net door growth, unit churn), service quality (days to lease, work order response time, rent collection rate, client churn) and profit (revenue per door, doors per employee, cost to win a door, net profit margin). Review the fast-moving numbers each week and the rest each month. Give every KPI one owner on your team."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "guide"
 priority: 1

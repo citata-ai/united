@@ -292,3 +292,19 @@ title = "AI Property Manager Index update 1: same 150 questions, 14 days later"
 url = "https://citata.ai/research/ai-property-manager-index-2026#update-1"
 ref = "B026, H03"
 result = "Live on citata.ai 2026-11-02; stage and prod give 200. 58% of names came back, sources held. New CSV."
+
+[[entry]]
+date = "2026-11-02"
+side = "internal"
+kind = "measure"
+title = "Weekly AI visibility run 3 (no run on 2026-10-26)"
+ref = "business/marketing/ai-visibility/2026-11-02/report.md"
+result = "Non-brand: named in 3 of 108 (was 0), cited in 6 (was 0). ChatGPT only for names. Brand answers right: 5 of 12, Claude 0 of 4. AI referrals 0 in 7 days, 1,512 bot fetches, Anthropic 1."
+
+[[entry]]
+date = "2026-11-02"
+side = "internal"
+kind = "measure"
+title = "Weekly growth report W45: CTT-O6 at 1 of 1,000 AI sessions on day 15"
+ref = "business/marketing/reports/2026-W45.md"
+result = "1 AI referral session since 2026-10-19 (pace needed 62.4 a day from 2026-11-03). 1,509 AI bot fetches in 7 days. No hypothesis validated or invalidated; ICE confidence down for H01, H02, H06; H07 running."
