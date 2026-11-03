@@ -61,6 +61,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-10-30 | Data page /guides/property-management-fees-by-state (H01-E1, B005): 16-state averages for monthly (7.10% WI to 9.79% NM), flat, leasing, renewal, setup and inspection fees (iPropertyManagement, updated 2026-09-23); first-year cost on $2,000 rent ($2,848 UT to $3,664 WA, our math) | 2026-10-30 |
 | 2026-10-31 | Refresh /guides/how-owners-choose-a-property-manager-with-ai (H07-E1, B027): PM Trends Harris Poll AI numbers, Buildium 2026 hiring data, false "no public survey" claim removed | live (found 2026-11-02) |
 | 2026-11-02 | Research /research/ai-property-manager-index-2026 update 1 (H03-E1, B026): re-run 50 cities x 3 engines; 58% of names came back, 3 of 150 same lists, Expertise.com still top source (93 -> 87); second CSV | 2026-11-02 |
+| 2026-11-03 | Refresh /guides/geo-agencies-for-property-management (H07-E1, B025): who AI answers name on 4 agency prompts, 2026-10-19 vs 2026-11-02 (24 answers each); 7 price pages re-read; FirstIndex terms and Goodjuju notice updated | stage 2026-11-03 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
