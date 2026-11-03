@@ -3,10 +3,10 @@ title: "Security Deposit Deductions: What You Can and Cannot Charge — Citata.a
 description: "Landlords can usually deduct unpaid rent, tenant damage beyond wear and tear, and charges the lease names, not normal wear. Deadlines run 14 to 45 days by state."
 headline: "Security Deposit Deductions: What You Can Charge"
 dek: "A can-and-cannot checklist, 4 state deadlines, and the itemized notice that keeps a deduction safe."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "In most states you can deduct unpaid rent, the cost to repair damage the tenant caused beyond ordinary wear and tear, and other charges your lease names, such as cleaning where the law allows. You cannot deduct for normal wear, for upgrades, or for charges that are not in the lease or the statute. Send an itemized list on time: Arizona 14 days excluding weekends and holidays, Florida 30 days for a claim notice, Oregon 31 days, Virginia 45 days. Late or missing notices can cost you the deduction or twice the amount."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "checklist"
 priority: 1
