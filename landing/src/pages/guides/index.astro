@@ -92,7 +92,11 @@ const s8 = [...metros].sort((a, b) => a.short.localeCompare(b.short));
       <p class="mt-2 max-w-[66ch] text-[16px] text-muted">
         HUD Fair Market Rents for the 50 largest US metro areas, 0 to 4 bedrooms, with the change from 2026. One page per
         metro. Then estimate the tenant share and the housing authority payment with the
-        <a href="/tools/section-8-rent-calculator" class="link">Section 8 rent calculator</a>.
+        <a href="/tools/section-8-rent-calculator" class="link">Section 8 rent calculator</a>. Did your housing
+        authority cut its payment standard? See the
+        <a href="/guides/section-8-rent-limits/payment-standard-cuts-2026" class="link">payment standard cuts tracker</a>.
+        Will Section 8 keep paying in 2027? Read
+        <a href="/guides/section-8-rent-limits/section-8-funding-2027" class="link">Section 8 funding in 2027</a>.
       </p>
       <ul class="mt-5 flex flex-wrap gap-2" aria-label="Section 8 rent limits by metro">
         {
@@ -133,6 +137,12 @@ const s8 = [...metros].sort((a, b) => a.short.localeCompare(b.short));
       <p class="mt-2 max-w-[66ch] text-[16px] text-muted">
         We asked ChatGPT, Gemini and Claude for the best property management company in the 50 largest US cities.
         See who they name, which sources they cite, and get the CSV.
+      </p>
+      <h2 class="mt-8 text-[26px] leading-tight">
+        <a href="/research/ai-readiness-property-managers-2026" class="hover:text-minium">AI-Readiness of the Property Manager Sites AI Cites</a>
+      </h2>
+      <p class="mt-2 max-w-[66ch] text-[16px] text-muted">
+        We read robots.txt, llms.txt, schema and fee links on 144 manager sites that AI already cites. Most have no llms.txt. Get the counts and the CSV.
       </p>
     </section>
     <AuditCta />

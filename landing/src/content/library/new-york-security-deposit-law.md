@@ -3,10 +3,10 @@ title: "New York Security Deposit Law: Cap and 14-Day Return — Citata.ai"
 description: "New York caps a security deposit at 1 month's rent. Landlords return it with an itemized statement within 14 days, or lose the right to keep any (GOL 7-108)."
 headline: "New York Security Deposit Law: Limits, Deadlines, Deductions"
 dek: "One month's rent, 14 days to return it, and what you may deduct under GOL 7-108."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-24"
+updated: "2026-10-24"
 answer: "New York caps a residential security deposit at 1 month's rent (GOL 7-108 and 7-107). Within 14 days after the tenant moves out, the landlord must return the balance with an itemized statement of any amount kept. A landlord who misses the 14 days loses the right to keep any part of the deposit. A willful violation can cost punitive damages of up to twice the deposit."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1

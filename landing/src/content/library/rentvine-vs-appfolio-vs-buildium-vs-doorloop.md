@@ -3,10 +3,10 @@ title: "Rentvine, AppFolio, Buildium and DoorLoop Compared — Citata.ai"
 description: "Compare Rentvine, AppFolio, Buildium and DoorLoop using current vendor pricing, accounting, AI and owner portals. Confirm minimums and fees before you choose."
 headline: "Rentvine, AppFolio, Buildium and DoorLoop Compared"
 dek: "Use current vendor pages, then ask each finalist to run the same accounting case."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-25"
+updated: "2026-10-25"
 answer: "Rentvine emphasizes trust accounting and open connections; AppFolio offers plans with different integration access. Buildium publishes starting monthly tiers, while DoorLoop now lists One, Connect and Multiply. Compare the total quote and a live accounting test before naming a winner."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 1

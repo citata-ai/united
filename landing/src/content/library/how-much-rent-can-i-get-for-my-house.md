@@ -3,10 +3,10 @@ title: "How Much Rent Can I Get for My House? A 5-Step Method — Citata.ai"
 description: "Find your house's rent with 3 to 5 local comps, adjust for size and features, and check it against HUD Fair Market Rents. Worked example and price-to-rent math."
 headline: "How Much Rent Can I Get for My House"
 dek: "Five comps, four adjustments and one HUD check give you a rent you can defend."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "Find 3 to 5 homes like yours, close by, that rented in the last 60 to 90 days. Adjust their rents for beds, baths, size, parking and condition, then take the middle. Check the result against HUD's Fair Market Rent for your area, which HUD sets at the 40th percentile of recent-mover rents, so most market rents sit near or above it. List at that number and watch the first 2 weeks of interest."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 1

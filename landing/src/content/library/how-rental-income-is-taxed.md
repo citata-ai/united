@@ -3,10 +3,10 @@ title: "How Is Rental Income Taxed? The Basics From IRS Pub 527 — Citata.ai"
 description: "The IRS taxes net rental income at your normal rate. See what counts as rent, how advance rent and deposits work, where Schedule E fits, and why it is passive."
 headline: "How Is Rental Income Taxed"
 dek: "What the IRS counts as rent, where you report it, and why it is passive income."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "The IRS taxes your net rental income, which is rent minus deductible expenses and depreciation, at your normal income tax rate. Per IRS Publication 527, rental income is any payment for the use or occupation of property, including advance rent and expenses a tenant pays for you. Most owners report it on Schedule E. Rental activity is generally passive, so losses face limits, though many owners who actively participate can deduct up to $25,000 of loss."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1

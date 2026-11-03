@@ -3,10 +3,10 @@ title: "Best Ways to Collect Rent: ACH, Card, Zelle, Check, Cash — Citata.ai"
 description: "ACH autopay is the best default for most landlords: low or no fee and a record of each payment. Fees, speed and reversal risk for ACH, cards, Zelle, checks, cash."
 headline: "Best Ways to Collect Rent: Methods Compared"
 dek: "Fees from 3 rent tools, reversal windows from the rules, and a policy you can copy."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "For most landlords, ACH bank transfer through a rent portal is the best default. Zillow Rental Manager charges landlords and ACH payers nothing, and Buildium charges $0.60 to $2.35 per incoming EFT by plan. Cards cost the payer about 2.95% to 3.5%, and both ACH debits and card charges can be disputed later. Zelle is fast and cannot be reversed once sent to an enrolled user, but it leaves you with fewer records. Accept cash only with a receipt, and some states require one."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "comparison"
 priority: 1

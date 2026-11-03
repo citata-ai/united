@@ -3,10 +3,10 @@ title: "How to Do a Move-In Inspection That Protects the Deposit — Citata.ai"
 description: "Walk the unit with the tenant, photograph every room, and have both sign a dated report. Virginia gives 5 days to object; Arizona requires a move-in form."
 headline: "How to Do a Move-In Inspection That Protects the Deposit"
 dek: "A room-by-room checklist, a photo plan, and the state rules on who signs and when."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "Do the move-in inspection on or before move-in day, with the tenant present if you can. Note the condition of each room on a written form, take dated photos or video of every wall, floor and fixture, and have both of you sign the report. Give the tenant a short, set window to add items: Virginia's statute sets 5 days. Store the signed report and the photos together until the deposit is settled."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 1

@@ -17,7 +17,7 @@ kind = "comparison"
 title = "Best property management software for 50-200 doors (honest table)"
 demand = "Our ICP size band; 'best software for X doors' prompts."
 score = 8
-status = "idea"
+status = "live"
 
 [[item]]
 id = "B003"
@@ -35,7 +35,8 @@ kind = "data-page"
 title = "Section 8 inspection checklist for landlords (HUD NSPIRE, 2026)"
 demand = "NSPIRE replaced HQS for vouchers; landlords ask what fails an inspection."
 score = 7
-status = "idea"
+status = "dropped"
+note = "2026-10-21 tick: the library already has landing/src/content/library/nspire-v-inspection-checklist-landlords.md (draft, visible = false). Publish that draft instead of a second page."
 
 [[item]]
 id = "B005"
@@ -44,7 +45,7 @@ kind = "data-page"
 title = "Property management fees by state (sourced ranges, 2026)"
 demand = "'How much do property managers charge in <state>' prompts; pairs with H02 calculator."
 score = 7
-status = "idea"
+status = "live"
 
 [[item]]
 id = "B006"
@@ -108,6 +109,7 @@ title = "Check Bing index for every sitemap URL; submit missing ones in Bing Web
 demand = "ChatGPT search and Copilot read the Bing index."
 score = 7
 status = "idea"
+note = "Blocked 2026-10-28: no Bing Webmaster API key or GSC read access for agents (Infisical `citata` has none). Ask for Tao in 2026-W43 report; ticks skip B012 until the key exists."
 
 [[item]]
 id = "B013"
@@ -134,7 +136,7 @@ kind = "free-tool"
 title = "Rent vs sell calculator for landlords"
 demand = "All 3 direct competitors ship it for clients (playbook move 5)."
 score = 7
-status = "idea"
+status = "live"
 
 [[item]]
 id = "B016"
@@ -162,3 +164,127 @@ title = "How to choose a property manager: owner decision checklist with fee tab
 demand = "Playbook moves 1 and 3: the top page type at all 3 competitors' clients."
 score = 7
 status = "idea"
+
+# --- scout 2026-10-22: evidence in business/marketing/competitors/2026-10-22-scout.md ---
+
+[[item]]
+id = "B019"
+hypothesis = "H01"
+kind = "data-page"
+title = "Section 8 payment standard cuts 2026: tracker by housing authority (% of FMR, start date, new vs current tenants)"
+demand = "HUD 2026 Budget Management Letter tells PHAs to cut payment standards and stop new vouchers. Cuts found: Northampton MA 100% to 90% (2026-01-01), Washington County OR ~96% (new moves 2026-07-01), HACLA 120% to 110%, Columbus 110% to 100%, Contra Costa $11.4M shortfall. Our 50 metro pages show FMR, not what the PHA pays. No competitor has this."
+score = 9
+status = "live"
+note = "Sub-page of /guides/section-8-rent-limits. Each row needs the PHA notice or board minutes as source. Start with the 50 metros we cover."
+
+[[item]]
+id = "B020"
+hypothesis = "H01"
+kind = "data-page"
+title = "Will Section 8 keep paying landlords in 2027? FY2027 funding status, shortfall rules, what a PHA may do"
+demand = "FY2027 runs on a continuing resolution since late July 2026; the FY2027 request cuts HUD ~13%. Landlord fear of HAP stops. Pairs with B019."
+score = 7
+status = "live"
+note = "Shipped 2026-10-28 as /guides/section-8-rent-limits/section-8-funding-2027. hud.gov blocks agents (Cloudflare); HUD PDFs read from web.archive.org copies. Refresh when full-year FY2027 THUD funding passes or the CR is extended (2026-12-11)."
+
+[[item]]
+id = "B021"
+hypothesis = "H01"
+kind = "refresh"
+title = "Publish the library draft emergency-housing-vouchers-landlords with EHV end-of-funding dates"
+demand = "NYCHA: EHV funding ends late 2026. Owners of EHV units ask what happens next."
+score = 8
+status = "live"
+note = "Draft exists: landing/src/content/library/emergency-housing-vouchers-landlords.md. Add HUD and 3 PHA notices, then publish via the library flow. Scout 2026-10-29: score 6 -> 8, end dates are now: Burbank grant term ends 2026-10-31 (https://www.burbankca.gov/documents/d/guest/sr-public-housing-agency-annual-plan), Georgia DCA 2026-06-30 (https://dca.georgia.gov/node/22796), Santa Barbara about 2026-09-30 with 60-day HAP notice (https://hacsb.org/wp-content/uploads/2026/06/EHV-Landlord-Notice-May-2026.pdf), Santa Cruz December 2026 (https://hacosantacruz.org/?p=7433), DeKalb no rent increases (https://www.dekalbhousing.org/pdfs/EHV_Landlord_FAQs_2-2026.pdf), SFHA FAQ (https://sfha.org/about/news-updates/frequently-asked-questions-end-emergency-housing-voucher-ehv-program). Make it a dated table by PHA."
+
+[[item]]
+id = "B022"
+hypothesis = "H06"
+kind = "comparison"
+title = "Switching property management software: onboarding fee, timeline and data export by vendor (AppFolio, Buildium, Rentvine, DoorLoop, Rent Manager, Yardi Breeze)"
+demand = "PMW shipped 3 switching posts in Sep-Oct 2026 (Propertyware, Rent Manager, DoorLoop). Rentvine states 45 days; Yardi Breeze no conversion fee; AppFolio and Buildium publish no fee. No one has the full table."
+score = 7
+status = "idea"
+note = "Link the library drafts propertyware-alternatives, rent-manager-alternatives, doorloop-alternatives. Mark 'not published' where a vendor gives no number."
+
+[[item]]
+id = "B023"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Owner lead value calculator for property managers (doors, fee, churn -> lifetime value and max cost per lead)"
+demand = "Our buyer's own question. Leads per month fell 28.6 to 15.7 (2023-2025, RentScale via Blanket Homes); churn 20-25% a year (NARPM, secondary). Goodjuju posted lead conversion 2026-10-20; Rentvine and PMW have LTV posts, no tool."
+score = 8
+status = "live"
+note = "Find the NARPM benchmark primary before citing churn. Default inputs from our fee calculator data."
+
+[[item]]
+id = "B024"
+hypothesis = "H03"
+kind = "original-research"
+title = "AI-readiness audit of the property managers AI names: llms.txt, AI bot rules in robots.txt, schema, fee page (from H03 index)"
+demand = "pm-how prompts: 0 of 24 answers name us; AI cites developers.google.com and support.google.com. No public data on PM sites. Citant.ai posted 'How LLMs decide what to cite' 2026-10-20; PMW sells llm-summary tags."
+score = 8
+status = "live"
+note = "Crawl only public robots.txt, llms.txt and home page. Publish counts and a CSV, not a shame list: name no company in a new way without Tao."
+
+[[item]]
+id = "B025"
+hypothesis = "H07"
+kind = "refresh"
+title = "Refresh /guides/geo-agencies-for-property-management with our measured AI answers (36 pm-geo answers: who is named, which domains are cited)"
+demand = "Gap 2 of the 2026-10-19 report: 0 of 36. AI cites clearleaddigital.com 16, gogoodjuju.com 15, propertymanagerwebsites.com 12, firstpagesage.com 9, webtonic.io 8."
+score = 7
+status = "live"
+note = "Use the next measure run data (2026-10-26) for fresh counts."
+
+# --- scout 2026-10-29: evidence in business/marketing/competitors/2026-10-29-scout.md ---
+
+[[item]]
+id = "B026"
+hypothesis = "H03"
+kind = "original-research"
+title = "AI Property Manager Index, update 1: re-run 50 cities x 3 engines, change since 2026-10-19 (who gained, who lost, which sources moved)"
+demand = "No direct competitor publishes a before/after AI answer set (playbook 'Where we beat them'). Change data is new each month, so it gives H03 outreach a fresh reason to link. Same prompts (tools/ai-visibility/cities.toml), new run date."
+score = 8
+status = "live"
+note = "Run tools/ai-visibility/run.py with the city prompts after 2026-11-02 (14+ days after the first run). Publish counts and a CSV as a dated section of /research/ai-property-manager-index-2026, not a new URL. Name no company in a new way without Tao."
+
+[[item]]
+id = "B027"
+hypothesis = "H07"
+kind = "refresh"
+title = "Refresh /guides/how-owners-choose-a-property-manager-with-ai with 2026 owner survey data (Rentvine PM Trends, Buildium Rental Owners Survey)"
+demand = "Rentvine 2026 PM Trends (500+ landlords, Harris Poll): 75% plan to use AI tools to find their next property manager (https://www.rentvine.com/pm-trends, vendor source). Buildium 2026 survey of 300 small-portfolio owners: 23% say their manager gives excellent value (https://www.buildium.com/blog/how-rental-owners-evaluate-a-property-managers-performance/). The guide has neither number today."
+score = 7
+status = "live"
+note = "Read both primaries in the run before you cite. Mark Rentvine as vendor-run. New FAQ + visible updated date (H07 rule)."
+
+[[item]]
+id = "B028"
+hypothesis = "H07"
+kind = "data-page"
+title = "Landlord rules that start 2027-01-01: state table (Washington 10% rent cap, Illinois $50 application fee cap and fee disclosure, Virginia HB 678) with start date, who it covers and the primary source"
+demand = "Washington Commerce set the 2027 cap at 10% (formula 7% + CPI, max 10%; 2026 cap 9.683%) (https://www.commerce.wa.gov/housing-policy/hb1217-landlord-resource-center/). Illinois HB 3564: $50 cap on application and screening fees, non-optional fees on page 1 of the lease, leases from 2027-01-01, owner-occupied 6 units or less exempt (https://legiscan.com/IL/bill/HB3564, https://gouldratner.com/publication/illinois-rental-fee-changes-in-2027-what-landlords-and-property-managers-need-to-know). Virginia HB 678: delayed start 2027-01-01, deposit cap 2 months from 2027-07-01 (https://policyrisk.com/state-bill/VA-HB678-2026). Owners and managers search 'new landlord laws 2027' in Q4."
+score = 7
+status = "idea"
+note = "Guide under /guides, link the library state drafts (illinois-*, washington-*, virginia-*). Read each statute or agency page in the run; drop a row with no primary. Add states as found; refresh in December."
+
+[[item]]
+id = "B029"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Rent increase cap calculator for 2027 (Washington, Oregon, California AB 1482): enter rent, state, region -> max legal increase and notice days"
+demand = "Washington 2027 cap 10% published by Commerce (B028 source). Oregon and California publish a new cap each year. Playbook move 5: owner tools. One tool with 3 state formulas and the primary source per state."
+score = 6
+status = "idea"
+note = "Read the 2027 Oregon (OHCS) and California (regional CPI, AB 1482 / Civil Code 1947.12) figures in the run; if a 2027 figure is not out, show 2026 and say so. Fair Housing check on text."
+
+[[item]]
+id = "B030"
+hypothesis = "H02"
+kind = "refresh"
+title = "Owner lead value calculator: add a budget mode (door goal -> owner leads -> monthly budget) with sourced cost per owner lead by channel"
+demand = "Goodjuju shipped a marketing budget calculator on 2026-10-27 (https://gogoodjuju.com/how-to-build-marketing-budget-property-management/) and links an owner lead value calculator at /property-management-leads/ (lastmod 2026-10-20). PMW has a lifetime value calculator in its nav. Our /tools/owner-lead-value-calculator answers only 'what is a lead worth'."
+score = 6
+status = "idea"
+note = "Do not copy their example numbers. New data = cost per owner lead by channel from sources we read (Google Ads, pay-per-lead sites, our case study). If we find no sourced channel costs, drop the item."

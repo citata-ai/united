@@ -11,10 +11,12 @@ dist/
 .DS_Store
 
 # Local agent tooling (not part of the repo)
-.claude/*
-!.claude/agents/
+.claude/
 .agents/
 skills-lock.json
 landing/scripts/mechanism/preview.html
 
 .venv*/
+
+# B024 crawl rows name domains; the repo is public. Keep local only.
+business/marketing/ai-visibility/readiness-*/sites.json

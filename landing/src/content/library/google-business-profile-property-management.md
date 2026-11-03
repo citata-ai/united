@@ -3,10 +3,10 @@ title: "Google Business Profile for Property Managers: Setup Guide — Citata.ai
 description: "Set up a Google Business Profile for a property management company: name, category, service area, services, 750-character description, posts, photos and links."
 headline: "Google Business Profile Setup for Property Managers"
 dek: "Every field Google reads, with the limits from Google's own help pages."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "Claim and verify the profile for free, then fill each field with the same facts as your website. The fields that matter most for rank are the primary category, the real business name, the address or service area, and reviews. Add your services, a description of up to 750 characters, photos and one post a month. Link the profile to your main site and tag the link so you can count owner leads from it."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 1

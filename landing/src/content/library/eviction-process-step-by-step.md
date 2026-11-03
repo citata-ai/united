@@ -3,10 +3,10 @@ title: "Eviction Process Step by Step: Notice to Lockout — Citata.ai"
 description: "An eviction has 5 steps: written notice, court filing, the tenant's answer, a hearing or default, then a writ and a lockout by the sheriff. Deadlines by state."
 headline: "The Eviction Process Step by Step"
 dek: "Five steps from notice to lockout, with the real deadlines in 4 states."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "A residential eviction has 5 steps: a written notice, a court filing, the tenant's answer, a hearing or a default judgment, and a writ that lets the sheriff or marshal remove the tenant. Each state sets its own deadlines. A rent notice is 3 days in California and Florida, 5 days in Arizona and 14 days in New York. The landlord never does the lockout. A court officer does."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 1

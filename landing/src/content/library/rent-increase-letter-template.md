@@ -3,10 +3,10 @@ title: "Rent Increase Letter Template (Free, With Notice Rules) — Citata.ai"
 description: "A free rent increase letter template with notice rules: 30 or 90 days in California, 90 in Washington, 30 to 90 in New York, plus state rent caps to check."
 headline: "Rent Increase Letter Template and the Notice Rules to Check"
 dek: "One copy-ready letter, a notice table for 4 states and a cap check before you send."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-25"
+updated: "2026-10-25"
 answer: "A rent increase letter states the current rent, the new rent, the date the new rent starts and how the tenant can reply. Send it in writing, early enough to meet your state's notice period: for example, 30 or 90 days in California, 90 days in Washington, and 30 to 90 days in New York. Before you pick the amount, check state and city rent caps, such as Oregon's 10% for 2027 and Washington's 9.683% for 2026."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "template"
 priority: 1

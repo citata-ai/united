@@ -3,10 +3,10 @@ title: "Owner Monthly Report Template for Property Managers — Citata.ai"
 description: "A free monthly owner report template: income, expenses, management fee, reserve, owner draw, open work orders, photos and notes, plus a year-end add-on list."
 headline: "Owner Monthly Report Template: Numbers, Notes and Photos"
 dek: "One copy-ready report, a worked statement example and a year-end checklist for owners."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-24"
+updated: "2026-10-24"
 answer: "A monthly owner report shows 4 things: the money in (rent and other income actually collected), the money out (repairs, bills and the management fee), the reserve held back, and the owner draw paid. Add a short notes block with vacancies, late rent, open work orders and photos of any job. At year-end, add the 1099-MISC, a 12-month income and expense summary, and the security deposits held."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "template"
 priority: 1

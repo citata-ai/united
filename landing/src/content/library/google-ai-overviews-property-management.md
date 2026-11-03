@@ -3,10 +3,10 @@ title: "How Property Managers Get Cited in Google AI Overviews — Citata.ai"
 description: "Google says AI Overviews need no special markup: an indexed page with a snippet can be cited. 76% of cited pages rank top 10. What PM companies should publish."
 headline: "How Property Managers Get Cited in Google AI Overviews"
 dek: "Google's own rules, three click studies and a page plan for owner questions."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-23"
+updated: "2026-10-23"
 answer: "A property management page gets cited in a Google AI Overview the same way it gets into Search: Google must crawl it, index it and be able to show it with a snippet. Google says there is no extra markup or file to add. In practice, rank matters: Ahrefs found that 76% of pages cited in AI Overviews rank in Google's top 10. So write one clear page per owner question, answer it in the first lines, and keep your Business Profile current."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "how-to"
 priority: 1

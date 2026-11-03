@@ -3,10 +3,10 @@ title: "Property Software Cost per Door: A Full-Cost Guide — Citata.ai"
 description: "Calculate property management software cost per door from the full bill. Compare vendor rates, minimums, setup fees and transaction charges before you buy."
 headline: "What Property Software Costs per Door"
 dek: "The unit rate is only part of your bill when minimums and fees apply."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-25"
+updated: "2026-10-25"
 answer: "Software cost per door equals your full recurring software bill divided by billable managed units. Published rates alone miss minimums, transaction fees and setup costs. Compare a normal year and the first year separately, using a written quote for your portfolio."
-visible: false
+visible: true
 cluster: "software"
 kind: "data"
 priority: 1

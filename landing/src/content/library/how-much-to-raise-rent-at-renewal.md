@@ -3,10 +3,10 @@ title: "How Much to Raise Rent at Renewal: 2026 Data and Math — Citata.ai"
 description: "US rent of primary residence rose 2.8% from Sept. 2025 to Sept. 2026 (BLS). Compare to local comps, check state caps, and weigh the raise against turnover cost."
 headline: "How Much to Raise Rent When a Good Tenant Renews"
 dek: "The latest BLS rent number, 2 state caps, and a worked turnover cost example."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "For a good tenant, a renewal raise near the local market change is usually the right size. Nationally, the BLS rent of primary residence index rose 2.8% from September 2025 to September 2026. Check your own comps, then check state law: Oregon caps 2027 increases at 10% and Washington caps 2026 increases at 9.683%, each with 90 days' written notice. If the raise could push a good tenant out, compare it to what one turnover costs you."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 1

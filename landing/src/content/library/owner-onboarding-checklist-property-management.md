@@ -3,10 +3,10 @@ title: "Owner Onboarding Checklist for Property Managers (2026) — Citata.ai"
 description: "A step-by-step owner onboarding checklist: documents to collect, accounting and trust setup, first inspection, tenant and deposit handover, and a 30-day plan."
 headline: "Owner Onboarding Checklist: From Signed Agreement to First Draw"
 dek: "Five phases, 34 checks and a 30-day timeline for each new owner and property."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "Onboard a new owner in 5 phases: collect documents (signed agreement, W-9, insurance, keys, leases), set up the owner in accounting and the trust account, inspect the property with photos, move tenants and security deposits from the old manager, and send the owner a clear first-30-days plan. Finish each phase before the next one starts. The first owner statement is the end of onboarding, not the start."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "checklist"
 priority: 1

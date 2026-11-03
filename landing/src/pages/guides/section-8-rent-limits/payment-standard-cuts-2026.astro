@@ -1,0 +1,135 @@
+---
+// Backlog B019, hypothesis H01: tracker of housing authority payment standard cuts (2025–2026).
+// Every row comes from src/data/payment-standard-cuts.ts and links its own primary source.
+// Rules: answer first, ASD-STE100, sources, no legal advice, Fair Housing (no text about who should rent where).
+import Guide from "../../../layouts/Guide.astro";
+import Section8Cta from "../../../components/Section8Cta.astro";
+import { bySlug, metroPath, src } from "../../../data/section8.ts";
+import { checked, cuts, hud, published, updated } from "../../../data/payment-standard-cuts.ts";
+
+const path = "/guides/section-8-rent-limits/payment-standard-cuts-2026";
+const withMetro = cuts.map((c) => ({ ...c, metro: c.metroSlug ? bySlug(c.metroSlug) : undefined }));
+const lowered = cuts.filter((c) => c.kind === "cut").length;
+const paused = cuts.filter((c) => c.paused).length;
+const proposed = cuts.filter((c) => c.kind === "proposed").length;
+
+const fm = {
+  title: "Section 8 Payment Standard Cuts 2026 by Housing Authority — Citata.ai",
+  description: `${cuts.length} housing authorities that cut Section 8 payment standards or paused vouchers in 2025–2026: old and new % of FMR, start date, who it hits. Sourced.`,
+  headline: "Section 8 Payment Standard Cuts 2026",
+  dek: "Which housing authorities pay less than before, from when, and for which tenants.",
+  published,
+  updated,
+  answer: `Many housing authorities now pay less than before, because their 2026 HUD funding does not cover the full cost of all vouchers. ${hud.answer} We list ${cuts.length} housing authorities with a sourced change: ${lowered} lowered the payment standard, ${proposed} proposed a cut, and ${paused} stopped or paused new vouchers (some did both). For a tenant who stays in the unit, the housing authority can apply a cut no earlier than 2 years after it starts, with 12 months' written notice (24 CFR 982.505).`,
+  faq: [
+    {
+      q: "Why are housing authorities cutting Section 8 payment standards?",
+      a: `HUD renewal funding for 2026 does not cover the full cost of all vouchers in use. ${hud.faq}`,
+    },
+    {
+      q: "Does a lower payment standard cut the rent I get as a landlord?",
+      a: "A lower payment standard cuts the housing authority's share, not the contract rent. If the rent stays the same, the tenant pays more. The tenant can ask you to lower the rent, move, or stay and pay the gap.",
+    },
+    {
+      q: "When does a payment standard cut hit a current tenant?",
+      a: "For a family that stays in its unit, the housing authority can apply a lower payment standard no earlier than 2 years after the cut starts, and only after 12 months' written notice (24 CFR 982.505). It can also keep the old amount for as long as the family stays. New contracts use the current schedule.",
+    },
+    {
+      q: "What is the lowest payment standard a housing authority can set?",
+      a: "Without HUD approval, a housing authority can set its payment standard at 90% to 110% of the Fair Market Rent (24 CFR 982.503). Under 90% needs HUD approval.",
+    },
+    {
+      q: "How do I know if my housing authority cut its payment standard?",
+      a: "Check the payment standard schedule on the housing authority's website, or ask your housing specialist. Board minutes and notices to owners also list the change and the start date.",
+    },
+  ],
+  sources: [
+    hud.source,
+    hud.notice,
+    src.cfr503,
+    src.cfr505,
+    ...cuts.map((c) => ({ label: c.sourceLabel, url: c.sourceUrl })),
+  ],
+};
+
+const headings = [
+  { depth: 2, slug: "tracker", text: "Payment standard cuts by housing authority" },
+  { depth: 2, slug: "why", text: "Why housing authorities cut payment standards" },
+  { depth: 2, slug: "who", text: "Who a cut hits, and when" },
+  { depth: 2, slug: "landlord-steps", text: "Steps for landlords" },
+];
+---
+
+<Guide
+  frontmatter={fm}
+  url={path}
+  headings={headings}
+  section={{ name: "Section 8 rent limits", href: "/guides/section-8-rent-limits", note: "HUD FY2027 data for landlords" }}
+  about={["Section 8 Housing Choice Voucher program", "Payment standard", "Fair Market Rent"]}
+  method={`How we made this page: AI agents found each change on a housing authority notice, board record or local news report, and we link that source on each row. Last checked ${checked}. A housing authority can change its payment standards at any time. This page is not legal advice.`}
+>
+  <h2 id="tracker">Payment standard cuts by housing authority</h2>
+  <p>
+    Each row is one change that a housing authority announced in 2025 or 2026. "% of FMR" is the payment standard as a
+    share of the HUD Fair Market Rent. Select the source to read the notice.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Housing authority</th><th>Change</th><th>Start</th><th>Who it hits</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      {
+        withMetro.map((c) => (
+          <tr>
+            <td>
+              {c.pha},{" "}
+              <span class="text-muted">
+                {c.metro ? <a href={metroPath(c.metro)}>{c.place}</a> : c.place}
+              </span>
+            </td>
+            <td>{c.action}</td>
+            <td>{c.start || "not stated"}</td>
+            <td>{c.appliesTo || "not stated"}</td>
+            <td>
+              <a href={c.sourceUrl}>{c.sourceShort}</a>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p>
+    Metro links go to our FY2027 Fair Market Rent page for that area. Missing a housing authority? A change you can
+    source is welcome: write to <a href="mailto:grow@citata.ai">grow@citata.ai</a>.
+  </p>
+
+  <h2 id="why">Why housing authorities cut payment standards</h2>
+  <p>{hud.why}</p>
+  <ul>
+    {hud.points.map((p) => <li><strong>{p.lead}</strong> {p.text}</li>)}
+  </ul>
+
+  <h2 id="who">Who a cut hits, and when</h2>
+  <p>
+    A payment standard cut does not hit all voucher tenants on the same day. The rules in 24 CFR 982.505 (as amended
+    on May 7, 2024) set the timing.
+  </p>
+  <ul>
+    <li><strong>New contracts and moves.</strong> The housing authority uses the payment standard on its current schedule. A new lease or a move after the cut gets the lower amount.</li>
+    <li><strong>Current tenants who stay.</strong> The housing authority can apply the cut no earlier than 2 years after it starts. It must give the family at least 12 months' written notice first.</li>
+    <li><strong>Hold harmless.</strong> A housing authority can choose to keep the old amount for as long as the family stays in the unit. Its Administrative Plan states the policy.</li>
+    <li><strong>The rent stays yours.</strong> The cut lowers the housing authority's share. If the contract rent stays the same, the tenant pays the gap.</li>
+  </ul>
+
+  <h2 id="landlord-steps">Steps for landlords</h2>
+  <ol>
+    <li><strong>Get the new schedule.</strong> Ask the housing authority for the payment standard for your unit size and ZIP code, and the start date.</li>
+    <li><strong>Watch for the 12-month notice.</strong> The notice to your tenant gives the new amount. The tenant share can go up when it takes effect.</li>
+    <li><strong>Talk to the tenant early.</strong> A higher tenant share can lead to a request to lower the rent or a move.</li>
+    <li><strong>Price new leases on the new number.</strong> A new contract over the payment standard raises the tenant share, and at the first lease that share can be at most 40% of the family's monthly adjusted income (24 CFR 982.305).</li>
+    <li><strong>Compare with the FMR.</strong> See the <a href="/guides/section-8-rent-limits">FY2027 Fair Market Rents for 50 metros</a> and estimate the split with the <a href="/tools/section-8-rent-calculator">Section 8 rent calculator</a>.</li>
+  </ol>
+  <p>Rules differ by housing authority. This page is not legal advice. Check your housing authority.</p>
+
+  <Section8Cta slot="cta" />
+</Guide>

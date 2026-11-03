@@ -3,10 +3,10 @@ title: "Property Management City Page Template That Ranks and Converts — Citat
 description: "A city page for rental owners needs local facts, your fees for that city, proof from that city and links to your services. Use this section-by-section template."
 headline: "A City Page Template for Property Managers"
 dek: "One template, 10 sections, and a test that keeps each page from being a copy."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-22"
+updated: "2026-10-22"
 answer: "A city page for rental owners must answer one question: can this company manage my rental in this city, and at what cost? Put local rent data, local rules, your fees for that city, reviews and doors from that city, and links to your service pages on it. Google lists pages \"targeted at specific regions or cities that funnel users to one page\" as doorway abuse, so each page needs facts that only apply to its city."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "template"
 priority: 1

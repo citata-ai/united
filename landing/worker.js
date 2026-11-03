@@ -35,6 +35,8 @@ export default {
       // Stage and preview hosts: keep them out of search indexes.
       const staged = secure(response, url.pathname, url.search);
       staged.headers.set("X-Robots-Tag", "noindex, nofollow");
+      // no-transform stops Cloudflare from injecting the Web Analytics beacon, so stage is not counted.
+      staged.headers.set("Cache-Control", noTransform(staged.headers.get("Cache-Control")));
       return staged;
     }
     if (isTracked(url.pathname)) record(request, url, response.status, env);
@@ -79,6 +81,16 @@ export function cacheControl(path, search = "") {
     return "public, max-age=2592000";
   if (path.startsWith("/mechanism/")) return "public, max-age=86400";
   return null;
+}
+
+/**
+ * Add `no-transform` to a Cache-Control value. Cloudflare does not inject its Web Analytics
+ * beacon into a response that has it.
+ * @param {string | null} value
+ */
+export function noTransform(value) {
+  if (!value) return "no-transform";
+  return /\bno-transform\b/.test(value) ? value : `${value}, no-transform`;
 }
 
 /** An agent asks for Markdown: "Accept: text/markdown" on a page URL (no file extension). */

@@ -3,10 +3,10 @@ title: "How to Raise the Rent on a Section 8 Tenant — Citata.ai"
 description: "No rent increase in the first lease term, 60 days' notice to the housing authority, and a new rent reasonableness check. Steps, timeline and a request template."
 headline: "How to Raise the Rent on a Section 8 Tenant"
 dek: "Wait out the first lease term, give 60 days' notice, and pass the rent check again."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-27"
+updated: "2026-10-27"
 answer: "You cannot raise the rent during the initial lease term (24 CFR 982.309). After it, you must notify the housing authority at least 60 days before the new rent takes effect, and the PHA must check that the new rent is still reasonable compared with similar unassisted units (24 CFR 982.308 and 982.507). If the PHA approves it, the new rent starts on the date in your notice. If it denies it, the PHA tells you the most it can approve."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "how-to"
 priority: 1

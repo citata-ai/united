@@ -3,10 +3,10 @@ title: "The Accidental Landlord: What to Do First, Step by Step — Citata.ai"
 description: "You moved and kept the house. Before a tenant moves in, check your mortgage, switch your insurance, look up local rental rules and decide who will manage it."
 headline: "The Accidental Landlord: What to Do First"
 dek: "Seven steps before the first tenant gets keys, with the mortgage and insurance traps first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-20"
+updated: "2026-10-20"
 answer: "Before your first tenant moves in, read the occupancy clause in your mortgage and call your lender if you are inside the first year. Call your insurer and switch to a landlord or dwelling policy. Check your city and state for a rental license, registration or inspection. Then set the rent, screen tenants by written criteria, sign a lease and decide if you will self-manage or hire a manager."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1

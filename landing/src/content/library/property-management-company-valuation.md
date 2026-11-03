@@ -3,10 +3,10 @@ title: "Property Management Company Valuation: Multiples, Per Door — Citata.ai
 description: "Owner-run property management firms sell for about 2.5x to 3x SDE; mature firms for 4x to 8x EBITDA. How to run all three checks and what moves the price."
 headline: "How to Value a Property Management Company"
 dek: "Three ways buyers price your doors, one worked example, and why the numbers do not agree."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "Most buyers value a property management company on a multiple of earnings. CT Acquisitions (2026) puts owner-run firms at about 2.5x to 3x SDE and mature firms at 4x to 8x EBITDA. Buyers then cross-check a per-door value and a multiple of management-fee revenue. Door count, churn, profit margin and owner concentration move the multiple up or down."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "data"
 priority: 1

@@ -255,8 +255,8 @@ export function fortyPercentText(r: VoucherResult, firstLease: boolean): string 
 // ---------------------------------------------------------------------------
 
 export const usd = (n: number): string =>
-  "$" +
-  n.toLocaleString("en-US", {
+  (n < 0 ? "-$" : "$") +
+  Math.abs(n).toLocaleString("en-US", {
     minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
     maximumFractionDigits: 2,
   });
@@ -284,4 +284,253 @@ export const voucherExample: VoucherInput = {
   minimumRent: 50,
   paymentStandard: 1600,
   firstLease: true,
+};
+
+// ---------------------------------------------------------------------------
+// Rent vs sell calculator
+// ---------------------------------------------------------------------------
+
+export interface RentSellInput {
+  /** Market value of the home today, USD. */
+  homeValue: number;
+  /** Mortgage balance today, USD. */
+  mortgageBalance: number;
+  /** Mortgage interest rate, percent a year. */
+  mortgageRate: number;
+  /** Monthly principal and interest payment, USD. Taxes and insurance go in monthlyCosts. */
+  monthlyPayment: number;
+  /** Monthly rent, USD. */
+  rent: number;
+  /** Share of the year the home is empty, percent. */
+  vacancyPercent: number;
+  /** Management fee, percent of rent collected. 0 if you self-manage. */
+  managementPercent: number;
+  /** Property tax, insurance, HOA, repairs and upkeep, USD a month. */
+  monthlyCosts: number;
+  /** Agent commission and closing costs at sale, percent of the sale price. */
+  sellCostPercent: number;
+  /** Home price growth, percent a year. */
+  appreciationPercent: number;
+  /** Growth of rent and costs, percent a year. Steps once a year. */
+  rentGrowthPercent: number;
+  /** What the cash earns if you sell now (or what each month's cash flow earns), percent a year. */
+  investReturnPercent: number;
+  /** Years you keep the home and rent it out before you sell. */
+  years: number;
+}
+
+export interface RentSellResult {
+  /** Cash in hand if you sell today: value minus sale costs minus mortgage balance. */
+  sellNowCash: number;
+  /** sellNowCash after it grows at investReturnPercent for `years`. */
+  sellNowFuture: number;
+  /** Monthly cash flow in the first year: rent collected minus fee, costs and mortgage payment. */
+  firstYearMonthlyCashFlow: number;
+  /** Sum of all monthly cash flows, no growth. */
+  cashFlowTotal: number;
+  /** Cash flows, each grown at investReturnPercent to the end. */
+  cashFlowFuture: number;
+  futureHomeValue: number;
+  futureMortgageBalance: number;
+  /** Cash at the later sale: future value minus sale costs minus balance. */
+  keepSaleCash: number;
+  /** keepSaleCash + cashFlowFuture. */
+  keepTotal: number;
+  /** keepTotal - sellNowFuture. Above 0: keeping and renting comes out ahead. */
+  difference: number;
+}
+
+/** Pre-tax wealth at the end of `years` for "sell now" and "rent, then sell". */
+export function computeRentSell(input: RentSellInput): RentSellResult {
+  const months = Math.round(pos(input.years) * 12);
+  const r = pos(input.investReturnPercent) / 100 / 12;
+  const mRate = pos(input.mortgageRate) / 100 / 12;
+  const growth = 1 + pos(input.rentGrowthPercent) / 100;
+  const collectShare = 1 - Math.min(pos(input.vacancyPercent), 100) / 100;
+  const keepShare = 1 - Math.min(pos(input.managementPercent), 100) / 100;
+  const sellShare = 1 - Math.min(pos(input.sellCostPercent), 100) / 100;
+  const appreciation = Number.isFinite(input.appreciationPercent) ? input.appreciationPercent : 0;
+
+  const sellNowCash = pos(input.homeValue) * sellShare - pos(input.mortgageBalance);
+  const sellNowFuture = sellNowCash * (1 + r) ** months;
+
+  let balance = pos(input.mortgageBalance);
+  let cashFlowTotal = 0;
+  let cashFlowFuture = 0;
+  let firstYearMonthlyCashFlow = 0;
+  for (let m = 0; m < months; m++) {
+    const step = growth ** Math.floor(m / 12);
+    let payment = 0;
+    if (balance > 0) {
+      const interest = balance * mRate;
+      payment = Math.min(pos(input.monthlyPayment), balance + interest);
+      balance = Math.max(0, balance + interest - payment);
+    }
+    const flow =
+      pos(input.rent) * step * collectShare * keepShare - pos(input.monthlyCosts) * step - payment;
+    if (m === 0) firstYearMonthlyCashFlow = flow;
+    cashFlowTotal += flow;
+    cashFlowFuture += flow * (1 + r) ** (months - m - 1);
+  }
+
+  const futureHomeValue = Math.max(
+    0,
+    pos(input.homeValue) * (1 + appreciation / 100) ** (months / 12),
+  );
+  const keepSaleCash = futureHomeValue * sellShare - balance;
+  const keepTotal = keepSaleCash + cashFlowFuture;
+  return {
+    sellNowCash: Math.round(sellNowCash),
+    sellNowFuture: Math.round(sellNowFuture),
+    firstYearMonthlyCashFlow: Math.round(firstYearMonthlyCashFlow),
+    cashFlowTotal: Math.round(cashFlowTotal),
+    cashFlowFuture: Math.round(cashFlowFuture),
+    futureHomeValue: Math.round(futureHomeValue),
+    futureMortgageBalance: Math.round(balance),
+    keepSaleCash: Math.round(keepSaleCash),
+    keepTotal: Math.round(keepTotal),
+    difference: Math.round(keepTotal) - Math.round(sellNowFuture),
+  };
+}
+
+/**
+ * Home price growth (percent a year, 1 decimal) at which both paths end equal, or null if no
+ * rate from -10% to 30% a year does it.
+ */
+export function breakEvenAppreciation(input: RentSellInput): number | null {
+  const diff = (a: number) => {
+    const x = computeRentSell({ ...input, appreciationPercent: a });
+    return x.keepTotal - x.sellNowFuture;
+  };
+  let lo = -10;
+  let hi = 30;
+  if (diff(lo) > 0 || diff(hi) < 0) return null;
+  for (let i = 0; i < 50; i++) {
+    const mid = (lo + hi) / 2;
+    if (diff(mid) < 0) lo = mid;
+    else hi = mid;
+  }
+  return Math.round(hi * 10) / 10;
+}
+
+export const rentSellExample: RentSellInput = {
+  homeValue: 400_000,
+  mortgageBalance: 250_000,
+  mortgageRate: 4,
+  monthlyPayment: 1_400,
+  rent: 2_400,
+  vacancyPercent: 5,
+  managementPercent: 9,
+  monthlyCosts: 700,
+  sellCostPercent: 7,
+  appreciationPercent: 3,
+  rentGrowthPercent: 3,
+  investReturnPercent: 6,
+  years: 5,
+};
+
+// ---------------------------------------------------------------------------
+// Owner lead value calculator (backlog B023): what one owner lead is worth to a property manager
+// ---------------------------------------------------------------------------
+
+export interface LeadValueInput {
+  /** Doors under management today. */
+  doors: number;
+  /** Average monthly rent per door, USD. */
+  rent: number;
+  /** Management fee, percent of rent. */
+  managementPercent: number;
+  /** Other fee revenue per door per year (leasing, renewal, other), USD. */
+  otherRevenuePerDoor: number;
+  /** Average doors per owner client. */
+  doorsPerOwner: number;
+  /** Doors lost per year, percent of doors at the start of the year. */
+  churnPercent: number;
+  /** Gross margin, percent of revenue kept after the direct cost to serve a door. */
+  marginPercent: number;
+  /** Percent of owner leads that sign a management agreement. */
+  closePercent: number;
+  /** Lifetime gross profit per dollar you spend to win the owner (for example 3 for 3:1). */
+  targetRatio: number;
+}
+
+export interface LeadValueResult {
+  revenuePerDoorYear: number;
+  /** Average years an owner stays: 1 / churn, max 20. */
+  lifetimeYears: number;
+  lifetimeRevenue: number;
+  lifetimeProfit: number;
+  /** Most you can pay to win one owner at the target ratio. */
+  maxCostPerOwner: number;
+  /** Most you can pay for one owner lead at the target ratio. */
+  maxCostPerLead: number;
+  /** Lifetime gross profit of one lead: max cost per lead at a 1:1 ratio. */
+  breakEvenCostPerLead: number;
+  doorsLostPerYear: number;
+  /** Owner leads a month you need only to replace the doors you lose. */
+  leadsToReplaceChurn: number;
+}
+
+/** Cap on owner lifetime, years, so a churn near 0 does not give an endless value. */
+export const maxLifetimeYears = 20;
+
+export function computeLeadValue(input: LeadValueInput): LeadValueResult {
+  const doors = pos(input.doors);
+  const churn = pos(input.churnPercent) / 100;
+  const close = pos(input.closePercent) / 100;
+  const ratio = pos(input.targetRatio);
+  const doorsPerOwner = pos(input.doorsPerOwner);
+  const revenuePerDoorYear =
+    (pos(input.rent) * 12 * pos(input.managementPercent)) / 100 + pos(input.otherRevenuePerDoor);
+  const lifetimeYears = churn > 0 ? Math.min(1 / churn, maxLifetimeYears) : maxLifetimeYears;
+  const lifetimeRevenue = revenuePerDoorYear * doorsPerOwner * lifetimeYears;
+  const lifetimeProfit = (lifetimeRevenue * pos(input.marginPercent)) / 100;
+  const maxCostPerOwner = ratio > 0 ? lifetimeProfit / ratio : 0;
+  const doorsLostPerYear = doors * churn;
+  const leadsToReplaceChurn =
+    doorsPerOwner > 0 && close > 0 ? doorsLostPerYear / doorsPerOwner / close / 12 : 0;
+  return {
+    revenuePerDoorYear: cents(revenuePerDoorYear),
+    lifetimeYears: Math.round(lifetimeYears * 10) / 10,
+    lifetimeRevenue: Math.round(lifetimeRevenue),
+    lifetimeProfit: Math.round(lifetimeProfit),
+    maxCostPerOwner: Math.round(maxCostPerOwner),
+    maxCostPerLead: Math.round(maxCostPerOwner * close),
+    breakEvenCostPerLead: Math.round(lifetimeProfit * close),
+    doorsLostPerYear: Math.round(doorsLostPerYear * 10) / 10,
+    leadsToReplaceChurn: Math.round(leadsToReplaceChurn * 10) / 10,
+  };
+}
+
+/**
+ * Benchmarks for the lead value page. Only numbers read on the source pages on 2026-10-23.
+ * No public source gives a gross margin or a cost per owner lead, so the page shows none.
+ */
+export const leadBenchmarks = {
+  /** Peter Lohmann, newsletter #74 (2023-12-29): "industry-average unit churn rate of 19.5%", NARPM / ProfitCoach study, year 2021. */
+  churnAverage: { value: 19.5, year: 2021, source: "NARPM / ProfitCoach via Peter Lohmann" },
+  /** Fourandhalf with Daniel Craig, ProfitCoach (2022-09-08): first study 25%; under 15% "great", under 20% "okay". */
+  churnFirstStudy: {
+    value: 25,
+    great: 15,
+    okay: 20,
+    source: "Daniel Craig, ProfitCoach, via Fourandhalf",
+  },
+  /** Peter Lohmann, newsletter #74: "about 28 valid leads per month ... closing rate of around 20%" (one company). */
+  closeOneCompany: { value: 20, leads: 28, source: "Peter Lohmann, newsletter #74" },
+  /** RentScale data via Blanket Homes: average monthly owner leads 28.6 (2023), 21.1 (2024), 15.7 (2025). */
+  leadsPerMonth: { y2023: 28.6, y2024: 21.1, y2025: 15.7, source: "RentScale via Blanket Homes" },
+} as const;
+
+/** The page's worked example. Churn and fee are benchmarks; the other inputs are an example only. */
+export const leadValueExample: LeadValueInput = {
+  doors: 300,
+  rent: 1_800,
+  managementPercent: 8.49,
+  otherRevenuePerDoor: 300,
+  doorsPerOwner: 1.2,
+  churnPercent: 19.5,
+  marginPercent: 30,
+  closePercent: 20,
+  targetRatio: 3,
 };

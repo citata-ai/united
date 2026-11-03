@@ -1,10 +1,15 @@
 import { describe, expect, it } from "vitest";
 import {
+  breakEvenAppreciation,
   breakEvenRent,
   computeFees,
+  computeLeadValue,
+  computeRentSell,
   computeVoucher,
   feeExample,
+  leadValueExample,
   position,
+  rentSellExample,
   usd,
   voucherExample,
 } from "./src/lib/calculators.ts";
@@ -144,5 +149,76 @@ describe("usd", () => {
     expect(usd(18954)).toBe("$18,954");
     expect(usd(2062.83)).toBe("$2,062.83");
     expect(usd(1000.5)).toBe("$1,000.50");
+  });
+});
+
+describe("computeRentSell", () => {
+  it("the worked example on /tools/rent-vs-sell-calculator", () => {
+    const r = computeRentSell(rentSellExample);
+    expect(r.sellNowCash).toBe(122_000); // 400,000 x 93% - 250,000
+    expect(r.sellNowFuture).toBe(164_560); // 122,000 x 1.005^60
+    expect(r.firstYearMonthlyCashFlow).toBe(-25); // 2,400 x 95% x 91% - 700 - 1,400
+    expect(r.futureHomeValue).toBe(463_710); // 400,000 x 1.03^5
+    expect(r.futureMortgageBalance).toBe(212_431);
+    expect(r.keepSaleCash).toBe(218_819); // 463,710 x 93% - 212,431
+    expect(r.keepTotal).toBe(222_632);
+    expect(r.difference).toBe(58_072);
+    expect(breakEvenAppreciation(rentSellExample)).toBe(0.1);
+  });
+
+  it("no mortgage, no growth, no return: keep = sale cash + plain rent sum", () => {
+    const r = computeRentSell({
+      ...rentSellExample,
+      mortgageBalance: 0,
+      monthlyPayment: 0,
+      appreciationPercent: 0,
+      rentGrowthPercent: 0,
+      investReturnPercent: 0,
+      vacancyPercent: 0,
+      managementPercent: 0,
+      years: 1,
+    });
+    expect(r.sellNowFuture).toBe(372_000);
+    expect(r.cashFlowTotal).toBe((2_400 - 700) * 12);
+    expect(r.keepTotal).toBe(372_000 + 20_400);
+  });
+
+  it("stops the payment when the loan is paid off", () => {
+    const r = computeRentSell({ ...rentSellExample, mortgageBalance: 1_000, years: 1 });
+    expect(r.futureMortgageBalance).toBe(0);
+  });
+
+  it("empty input gives zeros, not NaN", () => {
+    const r = computeRentSell({} as never);
+    expect(r.keepTotal).toBe(0);
+    expect(r.sellNowFuture).toBe(0);
+  });
+});
+
+describe("computeLeadValue", () => {
+  it("matches the worked example on the page", () => {
+    const r = computeLeadValue(leadValueExample);
+    expect(r.revenuePerDoorYear).toBe(2133.84);
+    expect(r.lifetimeYears).toBe(5.1);
+    expect(r.lifetimeRevenue).toBe(13131);
+    expect(r.lifetimeProfit).toBe(3939);
+    expect(r.maxCostPerOwner).toBe(1313);
+    expect(r.maxCostPerLead).toBe(263);
+    expect(r.breakEvenCostPerLead).toBe(788);
+    expect(r.doorsLostPerYear).toBe(58.5);
+    expect(r.leadsToReplaceChurn).toBe(20.3);
+  });
+
+  it("caps the owner lifetime at 20 years when churn is 0", () => {
+    const r = computeLeadValue({ ...leadValueExample, churnPercent: 0 });
+    expect(r.lifetimeYears).toBe(20);
+    expect(r.doorsLostPerYear).toBe(0);
+    expect(r.leadsToReplaceChurn).toBe(0);
+  });
+
+  it("gives 0, not NaN or Infinity, for empty input", () => {
+    const r = computeLeadValue({} as never);
+    for (const v of Object.values(r)) expect(Number.isFinite(v)).toBe(true);
+    expect(r.maxCostPerLead).toBe(0);
   });
 });

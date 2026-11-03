@@ -51,6 +51,17 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-10-18 | Home page for property management companies only: FAQ (FAQPage), Service schema, fit / not fit, llms.txt | 2026-10-18 |
 | 2026-10-18 | Ahrefs project "Citata" verified; Site Audit weekly, Sundays 15:00 Kyiv | — |
 | 2026-10-19 | Guide /guides/appfolio-vs-buildium (H06-E1, B001): plan prices, minimums, Buildium fees, fit by door count | 2026-10-19 |
+| 2026-10-20 | Guide /guides/best-property-management-software-50-200-doors (H06-E1, B002): monthly cost at 50/100/200 doors, 5 vendors, fees, trust accounting test | 2026-10-20 |
+| 2026-10-21 | Tool /tools/rent-vs-sell-calculator (H02-E1, B015): sell now vs rent then sell, pre-tax, break-even growth, IRS Pub 523 / Topic 409 rules | 2026-10-21 |
+| 2026-10-22 | Data page /guides/section-8-rent-limits/payment-standard-cuts-2026 (H01-E1, B019): 22 housing authorities that cut payment standards or paused vouchers in 2025-2026, start date, who it hits, source per row | 2026-10-22 |
+| 2026-10-23 | Tool /tools/owner-lead-value-calculator (H02-E1, B023): owner lifetime value, max cost per lead and per new owner, leads to replace churn; NARPM/ProfitCoach churn, RentScale lead volume | 2026-10-23 |
+| 2026-10-24 | Research /research/ai-readiness-property-managers-2026 (H03-E1, B024): robots.txt, llms.txt, schema and fee links on 144 manager sites AI cited; CSV without domains; script tools/ai-visibility/readiness_audit.py | 2026-10-24 |
+| 2026-10-28 | Data page /guides/section-8-rent-limits/section-8-funding-2027 (H01-E1, B020): FY2027 stopgap law to 2026-12-11, voucher funding table (CRS), shortfall rules (PIH 2026-12), HAP termination rule, EHV to TPV by 2026-12-31 | 2026-10-28 |
+| 2026-10-29 | Guide /guides/emergency-housing-vouchers-landlords (H01-E1, B021): EHV ends 2026-12-31, TPV for families leased 2026-09-30 (PIH 2026-25), dated table of 6 PHA notices, owner changes; 12 sources read 2026-10-29 | 2026-10-29 |
+| 2026-10-30 | Data page /guides/property-management-fees-by-state (H01-E1, B005): 16-state averages for monthly (7.10% WI to 9.79% NM), flat, leasing, renewal, setup and inspection fees (iPropertyManagement, updated 2026-09-23); first-year cost on $2,000 rent ($2,848 UT to $3,664 WA, our math) | 2026-10-30 |
+| 2026-10-31 | Refresh /guides/how-owners-choose-a-property-manager-with-ai (H07-E1, B027): PM Trends Harris Poll AI numbers, Buildium 2026 hiring data, false "no public survey" claim removed | live (found 2026-11-02) |
+| 2026-11-02 | Research /research/ai-property-manager-index-2026 update 1 (H03-E1, B026): re-run 50 cities x 3 engines; 58% of names came back, 3 of 150 same lists, Expertise.com still top source (93 -> 87); second CSV | 2026-11-02 |
+| 2026-11-03 | Refresh /guides/geo-agencies-for-property-management (H07-E1, B025): who AI answers name on 4 agency prompts, 2026-10-19 vs 2026-11-02 (24 answers each); 7 price pages re-read; FirstIndex terms and Goodjuju notice updated | 2026-11-03 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 

@@ -3,10 +3,10 @@ title: "How to Buy Your First Rental Property: 8 Steps With Numbers — Citata.a
 description: "Buy a first rental in 8 steps: cash needed, market and property choice, a deal test before you offer, due diligence before closing, and the team to hire."
 headline: "How to Buy Your First Rental Property"
 dek: "Eight steps from savings to keys, with the deal math you run before you offer."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "To buy a first rental, save the down payment, closing costs and a cash reserve. Fannie Mae allows up to 85% loan-to-value on a 1-unit investment purchase, so plan on at least 15% down. Pick a market you can reach and a home type renters there want. Run the cash flow with vacancy, repairs and management before you offer, then inspect, check rent comps, get insurance quotes and read local rental rules before you close."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 1

@@ -3,10 +3,10 @@ title: "Fair Housing Rules for Rental Ads: Words and Photos — Citata.ai"
 description: "The Fair Housing Act bans rental ads that show a preference by race, color, religion, sex, disability, family status or origin. Describe the unit, not the renter."
 headline: "Fair Housing Rules for Rental Ads"
 dek: "What the statute and HUD rule ban, with a word swap table and a pre-post checklist."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "Under 42 U.S.C. 3604(c) and 24 CFR 100.75, a rental ad may not state or suggest a preference, limit or exclusion based on race, color, religion, sex, disability, familial status or national origin. That covers words, photos, symbols, and even where you choose to place the ad. The safe rule: describe the property and its features, not the kind of person you want. Many states and cities add protected classes, such as source of income."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 1

@@ -3,10 +3,10 @@ title: "The HAP Contract Explained for Section 8 Landlords — Citata.ai"
 description: "The HAP contract is between you and the housing authority, not the tenant. Its three parts, your certifications, how it ends and what happens at move-out."
 headline: "The HAP Contract Explained for Section 8 Landlords"
 dek: "Three parts, seven owner promises, and nine ways the contract can end."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-26"
+updated: "2026-10-26"
 answer: "The Housing Assistance Payments (HAP) contract is a contract between the owner and the public housing agency (PHA). The PHA promises to pay its share of the rent each month. The owner promises to keep the unit up to HUD standards, charge no more than the approved rent, take no side payments, and use a lease that includes the HUD tenancy addendum word for word. The contract runs for the same term as the lease and ends when the lease ends, the family moves out, or the PHA ends assistance."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "guide"
 priority: 1

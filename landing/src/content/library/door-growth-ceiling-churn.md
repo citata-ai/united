@@ -3,10 +3,10 @@ title: "The Door Growth Ceiling: How Churn Caps Your Portfolio — Citata.ai"
 description: "Your door ceiling is doors added per year divided by annual churn. At 10 new doors a month and 20% churn, you stop near 600 doors. The math, tables and fixes."
 headline: "The Growth Ceiling: How Churn Caps Your Door Count"
 dek: "At 10 new doors a month and 20% churn, a company stops growing near 600 doors."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-22"
+updated: "2026-10-22"
 answer: "Your growth ceiling is the number of doors you add per year divided by your annual churn rate. At 10 new doors a month (120 a year) and 20% churn, the ceiling is 600 doors. Growth slows as you get near it, so Peter Lohmann advises you stay under 75% of the ceiling. To raise the ceiling, add more doors each month or cut churn: a 10% cut in churn raises it a little more than 10% more leads."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "data"
 priority: 1

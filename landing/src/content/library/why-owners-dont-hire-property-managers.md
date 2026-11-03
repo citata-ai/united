@@ -106,6 +106,6 @@ Your website should answer each fear before the owner calls. Build or check thes
 - [ ] **Owner protections** with repair limits, response times and cancel terms.
 - [ ] **Reviews page** that links to your Google, Yelp and other profiles.
 
-Owners also ask AI tools now. Rentvine reports that 75% of the 500 landlords plan to use AI to find their next property manager. AI answers repeat facts they can find. A clear fee table and clear protections give them true facts to repeat. For more on this, see [how owners choose a property manager with AI](/guides/how-owners-choose-a-property-manager-with-ai).
+Owners also ask AI tools now. The PM Trends study, with Rentvine as a sponsor, reports that 75% of the 500 landlords plan to use AI to find their next property manager. AI answers repeat facts they can find. A clear fee table and clear protections give them true facts to repeat. For more on this, see [how owners choose a property manager with AI](/guides/how-owners-choose-a-property-manager-with-ai).
 
 Next step: list the last 10 owners who did not hire you and the reason each gave. Match each reason to a fear in the table above. Then fix the page for the fear that came up most.

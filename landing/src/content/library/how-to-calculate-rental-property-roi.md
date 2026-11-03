@@ -3,10 +3,10 @@ title: "How to Calculate ROI on a Rental Property: Formulas and Examples — Cit
 description: "Rental ROI is yearly return divided by the cash you put in. See the formulas for cash and financed buys, which costs to include, and a worked example."
 headline: "How to Calculate ROI on a Rental Property"
 dek: "Three formulas, one worked example, and why a financed buy shows a higher ROI on less cash."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "Rental ROI is the yearly return divided by the total cash you invested. For a cash purchase, divide net operating income by the price plus closing and repair costs. For a financed purchase, divide yearly cash flow after the loan payment by your down payment, closing costs and repairs; this is cash-on-cash return. A full ROI can also add loan principal paid down and value growth. There is no official good ROI: compare it with your other options and your risk."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 1

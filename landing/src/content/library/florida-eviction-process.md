@@ -3,10 +3,10 @@ title: "Florida Eviction Process: 3-Day Notice to Writ of Possession — Citata.
 description: "Florida eviction steps from Chapter 83: a 3-day notice for rent, 7-day notices for lease breaks, county court filing, 5 days to answer, a 24-hour writ."
 headline: "Florida Eviction Process for Landlords, Step by Step"
 dek: "Each notice, court step and fee, read in the 2026 Florida Statutes on 2026-10-19."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-28"
+updated: "2026-10-28"
 answer: "A Florida eviction for unpaid rent starts with a written 3-day notice that excludes Saturdays, Sundays and court holidays (Fla. Stat. § 83.56(3)). If the tenant does not pay or leave, the landlord files a complaint for possession in county court, which uses summary procedure with a 5-day answer period. After judgment, the clerk issues a writ, and the sheriff puts the landlord in possession after a 24-hour posted notice (§ 83.62). Lockouts and utility shutoffs are illegal and cost at least 3 months' rent (§ 83.67)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1

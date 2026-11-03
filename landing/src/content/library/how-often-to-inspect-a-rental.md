@@ -3,10 +3,10 @@ title: "How Often Should You Inspect a Rental Property? — Citata.ai"
 description: "Inspect a rental at move-in, at move-out and at least once a year while occupied. Section 8 units get a PHA inspection at least every 2 years. Notice rules vary."
 headline: "How Often Should You Inspect a Rental?"
 dek: "A simple inspection schedule, the notice each state requires, and what to check."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-30"
+updated: "2026-10-30"
 answer: "Inspect a rental at move-in, at move-out, and at least once a year while a tenant lives there. Many owners add a check at 6 months for a new tenant. No federal law sets a routine schedule for private rentals, but state law sets the notice you must give: at least 24 hours in Florida for repairs and 2 days in Arizona. Section 8 units also get a housing authority inspection at least every 2 years."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 1

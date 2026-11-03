@@ -3,10 +3,10 @@ title: "Owner Lead Follow-Up: How Fast and How Often to Reply — Citata.ai"
 description: "Call a new owner lead within 5 minutes. A lead study found contact odds drop 100 times from 5 to 30 minutes. A 10-touch, 14-day plan, scripts and phone rules."
 headline: "How Fast and How Often to Follow Up With Owners"
 dek: "A web lead cools in minutes. Here is a 14-day follow-up plan for rental owner leads."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-01"
+updated: "2026-11-01"
 answer: "Call a new owner lead within 5 minutes, during work hours. In the InsideSales.com and MIT lead study, the odds to contact a web lead fell 100 times from a 5-minute call to a 30-minute call. Then follow a fixed plan: about 10 touches over 14 days by call, text and email, and stop when the owner says no. Text only with the owner's written consent."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "how-to"
 priority: 1

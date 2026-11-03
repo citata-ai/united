@@ -3,10 +3,10 @@ title: "Percentage vs Flat vs Hybrid Management Fees Compared — Citata.ai"
 description: "Percent, flat, hybrid or tiered: how each management fee model pays at $900 to $3,000 rent, which gives steady revenue, and where add-on fees hide cost."
 headline: "Percentage, Flat, Hybrid or Tiered: Which Fee Model Fits"
 dek: "The average percent fee and the average flat fee cost the same at about $1,190 rent."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-02"
+updated: "2026-11-02"
 answer: "A percentage fee fits most residential companies: 75.3% of managers in a 722-branch sample charge a share of collected rent, at 8.49% on average (iPropertyManagement, updated 2026-09-23). A flat fee gives the most steady revenue and suits portfolios with rents above about $1,190, where the average flat fee of $101.04 costs owners less. A hybrid model (small base plus a lower percent) keeps a floor under each door and still grows with rent."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "comparison"
 priority: 1

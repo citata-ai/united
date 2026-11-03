@@ -34,7 +34,7 @@ Scripts do the daily work. An agent only checks the result once a night.
 | Night check (T3 scheduled agent) | 04:00 | Reads the logs, looks at each new cover, removes bad ones, fixes a failed run, checks review notes for the next drafts. |
 
 - Speed: `tools/library/schedule.toml`. From 2026-10-20: 4 a day for 7 days, 8 a day for 21 days, then 16 a day. Change the file to change the speed.
-- Both jobs run in the worktree `/Users/admin/.t3/worktrees/citata.ai/library-publisher` on branch `stage`. A lock (`/tmp/citata-library.lock`) keeps them apart.
+- Both jobs run in the worktree `/Users/admin/.citata-library-publisher` on branch `stage`. A lock (`/tmp/citata-library.lock`) keeps them apart.
 - Logs: `~/Library/Logs/citata-library/{covers,publish}.log`.
 - Install: copy `tools/library/launchd/*.plist` to `~/Library/LaunchAgents/` and `launchctl load` them. Stop: `launchctl unload` the same files.
 - A script never resets the tree. A dirty tree or a failed run stops the next runs until the night check fixes it.

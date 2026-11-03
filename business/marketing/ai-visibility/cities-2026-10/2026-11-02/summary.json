@@ -1,0 +1,3774 @@
+{
+  "experiment": "H03-E1",
+  "overall": {
+    "answers": 150,
+    "avg_companies": 9.4,
+    "answers_with_national": 133,
+    "pct_with_national": 88.7,
+    "national_names": 324,
+    "local_names": 1082,
+    "pct_names_local": 77.0,
+    "answers_with_any_source": 150,
+    "pct_with_any_source": 100.0,
+    "answers_with_company_site": 111,
+    "pct_with_company_site": 74.0,
+    "answers_with_listing_site": 125,
+    "pct_with_listing_site": 83.3,
+    "answers_with_forum": 26,
+    "pct_with_forum": 17.3,
+    "avg_sources": 5.3,
+    "answers_total": 150,
+    "answers_failed": 0,
+    "cities": 50,
+    "engines": ["chatgpt", "claude", "gemini"],
+    "dates": ["2026-11-02"],
+    "prompt": "What is the best property management company in <City, ST>? Give names.",
+    "distinct_companies": 885,
+    "distinct_local_companies": 856,
+    "distinct_domains": 258,
+    "distinct_company_site_domains": 147,
+    "cities_with_national": 50,
+    "cities_with_full_agreement": 42,
+    "citata_mentioned": 0,
+    "fridman_mentioned": 0,
+    "source_type_answers": {
+      "directory": 125,
+      "company": 111,
+      "other": 62,
+      "reference": 20,
+      "data": 17,
+      "forum": 26,
+      "media": 8,
+      "association": 1
+    }
+  },
+  "by_engine": {
+    "chatgpt": {
+      "answers": 50,
+      "avg_companies": 5.4,
+      "answers_with_national": 36,
+      "pct_with_national": 72.0,
+      "national_names": 59,
+      "local_names": 210,
+      "pct_names_local": 78.1,
+      "answers_with_any_source": 50,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 16,
+      "pct_with_company_site": 32.0,
+      "answers_with_listing_site": 41,
+      "pct_with_listing_site": 82.0,
+      "answers_with_forum": 2,
+      "pct_with_forum": 4.0,
+      "avg_sources": 2.3,
+      "model": "gpt-6-luna",
+      "top_domains": [
+        {
+          "domain": "reviews.birdeye.com",
+          "answers": 21
+        },
+        {
+          "domain": "expertise.com",
+          "answers": 20
+        },
+        {
+          "domain": "propertymanagement.com",
+          "answers": 13
+        },
+        {
+          "domain": "bestinhood.com",
+          "answers": 9
+        },
+        {
+          "domain": "hireanypm.com",
+          "answers": 6
+        },
+        {
+          "domain": "homeownerhenry.com",
+          "answers": 5
+        },
+        {
+          "domain": "verifiedmanagers.com",
+          "answers": 4
+        },
+        {
+          "domain": "thepropertymanagementdirectory.com",
+          "answers": 4
+        },
+        {
+          "domain": "publicleads.com",
+          "answers": 3
+        },
+        {
+          "domain": "biggerpockets.com",
+          "answers": 2
+        }
+      ]
+    },
+    "claude": {
+      "answers": 50,
+      "avg_companies": 16.9,
+      "answers_with_national": 50,
+      "pct_with_national": 100.0,
+      "national_names": 172,
+      "local_names": 673,
+      "pct_names_local": 79.6,
+      "answers_with_any_source": 50,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 45,
+      "pct_with_company_site": 90.0,
+      "answers_with_listing_site": 50,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 7.6,
+      "model": "claude-sonnet-5-5",
+      "top_domains": [
+        {
+          "domain": "yelp.com",
+          "answers": 49
+        },
+        {
+          "domain": "expertise.com",
+          "answers": 46
+        },
+        {
+          "domain": "ipropertymanagement.com",
+          "answers": 40
+        },
+        {
+          "domain": "en.wikipedia.org",
+          "answers": 14
+        },
+        {
+          "domain": "trustanalytica.org",
+          "answers": 13
+        },
+        {
+          "domain": "awning.com",
+          "answers": 12
+        },
+        {
+          "domain": "ziprent.com",
+          "answers": 12
+        },
+        {
+          "domain": "clutch.co",
+          "answers": 10
+        },
+        {
+          "domain": "threebestrated.com",
+          "answers": 9
+        },
+        {
+          "domain": "utopiamanagement.com",
+          "answers": 9
+        }
+      ]
+    },
+    "gemini": {
+      "answers": 50,
+      "avg_companies": 5.8,
+      "answers_with_national": 47,
+      "pct_with_national": 94.0,
+      "national_names": 93,
+      "local_names": 199,
+      "pct_names_local": 68.2,
+      "answers_with_any_source": 50,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 50,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 34,
+      "pct_with_listing_site": 68.0,
+      "answers_with_forum": 24,
+      "pct_with_forum": 48.0,
+      "avg_sources": 6.0,
+      "model": "gemini-3-flash",
+      "top_domains": [
+        {
+          "domain": "mynd.co",
+          "answers": 23
+        },
+        {
+          "domain": "reddit.com",
+          "answers": 22
+        },
+        {
+          "domain": "expertise.com",
+          "answers": 21
+        },
+        {
+          "domain": "ziprent.com",
+          "answers": 11
+        },
+        {
+          "domain": "utopiamanagement.com",
+          "answers": 10
+        },
+        {
+          "domain": "awning.com",
+          "answers": 10
+        },
+        {
+          "domain": "threebestrated.com",
+          "answers": 8
+        },
+        {
+          "domain": "inven.ai",
+          "answers": 6
+        },
+        {
+          "domain": "flatfeelandlord.com",
+          "answers": 5
+        },
+        {
+          "domain": "belonghome.com",
+          "answers": 5
+        }
+      ]
+    }
+  },
+  "top_companies": [
+    {
+      "name": "Real Property Management",
+      "answers": 72,
+      "cities": 39,
+      "national": true
+    },
+    {
+      "name": "HomeRiver Group",
+      "answers": 35,
+      "cities": 23,
+      "national": true
+    },
+    {
+      "name": "Ziprent",
+      "answers": 30,
+      "cities": 18,
+      "national": true
+    },
+    {
+      "name": "Keyrenter",
+      "answers": 28,
+      "cities": 17,
+      "national": true
+    },
+    {
+      "name": "Evernest",
+      "answers": 21,
+      "cities": 14,
+      "national": true
+    },
+    {
+      "name": "PMI (Property Management Inc.)",
+      "answers": 21,
+      "cities": 17,
+      "national": true
+    },
+    {
+      "name": "FirstService Residential",
+      "answers": 16,
+      "cities": 9,
+      "national": true
+    },
+    {
+      "name": "Utopia Management",
+      "answers": 16,
+      "cities": 10,
+      "national": true
+    },
+    {
+      "name": "Mynd",
+      "answers": 15,
+      "cities": 12,
+      "national": true
+    },
+    {
+      "name": "Bay Property Management Group",
+      "answers": 11,
+      "cities": 5,
+      "national": true
+    },
+    {
+      "name": "All County Property Management",
+      "answers": 7,
+      "cities": 5,
+      "national": true
+    },
+    {
+      "name": "On Q Property Management",
+      "answers": 7,
+      "cities": 4,
+      "national": true
+    },
+    {
+      "name": "Belong",
+      "answers": 6,
+      "cities": 5,
+      "national": true
+    },
+    {
+      "name": "Cushman and Wakefield",
+      "answers": 5,
+      "cities": 4,
+      "national": true
+    },
+    {
+      "name": "PURE Property Management",
+      "answers": 5,
+      "cities": 5,
+      "national": true
+    },
+    {
+      "name": "Rent Builder Property Management (Albuquerque, NM)",
+      "answers": 3,
+      "cities": 1,
+      "national": false
+    },
+    {
+      "name": "AIM Properties (Albuquerque, NM)",
+      "answers": 3,
+      "cities": 1,
+      "national": false
+    },
+    {
+      "name": "Home365",
+      "answers": 3,
+      "cities": 2,
+      "national": true
+    },
+    {
+      "name": "Stars & Stripes Homes (Aurora, CO)",
+      "answers": 3,
+      "cities": 1,
+      "national": false
+    },
+    {
+      "name": "Grace Property Management",
+      "answers": 3,
+      "cities": 2,
+      "national": true
+    }
+  ],
+  "top_national": [
+    {
+      "name": "Real Property Management",
+      "answers": 72,
+      "cities": 39
+    },
+    {
+      "name": "HomeRiver Group",
+      "answers": 35,
+      "cities": 23
+    },
+    {
+      "name": "Ziprent",
+      "answers": 30,
+      "cities": 18
+    },
+    {
+      "name": "Keyrenter",
+      "answers": 28,
+      "cities": 17
+    },
+    {
+      "name": "Evernest",
+      "answers": 21,
+      "cities": 14
+    },
+    {
+      "name": "PMI (Property Management Inc.)",
+      "answers": 21,
+      "cities": 17
+    },
+    {
+      "name": "FirstService Residential",
+      "answers": 16,
+      "cities": 9
+    },
+    {
+      "name": "Utopia Management",
+      "answers": 16,
+      "cities": 10
+    },
+    {
+      "name": "Mynd",
+      "answers": 15,
+      "cities": 12
+    },
+    {
+      "name": "Bay Property Management Group",
+      "answers": 11,
+      "cities": 5
+    },
+    {
+      "name": "All County Property Management",
+      "answers": 7,
+      "cities": 5
+    },
+    {
+      "name": "On Q Property Management",
+      "answers": 7,
+      "cities": 4
+    },
+    {
+      "name": "Belong",
+      "answers": 6,
+      "cities": 5
+    },
+    {
+      "name": "Cushman and Wakefield",
+      "answers": 5,
+      "cities": 4
+    },
+    {
+      "name": "PURE Property Management",
+      "answers": 5,
+      "cities": 5
+    }
+  ],
+  "top_domains": [
+    {
+      "domain": "expertise.com",
+      "answers": 87,
+      "type": "directory"
+    },
+    {
+      "domain": "yelp.com",
+      "answers": 49,
+      "type": "directory"
+    },
+    {
+      "domain": "ipropertymanagement.com",
+      "answers": 40,
+      "type": "directory"
+    },
+    {
+      "domain": "propertymanagement.com",
+      "answers": 25,
+      "type": "directory"
+    },
+    {
+      "domain": "mynd.co",
+      "answers": 25,
+      "type": "company"
+    },
+    {
+      "domain": "ziprent.com",
+      "answers": 23,
+      "type": "company"
+    },
+    {
+      "domain": "reviews.birdeye.com",
+      "answers": 23,
+      "type": "directory"
+    },
+    {
+      "domain": "awning.com",
+      "answers": 22,
+      "type": "company"
+    },
+    {
+      "domain": "reddit.com",
+      "answers": 22,
+      "type": "forum"
+    },
+    {
+      "domain": "utopiamanagement.com",
+      "answers": 19,
+      "type": "company"
+    },
+    {
+      "domain": "threebestrated.com",
+      "answers": 18,
+      "type": "directory"
+    },
+    {
+      "domain": "trustanalytica.org",
+      "answers": 16,
+      "type": "directory"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "answers": 14,
+      "type": "reference"
+    },
+    {
+      "domain": "belonghome.com",
+      "answers": 13,
+      "type": "company"
+    },
+    {
+      "domain": "bestinhood.com",
+      "answers": 12,
+      "type": "directory"
+    },
+    {
+      "domain": "clutch.co",
+      "answers": 10,
+      "type": "directory"
+    },
+    {
+      "domain": "thumbtack.com",
+      "answers": 10,
+      "type": "directory"
+    },
+    {
+      "domain": "inven.ai",
+      "answers": 9,
+      "type": "data"
+    },
+    {
+      "domain": "home365.co",
+      "answers": 8,
+      "type": "company"
+    },
+    {
+      "domain": "flatfeelandlord.com",
+      "answers": 6,
+      "type": "directory"
+    }
+  ],
+  "top_listing_domains": [
+    {
+      "domain": "expertise.com",
+      "answers": 87
+    },
+    {
+      "domain": "yelp.com",
+      "answers": 49
+    },
+    {
+      "domain": "ipropertymanagement.com",
+      "answers": 40
+    },
+    {
+      "domain": "propertymanagement.com",
+      "answers": 25
+    },
+    {
+      "domain": "reviews.birdeye.com",
+      "answers": 23
+    },
+    {
+      "domain": "threebestrated.com",
+      "answers": 18
+    },
+    {
+      "domain": "trustanalytica.org",
+      "answers": 16
+    },
+    {
+      "domain": "bestinhood.com",
+      "answers": 12
+    },
+    {
+      "domain": "clutch.co",
+      "answers": 10
+    },
+    {
+      "domain": "thumbtack.com",
+      "answers": 10
+    },
+    {
+      "domain": "flatfeelandlord.com",
+      "answers": 6
+    },
+    {
+      "domain": "americatop10.com",
+      "answers": 5
+    },
+    {
+      "domain": "hoaunlimited.com",
+      "answers": 5
+    },
+    {
+      "domain": "verifiedmanagers.com",
+      "answers": 4
+    },
+    {
+      "domain": "keyverified.com",
+      "answers": 4
+    }
+  ],
+  "cities": [
+    {
+      "rank": 1,
+      "city": "New York",
+      "state": "NY",
+      "answers": 3,
+      "avg_companies": 8.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 4,
+      "local_names": 21,
+      "pct_names_local": 84.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 1,
+      "pct_with_listing_site": 33.3,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "FirstService Residential",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Douglas Elliman Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "AKAM",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "R.E.M. Residential",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Orsid Realty",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["FirstService Residential"],
+      "national_brands": ["Belong", "FirstService Residential"],
+      "top_domains": [
+        "topinnyc.com",
+        "belonghome.com",
+        "en.wikipedia.org",
+        "impactwealth.org",
+        "ipropertymanagement.com",
+        "simpleshowing.com"
+      ]
+    },
+    {
+      "rank": 2,
+      "city": "Los Angeles",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 10.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 6,
+      "local_names": 24,
+      "pct_names_local": 80.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Los Angeles Property Management Group",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Beach Front Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "PMI (Property Management Inc.)",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Ziprent",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Earnest Homes",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Los Angeles Property Management Group"],
+      "national_brands": [
+        "FirstService Residential",
+        "PMI (Property Management Inc.)",
+        "Utopia Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "lotusproperties.com",
+        "utopiamanagement.com",
+        "bestinhood.com",
+        "hireanypm.com",
+        "en.wikipedia.org"
+      ]
+    },
+    {
+      "rank": 3,
+      "city": "Chicago",
+      "state": "IL",
+      "answers": 3,
+      "avg_companies": 11.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 9,
+      "local_names": 26,
+      "pct_names_local": 74.3,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 6.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Landmark Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Hales Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "GC Realty & Development",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Marblestone Property Group",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Landmark Property Management", "HomeRiver Group"],
+      "national_brands": [
+        "Asset Living",
+        "Cushman and Wakefield",
+        "FirstService Residential",
+        "HomeRiver Group",
+        "Keyrenter",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "gcrealtyinc.com",
+        "home365.co",
+        "bestinhood.com",
+        "clutch.co",
+        "condocontrol.com",
+        "en.wikipedia.org"
+      ]
+    },
+    {
+      "rank": 4,
+      "city": "Houston",
+      "state": "TX",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 11,
+      "local_names": 15,
+      "pct_names_local": 57.7,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Green Residential",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "AREA Texas Realty & Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Shannon Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["Real Property Management", "Green Residential"],
+      "national_brands": [
+        "Asset Living",
+        "Greystar",
+        "HomeRiver Group",
+        "Keyrenter",
+        "PMI (Property Management Inc.)",
+        "Real Property Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "mybesthouston.com",
+        "atlasmanagementtx.com",
+        "bestinhood.com",
+        "clutch.co",
+        "expertise.com",
+        "homeguide.com"
+      ]
+    },
+    {
+      "rank": 5,
+      "city": "Phoenix",
+      "state": "AZ",
+      "answers": 3,
+      "avg_companies": 8.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 8,
+      "local_names": 17,
+      "pct_names_local": 68.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 6.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "AZ Prime Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "On Q Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Fort Lowell Realty & Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Home Ladder Property Management",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["AZ Prime Property Management", "Real Property Management"],
+      "national_brands": [
+        "Belong",
+        "Mynd",
+        "On Q Property Management",
+        "Real Property Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "home365.co",
+        "azcharged.com",
+        "thepropertymanagementdirectory.com",
+        "en.wikipedia.org",
+        "expertise.com",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 6,
+      "city": "Philadelphia",
+      "state": "PA",
+      "answers": 3,
+      "avg_companies": 8.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 4,
+      "local_names": 20,
+      "pct_names_local": 83.3,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "TrustArt Realty",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Bay Property Management Group",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Grow Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Skyline Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "PhillyLiving Management Group",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "TrustArt Realty",
+        "Grow Property Management",
+        "Bay Property Management Group"
+      ],
+      "national_brands": ["Bay Property Management Group", "HomeRiver Group"],
+      "top_domains": [
+        "awning.com",
+        "expertise.com",
+        "philadelphiapicks.com",
+        "reviews.birdeye.com",
+        "belonghome.com",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 7,
+      "city": "San Antonio",
+      "state": "TX",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 9,
+      "local_names": 17,
+      "pct_names_local": 65.4,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Liberty Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "RentWerx Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Flat Fee Landlord",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Real Property Management", "Liberty Management"],
+      "national_brands": [
+        "HomeRiver Group",
+        "Keyrenter",
+        "PMI (Property Management Inc.)",
+        "Real Property Management",
+        "RealManage",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "bestinhood.com",
+        "awning.com",
+        "expertise.com",
+        "flatfeelandlord.com",
+        "ipropertymanagement.com",
+        "keyverified.com"
+      ]
+    },
+    {
+      "rank": 8,
+      "city": "San Diego",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 11.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 7,
+      "local_names": 28,
+      "pct_names_local": 80.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 7.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Good Life Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Utopia Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Realty Management Group",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Ziprent",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Torrey Pines Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Good Life Property Management"],
+      "national_brands": [
+        "Cushman and Wakefield",
+        "Keyrenter",
+        "PURE Property Management",
+        "Utopia Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "republicmoving.com",
+        "ziprent.com",
+        "bridgehauspropertymanagers.com",
+        "goodlifemgmt.com",
+        "missioncenterproperties.com",
+        "priorityonesd.com"
+      ]
+    },
+    {
+      "rank": 9,
+      "city": "Dallas",
+      "state": "TX",
+      "answers": 3,
+      "avg_companies": 12.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 11,
+      "local_names": 26,
+      "pct_names_local": 70.3,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Specialized Property Management Dallas",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "On Q Property Management",
+          "answers": 1,
+          "national": true
+        },
+        {
+          "name": "McCaw Property Management",
+          "answers": 1,
+          "national": false
+        },
+        {
+          "name": "Mynd",
+          "answers": 1,
+          "national": true
+        },
+        {
+          "name": "Keyrenter",
+          "answers": 1,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": [
+        "Asset Living",
+        "Evernest",
+        "Greystar",
+        "Keyrenter",
+        "Lincoln Property Company",
+        "Mynd",
+        "On Q Property Management",
+        "PMI (Property Management Inc.)",
+        "RPM Living",
+        "Real Property Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "reviews.birdeye.com",
+        "americatop10.com",
+        "en.wikipedia.org",
+        "expertise.com",
+        "homeguide.com",
+        "indeed.com"
+      ]
+    },
+    {
+      "rank": 10,
+      "city": "Fort Worth",
+      "state": "TX",
+      "answers": 3,
+      "avg_companies": 7.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 5,
+      "local_names": 18,
+      "pct_names_local": 78.3,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "1st Choice Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Westrom Group Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "McCaw Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Cole Group Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Ziprent",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["1st Choice Property Management"],
+      "national_brands": ["HomeRiver Group", "Real Property Management", "Ziprent"],
+      "top_domains": [
+        "expertise.com",
+        "ziprent.com",
+        "propertymanagement.com",
+        "reviews.birdeye.com",
+        "thepropertymanagementdirectory.com",
+        "acompanythatbuyshouses.com"
+      ]
+    },
+    {
+      "rank": 11,
+      "city": "Jacksonville",
+      "state": "FL",
+      "answers": 3,
+      "avg_companies": 10.0,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 5,
+      "local_names": 25,
+      "pct_names_local": 83.3,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Nest Finders Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Keshman Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Green River Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "JWB Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Navy to Navy Homes",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Nest Finders Property Management"],
+      "national_brands": [
+        "HomeRiver Group",
+        "Invitation Homes",
+        "Keyrenter",
+        "Real Property Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "verifiedmanagers.com",
+        "bestpropertymanagementcompanies.com",
+        "expertise.com",
+        "ipropertymanagement.com",
+        "jcctpropertymanagement.com",
+        "thumbtack.com"
+      ]
+    },
+    {
+      "rank": 12,
+      "city": "Austin",
+      "state": "TX",
+      "answers": 3,
+      "avg_companies": 9.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 10,
+      "local_names": 19,
+      "pct_names_local": 65.5,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "1836 Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Keyrenter",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Good Neighbor Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "PMI (Property Management Inc.)",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Ziprent",
+          "answers": 1,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["1836 Property Management", "Keyrenter"],
+      "national_brands": [
+        "Bay Property Management Group",
+        "Evernest",
+        "Keyrenter",
+        "PMI (Property Management Inc.)",
+        "Real Property Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "bestinhood.com",
+        "clutch.co",
+        "ensun.io",
+        "ipropertymanagement.com",
+        "keyverified.com",
+        "northpointam.com"
+      ]
+    },
+    {
+      "rank": 13,
+      "city": "San Jose",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 7,
+      "local_names": 19,
+      "pct_names_local": 73.1,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 6.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Ziprent",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Excellence Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Cornerstone Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Intempus Property Management",
+          "answers": 1,
+          "national": false
+        },
+        {
+          "name": "Almaden Property Management",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Ziprent"],
+      "national_brands": [
+        "Keyrenter",
+        "PMI (Property Management Inc.)",
+        "Real Property Management",
+        "Utopia Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "utopiamanagement.com",
+        "ziprent.com",
+        "reviews.birdeye.com",
+        "verifiedmanagers.com",
+        "atobpropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 14,
+      "city": "Charlotte",
+      "state": "NC",
+      "answers": 3,
+      "avg_companies": 9.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 8,
+      "local_names": 20,
+      "pct_names_local": 71.4,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 6.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "MoveZen Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Henderson Properties",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "TouchPoint Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Belong",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["MoveZen Property Management"],
+      "national_brands": [
+        "Belong",
+        "Evernest",
+        "FirstService Residential",
+        "HomeRiver Group",
+        "Mynd",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "belonghome.com",
+        "expertise.com",
+        "hireanypm.com",
+        "propertymanagement.com",
+        "reviews.birdeye.com",
+        "clutch.co"
+      ]
+    },
+    {
+      "rank": 15,
+      "city": "Columbus",
+      "state": "OH",
+      "answers": 3,
+      "avg_companies": 11.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 6,
+      "local_names": 29,
+      "pct_names_local": 82.9,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "RL Property Management Group",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "10X Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Oakwood Management Company",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "All County Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Towne Properties",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": [
+        "All County Property Management",
+        "Belong",
+        "Evernest",
+        "HomeRiver Group",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "rlpmg.com",
+        "hireanypm.com",
+        "propertymanagement.com",
+        "7rent.com",
+        "belonghome.com"
+      ]
+    },
+    {
+      "rank": 16,
+      "city": "Indianapolis",
+      "state": "IN",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 3,
+      "local_names": 23,
+      "pct_names_local": 88.5,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "T&H Realty Services",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Red Door Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "CRM Properties",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "WILMOTH Group",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["T&H Realty Services", "Red Door Property Management"],
+      "national_brands": ["HomeRiver Group", "PMI (Property Management Inc.)"],
+      "top_domains": [
+        "awning.com",
+        "mynd.co",
+        "threaltyinc.com",
+        "propertymanagement.com",
+        "indianapmg.com",
+        "polarismanagementindianapolis.com"
+      ]
+    },
+    {
+      "rank": 17,
+      "city": "San Francisco",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 9.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 23,
+      "pct_names_local": 82.1,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 1,
+      "pct_with_listing_site": 33.3,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Azari Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Ziprent",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Gordon Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Structure Properties",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Utopia Management",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": ["Doorstead", "Utopia Management", "Ziprent"],
+      "top_domains": [
+        "marinoak.com",
+        "rentbottomline.com",
+        "utopiamanagement.com",
+        "sanfrancisco10.com",
+        "clutch.co",
+        "expertise.com"
+      ]
+    },
+    {
+      "rank": 18,
+      "city": "Seattle",
+      "state": "WA",
+      "answers": 3,
+      "avg_companies": 9.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 24,
+      "pct_names_local": 82.8,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 7.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Real Property Associates",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "SJA Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Maple Leaf Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "The Joseph Group",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Ziprent",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": [
+        "Real Property Associates",
+        "SJA Property Management",
+        "Maple Leaf Property Management"
+      ],
+      "national_brands": ["Keyrenter", "Mynd", "Utopia Management", "Ziprent"],
+      "top_domains": [
+        "propertymanagersseattle.com",
+        "thejosephgroup.com",
+        "utopiamanagement.com",
+        "wilsonmanagementinc.com",
+        "ziprent.com",
+        "bestinhood.com"
+      ]
+    },
+    {
+      "rank": 19,
+      "city": "Denver",
+      "state": "CO",
+      "answers": 3,
+      "avg_companies": 7.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 9,
+      "local_names": 14,
+      "pct_names_local": 60.9,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Pioneer Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Keyrenter",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Grace Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Whole Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["Pioneer Property Management", "Keyrenter"],
+      "national_brands": [
+        "Evernest",
+        "Grace Property Management",
+        "Keyrenter",
+        "Mynd",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "mybestdenver.com",
+        "propertymanagement.com",
+        "reviews.birdeye.com",
+        "bestinhood.com",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 20,
+      "city": "Nashville",
+      "state": "TN",
+      "answers": 3,
+      "avg_companies": 11.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 16,
+      "local_names": 18,
+      "pct_names_local": 52.9,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Evernest",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Browning-Gordon & Co.",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "WH Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Mynd",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["Evernest", "HomeRiver Group"],
+      "national_brands": [
+        "CBRE",
+        "Cushman and Wakefield",
+        "Evernest",
+        "FirstService Residential",
+        "HomeRiver Group",
+        "Mynd",
+        "PMI (Property Management Inc.)",
+        "PURE Property Management",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "bestinhood.com",
+        "bizjournals.com",
+        "clutch.co",
+        "expertise.com",
+        "ipropertymanagement.com",
+        "nashvilleexplored.com"
+      ]
+    },
+    {
+      "rank": 21,
+      "city": "Oklahoma City",
+      "state": "OK",
+      "answers": 3,
+      "avg_companies": 9.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 24,
+      "pct_names_local": 82.8,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "OKC Home Realty Services",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "LevelOne Property Management & Leasing",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Keyrenter",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Braden Group",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "Real Property Management",
+        "OKC Home Realty Services",
+        "LevelOne Property Management & Leasing"
+      ],
+      "national_brands": ["Keyrenter", "Real Property Management"],
+      "top_domains": [
+        "expertise.com",
+        "okcexaminer.com",
+        "homeownerhenry.com",
+        "propertymanagement.com",
+        "clutch.co",
+        "inven.ai"
+      ]
+    },
+    {
+      "rank": 22,
+      "city": "Washington",
+      "state": "DC",
+      "answers": 3,
+      "avg_companies": 8.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 20,
+      "pct_names_local": 80.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 4.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Bay Property Management Group",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Atlas Lane",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Nest DC",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Nomadic Real Estate",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "EJF Real Estate Services",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Bay Property Management Group"],
+      "national_brands": ["Bay Property Management Group", "Bozzuto", "Real Property Management"],
+      "top_domains": [
+        "expertise.com",
+        "reviews.birdeye.com",
+        "clutch.co",
+        "en.wikipedia.org",
+        "peterlohmann.com",
+        "threebestrated.com"
+      ]
+    },
+    {
+      "rank": 23,
+      "city": "El Paso",
+      "state": "TX",
+      "answers": 3,
+      "avg_companies": 7.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 2,
+      "local_names": 21,
+      "pct_names_local": 91.3,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 6.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "5 Star Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Northern Pass Properties",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Haggerty Company Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "PMI (Property Management Inc.)",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Reliant Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["5 Star Property Management", "Northern Pass Properties"],
+      "national_brands": ["PMI (Property Management Inc.)"],
+      "top_domains": [
+        "expertise.com",
+        "haggertyrentals.com",
+        "trustanalytica.org",
+        "bestinhood.com",
+        "reviews.birdeye.com",
+        "en.wikipedia.org"
+      ]
+    },
+    {
+      "rank": 24,
+      "city": "Las Vegas",
+      "state": "NV",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 8,
+      "local_names": 18,
+      "pct_names_local": 69.2,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Avalon Realty and Oaktree Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Key Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Five Star Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Rice Real Estate & Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Americana Property Management & Real Estate",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": [
+        "Evernest",
+        "FirstService Residential",
+        "HomeRiver Group",
+        "Mynd",
+        "PURE Property Management",
+        "Renters Warehouse",
+        "Utopia Management"
+      ],
+      "top_domains": [
+        "home365.co",
+        "hireanypm.com",
+        "propertymanagement.com",
+        "reviews.birdeye.com",
+        "expertise.com",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 25,
+      "city": "Boston",
+      "state": "MA",
+      "answers": 3,
+      "avg_companies": 10.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 4,
+      "local_names": 28,
+      "pct_names_local": 87.5,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Green Ocean Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "First Realty Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Mediate Management Company",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Boston Condominium Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "Green Ocean Property Management",
+        "Real Property Management",
+        "First Realty Management"
+      ],
+      "national_brands": ["FirstService Residential", "Real Property Management"],
+      "top_domains": [
+        "belonghome.com",
+        "charlesgate.com",
+        "inven.ai",
+        "bostoncondomanagers.com",
+        "bostonpicks.com",
+        "indeed.com"
+      ]
+    },
+    {
+      "rank": 26,
+      "city": "Detroit",
+      "state": "MI",
+      "answers": 3,
+      "avg_companies": 9.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 22,
+      "pct_names_local": 81.5,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 6.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Evernest",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Own It Detroit",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Reserve Management Company",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Nelson Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Real Property Management"],
+      "national_brands": ["Evernest", "Real Property Management"],
+      "top_domains": [
+        "expertise.com",
+        "biggerpockets.com",
+        "propertymanagement.com",
+        "apartments.com",
+        "detroitproperty.management",
+        "housecashin.com"
+      ]
+    },
+    {
+      "rank": 27,
+      "city": "Louisville",
+      "state": "KY",
+      "answers": 3,
+      "avg_companies": 11.3,
+      "answers_with_national": 1,
+      "pct_with_national": 33.3,
+      "national_names": 3,
+      "local_names": 31,
+      "pct_names_local": 91.2,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 2,
+      "pct_with_forum": 66.7,
+      "avg_sources": 6.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "LREI Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Robert Massey Company",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Bill Stout Properties",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Kentuckiana Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Property Management of Louisville",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "LREI Property Management",
+        "Robert Massey Company",
+        "Bill Stout Properties",
+        "Kentuckiana Property Management"
+      ],
+      "national_brands": [
+        "HomeRiver Group",
+        "PMI (Property Management Inc.)",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "biggerpockets.com",
+        "comparehoamanagers.com",
+        "publicleads.com",
+        "apartments.com",
+        "awning.com"
+      ]
+    },
+    {
+      "rank": 28,
+      "city": "Portland",
+      "state": "OR",
+      "answers": 3,
+      "avg_companies": 9.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 3,
+      "local_names": 26,
+      "pct_names_local": 89.7,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Utopia Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Chroma Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Uptown Properties",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Living Room Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Portland Rental Properties",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Utopia Management"],
+      "national_brands": ["Utopia Management"],
+      "top_domains": [
+        "expertise.com",
+        "propertymax.com",
+        "utopiamanagement.com",
+        "hireanypm.com",
+        "idealist.org",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 29,
+      "city": "Memphis",
+      "state": "TN",
+      "answers": 3,
+      "avg_companies": 10.0,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 6,
+      "local_names": 24,
+      "pct_names_local": 80.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 1,
+      "pct_with_company_site": 33.3,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "CrestCore Realty",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Lubin Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Evernest",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Advantage Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "901 Real Estate Services",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": [
+        "Evernest",
+        "HomeRiver Group",
+        "PMI (Property Management Inc.)",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "homeownerhenry.com",
+        "reviews.birdeye.com",
+        "americatop10.com",
+        "careerbuilder.com",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 30,
+      "city": "Baltimore",
+      "state": "MD",
+      "answers": 3,
+      "avg_companies": 8.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 7,
+      "local_names": 18,
+      "pct_names_local": 72.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Bay Property Management Group",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Goddard Properties",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Chesapeake Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Astoria Charm Property Management",
+          "answers": 1,
+          "national": false
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 1,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["Bay Property Management Group"],
+      "national_brands": [
+        "Bay Property Management Group",
+        "Evernest",
+        "Home365",
+        "HomeRiver Group",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "propertymanagement.com",
+        "expertise.com",
+        "astoriacharm.com",
+        "baymgmtgroup.com",
+        "yably.com",
+        "awning.com"
+      ]
+    },
+    {
+      "rank": 31,
+      "city": "Milwaukee",
+      "state": "WI",
+      "answers": 3,
+      "avg_companies": 9.0,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 4,
+      "local_names": 23,
+      "pct_names_local": 85.2,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 1,
+      "pct_with_company_site": 33.3,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 3.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Performance Asset Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Residential Renters",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Welcome Home Milwaukee",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "PMI (Property Management Inc.)",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Bieck Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Performance Asset Management", "Residential Renters"],
+      "national_brands": ["PMI (Property Management Inc.)", "Real Property Management"],
+      "top_domains": [
+        "expertise.com",
+        "trustanalytica.org",
+        "threebestrated.com",
+        "ipropertymanagement.com",
+        "yelp.com",
+        "bieckmanagement.com"
+      ]
+    },
+    {
+      "rank": 32,
+      "city": "Albuquerque",
+      "state": "NM",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 21,
+      "pct_names_local": 80.8,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Rent Builder Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "AIM Properties",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Brickleys Property Solutions",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "AQM Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "Real Property Management",
+        "Rent Builder Property Management",
+        "AIM Properties"
+      ],
+      "national_brands": ["HomeRiver Group", "Real Property Management"],
+      "top_domains": [
+        "expertise.com",
+        "bestinhood.com",
+        "local.yahoo.com",
+        "awning.com",
+        "bbb.org",
+        "cblegacy.com"
+      ]
+    },
+    {
+      "rank": 33,
+      "city": "Fresno",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 9.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 7,
+      "local_names": 20,
+      "pct_names_local": 74.1,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Regency Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Utopia Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Chambers Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Venture Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Utopia Management", "Regency Property Management"],
+      "national_brands": ["Real Property Management", "Utopia Management", "Ziprent"],
+      "top_domains": [
+        "expertise.com",
+        "utopiamanagement.com",
+        "bestpropertymanagementcompanies.com",
+        "thepropertymanagementdirectory.com",
+        "do.talent.com",
+        "edinhart.com"
+      ]
+    },
+    {
+      "rank": 34,
+      "city": "Tucson",
+      "state": "AZ",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 21,
+      "pct_names_local": 80.8,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 1,
+      "pct_with_listing_site": 33.3,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Blue Fox Properties",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "New Concept Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "On Q Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Rentals America – Tucson",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Blue Fox Properties"],
+      "national_brands": [
+        "On Q Property Management",
+        "PMI (Property Management Inc.)",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "azcharged.com",
+        "belonghome.com",
+        "expertise.com",
+        "ipropertymanagement.com",
+        "propertymanagement.com",
+        "threebestrated.com"
+      ]
+    },
+    {
+      "rank": 35,
+      "city": "Sacramento",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 9.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 14,
+      "local_names": 14,
+      "pct_names_local": 50.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Keyrenter",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Sacramento Delta Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "River Valley Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Tower Bridge Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Real Property Management", "Keyrenter"],
+      "national_brands": [
+        "Doorstead",
+        "HomeRiver Group",
+        "Keyrenter",
+        "Mynd",
+        "PMI (Property Management Inc.)",
+        "Real Property Management",
+        "Utopia Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "awning.com",
+        "sfist.com",
+        "utopiamanagement.com",
+        "ziprent.com",
+        "reviews.birdeye.com",
+        "expertise.com"
+      ]
+    },
+    {
+      "rank": 36,
+      "city": "Atlanta",
+      "state": "GA",
+      "answers": 3,
+      "avg_companies": 9.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 12,
+      "local_names": 15,
+      "pct_names_local": 55.6,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "All County Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Excalibur Homes",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Evernest",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Home365",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": [
+        "All County Property Management",
+        "Bay Property Management Group",
+        "Evernest",
+        "Home365",
+        "HomeRiver Group",
+        "Mynd",
+        "PMI (Property Management Inc.)",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "atlantaexplored.com",
+        "home365.co",
+        "verifiedmanagers.com",
+        "americatop10.com",
+        "awning.com",
+        "belonghome.com"
+      ]
+    },
+    {
+      "rank": 37,
+      "city": "Kansas City",
+      "state": "MO",
+      "answers": 3,
+      "avg_companies": 9.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 9,
+      "local_names": 20,
+      "pct_names_local": 69.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "HomeRiver Group",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Alpine Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "North Terrace Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Evernest",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": ["HomeRiver Group"],
+      "national_brands": [
+        "Evernest",
+        "HomeRiver Group",
+        "Keyrenter",
+        "PMI (Property Management Inc.)",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "alpinekansascity.com",
+        "americatop10.com",
+        "ipropertymanagement.com",
+        "platuni.com",
+        "propertyscout360.com"
+      ]
+    },
+    {
+      "rank": 38,
+      "city": "Mesa",
+      "state": "AZ",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 4,
+      "local_names": 22,
+      "pct_names_local": 84.6,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 4.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Stratton Vantage Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Denali Real Estate",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Rentals America",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "On Q Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Showtime Realty",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "Stratton Vantage Property Management",
+        "Denali Real Estate",
+        "Rentals America"
+      ],
+      "national_brands": [
+        "All County Property Management",
+        "On Q Property Management",
+        "PURE Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "threebestrated.com",
+        "reviews.birdeye.com",
+        "housecashin.com",
+        "phoenix.rentalsamerica.com",
+        "yelp.com"
+      ]
+    },
+    {
+      "rank": 39,
+      "city": "Raleigh",
+      "state": "NC",
+      "answers": 3,
+      "avg_companies": 9.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 7,
+      "local_names": 20,
+      "pct_names_local": 74.1,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 6.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Acorn + Oak Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Block & Associates Realty",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Foursquare Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Real Property Management", "Acorn + Oak Property Management"],
+      "national_brands": ["Belong", "HomeRiver Group", "Mynd", "Real Property Management"],
+      "top_domains": [
+        "awning.com",
+        "thumbtack.com",
+        "propertymanagement.com",
+        "propertymanagementhelp.com",
+        "reviews.birdeye.com",
+        "belonghome.com"
+      ]
+    },
+    {
+      "rank": 40,
+      "city": "Colorado Springs",
+      "state": "CO",
+      "answers": 3,
+      "avg_companies": 9.7,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 5,
+      "local_names": 24,
+      "pct_names_local": 82.8,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 6.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Falcon Property Company",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Dorman Real Estate Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Alliance Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "The Springs Team Real Estate Company",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Colorado Realty and Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": [
+        "All County Property Management",
+        "Evernest",
+        "HomeRiver Group",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "reviews.birdeye.com",
+        "awning.com",
+        "expertise.com",
+        "hireanypm.com",
+        "propertymanagement.com",
+        "clutch.co"
+      ]
+    },
+    {
+      "rank": 41,
+      "city": "Miami",
+      "state": "FL",
+      "answers": 3,
+      "avg_companies": 10.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 9,
+      "local_names": 21,
+      "pct_names_local": 70.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "FirstService Residential",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "KW Property Management & Consulting",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Pristine Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "HomeRiver Group",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Nadlan Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["FirstService Residential", "KW Property Management & Consulting"],
+      "national_brands": [
+        "Associa",
+        "FirstService Residential",
+        "HomeRiver Group",
+        "Keyrenter",
+        "Real Property Management",
+        "Ziprent"
+      ],
+      "top_domains": [
+        "awning.com",
+        "homeownerhenry.com",
+        "bestpropertymanagementcompanies.com",
+        "comparehoamanagers.com",
+        "expertise.com",
+        "luxurypropertycare.com"
+      ]
+    },
+    {
+      "rank": 42,
+      "city": "Omaha",
+      "state": "NE",
+      "answers": 3,
+      "avg_companies": 8.3,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 3,
+      "local_names": 22,
+      "pct_names_local": 88.0,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 1,
+      "pct_with_company_site": 33.3,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "PURE Operating",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Omaha's Premier Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Lynch Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Cambiar Real Estate Group",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [],
+      "national_brands": ["Real Property Management", "Ziprent"],
+      "top_domains": [
+        "expertise.com",
+        "inven.ai",
+        "threebestrated.com",
+        "publicleads.com",
+        "clutch.co",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 43,
+      "city": "Virginia Beach",
+      "state": "VA",
+      "answers": 3,
+      "avg_companies": 9.0,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 5,
+      "local_names": 22,
+      "pct_names_local": 81.5,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 6.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Limehouse Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Osprey Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "PMI (Property Management Inc.)",
+          "answers": 1,
+          "national": true
+        },
+        {
+          "name": "Abrams Realty",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Limehouse Property Management"],
+      "national_brands": [
+        "Berkshire Hathaway HomeServices",
+        "Keyrenter",
+        "PMI (Property Management Inc.)",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "coastalgroupinc.com",
+        "propertymanagementlist.com",
+        "publicleads.com",
+        "aeroleads.com",
+        "americatop10.com"
+      ]
+    },
+    {
+      "rank": 44,
+      "city": "Long Beach",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 9.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 5,
+      "local_names": 23,
+      "pct_names_local": 82.1,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Mike Dunfee Group",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Beach Front Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Ernst & Haas Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Berro Property Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Mike Dunfee Group", "Beach Front Property Management"],
+      "national_brands": ["Real Property Management", "Utopia Management", "Ziprent"],
+      "top_domains": [
+        "expertise.com",
+        "utopiamanagement.com",
+        "ziprent.com",
+        "propertymanagement.com",
+        "reviews.birdeye.com",
+        "bfpminc.com"
+      ]
+    },
+    {
+      "rank": 45,
+      "city": "Oakland",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 10.0,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 7,
+      "local_names": 23,
+      "pct_names_local": 76.7,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Ziprent",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Mynd",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Advent Properties",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Lapham Company",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Ziprent"],
+      "national_brands": ["Mynd", "Real Property Management", "Ziprent"],
+      "top_domains": [
+        "expertise.com",
+        "hoaunlimited.com",
+        "sfist.com",
+        "ziprent.com",
+        "reviews.birdeye.com",
+        "en.wikipedia.org"
+      ]
+    },
+    {
+      "rank": 46,
+      "city": "Minneapolis",
+      "state": "MN",
+      "answers": 3,
+      "avg_companies": 10.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 7,
+      "local_names": 24,
+      "pct_names_local": 77.4,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 3,
+      "pct_with_company_site": 100.0,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Kleinman Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "UpDown Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "FirstService Residential",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Guardian Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Associa",
+          "answers": 2,
+          "national": true
+        }
+      ],
+      "named_by_all_engines": [
+        "Kleinman Property Management",
+        "UpDown Property Management",
+        "FirstService Residential"
+      ],
+      "national_brands": [
+        "Associa",
+        "FirstService Residential",
+        "PURE Property Management",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "homeownerhenry.com",
+        "minneapolispropertymanagers.org",
+        "reviews.birdeye.com",
+        "bettersheets.co",
+        "guardianprop.com"
+      ]
+    },
+    {
+      "rank": 47,
+      "city": "Bakersfield",
+      "state": "CA",
+      "answers": 3,
+      "avg_companies": 8.7,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 3,
+      "local_names": 23,
+      "pct_names_local": 88.5,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 1,
+      "pct_with_company_site": 33.3,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 5.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Ascend Real Estate & Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Performance Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "American Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Central Cal Management",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "Real Property Management",
+        "Ascend Real Estate & Property Management"
+      ],
+      "national_brands": ["Real Property Management"],
+      "top_domains": [
+        "expertise.com",
+        "hoaunlimited.com",
+        "bestinhood.com",
+        "verifiedmanagers.com",
+        "do.talent.com",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 48,
+      "city": "Tulsa",
+      "state": "OK",
+      "answers": 3,
+      "avg_companies": 9.3,
+      "answers_with_national": 3,
+      "pct_with_national": 100.0,
+      "national_names": 6,
+      "local_names": 22,
+      "pct_names_local": 78.6,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 0,
+      "pct_with_forum": 0.0,
+      "avg_sources": 4.7,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Keyrenter",
+          "answers": 3,
+          "national": true
+        },
+        {
+          "name": "Atlas Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Renters Place",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Real Property Management",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "HomeWorx Sales and Leasing",
+          "answers": 2,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Keyrenter"],
+      "national_brands": ["HomeRiver Group", "Keyrenter", "Real Property Management"],
+      "top_domains": [
+        "expertise.com",
+        "reviews.birdeye.com",
+        "awning.com",
+        "homeownerhenry.com",
+        "en.wikipedia.org",
+        "ipropertymanagement.com"
+      ]
+    },
+    {
+      "rank": 49,
+      "city": "Tampa",
+      "state": "FL",
+      "answers": 3,
+      "avg_companies": 9.0,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 6,
+      "local_names": 21,
+      "pct_names_local": 77.8,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 2,
+      "pct_with_company_site": 66.7,
+      "answers_with_listing_site": 3,
+      "pct_with_listing_site": 100.0,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 5.3,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Wright Davis Property Management",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Hoffman Realty",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Rent Solutions",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Eaton Realty",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Bahia Property Management",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": [
+        "Wright Davis Property Management",
+        "Rent Solutions",
+        "Hoffman Realty"
+      ],
+      "national_brands": [
+        "All County Property Management",
+        "Evernest",
+        "HomeRiver Group",
+        "Invitation Homes",
+        "Mynd",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "graystoneig.com",
+        "investproinc.com",
+        "propertymanagement.com",
+        "reviews.birdeye.com",
+        "bestpropertymanagementcompanies.com",
+        "expertise.com"
+      ]
+    },
+    {
+      "rank": 50,
+      "city": "Aurora",
+      "state": "CO",
+      "answers": 3,
+      "avg_companies": 9.3,
+      "answers_with_national": 2,
+      "pct_with_national": 66.7,
+      "national_names": 5,
+      "local_names": 23,
+      "pct_names_local": 82.1,
+      "answers_with_any_source": 3,
+      "pct_with_any_source": 100.0,
+      "answers_with_company_site": 1,
+      "pct_with_company_site": 33.3,
+      "answers_with_listing_site": 2,
+      "pct_with_listing_site": 66.7,
+      "answers_with_forum": 1,
+      "pct_with_forum": 33.3,
+      "avg_sources": 4.0,
+      "engines_ok": ["chatgpt", "claude", "gemini"],
+      "top_companies": [
+        {
+          "name": "Stars & Stripes Homes",
+          "answers": 3,
+          "national": false
+        },
+        {
+          "name": "Pioneer Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Cobalt Creek Property Management",
+          "answers": 2,
+          "national": false
+        },
+        {
+          "name": "Keyrenter",
+          "answers": 2,
+          "national": true
+        },
+        {
+          "name": "Maranville Realty & Property Management",
+          "answers": 1,
+          "national": false
+        }
+      ],
+      "named_by_all_engines": ["Stars & Stripes Homes"],
+      "national_brands": [
+        "Cushman and Wakefield",
+        "Grace Property Management",
+        "Keyrenter",
+        "Real Property Management"
+      ],
+      "top_domains": [
+        "expertise.com",
+        "apartments.com",
+        "bbb.org",
+        "propertymanagement.com",
+        "propertymanagementlist.com",
+        "threebestrated.com"
+      ]
+    }
+  ],
+  "failed": []
+}

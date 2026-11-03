@@ -30,7 +30,12 @@ deploy_ok() { # $1 branch, $2 sha: wait for the deploy run of that commit
 }
 check_200() { # $1 site
   for s in $slugs; do
-    code=$(curl -s -o /dev/null -w '%{http_code}' "$1/guides/$s")
+    # A new page can still give 404 just after the deploy completes.
+    for attempt in 1 2 3 4; do
+      code=$(curl --max-time 30 -s -o /dev/null -w '%{http_code}' "$1/guides/$s")
+      [ "$code" = 200 ] && break
+      [ "$attempt" -lt 4 ] && sleep 10
+    done
     [ "$code" = 200 ] || { log "$1/guides/$s gave $code"; return 1; }
   done
 }

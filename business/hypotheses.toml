@@ -10,6 +10,9 @@
 # Baseline (2026-10-19, 7 days): 0 AI referral sessions, 93 AI bot fetches.
 # Measure 2026-10-19 (W43, day 1 of 30): 0 AI referral sessions, 420 AI bot fetches (7 days). No status changed:
 # kill checks fall on 2026-11-09. Report: business/marketing/reports/2026-W43.md.
+# Measure 2026-11-02 (W45, day 15 of 30): 1 AI referral session since 2026-10-19 (chatgpt -> /about, 2026-10-26),
+# 1,512 AI bot fetches in 7 days. Bots read every page; AI does not send clicks yet. ICE confidence down 1 for
+# H01, H02, H06 (0 sessions after 14 days). H07 to running (H07-E1). Report: business/marketing/reports/2026-W45.md.
 
 [[hypothesis]]
 id = "H01"
@@ -22,7 +25,7 @@ baseline = 0
 target = 400
 due = "2026-11-18"
 kill_if = "Fewer than 20 AI sessions and fewer than 3 AI bot fetches per page 21 days after publish."
-ice = { impact = 9, confidence = 4, ease = 7 }
+ice = { impact = 9, confidence = 3, ease = 7 }
 status = "running"
 
 [[hypothesis]]
@@ -36,7 +39,7 @@ baseline = 0
 target = 150
 due = "2026-11-18"
 kill_if = "Fewer than 15 AI sessions to the tools 21 days after publish."
-ice = { impact = 7, confidence = 6, ease = 6 }
+ice = { impact = 7, confidence = 5, ease = 6 }
 status = "running"
 
 [[hypothesis]]
@@ -91,7 +94,7 @@ baseline = 0
 target = 150
 due = "2026-11-18"
 kill_if = "Fewer than 15 AI sessions 21 days after publish."
-ice = { impact = 7, confidence = 5, ease = 6 }
+ice = { impact = 7, confidence = 4, ease = 6 }
 status = "running"
 
 [[hypothesis]]
@@ -106,7 +109,7 @@ target = 10
 due = "2026-11-18"
 kill_if = "Refreshed pages show no gain over not-yet-refreshed pages after 2 weekly runs."
 ice = { impact = 5, confidence = 5, ease = 9 }
-status = "proposed"
+status = "running"
 
 [[hypothesis]]
 id = "H08"
@@ -157,31 +160,36 @@ hypothesis = "H04"
 start = "2026-10-19"
 actions = ["Ping IndexNow for every sitemap URL", "Check Bing Webmaster Tools URL inspection for the 5 guides", "Record indexed count"]
 urls = ["https://citata.ai/sitemap.xml"]
+learned = "Due 2026-11-02. Not measured: the agent has no Bing Webmaster or GSC access. Microsoft bots fetched 35 pages in 7 days (4 in the week to 2026-10-19). No pass or fail without the indexed count."
 status = "running"
 
 [[experiment]]
 id = "H01-E1"
 hypothesis = "H01"
 start = "2026-10-19"
-actions = ["Pull HUD FY2027 FMR data for the top 50 FMR areas (HUD 2024 population rank)", "Build one page per metro plus a hub page (staged 2026-10-19, 51 pages; 30 values cross-checked vs HUD rows)", "Ship to stage; publish after owner check"]
-urls = ["https://citata.ai/guides/section-8-rent-limits", "https://citata.ai/guides/section-8-rent-limits/chicago-fair-market-rent-2027", "https://citata.ai/guides/section-8-rent-limits/houston-fair-market-rent-2027"]
+actions = ["Pull HUD FY2027 FMR data for the top 50 FMR areas (HUD 2024 population rank)", "Build one page per metro plus a hub page (staged 2026-10-19, 51 pages; 30 values cross-checked vs HUD rows)", "Ship to stage; publish after owner check", "B019 (2026-10-22): payment standard cuts tracker, 22 housing authorities, one source per row, HUD 2026 Budget Management Letter; linked from the hub, /guides and matching metro pages", "B020 (2026-10-28): Section 8 funding in 2027 page: stopgap law P.L. 119-103 to 2026-12-11, CRS R49341 voucher funding table, shortfall rules from PIH 2026-12, 24 CFR 982.454, EHV to TPV by 2026-12-31 (PIH 2026-25); linked from the hub, /guides and llms.txt. Refresh when full-year FY2027 funding passes.", "B021 (2026-10-29): EHV end page /guides/emergency-housing-vouchers-landlords: PIH 2026-25 TPV rule (NAHRO, SHRA, Legal Aid Society of San Diego), dated table of 6 PHA notices, owner changes (payment standard, no reissue); linked from section-8-funding-2027 and /guides", "B005 (2026-10-30): /guides/property-management-fees-by-state: 16-state table from iPropertyManagement (updated 2026-09-23) for monthly, flat, leasing, renewal, setup and inspection fees, plus our first-year cost on $2,000 rent; no state guessed; linked from the fee calculator and how-much-does-a-property-manager-cost-owner"]
+urls = ["https://citata.ai/guides/section-8-rent-limits", "https://citata.ai/guides/section-8-rent-limits/payment-standard-cuts-2026", "https://citata.ai/guides/section-8-rent-limits/section-8-funding-2027", "https://citata.ai/guides/section-8-rent-limits/chicago-fair-market-rent-2027", "https://citata.ai/guides/section-8-rent-limits/houston-fair-market-rent-2027", "https://citata.ai/guides/emergency-housing-vouchers-landlords", "https://citata.ai/guides/property-management-fees-by-state"]
+result = 0
+learned = "Measure 2026-11-02 (14 days live): 0 AI referral sessions to H01 pages. AI bots fetched all 50 metro pages, 919 times since 2026-10-19 (18.4 a page), plus 477 fetches of the hub and sub-pages. The bot part of kill_if passes; the session part is open until 2026-11-09. Bots read the pages, but no AI answer has sent a click we can see."
 status = "running"
 
 [[experiment]]
 id = "H02-E1"
 hypothesis = "H02"
 start = "2026-10-19"
-actions = ["Build the property management fee calculator", "Build the Section 8 rent and tenant share calculator", "Ship to stage; publish after owner check"]
-urls = ["https://citata.ai/tools", "https://citata.ai/tools/property-management-fee-calculator", "https://citata.ai/tools/section-8-rent-calculator"]
+actions = ["Build the property management fee calculator", "Build the Section 8 rent and tenant share calculator", "Ship to stage; publish after owner check", "Tool 3: rent vs sell calculator, pre-tax, with IRS Pub 523 and Topic 409 rules read 2026-10-21 (B015)", "Tool 4: owner lead value calculator for property managers, churn 19.5% NARPM/ProfitCoach 2021 and RentScale lead data read 2026-10-23 (B023)"]
+urls = ["https://citata.ai/tools", "https://citata.ai/tools/property-management-fee-calculator", "https://citata.ai/tools/section-8-rent-calculator", "https://citata.ai/tools/rent-vs-sell-calculator", "https://citata.ai/tools/owner-lead-value-calculator"]
+result = 0
+learned = "Measure 2026-11-02: 0 AI referral sessions to /tools. 105 AI bot fetches of /tools pages since 2026-10-19 (with .md copies). Kill check 2026-11-09 (15 sessions)."
 status = "running"
 
 [[experiment]]
 id = "H03-E1"
 hypothesis = "H03"
 start = "2026-10-19"
-actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines (done 2026-10-19, 150/150 answers)", "Write the research page with method and data download (staged)", "Pitch 30 sites (list: business/marketing/outreach/h03-targets.csv; waits for Tao)"]
-urls = ["https://citata.ai/research/ai-property-manager-index-2026", "https://citata.ai/data/ai-property-manager-index-2026.csv"]
-learned = "Run 1: 88% of answers used a directory or review site (Expertise.com 93/150, Yelp 50, iPropertyManagement 50). Gemini linked a company site in 96% of answers, ChatGPT in 30%. For client work: listings on Expertise.com and iPropertyManagement come first."
+actions = ["Run 'best property management company in <city>' for 50 cities x 3 engines (done 2026-10-19, 150/150 answers)", "Write the research page with method and data download (staged)", "Pitch 30 sites (list: business/marketing/outreach/h03-targets.csv; waits for Tao)", "B024 follow-up (2026-10-24): AI-readiness crawl of the 144 manager sites the engines cited; research page + CSV with no domain names (live 2026-10-24)", "B026 update 1 (2026-11-02): same 50 prompts, same 3 models, 150/150 answers; compare with tools/ai-visibility/cities_compare.py; dated section + second CSV on the same URL"]
+urls = ["https://citata.ai/research/ai-property-manager-index-2026", "https://citata.ai/data/ai-property-manager-index-2026.csv", "https://citata.ai/research/ai-readiness-property-managers-2026", "https://citata.ai/data/ai-readiness-property-managers-2026.csv", "https://citata.ai/data/ai-property-manager-index-2026-11-02.csv"]
+learned = "Run 1: 88% of answers used a directory or review site (Expertise.com 93/150, Yelp 50, iPropertyManagement 50). Gemini linked a company site in 96% of answers, ChatGPT in 30%. For client work: listings on Expertise.com and iPropertyManagement come first. Crawl 2026-10-24: of 144 cited manager sites, 60% have no llms.txt, 4 block an AI bot, 74% of 127 readable home pages have JSON-LD, 65% link a fee page. llms.txt is not what gets a manager cited. Update 1 (2026-11-02, 14 days later): only 58% of names came back (766 of 1,321; ChatGPT 53%, Gemini 56%, Claude 60%), 3 of 150 answers gave the same list, 24 of 50 cities kept the same most-named company. Sources held: Expertise.com 93 -> 87, Yelp 50 -> 49, iPropertyManagement 50 -> 40, PropertyManagement.com 19 -> 25. For client work: measure a city with several runs, and work on sources, not one answer. Measure 2026-11-02: referring domains not measured (no backlink tool); outreach to 30 sites not started (waits for Tao), so the kill_if condition cannot apply yet."
 status = "running"
 
 [[experiment]]
@@ -190,12 +198,23 @@ hypothesis = "H09"
 start = "2026-10-19"
 actions = ["Add live X, Trustpilot, Clutch, G2, Medium, Substack profiles to Organization sameAs", "Create Wikidata item (needs a person: account)", "Finish LinkedIn and Crunchbase (blocked on Tao)"]
 urls = []
+learned = "AI visibility run 2026-11-02, read by hand: brand answers right in 5 of 12 (ChatGPT 4 of 4, Gemini 1 of 4, Claude 0 of 4). Claude still names Citate.ai or Citant.ai. Anthropic bots fetched 1 page in the 7 days to 2026-11-02 (0 from 2026-10-21 to 2026-11-02 except 1 on 2026-10-29); robots.txt allows ClaudeBot and a ClaudeBot user agent gets 200. Wikidata, LinkedIn, Crunchbase still open."
 status = "running"
 
 [[experiment]]
 id = "H06-E1"
 hypothesis = "H06"
 start = "2026-10-19"
-actions = ["Guide 1 of 6: AppFolio vs Buildium, prices read on both pricing pages 2026-10-19 (B001)", "Next: B002 best software for 50-200 doors, B003 4-vendor per-door table"]
-urls = ["https://citata.ai/guides/appfolio-vs-buildium"]
+actions = ["Guide 1 of 6: AppFolio vs Buildium, prices read on both pricing pages 2026-10-19 (B001)", "Guide 2 of 6: best software for 50-200 doors, library draft rewritten with monthly cost at 50/100/200 doors for Yardi Breeze, AppFolio, DoorLoop, Rentvine, Buildium; 5 pricing pages read 2026-10-20 (B002)", "Next: B003 4-vendor per-door table"]
+urls = ["https://citata.ai/guides/appfolio-vs-buildium", "https://citata.ai/guides/best-property-management-software-50-200-doors"]
+result = 0
+learned = "Measure 2026-11-02: 0 AI referral sessions. 37 AI bot fetches of the 2 comparison guides since 2026-10-19. Kill check 2026-11-09 (15 sessions)."
+status = "running"
+
+[[experiment]]
+id = "H07-E1"
+hypothesis = "H07"
+start = "2026-10-31"
+actions = ["B027 (2026-10-31): refreshed /guides/how-owners-choose-a-property-manager-with-ai with PM Trends 2026 Q375 (Harris Poll, n=500, 1-10 units, 54% used AI, 75% plan to, MoE 6.1, PDF read) and Buildium 2026 Rental Owners' Survey (n=300, 23% excellent value, hiring and switch reasons); removed the false claim 'no public survey measures landlords alone'; new FAQ, updated date, change note. Corrected 2 library pages: the study is PM Trends, Rentvine is a sponsor.", "B025 (2026-11-03): refreshed /guides/geo-agencies-for-property-management with our AI answer data: 4 agency prompts x 3 engines x 2 runs on 2026-10-19 and 2026-11-02 (24 answers each; Goodjuju 6->11, First Page Sage 8->11, ClearLead 6->9, Citata 0->3, all ChatGPT citing this guide; 95 distinct companies named). Re-read 7 price pages: Goodjuju 15 days notice, FirstIndex moved to firstindex.com, 3 months first, $1,000 report. New FAQ, change note."]
+urls = ["https://citata.ai/guides/how-owners-choose-a-property-manager-with-ai", "https://citata.ai/guides/geo-agencies-for-property-management"]
 status = "running"

@@ -3,10 +3,10 @@ title: "How Fast Must a Landlord Make Repairs? Deadlines by State — Citata.ai"
 description: "No national deadline exists. Arizona allows 5 or 10 days after written notice, Florida 7, and Virginia presumes over 30 days unreasonable. Voucher units: 24 hours."
 headline: "How Fast Must a Landlord Make Repairs?"
 dek: "State deadlines after written notice, the federal voucher rule, and response targets you can adopt."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-29"
+updated: "2026-10-29"
 answer: "It depends on the state and on how serious the repair is. There is no single national deadline for private rentals. State laws usually start the clock when the tenant gives written notice: Arizona allows 5 days for health and safety breaches and 10 days for others, Florida 7 days before a tenant may withhold rent, and Virginia presumes more than 30 days unreasonable. For Housing Choice Voucher units, federal rules require a fix within 24 hours for life-threatening problems and 30 days for others."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 1

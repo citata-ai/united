@@ -5,11 +5,13 @@ description: "Landlords ask ChatGPT, Gemini and Google AI for a property manager
 headline: "How Landlords Use AI to Choose a Property Manager"
 dek: "Landlords ask ChatGPT for a short list. Here is what they ask and where the names come from."
 published: "2026-10-18"
-updated: "2026-10-19"
-answer: "Landlords ask ChatGPT, Gemini and Google AI questions like \"best property manager in Chicago for a single-family home\". The AI answer names a short list of companies and links a few sources. The engines pick names from manager websites, review sites such as Yelp, and directories such as Expertise.com and Thumbtack. A manager gets on that list with clear landlord pages, real reviews, complete directory profiles and the same name and address everywhere."
+updated: "2026-10-31"
+answer: "In a 2026 Harris Poll survey of 500 small landlords, 54% had already used AI tools to find or evaluate a property manager, and 75% plan to use them (PM Trends, 2026). Landlords ask ChatGPT, Gemini and Google AI questions like \"best property manager in Chicago for a single-family home\". The AI answer names a short list of companies and links a few sources. The engines pick names from manager websites, review sites such as Yelp, and directories such as Expertise.com and Thumbtack. A manager gets on that list with clear landlord pages, real reviews, complete directory profiles and the same name and address everywhere."
 faq:
   - q: "Do landlords really use ChatGPT to find a property manager?"
-    a: "Many consumers now use AI for local picks. In a BrightLocal survey of 1,002 US adults, AI use for local recommendations rose from 6% to 45% in one year (BrightLocal, 2026). No public survey measures landlords alone."
+    a: "Yes. In a Harris Poll survey of 500 US landlords with 1 to 10 units, 54% said they had used AI tools to search for or evaluate a property manager. 75% plan to use them, and 16% never have and do not plan to (PM Trends, December 2025)."
+  - q: "What do landlords want most when they hire a property manager?"
+    a: "Tenant management comes first. In Buildium's 2026 survey of 300 small-portfolio owners, the top hiring priorities were tenant management (57%), maintenance coordination (43%), customer service (34%) and responsiveness (31%)."
   - q: "How many companies does an AI answer name?"
     a: "Usually a short list. In our Chicago test of 132 landlord answers, the median answer named 5 companies (our data, 2026-10-16). ChatGPT named fewer than Claude."
   - q: "Which websites does AI use to recommend a property manager?"
@@ -21,6 +23,10 @@ faq:
   - q: "Do ChatGPT and Google AI Overviews use the same sources?"
     a: "No. 38% of pages cited in Google AI Overviews rank in Google's top 10 (Ahrefs, March 2026). Only 12% of links cited by ChatGPT, Gemini and Copilot do (Ahrefs, 2025). So a manager needs both good Google rankings and a presence on lists and directories."
 sources:
+  - label: "PM Trends: 2026 PM Trends Report (Harris Poll, 500 landlords, PDF)"
+    url: "https://pmtrends.com/LS-PM-Trends-Report-2026.pdf"
+  - label: "Buildium: How rental owners evaluate a property manager's performance in 2026"
+    url: "https://www.buildium.com/blog/how-rental-owners-evaluate-a-property-managers-performance/"
   - label: "BrightLocal: Local Consumer Review Survey 2026"
     url: "https://www.brightlocal.com/research/local-consumer-review-survey/"
   - label: "Ahrefs: 38% of AI Overview citations rank in the top 10 (2026)"
@@ -37,9 +43,22 @@ sources:
 
 ## Do landlords use AI to find a property manager?
 
-Choosing a property manager with AI is asking ChatGPT, Gemini or Google AI for a short list of firms, then checking the names. Landlords do this, and the share grows fast. BrightLocal asked 1,002 US adults in 2026. Use of ChatGPT and other AI tools for local recommendations rose from 6% to 45% in one year (BrightLocal, 2026). The same survey found that 97% of consumers read reviews for local businesses.
+Choosing a property manager with AI is asking ChatGPT, Gemini or Google AI for a short list of firms, then checking the names. More than half of small landlords say they have done this. Harris Poll asked 500 US landlords with 1 to 10 units about AI tools in December 2025 (PM Trends, 2026). Here are their answers:
 
-No public survey measures landlords alone. So treat 45% as a signal for all local services, not a count of landlords. Our own test shows what landlords get when they ask. The rest of this guide uses that data.
+| Answer to the survey question | Share |
+|---|---|
+| Used AI tools for this, and plan to again | 45% |
+| Used AI tools for this, and do not plan to again | 9% |
+| Never used AI tools for this, but plan to | 30% |
+| Never used AI tools for this, and do not plan to | 16% |
+
+Add the rows and you get 2 numbers: 54% have used AI for this, and 75% plan to.
+
+Watch for: the survey records what landlords say, not what they did. The margin of error is 6.1 points. Vendors sponsor the report, and Rentvine is a title sponsor. So use 54% as a strong signal, not an exact count.
+
+Consumer data points the same way. BrightLocal asked 1,002 US adults in 2026. Use of ChatGPT and other AI tools for local recommendations rose from 6% to 45% in one year (BrightLocal, 2026). The same survey found that 97% of consumers read reviews for local businesses.
+
+Surveys tell you that landlords ask. Our own test shows what they get. The rest of this guide uses that data.
 
 ## What do landlords ask ChatGPT and Gemini?
 
@@ -96,6 +115,20 @@ For renters, listing sites win. Peek's AI Discovery Black Book found that 72% of
 
 For landlords, the picture is different. In our Chicago test, manager websites were the top sources for landlord questions (our data, 2026-10-16). So your own site has a real chance to be the source for landlord questions. Landlords are also the people who pay you. For more on this split, see our [property management page](/property-management).
 
+## What do landlords want from a property manager?
+
+Landlords judge a property manager on service. Buildium surveyed 300 US owners with small portfolios in early 2026, and 95% of them own 1 to 20 units. Only 23% say their property manager gives excellent value (Buildium, 2026).
+
+| Buildium 2026 finding | Top answers |
+|---|---|
+| Top priorities when choosing a manager | Tenant management 57%, maintenance coordination 43%, customer service 34%, responsiveness 31% |
+| Reasons to switch managers | Poor communication 57%, declines in service quality 54%, lack of transparency 34% |
+| Expected response time | Same day 43%, next business day 42% |
+
+Buildium sells property management software, so read these numbers as vendor data. Its article does not give the exact group behind each percentage.
+
+What to do: put these topics on your landlord pages. State how you screen tenants, how you handle repairs and how fast you reply. A short, exact sentence on each topic gives AI something to quote.
+
 ## How does a property manager get into the AI answer?
 
 A firm gets into the AI answer when the engines find clear, matching facts about the company in many places. You cannot control the answer. You can improve the sources the engines read.
@@ -130,3 +163,7 @@ You can test what AI says about your company with one short check each month. Us
 Watch for: directories and review sites that appear again and again. Those are the sources to fix first.
 
 If you want a second view, send us your site and your cities. We run landlord questions on 4 AI engines and send you the top fixes.
+
+## What changed in this guide?
+
+On 2026-10-31 we replaced the claim "no public survey measures landlords alone". The PM Trends survey does measure landlords, and we had not read it. We added its AI numbers and the Buildium hiring data.

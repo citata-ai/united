@@ -3,10 +3,10 @@ title: "AppFolio Alternatives: Prices, Features and Fit — Citata.ai"
 description: "Compare AppFolio alternatives by unit minimums, published prices, accounting and data moves. Pick a short list based on your work, then ask for a full quote."
 headline: "AppFolio Alternatives for Growing Property Managers"
 dek: "Choose a replacement by the problem you need to solve, then test the books."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-10-20"
+updated: "2026-10-20"
 answer: "Buildium, Yardi Breeze, Rentvine and DoorLoop belong on an AppFolio replacement short list. The best fit depends on your unit count, accounting work and total quote. Do not switch until a test import and opening balances pass review."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 1

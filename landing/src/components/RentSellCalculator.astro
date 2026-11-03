@@ -1,0 +1,153 @@
+---
+// Rent vs sell calculator: a small vanilla island, same pattern as FeeCalculator.astro. The math
+// lives in src/lib/calculators.ts (tested). The build renders the first result, so the page shows
+// full numbers without JavaScript; the script only updates them. No data leaves the page.
+import {
+  breakEvenAppreciation,
+  computeRentSell,
+  rentSellExample as ex,
+  usd,
+} from "../lib/calculators.ts";
+
+const r = computeRentSell(ex);
+const be = breakEvenAppreciation(ex);
+const field =
+  "mt-1 block h-10 w-full rounded border border-rule-strong bg-parchment px-3 text-[15px] outline-none focus:border-minium";
+const fields = [
+  { name: "homeValue", label: "Home value today ($)", step: "any" },
+  { name: "mortgageBalance", label: "Mortgage balance today ($)", step: "any" },
+  { name: "mortgageRate", label: "Mortgage rate (% a year)", step: "any" },
+  { name: "monthlyPayment", label: "Mortgage payment, principal + interest ($/mo)", step: "any" },
+  { name: "rent", label: "Monthly rent ($)", step: "any" },
+  { name: "monthlyCosts", label: "Tax, insurance, HOA, repairs ($/mo)", step: "any" },
+  { name: "vacancyPercent", label: "Vacancy (% of the year empty)", step: "any" },
+  { name: "managementPercent", label: "Management fee (% of rent, 0 if you self-manage)", step: "any" },
+  { name: "sellCostPercent", label: "Cost to sell (% of price: agent, closing)", step: "any" },
+  { name: "appreciationPercent", label: "Home price growth (% a year)", step: "any" },
+  { name: "rentGrowthPercent", label: "Rent and cost growth (% a year)", step: "any" },
+  { name: "investReturnPercent", label: "Return on cash if you sell (% a year)", step: "any" },
+  { name: "years", label: "Years you rent it out before you sell", step: "1" },
+] as const;
+const verdict = (d: number, years: number) =>
+  d >= 0
+    ? `Rent, then sell, comes out ${usd(d)} ahead after ${years} years, before tax.`
+    : `Sell now comes out ${usd(-d)} ahead after ${years} years, before tax.`;
+const beText = (b: number | null) =>
+  b === null
+    ? "No home price growth from -10% to 30% a year makes the two paths equal."
+    : `The paths are equal at ${b}% home price growth a year. Above that, renting wins.`;
+---
+
+<form class="rs-calc rounded-md border border-rule bg-page p-5 sm:p-6" novalidate>
+  <div class="grid gap-x-6 gap-y-4 sm:grid-cols-2">
+    {
+      fields.map((f) => (
+        <label>
+          <span class="meta">{f.label}</span>
+          <input name={f.name} type="number" inputmode="decimal" step={f.step} value={ex[f.name]} class={field} />
+        </label>
+      ))
+    }
+  </div>
+
+  <div class="mt-6" aria-live="polite">
+    <div class="grid gap-3 sm:grid-cols-3">
+      <div class="rounded-md bg-sky/30 p-4">
+        <p class="meta text-ink">Sell now</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="sellNowFuture">{usd(r.sellNowFuture)}</p>
+        <p class="text-[13px] text-muted"><span data-out="sellNowCash">{usd(r.sellNowCash)}</span> cash today, invested</p>
+      </div>
+      <div class="rounded-md bg-sun/35 p-4">
+        <p class="meta text-ink">Rent, then sell</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="keepTotal">{usd(r.keepTotal)}</p>
+        <p class="text-[13px] text-muted">sale cash + cash flow, invested</p>
+      </div>
+      <div class="rounded-md bg-mint/40 p-4">
+        <p class="meta text-ink">Cash flow, year 1</p>
+        <p class="mt-1 text-[30px] leading-tight font-semibold" data-out="firstYearMonthlyCashFlow">{usd(r.firstYearMonthlyCashFlow)}</p>
+        <p class="text-[13px] text-muted">a month, after the mortgage</p>
+      </div>
+    </div>
+    <p class="mt-4 text-[17px] font-medium" data-out="verdict">{verdict(r.difference, ex.years)}</p>
+    <p class="mt-1 text-[15px] text-muted" data-out="breakEven">{beText(be)}</p>
+
+    <table class="mt-5 w-full border-collapse text-[15px]">
+      <caption class="meta pb-2 text-left">Rent, then sell: the parts</caption>
+      <tbody>
+        <tr class="border-b border-rule"><th scope="row" class="py-2 pr-4 text-left font-normal">Home value at sale</th><td class="py-2 text-right tabular-nums" data-out="futureHomeValue">{usd(r.futureHomeValue)}</td></tr>
+        <tr class="border-b border-rule"><th scope="row" class="py-2 pr-4 text-left font-normal">Mortgage balance at sale</th><td class="py-2 text-right tabular-nums" data-out="futureMortgageBalance">{usd(r.futureMortgageBalance)}</td></tr>
+        <tr class="border-b border-rule"><th scope="row" class="py-2 pr-4 text-left font-normal">Cash from the later sale</th><td class="py-2 text-right tabular-nums" data-out="keepSaleCash">{usd(r.keepSaleCash)}</td></tr>
+        <tr class="border-b border-rule"><th scope="row" class="py-2 pr-4 text-left font-normal">Cash flow, all months</th><td class="py-2 text-right tabular-nums" data-out="cashFlowTotal">{usd(r.cashFlowTotal)}</td></tr>
+        <tr><th scope="row" class="py-2 pr-4 text-left font-medium">Cash flow with return</th><td class="py-2 text-right font-medium tabular-nums" data-out="cashFlowFuture">{usd(r.cashFlowFuture)}</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mt-4 text-[12px] text-muted">
+    Before tax. The tool does not include capital gains tax, depreciation recapture or the home sale
+    exclusion. Your numbers stay in your browser.
+  </p>
+</form>
+
+<script>
+  import { breakEvenAppreciation, computeRentSell, usd, type RentSellInput } from "../lib/calculators.ts";
+
+
+  for (const form of document.querySelectorAll<HTMLFormElement>(".rs-calc")) {
+    const num = (name: string): number => {
+      const el = form.elements.namedItem(name);
+      return el instanceof HTMLInputElement && el.value !== "" ? Number(el.value) : 0;
+    };
+    const set = (key: string, text: string) => {
+      for (const el of form.querySelectorAll(`[data-out="${key}"]`)) el.textContent = text;
+    };
+    const update = () => {
+      const input: RentSellInput = {
+        homeValue: num("homeValue"),
+        mortgageBalance: num("mortgageBalance"),
+        mortgageRate: num("mortgageRate"),
+        monthlyPayment: num("monthlyPayment"),
+        rent: num("rent"),
+        monthlyCosts: num("monthlyCosts"),
+        vacancyPercent: num("vacancyPercent"),
+        managementPercent: num("managementPercent"),
+        sellCostPercent: num("sellCostPercent"),
+        appreciationPercent: num("appreciationPercent"),
+        rentGrowthPercent: num("rentGrowthPercent"),
+        investReturnPercent: num("investReturnPercent"),
+        years: num("years"),
+      };
+      const r = computeRentSell(input);
+      const be = breakEvenAppreciation(input);
+      for (const k of [
+        "sellNowFuture",
+        "sellNowCash",
+        "keepTotal",
+        "firstYearMonthlyCashFlow",
+        "futureHomeValue",
+        "futureMortgageBalance",
+        "keepSaleCash",
+        "cashFlowTotal",
+        "cashFlowFuture",
+      ] as const) {
+        set(k, usd(r[k]));
+      }
+      const years = Math.round(input.years * 12) / 12;
+      set(
+        "verdict",
+        r.difference >= 0
+          ? `Rent, then sell, comes out ${usd(r.difference)} ahead after ${years} years, before tax.`
+          : `Sell now comes out ${usd(-r.difference)} ahead after ${years} years, before tax.`,
+      );
+      set(
+        "breakEven",
+        be === null
+          ? "No home price growth from -10% to 30% a year makes the two paths equal."
+          : `The paths are equal at ${be}% home price growth a year. Above that, renting wins.`,
+      );
+    };
+    form.addEventListener("input", update);
+    form.addEventListener("change", update);
+    form.addEventListener("submit", (e) => e.preventDefault());
+    update();
+  }
+</script>
