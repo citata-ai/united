@@ -308,3 +308,11 @@ kind = "measure"
 title = "Weekly growth report W45: CTT-O6 at 1 of 1,000 AI sessions on day 15"
 ref = "business/marketing/reports/2026-W45.md"
 result = "1 AI referral session since 2026-10-19 (pace needed 62.4 a day from 2026-11-03). 1,509 AI bot fetches in 7 days. No hypothesis validated or invalidated; ICE confidence down for H01, H02, H06; H07 running."
+
+[[entry]]
+date = "2026-11-03"
+side = "internal"
+kind = "site"
+title = "Refresh GEO agency guide with measured AI answers (B025, H07)"
+ref = "landing/src/pages/guides/geo-agencies-for-property-management.md"
+result = "Staged. New section: who ChatGPT, Claude and Gemini name on 4 agency prompts (24 answers, 2026-10-19 vs 2026-11-02). Prices re-read on 7 sites; FirstIndex and Goodjuju terms fixed."

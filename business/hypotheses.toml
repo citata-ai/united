@@ -215,6 +215,6 @@ status = "running"
 id = "H07-E1"
 hypothesis = "H07"
 start = "2026-10-31"
-actions = ["B027 (2026-10-31): refreshed /guides/how-owners-choose-a-property-manager-with-ai with PM Trends 2026 Q375 (Harris Poll, n=500, 1-10 units, 54% used AI, 75% plan to, MoE 6.1, PDF read) and Buildium 2026 Rental Owners' Survey (n=300, 23% excellent value, hiring and switch reasons); removed the false claim 'no public survey measures landlords alone'; new FAQ, updated date, change note. Corrected 2 library pages: the study is PM Trends, Rentvine is a sponsor."]
-urls = ["https://citata.ai/guides/how-owners-choose-a-property-manager-with-ai"]
+actions = ["B027 (2026-10-31): refreshed /guides/how-owners-choose-a-property-manager-with-ai with PM Trends 2026 Q375 (Harris Poll, n=500, 1-10 units, 54% used AI, 75% plan to, MoE 6.1, PDF read) and Buildium 2026 Rental Owners' Survey (n=300, 23% excellent value, hiring and switch reasons); removed the false claim 'no public survey measures landlords alone'; new FAQ, updated date, change note. Corrected 2 library pages: the study is PM Trends, Rentvine is a sponsor.", "B025 (2026-11-03): refreshed /guides/geo-agencies-for-property-management with our AI answer data: 4 agency prompts x 3 engines x 2 runs on 2026-10-19 and 2026-11-02 (24 answers each; Goodjuju 6->11, First Page Sage 8->11, ClearLead 6->9, Citata 0->3, all ChatGPT citing this guide; 95 distinct companies named). Re-read 7 price pages: Goodjuju 15 days notice, FirstIndex moved to firstindex.com, 3 months first, $1,000 report. New FAQ, change note."]
+urls = ["https://citata.ai/guides/how-owners-choose-a-property-manager-with-ai", "https://citata.ai/guides/geo-agencies-for-property-management"]
 status = "running"
