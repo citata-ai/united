@@ -448,6 +448,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-what-to-do-when-rent-is-late-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga stands beside a brass letterbox outside small tiled houses.",
   },
+  "short-term-vs-long-term-rental": {
+    img: "guide-short-term-vs-long-term-rental-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga stands before small tiled houses and a two-flat building, holding a rotary phone while reviewing coin stacks and financial scrolls.",
+  },
+  "should-i-rent-or-sell-my-house": {
+    img: "guide-should-i-rent-or-sell-my-house-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga stands before small tiled houses while holding a rotary phone to weigh renting versus selling property.",
+  },
+  "what-does-a-property-manager-do": {
+    img: "guide-what-does-a-property-manager-do-v1",
+    alt: "A pop engraving under a coral sky: A property manager in an orange toga stands before a row of small tiled houses, holding a brass key while checking a rotary phone on a stone pedestal.",
+  },
+  "where-to-list-a-rental-property": {
+    img: "guide-where-to-list-a-rental-property-v1",
+    alt: "A pop engraving under a yellow sky: A property manager in an orange toga stands before a row of small tiled houses, checking a CRT computer to manage rental listings.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

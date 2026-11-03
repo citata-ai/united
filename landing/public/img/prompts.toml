@@ -812,3 +812,27 @@ file = "img/guide-what-to-do-when-rent-is-late-v1-*.webp"
 prompt = "Use the image /tmp/img-what-to-do-when-rent-is-late/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands beside a brass letterbox outside small tiled houses."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-02"
+
+[[image]]
+file = "img/guide-short-term-vs-long-term-rental-v1-*.webp"
+prompt = "Use the image /tmp/img-short-term-vs-long-term-rental/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands before a two-flat building and small tiled houses, holding a rotary phone while inspecting stacked coins and accounting scrolls. The setting reflects the complex calculation of short-term rental gross earnings versus high operating expenses and hours."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-03"
+
+[[image]]
+file = "img/guide-should-i-rent-or-sell-my-house-v1-*.webp"
+prompt = "Use the image /tmp/img-should-i-rent-or-sell-my-house/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga stands before small tiled houses while holding a rotary phone to weigh renting versus selling property."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-03"
+
+[[image]]
+file = "img/guide-what-does-a-property-manager-do-v1-*.webp"
+prompt = "Use the image /tmp/img-what-does-a-property-manager-do/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before a row of small tiled houses, holding a brass key while checking a rotary phone on a stone pedestal."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-03"
+
+[[image]]
+file = "img/guide-where-to-list-a-rental-property-v1-*.webp"
+prompt = "Use the image /tmp/img-where-to-list-a-rental-property/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before a row of small tiled houses, checking a CRT computer to manage rental listings."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-03"
