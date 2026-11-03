@@ -234,7 +234,7 @@ kind = "refresh"
 title = "Refresh /guides/geo-agencies-for-property-management with our measured AI answers (36 pm-geo answers: who is named, which domains are cited)"
 demand = "Gap 2 of the 2026-10-19 report: 0 of 36. AI cites clearleaddigital.com 16, gogoodjuju.com 15, propertymanagerwebsites.com 12, firstpagesage.com 9, webtonic.io 8."
 score = 7
-status = "idea"
+status = "live"
 note = "Use the next measure run data (2026-10-26) for fresh counts."
 
 # --- scout 2026-10-29: evidence in business/marketing/competitors/2026-10-29-scout.md ---
