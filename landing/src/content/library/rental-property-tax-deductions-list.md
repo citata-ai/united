@@ -3,10 +3,10 @@ title: "Rental Property Tax Deductions: The IRS List in Plain Words — Citata.a
 description: "IRS Publication 527 lists 16 common rental expenses, from advertising to utilities. See each one, repair vs improvement, travel rules and the records to keep."
 headline: "Rental Property Tax Deductions: The IRS List"
 dek: "The 16 expenses IRS Pub 527 names, the repair test, and the records that back them up."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "IRS Publication 527 lists the most common rental expenses: advertising, auto and travel, cleaning and maintenance, commissions, depreciation, insurance, other interest, legal and professional fees, local transportation, management fees, mortgage interest, points, rental payments, repairs and taxes, plus utilities. Repairs are deductible in the year you pay them; improvements must be capitalized and depreciated. Keep receipts and separate repair costs from improvement costs."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "checklist"
 priority: 1

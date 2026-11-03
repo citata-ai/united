@@ -3,10 +3,10 @@ title: "Rental Property Depreciation: How It Works (IRS Pub 527 and 946) — Cit
 description: "The IRS lets you deduct a rental house's building cost over 27.5 years, not the land. See the basis, start date, allowed or allowable rule and a worked example."
 headline: "Rental Property Depreciation: How It Works"
 dek: "Basis, start date, the 27.5-year clock, and why skipping it still costs you at sale."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "Depreciation lets you deduct the cost of a rental building over its recovery period, which IRS Publication 527 sets at 27.5 years for residential rental property. You depreciate the building, not the land. Depreciation starts when the home is ready and available for rent. Per IRS Publication 946, you must reduce your basis by the depreciation allowed or allowable, so skipping it does not avoid the tax at sale."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1
