@@ -464,6 +464,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-where-to-list-a-rental-property-v1",
     alt: "A pop engraving under a yellow sky: A property manager in an orange toga stands before a row of small tiled houses, checking a CRT computer to manage rental listings.",
   },
+  "ada-website-compliance-property-management": {
+    img: "guide-ada-website-compliance-property-management-v1",
+    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga stands before small tiled houses holding a CRT computer.",
+  },
+  "ai-lead-share-property-management": {
+    img: "guide-ai-lead-share-property-management-v1",
+    alt: "A pop engraving under a lilac sky: A property manager in an orange toga stands beside a CRT computer resting on a stone pedestal, looking out over a row of small tiled houses and a two-flat building.",
+  },
+  "ai-tools-for-property-managers": {
+    img: "guide-ai-tools-for-property-managers-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager wearing a bright orange toga stands beside small tiled houses while holding a rotary phone.",
+  },
+  "ai-visibility-tools-property-management": {
+    img: "guide-ai-visibility-tools-property-management-v1",
+    alt: "A pop engraving under a yellow sky: a Roman landlord in an orange toga stands beside small tiled houses while holding a rotary phone and checking property records.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
