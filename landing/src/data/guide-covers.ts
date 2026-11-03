@@ -424,14 +424,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-sell-former-home-after-renting-section-121-v1",
     alt: "A pop engraving under a lilac sky: A landlord in an orange toga stands in front of a red-brick two-flat holding a rotary phone, with small tiled houses lining the sunny street behind him.",
   },
-  "short-term-vs-long-term-rental": {
-    img: "guide-short-term-vs-long-term-rental-v1",
-    alt: "A pop engraving under a coral sky: a man in an orange toga stands before small tiled houses, inspecting a rotary phone on a stone pillar while holding a brass key.",
-  },
-  "should-i-rent-or-sell-my-house": {
-    img: "guide-should-i-rent-or-sell-my-house-v1",
-    alt: "A pop engraving under a yellow sky: a man in an orange toga stands before a two-flat house holding a brass key, while a vintage CRT computer rests on a stone table beside him.",
-  },
   "vacancy-loss-cost-calculation": {
     img: "guide-vacancy-loss-cost-calculation-v1",
     alt: "A pop engraving under a cyan sky: A man in an orange toga stands outside a row of small tiled houses, holding a rotary phone while inspecting an empty two-flat property.",
@@ -440,9 +432,21 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-value-of-an-owner-lead-v1",
     alt: "A pop engraving under a lilac sky: a landlord in an orange toga stands outside a red-brick two-flat holding a vintage CRT desktop computer in his arms, while small stacks of coins rest on a stone pedestal beside him and a big brass key hangs from his belt.",
   },
-  "what-does-a-property-manager-do": {
-    img: "guide-what-does-a-property-manager-do-v1",
-    alt: "A pop engraving under a coral sky: a man in an orange toga stands in front of small tiled houses holding a brass key next to a rotary phone.",
+  "what-does-landlord-insurance-cover": {
+    img: "guide-what-does-landlord-insurance-cover-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga inspects a two-flat building while holding a rotary phone.",
+  },
+  "what-is-a-good-cap-rate-for-rental-property": {
+    img: "guide-what-is-a-good-cap-rate-for-rental-property-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands beside a row of colorful small tiled houses while examining a vintage CRT computer on a stone pedestal with a brass key.",
+  },
+  "what-is-a-property-management-agreement": {
+    img: "guide-what-is-a-property-management-agreement-v1",
+    alt: "A pop engraving under a lilac sky: a Roman man in an orange toga stands before a two-flat building holding a brass key with small tiled houses behind him.",
+  },
+  "what-to-do-when-rent-is-late": {
+    img: "guide-what-to-do-when-rent-is-late-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga stands beside a brass letterbox outside small tiled houses.",
   },
 };
 

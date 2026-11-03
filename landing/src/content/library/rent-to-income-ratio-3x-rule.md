@@ -3,10 +3,10 @@ title: "The 3x Rent Rule: How to Use a Rent-to-Income Ratio — Citata.ai"
 description: "The 3x rule asks for gross monthly income of 3 times the rent. It is a custom, not a law. How to do the math, count co-applicants and treat voucher holders."
 headline: "The 3x Rent Rule and the Rent-to-Income Ratio"
 dek: "How to do the math, where the custom comes from, and where the law limits it."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "The 3x rule asks that an applicant's gross monthly income be at least 3 times the monthly rent, so rent takes about 33% of income. It is a common screening custom, not a federal law. It sits close to the 30% line that HUD uses for cost burden. Apply it the same way to every applicant, and where source of income is protected, apply it only to the share of rent the tenant pays."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 1

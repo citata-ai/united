@@ -3,10 +3,10 @@ title: "Realtor Referral Program for Property Managers: A How-To — Citata.ai"
 description: "Agents refer owners to managers who send sales back. How to set up the promise, the fee, the license rules in Texas, Florida and California, and the follow-up."
 headline: "Build a Realtor Referral Program That Lasts"
 dek: "Agents send owners to the manager who sends them buyers and sellers back."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "Real estate agents refer owners to a property manager who protects the agent's client and sends sales business back. Put that promise in writing, pay any referral fee only in the way your state allows, and keep in touch on a fixed schedule. In Texas, Florida and California, the law limits fees to licensed people, and agents must get paid through their broker."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "how-to"
 priority: 1

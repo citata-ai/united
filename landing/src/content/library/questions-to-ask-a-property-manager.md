@@ -3,10 +3,10 @@ title: "Questions to Ask a Property Manager Before You Sign: 30 Items — Citata
 description: "30 interview questions for a property manager on screening, repairs, hidden fees, vacancy and how to end the contract, with the answer to listen for on each."
 headline: "Questions to Ask a Property Manager Before You Sign"
 dek: "Thirty questions in five groups, with the answer that should make you lean in or walk out."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "Ask a property manager how it screens tenants and what its written criteria are, how it handles repairs and at what dollar amount it must call you, and for a full written fee schedule. Ask its average days to lease and renewal rate for homes like yours, and how you can end the agreement, with the notice period and any fee. Get the answers that involve money or terms in writing before you sign."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "checklist"
 priority: 1
