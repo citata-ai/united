@@ -484,6 +484,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-appfolio-minimum-units-and-pricing-v1",
     alt: "A pop engraving under a cyan sky: A Roman property manager in an orange toga checks a ledger beside a row of fifty small tiled houses, holding a rotary phone on a marble pedestal.",
   },
+  "landlord-laws-2027": {
+    img: "guide-landlord-laws-2027-v1",
+    alt: "A pop engraving under a lilac sky: a herald with a trumpet pins a blank scroll to a city gate while a landlord in an orange toga reads a notice; a brass clock sits on a column and a road leads to tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
