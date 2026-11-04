@@ -468,6 +468,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-ai-tools-for-property-managers-v1",
     alt: "A pop engraving under a coral sky: a Roman property manager wearing a bright orange toga stands beside small tiled houses while holding a rotary phone.",
   },
+  "where-to-list-a-rental-property": {
+    img: "guide-where-to-list-a-rental-property-v1",
+    alt: "A pop engraving under a lilac sky: A Roman property manager in an orange toga holds a vintage rotary phone while inspecting a row of small tiled houses.",
+  },
+  "ada-website-compliance-property-management": {
+    img: "guide-ada-website-compliance-property-management-v1",
+    alt: "A pop engraving under a coral sky: a property manager in an orange toga stands before a row of small tiled houses and a two-flat building while examining a bulky CRT computer resting on a stone ledge.",
+  },
+  "ai-visibility-tools-property-management": {
+    img: "guide-ai-visibility-tools-property-management-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands before small tiled houses, holding a rotary phone as he makes scheduled inquiries to check which properties are named and cited.",
+  },
+  "appfolio-minimum-units-and-pricing": {
+    img: "guide-appfolio-minimum-units-and-pricing-v1",
+    alt: "A pop engraving under a cyan sky: A Roman property manager in an orange toga checks a ledger beside a row of fifty small tiled houses, holding a rotary phone on a marble pedestal.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

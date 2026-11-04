@@ -3,10 +3,10 @@ title: "Self-Manage or Hire a Property Manager? A Real Comparison — Citata.ai"
 description: "Compare self-managing a rental with hiring a manager on cost, hours, tasks and distance. See 2026 fee data, a task split table and the break-even test."
 headline: "Self-Manage or Hire a Property Manager"
 dek: "Cost, hours, tasks and distance side by side, with a break-even you can compute."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-04"
+updated: "2026-11-04"
 answer: "Self-manage if you live close, have weekday time and are ready to learn your state's landlord rules. Hire a manager if you live more than about an hour away, have little spare time or own several doors. A manager costs an average 8.49% of rent per month plus a leasing fee near 70% of one month's rent (iPropertyManagement, 2026). Divide that yearly cost by the hours you would spend to see your break-even rate."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "comparison"
 priority: 1

@@ -3,10 +3,10 @@ title: "Selling a Former Home You Rented Out: The Section 121 Exclusion — Cita
 description: "You can still exclude up to $250,000 of gain ($500,000 joint) on a former home you rented if you lived there 2 of the last 5 years. See the 3-year window."
 headline: "Selling a Former Home You Rented Out"
 dek: "The 2-of-5-year test, why owners talk about 3 years, and the depreciation you still pay tax on."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-04"
+updated: "2026-11-04"
 answer: "Yes, often. IRS Publication 523 lets you exclude up to $250,000 of gain, or $500,000 for most married couples filing jointly, if you owned and lived in the home as your main home for at least 24 months of the 5 years before the sale. That leaves up to 3 years after you move out to rent it and still pass. Rental time after you move out is not nonqualified use, but you cannot exclude the gain equal to depreciation after May 6, 1997."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1
