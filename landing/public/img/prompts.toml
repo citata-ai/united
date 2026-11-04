@@ -866,3 +866,9 @@ file = "img/guide-appfolio-minimum-units-and-pricing-v1-*.webp"
 prompt = "Use the image /tmp/img-appfolio-minimum-units-and-pricing/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga checks a ledger beside a row of fifty small tiled houses, holding a rotary phone on a marble pedestal."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-04"
+
+[[image]]
+file = "img/guide-landlord-laws-2027-v1-*.webp"
+prompt = "Use the image /tmp/img-landlord-laws-2027/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga stands at a tall stone city gate at dawn and reads a long blank parchment scroll pinned to the gate by a Roman herald with a brass trumpet; an old brass mantel clock with a blank face sits on a column beside the gate; behind the gate, a road leads to small tiled houses and a two-flat. The sky is one flat lilac field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-flash generate_image via omp; Real-ESRGAN x4"
+date = "2026-11-04"

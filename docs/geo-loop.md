@@ -62,6 +62,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-10-31 | Refresh /guides/how-owners-choose-a-property-manager-with-ai (H07-E1, B027): PM Trends Harris Poll AI numbers, Buildium 2026 hiring data, false "no public survey" claim removed | live (found 2026-11-02) |
 | 2026-11-02 | Research /research/ai-property-manager-index-2026 update 1 (H03-E1, B026): re-run 50 cities x 3 engines; 58% of names came back, 3 of 150 same lists, Expertise.com still top source (93 -> 87); second CSV | 2026-11-02 |
 | 2026-11-03 | Refresh /guides/geo-agencies-for-property-management (H07-E1, B025): who AI answers name on 4 agency prompts, 2026-10-19 vs 2026-11-02 (24 answers each); 7 price pages re-read; FirstIndex terms and Goodjuju notice updated | 2026-11-03 |
+| 2026-11-04 | Guide /guides/landlord-laws-2027 (H07-E2, B028): 2027 state table, WA and OR 10% caps, IL HB 3564 fee rules, VA HB 678 90-day notice; 8 sources read 2026-11-04; cover style N lilac | 2026-11-04 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 

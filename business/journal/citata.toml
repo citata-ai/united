@@ -316,3 +316,11 @@ kind = "site"
 title = "Refresh GEO agency guide with measured AI answers (B025, H07)"
 ref = "landing/src/pages/guides/geo-agencies-for-property-management.md"
 result = "Staged. New section: who ChatGPT, Claude and Gemini name on 4 agency prompts (24 answers, 2026-10-19 vs 2026-11-02). Prices re-read on 7 sites; FirstIndex and Goodjuju terms fixed."
+
+[[entry]]
+date = "2026-11-04"
+side = "internal"
+kind = "site"
+title = "New guide: landlord laws that start in 2027 (B028, H07)"
+ref = "landing/src/content/library/landlord-laws-2027.md"
+result = "Live on citata.ai. 4-state table (WA, OR, IL, VA) with the law per row, 6 FAQ, cover style N. Fixed a wrong backlog claim: Virginia HB 678 changes rent notice, not the deposit cap."
