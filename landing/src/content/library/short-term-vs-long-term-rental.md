@@ -3,10 +3,10 @@ title: "Short-Term vs Long-Term Rental: Which Earns More After Costs? — Citata
 description: "Compare an Airbnb-style short-term rental with a long-term lease on income, fees, cleaning, time, local rules and tax, with a worked example for one home."
 headline: "Short-Term vs Long-Term Rental: Which Earns More"
 dek: "Gross income favors short stays. Costs, hours, local rules and tax often close the gap."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-04"
+updated: "2026-11-04"
 answer: "A short-term rental can earn more gross income than a long-term lease, but it costs more to run: platform fees, cleaning, supplies, furniture, utilities and far more hours. Airbnb says most hosts on its host-only fee pay 15.5% of the booking. Local rules can block short stays: New York City requires hosts to register under Local Law 18. Compare both options on net income per month and hours per month, not on nightly rate."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "comparison"
 priority: 1
