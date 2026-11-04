@@ -3,10 +3,10 @@ title: "How Property Managers Should Reply to a Bad Review — Citata.ai"
 description: "Reply to a bad review in 4 short parts, keep tenant data private, take the issue offline and know which reviews Google removes. Templates, rules and a checklist."
 headline: "How to Reply to a Bad Review as a Property Manager"
 dek: "Your reply is for the next owner who reads it, not only for the reviewer."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "Reply within a few days in 4 short parts: thank the person, own what you got wrong, state one fact or fix without private details, and give a direct phone or email to take it offline. Never confirm that the reviewer is a tenant, never mention rent, a balance or an eviction, and never threaten. Flag the review only if it breaks Google policy. A calm reply shows the next owner how you handle problems."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "how-to"
 priority: 1

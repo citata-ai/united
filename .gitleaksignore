@@ -1,3 +1,4 @@
 # Public by design: Ahrefs site-verification token and Web Analytics data-key in page HTML.
 1e2cea73316f04d30bc838b105309a3d76d6ac46:landing/src/layouts/Base.astro:generic-api-key:82
 16ec56b7a82f6ccb2462cd15f34e7d803528526e:landing/src/layouts/Base.astro:generic-api-key:171
+16a6a0c2c61e24a8d47d8a444648cf6fa8304fd5:landing/src/layouts/Base.astro:generic-api-key:171

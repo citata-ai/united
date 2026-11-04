@@ -3,10 +3,10 @@ title: "Free Rental Analysis as a Lead Magnet for Property Managers — Citata.a
 description: "A free rental analysis brings owner leads when it gives a real rent range fast and a person follows up. How many leads to expect, instant vs manual, and data."
 headline: "How a Free Rental Analysis Brings Owner Leads"
 dek: "No public benchmark exists for lead counts. Here is how to estimate yours."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-03"
+updated: "2026-11-03"
 answer: "A free rental analysis brings owner leads because it answers the first question an owner has: what rent can my home get? It works best as an instant range on the page, then a checked report from a person within one business day. No public study gives a lead count for these tools, so estimate yours from page visits and your form rate. Base the rent on your own recent leases, local listings and HUD Fair Market Rents."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 1
