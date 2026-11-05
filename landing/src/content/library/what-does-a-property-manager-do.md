@@ -3,10 +3,10 @@ title: "What Does a Property Manager Do for an Owner? — Citata.ai"
 description: "A property manager finds and screens tenants, collects rent, runs repairs, holds deposits and sends monthly statements and a 1099. See the full task list."
 headline: "What a Property Manager Does for an Owner"
 dek: "The tasks in full-service management, month by month, and the ones a manager leaves to you."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-05"
+updated: "2026-11-05"
 answer: "A full-service property manager runs the rental day to day for the owner. The manager markets the home, screens tenants, signs leases, collects rent, holds deposits, handles repairs and emergencies, and follows landlord-tenant law. Each month you get a statement, and each year a Form 1099-MISC for rents. In many states, such as Florida and Texas, a person who manages rentals for others for pay needs a real estate license."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1
