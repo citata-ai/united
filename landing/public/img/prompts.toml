@@ -862,8 +862,26 @@ model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-04"
 
 [[image]]
-file = "img/guide-appfolio-minimum-units-and-pricing-v1-*.webp"
-prompt = "Use the image /tmp/img-appfolio-minimum-units-and-pricing/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga checks a ledger beside a row of fifty small tiled houses, holding a rotary phone on a marble pedestal."
+file = "img/guide-appfolio-vs-yardi-breeze-v1-*.webp"
+prompt = "Use the image /tmp/img-appfolio-vs-yardi-breeze/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in a bright orange toga stands before a row of small tiled houses while examining a rotary phone. The classic Roman estate scene reflects careful portfolio oversight."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-04"
+
+[[image]]
+file = "img/guide-arizona-eviction-process-v1-*.webp"
+prompt = "Use the image /tmp/img-arizona-eviction-process/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands beside a row of small tiled houses next to a two-flat while examining a rotary phone on a stone pillar."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-04"
+
+[[image]]
+file = "img/guide-arizona-security-deposit-law-v1-*.webp"
+prompt = "Use the image /tmp/img-arizona-security-deposit-law/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before small tiled houses, holding a rotary phone. In the background, classical two-flat buildings line the sunny street."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-04"
+
+[[image]]
+file = "img/guide-best-property-management-software-single-family-v1-*.webp"
+prompt = "Use the image /tmp/img-best-property-management-software-single-family/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman man in an orange toga stands beside small tiled houses while holding a rotary phone. Rows of uniform residential properties stretch across the background."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-04"
 

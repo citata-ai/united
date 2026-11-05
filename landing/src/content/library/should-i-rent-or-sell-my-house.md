@@ -3,10 +3,10 @@ title: "Should I Rent or Sell My House? A Side-by-Side Comparison — Citata.ai"
 description: "Compare selling your house with renting it out: sale costs, monthly cash flow, the home sale tax exclusion window, and a worked 3-year example in dollars."
 headline: "Should I Rent or Sell My House"
 dek: "Put both options in one table: cash now, cash each month, and tax at the end."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-05"
+updated: "2026-11-05"
 answer: "Rent if the house makes positive cash flow after vacancy, repairs, reserves and management, and you can handle a landlord's time and risk. Sell if the cash flow is negative, you need the equity now, or you want to keep the home sale tax exclusion. IRS Publication 523 lets you exclude up to $250,000 of gain ($500,000 for most joint filers) only if you lived there 2 of the 5 years before the sale, so renting more than about 3 years can cost you the exclusion."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "comparison"
 priority: 1

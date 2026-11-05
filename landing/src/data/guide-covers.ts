@@ -480,9 +480,21 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-ai-visibility-tools-property-management-v1",
     alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands before small tiled houses, holding a rotary phone as he makes scheduled inquiries to check which properties are named and cited.",
   },
-  "appfolio-minimum-units-and-pricing": {
-    img: "guide-appfolio-minimum-units-and-pricing-v1",
-    alt: "A pop engraving under a cyan sky: A Roman property manager in an orange toga checks a ledger beside a row of fifty small tiled houses, holding a rotary phone on a marble pedestal.",
+  "appfolio-vs-yardi-breeze": {
+    img: "guide-appfolio-vs-yardi-breeze-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in a bright orange toga stands before small tiled houses while examining a rotary phone.",
+  },
+  "arizona-eviction-process": {
+    img: "guide-arizona-eviction-process-v1",
+    alt: "A pop engraving under a coral sky: A man in an orange toga stands beside a row of small tiled houses next to a two-flat while examining a rotary phone on a stone pillar.",
+  },
+  "arizona-security-deposit-law": {
+    img: "guide-arizona-security-deposit-law-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before small tiled houses, holding a rotary phone with classical two-flat buildings in the background.",
+  },
+  "best-property-management-software-single-family": {
+    img: "guide-best-property-management-software-single-family-v1",
+    alt: "A pop engraving under a cyan sky: a Roman man in an orange toga stands beside small tiled houses while holding a rotary phone.",
   },
   "landlord-laws-2027": {
     img: "guide-landlord-laws-2027-v1",

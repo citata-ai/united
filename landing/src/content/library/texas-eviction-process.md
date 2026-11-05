@@ -3,10 +3,10 @@ title: "Texas Eviction Process 2026: Steps and Timeline — Citata.ai"
 description: "A Texas eviction starts with a 3-day written notice, goes to the justice court, and ends with a writ of possession. Steps, deadlines and SB 38 changes for 2026."
 headline: "Texas Eviction Process: Notice, Court and Timeline"
 dek: "SB 38 rewrote Chapter 24 for cases filed on or after January 1, 2026."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-05"
+updated: "2026-11-05"
 answer: "In Texas, you give the tenant at least 3 days' written notice, unless the lease sets a different period. Then you file a sworn petition in the justice court of the precinct where the unit is. The court holds the trial 10 to 21 days after you file. If you win, the writ of possession can issue on the 6th day after judgment, and a constable or sheriff removes the tenant. An uncontested case often takes about 3 to 4 weeks."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1
