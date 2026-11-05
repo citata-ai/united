@@ -500,6 +500,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-landlord-laws-2027-v1",
     alt: "A pop engraving under a lilac sky: a herald with a trumpet pins a blank scroll to a city gate while a landlord in an orange toga reads a notice; a brass clock sits on a column and a road leads to tiled houses.",
   },
+  "appfolio-minimum-units-and-pricing": {
+    img: "guide-appfolio-minimum-units-and-pricing-v1",
+    alt: "A pop engraving under a lilac sky: A Roman property manager in an orange toga stands before a row of small tiled houses while holding a heavy brass key.",
+  },
+  "best-property-management-software-small-landlords": {
+    img: "guide-best-property-management-software-small-landlords-v1",
+    alt: "A pop engraving under a coral sky: A Roman property manager in an orange toga inspects a rotary phone outside a two-flat residential building.",
+  },
+  "best-property-management-software-startups": {
+    img: "guide-best-property-management-software-startups-v1",
+    alt: "A pop engraving under a yellow sky: A property manager wearing an orange toga inspects a row of small tiled houses while examining a heavy brass key next to a rotary phone.",
+  },
+  "best-tenant-screening-services": {
+    img: "guide-best-tenant-screening-services-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga stands before a two-flat building, examining a rotary phone on a stone pillar.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
