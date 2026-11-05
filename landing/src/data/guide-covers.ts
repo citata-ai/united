@@ -500,6 +500,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-best-property-management-software-single-family-v1",
     alt: "A pop engraving under a cyan sky: a Roman man in an orange toga stands beside small tiled houses while holding a rotary phone.",
   },
+  "landlord-laws-2027": {
+    img: "guide-landlord-laws-2027-v1",
+    alt: "A pop engraving under a lilac sky: a herald with a trumpet pins a blank scroll to a city gate while a landlord in an orange toga reads a notice; a brass clock sits on a column and a road leads to tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
