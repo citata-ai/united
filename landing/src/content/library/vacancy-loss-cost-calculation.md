@@ -3,10 +3,10 @@ title: "How Much Does a Vacant Month Cost You? Vacancy Loss Math — Citata.ai"
 description: "A vacant month costs the lost rent plus carrying costs you still pay. See the vacancy loss formula, the 2026 national vacancy rate, and when a lower rent wins."
 headline: "How Much Does a Vacant Month Cost You"
 dek: "Lost rent is half of it. Add carrying costs, then test a lower rent against a longer wait."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-05"
+updated: "2026-11-05"
 answer: "A vacant month costs you the full month's rent plus the carrying costs you still pay: mortgage, taxes, insurance, utilities, HOA and lawn care. On a $2,000 house, one empty month often means $2,000 of lost rent while $1,700 or more of bills keep coming. The US rental vacancy rate was 7.3% in the second quarter of 2026 (Census Bureau). A slightly lower rent that fills the home 2 or more weeks sooner often earns more over the year."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 1

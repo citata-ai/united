@@ -3,10 +3,10 @@ title: "Texas Security Deposit Law: 30-Day Return Rule — Citata.ai"
 description: "Texas sets no cap on a security deposit. You must refund it or itemize deductions within 30 days after the tenant leaves. Bad faith costs $100 plus 3 times."
 headline: "Texas Security Deposit Law for Landlords"
 dek: "Property Code 92.101 to 92.111 set the 30-day refund rule and the penalties."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-05"
+updated: "2026-11-05"
 answer: "Texas law sets no maximum security deposit. You must refund the deposit, minus lawful deductions with a written itemized list, on or before the 30th day after the tenant surrenders the unit (Property Code 92.103 and 92.104). You may not deduct for normal wear and tear. A landlord who keeps a deposit in bad faith owes $100, 3 times the amount wrongly kept, and the tenant's attorney's fees (92.109)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 1
