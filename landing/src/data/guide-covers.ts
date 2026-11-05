@@ -516,6 +516,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-best-tenant-screening-services-v1",
     alt: "A pop engraving under a cyan sky: a man in an orange toga stands before a two-flat building, examining a rotary phone on a stone pillar.",
   },
+  "best-trust-accounting-software-property-management": {
+    img: "guide-best-trust-accounting-software-property-management-v1",
+    alt: "A pop engraving under a lilac sky: A Roman property manager wearing an orange toga stands beside a small terracotta two-flat holding a vintage rotary phone while inspecting property records against a backdrop of small tiled houses.",
+  },
+  "bing-places-property-management": {
+    img: "guide-bing-places-property-management-v1",
+    alt: "A pop engraving under a coral sky: A Roman property manager in an orange toga stands before a two-flat of small tiled houses while holding a rotary phone.",
+  },
+  "blog-topics-property-management-owners": {
+    img: "guide-blog-topics-property-management-owners-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga stands by a two-flat building holding a rotary phone, with small tiled houses in the background.",
+  },
+  "buildium-alternatives": {
+    img: "guide-buildium-alternatives-v1",
+    alt: "A pop engraving under a cyan sky: a property manager wearing an orange toga stands beside a classic two-flat building while examining a rotary phone.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
