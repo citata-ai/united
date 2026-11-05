@@ -480,10 +480,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-ai-visibility-tools-property-management-v1",
     alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga stands before small tiled houses, holding a rotary phone as he makes scheduled inquiries to check which properties are named and cited.",
   },
-  "appfolio-minimum-units-and-pricing": {
-    img: "guide-appfolio-minimum-units-and-pricing-v1",
-    alt: "A pop engraving under a cyan sky: A Roman property manager in an orange toga checks a ledger beside a row of fifty small tiled houses, holding a rotary phone on a marble pedestal.",
-  },
   "appfolio-vs-yardi-breeze": {
     img: "guide-appfolio-vs-yardi-breeze-v1",
     alt: "A pop engraving under a lilac sky: a property manager in a bright orange toga stands before small tiled houses while examining a rotary phone.",
