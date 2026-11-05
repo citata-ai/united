@@ -3,10 +3,10 @@ title: "How Much Is One Owner Lead Worth to a Property Manager? — Citata.ai"
 description: "One owner lead is worth the owner's lifetime fees times your close rate. Example: $8,139 per owner at 20% close is $1,628 per lead. The math, step by step."
 headline: "How Much One Owner Lead Is Worth"
 dek: "A 4-step formula: fees per door, doors per owner, years kept, close rate."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-05"
+updated: "2026-11-05"
 answer: "An owner lead is worth the lifetime value of one owner times your close rate. With $1,696 of yearly fees per door, 1.2 doors per owner and 4 years of tenure, one owner is worth about $8,139. At a 20% close rate, one lead is worth about $1,628. To keep a 4:1 return, you can pay up to about $407 per lead."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "data"
 priority: 1
