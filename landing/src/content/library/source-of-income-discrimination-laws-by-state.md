@@ -3,10 +3,10 @@ title: "Source-of-Income Laws by State: Voucher Protections — Citata.ai"
 description: "19 states plus DC and Guam protect voucher holders from source-of-income bias, per PRRAC's March 2026 list. State-by-state table, local laws and penalties."
 headline: "Source-of-Income Laws by State, 2026"
 dek: "19 states, DC and Guam protect voucher holders. Seven states block local laws."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-05"
+updated: "2026-11-05"
 answer: "As of PRRAC's March 2026 update, 19 states plus the District of Columbia and Guam have source-of-income laws that protect renters who use Housing Choice Vouchers. Delaware's voucher protection starts in 2026 and Guam's on October 1, 2026. Many cities and counties have their own laws, while seven states bar local ones. There is no general federal ban, but owners of tax credit and HOME units cannot refuse voucher holders."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "data"
 priority: 1
