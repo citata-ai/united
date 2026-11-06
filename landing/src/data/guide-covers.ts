@@ -532,6 +532,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-buildium-alternatives-v1",
     alt: "A pop engraving under a cyan sky: a property manager wearing an orange toga stands beside a classic two-flat building while examining a rotary phone.",
   },
+  "buildium-pricing-plans": {
+    img: "guide-buildium-pricing-plans-v1",
+    alt: "A pop engraving under a lilac sky: A property manager in an orange toga stands outside a row of small tiled houses, holding a rotary phone while reviewing ascending tiers of bronze coins.",
+  },
+  "buildium-vs-doorloop": {
+    img: "guide-buildium-vs-doorloop-v1",
+    alt: "A pop engraving under a coral sky: A man in an orange toga stands before a terracotta two-flat townhouse holding a vintage rotary phone while inspecting rental ledgers, with small tiled houses lining the cobblestone street.",
+  },
+  "buy-new-house-rent-current-home": {
+    img: "guide-buy-new-house-rent-current-home-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga stands between a two-flat townhouse and small tiled houses, holding a rotary phone while managing property keys.",
+  },
+  "california-rent-increase-and-notice-rules": {
+    img: "guide-california-rent-increase-and-notice-rules-v1",
+    alt: "A pop engraving under a cyan sky: A property manager in an orange toga stands before a row of small tiled houses, checking a metallic letterbox while holding a brass key.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

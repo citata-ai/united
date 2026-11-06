@@ -938,3 +938,27 @@ file = "img/guide-buildium-alternatives-v1-*.webp"
 prompt = "Use the image /tmp/img-buildium-alternatives/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager wearing an orange toga stands beside a classic two-flat building while examining a rotary phone. Rows of small tiled houses stretch across the background under a cyan sky."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-05"
+
+[[image]]
+file = "img/guide-buildium-pricing-plans-v1-*.webp"
+prompt = "Use the image /tmp/img-buildium-pricing-plans/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands outside a row of small tiled houses, holding a rotary phone while reviewing ascending tiers of bronze coins."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-06"
+
+[[image]]
+file = "img/guide-buildium-vs-doorloop-v1-*.webp"
+prompt = "Use the image /tmp/img-buildium-vs-doorloop/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands before a terracotta two-flat townhouse holding a vintage rotary phone while inspecting rental ledgers. Small tiled houses line the cobblestone street beneath him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-06"
+
+[[image]]
+file = "img/guide-buy-new-house-rent-current-home-v1-*.webp"
+prompt = "Use the image /tmp/img-buy-new-house-rent-current-home/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands between a two-flat townhouse and small tiled houses, holding a rotary phone while managing property keys."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-06"
+
+[[image]]
+file = "img/guide-california-rent-increase-and-notice-rules-v1-*.webp"
+prompt = "Use the image /tmp/img-california-rent-increase-and-notice-rules/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before a row of small tiled houses, checking a metallic letterbox mounted on the wall. He holds a single brass key in his hand."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-06"
