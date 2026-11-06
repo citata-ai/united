@@ -3,10 +3,10 @@ title: "What to Do When Rent Is Late: A Day-by-Day Landlord Plan — Citata.ai"
 description: "Day 1: a friendly reminder. After the grace period: the late fee. Then the state's pay-or-quit notice, from 3 days in Florida to 14 in Virginia. Then court."
 headline: "What to Do When Rent Is Late: Day by Day"
 dek: "A calm, written schedule from the first missed day to the attorney, with 4 state notice periods."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "On day 1 or 2, send a friendly written reminder. After your lease's grace period, add the late fee the lease and state law allow. If rent is still unpaid, serve your state's written notice to pay or leave: 3 days excluding weekends and court holidays in Florida, 5 days in Arizona, 10 or 13 days in Oregon, 14 days in Virginia. If the notice period ends without payment, call a local attorney before you file. Never change locks or cut utilities."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 1

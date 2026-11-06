@@ -3,10 +3,10 @@ title: "What Is NOI on a Rental Property? Formula and Example — Citata.ai"
 description: "NOI is rental income minus operating expenses, before the mortgage, capital costs, depreciation and income tax. The formula, a worked example and limits."
 headline: "What Is Net Operating Income (NOI) on a Rental?"
 dek: "One formula, one worked example for a single-family rental, and what NOI leaves out."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "Net operating income (NOI) is the income a rental earns from operations: all rent and other income collected, minus the costs to run the property, such as property tax, insurance, repairs, utilities and the management fee. NOI does not subtract the mortgage payment, capital improvements, depreciation or income tax. Owners, buyers and lenders use NOI to compare properties no matter how each one is financed."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "glossary"
 priority: 1
