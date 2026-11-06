@@ -3,10 +3,10 @@ title: "Why Owners Leave Their Property Manager: The Top Reasons — Citata.ai"
 description: "Poor communication is the top reason owners switch managers (57%, Buildium 2026), then service declines and weak transparency. Data, early signs and fixes."
 headline: "Why Owners Fire Their Property Manager: The Top Reasons"
 dek: "Two owner surveys and one maintenance dataset point to the same three causes you can control."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "Owners leave mostly for reasons you can control. In Buildium's 2026 Rental Owners' Survey of 300 owners, poor communication was the top reason to switch (57%), then declines in service quality (54%) and lack of transparency (34%). Property Meld data adds maintenance cost: owners whose repair spend went over 12% of collected rent were far more likely to leave. Owner sales are the main reason you cannot control."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "guide"
 priority: 1

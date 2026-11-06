@@ -548,6 +548,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-california-rent-increase-and-notice-rules-v1",
     alt: "A pop engraving under a cyan sky: A property manager in an orange toga stands before a row of small tiled houses, checking a metallic letterbox while holding a brass key.",
   },
+  "cap-rate-vs-cash-on-cash-return": {
+    img: "guide-cap-rate-vs-cash-on-cash-return-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga stands before a pastel two-flat townhouse holding a vintage rotary phone, with rows of small tiled houses in the background.",
+  },
+  "capital-gains-tax-selling-rental-property": {
+    img: "guide-capital-gains-tax-selling-rental-property-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holding a rotary phone while inspecting small tiled houses and two-flat stone buildings.",
+  },
+  "cash-for-keys-agreement": {
+    img: "guide-cash-for-keys-agreement-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before small tiled houses, holding a brass key.",
+  },
+  "chatgpt-vs-google-owner-leads": {
+    img: "guide-chatgpt-vs-google-owner-leads-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands outside a two-flat building, holding an antique rotary phone in one hand while examining a heavy brass key.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

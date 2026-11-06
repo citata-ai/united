@@ -3,10 +3,10 @@ title: "Where to List a Rental Property: Sites and Fees Compared — Citata.ai"
 description: "Zillow Rental Manager and Apartments.com list for free, with paid upgrades. Craigslist charges $5 in Boston, Chicago and NYC. Syndication tools post to 19+ sites."
 headline: "Where to List a Rental: Sites and Fees Compared"
 dek: "Each site's own page, read on 2026-10-19, in one table, plus a syndication plan for small portfolios."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "For a single-family home or a small building, start with one free listing on Zillow Rental Manager and one on Apartments.com: each pushes your ad to a network of sites. Add a syndication tool such as Avail or TurboTenant if you want one form that posts to 19 to 25+ sites. Craigslist is free in most of the US but charges $5 for apartment rentals in Boston, Chicago and NYC. Track where each qualified lead came from, and drop the sites that send none."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "comparison"
 priority: 1
