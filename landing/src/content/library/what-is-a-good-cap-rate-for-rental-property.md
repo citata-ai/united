@@ -3,10 +3,10 @@ title: "What Is a Good Cap Rate for a Rental House? — Citata.ai"
 description: "Cap rate is NOI divided by value. A good cap rate beats safer options: in October 2026 the 10-year Treasury paid 5.09% and 30-year mortgages cost 7.40%."
 headline: "What Is a Good Cap Rate for a Rental?"
 dek: "The formula, why the right number moves by market, and a check you can run today."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "Cap rate is a rental's net operating income for one year divided by its value. No single cap rate is good everywhere, because risk, growth and interest rates differ by market. A useful test is to compare your cap rate with safer returns: on 2026-10-16 the 10-year Treasury yield was 5.09%, and on 2026-10-15 the average 30-year mortgage rate was 7.40%. A cap rate below your loan rate means debt lowers your cash return."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 1

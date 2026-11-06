@@ -3,10 +3,10 @@ title: "What Is a Property Management Agreement? Clauses to Check — Citata.ai"
 description: "A property management agreement is the contract that hires a manager. It sets duties, fees, term, cancellation, money handling and liability for both sides."
 headline: "What Is a Property Management Agreement?"
 dek: "The contract behind every managed rental, with 10 clauses an owner should check first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "A property management agreement is the written contract in which an owner hires a manager to run a rental. It lists the manager's duties and authority, every fee, the start and end dates, how either side can cancel, how rent and deposits are handled, and who carries which risk. Some states set minimum contents: Arizona's ARS 32-2173, for example, requires the term, cancellation terms, compensation, reports, reserves and trust interest to be in writing."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "glossary"
 priority: 1
