@@ -3,10 +3,10 @@ title: "Where ChatGPT Gets Local Business Data for Property Managers — Citata.
 description: "ChatGPT pulls local facts from search partners like Microsoft, licensed data like Yelp, listings and your website. What each study found and why they disagree."
 headline: "Where ChatGPT Gets Local Business Data"
 dek: "OpenAI names its search partners, Yelp licenses its reviews, and the studies disagree on the rest."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "ChatGPT gets local business facts from 3 places: third-party search providers (OpenAI's help page links Microsoft), content partners such as Yelp, and the web pages its search finds, such as directories and company sites. In a Yext study of 6.8 million citations, listings were 48.7% of OpenAI citations. In our 50-city property management test, the ChatGPT engine linked a listing site in 48 of 50 answers and a company site in 15. So keep your website, Yelp, Bing Places and the big directories in sync."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "guide"
 priority: 1
