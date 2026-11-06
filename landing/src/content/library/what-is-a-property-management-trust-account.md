@@ -3,10 +3,10 @@ title: "What Is a Property Management Trust Account? — Citata.ai"
 description: "A trust account holds rent, deposits and owner funds that belong to others. What goes in, the no-commingling rule, three-way reconciliation and state rules."
 headline: "What Is a Property Management Trust Account?"
 dek: "The bank account that holds other people's money, and the monthly check that keeps it honest."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-06"
+updated: "2026-11-06"
 answer: "A property management trust account is a bank account in which a manager holds money that belongs to others: tenant rent, security deposits and owner funds. The manager may not mix it with company money. Each month the manager reconciles the bank balance, the trust journal and the ledger of each owner and tenant, so every dollar has a named owner. State real estate rules set the details, such as California's 3-business-day deposit rule and monthly reconciliation."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "glossary"
 priority: 1
