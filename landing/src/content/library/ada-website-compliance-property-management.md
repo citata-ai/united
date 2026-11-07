@@ -3,10 +3,10 @@ title: "ADA Website Compliance for Property Management Companies — Citata.ai"
 description: "The ADA covers businesses open to the public, and DOJ points to WCAG as a guide. Plaintiffs filed 3,117 federal web suits in 2025. A checklist to test a site."
 headline: "ADA Website Rules for Property Management Companies"
 dek: "Federal web access suits rose 27% in 2025. Most fixes take hours, not months."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "The Department of Justice says the ADA applies to the goods and services of businesses open to the public, including what they offer on the web. DOJ has no detailed technical rule for private businesses, but it names WCAG as helpful guidance. Plaintiffs filed 3,117 website accessibility suits in federal court in 2025 (Seyfarth). Test your site against WCAG 2.2 Level AA, fix the common errors by hand, and do not rely on an overlay widget."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "checklist"
 priority: 2

@@ -3,10 +3,10 @@ title: "What Share of Property Management Leads Come From AI? — Citata.ai"
 description: "AI tools gave 3.4% of owner leads in a 35-company study (fall 2026), up from 2.1% in spring. Google gave about 15 times more. Data, limits and what to expect."
 headline: "What Share of Owner Leads Come From AI Search"
 dek: "One 35-company study puts AI at 3.4% of owner leads, and the share grew in 6 months."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "AI tools such as ChatGPT gave 3.4% of owner leads in the largest public property management study we found (Goodjuju Marketing, 35 companies, July to October 2026). That is up from 2.1% in the spring window. Google Search and Maps plus direct visits still gave 86.2% of owner leads. GA4 also misses part of the AI leads, so the true AI share is likely higher than the report shows."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "data"
 priority: 2

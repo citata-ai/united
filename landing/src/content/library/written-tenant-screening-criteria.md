@@ -3,10 +3,10 @@ title: "How to Write Tenant Screening Criteria: A Checklist — Citata.ai"
 description: "Written tenant screening criteria list your income, credit, rental history and criminal history rules before anyone applies. Here is what to include and why."
 headline: "How to Write Tenant Screening Criteria"
 dek: "One page of rules, given to every applicant, protects you and the renter."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "Written tenant screening criteria are one page that lists the rules you use to approve or deny an applicant: income, credit, rental history, criminal history and complete information. Give the same page to every applicant before they pay a fee. Texas requires a printed notice of your criteria with each application, and many cities and states limit what the criminal history rules may say. Clear written rules make your decisions consistent and easier to defend."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 1
