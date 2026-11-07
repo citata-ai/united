@@ -974,3 +974,27 @@ file = "img/guide-cash-for-keys-agreement-v1-*.webp"
 prompt = "Use the image /tmp/img-cash-for-keys-agreement/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands before small tiled houses, holding a brass key."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-06"
+
+[[image]]
+file = "img/guide-buildium-pricing-plans-v1-*.webp"
+prompt = "Use the image /tmp/img-buildium-pricing-plans/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager wearing an orange toga stands outside a row of small tiled houses while holding a rotary phone."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"
+
+[[image]]
+file = "img/guide-chatgpt-vs-google-owner-leads-v1-*.webp"
+prompt = "Use the image /tmp/img-chatgpt-vs-google-owner-leads/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands beside a two-flat house with small tiled roofs, holding a key while examining a vintage rotary phone on a stone pillar and a large stone letterbox filled with incoming lead scrolls."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"
+
+[[image]]
+file = "img/guide-chicago-landlord-rules-rlto-security-deposit-interest-v1-*.webp"
+prompt = "Use the image /tmp/img-chicago-landlord-rules-rlto-security-deposit-interest/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands outside a Chicago two-flat building, holding a heavy brass key."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"
+
+[[image]]
+file = "img/guide-colorado-eviction-process-v1-*.webp"
+prompt = "Use the image /tmp/img-colorado-eviction-process/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga stands outside a row of small tiled houses, holding a brass letterbox. He waits patiently by the two-flat building for the ten-day notice to expire."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"

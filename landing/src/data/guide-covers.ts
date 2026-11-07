@@ -556,6 +556,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-cash-for-keys-agreement-v1",
     alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before small tiled houses, holding a brass key.",
   },
+  "buildium-pricing-plans": {
+    img: "guide-buildium-pricing-plans-v1",
+    alt: "A pop engraving under a yellow sky: a property manager wearing an orange toga stands outside a row of small tiled houses while holding a rotary phone.",
+  },
+  "chatgpt-vs-google-owner-leads": {
+    img: "guide-chatgpt-vs-google-owner-leads-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands beside a two-flat house with small tiled roofs, holding a key while examining a vintage rotary phone on a stone pillar and a large stone letterbox filled with incoming lead scrolls.",
+  },
+  "chicago-landlord-rules-rlto-security-deposit-interest": {
+    img: "guide-chicago-landlord-rules-rlto-security-deposit-interest-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands outside a Chicago two-flat building, holding a heavy brass key.",
+  },
+  "colorado-eviction-process": {
+    img: "guide-colorado-eviction-process-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga holding a letterbox stands before small tiled houses and a two-flat building.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
