@@ -532,10 +532,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-buildium-alternatives-v1",
     alt: "A pop engraving under a cyan sky: a property manager wearing an orange toga stands beside a classic two-flat building while examining a rotary phone.",
   },
-  "buildium-pricing-plans": {
-    img: "guide-buildium-pricing-plans-v1",
-    alt: "A pop engraving under a lilac sky: A property manager in an orange toga stands outside a row of small tiled houses, holding a rotary phone while reviewing ascending tiers of bronze coins.",
-  },
   "buildium-vs-doorloop": {
     img: "guide-buildium-vs-doorloop-v1",
     alt: "A pop engraving under a coral sky: A man in an orange toga stands before a terracotta two-flat townhouse holding a vintage rotary phone while inspecting rental ledgers, with small tiled houses lining the cobblestone street.",
@@ -559,10 +555,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "cash-for-keys-agreement": {
     img: "guide-cash-for-keys-agreement-v1",
     alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands before small tiled houses, holding a brass key.",
-  },
-  "chatgpt-vs-google-owner-leads": {
-    img: "guide-chatgpt-vs-google-owner-leads-v1",
-    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands outside a two-flat building, holding an antique rotary phone in one hand while examining a heavy brass key.",
   },
 };
 
