@@ -588,6 +588,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-cost-of-a-vacant-month-vs-lower-rent-v1",
     alt: "A pop engraving under a coral sky: a landlord in an orange toga stands beside a red-brick two-flat holding a heavy brass key next to a rotary phone on a stone pedestal, flanked by small tiled houses.",
   },
+  "cost-of-tenant-turnover": {
+    img: "guide-cost-of-tenant-turnover-v1",
+    alt: "A pop engraving under a yellow sky: a property manager in an orange toga stands outside a two-flat building, holding a rotary phone while inspecting small tiled houses.",
+  },
+  "cost-to-acquire-a-door": {
+    img: "guide-cost-to-acquire-a-door-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga stands before a mint-colored two-flat holding a large brass key and copper coins, with a vintage CRT computer on a stone pillar and small tiled houses along the horizon.",
+  },
+  "criminal-background-checks-for-tenants": {
+    img: "guide-criminal-background-checks-for-tenants-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga stands beside small tiled houses while holding a rotary phone near a brass key.",
+  },
+  "depreciation-for-deposit-deductions": {
+    img: "guide-depreciation-for-deposit-deductions-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga stands before a mint two-flat and small tiled houses, using a CRT computer to calculate deposit deductions beside a brass balance scale.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

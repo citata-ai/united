@@ -1022,3 +1022,27 @@ file = "img/guide-cost-of-a-vacant-month-vs-lower-rent-v1-*.webp"
 prompt = "Use the image /tmp/img-cost-of-a-vacant-month-vs-lower-rent/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A landlord in an orange toga stands beside a red-brick two-flat holding a heavy brass key next to a rotary phone on a stone pedestal. Small tiled houses line the sunny street."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-07"
+
+[[image]]
+file = "img/guide-cost-of-tenant-turnover-v1-*.webp"
+prompt = "Use the image /tmp/img-cost-of-tenant-turnover/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in an orange toga stands outside a two-flat building, holding a rotary phone while inspecting small tiled houses."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"
+
+[[image]]
+file = "img/guide-cost-to-acquire-a-door-v1-*.webp"
+prompt = "Use the image /tmp/img-cost-to-acquire-a-door/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A landlord in an orange toga stands before a mint-colored two-flat holding a large brass key and copper coins. A vintage CRT computer rests on a stone pillar beside him, with small tiled houses along the low horizon."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"
+
+[[image]]
+file = "img/guide-criminal-background-checks-for-tenants-v1-*.webp"
+prompt = "Use the image /tmp/img-criminal-background-checks-for-tenants/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga stands before a row of small tiled houses, carefully reviewing records while holding a rotary phone. A polished brass key rests on a stone column beside him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"
+
+[[image]]
+file = "img/guide-depreciation-for-deposit-deductions-v1-*.webp"
+prompt = "Use the image /tmp/img-depreciation-for-deposit-deductions/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga stands before a mint two-flat and small tiled houses, using a CRT computer on a stone pedestal to calculate the prorated value of a worn carpet. Beside him, a brass balance scale weighs a coin purse against a fragment of fabric."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-07"
