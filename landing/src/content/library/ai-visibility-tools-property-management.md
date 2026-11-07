@@ -3,10 +3,10 @@ title: "AI Visibility Tools for Property Managers: Prices Compared — Citata.ai
 description: "OtterlyAI, Peec AI, Profound, Ahrefs Brand Radar, Semrush and Trakkr compared on engines, prompts and price per prompt, read 2026-10-19, for a 100-door company."
 headline: "AI Visibility Tools for Property Managers Compared"
 dek: "Six tools, their own pricing pages, and the cost per tracked prompt for a small company."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "AI visibility tools ask ChatGPT, Gemini, Perplexity and Google AI a list of prompts on a schedule and record who the answers name and cite. Public entry prices on 2026-10-19: OtterlyAI from $29 a month for 15 prompts, Semrush AI Visibility Toolkit at $99 a month, Trakkr from £79 a month for 50 prompts, and Ahrefs Brand Radar custom prompts from $50 a month. A 100-door company with one city can start by hand for free, then pay for a tool when it tracks more than about 20 prompts."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "comparison"
 priority: 2
