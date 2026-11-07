@@ -572,6 +572,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-colorado-eviction-process-v1",
     alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga holding a letterbox stands before small tiled houses and a two-flat building.",
   },
+  "colorado-security-deposit-law": {
+    img: "guide-colorado-security-deposit-law-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga stands on the porch of a colorful two-flat handing a brass key back to a tenant, with a CRT computer resting on a stone table beside them.",
+  },
+  "common-lease-addenda-explained": {
+    img: "guide-common-lease-addenda-explained-v1",
+    alt: "A pop engraving under a cyan sky: A property manager in an orange toga stands beside a brass letterbox in front of a coral-and-mint two-flat house, holding a brass key and an extra folded parchment addendum scroll.",
+  },
+  "convert-primary-residence-to-rental-checklist": {
+    img: "guide-convert-primary-residence-to-rental-checklist-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands beside a row of small tiled houses, holding a large brass key while checking a vintage rotary phone on a stone pedestal.",
+  },
+  "cost-of-a-vacant-month-vs-lower-rent": {
+    img: "guide-cost-of-a-vacant-month-vs-lower-rent-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga stands beside a red-brick two-flat holding a heavy brass key next to a rotary phone on a stone pedestal, flanked by small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
