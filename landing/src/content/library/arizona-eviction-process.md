@@ -3,10 +3,10 @@ title: "Arizona Eviction Process: 5-Day Notice, Court Steps, Timeline — Citata
 description: "Arizona eviction starts with a 5-day notice for unpaid rent or a 10-day notice for a lease breach. Then a special detainer case, trial in 3 to 6 days, and a writ."
 headline: "Arizona Eviction Process for Landlords"
 dek: "Each notice, court step and minimum wait, read from the Arizona statutes on 2026-10-19."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "In Arizona, a landlord gives a 5-day written notice for unpaid rent, or a 10-day notice to cure for most lease breaches (A.R.S. 33-1368). If the tenant does not pay or cure, the landlord files a special detainer case in justice court or superior court. The trial is set 3 to 6 days after the summons (A.R.S. 33-1377), and the writ of restitution cannot issue until 5 calendar days after judgment (A.R.S. 12-1178). By the statute minimums, a rent case can go from notice to writ in about 2 to 3 weeks."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

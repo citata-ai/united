@@ -3,10 +3,10 @@ title: "AppFolio vs Yardi Breeze: Prices and Portfolio Fit — Citata.ai"
 description: "Compare AppFolio and Yardi Breeze on current vendor prices, minimums, support and commercial work. Test the same tasks before choosing a system for your team."
 headline: "AppFolio vs Yardi Breeze for Rental Managers"
 dek: "Yardi publishes its residential spending floor; AppFolio needs a quote for that condition."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "Yardi Breeze publishes a residential rate and monthly minimum, while AppFolio Core combines a starting rate with an unpublished spending minimum. Both deserve a demo for a midsize rental firm. Choose through portfolio-specific accounting, support and learning tests."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2
