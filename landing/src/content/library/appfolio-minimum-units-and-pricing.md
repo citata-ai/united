@@ -3,10 +3,10 @@ title: "AppFolio Minimum Units and Pricing: What Is Public — Citata.ai"
 description: "AppFolio Core lists a 50-unit minimum and starts at $1.49 per unit monthly. Its spend minimum is not public. See plan terms, extras and quote questions."
 headline: "AppFolio Minimum Units and Pricing Explained"
 dek: "The unit minimum is public, but the minimum bill still needs a written quote."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "AppFolio Core states a 50-unit minimum and starts at $1.49 per unit per month. A minimum spend also applies, but AppFolio does not publish the amount. Plus and Max have unit and spend minimums whose values need a quote."
-visible: false
+visible: true
 cluster: "software"
 kind: "data"
 priority: 2

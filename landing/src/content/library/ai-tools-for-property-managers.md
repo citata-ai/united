@@ -3,10 +3,10 @@ title: "AI Tools for Property Managers: Price and Tests — Citata.ai"
 description: "Compare AI tools for property managers by leasing, maintenance, accounting and price. Start with a narrow task, keep approvals and measure the full work saved."
 headline: "AI Tools for Property Managers That Fit"
 dek: "Start with a task you can inspect, then measure completed work and corrections."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-07"
+updated: "2026-11-07"
 answer: "Property managers can use built-in AI for messages, invoices, reports and maintenance intake, or add leasing tools such as LetHub. AppFolio, Rentvine and Entrata describe different built-in AI tasks. Start with a narrow trial, keep approval on sensitive actions and measure the result after corrections."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2
