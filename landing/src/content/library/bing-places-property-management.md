@@ -3,10 +3,10 @@ title: "Bing Places Setup for Property Managers: Claim, Import, Verify — Citat
 description: "OpenAI names Microsoft as a ChatGPT search provider. How a property manager claims Bing Places, imports from Google Business Profile, verifies and checks facts."
 headline: "Bing Places Setup for Property Managers"
 dek: "A free listing that feeds Bing, and Microsoft is one of ChatGPT's search providers."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-08"
+updated: "2026-11-08"
 answer: "Claim your listing at bing.com/forbusiness, or import it from your verified Google Business Profile. Use the same name, address, phone and category as on Google and your website, then verify. OpenAI's help page lists Microsoft among the search providers that ChatGPT search can query. No public data shows that a Bing Places profile moves you up in ChatGPT answers, so treat it as a fact source, not a ranking lever."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "how-to"
 priority: 2

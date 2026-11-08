@@ -3,10 +3,10 @@ title: "Blog Topics That Bring Rental Owner Leads to PM Websites — Citata.ai"
 description: "Write about cost, local rules, rent, risk and the switch from self-managing. 24 owner topics by funnel stage, a way to find real owner questions, and a test."
 headline: "Blog Topics That Bring Rental Owner Leads"
 dek: "24 owner topics by funnel stage, and a 3-question test that filters out tenant traffic."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-08"
+updated: "2026-11-08"
 answer: "Blog topics bring owner leads when they answer a question only an owner asks: what a manager costs, what a local rule requires, what rent a home can get, and when to stop self-managing. Local law topics work when each rule cites the statute or city page. Find the questions in your Search Console queries, your sales calls and AI answers, and put a rental analysis or fee page link on every post."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 2
