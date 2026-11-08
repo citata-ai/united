@@ -604,6 +604,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-depreciation-recapture-rental-property-v1",
     alt: "A pop engraving under a coral sky: A property manager in an orange toga stands before a row of small tiled houses, holding a brass key and examining a vintage CRT computer resting on a stone wall.",
   },
+  "criminal-background-checks-for-tenants": {
+    img: "guide-criminal-background-checks-for-tenants-v1",
+    alt: "A pop engraving under a yellow sky: A property manager in an orange toga stands beside small tiled houses, checking a vintage CRT computer resting on a stone pedestal while holding a brass key.",
+  },
+  "doors-per-employee-benchmark": {
+    img: "guide-doors-per-employee-benchmark-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga stands before a row of small tiled houses, holding a rotary phone and a brass key while overseeing dozens of doors across charming two-flat buildings.",
+  },
+  "down-payment-investment-property": {
+    img: "guide-down-payment-investment-property-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands before a two-flat building, holding a brass key while checking a vintage rotary phone on a stone pillar.",
+  },
+  "due-diligence-checklist-buying-pm-company": {
+    img: "guide-due-diligence-checklist-buying-pm-company-v1",
+    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspects a brass key beside a rotary phone on a marble pedestal before a row of small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
