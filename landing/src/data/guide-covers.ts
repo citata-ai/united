@@ -620,6 +620,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-due-diligence-checklist-buying-pm-company-v1",
     alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspects a brass key beside a rotary phone on a marble pedestal before a row of small tiled houses.",
   },
+  "emergency-vs-routine-maintenance": {
+    img: "guide-emergency-vs-routine-maintenance-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga stands outside a mint-colored two-flat holding a large brass key, while a vintage rotary phone and small tiled houses sit nearby under the bright sun.",
+  },
+  "fcra-adverse-action-notice-for-landlords": {
+    img: "guide-fcra-adverse-action-notice-for-landlords-v1",
+    alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga slips a sealed adverse action letter into a modern roadside letterbox beside a tiled two-flat villa.",
+  },
+  "first-time-landlord-mistakes": {
+    img: "guide-first-time-landlord-mistakes-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga stands outside a two-flat building holding a vintage rotary phone while small tiled houses line the street behind him.",
+  },
+  "first-time-landlord-setup": {
+    img: "guide-first-time-landlord-setup-v1",
+    alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga holds a large key beside small tiled houses and a modern letterbox.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
