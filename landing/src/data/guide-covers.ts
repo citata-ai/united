@@ -576,10 +576,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-colorado-security-deposit-law-v1",
     alt: "A pop engraving under a yellow sky: a landlord in an orange toga stands on the porch of a colorful two-flat handing a brass key back to a tenant, with a CRT computer resting on a stone table beside them.",
   },
-  "common-lease-addenda-explained": {
-    img: "guide-common-lease-addenda-explained-v1",
-    alt: "A pop engraving under a cyan sky: A property manager in an orange toga stands beside a brass letterbox in front of a coral-and-mint two-flat house, holding a brass key and an extra folded parchment addendum scroll.",
-  },
   "convert-primary-residence-to-rental-checklist": {
     img: "guide-convert-primary-residence-to-rental-checklist-v1",
     alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands beside a row of small tiled houses, holding a large brass key while checking a vintage rotary phone on a stone pedestal.",
@@ -595,14 +591,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "cost-to-acquire-a-door": {
     img: "guide-cost-to-acquire-a-door-v1",
     alt: "A pop engraving under a cyan sky: a landlord in an orange toga stands before a mint-colored two-flat holding a large brass key and copper coins, with a vintage CRT computer on a stone pillar and small tiled houses along the horizon.",
-  },
-  "criminal-background-checks-for-tenants": {
-    img: "guide-criminal-background-checks-for-tenants-v1",
-    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga stands beside small tiled houses while holding a rotary phone near a brass key.",
-  },
-  "depreciation-for-deposit-deductions": {
-    img: "guide-depreciation-for-deposit-deductions-v1",
-    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga stands before a mint two-flat and small tiled houses, using a CRT computer to calculate deposit deductions beside a brass balance scale.",
   },
 };
 
