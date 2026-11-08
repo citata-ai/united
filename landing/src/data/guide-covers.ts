@@ -592,6 +592,18 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-cost-to-acquire-a-door-v1",
     alt: "A pop engraving under a cyan sky: a landlord in an orange toga stands before a mint-colored two-flat holding a large brass key and copper coins, with a vintage CRT computer on a stone pillar and small tiled houses along the horizon.",
   },
+  "common-lease-addenda-explained": {
+    img: "guide-common-lease-addenda-explained-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga acting as property manager stands outside small tiled houses while holding a rotary phone.",
+  },
+  "depreciation-for-deposit-deductions": {
+    img: "guide-depreciation-for-deposit-deductions-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a rotary phone while inspecting a weathered two-flat building surrounded by small tiled houses.",
+  },
+  "depreciation-recapture-rental-property": {
+    img: "guide-depreciation-recapture-rental-property-v1",
+    alt: "A pop engraving under a coral sky: A property manager in an orange toga stands before a row of small tiled houses, holding a brass key and examining a vintage CRT computer resting on a stone wall.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

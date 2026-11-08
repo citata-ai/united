@@ -3,10 +3,10 @@ title: "Best Trust Accounting Software: Tests for Managers — Citata.ai"
 description: "Choose trust accounting software through reconciliation, owner-ledger and control tests. Compare vendor prices without assuming software guarantees an audit."
 headline: "Best Trust Accounting Software for Property Managers"
 dek: "Ask the accountant to prove the money and records agree before choosing a platform."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-08"
+updated: "2026-11-08"
 answer: "Choose trust accounting software by testing reconciliation, client detail, payment controls and report exports. Rentvine explicitly describes native three-way reconciliation; AppFolio and Buildium deserve accounting-specific demos. No vendor feature list establishes that your firm will pass a state audit."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2

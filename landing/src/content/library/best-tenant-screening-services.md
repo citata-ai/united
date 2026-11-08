@@ -3,10 +3,10 @@ title: "Best Tenant Screening Services: Prices and Reports — Citata.ai"
 description: "Compare tenant screening services using vendor prices, credit bureaus, report scope and payment options. Check coverage and integration before ordering reports."
 headline: "Best Tenant Screening Services for Rental Managers"
 dek: "Compare the actual report package and payer before choosing a familiar screening brand."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-08"
+updated: "2026-11-08"
 answer: "SmartMove, RentSpree and screening inside your property system serve different workflows. Compare report scope, bureau, price, payer and integration rather than choosing on a score alone. Review local requirements and provider coverage before ordering or using reports."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2
