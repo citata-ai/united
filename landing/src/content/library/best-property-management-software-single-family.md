@@ -3,10 +3,10 @@ title: "Best Single-Family Property Software: Cost and Fit — Citata.ai"
 description: "Compare single-family property software on vendor prices, scattered-site work, owner accounting and leasing connections. Test a complete workflow before buying."
 headline: "Best Software for Single-Family Rental Management"
 dek: "Scattered homes need clear address records, vendor work and owner reporting in the same process."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-08"
+updated: "2026-11-08"
 answer: "Propertyware, Rentvine and AppFolio are useful candidates for a single-family management portfolio. Propertyware explicitly positions its platform for single-family firms; the others describe residential and single-family support. Choose by accounting, scattered-site maintenance and verified leasing connections, then compare complete quotes."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2

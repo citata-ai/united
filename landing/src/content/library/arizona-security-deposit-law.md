@@ -3,10 +3,10 @@ title: "Arizona Security Deposit Law: Limits, 14-Day Return, Deductions — Cita
 description: "Arizona caps a security deposit at 1.5 months' rent and gives landlords 14 business days to return it with an itemized list. Deductions and penalties, A.R.S. 33-1321."
 headline: "Arizona Security Deposit Law for Landlords"
 dek: "The cap, the 14-day clock and the double-damages rule, read from A.R.S. 33-1321 on 2026-10-19."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-08"
+updated: "2026-11-08"
 answer: "Arizona law caps a security deposit, prepaid rent included, at 1.5 months' rent (A.R.S. 33-1321(A)). After the tenancy ends, the tenant gives back possession and asks for the deposit, the landlord has 14 days, not counting weekends and legal holidays, to mail an itemized list of deductions and any refund. The landlord may deduct unpaid rent, lease charges and damage from the tenant's failure to meet A.R.S. 33-1341. A landlord who does not comply can owe the tenant the money due plus twice the amount wrongly withheld."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

@@ -3,10 +3,10 @@ title: "Best Software for Small Landlords: Free and Paid — Citata.ai"
 description: "Compare small-landlord software using current free plans, paid prices, payment fees and accounting tests. Choose for your rental work rather than feature count."
 headline: "Best Property Software for Small Landlords"
 dek: "Start with rent, leases and clear records, then pay for features that remove real work."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-08"
+updated: "2026-11-08"
 answer: "Avail and TurboTenant are useful starting points for small landlords because both publish free software plans. Their paid options and renter fees differ. Test rent collection, lease records, mobile work and accountant exports before choosing; professional owner accounting may need a different product."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2
