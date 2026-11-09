@@ -656,6 +656,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-fy2027-fair-market-rent-winners-and-losers-v1",
     alt: "A pop engraving under a yellow sky: A man in an orange toga acting as property manager stands outside small tiled houses while inspecting a vintage rotary phone.",
   },
+  "geo-vs-seo-property-management": {
+    img: "guide-geo-vs-seo-property-management-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga stands before a row of small tiled houses, examining a bulky CRT computer resting on a stone pedestal.",
+  },
+  "get-first-100-doors": {
+    img: "guide-get-first-100-doors-v1",
+    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands beside a row of small tiled houses, taking calls on a rotary phone.",
+  },
+  "google-ads-cost-per-lead-property-management": {
+    img: "guide-google-ads-cost-per-lead-property-management-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holds a rotary phone while standing before small tiled houses.",
+  },
+  "google-ads-negative-keywords-property-management": {
+    img: "guide-google-ads-negative-keywords-property-management-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga stands before rows of two-flat houses next to an old CRT computer resting on a marble column.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
