@@ -640,6 +640,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-switching-software-costs-v1",
     alt: "A pop engraving under a yellow sky: a landlord in an orange toga pushes a handcart of scroll boxes and an old computer across a stone bridge, from a cracked temple to a new one.",
   },
+  "fix-wrong-info-ai-property-management": {
+    img: "guide-fix-wrong-info-ai-property-management-v1",
+    alt: "A pop engraving under a cyan sky: A Roman property manager in an orange toga stands before a two-flat building of small tiled houses while examining a rotary phone.",
+  },
+  "florida-rent-increase-and-notice-rules": {
+    img: "guide-florida-rent-increase-and-notice-rules-v1",
+    alt: "A pop engraving under a lilac sky: a man in a bright orange toga stands before small tiled houses while holding a rotary phone.",
+  },
+  "free-property-management-software": {
+    img: "guide-free-property-management-software-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga stands beside a two-flat building holding a heavy brass key while an old CRT computer rests on a marble pedestal.",
+  },
+  "fy2027-fair-market-rent-winners-and-losers": {
+    img: "guide-fy2027-fair-market-rent-winners-and-losers-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga acting as property manager stands outside small tiled houses while inspecting a vintage rotary phone.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
