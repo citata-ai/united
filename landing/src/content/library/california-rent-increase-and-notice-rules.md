@@ -3,10 +3,10 @@ title: "California Rent Increase Rules: Cap and Notice — Citata.ai"
 description: "California caps most rent increases at 5% plus CPI, max 10%, per 12 months. Give 30 days' notice for 10% or less, 90 days above 10%, and 30 or 60 days to end."
 headline: "California Rent Increase and Notice Rules"
 dek: "Civil Code 1947.12, 827 and 1946.1, read on 2026-10-19, with a worked cap calculation."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-09"
+updated: "2026-11-09"
 answer: "California Civil Code 1947.12 caps rent increases for most covered units at 5% plus the local CPI change, or 10%, whichever is lower, over any 12 months. Civil Code 827 requires 30 days' written notice for an increase of 10% or less and 90 days for more than 10%. To end a month-to-month tenancy, an owner gives 60 days' notice, or 30 days if the tenant has lived there less than 1 year (Civ. Code 1946.1)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2
