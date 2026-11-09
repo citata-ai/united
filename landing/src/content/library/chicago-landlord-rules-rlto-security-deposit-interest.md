@@ -4,7 +4,7 @@ description: "The Chicago RLTO sets deposit, interest, notice and lease rules fo
 headline: "Chicago RLTO: The Rules Every Rental Owner Must Follow"
 dek: "Chapter 5-12 of the Chicago code, read section by section, with the 2026 deposit interest rate."
 published: "2026-10-19"
-updated: "2026-10-19"
+updated: "2026-11-09"
 answer: "Most Chicago rentals fall under the Residential Landlord and Tenant Ordinance (RLTO), Chapter 5-12 of the Municipal Code. It tells you how to hold a security deposit, how to pay yearly interest on it, how much notice to give before you end or raise a lease, and which lease terms are void. If you break a deposit rule, the tenant can win 2 times the deposit plus interest. Owner-occupied buildings with 6 units or fewer are exempt from most of it, but not from the notice rules."
 visible: false
 cluster: "local-market"
@@ -20,7 +20,7 @@ faq:
   - q: "What is the penalty for a deposit mistake in Chicago?"
     a: "If a landlord breaks any rule in Section 5-12-080(a) to (e), the tenant gets damages equal to 2 times the security deposit plus interest. A small interest error can be fixed within 14 days of the tenant's written notice by paying the correct interest plus $50."
   - q: "How much notice must a Chicago landlord give before a lease ends?"
-    a: "Section 5-12-130(j) requires 30 days for a tenancy under 6 months, 60 days for 6 months to 3 years, and 120 days for more than 3 years. The same notice applies to a rent increase."
+    a: "Section 5-12-130(j) requires 30 days for a tenancy under 6 months, 60 days for 6 months to 3 years, and 120 days for more than 3 years. The same notice applies to a rent increase. The Jackson Park pilot area has longer notice periods under Section 5-12-135."
   - q: "What is the maximum late fee in Chicago?"
     a: "Section 5-12-140(h) caps it at $10 a month for the first $500 of rent plus 5% of the rent above $500. On $1,780 rent, the cap is $74."
 sources:
@@ -36,6 +36,8 @@ sources:
     url: "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639147"
   - label: "Chicago Municipal Code 5-12-130: Landlord remedies (notice in 5-12-130(j))"
     url: "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639236"
+  - label: "Chicago Municipal Code 5-12-135: Jackson Park Expanded Fair Notice Pilot Program (checked 2026-11-09)"
+    url: "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639236#JD_5-12-135"
   - label: "Chicago Municipal Code 5-12-140: Rental agreement"
     url: "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639257"
   - label: "Chicago Municipal Code 5-12-170: Summary of ordinance attached to rental agreement"
@@ -110,9 +112,11 @@ The Chicago Fair Notice rule requires written notice before you end a periodic t
 | 6 months to 3 years | 60 days |
 | More than 3 years | 120 days |
 
-What happens if your notice is late or defective: the tenant may stay up to 60 days after the date you give proper written notice. The lease terms during that time stay the same as in the month before the notice. So a late rent-increase notice can delay the increase by up to 2 months.
+A late or defective notice can extend the tenant's right to stay. Section 5-12-130(j) allows up to 60 days after written notice for tenancies of 3 years or less. For tenancies over 3 years, it allows up to 120 days. The prior month's lease terms apply during that period, subject to the section's rule for rent waivers and abatements.
 
-What to do: put each lease end date in a calendar 130 days ahead. Then send the notice at 120, 60 or 30 days, based on how long the tenant has lived there.
+The Jackson Park pilot area has longer notice periods under Section 5-12-135. Check the address against the boundaries in subsection (c). For periodic leases covered by the pilot, subsection (e) requires 90, 120 or 180 days, based on the tenancy's length. Check the exact subsection before you send a notice. These pilot rules replace the general notice rules within the listed area during the pilot.
+
+What to do: check the address for pilot rules first. Then record the required notice date and send written notice before that date.
 
 This rule does not apply when you end the lease for nonpayment or another breach under 5-12-130(a), (b) or (d).
 

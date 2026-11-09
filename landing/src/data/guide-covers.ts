@@ -596,10 +596,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-common-lease-addenda-explained-v1",
     alt: "A pop engraving under a cyan sky: a man in an orange toga acting as property manager stands outside small tiled houses while holding a rotary phone.",
   },
-  "depreciation-for-deposit-deductions": {
-    img: "guide-depreciation-for-deposit-deductions-v1",
-    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a rotary phone while inspecting a weathered two-flat building surrounded by small tiled houses.",
-  },
   "depreciation-recapture-rental-property": {
     img: "guide-depreciation-recapture-rental-property-v1",
     alt: "A pop engraving under a coral sky: A property manager in an orange toga stands before a row of small tiled houses, holding a brass key and examining a vintage CRT computer resting on a stone wall.",
@@ -616,9 +612,29 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-down-payment-investment-property-v1",
     alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands before a two-flat building, holding a brass key while checking a vintage rotary phone on a stone pillar.",
   },
+  "emergency-vs-routine-maintenance": {
+    img: "guide-emergency-vs-routine-maintenance-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga stands outside a mint-colored two-flat holding a large brass key, while a vintage rotary phone and small tiled houses sit nearby under the bright sun.",
+  },
+  "first-time-landlord-mistakes": {
+    img: "guide-first-time-landlord-mistakes-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga stands outside a two-flat building holding a vintage rotary phone while small tiled houses line the street behind him.",
+  },
+  "depreciation-for-deposit-deductions": {
+    img: "guide-depreciation-for-deposit-deductions-v1",
+    alt: "A pop engraving under a yellow sky: A man in an orange toga acting as property manager inspects a weathered two-flat while holding a rotary phone, with small tiled houses in the background.",
+  },
   "due-diligence-checklist-buying-pm-company": {
     img: "guide-due-diligence-checklist-buying-pm-company-v1",
-    alt: "A pop engraving under a coral sky: a Roman property manager in an orange toga inspects a brass key beside a rotary phone on a marble pedestal before a row of small tiled houses.",
+    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga holds a rotary phone while inspecting a two-flat building.",
+  },
+  "fcra-adverse-action-notice-for-landlords": {
+    img: "guide-fcra-adverse-action-notice-for-landlords-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands before a two-flat building with small tiled houses, holding a rotary phone while checking a letterbox.",
+  },
+  "first-time-landlord-setup": {
+    img: "guide-first-time-landlord-setup-v1",
+    alt: "A pop engraving under a coral sky: A property manager in a bright orange toga stands beside a row of small tiled houses, examining a rotary phone resting on a stone pedestal.",
   },
 };
 

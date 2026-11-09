@@ -3,10 +3,10 @@ title: "Buildium Pricing Plans: Base Rates and Added Fees — Citata.ai"
 description: "Buildium lists Essential from $62, Growth from $192 and Premium from $400 monthly. Compare included work, payment fees and the costs that still need a quote."
 headline: "Buildium Pricing Plans and Extra Costs"
 dek: "Compare the subscription, payment activity and required onboarding before you choose a plan."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-09"
+updated: "2026-11-09"
 answer: "Buildium lists Essential from $62, Growth from $192 and Premium from $400 per month. These are starting prices, not confirmed bills for every unit count. Compare transaction fees, required onboarding and plan access before choosing a tier."
-visible: false
+visible: true
 cluster: "software"
 kind: "data"
 priority: 2

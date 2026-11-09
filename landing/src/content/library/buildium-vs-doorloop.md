@@ -3,10 +3,10 @@ title: "Buildium vs DoorLoop: Current Plans, Cost and Fit — Citata.ai"
 description: "Compare Buildium and DoorLoop using current vendor plans, accounting, fees and support terms. Test a full workflow before you choose software for a small team."
 headline: "Buildium vs DoorLoop for Property Managers"
 dek: "DoorLoop has new plan names, so compare current offers rather than old review tables."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-09"
+updated: "2026-11-09"
 answer: "Buildium and DoorLoop both offer broad rental management tools, but their current plans price work differently. Buildium publishes Essential, Growth and Premium starting tiers. DoorLoop now lists One, Connect and Multiply; choose by total cost and a live workflow test."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2
