@@ -3,10 +3,10 @@ title: "Cash for Keys: When It Beats Eviction and How to Do It — Citata.ai"
 description: "Cash for keys pays a tenant to leave by a set date. It is often cheaper than eviction. How to size the offer, what goes in the agreement, and local rules."
 headline: "Cash for Keys: When and How to Offer It"
 dek: "Pay the tenant to leave by a date, in writing, and pay only at handover."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-09"
+updated: "2026-11-09"
 answer: "Cash for keys is a written deal where you pay a tenant to move out by a set date and leave the unit empty and clean. It is cheaper than eviction when the offer is less than the rent you would lose and the legal costs you would pay while a case runs. Pay the money only at key handover, after a walk-through. Some cities regulate these deals: San Francisco and Los Angeles require disclosures, filing and a cancel period."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2
