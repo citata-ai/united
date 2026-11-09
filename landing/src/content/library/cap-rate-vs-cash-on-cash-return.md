@@ -3,10 +3,10 @@ title: "Cap Rate vs Cash-on-Cash Return Explained — Citata.ai"
 description: "Cap rate measures a rental's income against its value, before debt. Cash-on-cash measures cash flow against the cash you put in. See both on one house."
 headline: "Cap Rate vs Cash-on-Cash Return"
 dek: "One number rates the property, the other rates your deal. A worked example shows both."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-09"
+updated: "2026-11-09"
 answer: "Cap rate is net operating income divided by property value, and it ignores the loan. Cash-on-cash return is yearly cash flow after the mortgage divided by the cash you invested. A loan changes cash-on-cash but not cap rate. At the 7.40% average 30-year mortgage rate on 2026-10-15, a 30-year loan costs about 8.3% of its balance each year, so a cap rate below that lowers your cash-on-cash return."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "comparison"
 priority: 2

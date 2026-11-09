@@ -3,10 +3,10 @@ title: "Buy a New House and Rent Out the Old One — Citata.ai"
 description: "You can keep your old home as a rental when you buy a new one. Fannie Mae counts 75% of market rent minus the old payment and may need 6 months of reserves."
 headline: "Buy a New Home and Rent Out the Old One"
 dek: "How lenders count future rent, what cash you need, and how to test cash flow first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-09"
+updated: "2026-11-09"
 answer: "Yes, many owners keep their current home as a rental when they buy a new one. Under the Fannie Mae Selling Guide, a lender takes 75% of the old home's market rent and subtracts its full monthly payment. A lease does not count for a departing residence. If you have less than 12 months of property management experience, the lender must also see 6 months of the old home's payment in reserves."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 2
