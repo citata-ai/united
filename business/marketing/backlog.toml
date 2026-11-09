@@ -204,7 +204,7 @@ kind = "comparison"
 title = "Switching property management software: onboarding fee, timeline and data export by vendor (AppFolio, Buildium, Rentvine, DoorLoop, Rent Manager, Yardi Breeze)"
 demand = "PMW shipped 3 switching posts in Sep-Oct 2026 (Propertyware, Rent Manager, DoorLoop). Rentvine states 45 days; Yardi Breeze no conversion fee; AppFolio and Buildium publish no fee. No one has the full table."
 score = 7
-status = "idea"
+status = "building"
 note = "Link the library drafts propertyware-alternatives, rent-manager-alternatives, doorloop-alternatives. Mark 'not published' where a vendor gives no number."
 
 [[item]]
