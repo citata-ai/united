@@ -324,3 +324,11 @@ kind = "site"
 title = "New guide: landlord laws that start in 2027 (B028, H07)"
 ref = "landing/src/content/library/landlord-laws-2027.md"
 result = "Live on citata.ai. 4-state table (WA, OR, IL, VA) with the law per row, 6 FAQ, cover style N. Fixed a wrong backlog claim: Virginia HB 678 changes rent notice, not the deposit cap."
+
+[[entry]]
+date = "2026-11-09"
+side = "internal"
+kind = "site"
+title = "New guide: switching property management software, fees and timelines (B022, H06)"
+ref = "landing/src/content/library/property-management-software-switching-costs.md"
+result = "Live on citata.ai. 6-vendor table (onboarding fee, stated timeline, migration scope, data after you leave), 6 FAQ, cover style N. Only Yardi Breeze states no onboarding fee; Rent Manager site returned 503."

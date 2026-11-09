@@ -27,6 +27,7 @@ title = "Rentvine vs AppFolio vs Buildium vs DoorLoop: per-door price table"
 demand = "Multi-vendor comparison; AI fan-out searches each pair."
 score = 7
 status = "idea"
+note = "2026-11-09 tick: the library page /guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop (visible) already covers this. Next tick: refresh that page with new data or set dropped."
 
 [[item]]
 id = "B004"
@@ -164,6 +165,7 @@ title = "How to choose a property manager: owner decision checklist with fee tab
 demand = "Playbook moves 1 and 3: the top page type at all 3 competitors' clients."
 score = 7
 status = "idea"
+note = "2026-11-09 tick: the library page /guides/how-to-choose-a-property-manager (visible) already covers this. Next tick: refresh that page with new data or set dropped."
 
 # --- scout 2026-10-22: evidence in business/marketing/competitors/2026-10-22-scout.md ---
 
@@ -204,8 +206,9 @@ kind = "comparison"
 title = "Switching property management software: onboarding fee, timeline and data export by vendor (AppFolio, Buildium, Rentvine, DoorLoop, Rent Manager, Yardi Breeze)"
 demand = "PMW shipped 3 switching posts in Sep-Oct 2026 (Propertyware, Rent Manager, DoorLoop). Rentvine states 45 days; Yardi Breeze no conversion fee; AppFolio and Buildium publish no fee. No one has the full table."
 score = 7
-status = "building"
+status = "live"
 note = "Link the library drafts propertyware-alternatives, rent-manager-alternatives, doorloop-alternatives. Mark 'not published' where a vendor gives no number."
+result = "2026-11-09 tick: /guides/property-management-software-switching-costs live. 6 vendors: Yardi Breeze states no onboarding fee; Rentvine setup fee by quote, 45 days, 12 months data access; AppFolio 4-6 weeks (FAQ) and 1.6 months G2 average; DoorLoop 3-5 business days, current rent roll only; Buildium onboarding required on Growth and Premium, no fee or timeline shown; Rent Manager site HTTP 503, re-check. Library alternatives drafts not linked (still visible = false)."
 
 [[item]]
 id = "B023"
