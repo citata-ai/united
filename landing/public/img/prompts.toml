@@ -1094,3 +1094,9 @@ file = "img/guide-first-time-landlord-setup-v1-*.webp"
 prompt = "Use the image /tmp/img-first-time-landlord-setup/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A property manager in a bright orange toga stands beside a row of small tiled houses, examining a rotary phone resting on a stone pedestal."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-09"
+
+[[image]]
+file = "img/guide-switching-software-costs-v1-*.webp"
+prompt = "Use the image /tmp/img-switch/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a landlord in an orange toga pushes a wooden handcart loaded with scroll boxes and an old CRT computer across a small stone bridge, from an old crumbling temple on the left to a new bright temple on the right; small tiled houses in the background. The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-flash via omp (generate_image), variant b of 2; Real-ESRGAN x4"
+date = "2026-11-09"

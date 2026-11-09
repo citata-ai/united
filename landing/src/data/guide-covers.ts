@@ -636,6 +636,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-first-time-landlord-setup-v1",
     alt: "A pop engraving under a coral sky: A property manager in a bright orange toga stands beside a row of small tiled houses, examining a rotary phone resting on a stone pedestal.",
   },
+  "property-management-software-switching-costs": {
+    img: "guide-switching-software-costs-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga pushes a handcart of scroll boxes and an old computer across a stone bridge, from a cracked temple to a new one.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
