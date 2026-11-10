@@ -676,6 +676,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-google-ai-mode-property-managers-v1",
     alt: "A pop engraving under a cyan sky: A Roman landlord in an orange toga inspecting small tiled houses with a rotary phone on a stone pillar.",
   },
+  "google-business-profile-ai-search": {
+    img: "guide-google-business-profile-ai-search-v1",
+    alt: "A pop engraving under a lilac sky: a Roman landlord in an orange toga inspects small tiled houses with a brass key and a vintage rotary phone on a stone pedestal.",
+  },
+  "google-business-profile-categories-property-management": {
+    img: "guide-google-business-profile-categories-property-management-v1",
+    alt: "A pop engraving under a coral sky: a Roman man in an orange toga holds a large brass key beside a rotary phone and small tiled houses.",
+  },
+  "google-business-profile-service-area-property-management": {
+    img: "guide-google-business-profile-service-area-property-management-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga strides along a winding path holding a key, journeying toward scattered small tiled houses across a broad territory.",
+  },
+  "google-business-profile-suspended-property-management": {
+    img: "guide-google-business-profile-suspended-property-management-v1",
+    alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga examines a disconnected rotary phone beside small tiled houses and a brass key.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

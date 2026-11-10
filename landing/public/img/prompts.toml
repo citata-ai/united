@@ -1154,3 +1154,27 @@ file = "img/guide-google-ai-mode-property-managers-v1-*.webp"
 prompt = "Use the image /tmp/img-google-ai-mode-property-managers/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman landlord wearing a vibrant orange toga inspects a street of small tiled houses while holding an antique rotary phone. Terracotta rooftops and stone pillars complete the ancient neighborhood."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-10"
+
+[[image]]
+file = "img/guide-google-business-profile-ai-search-v1-*.webp"
+prompt = "Use the image /tmp/img-google-business-profile-ai-search/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager clad in an orange toga inspects a cluster of small tiled houses while holding a heavy brass key in his hand. Beside him sits a vintage rotary phone resting on an ancient stone pedestal."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-10"
+
+[[image]]
+file = "img/guide-google-business-profile-categories-property-management-v1-*.webp"
+prompt = "Use the image /tmp/img-google-business-profile-categories-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman man in a vibrant orange toga stands proudly holding a large brass key before a row of neat, small tiled houses. Beside him rests a vintage rotary phone upon a stone pedestal, embodying his role overseeing the rental properties."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-10"
+
+[[image]]
+file = "img/guide-google-business-profile-service-area-property-management-v1-*.webp"
+prompt = "Use the image /tmp/img-google-business-profile-service-area-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga walks along an open countryside road holding a brass key, visiting a scattered cluster of small tiled houses in the distance rather than sitting in an empty desk office."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-10"
+
+[[image]]
+file = "img/guide-google-business-profile-suspended-property-management-v1-*.webp"
+prompt = "Use the image /tmp/img-google-business-profile-suspended-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga stands perplexed before a cluster of small tiled houses, inspecting a modern rotary phone on a stone pedestal with its handset disconnected and cord dangling. Nearby, a brass key rests on a parchment scroll among miniature two-flat dwellings."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-10"
