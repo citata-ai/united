@@ -3,10 +3,10 @@ title: "Vacancy Cost vs a Lower Rent: The Break-Even Math — Citata.ai"
 description: "One vacant month costs 8.3% of a year's rent. A $100 rent cut on a $2,000 unit pays for itself if it fills the unit about 18 days sooner. Here is the math."
 headline: "Vacancy Cost vs a Lower Rent: The Math"
 dek: "A small price cut often costs less than two empty weeks. Run the numbers first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "One vacant month costs 1/12 of a year's rent, or 8.3%, before utilities and other carrying costs. A rent cut costs the cut times 12 over a one-year lease. Divide that by the daily rent to get the break-even days: a $100 cut on a $2,000 unit pays for itself if it fills the unit about 18 days sooner. If the unit has had few inquiries for two weeks, a small cut is often cheaper than waiting."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 2
