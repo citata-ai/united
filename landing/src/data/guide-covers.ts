@@ -624,10 +624,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-depreciation-for-deposit-deductions-v1",
     alt: "A pop engraving under a yellow sky: A man in an orange toga acting as property manager inspects a weathered two-flat while holding a rotary phone, with small tiled houses in the background.",
   },
-  "due-diligence-checklist-buying-pm-company": {
-    img: "guide-due-diligence-checklist-buying-pm-company-v1",
-    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga holds a rotary phone while inspecting a two-flat building.",
-  },
   "fcra-adverse-action-notice-for-landlords": {
     img: "guide-fcra-adverse-action-notice-for-landlords-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga stands before a two-flat building with small tiled houses, holding a rotary phone while checking a letterbox.",
@@ -652,17 +648,9 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-free-property-management-software-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga stands beside a two-flat building holding a heavy brass key while an old CRT computer rests on a marble pedestal.",
   },
-  "fy2027-fair-market-rent-winners-and-losers": {
-    img: "guide-fy2027-fair-market-rent-winners-and-losers-v1",
-    alt: "A pop engraving under a yellow sky: A man in an orange toga acting as property manager stands outside small tiled houses while inspecting a vintage rotary phone.",
-  },
   "geo-vs-seo-property-management": {
     img: "guide-geo-vs-seo-property-management-v1",
     alt: "A pop engraving under a cyan sky: a man in an orange toga stands before a row of small tiled houses, examining a bulky CRT computer resting on a stone pedestal.",
-  },
-  "get-first-100-doors": {
-    img: "guide-get-first-100-doors-v1",
-    alt: "A pop engraving under a lilac sky: a property manager in an orange toga stands beside a row of small tiled houses, taking calls on a rotary phone.",
   },
   "google-ads-cost-per-lead-property-management": {
     img: "guide-google-ads-cost-per-lead-property-management-v1",
