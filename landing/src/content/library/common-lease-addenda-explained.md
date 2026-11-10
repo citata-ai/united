@@ -3,10 +3,10 @@ title: "Common Lease Addenda Explained: Which Ones You Need — Citata.ai"
 description: "Lease addenda add rules for lead paint, pets, smoking, mold, bed bugs and early termination. One is federal, some are state-required, and some are optional."
 headline: "Common Lease Addenda and When to Use Each"
 dek: "One addendum is federal law, some are state law, and the rest are your choice."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "A lease addendum is a signed page that adds or changes terms in the lease. The one federal addendum most landlords need is the lead-based paint disclosure for housing built before 1978. States add their own: California requires a bed bug notice, Texas a flood disclosure, and Florida a radon notice. Pet, smoke-free, mold and early termination addenda are optional in most places, but they make the rules clear and easier to enforce."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2

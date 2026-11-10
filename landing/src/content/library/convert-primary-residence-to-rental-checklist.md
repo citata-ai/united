@@ -3,10 +3,10 @@ title: "Checklist: Convert Your Home Into a Rental — Citata.ai"
 description: "A step-by-step checklist to turn your home into a rental: the loan, insurance, safety, rent, tax records and the cost basis rule in IRS Publication 527."
 headline: "Checklist to Turn Your Home Into a Rental"
 dek: "Paperwork, repairs, rent and tax records, in the order you need them."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "To turn your home into a rental, first check your mortgage and switch your insurance to a policy for a rented home. Then fix safety items, give required disclosures, and set the rent from 3 or more nearby rentals. From the first day, keep tax records. IRS Publication 527 says the basis for depreciation is the lesser of fair market value or adjusted basis on the date of conversion."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "checklist"
 priority: 2
