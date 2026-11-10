@@ -660,6 +660,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-google-ads-negative-keywords-property-management-v1",
     alt: "A pop engraving under a yellow sky: a man in an orange toga stands before rows of two-flat houses next to an old CRT computer resting on a marble column.",
   },
+  "due-diligence-checklist-buying-pm-company": {
+    img: "guide-due-diligence-checklist-buying-pm-company-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga dials a rotary phone while reviewing rows of small tiled houses.",
+  },
+  "fy2027-fair-market-rent-winners-and-losers": {
+    img: "guide-fy2027-fair-market-rent-winners-and-losers-v1",
+    alt: "A pop engraving under a coral sky: A man in an orange toga stands before a row of small tiled houses, holding a rotary phone amid classical stone architecture.",
+  },
+  "get-first-100-doors": {
+    img: "guide-get-first-100-doors-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga stands before a row of small tiled houses, holding a bright brass key while a vintage rotary phone rests on a stone pedestal beside him.",
+  },
+  "google-ai-mode-property-managers": {
+    img: "guide-google-ai-mode-property-managers-v1",
+    alt: "A pop engraving under a cyan sky: A Roman landlord in an orange toga inspecting small tiled houses with a rotary phone on a stone pillar.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
