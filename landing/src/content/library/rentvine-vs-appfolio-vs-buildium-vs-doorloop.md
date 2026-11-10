@@ -1,11 +1,11 @@
 ---
 title: "Rentvine, AppFolio, Buildium and DoorLoop Compared — Citata.ai"
-description: "Compare Rentvine, AppFolio, Buildium and DoorLoop using current vendor pricing, accounting, AI and owner portals. Confirm minimums and fees before you choose."
+description: "Rentvine, AppFolio, Buildium and DoorLoop prices at 50, 100 and 200 doors, from vendor pages read 2026-11-10. Buildium and DoorLoop changed their prices."
 headline: "Rentvine, AppFolio, Buildium and DoorLoop Compared"
-dek: "Use current vendor pages, then ask each finalist to run the same accounting case."
+dek: "Per-door prices from the vendor pages, read 2026-11-10. Then ask each finalist to run the same accounting case."
 published: "2026-10-25"
-updated: "2026-10-25"
-answer: "Rentvine emphasizes trust accounting and open connections; AppFolio offers plans with different integration access. Buildium publishes starting monthly tiers, while DoorLoop now lists One, Connect and Multiply. Compare the total quote and a live accounting test before naming a winner."
+updated: "2026-11-10"
+answer: "On 2026-11-10, AppFolio Core starts at $1.49 per unit and Rentvine at $1.50 per active unit. DoorLoop One starts at $2.50 per unit, as low as $1.50 above 100 units. Buildium starts at $65, $202 and $420 a month. Every vendor adds minimums or usage fees, so compare a written quote and a live accounting test."
 visible: true
 cluster: "software"
 kind: "comparison"
@@ -13,70 +13,92 @@ priority: 1
 inspired_by: "https://costbench.com/stats/property-management-pricing-2026/"
 faq:
   - q: "Which costs least at 100 doors?"
-    a: "A complete ranking needs written quotes. AppFolio and Rentvine leave important price conditions unresolved; Buildium publishes starting prices."
-  - q: "Does DoorLoop still sell Starter, Pro and Premium?"
-    a: "The current pricing page read on 2026-10-19 lists One, Connect and Multiply for new offers. It says existing plans and prices remain in place."
+    a: "On the public rates, AppFolio Core gives $149 a month and Rentvine $150 at 100 doors. Both add a minimum spend or a setup fee with no published amount. Only a written quote gives the true order."
+  - q: "Did Buildium raise its prices?"
+    a: "Yes. On 2026-10-19 Buildium showed $62, $192 and $400 a month. On 2026-11-10 it shows $65 for Essential, $202 for Growth and $420 for Premium."
+  - q: "Does DoorLoop still show a $199 monthly minimum?"
+    a: "No. The DoorLoop page read on 2026-11-10 shows per-unit prices of $2.50, $4.00 and $5.00. It says only that a minimum spend and units apply."
   - q: "Which vendor has the best accounting?"
-    a: "A feature page cannot establish the best result for your books. Rentvine explicitly describes native three-way reconciliation; test every finalist with your accountant."
+    a: "A feature page cannot show the best result for your books. Rentvine describes native three-way reconciliation. Test every finalist with your accountant."
   - q: "Do all owner portals include a mobile app?"
-    a: "A portal and a dedicated owner app are different products. Verify the owner experience and supported devices in the demo."
+    a: "A portal and an owner app are different products. Check the owner screens and the supported devices in the demo."
 sources:
-  - label: "Rentvine: Pricing (read 2026-10-19)"
+  - label: "Rentvine: Pricing (read 2026-11-10)"
     url: "https://www.rentvine.com/pricing"
-  - label: "AppFolio: Pricing (read 2026-10-19)"
+  - label: "AppFolio: Pricing (read 2026-11-10)"
     url: "https://www.appfolio.com/pricing"
-  - label: "Buildium: Pricing (read 2026-10-19)"
+  - label: "Buildium: Pricing (read 2026-11-10)"
     url: "https://www.buildium.com/pricing/"
-  - label: "DoorLoop: Pricing (read 2026-10-19)"
+  - label: "DoorLoop: Pricing (read 2026-11-10)"
     url: "https://www.doorloop.com/pricing"
   - label: "Rentvine: Trust accounting (read 2026-10-19)"
     url: "https://www.rentvine.com/features/trust-accounting"
 ---
 
-## How do the feature and price offers compare?
+## How do the prices compare?
 
-The vendors differ in price structure and plan access, so compare an exact offer rather than a brand name.
+The four vendors use different price models, so compare one exact offer, not a brand name. This table uses the vendor pricing pages read on 2026-11-10.
 
-| Vendor | Public price basis | Minimum condition | Feature focus |
+| Vendor | Public price | Minimum condition | Feature focus |
 |---|---|---|---|
-| Rentvine | As low as $1.50 per active unit | Exact minimum quote only | Trust accounting, open API and AI |
-| AppFolio Core | From $1.49 per unit monthly | 50 units plus minimum spend | Accounting, leasing and Realm-X |
-| Buildium Essential | From $62 monthly | Unit minimum not stated | Basic accounting, leasing and maintenance |
-| DoorLoop One | $2.50 per unit monthly displayed | $199 monthly minimum displayed | Core platform and AI Assistant |
+| Rentvine | As low as $1.50 per active unit | No number; one-time setup fee, no amount | Trust accounting, open API and AI |
+| AppFolio Core | From $1.49 per unit a month | 50 units plus a minimum spend | Accounting, leasing and Realm-X |
+| AppFolio Plus / Max | From $3.20 / $5.00 per unit a month | Minimum spend and units, no number | Higher tiers; Flows in Plus |
+| Buildium Essential | From $65 a month | No unit minimum shown | Basic accounting, leasing and maintenance |
+| Buildium Growth / Premium | From $202 / $420 a month | Onboarding service required | Premium adds AI-enhanced communications |
+| DoorLoop One | From $2.50 per unit a month; as low as $1.50 above 100 | Minimum spend and units, no number | Core platform and AI Assistant |
+| DoorLoop Connect / Multiply | From $4.00 / $5.00 per unit a month | Minimum spend and units; Multiply is invite only | AI agents for tenants and maintenance |
 
-Sources: [Rentvine](https://www.rentvine.com/pricing), [AppFolio](https://www.appfolio.com/pricing), [Buildium](https://www.buildium.com/pricing/) and [DoorLoop](https://www.doorloop.com/pricing), read 2026-10-19. Confirm billing periods, transaction fees and setup separately.
+Sources: [Rentvine](https://www.rentvine.com/pricing), [AppFolio](https://www.appfolio.com/pricing), [Buildium](https://www.buildium.com/pricing/) and [DoorLoop](https://www.doorloop.com/pricing), read 2026-11-10.
 
-An API connects software systems. Its presence does not mean every partner integration is included. Ask what your required connection can read and change.
+Do not use the table as a quality rank. It shows each vendor's public offer only.
 
-Do not treat the table as a hands-on quality ranking. The evidence here is each vendor's public offer.
+## What changed since 2026-10-19?
 
-## What is the monthly minimum for each?
+Buildium raised all three starting prices, and DoorLoop removed its displayed monthly minimums. Rentvine and AppFolio show the same starting rates.
 
-DoorLoop displays monthly minimums for its current plans; AppFolio names a minimum spend without publishing its amount. Rentvine needs a tailored quote. Buildium shows plan starting prices.
+| Item | 2026-10-19 | 2026-11-10 |
+|---|---|---|
+| Buildium Essential | $62 a month | $65 a month |
+| Buildium Growth | $192 a month | $202 a month |
+| Buildium Premium | $400 a month | $420 a month |
+| DoorLoop One minimum | $199 a month shown | "Minimum spend and units apply" |
+| DoorLoop One rate above 100 units | Not shown | As low as $1.50 per unit |
+| AppFolio Core | $1.49 per unit | $1.49 per unit |
+| Rentvine | As low as $1.50 per unit | As low as $1.50 per unit |
 
-DoorLoop's current page displays One at a $199 minimum, Connect at $299 and Multiply at $399. It also offers monthly and annual billing. Confirm the term and actual unit-rate schedule in writing.
+The Buildium increase is about 5% on each plan. If you have an old Buildium quote, ask whether the new rate applies at renewal.
 
-AppFolio Core's unit rule and spend rule are separate. Meeting the unit rule does not mean you pay only the rate calculation. Plus and Max also name unit and spend minimums without full values.
+## What does each cost at 50, 100 and 200 doors?
 
-Rentvine's minimum-unit answer gives no numeric eligibility threshold. Do not borrow an old minimum from a comparison site. Its as-low-as rate may not be your rate.
+Only a written quote shows what your company will pay. The public rates give a floor for simple arithmetic. Each number below is rate × doors, before minimums and usage fees.
 
-Buildium's Essential, Growth and Premium starting prices are not universal fixed bills. Ask how your unit count changes the subscription.
+| Doors | AppFolio Core ($1.49) | Rentvine ($1.50, as low as) | DoorLoop One ($2.50, then $1.50+) | Buildium |
+|---|---|---|---|---|
+| 50 | $74.50 | $75 | $125 | From $65 (Essential) |
+| 100 | $149 | $150 | $250 | From $202 (Growth) |
+| 200 | $298 | $300 | $400 to $500 | From $202 (Growth) |
 
-Request an invoice sample at your current size. Then request the same offer after a loss of managed doors.
+DoorLoop says "as low as $1.50 per unit above 100". So doors 101 to 200 cost between $1.50 and $2.50 each. That gives $400 to $500 at 200 doors.
 
-## What does each cost at 100 doors?
+Buildium shows a flat starting price per plan, not a per-unit rate. The page does not say how the price grows with your unit count. The plan choice in the table is our example, not a Buildium rule.
 
-Only a size-specific quote establishes what your company will pay at 100 doors. Public rates can support arithmetic, but conditions still matter.
+AppFolio Core needs at least 50 units. Its minimum spend has no published amount and can raise the bill above $74.50 or $149.
 
-AppFolio Core's starting rate produces a $149 monthly rate calculation at 100 units. That calculation uses AppFolio's $1.49 rate, read 2026-10-19. Its unpublished spend minimum may raise the bill.
+## Which usage fees change the total?
 
-Rentvine's displayed as-low-as rate would produce $150 at 100 active units if that rate applied. That is conditional arithmetic, not a quote or a minimum.
+Usage fees can turn a base-price rank around. Buildium and DoorLoop publish some fees; Rentvine and AppFolio do not.
 
-Buildium's pricing page starts Growth at $192 monthly and Premium at $400 monthly. Those figures do not confirm the bill at the article's portfolio size.
+- **Buildium payments:** incoming EFT costs $2.35 per transaction on Essential and $1.35 on Growth. Outgoing EFT costs $0.99. Cards cost 2.99%.
+- **Buildium bank accounts:** $99 per business bank account on Essential. Growth includes 10 accounts, Premium 100.
+- **Buildium eSignature:** $5 per document on Essential, $1 on Growth, unlimited on Premium.
+- **Buildium screening:** $17 per screening, or $35 paid by the applicant.
+- **DoorLoop:** tenant screening shows $35. Incoming ACH shows $1.50 on One and free on the higher plans.
+- **Rentvine:** "transaction and screening fees may apply", with no amounts. The setup fee covers migration and onboarding, with no amount.
 
-DoorLoop's displayed One rate produces $250 at 100 units before other costs. Confirm the applicable billing option before using that calculation.
+Sources: [Buildium](https://www.buildium.com/pricing/), [DoorLoop](https://www.doorloop.com/pricing) and [Rentvine](https://www.rentvine.com/pricing), read 2026-11-10.
 
-Compare setup, payments, screening and signatures in the same worksheet. Record who pays each usage fee. A base-price ranking can reverse when required services enter the calculation.
+Put setup, payments, screening and signatures in one worksheet. Record who pays each fee: you, the owner or the tenant.
 
 ## Which has the best accounting?
 
