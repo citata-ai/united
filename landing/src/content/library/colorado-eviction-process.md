@@ -3,10 +3,10 @@ title: "Colorado Eviction Process: 10-Day Notice, Court Steps, Timeline — Cita
 description: "Colorado eviction steps for landlords: a 10-day demand for rent, a summons of 7 to 14 days, a 10-day wait after judgment, and for-cause rules since 2024."
 headline: "Colorado Eviction Process for Landlords"
 dek: "From the 10-day demand to the writ of restitution, with HB24-1098 for-cause rules added."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "A Colorado landlord must first serve a written notice: 10 days to pay rent or leave for most residential leases (C.R.S. 13-40-104). If the tenant stays, the landlord files in county court, and the summons sets a court date 7 to 14 days after it issues. After a judgment for possession, the sheriff may not remove a residential tenant until at least 10 days after the judgment. Since 2024-04-19, most tenants of 12 months or more can be evicted only for a cause listed in C.R.S. 38-12-1303."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

@@ -3,10 +3,10 @@ title: "ChatGPT vs Google: Where Owner Leads Come From in 2026 — Citata.ai"
 description: "Google gave about 15 times more owner leads than all AI tools in a 35-company study. AI leads convert 3.2 times better. Compare both channels and where to spend."
 headline: "ChatGPT vs Google for Property Management Owner Leads"
 dek: "Google brings the volume, ChatGPT brings fewer leads that convert better. Here is the split."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "Property management companies still get far more owner leads from Google than from ChatGPT. In a 35-company study for July to October 2026, Google Search and Map Pack gave 639 owner leads and all AI tools gave 43, of which ChatGPT gave 37. AI visitors converted at 3.9%, against 1.2% for Google. Keep Google first, and use the same work (clear pages, listings, reviews) to get named in ChatGPT."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "comparison"
 priority: 2

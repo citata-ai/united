@@ -3,10 +3,10 @@ title: "Chicago RLTO Rules for Landlords: Deposits, Interest, Notice — Citata.
 description: "The Chicago RLTO sets deposit, interest, notice and lease rules for most city rentals. A deposit mistake can cost 2 times the deposit. The rules, with code sections."
 headline: "Chicago RLTO: The Rules Every Rental Owner Must Follow"
 dek: "Chapter 5-12 of the Chicago code, read section by section, with the 2026 deposit interest rate."
-published: "2026-10-19"
-updated: "2026-11-09"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "Most Chicago rentals fall under the Residential Landlord and Tenant Ordinance (RLTO), Chapter 5-12 of the Municipal Code. It tells you how to hold a security deposit, how to pay yearly interest on it, how much notice to give before you end or raise a lease, and which lease terms are void. If you break a deposit rule, the tenant can win 2 times the deposit plus interest. Owner-occupied buildings with 6 units or fewer are exempt from most of it, but not from the notice rules."
-visible: false
+visible: true
 cluster: "local-market"
 kind: "local"
 priority: 2
