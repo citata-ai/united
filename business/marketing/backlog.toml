@@ -26,8 +26,8 @@ kind = "comparison"
 title = "Rentvine vs AppFolio vs Buildium vs DoorLoop: per-door price table"
 demand = "Multi-vendor comparison; AI fan-out searches each pair."
 score = 7
-status = "idea"
-note = "2026-11-09 tick: the library page /guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop (visible) already covers this. Next tick: refresh that page with new data or set dropped."
+status = "live"
+note = "2026-11-10 tick: refreshed /guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop with 4 pricing pages read 2026-11-10 (Buildium +5%, DoorLoop minimums gone), 50/100/200-door table, usage fees."
 
 [[item]]
 id = "B004"
