@@ -3,10 +3,10 @@ title: "The Real Cost of Tenant Turnover: A Worked Example — Citata.ai"
 description: "One tenant turnover costs lost rent, cleaning, paint, repairs, marketing and screening time. A $1,500 rental example adds up to about $3,000. Here is the math."
 headline: "The Real Cost of Tenant Turnover"
 dek: "Lost rent is the biggest line. A worked example on a $1,500 rental shows the rest."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "One tenant turnover costs the rent lost while the unit is empty, plus cleaning, paint, repairs, marketing, screening and your time. In our worked example on a $1,500 rental with 30 vacant days, the total is $3,139, more than two months of rent. Lessen, citing Multifamily Executive, puts turnover at $3,500 to $5,000 per unit for apartment operators. The fastest way to cut the cost is fewer vacant days."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 2
