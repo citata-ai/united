@@ -3,10 +3,10 @@ title: "Colorado Security Deposit Law: Cap, 30-Day Return, Deductions — Citata
 description: "Colorado caps deposits at 2 months' rent. Since 2026-01-01 you must return the deposit in 30 days (lease max 60), list exact reasons, and face treble damages."
 headline: "Colorado Security Deposit Law for Landlords"
 dek: "HB25-1249 changed the return deadline, the deductions and the penalties on 2026-01-01."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-10"
+updated: "2026-11-10"
 answer: "A Colorado landlord may not ask for a security deposit above 2 monthly rent payments (C.R.S. 38-12-102.5). Since 2026-01-01, the landlord must return the deposit within 30 days after the lease ends or the tenant gives up the unit, or within a longer period set in the lease, but never more than 60 days (C.R.S. 38-12-103). Any deduction needs a written statement with the exact reasons. A wrongful retention can cost the landlord 3 times the amount withheld, plus attorney fees and court costs."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2
