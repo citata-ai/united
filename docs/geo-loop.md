@@ -65,6 +65,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-11-04 | Guide /guides/landlord-laws-2027 (H07-E2, B028): 2027 state table, WA and OR 10% caps, IL HB 3564 fee rules, VA HB 678 90-day notice; 8 sources read 2026-11-04; cover style N lilac | 2026-11-04 |
 | 2026-11-09 | Guide /guides/property-management-software-switching-costs (H06-E1, B022): 6-vendor table of onboarding fee, timeline, migration scope, exit access; 11 vendor pages read 2026-11-09; Rent Manager HTTP 503; cover style N yellow | 2026-11-09 |
 | 2026-11-10 | Refresh /guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop (H06-E1, B003): 4 pricing pages re-read; Buildium +5%, DoorLoop shown minimums removed; 50/100/200-door table and usage fees | 2026-11-10 |
+| 2026-11-11 | Refresh /guides/how-to-choose-a-property-manager (H06-E1, B018): 50-city AI index data replaces Chicago-only data; fee benchmark table (iPropertyManagement, re-read 2026-11-11); blank scorecard; FAQ on normal fees | 2026-11-11 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
