@@ -684,6 +684,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-google-business-profile-service-area-property-management-v1",
     alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga strides along a winding path holding a key, journeying toward scattered small tiled houses across a broad territory.",
   },
+  "fy2027-fair-market-rent-winners-and-losers": {
+    img: "guide-fy2027-fair-market-rent-winners-and-losers-v1",
+    alt: "A pop engraving under a yellow sky: a Roman landlord in an orange toga holds a large brass key beside a rotary phone and clusters of miniature stepped houses.",
+  },
+  "google-business-profile-suspended-property-management": {
+    img: "guide-google-business-profile-suspended-property-management-v1",
+    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga inspects parchment papers beside an old CRT computer and small tiled houses, holding a brass key.",
+  },
+  "habitability-standards-for-rentals": {
+    img: "guide-habitability-standards-for-rentals-v1",
+    alt: "A pop engraving under a lilac sky: a Roman landlord in an orange toga inspects tiled rental houses with a heavy key in hand beside a modern red letterbox.",
+  },
+  "hoa-rules-renting-out-condo": {
+    img: "guide-hoa-rules-renting-out-condo-v1",
+    alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga with a large iron key inspects a modern letterbox outside small tiled villas.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
