@@ -340,3 +340,11 @@ kind = "site"
 title = "Refresh: Rentvine vs AppFolio vs Buildium vs DoorLoop prices (B003, H06)"
 ref = "landing/src/content/library/rentvine-vs-appfolio-vs-buildium-vs-doorloop.md"
 result = "Live on citata.ai. 4 pricing pages re-read 2026-11-10. Buildium raised all 3 plans about 5%; DoorLoop no longer shows monthly minimums. New per-door table (50/100/200), what-changed table and usage fees."
+
+[[entry]]
+date = "2026-11-11"
+side = "internal"
+kind = "site"
+title = "Refresh: how to choose a property manager, AI index data, fee benchmarks, blank scorecard (B018, H06)"
+ref = "landing/src/content/library/how-to-choose-a-property-manager.md"
+result = "Live on citata.ai. Chicago-only AI data replaced by the 50-city index (150 answers; 58% of names kept after 14 days). New fee benchmark table (iPropertyManagement, 80 metros, re-read 2026-11-11), blank 16-row scorecard, new FAQ on normal fees."
