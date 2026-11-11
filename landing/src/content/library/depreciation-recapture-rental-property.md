@@ -3,10 +3,10 @@ title: "Depreciation Recapture When You Sell a Rental — Citata.ai"
 description: "When you sell a rental, the gain from depreciation is unrecaptured section 1250 gain, taxed at up to 25%. It applies even if you never claimed the depreciation."
 headline: "Depreciation Recapture When You Sell a Rental"
 dek: "The IRS taxes back the depreciation you took, or could have taken, at up to 25%."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-11"
+updated: "2026-11-11"
 answer: "Depreciation recapture is the tax on the part of your rental sale gain that comes from depreciation. For a residential rental depreciated straight-line, that part is unrecaptured section 1250 gain, taxed at a maximum 25% rate. The IRS uses depreciation allowed or allowable, so the rule can apply even if you never claimed depreciation. The home sale exclusion does not cover it."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 2

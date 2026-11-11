@@ -3,10 +3,10 @@ title: "Down Payment for an Investment Property — Citata.ai"
 description: "Fannie Mae allows 85% LTV on a 1-unit investment purchase (15% down) and 75% on 2-4 units. FHA and VA work only for a home you live in. Rules and math."
 headline: "How Much Down Payment a Rental Property Needs"
 dek: "Conventional, FHA and VA rules, reserves, and what a bigger down payment does to cash flow."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-11"
+updated: "2026-11-11"
 answer: "For a conventional loan sold to Fannie Mae, the August 5, 2026 eligibility matrix allows up to 85% loan-to-value on a 1-unit investment purchase, so at least 15% down. For 2 to 4 units, the limit is 75%, so 25% down. If you will live in one unit of a 2 to 4 unit home, FHA needs at least 3.5% down and VA can need none. Lenders also want 6 months of reserves for an investment purchase."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "data"
 priority: 2
