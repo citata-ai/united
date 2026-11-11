@@ -2,9 +2,9 @@
 title: "How to Choose a Property Manager: A Step-by-Step Method — Citata.ai"
 description: "Choose a property manager in 6 steps: build a list, check the license and reviews, interview 3, compare fees and terms side by side, and stop at red flags."
 headline: "How to Choose a Property Manager"
-dek: "A 6-step method, a side-by-side scorecard for 3 managers, and the red flags that end a deal."
+dek: "A 6-step method, fee benchmarks, a blank scorecard for 3 managers, and the red flags that end a deal."
 published: "2026-10-30"
-updated: "2026-10-30"
+updated: "2026-11-11"
 answer: "Build a list of 5 to 8 local managers from search, AI answers, review sites and referrals. Check each one's state license and read recent reviews from owners, not only tenants. Interview 3, ask for the management agreement and fee schedule in writing, and compare a full year of cost, the screening process, repair limits and the exit terms side by side. Stop at red flags such as no license, no written fees or no trust account."
 visible: true
 cluster: "owner-education"
@@ -21,12 +21,16 @@ faq:
   - q: "What are red flags in a property manager?"
     a: "No license where one is required, no written fee schedule, pressure to sign the same day, no separate trust account for rent and deposits, and owner reviews that describe late payouts."
   - q: "Can I use ChatGPT to find a property manager?"
-    a: "Yes, as a start. AI answers pull names from manager sites and review sites. In our Chicago test, Yelp was a source in 35 owner answers and Expertise.com in 22 (our data, 2026-10-16). Always check the license and reviews yourself."
+    a: "Yes, as a start. In our test of 50 US cities, ChatGPT, Gemini and Claude named 8.8 companies per answer, and Expertise.com was a source in 93 of 150 answers (our data, 2026-10-19). When we asked again 14 days later, only 58% of the names came back. Ask more than once, and always check the license and reviews yourself."
+  - q: "What is a normal property management fee in 2026?"
+    a: "iPropertyManagement's survey of 80 metro areas, updated 2026-09-23, puts the average monthly fee at 8.49% of rent, with a range of 3.75% to 14.0%. Flat-fee managers average $101.04 per unit per month. A quote far outside these ranges needs a clear reason."
 sources:
   - label: "Florida Statutes: section 475.01, Definitions (real estate brokers)"
     url: "https://www.flsenate.gov/Laws/Statutes/2025/475.01"
   - label: "iPropertyManagement: Average Property Management Fees (updated 2026-09-23)"
     url: "https://ipropertymanagement.com/research/average-property-management-fees"
+  - label: "Citata.ai: AI Property Manager Index 2026, 50 cities x 3 engines (our data, 2026-10-19 and 2026-11-02)"
+    url: "https://citata.ai/research/ai-property-manager-index-2026"
   - label: "NARPM: Find a property manager and designations"
     url: "https://www.narpm.org/find/property-manager/"
 ---
@@ -54,7 +58,9 @@ You find property managers in 5 places. Use at least 3, because each source show
 4. **NARPM.** The National Association of Residential Property Managers has a find-a-manager search on its site and offers designations such as RMP, MPM and CRMC.
 5. **Referrals.** Ask other owners, a local agent or your HOA.
 
-Our own test shows why one source is not enough. In 132 owner questions about Chicago managers, Yelp was a source in 35 answers, Expertise.com in 22 and Thumbtack in 17 (our data, 2026-10-16). The AI picks from those lists. A good local manager that is not on them may never show up.
+Our own test shows why one source is not enough. We asked ChatGPT, Gemini and Claude for the best property management company in the 50 largest US cities (150 answers, 2026-10-19). The engines named 8.8 companies per answer, and 76% of the names were local firms. But they took most names from a few lists: Expertise.com was a source in 93 of 150 answers, Yelp in 50 and iPropertyManagement.com in 50. A good local manager that is not on those lists may never show up.
+
+AI answers also change. We asked the same 150 questions again on 2026-11-02. Only 58% of the names came back, and 3 of 150 answers gave the same list. So ask 2 engines, ask twice, and add every name to your list. See the full data in our [AI Property Manager Index](/research/ai-property-manager-index-2026).
 
 ## How do I check license and reviews?
 
@@ -102,7 +108,47 @@ How to read it:
 - **Speed.** Each extra week of vacancy costs about $460 at $2,000 rent.
 - **Exit.** B's $500 exit fee is a cost you may pay later.
 
-For reference, iPropertyManagement's survey, updated 2026-09-23, put the average monthly fee at 8.49% and the average renewal fee at $211.92. Run your own numbers with our [property management fee calculator](/tools/property-management-fee-calculator).
+Run your own numbers with our [property management fee calculator](/tools/property-management-fee-calculator).
+
+## What fees are normal in 2026?
+
+Compare each quote with a market average before you score it. iPropertyManagement surveyed advertised fees in 80 metro areas (updated 2026-09-23):
+
+| Fee | Average | Range found |
+|-----|---------|-------------|
+| Monthly fee, % of rent | 8.49% | 3.75% to 14.0% |
+| Monthly fee, flat | $101.04 per unit | $49 to $250 |
+| Tenant placement, with management | 70.6% of 1 month's rent | 6% to 125% |
+| Setup fee | $185.24 | — |
+| Lease renewal fee | $211.92 | — |
+| Inspection | $106.72 | — |
+
+A quote far below the average often moves the cost into other fees. A quote far above it must buy something you can see, such as faster leasing or a lower repair markup. Ask the manager to explain each gap in writing.
+
+## Blank scorecard to copy
+
+Copy this table into a sheet. Fill one column for each manager, with the same rent for all three. Use their written fee schedule, not the sales call.
+
+| Item | Manager 1 | Manager 2 | Manager 3 |
+|------|-----------|-----------|-----------|
+| State license number, status | | | |
+| Owner reviews, last 12 months (good / bad) | | | |
+| Monthly fee | | | |
+| Leasing fee | | | |
+| Renewal fee | | | |
+| Setup fee | | | |
+| Other fees (inspection, maintenance markup, vacancy) | | | |
+| Year 1 cost, new tenant | | | |
+| Repair approval limit | | | |
+| Average days to lease (their number) | | | |
+| Written screening criteria | | | |
+| Trust account for rent and deposits | | | |
+| Owner payout date each month | | | |
+| Agreement term, auto-renew | | | |
+| Exit notice and fee | | | |
+| Red flags seen | | | |
+
+Year 1 cost = monthly fee x 12 + leasing fee + setup fee + other fees you expect. Add the renewal fee from year 2.
 
 ## Which red flags should stop me?
 
