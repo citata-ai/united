@@ -3,10 +3,10 @@ title: "Doors per Employee: Benchmarks for PM Companies (2026) — Citata.ai"
 description: "Benchmarks put residential property management at about 40 to 59 doors per staff member. How to calculate your own ratio and what moves it up."
 headline: "How Many Doors Should Each Employee Manage"
 dek: "Three benchmarks use three different counts. Here is how to compare your ratio fairly."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-11"
+updated: "2026-11-11"
 answer: "Most benchmarks land between 40 and 59 doors per person. The 2022 NARPM Financial Performance Guide, as reported by LetHub, found 49.29 units per direct team member on average and 58.55 for the top quarter of firms. NAR's 2023 Member Profile gives a median of 40 properties per manager. Compare your ratio only to a benchmark that counts the same staff."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "data"
 priority: 2

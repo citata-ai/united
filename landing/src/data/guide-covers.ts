@@ -700,6 +700,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-hoa-rules-renting-out-condo-v1",
     alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga with a large iron key inspects a modern letterbox outside small tiled villas.",
   },
+  "how-long-does-seo-take-property-management": {
+    img: "guide-how-long-does-seo-take-property-management-v1",
+    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga sits beside a vintage rotary telephone on a marble plinth, holding a key before a quiet row of tiled two-flat houses.",
+  },
+  "how-long-should-a-make-ready-take": {
+    img: "guide-how-long-should-a-make-ready-take-v1",
+    alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga holds a brass key and waits beside a rotary phone outside newly renovated pastel tiled houses.",
+  },
+  "how-much-is-landlord-insurance": {
+    img: "guide-how-much-is-landlord-insurance-v1",
+    alt: "A pop engraving under a lilac sky: a Roman landlord in an orange toga holds a large key beside a vintage rotary phone overlooking small tiled-roof houses.",
+  },
+  "how-much-should-a-security-deposit-be": {
+    img: "guide-how-much-should-a-security-deposit-be-v1",
+    alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga inspects a brass key beside a letterbox and small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
