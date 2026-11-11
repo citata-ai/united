@@ -3,10 +3,10 @@ title: "Cost to Acquire a Door: Property Management Math by Channel — Citata.a
 description: "Cost per door is channel spend divided by new doors signed. Worked math for ads, SEO, referrals and buying a portfolio, plus the payback period for each."
 headline: "What It Costs to Win One New Door"
 dek: "Divide what you spent by the doors you signed, then check how fast fees pay it back."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-11"
+updated: "2026-11-11"
 answer: "Cost to acquire a door is what you spent on a channel divided by the doors you signed from it in the same period. Property Manager Websites says its clients see an acquisition cost per client closer to $1,000, and that buying a portfolio costs $2,000 to $4,000 per unit. At about $141 of monthly fees per door, a $1,000 door pays back in about 7 months of revenue."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "data"
 priority: 2

@@ -3,10 +3,10 @@ title: "Charging Tenants for Damage: Useful Life Math — Citata.ai"
 description: "Charge a tenant only for the remaining life of a damaged carpet, paint job or appliance, not the full new cost. The formula, a worked example and state rules."
 headline: "Charging for Damage: Useful Life and Prorating"
 dek: "A 4-year-old carpet is not worth the price of a new one. Charge the remaining life."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-11"
+updated: "2026-11-11"
 answer: "Deduct only the value the tenant destroyed, not the cost of a brand-new item. Divide the replacement cost by the item's useful life, then multiply by the years of life it had left. A carpet that cost $2,000 with an 8-year life and 4 years of age gives a maximum charge of $1,000. State law bars charges for normal wear and tear, and California limits charges to what restores the unit to its move-in condition."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 2

@@ -3,10 +3,10 @@ title: "Criminal Background Checks for Tenants: 2026 Rules — Citata.ai"
 description: "HUD withdrew its 2016 criminal records guidance in 2025. The Fair Housing Act and state and local fair chance laws still limit how landlords use records."
 headline: "Criminal Background Checks for Tenants: The 2026 Rules"
 dek: "HUD pulled its 2016 guidance, but state and local fair chance laws still apply."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-11"
+updated: "2026-11-11"
 answer: "You may use criminal history in tenant screening only in the way your state and city allow. HUD withdrew its 2016 criminal records guidance effective September 25, 2025, but the Fair Housing Act and HUD's discriminatory effect rule still apply. New Jersey, Cook County and California limit criminal checks further. A safe policy skips arrests without conviction, uses a short look-back period, and reviews each case before a denial."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2
