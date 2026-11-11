@@ -164,8 +164,8 @@ kind = "comparison"
 title = "How to choose a property manager: owner decision checklist with fee table template"
 demand = "Playbook moves 1 and 3: the top page type at all 3 competitors' clients."
 score = 7
-status = "idea"
-note = "2026-11-09 tick: the library page /guides/how-to-choose-a-property-manager (visible) already covers this. Next tick: refresh that page with new data or set dropped."
+status = "live"
+note = "2026-11-11 tick: refreshed /guides/how-to-choose-a-property-manager with 50-city AI index data, 2026 fee benchmarks (iPropertyManagement, re-read 2026-11-11) and a blank scorecard template."
 
 # --- scout 2026-10-22: evidence in business/marketing/competitors/2026-10-22-scout.md ---
 
