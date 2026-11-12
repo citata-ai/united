@@ -724,6 +724,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-avoid-rental-listing-scams-v1",
     alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga inspects a vintage CRT computer on a stone pedestal before a terracotta two-flat villa, holding an oversized bronze key.",
   },
+  "how-to-calculate-prorated-rent": {
+    img: "guide-how-to-calculate-prorated-rent-v1",
+    alt: "A pop engraving under a lilac sky: a Roman landlord in an orange toga holds a brass key in front of small tiled houses and an open letterbox.",
+  },
+  "how-to-choose-a-property-manager-chicago": {
+    img: "guide-how-to-choose-a-property-manager-chicago-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holds a brass key beside a rotary phone on a stone plinth, inspecting a brick two-flat and small tiled houses along a Roman street.",
+  },
+  "how-to-fire-your-property-manager": {
+    img: "guide-how-to-fire-your-property-manager-v1",
+    alt: "A pop engraving under a yellow sky: a Roman landlord in an orange toga hands over a heavy brass key next to a vintage rotary telephone on a marble pedestal, with rows of small tiled villas in the background.",
+  },
+  "how-to-handle-a-tenant-breaking-a-lease": {
+    img: "guide-how-to-handle-a-tenant-breaking-a-lease-v1",
+    alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga inspects a tiled two-flat building holding a key beside an open, empty letterbox.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
