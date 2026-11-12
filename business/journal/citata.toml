@@ -348,3 +348,11 @@ kind = "site"
 title = "Refresh: how to choose a property manager, AI index data, fee benchmarks, blank scorecard (B018, H06)"
 ref = "landing/src/content/library/how-to-choose-a-property-manager.md"
 result = "Live on citata.ai. Chicago-only AI data replaced by the 50-city index (150 answers; 58% of names kept after 14 days). New fee benchmark table (iPropertyManagement, 80 metros, re-read 2026-11-11), blank 16-row scorecard, new FAQ on normal fees."
+
+[[entry]]
+date = "2026-11-12"
+side = "internal"
+kind = "site"
+title = "New guide: claim your property management company in ChatGPT (B031, H07)"
+ref = "landing/src/content/library/claim-property-management-company-in-chatgpt.md"
+result = "On stage. OpenAI Business Hub (beta 2026-11-10): claim steps, verification, Persona, local-listing limit, local mention rule, 28-day insights, what a claim does not fix. OpenAI blog and help page read 2026-11-12. Cover style N, cyan."

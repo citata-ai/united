@@ -292,3 +292,93 @@ demand = "Goodjuju shipped a marketing budget calculator on 2026-10-27 (https://
 score = 6
 status = "idea"
 note = "Do not copy their example numbers. New data = cost per owner lead by channel from sources we read (Google Ads, pay-per-lead sites, our case study). If we find no sourced channel costs, drop the item."
+
+[[item]]
+id = "B031"
+hypothesis = "H07"
+kind = "guide"
+title = "Claim your property management company in ChatGPT (Business Hub, beta since 2026-11-10): steps, verification, what the dashboard shows, and what it does not fix"
+demand = "OpenAI launched Businesses in ChatGPT with a free Business Hub on 2026-11-10 (https://openai.com/index/introducing-businesses-chatgpt/, https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt; both gave HTTP 403 to the scout, read them in a browser). Press 2026-11-11: tech-ish.com, technology.org, ppc.land. ClearLead published /blog/claim-your-business-in-chatgpt on 2026-11-11. PMW has a May 2026 post on OpenAI listings. Owners and managers will ask 'how do I claim my company in ChatGPT' this month."
+score = 9
+status = "staged"
+note = "Do not copy ClearLead. New data from us: the 50-city index (which named companies have a site, a GBP, an Expertise.com page) and the directory data on /library/directories-ai-cites-property-management. Read OpenAI help pages in the run; state the local-listing limit (help article: local stores can claim only an existing US listing) only if the primary says it. Link fix-wrong-info draft. Guide + cover style N."
+
+[[item]]
+id = "B032"
+hypothesis = "H07"
+kind = "comparison"
+title = "Marketing agencies for property management companies (2026): named agencies, prices, fit by door count, our own entry disclosed"
+demand = "AI visibility 2026-11-02: pm-marketing-agency, pm-aeo-agency, pm-geo-small = 0 of 18 for us. pm-marketing-agency names Upkeep Media 6 of 6 and Fourandhalf 5 of 6; sources are the agencies' own pages. Third-party lists exist but are self-ranked (thestacc.com/best/property-management-marketing-agencies/ ranks itself first; wifitalents, worldmetrics, gitnux, designrush with paid spots). Our /guides/geo-agencies-for-property-management already earns ChatGPT names on GEO prompts."
+score = 8
+status = "idea"
+note = "Same form as the GEO agency guide. Read each agency's pricing page in the run; no price without a source. Publish the draft questions-to-ask-property-management-marketing-agency as the linked checklist. Name no client."
+
+[[item]]
+id = "B033"
+hypothesis = "H07"
+kind = "guide"
+title = "How to check if AI recommends your property management company: 5 test prompts, free tools, ChatGPT Business Hub mention counts, then our free audit"
+demand = "AI visibility 2026-11-02: pm-ai-visibility-check 0 of 6 for us; ahrefs.com cited 5 of 6, semrush.com 4 of 6. Business Hub (2026-11-10) now shows ChatGPT mention counts, a new free check. Citant.ai published 'What is an AI search audit? 18 red flags' on 2026-11-11."
+score = 7
+status = "idea"
+note = "Publish and refresh the draft ai-visibility-audit-property-management (visible = false) instead of a new file. Give the 5 prompts word for word; name free tools by name."
+
+[[item]]
+id = "B034"
+hypothesis = "H03"
+kind = "original-research"
+title = "AI Property Manager Index, update 2 (run on or after 2026-11-16): add a sources section (which domains each engine cites per city) and compare with the Goodjuju 30-city study"
+demand = "Goodjuju published a 30-city, 4-engine study with a free dataset on 2026-10-31 (https://gogoodjuju.com/property-management-ai-search-study/): 11 of 146 sources = 57% of citations; expertise.com 32, Google Business Profiles 61, reddit.com 28. It is a one-day snapshot. Ours is 50 cities, repeated: change over time is what no one else has."
+score = 8
+status = "idea"
+note = "Same prompts as tools/ai-visibility/cities.toml. Dated section on /research/ai-property-manager-index-2026, CSV update. Cite Goodjuju as a second data set where it agrees or not; do not copy its numbers as ours."
+
+[[item]]
+id = "B035"
+hypothesis = "H01"
+kind = "data-page"
+title = "Section 8 shortfall tracker: housing authorities that stopped new vouchers or cut payments (2026-27), plus the 2026-12-11 stopgap date"
+demand = "HOC Montgomery County MD stopped new vouchers until spring 2027 after HUD recaptured $5.8M in reserves (https://moderatelymoco.com/hoc-section-8-vouchers-paused-spring-2027/, HOC board packet 2026-10-14). NYCHA Section 8 rent late in November 2026 (Housing New York press, advocacy source). HUD funding stopgap runs to 2026-12-11 (our /guides/section-8-rent-limits/section-8-funding-2027). Landlords ask 'will my Section 8 rent come in January'."
+score = 7
+status = "idea"
+note = "Sub-page of /guides/section-8-rent-limits. One row per PHA with a primary (PHA notice, board packet, HUD letter). Drop rows with only press. Refresh after 2026-12-11."
+
+[[item]]
+id = "B036"
+hypothesis = "H07"
+kind = "refresh"
+title = "Refresh /library/landlord-laws-2027: add California SB 1365 (10% emergency cap, all lease terms, 2027-01-01) and SB 1296 (written pet policy before application fee, 2027-04-01), Washington flood disclosure, NSPIRE HCV date"
+demand = "Doorstead 2026-10-07 (https://www.doorstead.com/blog/california-landlord-laws-2027): SB 1365 Ch. 1028 Stats. 2026, SB 1296 Ch. 1025 Stats. 2026. Web search 2026-11-12: WA flood hazard disclosure in leases from 2027-01-01; HUD NSPIRE for vouchers by 2027-02-01. The page lists 4 states and no California row."
+score = 7
+status = "idea"
+note = "Read leginfo.legislature.ca.gov for both bills and the HUD NSPIRE notice in the run; drop a row with no primary. Publish the draft pet-policy-for-rentals and link it from the SB 1296 row."
+
+[[item]]
+id = "B037"
+hypothesis = "H02"
+kind = "free-tool"
+title = "Which lists does AI use in my city? Lookup from our 50-city index: directories cited and companies named per city and engine"
+demand = "Goodjuju: 9 of the 11 top sources are lists or directories; being on 2+ lists = about 1 in 2 named vs 1 in 7 on one list (5-city check). Our directory page has national totals only. A per-city lookup turns our index into a tool a manager can use and an AI can cite per city."
+score = 6
+status = "idea"
+note = "Data from the index runs only; show run date. Name companies only as AI named them, with the run date; no rank of our own. Tool under /tools."
+
+[[item]]
+id = "B038"
+hypothesis = "H09"
+kind = "listing"
+title = "Claim Citata.ai in ChatGPT Business Hub (fix brand facts, read mention counts)"
+demand = "AI visibility 2026-11-02: brand answers right 5 of 12; ChatGPT 4 of 4 right, but a claimed profile lets us set the description and see mentions. Business Hub launched 2026-11-10."
+score = 6
+status = "idea"
+note = "Needs Tao: verification (phone, email, domain or ID check). Agent drafts the description and category; Tao claims. Then record mention counts weekly in the measure report."
+
+[[item]]
+id = "B039"
+hypothesis = "H07"
+kind = "guide"
+title = "llms.txt for a property management website: template, what it does and does not do (2026 data)"
+demand = "AI visibility 2026-11-02: pm-llms-txt 0 of 6 for us, no page of ours. Goodjuju study 2026-10-31 says llms.txt and schema matter less than lists for 'best property managers' prompts; an honest page can say both."
+score = 5
+status = "idea"
+note = "Publish and refresh the draft llms-txt-template-property-management (visible = false). Cite our B024 readiness data (share of named managers with llms.txt)."

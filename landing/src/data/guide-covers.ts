@@ -724,6 +724,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-avoid-rental-listing-scams-v1",
     alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga inspects a vintage CRT computer on a stone pedestal before a terracotta two-flat villa, holding an oversized bronze key.",
   },
+  "claim-property-management-company-in-chatgpt": {
+    img: "guide-claim-chatgpt-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga raises a brass seal over a blank scroll on a pink stone altar beside an old computer, with Roman busts and small tiled houses behind him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
