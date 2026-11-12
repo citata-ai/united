@@ -26,6 +26,15 @@ Tao approved the base package on 2026-10-19. It is in `business/offers.toml` and
 - **Directories first.** Move 2 has the most direct link to AI answers in our data. We do it in week 1, with a before/after prompt run.
 - **Section 8.** Only ClearLead has a narrow Section 8 owner guide idea (rank 8). We have 51 FMR pages and a calculator on stage.
 
+## New moves (scout 2026-11-12)
+
+Moves seen at 2 or more direct competitors. Client lists not re-checked in this run; source: competitor sitemaps and pages.
+
+| Move | Who | Our answer |
+|---|---|---|
+| Own AI-search research with a dataset | Goodjuju 30-city study (2026-10-31); Citant.ai B2B SaaS benchmark (`/research/`) | Our edge in "AI measurement" above is now shared. Keep it with repeat runs: index update 2 (B034), per-city lookup (B037). |
+| Claim the company in ChatGPT (Business Hub, OpenAI beta 2026-11-10) | ClearLead how-to (2026-11-11); PMW OpenAI listing post (2026-05-12) | Add to move 2 (listings, week 1) once we read the OpenAI help page. Guide B031; our own profile B038. |
+
 ## Limits
 
 Small samples. "Named in H03" is correlation, not proof. Door counts are unknown for most clients; 3 PMW clients have more than 500 doors. All expected effects are hypotheses.
