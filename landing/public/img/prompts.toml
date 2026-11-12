@@ -1202,3 +1202,27 @@ file = "img/guide-how-much-should-a-security-deposit-be-v1-*.webp"
 prompt = "Use the image /tmp/img-how-much-should-a-security-deposit-be/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman landlord in an orange toga stands before small terracotta-tiled two-flat houses, carefully inspecting a brass key next to a retro mailbox on a stone pillar. He balances a single stack of Roman clay tiles representing one month's rent security deposit."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-11"
+
+[[image]]
+file = "img/guide-google-business-profile-suspended-property-management-v1-*.webp"
+prompt = "Use the image /tmp/img-google-business-profile-suspended-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga sits beside a vintage rotary telephone on a marble plinth, holding an oversized brass key while inspecting a cluster of pastel two-flat villa houses with terracotta roofs. The telephone cord trails along the paving stones, connecting the administrator to his quiet residential estate."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-12"
+
+[[image]]
+file = "img/guide-how-long-does-seo-take-property-management-v1-*.webp"
+prompt = "Use the image /tmp/img-how-long-does-seo-take-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager wearing a draped orange toga sits patiently on a stone bench beside a retro CRT computer, waiting outside a neat row of small tiled-roof houses with a large brass key resting in his palm."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-12"
+
+[[image]]
+file = "img/guide-how-much-to-save-for-rental-repairs-capex-v1-*.webp"
+prompt = "Use the image /tmp/img-how-much-to-save-for-rental-repairs-capex/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman landlord in an orange toga inspects a two-flat villa with terracotta roof tiles, holding an oversized brass key in one hand while calculating near a bulky beige CRT computer set on an ancient marble pedestal. Two clay money jars sit at his feet beside stacked roof shingles and replacement pipes."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-12"
+
+[[image]]
+file = "img/guide-how-to-avoid-rental-listing-scams-v1-*.webp"
+prompt = "Use the image /tmp/img-how-to-avoid-rental-listing-scams/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman landlord in an orange toga stands guard outside a two-flat villa with small terracotta tiled roofs, inspecting a bulky CRT computer resting on a stone pedestal to monitor copied listings. An oversized bronze key hangs at his waist as he watches over the quiet neighborhood."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-12"
