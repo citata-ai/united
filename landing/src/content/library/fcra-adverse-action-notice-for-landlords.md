@@ -3,10 +3,10 @@ title: "FCRA Adverse Action Notice for Landlords: What to Send — Citata.ai"
 description: "Send an adverse action notice when a screening report leads you to deny, add a co-signer, or raise the deposit or rent. Here is what the notice must say."
 headline: "Adverse Action Notices: What the FCRA Requires"
 dek: "A denial, a co-signer or a higher deposit based on a report all need one."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-12"
+updated: "2026-11-12"
 answer: "Under 15 U.S.C. 1681m, you must send an adverse action notice when a consumer report, such as a tenant screening report, plays any part in a decision that hurts the applicant. That includes a denial, a co-signer requirement, a higher deposit or a higher rent. The notice names the screening company, says the company did not make the decision, and tells the applicant of the right to a free report within 60 days and to dispute errors. Send it in writing so you can prove it."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2

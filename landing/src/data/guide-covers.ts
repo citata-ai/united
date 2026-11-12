@@ -688,10 +688,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-fy2027-fair-market-rent-winners-and-losers-v1",
     alt: "A pop engraving under a yellow sky: a Roman landlord in an orange toga holds a large brass key beside a rotary phone and clusters of miniature stepped houses.",
   },
-  "google-business-profile-suspended-property-management": {
-    img: "guide-google-business-profile-suspended-property-management-v1",
-    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga inspects parchment papers beside an old CRT computer and small tiled houses, holding a brass key.",
-  },
   "habitability-standards-for-rentals": {
     img: "guide-habitability-standards-for-rentals-v1",
     alt: "A pop engraving under a lilac sky: a Roman landlord in an orange toga inspects tiled rental houses with a heavy key in hand beside a modern red letterbox.",
@@ -699,10 +695,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "hoa-rules-renting-out-condo": {
     img: "guide-hoa-rules-renting-out-condo-v1",
     alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga with a large iron key inspects a modern letterbox outside small tiled villas.",
-  },
-  "how-long-does-seo-take-property-management": {
-    img: "guide-how-long-does-seo-take-property-management-v1",
-    alt: "A pop engraving under a yellow sky: a Roman property manager in an orange toga sits beside a vintage rotary telephone on a marble plinth, holding a key before a quiet row of tiled two-flat houses.",
   },
   "how-long-should-a-make-ready-take": {
     img: "guide-how-long-should-a-make-ready-take-v1",
@@ -715,6 +707,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "how-much-should-a-security-deposit-be": {
     img: "guide-how-much-should-a-security-deposit-be-v1",
     alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga inspects a brass key beside a letterbox and small tiled houses.",
+  },
+  "google-business-profile-suspended-property-management": {
+    img: "guide-google-business-profile-suspended-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a Roman property manager in an orange toga sits beside a vintage rotary telephone on a marble plinth, holding an oversized brass key before a cluster of pastel two-flat villa houses with terracotta roofs.",
+  },
+  "how-long-does-seo-take-property-management": {
+    img: "guide-how-long-does-seo-take-property-management-v1",
+    alt: "A pop engraving under a coral sky: a Roman landlord in an orange toga sits beside a vintage CRT computer outside small tiled houses, waiting with a large brass key in hand.",
+  },
+  "how-much-to-save-for-rental-repairs-capex": {
+    img: "guide-how-much-to-save-for-rental-repairs-capex-v1",
+    alt: "A pop engraving under a yellow sky: A Roman landlord in an orange toga inspects a two-flat villa with terracotta roof tiles, holding an oversized brass key while standing near a bulky beige CRT computer on a marble plinth beside clay savings jars and repair materials.",
+  },
+  "how-to-avoid-rental-listing-scams": {
+    img: "guide-how-to-avoid-rental-listing-scams-v1",
+    alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga inspects a vintage CRT computer on a stone pedestal before a terracotta two-flat villa, holding an oversized bronze key.",
   },
 };
 
