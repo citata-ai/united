@@ -3,10 +3,10 @@ title: "Due Diligence Checklist: Buying a Property Management Company — Citata
 description: "A checklist for buying a property management company: trust account reconciliation, agreement transfer, churn history, owner tenure, licenses and legal risk."
 headline: "Due Diligence Checklist for Buying a Property Management Company"
 dek: "35 checks in five groups, from the trust account to the owner who signed last month."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-12"
+updated: "2026-11-12"
 answer: "Check four things before you buy a property management company: the trust accounts, the management agreements, the door and churn history, and the licenses and legal risk. Ask for three years of financials, monthly trust reconciliations and a list of every door with its start date. Make the purchase contract conditional on this review so you can reprice or walk away."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "checklist"
 priority: 2

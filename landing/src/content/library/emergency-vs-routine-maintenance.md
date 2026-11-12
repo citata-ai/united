@@ -3,10 +3,10 @@ title: "Emergency vs Routine Maintenance: How Landlords Triage — Citata.ai"
 description: "An emergency threatens safety or the building now: fire, gas, flooding, no heat in winter. A 3-tier triage table, after-hours rules and state repair deadlines."
 headline: "Emergency vs Routine Maintenance: How to Triage"
 dek: "Three tiers, clear response times, and what the tenant should do first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-12"
+updated: "2026-11-12"
 answer: "A maintenance emergency is a problem that threatens health, safety or the building right now: fire, a gas smell, active flooding, sewage backup, no heat in freezing weather, or a door that will not lock. Urgent problems, such as no hot water, need a fix within a day or two. Routine requests can wait for a scheduled visit. State law also sets deadlines: Texas presumes 7 days is a reasonable time to repair a serious condition, and California presumes 30 days for repair-and-deduct."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2
