@@ -1232,3 +1232,15 @@ file = "img/guide-claim-chatgpt-v1-*.webp"
 prompt = "Style N, reference claim-a.png (from guide-agencies-v2). Scene: a property manager in an orange toga presses a large wax seal onto a blank scroll on a stone altar beside an old CRT computer with a blank screen; small tiled houses behind. Flat sky cyan, 16:9, no text."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-12"
+
+[[image]]
+file = "img/guide-pm-marketing-agencies-v1-*.webp"
+prompt = "Use the image /tmp/img-pm-marketing-agencies/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a Roman landlord in an orange toga stands in a small market square and compares three merchant stalls with striped awnings, each stall keeper holding up a scroll and a bronze trumpet toward him; the landlord holds a large brass key and a vintage rotary phone rests on a marble plinth beside him; small tiled-roof houses and a two-flat villa behind the stalls. The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border."
+model = "gemini-3-flash generate_image via omp (variant b of 2); Real-ESRGAN x4"
+date = "2026-11-13"
+
+[[image]]
+file = "img/guide-questions-marketing-agency-v1-*.webp"
+prompt = "Use the image /tmp/img-questions-to-ask-property-management-marketing-agency/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). New scene: a Roman landlord in an orange toga sits at a marble table across from a merchant in a blue tunic and holds a closed, tied scroll with a red wax seal and raises one finger as if asking a question; a vintage rotary phone and a large brass key rest on the table; small tiled-roof houses and a two-flat villa in the background. The sky is one flat lilac #B8A2E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. The scroll is closed: no writing visible anywhere."
+model = "gemini-3-flash generate_image via omp (variant c of 4; a and b had text on the scroll); Real-ESRGAN x4"
+date = "2026-11-13"

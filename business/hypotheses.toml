@@ -234,3 +234,11 @@ start = "2026-11-12"
 actions = ["B031 (2026-11-12): new guide /guides/claim-property-management-company-in-chatgpt on OpenAI Business Hub (beta 2026-11-10): 6 claim steps, verification methods, Persona, local-listing limit, what a local mention counts, 28-day insights, what a claim does not fix; plus our 50-city data (ChatGPT engine: listing site in 48 of 50 answers, company site in 15). OpenAI blog and help page read in a browser 2026-11-12. Fresh-topic test for H07: published 2 days after the OpenAI launch; ClearLead posted a how-to on 2026-11-11."]
 urls = ["https://citata.ai/guides/claim-property-management-company-in-chatgpt"]
 status = "running"
+
+[[experiment]]
+id = "H07-E4"
+hypothesis = "H07"
+start = "2026-11-13"
+actions = ["B032 (2026-11-13): new comparison /guides/property-management-marketing-agencies: 9 agencies (Upkeep Media, Fourandhalf, Goodjuju Marketing, ClearLead Digital, PMW, DoorGrow, theStacc, Built-Right Digital, Citata.ai), public prices and terms read 2026-11-13, AI naming data from the 2026-11-02 pm-marketing-agency prompt (Upkeep 6/6, Fourandhalf 5/6, Goodjuju 4/6, ClearLead 3/6, us 0/6), door-payback math on Goodjuju's $6,480-per-door method, fit by door count. Published the draft /guides/questions-to-ask-property-management-marketing-agency as the linked checklist (facts re-read 2026-11-13: ICANN, GA4, GBP, Goodjuju fall 2026). Linked from /guides/geo-agencies-for-property-management. Target prompts: pm-marketing-agency, pm-geo-small."]
+urls = ["https://citata.ai/guides/property-management-marketing-agencies", "https://citata.ai/guides/questions-to-ask-property-management-marketing-agency"]
+status = "running"

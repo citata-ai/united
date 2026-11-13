@@ -63,3 +63,5 @@ When you replace an image: put the new version here under its new name, delete t
 | `guide-property-management-fees-by-state-v1.webp` | Library: property management fees by state | N, yellow |
 | `guide-landlord-laws-2027-v1.webp` | Library: new landlord laws in 2027 | N, lilac |
 | `guide-switching-software-costs-v1.webp` | Library: switching software fees and timelines | N, yellow |
+| `guide-pm-marketing-agencies-v1.webp` | Library: PM marketing agencies compared | N, yellow |
+| `guide-questions-marketing-agency-v1.webp` | Library: questions to ask a PM marketing agency | N, lilac |

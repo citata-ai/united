@@ -67,6 +67,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-11-10 | Refresh /guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop (H06-E1, B003): 4 pricing pages re-read; Buildium +5%, DoorLoop shown minimums removed; 50/100/200-door table and usage fees | 2026-11-10 |
 | 2026-11-11 | Refresh /guides/how-to-choose-a-property-manager (H06-E1, B018): 50-city AI index data replaces Chicago-only data; fee benchmark table (iPropertyManagement, re-read 2026-11-11); blank scorecard; FAQ on normal fees | 2026-11-11 |
 | 2026-11-12 | Guide /guides/claim-property-management-company-in-chatgpt (H07-E3, B031): OpenAI Business Hub claim steps, limits for local firms, insights, what a claim does not fix; OpenAI pages read in a browser 2026-11-12; cover style N cyan | 2026-11-12 |
+| 2026-11-13 | Comparison /guides/property-management-marketing-agencies (H07-E4, B032): 9 agencies, prices and terms read 2026-11-13, door-payback math, fit by door count; checklist /guides/questions-to-ask-property-management-marketing-agency published; covers style N yellow, lilac | 2026-11-13 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
