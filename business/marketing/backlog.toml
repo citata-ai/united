@@ -310,7 +310,7 @@ kind = "comparison"
 title = "Marketing agencies for property management companies (2026): named agencies, prices, fit by door count, our own entry disclosed"
 demand = "AI visibility 2026-11-02: pm-marketing-agency, pm-aeo-agency, pm-geo-small = 0 of 18 for us. pm-marketing-agency names Upkeep Media 6 of 6 and Fourandhalf 5 of 6; sources are the agencies' own pages. Third-party lists exist but are self-ranked (thestacc.com/best/property-management-marketing-agencies/ ranks itself first; wifitalents, worldmetrics, gitnux, designrush with paid spots). Our /guides/geo-agencies-for-property-management already earns ChatGPT names on GEO prompts."
 score = 8
-status = "staged"
+status = "live"
 note = "Same form as the GEO agency guide. Read each agency's pricing page in the run; no price without a source. Publish the draft questions-to-ask-property-management-marketing-agency as the linked checklist. Name no client."
 
 [[item]]
