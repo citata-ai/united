@@ -3,10 +3,10 @@ title: "Questions to Ask a Property Management Marketing Agency — Citata.ai"
 description: "Before you sign, ask a marketing agency who owns the domain and accounts, how it reports signed doors, how you cancel, and which results it can prove."
 headline: "Questions to Ask a Property Management Marketing Agency"
 dek: "Twenty questions about ownership, reports, contracts and proof, with the answer you want to hear."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-13"
+updated: "2026-11-13"
 answer: "Ask four groups of questions before you sign: who owns the domain, website and ad accounts; how the agency reports leads and signed doors; what the contract term and cancel terms are; and which client results it can show with names and dates. Get each answer in writing. An agency that will not put your name on your own accounts is a risk."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "checklist"
 priority: 2
@@ -122,5 +122,7 @@ The last question matters for local work. Two property managers in one city comp
 ## How do I score the answers?
 
 Score each answer as yes, partial or no, and treat any "no" on ownership as a stop. Ownership comes first because it decides your cost to leave. Reports come second because they decide whether you can judge the work. Price comes last.
+
+To compare agencies, prices and terms side by side, see [property management marketing agencies compared](/guides/property-management-marketing-agencies).
 
 Keep this list in the same document as the proposal. Ask the agency to answer in writing, then attach the answers to the contract.

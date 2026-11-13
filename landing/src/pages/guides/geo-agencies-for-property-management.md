@@ -191,7 +191,7 @@ What we do: a free AI visibility audit, then one human-checked change a day and 
 
 What we cannot show yet: client results. Our first case study is [Fridman Properties](/case-studies/fridman-properties) in Chicago. Its owner is CEO of MyRemotely, our partner, so it is a related party. Results are due 2027-01-14. AI named Citata.ai in 0 of 108 non-brand answers on 2026-10-18, and in 3 of 108 on 2026-11-02 (our data). All 3 were ChatGPT answers that cited this guide.
 
-If you want an SEO-first agency with published door-growth case studies, look at Goodjuju Marketing or Upkeep Media. If you want GEO as the main job and a weekly report, see [our GEO service](/property-management).
+If you want an SEO-first agency with published door-growth case studies, look at Goodjuju Marketing or Upkeep Media. For full marketing plans (SEO, ads, reviews, websites) and the door math behind each price, see [property management marketing agencies compared](/guides/property-management-marketing-agencies). If you want GEO as the main job and a weekly report, see [our GEO service](/property-management).
 
 ## What changed in this guide?
 
