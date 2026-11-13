@@ -300,7 +300,7 @@ kind = "guide"
 title = "Claim your property management company in ChatGPT (Business Hub, beta since 2026-11-10): steps, verification, what the dashboard shows, and what it does not fix"
 demand = "OpenAI launched Businesses in ChatGPT with a free Business Hub on 2026-11-10 (https://openai.com/index/introducing-businesses-chatgpt/, https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt; both gave HTTP 403 to the scout, read them in a browser). Press 2026-11-11: tech-ish.com, technology.org, ppc.land. ClearLead published /blog/claim-your-business-in-chatgpt on 2026-11-11. PMW has a May 2026 post on OpenAI listings. Owners and managers will ask 'how do I claim my company in ChatGPT' this month."
 score = 9
-status = "staged"
+status = "live"
 note = "Do not copy ClearLead. New data from us: the 50-city index (which named companies have a site, a GBP, an Expertise.com page) and the directory data on /library/directories-ai-cites-property-management. Read OpenAI help pages in the run; state the local-listing limit (help article: local stores can claim only an existing US listing) only if the primary says it. Link fix-wrong-info draft. Guide + cover style N."
 
 [[item]]
@@ -310,7 +310,7 @@ kind = "comparison"
 title = "Marketing agencies for property management companies (2026): named agencies, prices, fit by door count, our own entry disclosed"
 demand = "AI visibility 2026-11-02: pm-marketing-agency, pm-aeo-agency, pm-geo-small = 0 of 18 for us. pm-marketing-agency names Upkeep Media 6 of 6 and Fourandhalf 5 of 6; sources are the agencies' own pages. Third-party lists exist but are self-ranked (thestacc.com/best/property-management-marketing-agencies/ ranks itself first; wifitalents, worldmetrics, gitnux, designrush with paid spots). Our /guides/geo-agencies-for-property-management already earns ChatGPT names on GEO prompts."
 score = 8
-status = "idea"
+status = "staged"
 note = "Same form as the GEO agency guide. Read each agency's pricing page in the run; no price without a source. Publish the draft questions-to-ask-property-management-marketing-agency as the linked checklist. Name no client."
 
 [[item]]

@@ -355,4 +355,12 @@ side = "internal"
 kind = "site"
 title = "New guide: claim your property management company in ChatGPT (B031, H07)"
 ref = "landing/src/content/library/claim-property-management-company-in-chatgpt.md"
-result = "On stage. OpenAI Business Hub (beta 2026-11-10): claim steps, verification, Persona, local-listing limit, local mention rule, 28-day insights, what a claim does not fix. OpenAI blog and help page read 2026-11-12. Cover style N, cyan."
+result = "Live on citata.ai 2026-11-12. OpenAI Business Hub (beta 2026-11-10): claim steps, verification, Persona, local-listing limit, local mention rule, 28-day insights, what a claim does not fix. OpenAI blog and help page read 2026-11-12. Cover style N, cyan."
+
+[[entry]]
+date = "2026-11-13"
+side = "internal"
+kind = "site"
+title = "New comparison: property management marketing agencies (B032, H07) + agency questions checklist"
+ref = "landing/src/content/library/property-management-marketing-agencies.md"
+result = "On stage. 9 agencies, public prices and terms read 2026-11-13, AI naming from the 2026-11-02 test (us 0 of 6), door-payback math, fit by door count. Checklist draft questions-to-ask-property-management-marketing-agency published with it. Covers style N: yellow, lilac."

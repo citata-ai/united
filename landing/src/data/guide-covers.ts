@@ -728,6 +728,14 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-claim-chatgpt-v1",
     alt: "A pop engraving under a cyan sky: a property manager in an orange toga raises a brass seal over a blank scroll on a pink stone altar beside an old computer, with Roman busts and small tiled houses behind him.",
   },
+  "property-management-marketing-agencies": {
+    img: "guide-pm-marketing-agencies-v1",
+    alt: "A pop engraving under a yellow sky: a Roman landlord in an orange toga holds a brass key between rows of market stalls, where merchants blow bronze trumpets and hold up scrolls, beside a rotary phone on a marble plinth.",
+  },
+  "questions-to-ask-property-management-marketing-agency": {
+    img: "guide-questions-marketing-agency-v1",
+    alt: "A pop engraving under a lilac sky: a Roman landlord in an orange toga holds a sealed scroll and raises a finger to question a merchant in a blue tunic across a marble table with a rotary phone and a brass key.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
