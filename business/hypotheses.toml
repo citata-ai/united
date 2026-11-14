@@ -242,3 +242,11 @@ start = "2026-11-13"
 actions = ["B032 (2026-11-13): new comparison /guides/property-management-marketing-agencies: 9 agencies (Upkeep Media, Fourandhalf, Goodjuju Marketing, ClearLead Digital, PMW, DoorGrow, theStacc, Built-Right Digital, Citata.ai), public prices and terms read 2026-11-13, AI naming data from the 2026-11-02 pm-marketing-agency prompt (Upkeep 6/6, Fourandhalf 5/6, Goodjuju 4/6, ClearLead 3/6, us 0/6), door-payback math on Goodjuju's $6,480-per-door method, fit by door count. Published the draft /guides/questions-to-ask-property-management-marketing-agency as the linked checklist (facts re-read 2026-11-13: ICANN, GA4, GBP, Goodjuju fall 2026). Linked from /guides/geo-agencies-for-property-management. Target prompts: pm-marketing-agency, pm-geo-small."]
 urls = ["https://citata.ai/guides/property-management-marketing-agencies", "https://citata.ai/guides/questions-to-ask-property-management-marketing-agency"]
 status = "running"
+
+[[experiment]]
+id = "H07-E5"
+hypothesis = "H07"
+start = "2026-11-14"
+actions = ["B033 (2026-11-14): refreshed and published the draft /guides/ai-visibility-audit-property-management as 'How to check if AI recommends your property management company': 5 owner prompts word for word, new section on free tools (Ahrefs Free AI Visibility Checker: 6 engines, no signup, one-time snapshot; HubSpot AI Search Grader: GPT-5.4 mini, Perplexity, Gemini, no cost, form for full results; ChatGPT Business Hub: mentions, clicks, discovery topics, clicks tooltip), our 2026-11-13 data for prompt pm-ai-visibility-check (Ahrefs named in 6 of 6 answers, HubSpot 2 of 6, us 0 of 6), new FAQ on Business Hub, free-check close. Tool pages read 2026-11-14 (Ahrefs, HubSpot, Search Engine Roundtable 2026-11-10). Linked from /guides/claim-property-management-company-in-chatgpt. Target prompt: pm-ai-visibility-check (baseline 0 of 6 ChatGPT/Claude/Gemini on 2026-11-13)."]
+urls = ["https://citata.ai/guides/ai-visibility-audit-property-management"]
+status = "running"

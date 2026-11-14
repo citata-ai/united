@@ -103,6 +103,6 @@ Do these 4 things in the same week:
 1. **Match every listing.** Use the same name, address, phone and website on your site, Google Business Profile, Bing Places, Yelp and the BBB. Our list of the [directories AI cites for property managers](/guides/directories-ai-cites-property-management) shows which ones to fix first.
 2. **Write a plain description.** Say what you manage, where and for whom: "We manage single-family homes and small multifamily in Cook County." Use the words owners use.
 3. **Record a baseline.** Note the first mention and click counts with the date. Check again after 28 days.
-4. **Ask the owner question yourself.** Ask ChatGPT "Who is the best property management company in <your city>?" and write down the names and links. Read [where ChatGPT gets local business data](/guides/where-chatgpt-gets-local-business-data) to see why the answer changes.
+4. **Ask the owner question yourself.** Ask ChatGPT "Who is the best property management company in <your city>?" and write down the names and links. Read [where ChatGPT gets local business data](/guides/where-chatgpt-gets-local-business-data) to see why the answer changes. For the full check with 5 prompts and a score, use our [one-hour AI visibility audit](/guides/ai-visibility-audit-property-management).
 
 Want a second pair of eyes? We run a free AI visibility check for property management companies. We ask the questions owners ask, in ChatGPT, Gemini and Claude, and show you who they name and why.
