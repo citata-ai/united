@@ -320,7 +320,7 @@ kind = "guide"
 title = "How to check if AI recommends your property management company: 5 test prompts, free tools, ChatGPT Business Hub mention counts, then our free audit"
 demand = "AI visibility 2026-11-02: pm-ai-visibility-check 0 of 6 for us; ahrefs.com cited 5 of 6, semrush.com 4 of 6. Business Hub (2026-11-10) now shows ChatGPT mention counts, a new free check. Citant.ai published 'What is an AI search audit? 18 red flags' on 2026-11-11."
 score = 7
-status = "staged"
+status = "live"
 note = "Publish and refresh the draft ai-visibility-audit-property-management (visible = false) instead of a new file. Give the 5 prompts word for word; name free tools by name."
 
 [[item]]
