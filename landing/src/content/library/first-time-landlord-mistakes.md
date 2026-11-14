@@ -3,10 +3,10 @@ title: "First-Time Landlord Mistakes and How to Avoid Them — Citata.ai"
 description: "New landlords keep the wrong insurance, misprice rent, skip tax records and miss legal steps like lead disclosure and FCRA notices. A checklist to avoid them."
 headline: "First-Time Landlord Mistakes and How to Avoid Them"
 dek: "Insurance, rent, taxes and legal steps: the misses that cost new owners the most."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-14"
+updated: "2026-11-14"
 answer: "New landlords most often make four kinds of mistakes. They keep a homeowners policy instead of a policy for a rented home. They set rent by feel instead of from 3 or more nearby rentals. They skip tax records, such as depreciation, which the IRS counts even if you do not claim it. And they miss legal steps: fair housing rules, the lead paint disclosure for pre-1978 homes, FCRA adverse action notices, and state deposit and notice rules."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "checklist"
 priority: 2
