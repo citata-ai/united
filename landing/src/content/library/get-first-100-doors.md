@@ -3,10 +3,10 @@ title: "How a New Property Management Company Gets Its First 100 Doors — Citat
 description: "Your first 100 doors come from your network, referrals, a clear website and fast replies, plus maybe a small book purchase. Sources, a fit checklist and a timeline."
 headline: "How to Get Your First 100 Doors"
 dek: "Where early doors come from, which owners to decline, and how long 100 doors takes at your pace."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-14"
+updated: "2026-11-14"
 answer: "The first 100 doors usually come from your own network, owner and realtor referrals, a clear website, and fast replies to every lead. A small book purchase can add dozens of doors at once if you have the cash. Decline owners who do not fit your service, because early bad fits use the time you need to grow. At 4 net new doors a month, 100 doors takes about 25 months."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "how-to"
 priority: 2
