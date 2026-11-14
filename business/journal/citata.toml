@@ -372,3 +372,11 @@ kind = "measure"
 title = "AI visibility re-run + first Grok run"
 ref = "business/marketing/ai-visibility/2026-11-13/report.md"
 result = "Non-brand: ChatGPT 6 of 35 (was 3 of 36 on 2026-11-02), Claude 0 of 36, Gemini 0 of 36. Grok 4.7 via cursor-agent (new engine): 16 of 36 non-brand answers name and cite citata.ai, rank 1 in 6. Grok has no web search through CLIProxy, so it runs in cursor-agent ask mode; a no-search check showed no Citata context in Cursor rules."
+
+[[entry]]
+date = "2026-11-14"
+side = "internal"
+kind = "site"
+title = "Guide: how to check if AI recommends your property management company (B033, H07)"
+ref = "landing/src/content/library/ai-visibility-audit-property-management.md"
+result = "Draft refreshed and published. 5 owner prompts, free tools (Ahrefs, HubSpot, ChatGPT Business Hub) read 2026-11-14, our pm-ai-visibility-check data 2026-11-13 (Ahrefs 6 of 6, us 0 of 6), 100-point score. Cover style N cyan."

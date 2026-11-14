@@ -752,6 +752,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-questions-marketing-agency-v1",
     alt: "A pop engraving under a lilac sky: a Roman landlord in an orange toga holds a sealed scroll and raises a finger to question a merchant in a blue tunic across a marble table with a rotary phone and a brass key.",
   },
+  "ai-visibility-audit-property-management": {
+    img: "guide-ai-visibility-audit-v1",
+    alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga holds a brass hourglass and a wax tablet at a marble desk with an old computer, looking over rows of small tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
