@@ -3,10 +3,10 @@ title: "FY2027 Fair Market Rent: Biggest Rises and Drops, 50 Metros — Citata.a
 description: "HUD's FY2027 2-bedroom fair market rent rose 13.8% in Kansas City and 12.9% in Chicago, and fell 6.4% in Dallas. All 50 large metros ranked, with what a drop means."
 headline: "FY2027 Fair Market Rents: Which Metros Rose and Fell"
 dek: "We ranked HUD's 2-bedroom FMR change for the 50 largest metro areas: 28 rose, 22 fell."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-14"
+updated: "2026-11-14"
 answer: "Of the 50 largest HUD metro FMR areas, 28 got a higher FY2027 2-bedroom fair market rent and 22 got a lower one. Kansas City rose the most (+13.8%), then Chicago (+12.9%) and Columbus, Ohio (+12.0%). Dallas fell the most (-6.4%), then San Jose (-6.1%), San Diego (-5.9%) and Phoenix (-5.7%). A lower FMR can lower the payment standard, but a housing authority cannot cut a current family's payment standard sooner than 2 years after the decrease takes effect."
-visible: false
+visible: true
 cluster: "local-market"
 kind: "local"
 priority: 2

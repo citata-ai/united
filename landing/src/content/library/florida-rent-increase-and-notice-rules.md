@@ -3,10 +3,10 @@ title: "Florida Rent Increase Notice Rules: 30 Days, No Rent Control — Citata.
 description: "Florida bans local rent control and sets no rent increase cap. To change rent on a month-to-month lease, give 30 days' written notice under Fla. Stat. 83.57."
 headline: "Florida Rent Increase and Notice Rules for Landlords"
 dek: "What the 2026 Florida Statutes say about rent caps, notice periods and local rules."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-14"
+updated: "2026-11-14"
 answer: "Florida has no state cap on rent increases, and Fla. Stat. §§ 125.0103 and 166.043 bar counties and cities from any measure that controls rents. Chapter 83 sets no separate notice for a rent increase. A month-to-month tenancy ends with written notice at least 30 days before the end of a monthly period (§ 83.57(3)), so landlords use that window to set new terms. In a fixed-term lease, the rent stays as written until the term ends, unless the lease itself allows a change."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

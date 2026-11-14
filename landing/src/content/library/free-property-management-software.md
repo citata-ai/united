@@ -3,10 +3,10 @@ title: "Free Property Software: Plans, Fees and Limits — Citata.ai"
 description: "Avail and TurboTenant publish free software plans, but payments, screening and optional tools can cost extra. Compare the full process before choosing a plan."
 headline: "Free Property Management Software and Its Limits"
 dek: "A free subscription can work well when the paid transactions and missing tools remain clear."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-14"
+updated: "2026-11-14"
 answer: "Avail and TurboTenant publish free software plans for landlords. Free access does not remove screening fees, payment charges or optional upgrades. Test the whole rental workflow and exports, then compare who pays each charge before selecting a plan."
-visible: false
+visible: true
 cluster: "software"
 kind: "comparison"
 priority: 2
