@@ -26,6 +26,7 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 | 2026-11-12 | /guides/claim-property-management-company-in-chatgpt | H07 | Claim your company in ChatGPT: OpenAI Business Hub (beta 2026-11-10) steps, phone/email/DNS verification, Persona, local stores claim only an existing US listing, local mention rule, 28-day insights, claim does not raise recommendations; 50-city data (ChatGPT engine: listing site 48 of 50, company site 15); OpenAI blog and help page read 2026-11-12 | 2026-11-12 |
 | 2026-11-13 | /guides/property-management-marketing-agencies | H07 | 9 PM marketing agencies compared: public prices and terms read 2026-11-13, AI naming 2026-11-02 (Upkeep 6/6, Fourandhalf 5/6, us 0/6), door-payback math (Goodjuju $6,480/door method), fit by door count | 2026-11-13 |
 | 2026-11-13 | /guides/questions-to-ask-property-management-marketing-agency | H07 | Draft checklist published as B032's linked page: 20 questions on ownership, reports, terms, proof; ICANN, GA4, GBP, Goodjuju facts re-read 2026-11-13 | 2026-11-13 |
+| 2026-11-14 | /guides/ai-visibility-audit-property-management | H07 | How to check if AI recommends your PM company: 5 owner prompts, free tools (Ahrefs checker, HubSpot grader, ChatGPT Business Hub; pages read 2026-11-14), our 2026-11-13 data (Ahrefs named 6/6, us 0/6), 100-point score | pending |
 
 ## Asks for Tao (tick 2026-11-12)
 
@@ -37,3 +38,9 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 - Read /guides/property-management-marketing-agencies once: it names 8 other agencies with their public prices (read 2026-11-13). Say if you want any entry changed.
 - B038 is still open: claim citata.ai in ChatGPT Business Hub (your ChatGPT login, verification, Persona ID check).
 - omp image quota: 1 of 4 runs hit 429 "Resource exhausted" today; covers still shipped.
+
+## Asks for Tao (tick 2026-11-14)
+
+- omp image generation with the `gemini-3-flash` driver model now fails with 403 "disabled ... for violation of Terms of Service" (same as `agy` on 2026-11-12). The cover worked with `--model claude-sonnet-4-6` as the driver. `tools/library/covers.sh` and `brand/IMAGES.md` still use `gemini-3-flash`: the library cover job will fail until one of them changes. Decide: appeal, or switch the driver model.
+- B038 is still open: claim citata.ai in ChatGPT Business Hub (your ChatGPT login, verification, Persona ID check).
+- B012 is still blocked: Bing Webmaster API key or GSC read access in Infisical `citata`.

@@ -1,12 +1,12 @@
 ---
-title: "One-Hour AI Visibility Audit for Property Managers — Citata.ai"
-description: "Audit your AI visibility in 60 minutes: run 5 owner prompts in 3 AI engines, check 7 listings, test 7 site basics and score the result out of 100 points."
-headline: "One-Hour AI Visibility Audit for Property Managers"
-dek: "Four time blocks, 15 AI answers, 7 listings and a 100-point score sheet."
-published: "2026-10-19"
-updated: "2026-10-19"
-answer: "Split the hour into 4 blocks. In 20 minutes, run 5 owner prompts in ChatGPT, Gemini and Perplexity and write down who they name and cite. In 15 minutes, check your profiles on the sites AI cites most: Expertise.com, Yelp, iPropertyManagement, BBB, Google Business Profile and Reddit. In 15 minutes, test 7 site basics. In the last 10 minutes, score each part and pick 3 fixes."
-visible: false
+title: "How to Check if AI Recommends Your Property Management Company — Citata.ai"
+description: "Check if ChatGPT, Gemini and Perplexity name your property management company: 5 owner prompts word for word, free tools, ChatGPT Business Hub counts and a 100-point score in one hour."
+headline: "How to Check if AI Recommends Your Property Management Company"
+dek: "A one-hour audit: 5 prompts, 3 free tools, 7 listings and a 100-point score sheet."
+published: "2026-11-14"
+updated: "2026-11-14"
+answer: "Split the hour into 4 blocks. In 20 minutes, run 5 owner prompts in ChatGPT, Gemini and Perplexity and write down who they name and cite. In 15 minutes, check your profiles on the sites AI cites most: Expertise.com, Yelp, iPropertyManagement, BBB, Google Business Profile and Reddit. In 15 minutes, test 7 site basics. In the last 10 minutes, score each part and pick 3 fixes. Free tools such as the Ahrefs Free AI Visibility Checker, HubSpot AI Search Grader and ChatGPT Business Hub add a second view, but your own owner prompts are the real test."
+visible: true
 cluster: "ai-search"
 kind: "checklist"
 priority: 3
@@ -17,7 +17,9 @@ faq:
   - q: "Which listings matter most for AI answers about property managers?"
     a: "In our run of 150 AI answers for 50 cities, Expertise.com was a source in 93, Yelp in 50 and iPropertyManagement in 50. Reddit, ThreeBestRated and BBB came next. Check those profiles first."
   - q: "Can I do an AI visibility audit without paid tools?"
-    a: "Yes. The free versions of ChatGPT, Gemini and Perplexity, a browser and your robots.txt file are enough for a first audit. Paid trackers help when you want to repeat the same prompts every week."
+    a: "Yes. The free versions of ChatGPT, Gemini and Perplexity, a browser and your robots.txt file are enough for a first audit. Ahrefs and HubSpot also have free one-time checkers. Paid trackers help when you want to repeat the same prompts every week."
+  - q: "Does ChatGPT Business Hub show if ChatGPT recommends my company?"
+    a: "Partly. After you claim and verify your company, Business Hub shows mentions, website clicks and discovery topics. For a local business, a mention counts when ChatGPT shows a result for your location. It does not show which questions named a competitor instead of you, so run your own owner prompts too."
   - q: "How often should I repeat the AI visibility audit?"
     a: "Repeat the audit once a month with the same prompts. AI answers change between runs, so one result is a snapshot. A trend over 3 months tells you more."
   - q: "What is a good AI visibility score?"
@@ -27,13 +29,19 @@ sources:
     url: "https://citata.ai/research/ai-property-manager-index-2026"
   - label: "OpenAI: Overview of OpenAI crawlers"
     url: "https://developers.openai.com/api/docs/bots"
+  - label: "Ahrefs: Free AI Visibility Checker (read 2026-11-14)"
+    url: "https://ahrefs.com/free-ai-visibility"
+  - label: "HubSpot: AI Search Grader (read 2026-11-14)"
+    url: "https://www.hubspot.com/aeo-grader"
+  - label: "Search Engine Roundtable: Businesses in ChatGPT Business Hub live with click data (2026-11-10)"
+    url: "https://seroundtable.com/chatgpt-business-hub-42505.html"
   - label: "Google Search Central: AI features and your website"
     url: "https://developers.google.com/search/docs/appearance/ai-features"
 ---
 
 ## What do you need before the one-hour audit?
 
-You need a browser, a timer and a sheet with 4 tabs: prompts, listings, site, score. Log out of your accounts, or use a private window, so past chats do not shape the answers. Pick one city you serve and one owner type, such as single-family landlords.
+You need a browser, a timer and a sheet with 4 tabs: prompts, listings, site, score. Log out of your accounts, or use a private window, so past chats do not shape the answers. Pick one city you serve and one owner type, such as single-family landlords. If you claimed your company in ChatGPT Business Hub, open it too.
 
 This audit is a first look, not a full study. AI answers change between runs. One hour gives you a baseline and 3 fixes. If you want the full technical list, our [AI search checklist for property management websites](/guides/ai-search-checklist-property-management-website) covers it.
 
@@ -56,6 +64,20 @@ For each answer, write down 3 things:
 - **Correct:** are your facts right? Check the name, phone, city, fees and door count.
 
 Prompts 4 and 5 are brand prompts. Most firms show up there. Prompts 1 to 3 are the real test, because the owner does not know your name yet.
+
+## Which free tools can check your AI visibility?
+
+Free tools give a quick second view. They do not replace your own owner prompts, because they ask their own questions, not the ones your owners ask. We asked ChatGPT, Claude and Gemini "How do I check if AI assistants mention my property management company? Is there a free AI visibility audit?" twice each on 2026-11-13. All 6 answers named Ahrefs. 2 named HubSpot's grader (our data, 2026-11-13). Here is what each tool does, from its own page, read on 2026-11-14.
+
+| Tool | What it checks | Cost and limits |
+|---|---|---|
+| Ahrefs Free AI Visibility Checker | Your brand in ChatGPT, Gemini, Perplexity, Microsoft Copilot, Google AI Overviews and AI Mode | No signup. A one-time snapshot. Ahrefs picks the prompts. |
+| HubSpot AI Search Grader | What GPT-5.4 mini, Perplexity and Gemini say about your brand | No cost. A short form for the full results. |
+| ChatGPT Business Hub | Mentions, website clicks and discovery topics in ChatGPT | Free. You must claim and verify your company first. |
+
+**Business Hub is the only one with ChatGPT's own counts.** OpenAI opened it on 2026-11-10. For a local business, a mention counts when ChatGPT shows a result for your location. Clicks are clicks on links to your site in ChatGPT. OpenAI's tooltip says "Clicks don't confirm website visits or conversions" (Search Engine Roundtable, 2026-11-10). Write the counts and the date in your sheet. Our guide on how to [claim your company in ChatGPT](/guides/claim-property-management-company-in-chatgpt) gives the steps.
+
+Business Hub does not tell you which owner questions name a competitor instead of you. Only your own prompts in the table above show that.
 
 ## Which listings should you check? (minutes 20–35)
 
@@ -111,10 +133,12 @@ Pick 3 fixes, one from each group:
 - **Listings:** claim or complete the top listing you are missing.
 - **Site:** add or update the fee page or the main city page.
 
-Write the date and the 3 fixes in your sheet. In 30 days, run the same 5 prompts and fill a new score. Our guide on [how to track AI traffic](/guides/track-ai-traffic-property-management) shows how to add analytics to this monthly check.
+Write the date and the 3 fixes in your sheet. In 30 days, run the same 5 prompts, read the Business Hub counts again and fill a new score. Our guide on [how to track AI traffic](/guides/track-ai-traffic-property-management) shows how to add analytics to this monthly check.
 
 ## What does this one-hour audit not cover?
 
 The one-hour audit does not cover every engine, city or owner type. It runs each prompt once, and AI answers change from run to run. It also skips deep technical work: schema, page speed, server logs.
 
 Treat the score as a signal, not proof. If one engine names you and two do not, that is normal. If no engine names you for prompts 1 to 3, start with listings. In our data, AI answers for this question lean on directories and review sites more than on company sites.
+
+Want a second pair of eyes? We run a free AI visibility check for property management companies. We ask the questions owners ask, in ChatGPT, Gemini and Claude, and show you who they name and why.
