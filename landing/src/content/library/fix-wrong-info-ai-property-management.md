@@ -3,10 +3,10 @@ title: "Fix Wrong Facts About Your Company in ChatGPT and Google AI — Citata.a
 description: "When ChatGPT or Google AI shows a wrong fee, address or a closed status, fix the source page first. Steps, feedback forms, listing order and wait times."
 headline: "How to Fix Wrong Facts About Your Company in AI"
 dek: "AI repeats what its sources say. Fix the source, then tell Google and wait."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-14"
+updated: "2026-11-14"
 answer: "AI answers repeat facts from the pages and profiles they read, so fix the source first. Find the page the answer cites, correct your own site and your Google Business Profile, then fix the directories AI cites most, such as Expertise.com, Yelp and the BBB. Then send feedback: Google has a thumbs-down and Report a problem link on each AI Overview, and a Suggest an edit link on each place. Expect days to months before every engine shows the fix."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "how-to"
 priority: 2

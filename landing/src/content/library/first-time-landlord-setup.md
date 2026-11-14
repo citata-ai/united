@@ -3,10 +3,10 @@ title: "First-Time Landlord Setup: What to Do Before Tenant One — Citata.ai"
 description: "Before your first tenant: a rent account, a lease with required disclosures, written criteria, landlord insurance, vendors and a record system. A checklist."
 headline: "First-Time Landlord: What to Set Up First"
 dek: "Money, paperwork, insurance, vendors and records, in place before move-in day."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-14"
+updated: "2026-11-14"
 answer: "Before your first tenant, set up five things: a separate bank account and a rent collection method, a lease with the disclosures your state and federal law require, written screening criteria, landlord insurance, and a vendor list with a repair plan. Add a record system for receipts, photos and notices from day one. Some states set rules on each step: Florida, for example, makes you hold deposits in a separate account or post a bond, and Texas requires a flood disclosure."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "checklist"
 priority: 2

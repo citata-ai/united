@@ -6,7 +6,9 @@ live web search) through the fleet CLIProxyAPI, then records mentions, rank,
 cited domains and the companies the AI recommends instead.
 
 Usage:
-  python3 tools/ai-visibility/run.py [--runs 1] [--only id1,id2] [--engines chatgpt,gemini,claude] [--prompts file.toml]
+  python3 tools/ai-visibility/run.py [--runs 1] [--only id1,id2] [--engines chatgpt,gemini,claude] [--prompts file.toml] [--tag grok]
+
+Grok: --engines grok --tag grok runs Grok 4.7 through cursor-agent (needs a Cursor login).
 
 --prompts picks another prompt file (default: prompts.toml next to this script).
 
@@ -29,7 +31,10 @@ ENGINES = {
     "chatgpt": "gpt-6-luna",       # OpenAI Responses API + web_search (closest to ChatGPT search)
     "gemini": "gemini-3-flash",    # Gemini + Google Search grounding (closest to AI Overviews / Gemini)
     "claude": "claude-sonnet-5-5", # Claude + web_search
+    "grok": "grok-4.7-medium",     # Grok via cursor-agent (ask mode, its own web search); not in the default set
 }
+DEFAULT_ENGINES = "chatgpt,gemini,claude"
+GROK_PREFIX = "Search the web before you answer. Cite the source URLs. Do not read or edit any files.\n\n"
 EXTRACTOR = "claude-haiku-4-5"
 
 
@@ -109,7 +114,22 @@ def ask_claude(q):
     return "".join(text), urls
 
 
-ASK = {"chatgpt": ask_chatgpt, "gemini": ask_gemini, "claude": ask_claude}
+def ask_grok(q):
+    """Grok has no web search through CLIProxy (2026-11-13), so it runs in cursor-agent ask mode."""
+    import subprocess, tempfile
+    ws = tempfile.mkdtemp(prefix="grok-ws-")
+    for attempt in range(2):
+        r = subprocess.run(["cursor-agent", "-p", "--mode", "ask", "--trust", "--workspace", ws, "--model", ENGINES["grok"],
+                            "--output-format", "text", GROK_PREFIX + q], capture_output=True, text=True, timeout=420)
+        if r.returncode == 0 and r.stdout.strip():
+            text = r.stdout.strip()
+            return text, re.findall(r"https?://[^\s)\]>\"']+", text)
+        err = (r.stderr or r.stdout)[-300:]
+        time.sleep(10)
+    raise RuntimeError("cursor-agent: " + err)
+
+
+ASK = {"chatgpt": ask_chatgpt, "gemini": ask_gemini, "claude": ask_claude, "grok": ask_grok}
 
 
 def extract_companies(answer):
@@ -248,7 +268,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--runs", type=int, default=1)
     ap.add_argument("--only", default="")
-    ap.add_argument("--engines", default=",".join(ENGINES))
+    ap.add_argument("--engines", default=DEFAULT_ENGINES, help="add grok (cursor-agent) by hand")
+    ap.add_argument("--tag", default="", help="write to <date>-<tag>/ instead of <date>/")
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--prompts", default=os.path.join(HERE, "prompts.toml"))
     ap.add_argument("--report-only", default="", help="re-render report.md from <dir>/answers.jsonl (no API calls)")
@@ -262,7 +283,7 @@ def main():
     CFG.update(cfg)
     prompts = [p for p in cfg["prompt"] if not a.only or p["id"] in a.only.split(",")]
     brand_re = re.compile("|".join(re.escape(b) for b in cfg["brand"]), re.I)
-    out = os.path.join(ROOT, cfg.get("out_dir", "docs/marketing/research/ai-visibility"), dt.date.today().isoformat())
+    out = os.path.join(ROOT, cfg.get("out_dir", "docs/marketing/research/ai-visibility"), dt.date.today().isoformat() + (f"-{a.tag}" if a.tag else ""))
     os.makedirs(out, exist_ok=True)
     jobs = [(p, e, r) for p in prompts for e in a.engines.split(",") for r in range(1, a.runs + 1)]
     rows = []
