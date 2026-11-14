@@ -356,3 +356,19 @@ kind = "site"
 title = "New guide: claim your property management company in ChatGPT (B031, H07)"
 ref = "landing/src/content/library/claim-property-management-company-in-chatgpt.md"
 result = "Live on citata.ai 2026-11-12. OpenAI Business Hub (beta 2026-11-10): claim steps, verification, Persona, local-listing limit, local mention rule, 28-day insights, what a claim does not fix. OpenAI blog and help page read 2026-11-12. Cover style N, cyan."
+
+[[entry]]
+date = "2026-11-13"
+side = "internal"
+kind = "site"
+title = "New comparison: property management marketing agencies (B032, H07) + agency questions checklist"
+ref = "landing/src/content/library/property-management-marketing-agencies.md"
+result = "Live on citata.ai 2026-11-13. 9 agencies, public prices and terms read 2026-11-13, AI naming from the 2026-11-02 test (us 0 of 6), door-payback math, fit by door count. Checklist draft questions-to-ask-property-management-marketing-agency published with it. Covers style N: yellow, lilac."
+
+[[entry]]
+date = "2026-11-13"
+side = "internal"
+kind = "measure"
+title = "AI visibility re-run + first Grok run"
+ref = "business/marketing/ai-visibility/2026-11-13/report.md"
+result = "Non-brand: ChatGPT 6 of 35 (was 3 of 36 on 2026-11-02), Claude 0 of 36, Gemini 0 of 36. Grok 4.7 via cursor-agent (new engine): 16 of 36 non-brand answers name and cite citata.ai, rank 1 in 6. Grok has no web search through CLIProxy, so it runs in cursor-agent ask mode; a no-search check showed no Citata context in Cursor rules."
