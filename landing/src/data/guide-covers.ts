@@ -740,6 +740,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-handle-a-tenant-breaking-a-lease-v1",
     alt: "A pop engraving under a cyan sky: a Roman landlord in an orange toga inspects a tiled two-flat building holding a key beside an open, empty letterbox.",
   },
+  "claim-property-management-company-in-chatgpt": {
+    img: "guide-claim-chatgpt-v1",
+    alt: "A pop engraving under a cyan sky: a property manager in an orange toga raises a brass seal over a blank scroll on a pink stone altar beside an old computer, with Roman busts and small tiled houses behind him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

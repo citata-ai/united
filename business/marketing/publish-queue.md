@@ -23,3 +23,9 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 | 2026-11-09 | /guides/property-management-software-switching-costs | H06 | Switching software: onboarding fee, stated timeline, what migrates and data after you leave for Yardi Breeze, Rentvine, AppFolio, Buildium, DoorLoop, Rent Manager; vendor pages read 2026-11-09 | 2026-11-09 |
 | 2026-11-10 | /guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop | H06 | Refresh: 4 pricing pages read 2026-11-10; Buildium $65/$202/$420 (was $62/$192/$400), DoorLoop $2.50/$4.00/$5.00 per unit with no shown minimum; per-door cost at 50/100/200 doors; usage fees | 2026-11-10 |
 | 2026-11-11 | /guides/how-to-choose-a-property-manager | H06 | Refresh: 50-city AI index data (Expertise.com 93 of 150 answers, 58% of names kept after 14 days), 2026 fee benchmarks from iPropertyManagement (8.49%, flat $101.04, placement 70.6%), blank 16-row scorecard | 2026-11-11 |
+| 2026-11-12 | /guides/claim-property-management-company-in-chatgpt | H07 | Claim your company in ChatGPT: OpenAI Business Hub (beta 2026-11-10) steps, phone/email/DNS verification, Persona, local stores claim only an existing US listing, local mention rule, 28-day insights, claim does not raise recommendations; 50-city data (ChatGPT engine: listing site 48 of 50, company site 15); OpenAI blog and help page read 2026-11-12 | 2026-11-12 |
+
+## Asks for Tao (tick 2026-11-12)
+
+- `agy` image generation returns 403 "disabled in this account for violation of Terms of Service" (2026-11-12). omp worked after retries (Gemini capacity 503/429). Decide: appeal agy or drop it from `brand/IMAGES.md`.
+- B038: claim citata.ai in ChatGPT Business Hub. Needs your ChatGPT login, a verification code or DNS TXT record, and Persona ID check.

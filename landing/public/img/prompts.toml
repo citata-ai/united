@@ -1250,3 +1250,9 @@ file = "img/guide-how-to-handle-a-tenant-breaking-a-lease-v1-*.webp"
 prompt = "Use the image /tmp/img-how-to-handle-a-tenant-breaking-a-lease/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager wearing an orange toga stands before a terracotta-tiled two-flat building holding a heavy iron key, while an open empty letterbox beside the doorway reveals an vacated home. He inspects the abandoned entryway, balancing the keys to prepare the dwelling for a new occupant."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-12"
+
+[[image]]
+file = "img/guide-claim-chatgpt-v1-*.webp"
+prompt = "Style N, reference claim-a.png (from guide-agencies-v2). Scene: a property manager in an orange toga presses a large wax seal onto a blank scroll on a stone altar beside an old CRT computer with a blank screen; small tiled houses behind. Flat sky cyan, 16:9, no text."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-12"
