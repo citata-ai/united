@@ -3,10 +3,10 @@ title: "Suspended Google Business Profile: A PM Company Fix Guide — Citata.ai"
 description: "Your property management Google Business Profile is suspended. Fix the rule break, collect the proof Google asks for, and file one appeal. Steps and checklist."
 headline: "What to Do When Your PM Google Profile Is Suspended"
 dek: "You get one appeal per decision. Fix the cause and collect the proof first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "First find and fix the rule break: most often a virtual office, a name with extra keywords, a duplicate profile or a recent big edit. Then open the Google Business Profile appeals tool and attach proof such as a business registration, a license, a tax certificate or a utility bill with the same name and address as the profile. Google says an appeal can be submitted only once, so do not file until the profile follows the guidelines."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "how-to"
 priority: 2

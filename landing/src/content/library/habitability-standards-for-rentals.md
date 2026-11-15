@@ -3,10 +3,10 @@ title: "Warranty of Habitability: What a Rental Must Have — Citata.ai"
 description: "A habitable rental has a sound structure, working heat, water, power and plumbing, no pests and working locks. Compare the rules in CA, TX, FL and NY."
 headline: "Warranty of Habitability: What a Rental Must Have"
 dek: "Heat, water, power, a sound shell, no pests and working locks, with state rules on top."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "A habitable rental keeps out the weather, has working heat, plumbing, hot and cold water and electricity, is free of pests and filth, and has working locks and safety devices. Each state sets its own list. California's Civil Code 1941.1 is one of the most detailed and, for leases from January 1, 2026, adds a working stove and refrigerator. If a unit fails, tenants may get rent cuts, repair-and-deduct rights or the right to withhold rent, depending on the state."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2
