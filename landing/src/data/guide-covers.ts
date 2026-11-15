@@ -772,6 +772,14 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-show-a-rental-property-v1",
     alt: "A pop engraving under a cyan sky: a landlord in an orange toga holds a brass key at a cream two-flat doorway while visitors wait in line and a rotary phone rests on a pedestal.",
   },
+  "how-to-write-a-rental-listing-that-leases": {
+    img: "guide-how-to-write-a-rental-listing-that-leases-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga stands before a coral-and-cream two-flat with small mint-tiled houses beside it, one hand on a cream CRT computer on a low marble table while he holds out a brass key.",
+  },
+  "hqs-vs-nspire-v-differences": {
+    img: "guide-hqs-vs-nspire-v-differences-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga on a cream-and-mint two-flat stoop holds a brass key and checks a smoke alarm above the door, a rotary phone on the ledge beside him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
