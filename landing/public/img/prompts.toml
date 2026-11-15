@@ -1274,3 +1274,15 @@ file = "img/guide-ai-visibility-audit-v1-*.webp"
 prompt = "Use the image /tmp/img-ai-visibility-audit-property-management/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A Roman property manager in an orange toga holds a brass hourglass in one hand and a wax tablet in the other, standing at a marble desk with an old CRT computer, checking a row of small tiled houses below him one by one. (driver model claude-sonnet-4-6 in omp; gemini-3-flash driver returned 403 TOS on 2026-11-14)"
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-14"
+
+[[image]]
+file = "img/guide-how-to-return-a-security-deposit-v1-*.webp"
+prompt = "Use the image /tmp/img-how-to-return-a-security-deposit/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands on the stoop of a coral-and-cream two-flat, unlocking the door with a large brass key while a mint rotary phone rests on the tiled step beside him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-15"
+
+[[image]]
+file = "img/guide-how-to-read-a-tenant-screening-report-v1-*.webp"
+prompt = "Use the image /tmp/img-how-to-read-a-tenant-screening-report/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: Under a flat coral sky, a man in an orange toga stands before a cream two-flat with mint-tiled roofs and lilac shutters, studying a thick stack of sealed scrolls in order while a cream rotary phone rests on a cobalt pedestal beside him; he sets aside a faded scroll and keeps the recent rent-marked ones close."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-15"

@@ -3,10 +3,10 @@ title: "Negative Keywords for Property Management Google Ads — Citata.ai"
 description: "A negative keyword list that keeps renters, job seekers and DIY landlords off your property management ads, plus how to read the search terms report each week."
 headline: "Negative Keywords for Property Management Google Ads"
 dek: "Most wasted clicks come from renters and job seekers. One shared list stops most of them."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "Block renter searches (apartments, for rent, near me rentals, pay rent, tenant portal), job searches (jobs, salary, career, hiring, certification) and do-it-yourself searches (template, free software, course). Put them in one shared negative keyword list and apply it to every owner campaign. Then read the Google Ads search terms report each week and add new waste terms, because negative keywords do not match close variants."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "checklist"
 priority: 2

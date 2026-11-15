@@ -756,6 +756,14 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-ai-visibility-audit-v1",
     alt: "A pop engraving under a cyan sky: a Roman property manager in an orange toga holds a brass hourglass and a wax tablet at a marble desk with an old computer, looking over rows of small tiled houses.",
   },
+  "how-to-return-a-security-deposit": {
+    img: "guide-how-to-return-a-security-deposit-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga unlocks a coral-and-cream two-flat with a large brass key beside a mint rotary phone on the tiled stoop.",
+  },
+  "how-to-read-a-tenant-screening-report": {
+    img: "guide-how-to-read-a-tenant-screening-report-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga studies sealed scrolls in order before a cream two-flat with mint-tiled roofs while a cream rotary phone sits on a cobalt pedestal beside him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
