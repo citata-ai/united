@@ -764,6 +764,14 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-read-a-tenant-screening-report-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga studies sealed scrolls in order before a cream two-flat with mint-tiled roofs while a cream rotary phone sits on a cobalt pedestal beside him.",
   },
+  "how-to-sell-a-rental-property-with-tenants": {
+    img: "guide-how-to-sell-a-rental-property-with-tenants-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga offers a brass key on a two-flat stoop beside a rotary phone, with small tiled houses behind.",
+  },
+  "how-to-show-a-rental-property": {
+    img: "guide-how-to-show-a-rental-property-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga holds a brass key at a cream two-flat doorway while visitors wait in line and a rotary phone rests on a pedestal.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
