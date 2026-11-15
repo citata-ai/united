@@ -3,10 +3,10 @@ title: "Best Google Business Profile Categories for Property Managers — Citata
 description: "Use Property management company as the primary Google Business Profile category. Add few, true secondary categories. Here is how to pick them and check rivals."
 headline: "Google Business Profile Categories for Property Managers"
 dek: "One primary category does most of the work. Extra categories must be true, not keywords."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "Choose 'Property management company' as the primary category if you manage rentals for owners. Add a secondary category only for a real service line that completes the sentence 'This business IS a', such as a real estate agency you run under the same name. Google says to use as few categories as possible and not to use categories as keywords, and a category edit can trigger a new verification."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 2

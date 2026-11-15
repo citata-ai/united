@@ -3,10 +3,10 @@ title: "Google Business Profile for AI Search: A Property Manager Setup — Cita
 description: "Which Google Business Profile fields feed AI Overviews, AI Mode and Gemini answers, and how a property manager sets services, service areas, posts and photos."
 headline: "Google Business Profile Setup for AI Search"
 dek: "A field-by-field setup for property managers, based on Google's own help pages."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "Set up your Google Business Profile so every fact an AI engine may quote is complete and true: name, category, service areas, services, hours, description, photos and reviews. Google says it builds profiles from your edits, your website, licensed data and user input, and its AI features page tells owners to keep the profile up to date. Google has not published which fields AI Mode or AI Overviews read, so fill all of them and check them each month."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "how-to"
 priority: 2

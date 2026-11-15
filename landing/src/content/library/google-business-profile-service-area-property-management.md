@@ -3,10 +3,10 @@ title: "Service Area or Address: GBP Setup for Property Managers — Citata.ai"
 description: "Show your office address on Google Business Profile only if staff meet owners there during posted hours. Otherwise hide it and set a service area. Rules and risks."
 headline: "Service Area or Office Address on Google Business Profile"
 dek: "Google decides by one fact: do customers come to your office during posted hours?"
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "Show your office address only if staff are there and can receive owners during the hours on your profile. If you work from home or meet owners at their properties, hide the address and set a service area of up to 20 cities or ZIP codes. Google's guidelines do not allow virtual offices, and a large change to address or business type can trigger a new verification, so make one change at a time."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 2
