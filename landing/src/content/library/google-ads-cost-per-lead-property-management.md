@@ -3,10 +3,10 @@ title: "Google Ads Cost Per Owner Lead for Property Managers (2026) — Citata.a
 description: "Property Manager Websites says its clients pay $250 to $350 per qualified owner lead from ads. Why it costs that much, how click prices moved, what to test."
 headline: "What a Google Ads Owner Lead Costs"
 dek: "Cost per lead is cost per click divided by conversion rate. Both moved up."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "Property Manager Websites says its clients see $250 to $350 per qualified owner lead from paid search. WordStream's 2026 benchmarks put the broad real estate category at $3.22 per click and $102.51 per lead, but property management owner terms cost more in big markets. Fourandhalf found property management click prices rose 117.2% on average across 6 cities from 2018 to 2020. Plan at least $2,500 a month to get about 10 leads to judge."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "data"
 priority: 2

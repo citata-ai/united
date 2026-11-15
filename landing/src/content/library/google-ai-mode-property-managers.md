@@ -3,10 +3,10 @@ title: "Google AI Mode for Property Managers: How It Picks Companies — Citata.
 description: "Google has not published how AI Mode picks local companies. What Google does say, what tests show (up to 10 businesses, GBP data) and what managers can do."
 headline: "Google AI Mode for Property Managers"
 dek: "What Google says, what tests show, and what is still unknown about AI Mode lists."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-15"
+updated: "2026-11-15"
 answer: "Google has not published how AI Mode chooses which property management companies to show. Google says AI Mode splits a question into subtopics, runs many searches at once and cites web pages that are indexed and eligible for a snippet. Independent tests found AI Mode lists up to 10 local businesses, pulls ratings and hours from Google Business Profiles and uses the searcher's location. So the same three local factors still apply: relevance, distance and prominence."
-visible: false
+visible: true
 cluster: "ai-search"
 kind: "guide"
 priority: 2
