@@ -3,10 +3,10 @@ title: "How to Calculate Prorated Rent, With Worked Examples — Citata.ai"
 description: "Prorated rent is the daily rate times the days the tenant has the unit. Compare three daily-rate methods with a worked example for an October 18 move-in."
 headline: "How to Calculate Prorated Rent"
 dek: "Three methods give three answers. Pick one, write it in the lease, and use it every time."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-16"
+updated: "2026-11-16"
 answer: "Prorated rent is the daily rate times the number of days the tenant has the unit. The daily rate is the monthly rent divided by the days in that month, by 30, or by 365 days with the rent times 12. For $1,500 rent and a move-in on October 18, the three methods give $677.42, $700.00 and $690.41 for 14 days. The lease should name the method, because each one gives a different result."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 2

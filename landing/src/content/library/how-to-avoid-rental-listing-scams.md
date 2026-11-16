@@ -3,10 +3,10 @@ title: "How to Stop Scammers From Copying Your Rental Listing — Citata.ai"
 description: "Scammers copy real rental listings, cut the rent and take deposits by wire or gift card. How to spot a copy, where to report it, and what to put in your ad."
 headline: "How to Stop Scammers From Copying Your Listing"
 dek: "Scammers copy real listings and take deposits. Check, report and warn renters."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-16"
+updated: "2026-11-16"
 answer: "Rental listing scammers copy your photos and text, post the unit at a lower rent, and ask renters to pay a deposit by wire, gift card or crypto before a showing. Search your address and photos each week while the unit is listed, report copies to the site, ReportFraud.ftc.gov and the FBI's IC3, and add a warning to your listing that names your only payment methods. The FBI logged 12,368 real estate fraud complaints and $275 million in losses in 2025, a category that includes rental fraud."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2
