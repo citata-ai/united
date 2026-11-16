@@ -808,6 +808,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-lease-renewal-offer-letter-template-v1",
     alt: "A pop engraving under a lilac sky: a landlord in an orange toga offers a sealed letter to a lilac letterbox at a cream two-flat with a coral-tiled roof, a black rotary phone on the stoop.",
   },
+  "lead-magnets-property-management": {
+    img: "guide-lead-magnets-property-management-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga offers a brass key at a cream-and-mint two-flat with pink tiled roofs, an open wooden letterbox and a blank beige CRT on the stone step.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
