@@ -1310,3 +1310,9 @@ file = "img/guide-hqs-vs-nspire-v-differences-v1-*.webp"
 prompt = "Use the image /tmp/img-hqs-vs-nspire-v-differences/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands before a row of small tiled two-flat houses, holding up a brass key while a rotary phone rests on a stone plinth beside him."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-16"
+
+[[image]]
+file = "img/guide-illinois-eviction-process-v1-*.webp"
+prompt = "Use the image /tmp/img-illinois-eviction-process/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A stern man in an orange toga stands on the stoop of a cream-and-coral two-flat, holding out a sealed demand letter toward a small row of tiled houses; a black rotary phone sits on the stone railing beside him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-16"
