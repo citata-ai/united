@@ -330,7 +330,7 @@ kind = "original-research"
 title = "AI Property Manager Index, update 2 (run on or after 2026-11-16): add a sources section (which domains each engine cites per city) and compare with the Goodjuju 30-city study"
 demand = "Goodjuju published a 30-city, 4-engine study with a free dataset on 2026-10-31 (https://gogoodjuju.com/property-management-ai-search-study/): 11 of 146 sources = 57% of citations; expertise.com 32, Google Business Profiles 61, reddit.com 28. It is a one-day snapshot. Ours is 50 cities, repeated: change over time is what no one else has."
 score = 8
-status = "idea"
+status = "live"
 note = "Same prompts as tools/ai-visibility/cities.toml. Dated section on /research/ai-property-manager-index-2026, CSV update. Cite Goodjuju as a second data set where it agrees or not; do not copy its numbers as ours."
 
 [[item]]
