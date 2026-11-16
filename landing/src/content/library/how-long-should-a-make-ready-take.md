@@ -3,10 +3,10 @@ title: "How Long Should a Make-Ready Take? Light vs Heavy Turns — Citata.ai"
 description: "A light make-ready takes about 3 to 5 work days, a heavy turn 7 to 14, a renovation 2 to 4 weeks. See a day-by-day plan and why days vacant run longer."
 headline: "How Long Should a Make-Ready Take?"
 dek: "Most delay is not the work. It is the wait between trades."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-16"
+updated: "2026-11-16"
 answer: "A light make-ready should take about 3 to 5 work days when trades follow the right order. A heavy turn can take 7 to 14 days, and a renovation 2 to 4 weeks, according to Lula. Lessen says 10 to 20 days is closer to the norm for mid-size operators without central scheduling. Days vacant run longer than work days, because they also include waiting for the next tenant to move in."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "data"
 priority: 2

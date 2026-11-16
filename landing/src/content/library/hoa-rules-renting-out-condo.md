@@ -3,10 +3,10 @@ title: "HOA Rental Rules: Caps, Terms and Approvals — Citata.ai"
 description: "HOA rules can cap rentals, ban short stays or ask about tenants. State law limits them. See California, Florida, Arizona and Texas rules before you rent."
 headline: "HOA Rules That Can Stop You From Renting"
 dek: "Rental caps, short-term bans and tenant approval, with four state examples."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-16"
+updated: "2026-11-16"
 answer: "An HOA or condo association can limit rentals through its declaration and rules: rental caps, minimum lease terms, short-term rental bans and tenant forms. State law sets the limits on those rules, and it differs by state. California bars caps below 25% of units. Florida applies new rental limits only to owners who agree and later buyers. Read your declaration and your state's law before you sign a lease."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 2

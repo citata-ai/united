@@ -778,7 +778,7 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   },
   "hqs-vs-nspire-v-differences": {
     img: "guide-hqs-vs-nspire-v-differences-v1",
-    alt: "A pop engraving under a coral sky: a landlord in an orange toga on a cream-and-mint two-flat stoop holds a brass key and checks a smoke alarm above the door, a rotary phone on the ledge beside him.",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holds a brass key before small tiled two-flat houses, with a rotary phone on a stone plinth beside him.",
   },
 };
 
