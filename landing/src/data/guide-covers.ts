@@ -824,6 +824,14 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-local-citations-property-management-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga holds a brass key beside a rotary phone before small tiled houses and a two-flat.",
   },
+  "long-distance-landlord-guide": {
+    img: "guide-long-distance-landlord-guide-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holds a rotary phone on a stone terrace before small tiled houses, a brass key at his belt.",
+  },
+  "los-angeles-rso-jco-landlord-rules": {
+    img: "guide-los-angeles-rso-jco-landlord-rules-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga holds a brass key beside a CRT computer and a cream-and-coral two-flat with mint tiled roofs.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
