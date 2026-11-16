@@ -3,10 +3,10 @@ title: "How Long Does SEO Take for a Property Management Company? — Citata.ai"
 description: "Google says some changes show in hours and some take months. Here is what changes in months 1 to 3, when owner leads can move, and what slows SEO in big cities."
 headline: "How Long SEO Takes for a Property Management Company"
 dek: "Google gives no fixed timeline. You can still measure each stage month by month."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-16"
+updated: "2026-11-16"
 answer: "No one can promise a date. Google says some changes take effect in a few hours and others take several months, and it suggests you wait a few weeks before you judge a change. For a property manager, expect fixes and indexing in months 1 to 3, first ranking moves for small local and long-tail searches after that, and slower progress in big cities with many strong competitors. Judge SEO by owner leads and signed doors, not by traffic alone."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 2
