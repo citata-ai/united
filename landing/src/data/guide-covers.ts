@@ -776,6 +776,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-how-to-write-a-rental-listing-that-leases-v1",
     alt: "A pop engraving under a lilac sky: a man in an orange toga stands before a coral-and-cream two-flat with small mint-tiled houses beside it, one hand on a cream CRT computer on a low marble table while he holds out a brass key.",
   },
+  "hqs-vs-nspire-v-differences": {
+    img: "guide-hqs-vs-nspire-v-differences-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holds a brass key before small tiled two-flat houses, with a rotary phone on a stone plinth beside him.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
