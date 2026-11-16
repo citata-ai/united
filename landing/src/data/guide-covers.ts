@@ -796,6 +796,18 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-landlord-right-of-entry-notice-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga at a cream two-flat doorway holds a brass key beside a black rotary phone on a stool.",
   },
+  "late-rent-notice-template": {
+    img: "guide-late-rent-notice-template-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga slides a sealed notice into a coral letterbox at a cream two-flat while a rotary phone sits on the stone step.",
+  },
+  "lead-based-paint-disclosure-rules": {
+    img: "guide-lead-based-paint-disclosure-rules-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga on a cream two-flat stoop hands a cream pamphlet and brass keys to a waiting figure while a black rotary phone sits on a mint-tiled ledge.",
+  },
+  "lease-renewal-offer-letter-template": {
+    img: "guide-lease-renewal-offer-letter-template-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga offers a sealed letter to a lilac letterbox at a cream two-flat with a coral-tiled roof, a black rotary phone on the stoop.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
