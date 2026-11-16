@@ -3,10 +3,10 @@ title: "How Much to Save for Rental Repairs and CapEx — Citata.ai"
 description: "Build a rental reserve from each item's cost and life span. InterNACHI puts a furnace at 15-25 years and a water heater at 6-12. Monthly numbers per door."
 headline: "How Much to Save for Repairs and CapEx"
 dek: "Turn roof, HVAC and water heater life spans into a monthly number per door."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-16"
+updated: "2026-11-16"
 answer: "Save for two buckets: routine repairs, and capital expenses (CapEx) for big replacements. For CapEx, divide each item's replacement cost by its expected life, then add the results. InterNACHI estimates 20 years for a 3-tab asphalt roof, 15 to 25 years for a furnace and 6 to 12 years for a conventional water heater. Older homes need a larger monthly amount, because more items are near the end of their life."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 2

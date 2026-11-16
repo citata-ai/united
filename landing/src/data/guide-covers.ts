@@ -780,6 +780,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-hqs-vs-nspire-v-differences-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga holds a brass key before small tiled two-flat houses, with a rotary phone on a stone plinth beside him.",
   },
+  "illinois-eviction-process": {
+    img: "guide-illinois-eviction-process-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga on a two-flat stoop holds a sealed letter beside a rotary phone, with small tiled houses beyond.",
+  },
+  "how-to-verify-tenant-income": {
+    img: "guide-how-to-verify-tenant-income-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga dials a mint rotary phone beside a lilac CRT and folded papers in front of a cream-and-coral two-flat among small tiled houses.",
+  },
+  "illinois-security-deposit-law": {
+    img: "guide-illinois-security-deposit-law-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga slips a brass key into a mint letterbox on the stoop of a cream two-flat, with small tiled houses behind him.",
+  },
+  "landlord-right-of-entry-notice": {
+    img: "guide-landlord-right-of-entry-notice-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga at a cream two-flat doorway holds a brass key beside a black rotary phone on a stool.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

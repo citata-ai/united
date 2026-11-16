@@ -50,3 +50,7 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 
 - CLIProxy: `gemini-3-flash` and `claude-haiku-4-5` (both on the antigravity provider) give 403 "disabled ... for violation of Terms of Service". The AI index update 2 ran without Gemini, and with `AIV_EXTRACTOR=claude-haiku-5-5`. The Monday GEO re-verify (`tools/ai-visibility/run.py`) will lose Gemini and its company lists until you appeal, or we switch Gemini to another route and set the extractor default to `claude-haiku-5-5`.
 - B038 and B012 are still open (ChatGPT Business Hub claim; Bing / GSC read access).
+
+## Measure 2026-11-16 (data and docs only, on stage)
+
+- AI visibility run `business/marketing/ai-visibility/2026-11-16/`, report `business/marketing/reports/2026-W47.md`, `hypotheses.toml` (H02, H06 invalidated; H11 proposed), backlog B040, journal. No page change. Waits for Tao's "publish".

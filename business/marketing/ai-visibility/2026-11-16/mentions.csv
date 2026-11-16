@@ -1,0 +1,128 @@
+prompt_id,group,engine,run,mentioned,rank,n_companies,cited_us,top_companies,error
+brand-reviews,brand,chatgpt,1,True,1,1,True,Citata.ai,
+brand-reviews,brand,chatgpt,2,True,1,1,True,Citata.ai,
+brand-reviews,brand,claude,1,True,,0,False,,
+brand-reviews,brand,claude,2,True,,0,False,,
+brand-reviews,brand,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+brand-reviews,brand,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+brand-what,brand,chatgpt,1,True,,0,True,,
+brand-what,brand,chatgpt,2,True,1,2,True,Citata.ai; WarmDevs,
+brand-what,brand,claude,1,True,,0,False,,
+brand-what,brand,claude,2,True,,2,False,Citate.ai; CBI.ai,
+brand-what,brand,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+brand-what,brand,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+geo-agency-small,geo-general,chatgpt,1,False,,3,False,Optimize My GEO; Prefer Managed; Izotov Agency,
+geo-agency-small,geo-general,chatgpt,2,False,,5,False,SearchAxe; Arise GEO; Prefer Managed; DoneDeal AI; Broadcastwell,
+geo-agency-small,geo-general,claude,1,False,,0,False,,
+geo-agency-small,geo-general,claude,2,False,,11,False,BaaDigi; Cognizo; GetCito; VisibilityStack; DoodleWeb,
+geo-agency-small,geo-general,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+geo-agency-small,geo-general,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+geo-case-study,geo-general,chatgpt,1,False,,0,False,,
+geo-case-study,geo-general,chatgpt,2,False,,4,False,getdigitize.com; Blue Ocean Media; odariuk.com; Intelegencia,
+geo-case-study,geo-general,claude,1,False,,5,False,Discov AI; D&D SEO Services; Gushwork; SOCi; FlyDragon,
+geo-case-study,geo-general,claude,2,False,,7,False,Cited; FlyDragon; 97 Switch; Decipher; LAV1,
+geo-case-study,geo-general,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+geo-case-study,geo-general,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+geo-firstindex-alt,geo-general,chatgpt,1,False,,7,False,FirstIndex; Semrush; Ahrefs; Profound; Peec AI,
+geo-firstindex-alt,geo-general,chatgpt,2,False,,9,False,FirstIndex; Omniscient Digital; iPullRank; Siege Media; Go Fish Digital,
+geo-firstindex-alt,geo-general,claude,1,False,,0,False,,
+geo-firstindex-alt,geo-general,claude,2,False,,0,False,,
+geo-firstindex-alt,geo-general,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+geo-firstindex-alt,geo-general,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-aeo-agency,pm-geo,chatgpt,1,True,,4,True,ClearLead Digital; Upkeep Media; Goodjuju Marketing; ApartmentSEO,
+pm-aeo-agency,pm-geo,chatgpt,2,False,,3,False,Fourandhalf; Upkeep Media; Property Manager Websites,
+pm-aeo-agency,pm-geo,claude,1,False,,12,False,Relevance; NoGood; AEO Engine; Anderson Collaborative; BulletProof,
+pm-aeo-agency,pm-geo,claude,2,False,,14,False,Goodjuju Marketing; ClearLead Digital; Fourandhalf; Property Manager Websites; CometRank,
+pm-aeo-agency,pm-geo,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-aeo-agency,pm-geo,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-ai-overviews,pm-geo,chatgpt,1,False,,0,False,,
+pm-ai-overviews,pm-geo,chatgpt,2,False,,0,False,,
+pm-ai-overviews,pm-geo,claude,1,False,,0,False,,
+pm-ai-overviews,pm-geo,claude,2,False,,0,False,,
+pm-ai-overviews,pm-geo,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-ai-overviews,pm-geo,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-ai-visibility-check,pm-how,chatgpt,1,False,,2,False,Visiblee; Livesov,
+pm-ai-visibility-check,pm-how,chatgpt,2,False,,3,False,Ahrefs; HubSpot; Visiblee,
+pm-ai-visibility-check,pm-how,claude,1,False,,7,False,Ahrefs; Surfer; Birdeye; HubSpot; Noma,
+pm-ai-visibility-check,pm-how,claude,2,False,,0,False,,
+pm-ai-visibility-check,pm-how,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-ai-visibility-check,pm-how,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-chatgpt-recommend,pm-geo,chatgpt,1,False,,0,False,,
+pm-chatgpt-recommend,pm-geo,chatgpt,2,False,,0,False,,
+pm-chatgpt-recommend,pm-geo,claude,1,False,,4,False,Otterly; Profound; LLMrefs; Semrush,
+pm-chatgpt-recommend,pm-geo,claude,2,False,,0,False,,
+pm-chatgpt-recommend,pm-geo,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-chatgpt-recommend,pm-geo,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-geo-agency,pm-geo,chatgpt,1,False,,8,False,ClearLead Digital; Qeystone; RankSages; Kihan Marketing; LLMReach,
+pm-geo-agency,pm-geo,chatgpt,2,False,,6,False,ClearLead Digital; Kihan Marketing; ApartmentSEO; Qeystone; RankSages,
+pm-geo-agency,pm-geo,claude,1,False,,0,False,,
+pm-geo-agency,pm-geo,claude,2,False,,0,False,,
+pm-geo-agency,pm-geo,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-geo-agency,pm-geo,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-geo-cost,pm-geo,chatgpt,1,False,,0,False,,
+pm-geo-cost,pm-geo,chatgpt,2,True,,6,True,ClearLead Digital; Goodjuju Marketing; Property Manager Websites; Fourandhalf; Upkeep Media,
+pm-geo-cost,pm-geo,claude,1,False,,0,False,,
+pm-geo-cost,pm-geo,claude,2,False,,13,False,Upkeep Media; 95 Projects; S2M Property Solutions; Avante Visibility; Aergos,
+pm-geo-cost,pm-geo,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-geo-cost,pm-geo,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-geo-small,pm-geo,chatgpt,1,False,,2,False,Spacemonline; Fuel Online,
+pm-geo-small,pm-geo,chatgpt,2,True,1,1,True,Citata,
+pm-geo-small,pm-geo,claude,1,False,,0,False,,
+pm-geo-small,pm-geo,claude,2,False,,8,False,Upkeep Media; Pure Visibility; RentFinder; Resident360; S2M Property Solutions,
+pm-geo-small,pm-geo,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-geo-small,pm-geo,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-leads-decline,pm-leads,chatgpt,1,False,,0,False,,
+pm-leads-decline,pm-leads,chatgpt,2,False,,2,False,Google Search Console; Google Business Profile,
+pm-leads-decline,pm-leads,claude,1,False,,0,False,,
+pm-leads-decline,pm-leads,claude,2,False,,0,True,,
+pm-leads-decline,pm-leads,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-leads-decline,pm-leads,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-llms-txt,pm-how,chatgpt,1,False,,0,False,,
+pm-llms-txt,pm-how,chatgpt,2,False,,2,False,Google; Bing,
+pm-llms-txt,pm-how,claude,1,False,,0,False,,
+pm-llms-txt,pm-how,claude,2,False,,0,False,,
+pm-llms-txt,pm-how,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-llms-txt,pm-how,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-marketing-agency,pm-leads,chatgpt,1,False,,5,False,Goodjuju Marketing; Fourandhalf; Geekly Media; DoorGrow; ClearLead Digital,
+pm-marketing-agency,pm-leads,chatgpt,2,False,,0,False,,
+pm-marketing-agency,pm-leads,claude,1,False,,0,False,,
+pm-marketing-agency,pm-leads,claude,2,False,,0,False,,
+pm-marketing-agency,pm-leads,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-marketing-agency,pm-leads,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-owner-leads,pm-leads,chatgpt,1,False,,0,False,,
+pm-owner-leads,pm-leads,chatgpt,2,False,,0,False,,
+pm-owner-leads,pm-leads,claude,1,False,,0,False,,
+pm-owner-leads,pm-leads,claude,2,False,,0,False,,
+pm-owner-leads,pm-leads,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-owner-leads,pm-leads,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-owner-search,pm-leads,chatgpt,1,False,,0,False,,
+pm-owner-search,pm-leads,chatgpt,2,False,,0,False,,
+pm-owner-search,pm-leads,claude,1,False,,0,False,,
+pm-owner-search,pm-leads,claude,2,False,,0,False,,
+pm-owner-search,pm-leads,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-owner-search,pm-leads,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-section8-ai,pm-how,chatgpt,1,False,,0,False,,
+pm-section8-ai,pm-how,chatgpt,2,False,,0,False,,
+pm-section8-ai,pm-how,claude,1,False,,1,True,SOCi,
+pm-section8-ai,pm-how,claude,2,False,,5,False,BrightLocal; Otterly; Profound; Peec; LLMrefs,
+pm-section8-ai,pm-how,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-section8-ai,pm-how,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-seo-worth,pm-leads,chatgpt,1,False,,0,False,,
+pm-seo-worth,pm-leads,chatgpt,2,False,,0,False,,
+pm-seo-worth,pm-leads,claude,1,False,,0,False,,
+pm-seo-worth,pm-leads,claude,2,False,,0,False,,
+pm-seo-worth,pm-leads,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-seo-worth,pm-leads,gemini,2,False,,0,False,,"HTTP 403: {
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to continue using this product."",
+    ""status"": ""PERMISSION_DENIED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/goog"
+pm-track-ai,pm-how,chatgpt,1,False,,0,False,,
+pm-track-ai,pm-how,chatgpt,2,False,,0,False,,
+pm-track-ai,pm-how,claude,1,False,,0,False,,
+pm-track-ai,pm-how,claude,2,False,,0,False,,
+pm-track-ai,pm-how,gemini,1,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
+pm-track-ai,pm-how,gemini,2,False,,0,False,,"HTTP 503: {""error"":{""message"":""auth_unavailable: no auth available (providers=antigravity, model=gemini-3-flash; last upstream error: {\n  \""error\"": {\n    \""code\"": 403,\n    \""message\"": \""This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to"
