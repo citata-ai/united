@@ -812,6 +812,18 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-lead-magnets-property-management-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga offers a brass key at a cream-and-mint two-flat with pink tiled roofs, an open wooden letterbox and a blank beige CRT on the stone step.",
   },
+  "lease-renewal-process-timeline": {
+    img: "guide-lease-renewal-process-timeline-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga offers a sealed renewal letter beside a lilac rotary phone in front of a cream two-flat with coral shutters among small pink and cobalt tiled houses.",
+  },
+  "lifetime-value-of-a-door": {
+    img: "guide-lifetime-value-of-a-door-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga stands before a cream two-flat with coral tiled roofs, one hand on a mint CRT computer and the other holding a brass key.",
+  },
+  "local-citations-property-management": {
+    img: "guide-local-citations-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a brass key beside a rotary phone before small tiled houses and a two-flat.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
