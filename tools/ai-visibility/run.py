@@ -35,7 +35,8 @@ ENGINES = {
 }
 DEFAULT_ENGINES = "chatgpt,gemini,claude"
 GROK_PREFIX = "Search the web before you answer. Cite the source URLs. Do not read or edit any files.\n\n"
-EXTRACTOR = "claude-haiku-4-5"
+# AIV_EXTRACTOR: another model when this one is down (2026-11-16: claude-haiku-4-5 gave 403 on CLIProxy).
+EXTRACTOR = os.environ.get("AIV_EXTRACTOR", "claude-haiku-4-5")
 
 
 USAGE = {}  # model -> Counter of tokens and web searches, filled by post()
