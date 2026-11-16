@@ -27,6 +27,7 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 | 2026-11-13 | /guides/property-management-marketing-agencies | H07 | 9 PM marketing agencies compared: public prices and terms read 2026-11-13, AI naming 2026-11-02 (Upkeep 6/6, Fourandhalf 5/6, us 0/6), door-payback math (Goodjuju $6,480/door method), fit by door count | 2026-11-13 |
 | 2026-11-13 | /guides/questions-to-ask-property-management-marketing-agency | H07 | Draft checklist published as B032's linked page: 20 questions on ownership, reports, terms, proof; ICANN, GA4, GBP, Goodjuju facts re-read 2026-11-13 | 2026-11-13 |
 | 2026-11-14 | /guides/ai-visibility-audit-property-management | H07 | How to check if AI recommends your PM company: 5 owner prompts, free tools (Ahrefs checker, HubSpot grader, ChatGPT Business Hub; pages read 2026-11-14), our 2026-11-13 data (Ahrefs named 6/6, us 0/6), 100-point score | 2026-11-14 |
+| 2026-11-16 | /research/ai-property-manager-index-2026 (update 2, + /data/ai-property-manager-index-2026-11-16.csv) | H03 | Sources over 3 dates: ChatGPT Expertise.com 30 -> 20 -> 8 of 50, Birdeye 17 -> 23, ThePropertyManagementDirectory.com 0 -> 19; Claude Yelp 50/50; 15 of 50 cities share a source; Goodjuju 2026-10-30 study compared (read 2026-11-16); Gemini not run (403) | 2026-11-16 |
 
 ## Asks for Tao (tick 2026-11-12)
 
@@ -44,3 +45,8 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 - omp image generation with the `gemini-3-flash` driver model now fails with 403 "disabled ... for violation of Terms of Service" (same as `agy` on 2026-11-12). The cover worked with `--model claude-sonnet-4-6` as the driver. `tools/library/covers.sh` and `brand/IMAGES.md` still use `gemini-3-flash`: the library cover job will fail until one of them changes. Decide: appeal, or switch the driver model.
 - B038 is still open: claim citata.ai in ChatGPT Business Hub (your ChatGPT login, verification, Persona ID check).
 - B012 is still blocked: Bing Webmaster API key or GSC read access in Infisical `citata`.
+
+## Asks for Tao (tick 2026-11-16)
+
+- CLIProxy: `gemini-3-flash` and `claude-haiku-4-5` (both on the antigravity provider) give 403 "disabled ... for violation of Terms of Service". The AI index update 2 ran without Gemini, and with `AIV_EXTRACTOR=claude-haiku-5-5`. The Monday GEO re-verify (`tools/ai-visibility/run.py`) will lose Gemini and its company lists until you appeal, or we switch Gemini to another route and set the extractor default to `claude-haiku-5-5`.
+- B038 and B012 are still open (ChatGPT Business Hub claim; Bing / GSC read access).

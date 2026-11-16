@@ -1,0 +1,1421 @@
+{
+  "experiment": "H03-E1",
+  "backlog": "B034",
+  "dates": ["2026-10-19", "2026-11-02", "2026-11-16"],
+  "engines": {
+    "chatgpt": {
+      "dates": ["2026-10-19", "2026-11-02", "2026-11-16"],
+      "per_date": {
+        "2026-10-19": {
+          "answers": 50,
+          "answers_with_any_source": 50,
+          "avg_sources": 2.5,
+          "distinct_domains": 39
+        },
+        "2026-11-02": {
+          "answers": 50,
+          "answers_with_any_source": 50,
+          "avg_sources": 2.3,
+          "distinct_domains": 36
+        },
+        "2026-11-16": {
+          "answers": 49,
+          "answers_with_any_source": 49,
+          "avg_sources": 2.5,
+          "distinct_domains": 31
+        }
+      },
+      "top": [
+        {
+          "domain": "birdeye.com",
+          "2026-10-19": 17,
+          "2026-11-02": 21,
+          "2026-11-16": 23
+        },
+        {
+          "domain": "thepropertymanagementdirectory.com",
+          "2026-10-19": 0,
+          "2026-11-02": 4,
+          "2026-11-16": 19
+        },
+        {
+          "domain": "propertymanagementhelp.com",
+          "2026-10-19": 0,
+          "2026-11-02": 1,
+          "2026-11-16": 12
+        },
+        {
+          "domain": "propertymanagementsearch.com",
+          "2026-10-19": 0,
+          "2026-11-02": 0,
+          "2026-11-16": 11
+        },
+        {
+          "domain": "propertymanagement.com",
+          "2026-10-19": 8,
+          "2026-11-02": 13,
+          "2026-11-16": 10
+        },
+        {
+          "domain": "expertise.com",
+          "2026-10-19": 30,
+          "2026-11-02": 20,
+          "2026-11-16": 8
+        },
+        {
+          "domain": "bestinhood.com",
+          "2026-10-19": 12,
+          "2026-11-02": 9,
+          "2026-11-16": 8
+        },
+        {
+          "domain": "hireanypm.com",
+          "2026-10-19": 0,
+          "2026-11-02": 6,
+          "2026-11-16": 8
+        },
+        {
+          "domain": "verifiedmanagers.com",
+          "2026-10-19": 0,
+          "2026-11-02": 4,
+          "2026-11-16": 2
+        },
+        {
+          "domain": "estate.me",
+          "2026-10-19": 0,
+          "2026-11-02": 0,
+          "2026-11-16": 2
+        },
+        {
+          "domain": "homeownerhenry.com",
+          "2026-10-19": 0,
+          "2026-11-02": 5,
+          "2026-11-16": 1
+        },
+        {
+          "domain": "azcharged.com",
+          "2026-10-19": 2,
+          "2026-11-02": 2,
+          "2026-11-16": 1
+        },
+        {
+          "domain": "yably.com",
+          "2026-10-19": 1,
+          "2026-11-02": 1,
+          "2026-11-16": 1
+        },
+        {
+          "domain": "bestchicago.us",
+          "2026-10-19": 0,
+          "2026-11-02": 0,
+          "2026-11-16": 1
+        },
+        {
+          "domain": "cai-illinois.org",
+          "2026-10-19": 0,
+          "2026-11-02": 0,
+          "2026-11-16": 1
+        },
+        {
+          "domain": "condocontrol.com",
+          "2026-10-19": 0,
+          "2026-11-02": 0,
+          "2026-11-16": 1
+        },
+        {
+          "domain": "bbb.org",
+          "2026-10-19": 11,
+          "2026-11-02": 0,
+          "2026-11-16": 0
+        },
+        {
+          "domain": "threebestrated.com",
+          "2026-10-19": 7,
+          "2026-11-02": 1,
+          "2026-11-16": 0
+        },
+        {
+          "domain": "biggerpockets.com",
+          "2026-10-19": 2,
+          "2026-11-02": 2,
+          "2026-11-16": 0
+        },
+        {
+          "domain": "narpm.org",
+          "2026-10-19": 3,
+          "2026-11-02": 0,
+          "2026-11-16": 0
+        }
+      ],
+      "core": ["birdeye.com", "propertymanagement.com", "expertise.com", "bestinhood.com"]
+    },
+    "claude": {
+      "dates": ["2026-10-19", "2026-11-02", "2026-11-16"],
+      "per_date": {
+        "2026-10-19": {
+          "answers": 50,
+          "answers_with_any_source": 50,
+          "avg_sources": 7.6,
+          "distinct_domains": 110
+        },
+        "2026-11-02": {
+          "answers": 50,
+          "answers_with_any_source": 50,
+          "avg_sources": 7.6,
+          "distinct_domains": 113
+        },
+        "2026-11-16": {
+          "answers": 50,
+          "answers_with_any_source": 50,
+          "avg_sources": 6.7,
+          "distinct_domains": 74
+        }
+      },
+      "top": [
+        {
+          "domain": "yelp.com",
+          "2026-10-19": 50,
+          "2026-11-02": 49,
+          "2026-11-16": 50
+        },
+        {
+          "domain": "expertise.com",
+          "2026-10-19": 47,
+          "2026-11-02": 46,
+          "2026-11-16": 39
+        },
+        {
+          "domain": "ipropertymanagement.com",
+          "2026-10-19": 42,
+          "2026-11-02": 40,
+          "2026-11-16": 37
+        },
+        {
+          "domain": "revenuebase.ai",
+          "2026-10-19": 6,
+          "2026-11-02": 4,
+          "2026-11-16": 33
+        },
+        {
+          "domain": "trustanalytica.org",
+          "2026-10-19": 14,
+          "2026-11-02": 13,
+          "2026-11-16": 15
+        },
+        {
+          "domain": "clutch.co",
+          "2026-10-19": 10,
+          "2026-11-02": 10,
+          "2026-11-16": 14
+        },
+        {
+          "domain": "americatop10.com",
+          "2026-10-19": 5,
+          "2026-11-02": 5,
+          "2026-11-16": 10
+        },
+        {
+          "domain": "seolium.com",
+          "2026-10-19": 9,
+          "2026-11-02": 1,
+          "2026-11-16": 8
+        },
+        {
+          "domain": "en.wikipedia.org",
+          "2026-10-19": 7,
+          "2026-11-02": 14,
+          "2026-11-16": 7
+        },
+        {
+          "domain": "utopiamanagement.com",
+          "2026-10-19": 9,
+          "2026-11-02": 9,
+          "2026-11-16": 7
+        },
+        {
+          "domain": "threebestrated.com",
+          "2026-10-19": 5,
+          "2026-11-02": 9,
+          "2026-11-16": 7
+        },
+        {
+          "domain": "brickwiseai.com",
+          "2026-10-19": 1,
+          "2026-11-02": 1,
+          "2026-11-16": 6
+        },
+        {
+          "domain": "belonghome.com",
+          "2026-10-19": 8,
+          "2026-11-02": 8,
+          "2026-11-16": 5
+        },
+        {
+          "domain": "keyverified.com",
+          "2026-10-19": 5,
+          "2026-11-02": 4,
+          "2026-11-16": 5
+        },
+        {
+          "domain": "propertymanagementhelp.com",
+          "2026-10-19": 0,
+          "2026-11-02": 0,
+          "2026-11-16": 5
+        },
+        {
+          "domain": "awning.com",
+          "2026-10-19": 10,
+          "2026-11-02": 12,
+          "2026-11-16": 4
+        },
+        {
+          "domain": "propertymanagement.com",
+          "2026-10-19": 8,
+          "2026-11-02": 8,
+          "2026-11-16": 4
+        },
+        {
+          "domain": "thumbtack.com",
+          "2026-10-19": 4,
+          "2026-11-02": 6,
+          "2026-11-16": 4
+        },
+        {
+          "domain": "home365.co",
+          "2026-10-19": 4,
+          "2026-11-02": 4,
+          "2026-11-16": 4
+        },
+        {
+          "domain": "peterlohmann.com",
+          "2026-10-19": 7,
+          "2026-11-02": 4,
+          "2026-11-16": 1
+        }
+      ],
+      "core": [
+        "yelp.com",
+        "expertise.com",
+        "ipropertymanagement.com",
+        "trustanalytica.org",
+        "clutch.co",
+        "utopiamanagement.com"
+      ]
+    }
+  },
+  "watch": [
+    {
+      "domain": "expertise.com",
+      "chatgpt": {
+        "2026-10-19": 30,
+        "2026-11-02": 20,
+        "2026-11-16": 8
+      },
+      "claude": {
+        "2026-10-19": 47,
+        "2026-11-02": 46,
+        "2026-11-16": 39
+      }
+    },
+    {
+      "domain": "propertymanagement.com",
+      "chatgpt": {
+        "2026-10-19": 8,
+        "2026-11-02": 13,
+        "2026-11-16": 10
+      },
+      "claude": {
+        "2026-10-19": 8,
+        "2026-11-02": 8,
+        "2026-11-16": 4
+      }
+    },
+    {
+      "domain": "ipropertymanagement.com",
+      "chatgpt": {
+        "2026-10-19": 1,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 42,
+        "2026-11-02": 40,
+        "2026-11-16": 37
+      }
+    },
+    {
+      "domain": "yelp.com",
+      "chatgpt": {
+        "2026-10-19": 0,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 50,
+        "2026-11-02": 49,
+        "2026-11-16": 50
+      }
+    },
+    {
+      "domain": "biggerpockets.com",
+      "chatgpt": {
+        "2026-10-19": 2,
+        "2026-11-02": 2,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 0,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      }
+    },
+    {
+      "domain": "reddit.com",
+      "chatgpt": {
+        "2026-10-19": 0,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 0,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      }
+    },
+    {
+      "domain": "awning.com",
+      "chatgpt": {
+        "2026-10-19": 0,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 10,
+        "2026-11-02": 12,
+        "2026-11-16": 4
+      }
+    },
+    {
+      "domain": "bestinhood.com",
+      "chatgpt": {
+        "2026-10-19": 12,
+        "2026-11-02": 9,
+        "2026-11-16": 8
+      },
+      "claude": {
+        "2026-10-19": 2,
+        "2026-11-02": 3,
+        "2026-11-16": 3
+      }
+    },
+    {
+      "domain": "mynd.co",
+      "chatgpt": {
+        "2026-10-19": 0,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 2,
+        "2026-11-02": 2,
+        "2026-11-16": 2
+      }
+    },
+    {
+      "domain": "thumbtack.com",
+      "chatgpt": {
+        "2026-10-19": 0,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 4,
+        "2026-11-02": 6,
+        "2026-11-16": 4
+      }
+    },
+    {
+      "domain": "birdeye.com",
+      "chatgpt": {
+        "2026-10-19": 17,
+        "2026-11-02": 21,
+        "2026-11-16": 23
+      },
+      "claude": {
+        "2026-10-19": 2,
+        "2026-11-02": 2,
+        "2026-11-16": 4
+      }
+    },
+    {
+      "domain": "bbb.org",
+      "chatgpt": {
+        "2026-10-19": 11,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 3,
+        "2026-11-02": 3,
+        "2026-11-16": 1
+      }
+    },
+    {
+      "domain": "trustanalytica.org",
+      "chatgpt": {
+        "2026-10-19": 2,
+        "2026-11-02": 0,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 14,
+        "2026-11-02": 13,
+        "2026-11-16": 15
+      }
+    },
+    {
+      "domain": "threebestrated.com",
+      "chatgpt": {
+        "2026-10-19": 7,
+        "2026-11-02": 1,
+        "2026-11-16": 0
+      },
+      "claude": {
+        "2026-10-19": 5,
+        "2026-11-02": 9,
+        "2026-11-16": 7
+      }
+    }
+  ],
+  "cities": [
+    {
+      "rank": 1,
+      "city": "New York",
+      "state": "NY",
+      "engines": {
+        "chatgpt": ["expertise.com"],
+        "claude": [
+          "clutch.co",
+          "en.wikipedia.org",
+          "impactwealth.org",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "thelegalsettlement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 2,
+      "city": "Los Angeles",
+      "state": "CA",
+      "engines": {
+        "chatgpt": ["birdeye.com"],
+        "claude": [
+          "brickwiseai.com",
+          "clutch.co",
+          "en.wikipedia.org",
+          "ipropertymanagement.com",
+          "lotusproperties.com",
+          "revenuebase.ai",
+          "utopiamanagement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 3,
+      "city": "Chicago",
+      "state": "IL",
+      "engines": {
+        "chatgpt": ["bestchicago.us", "cai-illinois.org", "condocontrol.com"],
+        "claude": [
+          "en.wikipedia.org",
+          "expertise.com",
+          "home365.co",
+          "homeguide.com",
+          "ipropertymanagement.com",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 4,
+      "city": "Houston",
+      "state": "TX",
+      "engines": {
+        "chatgpt": ["bestinhood.com", "propertymanagement.com"],
+        "claude": [
+          "bestinhood.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "keyverified.com",
+          "mybesthouston.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": ["bestinhood.com"]
+    },
+    {
+      "rank": 5,
+      "city": "Phoenix",
+      "state": "AZ",
+      "engines": {
+        "chatgpt": ["azcharged.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "en.wikipedia.org",
+          "expertise.com",
+          "hedgethink.com",
+          "home365.co",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "thephoenixreview.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 6,
+      "city": "Philadelphia",
+      "state": "PA",
+      "engines": {
+        "chatgpt": [
+          "birdeye.com",
+          "propertymanagementhelp.com",
+          "propertymanagementsearch.com",
+          "yably.com"
+        ],
+        "claude": ["expertise.com", "ipropertymanagement.com", "revenuebase.ai", "yelp.com"]
+      },
+      "shared": []
+    },
+    {
+      "rank": 7,
+      "city": "San Antonio",
+      "state": "TX",
+      "engines": {
+        "chatgpt": ["bestinhood.com"],
+        "claude": [
+          "americatop10.com",
+          "bestinhood.com",
+          "expertise.com",
+          "flatfeelandlord.com",
+          "keyverified.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": ["bestinhood.com"]
+    },
+    {
+      "rank": 8,
+      "city": "San Diego",
+      "state": "CA",
+      "engines": {
+        "chatgpt": ["bestinhood.com", "birdeye.com", "hireanypm.com", "propertymanagement.com"],
+        "claude": [
+          "brickwiseai.com",
+          "findyourhomesandiego.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "westcoasthomestays.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 9,
+      "city": "Dallas",
+      "state": "TX",
+      "engines": {
+        "chatgpt": [
+          "birdeye.com",
+          "hireanypm.com",
+          "mccawpropertymanagement.com",
+          "propertymanagement.com"
+        ],
+        "claude": [
+          "americatop10.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "keyverified.com",
+          "propertymanagement.com",
+          "propertymanagementhelp.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": ["propertymanagement.com"]
+    },
+    {
+      "rank": 10,
+      "city": "Fort Worth",
+      "state": "TX",
+      "engines": {
+        "chatgpt": ["1strealty.net", "birdeye.com", "expertise.com", "westromgroup.com"],
+        "claude": [
+          "en.wikipedia.org",
+          "expertise.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "westromgroup.com",
+          "yelp.com"
+        ]
+      },
+      "shared": ["expertise.com", "westromgroup.com"]
+    },
+    {
+      "rank": 11,
+      "city": "Jacksonville",
+      "state": "FL",
+      "engines": {
+        "chatgpt": ["hireanypm.com", "propertymanagementhelp.com", "verifiedmanagers.com"],
+        "claude": [
+          "bestpropertymanagementcompanies.com",
+          "expertise.com",
+          "jacksonvilletribune.co",
+          "jcctpropertymanagement.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 12,
+      "city": "Austin",
+      "state": "TX",
+      "engines": {
+        "chatgpt": ["bestinhood.com"],
+        "claude": [
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "keyverified.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 13,
+      "city": "San Jose",
+      "state": "CA",
+      "engines": {
+        "chatgpt": ["birdeye.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "atobpropertymanagement.com",
+          "brickwiseai.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 14,
+      "city": "Charlotte",
+      "state": "NC",
+      "engines": {
+        "chatgpt": ["hireanypm.com", "propertymanagementhelp.com"],
+        "claude": [
+          "expertise.com",
+          "ipropertymanagement.com",
+          "propertymanagementhelp.com",
+          "revenuebase.ai",
+          "thumbtack.com",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": ["propertymanagementhelp.com"]
+    },
+    {
+      "rank": 15,
+      "city": "Columbus",
+      "state": "OH",
+      "engines": {
+        "claude": [
+          "belonghome.com",
+          "builtin.com",
+          "clutch.co",
+          "columbusuncovered.com",
+          "expertise.com",
+          "propertymanagementhelp.com",
+          "revenuebase.ai",
+          "rlpmg.com",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 16,
+      "city": "Indianapolis",
+      "state": "IN",
+      "engines": {
+        "chatgpt": ["birdeye.com", "propertymanagementsearch.com"],
+        "claude": [
+          "indyexaminer.com",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 17,
+      "city": "San Francisco",
+      "state": "CA",
+      "engines": {
+        "chatgpt": ["sanfrancisco10.com"],
+        "claude": [
+          "foundationhomes.com",
+          "marinoak.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 18,
+      "city": "Seattle",
+      "state": "WA",
+      "engines": {
+        "chatgpt": ["birdeye.com", "mybestseattle.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "belonghome.com",
+          "gpsrenting.com",
+          "ipropertymanagement.com",
+          "propertymanagersseattle.com",
+          "trustanalytica.org",
+          "wilsonmanagementinc.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 19,
+      "city": "Denver",
+      "state": "CO",
+      "engines": {
+        "chatgpt": ["mybestdenver.com", "propertymanagement.com"],
+        "claude": [
+          "bestinhood.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "northpointam.com",
+          "revenuebase.ai",
+          "uncoverdenver.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 20,
+      "city": "Nashville",
+      "state": "TN",
+      "engines": {
+        "chatgpt": [
+          "bestinhood.com",
+          "localgtm.com",
+          "propertymanagement.com",
+          "propertymanagementsearch.com"
+        ],
+        "claude": [
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "northpointam.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 21,
+      "city": "Oklahoma City",
+      "state": "OK",
+      "engines": {
+        "chatgpt": ["propertymanagementhelp.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "americatop10.com",
+          "clutch.co",
+          "expertise.com",
+          "mynd.co",
+          "okcexaminer.com",
+          "seolium.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 22,
+      "city": "Washington",
+      "state": "DC",
+      "engines": {
+        "chatgpt": ["birdeye.com", "hireanypm.com"],
+        "claude": [
+          "clutch.co",
+          "en.wikipedia.org",
+          "expertise.com",
+          "peterlohmann.com",
+          "projecta.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 23,
+      "city": "El Paso",
+      "state": "TX",
+      "engines": {
+        "chatgpt": ["bestinhood.com"],
+        "claude": [
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "keycrew.co",
+          "seolium.com",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 24,
+      "city": "Las Vegas",
+      "state": "NV",
+      "engines": {
+        "chatgpt": [
+          "birdeye.com",
+          "hireanypm.com",
+          "propertymanagement.com",
+          "propertymanagementhelp.com",
+          "thepropertymanagementdirectory.com"
+        ],
+        "claude": [
+          "expertise.com",
+          "home365.co",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "utopiamanagement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 25,
+      "city": "Boston",
+      "state": "MA",
+      "engines": {
+        "chatgpt": ["birdeye.com", "bostoncondomanagers.com", "bostonpicks.com"],
+        "claude": ["expertise.com", "ipropertymanagement.com", "revenuebase.ai", "yelp.com"]
+      },
+      "shared": []
+    },
+    {
+      "rank": 26,
+      "city": "Detroit",
+      "state": "MI",
+      "engines": {
+        "chatgpt": ["thepropertymanagementdirectory.com"],
+        "claude": ["comparespot.org", "ipropertymanagement.com", "verifiedmanagers.com", "yelp.com"]
+      },
+      "shared": []
+    },
+    {
+      "rank": 27,
+      "city": "Louisville",
+      "state": "KY",
+      "engines": {
+        "chatgpt": ["birdeye.com", "expertise.com", "propertymanagementsearch.com"],
+        "claude": [
+          "awning.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "northpointam.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": ["expertise.com"]
+    },
+    {
+      "rank": 28,
+      "city": "Portland",
+      "state": "OR",
+      "engines": {
+        "chatgpt": ["birdeye.com", "hireanypm.com", "propertymanagementhelp.com"],
+        "claude": [
+          "propertymax.com",
+          "revenuebase.ai",
+          "seolium.com",
+          "theripcityreview.com",
+          "utopiamanagement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 29,
+      "city": "Memphis",
+      "state": "TN",
+      "engines": {
+        "chatgpt": ["estate.me", "propertymanagementhelp.com"],
+        "claude": [
+          "americatop10.com",
+          "ipropertymanagement.com",
+          "keyverified.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 30,
+      "city": "Baltimore",
+      "state": "MD",
+      "engines": {
+        "chatgpt": [
+          "propertymanagement.com",
+          "propertymanagementsearch.com",
+          "thepropertymanagementdirectory.com"
+        ],
+        "claude": [
+          "americatop10.com",
+          "bbb.org",
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "seolium.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 31,
+      "city": "Milwaukee",
+      "state": "WI",
+      "engines": {
+        "chatgpt": ["thepropertymanagementdirectory.com"],
+        "claude": [
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "threebestrated.com",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 32,
+      "city": "Albuquerque",
+      "state": "NM",
+      "engines": {
+        "chatgpt": ["bestinhood.com", "expertise.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "expertise.com",
+          "ipropertymanagement.com",
+          "seolium.com",
+          "utopiamanagement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": ["expertise.com"]
+    },
+    {
+      "rank": 33,
+      "city": "Fresno",
+      "state": "CA",
+      "engines": {
+        "chatgpt": [
+          "bestpropertymanagementcompanies.com",
+          "propertymanagementsearch.com",
+          "thepropertymanagementdirectory.com"
+        ],
+        "claude": [
+          "birdeye.com",
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "threebestrated.com",
+          "utopiamanagement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 34,
+      "city": "Tucson",
+      "state": "AZ",
+      "engines": {
+        "chatgpt": [
+          "besttucsonbusinesses.com",
+          "propertymanagementhelp.com",
+          "propertymanagementsearch.com"
+        ],
+        "claude": [
+          "belonghome.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "seolium.com",
+          "threebestrated.com",
+          "verifiedmanagers.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 35,
+      "city": "Sacramento",
+      "state": "CA",
+      "engines": {
+        "chatgpt": [
+          "birdeye.com",
+          "propertymanagementhelp.com",
+          "thepropertymanagementdirectory.com",
+          "verifiedmanagers.com"
+        ],
+        "claude": [
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "propertymanagementhelp.com",
+          "seolium.com",
+          "utopiamanagement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": ["propertymanagementhelp.com"]
+    },
+    {
+      "rank": 36,
+      "city": "Atlanta",
+      "state": "GA",
+      "engines": {
+        "chatgpt": ["estate.me", "propertymanagement.com"],
+        "claude": [
+          "americatop10.com",
+          "belonghome.com",
+          "expertise.com",
+          "home365.co",
+          "ipropertymanagement.com",
+          "propertymanagement.com",
+          "rentprep.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": ["propertymanagement.com"]
+    },
+    {
+      "rank": 37,
+      "city": "Kansas City",
+      "state": "MO",
+      "engines": {
+        "chatgpt": ["propertymanagementhelp.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "alpinekansascity.com",
+          "awning.com",
+          "expertise.com",
+          "industryoversight.com",
+          "ipropertymanagement.com",
+          "mynd.co",
+          "propertyscout360.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 38,
+      "city": "Mesa",
+      "state": "AZ",
+      "engines": {
+        "chatgpt": ["birdeye.com", "expertise.com", "propertymanagementsearch.com"],
+        "claude": [
+          "careerbuilder.com",
+          "expertise.com",
+          "housecashin.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": ["expertise.com"]
+    },
+    {
+      "rank": 39,
+      "city": "Raleigh",
+      "state": "NC",
+      "engines": {
+        "chatgpt": [
+          "birdeye.com",
+          "hireanypm.com",
+          "propertymanagementhelp.com",
+          "pub-raleighnc.escribemeetings.com",
+          "thepropertymanagementdirectory.com"
+        ],
+        "claude": [
+          "awning.com",
+          "belonghome.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "propertymanagementhelp.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": ["propertymanagementhelp.com"]
+    },
+    {
+      "rank": 40,
+      "city": "Colorado Springs",
+      "state": "CO",
+      "engines": {
+        "chatgpt": ["birdeye.com", "propertymanagement.com", "propertymanagementhelp.com"],
+        "claude": [
+          "americatop10.com",
+          "birdeye.com",
+          "clutch.co",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "seolium.com",
+          "yelp.com"
+        ]
+      },
+      "shared": ["birdeye.com"]
+    },
+    {
+      "rank": 41,
+      "city": "Miami",
+      "state": "FL",
+      "engines": {
+        "chatgpt": ["birdeye.com", "homeownerhenry.com"],
+        "claude": [
+          "americatop10.com",
+          "bestpropertymanagementcompanies.com",
+          "expertise.com",
+          "luxurypropertycare.com",
+          "magicdoor.com",
+          "revenuebase.ai",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 42,
+      "city": "Omaha",
+      "state": "NE",
+      "engines": {
+        "chatgpt": [
+          "propertymanagementlist.com",
+          "propertymanagementsearch.com",
+          "thepropertymanagementdirectory.com"
+        ],
+        "claude": [
+          "clutch.co",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "threebestrated.com",
+          "trustanalytica.org",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 43,
+      "city": "Virginia Beach",
+      "state": "VA",
+      "engines": {
+        "chatgpt": ["birdeye.com", "expertise.com", "propertymanagementsearch.com"],
+        "claude": [
+          "aeroleads.com",
+          "americatop10.com",
+          "coastalgroupinc.com",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "propertymanagement.com",
+          "thumbtack.com",
+          "yelp.com"
+        ]
+      },
+      "shared": ["expertise.com"]
+    },
+    {
+      "rank": 44,
+      "city": "Long Beach",
+      "state": "CA",
+      "engines": {
+        "chatgpt": ["birdeye.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "brickwiseai.com",
+          "do.talent.com",
+          "expertise.com",
+          "homeguide.com",
+          "ipropertymanagement.com",
+          "threebestrated.com",
+          "utopiamanagement.com",
+          "yelp.ca",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 45,
+      "city": "Oakland",
+      "state": "CA",
+      "engines": {
+        "chatgpt": ["expertise.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "birdeye.com",
+          "brickwiseai.com",
+          "expertise.com",
+          "hoaunlimited.com",
+          "threebestrated.com",
+          "yelp.com"
+        ]
+      },
+      "shared": ["expertise.com"]
+    },
+    {
+      "rank": 46,
+      "city": "Minneapolis",
+      "state": "MN",
+      "engines": {
+        "chatgpt": [
+          "birdeye.com",
+          "minneapolispropertymanagers.org",
+          "thepropertymanagementdirectory.com"
+        ],
+        "claude": [
+          "guardianprop.com",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "thumbtack.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 47,
+      "city": "Bakersfield",
+      "state": "CA",
+      "engines": {
+        "chatgpt": ["bestinhood.com"],
+        "claude": [
+          "bestpropertymanagementcompanies.com",
+          "brickwiseai.com",
+          "expertise.com",
+          "hoaunlimited.com",
+          "housecashin.com",
+          "ipropertymanagement.com",
+          "propertymanagementlist.com",
+          "verifiedmanagers.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 48,
+      "city": "Tulsa",
+      "state": "OK",
+      "engines": {
+        "chatgpt": ["propertymanagementsearch.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "americatop10.com",
+          "awning.com",
+          "birdeye.com",
+          "en.wikipedia.org",
+          "expertise.com",
+          "ipropertymanagement.com",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 49,
+      "city": "Tampa",
+      "state": "FL",
+      "engines": {
+        "chatgpt": ["birdeye.com", "thepropertymanagementdirectory.com"],
+        "claude": [
+          "bestpropertymanagementcompanies.com",
+          "expertise.com",
+          "graystoneig.com",
+          "investproinc.com",
+          "ipropertymanagement.com",
+          "revenuebase.ai",
+          "yelp.com"
+        ]
+      },
+      "shared": []
+    },
+    {
+      "rank": 50,
+      "city": "Aurora",
+      "state": "CO",
+      "engines": {
+        "chatgpt": [
+          "birdeye.com",
+          "expertise.com",
+          "propertymanagement.com",
+          "propertymanagementfirms.com"
+        ],
+        "claude": [
+          "expertise.com",
+          "propertymanagement.com",
+          "propertymanagementlist.com",
+          "threebestrated.com",
+          "thumbtack.com",
+          "yelp.com"
+        ]
+      },
+      "shared": ["expertise.com", "propertymanagement.com"]
+    }
+  ],
+  "cities_with_shared": 15,
+  "cities_compared": 50
+}

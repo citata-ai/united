@@ -5,6 +5,7 @@
 import Guide, { type GuideFrontmatter } from "../../layouts/Guide.astro";
 import data from "../../data/ai-pm-index-2026.json";
 import ch from "../../data/ai-pm-index-2026-change.json";
+import src from "../../data/ai-pm-index-2026-sources.json";
 
 const o = data.overall;
 const e = data.by_engine;
@@ -44,6 +45,33 @@ const changeRows = [
   { key: "pct_with_company_site", label: "Answers that link a company site", unit: "%" },
   { key: "pct_with_forum", label: "Answers with Reddit or BiggerPockets", unit: "%" },
 ] as const;
+// Update 2 (B034): ChatGPT and Claude only (Gemini: our API access stopped on 2026-11-16). Numbers come from sources.json
+// (tools/ai-visibility/cities_sources.py). Goodjuju numbers: their study page, read 2026-11-16 (cities of 30, one run, 2026-10-30).
+const d3 = src.dates[src.dates.length - 1];
+const csv3Url = `/data/ai-property-manager-index-2026-11-16.csv`;
+const gjUrl = "https://gogoodjuju.com/property-management-ai-search-study/";
+type Eng = "chatgpt" | "claude";
+const se = src.engines as Record<Eng, { dates: string[]; per_date: Record<string, { answers: number; avg_sources: number; distinct_domains: number }>; top: Record<string, number | string>[]; core: string[] }>;
+const srcEngines: Eng[] = ["chatgpt", "claude"];
+const n3 = (k: Eng) => se[k].per_date[d3].answers;
+const w = (dom: string, k: Eng, d: string) => ((src.watch.find((x) => x.domain === dom) as any)?.[k]?.[d] ?? 0) as number;
+const tp = (k: Eng, dom: string, d: string) => (se[k].top.find((x) => x.domain === dom)?.[d] ?? 0) as number;
+const share = (n: number, of: number) => `${Math.round((100 * n) / of)}%`;
+const gj: { domain: string; chatgpt: number | null; claude: number | null }[] = [
+  { domain: "expertise.com", chatgpt: 10, claude: 16 },
+  { domain: "propertymanagement.com", chatgpt: 5, claude: 15 },
+  { domain: "ipropertymanagement.com", chatgpt: 1, claude: 14 },
+  { domain: "awning.com", chatgpt: null, claude: 14 },
+  { domain: "biggerpockets.com", chatgpt: 5, claude: 9 },
+  { domain: "bestinhood.com", chatgpt: 11, claude: null },
+  { domain: "yelp.com", chatgpt: null, claude: 2 },
+  { domain: "birdeye.com", chatgpt: 3, claude: null },
+  { domain: "trustanalytica.org", chatgpt: 3, claude: null },
+  { domain: "threebestrated.com", chatgpt: null, claude: 4 },
+  { domain: "thumbtack.com", chatgpt: null, claude: 4 },
+  { domain: "reddit.com", chatgpt: null, claude: null },
+];
+const gjCell = (n: number | null) => (n === null ? "–" : `${n} (${share(n, 30)})`);
 const types = Object.entries(o.source_type_answers as Record<string, number>).sort((a, b) => b[1] - a[1]);
 
 const fm: GuideFrontmatter = {
@@ -52,8 +80,8 @@ const fm: GuideFrontmatter = {
   headline: "AI Property Manager Index 2026",
   dek: `Who ChatGPT, Gemini and Claude name as the best property manager in 50 US cities, and the sources they use.`,
   published: date,
-  updated: d2,
-  answer: `We asked ChatGPT, Gemini and Claude "What is the best property management company in <city>?" for the 50 largest US cities (${N} answers, ${date}). The engines named ${o.distinct_companies} different companies, and ${Math.round(o.pct_names_local)}% of all names were local firms. ${pct(o.answers_with_listing_site, N)}% of answers used a directory or review site as a source; Expertise.com was a source in ${expertise} of ${N} answers. Gemini linked a property manager's own site in ${pct(e.gemini.answers_with_company_site, 50)}% of answers, ChatGPT in ${pct(e.chatgpt.answers_with_company_site, 50)}%. When we asked again on ${d2}, only ${Math.round(r.all.pct_kept)}% of the names came back, but the top sources stayed the same.`,
+  updated: d3,
+  answer: `We asked ChatGPT, Gemini and Claude "What is the best property management company in <city>?" for the 50 largest US cities (${N} answers, ${date}). The engines named ${o.distinct_companies} different companies, and ${Math.round(o.pct_names_local)}% of all names were local firms. ${pct(o.answers_with_listing_site, N)}% of answers used a directory or review site as a source; Expertise.com was a source in ${expertise} of ${N} answers. Gemini linked a property manager's own site in ${pct(e.gemini.answers_with_company_site, 50)}% of answers, ChatGPT in ${pct(e.chatgpt.answers_with_company_site, 50)}%. When we asked again on ${d2}, only ${Math.round(r.all.pct_kept)}% of the names came back, but the top sources stayed the same. On ${d3}, ChatGPT used Expertise.com in only ${w("expertise.com", "chatgpt", d3)} of ${n3("chatgpt")} answers (first run: ${w("expertise.com", "chatgpt", date)} of 50), while Claude still used Yelp, Expertise.com and iPropertyManagement.com in most cities.`,
   faq: [
     {
       q: "Which property management company does ChatGPT recommend?",
@@ -68,11 +96,17 @@ const fm: GuideFrontmatter = {
       a: "Be on the sources the engines read for your city: Expertise.com, Yelp, iPropertyManagement.com, BBB, Birdeye and the local best-of lists. Keep your own site clear about the city, the services and the fees, because Gemini and Claude link company sites often. No one can promise a place in an AI answer.",
     },
     {
+      q: "Which sources does ChatGPT use for property managers now?",
+      a: `In our ${d3} run, ChatGPT used Birdeye in ${w("birdeye.com", "chatgpt", d3)} of ${n3("chatgpt")} answers and ThePropertyManagementDirectory.com in ${tp("chatgpt", "thepropertymanagementdirectory.com", d3)}. Expertise.com fell from ${w("expertise.com", "chatgpt", date)} of 50 answers (${date}) to ${w("expertise.com", "chatgpt", d3)}. ChatGPT gives about ${se.chatgpt.per_date[d3].avg_sources} sources per answer, so one new directory can change many cities.`,
+    },
+    {
       q: "Are these AI recommendations stable?",
       a: `No. We asked the same ${N} questions again 14 days later (${d2}). Only ${Math.round(r.all.pct_kept)}% of the names came back (${r.all.kept.toLocaleString("en-US")} of ${r.all.old_names.toLocaleString("en-US")}), and ${r.all.same_list} of ${N} answers gave the same list. The sources were more stable: Expertise.com was a source in ${exp2.old} answers, then ${exp2.new}.`,
     },
   ],
   sources: [
+    { label: `Citata.ai: AI Property Manager Index update 2, ${src.cities.length} cities, ChatGPT and Claude, ${d3} (CSV, our data)`, url: `https://citata.ai${csv3Url}` },
+    { label: "Goodjuju Marketing: Where AI search gets its best property managers (30 cities, 4 engines, data collected 2026-10-30)", url: gjUrl },
     { label: `Citata.ai: AI Property Manager Index data, ${N} answers, ${date} (CSV, our data)`, url: `https://citata.ai${csvUrl}` },
     { label: `Citata.ai: AI Property Manager Index update 1, ${ch.overall.answers.new} answers, ${d2} (CSV, our data)`, url: `https://citata.ai${csv2Url}` },
     {
@@ -85,6 +119,7 @@ const fm: GuideFrontmatter = {
 
 const headings = [
   { depth: 2, slug: "numbers", text: "Headline numbers" },
+  { depth: 2, slug: "update-2", text: `Update 2: the sources each engine uses` },
   { depth: 2, slug: "update-1", text: `Update 1: what changed in 14 days` },
   { depth: 2, slug: "method", text: "How we ran the test" },
   { depth: 2, slug: "companies", text: "Which companies AI names" },
@@ -105,8 +140,8 @@ const dataset = {
   creator: { "@id": "https://citata.ai/#org" },
   publisher: { "@id": "https://citata.ai/#org" },
   datePublished: date,
-  dateModified: d2,
-  temporalCoverage: `${date}/${d2}`,
+  dateModified: d3,
+  temporalCoverage: `${date}/${d3}`,
   spatialCoverage: { "@type": "Place", name: "United States" },
   license: "https://creativecommons.org/licenses/by/4.0/",
   isAccessibleForFree: true,
@@ -116,6 +151,7 @@ const dataset = {
   distribution: [
     { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csvUrl}` },
     { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csv2Url}` },
+    { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `https://citata.ai${csv3Url}` },
   ],
 };
 
@@ -175,6 +211,103 @@ const fmt = (v: number, unit: string) => (unit === "%" ? `${Math.round(v)}%` : v
       <p class="mt-2 text-[15px] text-muted">cities had at least one company that all 3 engines named. In the other {50 - o.cities_with_full_agreement} cities, the engines did not agree on any name.</p>
     </div>
   </div>
+
+  <h2 id="update-2">Update 2: the sources each engine uses</h2>
+  <p>
+    ChatGPT changed its sources in 4 weeks. Claude kept its top 3: Yelp, Expertise.com and iPropertyManagement.com. On {d3} we sent the same prompt to ChatGPT and Claude for the same 50 cities
+    ({n3("chatgpt") + n3("claude")} answers received, {100 - n3("chatgpt") - n3("claude")} failed). Gemini is not in this update: our API access to it stopped on {d3}.
+    This update looks at sources only. We changed the model that lists the company names (from Claude Haiku 4.5 to Claude Haiku 5.5), so we do not compare names here.
+  </p>
+  <div class="not-prose my-6 grid gap-3 sm:grid-cols-2">
+    <div class="rounded-md bg-coral/25 p-5">
+      <p class="text-[34px] leading-none">{w("expertise.com", "chatgpt", date)} → {w("expertise.com", "chatgpt", d2)} → {w("expertise.com", "chatgpt", d3)}</p>
+      <p class="mt-2 text-[15px] text-muted">ChatGPT answers that used Expertise.com ({date}, {d2}, {d3}; of 50, 50 and {n3("chatgpt")}).</p>
+    </div>
+    <div class="rounded-md bg-sun/30 p-5">
+      <p class="text-[34px] leading-none">0 → {tp("chatgpt", "thepropertymanagementdirectory.com", d2)} → {tp("chatgpt", "thepropertymanagementdirectory.com", d3)}</p>
+      <p class="mt-2 text-[15px] text-muted">ChatGPT answers that used ThePropertyManagementDirectory.com. Birdeye went {w("birdeye.com", "chatgpt", date)} → {w("birdeye.com", "chatgpt", d3)}.</p>
+    </div>
+    <div class="rounded-md bg-mint/40 p-5">
+      <p class="text-[34px] leading-none">{w("yelp.com", "claude", d3)} of {n3("claude")}</p>
+      <p class="mt-2 text-[15px] text-muted">Claude answers that used Yelp. Expertise.com: {w("expertise.com", "claude", d3)}. iPropertyManagement.com: {w("ipropertymanagement.com", "claude", d3)}.</p>
+    </div>
+    <div class="rounded-md bg-sky/25 p-5">
+      <p class="text-[34px] leading-none">{src.cities_with_shared} of 50</p>
+      <p class="mt-2 text-[15px] text-muted">cities where ChatGPT and Claude used at least one same source on {d3}. In the other {50 - src.cities_with_shared}, they read different sites.</p>
+    </div>
+  </div>
+  <p>Top sources for each engine on all 3 dates (answers that used the domain). "Core" marks a domain in the engine's top 10 on every date.</p>
+  {
+    srcEngines.map((k) => (
+      <>
+        <p><strong>{engineName[k]}</strong> (about {se[k].per_date[d3].avg_sources} sources per answer, {se[k].per_date[d3].distinct_domains} different domains on {d3}):</p>
+        <table>
+          <thead><tr><th>Domain</th>{se[k].dates.map((d) => <th>{d}</th>)}</tr></thead>
+          <tbody>
+            {se[k].top.slice(0, 12).map((x) => <tr><td>{x.domain}{se[k].core.includes(x.domain as string) ? " (core)" : ""}</td>{se[k].dates.map((d) => <td>{x[d]}</td>)}</tr>)}
+          </tbody>
+        </table>
+      </>
+    ))
+  }
+  <p>
+    In update 1 ({d2}), Gemini was the only engine that used Reddit: {ch.domains.find((x) => x.domain === "reddit.com")?.new ?? 0} of its 50 answers. ChatGPT and Claude
+    used Reddit in 0 answers on all 3 dates.
+  </p>
+
+  <h3>Compared with the Goodjuju study</h3>
+  <p>
+    Goodjuju Marketing ran a similar test on 2026-10-30: 30 cities, 4 engines, one run (<a href={gjUrl}>their study and dataset</a>). Their data and ours agree on the main point:
+    a short list of directories builds the answer. They found that 11 of 146 sources had 57% of all citations. The numbers below are their counts next to ours. The methods differ: they used the consumer apps,
+    and their Claude column is Claude with "and cite sources" added to the prompt. Our Claude list holds every search result Claude read. So compare the order, not the size.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Domain</th><th>Goodjuju ChatGPT (of 30 cities)</th><th>Our ChatGPT {d3} (of {n3("chatgpt")})</th><th>Goodjuju Claude, cite (of 30)</th><th>Our Claude {d3} (of {n3("claude")})</th></tr>
+    </thead>
+    <tbody>
+      {
+        gj.map((g) => (
+          <tr>
+            <td>{g.domain}</td>
+            <td>{gjCell(g.chatgpt)}</td>
+            <td>{w(g.domain, "chatgpt", d3)} ({share(w(g.domain, "chatgpt", d3), n3("chatgpt"))})</td>
+            <td>{gjCell(g.claude)}</td>
+            <td>{w(g.domain, "claude", d3)} ({share(w(g.domain, "claude", d3), n3("claude"))})</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p>Where the two data sets agree, and where not:</p>
+  <ul>
+    <li><strong>Agree:</strong> Expertise.com and iPropertyManagement.com are main sources for Claude in both. ChatGPT uses Bestinhood and gives few sources per answer in both (Goodjuju: about 2.3; ours: {se.chatgpt.per_date[d3].avg_sources}).</li>
+    <li><strong>Not the same:</strong> Yelp is in almost every Claude answer in our data, but in 2 of 30 cities for Goodjuju. Birdeye is ChatGPT's top source for us ({w("birdeye.com", "chatgpt", d3)} of {n3("chatgpt")}) and 3 of 30 for Goodjuju. Goodjuju's Claude used PropertyManagement.com and Awning in about half the cities; ours in {w("propertymanagement.com", "claude", d3)} and {w("awning.com", "claude", d3)} of {n3("claude")}.</li>
+    <li><strong>Only in Goodjuju:</strong> Google Business Profiles and Maps were their top source (61 citations), from Google AI Mode and from Claude without "cite sources". Reddit came from AI Mode (17 cities) and Perplexity (11). We did not test those engines.</li>
+    <li><strong>Only in ours:</strong> change over time. Expertise.com fell in ChatGPT from {w("expertise.com", "chatgpt", date)} to {w("expertise.com", "chatgpt", d3)} answers in 4 weeks. A one-day test cannot show this.</li>
+  </ul>
+
+  <h3>Sources for each city ({d3})</h3>
+  <p>The domains each engine used for each city. "Both" lists the sources that ChatGPT and Claude shared.</p>
+  <table>
+    <thead><tr><th>City</th><th>ChatGPT</th><th>Claude</th><th>Both</th></tr></thead>
+    <tbody>
+      {
+        src.cities.map((c) => (
+          <tr>
+            <td>{c.city}, {c.state}</td>
+            <td>{((c.engines as Record<string, string[]>).chatgpt ?? ["no answer"]).join(", ")}</td>
+            <td>{((c.engines as Record<string, string[]>).claude ?? ["no answer"]).join(", ")}</td>
+            <td>{c.shared.length ? c.shared.join(", ") : "–"}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p>
+    What this means for you: do not bet on one directory. In 4 weeks ChatGPT moved from Expertise.com to Birdeye and new directory sites. Be listed on the 5 to 8 sites the engines
+    read for your city, and check them each month. <a href={csv3Url} download>Download the update 2 CSV</a> ({n3("chatgpt") + n3("claude")} rows, same columns).
+  </p>
 
   <h2 id="update-1">Update 1: what changed in 14 days</h2>
   <p>
