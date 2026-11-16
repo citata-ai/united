@@ -1316,3 +1316,21 @@ file = "img/guide-illinois-eviction-process-v1-*.webp"
 prompt = "Use the image /tmp/img-illinois-eviction-process/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A stern man in an orange toga stands on the stoop of a cream-and-coral two-flat, holding out a sealed demand letter toward a small row of tiled houses; a black rotary phone sits on the stone railing beside him."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-16"
+
+[[image]]
+file = "img/guide-how-to-verify-tenant-income-v1-*.webp"
+prompt = "Use the image /tmp/img-how-to-verify-tenant-income/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A landlord in an orange toga stands before a cream-and-coral two-flat among small tiled houses, dialing a mint rotary phone to confirm a tenant's wages while folded pay papers rest on a lilac CRT computer at his side."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-16"
+
+[[image]]
+file = "img/guide-illinois-security-deposit-law-v1-*.webp"
+prompt = "Use the image /tmp/img-illinois-security-deposit-law/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands on the stoop of a cream two-flat, slipping a large brass key into a mint letterbox. Small tiled houses line the street behind him under a flat lilac sky."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-16"
+
+[[image]]
+file = "img/guide-landlord-right-of-entry-notice-v1-*.webp"
+prompt = "Use the image /tmp/img-landlord-right-of-entry-notice/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands at the doorway of a cream two-flat, holding up a large brass key as if requesting entry after notice, while a black rotary phone rests on a small stool beside the threshold."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-16"
