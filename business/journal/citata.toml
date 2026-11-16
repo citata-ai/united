@@ -388,3 +388,19 @@ kind = "site"
 title = "AI Property Manager Index update 2: sources per engine and city, Goodjuju comparison (B034, H03)"
 ref = "landing/src/pages/research/ai-property-manager-index-2026.astro"
 result = "Live on citata.ai 2026-11-16 (smoke check 200). Re-run 50 cities on ChatGPT and Claude (99 of 100; Gemini 403 on CLIProxy). ChatGPT Expertise.com 30 -> 20 -> 8 of 50 answers, Birdeye 17 -> 23, ThePropertyManagementDirectory.com 0 -> 19. Claude Yelp 50 of 50. Goodjuju 30-city study (2026-10-30) compared. Third CSV."
+
+[[entry]]
+date = "2026-11-16"
+side = "internal"
+kind = "measure"
+title = "Weekly AI visibility run (ChatGPT and Claude; Gemini 503)"
+ref = "business/marketing/ai-visibility/2026-11-16/report.md"
+result = "80 of 120 answers (Gemini auth_unavailable). Non-brand ChatGPT 3 of 36 named (was 6 of 35 on 2026-11-13), Claude 0 of 36. Brand right: ChatGPT 4 of 4, Claude 0 of 4."
+
+[[entry]]
+date = "2026-11-16"
+side = "internal"
+kind = "measure"
+title = "Weekly growth report W47: CTT-O6 at 2 of 1,000 AI sessions on day 29"
+ref = "business/marketing/reports/2026-W47.md"
+result = "2 AI referral sessions since 2026-10-19, both chatgpt to brand pages (/about, /). 1,043 AI bot fetches in 7 days. H02 and H06 invalidated (0 sessions, kill_if met); H01 confidence 3 to 2; H11 proposed (track landlord data prompts, B040)."
