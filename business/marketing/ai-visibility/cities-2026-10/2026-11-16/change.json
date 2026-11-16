@@ -1,0 +1,852 @@
+{
+  "experiment": "H03-E1",
+  "old_date": "2026-11-02",
+  "new_date": "2026-11-16",
+  "overall": {
+    "avg_companies": {
+      "old": 9.4,
+      "new": 6.7,
+      "delta": -2.7
+    },
+    "pct_names_local": {
+      "old": 77.0,
+      "new": 81.4,
+      "delta": 4.4
+    },
+    "pct_with_national": {
+      "old": 88.7,
+      "new": 63.6,
+      "delta": -25.1
+    },
+    "pct_with_listing_site": {
+      "old": 83.3,
+      "new": 87.9,
+      "delta": 4.6
+    },
+    "pct_with_company_site": {
+      "old": 74.0,
+      "new": 70.7,
+      "delta": -3.3
+    },
+    "pct_with_forum": {
+      "old": 17.3,
+      "new": 0.0,
+      "delta": -17.3
+    },
+    "avg_sources": {
+      "old": 5.3,
+      "new": 4.6,
+      "delta": -0.7
+    },
+    "distinct_companies": {
+      "old": 885,
+      "new": 517,
+      "delta": -368
+    },
+    "cities_with_full_agreement": {
+      "old": 42,
+      "new": 0,
+      "delta": -42
+    },
+    "distinct_domains": {
+      "old": 258,
+      "new": 96,
+      "delta": -162
+    },
+    "answers": {
+      "old": 150,
+      "new": 99,
+      "delta": -51
+    },
+    "answers_failed": {
+      "old": 0,
+      "new": 1,
+      "delta": 1
+    }
+  },
+  "by_engine": {
+    "chatgpt": {
+      "avg_companies": {
+        "old": 5.4,
+        "new": 5.5,
+        "delta": 0.1
+      },
+      "pct_names_local": {
+        "old": 78.1,
+        "new": 78.1,
+        "delta": 0.0
+      },
+      "pct_with_national": {
+        "old": 72.0,
+        "new": 81.6,
+        "delta": 9.6
+      },
+      "pct_with_listing_site": {
+        "old": 82.0,
+        "new": 75.5,
+        "delta": -6.5
+      },
+      "pct_with_company_site": {
+        "old": 32.0,
+        "new": 77.6,
+        "delta": 45.6
+      },
+      "pct_with_forum": {
+        "old": 4.0,
+        "new": 0.0,
+        "delta": -4.0
+      },
+      "avg_sources": {
+        "old": 2.3,
+        "new": 2.5,
+        "delta": 0.2
+      }
+    },
+    "claude": {
+      "avg_companies": {
+        "old": 16.9,
+        "new": 7.8,
+        "delta": -9.1
+      },
+      "pct_names_local": {
+        "old": 79.6,
+        "new": 83.7,
+        "delta": 4.1
+      },
+      "pct_with_national": {
+        "old": 100.0,
+        "new": 46.0,
+        "delta": -54.0
+      },
+      "pct_with_listing_site": {
+        "old": 100.0,
+        "new": 100.0,
+        "delta": 0.0
+      },
+      "pct_with_company_site": {
+        "old": 90.0,
+        "new": 64.0,
+        "delta": -26.0
+      },
+      "pct_with_forum": {
+        "old": 0.0,
+        "new": 0.0,
+        "delta": 0.0
+      },
+      "avg_sources": {
+        "old": 7.6,
+        "new": 6.7,
+        "delta": -0.9
+      }
+    }
+  },
+  "retention": {
+    "chatgpt": {
+      "pairs": 49,
+      "old_names": 264,
+      "kept": 163,
+      "pct_kept": 61.7,
+      "new_names": 107,
+      "pct_new": 39.6,
+      "same_list": 5,
+      "no_name_kept": 2
+    },
+    "claude": {
+      "pairs": 50,
+      "old_names": 841,
+      "kept": 235,
+      "pct_kept": 27.9,
+      "new_names": 157,
+      "pct_new": 40.1,
+      "same_list": 0,
+      "no_name_kept": 25
+    },
+    "all": {
+      "pairs": 99,
+      "old_names": 1105,
+      "kept": 398,
+      "pct_kept": 36.0,
+      "same_list": 5,
+      "no_name_kept": 27
+    }
+  },
+  "cities_top_same": 18,
+  "cities_agree_both": 0,
+  "cities_compared": 50,
+  "cities": [
+    {
+      "rank": 1,
+      "city": "New York",
+      "state": "NY",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 2,
+      "city": "Los Angeles",
+      "state": "CA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 3,
+      "city": "Chicago",
+      "state": "IL",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 4,
+      "city": "Houston",
+      "state": "TX",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 5,
+      "city": "Phoenix",
+      "state": "AZ",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 6,
+      "city": "Philadelphia",
+      "state": "PA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 7,
+      "city": "San Antonio",
+      "state": "TX",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 8,
+      "city": "San Diego",
+      "state": "CA",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 9,
+      "city": "Dallas",
+      "state": "TX",
+      "top_same": true,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 10,
+      "city": "Fort Worth",
+      "state": "TX",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 11,
+      "city": "Jacksonville",
+      "state": "FL",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 12,
+      "city": "Austin",
+      "state": "TX",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 13,
+      "city": "San Jose",
+      "state": "CA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 14,
+      "city": "Charlotte",
+      "state": "NC",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 15,
+      "city": "Columbus",
+      "state": "OH",
+      "top_same": false,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 16,
+      "city": "Indianapolis",
+      "state": "IN",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 17,
+      "city": "San Francisco",
+      "state": "CA",
+      "top_same": true,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 18,
+      "city": "Seattle",
+      "state": "WA",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 19,
+      "city": "Denver",
+      "state": "CO",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 20,
+      "city": "Nashville",
+      "state": "TN",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 21,
+      "city": "Oklahoma City",
+      "state": "OK",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 22,
+      "city": "Washington",
+      "state": "DC",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 23,
+      "city": "El Paso",
+      "state": "TX",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 24,
+      "city": "Las Vegas",
+      "state": "NV",
+      "top_same": false,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 25,
+      "city": "Boston",
+      "state": "MA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 26,
+      "city": "Detroit",
+      "state": "MI",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 27,
+      "city": "Louisville",
+      "state": "KY",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 28,
+      "city": "Portland",
+      "state": "OR",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 29,
+      "city": "Memphis",
+      "state": "TN",
+      "top_same": false,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 30,
+      "city": "Baltimore",
+      "state": "MD",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 31,
+      "city": "Milwaukee",
+      "state": "WI",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 32,
+      "city": "Albuquerque",
+      "state": "NM",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 33,
+      "city": "Fresno",
+      "state": "CA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 34,
+      "city": "Tucson",
+      "state": "AZ",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 35,
+      "city": "Sacramento",
+      "state": "CA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 36,
+      "city": "Atlanta",
+      "state": "GA",
+      "top_same": false,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 37,
+      "city": "Kansas City",
+      "state": "MO",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 38,
+      "city": "Mesa",
+      "state": "AZ",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 39,
+      "city": "Raleigh",
+      "state": "NC",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 40,
+      "city": "Colorado Springs",
+      "state": "CO",
+      "top_same": false,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 41,
+      "city": "Miami",
+      "state": "FL",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 42,
+      "city": "Omaha",
+      "state": "NE",
+      "top_same": false,
+      "agree_old": false,
+      "agree_new": false
+    },
+    {
+      "rank": 43,
+      "city": "Virginia Beach",
+      "state": "VA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 44,
+      "city": "Long Beach",
+      "state": "CA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 45,
+      "city": "Oakland",
+      "state": "CA",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 46,
+      "city": "Minneapolis",
+      "state": "MN",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 47,
+      "city": "Bakersfield",
+      "state": "CA",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 48,
+      "city": "Tulsa",
+      "state": "OK",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 49,
+      "city": "Tampa",
+      "state": "FL",
+      "top_same": true,
+      "agree_old": true,
+      "agree_new": false
+    },
+    {
+      "rank": 50,
+      "city": "Aurora",
+      "state": "CO",
+      "top_same": false,
+      "agree_old": true,
+      "agree_new": false
+    }
+  ],
+  "domains": [
+    {
+      "domain": "yelp.com",
+      "old": 49,
+      "new": 50,
+      "delta": 1
+    },
+    {
+      "domain": "expertise.com",
+      "old": 87,
+      "new": 47,
+      "delta": -40
+    },
+    {
+      "domain": "ipropertymanagement.com",
+      "old": 40,
+      "new": 37,
+      "delta": -3
+    },
+    {
+      "domain": "revenuebase.ai",
+      "old": 5,
+      "new": 33,
+      "delta": 28
+    },
+    {
+      "domain": "reviews.birdeye.com",
+      "old": 23,
+      "new": 27,
+      "delta": 4
+    },
+    {
+      "domain": "thepropertymanagementdirectory.com",
+      "old": 4,
+      "new": 19,
+      "delta": 15
+    },
+    {
+      "domain": "propertymanagementhelp.com",
+      "old": 2,
+      "new": 17,
+      "delta": 15
+    },
+    {
+      "domain": "trustanalytica.org",
+      "old": 16,
+      "new": 15,
+      "delta": -1
+    },
+    {
+      "domain": "propertymanagement.com",
+      "old": 25,
+      "new": 14,
+      "delta": -11
+    },
+    {
+      "domain": "clutch.co",
+      "old": 10,
+      "new": 14,
+      "delta": 4
+    },
+    {
+      "domain": "propertymanagementsearch.com",
+      "old": 0,
+      "new": 11,
+      "delta": 11
+    },
+    {
+      "domain": "bestinhood.com",
+      "old": 12,
+      "new": 11,
+      "delta": -1
+    },
+    {
+      "domain": "americatop10.com",
+      "old": 5,
+      "new": 10,
+      "delta": 5
+    },
+    {
+      "domain": "hireanypm.com",
+      "old": 6,
+      "new": 8,
+      "delta": 2
+    },
+    {
+      "domain": "seolium.com",
+      "old": 1,
+      "new": 8,
+      "delta": 7
+    },
+    {
+      "domain": "threebestrated.com",
+      "old": 18,
+      "new": 7,
+      "delta": -11
+    },
+    {
+      "domain": "utopiamanagement.com",
+      "old": 19,
+      "new": 7,
+      "delta": -12
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "old": 14,
+      "new": 7,
+      "delta": -7
+    },
+    {
+      "domain": "brickwiseai.com",
+      "old": 1,
+      "new": 6,
+      "delta": 5
+    },
+    {
+      "domain": "belonghome.com",
+      "old": 13,
+      "new": 5,
+      "delta": -8
+    },
+    {
+      "domain": "home365.co",
+      "old": 8,
+      "new": 4,
+      "delta": -4
+    },
+    {
+      "domain": "awning.com",
+      "old": 22,
+      "new": 4,
+      "delta": -18
+    },
+    {
+      "domain": "thumbtack.com",
+      "old": 10,
+      "new": 4,
+      "delta": -6
+    },
+    {
+      "domain": "mynd.co",
+      "old": 25,
+      "new": 2,
+      "delta": -23
+    },
+    {
+      "domain": "flatfeelandlord.com",
+      "old": 6,
+      "new": 1,
+      "delta": -5
+    },
+    {
+      "domain": "reddit.com",
+      "old": 22,
+      "new": 0,
+      "delta": -22
+    },
+    {
+      "domain": "inven.ai",
+      "old": 9,
+      "new": 0,
+      "delta": -9
+    },
+    {
+      "domain": "ziprent.com",
+      "old": 23,
+      "new": 0,
+      "delta": -23
+    }
+  ],
+  "national": [
+    {
+      "name": "Real Property Management",
+      "old": 72,
+      "new": 34,
+      "delta": -38
+    },
+    {
+      "name": "Keyrenter",
+      "old": 28,
+      "new": 16,
+      "delta": -12
+    },
+    {
+      "name": "PMI (Property Management Inc.)",
+      "old": 21,
+      "new": 10,
+      "delta": -11
+    },
+    {
+      "name": "FirstService Residential",
+      "old": 16,
+      "new": 10,
+      "delta": -6
+    },
+    {
+      "name": "HomeRiver Group",
+      "old": 35,
+      "new": 7,
+      "delta": -28
+    },
+    {
+      "name": "Evernest",
+      "old": 21,
+      "new": 6,
+      "delta": -15
+    },
+    {
+      "name": "Utopia Management",
+      "old": 16,
+      "new": 6,
+      "delta": -10
+    },
+    {
+      "name": "Bay Property Management Group",
+      "old": 11,
+      "new": 6,
+      "delta": -5
+    },
+    {
+      "name": "All County Property Management",
+      "old": 7,
+      "new": 4,
+      "delta": -3
+    },
+    {
+      "name": "Ziprent",
+      "old": 30,
+      "new": 3,
+      "delta": -27
+    },
+    {
+      "name": "Mynd",
+      "old": 15,
+      "new": 3,
+      "delta": -12
+    },
+    {
+      "name": "PURE Property Management",
+      "old": 5,
+      "new": 3,
+      "delta": -2
+    },
+    {
+      "name": "On Q Property Management",
+      "old": 7,
+      "new": 2,
+      "delta": -5
+    },
+    {
+      "name": "Grace Property Management",
+      "old": 3,
+      "new": 2,
+      "delta": -1
+    },
+    {
+      "name": "Cushman and Wakefield",
+      "old": 5,
+      "new": 1,
+      "delta": -4
+    },
+    {
+      "name": "Invitation Homes",
+      "old": 2,
+      "new": 1,
+      "delta": -1
+    },
+    {
+      "name": "Belong",
+      "old": 6,
+      "new": 0,
+      "delta": -6
+    }
+  ]
+}

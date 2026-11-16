@@ -380,3 +380,11 @@ kind = "site"
 title = "Guide: how to check if AI recommends your property management company (B033, H07)"
 ref = "landing/src/content/library/ai-visibility-audit-property-management.md"
 result = "Live on citata.ai 2026-11-14 (smoke check 200). Draft refreshed and published. 5 owner prompts, free tools (Ahrefs, HubSpot, ChatGPT Business Hub) read 2026-11-14, our pm-ai-visibility-check data 2026-11-13 (Ahrefs 6 of 6, us 0 of 6), 100-point score. Cover style N cyan."
+
+[[entry]]
+date = "2026-11-16"
+side = "internal"
+kind = "site"
+title = "AI Property Manager Index update 2: sources per engine and city, Goodjuju comparison (B034, H03)"
+ref = "landing/src/pages/research/ai-property-manager-index-2026.astro"
+result = "Re-run 50 cities on ChatGPT and Claude (99 of 100; Gemini 403 on CLIProxy). ChatGPT Expertise.com 30 -> 20 -> 8 of 50 answers, Birdeye 17 -> 23, ThePropertyManagementDirectory.com 0 -> 19. Claude Yelp 50 of 50. Goodjuju 30-city study (2026-10-30) compared. Third CSV."

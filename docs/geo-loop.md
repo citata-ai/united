@@ -69,6 +69,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-11-12 | Guide /guides/claim-property-management-company-in-chatgpt (H07-E3, B031): OpenAI Business Hub claim steps, limits for local firms, insights, what a claim does not fix; OpenAI pages read in a browser 2026-11-12; cover style N cyan | 2026-11-12 |
 | 2026-11-13 | Comparison /guides/property-management-marketing-agencies (H07-E4, B032): 9 agencies, prices and terms read 2026-11-13, door-payback math, fit by door count; checklist /guides/questions-to-ask-property-management-marketing-agency published; covers style N yellow, lilac | 2026-11-13 |
 | 2026-11-14 | Guide /guides/ai-visibility-audit-property-management (H07-E5, B033): draft refreshed and published; 5 owner prompts, free tools (Ahrefs, HubSpot, ChatGPT Business Hub) read 2026-11-14, our pm-ai-visibility-check data (Ahrefs 6/6, us 0/6); cover style N cyan | 2026-11-14 |
+| 2026-11-16 | Research /research/ai-property-manager-index-2026 update 2 (H03-E1, B034): ChatGPT + Claude re-run (99 of 100; Gemini 403), sources per engine over 3 dates and per city, Goodjuju 30-city comparison (read 2026-11-16), third CSV; tools/ai-visibility/cities_sources.py | 2026-11-16 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
