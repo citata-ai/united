@@ -3,10 +3,10 @@ title: "How Much Should a Security Deposit Be? Caps by State — Citata.ai"
 description: "Many landlords charge one month's rent, but state law sets the limit. California and New York cap deposits at one month; Texas and Florida set no dollar cap."
 headline: "How Much Should a Security Deposit Be?"
 dek: "One month's rent is common, but your state may set a hard cap."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-16"
+updated: "2026-11-16"
 answer: "Charge what your state allows and what covers your real risk, which for many landlords is one month's rent. Some states cap the deposit: California allows one month's rent for most landlords since July 1, 2024, and New York allows one month. Texas and Florida set rules for holding and returning deposits but no dollar cap in the sections we read. In capped states, pet deposits and other move-in charges usually count toward the cap."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2
