@@ -884,6 +884,18 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-new-york-rent-increase-and-notice-rules-v1",
     alt: "A pop engraving under a cyan sky: a man in an orange toga holds a brass key beside a cobalt letterbox at the door of a cream two-flat with coral and mint tiles.",
   },
+  "new-jersey-security-deposit-law": {
+    img: "guide-new-jersey-security-deposit-law-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a brass key before small tiled two-flat houses beside a rotary phone on a stone pedestal.",
+  },
+  "north-carolina-eviction-process": {
+    img: "guide-north-carolina-eviction-process-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga holds a brass key before a two-flat of tiled houses beside a rotary phone on a pedestal.",
+  },
+  "north-carolina-security-deposit-law": {
+    img: "guide-north-carolina-security-deposit-law-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga unlocks a two-flat with tiled roofs beside a rotary phone on a stone ledge.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
