@@ -3,10 +3,10 @@ title: "Tenant Breaking a Lease: What a Landlord Can Charge — Citata.ai"
 description: "When a tenant breaks a lease, you can usually charge rent until the unit re-rents, but many states make you try to re-rent. Fees, mitigation and legal exits."
 headline: "How to Handle a Tenant Who Breaks the Lease"
 dek: "You can usually recover lost rent, but many states make you try to re-rent first."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "When a tenant breaks a lease, you can usually charge the rent lost until a new tenant moves in, plus reasonable costs, minus any amount you could have avoided by re-renting. Texas, California and New York require you to try to re-rent, and Florida lets you choose a capped early termination fee of no more than 2 months' rent. Some tenants may leave without penalty, such as service members with qualifying orders and, in many states, victims of domestic violence."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2

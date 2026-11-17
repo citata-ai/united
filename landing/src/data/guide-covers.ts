@@ -784,14 +784,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-illinois-eviction-process-v1",
     alt: "A pop engraving under a yellow sky: a man in an orange toga on a two-flat stoop holds a sealed letter beside a rotary phone, with small tiled houses beyond.",
   },
-  "how-to-verify-tenant-income": {
-    img: "guide-how-to-verify-tenant-income-v1",
-    alt: "A pop engraving under a cyan sky: a landlord in an orange toga dials a mint rotary phone beside a lilac CRT and folded papers in front of a cream-and-coral two-flat among small tiled houses.",
-  },
-  "illinois-security-deposit-law": {
-    img: "guide-illinois-security-deposit-law-v1",
-    alt: "A pop engraving under a lilac sky: a landlord in an orange toga slips a brass key into a mint letterbox on the stoop of a cream two-flat, with small tiled houses behind him.",
-  },
   "landlord-right-of-entry-notice": {
     img: "guide-landlord-right-of-entry-notice-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga at a cream two-flat doorway holds a brass key beside a black rotary phone on a stool.",
@@ -811,6 +803,34 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "lead-magnets-property-management": {
     img: "guide-lead-magnets-property-management-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga offers a brass key at a cream-and-mint two-flat with pink tiled roofs, an open wooden letterbox and a blank beige CRT on the stone step.",
+  },
+  "lifetime-value-of-a-door": {
+    img: "guide-lifetime-value-of-a-door-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga stands before a cream two-flat with coral tiled roofs, one hand on a mint CRT computer and the other holding a brass key.",
+  },
+  "local-citations-property-management": {
+    img: "guide-local-citations-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga holds a brass key beside a rotary phone before small tiled houses and a two-flat.",
+  },
+  "long-distance-landlord-guide": {
+    img: "guide-long-distance-landlord-guide-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holds a rotary phone on a stone terrace before small tiled houses, a brass key at his belt.",
+  },
+  "los-angeles-rso-jco-landlord-rules": {
+    img: "guide-los-angeles-rso-jco-landlord-rules-v1",
+    alt: "A pop engraving under a yellow sky: a man in an orange toga holds a brass key beside a CRT computer and a cream-and-coral two-flat with mint tiled roofs.",
+  },
+  "llc-vs-umbrella-insurance-rental": {
+    img: "guide-llc-vs-umbrella-insurance-rental-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga holds a brass key before a pink-and-cream two-flat with a mint rotary phone on the stoop.",
+  },
+  "maintenance-markup-property-management": {
+    img: "guide-maintenance-markup-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga before a cream two-flat with coral-tiled roofs sets a separate pile of coins beside a rotary phone on a stone ledge, away from repair tools at his feet.",
+  },
+  "maintenance-request-process": {
+    img: "guide-maintenance-request-process-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga offers a sealed letter to a cobalt letterbox at a cream-and-mint tiled two-flat, with a cream rotary phone on the lilac stoop.",
   },
 };
 

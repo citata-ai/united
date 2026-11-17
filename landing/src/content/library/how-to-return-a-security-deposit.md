@@ -3,10 +3,10 @@ title: "How to Return a Security Deposit on Time, Step by Step — Citata.ai"
 description: "Return a security deposit with an itemized statement by your state's deadline: 14 days in New York, 21 in California, 30 in Texas. Steps and penalties."
 headline: "How to Return a Security Deposit Step by Step"
 dek: "Deadlines run from 14 to 30 days in large states, and a late list can cost you the deduction."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "Inspect the unit, take photos, list each deduction with its cost, and send the itemized statement and the balance by your state's deadline. The deadline is 14 days in New York, 21 days in California and 30 days in Texas after the tenant leaves. Florida gives 15 days with no claim or 30 days to send a certified notice of claim. Miss the deadline and you can lose the right to keep any of the deposit, and in some states owe a penalty."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2

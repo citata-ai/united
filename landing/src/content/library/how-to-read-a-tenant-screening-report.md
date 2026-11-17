@@ -3,10 +3,10 @@ title: "How to Read a Tenant Screening Report, Section by Section — Citata.ai"
 description: "A tenant screening report has credit, collections, eviction, criminal and score sections. Here is what each part means, what to weigh, and what to ignore."
 headline: "How to Read a Tenant Screening Report"
 dek: "Credit, collections, evictions and scores: what each section tells you, and its limits."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "Read a tenant screening report in this order: confirm the identity match, then check rent-related debt and eviction judgments, then the rest of the credit file, then any score. Weigh recent, rent-related items most. Do not count arrests without conviction, old items the FCRA bars, or records that may belong to someone else. Where state law limits a type of record, such as past landlord-tenant cases in New York, leave it out of the decision."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2
