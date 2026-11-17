@@ -848,6 +848,22 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-management-agreement-clauses-checklist-v1",
     alt: "A pop engraving under a yellow sky: a man in an orange toga holds a brass key before a cream two-flat with a pink tiled roof and a mint letterbox by the steps.",
   },
+  "mold-in-rental-property": {
+    img: "guide-mold-in-rental-property-v1",
+    alt: "A pop engraving under a cyan sky: a landlord in an orange toga holds a brass key on the stoop of a cream two-flat and points at dark damp stains on the coral wall above mint tiles, with small pink-roofed houses behind him.",
+  },
+  "move-in-inspection-checklist": {
+    img: "guide-move-in-inspection-checklist-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga inspects a cracked coral floor tile at the doorway of a cream two-flat, brass key in hand, with a mint rotary phone on the stoop and small tiled houses behind.",
+  },
+  "move-out-inspection-checklist": {
+    img: "guide-move-out-inspection-checklist-v1",
+    alt: "A pop engraving under a coral sky: a landlord in an orange toga inspects a cream two-flat doorway with a brass key and rolled parchment beside small pink and lilac tiled houses.",
+  },
+  "move-out-inspection-how-to": {
+    img: "guide-move-out-inspection-how-to-v1",
+    alt: "A pop engraving under a yellow sky: a landlord in an orange toga inspects a cream two-flat doorway with a brass key and rolled parchment checklist beside scuffed mint floor tiles.",
+  },
 };
 
 export const coverSrcset = (img: string) =>

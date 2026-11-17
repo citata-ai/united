@@ -1412,3 +1412,27 @@ file = "img/guide-management-agreement-clauses-checklist-v1-*.webp"
 prompt = "Use the image /tmp/img-management-agreement-clauses-checklist/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands before a cream two-flat with a pink tiled roof, holding up a large brass house key toward the doorway while a mint letterbox sits beside the steps."
 model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
 date = "2026-11-17"
+
+[[image]]
+file = "img/guide-mold-in-rental-property-v1-*.webp"
+prompt = "Use the image /tmp/img-mold-in-rental-property/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sky cyan #2FA7E0 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands on the stoop of a cream two-flat, holding a brass key, and points at dark damp stains climbing the coral wall above a mint-tiled threshold while a row of small pink-roofed houses lines the street behind him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-17"
+
+[[image]]
+file = "img/guide-move-in-inspection-checklist-v1-*.webp"
+prompt = "Use the image /tmp/img-move-in-inspection-checklist/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat lilac #B9A3E3 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands in the open doorway of a cream two-flat, holding a brass key as he inspects a cracked coral floor tile, while a mint rotary phone rests on the stoop and a row of small pink-roofed tiled houses lines the street behind him."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-17"
+
+[[image]]
+file = "img/guide-move-out-inspection-checklist-v1-*.webp"
+prompt = "Use the image /tmp/img-move-out-inspection-checklist/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat coral #FF6B5B field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands at the doorway of a cream two-flat with mint tiled roofs, holding a large brass key and a rolled parchment as he compares a scuffed doorframe to the move-in notes. Behind him, a row of small pink and lilac tiled houses lines the street under a flat coral sky."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-17"
+
+[[image]]
+file = "img/guide-move-out-inspection-how-to-v1-*.webp"
+prompt = "Use the image /tmp/img-move-out-inspection-how-to/ref.png as the style reference: same neo-Renaissance pop engraving (crisp engraved line work and cross-hatching like a vintage postage stamp, one flat saturated sky color with no gradient, buildings and objects recolored in a fresh pop palette of pink, coral, lilac, mint, cobalt blue and cream). The sky is one flat sun yellow #F2C230 field, no clouds. Aspect ratio 16:9. No text, no letters, no numbers, no logos, no watermark, no frame, no border. New scene: A man in an orange toga stands just inside a cream two-flat doorway, brass key in one hand and a rolled parchment checklist in the other, matching scuffed mint floor tiles against the empty rooms beyond."
+model = "gemini-3-pro-image via omp (tools/library/covers.sh); Real-ESRGAN x4"
+date = "2026-11-17"
