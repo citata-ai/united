@@ -168,7 +168,7 @@ target = 20
 due = "2026-12-14"
 kill_if = "Cited in fewer than 5% of the 10 new prompts' answers after 2 weekly runs: then stop new data pages for clicks and move the effort to H10 and H05."
 ice = { impact = 7, confidence = 4, ease = 9 }
-status = "proposed"
+status = "running"
 
 # --- Experiments: one row per run. The routine appends rows and fills result and learned. ---
 
@@ -267,4 +267,14 @@ hypothesis = "H07"
 start = "2026-11-14"
 actions = ["B033 (2026-11-14): refreshed and published the draft /guides/ai-visibility-audit-property-management as 'How to check if AI recommends your property management company': 5 owner prompts word for word, new section on free tools (Ahrefs Free AI Visibility Checker: 6 engines, no signup, one-time snapshot; HubSpot AI Search Grader: GPT-5.4 mini, Perplexity, Gemini, no cost, form for full results; ChatGPT Business Hub: mentions, clicks, discovery topics, clicks tooltip), our 2026-11-13 data for prompt pm-ai-visibility-check (Ahrefs named in 6 of 6 answers, HubSpot 2 of 6, us 0 of 6), new FAQ on Business Hub, free-check close. Tool pages read 2026-11-14 (Ahrefs, HubSpot, Search Engine Roundtable 2026-11-10). Linked from /guides/claim-property-management-company-in-chatgpt. Target prompt: pm-ai-visibility-check (baseline 0 of 6 ChatGPT/Claude/Gemini on 2026-11-13)."]
 urls = ["https://citata.ai/guides/ai-visibility-audit-property-management"]
+status = "running"
+
+[[experiment]]
+id = "H11-E1"
+hypothesis = "H11"
+start = "2026-11-17"
+actions = ["B040 (2026-11-17): 10 landlord data prompts appended to tools/ai-visibility/prompts.toml, group landlord-data (ll-s8-chicago-2br, ll-s8-houston-3br, ll-s8-payment-cuts, ll-s8-funding-2027, ll-s8-tenant-share, ll-pm-fees-state, ll-pm-cost-2000, ll-appfolio-buildium, ll-pm-software-4, ll-rent-vs-sell). Each prompt names the citata.ai page that answers it; all 10 pages give 200 on prod (checked 2026-11-17).", "run.py: report shows cites per group and the citata.ai URLs AI cites (our_urls); previous run is picked only from folders with the same tag (2026-11-16 had compared with 2026-11-13-grok); extractor default claude-haiku-5-5.", "Baseline 2026-11-17 (business/marketing/ai-visibility/2026-11-17-landlord): ChatGPT and Claude, 1 run, 20 answers: citata.ai cited in 0 of 20, named in 0 of 20. Most cited: hud.gov (4), renpro.com (3), voucherready.com (3). The Monday run (--runs 2) includes the group from 2026-11-23."]
+urls = ["https://citata.ai/guides/section-8-rent-limits/chicago-fair-market-rent-2027", "https://citata.ai/guides/section-8-rent-limits/houston-fair-market-rent-2027", "https://citata.ai/guides/section-8-rent-limits/payment-standard-cuts-2026", "https://citata.ai/guides/section-8-rent-limits/section-8-funding-2027", "https://citata.ai/tools/section-8-rent-calculator", "https://citata.ai/guides/property-management-fees-by-state", "https://citata.ai/guides/how-much-does-a-property-manager-cost-owner", "https://citata.ai/guides/appfolio-vs-buildium", "https://citata.ai/guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop", "https://citata.ai/guides/should-i-rent-or-sell-my-house"]
+result = 0
+learned = "Point A: 0 of 20 answers cite citata.ai. Kill check after 2 weekly runs (2026-11-23, 2026-11-30): under 5% cited."
 status = "running"

@@ -35,8 +35,9 @@ ENGINES = {
 }
 DEFAULT_ENGINES = "chatgpt,gemini,claude"
 GROK_PREFIX = "Search the web before you answer. Cite the source URLs. Do not read or edit any files.\n\n"
-# AIV_EXTRACTOR: another model when this one is down (2026-11-16: claude-haiku-4-5 gave 403 on CLIProxy).
-EXTRACTOR = os.environ.get("AIV_EXTRACTOR", "claude-haiku-4-5")
+# AIV_EXTRACTOR: another model when this one is down. Default claude-haiku-5-5 since 2026-11-17
+# (claude-haiku-4-5 gives 403 on CLIProxy since 2026-11-16).
+EXTRACTOR = os.environ.get("AIV_EXTRACTOR", "claude-haiku-5-5")
 
 
 USAGE = {}  # model -> Counter of tokens and web searches, filled by post()
@@ -171,14 +172,32 @@ def run_one(p, engine, run, brand_re, our_domain):
         "engine": engine, "model": ENGINES[engine], "run": run, "seconds": round(time.time() - t, 1),
         "mentioned": bool(brand_re.search(answer)), "rank": rank, "n_companies": len(companies),
         "cited_us": any(our_domain in d for d in doms), "companies": companies,
+        "our_urls": sorted({u.split("?")[0].split("#")[0].rstrip("/") for u in urls if u and our_domain in domain(u)}),
         "cited_domains": sorted(set(doms)), "answer": answer, "error": err,
     }
 
 
+RUN_DIR = re.compile(r"^(\d{4}-\d{2}-\d{2})(-.+)?$")
+
+
+def earlier_runs(out):
+    """Earlier run folders of the same kind: same tag (none, or e.g. -grok), so engines match.
+
+    Bug fixed 2026-11-17: 2026-11-16 took 2026-11-13-grok as its base."""
+    base, me = os.path.dirname(out), RUN_DIR.match(os.path.basename(out))
+    tag = me.group(2) if me else None
+    runs = []
+    for d in os.listdir(base):
+        m = RUN_DIR.match(d)
+        if m and m.group(2) == tag and m.group(1) < me.group(1) and os.path.exists(os.path.join(base, d, "mentions.csv")):
+            runs.append(d)
+    return sorted(runs)
+
+
 def previous(out, ok):
     """Mention rate of the last earlier run next to this one: the loop's delta."""
+    dates = earlier_runs(out)
     base = os.path.dirname(out)
-    dates = sorted(d for d in os.listdir(base) if d < os.path.basename(out) and os.path.exists(os.path.join(base, d, "mentions.csv")))
     if not dates:
         return ["", "First run: this is the baseline (point A)."]
     prev = [r for r in csv.DictReader(open(os.path.join(base, dates[-1], "mentions.csv"))) if not r["error"]]
@@ -206,8 +225,7 @@ def frontmatter(rows, out, usage):
     ok = [r for r in rows if not r["error"]]
     nb = [r for r in ok if r["group"] != "brand"]
     br = [r for r in ok if r["group"] == "brand"]
-    base = os.path.dirname(out)
-    prev = sorted(d for d in os.listdir(base) if d < os.path.basename(out) and os.path.exists(os.path.join(base, d, "mentions.csv")))
+    prev = earlier_runs(out)
     comp = Counter(c for r in nb for c in set(r["companies"]))
     doms = Counter(d for r in ok for d in r["cited_domains"])
     lines = ["+++", f'date = "{rows[0]["date"]}"', f'previous = "{prev[-1] if prev else ""}"',
@@ -249,10 +267,13 @@ def report(rows, out, usage=None):
         rr = [r for r in ok if r["engine"] == e]
         lines.append(f"| {e} | {len(rr)} | {sum(r['mentioned'] for r in rr)} | {sum(r['cited_us'] for r in rr)} |")
     lines += previous(out, ok)
-    lines += ["", "## By prompt group (non-brand)", "", "| Group | Answers | Mentions us |", "| --- | --- | --- |"]
+    lines += ["", "## By prompt group", "", "| Group | Answers | Mentions us | Cites our site |", "| --- | --- | --- | --- |"]
     for g in sorted({r["group"] for r in ok}):
         rr = [r for r in ok if r["group"] == g]
-        lines.append(f"| {g} | {len(rr)} | {sum(r['mentioned'] for r in rr)} |")
+        lines.append(f"| {g} | {len(rr)} | {sum(r['mentioned'] for r in rr)} | {sum(r['cited_us'] for r in rr)} |")
+    ours = Counter(u for r in ok for u in set(r.get("our_urls", [])))
+    lines += ["", "## Our pages AI cites", "", "| URL | Answers |", "| --- | --- |"]
+    lines += [f"| {u} | {n} |" for u, n in ours.most_common(30)] or ["| none | 0 |"]
     comp = Counter(c for r in ok if r["group"] != "brand" for c in set(r["companies"]))
     lines += ["", "## Companies AI recommends (non-brand prompts, answers that name them)", "", "| Company | Answers |", "| --- | --- |"]
     lines += [f"| {c} | {n} |" for c, n in comp.most_common(30)]
