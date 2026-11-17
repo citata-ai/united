@@ -784,14 +784,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-illinois-eviction-process-v1",
     alt: "A pop engraving under a yellow sky: a man in an orange toga on a two-flat stoop holds a sealed letter beside a rotary phone, with small tiled houses beyond.",
   },
-  "how-to-verify-tenant-income": {
-    img: "guide-how-to-verify-tenant-income-v1",
-    alt: "A pop engraving under a cyan sky: a landlord in an orange toga dials a mint rotary phone beside a lilac CRT and folded papers in front of a cream-and-coral two-flat among small tiled houses.",
-  },
-  "illinois-security-deposit-law": {
-    img: "guide-illinois-security-deposit-law-v1",
-    alt: "A pop engraving under a lilac sky: a landlord in an orange toga slips a brass key into a mint letterbox on the stoop of a cream two-flat, with small tiled houses behind him.",
-  },
   "landlord-right-of-entry-notice": {
     img: "guide-landlord-right-of-entry-notice-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga at a cream two-flat doorway holds a brass key beside a black rotary phone on a stool.",
@@ -811,10 +803,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
   "lead-magnets-property-management": {
     img: "guide-lead-magnets-property-management-v1",
     alt: "A pop engraving under a coral sky: a man in an orange toga offers a brass key at a cream-and-mint two-flat with pink tiled roofs, an open wooden letterbox and a blank beige CRT on the stone step.",
-  },
-  "lease-renewal-process-timeline": {
-    img: "guide-lease-renewal-process-timeline-v1",
-    alt: "A pop engraving under a yellow sky: a man in an orange toga offers a sealed renewal letter beside a lilac rotary phone in front of a cream two-flat with coral shutters among small pink and cobalt tiled houses.",
   },
   "lifetime-value-of-a-door": {
     img: "guide-lifetime-value-of-a-door-v1",
