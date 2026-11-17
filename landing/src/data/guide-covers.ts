@@ -868,6 +868,14 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-negative-cash-flow-rental-what-to-do-v1",
     alt: "A pop engraving under a cyan sky: a man in an orange toga studies a mint CRT computer and rotary phone before a cream two-flat with coral-tiled roofs and a lilac key on the empty upper sill.",
   },
+  "multiple-google-business-profiles-property-management": {
+    img: "guide-multiple-google-business-profiles-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a landlord in an orange toga holds a brass key at a cream two-flat with coral tiled roofs while a mint rotary phone rests on the stone stoop.",
+  },
+  "new-jersey-eviction-process": {
+    img: "guide-new-jersey-eviction-process-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga holds a brass key beside a letterbox at a cream two-flat among small pink-tiled houses.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
