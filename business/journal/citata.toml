@@ -404,3 +404,11 @@ kind = "measure"
 title = "Weekly growth report W47: CTT-O6 at 2 of 1,000 AI sessions on day 29"
 ref = "business/marketing/reports/2026-W47.md"
 result = "2 AI referral sessions since 2026-10-19, both chatgpt to brand pages (/about, /). 1,043 AI bot fetches in 7 days. H02 and H06 invalidated (0 sessions, kill_if met); H01 confidence 3 to 2; H11 proposed (track landlord data prompts, B040)."
+
+[[entry]]
+date = "2026-11-17"
+side = "internal"
+kind = "measure"
+title = "H11 tracking: 10 landlord data prompts added to the AI visibility run"
+ref = "business/marketing/ai-visibility/2026-11-17-landlord/report.md"
+result = "Baseline ChatGPT + Claude, 20 answers: citata.ai cited 0 of 20. run.py now reports cites per group and which citata.ai URLs AI cites; base-run bug (grok folder) fixed."

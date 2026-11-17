@@ -112,3 +112,67 @@ text = "What are alternatives to FirstIndex for GEO and AI search optimization?"
 id = "geo-case-study"
 group = "geo-general"
 text = "Show me real GEO case studies with numbers for local service businesses or real estate."
+
+# --- landlord-data: H11 (added 2026-11-17, B040). Questions our data pages answer. ---
+# Metric: share of answers that cite a citata.ai URL (cited_us), not mentions.
+# The comment above each prompt names the citata.ai page that answers it.
+
+# /guides/section-8-rent-limits/chicago-fair-market-rent-2027
+[[prompt]]
+id = "ll-s8-chicago-2br"
+group = "landlord-data"
+text = "How much will Section 8 pay for a 2-bedroom apartment in Chicago in 2027?"
+
+# /guides/section-8-rent-limits/houston-fair-market-rent-2027
+[[prompt]]
+id = "ll-s8-houston-3br"
+group = "landlord-data"
+text = "What is the Section 8 fair market rent for a 3-bedroom house in Houston for 2027?"
+
+# /guides/section-8-rent-limits/payment-standard-cuts-2026
+[[prompt]]
+id = "ll-s8-payment-cuts"
+group = "landlord-data"
+text = "Which housing authorities are cutting Section 8 payment standards in 2026, and what does it mean for landlords?"
+
+# /guides/section-8-rent-limits/section-8-funding-2027
+[[prompt]]
+id = "ll-s8-funding-2027"
+group = "landlord-data"
+text = "Is Section 8 funding being cut in 2027? What should landlords with voucher tenants do now?"
+
+# /tools/section-8-rent-calculator
+[[prompt]]
+id = "ll-s8-tenant-share"
+group = "landlord-data"
+text = "How do I calculate how much rent Section 8 pays and how much the tenant pays?"
+
+# /guides/property-management-fees-by-state
+[[prompt]]
+id = "ll-pm-fees-state"
+group = "landlord-data"
+text = "How much do property managers charge by state? Compare monthly and leasing fees in Texas, Florida and California."
+
+# /guides/how-much-does-a-property-manager-cost-owner
+[[prompt]]
+id = "ll-pm-cost-2000"
+group = "landlord-data"
+text = "How much does a property manager cost in the first year for a single-family rental that rents for $2,000 a month?"
+
+# /guides/appfolio-vs-buildium
+[[prompt]]
+id = "ll-appfolio-buildium"
+group = "landlord-data"
+text = "AppFolio vs Buildium: which is better and cheaper for a property management company with about 100 doors?"
+
+# /guides/rentvine-vs-appfolio-vs-buildium-vs-doorloop
+[[prompt]]
+id = "ll-pm-software-4"
+group = "landlord-data"
+text = "Compare Rentvine, AppFolio, Buildium and DoorLoop on price per unit and minimums."
+
+# /guides/should-i-rent-or-sell-my-house, /tools/rent-vs-sell-calculator
+[[prompt]]
+id = "ll-rent-vs-sell"
+group = "landlord-data"
+text = "Should I rent out my house or sell it? How do I run the numbers?"
