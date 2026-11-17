@@ -3,10 +3,10 @@ title: "HQS vs NSPIRE-V: What Changes for Section 8 Landlords — Citata.ai"
 description: "NSPIRE replaces HQS for voucher units by February 1, 2027. Side-by-side table: smoke alarms, CO alarms, GFCI, guardrails, outlets, and what stays the same."
 headline: "HQS vs NSPIRE-V: What Changes for Landlords"
 dek: "Same repair clocks, more specific safety items. A side-by-side table from the rule text."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "NSPIRE keeps the core of HQS: a private bath, a working kitchen, hot and cold water, one sleeping room per two people, and 24-hour and 30-day repair clocks. What changes is detail. NSPIRE adds smoke alarms in every bedroom, carbon monoxide alarms where fuel-burning sources exist, GFCI outlets within 6 feet of water, guardrails at drops of 30 inches or more, and a severity rating for each deficiency. PHAs must switch voucher inspections by February 1, 2027."
-visible: false
+visible: true
 cluster: "section-8"
 kind: "comparison"
 priority: 2

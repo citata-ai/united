@@ -3,10 +3,10 @@ title: "How to Verify a Tenant's Income: Documents and Checks — Citata.ai"
 description: "Verify applicant income with pay stubs, an offer letter, bank statements or tax returns, then confirm it at the source. Steps, math and voucher rules."
 headline: "How to Verify a Tenant's Income"
 dek: "Pay stubs, bank statements and tax returns: what each proves and how to check it."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "Ask for two recent pay stubs or an offer letter for employees, and two years of tax returns plus recent bank statements for self-employed applicants. Then confirm with the source: call the employer at a number you find yourself, or use an automated check with the applicant's consent. Count all lawful income the same way. In states such as California and New York, voucher and benefit income must count, and California bases the income test on the tenant's share of the rent."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2
