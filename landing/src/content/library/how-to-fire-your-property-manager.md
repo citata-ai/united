@@ -3,10 +3,10 @@ title: "How to Fire Your Property Manager and Switch — Citata.ai"
 description: "End a property management contract in 6 steps: read the termination clause, give written notice, get deposits and records, and tell each tenant in writing."
 headline: "How to Fire Your Property Manager Cleanly"
 dek: "Notice, handover, tenant letters and a sample announcement, so rent keeps coming in."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "Read the termination clause first: it sets the notice period, any fee and what happens to current tenants. Give written notice, then get the deposits, leases, ledgers and keys moved to you or the new manager. In Florida, Statutes 83.49(7) requires deposits to move to the new agent with an accounting. Send each tenant a written letter with the new rent and notice details, and keep paying bills during the switch."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 2

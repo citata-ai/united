@@ -3,10 +3,10 @@ title: "How to Choose a Property Manager in Chicago: Checks and Questions — Ci
 description: "Check the IDFPR license, test the manager on the Chicago RLTO, read the agreement, then ask 10 questions. A step-by-step guide for Chicago rental owners."
 headline: "How to Choose a Property Manager in Chicago"
 dek: "Five checks before you sign: license, RLTO skill, contract terms, hard questions and real reviews."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "To choose a Chicago property manager, first look up the company and its people on the Illinois IDFPR License Lookup. Then test the manager on the Chicago RLTO: deposit accounts, yearly interest, the 30, 60 or 120-day notice rules and the late-fee cap. Read the management agreement for fees, the end-of-contract terms and who holds your tenants' deposits. Last, ask for references and read reviews on more than one site."
-visible: false
+visible: true
 cluster: "local-market"
 kind: "local"
 priority: 2

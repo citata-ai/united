@@ -3,10 +3,10 @@ title: "How to Sell a Rental With Tenants in Place — Citata.ai"
 description: "Sell a rental with tenants in place: the lease and deposits pass to the buyer, showings need notice under state law, and cash for keys can empty the home."
 headline: "How to Sell a Rental With Tenants in Place"
 dek: "Leases, deposits, showing notice and cash for keys, with state law examples."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "You can sell a rental while a tenant lives there. An investor buyer can take over the lease, and state laws such as Florida 83.49(7) require the deposits to move to the new owner. You must give notice before showings under your state's entry law, such as 2 days in Arizona. If you want an owner-occupant buyer, you can wait for the lease to end or offer the tenant a written cash-for-keys deal."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "how-to"
 priority: 2
