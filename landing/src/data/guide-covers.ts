@@ -864,6 +864,10 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-move-out-inspection-how-to-v1",
     alt: "A pop engraving under a yellow sky: a landlord in an orange toga inspects a cream two-flat doorway with a brass key and rolled parchment checklist beside scuffed mint floor tiles.",
   },
+  "negative-cash-flow-rental-what-to-do": {
+    img: "guide-negative-cash-flow-rental-what-to-do-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga studies a mint CRT computer and rotary phone before a cream two-flat with coral-tiled roofs and a lilac key on the empty upper sill.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
