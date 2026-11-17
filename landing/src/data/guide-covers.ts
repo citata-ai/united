@@ -832,6 +832,18 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-los-angeles-rso-jco-landlord-rules-v1",
     alt: "A pop engraving under a yellow sky: a man in an orange toga holds a brass key beside a CRT computer and a cream-and-coral two-flat with mint tiled roofs.",
   },
+  "llc-vs-umbrella-insurance-rental": {
+    img: "guide-llc-vs-umbrella-insurance-rental-v1",
+    alt: "A pop engraving under a cyan sky: a man in an orange toga holds a brass key before a pink-and-cream two-flat with a mint rotary phone on the stoop.",
+  },
+  "maintenance-markup-property-management": {
+    img: "guide-maintenance-markup-property-management-v1",
+    alt: "A pop engraving under a lilac sky: a man in an orange toga before a cream two-flat with coral-tiled roofs sets a separate pile of coins beside a rotary phone on a stone ledge, away from repair tools at his feet.",
+  },
+  "maintenance-request-process": {
+    img: "guide-maintenance-request-process-v1",
+    alt: "A pop engraving under a coral sky: a man in an orange toga offers a sealed letter to a cobalt letterbox at a cream-and-mint tiled two-flat, with a cream rotary phone on the lilac stoop.",
+  },
 };
 
 export const coverSrcset = (img: string) =>
