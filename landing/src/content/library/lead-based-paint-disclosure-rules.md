@@ -3,10 +3,10 @@ title: "Lead-Based Paint Disclosure for Landlords: Rules and Form — Citata.ai"
 description: "Landlords of most pre-1978 homes must give the EPA lead pamphlet, disclose known lead, attach a signed form to the lease and keep that form for 3 years."
 headline: "Lead-Based Paint Disclosure: What Landlords Must Do"
 dek: "Four steps before the lease is signed, one form to keep for 3 years."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "If the home was built before 1978, the landlord must act before the tenant is bound by the lease. The landlord gives the EPA pamphlet \"Protect Your Family From Lead in Your Home\", discloses any known lead-based paint or hazards, hands over any lead reports, and attaches a signed Lead Warning Statement to the lease. The landlord and any agent keep that signed form for at least 3 years from the start of the lease (40 CFR 745.107 and 745.113)."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2

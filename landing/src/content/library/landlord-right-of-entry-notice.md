@@ -3,10 +3,10 @@ title: "Landlord Right of Entry: Notice Rules and Limits by State — Citata.ai"
 description: "Most states let a landlord enter for repairs, showings and inspections with notice. Notice runs from 24 hours to 2 days by state; emergencies need none."
 headline: "Landlord Right of Entry: Notice and Limits"
 dek: "Notice runs from 24 hours to 2 days by state, and emergencies need none."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "A landlord can enter a rented unit for set reasons, such as repairs, inspections and showings, after notice, and in an emergency without notice. The notice period depends on the state: Florida sets 24 hours for repairs, California presumes 24 hours is reasonable, and Arizona requires 2 days. A tenant cannot refuse entry without a good reason, and the landlord cannot use entry to harass the tenant."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2
