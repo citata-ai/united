@@ -54,3 +54,12 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 ## Measure 2026-11-16 (data and docs only, on stage)
 
 - AI visibility run `business/marketing/ai-visibility/2026-11-16/`, report `business/marketing/reports/2026-W47.md`, `hypotheses.toml` (H02, H06 invalidated; H11 proposed), backlog B040, journal. No page change. Waits for Tao's "publish".
+
+## Tick 2026-11-17 (tracking only, on stage)
+
+- H11-E1, B040: 10 landlord data prompts in `tools/ai-visibility/prompts.toml` (group `landlord-data`), `run.py` fixes (cites per group, cited URLs, same-tag base run, extractor `claude-haiku-5-5`), baseline `business/marketing/ai-visibility/2026-11-17-landlord/` (0 of 20 answers cite citata.ai). No page change: nothing to publish for users.
+
+## Asks for Tao (tick 2026-11-17)
+
+- Gemini is still out of the visibility run (403/503 on CLIProxy since 2026-11-16). H11 baseline has ChatGPT and Claude only.
+- Say "publish" if you want this data and tool change on `main` too. Prod pages do not change.

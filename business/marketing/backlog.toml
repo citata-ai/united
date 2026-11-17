@@ -390,5 +390,5 @@ kind = "data-page"
 title = "Add 10 landlord data prompts to the weekly AI visibility run (Section 8 payment in a metro, PM fees by state, AppFolio vs Buildium, rent vs sell)"
 demand = "Measure 2026-11-16: 0 AI clicks to H01, H02 and H06 pages in 28 days, but bots fetch them every week. The 20 tracked prompts hold no landlord data question, so we cannot see if AI cites these pages."
 score = 8
-status = "building"
+status = "staged"
 note = "Append the prompts at the end of tools/ai-visibility/prompts.toml in a new group (never edit old prompts). Count answers that cite a citata.ai URL. Also fix run.py: it picked the 2026-11-13-grok folder as the previous run."
