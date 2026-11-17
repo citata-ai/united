@@ -3,10 +3,10 @@ title: "Illinois Security Deposit Law: 30 and 45-Day Rules, Interest — Citata.
 description: "Illinois sets no state deposit cap. Landlords send an itemized statement with receipts in 30 days or return the deposit in 45. Rules from 765 ILCS 710 and 715."
 headline: "Illinois Security Deposit Law for Landlords"
 dek: "The Security Deposit Return Act and Interest Act, read on ilga.gov on 2026-10-20."
-published: "2026-10-19"
-updated: "2026-10-20"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "Illinois state law sets no cap on security deposits. Under 765 ILCS 710/1, a landlord who wants to keep any part for damage must send an itemized statement with costs and paid receipts within 30 days after the tenant moves out or the right of possession ends, whichever is later. If no statement is sent, the full deposit is due within 45 days. Landlords with 25 or more units must also pay interest under 765 ILCS 715. Chicago adds its own rules in Municipal Code chapter 5-12."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

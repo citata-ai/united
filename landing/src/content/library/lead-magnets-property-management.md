@@ -3,10 +3,10 @@ title: "Lead Magnets That Bring Owner Leads to Property Managers — Citata.ai"
 description: "Rental analysis offers, owner calculators and short local guides bring owner leads. Here is what to gate, what to leave open and how to follow up on downloads."
 headline: "Lead Magnets That Work for Property Managers"
 dek: "Owners trade an email for an answer about their own property, not for a generic ebook."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "The lead magnets that fit owners best answer a question about their own property: a free rental analysis, a rent-vs-sell or vacancy cost calculator, or a short local guide to rules and fees. Leave calculator results open and offer the detailed report for an email. Follow up within one business day with a personal note, then a short email series that ends with an offer to talk."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 2

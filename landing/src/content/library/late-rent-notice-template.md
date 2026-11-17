@@ -3,10 +3,10 @@ title: "Late Rent Notice Template (Free) and When to Send It — Citata.ai"
 description: "A free late rent notice template, when rent is legally late, late fee caps in Texas and New York, how it differs from a pay or quit notice, and ledger steps."
 headline: "Late Rent Notice Template and the Rules Behind It"
 dek: "A copy-ready notice, late fee limits from 2 states and a 5-step ledger routine."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "A late rent notice tells a tenant that rent is past due, how much they owe with any late fee, and how and by when to pay. Send it right after the grace period in the lease or the law ends: for example, a Texas late fee needs rent to be unpaid 2 full days after the due date, and New York allows a fee only after 5 days. A late rent notice is a reminder; a pay or quit notice is the formal legal step before an eviction."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "template"
 priority: 2
