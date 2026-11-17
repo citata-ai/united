@@ -3,10 +3,10 @@ title: "Illinois Eviction Process: 5-Day Notice to Sheriff Removal — Citata.ai
 description: "Illinois eviction steps from the Eviction Act: a 5-day notice for rent, 10 days for lease breaches, filing in circuit court, and a 120-day limit on the order."
 headline: "Illinois Eviction Process for Landlords, Step by Step"
 dek: "Each notice and court step in 735 ILCS 5 Article IX, read on ilga.gov on 2026-10-20."
-published: "2026-10-19"
-updated: "2026-10-20"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "An Illinois eviction for unpaid rent starts with a written demand that gives the tenant at least 5 days after service to pay (735 ILCS 5/9-209). For other lease breaches, the notice is 10 days (9-210). If the tenant does not pay or leave, the landlord files an eviction complaint in the circuit court of the county (9-106). After the court enters an eviction order, the sheriff carries it out, and the order cannot be enforced more than 120 days after entry without an extension (9-117)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

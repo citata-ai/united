@@ -3,10 +3,10 @@ title: "How to Show a Rental Property, Step by Step — Citata.ai"
 description: "Show a rental with set time slots, a ready unit, the same facts for every visitor and a follow-up within a day. Steps, a showing kit and words to avoid."
 headline: "How to Show a Rental Property: Step by Step"
 dek: "Same script, same facts, same follow-up for every visitor."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "Schedule showings in set time slots, prepare the unit the day before, and give every visitor the same facts, the written screening criteria and the application link. Group showings save time when interest is high, and one-on-one showings work for slower units. Talk about the home, not the people, because the Fair Housing Act bars statements that show a preference by race, color, religion, sex, disability, familial status or national origin. Follow up with every visitor within a day."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2

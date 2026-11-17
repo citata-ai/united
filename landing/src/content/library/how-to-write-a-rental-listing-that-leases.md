@@ -3,10 +3,10 @@ title: "How to Write a Rental Listing That Leases Fast: Steps and Rules — Cita
 description: "Lead with rent, beds, baths and move-in date, describe the unit not the renter, post clear screening criteria, and avoid the Fair Housing red-flag words in ads."
 headline: "How to Write a Rental Listing That Leases Fast"
 dek: "A listing that answers the first 10 questions gets fewer calls and better ones."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-17"
+updated: "2026-11-17"
 answer: "A rental listing that leases fast puts the facts renters filter on first: rent, beds, baths, move-in date and location. It describes the unit and its features, not the kind of person you want, so it stays inside Fair Housing advertising rules (24 CFR 100.75). It also states the fees, pet rules and screening criteria, which cuts calls from people who do not qualify."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2
