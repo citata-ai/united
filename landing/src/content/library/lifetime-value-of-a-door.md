@@ -3,10 +3,10 @@ title: "Lifetime Value of a Door: How to Calculate It, With Examples — Citata.
 description: "Door lifetime value is annual revenue per door divided by annual churn. At $2,200 a year and 20% churn, a door brings $11,000. Formula, tables, buy-price math."
 headline: "Lifetime Value of a Door: How to Calculate It"
 dek: "One formula tells you what a door is worth, what to spend to win it and what to pay for it."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-24"
+updated: "2026-11-24"
 answer: "The lifetime value (LTV) of a door is the revenue it brings each year divided by your annual churn rate. At $2,200 of revenue per door per year and 20% churn, one door brings about $11,000 over its life. Multiply by your profit margin to get profit LTV: at 40%, that is $4,400. Use profit LTV to cap what you spend to win a door or to buy one."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "data"
 priority: 2

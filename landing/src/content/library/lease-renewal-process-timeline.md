@@ -3,10 +3,10 @@ title: "Lease Renewal Process: A 90-Day Timeline for Landlords — Citata.ai"
 description: "Start lease renewal 90–120 days before the lease ends: review, inspect, send the offer, set a reply date, and meet each state notice rule that applies."
 headline: "Lease Renewal Process: A 90-Day Timeline"
 dek: "Start early enough to meet the longest notice rule your state sets."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-24"
+updated: "2026-11-24"
 answer: "Start the lease renewal process 90 to 120 days before the lease ends. Some state notice rules run 60 or 90 days, such as New York's renewal notice law and Oregon's rent increase rule. Review the tenant and the market, inspect the unit, send a written offer with a reply date, and decide in advance what happens if the tenant does not answer."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2

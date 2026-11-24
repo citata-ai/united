@@ -3,10 +3,10 @@ title: "Lease Renewal Offer Letter Template (With Timeline) — Citata.ai"
 description: "A free lease renewal offer letter template: when to send it, how to show a rent change, term options, and what to do if the tenant does not reply."
 headline: "Lease Renewal Offer Letter Template and Timeline"
 dek: "A copy-ready offer, a 120-day renewal timeline and the notice rules that set your send date."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-24"
+updated: "2026-11-24"
 answer: "A lease renewal offer tells the tenant the lease end date, the new rent and term options, and the date to reply. Send it 90 to 120 days before the lease ends, or earlier if state law needs more notice for a rent change: New York requires 30, 60 or 90 days for an increase of 5% or more, and Washington requires 90 days for any increase. If the tenant does not reply, follow up twice, then act on the lease's end-of-term clause."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "template"
 priority: 2
