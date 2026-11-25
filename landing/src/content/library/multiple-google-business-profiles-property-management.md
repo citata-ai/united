@@ -3,10 +3,10 @@ title: "Can a PM Company Have a Google Business Profile in Each City? — Citata
 description: "A property manager can have one Google Business Profile per real, staffed location. Virtual offices do not qualify. Here is how to rank in a city with no office."
 headline: "Google Business Profiles for Property Managers in Many Cities"
 dek: "Google allows one profile per real location. A city page and reviews do the rest."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "Yes, but only one profile per real location. Google's guidelines allow a separate profile for each location that has its own staff and, for service-area businesses, its own service area. Virtual offices and mailboxes are not eligible, and duplicate profiles for the same place break the rules. To reach a city with no office, use a service area, a real city page on your website and reviews from owners there."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "guide"
 priority: 2

@@ -3,10 +3,10 @@ title: "Move-Out Inspection Checklist for Deposit Deductions — Citata.ai"
 description: "A free move-out inspection checklist: wear and tear vs damage, tenant attendance, how to compare with the move-in report, photos to take, and deadlines."
 headline: "Move-Out Inspection Checklist for Fair Deposit Decisions"
 dek: "Compare line by line with move-in, photograph before repairs, and meet the state deadline."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "At move-out, walk the unit with the signed move-in report in hand and compare each line. Mark each change as normal wear and tear (not deductible) or damage beyond normal use (deductible), and photograph it before any cleaning or repair. Invite the tenant where the law allows or requires it: Virginia, for example, requires the inspection within 72 hours of possession and lets the tenant attend on written request. Send the itemized statement before the state deadline, such as 21 days in California."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "checklist"
 priority: 2

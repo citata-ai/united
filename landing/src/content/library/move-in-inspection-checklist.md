@@ -3,10 +3,10 @@ title: "Move-In Inspection Checklist (Room by Room, Free) — Citata.ai"
 description: "A free room-by-room move-in inspection checklist with photo rules, tenant sign-off and return deadlines, plus how the report protects the security deposit."
 headline: "Move-In Inspection Checklist, Room by Room"
 dek: "A copy-ready checklist for 8 areas, a photo routine and the state rules that set deadlines."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "A move-in inspection checklist records the condition of every room, fixture and system on the day the tenant gets the keys. Rate each item, note every flaw, and take dated photos. Ask the tenant to sign it and return any changes within a short window: Virginia, for example, gives the landlord 5 days after move-in to deliver the report and the tenant 5 days to object. The signed report is the baseline you compare against at move-out, so it protects both the deposit and the tenant."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "checklist"
 priority: 2
