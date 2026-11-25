@@ -3,10 +3,10 @@ title: "Local Citations and NAP Consistency for Property Managers — Citata.ai"
 description: "Which directory listings a property manager needs, how to keep name, address and phone the same everywhere, when a tool like Yext fits, and how to fix old listings."
 headline: "Local Citations and NAP Consistency for Property Managers"
 dek: "AI answers about property managers often cite directories, not your own website."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-24"
+updated: "2026-11-24"
 answer: "A local citation is any listing that shows your business name, address and phone (NAP). Start with Google Business Profile, Bing Places, Apple Business Connect, Yelp, BBB and the property management directories AI tools cite, such as Expertise.com. Keep one exact NAP everywhere, fix the old listings by hand first, and use a paid tool like Yext only when you have many locations to keep in sync."
-visible: false
+visible: true
 cluster: "pm-marketing"
 kind: "how-to"
 priority: 2

@@ -3,10 +3,10 @@ title: "LLC vs Umbrella Insurance for a Landlord — Citata.ai"
 description: "An LLC keeps rental debts inside the company; an umbrella policy pays claims above your base liability limit. Compare costs, gaps and why many owners use both."
 headline: "LLC or Umbrella Policy for Your Rental?"
 dek: "One separates your assets, the other pays the claim. Here is how they differ."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-24"
+updated: "2026-11-24"
 answer: "An LLC and an umbrella policy solve different problems. An LLC can keep the rental's debts and claims inside the company, so your personal assets are harder to reach. An umbrella policy pays covered liability claims above the limit of your base policy. An LLC has state fees, such as California's $800 yearly tax. Many owners of 1 or 2 rentals start with good liability coverage and an umbrella, then add an LLC as they grow."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "comparison"
 priority: 2

@@ -872,10 +872,6 @@ export const guideCovers: Record<string, { img: string; alt: string }> = {
     img: "guide-multiple-google-business-profiles-property-management-v1",
     alt: "A pop engraving under a lilac sky: a landlord in an orange toga holds a brass key at a cream two-flat with coral tiled roofs while a mint rotary phone rests on the stone stoop.",
   },
-  "new-jersey-eviction-process": {
-    img: "guide-new-jersey-eviction-process-v1",
-    alt: "A pop engraving under a coral sky: a man in an orange toga holds a brass key beside a letterbox at a cream two-flat among small pink-tiled houses.",
-  },
   "new-management-letter-to-tenants-template": {
     img: "guide-new-management-letter-to-tenants-template-v1",
     alt: "A pop engraving under a yellow sky: a man in an orange toga posts a sealed letter into a mint letterbox before a cream two-flat with coral tiles, a cobalt rotary phone on the sill.",
