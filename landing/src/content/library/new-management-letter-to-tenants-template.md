@@ -3,10 +3,10 @@ title: "New Management Letter to Tenants: Free Template — Citata.ai"
 description: "A free new property management letter to tenants: how to pay rent now, what happens to the security deposit, how to request repairs, and when to send it."
 headline: "New Management Letter to Tenants: Template and Timing"
 dek: "One copy-ready letter, a handover checklist and the 15-day rule California sets for new managers."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "A new management letter tells tenants who manages the property now, how and where to pay rent from a set date, who holds their security deposit, and how to request repairs. Send it before the first rent due date under the new manager, and within any legal deadline: in California, Civil Code 1962 gives a new owner or manager 15 days to give tenants the manager, owner and rent payment details. Ask tenants to keep paying until the switch date, so no rent goes to the wrong place."
-visible: false
+visible: true
 cluster: "glossary-templates"
 kind: "template"
 priority: 2

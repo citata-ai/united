@@ -3,10 +3,10 @@ title: "North Carolina Security Deposit Law: Limits, 30 Days — Citata.ai"
 description: "North Carolina caps deposits at 2 weeks, 1.5 months or 2 months of rent by lease term. Landlords return the deposit with an itemized list within 30 days."
 headline: "North Carolina Security Deposit Law for Landlords"
 dek: "Caps tied to lease term, a 30-day refund rule and a trust account."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "The North Carolina Tenant Security Deposit Act (G.S. 42-50 to 42-56) ties the deposit cap to the lease term. The cap is 2 weeks' rent for week-to-week, 1.5 months' rent for month-to-month and 2 months' rent for longer terms. The landlord holds it in a trust account or posts a bond. Within 30 days after the tenancy ends and the tenant gives back possession, the landlord mails or delivers an itemized list and the balance."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

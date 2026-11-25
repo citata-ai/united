@@ -3,10 +3,10 @@ title: "New Jersey Security Deposit Law: Cap and 30 Days — Citata.ai"
 description: "New Jersey caps a security deposit at 1.5 months' rent. You return it with interest and an itemized list within 30 days, or owe double. Statutes inside."
 headline: "New Jersey Security Deposit Law for Landlords"
 dek: "A 1.5-month cap, a bank account in New Jersey, yearly interest, and a 30-day return rule."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "A New Jersey landlord may not take more than 1.5 times one month's rent as a security deposit (N.J.S.A. 46:8-21.2). The landlord must hold the deposit in an interest-bearing account at a New Jersey bank, tell the tenant where it is within 30 days, and pay the interest to the tenant each year (N.J.S.A. 46:8-19). Within 30 days after the lease ends, the landlord returns the deposit plus interest, less itemized charges, by personal delivery, registered or certified mail. A court awards the tenant double the amount wrongly kept (N.J.S.A. 46:8-21.1)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2

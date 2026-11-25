@@ -3,10 +3,10 @@ title: "North Carolina Eviction Process: Steps and Timeline — Citata.ai"
 description: "North Carolina evictions go through summary ejectment in small claims court: a 10-day rent demand, a hearing within 7 days, a 10-day appeal, then the sheriff."
 headline: "North Carolina Eviction Process for Landlords"
 dek: "A 10-day demand, a magistrate hearing within 7 business days, and the sheriff at the door."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "In North Carolina, a landlord evicts through a summary ejectment case before a magistrate in small claims court. For unpaid rent, the landlord first demands the past-due rent, and the tenant has 10 days to pay (G.S. 42-3). The clerk sets a hearing within 7 days of the summons, not counting weekends and holidays (G.S. 42-28). After judgment, the tenant has 10 days to appeal, and only the sheriff can remove the tenant."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2
