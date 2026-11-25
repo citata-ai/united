@@ -3,10 +3,10 @@ title: "Los Angeles RSO and Just Cause Rules for Landlords, 2026–27 — Citata
 description: "LA RSO units built by Oct 1, 1978 can rise 3% from July 2026 to June 2027. The JCO covers most other units. Fees, the Rent Registry and relocation amounts."
 headline: "Los Angeles RSO and JCO: What Rental Owners Must Do"
 dek: "The 3% cap, the new 1% to 4% formula, $11,000 to $27,400 relocation, and 3 yearly fees."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "In the City of Los Angeles, the Rent Stabilization Ordinance (RSO) covers most rentals first built on or before October 1, 1978. RSO rents can rise once every 12 months, by 3% from July 1, 2026 to June 30, 2027. Most other rentals fall under the Just Cause Ordinance (JCO), which limits evictions to listed reasons but does not cap rent. Both require yearly registration with the Los Angeles Housing Department (LAHD), and both require relocation payments for no-fault evictions."
-visible: false
+visible: true
 cluster: "local-market"
 kind: "local"
 priority: 2

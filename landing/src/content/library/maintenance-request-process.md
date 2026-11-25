@@ -3,10 +3,10 @@ title: "How to Set Up a Rental Maintenance Request Process — Citata.ai"
 description: "Set up a rental maintenance request process: require written requests, collect the right details, track status to closed, and close out with the tenant."
 headline: "How to Set Up a Maintenance Request Process"
 dek: "One intake channel, one status list, and a written close-out for every repair."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "Ask tenants to submit maintenance requests in writing through one channel, such as a portal or a set email address, with a phone line for emergencies only. Each request should hold the unit, the problem, photos, urgency and access permission. Track each request through set statuses from new to closed, and close out with the tenant in writing. Written records matter because some states, such as Florida, tie tenant remedies to a written notice."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2

@@ -3,10 +3,10 @@ title: "Mold in a Rental: What Landlords Must Do and When — Citata.ai"
 description: "A tenant reports mold. Find the moisture source, dry it in 24-48 hours, clean small areas, and learn when state law and EPA guidance call for more work."
 headline: "Mold in a Rental: What Landlords Must Do"
 dek: "Fix the water first, then the mold, then write down what you did."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "When a tenant reports mold, inspect fast, find the water source, and fix the leak or humidity problem first. The EPA says to dry wet areas within 24-48 hours, and a moldy area under about 10 square feet is usually a do-it-yourself cleanup. No federal standard sets a safe mold level, so the duty comes from state habitability law; Virginia, for example, requires landlords to remediate visible mold promptly and reinspect."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "guide"
 priority: 2

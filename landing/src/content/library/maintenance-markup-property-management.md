@@ -3,10 +3,10 @@ title: "Maintenance Markups: What Property Managers Must Disclose — Citata.ai"
 description: "Can you mark up vendor invoices? What California regulators cited brokers for, how to write the markup clause, and why vendor volume discounts need disclosure."
 headline: "Maintenance Markups and Coordination Fees: What to Disclose"
 dek: "A 2026 California accusation lists 10%, 15% and 20% markups that owner statements did not show."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "A property manager can add a markup or a coordination fee to vendor work only when the management agreement allows it and the owner can see it. In California, Business and Professions Code 10176(g) lets the regulator discipline a licensee for any secret or undisclosed compensation. A 2026 California DRE accusation cites a broker for 10% to 20% repair markups folded into one vendor line on owner statements. State the rate in the agreement, show it as its own line on each statement, and disclose any vendor rebate or volume discount."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "guide"
 priority: 2
