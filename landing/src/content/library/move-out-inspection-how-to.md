@@ -3,10 +3,10 @@ title: "How to Do a Move-Out Inspection That Holds Up — Citata.ai"
 description: "Run a move-out inspection that matches the move-in report: when to do it, if the tenant attends, how to compare photos, and deposit deadlines in 3 states."
 headline: "How to Do a Move-Out Inspection"
 dek: "Compare room by room against the move-in report, then meet your state's deposit deadline."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "Do the move-out inspection as soon as the keys come back, with the move-in report and photos in hand. Walk the unit in the same room order, shoot the same angles, and mark each item as same, wear and tear, or damage. Then send the itemized deposit statement before your state's deadline: 14 days in New York, 15 or 30 days in Florida, and 45 days in Virginia."
-visible: false
+visible: true
 cluster: "landlord-ops"
 kind: "how-to"
 priority: 2

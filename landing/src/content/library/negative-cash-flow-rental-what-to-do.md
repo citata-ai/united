@@ -3,10 +3,10 @@ title: "Negative Cash Flow on a Rental: What to Do — Citata.ai"
 description: "Fix negative cash flow on a rental: find the leak line by line, raise rent within state law, cut costs, test a refinance against 7.40% rates, or decide to sell."
 headline: "What to Do When Your Rental Loses Money"
 dek: "Find the leak, fix what you can, and know when to refinance or sell."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "First, find where the money goes: build a 12-month ledger and compare each line with market numbers. Then fix the lines you control: rent within state notice rules, insurance, tax assessment, repairs and vacancy. A refinance helps only if the new payment is lower after costs; the 30-year average rate was 7.40% on 2026-10-15. If the home still loses money and you do not expect growth, selling can be the better choice."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 2
