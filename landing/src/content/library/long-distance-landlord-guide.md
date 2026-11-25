@@ -3,10 +3,10 @@ title: "How to Be a Long-Distance Landlord, Step by Step — Citata.ai"
 description: "Run a rental in another city or state: build a local team, inspect within entry-notice law, run rent and repairs online, and know when to hire a manager."
 headline: "How to Manage a Rental From Far Away"
 dek: "The local team you need, remote inspections, online tools, and when to hire a manager."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "To manage a rental from far away, build a small local team: a handyman, a licensed plumber and HVAC company, a cleaner, and someone who can open the door. Run rent, repair requests and screening online. Do inspections through a local person or a scheduled video walk, with notice under state law, such as 2 days in Arizona. Hire a local manager when emergencies, showings or legal steps need a person on site."
-visible: false
+visible: true
 cluster: "owner-education"
 kind: "guide"
 priority: 2

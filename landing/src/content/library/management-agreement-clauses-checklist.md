@@ -3,10 +3,10 @@ title: "Residential Management Agreement: 20 Clauses to Include — Citata.ai"
 description: "A 20-clause checklist for a residential management agreement: term, fees, authority, reserves, trust money, termination, plus what Arizona law requires."
 headline: "Residential Management Agreement: 20 Clauses to Include"
 dek: "Arizona lists 10 things every agreement shall state. Use them as a floor, then add the rest."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "A residential management agreement needs clauses for the parties, term, services, fees, repair authority, reserve, trust money, reports, owner draws, insurance, indemnity, fair housing, termination and handover. Some states set a minimum: Arizona Revised Statutes 32-2173 says each agreement shall state all material terms, start and end dates, cancellation terms, the reserve, interest on trust money and all compensation. Use the 20-clause checklist below, then check your own state's broker law."
-visible: false
+visible: true
 cluster: "pm-business"
 kind: "checklist"
 priority: 2
