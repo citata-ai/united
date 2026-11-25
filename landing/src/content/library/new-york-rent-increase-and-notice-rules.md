@@ -3,10 +3,10 @@ title: "New York Rent Increase Notice Rules for Landlords — Citata.ai"
 description: "New York landlords give 30, 60 or 90 days' written notice for a rent increase of 5% or more or a non-renewal (RPL 226-c). Good Cause and late fee rules too."
 headline: "New York Rent Increase and Notice Rules for Landlords"
 dek: "The 30, 60 and 90-day notice rule, the Good Cause rent standard and the $50 late fee cap."
-published: "2026-10-19"
-updated: "2026-10-19"
+published: "2026-11-25"
+updated: "2026-11-25"
 answer: "Under RPL 226-c, a New York landlord must give written notice before a rent increase of 5% or more, or before not renewing. The notice is 30 days if the tenant lived there less than 1 year, 60 days for 1 to 2 years, and 90 days for 2 years or more. The same notice ends a month-to-month tenancy in New York City (RPL 232-a). In Good Cause units, an increase above the local rent standard is presumed unreasonable (RPL 216)."
-visible: false
+visible: true
 cluster: "state-law"
 kind: "data"
 priority: 2
