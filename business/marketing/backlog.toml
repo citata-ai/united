@@ -350,7 +350,7 @@ kind = "refresh"
 title = "Refresh /library/landlord-laws-2027: add California SB 1365 (10% emergency cap, all lease terms, 2027-01-01) and SB 1296 (written pet policy before application fee, 2027-04-01), Washington flood disclosure, NSPIRE HCV date"
 demand = "Doorstead 2026-10-07 (https://www.doorstead.com/blog/california-landlord-laws-2027): SB 1365 Ch. 1028 Stats. 2026, SB 1296 Ch. 1025 Stats. 2026. Web search 2026-11-12: WA flood hazard disclosure in leases from 2027-01-01; HUD NSPIRE for vouchers by 2027-02-01. The page lists 4 states and no California row."
 score = 7
-status = "idea"
+status = "building"
 note = "Read leginfo.legislature.ca.gov for both bills and the HUD NSPIRE notice in the run; drop a row with no primary. Publish the draft pet-policy-for-rentals and link it from the SB 1296 row."
 
 [[item]]
