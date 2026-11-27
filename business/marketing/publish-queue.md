@@ -28,6 +28,7 @@ Pages that went to stage and then to prod. Rule: `docs/growth-loop.md` "Publish 
 | 2026-11-13 | /guides/questions-to-ask-property-management-marketing-agency | H07 | Draft checklist published as B032's linked page: 20 questions on ownership, reports, terms, proof; ICANN, GA4, GBP, Goodjuju facts re-read 2026-11-13 | 2026-11-13 |
 | 2026-11-14 | /guides/ai-visibility-audit-property-management | H07 | How to check if AI recommends your PM company: 5 owner prompts, free tools (Ahrefs checker, HubSpot grader, ChatGPT Business Hub; pages read 2026-11-14), our 2026-11-13 data (Ahrefs named 6/6, us 0/6), 100-point score | 2026-11-14 |
 | 2026-11-16 | /research/ai-property-manager-index-2026 (update 2, + /data/ai-property-manager-index-2026-11-16.csv) | H03 | Sources over 3 dates: ChatGPT Expertise.com 30 -> 20 -> 8 of 50, Birdeye 17 -> 23, ThePropertyManagementDirectory.com 0 -> 19; Claude Yelp 50/50; 15 of 50 cities share a source; Goodjuju 2026-10-30 study compared (read 2026-11-16); Gemini not run (403) | 2026-11-16 |
+| 2026-11-27 | /guides/landlord-laws-2027 | H07 | Refresh: California SB 1296 (written pet policy with every application, fee refund, from 2027-04-01) and SB 1365 (10% emergency rent limit for any lease term, from 2027-01-01), HUD NSPIRE for vouchers by 2027-02-01; chaptered texts and FR 2025-19070 read 2026-11-27; WA flood disclosure dropped (no primary loaded) | 2026-11-27 |
 
 ## Asks for Tao (tick 2026-11-12)
 

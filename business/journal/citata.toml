@@ -412,3 +412,12 @@ kind = "measure"
 title = "H11 tracking: 10 landlord data prompts added to the AI visibility run"
 ref = "business/marketing/ai-visibility/2026-11-17-landlord/report.md"
 result = "Baseline ChatGPT + Claude, 20 answers: citata.ai cited 0 of 20. run.py now reports cites per group and which citata.ai URLs AI cites; base-run bug (grok folder) fixed."
+
+[[entry]]
+date = "2026-11-27"
+side = "internal"
+kind = "content"
+title = "Refresh: new landlord laws in 2027 adds California and HUD NSPIRE"
+url = "https://citata.ai/guides/landlord-laws-2027"
+ref = "B036, H07-E2"
+result = "Two California rows (SB 1296 pet policy, SB 1365 emergency rent limit), one HUD row (NSPIRE for vouchers 2027-02-01). Washington flood row dropped: no primary loaded."
