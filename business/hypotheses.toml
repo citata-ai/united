@@ -241,7 +241,7 @@ status = "running"
 id = "H07-E2"
 hypothesis = "H07"
 start = "2026-11-04"
-actions = ["B028 (2026-11-04): new dated data page /guides/landlord-laws-2027: state table of rules that start in 2027 (WA and OR 10% caps, IL $50 application fee cap and lease page 1 fee rule, VA 90-day renewal rent notice from 2027-07-01), each row with the law read on 2026-11-04. Plan: refresh in December 2026 with new states (fresh-date test for H07)."]
+actions = ["B028 (2026-11-04): new dated data page /guides/landlord-laws-2027: state table of rules that start in 2027 (WA and OR 10% caps, IL $50 application fee cap and lease page 1 fee rule, VA 90-day renewal rent notice from 2027-07-01), each row with the law read on 2026-11-04. Plan: refresh in December 2026 with new states (fresh-date test for H07).", "B036 (2026-11-27): refresh, updated 2026-11-27. Added California SB 1296 (Chapter 1025, Civ. Code 1942.7.5: written pet policy with every application, link in ads, fee refund in 7 business days, from 2027-04-01) and SB 1365 (Chapter 1028, Pen. Code 396: 10% emergency rent limit now covers any lease term, from 2027-01-01), and the HUD NSPIRE date for voucher units (2027-02-01, FR 2025-19070). Chaptered texts read on leginfo in a browser 2026-11-27. Washington flood disclosure (SSB 6237) dropped: app.leg.wa.gov and lawfilesext did not load, no primary."]
 urls = ["https://citata.ai/guides/landlord-laws-2027"]
 status = "running"
 
