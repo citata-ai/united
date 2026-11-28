@@ -340,7 +340,7 @@ kind = "data-page"
 title = "Section 8 shortfall tracker: housing authorities that stopped new vouchers or cut payments (2026-27), plus the 2026-12-11 stopgap date"
 demand = "HOC Montgomery County MD stopped new vouchers until spring 2027 after HUD recaptured $5.8M in reserves (https://moderatelymoco.com/hoc-section-8-vouchers-paused-spring-2027/, HOC board packet 2026-10-14). NYCHA Section 8 rent late in November 2026 (Housing New York press, advocacy source). HUD funding stopgap runs to 2026-12-11 (our /guides/section-8-rent-limits/section-8-funding-2027). Landlords ask 'will my Section 8 rent come in January'."
 score = 7
-status = "idea"
+status = "staged"
 note = "Sub-page of /guides/section-8-rent-limits. One row per PHA with a primary (PHA notice, board packet, HUD letter). Drop rows with only press. Refresh after 2026-12-11."
 
 [[item]]
