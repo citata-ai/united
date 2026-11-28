@@ -1,10 +1,10 @@
 // Housing authority payment standard cuts and voucher freezes, 2025–2026 (backlog B019, hypothesis H01).
-// One row = one change that the source states. Agents read each source on 2026-10-22.
+// One row = one change that the source states. Agents read each source on 2026-10-22; rows 24-26 on 2026-11-28 (B035).
 // Add a row only with a housing authority notice, board record or local news report that states it.
 
 export const published = "2026-10-22";
-export const updated = "2026-10-22";
-export const checked = "2026-10-22";
+export const updated = "2026-11-28";
+export const checked = "2026-11-28";
 
 export interface Cut {
   pha: string;
@@ -339,7 +339,65 @@ export const cuts: Cut[] = [
     sourceUrl:
       "https://www.richlandsource.com/2025/08/28/metro-housing-director-agency-seeking-federal-funds-to-avoid-shortfall/",
   },
+  {
+    pha: "Chattanooga Housing Authority",
+    place: "Chattanooga, TN",
+    kind: "cut",
+    paused: false,
+    action:
+      "Lower payment standards, because of a $2.4 million shortfall. The report does not give the new % of FMR.",
+    start: "2026-12-01",
+    appliesTo:
+      "Voucher holders who move. Families who stay in their homes have until December 2028, unless HUD approves earlier implementation.",
+    sourceLabel:
+      "Chattanooga Times Free Press: housing vouchers could cover less rent starting Dec. 1 amid $2.4 million shortfall (2026-11-14)",
+    sourceShort: "Times Free Press, 2026-11-14",
+    sourceUrl:
+      "https://www.timesfreepress.com/news/2026/nov/14/chattanooga-housing-vouchers-could-cover-less-rent-starting-dec-1-amid-2-4-million-shortfall/",
+  },
+  {
+    pha: "Decatur Housing Authority (DHA)",
+    place: "Decatur, AL",
+    kind: "cut",
+    paused: false,
+    action:
+      "Payment standard 120% → 110% of FMR for 2027 (the 120% was a waiver). Rejects rent increases that landlords ask for. HUD gave $330,000 for the 2026 shortfall.",
+    start: "2027-01-01",
+    appliesTo:
+      "Section 8 households in Morgan, Lawrence and Limestone counties. No vouchers withdrawn.",
+    sourceLabel: "Decatur Daily: Housing Authority trims rental aid amid shortfall (2026-11-20)",
+    sourceShort: "Decatur Daily, 2026-11-20",
+    sourceUrl:
+      "https://www.yahoo.com/news/us/articles/housing-authority-trims-rental-aid-134600475.html",
+  },
+  {
+    pha: "East Greenwich Housing Authority",
+    place: "East Greenwich, RI",
+    kind: "freeze",
+    paused: true,
+    action:
+      "Stopped issuing new vouchers. Does not reissue vouchers when families leave. Uses reserves to cover rent gaps.",
+    start: "",
+    appliesTo: "New applicants and turnover vouchers. No current vouchers terminated.",
+    sourceLabel:
+      "Uprise RI: East Greenwich Housing Authority halts new vouchers after federal cuts (2026-11-25), report to the Town Council",
+    sourceShort: "Uprise RI, 2026-11-25",
+    sourceUrl:
+      "https://upriseri.com/article/east-greenwich-housing-authority-halts-new-vouchers-after-federal-cuts/",
+  },
 ];
+
+/** FY2027 federal funding status for the "January" question. Read 2026-11-28. */
+export const stopgap = {
+  end: "2026-12-11",
+  law: "P.L. 119-103",
+  senateDraft: "2026-11-16",
+  source: {
+    label:
+      "Government Shutdown Tracker: FY2027 appropriations tracker, status of all 12 bills (checked 2026-11-25)",
+    url: "https://governmentshutdowntracker.com/appropriations-tracker/",
+  },
+};
 
 /** HUD's 2026 instructions to housing authorities. Quotes read on 2026-10-22. */
 export const hud = {

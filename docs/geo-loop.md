@@ -72,6 +72,7 @@ Each weekly run also appends one `measure` entry to `business/journal/citata.tom
 | 2026-11-16 | Research /research/ai-property-manager-index-2026 update 2 (H03-E1, B034): ChatGPT + Claude re-run (99 of 100; Gemini 403), sources per engine over 3 dates and per city, Goodjuju 30-city comparison (read 2026-11-16), third CSV; tools/ai-visibility/cities_sources.py | 2026-11-16 |
 | 2026-11-17 | Tracking: 10 landlord data prompts (H11-E1, B040), group landlord-data in tools/ai-visibility/prompts.toml; run.py cites per group, cited URLs, same-tag base run, extractor claude-haiku-5-5; baseline 0 of 20 cited (ChatGPT, Claude) | tool only, no page |
 | 2026-11-27 | Refresh /guides/landlord-laws-2027 (H07-E2, B036): California SB 1296 pet policy (2027-04-01) and SB 1365 emergency rent limit for any lease term (2027-01-01), HUD NSPIRE for vouchers (2027-02-01); chaptered texts and FR notice read 2026-11-27; WA flood row dropped (no primary) | 2026-11-27 |
+| 2026-11-28 | Refresh /guides/section-8-rent-limits/payment-standard-cuts-2026 (H01-E1, B035): 22 → 25 housing authorities (Chattanooga, Decatur, East Greenwich; local news read 2026-11-28), new section "Will Section 8 pay in January 2027?" (stopgap ends 2026-12-11) | 2026-11-28 |
 
 Technical score after the deploy: 58 → 72/100. Open items from the audit: page dates and author in markup, About page, WebSite schema, Wikidata / LinkedIn / Crunchbase in `sameAs`.
 
