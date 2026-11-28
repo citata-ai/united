@@ -421,3 +421,12 @@ title = "Refresh: new landlord laws in 2027 adds California and HUD NSPIRE"
 url = "https://citata.ai/guides/landlord-laws-2027"
 ref = "B036, H07-E2"
 result = "Two California rows (SB 1296 pet policy, SB 1365 emergency rent limit), one HUD row (NSPIRE for vouchers 2027-02-01). Washington flood row dropped: no primary loaded."
+
+[[entry]]
+date = "2026-11-28"
+side = "internal"
+kind = "content"
+title = "Refresh: Section 8 payment standard cuts tracker adds 3 housing authorities and the January 2027 answer"
+url = "https://citata.ai/guides/section-8-rent-limits/payment-standard-cuts-2026"
+ref = "B035, H01-E1"
+result = "22 → 25 housing authorities (Chattanooga, Decatur, East Greenwich). New section: stopgap P.L. 119-103 ends 2026-12-11, Senate THUD draft 2026-11-16 with no vote."
