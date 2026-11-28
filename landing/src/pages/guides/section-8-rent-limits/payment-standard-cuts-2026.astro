@@ -1,11 +1,11 @@
 ---
-// Backlog B019, hypothesis H01: tracker of housing authority payment standard cuts (2025–2026).
+// Backlog B019 (refresh B035, 2026-11-28), hypothesis H01: tracker of housing authority payment standard cuts (2025–2026).
 // Every row comes from src/data/payment-standard-cuts.ts and links its own primary source.
 // Rules: answer first, ASD-STE100, sources, no legal advice, Fair Housing (no text about who should rent where).
 import Guide from "../../../layouts/Guide.astro";
 import Section8Cta from "../../../components/Section8Cta.astro";
 import { bySlug, metroPath, src } from "../../../data/section8.ts";
-import { checked, cuts, hud, published, updated } from "../../../data/payment-standard-cuts.ts";
+import { checked, cuts, hud, published, stopgap, updated } from "../../../data/payment-standard-cuts.ts";
 
 const path = "/guides/section-8-rent-limits/payment-standard-cuts-2026";
 const withMetro = cuts.map((c) => ({ ...c, metro: c.metroSlug ? bySlug(c.metroSlug) : undefined }));
@@ -22,6 +22,10 @@ const fm = {
   updated,
   answer: `Many housing authorities now pay less than before, because their 2026 HUD funding does not cover the full cost of all vouchers. ${hud.answer} We list ${cuts.length} housing authorities with a sourced change: ${lowered} lowered the payment standard, ${proposed} proposed a cut, and ${paused} stopped or paused new vouchers (some did both). For a tenant who stays in the unit, the housing authority can apply a cut no earlier than 2 years after it starts, with 12 months' written notice (24 CFR 982.505).`,
   faq: [
+    {
+      q: "Will Section 8 pay landlords in January 2027?",
+      a: `It depends on Congress. The stopgap law (${stopgap.law}) funds HUD at 2026 rates through ${stopgap.end}. On 2026-11-28 Congress had no full-year FY2027 HUD law; the Senate released draft text on ${stopgap.senateDraft} with no vote (Government Shutdown Tracker). Ask your housing authority how it pays HAP if HUD funding lapses, and how many months its reserves cover.`,
+    },
     {
       q: "Why are housing authorities cutting Section 8 payment standards?",
       a: `HUD renewal funding for 2026 does not cover the full cost of all vouchers in use. ${hud.faq}`,
@@ -46,6 +50,7 @@ const fm = {
   sources: [
     hud.source,
     hud.notice,
+    stopgap.source,
     src.cfr503,
     src.cfr505,
     ...cuts.map((c) => ({ label: c.sourceLabel, url: c.sourceUrl })),
@@ -54,6 +59,7 @@ const fm = {
 
 const headings = [
   { depth: 2, slug: "tracker", text: "Payment standard cuts by housing authority" },
+  { depth: 2, slug: "january", text: "Will Section 8 pay in January 2027?" },
   { depth: 2, slug: "why", text: "Why housing authorities cut payment standards" },
   { depth: 2, slug: "who", text: "Who a cut hits, and when" },
   { depth: 2, slug: "landlord-steps", text: "Steps for landlords" },
@@ -101,6 +107,22 @@ const headings = [
   <p>
     Metro links go to our FY2027 Fair Market Rent page for that area. Missing a housing authority? A change you can
     source is welcome: write to <a href="mailto:grow@citata.ai">grow@citata.ai</a>.
+  </p>
+
+  <h2 id="january">Will Section 8 pay in January 2027?</h2>
+  <p>
+    Section 8 payments for January 2027 depend on Congress. The stopgap law ({stopgap.law}) funds HUD at 2026 rates
+    through {stopgap.end}. On 2026-11-28 Congress had not passed a full-year FY2027 HUD law. The Senate released draft
+    text on {stopgap.senateDraft} and did not vote on it (<a href={stopgap.source.url}>Government Shutdown Tracker</a>).
+  </p>
+  <ul>
+    <li><strong>{stopgap.end}.</strong> The stopgap ends. Congress passes a full-year law or another stopgap. Since 2018, Congress passed one more stopgap in December in 5 of 6 years with a December deadline (same source).</li>
+    <li><strong>2026-12-12.</strong> If Congress does nothing, HUD funding lapses from this day.</li>
+    <li><strong>Your housing authority.</strong> Ask your housing specialist how the housing authority pays HAP if HUD funding lapses, and how many months its reserves cover.</li>
+  </ul>
+  <p>
+    The money rules for a shortfall are on <a href="/guides/section-8-rent-limits/section-8-funding-2027">Will Section 8
+    keep paying landlords in 2027?</a>
   </p>
 
   <h2 id="why">Why housing authorities cut payment standards</h2>
